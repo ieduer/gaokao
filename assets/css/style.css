@@ -124,7 +124,7 @@
   }
   
   /* =======================================
-     底部互動按鈕區（保持放大）
+     底部互動按鈕區
      ======================================= */
   #gaokao-actions {
     text-align: center;
@@ -137,7 +137,7 @@
   }
   
   /* =======================================
-     對話窗口（預設隱藏，不顯示灰色框）
+     對話窗口
      ======================================= */
   #dialogue-box {
     padding: 1.5rem;
@@ -196,9 +196,9 @@
       background: #1a1a1a;
       color: #f0f0f0;
     }
-    #dialogue-box, 
-    #gaokao-type-menu, 
-    #gaokao-year-menu, 
+    #dialogue-box,
+    #gaokao-type-menu,
+    #gaokao-year-menu,
     #gaokao-question {
       background: #2a2a2a;
       border-color: #444;

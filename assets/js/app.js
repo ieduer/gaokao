@@ -17,7 +17,7 @@ const TYPES = [
   { key: "yuyanjichu", label: "語言基礎運用", dataFile: "yuyanjichu.json" },
   { key: "weixiezuo", label: "微寫作", dataFile: "weixiezuo.json" },
   { key: "dazuowen", label: "大作文", dataFile: "dazuowen.json" }
-]; // Fixed closing bracket and semicolon
+];
 
 // 全局 AI prompt 前綴設定
 const GAOKAO_PROMPTS = {
@@ -28,18 +28,27 @@ const GAOKAO_PROMPTS = {
 };
 
 /****************************************************
- * 輔助函式：格式化文字（提前定義，解決 formatAnswer 未定義問題）
+ * 輔助函式：格式化文字
  ****************************************************/
 function formatAnswer(text) {
   return text.split('\n').map(line => `<p>${line.trim()}</p>`).join('');
 }
 
 /****************************************************
- * 輔助函式：顯示訊息
+ * 輔助函式：顯示訊息（包含隨機小動物 emoji 分隔符）
  ****************************************************/
 function addMessage(message, sender = "system") {
   const messagesEl = document.getElementById("messages");
   if (!messagesEl) return;
+  // 如果已有訊息，加入隨機小動物作為分隔符
+  if (messagesEl.childElementCount > 0) {
+    const animals = ["🐱", "🐶", "🐭", "🐹", "🐰", "🦊", "🐻", "🐼", "🐨", "🐯"];
+    const randomAnimal = animals[Math.floor(Math.random() * animals.length)];
+    const separator = document.createElement("div");
+    separator.className = "separator";
+    separator.textContent = randomAnimal;
+    messagesEl.insertBefore(separator, messagesEl.firstChild);
+  }
   const div = document.createElement("div");
   div.className = sender;
   div.innerHTML = message;
@@ -47,25 +56,32 @@ function addMessage(message, sender = "system") {
 }
 
 /****************************************************
- * 項目初始化：綁定按鈕事件
+ * 項目初始化：綁定按鈕事件與自動調整 textarea 高度
  ****************************************************/
 document.addEventListener("DOMContentLoaded", () => {
-  // 綁定「高考真題」按鈕，點擊後顯示二級目錄
+  // 綁定「高考真題」按鈕
   const gaokaoBtn = document.getElementById("gaokao-btn");
   if (gaokaoBtn) {
     gaokaoBtn.addEventListener("click", showTypeMenu);
   }
-
+  
   // 綁定底部互動按鈕
   document.getElementById("submit-answer-btn").addEventListener("click", submitAnswer);
   document.getElementById("reference-answer-btn").addEventListener("click", showReferenceAnswer);
   document.getElementById("ai-answer-btn").addEventListener("click", askAIForSolution);
-
+  
   // 綁定夜晚模式切換按鈕
   const toggleDarkBtn = document.getElementById("toggle-dark-btn");
   if (toggleDarkBtn) {
     toggleDarkBtn.addEventListener("click", toggleDarkMode);
   }
+  
+  // 自動調整答案輸入區高度
+  const userAnswer = document.getElementById("userAnswer");
+  userAnswer.addEventListener("input", function() {
+    this.style.height = 'auto';
+    this.style.height = this.scrollHeight + 'px';
+  });
 });
 
 /****************************************************
@@ -83,8 +99,8 @@ function showTypeMenu() {
   TYPES.forEach(t => {
     const btn = document.createElement("button");
     btn.textContent = t.label;
-    // 調整字號與內邊距（縮小）
-    btn.style.fontSize = "1.4rem";
+    // 調整字號與內邊距（縮小後）
+    btn.style.fontSize = "1.0rem";
     btn.style.padding = "0.8rem 1rem";
     btn.onclick = () => {
       if (t.external) {
@@ -116,12 +132,12 @@ function showYearMenu(typeKey, dataArr) {
   const yearMenu = document.getElementById("gaokao-year-menu");
   yearMenu.style.display = "block";
   yearMenu.innerHTML = "";
-  // 縮小年份標籤字號：1.1rem
+  // 年份按鈕縮小
   const years = [...new Set(dataArr.map(item => item.year))].sort((a, b) => b - a);
   years.forEach(y => {
     const btn = document.createElement("button");
     btn.textContent = y + " 年";
-    btn.style.fontSize = "1.1rem";
+    btn.style.fontSize = "0.7rem";
     btn.style.padding = "0.8rem 1rem";
     btn.onclick = () => {
       showQuestionList(typeKey, y, dataArr);
@@ -143,7 +159,7 @@ function showQuestionList(typeKey, year, dataArr) {
     questions.forEach((q, idx) => {
       const btn = document.createElement("button");
       btn.textContent = (q.topic || "題目") + " #" + (idx + 1);
-      btn.style.fontSize = "1.4rem";
+      btn.style.fontSize = "1.0rem";
       btn.style.padding = "0.8rem 1rem";
       btn.onclick = () => showQuestionDetail(typeKey, q);
       questionSec.appendChild(btn);
@@ -166,7 +182,7 @@ function showQuestionDetail(typeKey, q) {
   questionSec.innerHTML = formatQuestionHTML(typeKey, q);
   // 顯示底部互動按鈕區
   document.getElementById("gaokao-actions").style.display = "block";
-  // 展開對話窗口，但移除「是否還有其他問題」提示（任務1要求刪除）
+  // 展開對話窗口
   document.getElementById("dialogue-box").style.display = "block";
 }
 
@@ -181,8 +197,8 @@ function formatQuestionHTML(typeKey, q) {
   if (q.annotation) html += `<p><strong>注釋：</strong>${q.annotation}</p>`;
   if (q.poem_text) html += `<p><strong>詩文：</strong>${q.poem_text}</p>`;
   for (let i = 1; i <= 5; i++) {
-    if (q[`question${i}`]) {
-      html += `<p><strong>問題${i}：</strong>${q[`question${i}`]}</p>`;
+    if (q["question" + i]) {
+      html += `<p><strong>問題${i}：</strong>${q["question" + i]}</p>`;
     }
   }
   if (q.prompts) {
@@ -209,7 +225,9 @@ function submitAnswer() {
   }
   // 展開對話窗口
   document.getElementById("dialogue-box").style.display = "block";
-  addMessage("請提交你的答案：", "system");
+  // 顯示用戶輸入的答案
+  addMessage("用戶答案：" + answer, "user");
+  
   // 根據是否有參考答案，選擇 review 或 solve 模式
   if (currentQuestion.reference_answer) {
     const prompt = buildAIPrompt(currentQuestion, "review", answer);
@@ -260,8 +278,8 @@ function buildAIPrompt(q, mode, userAnswer = "") {
   if (q.annotation) base += `注釋：${q.annotation}\n`;
   if (q.poem_text) base += `詩文：${q.poem_text}\n`;
   for (let i = 1; i <= 5; i++) {
-    if (q[`question${i}`]) {
-      base += `問題${i}：${q[`question${i}`]}\n`;
+    if (q["question" + i]) {
+      base += `問題${i}：${q["question" + i]}\n`;
     }
   }
   if (q.prompts) {
@@ -313,14 +331,3 @@ function callAI(prompt) {
 function toggleDarkMode() {
   document.body.classList.toggle("dark-mode");
 }
-
-/****************************************************
- * 啟動程式：初始化數據與綁定事件
- ****************************************************/
-document.addEventListener("DOMContentLoaded", () => {
-  // 綁定夜晚模式切換按鈕
-  const toggleDarkBtn = document.getElementById("toggle-dark-btn");
-  if (toggleDarkBtn) {
-    toggleDarkBtn.addEventListener("click", toggleDarkMode);
-  }
-});
