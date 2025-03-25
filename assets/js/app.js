@@ -17,7 +17,7 @@ const TYPES = [
   { key: "yuyanjichu", label: "語言基礎運用", dataFile: "yuyanjichu.json" },
   { key: "weixiezuo", label: "微寫作", dataFile: "weixiezuo.json" },
   { key: "dazuowen", label: "大作文", dataFile: "dazuowen.json" }
-];
+]; // Fixed closing bracket and semicolon
 
 // 全局 AI prompt 前綴設定
 const GAOKAO_PROMPTS = {
@@ -304,16 +304,6 @@ function callAI(prompt) {
 function toggleDarkMode() {
   document.body.classList.toggle("dark-mode");
 }
-
-/****************************************************
- * 全局 AI prompt 前綴設定
- ****************************************************/
-const GAOKAO_PROMPTS = {
-  feilian: "這是一道非連文本題，請依據下列材料回答：",
-  guwen: "這是一道古文題，請依據原文和注釋回答：",
-  shici: "這是一道詩詞題，請根據詩詞進行解析：",
-  default: "這是一道高考題，請解題："
-};
 
 /****************************************************
  * 啟動程式：初始化數據與綁定事件
