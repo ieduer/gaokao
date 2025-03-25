@@ -63,6 +63,7 @@ function addMessage(message, sender = "system") {
 document.addEventListener("DOMContentLoaded", () => {
   // 一載入頁面就顯示二級目錄
   showTypeMenu();
+  console.log("showTypeMenu triggered", TYPES);
   
   // 綁定底部互動按鈕
   document.getElementById("submit-answer-btn").addEventListener("click", submitAnswer);
