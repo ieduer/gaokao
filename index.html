@@ -35,6 +35,10 @@
     <section id="gaokao-year-menu" style="display:none;"></section>
     <!-- 題目顯示區，標題改為「背景真題」 -->
     <section id="gaokao-question" style="display:none;"></section>
+    <!-- 對話窗口（預設隱藏，不再顯示下方灰色框，僅在互動時展開） -->
+    <section id="dialogue-box" style="display:none;">
+      <div id="messages"></div>
+    </section>
     <!-- 底部互動按鈕區：包含答案輸入框與三個互動按鈕 -->
     <section id="gaokao-actions" style="display:none; text-align:center;">
       <input type="text" id="userAnswer" placeholder="請輸入你的答案" style="width:80%; padding:1rem; font-size:1.2rem; margin-bottom:1rem; border:1px solid #0077cc; border-radius:5px; height:4rem;">
@@ -43,10 +47,6 @@
         <button id="reference-answer-btn" style="font-size:1.5rem; padding:1rem 1.5rem;">參考答案</button>
         <button id="ai-answer-btn" style="font-size:1.5rem; padding:1rem 1.5rem;">AI答案</button>
       </div>
-    </section>
-    <!-- 對話窗口（預設隱藏，不再顯示下方灰色框，僅在互動時展開） -->
-    <section id="dialogue-box" style="display:none;">
-      <div id="messages"></div>
     </section>
     <!-- 進度顯示 -->
     <div id="progress"></div>
