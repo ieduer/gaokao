@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // 一載入頁面就顯示二級目錄
   showTypeMenu();
   console.log("showTypeMenu triggered", TYPES);
-  
+
   // 綁定底部互動按鈕
   document.getElementById("submit-answer-btn").addEventListener("click", submitAnswer);
   document.getElementById("reference-answer-btn").addEventListener("click", showReferenceAnswer);
@@ -96,10 +96,10 @@ function showTypeMenu() {
   document.getElementById("gaokao-question").innerHTML = "";
   document.getElementById("messages").innerHTML = "";
   document.getElementById("gaokao-actions").style.display = "none";
+
   TYPES.forEach(t => {
     const btn = document.createElement("button");
-    btn.textContent = t.label;
-    // 調整字號與內邊距（縮小後）
+    btn.textContent = t.label;  // 這裡會顯示「非連文本、古文、詩詞…默寫…大作文」等文字
     btn.style.fontSize = "1.0rem";
     btn.style.padding = "0.8rem 1rem";
     btn.onclick = () => {
