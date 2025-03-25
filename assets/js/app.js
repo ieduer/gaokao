@@ -36,6 +36,7 @@ function formatAnswer(text) {
 
 /****************************************************
  * 輔助函式：顯示訊息（包含隨機小動物 emoji 分隔符）
+ * 對話內容將依序由上而下排列（即先前的在上，後續消息追加在下）
  ****************************************************/
 function addMessage(message, sender = "system") {
   const messagesEl = document.getElementById("messages");
@@ -47,12 +48,12 @@ function addMessage(message, sender = "system") {
     const separator = document.createElement("div");
     separator.className = "separator";
     separator.textContent = randomAnimal;
-    messagesEl.insertBefore(separator, messagesEl.firstChild);
+    messagesEl.appendChild(separator);
   }
   const div = document.createElement("div");
   div.className = sender;
   div.innerHTML = message;
-  messagesEl.insertBefore(div, messagesEl.firstChild);
+  messagesEl.appendChild(div);
 }
 
 /****************************************************
@@ -122,7 +123,7 @@ function showTypeMenu() {
 }
 
 /****************************************************
- * 2) 顯示三級目錄：年份列表
+ * 2) 顯示三級目錄：年份列表（居中顯示）
  ****************************************************/
 function showYearMenu(typeKey, dataArr) {
   // 清除先前題目和對話內容
@@ -152,8 +153,8 @@ function showYearMenu(typeKey, dataArr) {
 function showQuestionList(typeKey, year, dataArr) {
   const questionSec = document.getElementById("gaokao-question");
   questionSec.style.display = "block";
-  // 標題改為「背景真題」
-  questionSec.innerHTML = `<h2 style="font-size:1.7rem;">${year} 年背景真題</h2>`;
+  // 標題改為「背景真題」，正文字號縮小兩號
+  questionSec.innerHTML = `<h2 style="font-size:1.5rem;">${year} 年背景真題</h2>`;
   const questions = dataArr.filter(q => q.year == year);
   if (questions.length > 1) {
     questions.forEach((q, idx) => {
@@ -190,7 +191,7 @@ function showQuestionDetail(typeKey, q) {
  * 4.1) 將題目資料格式化為 HTML
  ****************************************************/
 function formatQuestionHTML(typeKey, q) {
-  let html = `<h2 style="font-size:1.7rem;">${q.year}年 ${q.topic || ""}</h2>`;
+  let html = `<h2 style="font-size:1.5rem;">${q.year}年 ${q.topic || ""}</h2>`;
   if (q.material1) html += `<p><strong>材料1：</strong>${q.material1}</p>`;
   if (q.material2) html += `<p><strong>材料2：</strong>${q.material2}</p>`;
   if (q.original_text) html += `<p><strong>原文：</strong>${q.original_text}</p>`;
@@ -267,8 +268,15 @@ function askAIForSolution() {
 
 /****************************************************
  * 6) 建立 AI prompt（mode: "review" 或 "solve"）
+ * 讀取對話歷史以保持連續的對話流
  ****************************************************/
 function buildAIPrompt(q, mode, userAnswer = "") {
+  // 讀取對話歷史
+  let conversationHistory = "";
+  const messagesEl = document.getElementById("messages");
+  if (messagesEl) {
+    conversationHistory = Array.from(messagesEl.children).map(el => el.textContent).join("\n");
+  }
   let typeKey = guessTypeFromQuestion(q);
   let prefix = GAOKAO_PROMPTS[typeKey] || GAOKAO_PROMPTS.default;
   let base = `${prefix}\n題目信息：\n`;
@@ -287,6 +295,8 @@ function buildAIPrompt(q, mode, userAnswer = "") {
       base += `作文提示${idx + 1}：${p.prompt_text}\n`;
     });
   }
+  // 加入對話歷史
+  base += `\n對話記錄：\n${conversationHistory}\n`;
   if (mode === "review") {
     base += `\n用戶答案：${userAnswer}\n參考答案：${q.reference_answer}\n請評價並給出建議。\n`;
   } else {
