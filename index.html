@@ -3,49 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>高考真題</title>
   <link rel="icon" href="https://raw.githubusercontent.com/gptv/suen/main/images/Avatar-small.jpeg" type="image/jpeg">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <title>AI高考</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <header>
-    <h1>AI高考</h1>
-    <!-- 按鈕：點擊後顯示八個二級目錄 -->
-    <button id="gaokao-btn">高考真題</button>
+    <h1>高考真題</h1>
+    <!-- 夜晚模式切換（以 icon 顯示） -->
+    <button id="toggle-dark-btn" title="切換夜晚模式" style="font-size:1.5rem; background:none; border:none; cursor:pointer;">🌙</button>
+    <!-- 點擊後顯示二級目錄 -->
+    <button id="gaokao-btn" style="font-size:1.5rem; padding:1rem 1.5rem;">高考真題</button>
   </header>
 
   <main>
-    <!-- 二級目錄區 -->
+    <!-- 二級目錄區：顯示八（實際拆為九）個題型 -->
     <section id="gaokao-type-menu" style="display:none;"></section>
-
-    <!-- 年份列表 (第三級) -->
+    <!-- 三級目錄區：顯示年份列表 -->
     <section id="gaokao-year-menu" style="display:none;"></section>
-
     <!-- 題目顯示區 -->
     <section id="gaokao-question" style="display:none;"></section>
-
-    <!-- 底部互動按鈕區 -->
-    <section id="gaokao-actions" style="display:none;">
-      <button id="submit-answer-btn">提交答案</button>
-      <button id="reference-answer-btn">參考答案</button>
-      <button id="ai-answer-btn">AI答案</button>
+    <!-- 底部互動按鈕區（含輸入框） -->
+    <section id="gaokao-actions" style="display:none; text-align:center;">
+      <input type="text" id="userAnswer" placeholder="請輸入你的答案" style="width:80%; padding:1rem; font-size:1.2rem; margin-bottom:1rem; border:1px solid #0077cc; border-radius:5px;">
+      <div>
+        <button id="submit-answer-btn" style="font-size:1.2rem; padding:1rem 1.5rem;">提交答案</button>
+        <button id="reference-answer-btn" style="font-size:1.2rem; padding:1rem 1.5rem;">參考答案</button>
+        <button id="ai-answer-btn" style="font-size:1.2rem; padding:1rem 1.5rem;">AI答案</button>
+      </div>
     </section>
-
     <!-- 對話/回覆窗口 -->
     <section id="dialogue-box" style="display:none;">
       <div id="messages"></div>
       <div id="input-area">
-        <input type="text" id="userInput" placeholder="輸入你的答案或想法" />
+        <input type="text" id="userInput" placeholder="輸入你的問題或補充" />
         <button id="sendUserInputBtn">送出</button>
       </div>
     </section>
   </main>
 
   <footer style="text-align:center; margin-top:20px;">
-    <p>© Suen</p>
+    <p>© Suen | <a href="https://bdfz.net/posts/gaokao" target="_blank">About</a></p>
   </footer>
 
   <script src="assets/js/app.js"></script>
