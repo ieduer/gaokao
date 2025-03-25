@@ -10,36 +10,34 @@
 <body>
   <header>
     <h1>高考真題</h1>
-    <!-- 夜晚模式切換（以 icon 顯示） -->
+    <!-- 夜晚模式切換按鈕，僅顯示一個月亮 icon -->
     <button id="toggle-dark-btn" title="切換夜晚模式" style="font-size:1.5rem; background:none; border:none; cursor:pointer;">🌙</button>
-    <!-- 點擊後顯示二級目錄 -->
-    <button id="gaokao-btn" style="font-size:1.5rem; padding:1rem 1.5rem;">高考真題</button>
+    <!-- 點擊後顯示題型菜單 -->
+    <button id="gaokao-btn" style="font-size:1.8rem; padding:1rem 1.5rem;">高考真題</button>
   </header>
 
   <main>
-    <!-- 二級目錄區：顯示八（實際拆為九）個題型 -->
+    <!-- 二級目錄：題型菜單（始終保持顯示） -->
     <section id="gaokao-type-menu" style="display:none;"></section>
-    <!-- 三級目錄區：顯示年份列表 -->
+    <!-- 三級目錄：年份列表 -->
     <section id="gaokao-year-menu" style="display:none;"></section>
     <!-- 題目顯示區 -->
     <section id="gaokao-question" style="display:none;"></section>
-    <!-- 底部互動按鈕區（含輸入框） -->
+    <!-- 底部互動按鈕區（包含提交答案輸入框） -->
     <section id="gaokao-actions" style="display:none; text-align:center;">
       <input type="text" id="userAnswer" placeholder="請輸入你的答案" style="width:80%; padding:1rem; font-size:1.2rem; margin-bottom:1rem; border:1px solid #0077cc; border-radius:5px;">
       <div>
-        <button id="submit-answer-btn" style="font-size:1.2rem; padding:1rem 1.5rem;">提交答案</button>
-        <button id="reference-answer-btn" style="font-size:1.2rem; padding:1rem 1.5rem;">參考答案</button>
-        <button id="ai-answer-btn" style="font-size:1.2rem; padding:1rem 1.5rem;">AI答案</button>
+        <button id="submit-answer-btn" style="font-size:1.5rem; padding:1rem 1.5rem;">提交答案</button>
+        <button id="reference-answer-btn" style="font-size:1.5rem; padding:1rem 1.5rem;">參考答案</button>
+        <button id="ai-answer-btn" style="font-size:1.5rem; padding:1rem 1.5rem;">AI答案</button>
       </div>
     </section>
     <!-- 對話/回覆窗口 -->
     <section id="dialogue-box" style="display:none;">
       <div id="messages"></div>
-      <div id="input-area">
-        <input type="text" id="userInput" placeholder="輸入你的問題或補充" />
-        <button id="sendUserInputBtn">送出</button>
-      </div>
     </section>
+    <!-- 進度顯示 -->
+    <div id="progress"></div>
   </main>
 
   <footer style="text-align:center; margin-top:20px;">
