@@ -84,7 +84,7 @@ function showTypeMenu() {
     const btn = document.createElement("button");
     btn.textContent = t.label;
     // 調整字號與內邊距（縮小）
-    btn.style.fontSize = "1.5rem";
+    btn.style.fontSize = "1.4rem";
     btn.style.padding = "0.8rem 1rem";
     btn.onclick = () => {
       if (t.external) {
@@ -116,12 +116,12 @@ function showYearMenu(typeKey, dataArr) {
   const yearMenu = document.getElementById("gaokao-year-menu");
   yearMenu.style.display = "block";
   yearMenu.innerHTML = "";
-  // 縮小年份標籤字號：1.2rem
+  // 縮小年份標籤字號：1.1rem
   const years = [...new Set(dataArr.map(item => item.year))].sort((a, b) => b - a);
   years.forEach(y => {
     const btn = document.createElement("button");
     btn.textContent = y + " 年";
-    btn.style.fontSize = "1.2rem";
+    btn.style.fontSize = "1.1rem";
     btn.style.padding = "0.8rem 1rem";
     btn.onclick = () => {
       showQuestionList(typeKey, y, dataArr);
@@ -137,13 +137,13 @@ function showQuestionList(typeKey, year, dataArr) {
   const questionSec = document.getElementById("gaokao-question");
   questionSec.style.display = "block";
   // 標題改為「背景真題」
-  questionSec.innerHTML = `<h2 style="font-size:1.8rem;">${year} 年背景真題</h2>`;
+  questionSec.innerHTML = `<h2 style="font-size:1.7rem;">${year} 年背景真題</h2>`;
   const questions = dataArr.filter(q => q.year == year);
   if (questions.length > 1) {
     questions.forEach((q, idx) => {
       const btn = document.createElement("button");
       btn.textContent = (q.topic || "題目") + " #" + (idx + 1);
-      btn.style.fontSize = "1.5rem";
+      btn.style.fontSize = "1.4rem";
       btn.style.padding = "0.8rem 1rem";
       btn.onclick = () => showQuestionDetail(typeKey, q);
       questionSec.appendChild(btn);
@@ -174,7 +174,7 @@ function showQuestionDetail(typeKey, q) {
  * 4.1) 將題目資料格式化為 HTML
  ****************************************************/
 function formatQuestionHTML(typeKey, q) {
-  let html = `<h2 style="font-size:1.8rem;">${q.year}年 ${q.topic || ""}</h2>`;
+  let html = `<h2 style="font-size:1.7rem;">${q.year}年 ${q.topic || ""}</h2>`;
   if (q.material1) html += `<p><strong>材料1：</strong>${q.material1}</p>`;
   if (q.material2) html += `<p><strong>材料2：</strong>${q.material2}</p>`;
   if (q.original_text) html += `<p><strong>原文：</strong>${q.original_text}</p>`;
