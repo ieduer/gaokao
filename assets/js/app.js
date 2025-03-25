@@ -63,12 +63,6 @@ function addMessage(message, sender = "system") {
 document.addEventListener("DOMContentLoaded", () => {
   // 一載入頁面就顯示二級目錄
   showTypeMenu();
-
-  // 如果仍想保留「高考真題」按鈕的功能，可保留下面代碼
-  const gaokaoBtn = document.getElementById("gaokao-btn");
-  if (gaokaoBtn) {
-    gaokaoBtn.addEventListener("click", showTypeMenu);
-  }
   
   // 綁定底部互動按鈕
   document.getElementById("submit-answer-btn").addEventListener("click", submitAnswer);
