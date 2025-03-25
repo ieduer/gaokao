@@ -3,36 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>高考真題</title>
+  <title>AI高考</title>
   <link rel="icon" href="https://raw.githubusercontent.com/gptv/suen/main/images/Avatar-small.jpeg" type="image/jpeg">
   <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    /* 將夜晚模式按鈕放置到右上角 */
+    #toggle-dark-btn {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>高考真題</h1>
-    <!-- 夜晚模式切換按鈕，僅顯示一個月亮 icon -->
-    <button id="toggle-dark-btn" title="切換夜晚模式" style="font-size:1.5rem; background:none; border:none; cursor:pointer;">🌙</button>
-    <!-- 點擊後顯示題型菜單 -->
+    <h1>AI高考</h1>
+    <!-- 夜晚模式按鈕，使用 🌗 -->
+    <button id="toggle-dark-btn" title="切換夜晚模式">🌗</button>
+    <!-- 點擊後顯示二級目錄（題型按鈕） -->
     <button id="gaokao-btn" style="font-size:1.8rem; padding:1rem 1.5rem;">高考真題</button>
   </header>
 
   <main>
-    <!-- 二級目錄：題型菜單（始終保持顯示） -->
+    <!-- 二級目錄：題型菜單 -->
     <section id="gaokao-type-menu" style="display:none;"></section>
     <!-- 三級目錄：年份列表 -->
     <section id="gaokao-year-menu" style="display:none;"></section>
-    <!-- 題目顯示區 -->
+    <!-- 題目顯示區，標題改為「背景真題」 -->
     <section id="gaokao-question" style="display:none;"></section>
-    <!-- 底部互動按鈕區（包含提交答案輸入框） -->
+    <!-- 底部互動按鈕區：包含答案輸入框與三個互動按鈕 -->
     <section id="gaokao-actions" style="display:none; text-align:center;">
-      <input type="text" id="userAnswer" placeholder="請輸入你的答案" style="width:80%; padding:1rem; font-size:1.2rem; margin-bottom:1rem; border:1px solid #0077cc; border-radius:5px;">
+      <input type="text" id="userAnswer" placeholder="請輸入你的答案" style="width:80%; padding:1rem; font-size:1.2rem; margin-bottom:1rem; border:1px solid #0077cc; border-radius:5px; height:4rem;">
       <div>
         <button id="submit-answer-btn" style="font-size:1.5rem; padding:1rem 1.5rem;">提交答案</button>
         <button id="reference-answer-btn" style="font-size:1.5rem; padding:1rem 1.5rem;">參考答案</button>
         <button id="ai-answer-btn" style="font-size:1.5rem; padding:1rem 1.5rem;">AI答案</button>
       </div>
     </section>
-    <!-- 對話/回覆窗口 -->
+    <!-- 對話窗口（預設隱藏，不再顯示下方灰色框，僅在互動時展開） -->
     <section id="dialogue-box" style="display:none;">
       <div id="messages"></div>
     </section>

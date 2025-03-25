@@ -34,13 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("reference-answer-btn").addEventListener("click", showReferenceAnswer);
   document.getElementById("ai-answer-btn").addEventListener("click", askAIForSolution);
 
-  // 夜晚模式切換按鈕
+  // 綁定夜晚模式切換按鈕
   const toggleDarkBtn = document.getElementById("toggle-dark-btn");
   if (toggleDarkBtn) {
     toggleDarkBtn.addEventListener("click", toggleDarkMode);
   }
-  
-  // 載入資料（當用戶選擇某一類型時才讀取對應 JSON）
 });
 
 /****************************************************
@@ -53,21 +51,21 @@ function showTypeMenu() {
   TYPES.forEach(t => {
     const btn = document.createElement("button");
     btn.textContent = t.label;
-    // 調整字號與內邊距（縮小）
+    // 調整字號與內邊距縮小
     btn.style.fontSize = "1.5rem";
     btn.style.padding = "0.8rem 1rem";
     btn.onclick = () => {
       if (t.external) {
         window.open(t.external, "_blank");
       } else if (!t.dataFile) {
-        alert("製作中，慢慢等~");
+        alert("製作中，慢慢等");
       } else {
         fetch(`data/${t.dataFile}`)
           .then(res => res.json())
           .then(json => showYearMenu(t.key, json))
           .catch(err => {
             console.error("讀取 " + t.dataFile + " 錯誤:", err);
-            alert("讀取資料錯誤，請稍後再試");
+            alert("製作中，慢慢等");
           });
       }
     };
@@ -82,7 +80,7 @@ function showYearMenu(typeKey, dataArr) {
   const yearMenu = document.getElementById("gaokao-year-menu");
   yearMenu.style.display = "block";
   yearMenu.innerHTML = "";
-  // 保持二級目錄持續顯示
+  // 保持二級目錄持續顯示（不隱藏）
 
   const years = [...new Set(dataArr.map(item => item.year))].sort((a, b) => b - a);
   years.forEach(y => {
@@ -98,12 +96,13 @@ function showYearMenu(typeKey, dataArr) {
 }
 
 /****************************************************
- * 3) 顯示該年份題目列表
+ * 3) 顯示該年份題目列表（第四級目錄）
  ****************************************************/
 function showQuestionList(typeKey, year, dataArr) {
   const questionSec = document.getElementById("gaokao-question");
   questionSec.style.display = "block";
-  questionSec.innerHTML = `<h2 style="font-size:1.8rem;">${year} 年真題</h2>`;
+  // 將標題改為「背景真題」
+  questionSec.innerHTML = `<h2 style="font-size:1.8rem;">${year} 年背景真題</h2>`;
   const questions = dataArr.filter(q => q.year == year);
   if (questions.length > 1) {
     questions.forEach((q, idx) => {
@@ -117,7 +116,7 @@ function showQuestionList(typeKey, year, dataArr) {
   } else if (questions.length === 1) {
     showQuestionDetail(typeKey, questions[0]);
   } else {
-    questionSec.innerHTML += `<p style="font-size:1.5rem;">該年份暫無資料，製作中，慢慢等~</p>`;
+    questionSec.innerHTML += `<p style="font-size:1.5rem;">該年份暫無資料，製作中，慢慢等</p>`;
   }
 }
 
@@ -130,7 +129,7 @@ function showQuestionDetail(typeKey, q) {
   questionSec.innerHTML = formatQuestionHTML(typeKey, q);
   // 顯示底部互動按鈕區
   document.getElementById("gaokao-actions").style.display = "block";
-  // 展開 AI 對話窗口，並提示是否還有問題
+  // 展開 AI 對話窗口，並提示是否還有其他問題
   document.getElementById("dialogue-box").style.display = "block";
   addMessage("是否還有其他問題？", "system");
 }
@@ -166,16 +165,15 @@ function submitAnswer() {
     alert("尚未選擇任何題目");
     return;
   }
-  // 使用底部的 userAnswer 輸入框
   const answer = document.getElementById("userAnswer").value.trim();
   if (!answer) {
     alert("請輸入答案");
     return;
   }
-  // 展開對話窗口並提示
+  // 顯示對話窗口並提示
   document.getElementById("dialogue-box").style.display = "block";
   addMessage("請提交你的答案：", "system");
-  // 提交答案模式，使用 review 模式處理（如果有參考答案則 review，否則 solve）
+  // 依據是否有參考答案，使用 review 或 solve 模式
   if (currentQuestion.reference_answer) {
     const prompt = buildAIPrompt(currentQuestion, "review", answer);
     callAI(prompt);
@@ -183,7 +181,6 @@ function submitAnswer() {
     const prompt = buildAIPrompt(currentQuestion, "solve", answer);
     callAI(prompt);
   }
-  // 清空輸入框
   document.getElementById("userAnswer").value = "";
 }
 
@@ -269,12 +266,24 @@ function callAI(prompt) {
     })
     .catch(err => {
       console.error("AI 請求失敗", err);
-      addMessage("AI 請求失敗，請稍後再試。", "system");
+      addMessage("製作中，慢慢等", "system");
     });
 }
 
 /****************************************************
- *  夜晚模式切換
+ * 9) 輔助函式：顯示訊息
+ ****************************************************/
+function addMessage(message, sender = "system") {
+  const messagesEl = document.getElementById("messages");
+  if (!messagesEl) return;
+  const div = document.createElement("div");
+  div.className = sender;
+  div.innerHTML = message;
+  messagesEl.appendChild(div);
+}
+
+/****************************************************
+ * 10) 夜晚模式切換
  ****************************************************/
 function toggleDarkMode() {
   document.body.classList.toggle("dark-mode");
@@ -294,8 +303,6 @@ const GAOKAO_PROMPTS = {
  * 啟動程式：初始化數據與綁定事件
  ****************************************************/
 document.addEventListener("DOMContentLoaded", () => {
-  // 載入 dialogues.json 並初始化（僅當用戶點擊題型時再載入對應資料）
-  // 這裡暫不預載所有資料，等待用戶點擊
   // 綁定夜晚模式切換按鈕
   const toggleDarkBtn = document.getElementById("toggle-dark-btn");
   if (toggleDarkBtn) {

@@ -68,7 +68,7 @@
   }
   
   /* =======================================
-     高考真題標題與按鈕（放大）
+     高考真題標題與按鈕放大
      ======================================= */
   #gaokao-btn {
     font-size: 1.8rem;
@@ -89,7 +89,7 @@
     margin-bottom: 1rem;
   }
   #gaokao-type-menu button {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 0.8rem 1rem;
   }
   
@@ -107,12 +107,12 @@
     margin-bottom: 1rem;
   }
   #gaokao-year-menu button {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 0.8rem 1.2rem;
   }
   
   /* =======================================
-     題目顯示區
+     題目顯示區（背景真題）
      ======================================= */
   #gaokao-question {
     padding: 1rem;
@@ -124,7 +124,7 @@
   }
   
   /* =======================================
-     底部互動按鈕區（保持放大不變）
+     底部互動按鈕區（保持放大）
      ======================================= */
   #gaokao-actions {
     text-align: center;
@@ -137,7 +137,7 @@
   }
   
   /* =======================================
-     對話窗口
+     對話窗口（預設隱藏，不顯示灰色框）
      ======================================= */
   #dialogue-box {
     padding: 1.5rem;
@@ -155,18 +155,6 @@
     padding: 0.5rem;
     border-radius: 5px;
     overflow-y: auto;
-  }
-  
-  /* =======================================
-     輸入區域（底部） - 用戶答案輸入框增高
-     ======================================= */
-  #gaokao-actions input[type="text"] {
-    width: 80%;
-    padding: 1rem;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    border: 1px solid #0077cc;
-    border-radius: 5px;
   }
   
   /* =======================================
@@ -195,13 +183,13 @@
     }
     #gaokao-type-menu button,
     #gaokao-year-menu button {
-      font-size: 1rem;
+      font-size: 1.2rem;
       padding: 0.6rem 0.8rem;
     }
   }
   
   /* =======================================
-     深色模式支持（進一步覆蓋）
+     深色模式覆蓋
      ======================================= */
   @media (prefers-color-scheme: dark) {
     body {
