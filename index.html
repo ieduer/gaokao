@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="https://raw.githubusercontent.com/gptv/suen/main/images/Avatar-small.jpeg" type="image/jpeg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <title>AI高考</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>AI高考</h1>
+    <!-- 按鈕：點擊後顯示八個二級目錄 -->
+    <button id="gaokao-btn">高考真題</button>
+  </header>
+
+  <main>
+    <!-- 二級目錄區 -->
+    <section id="gaokao-type-menu" style="display:none;"></section>
+
+    <!-- 年份列表 (第三級) -->
+    <section id="gaokao-year-menu" style="display:none;"></section>
+
+    <!-- 題目顯示區 -->
+    <section id="gaokao-question" style="display:none;"></section>
+
+    <!-- 底部互動按鈕區 -->
+    <section id="gaokao-actions" style="display:none;">
+      <button id="submit-answer-btn">提交答案</button>
+      <button id="reference-answer-btn">參考答案</button>
+      <button id="ai-answer-btn">AI答案</button>
+    </section>
+
+    <!-- 對話/回覆窗口 -->
+    <section id="dialogue-box" style="display:none;">
+      <div id="messages"></div>
+      <div id="input-area">
+        <input type="text" id="userInput" placeholder="輸入你的答案或想法" />
+        <button id="sendUserInputBtn">送出</button>
+      </div>
+    </section>
+  </main>
+
+  <footer style="text-align:center; margin-top:20px;">
+    <p>© Suen</p>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

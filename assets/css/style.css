@@ -1,0 +1,267 @@
+/* =======================================
+   引入匯文明朝體
+   ======================================= */
+   @font-face {
+    font-family: 'HuWenMingChaoTi';
+    src: url('../fonts/HuWenMingChaoTi.woff2') format('woff2'),
+         url('../fonts/HuWenMingChaoTi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* =======================================
+     全局樣式
+     ======================================= */
+  body {
+    font-family: 'HuWenMingChaoTi', "Noto Serif TC", serif;
+    background: #f9f5e7; /* 淡雅背景色 */
+    color: #333;
+    margin: 0;
+    padding: 0 10px;
+    line-height: 1.6;
+  }
+  
+  header, footer {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+  
+  /* =======================================
+     夜晚模式（通過 body.dark-mode 啟用）
+     ======================================= */
+  body.dark-mode {
+    background: #1a1a1a;
+    color: #f0f0f0;
+  }
+  
+  body.dark-mode header,
+  body.dark-mode footer {
+    background: #1a1a1a;
+  }
+  
+  body.dark-mode #dialogue-box,
+  body.dark-mode #gaokao-type-menu,
+  body.dark-mode #gaokao-year-menu,
+  body.dark-mode #gaokao-question {
+    background: #2a2a2a;
+    border-color: #444;
+  }
+  
+  /* =======================================
+     切換目錄按鈕（僅示範）
+     ======================================= */
+  #toggle-menu-btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  
+  /* 若有夜晚模式切換按鈕 #toggle-dark-btn，也可用相同樣式 */
+  #toggle-dark-btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+  }
+  
+  /* =======================================
+     主要內容區域寬度限制
+     ======================================= */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* =======================================
+     「高考真題」專案 - 二級/三級目錄容器
+     ======================================= */
+  /* 二級目錄：#gaokao-type-menu */
+  /* 三級目錄：#gaokao-year-menu */
+  #gaokao-type-menu,
+  #gaokao-year-menu {
+    margin-bottom: 1rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  
+  /* 章節/題目顯示區：#gaokao-question */
+  #gaokao-question {
+    padding: 1rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  /* 底部互動按鈕：#gaokao-actions */
+  #gaokao-actions {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* =======================================
+     對話窗口樣式
+     ======================================= */
+  #dialogue-box {
+    padding: 1.5rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    display: none; /* 預設隱藏，需 JS 顯示 */
+  }
+  
+  #messages {
+    min-height: 150px;
+    margin-bottom: 1.5rem;
+    background: #fafafa;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    border-radius: 4px;
+    overflow-y: auto;
+  }
+  
+  /* =======================================
+     按鈕共同樣式
+     ======================================= */
+  button {
+    border: 1px solid #0077cc;
+    border-radius: 5px;
+    background: #e0f0ff;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+  }
+  
+  button:hover {
+    background: #cce4ff;
+  }
+  
+  button:active {
+    transform: translateY(1px);
+  }
+  
+  /* =======================================
+     輸入區域 #input-area
+     ======================================= */
+  #input-area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  #input-area input[type="text"] {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #input-area button {
+    flex-shrink: 0;
+    min-width: 100px;
+  }
+  
+  /* =======================================
+     如果需要自訂提問輸入框 #custom-input
+     ======================================= */
+  #custom-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1rem;
+    display: none; /* 預設隱藏 */
+  }
+  
+  #custom-input input[type="text"] {
+    width: 100%;
+    height: 3rem;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  #custom-input input[type="text"]:focus {
+    border-color: #0077cc;
+    outline: none;
+    box-shadow: 0 0 3px rgba(0, 119, 204, 0.3);
+  }
+  
+  #custom-input button {
+    width: 100%;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* =======================================
+     響應式設計
+     ======================================= */
+  @media (max-width: 768px) {
+    body {
+      padding: 0;
+    }
+    main {
+      padding: 0 0.5rem;
+    }
+    h1 {
+      font-size: 1.5em;
+    }
+    #dialogue-box {
+      padding: 1rem;
+    }
+    #input-area {
+      gap: 0.5rem;
+    }
+    #input-area button {
+      padding: 0.6rem;
+      font-size: 0.95rem;
+      min-width: 120px;
+    }
+    #custom-input input[type="text"] {
+      height: 2.5rem;
+      padding: 0.6rem;
+    }
+  }
+  
+  /* =======================================
+     深色模式 (可選)
+     ======================================= */
+  @media (prefers-color-scheme: dark) {
+    body {
+      background: #1a1a1a;
+      color: #f0f0f0;
+    }
+    #dialogue-box {
+      background: #2a2a2a;
+      border-color: #444;
+    }
+    button {
+      background: #1a3d66;
+      border-color: #2a5a8a;
+      color: #f0f0f0;
+    }
+    button:hover {
+      background-color: #2a5a8a;
+    }
+    #custom-input input[type="text"] {
+      background: #333;
+      color: #f0f0f0;
+      border-color: #555;
+    }
+  }
