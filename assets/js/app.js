@@ -43,7 +43,7 @@ function addMessage(message, sender = "system") {
   const div = document.createElement("div");
   div.className = sender;
   div.innerHTML = message;
-  messagesEl.appendChild(div);
+  messagesEl.insertBefore(div, messagesEl.firstChild);
 }
 
 /****************************************************
@@ -75,6 +75,11 @@ function showTypeMenu() {
   const menu = document.getElementById("gaokao-type-menu");
   menu.style.display = "block";
   menu.innerHTML = "";
+  // 清除其他內容
+  document.getElementById("gaokao-year-menu").innerHTML = "";
+  document.getElementById("gaokao-question").innerHTML = "";
+  document.getElementById("messages").innerHTML = "";
+  document.getElementById("gaokao-actions").style.display = "none";
   TYPES.forEach(t => {
     const btn = document.createElement("button");
     btn.textContent = t.label;
@@ -104,6 +109,10 @@ function showTypeMenu() {
  * 2) 顯示三級目錄：年份列表
  ****************************************************/
 function showYearMenu(typeKey, dataArr) {
+  // 清除先前題目和對話內容
+  document.getElementById("gaokao-question").innerHTML = "";
+  document.getElementById("messages").innerHTML = "";
+  document.getElementById("gaokao-actions").style.display = "none";
   const yearMenu = document.getElementById("gaokao-year-menu");
   yearMenu.style.display = "block";
   yearMenu.innerHTML = "";
@@ -151,6 +160,8 @@ function showQuestionList(typeKey, year, dataArr) {
  ****************************************************/
 function showQuestionDetail(typeKey, q) {
   currentQuestion = q;
+  // 清除之前對話消息
+  document.getElementById("messages").innerHTML = "";
   const questionSec = document.getElementById("gaokao-question");
   questionSec.innerHTML = formatQuestionHTML(typeKey, q);
   // 顯示底部互動按鈕區
@@ -207,10 +218,8 @@ function submitAnswer() {
     const prompt = buildAIPrompt(currentQuestion, "solve", answer);
     callAI(prompt);
   }
-  // 更新輸入框 placeholder 為進度提示
-  const viewed = JSON.parse(localStorage.getItem("viewedChapters")) || [];
-  const percent = Math.round((viewed.length / 20) * 100);
-  document.getElementById("userAnswer").placeholder = `進度：${percent}% 請輸入答案`;
+  // 更新輸入框 placeholder 為固定文字
+  document.getElementById("userAnswer").placeholder = `請輸入答案`;
   document.getElementById("userAnswer").value = "";
 }
 
