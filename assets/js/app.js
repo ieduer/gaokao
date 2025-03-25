@@ -61,7 +61,10 @@ function addMessage(message, sender = "system") {
  * 項目初始化：綁定按鈕事件與自動調整 textarea 高度
  ****************************************************/
 document.addEventListener("DOMContentLoaded", () => {
-  // 綁定「高考真題」按鈕
+  // 一載入頁面就顯示二級目錄
+  showTypeMenu();
+
+  // 如果仍想保留「高考真題」按鈕的功能，可保留下面代碼
   const gaokaoBtn = document.getElementById("gaokao-btn");
   if (gaokaoBtn) {
     gaokaoBtn.addEventListener("click", showTypeMenu);
