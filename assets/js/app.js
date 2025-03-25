@@ -19,6 +19,33 @@ const TYPES = [
   { key: "dazuowen", label: "大作文", dataFile: "dazuowen.json" }
 ];
 
+// 全局 AI prompt 前綴設定
+const GAOKAO_PROMPTS = {
+  feilian: "這是一道非連文本題，請依據下列材料回答：",
+  guwen: "這是一道古文題，請依據原文和注釋回答：",
+  shici: "這是一道詩詞題，請根據詩詞進行解析：",
+  default: "這是一道高考題，請解題："
+};
+
+/****************************************************
+ * 輔助函式：格式化文字（提前定義，解決 formatAnswer 未定義問題）
+ ****************************************************/
+function formatAnswer(text) {
+  return text.split('\n').map(line => `<p>${line.trim()}</p>`).join('');
+}
+
+/****************************************************
+ * 輔助函式：顯示訊息
+ ****************************************************/
+function addMessage(message, sender = "system") {
+  const messagesEl = document.getElementById("messages");
+  if (!messagesEl) return;
+  const div = document.createElement("div");
+  div.className = sender;
+  div.innerHTML = message;
+  messagesEl.appendChild(div);
+}
+
 /****************************************************
  * 項目初始化：綁定按鈕事件
  ****************************************************/
@@ -51,7 +78,7 @@ function showTypeMenu() {
   TYPES.forEach(t => {
     const btn = document.createElement("button");
     btn.textContent = t.label;
-    // 調整字號與內邊距縮小
+    // 調整字號與內邊距（縮小）
     btn.style.fontSize = "1.5rem";
     btn.style.padding = "0.8rem 1rem";
     btn.onclick = () => {
@@ -80,13 +107,12 @@ function showYearMenu(typeKey, dataArr) {
   const yearMenu = document.getElementById("gaokao-year-menu");
   yearMenu.style.display = "block";
   yearMenu.innerHTML = "";
-  // 保持二級目錄持續顯示（不隱藏）
-
+  // 縮小年份標籤字號：1.2rem
   const years = [...new Set(dataArr.map(item => item.year))].sort((a, b) => b - a);
   years.forEach(y => {
     const btn = document.createElement("button");
     btn.textContent = y + " 年";
-    btn.style.fontSize = "1.5rem";
+    btn.style.fontSize = "1.2rem";
     btn.style.padding = "0.8rem 1rem";
     btn.onclick = () => {
       showQuestionList(typeKey, y, dataArr);
@@ -101,7 +127,7 @@ function showYearMenu(typeKey, dataArr) {
 function showQuestionList(typeKey, year, dataArr) {
   const questionSec = document.getElementById("gaokao-question");
   questionSec.style.display = "block";
-  // 將標題改為「背景真題」
+  // 標題改為「背景真題」
   questionSec.innerHTML = `<h2 style="font-size:1.8rem;">${year} 年背景真題</h2>`;
   const questions = dataArr.filter(q => q.year == year);
   if (questions.length > 1) {
@@ -129,9 +155,8 @@ function showQuestionDetail(typeKey, q) {
   questionSec.innerHTML = formatQuestionHTML(typeKey, q);
   // 顯示底部互動按鈕區
   document.getElementById("gaokao-actions").style.display = "block";
-  // 展開 AI 對話窗口，並提示是否還有其他問題
+  // 展開對話窗口，但移除「是否還有其他問題」提示（任務1要求刪除）
   document.getElementById("dialogue-box").style.display = "block";
-  addMessage("是否還有其他問題？", "system");
 }
 
 /****************************************************
@@ -159,6 +184,7 @@ function formatQuestionHTML(typeKey, q) {
 
 /****************************************************
  * 5) 底部互動按鈕功能
+ * 提交答案、參考答案、AI答案點擊後展開對話窗口
  ****************************************************/
 function submitAnswer() {
   if (!currentQuestion) {
@@ -170,10 +196,10 @@ function submitAnswer() {
     alert("請輸入答案");
     return;
   }
-  // 顯示對話窗口並提示
+  // 展開對話窗口
   document.getElementById("dialogue-box").style.display = "block";
   addMessage("請提交你的答案：", "system");
-  // 依據是否有參考答案，使用 review 或 solve 模式
+  // 根據是否有參考答案，選擇 review 或 solve 模式
   if (currentQuestion.reference_answer) {
     const prompt = buildAIPrompt(currentQuestion, "review", answer);
     callAI(prompt);
@@ -181,6 +207,10 @@ function submitAnswer() {
     const prompt = buildAIPrompt(currentQuestion, "solve", answer);
     callAI(prompt);
   }
+  // 更新輸入框 placeholder 為進度提示
+  const viewed = JSON.parse(localStorage.getItem("viewedChapters")) || [];
+  const percent = Math.round((viewed.length / 20) * 100);
+  document.getElementById("userAnswer").placeholder = `進度：${percent}% 請輸入答案`;
   document.getElementById("userAnswer").value = "";
 }
 
@@ -196,7 +226,6 @@ function showReferenceAnswer() {
     callAI(prompt);
   }
   document.getElementById("dialogue-box").style.display = "block";
-  addMessage("是否還有其他問題？", "system");
 }
 
 function askAIForSolution() {
@@ -207,7 +236,6 @@ function askAIForSolution() {
   const prompt = buildAIPrompt(currentQuestion, "solve");
   callAI(prompt);
   document.getElementById("dialogue-box").style.display = "block";
-  addMessage("是否還有其他問題？", "system");
 }
 
 /****************************************************
@@ -271,19 +299,7 @@ function callAI(prompt) {
 }
 
 /****************************************************
- * 9) 輔助函式：顯示訊息
- ****************************************************/
-function addMessage(message, sender = "system") {
-  const messagesEl = document.getElementById("messages");
-  if (!messagesEl) return;
-  const div = document.createElement("div");
-  div.className = sender;
-  div.innerHTML = message;
-  messagesEl.appendChild(div);
-}
-
-/****************************************************
- * 10) 夜晚模式切換
+ * 9) 夜晚模式切換
  ****************************************************/
 function toggleDarkMode() {
   document.body.classList.toggle("dark-mode");
