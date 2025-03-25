@@ -12,6 +12,7 @@ const TYPES = [
   { key: "guwen", label: "古文", dataFile: "guwen.json" },
   { key: "shici", label: "詩詞", dataFile: "shici.json" },
   { key: "lunyu", label: "論語", external: "https://kz.bdfz.net/" },
+  { key: "moxie", label: "默寫", external: "https://mf.bdfz.net/" },
   { key: "honglou", label: "紅樓夢", external: "https://hlm.bdfz.net/" },
   { key: "sanwen", label: "散文", dataFile: "sanwen.json" },
   { key: "yuyanjichu", label: "語言基礎運用", dataFile: "yuyanjichu.json" },
