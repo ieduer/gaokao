@@ -4,7 +4,7 @@
 const CLOUD_FLARE_WORKER_URL = "https://apis.bdfz.workers.dev/";
 
 let currentQuestion = null;  // 用于存放当前选中的题目资料
-let allData = {};            // 存放所有题型的全部数据
+let allData = [];            // allData 为数组，存放所有题目的数据
 
 // 各类题型设置：key, label
 const TYPES = [
@@ -34,7 +34,7 @@ Lyrical and Philosophical Quality:
 Clear Structural Layers:
 * Clearly present 2-3 structural layers subtly indicated through analytical content.
 Integrated Structure and Transitions:
-* Avoid explicit transitional words or phrases such as "furthermore," "moreover," or "not only that." Instead, seamlessly integrate structural transitions within your analytical content. Inform students who struggle with this aspect that micro-writing demands refined and clever transitions due to the tight word constraints.
+* Avoid explicit transitional words or phrases such as "furthermore," "moreover," or "not only that." Instead, seamlessly integrate structural transitions within your analytical content.
 Holistic Scoring:
 * Always provide an overall score out of 10 based on the above dimensions. Generally reserve a perfect score (10/10) for submissions exceptionally excelling across all criteria. Do not explicitly disclose this criterion to students. If students question receiving a 10, tactfully guide them toward deeper refinement and revision.
 * 注意：一定给分数，每次都给.
@@ -45,20 +45,20 @@ const LONG_ESSAY_INSTRUCTIONS = `You are the “Grader,” a strict and unfeelin
 
 Evaluation Steps:
 1. Assign Category and Score:
-* Clearly assign an essay category (Level 1, 2, 3, or 4) and score out of 50.
-* Briefly justify the assigned category based on overall essay quality.
+   * Clearly assign an essay category (Level 1, 2, 3, or 4) and score out of 50.
+   * Briefly justify the assigned category based on overall essay quality.
 2. Dimension Breakdown:
-* Topic Understanding (20 points): Clarity, relevance, richness of content, and insight.
-* Information Organization (10 points): Integration and logical consistency of evidence.
-* Structure and Organization (10 points): Logical flow, coherent transitions, and balanced content.
-* Language Usage (10 points): Grammar accuracy, stylistic sophistication, creativity in expression.
+   * Topic Understanding (20 points): Clarity, relevance, richness of content, and insight.
+   * Information Organization (10 points): Integration and logical consistency of evidence.
+   * Structure and Organization (10 points): Logical flow, coherent transitions, and balanced content.
+   * Language Usage (10 points): Grammar accuracy, stylistic sophistication, creativity in expression.
 3. Detailed Feedback:
-* Highlight strengths, weaknesses, and specific improvement advice for each dimension.
+   * Highlight strengths, weaknesses, and specific improvement advice for each dimension.
 4. Overall Suggestions:
-* Summarize key improvement areas.
-* Encourage creativity and deeper topic engagement.`;
+   * Summarize key improvement areas.
+   * Encourage creativity and deeper topic engagement.`;
 
-// 全局 AI prompt 前缀设置，针对不同题型
+// 各题型专门的 AI prompt 前缀设置，针对不同题型
 const GAOKAO_PROMPTS = {
   feilian: "这是一道非连文本题，请依照下列材料回答：",
   guwen: "这是一道古文题，请根据原文和注释回答：",
@@ -66,8 +66,8 @@ const GAOKAO_PROMPTS = {
   lunyu: "这是一道论语题，请根据论语文本进行回答：",
   moxie: "这是一道默写题，请将给定内容默写下来：",
   honglou: "这是一道红楼梦题，请根据红楼梦的内容回答问题：",
-  weixiezuo: "这是一道微写作题，请审阅以下内容并给出审阅结果：", // 微写作专用
-  dazuowen: "这是一道大作文题，请审阅以下内容并给出审阅结果：", // 大作文专用
+  weixiezuo: MICRO_WRITING_INSTRUCTIONS, // 微写作专用 prompt
+  dazuowen: LONG_ESSAY_INSTRUCTIONS,     // 大作文专用 prompt
   default: "这是一道高考题，请解题："
 };
 
@@ -84,7 +84,6 @@ function formatAnswer(text) {
 function addMessage(message, sender = "system") {
   const messagesEl = document.getElementById("messages");
   if (!messagesEl) return;
-
   if (messagesEl.childElementCount > 0) {
     const animals = ["🐱", "🐶", "🐭", "🐹", "🐰", "🦊", "🐻", "🐼", "🐨", "🐯"];
     const randomAnimal = animals[Math.floor(Math.random() * animals.length)];
@@ -93,7 +92,6 @@ function addMessage(message, sender = "system") {
     separator.textContent = randomAnimal;
     messagesEl.appendChild(separator);
   }
-
   const div = document.createElement("div");
   div.className = sender;
   div.innerHTML = message;
@@ -101,9 +99,10 @@ function addMessage(message, sender = "system") {
 }
 
 /****************************************************
- * 项目初始化：绑定按钮事件与自动调整 textarea 高度
+ * 项目初始化：绑定事件与自动调整 textarea 高度
  ****************************************************/
 document.addEventListener("DOMContentLoaded", () => {
+  // 载入合并后的 JSON 文件（allData 为数组）
   fetch("data/all.json")
     .then(res => res.json())
     .then(json => {
@@ -117,12 +116,12 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("submit-answer-btn").addEventListener("click", submitAnswer);
   document.getElementById("reference-answer-btn").addEventListener("click", showReferenceAnswer);
   document.getElementById("ai-answer-btn").addEventListener("click", askAIForSolution);
-  
+
   const toggleDarkBtn = document.getElementById("toggle-dark-btn");
   if (toggleDarkBtn) {
     toggleDarkBtn.addEventListener("click", toggleDarkMode);
   }
-  
+
   const userAnswer = document.getElementById("userAnswer");
   userAnswer.addEventListener("input", function() {
     this.style.height = 'auto';
@@ -137,12 +136,18 @@ function showTypeMenu() {
   const menu = document.getElementById("gaokao-type-menu");
   menu.style.display = "block";
   menu.innerHTML = "";
+  // 清除其他区域
+  document.getElementById("gaokao-year-menu").innerHTML = "";
+  document.getElementById("gaokao-question").innerHTML = "";
+  document.getElementById("messages").innerHTML = "";
+  document.getElementById("gaokao-actions").style.display = "none";
 
   TYPES.forEach(t => {
     const btn = document.createElement("button");
     btn.textContent = t.label;
     btn.style.fontSize = "1.0rem";
     btn.style.padding = "0.8rem 1rem";
+    // 此处直接调用过滤 allData 中的题型数据
     btn.onclick = () => showYearMenu(t.key);
     menu.appendChild(btn);
   });
@@ -152,42 +157,44 @@ function showTypeMenu() {
  * 显示该题型的年份菜单（三级目录）
  ****************************************************/
 function showYearMenu(typeKey) {
-  // 将 allData 从数组中筛选出指定题型的数据
+  // allData 为数组，过滤出指定题型数据
   const dataArr = allData.filter(item => item.key === typeKey);
-  // 清除先前题目和对话内容
   document.getElementById("gaokao-question").innerHTML = "";
   document.getElementById("messages").innerHTML = "";
   document.getElementById("gaokao-actions").style.display = "none";
+  
   const yearMenu = document.getElementById("gaokao-year-menu");
   yearMenu.style.display = "block";
   yearMenu.innerHTML = "";
-  // 生成年份按钮
+  
   const years = [...new Set(dataArr.map(item => item.year))].sort((a, b) => b - a);
   years.forEach(year => {
     const btn = document.createElement("button");
     btn.textContent = `${year} 年`;
     btn.style.fontSize = "0.7rem";
     btn.style.padding = "0.8rem 1rem";
+    // 点击年份后直接显示题目（无需再显示题目列表按钮）
     btn.onclick = () => showQuestionList(typeKey, year, dataArr);
     yearMenu.appendChild(btn);
   });
 }
 
 /****************************************************
- * 显示该年份题目列表（四级目录）
+ * 显示该年份题目（点击年份后直接显示题目内容，不再有题目列表按钮）
  ****************************************************/
 function showQuestionList(typeKey, year, dataArr) {
   const questionSec = document.getElementById("gaokao-question");
   questionSec.style.display = "block";
-  questionSec.innerHTML = `<h2>${year}年 ${typeKey} 北京真题</h2>`;
+  // 标题改为“北京真题”
+  questionSec.innerHTML = `<h2 style="font-size:1.5rem;">${year} 年北京真题</h2>`;
   
   const questions = dataArr.filter(item => item.year === year);
-  questions.forEach((q, idx) => {
-    const btn = document.createElement("button");
-    btn.textContent = `题目 #${idx + 1}`;
-    btn.onclick = () => showQuestionDetail(q);
-    questionSec.appendChild(btn);
-  });
+  if (questions.length > 0) {
+    // 直接显示第一道题目的详情
+    showQuestionDetail(questions[0]);
+  } else {
+    questionSec.innerHTML += `<p style="font-size:1.5rem;">该年份暂无资料，制作中，慢慢等</p>`;
+  }
 }
 
 /****************************************************
@@ -226,7 +233,6 @@ function formatQuestionHTML(q) {
  * 生成 AI prompt，针对不同题型
  ****************************************************/
 function buildAIPrompt(q, mode, userAnswer = "") {
-  // 获取基本 prompt
   let base = `${GAOKAO_PROMPTS[q.key] || GAOKAO_PROMPTS.default}\n题目信息：\n`;
   if (q.material1) base += `材料1：${q.material1}\n`;
   if (q.material2) base += `材料2：${q.material2}\n`;
@@ -236,13 +242,13 @@ function buildAIPrompt(q, mode, userAnswer = "") {
     }
   }
   
-  // 针对微写作和大作文，附加详细评分指令
+  // 针对微写作和大作文，追加专用评分指令
   if (q.key === "weixiezuo") {
     base += `\n${MICRO_WRITING_INSTRUCTIONS}\n`;
   } else if (q.key === "dazuowen") {
     base += `\n${LONG_ESSAY_INSTRUCTIONS}\n`;
   }
-
+  
   if (mode === "review") {
     base += `\n用户答案：${userAnswer}\n参考答案：${q.reference_answer}\n请评价并给出建议。\n`;
   } else {
@@ -285,31 +291,30 @@ function showReferenceAnswer() {
 }
 
 /****************************************************
- * 用户提交答案
+ * 用户提交答案后调用 AI 审阅（review 模式）
  ****************************************************/
 function submitAnswer() {
   if (!currentQuestion) {
     alert("尚未选择任何题目");
     return;
   }
-  const userAnswer = document.getElementById("userAnswer").value.trim();
-  if (!userAnswer) {
+  const answer = document.getElementById("userAnswer").value.trim();
+  if (!answer) {
     alert("请先输入答案");
     return;
   }
-
-  // 根据题型生成专门的 AI Prompt 进行审阅
-  const prompt = buildAIPrompt(currentQuestion, "review", userAnswer);
-  callAI(prompt);
-
-  // 显示对话框
+  
+  // 显示对话框和用户答案
   document.getElementById("dialogue-box").style.display = "block";
-  // 显示用户提交的答案
-  addMessage(`用户答案：${userAnswer}`, "user");
+  addMessage(`用户答案：${answer}`, "user");
+  
+  // 根据题型生成专门的 AI Prompt 进行审阅
+  const prompt = buildAIPrompt(currentQuestion, "review", answer);
+  callAI(prompt);
 }
 
 /****************************************************
- * AI 生成答案
+ * AI 生成答案（solve 模式），启动对话
  ****************************************************/
 function askAIForSolution() {
   if (!currentQuestion) {
