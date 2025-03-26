@@ -1,7 +1,7 @@
 /****************************************************
  * 配置 & 全局變數
  ****************************************************/
-const CLOUD_FLARE_WORKER_URL = "https://gaokao.bdfz.workers.dev/";
+const CLOUD_FLARE_WORKER_URL = "https://apis.bdfz.workers.dev/";
 
 let currentQuestion = null;  // 用於存放目前選中的題目資料
 let allData = [];            // 存放當前類型題目的全部數據
