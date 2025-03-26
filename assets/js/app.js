@@ -22,6 +22,7 @@ const TYPES = [
 
 // 专门为微写作和大作文设定的评分指令
 const MICRO_WRITING_INSTRUCTIONS = `Standards:
+* 可以任選一道題目。每次都要使用中文回覆。
 * Topic-specific Writing:
     * Scenario-based topics: Clearly articulate a sophisticated viewpoint without simplistic phrases like "I think…"
     * For literary tasks, accurately reference book titles, characters, and textual details as required.
@@ -42,7 +43,7 @@ Feedback and Recommendations:
 * Clearly identify issues and provide concise, actionable suggestions for improvement.`;
 
 const LONG_ESSAY_INSTRUCTIONS = `You are the “Grader,” a strict and unfeeling AI teacher with a playful twist. Your task is to evaluate and score the content students submit, providing detailed, sharp feedback. You grade with precision and offer witty, sometimes sarcastic suggestions on every aspect. No matter how well students perform, you remain strict, unrelenting, yet humorously cynical. You mock their laziness and tease their efforts but never lose your rigorous edge. Your comments are sharp but laced with playful banter, ensuring students understand that, even through your teasing, you demand perfection.
-
+使用中文回覆。
 Evaluation Steps:
 1. Assign Category and Score:
    * Clearly assign an essay category (Level 1, 2, 3, or 4) and score out of 50.
@@ -66,8 +67,8 @@ const GAOKAO_PROMPTS = {
   lunyu: "这是一道论语题，请根据论语文本进行回答：",
   moxie: "这是一道默写题，请将给定内容默写下来：",
   honglou: "这是一道红楼梦题，请根据红楼梦的内容回答问题：",
-  weixiezuo: MICRO_WRITING_INSTRUCTIONS, // 微写作专用 prompt
-  dazuowen: LONG_ESSAY_INSTRUCTIONS,     // 大作文专用 prompt
+  weixiezuo: "这是一道微写作题，请审阅以下内容并给出审阅结果：",
+  dazuowen: "这是一道大作文题，请审阅以下内容并给出审阅结果：",
   default: "这是一道高考题，请解题："
 };
 
@@ -276,6 +277,15 @@ function callAI(prompt) {
 }
 
 /****************************************************
+ * 切换按钮文本为“深度聊天”并修改状态
+ ****************************************************/
+function updateSubmitButton() {
+  const submitButton = document.getElementById("submit-answer-btn");
+  submitButton.textContent = "深度聊天"; // 修改按钮文本为“深度聊天”
+  isFirstSubmission = false; // 标记为第一次提交已完成
+}
+
+/****************************************************
  * 参考答案显示
  ****************************************************/
 function showReferenceAnswer() {
@@ -291,26 +301,46 @@ function showReferenceAnswer() {
 }
 
 /****************************************************
- * 用户提交答案后调用 AI 审阅（review 模式）
+ * 提交答案
+ * 用戶第一次提交後将提交按钮文本改为"深度聊天"
  ****************************************************/
+let isFirstSubmission = true; // 用來判斷是否是第一次提交答案
+
 function submitAnswer() {
   if (!currentQuestion) {
     alert("尚未选择任何题目");
     return;
   }
+  
   const answer = document.getElementById("userAnswer").value.trim();
   if (!answer) {
-    alert("请先输入答案");
+    alert("请输入答案");
     return;
   }
   
-  // 显示对话框和用户答案
+  // 展开对话窗口
   document.getElementById("dialogue-box").style.display = "block";
-  addMessage(`用户答案：${answer}`, "user");
   
-  // 根据题型生成专门的 AI Prompt 进行审阅
-  const prompt = buildAIPrompt(currentQuestion, "review", answer);
-  callAI(prompt);
+  // 显示用户输入的答案
+  addMessage("用户答案：" + answer, "user");
+  
+  // 更新输入框 placeholder 为固定文字
+  document.getElementById("userAnswer").placeholder = `请输入答案`;
+  document.getElementById("userAnswer").value = "";
+  
+  // 判断是否是第一次提交答案
+  if (isFirstSubmission) {
+    updateSubmitButton(); // 调用更新按钮文本的函数
+  }
+
+  // 根据是否有参考答案，选择 review 或 solve 模式
+  if (currentQuestion.reference_answer) {
+    const prompt = buildAIPrompt(currentQuestion, "review", answer);
+    callAI(prompt);
+  } else {
+    const prompt = buildAIPrompt(currentQuestion, "solve", answer);
+    callAI(prompt);
+  }
 }
 
 /****************************************************
@@ -321,8 +351,17 @@ function askAIForSolution() {
     alert("尚未选择任何题目");
     return;
   }
+
+  // 检查是否是第一次提交，如果是，则切换按钮文本为“深度聊天”
+  if (isFirstSubmission) {
+    updateSubmitButton(); // 调用更新按钮文本的函数
+  }
+
+  // 构建 prompt 并调用 AI
   const prompt = buildAIPrompt(currentQuestion, "solve");
   callAI(prompt);
+
+  // 展开对话框
   document.getElementById("dialogue-box").style.display = "block";
 }
 
