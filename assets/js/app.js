@@ -1,48 +1,90 @@
 /****************************************************
- * 配置 & 全局變數
+ * 配置 & 全局变量
  ****************************************************/
 const CLOUD_FLARE_WORKER_URL = "https://apis.bdfz.workers.dev/";
 
-let currentQuestion = null;  // 用於存放目前選中的題目資料
-let allData = [];            // 存放當前類型題目的全部數據
+let currentQuestion = null;  // 用于存放当前选中的题目资料
+let allData = {};            // 存放所有题型的全部数据
 
-// 各類型設定：key, label, dataFile 或 external 連結
+// 各类题型设置：key, label
 const TYPES = [
-  { key: "feilian", label: "非連文本", dataFile: "feilian.json" },
-  { key: "guwen", label: "古文", dataFile: "guwen.json" },
-  { key: "shici", label: "詩詞", dataFile: "shici.json" },
-  { key: "lunyu", label: "論語", external: "https://kz.bdfz.net/" },
-  { key: "moxie", label: "默寫", external: "https://mf.bdfz.net/" },
-  { key: "honglou", label: "紅樓夢", external: "https://hlm.bdfz.net/" },
-  { key: "sanwen", label: "散文", dataFile: "sanwen.json" },
-  { key: "yuyanjichu", label: "語言基礎運用", dataFile: "yuyanjichu.json" },
-  { key: "weixiezuo", label: "微寫作", dataFile: "weixiezuo.json" },
-  { key: "dazuowen", label: "大作文", dataFile: "dazuowen.json" }
+  { key: "feilian", label: "非连文本" },
+  { key: "guwen", label: "古文" },
+  { key: "shici", label: "诗词" },
+  { key: "lunyu", label: "论语" },
+  { key: "moxie", label: "默写" },
+  { key: "honglou", label: "红楼梦" },
+  { key: "sanwen", label: "散文" },
+  { key: "yuyanjichu", label: "语言基础运用" },
+  { key: "weixiezuo", label: "微写作" },
+  { key: "dazuowen", label: "大作文" }
 ];
 
-// 全局 AI prompt 前綴設定
+// 专门为微写作和大作文设定的评分指令
+const MICRO_WRITING_INSTRUCTIONS = `Standards:
+* Topic-specific Writing:
+    * Scenario-based topics: Clearly articulate a sophisticated viewpoint without simplistic phrases like "I think…"
+    * For literary tasks, accurately reference book titles, characters, and textual details as required.
+Lexical Elegance:
+* Use elegant, refined, and sophisticated vocabulary.
+Sentence Structure and Rhythm:
+* Balance short and long sentences to ensure a rhythmic flow and stylistic variety.
+Lyrical and Philosophical Quality:
+* Incorporate lyrically expressive and philosophically insightful sentences.
+Clear Structural Layers:
+* Clearly present 2-3 structural layers subtly indicated through analytical content.
+Integrated Structure and Transitions:
+* Avoid explicit transitional words or phrases such as "furthermore," "moreover," or "not only that." Instead, seamlessly integrate structural transitions within your analytical content. Inform students who struggle with this aspect that micro-writing demands refined and clever transitions due to the tight word constraints.
+Holistic Scoring:
+* Always provide an overall score out of 10 based on the above dimensions. Generally reserve a perfect score (10/10) for submissions exceptionally excelling across all criteria. Do not explicitly disclose this criterion to students. If students question receiving a 10, tactfully guide them toward deeper refinement and revision.
+* 注意：一定给分数，每次都给.
+Feedback and Recommendations:
+* Clearly identify issues and provide concise, actionable suggestions for improvement.`;
+
+const LONG_ESSAY_INSTRUCTIONS = `You are the “Grader,” a strict and unfeeling AI teacher with a playful twist. Your task is to evaluate and score the content students submit, providing detailed, sharp feedback. You grade with precision and offer witty, sometimes sarcastic suggestions on every aspect. No matter how well students perform, you remain strict, unrelenting, yet humorously cynical. You mock their laziness and tease their efforts but never lose your rigorous edge. Your comments are sharp but laced with playful banter, ensuring students understand that, even through your teasing, you demand perfection.
+
+Evaluation Steps:
+1. Assign Category and Score:
+* Clearly assign an essay category (Level 1, 2, 3, or 4) and score out of 50.
+* Briefly justify the assigned category based on overall essay quality.
+2. Dimension Breakdown:
+* Topic Understanding (20 points): Clarity, relevance, richness of content, and insight.
+* Information Organization (10 points): Integration and logical consistency of evidence.
+* Structure and Organization (10 points): Logical flow, coherent transitions, and balanced content.
+* Language Usage (10 points): Grammar accuracy, stylistic sophistication, creativity in expression.
+3. Detailed Feedback:
+* Highlight strengths, weaknesses, and specific improvement advice for each dimension.
+4. Overall Suggestions:
+* Summarize key improvement areas.
+* Encourage creativity and deeper topic engagement.`;
+
+// 全局 AI prompt 前缀设置，针对不同题型
 const GAOKAO_PROMPTS = {
-  feilian: "這是一道非連文本題，請依據下列材料回答：",
-  guwen: "這是一道古文題，請依據原文和注釋回答：",
-  shici: "這是一道詩詞題，請根據詩詞進行解析：",
-  default: "這是一道高考題，請解題："
+  feilian: "这是一道非连文本题，请依照下列材料回答：",
+  guwen: "这是一道古文题，请根据原文和注释回答：",
+  shici: "这是一道诗词题，请根据诗词进行解析：",
+  lunyu: "这是一道论语题，请根据论语文本进行回答：",
+  moxie: "这是一道默写题，请将给定内容默写下来：",
+  honglou: "这是一道红楼梦题，请根据红楼梦的内容回答问题：",
+  weixiezuo: "这是一道微写作题，请审阅以下内容并给出审阅结果：", // 微写作专用
+  dazuowen: "这是一道大作文题，请审阅以下内容并给出审阅结果：", // 大作文专用
+  default: "这是一道高考题，请解题："
 };
 
 /****************************************************
- * 輔助函式：格式化文字
+ * 辅助函数：格式化文字
  ****************************************************/
 function formatAnswer(text) {
   return text.split('\n').map(line => `<p>${line.trim()}</p>`).join('');
 }
 
 /****************************************************
- * 輔助函式：顯示訊息（包含隨機小動物 emoji 分隔符）
- * 對話內容將依序由上而下排列（即先前的在上，後續消息追加在下）
+ * 辅助函数：显示消息（包含随机小动物 emoji 分隔符）
  ****************************************************/
 function addMessage(message, sender = "system") {
   const messagesEl = document.getElementById("messages");
   if (!messagesEl) return;
-  // 如果已有訊息，加入隨機小動物作為分隔符
+
   if (messagesEl.childElementCount > 0) {
     const animals = ["🐱", "🐶", "🐭", "🐹", "🐰", "🦊", "🐻", "🐼", "🐨", "🐯"];
     const randomAnimal = animals[Math.floor(Math.random() * animals.length)];
@@ -51,6 +93,7 @@ function addMessage(message, sender = "system") {
     separator.textContent = randomAnimal;
     messagesEl.appendChild(separator);
   }
+
   const div = document.createElement("div");
   div.className = sender;
   div.innerHTML = message;
@@ -58,25 +101,28 @@ function addMessage(message, sender = "system") {
 }
 
 /****************************************************
- * 項目初始化：綁定按鈕事件與自動調整 textarea 高度
+ * 项目初始化：绑定按钮事件与自动调整 textarea 高度
  ****************************************************/
 document.addEventListener("DOMContentLoaded", () => {
-  // 一載入頁面就顯示二級目錄
-  showTypeMenu();
-  console.log("showTypeMenu triggered", TYPES);
+  fetch("data/all.json")
+    .then(res => res.json())
+    .then(json => {
+      allData = json;
+      showTypeMenu();
+    })
+    .catch(err => {
+      console.error("JSON 载入错误:", err);
+    });
 
-  // 綁定底部互動按鈕
   document.getElementById("submit-answer-btn").addEventListener("click", submitAnswer);
   document.getElementById("reference-answer-btn").addEventListener("click", showReferenceAnswer);
   document.getElementById("ai-answer-btn").addEventListener("click", askAIForSolution);
   
-  // 綁定夜晚模式切換按鈕
   const toggleDarkBtn = document.getElementById("toggle-dark-btn");
   if (toggleDarkBtn) {
     toggleDarkBtn.addEventListener("click", toggleDarkMode);
   }
   
-  // 自動調整答案輸入區高度
   const userAnswer = document.getElementById("userAnswer");
   userAnswer.addEventListener("input", function() {
     this.style.height = 'auto';
@@ -85,120 +131,84 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /****************************************************
- * 1) 顯示二級目錄（題型按鈕）
+ * 显示二级目录（题型按钮）
  ****************************************************/
 function showTypeMenu() {
   const menu = document.getElementById("gaokao-type-menu");
   menu.style.display = "block";
   menu.innerHTML = "";
-  // 清除其他內容
-  document.getElementById("gaokao-year-menu").innerHTML = "";
-  document.getElementById("gaokao-question").innerHTML = "";
-  document.getElementById("messages").innerHTML = "";
-  document.getElementById("gaokao-actions").style.display = "none";
 
   TYPES.forEach(t => {
     const btn = document.createElement("button");
-    btn.textContent = t.label;  // 這裡會顯示「非連文本、古文、詩詞…默寫…大作文」等文字
+    btn.textContent = t.label;
     btn.style.fontSize = "1.0rem";
     btn.style.padding = "0.8rem 1rem";
-    btn.onclick = () => {
-      if (t.external) {
-        window.open(t.external, "_blank");
-      } else if (!t.dataFile) {
-        alert("製作中，慢慢等");
-      } else {
-        fetch(`data/${t.dataFile}`)
-          .then(res => res.json())
-          .then(json => showYearMenu(t.key, json))
-          .catch(err => {
-            console.error("讀取 " + t.dataFile + " 錯誤:", err);
-            alert("製作中，慢慢等");
-          });
-      }
-    };
+    btn.onclick = () => showYearMenu(t.key);
     menu.appendChild(btn);
   });
 }
 
 /****************************************************
- * 2) 顯示三級目錄：年份列表（居中顯示）
+ * 显示该题型的年份菜单（三级目录）
  ****************************************************/
-function showYearMenu(typeKey, dataArr) {
-  // 清除先前題目和對話內容
+function showYearMenu(typeKey) {
+  const dataArr = allData[typeKey];
   document.getElementById("gaokao-question").innerHTML = "";
   document.getElementById("messages").innerHTML = "";
   document.getElementById("gaokao-actions").style.display = "none";
+  
   const yearMenu = document.getElementById("gaokao-year-menu");
   yearMenu.style.display = "block";
   yearMenu.innerHTML = "";
-  // 年份按鈕縮小
+  
   const years = [...new Set(dataArr.map(item => item.year))].sort((a, b) => b - a);
-  years.forEach(y => {
+  years.forEach(year => {
     const btn = document.createElement("button");
-    btn.textContent = y + " 年";
-    btn.style.fontSize = "0.7rem";
-    btn.style.padding = "0.8rem 1rem";
-    btn.onclick = () => {
-      showQuestionList(typeKey, y, dataArr);
-    };
+    btn.textContent = `${year} 年`;
+    btn.onclick = () => showQuestionList(typeKey, year, dataArr);
     yearMenu.appendChild(btn);
   });
 }
 
 /****************************************************
- * 3) 顯示該年份題目列表（第四級目錄）
+ * 显示该年份题目列表（四级目录）
  ****************************************************/
 function showQuestionList(typeKey, year, dataArr) {
   const questionSec = document.getElementById("gaokao-question");
   questionSec.style.display = "block";
-  // 標題改為「背景真題」，正文字號縮小兩號
-  questionSec.innerHTML = `<h2 style="font-size:1.5rem;">${year} 年背景真題</h2>`;
-  const questions = dataArr.filter(q => q.year == year);
-  if (questions.length > 1) {
-    questions.forEach((q, idx) => {
-      const btn = document.createElement("button");
-      btn.textContent = (q.topic || "題目") + " #" + (idx + 1);
-      btn.style.fontSize = "1.0rem";
-      btn.style.padding = "0.8rem 1rem";
-      btn.onclick = () => showQuestionDetail(typeKey, q);
-      questionSec.appendChild(btn);
-    });
-  } else if (questions.length === 1) {
-    showQuestionDetail(typeKey, questions[0]);
-  } else {
-    questionSec.innerHTML += `<p style="font-size:1.5rem;">該年份暫無資料，製作中，慢慢等</p>`;
-  }
+  questionSec.innerHTML = `<h2>${year}年 ${typeKey} 北京真题</h2>`;
+  
+  const questions = dataArr.filter(item => item.year === year);
+  questions.forEach((q, idx) => {
+    const btn = document.createElement("button");
+    btn.textContent = `题目 #${idx + 1}`;
+    btn.onclick = () => showQuestionDetail(q);
+    questionSec.appendChild(btn);
+  });
 }
 
 /****************************************************
- * 4) 顯示選中的題目內容
+ * 显示选中的题目内容
  ****************************************************/
-function showQuestionDetail(typeKey, q) {
-  currentQuestion = q;
-  // 清除之前對話消息
+function showQuestionDetail(question) {
+  currentQuestion = question;
   document.getElementById("messages").innerHTML = "";
   const questionSec = document.getElementById("gaokao-question");
-  questionSec.innerHTML = formatQuestionHTML(typeKey, q);
-  // 顯示底部互動按鈕區
+  questionSec.innerHTML = formatQuestionHTML(question);
   document.getElementById("gaokao-actions").style.display = "block";
-  // 展開對話窗口
   document.getElementById("dialogue-box").style.display = "block";
 }
 
 /****************************************************
- * 4.1) 將題目資料格式化為 HTML
+ * 格式化题目内容
  ****************************************************/
-function formatQuestionHTML(typeKey, q) {
+function formatQuestionHTML(q) {
   let html = `<h2 style="font-size:1.5rem;">${q.year}年 ${q.topic || ""}</h2>`;
   if (q.material1) html += `<p><strong>材料1：</strong>${q.material1}</p>`;
   if (q.material2) html += `<p><strong>材料2：</strong>${q.material2}</p>`;
-  if (q.original_text) html += `<p><strong>原文：</strong>${q.original_text}</p>`;
-  if (q.annotation) html += `<p><strong>注釋：</strong>${q.annotation}</p>`;
-  if (q.poem_text) html += `<p><strong>詩文：</strong>${q.poem_text}</p>`;
   for (let i = 1; i <= 5; i++) {
-    if (q["question" + i]) {
-      html += `<p><strong>問題${i}：</strong>${q["question" + i]}</p>`;
+    if (q[`question${i}`]) {
+      html += `<p><strong>问题${i}：</strong>${q[`question${i}`]}</p>`;
     }
   }
   if (q.prompts) {
@@ -210,54 +220,97 @@ function formatQuestionHTML(typeKey, q) {
 }
 
 /****************************************************
- * 5) 底部互動按鈕功能
- * 提交答案、參考答案、AI答案點擊後展開對話窗口
+ * 生成 AI prompt，针对不同题型
+ ****************************************************/
+function buildAIPrompt(q, mode, userAnswer = "") {
+  // 获取基本 prompt
+  let base = `${GAOKAO_PROMPTS[q.key] || GAOKAO_PROMPTS.default}\n题目信息：\n`;
+  if (q.material1) base += `材料1：${q.material1}\n`;
+  if (q.material2) base += `材料2：${q.material2}\n`;
+  for (let i = 1; i <= 5; i++) {
+    if (q[`question${i}`]) {
+      base += `问题${i}：${q[`question${i}`]}\n`;
+    }
+  }
+  
+  // 针对微写作和大作文，附加详细评分指令
+  if (q.key === "weixiezuo") {
+    base += `\n${MICRO_WRITING_INSTRUCTIONS}\n`;
+  } else if (q.key === "dazuowen") {
+    base += `\n${LONG_ESSAY_INSTRUCTIONS}\n`;
+  }
+
+  if (mode === "review") {
+    base += `\n用户答案：${userAnswer}\n参考答案：${q.reference_answer}\n请评价并给出建议。\n`;
+  } else {
+    base += `\n用户答案：${userAnswer}\n请直接完成作答。\n`;
+  }
+  return base;
+}
+
+/****************************************************
+ * 呼叫 AI 并处理回复
+ ****************************************************/
+function callAI(prompt) {
+  addMessage("<em>AI 正在思考...</em>", "system");
+  fetch(CLOUD_FLARE_WORKER_URL, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ prompt })
+  })
+    .then(res => res.json())
+    .then(json => addMessage(`AI：${formatAnswer(json.answer)}`, "system"))
+    .catch(err => {
+      console.error("AI 请求失败", err);
+      addMessage("制作中，慢慢等", "system");
+    });
+}
+
+/****************************************************
+ * 参考答案显示
+ ****************************************************/
+function showReferenceAnswer() {
+  if (!currentQuestion) {
+    alert("尚未选择任何题目");
+    return;
+  }
+  if (currentQuestion.reference_answer) {
+    addMessage("<strong>参考答案：</strong><br/>" + currentQuestion.reference_answer, "system");
+  } else {
+    addMessage("参考答案尚未录入，请稍后！", "system");
+  }
+}
+
+/****************************************************
+ * 用户提交答案
  ****************************************************/
 function submitAnswer() {
   if (!currentQuestion) {
-    alert("尚未選擇任何題目");
+    alert("尚未选择任何题目");
     return;
   }
-  const answer = document.getElementById("userAnswer").value.trim();
-  if (!answer) {
-    alert("請輸入答案");
+  const userAnswer = document.getElementById("userAnswer").value.trim();
+  if (!userAnswer) {
+    alert("请先输入答案");
     return;
   }
-  // 展開對話窗口
+
+  // 根据题型生成专门的 AI Prompt 进行审阅
+  const prompt = buildAIPrompt(currentQuestion, "review", userAnswer);
+  callAI(prompt);
+
+  // 显示对话框
   document.getElementById("dialogue-box").style.display = "block";
-  // 顯示用戶輸入的答案
-  addMessage("用戶答案：" + answer, "user");
-  
-  // 根據是否有參考答案，選擇 review 或 solve 模式
-  if (currentQuestion.reference_answer) {
-    const prompt = buildAIPrompt(currentQuestion, "review", answer);
-    callAI(prompt);
-  } else {
-    const prompt = buildAIPrompt(currentQuestion, "solve", answer);
-    callAI(prompt);
-  }
-  // 更新輸入框 placeholder 為固定文字
-  document.getElementById("userAnswer").placeholder = `請輸入答案`;
-  document.getElementById("userAnswer").value = "";
+  // 显示用户提交的答案
+  addMessage(`用户答案：${userAnswer}`, "user");
 }
 
-function showReferenceAnswer() {
-  if (!currentQuestion) {
-    alert("尚未選擇任何題目");
-    return;
-  }
-  if (currentQuestion.reference_answer) {
-    addMessage("<strong>參考答案：</strong><br/>" + currentQuestion.reference_answer, "system");
-  } else {
-    const prompt = buildAIPrompt(currentQuestion, "solve");
-    callAI(prompt);
-  }
-  document.getElementById("dialogue-box").style.display = "block";
-}
-
+/****************************************************
+ * AI 生成答案
+ ****************************************************/
 function askAIForSolution() {
   if (!currentQuestion) {
-    alert("尚未選擇任何題目");
+    alert("尚未选择任何题目");
     return;
   }
   const prompt = buildAIPrompt(currentQuestion, "solve");
@@ -266,76 +319,7 @@ function askAIForSolution() {
 }
 
 /****************************************************
- * 6) 建立 AI prompt（mode: "review" 或 "solve"）
- * 讀取對話歷史以保持連續的對話流
- ****************************************************/
-function buildAIPrompt(q, mode, userAnswer = "") {
-  // 讀取對話歷史
-  let conversationHistory = "";
-  const messagesEl = document.getElementById("messages");
-  if (messagesEl) {
-    conversationHistory = Array.from(messagesEl.children).map(el => el.textContent).join("\n");
-  }
-  let typeKey = guessTypeFromQuestion(q);
-  let prefix = GAOKAO_PROMPTS[typeKey] || GAOKAO_PROMPTS.default;
-  let base = `${prefix}\n題目信息：\n`;
-  if (q.material1) base += `材料1：${q.material1}\n`;
-  if (q.material2) base += `材料2：${q.material2}\n`;
-  if (q.original_text) base += `原文：${q.original_text}\n`;
-  if (q.annotation) base += `注釋：${q.annotation}\n`;
-  if (q.poem_text) base += `詩文：${q.poem_text}\n`;
-  for (let i = 1; i <= 5; i++) {
-    if (q["question" + i]) {
-      base += `問題${i}：${q["question" + i]}\n`;
-    }
-  }
-  if (q.prompts) {
-    q.prompts.forEach((p, idx) => {
-      base += `作文提示${idx + 1}：${p.prompt_text}\n`;
-    });
-  }
-  // 加入對話歷史
-  base += `\n對話記錄：\n${conversationHistory}\n`;
-  if (mode === "review") {
-    base += `\n用戶答案：${userAnswer}\n參考答案：${q.reference_answer}\n請評價並給出建議。\n`;
-  } else {
-    base += `\n用戶答案：${userAnswer}\n請直接完成作答。\n`;
-  }
-  return base;
-}
-
-/****************************************************
- * 7) 輔助函式：猜測題型
- ****************************************************/
-function guessTypeFromQuestion(q) {
-  if (q.material1 && q.material2) return "feilian";
-  if (q.original_text) return "guwen";
-  if (q.poem_text) return "shici";
-  return "feilian";
-}
-
-/****************************************************
- * 8) 呼叫 AI 並處理回覆
- ****************************************************/
-function callAI(prompt) {
-  addMessage("<em>AI 正在思考...</em>", "system");
-  fetch(CLOUD_FLARE_WORKER_URL, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ prompt: prompt })
-  })
-    .then(res => res.json())
-    .then(json => {
-      addMessage("AI：" + formatAnswer(json.answer), "system");
-    })
-    .catch(err => {
-      console.error("AI 請求失敗", err);
-      addMessage("製作中，慢慢等", "system");
-    });
-}
-
-/****************************************************
- * 9) 夜晚模式切換
+ * 夜晚模式切换
  ****************************************************/
 function toggleDarkMode() {
   document.body.classList.toggle("dark-mode");
