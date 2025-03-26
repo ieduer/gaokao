@@ -152,19 +152,22 @@ function showTypeMenu() {
  * 显示该题型的年份菜单（三级目录）
  ****************************************************/
 function showYearMenu(typeKey) {
-  const dataArr = allData[typeKey];
+  // 将 allData 从数组中筛选出指定题型的数据
+  const dataArr = allData.filter(item => item.key === typeKey);
+  // 清除先前题目和对话内容
   document.getElementById("gaokao-question").innerHTML = "";
   document.getElementById("messages").innerHTML = "";
   document.getElementById("gaokao-actions").style.display = "none";
-  
   const yearMenu = document.getElementById("gaokao-year-menu");
   yearMenu.style.display = "block";
   yearMenu.innerHTML = "";
-  
+  // 生成年份按钮
   const years = [...new Set(dataArr.map(item => item.year))].sort((a, b) => b - a);
   years.forEach(year => {
     const btn = document.createElement("button");
     btn.textContent = `${year} 年`;
+    btn.style.fontSize = "0.7rem";
+    btn.style.padding = "0.8rem 1rem";
     btn.onclick = () => showQuestionList(typeKey, year, dataArr);
     yearMenu.appendChild(btn);
   });
