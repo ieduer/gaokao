@@ -188,32 +188,33 @@
     }
   }
   
-  /* =======================================
-     深色模式覆蓋
+/* =======================================
+     深色模式覆盖
      ======================================= */
-  @media (prefers-color-scheme: dark) {
-    body {
-      background: #1a1a1a;
-      color: #f0f0f0;
+     @media (prefers-color-scheme: dark) {
+      body {
+        background: #1a1a1a;
+        color: #f0f0f0;
+      }
+      #dialogue-box,
+      #gaokao-type-menu,
+      #gaokao-year-menu,
+      #gaokao-question {
+        background: #2a2a2a;
+        border-color: #444;
+        color: #f0f0f0;  /* 添加此行，确保文字颜色为浅色 */
+      }
+      button {
+        background: #1a3d66;
+        border-color: #2a5a8a;
+        color: #f0f0f0;
+      }
+      button:hover {
+        background-color: #2a5a8a;
+      }
+      #gaokao-actions input[type="text"] {
+        background: #333;
+        color: #f0f0f0;
+        border-color: #555;
+      }
     }
-    #dialogue-box,
-    #gaokao-type-menu,
-    #gaokao-year-menu,
-    #gaokao-question {
-      background: #2a2a2a;
-      border-color: #444;
-    }
-    button {
-      background: #1a3d66;
-      border-color: #2a5a8a;
-      color: #f0f0f0;
-    }
-    button:hover {
-      background-color: #2a5a8a;
-    }
-    #gaokao-actions input[type="text"] {
-      background: #333;
-      color: #f0f0f0;
-      border-color: #555;
-    }
-  }
