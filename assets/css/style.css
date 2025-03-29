@@ -31,23 +31,56 @@
     margin-bottom: 0.5em;
   }
   
-  /* =======================================
-     夜晚模式（通過 body.dark-mode 啟用）
-     ======================================= */
-  body.dark-mode {
-    background: #1a1a1a;
-    color: #f0f0f0;
+/* =======================================
+   夜晚模式（通过 body.dark-mode 启用）
+   ======================================= */
+   body.dark-mode {
+    background: #1a1a1a; /* 设置深色背景 */
+    color: #f0f0f0; /* 设置浅色文字 */
   }
+  
   body.dark-mode header,
   body.dark-mode footer {
     background: #1a1a1a;
+    color: #f0f0f0; /* 确保头部和尾部的文字颜色与背景对比 */
   }
+  
   body.dark-mode #dialogue-box,
   body.dark-mode #gaokao-type-menu,
   body.dark-mode #gaokao-year-menu,
   body.dark-mode #gaokao-question {
+    background: #2a2a2a; /* 深色背景 */
+    border-color: #444; /* 深色边框 */
+    color: #f0f0f0; /* 浅色文字 */
+  }
+  
+  body.dark-mode button {
+    background: #1a3d66;
+    border-color: #2a5a8a;
+    color: #f0f0f0; /* 浅色文字 */
+  }
+  
+  body.dark-mode button:hover {
+    background-color: #2a5a8a;
+  }
+  
+  body.dark-mode #gaokao-actions input[type="text"] {
+    background: #333;
+    color: #f0f0f0; /* 浅色文字 */
+    border-color: #555;
+  }
+  
+  body.dark-mode #messages {
     background: #2a2a2a;
+    color: #f0f0f0; /* 浅色文字 */
     border-color: #444;
+  }
+  
+  /* 确保在输入框中有足够对比度 */
+  body.dark-mode #userAnswer {
+    background-color: #333; /* 深色背景 */
+    color: #f0f0f0; /* 浅色文字 */
+    border-color: #555; /* 边框颜色 */
   }
   
   /* =======================================
