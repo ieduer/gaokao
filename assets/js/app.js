@@ -262,7 +262,7 @@ function buildAIPrompt(q, mode, userAnswer = "") {
  * 呼叫 AI 并处理回复
  ****************************************************/
 function callAI(prompt) {
-  addMessage("<em>AI 正在思考...</em>", "system");
+  addMessage("<em>AI 正在想啊想啊，耐個心吧 🐶🦊🐹 ...</em>", "system");
   fetch(CLOUD_FLARE_WORKER_URL, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
