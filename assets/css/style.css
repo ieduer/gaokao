@@ -16,12 +16,10 @@
     font-family: 'HuWenMingChaoTi', "Noto Serif TC", serif;
     color: #333;
     margin: 0;
-    padding: 0 10px; /* Keep padding for spacing */
-    line-height: 1.7; /* Slightly increased line-height for readability */
-  
-    /* --- Background image --- */
+    padding: 0 10px;
+    line-height: 1.7;
     background-image: url('../img/bg.webp'); /* DO NOT CHANGE THIS PATH */
-    background-color: #f9f5e7; /* Fallback color */
+    background-color: #f9f5e7;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -29,44 +27,63 @@
     min-height: 100vh;
   }
   
-  header, footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white background for header/footer */
-    backdrop-filter: blur(5px); /* Blur effect for header/footer */
-    margin-bottom: 1rem;
+  /* Task 1: Updated Header Styles */
+  header {
+    display: flex; /* Enable flexbox */
+    justify-content: space-between; /* Space between title and button */
+    align-items: center; /* Vertically align items */
+    padding: 0.5rem 1rem; /* Adjust padding */
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    /* Removed margin-bottom, main content will have margin */
   }
   
   footer {
-    margin-top: 1rem;
+    text-align: center;
     padding: 0.5rem;
     font-size: 0.9rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    margin-top: 1rem; /* Keep margin top for footer */
   }
   
+  /* Task 1: Adjust H1 margin */
   h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5em;
-    color: #4a4a4a; /* Slightly darker color for heading */
+    font-size: 1.8rem; /* Slightly smaller H1 for single line */
+    margin: 0; /* Remove default margins */
+    color: #4a4a4a;
+  }
+  
+  /* Task 1: Updated Toggle Button Style */
+  #toggle-dark-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem; /* Adjust size as needed */
+    cursor: pointer;
+    padding: 5px;
+    color: inherit;
+    /* Removed position: absolute */
+    margin-left: 1rem; /* Add some space if needed */
   }
   
   main {
-      max-width: 900px; /* Limit content width for better readability */
-      margin: 0 auto; /* Center the main content */
+      max-width: 900px;
+      margin: 1rem auto 0 auto; /* Add margin-top, center horizontally */
       padding: 1rem;
   }
   
   /* =======================================
-     夜晚模式（通过 body.dark-mode 启用）
+     夜晚模式
      ======================================= */
   body.dark-mode {
-    background-image: none; /* Hide image in dark mode for better contrast */
+    background-image: none;
     background-color: #1a1a1a;
     color: #f0f0f0;
   }
   
   body.dark-mode header,
   body.dark-mode footer {
-    background-color: rgba(26, 26, 26, 0.7); /* Darker semi-transparent background */
+    background-color: rgba(26, 26, 26, 0.7);
     backdrop-filter: blur(5px);
     color: #f0f0f0;
   }
@@ -74,11 +91,16 @@
   body.dark-mode h1 {
       color: #e0e0e0;
   }
+  /* Ensure dark mode toggle button is visible */
+  body.dark-mode #toggle-dark-btn {
+      color: #f0f0f0;
+  }
+  
   
   body.dark-mode #gaokao-type-menu,
   body.dark-mode #gaokao-year-menu,
   body.dark-mode #gaokao-question,
-  body.dark-mode #dialogue-input-area /* Apply dark mode to the merged area */
+  body.dark-mode #dialogue-input-area
   {
     background: #2a2a2a;
     border-color: #444;
@@ -86,8 +108,7 @@
   }
   
   body.dark-mode button {
-    /* Keep general button style, override specific ones if needed */
-    background-color: #3a3a3a; /* Darker button background */
+    background-color: #3a3a3a;
     color: #e0e0e0;
     border: 1px solid #555;
   }
@@ -97,70 +118,46 @@
     border-color: #666;
   }
   
-  /* Ghibli button dark mode specifics */
+  /* Keep Ghibli button dark mode specifics */
   body.dark-mode #submit-answer-btn,
   body.dark-mode #reference-answer-btn,
   body.dark-mode #ai-answer-btn {
-      background-color: #506a4c; /* Darker Ghibli green */
-      border-color: #6a896b;
-      color: #f0f0f0;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+      background-color: #506a4c; border-color: #6a896b; color: #f0f0f0; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   }
-  body.dark-mode #reference-answer-btn {
-      background-color: #6a7e8a; /* Darker Ghibli blue */
-      border-color: #8aa2b0;
-  }
-  body.dark-mode #ai-answer-btn {
-      background-color: #a16a3f; /* Darker Ghibli orange */
-      border-color: #bd8e6b;
-  }
+  body.dark-mode #reference-answer-btn { background-color: #6a7e8a; border-color: #8aa2b0; }
+  body.dark-mode #ai-answer-btn { background-color: #a16a3f; border-color: #bd8e6b; }
   body.dark-mode #submit-answer-btn:hover,
   body.dark-mode #reference-answer-btn:hover,
-  body.dark-mode #ai-answer-btn:hover {
-      opacity: 0.9;
-  }
+  body.dark-mode #ai-answer-btn:hover { opacity: 0.9; }
+  /* Keep specific button dark mode style */
+  body.dark-mode #gaokao-btn { background-color: #46566b; border-color: #5a6c82; color: #e0e0e0;}
+  body.dark-mode #gaokao-type-menu button { background-color: #4b4b63; border-color: #60607a; color: #e0e0e0;}
+  body.dark-mode #gaokao-year-menu button { background-color: #5a4a5a; border-color: #705f70; color: #e0e0e0;}
   
+  body.dark-mode #userAnswer { background-color: #333; color: #f0f0f0; border-color: #555; }
+  body.dark-mode #messages { background: #2e2e2e; border-color: #444; }
+  body.dark-mode #messages .user-message { background-color: #3a5a70; color: #f0f0f0; }
+  body.dark-mode #messages .ai-message { background-color: #4a4a4a; color: #f0f0f0; }
+  /* body.dark-mode #messages .separator { color: #777; } /* Separator removed */
   
-  body.dark-mode #userAnswer {
-    background-color: #333;
-    color: #f0f0f0;
-    border-color: #555;
-  }
-  
-  body.dark-mode #messages {
-      background: #2e2e2e; /* Slightly different background for message area */
-      border-color: #444;
-  }
-  /* Dark mode message bubbles */
-  body.dark-mode #messages .user-message {
-      background-color: #3a5a70; /* Darker blue for user */
-      color: #f0f0f0;
-  }
-  body.dark-mode #messages .ai-message {
-      background-color: #4a4a4a; /* Darker grey for AI */
-      color: #f0f0f0;
-  }
-  body.dark-mode #messages .separator {
-      color: #777; /* Adjust separator color */
-  }
   
   /* =======================================
      一般按鈕樣式 (非 Ghibli)
      ======================================= */
   button {
-    border: 1px solid #ccc; /* Softer border */
-    border-radius: 8px; /* More rounded */
-    background: #f0f0f0; /* Light grey */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f0f0f0;
     color: #333;
     cursor: pointer;
     transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
-    padding: 0.8rem 1.2rem; /* Default padding */
-    font-size: 1rem; /* Default font size */
-    margin: 0.5rem; /* Add margin */
-    font-family: inherit; /* Inherit body font */
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    margin: 0.25rem; /* Reduced default margin for tighter packing */
+    font-family: inherit;
   }
   button:hover {
-    background: #e0e0e0; /* Slightly darker on hover */
+    background: #e0e0e0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
   button:active {
@@ -169,13 +166,14 @@
   }
   
   /* =======================================
-     頂部標題與按鈕
+     頂部 "北京真題" 按鈕
      ======================================= */
   #gaokao-btn {
-    font-size: 1.3rem; /* Adjusted from original */
-    padding: 1rem 1.5rem;
-    background-color: #b0c4de; /* Light steel blue */
+    font-size: 1.3rem;
+    padding: 0.8rem 1.5rem; /* Adjusted padding */
+    background-color: #b0c4de;
     border-color: #9aadc6;
+    /* margin-bottom: 1rem; */ /* Removed margin, wrapper div handles spacing */
   }
   #gaokao-btn:hover {
       background-color: #a0b4ce;
@@ -183,81 +181,73 @@
   
   
   /* =======================================
-     二級目錄：題型菜單
+     二級目錄：題型菜單 (Task 2 Updated)
      ======================================= */
   #gaokao-type-menu {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Responsive grid */
-    gap: 1rem;
-    background: rgba(255, 255, 255, 0.8); /* Semi-transparent */
+    display: flex; /* Changed from grid to flex */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center; /* Center buttons horizontally */
+    gap: 0.5rem; /* Reduced gap between buttons */
+    background: rgba(255, 255, 255, 0.8);
     border: 1px solid #ddd;
-    padding: 1rem;
+    padding: 0.8rem; /* Adjust padding */
     border-radius: 8px;
     margin-bottom: 1rem;
   }
   #gaokao-type-menu button {
-    font-size: 1.1rem; /* Adjusted */
-    padding: 0.8rem 1rem;
-    background-color: #e6e6fa; /* Lavender */
+    font-size: 1rem; /* Slightly smaller font */
+    padding: 0.6rem 1rem; /* Adjust padding */
+    background-color: #e6e6fa;
     border-color: #c9c9e3;
+    flex-grow: 0; /* Prevent buttons from growing unnecessarily */
+    flex-shrink: 0; /* Prevent buttons from shrinking too much initially */
   }
   #gaokao-type-menu button:hover {
       background-color: #d8d8f0;
   }
   
   /* =======================================
-     三級目錄：年份列表
+     三級目錄：年份列表 (Task 3 Updated)
      ======================================= */
   #gaokao-year-menu {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center; /* Center buttons */
-    background: rgba(255, 255, 255, 0.8); /* Semi-transparent */
+    justify-content: center;
+    gap: 0.5rem; /* Reduced gap */
+    background: rgba(255, 255, 255, 0.8);
     border: 1px solid #ddd;
-    padding: 1rem;
+    padding: 0.8rem; /* Adjust padding */
     border-radius: 8px;
     margin-bottom: 1rem;
   }
   #gaokao-year-menu button {
-    font-size: 1rem; /* Adjusted */
-    padding: 0.7rem 1rem;
-    background-color: #d8bfd8; /* Thistle */
+    font-size: 0.9rem; /* Slightly smaller font */
+    padding: 0.5rem 0.8rem; /* Adjust padding */
+    background-color: #d8bfd8;
     border-color: #c1acc1;
+    flex-grow: 0;
+    flex-shrink: 0;
   }
   #gaokao-year-menu button:hover {
       background-color: #c8aec8;
   }
   
   /* =======================================
-     題目顯示區（背景真題）
+     題目顯示區
      ======================================= */
   #gaokao-question {
-    padding: 1.5rem; /* More padding */
-    background: rgba(255, 255, 255, 0.85); /* Semi-transparent */
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.85);
     border: 1px solid #ddd;
     border-radius: 8px;
     margin-bottom: 1rem;
-    font-size: 1.2rem; /* Base font size for questions */
-    line-height: 1.8; /* Better line height for reading */
+    font-size: 1.2rem;
+    line-height: 1.8;
   }
-  #gaokao-question h2 {
-      font-size: 1.6rem;
-      margin-bottom: 1rem;
-      color: #555;
-  }
-  #gaokao-question p {
-      margin-bottom: 0.8em; /* Spacing between paragraphs/questions */
-  }
-  #gaokao-question strong {
-      color: #0056b3; /* Make 'Material X', 'Question X' stand out */
-      margin-right: 5px;
-  }
-  /* Style for formatted newlines within question text */
-  #gaokao-question .formatted-line {
-      display: block; /* Treat each line as a block */
-      margin-bottom: 0.3em; /* Smaller margin between lines within the same block */
-  }
+  #gaokao-question h2 { font-size: 1.6rem; margin-bottom: 1rem; color: #555; }
+  #gaokao-question p { margin-bottom: 0.8em; }
+  #gaokao-question strong { color: #0056b3; margin-right: 5px; }
+  #gaokao-question .formatted-line { display: block; margin-bottom: 0.3em; }
   
   
   /* =======================================
@@ -265,214 +255,100 @@
      ======================================= */
   #dialogue-input-area {
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.85); /* Semi-transparent white */
+    background: rgba(255, 255, 255, 0.85);
     border: 1px solid #ddd;
     border-radius: 8px;
-    margin-bottom: 0; /* Remove bottom margin, actions section has top margin */
+    margin-bottom: 0;
   }
   
   #messages {
     min-height: 150px;
-    max-height: 50vh; /* Limit max height */
-    overflow-y: auto; /* Enable scroll */
-    margin-bottom: 1rem; /* Space between messages and input */
+    max-height: 50vh;
+    overflow-y: auto;
+    margin-bottom: 1rem;
     padding: 0.5rem;
-    border: none; /* Remove border, container has one */
-    background: none; /* Remove background, container has one */
+    border: none;
+    background: none;
   }
   
   /* Message bubble styling */
-  #messages > div { /* Target direct children: user-message, ai-message, separator */
+  #messages > div:not(.separator) { /* Target message bubbles, exclude separator */
       margin-bottom: 0.8rem;
       padding: 0.8rem 1.2rem;
-      border-radius: 15px; /* Bubble shape */
-      font-size: 1.15rem; /* Task 5: Increased font size (adjust as needed) */
+      border-radius: 15px;
+      font-size: 1.15rem;
       line-height: 1.6;
-      max-width: 80%; /* Limit width of bubbles */
-      word-wrap: break-word; /* Prevent long words from overflowing */
+      max-width: 80%;
+      word-wrap: break-word;
   }
   
-  /* Task 7: User message (right) */
+  /* User message (right) */
   #messages .user-message {
-      background-color: #d1eaff; /* Light blue */
-      color: #004085;
-      margin-left: auto; /* Push to right */
-      border-bottom-right-radius: 5px; /* Slightly flatten corner */
-      text-align: left; /* Keep text left-aligned within the right bubble */
+      background-color: #d1eaff; color: #004085; margin-left: auto; border-bottom-right-radius: 5px; text-align: left;
   }
-  
-  /* Task 7: AI message (left) */
+  /* AI message (left) */
   #messages .ai-message {
-      background-color: #e2e3e5; /* Light grey */
-      color: #383d41;
-      margin-right: auto; /* Keep left */
-      border-bottom-left-radius: 5px; /* Slightly flatten corner */
-      text-align: left;
+      background-color: #e2e3e5; color: #383d41; margin-right: auto; border-bottom-left-radius: 5px; text-align: left;
   }
   
-  /* Separator Style */
+  /* Task 4: Separator Style Removed (or commented out)
   #messages .separator {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #aaa;
-      background: none; /* No background for separator */
-      padding: 0.2rem 0;
-      max-width: 100%;
-      margin-left: 0;
-      margin-right: 0;
-  }
+      text-align: center; font-size: 0.9rem; color: #aaa; background: none; padding: 0.2rem 0; max-width: 100%; margin-left: 0; margin-right: 0;
+  } */
   
-  /* Task 6: Blinking "Thinking" message */
-  @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.4; }
-  }
+  /* Blinking "Thinking" message */
+  @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+  .thinking-message { animation: blink 1.5s linear infinite; font-style: italic; color: #666; }
+  body.dark-mode .thinking-message { color: #bbb; }
   
-  .thinking-message {
-    animation: blink 1.5s linear infinite;
-    font-style: italic;
-    color: #666;
-  }
-  body.dark-mode .thinking-message {
-    color: #bbb;
-  }
-  
-  /* Textarea Styling (inside the new container) */
+  /* Textarea Styling */
   #userAnswer {
-      /* Width is set inline for responsiveness */
-      font-size: 1.1rem; /* Slightly smaller than messages */
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      padding: 0.8rem;
-      min-height: 3rem; /* Min height */
-      line-height: 1.5;
-      resize: vertical; /* Allow vertical resize */
-      font-family: inherit;
-      box-sizing: border-box;
+      font-size: 1.1rem; border: 1px solid #ccc; border-radius: 8px; padding: 0.8rem; min-height: 3rem; line-height: 1.5; resize: vertical; font-family: inherit; box-sizing: border-box;
   }
   
   /* =======================================
-     底部互動按鈕區 & Ghibli 風格 (Task 9)
+     底部互動按鈕區 & Ghibli 風格
      ======================================= */
-  #gaokao-actions {
-    text-align: center;
-    margin-top: 1rem; /* Space above buttons */
-  }
-  
+  #gaokao-actions { text-align: center; margin-top: 1rem; }
   #gaokao-actions button {
-    font-size: 1.0rem; /* Consistent button size */
-    padding: 0.8rem 1.5rem;
-    margin: 0.5rem;
-    border-radius: 20px; /* Rounded Ghibli style */
-    border: 1px solid transparent; /* Start with transparent border */
-    font-weight: bold;
-    transition: background-color 0.3s, transform 0.1s, box-shadow 0.3s;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Subtle shadow */
-    cursor: pointer;
+    font-size: 1.0rem; padding: 0.8rem 1.5rem; margin: 0.5rem; border-radius: 20px; border: 1px solid transparent; font-weight: bold; transition: background-color 0.3s, transform 0.1s, box-shadow 0.3s; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); cursor: pointer;
   }
-  
-  #gaokao-actions button:active {
-    transform: translateY(2px);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Specific Ghibli Colors */
-  #submit-answer-btn {
-    background-color: #87a96b; /* Soft green */
-    color: white;
-    border-color: #79975d;
-  }
-  #submit-answer-btn:hover {
-    background-color: #79975d;
-  }
-  
-  #reference-answer-btn {
-    background-color: #a0d2db; /* Soft blue */
-    color: #333;
-    border-color: #8ec5ce;
-  }
-  #reference-answer-btn:hover {
-    background-color: #8ec5ce;
-  }
-  
-  #ai-answer-btn {
-    background-color: #f4a261; /* Soft orange */
-    color: white;
-    border-color: #e09150;
-  }
-  #ai-answer-btn:hover {
-    background-color: #e09150;
-  }
+  #gaokao-actions button:active { transform: translateY(2px); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
+  /* Ghibli Colors */
+  #submit-answer-btn { background-color: #87a96b; color: white; border-color: #79975d; }
+  #submit-answer-btn:hover { background-color: #79975d; }
+  #reference-answer-btn { background-color: #a0d2db; color: #333; border-color: #8ec5ce; }
+  #reference-answer-btn:hover { background-color: #8ec5ce; }
+  #ai-answer-btn { background-color: #f4a261; color: white; border-color: #e09150; }
+  #ai-answer-btn:hover { background-color: #e09150; }
   
   
   /* =======================================
      響應式設計
      ======================================= */
   @media (max-width: 768px) {
-    body {
-      padding: 0; /* Remove side padding on small screens */
-    }
-    main {
-      padding: 0 0.5rem; /* Add padding within main */
-    }
-    h1 {
-      font-size: 1.8rem;
-    }
+    body { padding: 0; }
+    main { padding: 0 0.5rem; margin-top: 0.5rem; } /* Reduce top margin for main on mobile */
   
-    #gaokao-type-menu {
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust grid for smaller buttons */
-      gap: 0.5rem;
-      padding: 0.5rem;
-    }
-    #gaokao-type-menu button {
-      font-size: 0.9rem;
-      padding: 0.6rem 0.8rem;
-    }
+    /* Task 1: Adjust header padding and title size */
+    header { padding: 0.5rem; }
+    h1 { font-size: 1.5rem; }
+    #toggle-dark-btn { font-size: 1.3rem; } /* Adjust moon size */
   
-    #gaokao-year-menu {
-        gap: 0.5rem;
-        padding: 0.5rem;
-    }
-    #gaokao-year-menu button {
-        font-size: 0.9rem;
-        padding: 0.6rem 0.8rem;
-    }
+    #gaokao-btn { font-size: 1.1rem; padding: 0.6rem 1.2rem; } /* Adjust main button size */
   
-    #gaokao-question {
-        padding: 1rem;
-        font-size: 1rem; /* Smaller base font for question */
-    }
-     #gaokao-question h2 {
-        font-size: 1.3rem;
-    }
+    /* Task 2: Type menu responsiveness */
+    #gaokao-type-menu { padding: 0.5rem; gap: 0.3rem; }
+    #gaokao-type-menu button { font-size: 0.85rem; padding: 0.5rem 0.8rem; margin: 0.2rem; }
   
-    #dialogue-input-area {
-        padding: 0.5rem;
-    }
+    /* Task 3: Year menu responsiveness */
+    #gaokao-year-menu { padding: 0.5rem; gap: 0.3rem; }
+    #gaokao-year-menu button { font-size: 0.8rem; padding: 0.4rem 0.6rem; margin: 0.2rem; }
   
-    #messages > div { /* Message bubbles */
-        font-size: 1rem; /* Smaller font in bubbles */
-        padding: 0.6rem 1rem;
-        max-width: 85%; /* Allow slightly wider bubbles */
-    }
-  
-    #userAnswer {
-        font-size: 1rem;
-        padding: 0.6rem;
-        min-height: 2.5rem;
-        width: calc(100% - 1rem); /* Adjust width calculation */
-    }
-  
-    #gaokao-actions button {
-      font-size: 0.9rem;
-      padding: 0.7rem 1rem;
-      margin: 0.3rem;
-    }
+    #gaokao-question { padding: 1rem; font-size: 1rem; }
+    #gaokao-question h2 { font-size: 1.3rem; }
+    #dialogue-input-area { padding: 0.5rem; }
+    #messages > div:not(.separator) { font-size: 1rem; padding: 0.6rem 1rem; max-width: 85%; }
+    #userAnswer { font-size: 1rem; padding: 0.6rem; min-height: 2.5rem; width: calc(100% - 1rem); }
+    #gaokao-actions button { font-size: 0.9rem; padding: 0.7rem 1rem; margin: 0.3rem; }
   }
-  
-  /* =======================================
-     深色模式覆盖 (已包含在上面，此處備註無需重複)
-     @media (prefers-color-scheme: dark) { ... }
-     如果需要，可以把之前的 prefers-color-scheme 內容放在這裡，
-     但通常 body.dark-mode 的方式更可控。
-     ======================================= */

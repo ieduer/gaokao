@@ -6,42 +6,30 @@
   <title>AI高考</title>
   <link rel="icon" href="https://raw.githubusercontent.com/gptv/suen/main/images/Avatar-small.jpeg" type="image/jpeg">
   <link rel="stylesheet" href="assets/css/style.css" />
-  <style>
-    /* 將夜晚模式按鈕放置到右上角 */
-    #toggle-dark-btn {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      background: none;
-      border: none;
-      font-size: 1.0rem; /* 適當調整大小 */
-      cursor: pointer;
-      padding: 5px; /* 增加點擊區域 */
-      color: inherit; /* 繼承父元素顏色，以便暗黑模式切換 */
-    }
-    body.dark-mode #toggle-dark-btn {
-        color: #f0f0f0; /* 暗黑模式下確保可見 */
-    }
-  </style>
+  <!-- Style for toggle button is now primarily in style.css -->
 </head>
 <body>
+  <!-- Task 1: Header updated for flex layout -->
   <header>
     <h1>AI高考</h1>
-    <!-- 夜晚模式按鈕，使用 🌗 -->
     <button id="toggle-dark-btn" title="切換夜晚模式">🌗</button>
-    <!-- 點擊後顯示二級目錄（題型按鈕） -->
-    <button id="gaokao-btn" style="font-size:1.3rem; padding:1rem 1.5rem;">北京真題</button>
+    <!-- Removed the gaokao-btn here, assuming type menu appears below -->
   </header>
 
   <main>
+    <!-- Top level button to trigger type menu -->
+    <div style="text-align: center; margin-bottom: 1rem;"> <!-- Wrapper for centering -->
+        <button id="gaokao-btn" style="font-size:1.3rem; padding:1rem 1.5rem;">北京真題</button>
+    </div>
+
     <!-- 二級目錄：題型菜單 -->
-    <section id="gaokao-type-menu" style="text-align: center;"></section>
+    <section id="gaokao-type-menu" style="display:none;"></section> <!-- Initially hidden -->
     <!-- 三級目錄：年份列表 -->
-    <section id="gaokao-year-menu" style="display:none;text-align: center;"></section>
-    <!-- 題目顯示區，標題改為「背景真題」 -->
+    <section id="gaokao-year-menu" style="display:none;"></section>
+    <!-- 題目顯示區 -->
     <section id="gaokao-question" style="display:none;"></section>
 
-    <!-- 更新：合併後的對話與輸入區域 (預設隱藏，選題後顯示) -->
+    <!-- 合併後的對話與輸入區域 -->
     <section id="dialogue-input-area" style="display:none;">
         <div id="messages">
             <!-- 對話內容會動態添加到這裡 -->
@@ -49,10 +37,9 @@
         <textarea id="userAnswer" placeholder="請輸入你的答案或想聊的話題…" style="width:calc(100% - 2rem); padding:1rem; font-size:1.2rem; margin-top:1rem; border:1px solid #ccc; border-radius:5px; min-height: 4rem; overflow-y:hidden; resize: vertical; box-sizing: border-box;"></textarea>
     </section>
 
-    <!-- 底部互動按鈕區 (預設隱藏，選題後顯示) -->
+    <!-- 底部互動按鈕區 -->
     <section id="gaokao-actions" style="display:none; text-align:center; margin-top: 1rem; margin-bottom: 1.5rem;">
       <div>
-        <!-- 按鈕樣式將在 CSS 中定義 -->
         <button id="submit-answer-btn">提交答案</button>
         <button id="reference-answer-btn">參考答案</button>
         <button id="ai-answer-btn">AI答案</button>
