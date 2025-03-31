@@ -12,26 +12,27 @@
   <header>
     <div class="header-center-content"> <!-- Container for H1 and Gaokao Button -->
       <h1>AI高考</h1>
-      <button id="gaokao-btn">北京真題</button> <!-- Apply Ghibli style via CSS -->
+      <!-- 北京真题 button's role might change, but let's keep it for now -->
+      <button id="gaokao-btn">北京真題</button>
     </div>
     <button id="toggle-dark-btn" title="切換夜晚模式">🌗</button> <!-- Positioned via CSS -->
   </header>
 
   <main>
-    <!-- 二級目錄：題型菜單 (Initially hidden) -->
-    <section id="gaokao-type-menu" style="display:none;"></section>
-    <!-- 三級目錄：年份列表 -->
+    <!-- 二級目錄：題型菜單 (NOW VISIBLE BY DEFAULT) -->
+    <section id="gaokao-type-menu"></section> <!-- Removed style="display:none;" -->
+    <!-- 三級目錄：年份列表 (Initially hidden) -->
     <section id="gaokao-year-menu" style="display:none;"></section>
-    <!-- 題目顯示區 -->
+    <!-- 題目顯示區 (Initially hidden) -->
     <section id="gaokao-question" style="display:none;"></section>
 
-    <!-- 合併後的對話與輸入區域 -->
+    <!-- 合併後的對話與輸入區域 (Initially hidden) -->
     <section id="dialogue-input-area" style="display:none;">
         <div id="messages"></div>
         <textarea id="userAnswer" placeholder="請輸入你的答案或想聊的話題…" style="width:calc(100% - 2rem); padding:1rem; font-size:1.2rem; margin-top:1rem; border:1px solid #ccc; border-radius:5px; min-height: 4rem; overflow-y:hidden; resize: vertical; box-sizing: border-box;"></textarea>
     </section>
 
-    <!-- 底部互動按鈕區 -->
+    <!-- 底部互動按鈕區 (Initially hidden) -->
     <section id="gaokao-actions" style="display:none; text-align:center; margin-top: 1rem; margin-bottom: 1.5rem;">
       <div>
         <button id="submit-answer-btn">提交答案</button>
@@ -44,7 +45,7 @@
     <div id="progress"></div>
   </main>
 
-  <footer style="text-align:center; margin-top:20px;">
+  <footer> <!-- Footer content remains the same, positioning handled by CSS -->
     <p>© Suen | <a href="https://bdfz.net/posts/aigaokao" target="_blank">About</a></p>
   </footer>
 
