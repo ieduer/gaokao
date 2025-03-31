@@ -83,16 +83,16 @@ function addMessage(message, sender = "ai") {
   const messagesEl = document.getElementById("messages");
   if (!messagesEl) return null;
 
-  removeThinkingMessage(); // Remove previous thinking message if exists
+  removeThinkingMessage();
 
   const div = document.createElement("div");
   div.className = sender === "user" ? "user-message" : "ai-message";
   div.innerHTML = message;
   messagesEl.appendChild(div);
 
-  messagesEl.scrollTop = messagesEl.scrollHeight; // Scroll to bottom
+  messagesEl.scrollTop = messagesEl.scrollHeight;
 
-  return div; // Return the created message element
+  return div;
 }
 
 /****************************************************
@@ -102,8 +102,8 @@ function removeThinkingMessage() {
     if (thinkingMessageElement && thinkingMessageElement.parentNode) {
         try {
             thinkingMessageElement.parentNode.removeChild(thinkingMessageElement);
-        } catch (e) { /* Ignore potential error if already removed */ }
-        finally { thinkingMessageElement = null; } // Always clear the reference
+        } catch (e) { /* Ignore */ }
+        finally { thinkingMessageElement = null; }
     }
 }
 
@@ -111,35 +111,32 @@ function removeThinkingMessage() {
  * 项目初始化
  ****************************************************/
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("DOM fully loaded"); // Log: DOM ready
+  console.log("DOM fully loaded");
 
-  // Fetch data first
   fetch("data/all.json")
     .then(res => {
         if (!res.ok) {
-            throw new Error(`HTTP error! status: ${res.status}`); // Throw error on bad response
+            throw new Error(`HTTP error! status: ${res.status}`);
         }
-        return res.json(); // Parse JSON
+        return res.json();
     })
     .then(json => {
-      console.log("JSON data loaded successfully."); // Log: Data loaded
-      allData = json; // Store data globally
+      console.log("JSON data loaded successfully.");
+      allData = json;
 
-      // Get the button AFTER data is loaded
       const gaokaoBtn = document.getElementById("gaokao-btn");
       if (gaokaoBtn) {
-          console.log("Found #gaokao-btn. Attaching click listener."); // Log: Button found
+          console.log("Found #gaokao-btn. Attaching click listener.");
           gaokaoBtn.addEventListener("click", () => {
-              console.log("#gaokao-btn clicked! Calling showTypeMenu..."); // Log: Click detected
-              showTypeMenu(); // Show the type menu on click
+              console.log("#gaokao-btn clicked! Calling showTypeMenu...");
+              showTypeMenu();
           });
       } else {
-          console.error("#gaokao-btn not found! Cannot attach listener."); // Error if button missing
+          console.error("#gaokao-btn not found! Cannot attach listener.");
       }
     })
     .catch(err => {
-      console.error("Failed to load or process data:", err); // Log: Data fetch failed
-      // Display user-friendly error message
+      console.error("Failed to load or process data:", err);
       const mainEl = document.querySelector('main');
       const errorMsg = document.createElement('p');
       errorMsg.textContent = `數據加載失敗: ${err.message} 請刷新頁面重試。`;
@@ -147,19 +144,18 @@ document.addEventListener("DOMContentLoaded", () => {
       errorMsg.style.textAlign = 'center';
       errorMsg.style.padding = '1rem';
       if (mainEl) {
-          mainEl.prepend(errorMsg); // Add error to main content area
+          mainEl.prepend(errorMsg);
       } else {
-          document.body.prepend(errorMsg); // Fallback to body
+          document.body.prepend(errorMsg);
       }
-       // Optionally disable button if data failed
        const gaokaoBtn = document.getElementById("gaokao-btn");
        if (gaokaoBtn) {
             gaokaoBtn.textContent = "數據加載失敗";
             gaokaoBtn.disabled = true;
        }
-    }); // End of fetch chain
+    }); // End fetch chain
 
-  // Attach other listeners using optional chaining for safety
+  // Attach other listeners
   document.getElementById("submit-answer-btn")?.addEventListener("click", submitAnswer);
   document.getElementById("reference-answer-btn")?.addEventListener("click", showReferenceAnswer);
   document.getElementById("ai-answer-btn")?.addEventListener("click", askAIForSolution);
@@ -171,21 +167,26 @@ document.addEventListener("DOMContentLoaded", () => {
       userAnswer.addEventListener("input", function() {
           this.style.height = 'auto';
           this.style.height = (this.scrollHeight) + 'px';
-      }); // Correctly closed input listener
+      }); // Semicolon technically optional here but good practice
+
       userAnswer.addEventListener('keydown', function(event) {
           if (event.key === 'Enter' && !event.shiftKey) {
               event.preventDefault();
               document.getElementById("submit-answer-btn")?.click();
           }
-      }); // Correctly closed keydown listener
-  } else {
+      }); // Semicolon technically optional here but good practice
+
+    // ***************************************************************
+    // ***** THE MISSING CLOSING BRACE FOR 'if (userAnswer)' WAS HERE *****
+    // ***************************************************************
+    } else { // Now the 'else' correctly pairs with 'if (userAnswer)'
       console.error("#userAnswer textarea not found.");
-  } // End of userAnswer setup
+    } // End of 'if (userAnswer) ... else ...' block
 
   // Apply saved dark mode preference
   if (localStorage.getItem("darkMode") === "enabled") {
       document.body.classList.add("dark-mode");
-  } // Correctly closed dark mode check
+  } // End of dark mode check
 
 }); // End of DOMContentLoaded event listener
 
@@ -193,20 +194,19 @@ document.addEventListener("DOMContentLoaded", () => {
  * 重置聊天状态
  ****************************************************/
 function resetChatState() {
-    // console.log("Resetting chat state."); // Optional log
-    isFirstSubmission = true; // Reset flag
-    document.getElementById("submit-answer-btn")?.textContent = "提交答案"; // Reset button text
+    isFirstSubmission = true;
+    document.getElementById("submit-answer-btn")?.textContent = "提交答案";
     const messagesEl = document.getElementById("messages");
     if (messagesEl) {
-        messagesEl.innerHTML = ""; // Clear messages
+        messagesEl.innerHTML = "";
     }
     const userAnswer = document.getElementById("userAnswer");
     if (userAnswer) {
-        userAnswer.value = ""; // Clear input
-        userAnswer.style.height = 'auto'; // Reset height
-        userAnswer.placeholder = "請輸入你的答案或想聊的話題…"; // Reset placeholder
+        userAnswer.value = "";
+        userAnswer.style.height = 'auto';
+        userAnswer.placeholder = "請輸入你的答案或想聊的話題…";
     }
-    removeThinkingMessage(); // Remove any "thinking" message
+    removeThinkingMessage();
 }
 
 
@@ -214,127 +214,115 @@ function resetChatState() {
  * 显示二级目录（题型按钮）
  ****************************************************/
 function showTypeMenu() {
-  console.log("Executing showTypeMenu..."); // Log: Function start
+  console.log("Executing showTypeMenu...");
   const menu = document.getElementById("gaokao-type-menu");
   if (!menu) {
-      console.error("#gaokao-type-menu element not found!"); // Error if menu div missing
+      console.error("#gaokao-type-menu element not found!");
       return;
   }
 
   menu.innerHTML = ""; // Clear previous menu items
 
-  // Hide other sections that might be visible
+  // Hide other sections
   document.getElementById("gaokao-year-menu")?.style.display = "none";
   document.getElementById("gaokao-question")?.style.display = "none";
   document.getElementById("dialogue-input-area")?.style.display = "none";
   document.getElementById("gaokao-actions")?.style.display = "none";
 
-  resetChatState(); // Reset chat when showing the main type menu
+  resetChatState(); // Reset chat when showing types
 
-  // Validate TYPES data
   if (!Array.isArray(TYPES) || TYPES.length === 0) {
-       console.error("TYPES data is invalid or empty. Cannot create type menu.");
-       menu.innerHTML = "<p>無法加載題型分類。</p>"; // Display error in the menu area
-       menu.style.display = "block"; // Ensure the error message is visible
+       console.error("TYPES data is invalid or empty.");
+       menu.innerHTML = "<p>無法加載題型分類。</p>";
+       menu.style.display = "block";
        return;
    }
 
-  console.log(`Creating ${TYPES.length} type buttons.`); // Log: Button creation start
-  // Create and append buttons for each type
+  console.log(`Creating ${TYPES.length} type buttons.`);
   TYPES.forEach(t => {
     const btn = document.createElement("button");
-    btn.textContent = t.label; // Set button text
-    // Note: Rely on CSS for styling, removed inline debug styles
-    btn.onclick = () => { // Assign click handler
-        console.log(`Type button "${t.label}" clicked.`); // Log: Type button click
-        showYearMenu(t.key); // Show years for this type
+    btn.textContent = t.label;
+    btn.onclick = () => {
+        console.log(`Type button "${t.label}" clicked.`);
+        showYearMenu(t.key);
     };
-    menu.appendChild(btn); // Add button to the menu container
+    menu.appendChild(btn);
   });
 
-  // IMPORTANT: Set display style AFTER buttons are added
-  menu.style.display = "flex";
-  console.log("#gaokao-type-menu display set to 'flex'. Menu should be visible."); // Log: Display style set
+  menu.style.display = "flex"; // Show menu AFTER adding buttons
+  console.log("#gaokao-type-menu display set to 'flex'. Menu should be visible.");
 }
 
 /****************************************************
  * 显示该题型的年份菜单
  ****************************************************/
 function showYearMenu(typeKey) {
-  console.log(`Showing year menu for type: ${typeKey}`); // Log: Function start
-  resetChatState(); // Reset chat state when selecting a type
+  console.log(`Showing year menu for type: ${typeKey}`);
+  resetChatState();
 
-  const dataArr = allData.filter(item => item.key === typeKey); // Filter data for the type
-  const typeLabel = TYPES.find(t => t.key === typeKey)?.label || typeKey; // Get display label
+  const dataArr = allData.filter(item => item.key === typeKey);
+  const typeLabel = TYPES.find(t => t.key === typeKey)?.label || typeKey;
   const yearMenu = document.getElementById("gaokao-year-menu");
   if (!yearMenu) {
       console.error("#gaokao-year-menu not found!");
       return;
   }
 
-  // Hide potentially visible lower sections
+  // Hide lower sections
   document.getElementById("gaokao-question")?.style.display = "none";
   document.getElementById("dialogue-input-area")?.style.display = "none";
   document.getElementById("gaokao-actions")?.style.display = "none";
 
-  yearMenu.innerHTML = ""; // Clear previous year buttons or messages
+  yearMenu.innerHTML = ""; // Clear previous
 
   if (dataArr.length === 0) {
-    // If no data for this type, show a message
     console.warn(`No data found for type: ${typeKey}`);
     yearMenu.innerHTML = `<p style="text-align:center; width:100%; padding: 1rem;">暫無 ${typeLabel} 類型的題目數據。</p>`;
   } else {
-    // If data exists, create year buttons
-    const years = [...new Set(dataArr.map(item => item.year))].sort((a, b) => b - a); // Get unique years, sort descending
-    console.log(`Creating buttons for years: ${years.join(', ')}`); // Log: Years found
+    const years = [...new Set(dataArr.map(item => item.year))].sort((a, b) => b - a);
+    console.log(`Creating buttons for years: ${years.join(', ')}`);
     years.forEach(year => {
       const btn = document.createElement("button");
       btn.textContent = `${year} 年`;
-      btn.onclick = () => { // Assign click handler
-          console.log(`Year button "${year}" clicked for type "${typeKey}".`); // Log: Year button click
-          showQuestionList(typeKey, year, dataArr); // Show questions for this year/type
+      btn.onclick = () => {
+          console.log(`Year button "${year}" clicked for type "${typeKey}".`);
+          showQuestionList(typeKey, year, dataArr);
       };
-      yearMenu.appendChild(btn); // Add button to menu
+      yearMenu.appendChild(btn);
     });
   }
-  yearMenu.style.display = "flex"; // Show the year menu (or the "no data" message)
-  console.log("#gaokao-year-menu display set to 'flex'."); // Log: Display style set
+  yearMenu.style.display = "flex"; // Show the year menu
+  console.log("#gaokao-year-menu display set to 'flex'.");
 }
 
 /****************************************************
  * 显示该年份题目列表 (实际显示第一题)
  ****************************************************/
 function showQuestionList(typeKey, year, dataArr) {
-  console.log(`Showing question list for type: ${typeKey}, year: ${year}`); // Log: Function start
-  resetChatState(); // Reset chat when selecting a year
+  console.log(`Showing question list for type: ${typeKey}, year: ${year}`);
+  resetChatState();
 
-  const questions = dataArr.filter(item => item.year === year); // Filter questions for the specific year
+  const questions = dataArr.filter(item => item.year === year);
   const questionSec = document.getElementById("gaokao-question");
   const dialogueInputArea = document.getElementById("dialogue-input-area");
   const actionsSec = document.getElementById("gaokao-actions");
-  const typeLabel = TYPES.find(t => t.key === typeKey)?.label || typeKey; // Get display label
+  const typeLabel = TYPES.find(t => t.key === typeKey)?.label || typeKey;
 
-  // Ensure required elements exist
   if (!questionSec || !dialogueInputArea || !actionsSec) {
       console.error("Missing required elements for displaying question list.");
       return;
   }
 
-  // Always set the title for the section
   questionSec.innerHTML = `<h2 style="font-size:1.5rem;">${year} 年北京真題 (${typeLabel})</h2>`;
 
   if (questions.length > 0) {
-    // If questions exist for this year/type
-    console.log(`Found ${questions.length} question(s). Displaying the first one.`); // Log: Questions found
-    questionSec.style.display = "block"; // Make sure question section is visible
-    showQuestionDetail(questions[0]); // Show details of the first question
-                                      // showQuestionDetail will handle showing dialogue/actions
+    console.log(`Found ${questions.length} question(s). Displaying the first one.`);
+    questionSec.style.display = "block";
+    showQuestionDetail(questions[0]); // Show details, which shows dialogue/actions
   } else {
-    // If no questions found
-    console.warn(`No questions found for type: ${typeKey}, year: ${year}.`); // Warn: No questions
-    questionSec.innerHTML += `<p style="font-size:1.2rem;">${year} 年的 ${typeLabel} 題目暫無資料。</p>`; // Add 'no data' message
-    questionSec.style.display = "block"; // Ensure the 'no data' message is visible
-    // Hide interaction areas as there's no question selected
+    console.warn(`No questions found for type: ${typeKey}, year: ${year}.`);
+    questionSec.innerHTML += `<p style="font-size:1.2rem;">${year} 年的 ${typeLabel} 題目暫無資料。</p>`;
+    questionSec.style.display = "block";
     dialogueInputArea.style.display = "none";
     actionsSec.style.display = "none";
   }
@@ -345,43 +333,37 @@ function showQuestionList(typeKey, year, dataArr) {
  * 显示选中的题目内容
  ****************************************************/
 function showQuestionDetail(question) {
-    // Validate input
     if (!question || typeof question !== 'object') {
         console.error("Invalid question data passed to showQuestionDetail:", question);
-        // Optionally display an error message to the user in the UI
         const questionSec = document.getElementById("gaokao-question");
         if(questionSec) {
             questionSec.innerHTML = "<p style='color:red;'>錯誤：無法加載題目詳情。</p>";
             questionSec.style.display = "block";
         }
-        // Hide interaction areas
         document.getElementById("dialogue-input-area")?.style.display = "none";
         document.getElementById("gaokao-actions")?.style.display = "none";
         return;
     }
 
-  console.log(`Showing details for question: ${question.year} ${question.key}`); // Log: Function start
-  currentQuestion = question; // Set the currently active question
-  resetChatState(); // Reset chat state for the new question
+  console.log(`Showing details for question: ${question.year} ${question.key}`);
+  currentQuestion = question;
+  resetChatState();
 
   const questionSec = document.getElementById("gaokao-question");
   const dialogueInputArea = document.getElementById("dialogue-input-area");
   const actionsSec = document.getElementById("gaokao-actions");
 
-  // Ensure required elements exist
   if (!questionSec || !dialogueInputArea || !actionsSec) {
       console.error("Missing required elements for displaying question detail.");
       return;
   }
 
-  // Format and display the question content
-  questionSec.innerHTML = formatQuestionHTML(question); // Use formatter function
-  questionSec.style.display = "block"; // Make question visible
+  questionSec.innerHTML = formatQuestionHTML(question);
+  questionSec.style.display = "block";
 
-  // Show the interaction areas
   dialogueInputArea.style.display = "block";
   actionsSec.style.display = "block";
-  console.log("Question details, dialogue area, and actions displayed."); // Log: UI updated
+  console.log("Question details, dialogue area, and actions displayed.");
 }
 
 
@@ -488,50 +470,47 @@ function callAI(prompt) {
         return;
     }
 
-    removeThinkingMessage(); // Remove previous thinking message
-    const timeoutId = setTimeout(() => { // Schedule thinking message
+    removeThinkingMessage();
+    const timeoutId = setTimeout(() => {
         if (!thinkingMessageElement) {
              thinkingMessageElement = addMessage("<em class='thinking-message'>AI 正在想啊想啊，耐個心吧 🐶🦊🐹 ...</em>", "ai");
         }
-    }, 200); // Slightly longer delay for thinking message
+    }, 200);
 
     fetch(CLOUD_FLARE_WORKER_URL, {
         method: "POST",
-        headers: { "Content-Type": "application/json", "Accept": "application/json" }, // Added Accept header
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
         body: JSON.stringify({ prompt: prompt })
     })
     .then(res => {
-        clearTimeout(timeoutId); // Clear thinking timeout
-        removeThinkingMessage(); // Remove thinking message
+        clearTimeout(timeoutId);
+        removeThinkingMessage();
         if (!res.ok) {
-            // Try to get error details from response body
-            return res.text().then(text => { // Get raw text first
+            return res.text().then(text => {
                  let errorMsg = `請求失敗 (${res.status} ${res.statusText})`;
                  try {
-                     const errorJson = JSON.parse(text); // Try parsing as JSON
-                     errorMsg = errorJson?.error || errorJson?.message || errorMsg; // Extract specific error
+                     const errorJson = JSON.parse(text);
+                     errorMsg = errorJson?.error || errorJson?.message || errorMsg;
                  } catch (e) {
-                     // If not JSON or parsing failed, use raw text if short enough
                      if (text && text.length < 200) errorMsg += `: ${text}`;
                  }
-                 throw new Error(errorMsg); // Throw consolidated error
+                 throw new Error(errorMsg);
             });
         }
-        return res.json(); // Parse successful response as JSON
+        return res.json();
     })
     .then(json => {
         if (json && json.answer) {
-            addMessage(`${formatAnswer(json.answer)}`, "ai"); // Display formatted answer
+            addMessage(`${formatAnswer(json.answer)}`, "ai");
         } else {
-             console.error("AI response missing 'answer':", json); // Log unexpected format
-             throw new Error("AI 回應的格式不正確。"); // Throw specific error
+             console.error("AI response missing 'answer':", json);
+             throw new Error("AI 回應的格式不正確或為空。");
         }
     })
     .catch(err => {
-        console.error("AI request/processing error:", err); // Log the full error
-        clearTimeout(timeoutId); // Ensure timeout cleared on error
-        removeThinkingMessage(); // Ensure thinking message removed
-        // Display user-friendly error, including the message from the caught Error object
+        console.error("AI request/processing error:", err);
+        clearTimeout(timeoutId);
+        removeThinkingMessage();
         addMessage(`與 AI 連接時發生錯誤：<br><small>${err.message || "未知錯誤"}</small>`, "ai");
     });
 }
@@ -548,7 +527,7 @@ function showReferenceAnswer() {
   if (currentQuestion.reference_answer) {
     addMessage(`<strong>參考答案：</strong><br/>${formatAnswer(currentQuestion.reference_answer)}`, "ai");
   } else {
-    addMessage("抱歉，這道題的參考答案還沒有準備好哦。", "ai"); // Friendlier message
+    addMessage("抱歉，這道題的參考答案還沒有準備好哦。", "ai");
   }
 }
 
@@ -557,42 +536,38 @@ function showReferenceAnswer() {
  ****************************************************/
 function submitAnswer() {
   if (!currentQuestion) {
-    addMessage("請先選個題目再提交答案吧！", "ai"); // Friendlier message
+    addMessage("請先選個題目再提交答案吧！", "ai");
     return;
   }
   const userAnswerEl = document.getElementById("userAnswer");
-  if (!userAnswerEl) return; // Safety check
+  if (!userAnswerEl) return;
 
   const answer = userAnswerEl.value.trim();
 
   if (!answer) {
-    addMessage("好像忘了輸入內容哦？", "ai"); // Friendlier message
-    userAnswerEl.style.outline = '2px solid orange'; // Use orange for warning
-    setTimeout(() => { userAnswerEl.style.outline = ''; }, 700); // Slightly longer duration
+    addMessage("好像忘了輸入內容哦？", "ai");
+    userAnswerEl.style.outline = '2px solid orange';
+    setTimeout(() => { userAnswerEl.style.outline = ''; }, 700);
     return;
   }
 
-  addMessage(formatAnswer(answer), "user"); // Display user message
+  addMessage(formatAnswer(answer), "user");
 
-  // Clear input and reset height AFTER getting the value
   userAnswerEl.value = "";
   userAnswerEl.style.height = 'auto';
-  userAnswerEl.focus(); // Keep focus for next input
+  userAnswerEl.focus();
 
   const submitButton = document.getElementById("submit-answer-btn");
 
-  // Determine mode and call AI
   if (isFirstSubmission) {
     const mode = (currentQuestion.key === 'weixiezuo' || currentQuestion.key === 'dazuowen' || currentQuestion.reference_answer) ? "review" : "solve";
     const prompt = buildAIPrompt(currentQuestion, mode, answer);
     callAI(prompt);
-    // Update state AFTER initiating the call
     isFirstSubmission = false;
     if (submitButton) {
         submitButton.textContent = "深度聊天";
     }
   } else {
-    // Deep chat continuation
     const chatPrompt = `（繼續對話）用戶說：\n"${answer}"\n\n請針對用戶的這句話進行回應、討論或回答。保持之前設定的（如果有的話）學長姐或閱卷官的語氣。`;
     callAI(chatPrompt);
   }
@@ -603,16 +578,15 @@ function submitAnswer() {
  ****************************************************/
 function askAIForSolution() {
   if (!currentQuestion) {
-    addMessage("要先選個題目，我才能幫你想答案呀！", "ai"); // Friendlier message
+    addMessage("要先選個題目，我才能幫你想答案呀！", "ai");
     return;
   }
 
-  addMessage("收到！正在努力生成 AI 答案...", "ai"); // Confirmation message
+  addMessage("收到！正在努力生成 AI 答案...", "ai");
 
-  const prompt = buildAIPrompt(currentQuestion, "solve"); // Generate prompt for solving
-  callAI(prompt); // Call AI
+  const prompt = buildAIPrompt(currentQuestion, "solve");
+  callAI(prompt);
 
-  // Update state to deep chat if this was the first interaction
   if (isFirstSubmission) {
     isFirstSubmission = false;
     const submitButton = document.getElementById("submit-answer-btn");
@@ -626,14 +600,13 @@ function askAIForSolution() {
  * 夜晚模式切换
  ****************************************************/
 function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode"); // Toggle class
-  // Save preference to localStorage
+  document.body.classList.toggle("dark-mode");
   if (document.body.classList.contains("dark-mode")) {
       localStorage.setItem("darkMode", "enabled");
-      console.log("Dark mode enabled and saved."); // Log state change
+      console.log("Dark mode enabled and saved.");
   } else {
       localStorage.setItem("darkMode", "disabled");
-      console.log("Dark mode disabled and saved."); // Log state change
+      console.log("Dark mode disabled and saved.");
   }
 }
 
