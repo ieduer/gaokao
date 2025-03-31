@@ -271,11 +271,30 @@ function showTypeMenu() {
 
   menu.innerHTML = ""; // Clear previous buttons if any
 
-  // Hide other sections before showing the type menu
-  document.getElementById("gaokao-year-menu")?.style.display = "none";
-  document.getElementById("gaokao-question")?.style.display = "none";
-  document.getElementById("dialogue-input-area")?.style.display = "none";
-  document.getElementById("gaokao-actions")?.style.display = "none";
+/****************************************************
+ * 重置聊天状态
+ ****************************************************/
+function resetChatState() {
+  isFirstSubmission = true;
+
+  // Correct way to set textContent safely:
+  const submitButton = document.getElementById("submit-answer-btn");
+  if (submitButton) {
+      submitButton.textContent = "提交答案";
+  }
+
+  const messagesEl = document.getElementById("messages");
+  if (messagesEl) {
+      messagesEl.innerHTML = "";
+  }
+  const userAnswer = document.getElementById("userAnswer");
+  if (userAnswer) {
+      userAnswer.value = "";
+      userAnswer.style.height = 'auto'; // Reset height
+      userAnswer.placeholder = "請輸入你的答案或想聊的話題…";
+  }
+  removeThinkingMessage();
+}
 
   resetChatState(); // Reset chat when changing views
 
