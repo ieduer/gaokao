@@ -70,7 +70,7 @@ const GAOKAO_PROMPTS = {
  ****************************************************/
 function formatAnswer(text) {
   if (typeof text !== 'string') {
-    console.warn("formatAnswer received non-string input:", text);
+    // console.warn("formatAnswer received non-string input:", text);
     return "";
   }
   return text.split('\n').map(line => line.trim()).join('<br>');
@@ -176,13 +176,16 @@ document.addEventListener("DOMContentLoaded", () => {
           }
       }); // <<< Added semicolon
 
-    } else { // Correct brace IS here
+    } else { // Brace is correct here
       console.error("#userAnswer textarea not found.");
     } // <<< Added semicolon to close the else block statement
 
   // Apply saved dark mode preference
+  console.log("Checking dark mode preference..."); // <<< ADDED LOG BEFORE THE LINE
   if (localStorage.getItem("darkMode") === "enabled") { // Preceding statement now has semicolon
-      document.body.classList.add("dark-mode"); // Line ~198 target
+      console.log("Dark mode preference found: enabled. Adding class..."); // <<< ADDED LOG
+      document.body.classList.add("dark-mode"); // Line ~195 target
+      console.log("dark-mode class added to body."); // <<< ADDED LOG
   } // <<< Added semicolon to close the if statement
 
 }); // <<< Added semicolon to close the DOMContentLoaded listener

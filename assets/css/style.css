@@ -55,7 +55,7 @@
     font-size: 1.6rem; margin: 0; color: #4a4a4a; white-space: nowrap;
   }
   
-  /* Task 4: Ghibli Style for #gaokao-btn */
+  /* Ghibli Style for #gaokao-btn */
   #gaokao-btn {
     font-size: 1.0rem; /* Match other Ghibli buttons */
     padding: 0.7rem 1.3rem; /* Adjusted padding */
@@ -81,7 +81,7 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   }
   
-  /* Task 2: Dark Mode Moon Button - Absolute Position Top Right */
+  /* Dark Mode Moon Button - Absolute Position Top Right */
   #toggle-dark-btn {
     position: absolute;
     top: 0.8rem; /* Adjust top/right as needed */
@@ -133,7 +133,6 @@
   /* =======================================
      一般按鈕樣式 (用於菜單按鈕等，非Header/Ghibli)
      ======================================= */
-     /* Applying base style to menu buttons, specific styles override below */
   #gaokao-type-menu button, #gaokao-year-menu button {
     border: 1px solid #ccc; border-radius: 8px; background: #f0f0f0; color: #333; cursor: pointer; transition: background 0.2s, transform 0.1s, box-shadow 0.2s; padding: 0.8rem 1.2rem; font-size: 1rem; margin: 0.25rem; font-family: inherit;
   }
@@ -224,25 +223,24 @@
     main { padding: 0 0.5rem; margin-top: 0.5rem; }
   
     /* Responsive Header */
-    header { padding: 0.5rem; justify-content: space-between; } /* Use space-between on mobile too */
+    header { padding: 0.5rem; justify-content: space-between; }
     .header-center-content {
-        /* Removed absolute positioning, allow flex to position */
-        gap: 0.8rem; /* Adjust gap */
-        /* No explicit centering needed if space-between pushes moon to right */
-        flex-grow: 1; /* Allow center to take space */
-        justify-content: center; /* Center H1 and button */
-        margin: 0 2.5rem; /* Add margin to prevent overlap with moon */
+        gap: 0.8rem;
+         margin: 0 2.5rem; /* Margin L/R to avoid moon overlap */
+        flex-shrink: 1;
+        min-width: 0;
+        justify-content: center;
     }
     h1 { font-size: 1.2rem; }
-    #gaokao-btn { font-size: 0.9rem; padding: 0.4rem 0.8rem; }
-    #toggle-dark-btn { font-size: 1.3rem; right: 0.5rem; top: 0.5rem; flex-shrink: 0; } /* Adjust position and prevent shrinking */
+    #gaokao-btn { font-size: 0.9rem; padding: 0.4rem 0.8rem; flex-shrink: 0; }
+    #toggle-dark-btn { font-size: 1.3rem; right: 0.5rem; top: 0.5rem; flex-shrink: 0; }
   
   
     /* Type menu wrapping on mobile */
     #gaokao-type-menu {
-      flex-wrap: wrap; /* Allow wrapping */
-      justify-content: center; /* Center items */
-      overflow-x: visible; /* No scroll */
+      flex-wrap: wrap;
+      justify-content: center;
+      overflow-x: visible;
       padding: 0.5rem; gap: 0.3rem;
     }
     #gaokao-type-menu button { font-size: 0.85rem; padding: 0.5rem 0.8rem; margin: 0.2rem; }
