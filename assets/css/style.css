@@ -27,74 +27,71 @@
     min-height: 100vh;
   }
   
-  /* Task 1: Updated Header Styles */
+  /* Header Styles */
   header {
     display: flex;
-    justify-content: space-between; /* Pushes content-div and moon apart */
+    justify-content: center; /* Center the .header-center-content div */
     align-items: center;
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1rem; /* Increased padding slightly */
     background-color: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(5px);
-    position: relative; /* Needed if absolute positioning were used, but useful for context */
+    position: relative; /* Needed for absolute positioning of the moon button */
+    min-height: 50px; /* Ensure header has some height */
   }
   
-  /* Task 1: Container for H1 and Button */
-  .header-content {
+  /* Container for H1 and Gaokao Button */
+  .header-center-content {
       display: flex;
-      align-items: center; /* Vertically align H1 and button */
-      gap: 1rem; /* Space between H1 and button */
-      /* To center this group, we rely on space-between in the parent header */
-      /* If perfect centering is needed and space-between isn't enough, more complex flex/grid might be needed */
-       position: absolute; /* Position it absolutely */
-       left: 50%; /* Move its left edge to the center */
-       transform: translateX(-50%); /* Shift it left by half its own width */
-       /* Note: This requires the parent 'header' to have 'position: relative' */
+      align-items: center;
+      gap: 1.5rem; /* Increased gap slightly */
   }
-  
   
   footer {
-    text-align: center;
-    padding: 0.5rem;
-    font-size: 0.9rem;
-    background-color: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(5px);
-    margin-top: 1rem;
+    text-align: center; padding: 0.5rem; font-size: 0.9rem; background-color: rgba(255, 255, 255, 0.6); backdrop-filter: blur(5px); margin-top: 1rem;
   }
   
-  /* Task 1: H1 style */
+  /* H1 style */
   h1 {
-    font-size: 1.6rem; /* Adjusted size */
-    margin: 0;
-    color: #4a4a4a;
-    white-space: nowrap; /* Prevent title from wrapping */
+    font-size: 1.6rem; margin: 0; color: #4a4a4a; white-space: nowrap;
   }
   
-  /* Task 1: Moved Button Style (specifics for header button) */
+  /* Task 4: Ghibli Style for #gaokao-btn */
   #gaokao-btn {
-    font-size: 1.1rem; /* Adjusted size */
-    padding: 0.5rem 1rem; /* Adjusted padding */
-    background-color: #b0c4de;
-    border-color: #9aadc6;
-    /* margin: 0; */ /* Removed margin */
-    white-space: nowrap; /* Prevent button text wrapping */
-    line-height: 1.4; /* Adjust line-height for vertical centering if needed */
+    font-size: 1.0rem; /* Match other Ghibli buttons */
+    padding: 0.7rem 1.3rem; /* Adjusted padding */
+    margin: 0; /* Remove default margin if any */
+    white-space: nowrap;
+    /* Ghibli base styles */
+    border-radius: 20px;
+    border: 1px solid transparent;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.1s, box-shadow 0.3s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    /* Ghibli specific color (using the blue one) */
+    background-color: #a0d2db;
+    color: #333;
+    border-color: #8ec5ce;
   }
   #gaokao-btn:hover {
-      background-color: #a0b4ce;
+    background-color: #8ec5ce;
+  }
+  #gaokao-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   }
   
-  
-  /* Task 1: Toggle Button Style (remains on the right due to header's justify-content) */
+  /* Task 2: Dark Mode Moon Button - Absolute Position Top Right */
   #toggle-dark-btn {
+    position: absolute;
+    top: 0.8rem; /* Adjust top/right as needed */
+    right: 1rem;
     background: none; border: none; font-size: 1.5rem; cursor: pointer; padding: 5px; color: inherit;
-    /* margin-left: 1rem; /* Might not be needed if space-between works */
   }
   
   
   main {
-      max-width: 900px;
-      margin: 1rem auto 0 auto;
-      padding: 1rem;
+      max-width: 900px; margin: 1rem auto 0 auto; padding: 1rem;
   }
   
   /* =======================================
@@ -103,80 +100,72 @@
   body.dark-mode { background-image: none; background-color: #1a1a1a; color: #f0f0f0; }
   body.dark-mode header, body.dark-mode footer { background-color: rgba(26, 26, 26, 0.7); backdrop-filter: blur(5px); color: #f0f0f0; }
   body.dark-mode h1 { color: #e0e0e0; }
-  body.dark-mode #toggle-dark-btn { color: #f0f0f0; }
+  body.dark-mode #toggle-dark-btn { color: #f0f0f0; } /* Ensure moon is visible */
   body.dark-mode #gaokao-type-menu, body.dark-mode #gaokao-year-menu, body.dark-mode #gaokao-question, body.dark-mode #dialogue-input-area { background: #2a2a2a; border-color: #444; color: #f0f0f0; }
-  body.dark-mode button { background-color: #3a3a3a; color: #e0e0e0; border: 1px solid #555; }
-  body.dark-mode button:hover { background-color: #4a4a4a; border-color: #666; }
+  body.dark-mode button { background-color: #3a3a3a; color: #e0e0e0; border: 1px solid #555; } /* General dark button */
+  body.dark-mode button:hover { background-color: #4a4a4a; border-color: #666; } /* General dark hover */
   /* Dark mode Ghibli buttons */
-  body.dark-mode #submit-answer-btn, body.dark-mode #reference-answer-btn, body.dark-mode #ai-answer-btn { box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); }
+  body.dark-mode #submit-answer-btn, body.dark-mode #reference-answer-btn, body.dark-mode #ai-answer-btn, body.dark-mode #gaokao-btn { box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); } /* Shared shadow */
   body.dark-mode #submit-answer-btn { background-color: #506a4c; border-color: #6a896b; color: #f0f0f0; }
   body.dark-mode #reference-answer-btn { background-color: #6a7e8a; border-color: #8aa2b0; }
   body.dark-mode #ai-answer-btn { background-color: #a16a3f; border-color: #bd8e6b; }
-  body.dark-mode #submit-answer-btn:hover, body.dark-mode #reference-answer-btn:hover, body.dark-mode #ai-answer-btn:hover { opacity: 0.9; }
-  /* Dark mode specific buttons */
-  body.dark-mode #gaokao-btn { background-color: #46566b; border-color: #5a6c82; color: #e0e0e0;}
+  /* Dark mode for #gaokao-btn (Ghibli Blue Darker) */
+  body.dark-mode #gaokao-btn { background-color: #6a7e8a; border-color: #8aa2b0; color: #f0f0f0;}
+  body.dark-mode #gaokao-btn:hover { background-color: #5a6c82; }
+  
+  /* Dark mode Menu buttons */
   body.dark-mode #gaokao-type-menu button { background-color: #4b4b63; border-color: #60607a; color: #e0e0e0;}
   body.dark-mode #gaokao-year-menu button { background-color: #5a4a5a; border-color: #705f70; color: #e0e0e0;}
+  body.dark-mode #gaokao-type-menu button:hover { background-color: #5a5a72; }
+  body.dark-mode #gaokao-year-menu button:hover { background-color: #695969; }
   
   body.dark-mode #userAnswer { background-color: #333; color: #f0f0f0; border-color: #555; }
   body.dark-mode #messages { background: #2e2e2e; border-color: #444; }
   body.dark-mode #messages .user-message { background-color: #3a5a70; color: #f0f0f0; }
   body.dark-mode #messages .ai-message { background-color: #4a4a4a; color: #f0f0f0; }
   body.dark-mode .thinking-message { color: #bbb; }
+  /* Dark mode scrollbar */
+  body.dark-mode #gaokao-type-menu { scrollbar-color: #555 #2a2a2a; }
+  body.dark-mode #gaokao-type-menu::-webkit-scrollbar-track { background: #2a2a2a; }
+  body.dark-mode #gaokao-type-menu::-webkit-scrollbar-thumb { background-color: #555; }
+  
   
   /* =======================================
-     一般按鈕樣式 (非 Header/Ghibli/Menu)
+     一般按鈕樣式 (用於菜單按鈕等，非Header/Ghibli)
      ======================================= */
-  button:not(#gaokao-btn):not(#toggle-dark-btn):not(#submit-answer-btn):not(#reference-answer-btn):not(#ai-answer-btn) {
+     /* Applying base style to menu buttons, specific styles override below */
+  #gaokao-type-menu button, #gaokao-year-menu button {
     border: 1px solid #ccc; border-radius: 8px; background: #f0f0f0; color: #333; cursor: pointer; transition: background 0.2s, transform 0.1s, box-shadow 0.2s; padding: 0.8rem 1.2rem; font-size: 1rem; margin: 0.25rem; font-family: inherit;
   }
-  button:not(#gaokao-btn):not(#toggle-dark-btn):not(#submit-answer-btn):not(#reference-answer-btn):not(#ai-answer-btn):hover {
+  #gaokao-type-menu button:hover, #gaokao-year-menu button:hover {
     background: #e0e0e0; box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
-  button:not(#gaokao-btn):not(#toggle-dark-btn):not(#submit-answer-btn):not(#reference-answer-btn):not(#ai-answer-btn):active {
+  #gaokao-type-menu button:active, #gaokao-year-menu button:active {
     transform: translateY(1px); box-shadow: 0 1px 2px rgba(0,0,0,0.1);
   }
   
-  
   /* =======================================
-     二級目錄：題型菜單 (Task 2, 3 Updated)
+     二級目錄：題型菜單
      ======================================= */
   #gaokao-type-menu {
     display: flex;
-    flex-wrap: nowrap; /* Task 3: No wrap on desktop */
-    justify-content: flex-start; /* Align items to start */
+    flex-wrap: nowrap; /* Desktop: No wrap */
+    justify-content: flex-start;
     gap: 0.5rem;
-    background: rgba(255, 255, 255, 0.8);
-    border: 1px solid #ddd;
-    padding: 0.8rem;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    overflow-x: auto; /* Task 3: Allow horizontal scroll if needed */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-    scrollbar-width: thin; /* Firefox scrollbar style */
-    scrollbar-color: #ccc #f0f0f0; /* Firefox scrollbar color */
+    background: rgba(255, 255, 255, 0.8); border: 1px solid #ddd; padding: 0.8rem; border-radius: 8px; margin-bottom: 1rem;
+    overflow-x: auto; /* Desktop: Allow horizontal scroll */
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin; scrollbar-color: #ccc #f0f0f0;
   }
-  /* Webkit scrollbar styles */
-  #gaokao-type-menu::-webkit-scrollbar {
-    height: 6px; /* Height of horizontal scrollbar */
-  }
-  #gaokao-type-menu::-webkit-scrollbar-track {
-    background: #f0f0f0;
-    border-radius: 3px;
-  }
-  #gaokao-type-menu::-webkit-scrollbar-thumb {
-    background-color: #ccc;
-    border-radius: 3px;
-  }
+  #gaokao-type-menu::-webkit-scrollbar { height: 6px; }
+  #gaokao-type-menu::-webkit-scrollbar-track { background: #f0f0f0; border-radius: 3px; }
+  #gaokao-type-menu::-webkit-scrollbar-thumb { background-color: #ccc; border-radius: 3px; }
   
-  #gaokao-type-menu button {
-    font-size: 1rem;
+  #gaokao-type-menu button { /* Specific styles for type menu buttons */
+    font-size: 0.95rem; /* Adjusted size */
     padding: 0.6rem 1rem;
-    background-color: #e6e6fa; /* Ensure visibility */
-    color: #333; /* Ensure visibility */
-    border: 1px solid #c9c9e3; /* Ensure visibility */
-    flex-shrink: 0; /* Prevent buttons from shrinking */
-    white-space: nowrap; /* Prevent text wrap inside button */
+    background-color: #e6e6fa; border: 1px solid #c9c9e3; color: #333; /* Ensure visibility */
+    flex-shrink: 0; white-space: nowrap;
   }
   #gaokao-type-menu button:hover { background-color: #d8d8f0; }
   
@@ -186,13 +175,13 @@
   #gaokao-year-menu {
     display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; background: rgba(255, 255, 255, 0.8); border: 1px solid #ddd; padding: 0.8rem; border-radius: 8px; margin-bottom: 1rem;
   }
-  #gaokao-year-menu button {
-    font-size: 0.9rem; padding: 0.5rem 0.8rem; background-color: #d8bfd8; color: #333; border: 1px solid #c1acc1; flex-shrink: 0;
+  #gaokao-year-menu button { /* Specific styles for year menu buttons */
+    font-size: 0.9rem; padding: 0.5rem 0.8rem; background-color: #d8bfd8; border: 1px solid #c1acc1; color: #333; flex-shrink: 0;
   }
   #gaokao-year-menu button:hover { background-color: #c8aec8; }
   
   /* =======================================
-     題目顯示區
+     題目顯示區 (保持不變)
      ======================================= */
   #gaokao-question { padding: 1.5rem; background: rgba(255, 255, 255, 0.85); border: 1px solid #ddd; border-radius: 8px; margin-bottom: 1rem; font-size: 1.2rem; line-height: 1.8; }
   #gaokao-question h2 { font-size: 1.6rem; margin-bottom: 1rem; color: #555; }
@@ -202,24 +191,19 @@
   
   
   /* =======================================
-     對話與輸入區域
+     對話與輸入區域 (保持不變)
      ======================================= */
   #dialogue-input-area { padding: 1rem; background: rgba(255, 255, 255, 0.85); border: 1px solid #ddd; border-radius: 8px; margin-bottom: 0; }
   #messages { min-height: 150px; max-height: 50vh; overflow-y: auto; margin-bottom: 1rem; padding: 0.5rem; border: none; background: none; }
-  /* Message bubble styling */
   #messages > div:not(.separator) { margin-bottom: 0.8rem; padding: 0.8rem 1.2rem; border-radius: 15px; font-size: 1.15rem; line-height: 1.6; max-width: 80%; word-wrap: break-word; }
-  /* User message (right) */
   #messages .user-message { background-color: #d1eaff; color: #004085; margin-left: auto; border-bottom-right-radius: 5px; text-align: left; }
-  /* AI message (left) */
   #messages .ai-message { background-color: #e2e3e5; color: #383d41; margin-right: auto; border-bottom-left-radius: 5px; text-align: left; }
-  /* Blinking "Thinking" message */
   @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
   .thinking-message { animation: blink 1.5s linear infinite; font-style: italic; color: #666; }
-  /* Textarea Styling */
   #userAnswer { font-size: 1.1rem; border: 1px solid #ccc; border-radius: 8px; padding: 0.8rem; min-height: 3rem; line-height: 1.5; resize: vertical; font-family: inherit; box-sizing: border-box; }
   
   /* =======================================
-     底部互動按鈕區 & Ghibli 風格
+     底部互動按鈕區 & Ghibli 風格 (保持不變)
      ======================================= */
   #gaokao-actions { text-align: center; margin-top: 1rem; }
   #gaokao-actions button { font-size: 1.0rem; padding: 0.8rem 1.5rem; margin: 0.5rem; border-radius: 20px; border: 1px solid transparent; font-weight: bold; transition: background-color 0.3s, transform 0.1s, box-shadow 0.3s; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); cursor: pointer; }
@@ -240,24 +224,25 @@
     main { padding: 0 0.5rem; margin-top: 0.5rem; }
   
     /* Responsive Header */
-    header { padding: 0.5rem; }
-    .header-content {
-        position: static; /* Override absolute positioning */
-        transform: none; /* Remove transform */
-        flex-grow: 1; /* Allow center content to grow */
-        justify-content: center; /* Center H1 and Button within their container */
-        gap: 0.5rem; /* Reduce gap on mobile */
-        margin: 0 0.5rem; /* Add some margin around the center content */
+    header { padding: 0.5rem; justify-content: space-between; } /* Use space-between on mobile too */
+    .header-center-content {
+        /* Removed absolute positioning, allow flex to position */
+        gap: 0.8rem; /* Adjust gap */
+        /* No explicit centering needed if space-between pushes moon to right */
+        flex-grow: 1; /* Allow center to take space */
+        justify-content: center; /* Center H1 and button */
+        margin: 0 2.5rem; /* Add margin to prevent overlap with moon */
     }
-    h1 { font-size: 1.2rem; } /* Further reduce H1 size */
-    #gaokao-btn { font-size: 0.9rem; padding: 0.4rem 0.8rem; } /* Adjust button */
-    #toggle-dark-btn { font-size: 1.3rem; /* Keep moon size reasonable */ flex-shrink: 0; /* Prevent moon from shrinking */ }
+    h1 { font-size: 1.2rem; }
+    #gaokao-btn { font-size: 0.9rem; padding: 0.4rem 0.8rem; }
+    #toggle-dark-btn { font-size: 1.3rem; right: 0.5rem; top: 0.5rem; flex-shrink: 0; } /* Adjust position and prevent shrinking */
   
-    /* Task 3: Type menu wrapping on mobile */
+  
+    /* Type menu wrapping on mobile */
     #gaokao-type-menu {
       flex-wrap: wrap; /* Allow wrapping */
-      justify-content: center; /* Center items when wrapped */
-      overflow-x: visible; /* No horizontal scroll */
+      justify-content: center; /* Center items */
+      overflow-x: visible; /* No scroll */
       padding: 0.5rem; gap: 0.3rem;
     }
     #gaokao-type-menu button { font-size: 0.85rem; padding: 0.5rem 0.8rem; margin: 0.2rem; }
