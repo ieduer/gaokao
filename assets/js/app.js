@@ -73,8 +73,50 @@ function formatAnswer(text) {
     // console.warn("formatAnswer received non-string input:", text);
     return "";
   }
-  return text.split('\n').map(line => line.trim()).join('<br>');
+  // Replace potential markdown list items with HTML lists for better rendering
+  let html = text.replace(/^\s*-\s+/gm, '<li>').replace(/^\s*\*\s+/gm, '<li>');
+  // Basic newline to <br> conversion, handle potential list closing
+  html = html.split('\n').map(line => {
+      line = line.trim();
+      if (line.startsWith('<li>')) {
+          return line + '</li>'; // Close list item
+      }
+      return line;
+  }).join('<br>');
+
+  // Wrap consecutive list items in <ul> - simple approach
+  html = html.replace(/(<li>.*?<\/li>)(<br\s*\/?>)?(?=<li>)/g, '$1'); // Remove <br> between list items
+  html = html.replace(/(?:<br\s*\/?>)*(<li>.*?<\/li>)(?:<br\s*\/?>)*/g, '$1'); // Clean <br> around items
+  if (html.includes('<li>')) {
+      html = html.replace(/(<li>.*?<\/li>(?:<br\s*\/?>)*)+/g, '<ul>$&</ul>');
+      // Clean up potential double ul tags if formatting was complex
+      html = html.replace(/<\/ul>(<br\s*\/?>)*<ul>/g, '');
+      // Remove <br> directly before or after the list
+       html = html.replace(/<br\s*\/?>\s*<ul>/g, '<ul>');
+       html = html.replace(/<\/ul>\s*<br\s*\/?>/g, '</ul>');
+  }
+   // Replace numbered lists (e.g., 1. item)
+   html = html.replace(/^\s*(\d+)\.\s+(.*?)($|<br>)/gm, (match, num, content, end) => {
+        // Check if already inside a list item tag (might happen with nested structures)
+        if (content.trim().startsWith('<') && content.trim().endsWith('>')) {
+             return match; // Avoid double wrapping
+        }
+        return `<ol start="${num}"><li>${content.trim()}</li></ol>${end === '<br>' ? '<br>' : ''}`;
+    });
+    // Consolidate adjacent <ol><li> blocks
+    html = html.replace(/<\/li><\/ol>(<br\s*\/?>)?<ol start="\d+"><li>/g, '</li><li>');
+
+
+  // Handle bold text (**text**)
+  html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+
+  // Handle italic text (*text* or _text_)
+  html = html.replace(/(?<!\*)\*(?!\*)(.*?)(?<!\*)\*(?!\*)/g, '<em>$1</em>'); // Single asterisks
+  html = html.replace(/_(.*?)_/g, '<em>$1</em>'); // Underscores
+
+  return html;
 }
+
 
 /****************************************************
  * 辅助函数：显示消息 (无分隔符)
@@ -87,6 +129,7 @@ function addMessage(message, sender = "ai") {
 
   const div = document.createElement("div");
   div.className = sender === "user" ? "user-message" : "ai-message";
+  // Use innerHTML because formatAnswer returns HTML string
   div.innerHTML = message;
   messagesEl.appendChild(div);
 
@@ -94,6 +137,7 @@ function addMessage(message, sender = "ai") {
 
   return div;
 }
+
 
 /****************************************************
  * 辅助函数：移除 "正在思考" 消息
@@ -153,13 +197,13 @@ document.addEventListener("DOMContentLoaded", () => {
             gaokaoBtn.textContent = "數據加載失敗";
             gaokaoBtn.disabled = true;
        }
-    }); // <<< Added semicolon
+    });
 
   // Attach other listeners
-  document.getElementById("submit-answer-btn")?.addEventListener("click", submitAnswer); // <<< Added semicolon
-  document.getElementById("reference-answer-btn")?.addEventListener("click", showReferenceAnswer); // <<< Added semicolon
-  document.getElementById("ai-answer-btn")?.addEventListener("click", askAIForSolution); // <<< Added semicolon
-  document.getElementById("toggle-dark-btn")?.addEventListener("click", toggleDarkMode); // <<< Added semicolon
+  document.getElementById("submit-answer-btn")?.addEventListener("click", submitAnswer);
+  document.getElementById("reference-answer-btn")?.addEventListener("click", showReferenceAnswer);
+  document.getElementById("ai-answer-btn")?.addEventListener("click", askAIForSolution);
+  document.getElementById("toggle-dark-btn")?.addEventListener("click", toggleDarkMode);
 
   // Textarea setup
   const userAnswer = document.getElementById("userAnswer");
@@ -167,28 +211,27 @@ document.addEventListener("DOMContentLoaded", () => {
       userAnswer.addEventListener("input", function() {
           this.style.height = 'auto';
           this.style.height = (this.scrollHeight) + 'px';
-      }); // <<< Added semicolon
+      });
 
       userAnswer.addEventListener('keydown', function(event) {
           if (event.key === 'Enter' && !event.shiftKey) {
               event.preventDefault();
               document.getElementById("submit-answer-btn")?.click();
           }
-      }); // <<< Added semicolon
-
-    } else { // Brace is correct here
+      });
+    } else {
       console.error("#userAnswer textarea not found.");
-    } // <<< Added semicolon to close the else block statement
+    }
 
   // Apply saved dark mode preference
-  console.log("Checking dark mode preference..."); // <<< ADDED LOG BEFORE THE LINE
-  if (localStorage.getItem("darkMode") === "enabled") { // Preceding statement now has semicolon
-      console.log("Dark mode preference found: enabled. Adding class..."); // <<< ADDED LOG
-      document.body.classList.add("dark-mode"); // Line ~195 target
-      console.log("dark-mode class added to body."); // <<< ADDED LOG
-  } // <<< Added semicolon to close the if statement
+  console.log("Checking dark mode preference...");
+  if (localStorage.getItem("darkMode") === "enabled") {
+      console.log("Dark mode preference found: enabled. Adding class...");
+      document.body.classList.add("dark-mode");
+      console.log("dark-mode class added to body.");
+  } // <<< CORRECTED: Removed the erroneous semicolon from here
 
-}); // <<< Added semicolon to close the DOMContentLoaded listener
+}); // <<< DOMContentLoaded listener ends here
 
 /****************************************************
  * 重置聊天状态
@@ -203,7 +246,7 @@ function resetChatState() {
     const userAnswer = document.getElementById("userAnswer");
     if (userAnswer) {
         userAnswer.value = "";
-        userAnswer.style.height = 'auto';
+        userAnswer.style.height = 'auto'; // Reset height
         userAnswer.placeholder = "請輸入你的答案或想聊的話題…";
     }
     removeThinkingMessage();
@@ -221,19 +264,20 @@ function showTypeMenu() {
       return;
   }
 
-  menu.innerHTML = "";
+  menu.innerHTML = ""; // Clear previous buttons if any
 
+  // Hide other sections before showing the type menu
   document.getElementById("gaokao-year-menu")?.style.display = "none";
   document.getElementById("gaokao-question")?.style.display = "none";
   document.getElementById("dialogue-input-area")?.style.display = "none";
   document.getElementById("gaokao-actions")?.style.display = "none";
 
-  resetChatState();
+  resetChatState(); // Reset chat when changing views
 
   if (!Array.isArray(TYPES) || TYPES.length === 0) {
        console.error("TYPES data is invalid or empty.");
        menu.innerHTML = "<p>無法加載題型分類。</p>";
-       menu.style.display = "block";
+       menu.style.display = "block"; // Show the error message
        return;
    }
 
@@ -242,7 +286,7 @@ function showTypeMenu() {
     const btn = document.createElement("button");
     btn.textContent = t.label;
     btn.onclick = () => {
-        console.log(`Type button "${t.label}" clicked.`);
+        console.log(`Type button "${t.label}" (${t.key}) clicked.`);
         showYearMenu(t.key);
     };
     menu.appendChild(btn);
@@ -250,6 +294,9 @@ function showTypeMenu() {
 
   menu.style.display = "flex"; // Show menu AFTER adding buttons
   console.log("#gaokao-type-menu display set to 'flex'. Menu should be visible.");
+
+  // Scroll the type menu into view if needed, especially on mobile
+  menu.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
 /****************************************************
@@ -267,40 +314,45 @@ function showYearMenu(typeKey) {
       return;
   }
 
+  // Hide question/dialogue sections
   document.getElementById("gaokao-question")?.style.display = "none";
   document.getElementById("dialogue-input-area")?.style.display = "none";
   document.getElementById("gaokao-actions")?.style.display = "none";
 
-  yearMenu.innerHTML = "";
+  yearMenu.innerHTML = ""; // Clear previous year buttons
 
   if (dataArr.length === 0) {
     console.warn(`No data found for type: ${typeKey}`);
     yearMenu.innerHTML = `<p style="text-align:center; width:100%; padding: 1rem;">暫無 ${typeLabel} 類型的題目數據。</p>`;
   } else {
-    const years = [...new Set(dataArr.map(item => item.year))].sort((a, b) => b - a);
+    const years = [...new Set(dataArr.map(item => item.year))].sort((a, b) => b - a); // Sort descending
     console.log(`Creating buttons for years: ${years.join(', ')}`);
     years.forEach(year => {
       const btn = document.createElement("button");
       btn.textContent = `${year} 年`;
       btn.onclick = () => {
           console.log(`Year button "${year}" clicked for type "${typeKey}".`);
-          showQuestionList(typeKey, year, dataArr);
+          // Pass the already filtered data to avoid re-filtering
+          showQuestionList(typeKey, year, dataArr.filter(item => item.year === year));
       };
       yearMenu.appendChild(btn);
     });
   }
-  yearMenu.style.display = "flex";
+  yearMenu.style.display = "flex"; // Show the year menu
   console.log("#gaokao-year-menu display set to 'flex'.");
+  yearMenu.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
 /****************************************************
  * 显示该年份题目列表 (实际显示第一题)
  ****************************************************/
-function showQuestionList(typeKey, year, dataArr) {
+function showQuestionList(typeKey, year, questionsForYear) { // Changed dataArr to questionsForYear
   console.log(`Showing question list for type: ${typeKey}, year: ${year}`);
   resetChatState();
 
-  const questions = dataArr.filter(item => item.year === year);
+  // No need to filter again, questionsForYear already contains the correct items
+  // const questions = dataArr.filter(item => item.year === year); // Removed this line
+
   const questionSec = document.getElementById("gaokao-question");
   const dialogueInputArea = document.getElementById("dialogue-input-area");
   const actionsSec = document.getElementById("gaokao-actions");
@@ -311,16 +363,20 @@ function showQuestionList(typeKey, year, dataArr) {
       return;
   }
 
-  questionSec.innerHTML = `<h2 style="font-size:1.5rem;">${year} 年北京真題 (${typeLabel})</h2>`;
+  // Clear previous question content but keep the header structure
+  questionSec.innerHTML = `<h2 style="font-size:1.5rem;">${year} 年北京真題 (${typeLabel})</h2>`; // Set title first
 
-  if (questions.length > 0) {
-    console.log(`Found ${questions.length} question(s). Displaying the first one.`);
-    questionSec.style.display = "block";
-    showQuestionDetail(questions[0]);
+  if (questionsForYear.length > 0) {
+    console.log(`Found ${questionsForYear.length} question(s). Displaying the first one.`);
+    questionSec.style.display = "block"; // Ensure section is visible
+    showQuestionDetail(questionsForYear[0]); // Display the first question of that year/type
   } else {
+    // This case should technically not happen if showYearMenu found years,
+    // but handle it defensively.
     console.warn(`No questions found for type: ${typeKey}, year: ${year}.`);
-    questionSec.innerHTML += `<p style="font-size:1.2rem;">${year} 年的 ${typeLabel} 題目暫無資料。</p>`;
-    questionSec.style.display = "block";
+    questionSec.innerHTML += `<p style="font-size:1.2rem;">${year} 年的 ${typeLabel} 題目暫無資料。</p>`; // Append message
+    questionSec.style.display = "block"; // Ensure section is visible
+    // Hide interaction areas if no question
     dialogueInputArea.style.display = "none";
     actionsSec.style.display = "none";
   }
@@ -335,17 +391,19 @@ function showQuestionDetail(question) {
         console.error("Invalid question data passed to showQuestionDetail:", question);
         const questionSec = document.getElementById("gaokao-question");
         if(questionSec) {
-            questionSec.innerHTML = "<p style='color:red;'>錯誤：無法加載題目詳情。</p>";
+            // Keep the title from showQuestionList, just add error message
+            questionSec.innerHTML += "<p style='color:red;'>錯誤：無法加載題目詳情。</p>";
             questionSec.style.display = "block";
         }
+        // Hide interaction areas on error
         document.getElementById("dialogue-input-area")?.style.display = "none";
         document.getElementById("gaokao-actions")?.style.display = "none";
         return;
     }
 
   console.log(`Showing details for question: ${question.year} ${question.key}`);
-  currentQuestion = question;
-  resetChatState();
+  currentQuestion = question; // Set the global current question
+  resetChatState(); // Reset chat for the new question
 
   const questionSec = document.getElementById("gaokao-question");
   const dialogueInputArea = document.getElementById("dialogue-input-area");
@@ -356,12 +414,17 @@ function showQuestionDetail(question) {
       return;
   }
 
-  questionSec.innerHTML = formatQuestionHTML(question);
-  questionSec.style.display = "block";
+  // Format and display the question content (appends to existing H2 title)
+  questionSec.innerHTML += formatQuestionHTML(question); // Append formatted content
+  questionSec.style.display = "block"; // Ensure it's visible
 
+  // Show interaction areas
   dialogueInputArea.style.display = "block";
   actionsSec.style.display = "block";
   console.log("Question details, dialogue area, and actions displayed.");
+
+  // Scroll the question into view
+  questionSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 
@@ -369,44 +432,65 @@ function showQuestionDetail(question) {
  * 格式化题目内容 HTML (Added Validation)
  ****************************************************/
 function formatQuestionHTML(q) {
+    // NOTE: This function now *appends* HTML to the existing H2 in the question section
     if (!q || typeof q !== 'object') {
         console.error("Invalid question data in formatQuestionHTML:", q);
         return "<p style='color:red;'>錯誤：題目數據格式不正確。</p>";
     }
 
-    const typeLabel = TYPES.find(t => t.key === q.key)?.label || q.key || '未知題型';
-    const yearLabel = q.year || '未知年份';
-    const topicLabel = q.topic || '';
+    // The H2 title is now set in showQuestionList/showQuestionDetail
+    let html = ''; // Start with an empty string to append content
 
-    let html = `<h2 style="font-size:1.5rem;">${yearLabel}年 ${typeLabel} ${topicLabel ? '- ' + topicLabel : ''}</h2>`;
-
+    // Helper to format text with proper line breaks using spans
     const formatTextWithNewlines = (text) => {
         if (!text || typeof text !== 'string') return '';
-        return text.split('\n').map(line => `<span class="formatted-line">${line.trim()}</span>`).join('');
+        // Trim each line and filter out empty lines after trimming
+        return text.split('\n')
+                   .map(line => line.trim())
+                   .filter(line => line.length > 0)
+                   .map(line => `<span class="formatted-line">${line}</span>`)
+                   .join(''); // Join remaining lines without extra <br>, handled by span's display:block
     };
 
-    if (q.material1) html += `<div><strong>材料1：</strong>${formatTextWithNewlines(q.material1)}</div>`;
-    if (q.material2) html += `<div><strong>材料2：</strong>${formatTextWithNewlines(q.material2)}</div>`;
-    if (q.material3) html += `<div><strong>材料3：</strong>${formatTextWithNewlines(q.material3)}</div>`;
 
+    // Add materials if they exist
+    if (q.material1) html += `<div style="margin-top: 1em;"><strong>材料1：</strong>${formatTextWithNewlines(q.material1)}</div>`;
+    if (q.material2) html += `<div style="margin-top: 1em;"><strong>材料2：</strong>${formatTextWithNewlines(q.material2)}</div>`;
+    if (q.material3) html += `<div style="margin-top: 1em;"><strong>材料3：</strong>${formatTextWithNewlines(q.material3)}</div>`;
+
+    // Add questions if they exist
     let questionHtml = '';
-    for (let i = 1; i <= 10; i++) {
-        if (q[`question${i}`]) {
-            questionHtml += `<p><strong>問題${i}：</strong>${formatTextWithNewlines(q[`question${i}`])}</p>`;
+    for (let i = 1; i <= 10; i++) { // Assuming max 10 questions based on previous code
+        const questionKey = `question${i}`;
+        if (q[questionKey]) {
+            questionHtml += `<p style="margin-top: 0.8em;"><strong>問題 ${i}：</strong>${formatTextWithNewlines(q[questionKey])}</p>`;
         }
     }
-    if (questionHtml) html += `<div style="margin-top: 1em;">${questionHtml}</div>`;
+     if (questionHtml) {
+        // Add a general "问题：" heading only if there are multiple questions, or specific context needs it.
+        // For single questions, the "問題 1：" prefix might be enough.
+        // Let's add a separator/margin before the questions start.
+        html += `<div style="margin-top: 1.2em;">${questionHtml}</div>`;
+    }
 
-    if (q.prompts && Array.isArray(q.prompts)) {
-        let promptHtml = '';
+
+    // Add prompts (for essays etc.)
+    if (q.prompts && Array.isArray(q.prompts) && q.prompts.length > 0) {
+        let promptHtml = '<div style="margin-top: 1.2em;"><strong>寫作要求：</strong>';
         q.prompts.forEach((p, idx) => {
+            // Check if p is an object and has prompt_text
             if (p && typeof p === 'object' && p.prompt_text) {
-                promptHtml += `<p><strong>作文提示${idx + 1}：</strong>${formatTextWithNewlines(p.prompt_text)}</p>`;
+                 // Use formatTextWithNewlines for prompt text as well
+                 promptHtml += `<p style="margin-left: 1em; margin-top: 0.5em;">(${idx + 1}) ${formatTextWithNewlines(p.prompt_text)}</p>`;
+            } else if (typeof p === 'string') { // Handle if prompts are just strings in the array
+                 promptHtml += `<p style="margin-left: 1em; margin-top: 0.5em;">(${idx + 1}) ${formatTextWithNewlines(p)}</p>`;
             }
         });
-        if (promptHtml) html += `<div style="margin-top: 1em;">${promptHtml}</div>`;
+        promptHtml += '</div>';
+        html += promptHtml;
     }
-    return html;
+
+    return html; // Return the generated HTML string for materials, questions, prompts
 }
 
 
@@ -416,101 +500,130 @@ function formatQuestionHTML(q) {
 function buildAIPrompt(q, mode, userAnswer = "") {
     if (!q || typeof q !== 'object') {
         console.error("Invalid question data in buildAIPrompt:", q);
-        return "錯誤：題目數據無效。"; // Return error string
+        return "錯誤：題目數據無效。無法生成提示。"; // Return error string
     }
 
     const promptKey = q.key || 'default';
-    let base = `${GAOKAO_PROMPTS[promptKey] || GAOKAO_PROMPTS.default}\n\n**題目信息：**\n`;
+    let basePrompt = `${GAOKAO_PROMPTS[promptKey] || GAOKAO_PROMPTS.default}\n\n**題目信息：**\n`;
+    basePrompt += `年份: ${q.year || '未知'}\n`;
+    basePrompt += `題型: ${TYPES.find(t => t.key === q.key)?.label || q.key || '未知'}\n`;
+    if (q.topic) basePrompt += `主題: ${q.topic}\n`;
+    basePrompt += "\n"; // Add a separator line
 
-    if (q.material1) base += `材料1：\n${q.material1}\n\n`;
-    if (q.material2) base += `材料2：\n${q.material2}\n\n`;
-    if (q.material3) base += `材料3：\n${q.material3}\n\n`;
+    // Append Materials
+    if (q.material1) basePrompt += `**材料1：**\n${q.material1}\n\n`;
+    if (q.material2) basePrompt += `**材料2：**\n${q.material2}\n\n`;
+    if (q.material3) basePrompt += `**材料3：**\n${q.material3}\n\n`;
 
+    // Append Questions
     let questionText = "";
     for (let i = 1; i <= 10; i++) {
-        if (q[`question${i}`]) questionText += `問題${i}：${q[`question${i}`]}\n`;
+        if (q[`question${i}`]) {
+            questionText += `問題 ${i}： ${q[`question${i}`]}\n`;
+        }
     }
-    if (questionText) base += questionText + "\n";
+    if (questionText) basePrompt += `**問題：**\n${questionText}\n`;
 
-    if (q.prompts && Array.isArray(q.prompts)) {
-        let promptText = "";
+    // Append Prompts (Essay Requirements)
+    if (q.prompts && Array.isArray(q.prompts) && q.prompts.length > 0) {
+        basePrompt += "**寫作要求：**\n";
         q.prompts.forEach((p, idx) => {
-            if (p && typeof p === 'object' && p.prompt_text) {
-                promptText += `提示${idx + 1}：${p.prompt_text}\n`;
+             if (p && typeof p === 'object' && p.prompt_text) {
+                basePrompt += `(${idx + 1}) ${p.prompt_text}\n`;
+            } else if (typeof p === 'string') {
+                 basePrompt += `(${idx + 1}) ${p}\n`;
             }
         });
-        if (promptText) base += "**作文提示：**\n" + promptText + "\n";
+        basePrompt += "\n";
     }
 
-    if (q.key === "weixiezuo") base += `\n**評分要求 (微寫作):**\n${MICRO_WRITING_INSTRUCTIONS}\n`;
-    else if (q.key === "dazuowen") base += `\n**評分要求 (大作文):**\n${LONG_ESSAY_INSTRUCTIONS}\n`;
+    // Add specific instructions based on type
+    if (q.key === "weixiezuo") {
+        basePrompt += `\n**評分要求 (微寫作):**\n${MICRO_WRITING_INSTRUCTIONS}\n\n`;
+    } else if (q.key === "dazuowen") {
+        basePrompt += `\n**評分要求 (大作文):**\n${LONG_ESSAY_INSTRUCTIONS}\n\n`;
+    }
 
+    // Add user answer and task based on mode
     if (mode === "review") {
-        base += `\n**學生答案：**\n${userAnswer || "(未提供)"}\n\n`;
-        if (q.reference_answer) base += `**參考答案：**\n${q.reference_answer}\n\n`;
-        base += `**任務：** 請嚴格按照前面的評分要求（如果適用），評估學生的答案，指出優缺點，提供具體改進建議，並給出分數（如果適用）。如果沒有評分要求，請分析學生答案的合理性、完整性和準確性。`;
-    } else {
-        if (userAnswer) base += `\n**學生嘗試的答案（供參考）：**\n${userAnswer}\n\n`;
-        base += `**任務：** 請你來回答這個問題。請用友善、清晰、略帶俏皮的語氣回答，就像一位樂於助人的學長姐在耐心講解。如果題目是寫作類，請直接按要求寫作。`;
+        basePrompt += `**學生答案：**\n${userAnswer || "(學生未提供答案)"}\n\n`;
+        if (q.reference_answer) {
+            basePrompt += `**參考答案 (供AI參考，不用展示給學生)：**\n${q.reference_answer}\n\n`;
+        }
+        basePrompt += `**任務：** 請嚴格按照前面的評分要求（特別是微寫作或大作文的格式要求），評估學生的答案。請指出優點和缺點，提供具體的改進建議。如果是寫作題，請務必給出等級和分數。如果是非寫作題，請分析學生答案的合理性、完整性和準確性，並說明理由。`;
+
+    } else if (mode === "solve") { // AI is asked to solve the question
+         if (userAnswer) {
+             // Include user's attempt if they provided one before clicking "AI答案"
+             basePrompt += `\n**學生之前的嘗試（僅供AI參考，不用在回答中提及）：**\n${userAnswer}\n\n`;
+         }
+         basePrompt += `**任務：** 請你來回答或完成這個題目。請用友善、清晰、略帶俏皮的語氣回答，如同一個樂於助人的學長姐在耐心講解。如果題目是寫作類（微寫作/大作文），請直接按照要求進行寫作，產出一篇符合要求的範文。`;
+    } else { // Default mode (e.g., chat after initial submission)
+        basePrompt += `**用戶輸入：**\n"${userAnswer}"\n\n`;
+        basePrompt += `**任務：** 請針對用戶的這句話，基於之前的題目和對話上下文，進行回應、討論或回答。保持之前設定的（如果有的話）學長姐、閱卷官或一般助手的語氣。`;
+
     }
-    base += "\n\n**風格提示：** 請使用繁體中文回答。";
-    return base;
+
+    basePrompt += "\n\n**風格提示：** 請始終使用繁體中文回答。";
+    return basePrompt;
 }
 
 
 /****************************************************
  * 呼叫 AI 並處理回复 (Improved Error Handling)
  ****************************************************/
-function callAI(prompt) {
+async function callAI(prompt) { // Made async for potential await later if needed
     if (typeof prompt !== 'string' || !prompt.trim()) {
         console.error("Invalid prompt passed to callAI:", prompt);
         addMessage("內部錯誤：無法向 AI 發送有效請求。", "ai");
         return;
     }
 
-    removeThinkingMessage();
-    const timeoutId = setTimeout(() => {
-        if (!thinkingMessageElement) {
-             thinkingMessageElement = addMessage("<em class='thinking-message'>AI 正在想啊想啊，耐個心吧 🐶🦊🐹 ...</em>", "ai");
-        }
-    }, 200);
+    removeThinkingMessage(); // Remove any previous thinking message
+    // Show thinking message immediately
+    thinkingMessageElement = addMessage("<em class='thinking-message'>AI 正在思考中，請稍候... 🧠✨</em>", "ai");
 
-    fetch(CLOUD_FLARE_WORKER_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json", "Accept": "application/json" },
-        body: JSON.stringify({ prompt: prompt })
-    })
-    .then(res => {
-        clearTimeout(timeoutId);
-        removeThinkingMessage();
-        if (!res.ok) {
-            return res.text().then(text => {
-                 let errorMsg = `請求失敗 (${res.status} ${res.statusText})`;
-                 try {
-                     const errorJson = JSON.parse(text);
-                     errorMsg = errorJson?.error || errorJson?.message || errorMsg;
-                 } catch (e) {
-                     if (text && text.length < 200) errorMsg += `: ${text}`;
-                 }
-                 throw new Error(errorMsg);
-            });
+
+    try {
+        const response = await fetch(CLOUD_FLARE_WORKER_URL, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify({ prompt: prompt })
+        });
+
+        removeThinkingMessage(); // Remove thinking message once response starts coming back
+
+        if (!response.ok) {
+            let errorMsg = `請求失敗 (${response.status} ${response.statusText})`;
+            try {
+                // Try to get more detailed error from response body
+                const errorBody = await response.text();
+                errorMsg += `: ${errorBody.substring(0, 200)}`; // Limit length
+            } catch (e) {
+                // Ignore if reading body fails
+            }
+            throw new Error(errorMsg);
         }
-        return res.json();
-    })
-    .then(json => {
+
+        const json = await response.json();
+
         if (json && json.answer) {
-            addMessage(`${formatAnswer(json.answer)}`, "ai");
+            // Format the answer using the enhanced formatAnswer function
+            addMessage(formatAnswer(json.answer), "ai");
         } else {
-             console.error("AI response missing 'answer':", json);
+             console.error("AI response missing 'answer' field or is empty:", json);
              throw new Error("AI 回應的格式不正確或為空。");
         }
-    })
-    .catch(err => {
+
+    } catch (err) {
         console.error("AI request/processing error:", err);
-        clearTimeout(timeoutId);
-        removeThinkingMessage();
-        addMessage(`與 AI 連接時發生錯誤：<br><small>${err.message || "未知錯誤"}</small>`, "ai");
-    });
+        removeThinkingMessage(); // Ensure thinking message is removed on error
+        // Provide a more user-friendly error message
+        addMessage(`與 AI 連接時發生錯誤，請稍後再試。<br><small>錯誤詳情: ${err.message || "未知網路或服務器問題"}</small>`, "ai");
+    }
 }
 
 
@@ -519,14 +632,20 @@ function callAI(prompt) {
  ****************************************************/
 function showReferenceAnswer() {
   if (!currentQuestion) {
-    addMessage("請先選擇一道題目。", "ai");
+    addMessage("請先選擇一道題目，才能看參考答案哦。", "ai");
     return;
   }
+  removeThinkingMessage(); // Clear thinking message if any
+
   if (currentQuestion.reference_answer) {
+    // Use formatAnswer to potentially format the reference answer too
     addMessage(`<strong>參考答案：</strong><br/>${formatAnswer(currentQuestion.reference_answer)}`, "ai");
   } else {
-    addMessage("抱歉，這道題的參考答案還沒有準備好哦。", "ai");
+    addMessage("抱歉，這道題目的參考答案暫時還沒有收錄。", "ai");
   }
+  // Scroll to the new message
+   const messagesEl = document.getElementById("messages");
+   if (messagesEl) messagesEl.scrollTop = messagesEl.scrollHeight;
 }
 
 /****************************************************
@@ -534,41 +653,69 @@ function showReferenceAnswer() {
  ****************************************************/
 function submitAnswer() {
   if (!currentQuestion) {
-    addMessage("請先選個題目再提交答案吧！", "ai");
+    addMessage("請先選個題目再提交答案或聊天吧！", "ai");
     return;
   }
   const userAnswerEl = document.getElementById("userAnswer");
-  if (!userAnswerEl) return;
+  if (!userAnswerEl) {
+      console.error("#userAnswer element not found.");
+      return;
+  }
 
   const answer = userAnswerEl.value.trim();
 
   if (!answer) {
-    addMessage("好像忘了輸入內容哦？", "ai");
-    userAnswerEl.style.outline = '2px solid orange';
-    setTimeout(() => { userAnswerEl.style.outline = ''; }, 700);
+    addMessage("好像忘了輸入內容哦？寫點什麼吧！😊", "ai");
+    // Simple visual feedback
+    userAnswerEl.style.borderColor = 'orange';
+    userAnswerEl.focus();
+    setTimeout(() => {
+        userAnswerEl.style.borderColor = ''; // Reset border color
+        // Reset to dark mode border if applicable
+        if (document.body.classList.contains('dark-mode')) {
+             userAnswerEl.style.borderColor = '#555';
+        } else {
+             userAnswerEl.style.borderColor = '#ccc';
+        }
+    }, 1000);
     return;
   }
 
-  addMessage(formatAnswer(answer), "user");
+  // Display user's message first
+  addMessage(formatAnswer(answer), "user"); // Format user input potentially too
 
+  // Clear the input textarea and reset its height
   userAnswerEl.value = "";
   userAnswerEl.style.height = 'auto';
-  userAnswerEl.focus();
+  // Optionally, keep focus for quick follow-up
+  // userAnswerEl.focus();
 
   const submitButton = document.getElementById("submit-answer-btn");
+  let prompt = "";
 
   if (isFirstSubmission) {
-    const mode = (currentQuestion.key === 'weixiezuo' || currentQuestion.key === 'dazuowen' || currentQuestion.reference_answer) ? "review" : "solve";
-    const prompt = buildAIPrompt(currentQuestion, mode, answer);
-    callAI(prompt);
-    isFirstSubmission = false;
+    console.log("First submission for this question.");
+    // Determine mode: review for writing/answerable types, solve otherwise? Or always review first?
+    // Let's default to "review" mode if it's an essay or has a reference answer, otherwise treat as chat/solve attempt.
+    const isWriting = currentQuestion.key === 'weixiezuo' || currentQuestion.key === 'dazuowen';
+    const hasReference = !!currentQuestion.reference_answer;
+    // If it's writing or has a reference, assume the user wants it reviewed.
+    // Otherwise, maybe they are just trying to answer a non-essay Q. Let's use 'review' mode here too, AI can adapt.
+    const mode = "review";
+    prompt = buildAIPrompt(currentQuestion, mode, answer);
+
+    isFirstSubmission = false; // Mark that the first submission has happened
     if (submitButton) {
-        submitButton.textContent = "深度聊天";
+        submitButton.textContent = "深度聊天"; // Change button text
     }
   } else {
-    const chatPrompt = `（繼續對話）用戶說：\n"${answer}"\n\n請針對用戶的這句話進行回應、討論或回答。保持之前設定的（如果有的話）學長姐或閱卷官的語氣。`;
-    callAI(chatPrompt);
+    console.log("Follow-up submission (chat mode).");
+    // Treat subsequent submissions as chat/follow-up questions
+    prompt = buildAIPrompt(currentQuestion, "chat", answer); // Use a specific 'chat' mode or reuse 'review'/'solve'? Let's use 'chat'.
   }
+
+  // Call the AI with the constructed prompt
+  callAI(prompt);
 }
 
 /****************************************************
@@ -580,11 +727,18 @@ function askAIForSolution() {
     return;
   }
 
-  addMessage("收到！正在努力生成 AI 答案...", "ai");
+  // Provide immediate feedback to the user
+  addMessage("收到！正在請求 AI 直接生成這道題的答案...", "ai");
 
-  const prompt = buildAIPrompt(currentQuestion, "solve");
+  // Get user's current input in textarea, maybe they started typing?
+  // Pass it as context, but AI's task is to generate *its* solution.
+  const userAnswerEl = document.getElementById("userAnswer");
+  const currentInput = userAnswerEl ? userAnswerEl.value.trim() : "";
+
+  const prompt = buildAIPrompt(currentQuestion, "solve", currentInput); // Use "solve" mode
   callAI(prompt);
 
+  // If this is the first interaction, change the submit button state
   if (isFirstSubmission) {
     isFirstSubmission = false;
     const submitButton = document.getElementById("submit-answer-btn");
@@ -599,13 +753,19 @@ function askAIForSolution() {
  ****************************************************/
 function toggleDarkMode() {
   document.body.classList.toggle("dark-mode");
-  if (document.body.classList.contains("dark-mode")) {
+  const isDarkMode = document.body.classList.contains("dark-mode");
+  if (isDarkMode) {
       localStorage.setItem("darkMode", "enabled");
       console.log("Dark mode enabled and saved.");
   } else {
-      localStorage.setItem("darkMode", "disabled");
+      localStorage.setItem("darkMode", "disabled"); // Changed from "null" to "disabled" for clarity
       console.log("Dark mode disabled and saved.");
   }
+   // Update textarea border color immediately after toggle
+    const userAnswer = document.getElementById("userAnswer");
+    if(userAnswer) {
+        userAnswer.style.borderColor = isDarkMode ? '#555' : '#ccc';
+    }
 }
 
 // --- End of app.js ---
