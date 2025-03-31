@@ -14,8 +14,13 @@
       right: 1rem;
       background: none;
       border: none;
-      font-size: 1.0rem;
+      font-size: 1.0rem; /* 適當調整大小 */
       cursor: pointer;
+      padding: 5px; /* 增加點擊區域 */
+      color: inherit; /* 繼承父元素顏色，以便暗黑模式切換 */
+    }
+    body.dark-mode #toggle-dark-btn {
+        color: #f0f0f0; /* 暗黑模式下確保可見 */
     }
   </style>
 </head>
@@ -35,20 +40,26 @@
     <section id="gaokao-year-menu" style="display:none;text-align: center;"></section>
     <!-- 題目顯示區，標題改為「背景真題」 -->
     <section id="gaokao-question" style="display:none;"></section>
-    <!-- 對話窗口（預設隱藏，不再顯示灰色框，僅在互動時展開） -->  
-    <section id="dialogue-box" style="display:none;">
-      <div id="messages"></div>
+
+    <!-- 更新：合併後的對話與輸入區域 (預設隱藏，選題後顯示) -->
+    <section id="dialogue-input-area" style="display:none;">
+        <div id="messages">
+            <!-- 對話內容會動態添加到這裡 -->
+        </div>
+        <textarea id="userAnswer" placeholder="請輸入你的答案或想聊的話題…" style="width:calc(100% - 2rem); padding:1rem; font-size:1.2rem; margin-top:1rem; border:1px solid #ccc; border-radius:5px; min-height: 4rem; overflow-y:hidden; resize: vertical; box-sizing: border-box;"></textarea>
     </section>
-    <!-- 底部互動按鈕區：包含答案輸入框與三個互動按鈕 -->
-    <section id="gaokao-actions" style="display:none; text-align:center;">
-      <textarea id="userAnswer" placeholder="請輸入你的答案⋯⋯" style="width:80%; padding:1rem; font-size:1.2rem; margin-bottom:1rem; border:1px solid #0077cc; border-radius:5px; height:2rem; overflow:hidden;"></textarea>
+
+    <!-- 底部互動按鈕區 (預設隱藏，選題後顯示) -->
+    <section id="gaokao-actions" style="display:none; text-align:center; margin-top: 1rem; margin-bottom: 1.5rem;">
       <div>
-        <button id="submit-answer-btn" style="font-size:1.0rem; padding:1rem 1.5rem;">提交答案</button>
-        <button id="reference-answer-btn" style="font-size:1.0rem; padding:1rem 1.5rem;">參考答案</button>
-        <button id="ai-answer-btn" style="font-size:1.0rem; padding:1rem 1.5rem;">AI答案</button>
+        <!-- 按鈕樣式將在 CSS 中定義 -->
+        <button id="submit-answer-btn">提交答案</button>
+        <button id="reference-answer-btn">參考答案</button>
+        <button id="ai-answer-btn">AI答案</button>
       </div>
     </section>
-    <!-- 進度顯示 -->
+
+    <!-- 進度顯示 (如果需要) -->
     <div id="progress"></div>
   </main>
 
