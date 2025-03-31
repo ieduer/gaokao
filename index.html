@@ -6,24 +6,20 @@
   <title>AI高考</title>
   <link rel="icon" href="https://raw.githubusercontent.com/gptv/suen/main/images/Avatar-small.jpeg" type="image/jpeg">
   <link rel="stylesheet" href="assets/css/style.css" />
-  <!-- Style for toggle button is now primarily in style.css -->
 </head>
 <body>
-  <!-- Task 1: Header updated for flex layout -->
+  <!-- Task 1: Updated Header Structure -->
   <header>
-    <h1>AI高考</h1>
+    <div class="header-content"> <!-- Container for centered elements -->
+      <h1>AI高考</h1>
+      <button id="gaokao-btn">北京真題</button> <!-- Moved button here -->
+    </div>
     <button id="toggle-dark-btn" title="切換夜晚模式">🌗</button>
-    <!-- Removed the gaokao-btn here, assuming type menu appears below -->
   </header>
 
   <main>
-    <!-- Top level button to trigger type menu -->
-    <div style="text-align: center; margin-bottom: 1rem;"> <!-- Wrapper for centering -->
-        <button id="gaokao-btn" style="font-size:1.3rem; padding:1rem 1.5rem;">北京真題</button>
-    </div>
-
-    <!-- 二級目錄：題型菜單 -->
-    <section id="gaokao-type-menu" style="display:none;"></section> <!-- Initially hidden -->
+    <!-- 二級目錄：題型菜單 (Initially hidden) -->
+    <section id="gaokao-type-menu" style="display:none;"></section>
     <!-- 三級目錄：年份列表 -->
     <section id="gaokao-year-menu" style="display:none;"></section>
     <!-- 題目顯示區 -->
@@ -31,9 +27,7 @@
 
     <!-- 合併後的對話與輸入區域 -->
     <section id="dialogue-input-area" style="display:none;">
-        <div id="messages">
-            <!-- 對話內容會動態添加到這裡 -->
-        </div>
+        <div id="messages"></div>
         <textarea id="userAnswer" placeholder="請輸入你的答案或想聊的話題…" style="width:calc(100% - 2rem); padding:1rem; font-size:1.2rem; margin-top:1rem; border:1px solid #ccc; border-radius:5px; min-height: 4rem; overflow-y:hidden; resize: vertical; box-sizing: border-box;"></textarea>
     </section>
 
