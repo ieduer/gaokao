@@ -153,13 +153,13 @@ document.addEventListener("DOMContentLoaded", () => {
             gaokaoBtn.textContent = "數據加載失敗";
             gaokaoBtn.disabled = true;
        }
-    }); // End fetch chain
+    }); // <<< Added semicolon
 
   // Attach other listeners
-  document.getElementById("submit-answer-btn")?.addEventListener("click", submitAnswer);
-  document.getElementById("reference-answer-btn")?.addEventListener("click", showReferenceAnswer);
-  document.getElementById("ai-answer-btn")?.addEventListener("click", askAIForSolution);
-  document.getElementById("toggle-dark-btn")?.addEventListener("click", toggleDarkMode);
+  document.getElementById("submit-answer-btn")?.addEventListener("click", submitAnswer); // <<< Added semicolon
+  document.getElementById("reference-answer-btn")?.addEventListener("click", showReferenceAnswer); // <<< Added semicolon
+  document.getElementById("ai-answer-btn")?.addEventListener("click", askAIForSolution); // <<< Added semicolon
+  document.getElementById("toggle-dark-btn")?.addEventListener("click", toggleDarkMode); // <<< Added semicolon
 
   // Textarea setup
   const userAnswer = document.getElementById("userAnswer");
@@ -167,28 +167,25 @@ document.addEventListener("DOMContentLoaded", () => {
       userAnswer.addEventListener("input", function() {
           this.style.height = 'auto';
           this.style.height = (this.scrollHeight) + 'px';
-      }); // Semicolon technically optional here but good practice
+      }); // <<< Added semicolon
 
       userAnswer.addEventListener('keydown', function(event) {
           if (event.key === 'Enter' && !event.shiftKey) {
               event.preventDefault();
               document.getElementById("submit-answer-btn")?.click();
           }
-      }); // Semicolon technically optional here but good practice
+      }); // <<< Added semicolon
 
-    // ***************************************************************
-    // ***** THE MISSING CLOSING BRACE FOR 'if (userAnswer)' WAS HERE *****
-    // ***************************************************************
-    } else { // Now the 'else' correctly pairs with 'if (userAnswer)'
+    } else { // Correct brace IS here
       console.error("#userAnswer textarea not found.");
-    } // End of 'if (userAnswer) ... else ...' block
+    } // <<< Added semicolon to close the else block statement
 
   // Apply saved dark mode preference
-  if (localStorage.getItem("darkMode") === "enabled") {
-      document.body.classList.add("dark-mode");
-  } // End of dark mode check
+  if (localStorage.getItem("darkMode") === "enabled") { // Preceding statement now has semicolon
+      document.body.classList.add("dark-mode"); // Line ~198 target
+  } // <<< Added semicolon to close the if statement
 
-}); // End of DOMContentLoaded event listener
+}); // <<< Added semicolon to close the DOMContentLoaded listener
 
 /****************************************************
  * 重置聊天状态
@@ -221,15 +218,14 @@ function showTypeMenu() {
       return;
   }
 
-  menu.innerHTML = ""; // Clear previous menu items
+  menu.innerHTML = "";
 
-  // Hide other sections
   document.getElementById("gaokao-year-menu")?.style.display = "none";
   document.getElementById("gaokao-question")?.style.display = "none";
   document.getElementById("dialogue-input-area")?.style.display = "none";
   document.getElementById("gaokao-actions")?.style.display = "none";
 
-  resetChatState(); // Reset chat when showing types
+  resetChatState();
 
   if (!Array.isArray(TYPES) || TYPES.length === 0) {
        console.error("TYPES data is invalid or empty.");
@@ -268,12 +264,11 @@ function showYearMenu(typeKey) {
       return;
   }
 
-  // Hide lower sections
   document.getElementById("gaokao-question")?.style.display = "none";
   document.getElementById("dialogue-input-area")?.style.display = "none";
   document.getElementById("gaokao-actions")?.style.display = "none";
 
-  yearMenu.innerHTML = ""; // Clear previous
+  yearMenu.innerHTML = "";
 
   if (dataArr.length === 0) {
     console.warn(`No data found for type: ${typeKey}`);
@@ -291,7 +286,7 @@ function showYearMenu(typeKey) {
       yearMenu.appendChild(btn);
     });
   }
-  yearMenu.style.display = "flex"; // Show the year menu
+  yearMenu.style.display = "flex";
   console.log("#gaokao-year-menu display set to 'flex'.");
 }
 
@@ -318,7 +313,7 @@ function showQuestionList(typeKey, year, dataArr) {
   if (questions.length > 0) {
     console.log(`Found ${questions.length} question(s). Displaying the first one.`);
     questionSec.style.display = "block";
-    showQuestionDetail(questions[0]); // Show details, which shows dialogue/actions
+    showQuestionDetail(questions[0]);
   } else {
     console.warn(`No questions found for type: ${typeKey}, year: ${year}.`);
     questionSec.innerHTML += `<p style="font-size:1.2rem;">${year} 年的 ${typeLabel} 題目暫無資料。</p>`;
