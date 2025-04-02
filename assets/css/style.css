@@ -12,36 +12,29 @@
   /* =======================================
      全局樣式 & Sticky Footer Setup
      ======================================= */
+  html {
+    height: 100%; /* Ensure html takes full height */
+  }
+
   body {
     font-family: 'HuWenMingChaoTi', "Noto Serif TC", serif;
     color: #333;
     margin: 0;
-    padding: 0; /* Removed horizontal padding here, apply to main if needed */
+    padding: 0;
     line-height: 1.7;
     background-image: url('../img/bg.webp'); /* DO NOT CHANGE THIS PATH */
     background-color: #f9f5e7;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 100vh;
+    background-attachment: fixed; /* Keep fixed background */
+    min-height: 100vh; /* Ensure body takes at least full viewport height */
+    overflow: hidden; /* Prevent body from scrolling */
     /* --- Sticky Footer --- */
     display: flex;
     flex-direction: column;
     /* --- End Sticky Footer --- */
   }
-
-  main {
-      max-width: 900px;
-      margin: 1rem auto 0 auto; /* Keep top margin, auto side margins for centering */
-      padding: 1rem; /* Add padding here instead of body */
-      width: 100%; /* Ensure main takes width within max-width */
-      box-sizing: border-box; /* Include padding in width calculation */
-      /* --- Sticky Footer --- */
-      flex-grow: 1; /* Allow main to grow and push footer down */
-      /* --- End Sticky Footer --- */
-  }
-
 
   /* Header Styles */
   header {
@@ -51,9 +44,10 @@
     padding: 0.8rem 1rem;
     background-color: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(5px);
-    position: relative;
-    min-height: 50px;
+    position: relative; /* Keep relative for dark mode button positioning */
+    min-height: 50px; /* Keep min-height */
     flex-shrink: 0; /* Prevent header from shrinking */
+    z-index: 10; /* Ensure header is above main content scrolling */
   }
 
   /* Container for H1 and Gaokao Button */
@@ -63,16 +57,86 @@
       gap: 1.5rem;
   }
 
+  /* Main content area - takes remaining space */
+  main {
+      /* --- Sticky Footer --- */
+      flex-grow: 1; /* Allow main to grow and push footer down */
+      /* --- End Sticky Footer --- */
+      padding: 0; /* Remove padding from main, apply to layout-container */
+      margin: 0;  /* Remove margin from main */
+      width: 100%;
+      overflow: hidden; /* Prevent main from overflowing, children will scroll */
+      display: flex; /* Use flex to easily center the layout container */
+      justify-content: center; /* Center layout-container horizontally */
+      align-items: center; /* Center layout-container vertically (optional, might stretch) */
+  }
+
+  /* NEW: Layout Container for Left/Right Split */
+  #layout-container {
+      display: flex;
+      flex-direction: row; /* Columns side-by-side */
+      gap: 1rem; /* Space between columns */
+      width: 100%;
+      height: calc(100% - 2rem); /* Fill main height minus padding */
+      max-width: 1300px; /* Adjust max-width for two columns */
+      margin: 1rem auto; /* Vertical margin, centered horizontally */
+      padding: 0; /* No padding on container itself */
+      box-sizing: border-box;
+      overflow: hidden; /* Important: Prevent container itself from scrolling */
+  }
+
+  /* NEW: Left and Right Columns */
+  #left-column, #right-column {
+      flex: 2; /* Base width proportion for left column */
+      display: flex;
+      flex-direction: column; /* Stack content vertically */
+      gap: 1rem; /* Space between items inside the column */
+      overflow-y: auto; /* CRITICAL: Enable vertical scrolling */
+      overflow-x: hidden; /* Prevent horizontal scrolling within column */
+      padding: 1rem; /* Add padding inside columns */
+      background-color: rgba(255, 255, 255, 0.75); /* Slight background tint */
+      border-radius: 8px;
+      box-sizing: border-box;
+      /* min-height: 0; /* Flexbox scroll fix if needed, try without first */
+      height: 100%; /* Ensure columns take full height of container */
+  }
+
+  #right-column {
+      flex: 3; /* Base width proportion for right column (wider) */
+      /* Initially hidden, controlled by JS */
+  }
+
+  /* Adjustments for sections moved into columns */
+  #gaokao-type-menu,
+  #gaokao-year-menu,
+  #gaokao-question,
+  #dialogue-input-area,
+  #gaokao-actions {
+      margin-bottom: 0; /* Remove bottom margin, rely on column gap */
+      margin-top: 0; /* Remove top margin, rely on column gap */
+      border-radius: 8px; /* Ensure consistency */
+      /* Keep existing padding and background */
+  }
+
+  /* Keep specific background/border styles */
+   #gaokao-type-menu { background: rgba(255, 255, 255, 0.8); border: 1px solid #ddd; }
+   #gaokao-year-menu { background: rgba(255, 255, 255, 0.8); border: 1px solid #ddd; }
+   #gaokao-question { background: rgba(255, 255, 255, 0.85); border: 1px solid #ddd; }
+   #dialogue-input-area { background: rgba(255, 255, 255, 0.85); border: 1px solid #ddd; }
+   #gaokao-actions { background: none; border: none; text-align: center; padding: 0; /* Remove action section padding if buttons have margins */ }
+
+
   footer {
     text-align: center;
     padding: 0.5rem;
     font-size: 0.9rem;
     background-color: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(5px);
-    margin-top: 1rem; /* Keep margin-top for spacing when content is long */
+    margin-top: 0; /* Removed margin-top, main grows to fill space */
     flex-shrink: 0; /* Prevent footer from shrinking */
-    width: 100%; /* Ensure footer spans width */
+    width: 100%;
     box-sizing: border-box;
+    z-index: 10; /* Ensure footer is above potentially overflowing content */
   }
 
   /* H1 style */
@@ -119,21 +183,28 @@
   body.dark-mode header, body.dark-mode footer { background-color: rgba(26, 26, 26, 0.7); backdrop-filter: blur(5px); color: #f0f0f0; }
   body.dark-mode h1 { color: #e0e0e0; }
   body.dark-mode #toggle-dark-btn { color: #f0f0f0; }
-  /* Update background for menus/sections in dark mode */
+  /* Update background for columns and menus/sections in dark mode */
+  body.dark-mode #left-column,
+  body.dark-mode #right-column {
+       background-color: rgba(42, 42, 42, 0.75); /* Darker tint for columns */
+  }
   body.dark-mode #gaokao-type-menu,
   body.dark-mode #gaokao-year-menu,
   body.dark-mode #gaokao-question,
   body.dark-mode #dialogue-input-area {
-      background: rgba(42, 42, 42, 0.8); /* Slightly transparent dark */
+      background: rgba(50, 50, 50, 0.85); /* Slightly darker internal sections */
       border-color: #444;
       color: #f0f0f0;
    }
+   /* Keep actions area transparent */
+   body.dark-mode #gaokao-actions { background: none; border: none; }
+
   body.dark-mode button { background-color: #3a3a3a; color: #e0e0e0; border: 1px solid #555; }
   body.dark-mode button:hover { background-color: #4a4a4a; border-color: #666; }
   body.dark-mode #submit-answer-btn, body.dark-mode #reference-answer-btn, body.dark-mode #ai-answer-btn, body.dark-mode #gaokao-btn { box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); }
   body.dark-mode #submit-answer-btn { background-color: #506a4c; border-color: #6a896b; color: #f0f0f0; }
-  body.dark-mode #reference-answer-btn { background-color: #6a7e8a; border-color: #8aa2b0; color: #f0f0f0; } /* Ensure text color */
-  body.dark-mode #ai-answer-btn { background-color: #a16a3f; border-color: #bd8e6b; color: #f0f0f0; } /* Ensure text color */
+  body.dark-mode #reference-answer-btn { background-color: #6a7e8a; border-color: #8aa2b0; color: #f0f0f0; }
+  body.dark-mode #ai-answer-btn { background-color: #a16a3f; border-color: #bd8e6b; color: #f0f0f0; }
   body.dark-mode #gaokao-btn { background-color: #6a7e8a; border-color: #8aa2b0; color: #f0f0f0;}
   body.dark-mode #gaokao-btn:hover { background-color: #5a6c82; }
   /* Dark mode Menu buttons (general rules already cover most, adjust specifics if needed) */
@@ -142,21 +213,36 @@
   body.dark-mode #gaokao-type-menu button:hover { background-color: #5a5a72; }
   body.dark-mode #gaokao-year-menu button:hover { background-color: #695969; }
   body.dark-mode #userAnswer { background-color: #333; color: #f0f0f0; border-color: #555; }
-  body.dark-mode #messages { background: #2e2e2e; border-color: #444; }
+  body.dark-mode #messages { background: #2e2e2e; border-color: #444; } /* Keep messages background distinct */
   body.dark-mode #messages .user-message { background-color: #3a5a70; color: #f0f0f0; }
   body.dark-mode #messages .ai-message { background-color: #4a4a4a; color: #f0f0f0; }
   body.dark-mode .thinking-message { color: #bbb; }
-  /* Remove dark mode specific scrollbar for type menu as it wraps now */
-  /* body.dark-mode #gaokao-type-menu { scrollbar-color: #555 #2a2a2a; } */
-  /* body.dark-mode #gaokao-type-menu::-webkit-scrollbar-track { background: #2a2a2a; } */
-  /* body.dark-mode #gaokao-type-menu::-webkit-scrollbar-thumb { background-color: #555; } */
+  /* Add scrollbar styling for columns in dark mode */
+   body.dark-mode #left-column,
+   body.dark-mode #right-column {
+       scrollbar-color: #555 #2a2a2a;
+   }
+   body.dark-mode #left-column::-webkit-scrollbar,
+   body.dark-mode #right-column::-webkit-scrollbar {
+       width: 8px;
+   }
+   body.dark-mode #left-column::-webkit-scrollbar-track,
+   body.dark-mode #right-column::-webkit-scrollbar-track {
+       background: #2a2a2a;
+   }
+   body.dark-mode #left-column::-webkit-scrollbar-thumb,
+   body.dark-mode #right-column::-webkit-scrollbar-thumb {
+       background-color: #555;
+       border-radius: 4px;
+       border: 2px solid #2a2a2a;
+   }
 
 
   /* =======================================
      一般按鈕樣式 (用於菜單按鈕等)
      ======================================= */
   #gaokao-type-menu button, #gaokao-year-menu button {
-    border: 1px solid #ccc; border-radius: 8px; background: #f0f0f0; color: #333; cursor: pointer; transition: background 0.2s, transform 0.1s, box-shadow 0.2s; padding: 0.8rem 1.2rem; font-size: 1rem; margin: 0.25rem; font-family: inherit;
+    border: 1px solid #ccc; border-radius: 8px; background: #f0f0f0; color: #333; cursor: pointer; transition: background 0.2s, transform 0.1s, box-shadow 0.2s; padding: 0.8rem 1.2rem; font-size: 1rem; margin: 0; /* Remove margin, rely on flex gap */ font-family: inherit;
   }
   #gaokao-type-menu button:hover, #gaokao-year-menu button:hover {
     background: #e0e0e0; box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -166,35 +252,32 @@
   }
 
   /* =======================================
-     二級目錄：題型菜單 (UPDATED FOR DESKTOP WRAPPING)
+     二級目錄：題型菜單 (Within Left Column)
      ======================================= */
   #gaokao-type-menu {
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap onto the next line */
-    justify-content: center; /* Center items when they wrap */
-    gap: 0.5rem;
-    background: rgba(255, 255, 255, 0.8); border: 1px solid #ddd; padding: 0.8rem; border-radius: 8px; margin-bottom: 1rem;
-    /* Removed overflow-x and scrollbar styles */
+    justify-content: center; /* Center items */
+    gap: 0.5rem; /* Spacing between buttons */
+    padding: 0.8rem; /* Keep internal padding */
+    /* Background/border set above */
   }
-  /* No longer need horizontal scrollbar styles here */
-  /* #gaokao-type-menu::-webkit-scrollbar { height: 6px; } */
-  /* #gaokao-type-menu::-webkit-scrollbar-track { background: #f0f0f0; border-radius: 3px; } */
-  /* #gaokao-type-menu::-webkit-scrollbar-thumb { background-color: #ccc; border-radius: 3px; } */
 
   #gaokao-type-menu button { /* Specific styles for type menu buttons */
     font-size: 0.95rem;
     padding: 0.6rem 1rem;
     background-color: #e6e6fa; border: 1px solid #c9c9e3; color: #333;
-    flex-shrink: 0; /* Prevent buttons from shrinking too much if space is tight */
+    flex-shrink: 0;
     white-space: nowrap;
   }
   #gaokao-type-menu button:hover { background-color: #d8d8f0; }
 
   /* =======================================
-     三級目錄：年份列表
+     三級目錄：年份列表 (Within Left Column)
      ======================================= */
   #gaokao-year-menu {
-    display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; background: rgba(255, 255, 255, 0.8); border: 1px solid #ddd; padding: 0.8rem; border-radius: 8px; margin-bottom: 1rem;
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; padding: 0.8rem;
+    /* Background/border set above */
   }
   #gaokao-year-menu button { /* Specific styles for year menu buttons */
     font-size: 0.9rem; padding: 0.5rem 0.8rem; background-color: #d8bfd8; border: 1px solid #c1acc1; color: #333; flex-shrink: 0;
@@ -202,9 +285,14 @@
   #gaokao-year-menu button:hover { background-color: #c8aec8; }
 
   /* =======================================
-     題目顯示區
+     題目顯示區 (Within Left Column)
      ======================================= */
-  #gaokao-question { padding: 1.5rem; background: rgba(255, 255, 255, 0.85); border: 1px solid #ddd; border-radius: 8px; margin-bottom: 1rem; font-size: 1.2rem; line-height: 1.8; }
+  #gaokao-question {
+     padding: 1.5rem; font-size: 1.2rem; line-height: 1.8;
+     /* Background/border set above */
+     /* Allow question area to grow if needed, but column scrolls */
+     flex-grow: 1; /* Let it take available space in left column if needed */
+   }
   #gaokao-question h2 { font-size: 1.6rem; margin-bottom: 1rem; color: #555; }
   #gaokao-question p { margin-bottom: 0.8em; }
   #gaokao-question strong { color: #0056b3; margin-right: 5px; }
@@ -212,22 +300,70 @@
 
 
   /* =======================================
-     對話與輸入區域
+     對話與輸入區域 (Within Right Column)
      ======================================= */
-  #dialogue-input-area { padding: 1rem; background: rgba(255, 255, 255, 0.85); border: 1px solid #ddd; border-radius: 8px; margin-bottom: 0; } /* Removed margin-bottom: 1rem; */
-  #messages { min-height: 150px; max-height: 50vh; overflow-y: auto; margin-bottom: 1rem; padding: 0.5rem; border: none; background: none; }
-  #messages > div:not(.separator) { margin-bottom: 0.8rem; padding: 0.8rem 1.2rem; border-radius: 15px; font-size: 1.15rem; line-height: 1.6; max-width: 80%; word-wrap: break-word; }
+  #dialogue-input-area {
+      padding: 1rem;
+      /* Background/border set above */
+      display: flex; /* Use flex to manage internal elements */
+      flex-direction: column; /* Stack messages and textarea */
+      flex-grow: 1; /* Allow this area to take most space in right column */
+      overflow: hidden; /* Prevent this section itself from scrolling */
+  }
+  #messages {
+      min-height: 150px; /* Keep minimum height */
+      flex-grow: 1; /* Allow messages to take available vertical space */
+      overflow-y: auto; /* Scroll messages area */
+      margin-bottom: 1rem; /* Space between messages and textarea */
+      padding: 0.5rem;
+      border: none; /* Border removed, parent has border */
+      background: #f8f9fa; /* Slightly different background for chat */
+      border-radius: 6px; /* Inner radius */
+   }
+   /* Dark mode messages background override */
+   body.dark-mode #messages { background: #2e2e2e; }
+
+  #messages > div:not(.separator) { margin-bottom: 0.8rem; padding: 0.8rem 1.2rem; border-radius: 15px; font-size: 1.15rem; line-height: 1.6; max-width: 85%; /* Adjusted max-width for wider column */ word-wrap: break-word; }
   #messages .user-message { background-color: #d1eaff; color: #004085; margin-left: auto; border-bottom-right-radius: 5px; text-align: left; }
   #messages .ai-message { background-color: #e2e3e5; color: #383d41; margin-right: auto; border-bottom-left-radius: 5px; text-align: left; }
   @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
   .thinking-message { animation: blink 1.5s linear infinite; font-style: italic; color: #666; }
-  #userAnswer { font-size: 1.1rem; border: 1px solid #ccc; border-radius: 8px; padding: 0.8rem; min-height: 3rem; line-height: 1.5; resize: vertical; font-family: inherit; box-sizing: border-box; width: 100%; /* Make textarea take full width within its container */ }
+
+  #userAnswer {
+      font-size: 1.1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 0.8rem;
+      min-height: 4rem; /* Adjusted min-height */
+      line-height: 1.5;
+      resize: vertical;
+      font-family: inherit;
+      box-sizing: border-box;
+      width: 100%; /* Take full width of its container */
+      flex-shrink: 0; /* Prevent textarea from shrinking excessively */
+      margin-top: auto; /* Push textarea towards the bottom if messages don't fill space */
+  }
 
   /* =======================================
-     底部互動按鈕區 & Ghibli 風格
+     底部互動按鈕區 (Within Right Column)
      ======================================= */
-  #gaokao-actions { text-align: center; margin-top: 1rem; }
-  #gaokao-actions button { font-size: 1.0rem; padding: 0.8rem 1.5rem; margin: 0.5rem; border-radius: 20px; border: 1px solid transparent; font-weight: bold; transition: background-color 0.3s, transform 0.1s, box-shadow 0.3s; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); cursor: pointer; }
+  #gaokao-actions {
+      text-align: center;
+      padding: 0; /* Removed padding */
+      margin: 0; /* Removed margin */
+      flex-shrink: 0; /* Prevent shrinking */
+  }
+  #gaokao-actions button {
+      font-size: 1.0rem;
+      padding: 0.8rem 1.5rem;
+      margin: 0.5rem; /* Keep margin between buttons */
+      border-radius: 20px;
+      border: 1px solid transparent;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.1s, box-shadow 0.3s;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+  }
   #gaokao-actions button:active { transform: translateY(2px); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
   #submit-answer-btn { background-color: #87a96b; color: white; border-color: #79975d; }
   #submit-answer-btn:hover { background-color: #79975d; }
@@ -238,49 +374,75 @@
 
 
   /* =======================================
-     響應式設計
+     響應式設計 (Mobile Optimization)
      ======================================= */
   @media (max-width: 768px) {
-    /* Remove body padding override for mobile if main has padding now */
-    /* body { padding: 0; } */
-    main {
-        padding: 0 0.5rem; /* Adjust padding for mobile */
-        margin-top: 0.5rem;
+    /* Allow body scroll on mobile if content overflows */
+    body {
+      overflow: auto;
     }
+
+    /* Main takes natural height based on content */
+    main {
+        padding: 0 0.5rem; /* Add small horizontal padding back to main */
+        height: auto;
+        overflow: visible; /* Allow main to overflow if needed */
+        align-items: flex-start; /* Align container to top */
+    }
+
+    /* Stack columns vertically */
+    #layout-container {
+        flex-direction: column;
+        height: auto; /* Allow container height to adjust to content */
+        max-width: 100%; /* Use full width */
+        margin: 0.5rem auto; /* Adjust margin */
+        overflow: visible; /* Allow container to overflow */
+    }
+
+    /* Columns take full width and disable independent scroll */
+    #left-column, #right-column {
+        width: 100%;
+        flex-basis: auto; /* Reset flex basis */
+        overflow-y: visible; /* Disable independent scroll */
+        height: auto; /* Allow height to adjust */
+        padding: 0.8rem; /* Slightly reduce padding */
+        margin-bottom: 1rem; /* Add space between stacked columns */
+    }
+    /* Remove margin from the last column */
+    #right-column {
+        margin-bottom: 0;
+    }
+
 
     /* Responsive Header */
     header { padding: 0.5rem; justify-content: space-between; }
     .header-center-content {
         gap: 0.8rem;
-         margin: 0 auto; /* Center content more reliably */
-         /* Removed fixed margin: 0 2.5rem; */
+        margin: 0 auto;
         flex-shrink: 1;
-        min-width: 0; /* Allow shrinking */
-        justify-content: center; /* Ensure centering */
+        min-width: 0;
+        justify-content: center;
     }
     h1 { font-size: 1.2rem; }
     #gaokao-btn { font-size: 0.9rem; padding: 0.4rem 0.8rem; flex-shrink: 0; }
     #toggle-dark-btn { font-size: 1.3rem; right: 0.5rem; top: 0.5rem; flex-shrink: 0; }
 
 
-    /* Type menu wrapping on mobile (already wraps by default, adjust styles if needed) */
-    #gaokao-type-menu {
-      /* flex-wrap: wrap; -> Already set in base */
-      justify-content: center; /* Ensure centered on mobile */
-      /* overflow-x: visible; -> Already removed from base */
-      padding: 0.5rem; gap: 0.3rem;
-    }
-    #gaokao-type-menu button { font-size: 0.85rem; padding: 0.5rem 0.8rem; margin: 0.2rem; }
+    /* Type menu wrapping on mobile (already wraps, adjust styles if needed) */
+    #gaokao-type-menu { padding: 0.5rem; gap: 0.3rem; }
+    #gaokao-type-menu button { font-size: 0.85rem; padding: 0.5rem 0.8rem; margin: 0; } /* Removed margin */
 
     /* Year menu responsiveness */
     #gaokao-year-menu { padding: 0.5rem; gap: 0.3rem; }
-    #gaokao-year-menu button { font-size: 0.8rem; padding: 0.4rem 0.6rem; margin: 0.2rem; }
+    #gaokao-year-menu button { font-size: 0.8rem; padding: 0.4rem 0.6rem; margin: 0; } /* Removed margin */
 
     #gaokao-question { padding: 1rem; font-size: 1rem; }
     #gaokao-question h2 { font-size: 1.3rem; }
+
     #dialogue-input-area { padding: 0.5rem; }
-    #messages > div:not(.separator) { font-size: 1rem; padding: 0.6rem 1rem; max-width: 85%; }
-    /* Adjust textarea width calculation if padding changed */
-    #userAnswer { font-size: 1rem; padding: 0.6rem; min-height: 2.5rem; /* width: calc(100% - 1rem); -> Use width: 100% now */ }
+    #messages { max-height: 40vh; /* Limit messages height on mobile */ }
+    #messages > div:not(.separator) { font-size: 1rem; padding: 0.6rem 1rem; max-width: 90%; } /* Adjust message width */
+    #userAnswer { font-size: 1rem; padding: 0.6rem; min-height: 3rem; }
+
     #gaokao-actions button { font-size: 0.9rem; padding: 0.7rem 1rem; margin: 0.3rem; }
   }

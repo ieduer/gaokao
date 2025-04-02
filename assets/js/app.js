@@ -337,43 +337,41 @@ function populateAndShowTypeMenu() {
     const menu = document.getElementById("gaokao-type-menu");
     if (!menu) {
         console.error("#gaokao-type-menu element not found!");
-        return; // Cannot proceed without the menu container
+        return;
     }
 
-    // Clear existing buttons before populating (ensures fresh state)
-    menu.innerHTML = "";
+    menu.innerHTML = ""; // Clear existing buttons
 
-    // Hide subsequent sections (Year Menu, Question, Dialogue, Actions)
-    // Use safe access: find the element, then set style if found.
+    // Hide subsequent sections AND the right column
     const yearMenu = document.getElementById("gaokao-year-menu");
     if (yearMenu) yearMenu.style.display = "none";
 
     const questionSection = document.getElementById("gaokao-question");
     if (questionSection) questionSection.style.display = "none";
 
+    // NEW: Hide the right column
+    const rightColumn = document.getElementById("right-column");
+    if (rightColumn) rightColumn.style.display = "none";
+
+    // Hide old individual sections (redundant if right column hidden, but safe)
     const dialogueArea = document.getElementById("dialogue-input-area");
-    if (dialogueArea) dialogueArea.style.display = "none";
-
+    // if (dialogueArea) dialogueArea.style.display = "none"; // Not needed if parent is hidden
     const actionsSection = document.getElementById("gaokao-actions");
-    if (actionsSection) actionsSection.style.display = "none";
+    // if (actionsSection) actionsSection.style.display = "none"; // Not needed if parent is hidden
 
-    // Reset chat state when returning to the main type menu? Optional, decide based on UX preference.
-    // resetChatState();
+    // resetChatState(); // Optional: Reset chat state here?
 
-    // Check if question data is loaded
     if (!allData || allData.length === 0) {
         console.error("Question data (allData) is not available. Cannot populate type menu.");
-        // Display error only if a data loading error wasn't already shown
         if (!document.getElementById('data-load-error')) {
            menu.innerHTML = "<p style='text-align: center; padding: 1rem;'>題型數據加載失敗或為空。</p>";
-           menu.style.display = "block"; // Show error message using block display
+           menu.style.display = "block";
         } else {
-            menu.style.display = "none"; // Hide menu area if fetch error shown
+            menu.style.display = "none";
         }
         return;
     }
 
-    // Check if the TYPES configuration is valid
     if (!Array.isArray(TYPES) || TYPES.length === 0) {
          console.error("TYPES constant configuration is invalid or empty.");
          menu.innerHTML = "<p style='text-align: center; padding: 1rem;'>無法加載題型分類配置。</p>";
@@ -384,33 +382,29 @@ function populateAndShowTypeMenu() {
     console.log(`Populating type menu with up to ${TYPES.length} types.`);
     let typesAdded = 0;
     TYPES.forEach(t => {
-        // Optimization: Only add a button if there's at least one question of this type in the data
         if (allData.some(item => item.key === t.key)) {
             const btn = document.createElement("button");
-            btn.textContent = t.label; // Set button text
-            btn.onclick = () => { // Assign click handler
+            btn.textContent = t.label;
+            btn.onclick = () => {
                 console.log(`Type button "${t.label}" (key: ${t.key}) clicked.`);
-                showYearMenu(t.key); // Show years for the selected type
+                showYearMenu(t.key);
             };
-            menu.appendChild(btn); // Add button to the menu
+            menu.appendChild(btn);
             typesAdded++;
         } else {
-            // Log types that are configured but have no data
             console.log(`Skipping button for type "${t.label}" (key: ${t.key}) - no matching data found.`);
         }
     });
 
     if (typesAdded > 0) {
-        menu.style.display = "flex"; // Show the menu using flex display (allows wrapping)
+        menu.style.display = "flex"; // Show the menu using flex display
         console.log(`${typesAdded} type buttons added and menu displayed.`);
     } else {
         console.warn("No type buttons were added, possibly due to no matching data for configured types.");
         menu.innerHTML = "<p style='text-align: center; padding: 1rem;'>暫無可用題型數據。</p>";
-        menu.style.display = "block"; // Show message if no buttons generated
+        menu.style.display = "block";
     }
-
-    // Optional: Scroll to the menu, e.g., if triggered by button click after scrolling down
-    // menu.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    // menu.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); // Optional scroll
 }
 
 
@@ -423,57 +417,52 @@ function showYearMenu(typeKey) {
   const yearMenu = document.getElementById("gaokao-year-menu");
   if (!yearMenu) {
       console.error("#gaokao-year-menu element not found!");
-      return; // Stop if element missing
+      return;
   }
 
-  // Hide other content sections safely
+  // Hide other content sections safely AND the right column
   const questionSection = document.getElementById("gaokao-question");
   if (questionSection) questionSection.style.display = "none";
-  const dialogueArea = document.getElementById("dialogue-input-area");
-  if (dialogueArea) dialogueArea.style.display = "none";
-  const actionsSection = document.getElementById("gaokao-actions");
-  if (actionsSection) actionsSection.style.display = "none";
-  // Optionally hide the type menu as well? Or keep it visible above? Keep visible for now.
-  // const typeMenu = document.getElementById("gaokao-type-menu");
-  // if (typeMenu) typeMenu.style.display = "none";
 
+  // NEW: Hide the right column
+  const rightColumn = document.getElementById("right-column");
+  if (rightColumn) rightColumn.style.display = "none";
+
+  // Hide old individual sections (redundant if right column hidden, but safe)
+  const dialogueArea = document.getElementById("dialogue-input-area");
+  // if (dialogueArea) dialogueArea.style.display = "none";
+  const actionsSection = document.getElementById("gaokao-actions");
+  // if (actionsSection) actionsSection.style.display = "none";
 
   resetChatState(); // Reset chat when navigating to a new year list
 
-  // Filter data for the selected type
   const dataForType = allData.filter(item => item.key === typeKey);
-  // Get the display label for the type
-  const typeLabel = TYPES.find(t => t.key === typeKey)?.label || typeKey; // Fallback to key if label not found
+  const typeLabel = TYPES.find(t => t.key === typeKey)?.label || typeKey;
 
   yearMenu.innerHTML = ""; // Clear previous year buttons
 
   if (dataForType.length === 0) {
-    // Handle case where no data exists for this type (should be caught by populateAndShowTypeMenu check, but be defensive)
     console.warn(`No data found for type key: ${typeKey}`);
     yearMenu.innerHTML = `<p style="text-align:center; width:100%; padding: 1rem;">暫無 ${typeLabel} 類型的題目數據。</p>`;
-    yearMenu.style.display = "block"; // Show the message using block display
+    yearMenu.style.display = "block";
   } else {
-    // Get unique years, sort them descending (most recent first)
     const years = [...new Set(dataForType.map(item => item.year))].sort((a, b) => b - a);
     console.log(`Found data for years: ${years.join(', ')} for type ${typeKey}. Creating buttons.`);
 
-    // Create a button for each year
     years.forEach(year => {
       const btn = document.createElement("button");
-      btn.textContent = `${year} 年`; // Set button text
-      btn.onclick = () => { // Assign click handler
+      btn.textContent = `${year} 年`;
+      btn.onclick = () => {
           console.log(`Year button "${year}" clicked for type "${typeKey}".`);
-          // Filter data again specifically for this year and type to pass to the next step
           const questionsForYear = dataForType.filter(item => item.year === year);
-          showQuestionList(typeKey, year, questionsForYear); // Show list for this year/type
+          showQuestionList(typeKey, year, questionsForYear);
       };
-      yearMenu.appendChild(btn); // Add button to the year menu
+      yearMenu.appendChild(btn);
     });
-    yearMenu.style.display = "flex"; // Show the year menu using flex display (allows wrapping)
+    yearMenu.style.display = "flex"; // Show the year menu using flex display
   }
 
   console.log("#gaokao-year-menu populated and display style set.");
-  // Scroll the year menu into view smoothly
   yearMenu.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
@@ -486,51 +475,40 @@ function showQuestionList(typeKey, year, questionsForYear) {
 
   // Get references to the required DOM elements
   const questionSec = document.getElementById("gaokao-question");
-  const dialogueInputArea = document.getElementById("dialogue-input-area");
-  const actionsSec = document.getElementById("gaokao-actions");
+  // NEW: Get reference to right column
+  const rightColumn = document.getElementById("right-column");
 
   // Validate that essential elements exist
-  if (!questionSec || !dialogueInputArea || !actionsSec) {
-      console.error("Cannot display question list: Missing required elements (questionSec, dialogueInputArea, or actionsSec).");
-      // Provide feedback if possible
+  if (!questionSec || !rightColumn) { // Check for questionSec and rightColumn
+      console.error("Cannot display question list: Missing required elements (questionSec or rightColumn).");
       if (questionSec) {
            questionSec.innerHTML = "<p style='color:red;'>頁面錯誤：無法顯示題目列表，缺少必要元件。</p>";
            questionSec.style.display = "block";
       }
-      return; // Stop execution
+      // Ensure right column is hidden if error occurs
+      if(rightColumn) rightColumn.style.display = "none";
+      return;
   }
 
   resetChatState(); // Reset chat state when showing a new question list/first question
 
-  // Get the display label for the type
   const typeLabel = TYPES.find(t => t.key === typeKey)?.label || typeKey;
+  questionSec.innerHTML = `<h2 style="font-size:1.5rem; margin-bottom: 1rem;">${year} 年北京真題 (${typeLabel})</h2>`; // Set title
 
-  // Set the main title for the question section
-  questionSec.innerHTML = `<h2 style="font-size:1.5rem; margin-bottom: 1rem;">${year} 年北京真題 (${typeLabel})</h2>`; // Added margin-bottom to H2
-
-  // Check if there are questions to display for this year/type
   if (questionsForYear && questionsForYear.length > 0) {
     console.log(`Found ${questionsForYear.length} question(s) for ${year} ${typeLabel}. Displaying the first.`);
-    questionSec.style.display = "block"; // Make sure the section is visible
+    questionSec.style.display = "block"; // Show question section
 
     // Call function to display the details of the first question found
-    // This function will append the question content after the H2 title
-    showQuestionDetail(questionsForYear[0]);
-
-    // Show the interaction areas (dialogue, actions) as a question is displayed
-    dialogueInputArea.style.display = "block";
-    actionsSec.style.display = "block";
+    showQuestionDetail(questionsForYear[0]); // This will also handle showing the right column
 
   } else {
-    // Handle case where the filtered list for the year is unexpectedly empty
     console.warn(`No questions found in the provided list for type: ${typeKey}, year: ${year}.`);
-    // Append a message indicating no data for this specific year/type
     questionSec.innerHTML += `<p style="font-size:1.2rem; margin-top: 1rem;">抱歉，${year} 年的 ${typeLabel} 題目暫未收錄。</p>`;
     questionSec.style.display = "block"; // Ensure section is visible to show the message
 
-    // Hide interaction areas as there is no question displayed
-    dialogueInputArea.style.display = "none";
-    actionsSec.style.display = "none";
+    // Hide the right column as there is no question displayed
+    rightColumn.style.display = "none";
   }
 }
 
@@ -541,61 +519,87 @@ function showQuestionList(typeKey, year, questionsForYear) {
 function showQuestionDetail(question) {
     // Get references to essential elements
     const questionSec = document.getElementById("gaokao-question");
-    const dialogueInputArea = document.getElementById("dialogue-input-area");
-    const actionsSec = document.getElementById("gaokao-actions");
+    // NEW: Get reference to right column
+    const rightColumn = document.getElementById("right-column");
 
     // Validate elements needed for display
-    if (!questionSec || !dialogueInputArea || !actionsSec) {
-      console.error("Cannot display question detail: Missing required elements (questionSec, dialogueInputArea, or actionsSec).");
-       if(questionSec) { // Show error in question section if possible
-            questionSec.innerHTML += "<p style='color:red; margin-top: 1rem;'>頁面錯誤：無法顯示題目詳情。</p>";
+    if (!questionSec || !rightColumn) {
+      console.error("Cannot display question detail: Missing required elements (questionSec or rightColumn).");
+       if(questionSec) {
+            // Append error after H2 title if possible
+            const h2 = questionSec.querySelector('h2');
+            const errorP = document.createElement('p');
+            errorP.style.color = 'red';
+            errorP.style.marginTop = '1rem';
+            errorP.textContent = '頁面錯誤：無法顯示題目詳情。';
+            if (h2 && h2.parentNode === questionSec) {
+                 h2.after(errorP);
+            } else {
+                 questionSec.appendChild(errorP); // Append if H2 not found
+            }
             questionSec.style.display = "block"; // Make sure error is visible
        }
-       // Hide interaction if elements are missing
-       if (dialogueInputArea) dialogueInputArea.style.display = "none";
-       if (actionsSec) actionsSec.style.display = "none";
+       // Hide right column if elements are missing
+       if (rightColumn) rightColumn.style.display = "none";
        return;
     }
 
     // Validate the question data object
     if (!question || typeof question !== 'object') {
         console.error("Invalid question data provided to showQuestionDetail:", question);
-        // Append error message after the H2 title (already set by showQuestionList)
-        questionSec.innerHTML += "<p style='color:red; margin-top: 1rem;'>錯誤：題目數據格式不正確，無法顯示詳情。</p>";
+        // Append error message after the H2 title
+        const h2 = questionSec.querySelector('h2');
+        const errorP = document.createElement('p');
+        errorP.style.color = 'red';
+        errorP.style.marginTop = '1rem';
+        errorP.textContent = '錯誤：題目數據格式不正確，無法顯示詳情。';
+        if (h2 && h2.parentNode === questionSec) {
+             h2.after(errorP);
+        } else {
+             questionSec.appendChild(errorP);
+        }
         questionSec.style.display = "block"; // Ensure visible
-        // Hide interaction areas due to invalid data
-        dialogueInputArea.style.display = "none";
-        actionsSec.style.display = "none";
+        // Hide right column due to invalid data
+        rightColumn.style.display = "none";
         return;
     }
 
     console.log(`Displaying details for question: ${question.year} ${question.key} (ID/Topic: ${question.topic || question.id || 'N/A'})`);
-    currentQuestion = question; // Update the global reference to the currently active question
+    currentQuestion = question; // Update global reference
     // NOTE: resetChatState is called in showQuestionList *before* this function
 
-    // Format the question content (materials, questions, prompts) into HTML
-    const formattedHtmlContent = formatQuestionHTML(question);
+    // --- Clear previous question content (except H2) ---
+    const h2Title = questionSec.querySelector('h2'); // Preserve H2
+    questionSec.innerHTML = ''; // Clear everything else
+    if (h2Title) {
+        questionSec.appendChild(h2Title); // Add H2 back
+    } else {
+        // Fallback if H2 wasn't found (shouldn't happen based on showQuestionList)
+        questionSec.innerHTML = `<h2 style="font-size:1.5rem; margin-bottom: 1rem;">${question.year} 年北京真題 (${TYPES.find(t => t.key === question.key)?.label || question.key})</h2>`;
+    }
+    // --- End Clear ---
 
-    // Create a temporary div to parse the HTML string and append its children
-    // This avoids wiping out the H2 title with innerHTML assignment
+
+    const formattedHtmlContent = formatQuestionHTML(question);
     const tempDiv = document.createElement('div');
     tempDiv.innerHTML = formattedHtmlContent;
-
-    // Append the formatted content nodes to the question section (after the H2)
     while (tempDiv.firstChild) {
         questionSec.appendChild(tempDiv.firstChild);
     }
 
-    questionSec.style.display = "block"; // Ensure the question section is visible
+    questionSec.style.display = "block"; // Ensure question section is visible
 
-    // Interaction areas should have been made visible by showQuestionList, but ensure here too
-    dialogueInputArea.style.display = "block";
-    actionsSec.style.display = "block";
-    console.log("Question details appended. Dialogue and actions areas should be visible.");
+    // NEW: Show the right column (using flex display)
+    rightColumn.style.display = "flex";
+    console.log("Question details appended. Right column should be visible.");
 
     // Scroll the beginning of the question section into view
     questionSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
+
+// --- Keep the rest of the JavaScript functions as they were ---
+// (formatQuestionHTML, buildAIPrompt, callAI, showReferenceAnswer, submitAnswer, askAIForSolution, toggleDarkMode, etc.)
+// Make sure all other functions like formatAnswer, addMessage, removeThinkingMessage, resetChatState, etc., are also present.
 
 
 /****************************************************

@@ -8,47 +8,51 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <!-- Header: Title and Button centered, Moon top-right -->
+  <!-- Header: Remains the same -->
   <header>
-    <div class="header-center-content"> <!-- Container for H1 and Gaokao Button -->
+    <div class="header-center-content">
       <h1>AI高考</h1>
-      <!-- 北京真题 button's role might change, but let's keep it for now -->
       <button id="gaokao-btn">北京真題</button>
     </div>
-    <button id="toggle-dark-btn" title="切換夜晚模式">🌗</button> <!-- Positioned via CSS -->
+    <button id="toggle-dark-btn" title="切換夜晚模式">🌗</button>
   </header>
 
+  <!-- Main content area now holds the layout container -->
   <main>
-    <!-- 二級目錄：題型菜單 (NOW VISIBLE BY DEFAULT) -->
-    <section id="gaokao-type-menu"></section> <!-- Removed style="display:none;" -->
-    <!-- 三級目錄：年份列表 (Initially hidden) -->
-    <section id="gaokao-year-menu" style="display:none;"></section>
-    <!-- 題目顯示區 (Initially hidden) -->
-    <section id="gaokao-question" style="display:none;"></section>
+    <div id="layout-container">
+        <!-- Left Column: Menus and Question -->
+        <div id="left-column">
+            <section id="gaokao-type-menu"></section> <!-- Visible by default -->
+            <section id="gaokao-year-menu" style="display:none;"></section>
+            <section id="gaokao-question" style="display:none;"></section>
+        </div>
 
-    <!-- 合併後的對話與輸入區域 (Initially hidden) -->
-    <section id="dialogue-input-area" style="display:none;">
-        <div id="messages"></div>
-        <textarea id="userAnswer" placeholder="請輸入你的答案或想聊的話題…" style="width:calc(100% - 2rem); padding:1rem; font-size:1.2rem; margin-top:1rem; border:1px solid #ccc; border-radius:5px; min-height: 4rem; overflow-y:hidden; resize: vertical; box-sizing: border-box;"></textarea>
-    </section>
-
-    <!-- 底部互動按鈕區 (Initially hidden) -->
-    <section id="gaokao-actions" style="display:none; text-align:center; margin-top: 1rem; margin-bottom: 1.5rem;">
-      <div>
-        <button id="submit-answer-btn">提交答案</button>
-        <button id="reference-answer-btn">參考答案</button>
-        <button id="ai-answer-btn">AI答案</button>
-      </div>
-    </section>
-
-    <!-- 進度顯示 (如果需要) -->
-    <div id="progress"></div>
+        <!-- Right Column: Dialogue and Actions -->
+        <div id="right-column" style="display:none;"> <!-- Initially hidden -->
+            <section id="dialogue-input-area"> <!-- Container for messages/input -->
+                <div id="messages"></div>
+                <!-- Textarea - style attribute REMOVED -->
+                <textarea id="userAnswer" placeholder="請輸入你的答案或想聊的話題…"></textarea>
+            </section>
+            <section id="gaokao-actions"> <!-- Container for buttons -->
+              <div> <!-- Keep div wrapper for buttons if needed -->
+                <button id="submit-answer-btn">提交答案</button>
+                <button id="reference-answer-btn">參考答案</button>
+                <button id="ai-answer-btn">AI答案</button>
+              </div>
+            </section>
+        </div>
+    </div>
+    <!-- Progress div might need repositioning if visually important, currently outside columns -->
+    <div id="progress" style="position: fixed; bottom: 60px; right: 20px; background: lightblue; padding: 5px 10px; border-radius: 5px; display: none;"></div>
   </main>
 
-  <footer> <!-- Footer content remains the same, positioning handled by CSS -->
+  <!-- Footer: Remains the same -->
+  <footer>
     <p>© Suen | <a href="https://bdfz.net/posts/aigaokao" target="_blank">About</a></p>
   </footer>
 
+  <!-- JavaScript: Include the modified app.js -->
   <script src="assets/js/app.js"></script>
 </body>
 </html>
