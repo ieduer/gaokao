@@ -954,9 +954,6 @@ function askAIForSolution() {
         return; // Exit if no question selected
     }
 
-    // Provide immediate feedback to the user
-    addMessage("好的，已收到您的請求！正在讓 Gemini 思考這道題目的答案...", "ai");
-
     // Get any text currently in the textarea (user might have started typing)
     // Pass it as context (internal reference for AI), but the task remains for AI to solve it independently
     const userAnswerEl = document.getElementById("userAnswer");
