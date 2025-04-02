@@ -29,7 +29,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed; /* Keep fixed background */
     min-height: 100vh; /* Ensure body takes at least full viewport height */
-    overflow: hidden; /* Prevent body from scrolling */
+    /* overflow: hidden; */ /* MODIFIED: Removed to allow content scroll if absolutely needed, though column scroll is intended */
     /* --- Sticky Footer --- */
     display: flex;
     flex-direction: column;
@@ -62,13 +62,15 @@
       /* --- Sticky Footer --- */
       flex-grow: 1; /* Allow main to grow and push footer down */
       /* --- End Sticky Footer --- */
-      padding: 0; /* Remove padding from main, apply to layout-container */
+      padding: 1rem 0; /* MODIFIED: Added vertical padding, removed horizontal padding */
       margin: 0;  /* Remove margin from main */
       width: 100%;
-      overflow: hidden; /* Prevent main from overflowing, children will scroll */
-      display: flex; /* Use flex to easily center the layout container */
-      justify-content: center; /* Center layout-container horizontally */
-      align-items: center; /* Center layout-container vertically (optional, might stretch) */
+      /* overflow: hidden; */ /* MODIFIED: Removed to allow layout-container to define scroll */
+      display: flex; /* Use flex to easily manage the layout container */
+      flex-direction: column; /* MODIFIED: Ensure layout-container can stretch vertically */
+      /* justify-content: center; */ /* MODIFIED: Removed, let container fill */
+      align-items: center; /* MODIFIED: Center layout-container horizontally */
+      box-sizing: border-box; /* MODIFIED: Added for consistent padding behavior */
   }
 
   /* NEW: Layout Container for Left/Right Split */
@@ -77,17 +79,19 @@
       flex-direction: row; /* Columns side-by-side */
       gap: 1rem; /* Space between columns */
       width: 100%;
-      height: calc(100% - 2rem); /* Fill main height minus padding */
+      height: 100%; /* MODIFIED: Take full height of the flex parent (main) */
       max-width: 1300px; /* Adjust max-width for two columns */
-      margin: 1rem auto; /* Vertical margin, centered horizontally */
-      padding: 0; /* No padding on container itself */
+      /* margin: 1rem auto; */ /* MODIFIED: Removed, main controls vertical spacing */
+      margin: 0 auto; /* Center horizontally */
+      padding: 0 1rem; /* MODIFIED: Added horizontal padding */
       box-sizing: border-box;
-      overflow: hidden; /* Important: Prevent container itself from scrolling */
+      /* overflow: hidden; */ /* MODIFIED: Removed to allow columns to scroll */
   }
 
   /* NEW: Left and Right Columns */
   #left-column, #right-column {
-      flex: 2; /* Base width proportion for left column */
+      /* MODIFIED: Changed flex ratio - Left column wider */
+      flex: 4; /* Base width proportion for left column (Increased) */
       display: flex;
       flex-direction: column; /* Stack content vertically */
       gap: 1rem; /* Space between items inside the column */
@@ -97,12 +101,13 @@
       background-color: rgba(255, 255, 255, 0.75); /* Slight background tint */
       border-radius: 8px;
       box-sizing: border-box;
-      /* min-height: 0; /* Flexbox scroll fix if needed, try without first */
-      height: 100%; /* Ensure columns take full height of container */
+      height: 100%; /* MODIFIED: Ensure columns take full height of container */
+      /* min-height: 0; /* Flexbox scroll fix if needed, keep commented for now */
   }
 
   #right-column {
-      flex: 3; /* Base width proportion for right column (wider) */
+      /* MODIFIED: Changed flex ratio */
+      flex: 3; /* Base width proportion for right column */
       /* Initially hidden, controlled by JS */
   }
 
@@ -121,9 +126,9 @@
   /* Keep specific background/border styles */
    #gaokao-type-menu { background: rgba(255, 255, 255, 0.8); border: 1px solid #ddd; }
    #gaokao-year-menu { background: rgba(255, 255, 255, 0.8); border: 1px solid #ddd; }
-   #gaokao-question { background: rgba(255, 255, 255, 0.85); border: 1px solid #ddd; }
+   #gaokao-question { background: rgba(255, 255, 255, 0.85); border: 1px solid #ddd; flex-grow: 1; /* MODIFIED: Allow question area to grow */ }
    #dialogue-input-area { background: rgba(255, 255, 255, 0.85); border: 1px solid #ddd; }
-   #gaokao-actions { background: none; border: none; text-align: center; padding: 0; /* Remove action section padding if buttons have margins */ }
+   #gaokao-actions { background: none; border: none; text-align: center; padding: 0; /* Remove action section padding if buttons have margins */ flex-shrink: 0; /* MODIFIED: Prevent shrinking */ }
 
 
   footer {
@@ -261,6 +266,7 @@
     gap: 0.5rem; /* Spacing between buttons */
     padding: 0.8rem; /* Keep internal padding */
     /* Background/border set above */
+    flex-shrink: 0; /* MODIFIED: Prevent shrinking */
   }
 
   #gaokao-type-menu button { /* Specific styles for type menu buttons */
@@ -278,6 +284,7 @@
   #gaokao-year-menu {
     display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; padding: 0.8rem;
     /* Background/border set above */
+    flex-shrink: 0; /* MODIFIED: Prevent shrinking */
   }
   #gaokao-year-menu button { /* Specific styles for year menu buttons */
     font-size: 0.9rem; padding: 0.5rem 0.8rem; background-color: #d8bfd8; border: 1px solid #c1acc1; color: #333; flex-shrink: 0;
@@ -292,10 +299,12 @@
      /* Background/border set above */
      /* Allow question area to grow if needed, but column scrolls */
      flex-grow: 1; /* Let it take available space in left column if needed */
+     /* min-height: 0; */ /* MODIFIED: Add flexbox fix for potential scroll issues within flex children */
    }
   #gaokao-question h2 { font-size: 1.6rem; margin-bottom: 1rem; color: #555; }
   #gaokao-question p { margin-bottom: 0.8em; }
   #gaokao-question strong { color: #0056b3; margin-right: 5px; }
+  /* MODIFIED: Changed display to block for better layout control within scroll */
   #gaokao-question .formatted-line { display: block; margin-bottom: 0.3em; }
 
 
@@ -308,7 +317,8 @@
       display: flex; /* Use flex to manage internal elements */
       flex-direction: column; /* Stack messages and textarea */
       flex-grow: 1; /* Allow this area to take most space in right column */
-      overflow: hidden; /* Prevent this section itself from scrolling */
+      overflow: hidden; /* Prevent this section itself from scrolling internally */
+      /* min-height: 0; */ /* MODIFIED: Add flexbox fix if messages need to push textarea down correctly */
   }
   #messages {
       min-height: 150px; /* Keep minimum height */
@@ -319,6 +329,7 @@
       border: none; /* Border removed, parent has border */
       background: #f8f9fa; /* Slightly different background for chat */
       border-radius: 6px; /* Inner radius */
+      /* min-height: 0; */ /* MODIFIED: Ensure messages container does not prevent parent from shrinking if needed */
    }
    /* Dark mode messages background override */
    body.dark-mode #messages { background: #2e2e2e; }
@@ -341,7 +352,7 @@
       box-sizing: border-box;
       width: 100%; /* Take full width of its container */
       flex-shrink: 0; /* Prevent textarea from shrinking excessively */
-      margin-top: auto; /* Push textarea towards the bottom if messages don't fill space */
+      /* margin-top: auto; */ /* Removed: let flexbox position it naturally */
   }
 
   /* =======================================
@@ -349,7 +360,7 @@
      ======================================= */
   #gaokao-actions {
       text-align: center;
-      padding: 0; /* Removed padding */
+      padding: 0.5rem 0 0 0; /* MODIFIED: Added slight top padding */
       margin: 0; /* Removed margin */
       flex-shrink: 0; /* Prevent shrinking */
   }
@@ -379,15 +390,17 @@
   @media (max-width: 768px) {
     /* Allow body scroll on mobile if content overflows */
     body {
-      overflow: auto;
+      overflow: auto; /* Keep this for mobile */
+      min-height: 0; /* Reset min-height if flex causes issues on mobile */
     }
 
     /* Main takes natural height based on content */
     main {
-        padding: 0 0.5rem; /* Add small horizontal padding back to main */
+        padding: 0.5rem 0.5rem; /* MODIFIED: Add horizontal padding back to main */
         height: auto;
         overflow: visible; /* Allow main to overflow if needed */
         align-items: flex-start; /* Align container to top */
+        flex-grow: 0; /* Let main size naturally */
     }
 
     /* Stack columns vertically */
@@ -395,8 +408,9 @@
         flex-direction: column;
         height: auto; /* Allow container height to adjust to content */
         max-width: 100%; /* Use full width */
-        margin: 0.5rem auto; /* Adjust margin */
+        margin: 0 auto 1rem auto; /* Adjust margin, add bottom margin */
         overflow: visible; /* Allow container to overflow */
+        padding: 0; /* Remove horizontal padding from container itself */
     }
 
     /* Columns take full width and disable independent scroll */
@@ -407,6 +421,8 @@
         height: auto; /* Allow height to adjust */
         padding: 0.8rem; /* Slightly reduce padding */
         margin-bottom: 1rem; /* Add space between stacked columns */
+        /* Reset flex property for vertical stacking */
+        flex: none;
     }
     /* Remove margin from the last column */
     #right-column {
@@ -425,7 +441,7 @@
     }
     h1 { font-size: 1.2rem; }
     #gaokao-btn { font-size: 0.9rem; padding: 0.4rem 0.8rem; flex-shrink: 0; }
-    #toggle-dark-btn { font-size: 1.3rem; right: 0.5rem; top: 0.5rem; flex-shrink: 0; }
+    #toggle-dark-btn { font-size: 1.3rem; right: 0.5rem; top: 0.5rem; flex-shrink: 0; position: absolute; /* Ensure position is kept */}
 
 
     /* Type menu wrapping on mobile (already wraps, adjust styles if needed) */
