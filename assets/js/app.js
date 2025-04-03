@@ -1,7 +1,7 @@
 /****************************************************
  * 配置 & 全局变量
  ****************************************************/
-const CLOUD_FLARE_WORKER_URL = "https://apis.bdfz.workers.dev/"; // Replace with your actual worker URL if different
+const CLOUD_FLARE_WORKER_URL = "https://ai.bdfz.net/"; // Replace with your actual worker URL if different
 
 let currentQuestion = null; // Holds the currently displayed question object
 let allData = []; // Holds all loaded question data from all.json
