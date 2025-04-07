@@ -1003,7 +1003,7 @@ function toggleDarkMode() {
 function updateToggleButton(isDarkMode) {
     const toggleBtn = document.getElementById("toggle-dark-btn");
     if (toggleBtn) {
-        toggleBtn.textContent = isDarkMode ? '☀️' : '🌗'; // Sun icon for dark mode, Moon for light
+        toggleBtn.textContent = isDarkMode ? '🌗' : '🌗'; // Sun icon for dark mode, Moon for light
         toggleBtn.title = isDarkMode ? '切換日間模式' : '切換夜晚模式'; // Update tooltip
     }
 }
