@@ -631,6 +631,14 @@ function formatQuestionHTML(q) {
     if (q.material2) htmlContent += `<div class="question-material" style="margin-top: 1em;"><strong>材料2：</strong>${formatTextWithNewlines(q.material2)}</div>`;
     if (q.material3) htmlContent += `<div class="question-material" style="margin-top: 1em;"><strong>材料3：</strong>${formatTextWithNewlines(q.material3)}</div>`;
 
+    // --- START OF ADDED CODE ---
+    // Append Annotation (if it exists) with spacing
+    if (q.annotation && typeof q.annotation === 'string' && q.annotation.trim()) {
+        htmlContent += `<div class="question-annotation" style="margin-top: 1em; margin-bottom: 0.5em; font-style: italic; color: #555;"><strong>注释：</strong>${formatTextWithNewlines(q.annotation.trim())}</div>`;
+        // Added margin-bottom for separation from questions, italic style, and slightly muted color for distinction.
+    }
+    // --- END OF ADDED CODE ---
+
     // Append Sub-Questions (if they exist) with spacing
     let questionHtml = '';
     let questionCount = 0;
@@ -644,7 +652,8 @@ function formatQuestionHTML(q) {
     }
      if (questionHtml) {
         // Wrap all questions in a div for structure and add top margin
-        htmlContent += `<div class="question-block" style="margin-top: 1.2em;">${questionHtml}</div>`;
+        // Adjusted margin-top slightly to account for potential annotation margin-bottom
+        htmlContent += `<div class="question-block" style="margin-top: ${q.annotation ? '0.8em' : '1.2em'};">${questionHtml}</div>`;
      }
 
     // Append Prompts (e.g., essay requirements) if they exist, with spacing
