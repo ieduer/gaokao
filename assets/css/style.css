@@ -10,6 +10,35 @@
   }
 
   /* =======================================
+     骨架載入動畫
+     ======================================= */
+  .skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite;
+    border-radius: 4px;
+  }
+
+  @keyframes skeleton-loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+
+  .skeleton-line {
+    height: 1.2rem;
+    margin-bottom: 0.8rem;
+    width: 100%;
+  }
+
+  .skeleton-line.short { width: 60%; }
+  .skeleton-line.medium { width: 80%; }
+
+  body.dark-mode .skeleton {
+    background: linear-gradient(90deg, #3a3a3a 25%, #4a4a4a 50%, #3a3a3a 75%);
+    background-size: 200% 100%;
+  }
+
+  /* =======================================
      全局樣式 & Sticky Footer Setup
      ======================================= */
   html {
