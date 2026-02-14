@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,17 +11,18 @@
   <meta property="og:description" content="北京高考真題 + AI 智能批改，助你備戰高考">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://img.bdfz.net/20250503004.webp">
-      <!-- Clarity 跟踪代码 -->
-      <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "qylinvl0fs");
-      </script>
+  <!-- Clarity 跟踪代码 -->
+  <script type="text/javascript">
+    (function (c, l, a, r, i, t, y) {
+      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+      t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "qylinvl0fs");
+  </script>
   <link rel="icon" href="https://img.bdfz.net/20250503004.webp" type="image/jpeg">
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
   <!-- Header: Remains the same -->
   <header>
@@ -34,31 +36,53 @@
   <!-- Main content area now holds the layout container -->
   <main>
     <div id="layout-container">
-        <!-- Left Column: Menus and Question -->
-        <div id="left-column">
-            <section id="gaokao-type-menu"></section> <!-- Visible by default -->
-            <section id="gaokao-year-menu" style="display:none;"></section>
-            <section id="gaokao-question" style="display:none;"></section>
-        </div>
+      <!-- Left Column: Menus and Question -->
+      <div id="left-column">
+        <section id="gaokao-type-menu"></section> <!-- Visible by default -->
+        <section id="gaokao-year-menu" style="display:none;"></section>
+        <section id="gaokao-question" style="display:none;"></section>
+        <section id="custom-question-form" style="display:none;">
+          <h2>✍ 日常作業 AI 批閱</h2>
+          <div class="form-group">
+            <label for="custom-question-text">試題內容 <span class="required">*必填</span></label>
+            <textarea id="custom-question-text" placeholder="請在此貼入或輸入試題原文…" rows="5"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="custom-reference-answer">參考答案 <span class="optional">（選填）</span></label>
+            <textarea id="custom-reference-answer" placeholder="如有參考答案，請在此輸入；留空亦可…" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="custom-user-answer">我的答案 <span class="required">*必填</span></label>
+            <textarea id="custom-user-answer" placeholder="請輸入你的答案…" rows="4"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="custom-score-value">分值 <span class="required">*必填</span></label>
+            <input type="number" id="custom-score-value" placeholder="例如：10" min="1" max="150" />
+          </div>
+          <button id="submit-custom-btn">📝 提交批閱</button>
+        </section>
+      </div>
 
-        <!-- Right Column: Dialogue and Actions -->
-        <div id="right-column" style="display:none;"> <!-- Initially hidden -->
-            <section id="dialogue-input-area"> <!-- Container for messages/input -->
-                <div id="messages"></div>
-                <!-- Textarea - style attribute REMOVED -->
-                <textarea id="userAnswer" placeholder="請輸入你的答案或想聊的話題…"></textarea>
-            </section>
-            <section id="gaokao-actions"> <!-- Container for buttons -->
-              <div> <!-- Keep div wrapper for buttons if needed -->
-                <button id="submit-answer-btn">提交答案</button>
-                <button id="reference-answer-btn">參考答案</button>
-                <button id="ai-answer-btn">AI答案</button>
-              </div>
-            </section>
-        </div>
+      <!-- Right Column: Dialogue and Actions -->
+      <div id="right-column" style="display:none;"> <!-- Initially hidden -->
+        <section id="dialogue-input-area"> <!-- Container for messages/input -->
+          <div id="messages"></div>
+          <!-- Textarea - style attribute REMOVED -->
+          <textarea id="userAnswer" placeholder="請輸入你的答案或想聊的話題…"></textarea>
+        </section>
+        <section id="gaokao-actions"> <!-- Container for buttons -->
+          <div> <!-- Keep div wrapper for buttons if needed -->
+            <button id="submit-answer-btn">提交答案</button>
+            <button id="reference-answer-btn">參考答案</button>
+            <button id="ai-answer-btn">AI答案</button>
+          </div>
+        </section>
+      </div>
     </div>
     <!-- Progress div might need repositioning if visually important, currently outside columns -->
-    <div id="progress" style="position: fixed; bottom: 60px; right: 20px; background: lightblue; padding: 5px 10px; border-radius: 5px; display: none;"></div>
+    <div id="progress"
+      style="position: fixed; bottom: 60px; right: 20px; background: lightblue; padding: 5px 10px; border-radius: 5px; display: none;">
+    </div>
   </main>
 
   <!-- Footer: Remains the same -->
@@ -69,4 +93,5 @@
   <!-- JavaScript: Include the modified app.js -->
   <script src="assets/js/app.js"></script>
 </body>
+
 </html>

@@ -9,6 +9,8 @@ let isFirstSubmission = true; // Tracks if the current interaction with a questi
 let thinkingMessageElement = null; // Holds the DOM element for the "AI is thinking" message
 let lastPrompt = null; // For retry functionality
 let lastCallback = null; // For retry functionality
+let isCustomMode = false; // Tracks if we are in custom question mode
+let lastCustomContext = null; // Stores the custom question context for multi-turn chat
 
 // Defines the types of questions and their labels
 const TYPES = [
@@ -453,6 +455,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (aiBtn) aiBtn.addEventListener("click", askAIForSolution);
     else console.warn("#ai-answer-btn not found.");
 
+    const customSubmitBtn = document.getElementById("submit-custom-btn");
+    if (customSubmitBtn) customSubmitBtn.addEventListener("click", submitCustomQuestion);
+    else console.warn("#submit-custom-btn not found.");
+
     const toggleBtn = document.getElementById("toggle-dark-btn");
     if (toggleBtn) toggleBtn.addEventListener("click", toggleDarkMode);
     else console.warn("#toggle-dark-btn not found.");
@@ -543,6 +549,18 @@ function populateAndShowTypeMenu() {
 
     menu.innerHTML = ""; // Clear existing buttons
 
+    // Hide custom question form
+    const customForm = document.getElementById("custom-question-form");
+    if (customForm) customForm.style.display = "none";
+    isCustomMode = false;
+    lastCustomContext = null;
+
+    // Restore buttons hidden by custom mode
+    const refBtn = document.getElementById("reference-answer-btn");
+    if (refBtn) refBtn.style.display = "";
+    const aiBtn = document.getElementById("ai-answer-btn");
+    if (aiBtn) aiBtn.style.display = "";
+
     // Hide subsequent sections AND the right column
     const yearMenu = document.getElementById("gaokao-year-menu");
     if (yearMenu) yearMenu.style.display = "none";
@@ -596,6 +614,19 @@ function populateAndShowTypeMenu() {
             console.log(`Skipping button for type "${t.label}" (key: ${t.key}) - no matching data found.`);
         }
     });
+
+    // Always add the custom question button ("日常作業")
+    const customBtn = document.createElement("button");
+    customBtn.textContent = "✍ 日常作業";
+    customBtn.style.backgroundColor = "#f4a261";
+    customBtn.style.borderColor = "#e09150";
+    customBtn.style.color = "white";
+    customBtn.onclick = () => {
+        console.log('Custom question button clicked.');
+        showCustomQuestionForm();
+    };
+    menu.appendChild(customBtn);
+    typesAdded++;
 
     if (typesAdded > 0) {
         menu.style.display = "flex"; // Show the menu using flex display
@@ -793,6 +824,14 @@ function showQuestionDetail(question) {
     // NEW: Show the right column (using flex display)
     rightColumn.style.display = "flex";
     console.log("Question details appended. Right column should be visible.");
+
+    // Restore buttons that may have been hidden by custom mode
+    const refBtn = document.getElementById("reference-answer-btn");
+    if (refBtn) refBtn.style.display = "";
+    const aiBtn = document.getElementById("ai-answer-btn");
+    if (aiBtn) aiBtn.style.display = "";
+    isCustomMode = false;
+    lastCustomContext = null;
 
     // Load saved chat history for this question
     loadChatFromStorage();
@@ -1133,26 +1172,37 @@ function submitAnswer() {
     // Optional: Decide whether to keep focus on textarea or not
     // userAnswerEl.focus();
 
-    // Determine the mode ('review' for first submission, 'chat' otherwise) and build the prompt
+    // Determine the mode and build the prompt
     const submitButton = document.getElementById("submit-answer-btn");
     let prompt = "";
-    let mode = "chat"; // Default to chat mode for subsequent interactions
 
-    if (isFirstSubmission) {
+    if (isCustomMode && lastCustomContext) {
+        // Custom mode follow-up: build context-aware prompt
+        console.log("Processing follow-up in custom mode. Building context-aware chat prompt.");
+        prompt = `你是一位經驗豐富的高考語文閱卷教師，我們之前正在討論以下試題的批閱。\n\n`;
+        prompt += `**試題原文：**\n${lastCustomContext.questionText}\n\n`;
+        prompt += `**本題滿分：${lastCustomContext.score} 分**\n\n`;
+        if (lastCustomContext.referenceAnswer) {
+            prompt += `**參考答案：**\n${lastCustomContext.referenceAnswer}\n\n`;
+        }
+        prompt += `**學生答案：**\n${lastCustomContext.userAnswer}\n\n`;
+        prompt += `------\n\n`;
+        prompt += `**用戶接著說：**\n"${answerText}"\n\n`;
+        prompt += `**AI 的任務：** 基於以上試題背景和之前的批閱對話，繼續回應用戶的追問。始終結合試題問法解析「為什麼這麼回答」，而不僅僅告訴學生「是什麼」。`;
+        if (lastCustomContext.referenceAnswer) {
+            prompt += `如果用戶的追問涉及參考答案，請繼續審視參考答案的適恰性並對比分析。`;
+        }
+        prompt += `\n\n**輸出要求：** 請務必全程使用 **繁體中文** 進行回答。`;
+    } else if (isFirstSubmission) {
         console.log("Processing first submission for this question. Mode: review.");
-        mode = "review"; // Treat the first submission as needing review/analysis
-        prompt = buildAIPrompt(currentQuestion, mode, answerText);
-
-        // Update state: no longer the first submission for this question
+        prompt = buildAIPrompt(currentQuestion, "review", answerText);
         isFirstSubmission = false;
-        // Change the submit button text to reflect chat mode
         if (submitButton) {
             submitButton.textContent = "深度聊天";
         }
     } else {
         console.log("Processing follow-up submission. Mode: chat.");
-        mode = "chat"; // Explicitly set mode to chat
-        prompt = buildAIPrompt(currentQuestion, mode, answerText);
+        prompt = buildAIPrompt(currentQuestion, "chat", answerText);
     }
 
     // Call the AI service with the constructed prompt
@@ -1189,6 +1239,182 @@ function askAIForSolution() {
             submitButton.textContent = "深度聊天";
         }
     }
+}
+
+
+/****************************************************
+ * 显示自定义试题表单 (日常作業模式)
+ ****************************************************/
+function showCustomQuestionForm() {
+    console.log("Showing custom question form...");
+    isCustomMode = true;
+
+    // Hide gaokao-specific panels
+    const yearMenu = document.getElementById("gaokao-year-menu");
+    if (yearMenu) yearMenu.style.display = "none";
+    const questionSection = document.getElementById("gaokao-question");
+    if (questionSection) questionSection.style.display = "none";
+
+    // Show custom form
+    const customForm = document.getElementById("custom-question-form");
+    if (customForm) {
+        customForm.style.display = "block";
+        // Clear previous form values
+        const fields = ['custom-question-text', 'custom-reference-answer', 'custom-user-answer', 'custom-score-value'];
+        fields.forEach(id => {
+            const el = document.getElementById(id);
+            if (el) { el.value = ""; el.parentElement.classList.remove('has-error'); }
+        });
+    }
+
+    // Show right column for chat output
+    const rightColumn = document.getElementById("right-column");
+    if (rightColumn) rightColumn.style.display = "flex";
+
+    // Hide 參考答案 and AI答案 buttons (only keep 深度聊天)
+    const refBtn = document.getElementById("reference-answer-btn");
+    if (refBtn) refBtn.style.display = "none";
+    const aiBtn = document.getElementById("ai-answer-btn");
+    if (aiBtn) aiBtn.style.display = "none";
+
+    // Set a synthetic currentQuestion so chat can work
+    currentQuestion = { key: "custom", year: "custom", topic: "日常作業" };
+    lastCustomContext = null; // Reset context for new form
+    resetChatState();
+
+    // Update submit button text for custom mode
+    const submitButton = document.getElementById("submit-answer-btn");
+    if (submitButton) submitButton.textContent = "深度聊天";
+
+    // Scroll form into view
+    if (customForm) customForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+
+/****************************************************
+ * 提交自定义试题进行 AI 批阅
+ ****************************************************/
+function submitCustomQuestion() {
+    console.log("Submitting custom question for AI grading...");
+
+    // Get form values
+    const questionText = document.getElementById("custom-question-text")?.value.trim() || "";
+    const referenceAnswer = document.getElementById("custom-reference-answer")?.value.trim() || "";
+    const userAnswer = document.getElementById("custom-user-answer")?.value.trim() || "";
+    const scoreValue = document.getElementById("custom-score-value")?.value.trim() || "";
+
+    // Validate required fields
+    let hasError = false;
+    const requiredFields = [
+        { id: 'custom-question-text', value: questionText, name: '試題內容' },
+        { id: 'custom-user-answer', value: userAnswer, name: '我的答案' },
+        { id: 'custom-score-value', value: scoreValue, name: '分值' }
+    ];
+
+    // Clear previous errors
+    ['custom-question-text', 'custom-reference-answer', 'custom-user-answer', 'custom-score-value'].forEach(id => {
+        document.getElementById(id)?.parentElement.classList.remove('has-error');
+    });
+
+    const missingFields = [];
+    requiredFields.forEach(f => {
+        if (!f.value) {
+            hasError = true;
+            missingFields.push(f.name);
+            document.getElementById(f.id)?.parentElement.classList.add('has-error');
+        }
+    });
+
+    if (hasError) {
+        addMessage(`請填寫以下必填欄位：${missingFields.join('、')}`, "ai");
+        setTimeout(() => {
+            ['custom-question-text', 'custom-user-answer', 'custom-score-value'].forEach(id => {
+                document.getElementById(id)?.parentElement.classList.remove('has-error');
+            });
+        }, 3000);
+        return;
+    }
+
+    // Validate score is a positive number
+    const score = parseInt(scoreValue, 10);
+    if (isNaN(score) || score <= 0) {
+        addMessage("分值必須是一個正整數。", "ai");
+        document.getElementById('custom-score-value')?.parentElement.classList.add('has-error');
+        return;
+    }
+
+    // Display user's submission summary in chat
+    let userSummary = `<strong>我的提交：</strong><br/>`;
+    userSummary += `<strong>試題：</strong>${formatAnswer(questionText)}<br/>`;
+    if (referenceAnswer) {
+        userSummary += `<strong>參考答案：</strong>${formatAnswer(referenceAnswer)}<br/>`;
+    }
+    userSummary += `<strong>我的答案：</strong>${formatAnswer(userAnswer)}<br/>`;
+    userSummary += `<strong>分值：</strong>${score} 分`;
+    addMessage(userSummary, "user");
+
+    // Build AI prompt
+    let prompt = `你是一位經驗豐富的高考語文閱卷教師。請根據以下信息對學生的答案進行專業批閱。\n\n`;
+    prompt += `**試題原文：**\n${questionText}\n\n`;
+    prompt += `**本題滿分：${score} 分**\n\n`;
+
+    if (referenceAnswer) {
+        prompt += `**參考答案：**\n${referenceAnswer}\n\n`;
+    }
+
+    prompt += `**學生答案：**\n${userAnswer}\n\n`;
+
+    prompt += `------\n\n`;
+    prompt += `**批閱要求（請嚴格按照以下順序和要求輸出）：**\n\n`;
+
+    prompt += `1. **評分**：在滿分 ${score} 分的基礎上，給出本次得分。說明扣分理由或加分理由。\n\n`;
+
+    if (referenceAnswer) {
+        prompt += `2. **參考答案審視**：\n`;
+        prompt += `   - 客觀評價參考答案的適恰性和完整性。\n`;
+        prompt += `   - 如果參考答案存在不足或可商榷之處，請指出。\n\n`;
+        prompt += `3. **答案對比分析**：\n`;
+        prompt += `   - 逐點比較學生答案與參考答案的異同。\n`;
+        prompt += `   - 說明學生答案中哪些要點與參考答案一致（得分點）。\n`;
+        prompt += `   - 說明學生答案中遺漏了哪些參考答案的要點。\n`;
+        prompt += `   - 說明學生答案中有哪些參考答案沒有涵蓋但同樣有價值的觀點。\n\n`;
+    } else {
+        prompt += `2. **答案分析**：\n`;
+        prompt += `   - 逐點分析學生答案的優點和不足。\n`;
+        prompt += `   - 指出答案中的亮點和問題所在。\n\n`;
+    }
+
+    prompt += `${referenceAnswer ? '4' : '3'}. **學生答案優劣評估**：\n`;
+    prompt += `   - 明確指出學生答案的優點（如思路清晰、表述恰當、有獨到見解等）。\n`;
+    prompt += `   - 明確指出學生答案的不足（如審題偏差、要點遺漏、表述不當、邏輯不清等）。\n\n`;
+
+    prompt += `${referenceAnswer ? '5' : '4'}. **深度解析——為什麼這麼回答**：\n`;
+    prompt += `   - 結合試題的問法和考查意圖，解釋正確答案為什麼是這樣。\n`;
+    prompt += `   - 分析此題考查的知識點、能力點和命題思路。\n`;
+    prompt += `   - 教導學生面對這類題目時的正確審題思路和作答策略。\n`;
+    prompt += `   - 不止告訴學生「是什麼」，更要讓學生理解「為什麼」。\n\n`;
+
+    prompt += `${referenceAnswer ? '6' : '5'}. **改進建議**：\n`;
+    prompt += `   - 給出2-3條具體、可執行的改進建議。\n`;
+    prompt += `   - 如有必要，提供一段改寫示範。\n\n`;
+
+    prompt += `**輸出要求：** 請務必全程使用 **繁體中文** 進行回答。語言要清晰專業，同時親切易懂。`;
+
+    // Save context for multi-turn chat
+    lastCustomContext = {
+        questionText: questionText,
+        referenceAnswer: referenceAnswer,
+        userAnswer: userAnswer,
+        score: score
+    };
+
+    // Set state for follow-up chat
+    isFirstSubmission = false;
+    const submitButton = document.getElementById("submit-answer-btn");
+    if (submitButton) submitButton.textContent = "深度聊天";
+
+    // Call AI
+    callAI(prompt);
 }
 
 
