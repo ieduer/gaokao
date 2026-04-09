@@ -121,6 +121,35 @@ function syncConversationArchive(reason = "update") {
     }).catch(() => {});
 }
 
+function recordGaokaoEvent(itemType, payload = {}) {
+    const identity = getIdentity();
+    if (!identity?.recordEvent) return;
+    const question = payload.question || currentQuestion || null;
+    if (!conversationSessionKey) resetConversationSession();
+    const identifier = [
+        payload.mode || itemType,
+        question?.year || "custom",
+        question?.key || "question",
+        question?.id || question?.topic || Date.now().toString(36),
+    ].map(part => String(part || "").trim().replace(/[^\w\u4e00-\u9fa5-]+/g, "-")).filter(Boolean).join(":");
+    identity.recordEvent({
+        siteKey: SITE_KEY,
+        recordKey: payload.recordKey || identifier,
+        sessionKey: conversationSessionKey,
+        title: payload.title || `${questionLabel(question)} ${itemType === "ai_solution_request" ? "AI 参考" : "作答"}`.slice(0, 80),
+        summary: payload.summary || "",
+        itemGroup: "learning",
+        itemType,
+        sourceUrl: window.location.href,
+        payload: {
+            ...payload,
+            questionKey: question?.key || "",
+            questionYear: question?.year || "",
+            questionTopic: question?.topic || question?.id || "",
+        }
+    });
+}
+
 // --- AI作文审阅系统指令 ---
 // 孙老师智能化身 - 语文教师AI审阅系统
 
@@ -1289,6 +1318,16 @@ function submitAnswer() {
             custom: true,
             messageLength: answerText.length
         });
+        recordGaokaoEvent("answer_submission", {
+            mode: "custom-chat",
+            question: { key: "custom", year: "custom", topic: lastCustomContext.questionText.slice(0, 24) || "日常作業" },
+            title: "日常作業追問",
+            summary: `追問 ${answerText.length} 字`,
+            answerLength: answerText.length,
+            custom: true,
+            score: lastCustomContext.score,
+            hasReferenceAnswer: Boolean(lastCustomContext.referenceAnswer),
+        });
         prompt = `你是一位經驗豐富的高考語文閱卷教師，我們之前正在討論以下試題的批閱。\n\n`;
         prompt += `**試題原文：**\n${lastCustomContext.questionText}\n\n`;
         prompt += `**本題滿分：${lastCustomContext.score} 分**\n\n`;
@@ -1309,6 +1348,14 @@ function submitAnswer() {
             custom: false,
             messageLength: answerText.length
         });
+        recordGaokaoEvent("answer_submission", {
+            mode: "review",
+            question: currentQuestion,
+            title: `${questionLabel(currentQuestion)} 作答`.slice(0, 80),
+            summary: `首轮作答 ${answerText.length} 字`,
+            answerLength: answerText.length,
+            custom: false,
+        });
         prompt = buildAIPrompt(currentQuestion, "review", answerText);
         isFirstSubmission = false;
         if (submitButton) {
@@ -1319,6 +1366,14 @@ function submitAnswer() {
         trackAnswerWork(currentQuestion, "chat", {
             custom: false,
             messageLength: answerText.length
+        });
+        recordGaokaoEvent("answer_submission", {
+            mode: "chat",
+            question: currentQuestion,
+            title: `${questionLabel(currentQuestion)} 追问`.slice(0, 80),
+            summary: `追问 ${answerText.length} 字`,
+            answerLength: answerText.length,
+            custom: false,
         });
         prompt = buildAIPrompt(currentQuestion, "chat", answerText);
     }
@@ -1345,6 +1400,14 @@ function askAIForSolution() {
 
     // Build the prompt using the "solve" mode
     const prompt = buildAIPrompt(currentQuestion, "solve", currentInput);
+    recordGaokaoEvent("ai_solution_request", {
+        mode: "solve",
+        question: currentQuestion,
+        title: `${questionLabel(currentQuestion)} AI 参考`.slice(0, 80),
+        summary: currentInput ? `带草稿请求 AI 参考 ${currentInput.length} 字` : "请求 AI 直接作答",
+        answerLength: currentInput.length,
+        custom: false,
+    });
     // Call the AI service
     callAI(prompt);
 
@@ -1535,6 +1598,16 @@ function submitCustomQuestion() {
             answerLength: userAnswer.length
         }
     );
+    recordGaokaoEvent("answer_submission", {
+        mode: "custom-review",
+        question: { key: "custom", year: "custom", topic: questionText.slice(0, 24) || "日常作業" },
+        title: "日常作業批改",
+        summary: `批改 ${userAnswer.length} 字`,
+        answerLength: userAnswer.length,
+        custom: true,
+        score,
+        hasReferenceAnswer: Boolean(referenceAnswer),
+    });
 
     // Set state for follow-up chat
     isFirstSubmission = false;
