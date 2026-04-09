@@ -11,6 +11,7 @@ let lastPrompt = null; // For retry functionality
 let lastCallback = null; // For retry functionality
 let isCustomMode = false; // Tracks if we are in custom question mode
 let lastCustomContext = null; // Stores the custom question context for multi-turn chat
+const SITE_KEY = "gk";
 
 // Defines the types of questions and their labels
 const TYPES = [
@@ -20,6 +21,60 @@ const TYPES = [
     { key: "sanwen", label: "散文" }, { key: "yuyanjichu", label: "语言基础运用" },
     { key: "weixiezuo", label: "微写作" }, { key: "dazuowen", label: "大作文" }
 ];
+
+function getIdentity() {
+    return window.BdfzIdentity || null;
+}
+
+function mountIdentity() {
+    getIdentity()?.mount({ siteKey: SITE_KEY });
+}
+
+function buildQuestionProgressKey(question) {
+    return [question?.year || "custom", question?.key || "question", question?.id || question?.topic || "item"]
+        .map(part => String(part || "").trim().replace(/[^\w\u4e00-\u9fa5-]+/g, "-"))
+        .filter(Boolean)
+        .join("-");
+}
+
+function questionLabel(question) {
+    if (!question) return "高考练习";
+    const typeLabel = TYPES.find(t => t.key === question.key)?.label || question.key || "练习";
+    const suffix = question.topic || question.id || "";
+    return [question.year, typeLabel, suffix].filter(Boolean).join(" ");
+}
+
+function trackQuestionView(question) {
+    if (!question) return;
+    getIdentity()?.syncProgress({
+        siteKey: SITE_KEY,
+        itemKey: `question-${buildQuestionProgressKey(question)}`,
+        itemTitle: questionLabel(question),
+        itemGroup: question.key || "question",
+        itemType: "question",
+        state: "in_progress",
+        progressPercent: 25,
+        meta: {
+            year: question.year || "",
+            key: question.key || "",
+            topic: question.topic || "",
+        }
+    }).catch(() => {});
+}
+
+function trackAnswerWork(question, mode = "review", extra = {}) {
+    if (!question) return;
+    getIdentity()?.syncProgress({
+        siteKey: SITE_KEY,
+        itemKey: `answer-${buildQuestionProgressKey(question)}`,
+        itemTitle: `${questionLabel(question)} 作答`,
+        itemGroup: mode === "custom" ? "日常作业" : "真题练习",
+        itemType: mode === "custom" ? "writing" : "answer",
+        state: mode === "chat" ? "in_progress" : "done",
+        progressPercent: mode === "chat" ? 60 : 100,
+        meta: extra
+    }).catch(() => {});
+}
 
 // --- AI作文审阅系统指令 ---
 // 孙老师智能化身 - 语文教师AI审阅系统
@@ -362,6 +417,7 @@ function removeThinkingMessage() {
  ****************************************************/
 document.addEventListener("DOMContentLoaded", () => {
     console.log("DOM fully loaded and parsed.");
+    mountIdentity();
 
     // Show skeleton loading animation
     const typeMenu = document.getElementById("gaokao-type-menu");
@@ -798,6 +854,7 @@ function showQuestionDetail(question) {
 
     console.log(`Displaying details for question: ${question.year} ${question.key} (ID/Topic: ${question.topic || question.id || 'N/A'})`);
     currentQuestion = question; // Update global reference
+    trackQuestionView(question);
     // NOTE: resetChatState is called in showQuestionList *before* this function
 
     // --- Clear previous question content (except H2) ---
@@ -1179,6 +1236,10 @@ function submitAnswer() {
     if (isCustomMode && lastCustomContext) {
         // Custom mode follow-up: build context-aware prompt
         console.log("Processing follow-up in custom mode. Building context-aware chat prompt.");
+        trackAnswerWork(currentQuestion, "chat", {
+            custom: true,
+            messageLength: answerText.length
+        });
         prompt = `你是一位經驗豐富的高考語文閱卷教師，我們之前正在討論以下試題的批閱。\n\n`;
         prompt += `**試題原文：**\n${lastCustomContext.questionText}\n\n`;
         prompt += `**本題滿分：${lastCustomContext.score} 分**\n\n`;
@@ -1195,6 +1256,10 @@ function submitAnswer() {
         prompt += `\n\n**輸出要求：** 請務必全程使用 **繁體中文** 進行回答。`;
     } else if (isFirstSubmission) {
         console.log("Processing first submission for this question. Mode: review.");
+        trackAnswerWork(currentQuestion, "review", {
+            custom: false,
+            messageLength: answerText.length
+        });
         prompt = buildAIPrompt(currentQuestion, "review", answerText);
         isFirstSubmission = false;
         if (submitButton) {
@@ -1202,6 +1267,10 @@ function submitAnswer() {
         }
     } else {
         console.log("Processing follow-up submission. Mode: chat.");
+        trackAnswerWork(currentQuestion, "chat", {
+            custom: false,
+            messageLength: answerText.length
+        });
         prompt = buildAIPrompt(currentQuestion, "chat", answerText);
     }
 
@@ -1407,6 +1476,15 @@ function submitCustomQuestion() {
         userAnswer: userAnswer,
         score: score
     };
+    trackAnswerWork(
+        { key: "custom", year: "custom", topic: questionText.slice(0, 24) || "日常作業" },
+        "custom",
+        {
+            score,
+            hasReferenceAnswer: Boolean(referenceAnswer),
+            answerLength: userAnswer.length
+        }
+    );
 
     // Set state for follow-up chat
     isFirstSubmission = false;
