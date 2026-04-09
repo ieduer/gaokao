@@ -11,6 +11,7 @@ let lastPrompt = null; // For retry functionality
 let lastCallback = null; // For retry functionality
 let isCustomMode = false; // Tracks if we are in custom question mode
 let lastCustomContext = null; // Stores the custom question context for multi-turn chat
+let conversationSessionKey = "";
 const SITE_KEY = "gk";
 
 // Defines the types of questions and their labels
@@ -73,6 +74,50 @@ function trackAnswerWork(question, mode = "review", extra = {}) {
         state: mode === "chat" ? "in_progress" : "done",
         progressPercent: mode === "chat" ? 60 : 100,
         meta: extra
+    }).catch(() => {});
+}
+
+function resetConversationSession() {
+    conversationSessionKey = getIdentity()?.createSessionKey?.(`${SITE_KEY}-chat`) || `${SITE_KEY}-chat-${Date.now().toString(36)}`;
+}
+
+function messageHtmlToText(html) {
+    const temp = document.createElement("div");
+    temp.innerHTML = String(html || "");
+    return (temp.textContent || temp.innerText || "").replace(/\s+\n/g, "\n").trim();
+}
+
+function collectConversationMessages() {
+    const messagesEl = document.getElementById("messages");
+    if (!messagesEl) return [];
+    return Array.from(messagesEl.querySelectorAll('.user-message, .ai-message'))
+        .filter(el => !el.innerHTML.includes('thinking-message'))
+        .map((el, index) => ({
+            id: String(index + 1),
+            role: el.classList.contains('user-message') ? 'user' : 'assistant',
+            content: messageHtmlToText(el.innerHTML).slice(0, 24000),
+        }))
+        .filter(message => message.content);
+}
+
+function syncConversationArchive(reason = "update") {
+    if (!currentQuestion) return;
+    const messages = collectConversationMessages();
+    if (!messages.length) return;
+    if (!conversationSessionKey) resetConversationSession();
+    getIdentity()?.recordConversation({
+        siteKey: SITE_KEY,
+        sessionKey: conversationSessionKey,
+        title: `${currentQuestion.year || "custom"} ${currentQuestion.topic || currentQuestion.id || currentQuestion.key || "高考题"}`.slice(0, 80),
+        summary: messages[messages.length - 1]?.content?.slice(0, 120) || "高考对话",
+        sourceUrl: window.location.href,
+        messages,
+        meta: {
+            reason,
+            questionKey: currentQuestion.key || "",
+            questionYear: currentQuestion.year || "",
+            custom: Boolean(isCustomMode),
+        }
     }).catch(() => {});
 }
 
@@ -333,6 +378,7 @@ function addMessage(message, sender = "ai") {
     // Persist chat to localStorage (skip thinking messages)
     if (!message.includes('thinking-message')) {
         saveChatToStorage();
+        syncConversationArchive(sender === "user" ? "user-message" : "assistant-message");
     }
 
     return div; // Return the newly created message element
@@ -376,6 +422,7 @@ function loadChatFromStorage() {
                 isFirstSubmission = false;
                 const submitButton = document.getElementById("submit-answer-btn");
                 if (submitButton) submitButton.textContent = "深度聊天";
+                syncConversationArchive("hydrate-local");
             }
         }
     } catch (e) { console.warn('Failed to load chat:', e); }
@@ -418,6 +465,7 @@ function removeThinkingMessage() {
 document.addEventListener("DOMContentLoaded", () => {
     console.log("DOM fully loaded and parsed.");
     mountIdentity();
+    resetConversationSession();
 
     // Show skeleton loading animation
     const typeMenu = document.getElementById("gaokao-type-menu");
@@ -854,6 +902,7 @@ function showQuestionDetail(question) {
 
     console.log(`Displaying details for question: ${question.year} ${question.key} (ID/Topic: ${question.topic || question.id || 'N/A'})`);
     currentQuestion = question; // Update global reference
+    resetConversationSession();
     trackQuestionView(question);
     // NOTE: resetChatState is called in showQuestionList *before* this function
 
@@ -1348,6 +1397,7 @@ function showCustomQuestionForm() {
 
     // Set a synthetic currentQuestion so chat can work
     currentQuestion = { key: "custom", year: "custom", topic: "日常作業" };
+    resetConversationSession();
     lastCustomContext = null; // Reset context for new form
     resetChatState();
 
