@@ -858,6 +858,104 @@ body.dark-mode #submit-custom-btn {
 
 
 /* =======================================
+     已讀狀態徽章 (Year Button Read Status)
+     ======================================= */
+/* 已做過的年份按鈕：左側綠色強調條 + 右側圓形對勾 */
+#gaokao-year-menu button.read {
+  position: relative;
+  background-color: #eef7ee;
+  border-color: #556B2F;
+  color: #556B2F;
+  padding-left: 1.1rem;
+  padding-right: 2.4rem;
+  font-weight: 600;
+}
+
+#gaokao-year-menu button.read::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #556B2F;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+#gaokao-year-menu button.read::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  width: 18px;
+  height: 18px;
+  transform: translateY(-50%);
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><circle cx='10' cy='10' r='9' fill='%23556B2F'/><path d='M6 10.2 L8.6 12.8 L14 7.6' fill='none' stroke='white' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/></svg>") center/contain no-repeat;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.12));
+  transition: transform 0.15s ease;
+}
+
+#gaokao-year-menu button.read:hover::after {
+  transform: translateY(-50%) scale(1.08);
+}
+
+/* 進行中（瀏覽過但未作答完成）：空心環 */
+#gaokao-year-menu button.reading {
+  position: relative;
+  padding-left: 1.1rem;
+  padding-right: 2.4rem;
+  border-color: #a0d8ef;
+}
+
+#gaokao-year-menu button.reading::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #a0d8ef;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+#gaokao-year-menu button.reading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  width: 18px;
+  height: 18px;
+  transform: translateY(-50%);
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><circle cx='10' cy='10' r='8' fill='none' stroke='%234a90c2' stroke-width='2'/><circle cx='10' cy='10' r='3' fill='%234a90c2'/></svg>") center/contain no-repeat;
+}
+
+/* 深色模式已讀年份按鈕 */
+body.dark-mode #gaokao-year-menu button.read {
+  background-color: #2a5a2a;
+  border-color: #8bc48b;
+  color: #c8e6c9;
+}
+
+body.dark-mode #gaokao-year-menu button.read::before {
+  background: #c8e6c9;
+}
+
+body.dark-mode #gaokao-year-menu button.read::after {
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><circle cx='10' cy='10' r='9' fill='%23b5d89a'/><path d='M6 10.2 L8.6 12.8 L14 7.6' fill='none' stroke='%231f2b16' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/></svg>") center/contain no-repeat;
+}
+
+body.dark-mode #gaokao-year-menu button.reading {
+  border-color: #5a8ab5;
+}
+
+body.dark-mode #gaokao-year-menu button.reading::before {
+  background: #5a8ab5;
+}
+
+
+/* =======================================
      響應式設計 (Mobile Optimization)
      ======================================= */
 @media (max-width: 768px) {

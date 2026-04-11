@@ -495,6 +495,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("DOM fully loaded and parsed.");
     mountIdentity();
     resetConversationSession();
+    loadLocalReadProgress();
 
     // Show skeleton loading animation
     const typeMenu = document.getElementById("gaokao-type-menu");
@@ -524,6 +525,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // --- REQUIREMENT 1: Populate and show type menu on load ---
             populateAndShowTypeMenu(); // Call the function to show menu by default
+
+            // 載入遠端已讀進度並合併本地
+            hydrateReadProgressFromIdentity();
 
             // Configure the "北京真題" button to act as a reset/show type menu button
             const gaokaoBtn = document.getElementById("gaokao-btn");
@@ -825,6 +829,8 @@ function showYearMenu(typeKey) {
             yearMenu.appendChild(btn);
         });
         yearMenu.style.display = "flex"; // Show the year menu using flex display
+        // 更新年份菜單的已讀視覺狀態
+        updateYearMenuReadStatus();
     }
 
     console.log("#gaokao-year-menu populated and display style set.");
@@ -932,6 +938,7 @@ function showQuestionDetail(question) {
     console.log(`Displaying details for question: ${question.year} ${question.key} (ID/Topic: ${question.topic || question.id || 'N/A'})`);
     currentQuestion = question; // Update global reference
     resetConversationSession();
+    markQuestionAsViewed(question);
     trackQuestionView(question);
     // NOTE: resetChatState is called in showQuestionList *before* this function
 
@@ -1358,6 +1365,8 @@ function submitAnswer() {
         });
         prompt = buildAIPrompt(currentQuestion, "review", answerText);
         isFirstSubmission = false;
+        markQuestionAsDone(currentQuestion);
+        updateYearMenuReadStatus();
         if (submitButton) {
             submitButton.textContent = "深度聊天";
         }
@@ -1661,3 +1670,126 @@ function updateTextareaBorder(isDarkMode) {
 }
 
 // --- End of app.js ---
+
+/****************************************************
+ * 已讀進度追蹤/顯示 (Read Progress Visual Indicator)
+ ****************************************************/
+
+// 本地已讀進度：{ "typeKey-year": "done"|"in_progress" }
+let gaokaoReadProgressCache = {};
+
+function loadLocalReadProgress() {
+    try {
+        const stored = localStorage.getItem('gaokao_read_progress');
+        gaokaoReadProgressCache = stored ? JSON.parse(stored) : {};
+    } catch (e) { gaokaoReadProgressCache = {}; }
+}
+
+function saveLocalReadProgress() {
+    try {
+        localStorage.setItem('gaokao_read_progress', JSON.stringify(gaokaoReadProgressCache));
+    } catch (e) { /* quota */ }
+}
+
+// 標記某個 type+year 為已作答/已瀏覽
+function markQuestionAsViewed(question) {
+    if (!question) return;
+    const key = `${question.key || 'question'}-${question.year || 'unknown'}`;
+    // 只升級狀態，不降級
+    if (gaokaoReadProgressCache[key] !== 'done') {
+        gaokaoReadProgressCache[key] = 'in_progress';
+        saveLocalReadProgress();
+    }
+}
+
+function markQuestionAsDone(question) {
+    if (!question) return;
+    const key = `${question.key || 'question'}-${question.year || 'unknown'}`;
+    gaokaoReadProgressCache[key] = 'done';
+    saveLocalReadProgress();
+}
+
+// 更新年份菜單的已讀視覺狀態
+function updateYearMenuReadStatus() {
+    const yearMenu = document.getElementById('gaokao-year-menu');
+    if (!yearMenu) return;
+    const buttons = yearMenu.querySelectorAll('button');
+    buttons.forEach(btn => {
+        // 嘗試從按鈕文字提取年份、從其 onclick 上下文提取 typeKey
+        const yearMatch = btn.textContent.match(/(\d{4})/);
+        if (!yearMatch) return;
+        const year = yearMatch[1];
+
+        // 查找所有類型下該年的狀態
+        let bestState = null; // null < in_progress < done
+        for (const [progressKey, state] of Object.entries(gaokaoReadProgressCache)) {
+            if (progressKey.endsWith(`-${year}`)) {
+                if (state === 'done') { bestState = 'done'; break; }
+                if (state === 'in_progress' && bestState !== 'done') bestState = 'in_progress';
+            }
+        }
+
+        btn.classList.remove('read', 'reading');
+        if (bestState === 'done') {
+            btn.classList.add('read');
+        } else if (bestState === 'in_progress') {
+            btn.classList.add('reading');
+        }
+    });
+}
+
+// 從 BdfzIdentity（用戶系統）拉取已同步的做題進度，
+// 與本地 localStorage 合併。
+async function hydrateReadProgressFromIdentity() {
+    const identity = getIdentity();
+    if (!identity || typeof identity.api !== 'function') {
+        console.debug('[gaokao] hydrateReadProgressFromIdentity skipped: no identity or API');
+        return;
+    }
+    try {
+        const payload = await identity.api(`/api/progress?site=${encodeURIComponent(SITE_KEY)}`);
+        const items = Array.isArray(payload?.items) ? payload.items : [];
+        if (!items.length) { updateYearMenuReadStatus(); return; }
+
+        loadLocalReadProgress();
+
+        items.forEach(item => {
+            const key = String(item?.itemKey || '');
+            // question-<year>-<typeKey>-<id> or answer-<year>-<typeKey>-<id>
+            const m = key.match(/^(?:question|answer)-(.+)$/);
+            if (!m) return;
+            // 嘗試解析出 typeKey-year
+            const parts = m[1].split('-');
+            if (parts.length < 2) return;
+            // 找出年份（4位數字）
+            let yearPart = null;
+            let typeParts = [];
+            for (const part of parts) {
+                if (!yearPart && /^\d{4}$/.test(part)) {
+                    yearPart = part;
+                } else if (!yearPart) {
+                    typeParts.push(part);
+                }
+            }
+            if (!yearPart) return;
+            const typeKey = typeParts.join('-') || 'question';
+            const progressKey = `${typeKey}-${yearPart}`;
+
+            const isDone = item.state === 'done' || Number(item.progressPercent) >= 100;
+            const isInProgress = item.state === 'in_progress';
+
+            if (isDone) {
+                gaokaoReadProgressCache[progressKey] = 'done';
+            } else if (isInProgress && gaokaoReadProgressCache[progressKey] !== 'done') {
+                gaokaoReadProgressCache[progressKey] = 'in_progress';
+            }
+        });
+
+        saveLocalReadProgress();
+        updateYearMenuReadStatus();
+    } catch (e) {
+        console.debug('[gaokao] hydrateReadProgressFromIdentity skipped:', e?.message || e);
+        updateYearMenuReadStatus();
+    }
+}
+
