@@ -37,17 +37,30 @@ function renderOptions(options) {
     .join("\n");
 }
 
+function renderAnswerValue(answer) {
+  return Array.isArray(answer)
+    ? answer.join("，")
+    : typeof answer === "object" && answer !== null
+      ? Object.entries(answer).map(([key, value]) => `${key} ${value}`).join("\n")
+      : String(answer || "");
+}
+
 function renderQuestion(question) {
   const options = renderOptions(question.options);
-  return `${question.number}. ${question.stem}${options ? `\n${options}` : ""}`;
+  const subquestions = (question.subquestions || []).map((subquestion) => {
+    const subOptions = renderOptions(subquestion.options);
+    return `${subquestion.number} ${subquestion.stem}${subOptions ? `\n${subOptions}` : ""}`;
+  }).join("\n");
+  const body = [question.stem, subquestions].filter(Boolean).join("\n");
+  return `${question.number}. ${body}${options ? `\n${options}` : ""}`;
 }
 
 function renderAnswer(question) {
-  const answer = Array.isArray(question.answer)
-    ? question.answer.join("\n")
-    : typeof question.answer === "object" && question.answer !== null
-      ? Object.entries(question.answer).map(([key, value]) => `${key} ${value}`).join("\n")
-      : String(question.answer || "");
+  const answer = question.answer
+    ? renderAnswerValue(question.answer)
+    : (question.subquestions || [])
+      .map((subquestion) => `${subquestion.number} ${renderAnswerValue(subquestion.answer)}`)
+      .join("\n");
   const explanation = question.explanation ? `\n\n解析：${question.explanation}` : "";
   return `${ANSWER_LABEL}\n答案：${answer}${explanation}`;
 }
