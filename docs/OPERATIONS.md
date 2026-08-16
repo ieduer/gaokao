@@ -40,8 +40,9 @@ no binding, schema, identity, storage, compatibility, cache, route or shared-hub
 6. Rollback by promoting deployment `d27a87a4-625e-40d1-a9a8-45783c62d825`.
 
 Last verified: 2026-08-16. The normal Git gate passed without override at pushed commit
-`7fe39ca4e22c219841e80758ad4583ad38d0f28d`; Pages production deployment
-`7bedc52d-feb3-42c7-a842-5fdd1188e542` is live. `https://gk.bdfz.net/` and
+`3a3658806d5d7b19aa5d7afdf2d5751dcff879e2`; Pages production deployment
+`51d51a51-db3f-4620-9c1d-bfbe813cd421` is live. `https://gk.bdfz.net/` and
 `assets/js/app.js` returned HTTP 200, and the live `data/all.json` SHA-256
-`7e57800a6de9003f1e0f72eb9dddcd1af6faca014136c072182ece117904b54a` exactly matched the validated
-release artifact. The pre-release rollback anchor remains `d27a87a4-625e-40d1-a9a8-45783c62d825`.
+`8d5035113592a8c8676ccd0fe9e64f52abff4b5652259cf06910a4362edb9cbc` exactly matched the validated
+release artifact. Live questions 14 and 15 contain every sub-question and no `undefined` or empty
+answer. The pre-release rollback anchor remains `d27a87a4-625e-40d1-a9a8-45783c62d825`.
