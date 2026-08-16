@@ -39,4 +39,9 @@ no binding, schema, identity, storage, compatibility, cache, route or shared-hub
 5. Read back `data/all.json`, all nine 2026 components, model labels, root page and byte SHA-256.
 6. Rollback by promoting deployment `d27a87a4-625e-40d1-a9a8-45783c62d825`.
 
-Last verified: 2026-08-16 candidate build and validator; production deployment pending.
+Last verified: 2026-08-16. The normal Git gate passed without override at pushed commit
+`7fe39ca4e22c219841e80758ad4583ad38d0f28d`; Pages production deployment
+`7bedc52d-feb3-42c7-a842-5fdd1188e542` is live. `https://gk.bdfz.net/` and
+`assets/js/app.js` returned HTTP 200, and the live `data/all.json` SHA-256
+`7e57800a6de9003f1e0f72eb9dddcd1af6faca014136c072182ece117904b54a` exactly matched the validated
+release artifact. The pre-release rollback anchor remains `d27a87a4-625e-40d1-a9a8-45783c62d825`.
