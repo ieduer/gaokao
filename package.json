@@ -7,6 +7,7 @@
   },
   "scripts": {
     "build:beijing-2026": "node scripts/import-beijing-2026-from-gks.mjs",
-    "check:beijing-2026": "node scripts/validate-beijing-2026.mjs"
+    "check:beijing-2026": "node scripts/validate-beijing-2026.mjs",
+    "test:progress": "node --test scripts/test-progress-restore.mjs"
   }
 }

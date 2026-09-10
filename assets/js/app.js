@@ -821,6 +821,7 @@ function showYearMenu(typeKey) {
         years.forEach(year => {
             const btn = document.createElement("button");
             btn.textContent = `${year} 年`;
+            btn.dataset.progressKey = `${typeKey}-${year}`;
             btn.onclick = () => {
                 console.log(`Year button "${year}" clicked for type "${typeKey}".`);
                 const questionsForYear = dataForType.filter(item => item.year === year);
@@ -1677,6 +1678,7 @@ function updateTextareaBorder(isDarkMode) {
 
 // 本地已讀進度：{ "typeKey-year": "done"|"in_progress" }
 let gaokaoReadProgressCache = {};
+let gaokaoProgressHydration = null;
 
 function loadLocalReadProgress() {
     try {
@@ -1715,24 +1717,11 @@ function updateYearMenuReadStatus() {
     if (!yearMenu) return;
     const buttons = yearMenu.querySelectorAll('button');
     buttons.forEach(btn => {
-        // 嘗試從按鈕文字提取年份、從其 onclick 上下文提取 typeKey
-        const yearMatch = btn.textContent.match(/(\d{4})/);
-        if (!yearMatch) return;
-        const year = yearMatch[1];
-
-        // 查找所有類型下該年的狀態
-        let bestState = null; // null < in_progress < done
-        for (const [progressKey, state] of Object.entries(gaokaoReadProgressCache)) {
-            if (progressKey.endsWith(`-${year}`)) {
-                if (state === 'done') { bestState = 'done'; break; }
-                if (state === 'in_progress' && bestState !== 'done') bestState = 'in_progress';
-            }
-        }
-
+        const state = gaokaoReadProgressCache[btn.dataset.progressKey];
         btn.classList.remove('read', 'reading');
-        if (bestState === 'done') {
+        if (state === 'done') {
             btn.classList.add('read');
-        } else if (bestState === 'in_progress') {
+        } else if (state === 'in_progress') {
             btn.classList.add('reading');
         }
     });
@@ -1741,55 +1730,62 @@ function updateYearMenuReadStatus() {
 // 從 BdfzIdentity（用戶系統）拉取已同步的做題進度，
 // 與本地 localStorage 合併。
 async function hydrateReadProgressFromIdentity() {
+    if (gaokaoProgressHydration) return gaokaoProgressHydration;
     const identity = getIdentity();
-    if (!identity || typeof identity.api !== 'function') {
-        console.debug('[gaokao] hydrateReadProgressFromIdentity skipped: no identity or API');
+    if (typeof identity?.api !== 'function' || typeof identity?.getSession !== 'function' || !allData.length) {
         return;
     }
-    try {
-        const payload = await identity.api(`/api/progress?site=${encodeURIComponent(SITE_KEY)}`);
-        const items = Array.isArray(payload?.items) ? payload.items : [];
-        if (!items.length) { updateYearMenuReadStatus(); return; }
-
-        loadLocalReadProgress();
-
-        items.forEach(item => {
-            const key = String(item?.itemKey || '');
-            // question-<year>-<typeKey>-<id> or answer-<year>-<typeKey>-<id>
-            const m = key.match(/^(?:question|answer)-(.+)$/);
-            if (!m) return;
-            // 嘗試解析出 typeKey-year
-            const parts = m[1].split('-');
-            if (parts.length < 2) return;
-            // 找出年份（4位數字）
-            let yearPart = null;
-            let typeParts = [];
-            for (const part of parts) {
-                if (!yearPart && /^\d{4}$/.test(part)) {
-                    yearPart = part;
-                } else if (!yearPart) {
-                    typeParts.push(part);
+    gaokaoProgressHydration = (async () => {
+        let stage = 'session';
+        try {
+            const session = await identity.getSession();
+            if (!session?.authenticated) return;
+            stage = 'progress';
+            const payload = await identity.api(`/api/progress?site=${encodeURIComponent(SITE_KEY)}`);
+            if (!Array.isArray(payload?.items)) {
+                console.debug('[gaokao] progress_restore', { outcome: 'invalid_payload' });
+                return;
+            }
+            // Resolve the exact keys used by the writer, including IDs containing hyphens.
+            // Unknown historical/custom records stay untouched; never infer their category.
+            const publishedKeys = new Map();
+            for (const question of allData) {
+                const progressKey = `${question.key || 'question'}-${question.year || 'unknown'}`;
+                for (const prefix of ['question', 'answer']) {
+                    publishedKeys.set(`${prefix}-${buildQuestionProgressKey(question)}`, progressKey);
                 }
             }
-            if (!yearPart) return;
-            const typeKey = typeParts.join('-') || 'question';
-            const progressKey = `${typeKey}-${yearPart}`;
-
-            const isDone = item.state === 'done' || Number(item.progressPercent) >= 100;
-            const isInProgress = item.state === 'in_progress';
-
-            if (isDone) {
-                gaokaoReadProgressCache[progressKey] = 'done';
-            } else if (isInProgress && gaokaoReadProgressCache[progressKey] !== 'done') {
-                gaokaoReadProgressCache[progressKey] = 'in_progress';
+            loadLocalReadProgress();
+            let matched = 0;
+            for (const item of payload.items) {
+                const progressKey = publishedKeys.get(item?.itemKey);
+                if (item?.siteKey !== SITE_KEY || !progressKey) continue;
+                const isInProgress = item.state === 'in_progress';
+                const isDone = item.state === 'completed' || item.state === 'done'
+                    || (isInProgress && Number(item.meta?.progressPercent ?? item.progressPercent) >= 100);
+                if (isDone) {
+                    gaokaoReadProgressCache[progressKey] = 'done';
+                } else if (isInProgress && gaokaoReadProgressCache[progressKey] !== 'done') {
+                    gaokaoReadProgressCache[progressKey] = 'in_progress';
+                }
+                if (isDone || isInProgress) matched += 1;
             }
-        });
-
-        saveLocalReadProgress();
-        updateYearMenuReadStatus();
-    } catch (e) {
-        console.debug('[gaokao] hydrateReadProgressFromIdentity skipped:', e?.message || e);
-        updateYearMenuReadStatus();
+            saveLocalReadProgress();
+            console.debug('[gaokao] progress_restore', { outcome: 'restored', matched });
+        } catch (error) {
+            const outcome = stage === 'session' ? 'session_unavailable'
+                : error?.status === 401 ? 'session_expired' : 'progress_unavailable';
+            console.debug('[gaokao] progress_restore', { outcome });
+        } finally {
+            updateYearMenuReadStatus();
+        }
+    })();
+    try {
+        await gaokaoProgressHydration;
+    } finally {
+        gaokaoProgressHydration = null;
     }
 }
 
+// An ordinary return from login restores progress without submitting any new work.
+window.addEventListener('focus', () => hydrateReadProgressFromIdentity());
