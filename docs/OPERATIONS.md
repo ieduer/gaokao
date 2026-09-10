@@ -1,3 +1,25 @@
+<!-- gk-progress-current:start -->
+# Accepted GK normal progress flow — 2026-09-10 01:31Z
+
+Current production: **Pages `f6ff92b3-78e6-4bbf-8b94-bb347a80b23c`**, runtime source **`ea528c388e8728736265f7da2d3b07680b54dcae`**, published branch `codex/gk-progress-restore-20260910`. Immediate rollback: **`51d51a51-db3f-4620-9c1d-bfbe813cd421` / `3a3658806d5d7b19aa5d7afdf2d5751dcff879e2`**. Preserve all forward browser/My progress. Preview `d004494a-25a0-4697-8f88-5e50dcb1067b` and production publisher calls are terminal; never replay either.
+
+The actual signed-in browser restored nine current-corpus records into their correct categories, starting from an empty local cache without clearing it. All fourteen old central records stayed byte-exact. One ordinary 2026 noncontinuous-reading view at **01:28:16.983Z** wrote exactly once through the existing SDK: `in_progress`,25%, matching central item hash. Both pages were ordinarily reloaded; GK then had ten category records and My fifteen records. My's normal records UI showed the new reading, GK showed2026noncontinuous as reading,2026classical as unread and2025classical as reading. No AI request, answer submission, grading, duplicate view or synthetic completion occurred. Do not replay `question-2026-feilian-2026-feilian`.
+
+All seven preview assets match exactly. Six non-HTML production assets match exactly; the whole HTML matches after removing one precisely identified Cloudflare AI Labyrinth hidden nofollow link solely for comparison. The hidden URL was never followed and no security setting changed. Configuration and `uses_functions:false` remain unchanged. Raw failed HTML comparison and the subsequent exact review are both retained.
+
+Evidence directory: `/Users/ylsuen/CF/_meta/reports/operations/.my-architecture-serial7-20260909/`:
+- `gk-progress-real-owner-acceptance.json`, ownerbaseline/hydrated/after snapshots, normal-owner-read, source/My UI-after-reload prove the actual flow and old-history preservation.
+- `gk-progress-production-deployment.json`, preview-readback and production-readback-reviewed locate live/source/rollback and all seven artifact hashes.
+- `gk-progress-current.log`:14passes; predecessor-regression:13fail/1pass. Unchanged-writer-contract binds seven unchanged write/AI functions; all201corpus keys and data SHA8d503511 remain intact.
+- First passive window through01:29:44 is complete at ABR1 but has only17returned events and no matching owner write terminal. It does not negate the matching product and central receipts; it also does not prove natural error reduction. Telemetry availability/attribution remains open.
+
+**Remaining independent gaps:** natural error reduction; five old central keys without an exact current-corpus mapping (preserved, not migrated); real completed-state restoration and AI/answer workflows (this owner baseline has only in-progress records; completed-state handling passed behavioral tests only). Generic progress remains `record_only`, with no qualified-credit claim. Original My/fleet objectives remain open.
+
+Published runtime files changed only`assets/js/app.js`; package/test and three operations documents accompany it. Exact source branch is clean/published; canonical old app remains a historical checkout with additive current documentation. Complete prior canonical dirty document bytes are retained in E7 `gk-canonical-state-preimage.txt` and `gk-canonical-operations-preimage.txt`; do not overwrite or discard that work. New verification standard is executable from the published branch. Hot evidence has review2026-09-16; task-created runtime derivatives remain owned by the root until exact manifest cleanup.
+
+The following sections retain the pre-release specification and historical deployment journal. Current live/rollback and acceptance facts in this section take precedence.
+<!-- gk-progress-current:end -->
+
 # GK progress restoration release — 2026-09-10
 
 Owner: suen; executor: codex-my-architecture-serial7. Purpose: `20260910-gk-progress-restore`.
