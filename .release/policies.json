@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "guard_source": "ieduer/cf-ops-scripts@53b34ad",
+  "targets": [
+    {
+      "schema_version": 1,
+      "target": "gaokao",
+      "repository": "https://github.com/ieduer/gaokao",
+      "branch": "main",
+      "origin": "https://gaokao-dnl.pages.dev",
+      "baseline_commit": "0b64b99a16f3b421430c96b0a8905bca5de69b80",
+      "source_root": "",
+      "output": ".pages-output",
+      "stage_tracked_static": false,
+      "build_command": "npm run build",
+      "required_paths": [
+        "functions/api/question-discussions.js",
+        "index.html",
+        "assets/js/app.js",
+        "package.json"
+      ],
+      "required_artifacts": [
+        "index.html"
+      ],
+      "checks": [],
+      "bootstrap": {
+        "deployment_id": "b10353d7-db12-46d7-ade4-3e2f9a98daa3",
+        "fingerprints": [
+          {
+            "path": "/",
+            "artifact": "index.html",
+            "sha256": "ce7fb49f788176639e3c19fc4be9a7194d56c06409783416a0390c4e70068ae9"
+          },
+          {
+            "path": "/assets/css/style.css?v=20260920-bj2026-allsubjects",
+            "artifact": "assets/css/style.css",
+            "sha256": "09e7db7215586938565b94f425fe321c70eb3ac63daa4ed279c1f2eb39531854"
+          },
+          {
+            "path": "/assets/js/app.js?v=20260920-bj2026-allsubjects",
+            "artifact": "assets/js/app.js",
+            "sha256": "a81e28089decb4a326302e951eea13d76c3b2cae1e0f6efd3672c2431c2481c3"
+          }
+        ]
+      }
+    }
+  ]
+}
