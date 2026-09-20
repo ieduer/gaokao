@@ -3,9 +3,9 @@
 import fs from 'node:fs';import path from 'node:path';import {execFileSync} from 'node:child_process';import {createHash} from 'node:crypto';import {fileURLToPath} from 'node:url';
 export const sha=x=>createHash('sha256').update(x).digest('hex');
 const fail=m=>{throw Error(m)},read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
-const run=(exe,args,options={})=>execFileSync(exe,args,{encoding:'utf8',timeout:20000,maxBuffer:8*1024*1024,stdio:['ignore','pipe','pipe'],...options}).trim();
+const run=(exe,args,options={})=>(execFileSync(exe,args,{encoding:'utf8',timeout:20000,maxBuffer:8*1024*1024,stdio:['ignore','pipe','pipe'],...options})||'').trim();
 const git=(...args)=>run('git',args);
-export const normalizeRepo=x=>x.replace(/^git@github.com:/,'https://github.com/').replace(/\.git$/,'').replace(/\/$/,'');
+export function normalizeRepo(x){try{const u=new URL(x.replace(/^git@github.com:/,'https://github.com/'));if(u.hostname!=='github.com'||!['https:','ssh:'].includes(u.protocol))return '';return 'https://github.com'+u.pathname.replace(/\/$/,'').replace(/\.git$/,'')}catch{return ''}}
 export function validateSource(p,c){
  if(p.schema_version!==1||!p.target||!/^https:\/\/github\.com\/[\w.-]+\/[\w.-]+$/.test(p.repository))fail('Invalid release channel contract');
  if(c.target!==p.target)fail('Wrong target');
@@ -49,7 +49,7 @@ export async function build(p,target){
  if(!fs.existsSync(output)||!fs.statSync(output).isDirectory())fail('Build artifact missing');
  for(const f of p.required_artifacts||['index.html'])if(!fs.existsSync(path.join(output,f)))fail('Required output missing: '+f);
  const live=await liveIdentity(p);if(live.key!==start.live.key)fail('Production changed during build');
- if(start.live.bootstrap){for(const f of p.bootstrap.fingerprints){const artifact=path.join(output,f.artifact);if(!fs.existsSync(artifact)||sha(fs.readFileSync(artifact))!==f.sha256)fail('First guarded build differs from verified live asset: '+f.artifact)}}
+ if(start.live.bootstrap){for(const f of p.bootstrap.fingerprints){const artifact=path.join(output,f.artifact);if(!fs.existsSync(artifact)||sha(fs.readFileSync(artifact))!==(f.artifact_sha256||f.sha256))fail('First guarded build differs from verified live asset: '+f.artifact)}}
  if(git('rev-parse','HEAD')!==start.source_commit||git('ls-remote','--exit-code','origin','refs/heads/'+p.branch).split(/\s/)[0]!==start.source_commit)fail('Build superseded; refusing old source');
  // All output paths are hash-bound. The provenance file itself is excluded.
  const artifacts=filesAt(output).filter(f=>f.path!=='__release.json');
