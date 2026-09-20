@@ -1,0 +1,16 @@
+{
+  "at": "2026-09-20T05:57:41.525Z",
+  "scope": "release-channel control acceptance; project product/data acceptance remains distinct",
+  "repository": "ieduer/gaokao",
+  "branch": "main",
+  "targets": [
+    {
+      "target": "gaokao",
+      "mode": "guarded_automatic",
+      "deployment": "ba438f25-c986-44e3-aefe-f5bd063ec952",
+      "source_commit": "897ca30111e9d96adcaf7bf1aba95c1f2e936a00",
+      "artifacts": 9,
+      "policy_file": ".release/policies.json"
+    }
+  ]
+}
