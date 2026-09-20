@@ -1,3 +1,18 @@
+# 2026 北京卷全科真题 — 2026-09-19
+
+站长指令：检索北京 2026 年**各科目**高考真题并上线；资料无官方，三处独立来源一致即视为真题；答案也无官方、全为网传，须核查后再决定是否采用。
+
+已上线内容：
+- **/2026.html「2026 北京卷 · 九科真题」**：语文、数学、英语、物理、思想政治、化学、历史、生物、地理。八科以试卷／网传答案页面图像（142 页 WebP，镜像自掌上高考）呈现，语文走站内逐题练习。每科附来源清单与逐条交叉核验记录（`data/beijing-2026/manifest.json`）。首页导航新增入口。
+- **2026 语文题面三源纠错**：旧版源自单一来源，本次补齐两份独立转录本并回到原卷扫描页目视判定，修正 69 处差异（40 字词 / 29 标点）。
+- **2026 语文答案改为本会话 Claude Opus 5 逐题核查作答**，与两份网传答案比对后采用；客观题 12 题与默写 4 组全部一致。Codex 版本保留对照。
+
+防回退：`import-beijing-2026-from-gks.mjs` 默认拒绝运行（上游结构化稿仍是错误版本）；`validate-beijing-2026.mjs` 新增 13 条校验位 + 4 条回退探测位；`validate-data.mjs` 的当前版本策略改为 `claude_opus_5`。
+
+已知未解：数学第 1、2 题两份转录本文字细节不一致（答案相同），页面并列呈现不作裁定；八科题面尚未结构化为可作答题目，仅作阅读与下载。
+
+---
+
 # Accepted modern GK release — 2026-09-20
 
 Production: **23baf659-1f2a-45cc-9740-1d1c10a1329d**. Runtime source: **17f1f1dbda5c551333688ae36f4124bf134f4550**, on GitHub main and `codex/gk-modern-restore-20260920`. Preview: **e15ebc83-fb88-49f9-8be0-a6ae9bc1f739**. Rollback: **f6ff92b3-78e6-4bbf-8b94-bb347a80b23c**, preserving all forward user progress. Later documentation-only commits do not change the deployed runtime identity.

@@ -1,3 +1,83 @@
+# 2026 北京卷全科真题上线 + 语文题面三源纠错 — 2026-09-19
+
+本节只增补，不推翻下方各节；它取代其中「2026 语文题面以 GKS 单一来源为准」「七文件静态产物」两条。
+
+## 收录标准（本次新增）
+
+站长要求：2026 年北京卷没有官方公布的试卷与答案，**同一份试卷在三处彼此独立的来源上内容一致，才认定为真题**；
+答案全部是网传，必须自行核查后再决定是否采用。本次全部按此标准执行，逐科证据写进
+`data/beijing-2026/manifest.json`（页面「来源与核验」栏直接渲染该文件）。
+
+## 语文：题面三源交叉核对并纠错
+
+旧版 2026 语文题面来自 GKS `beijing/2026` 结构化稿，而该稿只有**一个**来源（用户提供的原卷扫描件），
+2026-08-15 的发布还动用了一次性 source-class 豁免。本次补齐第二、三处来源：
+
+- 原卷扫描件（小红书／公众号「漂似鸥」流出），SHA-256 `486b6c54…1669ec`，10 页正卷 + 2 页网传参考答案；
+- 微信公众号「高中语文知识学习」全卷转录（`mp.weixin.qq.com/s?__biz=Mzg5MDA2NzUzMg==&mid=2247562044`）；
+- 另一独立微信公众号全卷转录（`__biz=MzU3MzMzNTczMQ==&mid=2247572405`）。
+
+三者逐句比对后，查出线上旧版共 **69 处差异（40 处字词、29 处标点）**，且每一处都是旧版与另外两处不一致。
+对争议处回到原卷扫描页逐页目视判定（PDF 页 4/1/7/19/15/2/9/3/10/5 对应正卷第 1—10 页）。已修正的实质错误包括：
+`聊以即趣→稍纵即逝`、`手工艺人→手工匠人`、`为寻阳吏→为郡督邮`、`后举孝廉→后察孝廉`、`庞怀→扈怀`、
+`赍而遣之→资而遣之`、`弢将袭浔阳→弢别将袭沔阳`、`共击破→共击弢`、`浔水城→浮水城`、`步走向武昌→步向武昌`、
+`众情愤怒→众情愤惋`、`不预朝政→不预朝权`、`望极平田→乍望极平田`、`建章宫修建→修造`、`晋朝名将→晋朝将领`、
+`以自然之理论治国之道→喻`、`开篇提出观点→亮出观点`、`素日→素习`、`也太→也忒`、`以此传讹→以讹传讹`、
+`后人→后来人`、`来自哪座山→采自哪座山`、第 3 题 A 项补「的」、第 4 题 C 项 `应当分割，独立进行→应分别、独立进行`，
+并删去散文误加的「赵丽宏」作者行、修正《红楼梦》注释编号。
+
+因此 `scripts/import-beijing-2026-from-gks.mjs` **已改为默认拒绝运行**（退出码 2）：它的上游结构化稿仍是错误版本，
+重跑会把 69 处修正全部退回。要重新导入必须先把修正同步回 GKS 结构化稿与 coverage 哈希，再显式设
+`ALLOW_SUPERSEDED_IMPORT=1`。`scripts/validate-beijing-2026.mjs` 新增 13 条正向校验位与 4 条回退探测位，
+任何一次退回都会让 `npm run check:beijing-2026` 失败。
+
+## 语文：答案改由本会话逐题核查作答
+
+两份网传参考答案（原卷附页、公众号转录）内容一致，但都不是官方评分标准。本会话的 Claude Opus 5 先独立作答，
+再与网传答案比对：**12 道客观题与 4 组默写全部一致，主观题要点一致**，因此采用，并在每题写明核验结论。
+新版本 `claude_opus_5` 成为 2026 各记录的 `ai_answer_current_version`，`openai_codex_gpt_5` 保留供对照；
+`assets/js/app.js` 的 `ANSWER_VERSION_ORDER` 把它排在首位，`buildYearExam` 的版本槽位改为由该列表派生
+（原先是硬编码字面量，新增版本会抛 `Cannot read properties of undefined (reading 'answers')`，本次一并修好）。
+`scripts/validate-data.mjs` 的「verified source policy」同步改为：北京 2026 记录当前版本必须是 `claude_opus_5`，
+且 Codex 与 Opus 5 两套答案都要齐全。
+
+## 新增：/2026.html — 2026 北京卷九科真题
+
+语文之外的八科在本站此前没有任何收录。本次收录语文、数学、英语、物理、思想政治、化学、历史、生物、地理共九科，
+其中八科以试卷／网传答案页面图像呈现（142 页，WebP，源自掌上高考 `static-gkcx.gaokao.cn` 的
+`gkzhenti/zhenti|answer/{id}.json`，本站镜像而非热链），语文仍走站内逐题练习。数学与物理另有 GitHub 归档全卷
+（`deekur/gaokaomath`、`deekur/gaokaophysics`）作为独立第二份文字来源。
+
+每科都与北京教育考试院／北京教科院专家的公开评析（北京考试报、北京日报客户端、新京报）逐条比对；
+`manifest.json` 记录命中的具体题号与情境。已知未解争议：数学第 1、2 题在两份转录本之间文字细节不一致
+（集合选项组、复数 z₂ 取值），两版计算所得答案相同，页面并列呈现、不作单一裁定。
+
+## 构建与产物
+
+`scripts/build-pages.mjs` 的白名单由 8 个文件扩到 **11 个固定文件 + `data/beijing-2026/**/*.webp`**，
+只接受 `.webp` 扩展名，其余一律拒绝；产物 154 个文件、约 37.8 MiB（其中字体约 21 MiB、试卷图像 16.8 MiB）。
+`release` 标识改为 `20260920-beijing-2026-all-subjects`。仓库根目录、备份与答案中间件仍然禁止上传。
+
+## 校验与部署
+
+1. Node 24.18.0，`npm run build`（含 `test:progress` 12/12、`check:data` errors=0、`check:beijing-2026` ok）。
+2. `node --check assets/js/app.js`、`node --check assets/js/beijing2026.js`、`git diff --check`。
+3. 推送干净分支后跑 `/Users/ylsuen/CF/scripts/git-deploy-gate.sh`，不得 override。
+4. 用 `.pages-output` 产物部署到 Pages 项目 `gaokao`，绑定确切 commit。
+5. 回读 `/release.json`、`/2026.html`、`/data/beijing-2026/manifest.json` 与抽样页面图像。
+
+## 本次发布前的现场基线
+
+发布前线上 = Pages deployment **`23baf659-1f2a-45cc-9740-1d1c10a1329d`**，runtime source
+`17f1f1dbda5c551333688ae36f4124bf134f4550`（见下一节「Accepted modern GK release — 2026-09-20」）。
+本次发布前实测：`/release.json` 自报 `20260920-modern-restore`、`sourceCommit` 即该 commit，
+八个产物哈希与该 commit 逐一相同（`data/all.json` = `81c198f7…c227cf`），`/api/question-discussions` 返回 200。
+**本次回滚锚点即 `23baf659-1f2a-45cc-9740-1d1c10a1329d`**；再往前一级仍是 `f6ff92b3-78e6-4bbf-8b94-bb347a80b23c`。
+回滚只还原静态产物与数据，不回滚浏览器／用户中心的学习进度。
+
+
+---
+
 # Accepted modern GK release — 2026-09-20
 
 Production: **23baf659-1f2a-45cc-9740-1d1c10a1329d**. Runtime source: **17f1f1dbda5c551333688ae36f4124bf134f4550**, on GitHub main and `codex/gk-modern-restore-20260920`. Preview: **e15ebc83-fb88-49f9-8be0-a6ae9bc1f739**. Rollback: **f6ff92b3-78e6-4bbf-8b94-bb347a80b23c**, preserving all forward user progress. Later documentation-only commits do not change the deployed runtime identity.

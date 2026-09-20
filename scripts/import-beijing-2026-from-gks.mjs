@@ -4,6 +4,19 @@ import { readFile, writeFile } from "node:fs/promises";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
+// ⚠ 2026-09-19 起本导入器已被取代，默认拒绝运行。
+// GKS 的 beijing/2026 结构化稿源自单一来源（用户提供的原卷扫描件），2026-09-19 的三源交叉核对
+// （原卷扫描件 + 两份彼此独立的转录本）在其中查出 69 处差异（40 处字词、29 处标点），
+// 现行 data/all.json 的 2026 语文题面是核对后的版本。重新导入会把已修正的题面改回错误稿。
+// 若确需重跑：先把修正同步回 GKS 结构化稿与 coverage 哈希，再以 ALLOW_SUPERSEDED_IMPORT=1 运行。
+if (process.env.ALLOW_SUPERSEDED_IMPORT !== "1") {
+  console.error(
+    "refused: 2026 Beijing Chinese import is superseded by the 2026-09-19 three-source correction.\n" +
+    "See docs/OPERATIONS.md; re-running would revert 69 verified wording fixes."
+  );
+  process.exit(2);
+}
+
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const CF_ROOT = resolve(ROOT, "..");
 const STRUCTURED = join(CF_ROOT, "gks/data/source-manifests/beijing/2026/chinese/structured");

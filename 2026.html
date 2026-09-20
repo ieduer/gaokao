@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="mono">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>2026 北京卷 · 全科真题 — AI 高考</title>
+  <meta name="description" content="2026 年北京高考与等级性考试九科真题与网传答案，逐科交叉核对来源，附核验记录。" />
+  <meta property="og:title" content="2026 北京卷 · 全科真题" />
+  <meta property="og:description" content="语文、数学、英语、物理、思想政治、化学、历史、生物、地理九科试卷与网传答案，附三源交叉核验记录。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://img.bdfz.net/20250503004.webp" />
+  <link rel="canonical" href="https://gk.bdfz.net/2026.html" />
+  <link rel="icon" href="https://img.bdfz.net/20250503004.webp" type="image/webp" />
+  <link rel="apple-touch-icon" href="https://img.bdfz.net/20250503004.webp" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20260920-bj2026-allsubjects" />
+  <style>
+    .p26-main { max-width: 1040px; margin: 0 auto; padding: 1.25rem 1rem 4rem; }
+    .p26-lede { border: 1px solid var(--border); background: var(--surface); padding: 1.1rem 1.15rem; }
+    .p26-lede h1 { margin: 0 0 .5rem; font-size: 1.45rem; font-family: var(--content-serif); letter-spacing: .02em; }
+    .p26-lede p { margin: .5rem 0 0; color: var(--text-light); font-size: .95rem; line-height: 1.75; }
+    .p26-rule { margin: .85rem 0 0; padding: .7rem .8rem; background: var(--surface-2); border-left: 3px solid var(--text); font-size: .9rem; color: var(--text-light); line-height: 1.7; }
+    .p26-grid { list-style: none; margin: 1.25rem 0 0; padding: 0; display: grid; gap: .75rem; grid-template-columns: repeat(auto-fill, minmax(232px, 1fr)); }
+    .p26-card { border: 1px solid var(--border); background: var(--surface); }
+    .p26-card button { width: 100%; text-align: left; border: 0; background: none; padding: .95rem 1rem; display: block; }
+    .p26-card button:hover, .p26-card button:focus-visible { background: var(--surface-2); }
+    .p26-name { font-family: var(--content-serif); font-size: 1.3rem; letter-spacing: .04em; display: block; }
+    .p26-meta { display: block; margin-top: .35rem; font-size: .82rem; color: var(--text-muted); line-height: 1.65; }
+    .p26-tagrow { margin-top: .5rem; display: flex; flex-wrap: wrap; gap: .3rem; }
+    .p26-tag { font-size: .72rem; border: 1px solid var(--border-soft); padding: .1rem .4rem; color: var(--text-muted); }
+    .p26-detail { margin-top: 1.25rem; border: 1px solid var(--border); background: var(--surface); }
+    .p26-dhead { padding: 1rem 1.1rem .8rem; border-bottom: 1px solid var(--border-soft); }
+    .p26-dhead h2 { margin: 0; font-family: var(--content-serif); font-size: 1.5rem; letter-spacing: .04em; }
+    .p26-dhead p { margin: .4rem 0 0; color: var(--text-muted); font-size: .86rem; line-height: 1.7; }
+    .p26-tabs { display: flex; gap: 0; border-bottom: 1px solid var(--border-soft); flex-wrap: wrap; }
+    .p26-tabs button { border: 0; background: none; padding: .7rem 1.05rem; font-size: .9rem; color: var(--text-muted); border-bottom: 2px solid transparent; }
+    .p26-tabs button[aria-selected="true"] { color: var(--text); border-bottom-color: var(--text); font-weight: 600; }
+    .p26-panel { padding: 1rem 1.1rem 1.4rem; }
+    .p26-pages { display: grid; gap: .85rem; }
+    .p26-pages figure { margin: 0; border: 1px solid var(--border-soft); background: var(--surface-2); }
+    .p26-pages img { display: block; width: 100%; height: auto; background: #fff; }
+    .p26-pages figcaption { font-size: .76rem; color: var(--text-muted); padding: .35rem .5rem; }
+    .p26-srclist, .p26-checklist { margin: 0; padding: 0; list-style: none; }
+    .p26-srclist li { padding: .6rem 0; border-bottom: 1px dashed var(--border-soft); font-size: .9rem; line-height: 1.7; }
+    .p26-srclist li:last-child { border-bottom: 0; }
+    .p26-kind { font-size: .74rem; color: var(--text-muted); display: block; }
+    .p26-checklist li { padding: .55rem 0 .55rem 1.15rem; position: relative; font-size: .9rem; line-height: 1.75; border-bottom: 1px dashed var(--border-soft); }
+    .p26-checklist li:last-child { border-bottom: 0; }
+    .p26-checklist li::before { content: "✓"; position: absolute; left: 0; top: .55rem; }
+    .p26-note { margin: .9rem 0 0; padding: .7rem .8rem; background: var(--surface-2); font-size: .88rem; line-height: 1.75; color: var(--text-light); }
+    .p26-back { margin-top: 1rem; }
+    .p26-cta { display: inline-block; margin-top: .8rem; border: 1px solid var(--text); padding: .5rem .9rem; font-size: .9rem; text-decoration: none; }
+    .p26-foot { margin-top: 2rem; font-size: .8rem; color: var(--text-muted); line-height: 1.8; }
+  </style>
+</head>
+
+<body>
+  <a href="#p26-main" class="skip-link">跳到正文</a>
+
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="AI 高考首页">
+      <strong>AI 高考</strong>
+      <span>2026 北京卷 · 全科真题</span>
+    </a>
+    <nav class="header-tools" aria-label="全局操作">
+      <a class="toolbar-link" href="/">语文练习</a>
+      <a class="toolbar-link" href="https://my.bdfz.net/">我的学习</a>
+    </nav>
+  </header>
+
+  <main id="p26-main" class="p26-main">
+    <section class="p26-lede">
+      <h1>2026 年北京卷 · 九科真题</h1>
+      <p id="p26-disclaimer">正在载入…</p>
+      <p class="p26-rule">收录标准：同一份试卷在三处彼此独立的来源上内容一致，才作为真题收录；答案一律标注为网传，并注明核验结论。</p>
+    </section>
+
+    <ul id="p26-grid" class="p26-grid" aria-label="科目"></ul>
+
+    <section id="p26-detail" class="p26-detail" hidden aria-live="polite"></section>
+
+    <p class="p26-foot" id="p26-foot"></p>
+  </main>
+
+  <script src="assets/js/beijing2026.js?v=20260920-bj2026-allsubjects"></script>
+</body>
+
+</html>

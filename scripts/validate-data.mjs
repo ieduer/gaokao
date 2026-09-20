@@ -48,9 +48,13 @@ for (const rec of data) {
     && rec.source_evidence?.coverage_sha256
       === "c6171cc5bdbf4032cf940734a0a5c0e6d60e35adc7585131006036def204a593";
 
+  // 2026-09-19 起：北京 2026 各科以「三源交叉核对题面 + Claude Opus 5 逐题核查作答」为当前版本，
+  // OpenAI Codex（GPT-5）版本保留供对照；其余年份仍以 GPT-5.5 pro 为当前版本。
+  const opus5 = rec.ai_answer_versions?.claude_opus_5?.answers || {};
+  const opus5Keys = answerKeys(opus5);
   if (
     (!isCodexBeijing2026 && rec.ai_answer_current_version !== "gpt_5_5_pro")
-    || (isCodexBeijing2026 && rec.ai_answer_current_version !== "openai_codex_gpt_5")
+    || (isCodexBeijing2026 && rec.ai_answer_current_version !== "claude_opus_5")
   ) {
     err(`${rec.id}: current answer version does not match its verified source policy`);
   }
@@ -63,6 +67,7 @@ for (const rec of data) {
     if (!isCodexBeijing2026 && !claudeKeys.has(key)) err(`${rec.id}#${key}: missing Claude Opus 4.8 answer`);
     if (!isCodexBeijing2026 && !gptKeys.has(key)) err(`${rec.id}#${key}: missing GPT-5.5 pro answer`);
     if (isCodexBeijing2026 && !codexKeys.has(key)) err(`${rec.id}#${key}: missing OpenAI Codex (GPT-5) answer`);
+    if (isCodexBeijing2026 && !opus5Keys.has(key)) err(`${rec.id}#${key}: missing Claude Opus 5 verified answer`);
     if (currentKeys.has(key)) currentAnswerCount += 1;
     if (claudeKeys.has(key)) claudeAnswerCount += 1;
     if (gptKeys.has(key)) gptAnswerCount += 1;
@@ -83,6 +88,9 @@ for (const rec of data) {
   }
   for (const key of codexKeys) {
     if (!qKeys.has(key)) err(`${rec.id}: Codex answers has extra key ${key}`);
+  }
+  for (const key of opus5Keys) {
+    if (!qKeys.has(key)) err(`${rec.id}: Claude Opus 5 answers has extra key ${key}`);
   }
 
   const materialByKey = new Map((rec.materials || []).map((m) => [m.key, m.text]));

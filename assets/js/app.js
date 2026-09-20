@@ -609,6 +609,7 @@ function findExamSectionForQ(examRec, qIndex) {
 }
 
 const ANSWER_VERSION_ORDER = [
+  { key: "claude_opus_5", label: "Claude Opus 5 本会话核查作答" },
   { key: "openai_codex_gpt_5", label: "OpenAI Codex（GPT-5）本任务独立作答" },
   { key: "claude_opus_4_8", label: "Claude Opus 4.8版本答案" },
   { key: "gpt_5_5_pro", label: "GPT-5.5 pro 版本答案" },
@@ -987,23 +988,10 @@ function buildYearExam(year) {
   const flatQuestions = [];
   const flatAnnotations = [];
   const flatAiAnswers = {};
-  const flatAnswerVersions = {
-    openai_codex_gpt_5: {
-      label: "OpenAI Codex（GPT-5）本任务独立作答",
-      model: "OpenAI Codex (GPT-5)",
-      answers: {},
-    },
-    claude_opus_4_8: {
-      label: "Claude Opus 4.8版本答案",
-      model: "Claude Opus 4.8",
-      answers: {},
-    },
-    gpt_5_5_pro: {
-      label: "GPT-5.5 pro 版本答案",
-      model: "GPT-5.5 pro",
-      answers: {},
-    },
-  };
+  // 版本槽位由 ANSWER_VERSION_ORDER 派生，新增版本时无需在此重复登记
+  const flatAnswerVersions = Object.fromEntries(
+    ANSWER_VERSION_ORDER.map((spec) => [spec.key, { label: spec.label, model: spec.label, answers: {} }])
+  );
   let qCounter = 0;
   let totalScore = 0;
 
