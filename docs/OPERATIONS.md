@@ -1,15 +1,17 @@
-# Modern GK restoration — 2026-09-20
+# Accepted modern GK release — 2026-09-20
 
-This section supersedes all dated current-version and seven-file static-only claims below.
-Target: Pages `gaokao`, `gk.bdfz.net`. Candidate restores the exact July 14 modern frontend from retained commit `4a37c5c`; July production `eff09c31` HTML/CSS/JS were re-fetched and match exactly before integration. The actual regression began on August 11 at `d27a87a4`, when a deploy-gate-only push to stale main replaced an uncommitted modern release. August and September updates inherited the obsolete frontend.
+Production: **23baf659-1f2a-45cc-9740-1d1c10a1329d**. Runtime source: **17f1f1dbda5c551333688ae36f4124bf134f4550**, on GitHub main and `codex/gk-modern-restore-20260920`. Preview: **e15ebc83-fb88-49f9-8be0-a6ae9bc1f739**. Rollback: **f6ff92b3-78e6-4bbf-8b94-bb347a80b23c**, preserving all forward user progress. Later documentation-only commits do not change the deployed runtime identity.
 
-Candidate combines all 201 structured records/612 prompts/472 annotations with the accepted 2026 nine-component/26-prompt projection, all three September 16 classical-text corrections in legacy and structured fields, the original per-question discussion Function, and conservative read-only legacy progress hydration. Five ambiguous historical language-use key groups remain unmapped; original local and central records are preserved. No new score, completion or AI provenance is inferred.
+This section is the current authority; every older current/pending statement below is historical. The canonical working directory remains a preserved historical branch with existing document edits; materialize exact main in a clean release worktree, never deploy those working files. Full evidence and root-cause report: `/Users/ylsuen/CF/reports/operations/gk-live-repair-20260920/REPORT.md`.
 
-Source authority: the clean pushed `codex/gk-modern-restore-20260920` candidate, then synchronized main after preview acceptance. Never deploy canonical historical checkout. Required checks: `npm run test:progress`, `npm run check:data`, `npm run check:beijing-2026`, JS syntax and diff checks, fixed Node 24.18.0/Wrangler 4.116.0. Build only via `scripts/build-pages.mjs` into an explicit artifact; compile existing Functions, include only listed runtime assets plus release.json/_worker.js/_routes.json. Repository root, backups and answer intermediates are forbidden upload targets.
+Restoration combines the byte-verified July 14 modern frontend with accepted later changes: 201 records, 612 prompts, 472 annotations, the verified 2026 26-prompt paper, three September classical-text corrections, and conservative legacy progress reads. Five ambiguous old language-use key groups remain unmapped and preserved. The actual regression began August 11 when stale main automatically replaced the dirty July release.
 
-Pre-change production and rollback: `f6ff92b3-78e6-4bbf-8b94-bb347a80b23c`, source `ea528c3`; preserve all forward browser/User Center history. Production secrets/bindings/routes remain unchanged. The restored discussion endpoint reuses existing GitHub/Discourse secrets; verify read paths without posting messages. This is a GK leaf restoration; no shared SDK, APIS, identity schema, clone renderer or other consumer is changed.
+Pages `gaokao` serves `gk.bdfz.net`; Git build is `npm run build`, destination `.pages-output`, using Node 24.18.0. The build runs behavior/data validation and stages eight explicit static assets plus `release.json`. Never upload repository root. Direct release uses exact clean pushed source, verified target/configuration and an independent rollback anchor, previews the same static artifact, and lets Wrangler 4.116.0 compile root `functions/`. The multipart output from `pages functions build --outfile` is not a deployable JavaScript worker. Existing secrets, bindings and shared SDK/APIS contracts are unchanged.
 
-Live release is pending until the receipt below is appended. Evidence and root impact card: `/Users/ylsuen/CF/reports/operations/gk-live-repair-20260920/`. Runtime source/build: one registered `/private/tmp/cf-task-gk-live-repair-20260920` root, under 100 MiB; Node/Wrangler reused, no install; 1 GiB budget/25 GiB reserve. Owner this task; temporary derivatives removed at closeout after source push. Durable evidence retained through review 2026-10-20.
+12 behavioral tests and all data validators passed. Preview/production each matched all nine public files; root HTML comparison removed only the specifically identified Cloudflare hidden link injection. Discussion GET and a real production AI explanation passed. Modern/full-paper/historical-answer UI, ordinary reload and 401px layout were verified with no console errors. No public post or score was submitted. Fresh signed-in cross-device User Center acceptance remains unclaimed. Failed terminal publisher attempts and successful independent readbacks are retained in the report directory; never replay them.
+
+<details>
+<summary>Historical release records — superseded, not current deployment instructions</summary>
 
 <!-- gk-progress-current:start -->
 # Accepted GK normal progress flow — 2026-09-10 01:31Z
@@ -115,3 +117,5 @@ Last verified: 2026-08-16. The normal Git gate passed without override at pushed
 `8d5035113592a8c8676ccd0fe9e64f52abff4b5652259cf06910a4362edb9cbc` exactly matched the validated
 release artifact. Live questions 14 and 15 contain every sub-question and no `undefined` or empty
 answer. The pre-release rollback anchor remains `d27a87a4-625e-40d1-a9a8-45783c62d825`.
+
+</details>
