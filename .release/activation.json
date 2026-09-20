@@ -1,1 +1,1 @@
-{"target":"gaokao","guard":"1333f27963f88e099cd074a1eb496ce53d2141e9","intent":"Verify corrected provider clone handling; no application change"}
+{"target":"gaokao","guard":"35183083bd2c9a8ed27ba81c969c8887ec7f0b79","intent":"Verify shallow-history source ancestry; no application change"}
