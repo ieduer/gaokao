@@ -40,6 +40,7 @@ export async function preflight(p,target,{live}={}){
  if(process.env.GITHUB_SHA&&process.env.GITHUB_SHA!==head)fail('Workflow commit differs from checkout');
  return {root,files,live:l,...validateSource(p,c)};
 }
+export function validateBootstrap(p,files){for(const f of p.bootstrap.fingerprints){const actual=files[f.artifact],expected=f.artifact_sha256||f.sha256;if(actual===expected)continue;const change=p.bootstrap.reviewed_changes?.find(c=>c.artifact===f.artifact&&c.before===expected&&c.after===actual&&c.reason?.trim()&&/^[a-f0-9]{40}$/.test(c.source_commit||''));if(!actual||!change)fail('First guarded build differs from verified live asset: '+f.artifact)}}
 export async function build(p,target){
  const start=await preflight(p,target);
  for(const argv of p.checks||[]){if(!Array.isArray(argv)||!argv.length)fail('Invalid check');run(argv[0],argv.slice(1),{timeout:120000,stdio:'inherit'})}
@@ -50,7 +51,7 @@ export async function build(p,target){
  const outputRelative=path.relative(start.root,output).replaceAll(path.sep,'/');const changedSource=git('diff','--name-only','HEAD').split('\n').filter(f=>f&&f!==outputRelative&&!f.startsWith(outputRelative+'/'));if(changedSource.length)fail('Build mutated tracked source: '+changedSource.slice(0,5).join(','));
  for(const f of p.required_artifacts||['index.html'])if(!fs.existsSync(path.join(output,f)))fail('Required output missing: '+f);
  const live=await liveIdentity(p);if(live.key!==start.live.key)fail('Production changed during build');
- if(start.live.bootstrap){for(const f of p.bootstrap.fingerprints){const artifact=path.join(output,f.artifact);if(!fs.existsSync(artifact)||sha(fs.readFileSync(artifact))!==(f.artifact_sha256||f.sha256))fail('First guarded build differs from verified live asset: '+f.artifact)}}
+ if(start.live.bootstrap){const hashes={};for(const f of p.bootstrap.fingerprints){const file=path.join(output,f.artifact);hashes[f.artifact]=fs.existsSync(file)?sha(fs.readFileSync(file)):null;}for(const c of p.bootstrap.reviewed_changes||[])if(!ancestor(c.source_commit,p.branch))fail('Reviewed bootstrap change is not in candidate history');validateBootstrap(p,hashes)}
  if(git('rev-parse','HEAD')!==start.source_commit||git('ls-remote','--exit-code','origin','refs/heads/'+p.branch).split(/\s/)[0]!==start.source_commit)fail('Build superseded; refusing old source');
  // All output paths are hash-bound. The provenance file itself is excluded.
  const artifacts=filesAt(output).filter(f=>f.path!=='__release.json');

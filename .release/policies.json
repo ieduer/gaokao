@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "guard_source": "ieduer/cf-ops-scripts@862025bbaf0efc5ab1b768d5265dec74462684c5",
+  "guard_source": "ieduer/cf-ops-scripts@6aef139c359a50c38b5ac3d2522a481540a3daab",
   "targets": [
     {
       "schema_version": 1,
@@ -40,6 +40,15 @@
             "path": "/assets/js/app.js?v=20260920-bj2026-allsubjects",
             "artifact": "assets/js/app.js",
             "sha256": "a81e28089decb4a326302e951eea13d76c3b2cae1e0f6efd3672c2431c2481c3"
+          }
+        ],
+        "reviewed_changes": [
+          {
+            "artifact": "index.html",
+            "before": "ce7fb49f788176639e3c19fc4be9a7194d56c06409783416a0390c4e70068ae9",
+            "after": "c364eb5b3826d5c20b89f7b51479f044c8b49dc8634146eca23d786ae9a3efc0",
+            "source_commit": "f1fd6eeef88633b41c6e7dd12a79a3b29cbce29a",
+            "reason": "Project state and operations record owner-directed Chinese-only scope: remove nine-subject entry transferred to GKS; preserve all Chinese corrections and forward progress"
           }
         ]
       }
