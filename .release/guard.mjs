@@ -30,12 +30,12 @@ export async function liveIdentity(p){
  for(const f of p.bootstrap.fingerprints){if(sha(await get(p.origin+f.path))!==f.sha256)fail('Unstamped production changed; reconcile source before automatic release');}
  return {key:sha(JSON.stringify(p.bootstrap)),source:p.baseline_commit,target:p.target,bootstrap:true};
 }
-function ancestor(commit){try{git('cat-file','-e',commit+'^{commit}')}catch{git('fetch','--no-tags','origin',commit)}try{git('merge-base','--is-ancestor',commit,'HEAD');return true}catch{return false}}
+export function ancestor(commit,branch){if(git('rev-parse','--is-shallow-repository')==='true')run('git',['fetch','--unshallow','--no-tags','origin',branch],{timeout:120000});try{git('cat-file','-e',commit+'^{commit}')}catch{git('fetch','--no-tags','origin',commit)}try{git('merge-base','--is-ancestor',commit,'HEAD');return true}catch{return false}}
 export async function preflight(p,target,{live}={}){
  const root=git('rev-parse','--show-toplevel'),head=git('rev-parse','HEAD'),branch=process.env.CF_PAGES_BRANCH||process.env.GITHUB_REF_NAME||git('branch','--show-current');
  const remote=git('ls-remote','--exit-code','origin','refs/heads/'+p.branch).split(/\s/)[0];
  const l=live||await liveIdentity(p);const files=git('ls-files','-z').split('\0').filter(Boolean);
- const c={target,repository:git('remote','get-url','origin'),head,remote_head:remote,branch,dirty:!!git('status','--porcelain','--untracked-files=no'),archived:root.split(path.sep).includes('_archive'),baseline_ancestor:ancestor(p.baseline_commit),live_ancestor:ancestor(l.source),live_source:l.source,live_target:l.target,files,tree:git('rev-parse','HEAD^{tree}')};
+ const c={target,repository:git('remote','get-url','origin'),head,remote_head:remote,branch,dirty:!!git('status','--porcelain','--untracked-files=no'),archived:root.split(path.sep).includes('_archive'),baseline_ancestor:ancestor(p.baseline_commit,p.branch),live_ancestor:ancestor(l.source,p.branch),live_source:l.source,live_target:l.target,files,tree:git('rev-parse','HEAD^{tree}')};
  if(process.env.CF_PAGES_COMMIT_SHA&&process.env.CF_PAGES_COMMIT_SHA!==head)fail('Provider commit metadata differs from checkout');
  if(process.env.GITHUB_SHA&&process.env.GITHUB_SHA!==head)fail('Workflow commit differs from checkout');
  return {root,files,live:l,...validateSource(p,c)};
@@ -47,6 +47,7 @@ export async function build(p,target){
  const output=path.resolve(p.output);if(!output.startsWith(start.root+path.sep))fail('Artifact must be a separate in-repository build directory');
  if(p.stage_tracked_static){if(fs.existsSync(output))fail('Static staging output already exists; refuse mixed artifact');fs.mkdirSync(output,{recursive:true});for(const rel of start.files.filter(safeAsset)){const src=path.resolve(rel);if(!src.startsWith(start.root+path.sep)||fs.lstatSync(src).isSymbolicLink())fail('Unsafe source asset');const to=path.join(output,rel);fs.mkdirSync(path.dirname(to),{recursive:true});fs.copyFileSync(src,to)}}
  if(!fs.existsSync(output)||!fs.statSync(output).isDirectory())fail('Build artifact missing');
+ const outputRelative=path.relative(start.root,output).replaceAll(path.sep,'/');const changedSource=git('diff','--name-only','HEAD').split('\n').filter(f=>f&&f!==outputRelative&&!f.startsWith(outputRelative+'/'));if(changedSource.length)fail('Build mutated tracked source: '+changedSource.slice(0,5).join(','));
  for(const f of p.required_artifacts||['index.html'])if(!fs.existsSync(path.join(output,f)))fail('Required output missing: '+f);
  const live=await liveIdentity(p);if(live.key!==start.live.key)fail('Production changed during build');
  if(start.live.bootstrap){for(const f of p.bootstrap.fingerprints){const artifact=path.join(output,f.artifact);if(!fs.existsSync(artifact)||sha(fs.readFileSync(artifact))!==(f.artifact_sha256||f.sha256))fail('First guarded build differs from verified live asset: '+f.artifact)}}
@@ -59,5 +60,5 @@ export async function build(p,target){
  console.log(JSON.stringify({release_gate:'passed',target,source_commit:start.source_commit,files:artifacts.length,artifact_sha256:manifest.artifact_sha256}));return manifest;
 }
 if(process.argv[1]&&fs.realpathSync(process.argv[1])===fileURLToPath(import.meta.url)){
- try{const [cmd,file,target]=process.argv.slice(2);const policies=read(file);const p=policies.targets.find(p=>p.target===target);if(!p)fail('Unknown release target');if(cmd==='preflight')console.log(JSON.stringify(await preflight(p,target)));else if(cmd==='build')await build(p,target);else fail('Usage: guard.mjs build|preflight POLICIES_JSON TARGET')}catch(e){console.error('[release-channel] BLOCKED: '+e.message);process.exitCode=1}
+ try{const [cmd,file,target]=process.argv.slice(2);const policies=read(file);const p=policies.targets.find(p=>p.target===target);if(!p)fail('Unknown release target');if(cmd==='preflight')console.log(JSON.stringify(await preflight(p,target)));else if(cmd==='build')await build(p,target);else fail('Usage: guard.mjs build|preflight POLICIES_JSON TARGET')}catch(e){console.error('[release-channel] BLOCKED: '+String(e.message).replace(/https:\/\/[^/@\s]+@/g,'https://[REDACTED]@').slice(0,1000));process.exitCode=1}
 }
