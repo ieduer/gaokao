@@ -5,17 +5,9 @@ import { createHash } from 'node:crypto';
 
 // Pages must never publish the repository root or source/data backups.
 const output = resolve(process.argv[2] || '.pages-output');
-const files = ['index.html', '2026.html', 'assets/js/app.js', 'assets/js/beijing2026.js',
-  'assets/css/style.css',
+const files = ['index.html', 'assets/js/app.js', 'assets/css/style.css',
   'assets/fonts/HuWenMingChaoTi.woff', 'assets/fonts/HuWenMingChaoTi.woff2',
-  'assets/img/bg.webp', 'assets/img/gaokao.jpeg', 'data/all.json',
-  'data/beijing-2026/manifest.json'];
-// 2026 北京卷全科试卷／答案页面图像：只收 data/beijing-2026/<科目>/*.webp，不接受其他扩展名
-for (const entry of await readdir('data/beijing-2026', {recursive:true, withFileTypes:true})) {
-  if (!entry.isFile() || !entry.name.endsWith('.webp')) continue;
-  files.push(`${resolve(entry.parentPath, entry.name).slice(resolve('.').length+1)}`);
-}
-files.sort();
+  'assets/img/bg.webp', 'assets/img/gaokao.jpeg', 'data/all.json'];
 try {
   for (const file of await readdir(output, {recursive:true, withFileTypes:true})) {
     if (!file.isFile()) continue;
@@ -30,5 +22,5 @@ for (const file of files) {
 }
 const sha = execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim();
 const rows = await Promise.all(files.map(async path => ({path, sha256:createHash('sha256').update(await readFile(resolve(output,path))).digest('hex')})));
-await writeFile(resolve(output,'release.json'), JSON.stringify({schemaVersion:1,project:'gaokao',release:'20260920-beijing-2026-all-subjects',sourceCommit:sha,files:rows},null,2)+'\n');
-console.log(JSON.stringify({output, fileCount: files.length}));
+await writeFile(resolve(output,'release.json'), JSON.stringify({schemaVersion:1,project:'gaokao',release:'20260920-chinese-three-source-fix',sourceCommit:sha,files:rows},null,2)+'\n');
+console.log(JSON.stringify({output, files}));
