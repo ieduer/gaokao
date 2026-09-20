@@ -1,3 +1,16 @@
+# Modern GK restoration — 2026-09-20
+
+This section supersedes all dated current-version and seven-file static-only claims below.
+Target: Pages `gaokao`, `gk.bdfz.net`. Candidate restores the exact July 14 modern frontend from retained commit `4a37c5c`; July production `eff09c31` HTML/CSS/JS were re-fetched and match exactly before integration. The actual regression began on August 11 at `d27a87a4`, when a deploy-gate-only push to stale main replaced an uncommitted modern release. August and September updates inherited the obsolete frontend.
+
+Candidate combines all 201 structured records/612 prompts/472 annotations with the accepted 2026 nine-component/26-prompt projection, all three September 16 classical-text corrections in legacy and structured fields, the original per-question discussion Function, and conservative read-only legacy progress hydration. Five ambiguous historical language-use key groups remain unmapped; original local and central records are preserved. No new score, completion or AI provenance is inferred.
+
+Source authority: the clean pushed `codex/gk-modern-restore-20260920` candidate, then synchronized main after preview acceptance. Never deploy canonical historical checkout. Required checks: `npm run test:progress`, `npm run check:data`, `npm run check:beijing-2026`, JS syntax and diff checks, fixed Node 24.18.0/Wrangler 4.116.0. Build only via `scripts/build-pages.mjs` into an explicit artifact; compile existing Functions, include only listed runtime assets plus release.json/_worker.js/_routes.json. Repository root, backups and answer intermediates are forbidden upload targets.
+
+Pre-change production and rollback: `f6ff92b3-78e6-4bbf-8b94-bb347a80b23c`, source `ea528c3`; preserve all forward browser/User Center history. Production secrets/bindings/routes remain unchanged. The restored discussion endpoint reuses existing GitHub/Discourse secrets; verify read paths without posting messages. This is a GK leaf restoration; no shared SDK, APIS, identity schema, clone renderer or other consumer is changed.
+
+Live release is pending until the receipt below is appended. Evidence and root impact card: `/Users/ylsuen/CF/reports/operations/gk-live-repair-20260920/`. Runtime source/build: one registered `/private/tmp/cf-task-gk-live-repair-20260920` root, under 100 MiB; Node/Wrangler reused, no install; 1 GiB budget/25 GiB reserve. Owner this task; temporary derivatives removed at closeout after source push. Durable evidence retained through review 2026-10-20.
+
 <!-- gk-progress-current:start -->
 # Accepted GK normal progress flow — 2026-09-10 01:31Z
 

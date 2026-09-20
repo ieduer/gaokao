@@ -9,3 +9,7 @@ This project inherits `/Users/ylsuen/CF/AGENTS.md`.
 - The 2026 paper importer may read only the hash-bound GKS Beijing manifest and structured
   components. National, other-province, mock, prediction, sample and memory-only papers are out of scope.
 - Update `docs/OPERATIONS.md`, `PROJECT_STATE.md` and the workspace action log for every release.
+
+## Active restoration authority — 2026-09-20
+
+The recovered modern UI and Function are required production capabilities. The historical seven-file static-only release is obsolete. Follow the leading restoration section in docs/OPERATIONS.md and the allowlisted build. Never deploy the repository root or historical main. A clean pushed checkout alone does not prove the intended version.

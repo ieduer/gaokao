@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-CN" data-theme="mono">
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AI高考</title>
-  <meta name="description" content="AI 高考真題練習平台 - 涵蓋北京高考2005-2024年各題型真題，支持 AI 智能批改與深度討論。非連文本、古文、詩詞、論語、紅樓夢等多種題型一網打盡。">
-  <meta name="keywords" content="高考, 真題, AI, 練習, 北京高考, 語文, 古文, 詩詞, 作文">
-  <meta property="og:title" content="AI高考 - 智能真題練習平台">
-  <meta property="og:description" content="北京高考真題 + AI 智能批改，助你備戰高考">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://img.bdfz.net/20250503004.webp">
-  <!-- Clarity 跟踪代码 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>AI 高考 · 北京真题阅读与练习</title>
+  <meta name="description" content="AI 高考 — 北京高考语文真题在线阅读、作答、AI 解析与对话辅导。" />
+  <meta name="keywords" content="高考, 真题, AI, 北京高考, 语文, 古文, 诗词, 默写, 红楼梦" />
+  <meta property="og:title" content="AI 高考 · 北京真题阅读与练习" />
+  <meta property="og:description" content="北京高考语文真题 · 完整题干 · 在线作答 · AI 解析" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://img.bdfz.net/20250503004.webp" />
+  <link rel="canonical" href="https://gk.bdfz.net/" />
+  <link rel="icon" href="https://img.bdfz.net/20250503004.webp" type="image/webp" />
+  <link rel="apple-touch-icon" href="https://img.bdfz.net/20250503004.webp" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20260920-modern-restore" />
+
   <script type="text/javascript">
     (function (c, l, a, r, i, t, y) {
       c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
@@ -19,80 +23,188 @@
       y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
     })(window, document, "clarity", "script", "qylinvl0fs");
   </script>
-  <link rel="icon" href="https://img.bdfz.net/20250503004.webp" type="image/jpeg">
-  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
-  <!-- Header: Remains the same -->
-  <header>
-    <div class="header-center-content">
-      <h1>AI高考</h1>
-      <button id="gaokao-btn">北京真題&日常作業</button>
-    </div>
-    <button id="toggle-dark-btn" title="切換夜晚模式">🌗</button>
+  <a href="#active-question" class="skip-link">跳到当前题目</a>
+
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="AI 高考首页">
+      <strong>AI 高考</strong>
+      <span id="header-context">北京语文真题</span>
+    </a>
+    <nav class="header-tools" aria-label="全局操作">
+      <a class="toolbar-link" href="https://my.bdfz.net/">我的学习</a>
+      <button id="open-catalog-btn" class="toolbar-btn" type="button" aria-label="打开题库" aria-controls="catalog"
+        aria-expanded="false">选择试题</button>
+    </nav>
   </header>
 
-  <!-- Main content area now holds the layout container -->
-  <main>
-    <div id="layout-container">
-      <!-- Left Column: Menus and Question -->
-      <div id="left-column">
-        <section id="gaokao-type-menu"></section> <!-- Visible by default -->
-        <section id="gaokao-year-menu" style="display:none;"></section>
-        <section id="gaokao-question" style="display:none;"></section>
-        <section id="custom-question-form" style="display:none;">
-          <h2>✍ 日常作業 AI 批閱</h2>
-          <div class="form-group">
-            <label for="custom-question-text">試題內容 <span class="required">*必填</span></label>
-            <textarea id="custom-question-text" placeholder="請在此貼入或輸入試題原文…" rows="5"></textarea>
-          </div>
-          <div class="form-group">
-            <label for="custom-reference-answer">參考答案 <span class="optional">（選填）</span></label>
-            <textarea id="custom-reference-answer" placeholder="如有參考答案，請在此輸入；留空亦可…" rows="3"></textarea>
-          </div>
-          <div class="form-group">
-            <label for="custom-user-answer">我的答案 <span class="required">*必填</span></label>
-            <textarea id="custom-user-answer" placeholder="請輸入你的答案…" rows="4"></textarea>
-          </div>
-          <div class="form-group">
-            <label for="custom-score-value">分值 <span class="required">*必填</span></label>
-            <input type="number" id="custom-score-value" placeholder="例如：10" min="1" max="150" />
-          </div>
-          <button id="submit-custom-btn">📝 提交批閱</button>
-        </section>
+  <div id="catalog-backdrop" class="catalog-backdrop" hidden></div>
+  <aside id="catalog" class="catalog-pane" aria-label="试题选择" aria-hidden="true">
+    <header class="catalog-header">
+      <div>
+        <p class="eyebrow">北京高考语文</p>
+        <h2>选择练习</h2>
       </div>
+      <button id="close-catalog-btn" class="icon-btn" type="button" aria-label="关闭题库">关闭</button>
+    </header>
+    <div class="catalog-tabs" role="tablist" aria-label="练习方式">
+      <button class="catalog-tab" data-mode="type" type="button" role="tab" aria-selected="true">单题型</button>
+      <button class="catalog-tab" data-mode="year" type="button" role="tab" aria-selected="false">整套试卷</button>
+    </div>
+    <label class="catalog-search" for="catalog-search">
+      <span class="sr-only">搜索年份或题型</span>
+      <input id="catalog-search" type="search" placeholder="搜索年份或题型" autocomplete="off" />
+    </label>
+    <div id="catalog-tree" class="catalog-tree" role="tree" aria-live="polite">
+      <p class="catalog-empty">正在加载试题…</p>
+    </div>
+    <footer class="catalog-foot">
+      <button id="open-custom-btn" type="button" class="text-btn">日常作业 AI 批改</button>
+    </footer>
+  </aside>
 
-      <!-- Right Column: Dialogue and Actions -->
-      <div id="right-column" style="display:none;"> <!-- Initially hidden -->
-        <section id="dialogue-input-area"> <!-- Container for messages/input -->
-          <div id="messages"></div>
-          <!-- Textarea - style attribute REMOVED -->
-          <textarea id="userAnswer" placeholder="請輸入你的答案或想聊的話題…"></textarea>
-        </section>
-        <section id="gaokao-actions"> <!-- Container for buttons -->
-          <div> <!-- Keep div wrapper for buttons if needed -->
-            <button id="submit-answer-btn">提交答案</button>
-            <button id="reference-answer-btn">參考答案</button>
-            <button id="ai-answer-btn">AI答案</button>
+  <main id="main" class="layout">
+    <section id="reader" class="reader-pane" aria-label="题目与材料">
+      <header id="reader-toolbar" class="reader-toolbar" hidden>
+        <div class="paper-meta">
+          <span id="paper-year"></span>
+          <span aria-hidden="true">/</span>
+          <span id="paper-type"></span>
+        </div>
+        <span id="question-position" class="question-position"></span>
+      </header>
+
+      <nav id="question-nav" class="question-nav" aria-label="题目导航" hidden>
+        <button id="prev-question-btn" type="button" class="nav-btn" aria-label="上一题">上一题</button>
+        <div id="questions" class="question-strip" role="list"></div>
+        <button id="next-question-btn" type="button" class="nav-btn" aria-label="下一题">下一题</button>
+      </nav>
+
+      <article id="active-question" class="active-question" tabindex="-1" hidden></article>
+
+      <details id="source-block" class="source-block" open>
+        <summary>
+          <span>材料与原文</span>
+          <span id="source-summary" class="source-summary">与当前题相关</span>
+        </summary>
+        <div id="passage" class="passage" aria-live="polite">
+          <div class="empty-state">
+            <p class="empty-title">先选择一道题</p>
+            <p>可按题型练习，也可按年份完成整套试卷。</p>
           </div>
+        </div>
+      </details>
+    </section>
+
+    <section id="workpad" class="workpad-pane" aria-label="作答与 AI 辅导">
+      <header class="workpad-header">
+        <div>
+          <p class="eyebrow">当前作答</p>
+          <h3 id="workpad-title">尚未选择题目</h3>
+        </div>
+        <button id="copy-question-btn" type="button" class="text-btn" hidden>复制题目</button>
+      </header>
+
+      <section class="user-answer" aria-label="我的答案">
+        <label class="block-label" for="user-answer">我的答案</label>
+        <textarea id="user-answer" rows="6" placeholder="在这里作答，内容会自动保存"></textarea>
+        <div class="action-row">
+          <span id="answer-status" class="answer-status" aria-live="polite"></span>
+          <div>
+            <button id="copy-answer-btn" type="button" class="text-btn">复制</button>
+            <button id="save-answer-btn" type="button" class="secondary-btn">保存</button>
+            <button id="grade-btn" type="button" class="primary-btn">让 AI 批改</button>
+          </div>
+        </div>
+      </section>
+
+      <details id="ai-answer-block" class="ai-answer" hidden>
+        <summary>
+          <span>查看 AI 答案与解析</span>
+          <span class="answer-count">两个版本</span>
+        </summary>
+        <div id="ai-answer-body" class="ai-answer-body"></div>
+        <div class="inline-actions">
+          <button id="copy-ai-answer-btn" type="button" class="text-btn">复制答案</button>
+          <button id="regenerate-ai-btn" type="button" class="secondary-btn">让 AI 再讲一遍</button>
+        </div>
+      </details>
+
+      <section class="chat" aria-label="AI 对话">
+        <header class="chat-header">
+          <div>
+            <p class="eyebrow">继续追问</p>
+            <h4>和 AI 讨论这道题</h4>
+          </div>
+          <button id="copy-chat-btn" type="button" class="text-btn">复制对话</button>
+        </header>
+        <div id="chat-messages" class="chat-messages" aria-live="polite"></div>
+        <form id="chat-form" class="chat-form" autocomplete="off">
+          <label class="sr-only" for="chat-input">向 AI 提问</label>
+          <textarea id="chat-input" rows="3" placeholder="例如：为什么选这一项？这句话怎么翻译？"></textarea>
+          <div class="chat-form-actions">
+            <span id="chat-status" class="answer-status" aria-live="polite"></span>
+            <button id="chat-submit-btn" type="submit" class="primary-btn">发送</button>
+          </div>
+        </form>
+      </section>
+
+      <details id="discussion-shell" class="discussion-shell" hidden>
+        <summary>本题公开讨论</summary>
+        <section id="question-discussion" class="question-discussion" aria-label="本题讨论" hidden>
+          <div class="discussion-header">
+            <div class="discussion-links">
+              <a id="discussion-forum-link" class="discussion-link" href="#" target="_blank" rel="noopener noreferrer"
+                hidden>论坛主题</a>
+              <a id="discussion-issue-link" class="discussion-link" href="#" target="_blank" rel="noopener noreferrer"
+                hidden>查看 issue</a>
+            </div>
+          </div>
+          <div id="discussion-items" class="discussion-items" aria-live="polite"></div>
+          <form id="discussion-form" class="discussion-form" autocomplete="off">
+            <input id="discussion-name" type="text" maxlength="40" placeholder="用户名（可选）" />
+            <textarea id="discussion-content" rows="3" placeholder="写下对本题答案的疑问或你的理解"></textarea>
+            <div class="discussion-form-actions">
+              <span id="discussion-status" class="answer-status" aria-live="polite"></span>
+              <button id="submit-discussion-btn" type="submit" class="secondary-btn">提交讨论</button>
+            </div>
+          </form>
         </section>
-      </div>
-    </div>
-    <!-- Progress div might need repositioning if visually important, currently outside columns -->
-    <div id="progress"
-      style="position: fixed; bottom: 60px; right: 20px; background: lightblue; padding: 5px 10px; border-radius: 5px; display: none;">
-    </div>
+      </details>
+    </section>
   </main>
 
-  <!-- Footer: Remains the same -->
-  <footer>
-    <p>© Suen | <a href="https://bdfz.net/posts/gaokao" target="_blank">About</a></p>
+  <dialog id="custom-dialog" class="custom-dialog">
+    <form method="dialog" class="custom-form">
+      <header><h2>日常作业 · AI 批改</h2></header>
+      <label>试题内容 <span class="required">*</span>
+        <textarea name="questionText" rows="4" required></textarea>
+      </label>
+      <label>参考答案（可选）
+        <textarea name="referenceAnswer" rows="2"></textarea>
+      </label>
+      <label>我的答案 <span class="required">*</span>
+        <textarea name="userAnswer" rows="4" required></textarea>
+      </label>
+      <label>分值 <span class="required">*</span>
+        <input name="score" type="number" min="1" max="150" required />
+      </label>
+      <menu>
+        <button type="button" class="secondary-btn" data-action="cancel">取消</button>
+        <button type="submit" class="primary-btn">提交批改</button>
+      </menu>
+    </form>
+  </dialog>
+
+  <footer class="site-footer">
+    <span>AI 高考</span>
+    <a href="https://bdfz.net/posts/gaokao" target="_blank" rel="noopener noreferrer">项目说明</a>
   </footer>
 
-  <!-- JavaScript: Include the modified app.js -->
-  <script src="https://my.bdfz.net/site-auth.js"></script>
-  <script src="assets/js/app.js"></script>
+  <script defer src="https://my.bdfz.net/site-auth.js" data-site-key="gk"></script>
+  <script type="module" src="assets/js/app.js?v=20260920-modern-restore" defer></script>
 </body>
 
 </html>
