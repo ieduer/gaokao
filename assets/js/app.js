@@ -70,6 +70,35 @@ async function refreshIdentityAuthentication() {
   return state.identityAuthenticated;
 }
 
+
+// Full learning capture is independent of the legacy mutable display archive.
+let detailedSession = '';
+const lastDetailedDrafts=new Map();
+function detailedContext() {
+  const identity = currentQuestionIdentity();
+  detailedSession ||= window.BdfzLearningRecords?.id() || `gk-session-${Date.now()}`;
+  return { sessionKey:detailedSession, resourceKey:`question:${identity?.sourceRecordId || 'unselected'}:${identity?.sourceQIndex || 0}`, resourceVersion:'git-tree-sha1:3487023148584d9f649a91dbf0dd6a691065b124', captureScope:window.BdfzLearningRecords?.scope || null, sourceContext:{recordId:identity?.sourceRecordId || null,qIndex:identity?.sourceQIndex || null} };
+}
+function detailedCapture(action,content,options={},context=detailedContext()) {
+  const service=window.BdfzLearningRecords;
+  if(!service)return null;
+  const operation=service.build(action,content,context,options),saved=service.record(operation);
+  saved.catch(()=>{});return {operation,saved};
+}
+function detailedDraft(text,kind,inputType='') {
+ const context=detailedContext(),key=context.resourceKey+':'+kind;
+ const capture=detailedCapture('draft.edit',{text,inputType},{contentOrigin:kind,revisesOperationId:lastDetailedDrafts.get(key)||''},context);
+ if(capture)lastDetailedDrafts.set(key,capture.operation.operationId);
+}
+function detailedMessage(role,content,captureScope=window.BdfzLearningRecords?.scope||null) {
+  return {captureScope,id:window.BdfzLearningRecords?.id() || `gk-message-${Date.now()}-${Math.random()}`,createdAt:new Date().toISOString(),role,content};
+}
+function initDetailedCapture() {
+ const service=window.BdfzLearningRecords;if(!service)return;
+ service.onState(s=>{const node=document.getElementById('learning-record-status');if(node)node.textContent=s.status==='unattributed'?'记录已保存在本机；身份未确认时的内容不会自动归属':s.status==='saved'?'学习记录已同步':['needs_attention','storage_error'].includes(s.status)?'学习记录待处理，请保留此页并重试':'学习记录已在本机保存';});
+ void service.prepare().catch(()=>{});
+ document.getElementById('learning-record-retry')?.addEventListener('click',()=>service.retry().catch(()=>{}));
+}
 function debounce(fn, ms = 600) {
   let t;
   return (...args) => {
@@ -591,6 +620,7 @@ function selectQuestion(qIndex, { skipScroll = false } = {}) {
     card.setAttribute("aria-current", match ? "true" : "false");
     if (match) activeCard = card;
   });
+  detailedCapture('question.exposure',{question:allQuestions.find(q=>Number(q.qIndex)===state.currentQIndex),materials:rec.materials || [],annotation:rec.annotation || ''},{actor:'system',contentOrigin:'source_text'});
   renderPassageForQuestion(rec, state.currentQIndex);
   renderWorkpad();
   const position = allQuestions.findIndex((q) => Number(q.qIndex) === state.currentQIndex);
@@ -1147,6 +1177,10 @@ function rememberLastPosition() {
  * AI 调用
  * ======================================================= */
 async function callAI(prompt, taskType = "chat") {
+  const captureContext=detailedContext();
+  const request=detailedCapture('ai.request',{prompt,taskType},{actor:'system',status:'pending',contentOrigin:'request_context'},captureContext);
+  if(!request)throw new Error('学习记录服务尚未就绪，请保留页面后重试');
+  await request.saved;
   const controller = new AbortController();
   const timeout = window.setTimeout(() => controller.abort(), 45000);
   try {
@@ -1169,9 +1203,12 @@ async function callAI(prompt, taskType = "chat") {
       throw new Error(`HTTP ${res.status}: ${String(detail).slice(0, 220)}`);
     }
     const json = await res.json();
-    if (!json?.answer) throw new Error("AI 没有返回内容");
+    if (typeof json?.answer!=="string" || !json.answer) throw new Error("AI 没有返回内容");
+    const reply=detailedCapture('assistant.reply',{text:json.answer},{actor:'assistant',status:'succeeded',parentOperationId:request.operation.operationId,contentOrigin:'ai_reply',assessment:{reportedModel:typeof json.model==='string'?json.model:null,modelProvenance:typeof json.model==='string'?'response_declared':'not_reported'}},captureContext);
+    if(reply)await reply.saved.catch(()=>{});
     return json.answer;
   } catch (err) {
+    detailedCapture('ai.failure',{errorClass:err?.name || 'Error'},{actor:'system',status:'failed',parentOperationId:request.operation.operationId,contentOrigin:'transport_result'},captureContext);
     if (err?.name === "AbortError") throw new Error("请求超过 45 秒，请重试");
     throw err;
   } finally {
@@ -1277,6 +1314,7 @@ function buildContextPrompt(rec, qIndex, userTurn, mode = "chat") {
 }
 
 async function dispatchChat(userTurn) {
+  const captureScope=window.BdfzLearningRecords?.scope||null;
   if (!state.currentRecord) {
     flashStatus("请先在左侧选一道题");
     return;
@@ -1289,7 +1327,8 @@ async function dispatchChat(userTurn) {
   const identity = questionIdentity(rec, qIndex);
   const conversationKey = `${identity.sourceRecordId}#${identity.sourceQIndex}`;
   const messages = state.conversations[conversationKey] || [];
-  messages.push({ role: "user", content: userTurn });
+  const turn=detailedMessage('user',userTurn);messages.push(turn);
+  detailedCapture('question.submit',{text:userTurn},{operationId:turn.id,occurredAt:turn.createdAt,status:'succeeded'});
   state.conversations[conversationKey] = messages;
   renderChatMessages(messages);
   saveLocalChat(identity.sourceRecordId, identity.sourceQIndex, messages);
@@ -1304,7 +1343,7 @@ async function dispatchChat(userTurn) {
   try {
     const answer = await callAI(prompt, "chat");
     thinking.remove();
-    messages.push({ role: "assistant", content: answer });
+    messages.push(detailedMessage('assistant',answer,captureScope));
     state.conversations[conversationKey] = messages;
     if (state.conversationKey === conversationKey) renderChatMessages(messages);
     saveLocalChat(identity.sourceRecordId, identity.sourceQIndex, messages);
@@ -1323,6 +1362,7 @@ async function dispatchChat(userTurn) {
 }
 
 async function gradeUserAnswer() {
+  const captureScope=window.BdfzLearningRecords?.scope||null;
   if (!state.currentRecord) return;
   if (state.isThinking) return;
   const text = $("#user-answer").value.trim();
@@ -1354,7 +1394,7 @@ async function gradeUserAnswer() {
   try {
     const answer = await callAI(prompt, "feedback");
     thinking.remove();
-    messages.push({ role: "assistant", content: answer });
+    messages.push(detailedMessage('assistant',answer,captureScope));
     state.conversations[conversationKey] = messages;
     if (state.conversationKey === conversationKey) renderChatMessages(messages);
     saveLocalChat(identity.sourceRecordId, identity.sourceQIndex, messages);
@@ -1430,13 +1470,15 @@ function archiveConversation(identity = currentQuestionIdentity(), providedMessa
   const key = `${identity.sourceRecordId}#${qIndex}`;
   const messages = providedMessages || state.conversations[key];
   if (!messages.length) return;
+  const owner=window.BdfzLearningRecords?.scope;
+  if(!owner || messages.some(message=>message.captureScope!==owner))return;
   getAuthedIdentity()?.recordConversation?.({
     siteKey: SITE_KEY,
     sessionKey: `${SITE_KEY}-${identity.sourceRecordId}-q${qIndex}`,
     title: questionLabel(rec, qIndex).slice(0, 80),
     summary: messages[messages.length - 1]?.content?.slice(0, 120) || "高考对话",
     sourceUrl: window.location.href,
-    messages: messages.map((m, i) => ({ id: String(i + 1), role: m.role, content: m.content })),
+    messages: messages.map(m => ({ id:m.id, role:m.role, content:m.content, createdAt:m.createdAt })),
     meta: { recordId: identity.sourceRecordId, qIndex },
   })?.catch?.(() => {});
 }
@@ -1524,6 +1566,7 @@ function initWorkpadBindings() {
   answerInput?.addEventListener("input", (e) => {
     if (e.target.value) flashStatus("……");
     if (!state.currentRecord) return;
+    detailedDraft(e.target.value,'student_answer',e.inputType || '');
     debouncedSave({
       text: e.target.value,
       identity: currentQuestionIdentity(),
@@ -1535,6 +1578,7 @@ function initWorkpadBindings() {
   $("#save-answer-btn")?.addEventListener("click", () => {
     if (!state.currentRecord) return;
     const text = answerInput.value;
+    detailedCapture('answer.save',{text},{status:'succeeded'});
     const identity = currentQuestionIdentity();
     saveLocalAnswer(identity.sourceRecordId, identity.sourceQIndex, text);
     syncAnswerUpstream(state.currentRecord, state.currentQIndex, text);
@@ -1578,6 +1622,7 @@ function initWorkpadBindings() {
     dispatchChat(v);
   });
 
+  $("#chat-input")?.addEventListener("input", e => detailedDraft(e.target.value,"student_chat_draft",e.inputType || ""));
   $("#chat-input")?.addEventListener("keydown", (e) => {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
@@ -1666,6 +1711,7 @@ function initCustomDialog() {
 }
 
 async function init() {
+  initDetailedCapture();
   initThemePicker();
   initCustomDialog();
   initPassageDelegate();

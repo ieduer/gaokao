@@ -10,6 +10,7 @@
     "check:beijing-2026": "node scripts/validate-beijing-2026.mjs",
     "test:progress": "node --test scripts/test-progress-restore.mjs",
     "check:data": "node scripts/validate-data.mjs",
-    "build": "npm run test:progress && npm run check:data && npm run check:beijing-2026 && node scripts/build-pages.mjs"
+    "build": "npm run test:learning-records && npm run test:progress && npm run check:data && npm run check:beijing-2026 && node scripts/build-pages.mjs",
+    "test:learning-records": "node --test scripts/test-learning-records.mjs"
   }
 }

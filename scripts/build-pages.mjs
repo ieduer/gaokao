@@ -5,7 +5,7 @@ import { createHash } from 'node:crypto';
 
 // Pages must never publish the repository root or source/data backups.
 const output = resolve(process.argv[2] || '.pages-output');
-const files = ['index.html', 'assets/js/app.js', 'assets/css/style.css',
+const files = ['index.html', 'assets/js/app.js', 'assets/js/learning-records.js', 'assets/css/style.css',
   'assets/fonts/HuWenMingChaoTi.woff', 'assets/fonts/HuWenMingChaoTi.woff2',
   'assets/img/bg.webp', 'assets/img/gaokao.jpeg', 'data/all.json'];
 try {
