@@ -1,3 +1,9 @@
+## 2026-09-25 — Detailed learning capture candidate, not deployed
+
+The task-owned candidate preserves complete source operations and account ownership. Its shared capture wrapper now resumes both durable queues after persisted page return, online reconnect and focus without resetting the bounded automatic retry budget; the script cache version changed with it. Unknown and other-account originals are never reassigned. Existing scoring/content/completion contracts remain unchanged.
+
+Leaf publication and real leaf acceptance follow UC core acceptance and this week's observed activity order. Current source, core readiness, ownership and remaining full-site/report work: `/Users/ylsuen/CF/reports/operations/learning-records-validity-20260925/REPORT.md`. This candidate is not a production or full-coverage claim.
+
 # 2026 语文题面三源纠错 — 2026-09-19
 
 站长指令：检索北京 2026 年各科目高考真题并上线；资料无官方，三处独立来源一致即视为真题；答案也无官方、全为网传，须核查后再决定是否采用。随后站长明确：**gk.bdfz.net 只做语文**，其余八科移交 gks.bdfz.net 并在那里做成逐题练习 + AI 批阅。
