@@ -86,7 +86,7 @@ function detailedCapture(action,content,options={},context=detailedContext()) {
   saved.catch(()=>{});return {operation,saved};
 }
 function detailedDraft(text,kind,inputType='') {
- const context=detailedContext(),key=context.resourceKey+':'+kind;
+ const context=detailedContext(),key=[context.captureScope,context.sessionKey,context.resourceKey,kind].join(':');
  const capture=detailedCapture('draft.edit',{text,inputType},{contentOrigin:kind,revisesOperationId:lastDetailedDrafts.get(key)||''},context);
  if(capture)lastDetailedDrafts.set(key,capture.operation.operationId);
 }
@@ -1196,13 +1196,20 @@ async function callAI(prompt, taskType = "chat") {
       },
       body: JSON.stringify({ prompt }),
     });
-    if (!res.ok) {
-      let detail = "";
-      try { const j = await res.json(); detail = j?.error || JSON.stringify(j); }
-      catch (_) { detail = await res.text(); }
-      throw new Error(`HTTP ${res.status}: ${String(detail).slice(0, 220)}`);
+    const rawResponse = await res.text();
+    let json;
+    try { json = JSON.parse(rawResponse); }
+    catch {
+      const unparsed=detailedCapture('ai.response.unparsed',{httpStatus:res.status,text:rawResponse},{actor:'system',status:'failed',parentOperationId:request.operation.operationId,contentOrigin:'transport_result'},captureContext);
+      if(unparsed)await unparsed.saved.catch(()=>{});
+      throw new Error('AI 回覆格式無法辨識，原始回覆已交由學習記錄保存');
     }
-    const json = await res.json();
+    if (!res.ok) {
+      const detail=typeof json?.error==='string'?json.error:'上游请求失败';
+      const responseRecord=detailedCapture('ai.response.error',{httpStatus:res.status,error:detail,errorCode:typeof json?.error_code==='string'?json.error_code:null,answer:typeof json?.answer==='string'?json.answer:null},{actor:'system',status:'failed',parentOperationId:request.operation.operationId,contentOrigin:'transport_result'},captureContext);
+      if(responseRecord)await responseRecord.saved.catch(()=>{});
+      throw new Error(`HTTP ${res.status}: ${detail.slice(0, 220)}`);
+    }
     if (typeof json?.answer!=="string" || !json.answer) throw new Error("AI 没有返回内容");
     const reply=detailedCapture('assistant.reply',{text:json.answer},{actor:'assistant',status:'succeeded',parentOperationId:request.operation.operationId,contentOrigin:'ai_reply',assessment:{reportedModel:typeof json.model==='string'?json.model:null,modelProvenance:typeof json.model==='string'?'response_declared':'not_reported'}},captureContext);
     if(reply)await reply.saved.catch(()=>{});
@@ -1328,7 +1335,7 @@ async function dispatchChat(userTurn) {
   const conversationKey = `${identity.sourceRecordId}#${identity.sourceQIndex}`;
   const messages = state.conversations[conversationKey] || [];
   const turn=detailedMessage('user',userTurn);messages.push(turn);
-  detailedCapture('question.submit',{text:userTurn},{operationId:turn.id,occurredAt:turn.createdAt,status:'succeeded'});
+  const submissionCapture=detailedCapture('question.submit',{text:userTurn},{operationId:turn.id,occurredAt:turn.createdAt,status:'succeeded'});
   state.conversations[conversationKey] = messages;
   renderChatMessages(messages);
   saveLocalChat(identity.sourceRecordId, identity.sourceQIndex, messages);
@@ -1341,6 +1348,8 @@ async function dispatchChat(userTurn) {
 
   const prompt = buildContextPrompt(rec, qIndex, userTurn, "chat");
   try {
+    if(!submissionCapture)throw new Error('学习记录服务尚未就绪，请保留页面后重试');
+    await submissionCapture.saved;
     const answer = await callAI(prompt, "chat");
     thinking.remove();
     messages.push(detailedMessage('assistant',answer,captureScope));
@@ -1380,7 +1389,7 @@ async function gradeUserAnswer() {
   const messages = state.conversations[conversationKey] || [];
   const submission=detailedMessage('user',`(请批改我的答案)\n${originalAnswer}`,captureScope);
   messages.push(submission);
-  detailedCapture('answer.submit',{text:originalAnswer},{operationId:submission.id,occurredAt:submission.createdAt,status:'succeeded'});
+  const submissionCapture=detailedCapture('answer.submit',{text:originalAnswer},{operationId:submission.id,occurredAt:submission.createdAt,status:'succeeded'});
   state.conversations[conversationKey] = messages;
   renderChatMessages(messages);
   saveLocalChat(identity.sourceRecordId, identity.sourceQIndex, messages);
@@ -1395,6 +1404,8 @@ async function gradeUserAnswer() {
   state.isThinking = true;
   setAIControlsBusy(true, "AI 正在批改…");
   try {
+    if(!submissionCapture)throw new Error('学习记录服务尚未就绪，请保留页面后重试');
+    await submissionCapture.saved;
     const answer = await callAI(prompt, "feedback");
     thinking.remove();
     messages.push(detailedMessage('assistant',answer,captureScope));

@@ -1,3 +1,11 @@
+## 2026-09-25 — Learning capture qualified for guarded publication
+
+Serial owner01a0d9ec-8876-72f1-bc40-870add9fde19. Candidate extends the accepted modern Chinese-only source897ca30111e9d96adcaf7bf1aba95c1f2e936a00; current live Pages remainsba438f25-c986-44e3-aefe-f5bd063ec952. Fresh provider/source/public-manifest readback confirms main, registered automatic guard and Functions. Corpus, Functions and pinned publishing policy are unchanged.
+
+Complete drafts, original submissions, exposure, prompts, replies and failures use the accepted private record_only journal. Submission persistence precedes AI; full error content is separate from shortened UI messages; revision ancestry includes the original account scope.18 focused/progress tests pass and content checks report0errors. A real signed-in page with exact local candidate assets passed source/central/reload, concurrent duplicate, delayed replay and actual offline/reload/reconnect with2synthetic system operations, one row each, exact content/time/digest and0model/grade writes. A persisted pageshow event was injected; native bfcache entry is not claimed. Evidence: /Users/ylsuen/CF/reports/operations/learning-records-validity-20260925/gk-browser-candidate.json and gk-build-fourth-successor.log.
+
+Next: publish through the registered main-branch guard, verify exact live artifacts and Function, then read the same synthetic records after ordinary production reload. Local routed assets are not a deployed preview. Server replies lost before reaching the browser remain unknown on this leaf; this client capture release is not all-site/server/report completion. Rollback is the exact accepted Pages deployment above, preserving all forward records and the modern UI/Function.
+
 ## 2026-09-25 — Detailed learning capture candidate, not deployed
 
 The task-owned candidate preserves complete source operations and account ownership. Its shared capture wrapper now resumes both durable queues after persisted page return, online reconnect and focus without resetting the bounded automatic retry budget; the script cache version changed with it. Unknown and other-account originals are never reassigned. Existing scoring/content/completion contracts remain unchanged.
