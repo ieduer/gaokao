@@ -1351,7 +1351,7 @@ async function dispatchChat(userTurn) {
   } catch (err) {
     thinking.remove();
     const errMsg = `跟 AI 的连接出了点问题：${err.message || err}。试着再发一遍？`;
-    messages.push({ role: "assistant", content: errMsg });
+    messages.push(detailedMessage('system',errMsg,captureScope));
     state.conversations[conversationKey] = messages;
     if (state.conversationKey === conversationKey) renderChatMessages(messages);
     saveLocalChat(identity.sourceRecordId, identity.sourceQIndex, messages);
@@ -1365,7 +1365,8 @@ async function gradeUserAnswer() {
   const captureScope=window.BdfzLearningRecords?.scope||null;
   if (!state.currentRecord) return;
   if (state.isThinking) return;
-  const text = $("#user-answer").value.trim();
+  const originalAnswer = $("#user-answer").value;
+  const text = originalAnswer.trim();
   if (!text) {
     flashStatus("先把答案写下来再让 AI 批改");
     $("#user-answer").focus();
@@ -1377,7 +1378,9 @@ async function gradeUserAnswer() {
   const conversationKey = `${identity.sourceRecordId}#${identity.sourceQIndex}`;
   // 视为一次"由 AI 批改"事件
   const messages = state.conversations[conversationKey] || [];
-  messages.push({ role: "user", content: `(请批改我的答案)\n${text}` });
+  const submission=detailedMessage('user',`(请批改我的答案)\n${originalAnswer}`,captureScope);
+  messages.push(submission);
+  detailedCapture('answer.submit',{text:originalAnswer},{operationId:submission.id,occurredAt:submission.createdAt,status:'succeeded'});
   state.conversations[conversationKey] = messages;
   renderChatMessages(messages);
   saveLocalChat(identity.sourceRecordId, identity.sourceQIndex, messages);
@@ -1404,7 +1407,7 @@ async function gradeUserAnswer() {
     archiveConversation(identity, messages);
   } catch (err) {
     thinking.remove();
-    messages.push({ role: "assistant", content: `批改失败：${err.message || err}。再试一次？` });
+    messages.push(detailedMessage('system',`批改失败：${err.message || err}。再试一次？`,captureScope));
     if (state.conversationKey === conversationKey) renderChatMessages(messages);
     saveLocalChat(identity.sourceRecordId, identity.sourceQIndex, messages);
   } finally {
