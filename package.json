@@ -6,6 +6,9 @@
     "node": "24.18.0"
   },
   "scripts": {
+    "check:answer-authority": "node scripts/check-answer-authority.mjs",
+    "check:answer-completion": "node scripts/check-answer-authority.mjs --require-complete",
+    "test:answer-authority": "node --test scripts/test-answer-authority.mjs",
     "build:beijing-2026": "node scripts/import-beijing-2026-from-gks.mjs",
     "check:beijing-2026": "node scripts/validate-beijing-2026.mjs",
     "test:progress": "node --test scripts/test-progress-restore.mjs",

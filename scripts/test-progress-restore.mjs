@@ -2,14 +2,16 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import vm from 'node:vm';
+import {answerVersionSpecs, versionsForQuestion, reviewForQuestion} from '../assets/js/answer-versions.js';
 
-const source = readFileSync(new URL('../assets/js/app.js', import.meta.url), 'utf8');
+const source = readFileSync(new URL('../assets/js/app.js', import.meta.url), 'utf8')
+  .replace(/^import \{ answerVersionSpecs, versionsForQuestion, reviewForQuestion \} from '\.\/answer-versions\.js';$/m, '');
 const corpus = JSON.parse(readFileSync(new URL('../data/all.json', import.meta.url)));
 function fixture({ items = [], authenticated = true, saved = {}, legacy = {}, failure = false } = {}) {
   const storage = new Map([['gk_progress', JSON.stringify(saved)], ['gaokao_read_progress', JSON.stringify(legacy)]]);
   const calls = [];
   const context = vm.createContext({
-    console, setTimeout, clearTimeout,
+    console, setTimeout, clearTimeout, answerVersionSpecs, versionsForQuestion, reviewForQuestion,
     window: { BdfzIdentity: { api: async path => { calls.push(path); if (failure) throw Error('offline'); return { items }; } } },
     document: { readyState: 'loading', addEventListener() {}, querySelectorAll: () => [], querySelector: () => null },
     localStorage: { getItem: key => storage.get(key) ?? null, setItem: (key, value) => storage.set(key, value) },
@@ -91,4 +93,17 @@ test('modern entrypoint retains catalog, APIS, discussions and source disclosure
   assert.match(html,/data-theme="mono"/); assert.match(html,/id="active-question"/);
   assert.match(source,/https:\/\/apis\.bdfz\.net\//); assert.doesNotMatch(source,/https:\/\/ai\.bdfz\.net\//);
   assert.match(source,/\/api\/question-discussions/);
+});
+test('whole-paper view preserves dynamic model identity and per-question current version',()=>{
+  const f=fixture();
+  f.run(`const r=state.data.find(r=>r.id==='2026-guwen');
+    r.ai_answer_versions.gpt_6_astra={model:'gpt-6-astra',label:'GPT-6 Astra',answers:{1:'synthetic new answer'},provenance:{1:{generatedAt:'2026-10-02T23:00:00Z'}}};
+    r.answer_reviews={1:{status:'reviewed',currentVersion:'gpt_6_astra',modelVersions:['gpt_6_astra'],correctOptions:['D']}};`);
+  const exam=f.run('buildYearExam(2026)'),q=exam.questions.find(q=>q.origRecId==='2026-guwen'&&q.origQIndex===1);
+  const versions=versionsForQuestion(exam,q.qIndex);
+  assert.equal(versions[0].model,'gpt-6-astra');assert.equal(versions[0].current,true);
+  assert.equal(versions[0].generatedAt,'2026-10-02T23:00:00Z');
+  assert.equal(exam.answer_reviews[q.qIndex].correctOptions[0],'D');
+  const untouched=exam.questions.find(q=>q.origRecId==='2026-feilian');
+  assert.equal(versionsForQuestion(exam,untouched.qIndex)[0].key,'claude_opus_5');
 });

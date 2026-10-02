@@ -127,3 +127,8 @@ These are dated release receipts, not permission to replay an old source. Curren
 Candidate only; existing accepted production remains unchanged. Explicit learning drafts, submissions, AI requests, full replies and failures use a durable local inbox with capture-time owner scope and immutable operation identifiers. Unknown identity is never adopted after login; late replies retain the original owner. Source/resource version is retained. Legacy archive refuses unknown or mixed-owner snapshots. A visible storage state and manual retry distinguish local persistence from central acknowledgment.
 
 Depends on the accepted User Center learning journal/recorder before this leaf may publish. Record-only operations do not alter grading or reading credit. Source corpus and score rules are unchanged. Release through the existing registered publisher, then verify actual authenticated source-to-central reload and failure recovery; local tests/build alone do not establish deployment. Rollback code only while preserving central records and local pending originals. Evidence is tracked under the workspace learning-records-validity-20260925 task.
+## 2026-10-02 答案統一候選（未發布）
+
+在已接受來源0b3258ff上建立codex/answers-20261002；新增題文雜湊綁定的答案校訂契約、動態模型介面和整卷版本保留。首六道衝突題由本任務GPT-6 Astra重新作答，目前僅draft，未投影或改寫現行data/all.json。Claude OAuth過期，正常Authorize遭自動審批攔截，等使用者批准；不冒稱模型重答完成。
+
+全量612題、其他站專有題、來源題面差異、跨站投影、多選判分修復、完整測試、預覽／正式部署及status公開記錄仍待完成。中央接受來源、現網與歷史學習資料均未改動。完整核查與方案：/Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/DESIGN.md。

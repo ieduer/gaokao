@@ -9,6 +9,8 @@
  *   - 偏好/最后位置: recordEvent
  */
 
+import { answerVersionSpecs, versionsForQuestion, reviewForQuestion } from './answer-versions.js';
+
 const SITE_KEY = "gk";
 const AI_URL = "https://apis.bdfz.net/";
 const DISCUSSION_API = "/api/question-discussions";
@@ -638,13 +640,6 @@ function findExamSectionForQ(examRec, qIndex) {
   return examRec.sections.find((s) => qIndex >= s.qStart && qIndex <= s.qEnd) || null;
 }
 
-const ANSWER_VERSION_ORDER = [
-  { key: "claude_opus_5", label: "Claude Opus 5 本会话核查作答" },
-  { key: "openai_codex_gpt_5", label: "OpenAI Codex（GPT-5）本任务独立作答" },
-  { key: "claude_opus_4_8", label: "Claude Opus 4.8版本答案" },
-  { key: "gpt_5_5_pro", label: "GPT-5.5 pro 版本答案" },
-];
-
 function stripAnswerVersionPrefix(text, label) {
   const normalizedLabel = label.replace("版本答案", " 版本答案").replace(/\s+/g, " ").trim();
   return String(text || "")
@@ -654,18 +649,9 @@ function stripAnswerVersionPrefix(text, label) {
 }
 
 function getAnswerVersions(rec, qIndex) {
-  const key = String(qIndex);
-  const versions = [];
-  for (const spec of ANSWER_VERSION_ORDER) {
-    const raw = rec.ai_answer_versions?.[spec.key]?.answers?.[key];
-    if (!raw) continue;
-    versions.push({ ...spec, text: stripAnswerVersionPrefix(raw, spec.label) });
-  }
-  if (!versions.length) {
-    const fallback = rec.ai_answers?.[key];
-    if (fallback) versions.push({ key: "current", label: "AI 答案", text: fallback });
-  }
-  return versions;
+  return versionsForQuestion(rec, qIndex).map(version => ({
+    ...version, text: stripAnswerVersionPrefix(version.text, version.label),
+  }));
 }
 
 function renderAnswerVersions(aiBody, rec, qIndex) {
@@ -676,15 +662,37 @@ function renderAnswerVersions(aiBody, rec, qIndex) {
     return;
   }
   aiBody.innerHTML = "";
+  const review = reviewForQuestion(rec, qIndex);
+  if (review) {
+    const status = document.createElement('p');
+    status.className = 'answer-review-status';
+    status.textContent = review.status === 'disputed'
+      ? `待核查 · 暂停确定判分。${review.explanation}`
+      : `已核查${review.correctOptions?.length ? ` · ${review.correctOptions.join('、')}` : ''}${review.reviewedAt ? ` · ${review.reviewedAt.slice(0,10)}` : ''}`;
+    aiBody.appendChild(status);
+    if (review.status !== 'disputed') {
+      const explanation = document.createElement('p');
+      explanation.className = 'answer-review-explanation';
+      explanation.textContent = review.explanation;
+      aiBody.appendChild(explanation);
+    }
+  }
   for (const version of versions) {
-    const section = document.createElement("section");
+    const section = document.createElement(version.current ? 'section' : 'details');
     section.className = "ai-version";
-    const title = document.createElement("h4");
-    title.textContent = version.label;
+    const title = document.createElement(version.current ? 'h4' : 'summary');
+    title.textContent = `${version.label}${version.current ? ' · 当前版本' : version.independentlyReviewed ? ' · 独立对照' : ' · 历史对照'}`;
     const text = document.createElement("div");
     text.className = "ai-version-text";
     text.textContent = version.text;
-    section.append(title, text);
+    section.appendChild(title);
+    if (version.model || version.generatedAt) {
+      const metadata = document.createElement('p');
+      metadata.className = 'answer-provenance';
+      metadata.textContent = [version.model, version.generatedAt?.slice(0,10)].filter(Boolean).join(' · ');
+      section.appendChild(metadata);
+    }
+    section.appendChild(text);
     aiBody.appendChild(section);
   }
   appendAIAnswerNote(aiBody);
@@ -693,7 +701,7 @@ function renderAnswerVersions(aiBody, rec, qIndex) {
 function appendAIAnswerNote(aiBody) {
   const note = document.createElement("p");
   note.className = "ai-answer-note";
-  note.textContent = "AI 答案可能不对，尤其古文古诗题目";
+  note.textContent = "模型解析供比较与理解；遇到分歧，请结合原文与题目来源核查。";
   aiBody.appendChild(note);
 }
 
@@ -1018,10 +1026,9 @@ function buildYearExam(year) {
   const flatQuestions = [];
   const flatAnnotations = [];
   const flatAiAnswers = {};
-  // 版本槽位由 ANSWER_VERSION_ORDER 派生，新增版本时无需在此重复登记
-  const flatAnswerVersions = Object.fromEntries(
-    ANSWER_VERSION_ORDER.map((spec) => [spec.key, { label: spec.label, model: spec.label, answers: {} }])
-  );
+  const flatAnswerVersions = {};
+  const flatAnswerReviews = {};
+  const flatCurrentVersions = {};
   let qCounter = 0;
   let totalScore = 0;
 
@@ -1047,9 +1054,19 @@ function buildYearExam(year) {
       // AI 答案搬运
       const ans = rec.ai_answers?.[String(q.qIndex)];
       if (ans) flatAiAnswers[String(qCounter)] = ans;
-      for (const spec of ANSWER_VERSION_ORDER) {
+      const review = reviewForQuestion(rec, q.qIndex);
+      if (review) flatAnswerReviews[String(qCounter)] = review;
+      flatCurrentVersions[String(qCounter)] = review?.currentVersion || rec.ai_answer_current_version;
+      for (const spec of answerVersionSpecs(rec)) {
         const versionAnswer = rec.ai_answer_versions?.[spec.key]?.answers?.[String(q.qIndex)];
-        if (versionAnswer) flatAnswerVersions[spec.key].answers[String(qCounter)] = versionAnswer;
+        if (versionAnswer) {
+          const original = rec.ai_answer_versions[spec.key];
+          const slot = flatAnswerVersions[spec.key] ||= { label: spec.label, model: spec.model, answers: {}, provenance: {} };
+          slot.answers[String(qCounter)] = versionAnswer;
+          const provenance = original.provenance?.[String(q.qIndex)];
+          if (provenance) slot.provenance[String(qCounter)] = provenance;
+          else if (original.generated_at) slot.provenance[String(qCounter)] = { generatedAt: original.generated_at };
+        }
       }
       if (q.score) totalScore += q.score;
     }
@@ -1089,7 +1106,8 @@ function buildYearExam(year) {
     annotations: flatAnnotations,
     ai_answers: flatAiAnswers,
     ai_answer_versions: flatAnswerVersions,
-    ai_answer_current_version: "gpt_5_5_pro",
+    answer_reviews: flatAnswerReviews,
+    ai_answer_current_versions: flatCurrentVersions,
     totalScore,
   };
 }

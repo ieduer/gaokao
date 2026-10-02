@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "revision": "20261002-initial-conflict-review-draft",
+  "questions": [
+    {
+      "id": "2023-guwen:2",
+      "inputSha256": "1063acee070aa24df7ed6185354344d66aa3e0efa037dd2ddb99b4f32b12a15e",
+      "status": "draft",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "结论与文言站校订及所核查的公开解析相合。‘属之豪绅’按指代前述事务理解；不要额外引申成原文未说明的主动托付行为。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-02T23:52:23.736Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2023北京卷原题及全文"
+        },
+        {
+          "type": "published_analysis",
+          "title": "学科网2023北京卷解析转载，第7页",
+          "url": "https://gsimg.gengsan.com/ziyuan/wenjian/tupian/2023/11/1700708163696320.pdf"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：C。两处‘则’都承接前文所述情况，引出随之发生的举措或结果，可译为‘就’。第一处说郡国怕受惩罚，于是选用舞文弄墨的人；第二处说实行前述整顿办法，官员就会努力向善。不能只因可分别译成‘于是’和‘那么’就判为不同。A项前一‘之’指前述水利、渡口等事务，后一‘之’连接修饰语和中心语。B项分别是因由与处置对象。D项前一‘于’引进时间终点，后一‘于’引进比较对象；两者同属介词，也不等于意义用法相同。旧GPT答案选D，同时承认两个‘于’意义不同，结论不能成立。",
+          "inputSha256": "1063acee070aa24df7ed6185354344d66aa3e0efa037dd2ddb99b4f32b12a15e",
+          "generatedAt": "2026-10-02T23:52:23.736Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-initial-reviews"
+          }
+        }
+      }
+    },
+    {
+      "id": "2022-guwen:2",
+      "inputSha256": "bba73ae1f6fb495e4422f5d9ebd9c0479d132ad504aef53696fc01c4e1a92ee6",
+      "status": "draft",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "公开参考答案亦为C。保留文言站关于‘亡以异’与‘或异’细分词类的审查说明，不把它们制成无争议词性练习。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-02T23:52:23.736Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2022北京卷原题及全文"
+        },
+        {
+          "type": "reference_reprint",
+          "title": "2022北京卷参考答案转载，第8页",
+          "url": "https://cdn.zgkao.com/zixunzhan/202401/7e28deb2-3b24-4275-8f7d-64a75a17ce26.pdf"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：C。第一处‘而’把逐渐向善与自己没有察觉连接起来，有‘却’的转折意味；第二处先说君主希望百姓向善的目的相同，再说采取的方法不同，同样表示转折。B项‘法之所用’是名词性结构，不能把它与‘秦王之欲……’不加区分地都说成主谓间取消独立性。A项一处是灭亡，一处通‘无’。D项后一‘或’明确指有人，前一‘或异’针对方法存在差别；对其词类的不同分析应保留，但不足以推翻C项清楚的转折对应。旧GPT把第二个‘而’解释为‘而且’，割裂了同与异的对照。",
+          "inputSha256": "bba73ae1f6fb495e4422f5d9ebd9c0479d132ad504aef53696fc01c4e1a92ee6",
+          "generatedAt": "2026-10-02T23:52:23.736Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-initial-reviews"
+          }
+        }
+      }
+    },
+    {
+      "id": "2021-guwen:2",
+      "inputSha256": "74245d4b010af8fdacfd4299703d704d99e7e486547c997c840e0d535988dff4",
+      "status": "draft",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "独立作答与文言站结论相合；尚未取得本轮可核验的考试主管部门答案。‘以……为……’结构的内部词类口径不作排他判分依据。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-02T23:52:23.736Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2021北京卷《论衡·非韩》全文及原题"
+        },
+        {
+          "type": "dictionary_revision",
+          "title": "文言站2026-09-16-r3语境校订"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：B。两处都引出判断：认为旧礼没有补益，认为狂谲、华士使齐国民众离心懈怠。应按整句的判断意义比较，不把后一处牵强解释成‘凭借这两个人’。A项前一‘而’承接上下混乱造成的后果，后一‘而’连接表面无益和实际为有益者所依靠的反转。C项前一‘者’把以礼义为事业的人名词化；后一‘者’接在国家所以存在的依据之后，提顿以引出‘礼义也’，不指一类人，更不是定语后置标志。D项分别是做与表示被动。旧模型以‘都是代词’概括C项不成立。",
+          "inputSha256": "74245d4b010af8fdacfd4299703d704d99e7e486547c997c840e0d535988dff4",
+          "generatedAt": "2026-10-02T23:52:23.736Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-initial-reviews"
+          }
+        }
+      }
+    },
+    {
+      "id": "2017-guwen:2",
+      "inputSha256": "d1f55d7e0b9fb48cfe339097b5e2e7da45c912672ea3256f12b69143eb023b4f",
+      "status": "draft",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "独立作答与文言站校订相合，保留原题选‘不同’的方向；本轮未新取得官方答案原件。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-02T23:52:23.736Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2017北京卷《秦废封建》全文及原题"
+        },
+        {
+          "type": "dictionary_revision",
+          "title": "文言站2026-09-16-r3语境校订"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：C。本题要求选意义和用法不同的一项。前一‘而’说分郡邑本来合乎时势，学士大夫却多加非议，是转折；后一‘而’说柳宗元的论说出现，其他论说随之被驳倒，是顺承或结果。A项两处都说明争乱的原因，分别是侯王割据与利益驱动，不能将‘争必以利’译成‘用利益去争’。B项均用于主谓性结构之间，使整体进入更大的句法结构。D项都将前面的行为与相应的人联系起来。旧GPT选A并把两处‘而’都说成转折，未结合第二句的因果推进。",
+          "inputSha256": "d1f55d7e0b9fb48cfe339097b5e2e7da45c912672ea3256f12b69143eb023b4f",
+          "generatedAt": "2026-10-02T23:52:23.736Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-initial-reviews"
+          }
+        }
+      }
+    },
+    {
+      "id": "2005-guwen:2",
+      "inputSha256": "16bd991c0ba9d012244f6db15098f99fb599b73df4130320357671a1258c9c00",
+      "status": "draft",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "选择结论与文言站相合。站内全文存在明显OCR残损；本答案仅针对可完整读出的四组选项，不宣称整篇已经校勘。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-02T23:52:23.736Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2005北京卷四组选项及全文"
+        },
+        {
+          "type": "dictionary_revision",
+          "title": "文言站2026-09-16-r3语境校订"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：A。两处‘更’都表示在先前情形的基础上再做一次行动：庄公死后又立景公，为看得更远再登一层。B项前一‘之’指庆封，后一‘之’用于‘何功之有’这一宾语前置结构。C项前一‘以’属于把相关行为当作法度的结构，后一‘以’连接平坦和近两个性质。D项前一‘相’是双方互相帮助，后一‘相’偏指遭遇不平而被帮助的一方。词类名称相近不能掩盖互指与偏指的差别。旧答案一面承认A相同、一面选D，且把‘偏指一方’与‘双方彼此’混说，不能沿用。",
+          "inputSha256": "16bd991c0ba9d012244f6db15098f99fb599b73df4130320357671a1258c9c00",
+          "generatedAt": "2026-10-02T23:52:23.736Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-initial-reviews"
+          }
+        }
+      }
+    },
+    {
+      "id": "2009-sanwen:1",
+      "inputSha256": "5762506877cc8aa13b6eff96426482e20d5a12ef8f469e7afeb59025e9ea31b0",
+      "status": "draft",
+      "kind": "multiple_choice",
+      "correctOptions": [
+        "B",
+        "E"
+      ],
+      "explanation": "独立作答与原库参考答案、旧Claude结论相合；选择两项的题型和完整集合必须同时修正。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-02T23:52:23.736Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2009北京卷《司马祠》全文与第17题"
+        },
+        {
+          "type": "legacy_reference",
+          "title": "原库参考答案第17题B、E；尚未新取得官方原件"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：B、E。B项：开篇由司马迁引出韩城，随后写地势、城廓、田园与古道承载的历史，地方景观和史圣精神相互映照，‘人杰地灵’概括了这一联系，并没有说这是文章的全部主旨。E项：游览中穿插历史人物、遗迹传说及对司马迁的敬仰和感怀，增加了历史厚度。A项将汉武帝与司马迁的联系错误归因于灵芝。C项把作者反问的悲哀强加给司马迁，而作者明确认为此地适宜其长眠。D项将一个传说真伪难明的局部，夸大成全篇扑朔迷离的行文风格；文章的游踪、描写和情感总体清晰。原库参考答案也是B、E。专题站还必须把本题从单选改为多选，不能只把截断的D改成DE。",
+          "inputSha256": "5762506877cc8aa13b6eff96426482e20d5a12ef8f469e7afeb59025e9ea31b0",
+          "generatedAt": "2026-10-02T23:52:23.736Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-initial-reviews"
+          }
+        }
+      }
+    }
+  ]
+}
