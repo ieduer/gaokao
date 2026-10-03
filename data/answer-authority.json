@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261003-source2014-qualified-pending",
+  "revision": "20261003-reviewed-363-qualified-2014",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -10228,20 +10228,70 @@
     {
       "id": "2014-moxie:1",
       "inputSha256": "6d2447114c41501ca51079eb025d1cdd706c7a3dbb9e41692c6e5dc08474e688",
-      "status": "draft",
+      "status": "disputed",
       "kind": "open",
       "correctOptions": [],
-      "explanation": "2014来源资格/历史误归属更正后待重审；全部旧输入及模型保存于history。",
-      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "explanation": "三项作答为落霞与孤鹜齐飞/秋水共长天一色，感时花溅泪/恨别鸟惊心，长风破浪会有时/直挂云帆济沧海。双方均指出首题泄露答案与非2014原卷归属。维持disputed及无确定评分键，六空旧8分仍未核，不以作答一致认证历史伪归属。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
       "sources": [
         {
           "type": "source_material",
           "title": "站内2014北京卷原题及完整材料"
+        },
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {},
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "这三项可以作为历史补充练习作答，但未获2014原卷支持，不能认定为当年默写题。\n（1）落霞与孤鹜齐飞，秋水共长天一色。题干已直接给出这两句，实际上泄露了所填内容，区分度有问题。\n（2）感时花溅泪，恨别鸟惊心。两句以花鸟触发或承载伤感，不能误填国破山河在等非花鸟句。\n（3）长风破浪会有时，直挂云帆济沧海。会有时与直挂表现克服挫折、追求理想的信念。\n旧题注称共8分却只有六个空，实际来源与分值分配皆不明。作为原卷归属问题维持争议，保留历史分值，不设置已核真题计分承诺。",
+          "inputSha256": "6d2447114c41501ca51079eb025d1cdd706c7a3dbb9e41692c6e5dc08474e688",
+          "inputContextSha256": "fd9c163a4980196d87dee222cc909105775f28b3c1caee652a8b986ef162a577",
+          "inputPresentationSha256": "b5e03d97c29500b2531eb2ff13057d0d560e70103fd11b0918350725e9c006d5",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2014-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "（1）落霞与孤鹜齐飞，秋水共长天一色\n（2）感时花溅泪，恨别鸟惊心\n（3）长风破浪会有时，直挂云帆济沧海",
+          "inputSha256": "6d2447114c41501ca51079eb025d1cdd706c7a3dbb9e41692c6e5dc08474e688",
+          "inputContextSha256": "fd9c163a4980196d87dee222cc909105775f28b3c1caee652a8b986ef162a577",
+          "inputPresentationSha256": "b5e03d97c29500b2531eb2ff13057d0d560e70103fd11b0918350725e9c006d5",
+          "generatedAt": "2026-10-03T09:48:55.259818+00:00",
+          "uncertainties": [
+            "第（1）小题题干已经直接包含了应填的原句，疑为题库转录或命题瑕疵，这里仍按原句作答",
+            "题注说明本条是历史题库补充练习，不属于已核实的2014年北京原卷"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-reading-result.json",
+            "inputPromptSha256": "d517f837786fe562901370a4c4659a961f257f2e1f7636b65cf3a0c187191d8a",
+            "responseStreamSha256": "c55ae1155fe1cab318f9af0baf18bb4e55bb1d327bedc9ffbfe75c1107345838",
+            "stage": "independent"
+          }
+        }
+      },
       "inputContextSha256": "fd9c163a4980196d87dee222cc909105775f28b3c1caee652a8b986ef162a577",
       "inputPresentationSha256": "b5e03d97c29500b2531eb2ff13057d0d560e70103fd11b0918350725e9c006d5",
       "history": [
@@ -30660,6 +30710,1745 @@
       "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
       "reviewedAt": "2026-10-03T09:30:04.042Z",
       "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2014-feilian:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "教育部鐫字典：juān",
+          "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=6149&la=0&powerMode=0",
+          "qualification": "镌读音；不把题干故设错误改为正确字音"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D。A稔读rěn，意蕴字形正确；B楹读yíng，齿颊留香字形正确；C赅读gāi，撰写正确；D镌刻的镌读juān，不读jùn，锒锒上口应写琅琅上口，因此同时有注音和字形错误。题干是辨错，不能把故意设置的jùn、锒锒在答题前改成正确形式。",
+          "inputSha256": "9fe00e441350bceabf7401874840ec4461eb6c2da8f49bdc978bdb775e586461",
+          "inputContextSha256": "1a1beac195ae9ff11857a126693b527ed7065c90d847c097c394b2c108d66cf1",
+          "inputPresentationSha256": "68d5305aa34dec5fbe7164d432401c44e867870b2d894f830f5de0e0d5c3a2af",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2014-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。A项“稔”读rěn，“意蕴”字形正确，两处都对。B项“楹”读yíng，“齿颊留香”字形正确，两处都对。C项“赅”读gāi，“撰写”字形正确，两处都对。D项“镌”应读juān，不读jùn；“锒锒上口”应写作“琅琅上口”，注音和字形都错。",
+          "inputSha256": "9fe00e441350bceabf7401874840ec4461eb6c2da8f49bdc978bdb775e586461",
+          "inputContextSha256": "1a1beac195ae9ff11857a126693b527ed7065c90d847c097c394b2c108d66cf1",
+          "inputPresentationSha256": "68d5305aa34dec5fbe7164d432401c44e867870b2d894f830f5de0e0d5c3a2af",
+          "generatedAt": "2026-10-03T09:48:55.259818+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-reading-result.json",
+            "inputPromptSha256": "d517f837786fe562901370a4c4659a961f257f2e1f7636b65cf3a0c187191d8a",
+            "responseStreamSha256": "c55ae1155fe1cab318f9af0baf18bb4e55bb1d327bedc9ffbfe75c1107345838",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "9fe00e441350bceabf7401874840ec4461eb6c2da8f49bdc978bdb775e586461",
+      "inputContextSha256": "1a1beac195ae9ff11857a126693b527ed7065c90d847c097c394b2c108d66cf1",
+      "inputPresentationSha256": "68d5305aa34dec5fbe7164d432401c44e867870b2d894f830f5de0e0d5c3a2af",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "D，注音juān及琅琅字形。教育部鐫条核实；题干故设错音错字不应预先改为正确形式。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2014-feilian:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选C：春回爆竹声声。冬尽与春回构成季节和变化状态的对应，梅花与爆竹相对，点点与声声都为叠词，且爆竹切合新春。A万户与冬尽结构不对应；B千家也不与冬尽对应；D虽有春来对应冬尽，但微风缕缕的缕缕为仄声，不合此联下联收平声的要求，春节意味也不如C鲜明。并非所有对联都必须写爆竹，选择应综合这副联的结构、平仄和语境。",
+          "inputSha256": "06da9d0ab8b33288423d6ff084896544a312515204976e72be55a3098c5d931c",
+          "inputContextSha256": "3163fa55b888129deafb12bb1f658685a0fbd37dc59d5ae8986d722748c75d94",
+          "inputPresentationSha256": "0b421b5968711ca8a049957b172afa5bdc97a1f05b49c86394eb5c8d403a96ff",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2014-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。上联“冬尽梅花点点”的结构是“季节+动词”“名词”“叠词”，末字“点”为仄声，下联末字应为平声。A项“万户”与“冬尽”不对仗。B项“千家”与“冬尽”、“喜气”与“梅花”都不对仗。C项“春回”对“冬尽”，“爆竹”对“梅花”，“声声”对“点点”，末字“声”为平声，又切合春节气氛，最恰当。D项“微风”是偏正结构，与“梅花”对得不工，末字“缕”为仄声，不合下联平收的要求，且缺少春节特色。",
+          "inputSha256": "06da9d0ab8b33288423d6ff084896544a312515204976e72be55a3098c5d931c",
+          "inputContextSha256": "3163fa55b888129deafb12bb1f658685a0fbd37dc59d5ae8986d722748c75d94",
+          "inputPresentationSha256": "0b421b5968711ca8a049957b172afa5bdc97a1f05b49c86394eb5c8d403a96ff",
+          "generatedAt": "2026-10-03T09:48:55.259818+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-reading-result.json",
+            "inputPromptSha256": "d517f837786fe562901370a4c4659a961f257f2e1f7636b65cf3a0c187191d8a",
+            "responseStreamSha256": "c55ae1155fe1cab318f9af0baf18bb4e55bb1d327bedc9ffbfe75c1107345838",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "06da9d0ab8b33288423d6ff084896544a312515204976e72be55a3098c5d931c",
+      "inputContextSha256": "3163fa55b888129deafb12bb1f658685a0fbd37dc59d5ae8986d722748c75d94",
+      "inputPresentationSha256": "0b421b5968711ca8a049957b172afa5bdc97a1f05b49c86394eb5c8d403a96ff",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "C。结构、末字平仄和春节语境综合判断。Claude用微风是偏正而梅花对得不工排D不充分，梅花亦可作偏正；B的喜气/梅花也不能仅因不同词便断不对仗。根本依据仍是冬尽/春回、点点/声声及平收，默认本人版本。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2014-feilian:3",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选A：题写、内涵、吟咏。题写楹联是写上联文，题签通常指书籍、篇卷等的题名或签条；与品位并列、受注重支配的应是名词内涵，蕴涵侧重包含、蕴含；吟咏指诵读，合于后文上口、齿颊留香。涵泳指深入体会、玩味，不能同吟咏在此混用。",
+          "inputSha256": "a3109bd723187da07bcdc8c1868a119d846941aceafdf335bc51678e0de5a824",
+          "inputContextSha256": "0e2f2da620424dc3809f0b0f5d5ab4d2e93d3e75d962e69e181c70a022b21a3a",
+          "inputPresentationSha256": "7de6c90cb5f8fa347771b14f8166243c80020de4b0cd8f6a604c40605cb14601",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2014-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\n选A。甲处：“题写”指书写题词、匾额、楹联等，可与“楹联”搭配；“题签”指题写书籍封面的书名签条，不能用于园林建筑。乙处：“内涵”是名词，指内在的涵养、内容，可与“品位”并列作“注重”的宾语；“蕴涵”多作动词，意为包含，放在这里不妥。丙处：“吟咏”指有节奏地诵读，与“琅琅上口，齿颊留香”相应；“涵泳”指深入体会，侧重内心领会，与“上口”不搭配。因此依次为“题写、内涵、吟咏”。",
+          "inputSha256": "a3109bd723187da07bcdc8c1868a119d846941aceafdf335bc51678e0de5a824",
+          "inputContextSha256": "0e2f2da620424dc3809f0b0f5d5ab4d2e93d3e75d962e69e181c70a022b21a3a",
+          "inputPresentationSha256": "7de6c90cb5f8fa347771b14f8166243c80020de4b0cd8f6a604c40605cb14601",
+          "generatedAt": "2026-10-03T09:48:55.259818+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-reading-result.json",
+            "inputPromptSha256": "d517f837786fe562901370a4c4659a961f257f2e1f7636b65cf3a0c187191d8a",
+            "responseStreamSha256": "c55ae1155fe1cab318f9af0baf18bb4e55bb1d327bedc9ffbfe75c1107345838",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "a3109bd723187da07bcdc8c1868a119d846941aceafdf335bc51678e0de5a824",
+      "inputContextSha256": "0e2f2da620424dc3809f0b0f5d5ab4d2e93d3e75d962e69e181c70a022b21a3a",
+      "inputPresentationSha256": "7de6c90cb5f8fa347771b14f8166243c80020de4b0cd8f6a604c40605cb14601",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "A。按本句用法题写/内涵/吟咏更合适；Claude题签绝对不能用于园林建筑与专指封面签条表述过窄，不作为所有语境的字典定义。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2014-feilian:4",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D。文中说对联可镌刻或书写，采用楷行隶篆，且有艺术精品，说明常与书法结合。A把举例的四言、六言误作字数限制；B的对仗可取，但不能说上下联必须押韵，平仄与押韵并非同一概念；C遗漏挽联等非喜庆用途。",
+          "inputSha256": "49ffaa525c16a50eb27dcedf200694edf3545aa8b063ad3b1dbe9f7b7bf89a1e",
+          "inputContextSha256": "1a9690beee5509ac3efcab5336a6d58e5d108948ce2aff9ec724222d19d97b5b",
+          "inputPresentationSha256": "0e1202a275a1c11642ae24531bac36e97ed4f079bc0f8417f1f3b7456c91e70f",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2014-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。A项错，文中说“春联的字数可多可少”，四言、六言只是举例，对联还有五言、七言和长联。B项错，对联讲究对仗和平仄相对，并不要求押韵。C项错，对联中还有挽联，用于丧葬哀悼场合。D项正确，文末说“对联或镌刻或书写，楷行隶篆，其中不乏艺术精品”，说明对联常与书法艺术结合。",
+          "inputSha256": "49ffaa525c16a50eb27dcedf200694edf3545aa8b063ad3b1dbe9f7b7bf89a1e",
+          "inputContextSha256": "1a9690beee5509ac3efcab5336a6d58e5d108948ce2aff9ec724222d19d97b5b",
+          "inputPresentationSha256": "0e1202a275a1c11642ae24531bac36e97ed4f079bc0f8417f1f3b7456c91e70f",
+          "generatedAt": "2026-10-03T09:48:55.259818+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-reading-result.json",
+            "inputPromptSha256": "d517f837786fe562901370a4c4659a961f257f2e1f7636b65cf3a0c187191d8a",
+            "responseStreamSha256": "c55ae1155fe1cab318f9af0baf18bb4e55bb1d327bedc9ffbfe75c1107345838",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "49ffaa525c16a50eb27dcedf200694edf3545aa8b063ad3b1dbe9f7b7bf89a1e",
+      "inputContextSha256": "1a9690beee5509ac3efcab5336a6d58e5d108948ce2aff9ec724222d19d97b5b",
+      "inputPresentationSha256": "0e1202a275a1c11642ae24531bac36e97ed4f079bc0f8417f1f3b7456c91e70f",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "D。根据楷行隶篆与艺术精品，其他选项把举例、对仗、用途分别扩大或缩窄。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2014-yuyanjichu:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "教育部鐫字典：juān",
+          "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=6149&la=0&powerMode=0",
+          "qualification": "镌读音；不把题干故设错误改为正确字音"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D。A稔读rěn，意蕴字形正确；B楹读yíng，齿颊留香字形正确；C赅读gāi，撰写正确；D镌刻的镌读juān，不读jùn，锒锒上口应写琅琅上口，因此同时有注音和字形错误。题干是辨错，不能把故意设置的jùn、锒锒在答题前改成正确形式。",
+          "inputSha256": "6a7851fe4aac969e91e2cbc10683a40653f2f1410c82c79669f5cd8841d53ead",
+          "inputContextSha256": "f4afe390a995aa3a65b8e62c5591787db0be37e9275c3c2b8afff021c8037893",
+          "inputPresentationSha256": "431ff77c8f76369376c6d06a7068fbf223f6a344878ac61000a4d1c7e03b2f48",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2014-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。A项“稔”读rěn，“意蕴”字形正确，两处都对。B项“楹”读yíng，“齿颊留香”字形正确，两处都对。C项“赅”读gāi，“撰写”字形正确，两处都对。D项“镌”应读juān，不读jùn；“锒锒上口”应写作“琅琅上口”，注音和字形都错。",
+          "inputSha256": "6a7851fe4aac969e91e2cbc10683a40653f2f1410c82c79669f5cd8841d53ead",
+          "inputContextSha256": "f4afe390a995aa3a65b8e62c5591787db0be37e9275c3c2b8afff021c8037893",
+          "inputPresentationSha256": "431ff77c8f76369376c6d06a7068fbf223f6a344878ac61000a4d1c7e03b2f48",
+          "generatedAt": "2026-10-03T09:48:55.259818+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-reading-result.json",
+            "inputPromptSha256": "d517f837786fe562901370a4c4659a961f257f2e1f7636b65cf3a0c187191d8a",
+            "responseStreamSha256": "c55ae1155fe1cab318f9af0baf18bb4e55bb1d327bedc9ffbfe75c1107345838",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "6a7851fe4aac969e91e2cbc10683a40653f2f1410c82c79669f5cd8841d53ead",
+      "inputContextSha256": "f4afe390a995aa3a65b8e62c5591787db0be37e9275c3c2b8afff021c8037893",
+      "inputPresentationSha256": "431ff77c8f76369376c6d06a7068fbf223f6a344878ac61000a4d1c7e03b2f48",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "D，同源重复题也独立保存双方全文；同feilian1的字音字形核实。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2014-yuyanjichu:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选C：春回爆竹声声。冬尽与春回构成季节和变化状态的对应，梅花与爆竹相对，点点与声声都为叠词，且爆竹切合新春。A万户与冬尽结构不对应；B千家也不与冬尽对应；D虽有春来对应冬尽，但微风缕缕的缕缕为仄声，不合此联下联收平声的要求，春节意味也不如C鲜明。并非所有对联都必须写爆竹，选择应综合这副联的结构、平仄和语境。",
+          "inputSha256": "f3452c92e2a9092c9bb2155222f723940f182b95e652d09d6d8be7845cf24c6a",
+          "inputContextSha256": "42c536e888d48a19c21df6d323b773614b3a0307903b0b6f64c515f014873666",
+          "inputPresentationSha256": "936ff406ac77bdb976cb93d52cac88f11d4dea2ae9c5b48c042c0a0180b08acb",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2014-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。上联“冬尽梅花点点”的结构是“季节+动词”“名词”“叠词”，末字“点”为仄声，下联末字应为平声。A项“万户”与“冬尽”不对仗。B项“千家”与“冬尽”、“喜气”与“梅花”都不对仗。C项“春回”对“冬尽”，“爆竹”对“梅花”，“声声”对“点点”，末字“声”为平声，又切合春节气氛，最恰当。D项“微风”与“梅花”对得不工，末字“缕”为仄声，不合下联平收的要求，且缺少春节特色。",
+          "inputSha256": "f3452c92e2a9092c9bb2155222f723940f182b95e652d09d6d8be7845cf24c6a",
+          "inputContextSha256": "42c536e888d48a19c21df6d323b773614b3a0307903b0b6f64c515f014873666",
+          "inputPresentationSha256": "936ff406ac77bdb976cb93d52cac88f11d4dea2ae9c5b48c042c0a0180b08acb",
+          "generatedAt": "2026-10-03T09:48:55.259818+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-reading-result.json",
+            "inputPromptSha256": "d517f837786fe562901370a4c4659a961f257f2e1f7636b65cf3a0c187191d8a",
+            "responseStreamSha256": "c55ae1155fe1cab318f9af0baf18bb4e55bb1d327bedc9ffbfe75c1107345838",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "f3452c92e2a9092c9bb2155222f723940f182b95e652d09d6d8be7845cf24c6a",
+      "inputContextSha256": "42c536e888d48a19c21df6d323b773614b3a0307903b0b6f64c515f014873666",
+      "inputPresentationSha256": "936ff406ac77bdb976cb93d52cac88f11d4dea2ae9c5b48c042c0a0180b08acb",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "C，同feilian2。Claude微风/梅花不工的结构理由不足，不作为评分点；重在季节结构及末字平仄。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2014-yuyanjichu:3",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选A：题写、内涵、吟咏。题写楹联是写上联文，题签通常指书籍、篇卷等的题名或签条；与品位并列、受注重支配的应是名词内涵，蕴涵侧重包含、蕴含；吟咏指诵读，合于后文上口、齿颊留香。涵泳指深入体会、玩味，不能同吟咏在此混用。",
+          "inputSha256": "e63ecfa91644877cc5fffe96bca2ca5261996190f3645ae5131e0d192257e945",
+          "inputContextSha256": "66e2963ff10c4a5dff7c78e127387141a180de1cba63d6ae886a0d149b17917a",
+          "inputPresentationSha256": "8e2f540dc5686f0824826de158c4916a0c319b31eb0d261eb74dc89228ae97bb",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2014-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\n选A。甲处：“题写”可用于匾额、楹联；“题签”专指题写书籍封面的书名签条，不能用于园林建筑。乙处：“内涵”是名词，可与“品位”并列作“注重”的宾语；“蕴涵”多作动词，意为包含，不妥。丙处：“吟咏”指有节奏地诵读，与“琅琅上口，齿颊留香”相应；“涵泳”指深入体会，与“上口”不搭配。因此依次为“题写、内涵、吟咏”。",
+          "inputSha256": "e63ecfa91644877cc5fffe96bca2ca5261996190f3645ae5131e0d192257e945",
+          "inputContextSha256": "66e2963ff10c4a5dff7c78e127387141a180de1cba63d6ae886a0d149b17917a",
+          "inputPresentationSha256": "8e2f540dc5686f0824826de158c4916a0c319b31eb0d261eb74dc89228ae97bb",
+          "generatedAt": "2026-10-03T09:48:55.259818+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-reading-result.json",
+            "inputPromptSha256": "d517f837786fe562901370a4c4659a961f257f2e1f7636b65cf3a0c187191d8a",
+            "responseStreamSha256": "c55ae1155fe1cab318f9af0baf18bb4e55bb1d327bedc9ffbfe75c1107345838",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "e63ecfa91644877cc5fffe96bca2ca5261996190f3645ae5131e0d192257e945",
+      "inputContextSha256": "66e2963ff10c4a5dff7c78e127387141a180de1cba63d6ae886a0d149b17917a",
+      "inputPresentationSha256": "8e2f540dc5686f0824826de158c4916a0c319b31eb0d261eb74dc89228ae97bb",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "A，同feilian3。限定于本句搭配，不推广题签的绝对排他定义。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2014-yuyanjichu:4",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "本单元包含六个不同编号或小题，须分别作答。\n第4题：D。对联可用多种书体书写、镌刻；字数不限四言六言，不要求上下联押韵，也用于挽联等非喜庆场合。\n第5题：C。兵马未动，粮草先行比喻行动前应先做好准备。题中已经进入4G时代，运营商正以优惠套餐争夺市场，所写是竞争手段，并未体现先行准备。A按下葫芦起了瓢写问题接连出现；B一家人不说两家话写合作与不见外；D君子之交淡如水结合老同学交情和清茶待客，诙谐而合境。\n第6①题：C，即丙句。邀请专家应表达敬意，认真的指导带有对专家提出要求、评判其态度的意味，可改为给予指导或提出宝贵意见。甲交代活动时间地点；乙赞扬学术造诣；丁表达敬候，均合请柬情境。\n第6②题：D。先致谢，再说明年龄小、不能饮酒，礼貌而坚定。A别劝了行不语气生硬；B足下古雅生硬，家父与现代午宴语境不协调；C重复拒绝与反问容易显得不耐烦。\n第7①题：B。闲敲棋子落灯花明确写灯芯结花，不能据夜半便判定有月景；A一轮霜影、C玉盘、D皓魄宝镜均借别称或比喻呈现明月。\n第7②题：A。秦时明月汉时关为互文，秦汉共同修饰明月与关；烟笼寒水月笼沙也互相补足，烟与月光共同笼罩水与沙。B写楼高月明及独倚，C写飞度镜湖月下，D写夜吟感寒，均非此种互文。\n原第7③另在红楼梦单元，本单元不以一个字母或一个多选集合统一判分。",
+          "inputSha256": "f16195d8db404b72e4c107a645b091f5d2736618055dc239ea300c3880944d4a",
+          "inputContextSha256": "050c8ce25a95112016559c8fe7adae7d657d3f2cead85849127d24dde00de266",
+          "inputPresentationSha256": "7d48492c1e57def398f4aab56e43b8ca4c4ff4cc01ecc8e20501d9d124a9e0fe",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2014-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n本条题文包含第4题至第7题，逐题作答如下。\n\n第4题：选D。A项错，春联“字数可多可少”，四言、六言只是举例。B项错，对联讲究对仗和平仄，不要求押韵。C项错，挽联用于哀悼场合。D项正确，对联“或镌刻或书写，楷行隶篆，其中不乏艺术精品”，常与书法结合。\n\n第5题：选C。A项“按下葫芦起了瓢”比喻问题此伏彼起，顾了这头顾不了那头，用于热点问题不断，正确。B项“一家人不说两家话”表示关系亲近、不必见外，用于京津冀协同发展，正确。C项“兵马未动，粮草先行”强调行动之前先做好物资保障和准备工作，而句中说的是运营商已经争相推出优惠套餐、展开价格竞争，属于“搏杀”本身，不是事前的后勤准备，使用不当。D项“君子之交淡如水”指君子之间的交往不重物质，用于只备清茶招待老同学，正确。\n\n第6题①：选C，即（丙）句。“做出认真的指导”像是在要求对方“认真”，带有上对下提要求的口气，对受邀专家不够尊重，不得体，可改为“莅临指导”或“拨冗指导”。（甲）句交代时间、地点、事由，（乙）句称赞对方，（丁）句是敬语，都得体。\n\n第6题②：选D。A项“别劝了，行不？”语气生硬、不耐烦，对长辈不礼貌。B项“足下”多用于书面语中对平辈朋友的敬称，对父母的朋友口头使用不合身份。C项连说“不喝”再加反问，语气生硬，带有质问意味。D项先致谢，再以年龄小为由婉拒，礼貌得体。\n\n第7题①：选B。A项“一轮霜影”指月光、月影，写了月。B项“有约不来过夜半，闲敲棋子落灯花”写夜半等客、灯下敲棋，没有写月景。C项“银汉无声转玉盘”的“玉盘”指明月。D项“皓魄当空宝镜升”的“皓魄”“宝镜”都指明月。\n\n第7题②：选A。“秦时明月汉时关”用的是互文手法。A项“烟笼寒水月笼沙”意为烟雾和月色笼罩着寒水和沙岸，也是互文。B、C、D三项都不是互文。",
+          "inputSha256": "f16195d8db404b72e4c107a645b091f5d2736618055dc239ea300c3880944d4a",
+          "inputContextSha256": "050c8ce25a95112016559c8fe7adae7d657d3f2cead85849127d24dde00de266",
+          "inputPresentationSha256": "7d48492c1e57def398f4aab56e43b8ca4c4ff4cc01ecc8e20501d9d124a9e0fe",
+          "generatedAt": "2026-10-03T09:48:55.259818+00:00",
+          "uncertainties": [
+            "本条题文包含第4、5、6①、6②、7①、7②共六道选择题，answer字段只填了主题第4题的答案D；其余各题答案依次为：5题C，6①题C（丙），6②题D，7①题B，7②题A",
+            "题文中加点的俗语无法显示，这里按各句中明显的俗语判断"
+          ],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-reading-result.json",
+            "inputPromptSha256": "d517f837786fe562901370a4c4659a961f257f2e1f7636b65cf3a0c187191d8a",
+            "responseStreamSha256": "c55ae1155fe1cab318f9af0baf18bb4e55bb1d327bedc9ffbfe75c1107345838",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "f16195d8db404b72e4c107a645b091f5d2736618055dc239ea300c3880944d4a",
+      "inputContextSha256": "050c8ce25a95112016559c8fe7adae7d657d3f2cead85849127d24dde00de266",
+      "inputPresentationSha256": "7d48492c1e57def398f4aab56e43b8ca4c4ff4cc01ecc8e20501d9d124a9e0fe",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "原4D、5C、6①C、6②D、7①B、7②A，双方全文已答六题。Claude机器字段仅D且自报范围，原样保留；整体authority为open且无选项评分键。足下的书面交际不合午宴语境；俗语关注准备与行动关系，不采用仅能用于后勤的绝对词义。旧score2不当作全部14分。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2014-guwen:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "偃虹堤记原文",
+          "url": "https://zh.wikisource.org/zh-hans/偃虹堤記",
+          "qualification": "全文结构、三宜书和关键实词，不能认证原卷印刷标记"
+        },
+        {
+          "type": "checked_reference",
+          "title": "岳阳楼记原文",
+          "url": "https://zh.wikisource.org/zh-hant/岳陽樓記",
+          "qualification": "谪守巴陵郡、越明年、政通人和、百废具兴及两篇为官情怀；不认证答题卡方格"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "夫虑熟谋审／力不劳而功倍／作事可以为后法／一宜书／不苟一时之誉／思为利于无穷／而告来者不以废／二宜书／岳之民人与湖中之往来者／皆欲为滕侯纪／三宜书／以三宜书／不可以不书。\n前三层分别归纳值得记述的理由：谋划周全、用力少而成效大且可为后世法；不图一时名声而求长久利民，嘱咐后来者不废弃；本地百姓和往来者都愿记其功。最后以三宜书总结并推出不能不写。三项宜书各自收束一层，不能把一、二、三切入下一分句。",
+          "inputSha256": "21b05591e42bd51c8e8f404e0b6e4cb5185d9c53b18705c667e65099769abc4a",
+          "inputContextSha256": "f4d3d2a549f75090c26c4a5a0b38011716a217678e09d462f041adcf79639758",
+          "inputPresentationSha256": "b0f6da49c0e9359ce020d709a263d2d95574113ac278a5ae5d3cfb3148918dee",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2014-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "断句：夫虑熟谋审／力不劳而功倍／作事可以为后法／一宜书／不苟一时之誉／思为利于无穷／而告来者不以废／二宜书／岳之民人与湖中之往来者／皆欲为滕侯纪／三宜书／以三宜书不可以不书\n\n理由：“一宜书”“二宜书”“三宜书”是并列的三个标志语，各自独立成句，前面分别是三条应当记述的理由。“虑熟谋审”“力不劳而功倍”是整齐的短语。“不苟一时之誉”与“思为利于无穷”相对。“岳之民人与湖中之往来者”是主语，“皆欲为滕侯纪”是谓语。末句“以三宜书不可以不书”也可在“以三宜书”后稍作停顿。\n\n大意：考虑周详、谋划审慎，用力不多而功效加倍，做事可以成为后人的法则，这是第一条应当写的理由；不贪图一时的声誉，想着为后世谋无穷之利，并告诫后来者不要让它废弃，这是第二条；岳州百姓和湖中往来的人都想为滕侯作记，这是第三条。因为有这三条应当写的理由，所以不能不写。",
+          "inputSha256": "21b05591e42bd51c8e8f404e0b6e4cb5185d9c53b18705c667e65099769abc4a",
+          "inputContextSha256": "f4d3d2a549f75090c26c4a5a0b38011716a217678e09d462f041adcf79639758",
+          "inputPresentationSha256": "b0f6da49c0e9359ce020d709a263d2d95574113ac278a5ae5d3cfb3148918dee",
+          "generatedAt": "2026-10-03T09:48:55.259818+00:00",
+          "uncertainties": [
+            "题目未说明须断几处及评分方式，末句“以三宜书／不可以不书”之间是否算一处断点不确定"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-reading-result.json",
+            "inputPromptSha256": "d517f837786fe562901370a4c4659a961f257f2e1f7636b65cf3a0c187191d8a",
+            "responseStreamSha256": "c55ae1155fe1cab318f9af0baf18bb4e55bb1d327bedc9ffbfe75c1107345838",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "21b05591e42bd51c8e8f404e0b6e4cb5185d9c53b18705c667e65099769abc4a",
+      "inputContextSha256": "f4d3d2a549f75090c26c4a5a0b38011716a217678e09d462f041adcf79639758",
+      "inputPresentationSha256": "b0f6da49c0e9359ce020d709a263d2d95574113ac278a5ae5d3cfb3148918dee",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "默认本人分开以三宜书/不可以不书，呼应因果收束。Claude主体划分相同，但正文未断此处、随后说明可稍停，其不确定性保留。未取得原评分说明，不虚构逐斜线给分；仅答当前完整标段，原文乃为之书在标段之外。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2014-guwen:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "教育部虞字典：忧虑与预料均为独立义项",
+          "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=11641&la=0&powerMode=0",
+          "qualification": "本句以风波之恐/覆溺之虞对文取忧患义；不能宣称虞无预料义"
+        },
+        {
+          "type": "checked_reference",
+          "title": "偃虹堤记原文",
+          "url": "https://zh.wikisource.org/zh-hans/偃虹堤記",
+          "qualification": "全文结构、三宜书和关键实词，不能认证原卷印刷标记"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选B。覆溺之虞中的虞是忧虑、危险之意，不是料想。A愿有所记：希望有人记述；C使堤土石幸久不朽的使表假设，相当于假如；D常显用之中的常可通尝，意为曾经。这里考查的是常显用之的常，不是前文而又常有风波之恐的常；原库误标位置已剔除。",
+          "inputSha256": "b89490bf49d91fcac96d4cbc6ebfd1fe54f6f65a4d2e8c07b576a59c2925ac9a",
+          "inputContextSha256": "419a0ba1106e898ac37fbb73190a1dd28d85d0b0c862fa3d0e9927559d5a17ea",
+          "inputPresentationSha256": "a138837f660701a4b106d65f6796ac3175916600a3f9c83df40629aa71688987",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2014-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。A项“愿有所记”的“愿”是希望，正确。B项“覆溺之虞”与“风波之恐”相对，“虞”是忧虑、忧患的意思，解释为“料想”不正确。C项“使堤土石幸久不朽”的“使”是假如，正确。D项“常显用之”的“常”通“尝”，是曾经的意思，正确。",
+          "inputSha256": "b89490bf49d91fcac96d4cbc6ebfd1fe54f6f65a4d2e8c07b576a59c2925ac9a",
+          "inputContextSha256": "419a0ba1106e898ac37fbb73190a1dd28d85d0b0c862fa3d0e9927559d5a17ea",
+          "inputPresentationSha256": "a138837f660701a4b106d65f6796ac3175916600a3f9c83df40629aa71688987",
+          "generatedAt": "2026-10-03T09:48:55.259818+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-reading-result.json",
+            "inputPromptSha256": "d517f837786fe562901370a4c4659a961f257f2e1f7636b65cf3a0c187191d8a",
+            "responseStreamSha256": "c55ae1155fe1cab318f9af0baf18bb4e55bb1d327bedc9ffbfe75c1107345838",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "b89490bf49d91fcac96d4cbc6ebfd1fe54f6f65a4d2e8c07b576a59c2925ac9a",
+      "inputContextSha256": "419a0ba1106e898ac37fbb73190a1dd28d85d0b0c862fa3d0e9927559d5a17ea",
+      "inputPresentationSha256": "a138837f660701a4b106d65f6796ac3175916600a3f9c83df40629aa71688987",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "B。虞取忧患义，与恐对文；教育部亦收预料义，错误在语境，非字典无此义。使为假如，常显用之的常通尝。原库转运使和又常有的错误标点位置已剔除。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2014-guwen:3",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "偃虹堤记原文",
+          "url": "https://zh.wikisource.org/zh-hans/偃虹堤記",
+          "qualification": "全文结构、三宜书和关键实词，不能认证原卷印刷标记"
+        },
+        {
+          "type": "checked_reference",
+          "title": "岳阳楼记原文",
+          "url": "https://zh.wikisource.org/zh-hant/岳陽樓記",
+          "qualification": "谪守巴陵郡、越明年、政通人和、百废具兴及两篇为官情怀；不认证答题卡方格"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选C。易吾侯之议的易是改变，意为多次审议后各方仍不能改变滕侯的方案，不能释作轻视。A发书是打开书信，按图是查看图；B问其所以作之利害可理解为询问修建缘由以及利弊；D解释其为滕侯所忧虑并希望记述下来传告后人的事，符合上下文。",
+          "inputSha256": "f490af1a0a4045509269883bbfca52e27cbf92c2c4332925c841acd7e3b9f27b",
+          "inputContextSha256": "bda0c7a66e74ab9224c10e32b55a3d71e76f734d30c672efa2a2c6cdc17d0a16",
+          "inputPresentationSha256": "04d82f9ed260bacbc5b66f16d8f71540e991eea2d0214c8cf5ee00390ed23851",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2014-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。A项“发书按图”即打开书信、查看地图，理解正确。B项“所以作”指修堤的缘由，“利害”指利弊，理解正确。C项“易”是改变、更改的意思，不是轻视；句意是经过转运使、朝廷、三司层层审核，都不能改变滕侯原来的方案，说明他谋划精当，所以C不符合文意。D项“此滕侯之所以虑，而欲有纪于后也”意为这就是滕侯所思虑并想记下来告知后人的，理解正确。",
+          "inputSha256": "f490af1a0a4045509269883bbfca52e27cbf92c2c4332925c841acd7e3b9f27b",
+          "inputContextSha256": "bda0c7a66e74ab9224c10e32b55a3d71e76f734d30c672efa2a2c6cdc17d0a16",
+          "inputPresentationSha256": "04d82f9ed260bacbc5b66f16d8f71540e991eea2d0214c8cf5ee00390ed23851",
+          "generatedAt": "2026-10-03T09:48:55.259818+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-reading-result.json",
+            "inputPromptSha256": "d517f837786fe562901370a4c4659a961f257f2e1f7636b65cf3a0c187191d8a",
+            "responseStreamSha256": "c55ae1155fe1cab318f9af0baf18bb4e55bb1d327bedc9ffbfe75c1107345838",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "f490af1a0a4045509269883bbfca52e27cbf92c2c4332925c841acd7e3b9f27b",
+      "inputContextSha256": "bda0c7a66e74ab9224c10e32b55a3d71e76f734d30c672efa2a2c6cdc17d0a16",
+      "inputPresentationSha256": "04d82f9ed260bacbc5b66f16d8f71540e991eea2d0214c8cf5ee00390ed23851",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "C。易为改变，不是轻视；所有四项对照全文，不以可作他义取代这里的句意。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2014-guwen:4",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "偃虹堤记原文",
+          "url": "https://zh.wikisource.org/zh-hans/偃虹堤記",
+          "qualification": "全文结构、三宜书和关键实词，不能认证原卷印刷标记"
+        },
+        {
+          "type": "checked_reference",
+          "title": "岳阳楼记原文",
+          "url": "https://zh.wikisource.org/zh-hant/岳陽樓記",
+          "qualification": "谪守巴陵郡、越明年、政通人和、百废具兴及两篇为官情怀；不认证答题卡方格"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选C。文章交代请人作记主要是为持续保护工程、长久惠民而告诫后来者，末段又列三宜书；并非重点记录岳州面貌改变与百姓安居乐业的情景。A对应虑民深、谋始精；B对应继者使工程殆废、遗迹尚存的感慨；D概括欧阳修借记堤赞扬周密谋事、造福百姓、不求一时名声的为官理想。",
+          "inputSha256": "bac3047dc385a963b5a818a5203bbbe1497e89621041201ac6fe32a1e197db74",
+          "inputContextSha256": "271b538a9c5943fb4d14fb60ef86aa4b9eb904ee11bd1dbd117273f523839a9f",
+          "inputPresentationSha256": "82388439c2c7eeab1a137875b41df918e930e4636742e67e0e3cb05115967960",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2014-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。A项符合文意，文中说“盖虑于民也深，则其谋始也精，故能用力少而为功多”。B项符合文意，文中说“作者未始不欲其久存，而继者常至于殆废”，古代贤智之士兴利的工程“其遗迹往往而在”，并感叹如果后继者都像始作者那样用心，天下就不会有遗利。C项不符合文意，滕子京请欧阳修作记，是担心堤坝日后被废弃，想告诫后来者继续维护，使百姓长久受益，即“欲有纪于后”“告来者不以废”，并不是为了记载岳州面貌的改变和百姓安居乐业的情景。D项符合文意，文章开头说来人带着书信和图请求“愿有所记”，是应邀之作；文中赞美滕侯虑民深、谋事精、不图一时之誉而求利于无穷，寄托了作者的为官理想。",
+          "inputSha256": "bac3047dc385a963b5a818a5203bbbe1497e89621041201ac6fe32a1e197db74",
+          "inputContextSha256": "271b538a9c5943fb4d14fb60ef86aa4b9eb904ee11bd1dbd117273f523839a9f",
+          "inputPresentationSha256": "82388439c2c7eeab1a137875b41df918e930e4636742e67e0e3cb05115967960",
+          "generatedAt": "2026-10-03T09:48:55.259818+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-reading-result.json",
+            "inputPromptSha256": "d517f837786fe562901370a4c4659a961f257f2e1f7636b65cf3a0c187191d8a",
+            "responseStreamSha256": "c55ae1155fe1cab318f9af0baf18bb4e55bb1d327bedc9ffbfe75c1107345838",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "bac3047dc385a963b5a818a5203bbbe1497e89621041201ac6fe32a1e197db74",
+      "inputContextSha256": "271b538a9c5943fb4d14fb60ef86aa4b9eb904ee11bd1dbd117273f523839a9f",
+      "inputPresentationSha256": "82388439c2c7eeab1a137875b41df918e930e4636742e67e0e3cb05115967960",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "C。作记意在长久惠民与告诫后继，并不是描写岳州面貌和安居情景。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2014-guwen:5",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "偃虹堤记原文",
+          "url": "https://zh.wikisource.org/zh-hans/偃虹堤記",
+          "qualification": "全文结构、三宜书和关键实词，不能认证原卷印刷标记"
+        },
+        {
+          "type": "checked_reference",
+          "title": "岳阳楼记原文",
+          "url": "https://zh.wikisource.org/zh-hant/岳陽樓記",
+          "qualification": "谪守巴陵郡、越明年、政通人和、百废具兴及两篇为官情怀；不认证答题卡方格"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "第12题：相关文句可写“滕子京谪守巴陵郡。越明年，政通人和，百废具兴”。其中谪守巴陵郡呼应退守一州，越明年以下政绩呼应略施其余、以利及物。现有转载未呈现原答题方格，不足以确定原题要求的起止范围；若有规定方格，应按原卷与答题卡核定，不能以本答句长直接设唯一评分键。\n第13题作答示例：\n两篇文章使我明白，为官者的价值应由百姓是否受益衡量，而不能只看自身进退。滕子京被贬后仍修堤兴利，说明责任不因失意而取消；欧阳修赞其谋划周详，又提醒后来者维护工程，启示我们既要务实办事，也要关心成效能否延续。范仲淹提出先忧后乐，把个人得失放在天下忧乐之后，则进一步显示公共责任的分量。对今天的我而言，这种情怀意味着承担集体事务时少计较出名与回报，先了解同伴的真实需要，认真完成眼前工作，并把方法和资料交给接替者，使一时的帮助成为长久的便利。\n此为约200字的原创感悟示例，联系学生生活但不声称是用户经历；两篇作者的共同理想不等同于其所有具体政治行为都已获史实证明。",
+          "inputSha256": "5b5c47719ebc2dd2e75abf6bf1de7f4ff6a65756242bb223af7f9984019fcc42",
+          "inputContextSha256": "8b8b774ef0533c26b64d1db5ebecc171068155ef110df6c5db32ab3d12158654",
+          "inputPresentationSha256": "d9c4f7dcebc7cd5ef4bdffc3d030eb139a63178f2c64875e205236a8a88a2f81",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2014-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "第12题：《岳阳楼记》中相关的文句是“庆历四年春，滕子京谪守巴陵郡。越明年，政通人和，百废具兴。”其中“谪守巴陵郡”对应“功未及就，退守一州”，“政通人和，百废具兴”对应“略施其余，以利及物”。如果方格只容八字，填“政通人和，百废具兴”。\n\n第13题（示例）：两篇《记》都写滕子京谪守岳州，抒发的是同一种为官情怀：不以个人进退得失为念，始终把百姓放在心上。《岳阳楼记》倡言“不以物喜，不以己悲”“先天下之忧而忧，后天下之乐而乐”，立的是境界；《偃虹堤记》写滕侯“功未及就，退守一州”，仍然虑民深、谋事精，筑堤以除风波之患，而且“不苟一时之誉，思为利于无穷”，做的是实事。由此我感悟到：真正的担当不取决于位置高低，身处逆境也可以有所作为；做事不应追求一时的名声，而要谋长远之利，并让后来者接续不废。今天无论从政还是做普通的工作，都应心怀他人，脚踏实地，把理想落在一件件惠及众人的实事上。",
+          "inputSha256": "5b5c47719ebc2dd2e75abf6bf1de7f4ff6a65756242bb223af7f9984019fcc42",
+          "inputContextSha256": "8b8b774ef0533c26b64d1db5ebecc171068155ef110df6c5db32ab3d12158654",
+          "inputPresentationSha256": "d9c4f7dcebc7cd5ef4bdffc3d030eb139a63178f2c64875e205236a8a88a2f81",
+          "generatedAt": "2026-10-03T09:48:55.259818+00:00",
+          "uncertainties": [
+            "第12题原卷方格数无法从题文看到，无法确定应填的字数与起止，可能只需“政通人和，百废具兴”八字，也可能需含“越明年”或“谪守巴陵郡”",
+            "本条包含第12、13两小题，统一按主观题作答"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-reading-result.json",
+            "inputPromptSha256": "d517f837786fe562901370a4c4659a961f257f2e1f7636b65cf3a0c187191d8a",
+            "responseStreamSha256": "c55ae1155fe1cab318f9af0baf18bb4e55bb1d327bedc9ffbfe75c1107345838",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "5b5c47719ebc2dd2e75abf6bf1de7f4ff6a65756242bb223af7f9984019fcc42",
+      "inputContextSha256": "8b8b774ef0533c26b64d1db5ebecc171068155ef110df6c5db32ab3d12158654",
+      "inputPresentationSha256": "d9c4f7dcebc7cd5ef4bdffc3d030eb139a63178f2c64875e205236a8a88a2f81",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "第12相关原作谪守巴陵郡/越明年/政通人和/百废具兴可核，但答题方格起止没有证据。Claude假设只容八字不是实际方格，不据此给分；新浪俱兴与原作具兴不同，不机械复制。第13两份完整感悟均联系为民、失意不废责任、长久实事，默认本人约200字版本。整体open，旧3与原3+12兼容计分仍阻断。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2014-shici:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选C。诗的花、新藤等写春日景象，“白发好禁春”也直接点明春光；五六句写石角钩衣、藤梢新绿惹眼，不能据此说春去夏来。A无赖带亲昵语气，和最喜小儿无赖同见喜爱；B绿樽须尽日、白发好禁春写饮酒消受春光，结合失意背景有借酒释怀之意；D恼煞人的表面嗔语实际传达爱极，是正话反说。注中禁应为消受，不是消瘦。",
+          "inputSha256": "8b4bb032486f9ca7cbdb6f34e3c88786890684eed757f633fffcff4a0a43a3d6",
+          "inputContextSha256": "f519258b181f53291c2323053f483ff194cf007b7e6b5b90242e1b0e149aed28",
+          "inputPresentationSha256": "acbd98a129b37288c194b1371ceebea276b6670069e815cfc1ea0bb85a9ee3f2",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2014-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。A项正确，“花无赖”是说花开得撩人、可爱，辛弃疾“最喜小儿无赖”的“无赖”指顽皮可爱，都含喜爱之情。B项正确，“绿樽须尽日，白发好禁春”是说应当终日饮酒，白发之人也要好好消受这春光。C项不正确，“石角钩衣破，藤梢刺眼新”写诗人在花木山石间流连，藤梢新绿耀眼，是春意正浓的景象，不是“春去夏来”；诗中“花无赖”“禁春”都点明是春天。D项正确，“恼煞人”是正话反说，实为爱煞人。",
+          "inputSha256": "8b4bb032486f9ca7cbdb6f34e3c88786890684eed757f633fffcff4a0a43a3d6",
+          "inputContextSha256": "f519258b181f53291c2323053f483ff194cf007b7e6b5b90242e1b0e149aed28",
+          "inputPresentationSha256": "acbd98a129b37288c194b1371ceebea276b6670069e815cfc1ea0bb85a9ee3f2",
+          "generatedAt": "2026-10-03T09:48:55.259818+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-reading-result.json",
+            "inputPromptSha256": "d517f837786fe562901370a4c4659a961f257f2e1f7636b65cf3a0c187191d8a",
+            "responseStreamSha256": "c55ae1155fe1cab318f9af0baf18bb4e55bb1d327bedc9ffbfe75c1107345838",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "8b4bb032486f9ca7cbdb6f34e3c88786890684eed757f633fffcff4a0a43a3d6",
+      "inputContextSha256": "f519258b181f53291c2323053f483ff194cf007b7e6b5b90242e1b0e149aed28",
+      "inputPresentationSha256": "acbd98a129b37288c194b1371ceebea276b6670069e815cfc1ea0bb85a9ee3f2",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "C。春景不等于春去夏来；禁为消受。其他选项结合花无赖/恼煞人反言、饮酒与春光。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2014-shici:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "济南大学学报研究：明代王象春",
+          "url": "https://journal.ujn.edu.cn/zh/article/21390390/",
+          "qualification": "明代王氏乡贤中列王象春；不证明原卷E是否印清或王象巽"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选B、E。B当年与眼前苔深草暗相对，以燕子不知所往、昔日游赏胜地荒芜，寄托繁华消歇之感；E文物尽、多少坟直接写人事凋零，流露兴亡之悲。A强调杜诗所写花景如今仍在，重在景物延续，不直接突出兴亡；C以终南雨后青与韦曲花争胜，主要赞景；D春浩渺、晚氤氲写春光酒香的繁盛。诗句与作者名在转载中有异文，E的清代归属不能凭题面认证；本题情感判断不以该错误归属为依据。",
+          "inputSha256": "dbe4ee71de6fa9bcfc5cafff5f6e6144ddc35bf335bb9759bfb3473c2b8a1802",
+          "inputContextSha256": "27a6243207739b03f61398dbc0ab425c83336891f14cc64356ab0d48c371060f",
+          "inputPresentationSha256": "b0d715538d40b0031f862c748b2d482b7c6681fc738230cad11d6982d7bcfdef",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2014-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B、E。\n选B、E。A项化用杜诗，说韦曲的花至今依旧家家撩人，是借以赞美、寄赠友人，没有兴亡之感。B项“当年燕子知何处，但苔深韦曲，草暗斜川”，张炎是南宋遗民，以昔日胜地如今苔深草暗、燕子不知何处，寄寓故国沦亡、今昔盛衰之感，有兴亡之感。C项说不必夸韦曲的花，终南雨后的青色更独擅其美，是写景赞美，没有兴亡之感。D项写上林花气、韦曲酒香，一派春日繁盛景象，没有兴亡之感。E项“韦曲杜陵文物尽，眼中多少可儿坟”，写昔日繁华之地文物荡然无存，满眼坟墓，感慨盛衰兴亡，有兴亡之感。",
+          "inputSha256": "dbe4ee71de6fa9bcfc5cafff5f6e6144ddc35bf335bb9759bfb3473c2b8a1802",
+          "inputContextSha256": "27a6243207739b03f61398dbc0ab425c83336891f14cc64356ab0d48c371060f",
+          "inputPresentationSha256": "b0d715538d40b0031f862c748b2d482b7c6681fc738230cad11d6982d7bcfdef",
+          "generatedAt": "2026-10-03T09:48:55.259818+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B",
+            "E"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-reading-result.json",
+            "inputPromptSha256": "d517f837786fe562901370a4c4659a961f257f2e1f7636b65cf3a0c187191d8a",
+            "responseStreamSha256": "c55ae1155fe1cab318f9af0baf18bb4e55bb1d327bedc9ffbfe75c1107345838",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "dbe4ee71de6fa9bcfc5cafff5f6e6144ddc35bf335bb9759bfb3473c2b8a1802",
+      "inputContextSha256": "27a6243207739b03f61398dbc0ab425c83336891f14cc64356ab0d48c371060f",
+      "inputPresentationSha256": "b0d715538d40b0031f862c748b2d482b7c6681fc738230cad11d6982d7bcfdef",
+      "status": "reviewed",
+      "kind": "multiple_choice",
+      "correctOptions": [
+        "B",
+        "E"
+      ],
+      "explanation": "BE。兴亡感来自当年与苔草荒芜、文物尽与人事凋零。文物不可窄译为现代出土器物；王象春为明代人物，学术研究可证，但原卷作者/朝代印字仍未核，当前清字只保存转载见证而非历史事实。诗句数处异文保留来源门禁。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2014-shici:3",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "尾联想象何时能占一丛竹林、戴小乌巾，像注中刘岩那样过隐居生活。以刘岩的典故表现对韦曲秀美清幽景色的喜爱和对自由闲适隐居生活的向往；结合久求仕而不得的背景，又含有仕途失意后的厌倦与无奈。何时说明愿望尚未实现，不能说杜甫在此已经彻底放弃求仕、实际归隐。",
+          "inputSha256": "f91a9831d294af9f353d7f4e886a98515cdc421c668744eecf2ac95ed4e080ca",
+          "inputContextSha256": "e2f4475f54a9413f17718a3cded3c9d66d6a1d1f65d2368f0ca1c480dab41fda",
+          "inputPresentationSha256": "255280a95a6dbacbd06005a87181f15416472e6c97747707b36a0ffa39673d40",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2014-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "最后两句的意思是：什么时候我也能占有一片竹林，头戴小乌巾，在这里隐居呢？“小乌巾”是隐士的装束，“丛竹”是隐居的环境。\n\n表达的思想感情有两层：\n1. 表面上，诗人面对韦曲的美景，表达了对隐逸闲适生活的向往和对韦曲春色的喜爱。\n2. 深一层看，诗人此时求仕长安而未果，年华老去（“白发”），“何时”二字是一声慨叹。这里的归隐之想，其实是仕途失意、壮志难酬的苦闷与牢骚，含有进退两难的无奈。",
+          "inputSha256": "f91a9831d294af9f353d7f4e886a98515cdc421c668744eecf2ac95ed4e080ca",
+          "inputContextSha256": "e2f4475f54a9413f17718a3cded3c9d66d6a1d1f65d2368f0ca1c480dab41fda",
+          "inputPresentationSha256": "255280a95a6dbacbd06005a87181f15416472e6c97747707b36a0ffa39673d40",
+          "generatedAt": "2026-10-03T09:48:55.259818+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-reading-result.json",
+            "inputPromptSha256": "d517f837786fe562901370a4c4659a961f257f2e1f7636b65cf3a0c187191d8a",
+            "responseStreamSha256": "c55ae1155fe1cab318f9af0baf18bb4e55bb1d327bedc9ffbfe75c1107345838",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "f91a9831d294af9f353d7f4e886a98515cdc421c668744eecf2ac95ed4e080ca",
+      "inputContextSha256": "e2f4475f54a9413f17718a3cded3c9d66d6a1d1f65d2368f0ca1c480dab41fda",
+      "inputPresentationSha256": "255280a95a6dbacbd06005a87181f15416472e6c97747707b36a0ffa39673d40",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "喜爱韦曲、向往隐逸，与求仕未果的无奈相连；何时表愿望未实现，不说杜甫已放弃仕途或已归隐。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2014-honglou:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "红楼梦第七十六回原文",
+          "url": "https://zh.wikisource.org/zh-hans/紅樓夢/第076回",
+          "qualification": "湘云出寒塘渡鹤影、黛玉对冷月葬花魂、妙玉后续；本次未据不同底本逐页核葬诗魂异文"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选B，林黛玉。红楼梦第三回以病如西子胜三分写黛玉体态，中秋凹晶馆联诗时，史湘云出寒塘渡鹤影，黛玉对冷月葬花魂。题中多病西施与悲剧人生均指向黛玉。史湘云是联诗的另一方；薛宝钗不是此句作者；妙玉随后出现并续诗，不能据其善诗归到她名下。通行版本有葬花魂、葬诗魂异文，题面所用花魂不影响人物判断，但不能把一个版本说成唯一文本。",
+          "inputSha256": "421f513bb68f1eab402d8327a3180a7865775e0f20c1e6775abc738c3af8c9bd",
+          "inputContextSha256": "14ab2ed543c2a2c7671f4bf873e929b9239da7292e7cf540729b2c01bee69edf",
+          "inputPresentationSha256": "73565eaa80e72e049bdf46980f4cfbb9da101e940b0b90e982b738155e8d4196",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2014-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。《红楼梦》第七十六回，中秋夜林黛玉与史湘云在凹晶馆联诗，湘云出“寒塘渡鹤影”，黛玉对“冷月葬花魂”。“多病西施”指林黛玉，书中说她“病如西子胜三分”，她体弱多病、才情出众、命运悲凉，与题干相符。A项史湘云是联诗的另一方，吟的是“寒塘渡鹤影”，也不是“多病西施”。C项薛宝钗没有参加这次联诗。D项妙玉是后来出面续完全诗的人，不是吟出此句的人。",
+          "inputSha256": "421f513bb68f1eab402d8327a3180a7865775e0f20c1e6775abc738c3af8c9bd",
+          "inputContextSha256": "14ab2ed543c2a2c7671f4bf873e929b9239da7292e7cf540729b2c01bee69edf",
+          "inputPresentationSha256": "73565eaa80e72e049bdf46980f4cfbb9da101e940b0b90e982b738155e8d4196",
+          "generatedAt": "2026-10-03T09:48:55.259818+00:00",
+          "uncertainties": [
+            "“冷月葬花魂”有的版本作“冷月葬诗魂”，不影响本题判断"
+          ],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-reading-result.json",
+            "inputPromptSha256": "d517f837786fe562901370a4c4659a961f257f2e1f7636b65cf3a0c187191d8a",
+            "responseStreamSha256": "c55ae1155fe1cab318f9af0baf18bb4e55bb1d327bedc9ffbfe75c1107345838",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "421f513bb68f1eab402d8327a3180a7865775e0f20c1e6775abc738c3af8c9bd",
+      "inputContextSha256": "14ab2ed543c2a2c7671f4bf873e929b9239da7292e7cf540729b2c01bee69edf",
+      "inputPresentationSha256": "73565eaa80e72e049bdf46980f4cfbb9da101e940b0b90e982b738155e8d4196",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "B林黛玉。第76回原作可核湘云出句、黛玉应句、妙玉随后续诗。本次核得花魂本；另一诗魂版本未逐页独立核实，不宣称各底本完全一致。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2014-sanwen:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选A、D。A与首段明说词典解释并没有错相反，作者要扩充文化、美学理解，不是纠正其定义错误。D把文章赞成保护真实废墟偷换为赞成修旧如旧；文中司马台经历正强调人们更珍视岁月留下的真正残迹，故不支持此概括。B对应长城与卫城都引发悟性陶醉；C对应智慧、辛劳以及震撼共鸣；E既有欧洲审美历史，也回应圆明园、大拆大建等现实问题。题内判断依据作者立场，不推出所有实际文物保护工程皆应禁止。",
+          "inputSha256": "68cccb5f9c5a69f948d9280d48de9e9bdd6c7dbc44604f5cc563fe14ae9d47e1",
+          "inputContextSha256": "9aa515e3cc6ab4839d6f5f8774d0592d91f5ed689dfb94bf1a100b31e9444d91",
+          "inputPresentationSha256": "3c289a80d9396e1151dcac848d9e9ebb7374f3e507c74ba0f8283bbd5d55482d",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2014-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A、D。\n选A、D。A项不正确，文中明说“现代汉语词典的解释并没有错”，只是用世界知识衡量还很不够，作者要纠正的是人们缺乏废墟美意识，不是词典的“错误”。B项正确，文末说长城废墟“带着岁月沧桑，因而能唤起‘悟性的陶醉’”，与外国作家观赏希腊卫城废墟时的感受相呼应。C项正确，第五段说这些遗存“包含着前人非凡的智慧和巨大的辛劳”，使人“产生心灵的震撼和共鸣”。D项不正确，作者对“修葺一新”和司马台长城的“修旧如旧”都持批评态度，视之为假古董，主张保护废墟原貌，并不希望普及“修旧如旧”的观念。E项正确，文章既回顾了欧洲废墟审美的历史，又针对重修长城、重修圆明园的呼声和大拆大建的现实提出批评，希望提升国民的文化素养和文物意识。",
+          "inputSha256": "68cccb5f9c5a69f948d9280d48de9e9bdd6c7dbc44604f5cc563fe14ae9d47e1",
+          "inputContextSha256": "9aa515e3cc6ab4839d6f5f8774d0592d91f5ed689dfb94bf1a100b31e9444d91",
+          "inputPresentationSha256": "3c289a80d9396e1151dcac848d9e9ebb7374f3e507c74ba0f8283bbd5d55482d",
+          "generatedAt": "2026-10-03T09:48:55.259818+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A",
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-reading-result.json",
+            "inputPromptSha256": "d517f837786fe562901370a4c4659a961f257f2e1f7636b65cf3a0c187191d8a",
+            "responseStreamSha256": "c55ae1155fe1cab318f9af0baf18bb4e55bb1d327bedc9ffbfe75c1107345838",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "68cccb5f9c5a69f948d9280d48de9e9bdd6c7dbc44604f5cc563fe14ae9d47e1",
+      "inputContextSha256": "9aa515e3cc6ab4839d6f5f8774d0592d91f5ed689dfb94bf1a100b31e9444d91",
+      "inputPresentationSha256": "3c289a80d9396e1151dcac848d9e9ebb7374f3e507c74ba0f8283bbd5d55482d",
+      "status": "reviewed",
+      "kind": "multiple_choice",
+      "correctOptions": [
+        "A",
+        "D"
+      ],
+      "explanation": "AD。词典没有错，与作者需要扩充审美理解并不矛盾；本文不支持把修旧如旧作为结论。Claude批评一切修旧如旧的措辞只能作为本文作者态度的概括，不能泛化成文物保护通则。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2014-sanwen:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "废墟是历经岁月与破坏仍保存前人创造和历史文化印记、以残缺形态引发人们想象、震撼与审美感悟的遗存。\n定义既保留残破遗存的基本特征，又说明其历史文化内涵与审美价值，不能只重复荒凉地方，也不能把一切破败物都无条件提升为艺术精品。",
+          "inputSha256": "b614f04de647bc0c226dbd0d29ca9dd686d6ff1382a8f08554361a73ae40a303",
+          "inputContextSha256": "7c15626a581cfc36b148170e67a648ad283719c68723ccafcb81ffe91439b7fe",
+          "inputPresentationSha256": "80a5031d8d6135714fcd3aca6b8b09ef4385c038715d641881c683ca341bcf96",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2014-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "废墟是凝聚着前人的智慧与辛劳、带着岁月沧桑和残缺之美、具有文化和美学价值、能够引起人们心灵震撼与共鸣的历史遗存。",
+          "inputSha256": "b614f04de647bc0c226dbd0d29ca9dd686d6ff1382a8f08554361a73ae40a303",
+          "inputContextSha256": "7c15626a581cfc36b148170e67a648ad283719c68723ccafcb81ffe91439b7fe",
+          "inputPresentationSha256": "80a5031d8d6135714fcd3aca6b8b09ef4385c038715d641881c683ca341bcf96",
+          "generatedAt": "2026-10-03T09:48:55.259818+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-reading-result.json",
+            "inputPromptSha256": "d517f837786fe562901370a4c4659a961f257f2e1f7636b65cf3a0c187191d8a",
+            "responseStreamSha256": "c55ae1155fe1cab318f9af0baf18bb4e55bb1d327bedc9ffbfe75c1107345838",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "b614f04de647bc0c226dbd0d29ca9dd686d6ff1382a8f08554361a73ae40a303",
+      "inputContextSha256": "7c15626a581cfc36b148170e67a648ad283719c68723ccafcb81ffe91439b7fe",
+      "inputPresentationSha256": "80a5031d8d6135714fcd3aca6b8b09ef4385c038715d641881c683ca341bcf96",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两答均包含历史遗存、智慧辛劳、岁月残缺与审美共鸣。默认本人定义，不把所有破败物自动认定为珍贵文物。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2014-sanwen:3",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "第一，文艺复兴时期，人们从古代艺术与建筑遗存中发现前人的伟大创造，产生敬意和复兴文艺的热情，重新珍视残垣断壁所承载的历史证据。第二，十八世纪末、十九世纪初浪漫主义运动中，人们因反感工业喧嚣、向往自然和中世纪生活，欣赏古堡废墟的悠远、神秘及田园情调。第三，断臂维纳斯的发现使人们认识到残缺本身可以具有不可替代的美，残缺美成为经典，进而为欣赏、保护废墟提供美学依据。\n三节点应区分：尊重古代创造、契合浪漫审美、确认残缺之美，而非三次都概括为废墟很美。以上为对材料论述的归纳，其历史分期与绝对化叙述仍应另作史料核查。",
+          "inputSha256": "8d7d80eb87fd427a24b5098c23ac5cba80f98116936efe077d8911d01dbe4c97",
+          "inputContextSha256": "d661d2329c0dce60fbdd5e1b5b812ba4c369fb5299c46cf5de0343cb2ae00072",
+          "inputPresentationSha256": "14e0179d37ab760e34a4ec0a92e3e52c731937f5aae8f1658967d0c377032673",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2014-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "1. 文艺复兴时期：人们把废墟看作前人伟大创造的历史证物，对它肃然起敬、刮目相看；废墟引起思古的幽情，更激发了人们艺术创造的热情。\n2. 18世纪末、19世纪初的浪漫主义运动时期：人们厌恶工业化的喧嚣，主张返归自然，借废墟缅怀中世纪的田园生活和远古情调；废墟的神奇与神秘符合他们的审美理想。\n3. 1820年“断臂维纳斯”发现之后：人们认识到残缺本身就是一种美；废墟的残缺美由此进入美学殿堂，保护废墟遗址成为一种文化行为。",
+          "inputSha256": "8d7d80eb87fd427a24b5098c23ac5cba80f98116936efe077d8911d01dbe4c97",
+          "inputContextSha256": "d661d2329c0dce60fbdd5e1b5b812ba4c369fb5299c46cf5de0343cb2ae00072",
+          "inputPresentationSha256": "14e0179d37ab760e34a4ec0a92e3e52c731937f5aae8f1658967d0c377032673",
+          "generatedAt": "2026-10-03T09:48:55.259818+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-reading-result.json",
+            "inputPromptSha256": "d517f837786fe562901370a4c4659a961f257f2e1f7636b65cf3a0c187191d8a",
+            "responseStreamSha256": "c55ae1155fe1cab318f9af0baf18bb4e55bb1d327bedc9ffbfe75c1107345838",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "8d7d80eb87fd427a24b5098c23ac5cba80f98116936efe077d8911d01dbe4c97",
+      "inputContextSha256": "d661d2329c0dce60fbdd5e1b5b812ba4c369fb5299c46cf5de0343cb2ae00072",
+      "inputPresentationSha256": "14e0179d37ab760e34a4ec0a92e3e52c731937f5aae8f1658967d0c377032673",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "三阶段分别为古代创造的历史证物和艺术启发、浪漫的自然/田园/神秘情调、残缺美及保护意识。新浪参考误写到20世纪初，不能照抄；本题答18世纪末19世纪初。历史进程为材料论述，模型不是对其全部历史事实的认证。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2014-sanwen:4",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "我同意保留圆明园遗址，不在真实遗址上大规模复建昔日园林。废墟既保存独特的历史证据，也使人通过残迹想象原有整体，体会历史沧桑与创造毁损的震撼；若以崭新建筑覆盖遗迹，反而会模糊原物与后建物的界限，削弱其见证价值。不过，不重修并不等于不保护，可以进行必要的加固、记录与清晰标识，并以模型或数字展示辅助理解，让遗址得到维护而非任其继续损毁。\n这是一种论证示例，允许有理有据的不同意见；不能把作者反对伪造新古董等同于反对一切科学保护措施。",
+          "inputSha256": "d1afd66168ea67c9c5b92792b823a10064afe697ff18fa1b1b1baa4707aacebf",
+          "inputContextSha256": "1743abd654fe2438ff6337ef88943c89034ca4ac1f9a77614cfaac6e262d3614",
+          "inputPresentationSha256": "6ea8983c1fda6c607ba0475c4362618cde5558d5e26670ae1c00da068cfed62a",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2014-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "示例（同意）：我同意圆明园遗址不应重修。\n1. 圆明园废墟是历史的真实证物，记录着昔日园林的辉煌，也铭刻着被焚掠的民族伤痛。重修出来的只是“用钱就能换来的崭新建筑”，是假古董，会抹去这份真实和沧桑。\n2. 废墟本身具有残缺之美。残存的大水法石柱让人“抚残体以思整体”，产生心灵的震撼和共鸣，这种审美价值和警示意义是新建筑无法替代的。\n3. 一见残破就修葺一新，是缺乏文化素养的表现，会误导国民的文物意识。原有的工艺和原貌已难以真正复原，重修还可能破坏遗址。\n因此，应当原样保护遗址，可以借助数字技术等手段展示它的原貌，而不是重建。\n\n（如果持不同意见，也可以从传承造园艺术、让后人直观感受古代文明等角度说明，但要言之成理，并回应文中的观点。）",
+          "inputSha256": "d1afd66168ea67c9c5b92792b823a10064afe697ff18fa1b1b1baa4707aacebf",
+          "inputContextSha256": "1743abd654fe2438ff6337ef88943c89034ca4ac1f9a77614cfaac6e262d3614",
+          "inputPresentationSha256": "6ea8983c1fda6c607ba0475c4362618cde5558d5e26670ae1c00da068cfed62a",
+          "generatedAt": "2026-10-03T09:48:55.259818+00:00",
+          "uncertainties": [
+            "本题是开放性题目，同意或不同意都可以，这里只给出“同意”一方的示例"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-reading-result.json",
+            "inputPromptSha256": "d517f837786fe562901370a4c4659a961f257f2e1f7636b65cf3a0c187191d8a",
+            "responseStreamSha256": "c55ae1155fe1cab318f9af0baf18bb4e55bb1d327bedc9ffbfe75c1107345838",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "d1afd66168ea67c9c5b92792b823a10064afe697ff18fa1b1b1baa4707aacebf",
+      "inputContextSha256": "1743abd654fe2438ff6337ef88943c89034ca4ac1f9a77614cfaac6e262d3614",
+      "inputPresentationSha256": "6ea8983c1fda6c607ba0475c4362618cde5558d5e26670ae1c00da068cfed62a",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两份同意例皆有理由且承认其他立场；默认本人区分保存遗存、必要加固和重建伪古董。Claude大水法石柱例为常见具体化，本次未做现场/遗存构件核验，不据此做实地现况判断。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2014-weixiezuo:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "学语文，我记住三个字：读、问、改。每天读一段好文章，圈出打动自己的词句，说清好在哪里；遇到不懂的先查工具书，再把疑问带进课堂；作文写完至少改一次，删掉空话，补上细节。阅读留下痕迹，提问追到根处，修改落实到字句，积累才会成为自己的本领。",
+          "inputSha256": "298ec59f7bd4be33af0beede20b1a5b8cec98c0551efe5abd88c578c40372957",
+          "inputContextSha256": "77f38581a1e42baccf3eb3ff2144c1269db8914c16b9a1d7d3cc9c8763557b7a",
+          "inputPresentationSha256": "9b7512001f8d34bfd8d98353555ec608213726efe9fca20251803cd67fc17eba",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2014-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-writing-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "学语文，我有三字诀：读、记、写。读——每天晨读二十分钟，古诗文读出声，读熟了自然就懂；记——备一个摘抄本，好词佳句、错字病句随手记，周末翻一遍；写——每周一篇随笔，哪怕三百字，写真话，写完自己改一遍。三年下来，我的体会是：语文没有捷径，功夫全在平时。多读一页，多记一句，多写一段，日积月累，水到渠成。",
+          "inputSha256": "298ec59f7bd4be33af0beede20b1a5b8cec98c0551efe5abd88c578c40372957",
+          "inputContextSha256": "77f38581a1e42baccf3eb3ff2144c1269db8914c16b9a1d7d3cc9c8763557b7a",
+          "inputPresentationSha256": "9b7512001f8d34bfd8d98353555ec608213726efe9fca20251803cd67fc17eba",
+          "generatedAt": "2026-10-03T09:50:01.926932+00:00",
+          "uncertainties": [
+            "三题任选其一即可，此处按要求对每个id各给出一篇原创示例。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-writing-result.json",
+            "inputPromptSha256": "340fdb2e044345c809992a9afcdf642d6fb9e7f80aeaa85e54ec6a60144da6db",
+            "responseStreamSha256": "ca4ef2108d658d2853196bfca612e26830d5322514e3458196e1bd08a808650a",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "298ec59f7bd4be33af0beede20b1a5b8cec98c0551efe5abd88c578c40372957",
+      "inputContextSha256": "77f38581a1e42baccf3eb3ff2144c1269db8914c16b9a1d7d3cc9c8763557b7a",
+      "inputPresentationSha256": "9b7512001f8d34bfd8d98353555ec608213726efe9fca20251803cd67fc17eba",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两份均具可执行学习方法和易记口诀，字数合限。Claude读熟了自然就懂的断言过度，熟读仍需理解与查证；默认本人读问改版本。第一人称均为虚构作答例而非用户经历。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2014-weixiezuo:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "家长送考无须一概赞成或反对。路远、交通不便时，送考能提供实际帮助；孩子熟悉路线、愿意独自赴考，也应得到尊重。真正的支持，是提前商量安排，送一句平常的鼓励，不把焦虑变成反复叮嘱。考场外的陪伴应让孩子心定，而不是让他觉得背负着全家的胜负。",
+          "inputSha256": "6008bc6651c2f7f4511e0ccc115cc2ea0753d998e9ba8f0a821214bb4d81a33c",
+          "inputContextSha256": "f99c2060971ceed4c42ad1e770ae14541b2451fcef512c897336f645413080d0",
+          "inputPresentationSha256": "d5292757873b4ca6a65bac40bf01b1cdb491d0634567ddb6b3f773d54b90d4aa",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2014-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-writing-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "我认为“家长送考”应当理性看待：不必一概否定，但不宜过度。家长送考出于关爱，路上有人照应，可防证件遗漏、交通延误，也能给孩子一份安心。但若全家出动，守在考场外反复叮嘱，反而会放大紧张，还造成考点周边拥堵。十八岁的我们，应当学会独自面对人生的考场。送到路口，一句“去吧”，便是最好的支持。",
+          "inputSha256": "6008bc6651c2f7f4511e0ccc115cc2ea0753d998e9ba8f0a821214bb4d81a33c",
+          "inputContextSha256": "f99c2060971ceed4c42ad1e770ae14541b2451fcef512c897336f645413080d0",
+          "inputPresentationSha256": "d5292757873b4ca6a65bac40bf01b1cdb491d0634567ddb6b3f773d54b90d4aa",
+          "generatedAt": "2026-10-03T09:50:01.926932+00:00",
+          "uncertainties": [
+            "三题任选其一即可，此处按要求对每个id各给出一篇原创示例。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-writing-result.json",
+            "inputPromptSha256": "340fdb2e044345c809992a9afcdf642d6fb9e7f80aeaa85e54ec6a60144da6db",
+            "responseStreamSha256": "ca4ef2108d658d2853196bfca612e26830d5322514e3458196e1bd08a808650a",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "6008bc6651c2f7f4511e0ccc115cc2ea0753d998e9ba8f0a821214bb4d81a33c",
+      "inputContextSha256": "f99c2060971ceed4c42ad1e770ae14541b2451fcef512c897336f645413080d0",
+      "inputPresentationSha256": "d5292757873b4ca6a65bac40bf01b1cdb491d0634567ddb6b3f773d54b90d4aa",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两份均对送考作有条件判断，字数合限。Claude可防交通延误、全家送考造成拥堵为一般论述，不能作已验证因果或保证；默认本人按距离/意愿提供支持的版本。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2014-weixiezuo:3",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "十八岁，我把昨日叠成一只纸船，放进清晨的河流。它载着做错的题、没说出口的感谢，也载着雨后仍亮着的窗。我不再请风替我决定方向：岸边的人渐渐远了，他们给我的光，却正从掌心照向前路。",
+          "inputSha256": "12b5a578ac847bc6f6710747fa1604e611e1e0fc2d619311308de050613ad244",
+          "inputContextSha256": "fdbf8abf014254b25738d38d1206740dee5950650569f3939415606d43534caa",
+          "inputPresentationSha256": "d70deb6f3b51ce7ebb3a560b4ad4c73093b673ed93aa64fbda1bee914e78ce10",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2014-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-writing-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "十八岁，是一扇刚刚推开的窗。窗内，是堆成小山的书卷，是深夜台灯下母亲端来的那杯温牛奶；窗外，是六月滚烫的风，是一条尚未命名的远路。我曾怕它来得太快，如今却想对它说声谢谢——谢谢你让我哭过、拼过、相信过。再见了，我的十八岁；你好，带着这束光继续赶路的我。",
+          "inputSha256": "12b5a578ac847bc6f6710747fa1604e611e1e0fc2d619311308de050613ad244",
+          "inputContextSha256": "fdbf8abf014254b25738d38d1206740dee5950650569f3939415606d43534caa",
+          "inputPresentationSha256": "d70deb6f3b51ce7ebb3a560b4ad4c73093b673ed93aa64fbda1bee914e78ce10",
+          "generatedAt": "2026-10-03T09:50:01.926932+00:00",
+          "uncertainties": [
+            "三题任选其一即可，此处按要求对每个id各给出一篇原创示例。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-writing-result.json",
+            "inputPromptSha256": "340fdb2e044345c809992a9afcdf642d6fb9e7f80aeaa85e54ec6a60144da6db",
+            "responseStreamSha256": "ca4ef2108d658d2853196bfca612e26830d5322514e3458196e1bd08a808650a",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "12b5a578ac847bc6f6710747fa1604e611e1e0fc2d619311308de050613ad244",
+      "inputContextSha256": "fdbf8abf014254b25738d38d1206740dee5950650569f3939415606d43534caa",
+      "inputPresentationSha256": "d70deb6f3b51ce7ebb3a560b4ad4c73093b673ed93aa64fbda1bee914e78ce10",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两份完整抒情文字字数合限，纸船/窗与光意象连贯。Claude母亲牛奶等为虚构场景，纪念十八岁可含回望，但不当作用户生活记录。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2014-dazuowen:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "让老规矩在今天站稳脚跟\n\n一些被淡忘的北京老规矩重新出现在网络上，引来热议，说明人们在快速变化的生活中，仍希望找到安顿言行的准则。但一种规矩流传得久，并不等于它适合今天的一切情境。面对老规矩，我们既不必因其古老便全盘遵从，也不能因为时代变了就一笔抹去。真正有价值的传承，是问清它为什么存在，再判断怎样把其中的善意落实到今天。\n\n出门回家要与长辈打招呼，看似只是一个微小动作，背后却是对家人牵挂的回应。今天，一家人未必时时住在同一屋檐下，一句当面的告知，可以变为到达后报平安的信息。方式变了，体谅他人的心意没有变。如果只强求晚辈在某个时刻说某句固定的话，却不关心彼此真实的需要，规矩便只剩下外壳。反过来，当长辈出门时也愿意向家人说明行程，尊重就从单向的要求变成相互的关怀，这样的老规矩才会获得新的生命。\n\n吃菜不许满盘子乱挑、作客不随便动主人的东西，同样值得保留。它们提醒人们：自己的方便和喜好，不能越过别人的边界。生活在城市里，我们每天都与陌生人共享空间，这份体谅尤其重要。把它从饭桌与客厅延伸出去，便是在公共场所控制音量，借用物品先征求同意，表达意见时也给别人开口的机会。老规矩不再只是记忆中的训诫，而成为人与人可以共同遵守的日常尺度。\n\n然而，并非所有旧要求都能照搬。不许管闲事儿若是告诫人少打探别人的私生活，当然有其道理；若被理解成遇到困难与不公也一律转身走开，就值得反省。公共生活需要守边界，也需要在别人求助时提供力所能及的帮助。我们可以先了解情况，以合适的方式联系能够处理问题的人，而不是在莽撞介入与冷漠旁观之间只选其一。评判一条规矩，关键在它能否保护人的尊严、减轻他人的困境，而不是它曾被重复过多少遍。\n\n笑不露齿、话不高声，也应分开看待。在需要安静的地方放低声音，是对共同秩序的尊重；但若以固定的举止束缚每个人的自然表达，把开怀的笑一概视为失礼，便失去了体谅人的本意。礼貌不应成为压抑个性的借口，活泼也不能成为打扰他人的理由。把情境、分寸与相互尊重讲明白，比只说一句以前都这样更有说服力。\n\n老规矩重新受到关注，也提醒我们，传承不能仅靠把条目贴在网上。家长要求孩子勤俭，自己是否珍惜物品；长辈教导晚辈守信，自己能否兑现小小的承诺；老师倡导尊重，是否也认真倾听不同意见。规矩只有在平等的实践中，才能从外在约束变成内心认同。否则，背得再熟，也可能只留下服从的姿态。\n\n时代会改变生活的器物与速度，却不会让体谅、诚实和责任失去意义。我们所要守住的，是这些能够改善共同生活的价值；我们愿意改变的，是不再合宜的形式与缺少道理的限制。让老规矩经过思考和实践，成为今天的人能够理解、愿意遵守的准则，它才真正站稳了脚跟，也才有可能走向明天。",
+          "inputSha256": "5b70594fab21c4c1607b498f4a1dcb912df2538da8b47603eb37ae6cf7775c87",
+          "inputContextSha256": "f36ed19dc55949d3b080d7c10539e33499e6d3b10a6988813073270f22f23cb6",
+          "inputPresentationSha256": "e0ebc7b120a9eae5ddfa0415ba210478ec063576b2a53606d30542ab15565720",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2014-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-writing-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "老规矩里的新滋味\n\n网友把“出门回家都要跟长辈打招呼”“吃菜不许满盘子乱挑”这些老规矩贴到网上，竟引来一片热议。有人感慨“这不就是我姥姥天天念叨的吗”，有人不屑“都什么年代了”。在我看来，老规矩被重新提起，不是一次简单的怀旧，而是人们在匆忙的日子里，回头寻找一种久违的分寸感。\n\n老规矩之所以动人，是因为它把大道理化进了小日子。“出门回家打招呼”，说的是对长辈的牵挂与敬重；“吃菜不许满盘子乱挑”，讲的是顾及同桌人的感受；“作客时不许随便动主人家的东西”，守的是人与人之间的边界；“忠厚传世，勤俭持家”，则是一个家庭立身的根本。这些规矩没有写进法律条文，却靠一双筷子、一声问候、一个站姿，把敬、让、俭、诚种进了孩子心里。古人说“不以规矩，不能成方圆”，规矩其实是修养的脚手架：小时候觉得是束缚，长大了才发现，它早已成了自己的模样。\n\n老规矩被淡忘，有其缘由。四合院变成了单元楼，大家庭变成了小家庭，一家人围坐吃饭的时候少了，各自低头看手机的时候多了；生活节奏快了，人们讲效率、讲个性，觉得规矩是“老古董”。可是淡忘的代价也随之而来：地铁里高声外放，餐桌上只顾自己，公共场合旁若无人……当这些景象让人皱眉时，人们才想起，原来奶奶当年那句“话不高声”并不多余。老规矩重新受到关注，恰恰说明我们的内心需要它，社会的文明需要它。\n\n当然，重提不等于照搬。“笑不露齿”曾是对女子的苛求，今天的姑娘尽可以开怀大笑；“不许管闲事儿”若被理解为“事不关己，高高挂起”，那么老人摔倒无人扶、不平之事无人问，就成了它的恶果。对待老规矩，应当像淘米一样，淘去沙砾，留下米粒：束缚人性、有违平等的，让它留在过去；教人敬人、自律、勤俭、厚道的，则要接过来，传下去。我们甚至还可以添上“新规矩”：排队不加塞，垃圾要分类，网上发言不伤人。规矩的形式会变，那份“心中有他人”的内核不变。\n\n更要紧的是，规矩不能只停留在网上的点赞和转发里。热议容易，践行却难。我想起爷爷，他一辈子没讲过什么大道理，只是每次吃饭总等全家人到齐才动筷，每次出门总说一声“我走了”。那时我嫌他啰嗦，如今我即将离家远行，才懂得那一声招呼里，有让家人安心的温度。规矩从来不是贴在墙上的条文，而是一代人做给下一代人看的样子。\n\n老规矩里有新滋味。它提醒我们：走得再快，也别丢了做人的分寸；时代再新，也要有立得住的根。愿我们这一代人，既能笑得开怀，也能站得端正；既敢于管该管的“闲事”，也懂得守住本分——让老规矩在新日子里，长出新的枝叶。",
+          "inputSha256": "5b70594fab21c4c1607b498f4a1dcb912df2538da8b47603eb37ae6cf7775c87",
+          "inputContextSha256": "f36ed19dc55949d3b080d7c10539e33499e6d3b10a6988813073270f22f23cb6",
+          "inputPresentationSha256": "e0ebc7b120a9eae5ddfa0415ba210478ec063576b2a53606d30542ab15565720",
+          "generatedAt": "2026-10-03T09:50:01.926932+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-writing-result.json",
+            "inputPromptSha256": "340fdb2e044345c809992a9afcdf642d6fb9e7f80aeaa85e54ec6a60144da6db",
+            "responseStreamSha256": "ca4ef2108d658d2853196bfca612e26830d5322514e3458196e1bd08a808650a",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "5b70594fab21c4c1607b498f4a1dcb912df2538da8b47603eb37ae6cf7775c87",
+      "inputContextSha256": "f36ed19dc55949d3b080d7c10539e33499e6d3b10a6988813073270f22f23cb6",
+      "inputPresentationSha256": "e0ebc7b120a9eae5ddfa0415ba210478ec063576b2a53606d30542ab15565720",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两篇完整原创议论例正文汉字超过700，围绕重提老规矩、继承合理价值和修正不合时宜形式。Claude爷爷饭桌故事为虚构，不是用户经历；四合院到单元楼导致规矩淡忘、闲事规矩导致无人扶等是论证推测，未核实社会因果。默认本人版本，原始Claude全文保留。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
+      "currentVersion": "gpt_6_astra"
     }
   ],
   "releaseBlockers": [
@@ -30877,7 +32666,15 @@
         "2014-weixiezuo",
         "2014-dazuowen"
       ],
-      "detail": "EOL nine public retypeset images are not an authenticated eight-page original scan: images1/7/8 have clipped right edges, image5 explicitly omits all three poetry questions. Sina manually typed transcription has different poetry options and other mistakes. Gzywtk transcription also has errors. Original scan, answer-card square layout, publication chain and precise print marks remain open. 2014-feilian duplicates language questions1-4, while entire original photovoltaic reading15-17 is missing from GK and FLX. Preserve all old identities. Separate supplemental source inputs capture missing questions for independent review; insertion, consumer mappings, counts and scoring compatibility are a required later atomic change before any full-paper completion or release claim. 2014-moxie is unsupported historical supplemental exercise, not original question14; attribution now explicit, historical score8 preserved. Real question12 is combined with13 in guwen5; original answer-card square layout is still unavailable. Composite scores: guwen5 stores3 but bundles3+12; yuyanjichu4 stores2 but bundles original4/5/6i/6ii/7i/7ii worth2+3+2+2+3+2. Original7iii appears separately in honglou1 worth2. Preserve IDs and old scores; no one-letter or flat multiple-choice grading of composites. Poetry quotation variants 尚家家/尚豪家, 莫夸/莫嗟, 独擅/留擅; E author and dynasty vary 王象巽/王象春 and清/明. Current question retains reported清 with corrected name from Sina, but authenticated print attribution and source historical fact need separate check. Source wording B知何处 and note禁消受 corrected; original print not certified. All reading units conservatively reference-exposed through web search snippets and reading legacy FLX mapping with its first4 answers. Writing examples not exposed. No model outputs may be presented as original-paper authority."
+      "detail": "EOL nine public retypeset images are not an authenticated eight-page original scan: images1/7/8 have clipped right edges, image5 explicitly omits all three poetry questions. Sina manually typed transcription has different poetry options and other mistakes. Gzywtk transcription also has errors. Original scan, answer-card square layout, publication chain and precise print marks remain open. 2014-feilian duplicates language questions1-4, while entire original photovoltaic reading15-17 is missing from GK and FLX. Preserve all old identities. Separate supplemental source inputs capture missing questions for independent review; insertion, consumer mappings, counts and scoring compatibility are a required later atomic change before any full-paper completion or release claim. 2014-moxie is unsupported historical supplemental exercise, not original question14; attribution now explicit, historical score8 preserved. Real question12 is combined with13 in guwen5; original answer-card square layout is still unavailable. Composite scores: guwen5 stores3 but bundles3+12; yuyanjichu4 stores2 but bundles original4/5/6i/6ii/7i/7ii worth2+3+2+2+3+2. Original7iii appears separately in honglou1 worth2. Preserve IDs and old scores; no one-letter or flat multiple-choice grading of composites. Poetry quotation variants 尚家家/尚豪家, 莫夸/莫嗟, 独擅/留擅; E author and dynasty vary 王象巽/王象春 and清/明. Current question retains reported清 with corrected name from Sina, but authenticated print attribution and source historical fact need separate check. Source wording B知何处 and note禁消受 corrected; original print not certified. All reading units conservatively reference-exposed through web search snippets and reading legacy FLX mapping with its first4 answers. Writing examples not exposed. No model outputs may be presented as original-paper authority. Completed29 full root answers followed by two finite independent Claude batches; all29 Claude bodies individually read. Legacy26 reviewed with moxie attribution disputed; supplemental3 retained separately with original16AD/CD disputed and no grading key. Wang Xiangchun Ming attribution corroborated by academic source, not by an original-paper scan. Scientific-history claims in photovoltaic material are not certified; DOE records modern silicon PV cells in1954, earlier than its1970s framing. Formal supplemental integration and all original source/mark/scoring gates remain open.",
+      "detailHistory": [
+        {
+          "at": "2026-10-03T09:52:20.429Z",
+          "detail": "EOL nine public retypeset images are not an authenticated eight-page original scan: images1/7/8 have clipped right edges, image5 explicitly omits all three poetry questions. Sina manually typed transcription has different poetry options and other mistakes. Gzywtk transcription also has errors. Original scan, answer-card square layout, publication chain and precise print marks remain open. 2014-feilian duplicates language questions1-4, while entire original photovoltaic reading15-17 is missing from GK and FLX. Preserve all old identities. Separate supplemental source inputs capture missing questions for independent review; insertion, consumer mappings, counts and scoring compatibility are a required later atomic change before any full-paper completion or release claim. 2014-moxie is unsupported historical supplemental exercise, not original question14; attribution now explicit, historical score8 preserved. Real question12 is combined with13 in guwen5; original answer-card square layout is still unavailable. Composite scores: guwen5 stores3 but bundles3+12; yuyanjichu4 stores2 but bundles original4/5/6i/6ii/7i/7ii worth2+3+2+2+3+2. Original7iii appears separately in honglou1 worth2. Preserve IDs and old scores; no one-letter or flat multiple-choice grading of composites. Poetry quotation variants 尚家家/尚豪家, 莫夸/莫嗟, 独擅/留擅; E author and dynasty vary 王象巽/王象春 and清/明. Current question retains reported清 with corrected name from Sina, but authenticated print attribution and source historical fact need separate check. Source wording B知何处 and note禁消受 corrected; original print not certified. All reading units conservatively reference-exposed through web search snippets and reading legacy FLX mapping with its first4 answers. Writing examples not exposed. No model outputs may be presented as original-paper authority.",
+          "evidence": "answers-six-sites-20261002/REVIEW-2014-SOURCE.md"
+        }
+      ],
+      "evidence": "answers-six-sites-20261002/REVIEW-2014.md"
     }
   ]
 }
