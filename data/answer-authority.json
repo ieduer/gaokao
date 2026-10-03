@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261002-reviewed-247-qualified-2019",
+  "revision": "20261002-reviewed-270-qualified-2018",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -1540,9 +1540,9 @@
       "correctOptions": [
         "C"
       ],
-      "explanation": "本题细分词类有历史分歧；C的结构差异明确。胜和其的精细标签仍不作独立排他词性练习。",
+      "explanation": "C。此之谓也之标记前置宾语，若白垩之与黑漆之不标记提宾；后一处是名词并列对举结构，不宜不加说明地套用主谓间取独。胜的尽、全部义在教育部重编国语辞典及汉典均列副词，Claude此标签有辞书依据；其的代指/指示义须结合语境，不以现代译语它的与那个机械判D。旧分歧及旧题面全文保存在history，正确标记下Claude此次选C。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:03:23.208Z",
+      "reviewedAt": "2026-10-03T06:25:49.467Z",
       "sources": [
         {
           "type": "source_material",
@@ -1561,94 +1561,269 @@
           "type": "published_analysis",
           "title": "2018北京卷当年公开解析，第9题C（非官方）",
           "url": "https://www.sohu.com/a/236461384_655073"
+        },
+        {
+          "type": "public_retypeset_exam",
+          "title": "2018北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL公开参考，来源非官方链，逐项审查而非照录",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        },
+        {
+          "type": "dictionary",
+          "title": "教育部重编国语辞典：胜",
+          "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=9052&la=0&powerMode=0"
+        },
+        {
+          "type": "dictionary",
+          "title": "汉典：胜",
+          "url": "https://zdic.net/hans/%E8%83%9C"
+        },
+        {
+          "type": "dictionary",
+          "title": "汉典：之",
+          "url": "https://zdic.net/hans/%E4%B9%8B"
+        },
+        {
+          "type": "dictionary",
+          "title": "汉典：其",
+          "url": "https://zdic.net/hans/%E5%85%B6"
         }
       ],
       "currentVersion": "gpt_6_astra",
       "modelAnswers": {
         "gpt_6_astra": {
           "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 完整附注复核",
-          "text": "答案取C。‘此之谓’把宾语此前置，之是这一结构的标志；‘白垩之与黑漆’把白与黑构成对举整体，之没有标记前置宾语。A项日均指日常时日，B项胜均表示尽、穷尽。D项两个其都回指语境中的对象、限定后面的名词：前一处指前文比作秋毫的微小征兆，后一处指被救的人。将其秋毫机械拆成领属、再与其人判异，容易忽略指代对象及本题比较粒度。",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选C。此之谓也的之置于前置宾语此与谓之间，起提宾标志作用，意思是说的就是这个；若白垩之与黑漆的之用于名词并列结构之间作连接、舒缓语气，不表示宾语前置。A两个日均指每天、每日所做之事，B两个胜都表示尽，D两个其在各自语境中都作称代、指示：指那些微小征兆、指那个获救的人。对D的指称范围可以作更细讨论，但题目在此比较的基本用法不以现代译语中是否出现它的作为机械判据。",
           "inputSha256": "6b7b3e399444cad52c3b8d5f8f44679fe021d32e5eb1297c854e4675968fab0e",
-          "generatedAt": "2026-10-03T03:03:23.208Z",
+          "inputContextSha256": "a005c359182fe5d215a95242f9d63d058b30571ffdf66bcf13b7cb2769f7fccc",
+          "inputPresentationSha256": "04e173991c3c91d5ffc1fabdfa085ce1b30d26c5d1fedf89244f3d942ed8a9b1",
+          "generatedAt": "2026-10-03T06:14:09.451Z",
           "provenance": {
             "kind": "codex_turn",
-            "stage": "source_review_reaffirmation",
-            "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
-            "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "priorAnswerSha256": "f08a74d451700439c28d4140ffd7dbb72da30bbb11766701d57704cf8d86070f",
-            "annotationEffect": "完整两则六注已读；题干胜是尽，与材料开头胜为超过语境不同，不因同字注解机械套用。且注的转折及秋毫微兆支持原辨析。"
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2018.json",
+            "evidence": "answers-six-sites-20261002/root-2018-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2018-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
           },
-          "inputContextSha256": "a005c359182fe5d215a95242f9d63d058b30571ffdf66bcf13b7cb2769f7fccc"
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "C。此之谓也之标记前置宾语，若白垩之与黑漆之不标记提宾；后一处是名词并列对举结构，不宜不加说明地套用主谓间取独。胜的尽、全部义在教育部重编国语辞典及汉典均列副词，Claude此标签有辞书依据；其的代指/指示义须结合语境，不以现代译语它的与那个机械判D。旧分歧及旧题面全文保存在history，正确标记下Claude此次选C。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          }
         },
         "claude_opus_5_5": {
           "modelId": "claude-opus-5-5",
           "label": "Claude Opus 5.5 来源复核后修订",
-          "text": "答案：D。\n选D（不同的一项）。A项：“善日者王”“王者敬日”的“日”都是名词，指“每一天”，相同。B项：“不可胜悔”“不可胜日志”的“胜”都是“尽”，相同。C项：“此之谓也”的“之”是助词，作宾语前置的标志；“若白垩之与黑漆”的“之”也是助词，无实义。两者同为不译的结构助词，命题上按相同处理。D项：“察其秋毫”的“其”是代词，“它们的”（治乱存亡的）；“其人拜之以牛”的“其”是指示代词，“那（个）”，意义和用法不同。",
+          "text": "答案：C。\n选C。A项相同，两个“日”都是名词，指每一天（的事务）：“善日者王”即善于抓紧每一天的人能称王，“王者敬日”即称王的人重视每一天。B项相同，两个“胜”都是副词，意为“尽、完”：“不可胜悔”即后悔不完，“不可胜日志”即按日记载也记不完。C项不同，“此之谓也”的“之”是宾语前置的标志，无实义；“若白垩之与黑漆”的“之”是用在主谓（或并列成分）之间的结构助词，起舒缓语气、取消独立性的作用。D项基本相同，两个“其”都是代词：“察其秋毫”的“其”指代治乱存亡，“其人拜之以牛”的“其”指那个（被救的人）。",
           "inputSha256": "6b7b3e399444cad52c3b8d5f8f44679fe021d32e5eb1297c854e4675968fab0e",
           "inputContextSha256": "a005c359182fe5d215a95242f9d63d058b30571ffdf66bcf13b7cb2769f7fccc",
-          "generatedAt": "2026-10-03T03:01:54.821132+00:00",
+          "inputPresentationSha256": "04e173991c3c91d5ffc1fabdfa085ce1b30d26c5d1fedf89244f3d942ed8a9b1",
+          "generatedAt": "2026-10-03T06:16:18.735203+00:00",
           "uncertainties": [
-            "C项两个“之”语法功能细分并不完全相同（一为宾语前置标志，一为用在主语与介词短语之间），若从严，C也可视为不同；综合比较，D项一为人称领属、一为指示，差别更明确，故选D。"
-          ],
-          "selectedOptions": [
-            "D"
-          ],
-          "assessment": {
-            "matchesConclusion": false,
-            "reviewNote": "本次D不采纳：同为无实义的助词不等于句法功能相同；前宾语前置、后非该结构，保留C。",
-            "evidence": "answers-six-sites-20261002/CONTEXT-RECONCILIATION.md",
-            "reviewedAt": "2026-10-03T03:18:36.452154+00:00"
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
-            "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
-            "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
-            "stage": "source_review"
-          }
-        },
-        "gpt_6_astra_before_context_review": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
-          "text": "答案取C。‘此之谓’把宾语此前置，之是这一结构的标志；‘白垩之与黑漆’把白与黑构成对举整体，之没有标记前置宾语。A项日均指日常时日，B项胜均表示尽、穷尽。D项两个其都回指语境中的对象、限定后面的名词：前一处指前文比作秋毫的微小征兆，后一处指被救的人。将其秋毫机械拆成领属、再与其人判异，容易忽略指代对象及本题比较粒度。",
-          "inputSha256": "6b7b3e399444cad52c3b8d5f8f44679fe021d32e5eb1297c854e4675968fab0e",
-          "generatedAt": "2026-10-03T00:07:56.018Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
-          }
-        },
-        "claude_opus_5_5_initial": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答（修订前存档）",
-          "text": "答案：C。\nA项相同。“善日者王”指善于把握每一天的人能称王，“王者敬日”指称王者珍惜每一天，两个“日”都是名词，指每一天、日积之功。B项相同。“不可胜悔”是后悔不完，“不可胜日志”是不能每天记载完，两个“胜”都是“尽”。C项不同。“此之谓也”中，“之”是宾语前置的标志，即“谓此也”；“若白垩之与黑漆”中，“之”用在“白垩与黑漆”之间，取消句子独立性。D项基本相同。“察其秋毫”中，“其”是代词，指治乱存亡的开端（“它的”）；“其人拜之以牛”中，“其”是代词，指那个被救的人。两者都是代词。故选C。",
-          "inputSha256": "6b7b3e399444cad52c3b8d5f8f44679fe021d32e5eb1297c854e4675968fab0e",
-          "generatedAt": "2026-10-03T00:39:17.649838+00:00",
-          "uncertainties": [
-            "D项两个“其”一个偏人称代词（它的），一个偏指示代词（那个），细分也有差别。但两者都属代词，差别远不如C项明显，所以仍选C。"
+            "D项两个“其”虽同为代词，但前者近于“它的”、后者近于“那个”，细分有别；综合比较，C项两个“之”用法差别最明确，故选C。"
           ],
           "selectedOptions": [
             "C"
           ],
           "assessment": {
             "matchesConclusion": true,
-            "note": "答案C与核查结论相合；“白垩之与黑漆”不宜不加说明地归为主谓间取独。判定重点是它不标记前置宾语。"
+            "review": "reviewed_with_qualifications",
+            "note": "C。此之谓也之标记前置宾语，若白垩之与黑漆之不标记提宾；后一处是名词并列对举结构，不宜不加说明地套用主谓间取独。胜的尽、全部义在教育部重编国语辞典及汉典均列副词，Claude此标签有辞书依据；其的代指/指示义须结合语境，不以现代译语它的与那个机械判D。旧分歧及旧题面全文保存在history，正确标记下Claude此次选C。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
           },
           "provenance": {
             "kind": "cli_response",
             "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
-            "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
-            "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
-            "stage": "independent"
-          },
-          "inputContextSha256": "976b7a874ab378e1b306a1a8831ae02df41902ae1d5850d3a3ee357cf99c654b"
+            "evidence": "answers-six-sites-20261002/claude-2018-reading-result.json",
+            "inputPromptSha256": "2344782243c8123652f37baa506323e12ede339dca1b5a3a6bce9ff808fdf609",
+            "responseStreamSha256": "382a55b7a7abb5e2e5be73158c5f055d6fdc33c4df4d5d298dc82b18ca4e9236",
+            "stage": "source_review"
+          }
         }
       },
-      "inputContextSha256": "a005c359182fe5d215a95242f9d63d058b30571ffdf66bcf13b7cb2769f7fccc"
+      "inputContextSha256": "a005c359182fe5d215a95242f9d63d058b30571ffdf66bcf13b7cb2769f7fccc",
+      "history": [
+        {
+          "source": {
+            "id": "2018-guwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "（1）积微，月不胜【1】日，时不胜月，岁不胜时。凡人好傲慢小事，大事至然后兴之务之，如是则常不胜夫敦比【2】于小事者矣。是何也？则小事之至也数，其悬【3】日也博，其为积也大。大事之至也稀，其悬日也浅，其为积也小。故善日者王，善时者霸，补漏者危，大荒者亡。故王者敬日，霸者敬时，仅存之国危而后戚之，亡国至亡而后知亡，至死而后知死，亡国之祸败不可胜悔也。霸者之善著焉，可以时记也，王者之功名，不可胜日志也。财物资宝以大为重，政教功名反是，能积微者速成。《诗》曰：“德輶【4】如毛，民鲜克举之。”此之谓也。\n\n（取材于《荀子》）"
+              },
+              {
+                "key": "material2",
+                "label": "材料2",
+                "text": "（2）使治乱存亡若高山之与深谿，若白垩之与黑漆，则无所用智，虽愚犹可矣。且【1】治乱存亡则不然。如可知，如可不知；如可见，如可不见。故智士贤者相与积心愁虑以求之，犹尚有管叔、蔡叔之事【2】与东夷八国不听之谋。故治乱存亡，其始若秋毫。察其秋毫，则大物不过矣。\n\n鲁国之法，鲁人为人臣妾于诸侯，有能赎之者，取其金于府。子贡赎鲁人于诸侯，来而让，不取其金。孔子曰：“赐失之矣。自今以往，鲁人不赎人矣。”取其金，则无损于行；不取其金，则不复赎人矣。子路拯溺者，其人拜之以牛，子路受之。孔子曰：“鲁人必拯溺者矣。”孔子见之以细，观化远也。\n\n（取材于《吕氏春秋》）"
+              }
+            ],
+            "topic": "（一）阅读下面两则文言文，完成8—12题。（共19分）",
+            "annotation": "注释：【1】胜：超过。本句意思是，月不如日重要。【2】敦比：注重从事。本句意思是，像这样，那么只顾处理大事的就不如注重从事小事的。【3】悬：悬挂，此处意思是存在。【4】輶：分量轻。\n注释：【1】且：连词，表示转折。【2】管叔、蔡叔之事：指叛逆之事。",
+            "annotations": [
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 8,
+                "end": 9,
+                "anchor": "胜"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 38,
+                "end": 39,
+                "anchor": "之"
+              },
+              {
+                "qIndex": 2,
+                "material": "material2",
+                "type": "dot",
+                "start": 110,
+                "end": 111,
+                "anchor": "其"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 2,
+                "id": "q2",
+                "text": "9．下列各组句中加点词的意义和用法，不同的一项是（3分）\nA．故善*日*者王 王者敬*日*\nB．亡国之祸败不可*胜*悔也 不可*胜*日志也\nC．此*之*谓也 若白垩*之*与黑漆\nD．察*其*秋毫 *其*人拜之以牛",
+                "score": 3
+              }
+            ]
+          },
+          "review": {
+            "id": "2018-guwen:2",
+            "inputSha256": "6b7b3e399444cad52c3b8d5f8f44679fe021d32e5eb1297c854e4675968fab0e",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "C"
+            ],
+            "explanation": "本题细分词类有历史分歧；C的结构差异明确。胜和其的精细标签仍不作独立排他词性练习。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:03:23.208Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内完整题目及相关材料"
+              },
+              {
+                "type": "dictionary_revision",
+                "title": "文言站2026-09-16-r3词典校订，保留争议"
+              },
+              {
+                "type": "dictionary",
+                "title": "汉典：之",
+                "url": "https://zdic.net/hans/%E4%B9%8B"
+              },
+              {
+                "type": "published_analysis",
+                "title": "2018北京卷当年公开解析，第9题C（非官方）",
+                "url": "https://www.sohu.com/a/236461384_655073"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "答案取C。‘此之谓’把宾语此前置，之是这一结构的标志；‘白垩之与黑漆’把白与黑构成对举整体，之没有标记前置宾语。A项日均指日常时日，B项胜均表示尽、穷尽。D项两个其都回指语境中的对象、限定后面的名词：前一处指前文比作秋毫的微小征兆，后一处指被救的人。将其秋毫机械拆成领属、再与其人判异，容易忽略指代对象及本题比较粒度。",
+                "inputSha256": "6b7b3e399444cad52c3b8d5f8f44679fe021d32e5eb1297c854e4675968fab0e",
+                "generatedAt": "2026-10-03T03:03:23.208Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "f08a74d451700439c28d4140ffd7dbb72da30bbb11766701d57704cf8d86070f",
+                  "annotationEffect": "完整两则六注已读；题干胜是尽，与材料开头胜为超过语境不同，不因同字注解机械套用。且注的转折及秋毫微兆支持原辨析。"
+                },
+                "inputContextSha256": "a005c359182fe5d215a95242f9d63d058b30571ffdf66bcf13b7cb2769f7fccc"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "答案：D。\n选D（不同的一项）。A项：“善日者王”“王者敬日”的“日”都是名词，指“每一天”，相同。B项：“不可胜悔”“不可胜日志”的“胜”都是“尽”，相同。C项：“此之谓也”的“之”是助词，作宾语前置的标志；“若白垩之与黑漆”的“之”也是助词，无实义。两者同为不译的结构助词，命题上按相同处理。D项：“察其秋毫”的“其”是代词，“它们的”（治乱存亡的）；“其人拜之以牛”的“其”是指示代词，“那（个）”，意义和用法不同。",
+                "inputSha256": "6b7b3e399444cad52c3b8d5f8f44679fe021d32e5eb1297c854e4675968fab0e",
+                "inputContextSha256": "a005c359182fe5d215a95242f9d63d058b30571ffdf66bcf13b7cb2769f7fccc",
+                "generatedAt": "2026-10-03T03:01:54.821132+00:00",
+                "uncertainties": [
+                  "C项两个“之”语法功能细分并不完全相同（一为宾语前置标志，一为用在主语与介词短语之间），若从严，C也可视为不同；综合比较，D项一为人称领属、一为指示，差别更明确，故选D。"
+                ],
+                "selectedOptions": [
+                  "D"
+                ],
+                "assessment": {
+                  "matchesConclusion": false,
+                  "reviewNote": "本次D不采纳：同为无实义的助词不等于句法功能相同；前宾语前置、后非该结构，保留C。",
+                  "evidence": "answers-six-sites-20261002/CONTEXT-RECONCILIATION.md",
+                  "reviewedAt": "2026-10-03T03:18:36.452154+00:00"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
+                  "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
+                  "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
+                  "stage": "source_review"
+                }
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "答案取C。‘此之谓’把宾语此前置，之是这一结构的标志；‘白垩之与黑漆’把白与黑构成对举整体，之没有标记前置宾语。A项日均指日常时日，B项胜均表示尽、穷尽。D项两个其都回指语境中的对象、限定后面的名词：前一处指前文比作秋毫的微小征兆，后一处指被救的人。将其秋毫机械拆成领属、再与其人判异，容易忽略指代对象及本题比较粒度。",
+                "inputSha256": "6b7b3e399444cad52c3b8d5f8f44679fe021d32e5eb1297c854e4675968fab0e",
+                "generatedAt": "2026-10-03T00:07:56.018Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
+                }
+              },
+              "claude_opus_5_5_initial": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答（修订前存档）",
+                "text": "答案：C。\nA项相同。“善日者王”指善于把握每一天的人能称王，“王者敬日”指称王者珍惜每一天，两个“日”都是名词，指每一天、日积之功。B项相同。“不可胜悔”是后悔不完，“不可胜日志”是不能每天记载完，两个“胜”都是“尽”。C项不同。“此之谓也”中，“之”是宾语前置的标志，即“谓此也”；“若白垩之与黑漆”中，“之”用在“白垩与黑漆”之间，取消句子独立性。D项基本相同。“察其秋毫”中，“其”是代词，指治乱存亡的开端（“它的”）；“其人拜之以牛”中，“其”是代词，指那个被救的人。两者都是代词。故选C。",
+                "inputSha256": "6b7b3e399444cad52c3b8d5f8f44679fe021d32e5eb1297c854e4675968fab0e",
+                "generatedAt": "2026-10-03T00:39:17.649838+00:00",
+                "uncertainties": [
+                  "D项两个“其”一个偏人称代词（它的），一个偏指示代词（那个），细分也有差别。但两者都属代词，差别远不如C项明显，所以仍选C。"
+                ],
+                "selectedOptions": [
+                  "C"
+                ],
+                "assessment": {
+                  "matchesConclusion": true,
+                  "note": "答案C与核查结论相合；“白垩之与黑漆”不宜不加说明地归为主谓间取独。判定重点是它不标记前置宾语。"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
+                  "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
+                  "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "976b7a874ab378e1b306a1a8831ae02df41902ae1d5850d3a3ee357cf99c654b"
+              }
+            },
+            "inputContextSha256": "a005c359182fe5d215a95242f9d63d058b30571ffdf66bcf13b7cb2769f7fccc"
+          }
+        }
+      ],
+      "inputPresentationSha256": "04e173991c3c91d5ffc1fabdfa085ce1b30d26c5d1fedf89244f3d942ed8a9b1"
     },
     {
       "id": "2016-guwen:2",
@@ -22167,6 +22342,1865 @@
           }
         }
       }
+    },
+    {
+      "id": "2018-feilian:1",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2018北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL公开参考，来源非官方链，逐项审查而非照录",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选A。定义的主干是人工智能是对某种智能体的描述和构建，计算机实现人脑思维结果、感知环境并执行行动是智能体的限定。B把人工智能直接等同于智能体，C把描述构建的对象改为环境，D把人脑思维结果换成计算机思维，均改变了定义关系。",
+          "inputSha256": "adb261fac5114785355e205729a4608b3113869240f31dac0c618f875716ab72",
+          "inputContextSha256": "fbe280a88f811800c4935afbcd5793acc16a9594eb331eefccea1da5eca68754",
+          "inputPresentationSha256": "2339c9737f9064a2a5acb25a8333dc3133621414ef2e95d1312b3cc57b9911c5",
+          "generatedAt": "2026-10-03T06:14:09.451Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2018.json",
+            "evidence": "answers-six-sites-20261002/root-2018-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2018-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "完整题面及准确标记下核读两模型全文，逐项与公开参考对照；开放题允许合理不同表述。19道阅读的Astra已标注参考暴露，不宣称盲答。原始扫描尚待核实。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\n选A。原定义的主干是“（人工智能是）对……智能体的描述和构建”，中间的“通过计算机实现人脑思维结果，能从环境中获取感知并执行行动”都是修饰“智能体”的定语。A项正是对主干的准确提取。B项把人工智能直接等同于“智能体”，丢掉了“描述和构建”，且“感知行动”也不同于“获取感知并执行行动”。C项“计算机对环境的描述和构建”，把描述和构建的主体与对象都弄错了。D项“对计算机思维的实现”错误，原文是“通过计算机实现人脑思维结果”。",
+          "inputSha256": "adb261fac5114785355e205729a4608b3113869240f31dac0c618f875716ab72",
+          "inputContextSha256": "fbe280a88f811800c4935afbcd5793acc16a9594eb331eefccea1da5eca68754",
+          "inputPresentationSha256": "2339c9737f9064a2a5acb25a8333dc3133621414ef2e95d1312b3cc57b9911c5",
+          "generatedAt": "2026-10-03T06:16:18.735203+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "完整题面及准确标记下核读两模型全文，逐项与公开参考对照；开放题允许合理不同表述。19道阅读的Astra已标注参考暴露，不宣称盲答。原始扫描尚待核实。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2018-reading-result.json",
+            "inputPromptSha256": "2344782243c8123652f37baa506323e12ede339dca1b5a3a6bce9ff808fdf609",
+            "responseStreamSha256": "382a55b7a7abb5e2e5be73158c5f055d6fdc33c4df4d5d298dc82b18ca4e9236",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "adb261fac5114785355e205729a4608b3113869240f31dac0c618f875716ab72",
+      "inputContextSha256": "fbe280a88f811800c4935afbcd5793acc16a9594eb331eefccea1da5eca68754",
+      "inputPresentationSha256": "2339c9737f9064a2a5acb25a8333dc3133621414ef2e95d1312b3cc57b9911c5",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "完整题面及准确标记下核读两模型全文，逐项与公开参考对照；开放题允许合理不同表述。19道阅读的Astra已标注参考暴露，不宣称盲答。原始扫描尚待核实。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:25:49.466Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2018-feilian:2",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2018北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL公开参考，来源非官方链，逐项审查而非照录",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选B。材料明确把图灵测试作为判断机器是否有智能的标准。A将计算和逻辑思维过程扩大成一般人类行为；C将讨论程序能否理解信息的思维实验缩小为计算机懂不懂中文；D忽略希尔勒对机器具有理解能力的否定。这里依材料判断其表述，不把摘编的测试数值当作图灵原文完整定义。",
+          "inputSha256": "8268ba3f5c760fd4e4c5c6d1ccae90075de090147d44956d02160e6f89bd48b0",
+          "inputContextSha256": "fae51b767398d5012009e598b35fbc44a03229d0f88c0a2392b90885d79ab6a4",
+          "inputPresentationSha256": "7059caa355f859efb8be6fa2a2fed66569761ef2b810fd5a59144b74fef40b73",
+          "generatedAt": "2026-10-03T06:14:09.451Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2018.json",
+            "evidence": "answers-six-sites-20261002/root-2018-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2018-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "B按题材成立。考试对图灵测试、中文房间及学派的介绍是摘编，不能当作这些理论的完整定义或当前研究综述。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。A项错，图灵设想的是用机器执行逻辑代码来模拟人类的“各种计算和逻辑思维过程”，不是模拟“人类行为”；模仿行为是行为主义学派的思路。B项正确，原文说图灵“提出了判断机器是否具有智能的标准，即‘图灵测试’”。C项错，“中文房间”实验是为了说明看似智能的计算机程序其实不理解自身处理的信息，从而表达对“智能”的不同思考，中文只是实验的道具，并非要证明“计算机无法理解中文”。D项错，希尔勒认为机器没有理解能力，“让机器拥有人类智能”是无稽之谈。",
+          "inputSha256": "8268ba3f5c760fd4e4c5c6d1ccae90075de090147d44956d02160e6f89bd48b0",
+          "inputContextSha256": "fae51b767398d5012009e598b35fbc44a03229d0f88c0a2392b90885d79ab6a4",
+          "inputPresentationSha256": "7059caa355f859efb8be6fa2a2fed66569761ef2b810fd5a59144b74fef40b73",
+          "generatedAt": "2026-10-03T06:16:18.735203+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "B按题材成立。考试对图灵测试、中文房间及学派的介绍是摘编，不能当作这些理论的完整定义或当前研究综述。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2018-reading-result.json",
+            "inputPromptSha256": "2344782243c8123652f37baa506323e12ede339dca1b5a3a6bce9ff808fdf609",
+            "responseStreamSha256": "382a55b7a7abb5e2e5be73158c5f055d6fdc33c4df4d5d298dc82b18ca4e9236",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "8268ba3f5c760fd4e4c5c6d1ccae90075de090147d44956d02160e6f89bd48b0",
+      "inputContextSha256": "fae51b767398d5012009e598b35fbc44a03229d0f88c0a2392b90885d79ab6a4",
+      "inputPresentationSha256": "7059caa355f859efb8be6fa2a2fed66569761ef2b810fd5a59144b74fef40b73",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "B按题材成立。考试对图灵测试、中文房间及学派的介绍是摘编，不能当作这些理论的完整定义或当前研究综述。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:25:49.467Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2018-feilian:3",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2018北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL公开参考，来源非官方链，逐项审查而非照录",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选B。联结主义关注大脑结构及组成部件之间的作用，符号主义关注问题求解的路径、形式推理和数理逻辑，材料没有说两者都以研究大脑结构为进路。A、C各对应相关学派的主张，D概括了定义不同造成研究思路不同的关系。",
+          "inputSha256": "1e8c9d6178ee157c992ca7851476064ca04705d97e443036d997cdfb26539ca2",
+          "inputContextSha256": "19eed0f0182bb07b525febc905e9306a6175e74b76e811674790617328b8ead6",
+          "inputPresentationSha256": "00ca7a45be36df614ebd700ae01aa487574736f618c2a7e716b85e48438c8c8e",
+          "generatedAt": "2026-10-03T06:14:09.451Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2018.json",
+            "evidence": "answers-six-sites-20261002/root-2018-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2018-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "完整题面及准确标记下核读两模型全文，逐项与公开参考对照；开放题允许合理不同表述。19道阅读的Astra已标注参考暴露，不宣称盲答。原始扫描尚待核实。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。A项符合文意，符号主义学派认为智能的实质是“具体问题的求解能力”，并让计算机模仿人类思维进行决策和推理。B项不符合文意，研究大脑结构、让计算机模仿人类大脑的只是联结主义学派；符号主义学派运用的是形式推理和数理逻辑方法，模仿的是人类思维。C项符合文意，行为主义学派认为“应该研究人类感知和行动的本能，而不是高级的逻辑推理”。D项符合文意，三派对“何为智能”理解不同，分别模仿思维、模仿大脑、模仿行为，研究思路随之不同。",
+          "inputSha256": "1e8c9d6178ee157c992ca7851476064ca04705d97e443036d997cdfb26539ca2",
+          "inputContextSha256": "19eed0f0182bb07b525febc905e9306a6175e74b76e811674790617328b8ead6",
+          "inputPresentationSha256": "00ca7a45be36df614ebd700ae01aa487574736f618c2a7e716b85e48438c8c8e",
+          "generatedAt": "2026-10-03T06:16:18.735203+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "完整题面及准确标记下核读两模型全文，逐项与公开参考对照；开放题允许合理不同表述。19道阅读的Astra已标注参考暴露，不宣称盲答。原始扫描尚待核实。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2018-reading-result.json",
+            "inputPromptSha256": "2344782243c8123652f37baa506323e12ede339dca1b5a3a6bce9ff808fdf609",
+            "responseStreamSha256": "382a55b7a7abb5e2e5be73158c5f055d6fdc33c4df4d5d298dc82b18ca4e9236",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "1e8c9d6178ee157c992ca7851476064ca04705d97e443036d997cdfb26539ca2",
+      "inputContextSha256": "19eed0f0182bb07b525febc905e9306a6175e74b76e811674790617328b8ead6",
+      "inputPresentationSha256": "00ca7a45be36df614ebd700ae01aa487574736f618c2a7e716b85e48438c8c8e",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "完整题面及准确标记下核读两模型全文，逐项与公开参考对照；开放题允许合理不同表述。19道阅读的Astra已标注参考暴露，不宣称盲答。原始扫描尚待核实。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:25:49.467Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2018-feilian:4",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2018北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL公开参考，来源非官方链，逐项审查而非照录",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D。未雨绸缪是事情尚未发生之前就作准备，含有预防可能风险的意思，不能释作明知事情不会发生仍准备。无稽之谈是没有根据的言论，进退维谷是进退两难，袖手旁观是置身事外不予帮助，都符合本处用法。",
+          "inputSha256": "0c8c61e7a60fd1c7a48dacf6cfe749d180e438aa9e27ddf47ab962c24cb4fbb7",
+          "inputContextSha256": "106bca7e83e707475b61f5dc986188d7001a3f797b8cd69a0b7bd8cdfcfc7073",
+          "inputPresentationSha256": "3f8294155d2d209e933b01d139b52fc32e066c04b87e5a983f8d538d8586b999",
+          "generatedAt": "2026-10-03T06:14:09.451Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2018.json",
+            "evidence": "answers-six-sites-20261002/root-2018-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2018-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "完整题面及准确标记下核读两模型全文，逐项与公开参考对照；开放题允许合理不同表述。19道阅读的Astra已标注参考暴露，不宣称盲答。原始扫描尚待核实。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。A项正确，“无稽之谈”指毫无根据的说法，“稽”意为查考、考证。B项正确，“进退维谷”指进退都陷入困境，“谷”比喻困境，即进退两难。C项正确，“袖手旁观”指把手笼在袖子里在旁边看，比喻置身事外、不加帮助。D项不正确，“未雨绸缪”意为趁着还没下雨先修缮好门窗，比喻事情发生之前预先做好准备；它针对的是可能发生的事，而不是“不会发生”的事。",
+          "inputSha256": "0c8c61e7a60fd1c7a48dacf6cfe749d180e438aa9e27ddf47ab962c24cb4fbb7",
+          "inputContextSha256": "106bca7e83e707475b61f5dc986188d7001a3f797b8cd69a0b7bd8cdfcfc7073",
+          "inputPresentationSha256": "3f8294155d2d209e933b01d139b52fc32e066c04b87e5a983f8d538d8586b999",
+          "generatedAt": "2026-10-03T06:16:18.735203+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "完整题面及准确标记下核读两模型全文，逐项与公开参考对照；开放题允许合理不同表述。19道阅读的Astra已标注参考暴露，不宣称盲答。原始扫描尚待核实。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2018-reading-result.json",
+            "inputPromptSha256": "2344782243c8123652f37baa506323e12ede339dca1b5a3a6bce9ff808fdf609",
+            "responseStreamSha256": "382a55b7a7abb5e2e5be73158c5f055d6fdc33c4df4d5d298dc82b18ca4e9236",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "0c8c61e7a60fd1c7a48dacf6cfe749d180e438aa9e27ddf47ab962c24cb4fbb7",
+      "inputContextSha256": "106bca7e83e707475b61f5dc986188d7001a3f797b8cd69a0b7bd8cdfcfc7073",
+      "inputPresentationSha256": "3f8294155d2d209e933b01d139b52fc32e066c04b87e5a983f8d538d8586b999",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "完整题面及准确标记下核读两模型全文，逐项与公开参考对照；开放题允许合理不同表述。19道阅读的Astra已标注参考暴露，不宣称盲答。原始扫描尚待核实。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:25:49.467Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2018-feilian:5",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2018北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL公开参考，来源非官方链，逐项审查而非照录",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "第5题：选A。材料描述自动驾驶程序按场景相似程度作决策。B把学习形成的表现等同于人类主观意识；C把仍有争议的可能性改成必然；D遗漏阿西莫夫三定律之间的优先约束，均错误。\n第6题：选C。完全依赖导航而丧失自身识路能力，体现人的行为及能力受技术塑造、主体性受到削弱。A监测健康和B用机器清扫都只是工具辅助，不能仅因使用技术便判定异化；D属于职业思维习惯，题面没有人工智能影响这一条件。\n第7题：首先，人们从设想机器模拟计算和逻辑思维，发展到以可观察的问答表现判断智能；继而反思正确输出是否意味着真正理解，希尔勒强调理解能力，不同学派又分别从问题求解、神经结构联系、感知行动等方面探索智能的本质。其次，认识由机器能否及如何表现智能扩展到智能技术与人的关系：开发中出现伦理决策与责任归属问题，对奇点与人的异化产生警觉，进而强调规范约束、人的主体作用和社会责任。这种深化包含技术能力、概念反思与社会伦理等不同层面，并非简单地按材料中的出现顺序排列历史年代。",
+          "inputSha256": "b472f4ec93bb424a4a1697e1ed86faf1767a9c15cc9ecac8736ad53d2769caaa",
+          "inputContextSha256": "08273ab8c8d6d819098a7420ca6ae363279c3f8bf09a40b056ad78fc17bd019e",
+          "inputPresentationSha256": "4e853c897b56994ae6e4d3e1fb7e1ba6017bd27d28e7a1fe34ed07a03f59726a",
+          "generatedAt": "2026-10-03T06:14:09.451Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2018.json",
+            "evidence": "answers-six-sites-20261002/root-2018-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2018-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "完整回答原5/6/7三问：A、C及技术概念到社会伦理的认识深化。整体open/answer=[]，旧score3不变；原3+3+5分兼容评分仍阻断。材料组织顺序不是严格历史时间顺序，也不能用这一简化案例代表所有自动驾驶算法。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【第5题】选A。A项符合文意：自动驾驶汽车会从案例数据库中选取与当前情景较相似的案例来决策，遇到陌生情景时也要搜索相似度大于某个固定值的过往场景。B项错，原文说人工智能表现出的智能是基于大数据学习的结果，“和人类主观意识有本质的不同”。C项错，原文说研究者对“奇点”到来的时间和可能性“还有争议”，并非都认为总有一天会到来。D项错，按机器人三大定律，机器人服从人的命令以“不得违反第一定律”（不伤害人）为前提，不是“在任何情况下”。\n\n【第6题】选C。材料二所说的“异化”，是指人在使用、训练人工智能的同时反被它“训练”和塑造，思维方式和能力不知不觉受其支配，沦为“数据的囚徒”。C项中人完全依赖手机导航，以致丧失了本应具备的识路能力，正是人被智能技术反向塑造、能力退化的表现。A项、B项都是人主动利用智能产品为自己服务，人仍是主导者，不属于异化。D项是职业习惯造成的思维定式，与人工智能无关。\n\n【第7题】人类对人工智能的认识是由浅入深、由技术层面到社会伦理层面逐步深化的：\n①从提出设想到确立判断标准：图灵先提出用机器模拟人类计算和逻辑思维过程的设想，继而提出“图灵测试”，给出了判断机器是否具有智能的标准。\n②对“何为智能”的质疑与反思：希尔勒用“中文房间”思维实验指出，机器只是遵循规则、操控符号，并不具有理解能力，从而对“智能”的含义提出了不同思考。\n③对“智能”实质的多角度探索：符号主义、联结主义、行为主义三个学派分别从问题求解能力、非智能部件的相互作用、与人类行为相似等角度理解智能，并形成不同的研究路径，推动了人工智能技术在不同层面的发展。\n④从技术问题延伸到伦理、责任和未来风险：随着机器越来越像人，人们开始思考“隧道问题”一类的伦理困境、人工智能伤人后的责任归属，以及“奇点”和人被人工智能“异化”的可能。\n⑤进而思考应对之道：借鉴机器人三大定律，认识到人是智能行为的总开关，开发者应把对社会负责放在对技术进步的渴望之上，未雨绸缪地应对可能的威胁。\n概括而言，认识经历了“能否造出智能—什么是智能—如何实现智能—如何与智能相处并加以规范”的深化过程。",
+          "inputSha256": "b472f4ec93bb424a4a1697e1ed86faf1767a9c15cc9ecac8736ad53d2769caaa",
+          "inputContextSha256": "08273ab8c8d6d819098a7420ca6ae363279c3f8bf09a40b056ad78fc17bd019e",
+          "inputPresentationSha256": "4e853c897b56994ae6e4d3e1fb7e1ba6017bd27d28e7a1fe34ed07a03f59726a",
+          "generatedAt": "2026-10-03T06:16:18.735203+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "完整回答原5/6/7三问：A、C及技术概念到社会伦理的认识深化。整体open/answer=[]，旧score3不变；原3+3+5分兼容评分仍阻断。材料组织顺序不是严格历史时间顺序，也不能用这一简化案例代表所有自动驾驶算法。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2018-reading-result.json",
+            "inputPromptSha256": "2344782243c8123652f37baa506323e12ede339dca1b5a3a6bce9ff808fdf609",
+            "responseStreamSha256": "382a55b7a7abb5e2e5be73158c5f055d6fdc33c4df4d5d298dc82b18ca4e9236",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "b472f4ec93bb424a4a1697e1ed86faf1767a9c15cc9ecac8736ad53d2769caaa",
+      "inputContextSha256": "08273ab8c8d6d819098a7420ca6ae363279c3f8bf09a40b056ad78fc17bd019e",
+      "inputPresentationSha256": "4e853c897b56994ae6e4d3e1fb7e1ba6017bd27d28e7a1fe34ed07a03f59726a",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "完整回答原5/6/7三问：A、C及技术概念到社会伦理的认识深化。整体open/answer=[]，旧score3不变；原3+3+5分兼容评分仍阻断。材料组织顺序不是严格历史时间顺序，也不能用这一简化案例代表所有自动驾驶算法。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:25:49.467Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2018-guwen:1",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2018北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL公开参考，来源非官方链，逐项审查而非照录",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D。行在此指人的品行、德行，孔子认为依法领取赎金并不损害道德评价；仅释为一般行为失当。时指季节，戚是为之忧伤，相与表示一起、共同，均符合句意。",
+          "inputSha256": "cd7baafa141076a2d681b6758ff22a9077ba1851d43abaf461534c422884697c",
+          "inputContextSha256": "1cc5ea2dcde3d900ac4607bbbc14e9efa05a6f820b8e55534b464728732dd315",
+          "inputPresentationSha256": "7fdbbcbc49bf43ffe01f1be4411283c538a7e33ea49a49f771171b5ae2b856d3",
+          "generatedAt": "2026-10-03T06:14:09.451Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2018.json",
+            "evidence": "answers-six-sites-20261002/root-2018-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2018-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "D。行在此为品行、德行。戚释为忧伤或忧虑均通，本题不以现代近义译语制造第二错误项。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。A项正确，“时不胜月”与“月不胜日”“岁不胜时”并列，日、月、时、岁依次递进，“时”指季节、季度。B项基本正确，“危而后戚之”指国家到了危急关头才为之忧愁悲伤，“戚”是为动用法，可解作“为……悲伤（忧虑）”。C项正确，“相与”意为共同、一起。D项不正确，“无损于行”的“行”是名词，指品行、德行，句意是“领取补偿金，对品行并没有损害”，解作“行为”不准确。",
+          "inputSha256": "cd7baafa141076a2d681b6758ff22a9077ba1851d43abaf461534c422884697c",
+          "inputContextSha256": "1cc5ea2dcde3d900ac4607bbbc14e9efa05a6f820b8e55534b464728732dd315",
+          "inputPresentationSha256": "7fdbbcbc49bf43ffe01f1be4411283c538a7e33ea49a49f771171b5ae2b856d3",
+          "generatedAt": "2026-10-03T06:16:18.735203+00:00",
+          "uncertainties": [
+            "B项“戚”更贴切的解释是“为……忧虑”，题目解作“为……悲伤”略有出入，但相比之下D项的偏差更明显，故判断D为不正确项。"
+          ],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "D。行在此为品行、德行。戚释为忧伤或忧虑均通，本题不以现代近义译语制造第二错误项。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2018-reading-result.json",
+            "inputPromptSha256": "2344782243c8123652f37baa506323e12ede339dca1b5a3a6bce9ff808fdf609",
+            "responseStreamSha256": "382a55b7a7abb5e2e5be73158c5f055d6fdc33c4df4d5d298dc82b18ca4e9236",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "cd7baafa141076a2d681b6758ff22a9077ba1851d43abaf461534c422884697c",
+      "inputContextSha256": "1cc5ea2dcde3d900ac4607bbbc14e9efa05a6f820b8e55534b464728732dd315",
+      "inputPresentationSha256": "7fdbbcbc49bf43ffe01f1be4411283c538a7e33ea49a49f771171b5ae2b856d3",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "D。行在此为品行、德行。戚释为忧伤或忧虑均通，本题不以现代近义译语制造第二错误项。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:25:49.467Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2018-guwen:3",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2018北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL公开参考，来源非官方链，逐项审查而非照录",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D。赐失之矣是说子贡做错了，失在拒领赎金会使其他人顾虑道德压力或经济损失，妨碍以后赎人，不是错过某个机会。小事之至也数中的数为频繁，大荒是政务荒疏，霸者之善著焉是说霸者功业显著，A、B、C均可。",
+          "inputSha256": "05a311601f4437463dffe3024f435ad69775798f30d2d4e16579fa445346064a",
+          "inputContextSha256": "1c2988601cfc3f4db4c577e873ad6cd731887d80a159e8f48fbb8a7162dcf9e7",
+          "inputPresentationSha256": "5a4bba38f85ed9ec420b132e2a65780262a3679c24269b3b2192859a5f5fa218",
+          "generatedAt": "2026-10-03T06:14:09.451Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2018.json",
+            "evidence": "answers-six-sites-20261002/root-2018-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2018-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "完整题面及准确标记下核读两模型全文，逐项与公开参考对照；开放题允许合理不同表述。19道阅读的Astra已标注参考暴露，不宣称盲答。原始扫描尚待核实。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。A项正确，“数”读shuò，意为屡次、频繁，句意是小事来得很频繁。B项正确，“大荒”指政事极度荒废，句意是荒废政事的国家就会灭亡。C项正确，“著”意为显著、显赫，句意是霸主的善政功业很显著，所以可以按季节来记载。D项不正确，“赐失之矣”是孔子对子贡做法的评价，“失”是做错、有过失的意思，应理解为“赐（子贡）这件事做错了”，而不是“丢失了机会”；下文“自今以往，鲁人不赎人矣”正是在说明这个过失的后果。",
+          "inputSha256": "05a311601f4437463dffe3024f435ad69775798f30d2d4e16579fa445346064a",
+          "inputContextSha256": "1c2988601cfc3f4db4c577e873ad6cd731887d80a159e8f48fbb8a7162dcf9e7",
+          "inputPresentationSha256": "5a4bba38f85ed9ec420b132e2a65780262a3679c24269b3b2192859a5f5fa218",
+          "generatedAt": "2026-10-03T06:16:18.735203+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "完整题面及准确标记下核读两模型全文，逐项与公开参考对照；开放题允许合理不同表述。19道阅读的Astra已标注参考暴露，不宣称盲答。原始扫描尚待核实。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2018-reading-result.json",
+            "inputPromptSha256": "2344782243c8123652f37baa506323e12ede339dca1b5a3a6bce9ff808fdf609",
+            "responseStreamSha256": "382a55b7a7abb5e2e5be73158c5f055d6fdc33c4df4d5d298dc82b18ca4e9236",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "05a311601f4437463dffe3024f435ad69775798f30d2d4e16579fa445346064a",
+      "inputContextSha256": "1c2988601cfc3f4db4c577e873ad6cd731887d80a159e8f48fbb8a7162dcf9e7",
+      "inputPresentationSha256": "5a4bba38f85ed9ec420b132e2a65780262a3679c24269b3b2192859a5f5fa218",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "完整题面及准确标记下核读两模型全文，逐项与公开参考对照；开放题允许合理不同表述。19道阅读的Astra已标注参考暴露，不宣称盲答。原始扫描尚待核实。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:25:49.467Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2018-guwen:4",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2018北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL公开参考，来源非官方链，逐项审查而非照录",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "①德行轻得像羽毛一样，百姓却很少能够把它举起来（即很少能实行它）。輶为轻，鲜为少，克为能够；译文应保留以轻物喻易行而人少能实行的对照。\n②如果不领取那笔赎金，以后便不会再有人替鲁国人赎身了。句中不复赎人的主体应联系孔子所说鲁人不赎人理解，不是断言子贡本人再也不赎人。",
+          "inputSha256": "b075e9a85e5dd97ebee959c5f55dece2b00e0de2f35dea096f4f425f029d9b3f",
+          "inputContextSha256": "93908cd1b12dca045b24b8bfd48f588e3da184bf8b7ffd791a53daac7fce81a3",
+          "inputPresentationSha256": "4a38aac897e10140451f61dfca5d4b39ebb1f0c3dfabd2f02bb9d822c3142664",
+          "generatedAt": "2026-10-03T06:14:09.451Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2018.json",
+            "evidence": "answers-six-sites-20261002/root-2018-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2018-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "輶轻、鲜少、克能；第一句保留轻如毛而少能实行的对照。第二句主语及后果应从鲁人不赎人补出，不误解为仅子贡本人不再赎人。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "①道德轻得像毫毛一样，但百姓中很少有人能把它举起来。（“輶”译为轻，“鲜”译为少，“克”译为能够。意思是德行看似细微易行，人们却很少能坚持做到。）\n②（如果）不领取官府的赎金，那么（鲁国人）就不会再去赎人了。（“金”指官府给的补偿金，“复”译为再，并补出省略的主语。）",
+          "inputSha256": "b075e9a85e5dd97ebee959c5f55dece2b00e0de2f35dea096f4f425f029d9b3f",
+          "inputContextSha256": "93908cd1b12dca045b24b8bfd48f588e3da184bf8b7ffd791a53daac7fce81a3",
+          "inputPresentationSha256": "4a38aac897e10140451f61dfca5d4b39ebb1f0c3dfabd2f02bb9d822c3142664",
+          "generatedAt": "2026-10-03T06:16:18.735203+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "輶轻、鲜少、克能；第一句保留轻如毛而少能实行的对照。第二句主语及后果应从鲁人不赎人补出，不误解为仅子贡本人不再赎人。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2018-reading-result.json",
+            "inputPromptSha256": "2344782243c8123652f37baa506323e12ede339dca1b5a3a6bce9ff808fdf609",
+            "responseStreamSha256": "382a55b7a7abb5e2e5be73158c5f055d6fdc33c4df4d5d298dc82b18ca4e9236",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "b075e9a85e5dd97ebee959c5f55dece2b00e0de2f35dea096f4f425f029d9b3f",
+      "inputContextSha256": "93908cd1b12dca045b24b8bfd48f588e3da184bf8b7ffd791a53daac7fce81a3",
+      "inputPresentationSha256": "4a38aac897e10140451f61dfca5d4b39ebb1f0c3dfabd2f02bb9d822c3142664",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "輶轻、鲜少、克能；第一句保留轻如毛而少能实行的对照。第二句主语及后果应从鲁人不赎人补出，不误解为仅子贡本人不再赎人。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:25:49.467Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2018-guwen:5",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2018北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL公开参考，来源非官方链，逐项审查而非照录",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "①第一则可取能积微者速成作为中心句；也可连同前面财物资宝以大为重，政教功名反是一起引出，突出政教功业应重在细微积累。第二则可取察其秋毫，则大物不过矣，联系前句故治乱存亡，其始若秋毫，说明明察细微征兆才能避免大事出错。\n②第一则拟题《积微》，共二字：文章比较日、月、时、岁的小事积累与稀疏大事，说明重视日常细微实践才能建成功业，标题突出积累。第二则拟题《察微》，共二字：文章先论治乱存亡萌芽不易辨，再以子贡赎人和子路受牛说明从细小举动看见长远影响，标题突出观察与预见。两则同样重小，却分别侧重积与察。",
+          "inputSha256": "f4b0e1d1a358929a546a1e08317bf4b963f76b238c2457bb9dfa4f8fef49e145",
+          "inputContextSha256": "1afac305766c28fcf9d6a54d8233d4d9dd0206819c366354ba02ec9395201e57",
+          "inputPresentationSha256": "9a9f083ea5e65383ae05b294da44ab3abf3f3b42516331d6f928a450ce906fea",
+          "generatedAt": "2026-10-03T06:14:09.451Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2018.json",
+            "evidence": "answers-six-sites-20261002/root-2018-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2018-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "中心句优先完整引用第一则财物资宝以大为重，政教功名反是，能积微者速成；第二则治乱存亡其始若秋毫、察其秋毫则大物不过。只引善日者王善时者霸较窄，不等价于完整中心句。拟题积微/察微及理由均可。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "①中心论点句：\n第一则：“能积微者速成。”（也可答“故善日者王，善时者霸”。）\n第二则：“故治乱存亡，其始若秋毫。察其秋毫，则大物不过矣。”（也可只答“察其秋毫，则大物不过矣”。）\n\n②标题及理由：\n第一则可拟为《积微》（或《积微速成》）。理由：全文围绕“积累微小”展开，先说日比月、月比季、季比年重要，再以小事来得频繁、积累起来成效大为据，对比王者、霸者、危国、亡国对时日的不同态度，最后得出“能积微者速成”的结论，强调治国理政要重视日常小事的点滴积累。\n第二则可拟为《察微》（或《见微知著》）。理由：文章先指出治乱存亡的征兆起初像秋毫一样细微难辨，只有明察细微才不会在大事上出错；再用子贡赎人不取金、子路救人受牛而孔子从小事预见其深远影响的事例加以证明，结句“孔子见之以细，观化远也”点明要从细微处洞察事物的发展趋势。",
+          "inputSha256": "f4b0e1d1a358929a546a1e08317bf4b963f76b238c2457bb9dfa4f8fef49e145",
+          "inputContextSha256": "1afac305766c28fcf9d6a54d8233d4d9dd0206819c366354ba02ec9395201e57",
+          "inputPresentationSha256": "9a9f083ea5e65383ae05b294da44ab3abf3f3b42516331d6f928a450ce906fea",
+          "generatedAt": "2026-10-03T06:16:18.735203+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "中心句优先完整引用第一则财物资宝以大为重，政教功名反是，能积微者速成；第二则治乱存亡其始若秋毫、察其秋毫则大物不过。只引善日者王善时者霸较窄，不等价于完整中心句。拟题积微/察微及理由均可。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2018-reading-result.json",
+            "inputPromptSha256": "2344782243c8123652f37baa506323e12ede339dca1b5a3a6bce9ff808fdf609",
+            "responseStreamSha256": "382a55b7a7abb5e2e5be73158c5f055d6fdc33c4df4d5d298dc82b18ca4e9236",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "f4b0e1d1a358929a546a1e08317bf4b963f76b238c2457bb9dfa4f8fef49e145",
+      "inputContextSha256": "1afac305766c28fcf9d6a54d8233d4d9dd0206819c366354ba02ec9395201e57",
+      "inputPresentationSha256": "9a9f083ea5e65383ae05b294da44ab3abf3f3b42516331d6f928a450ce906fea",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "中心句优先完整引用第一则财物资宝以大为重，政教功名反是，能积微者速成；第二则治乱存亡其始若秋毫、察其秋毫则大物不过。只引善日者王善时者霸较窄，不等价于完整中心句。拟题积微/察微及理由均可。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:25:49.467Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2018-shici:1",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2018北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL公开参考，来源非官方链，逐项审查而非照录",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D。正梅花万里雪深时，须相忆是想象友人远行之后在深冬思念彼此，属于对将来的叮嘱，不是回忆两人过去雪中赏梅。A写失志与离愁，B写赞美友人才华，C写沿途山川可以入诗，都有词句支持。",
+          "inputSha256": "a20cceb1d70ba3be6e083bed4c433c5e279294e3b481ecfea5e7bd549c9f80d1",
+          "inputContextSha256": "7751e9799514f0d9df077fb963f72477072cfe192edc79a7ba5f0b303649b0dd",
+          "inputPresentationSha256": "a228d59b5e51a874785bba5f5e71fe0904ca43b8422fbea2c41435a38a218eb6",
+          "generatedAt": "2026-10-03T06:14:09.451Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2018.json",
+            "evidence": "answers-six-sites-20261002/root-2018-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2018-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "D错误在把别后设想当作往事回忆。Claude附称也不是在赞美友谊排除过强：末句确实抒写深情，不应排除其友谊意味。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。A项正确，开头先写友人远行入蜀，再写自己“中年多病，不堪离别”，词人当时闲居上饶，自叹之中含有壮志难酬、岁月蹉跎的惆怅。B项正确，“把功名收拾付君侯，如椽笔”是称许友人才华出众，期望他以如椽大笔建立功名。C项正确，“荆楚路，吾能说。要新诗准备”之后列举庐山山色、赤壁浪、襄阳月，都是沿途可供吟咏的江山胜景。D项不正确，结尾“正梅花万里雪深时，须相忆”是设想别后的情景，叮嘱友人在梅开雪深的时节要记得彼此思念，并非回忆过去二人雪中赏梅，也不是在“赞美”友谊。",
+          "inputSha256": "a20cceb1d70ba3be6e083bed4c433c5e279294e3b481ecfea5e7bd549c9f80d1",
+          "inputContextSha256": "7751e9799514f0d9df077fb963f72477072cfe192edc79a7ba5f0b303649b0dd",
+          "inputPresentationSha256": "a228d59b5e51a874785bba5f5e71fe0904ca43b8422fbea2c41435a38a218eb6",
+          "generatedAt": "2026-10-03T06:16:18.735203+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "D错误在把别后设想当作往事回忆。Claude附称也不是在赞美友谊排除过强：末句确实抒写深情，不应排除其友谊意味。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2018-reading-result.json",
+            "inputPromptSha256": "2344782243c8123652f37baa506323e12ede339dca1b5a3a6bce9ff808fdf609",
+            "responseStreamSha256": "382a55b7a7abb5e2e5be73158c5f055d6fdc33c4df4d5d298dc82b18ca4e9236",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "a20cceb1d70ba3be6e083bed4c433c5e279294e3b481ecfea5e7bd549c9f80d1",
+      "inputContextSha256": "7751e9799514f0d9df077fb963f72477072cfe192edc79a7ba5f0b303649b0dd",
+      "inputPresentationSha256": "a228d59b5e51a874785bba5f5e71fe0904ca43b8422fbea2c41435a38a218eb6",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "D错误在把别后设想当作往事回忆。Claude附称也不是在赞美友谊排除过强：末句确实抒写深情，不应排除其友谊意味。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:25:49.467Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2018-shici:2",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2018北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL公开参考，来源非官方链，逐项审查而非照录",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选A。借诸葛亮上表出师的典故，把对友人文章才华的称许与报国建功的期望结合。B把赤壁江山写诗的设想直接改为苏轼游赤壁典故及生命短暂感慨，C附加望友人早归，D把休滴儿女泪的劝勉解释成凄苦，都偏离本词语境。",
+          "inputSha256": "ffc719dad484d4125f0f0c5173bd6bc1fc7fe016f386a849bd8fa2c022f98bda",
+          "inputContextSha256": "6ddda123d183073e8889b6f4f86c8734016d656042eaf77e7314b6b832745aa1",
+          "inputPresentationSha256": "96eaa07233a5588a99158d739515f5917d5f50332f5d2a52f43016f65857237a",
+          "generatedAt": "2026-10-03T06:14:09.451Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2018.json",
+            "evidence": "answers-six-sites-20261002/root-2018-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2018-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "完整题面及准确标记下核读两模型全文，逐项与公开参考对照；开放题允许合理不同表述。19道阅读的Astra已标注参考暴露，不宣称盲答。原始扫描尚待核实。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\n选A。A项正确，“东北看惊诸葛表”借诸葛亮上《出师表》北伐的典故，联系友人入蜀任职，寄托了收复中原的愿望，勉励友人为国建功。B项错，“赤壁矶头千古浪”是说沿途赤壁的壮阔景象可以入诗，虽让人联想到苏轼赤壁之作，但这里并非抒发人生短暂的感慨。C项错，“蜀道登天”确实化用李白诗句，写入蜀路途艰险，但词中并没有“望其早归”的意思，后文反而是勉励友人建立功名。D项错，“儿女泪，君休滴”化用王勃诗句，是劝友人不要作儿女之态、为离别落泪，情调豪迈旷达，不是表现宦游漂泊的凄苦。",
+          "inputSha256": "ffc719dad484d4125f0f0c5173bd6bc1fc7fe016f386a849bd8fa2c022f98bda",
+          "inputContextSha256": "6ddda123d183073e8889b6f4f86c8734016d656042eaf77e7314b6b832745aa1",
+          "inputPresentationSha256": "96eaa07233a5588a99158d739515f5917d5f50332f5d2a52f43016f65857237a",
+          "generatedAt": "2026-10-03T06:16:18.735203+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "完整题面及准确标记下核读两模型全文，逐项与公开参考对照；开放题允许合理不同表述。19道阅读的Astra已标注参考暴露，不宣称盲答。原始扫描尚待核实。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2018-reading-result.json",
+            "inputPromptSha256": "2344782243c8123652f37baa506323e12ede339dca1b5a3a6bce9ff808fdf609",
+            "responseStreamSha256": "382a55b7a7abb5e2e5be73158c5f055d6fdc33c4df4d5d298dc82b18ca4e9236",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "ffc719dad484d4125f0f0c5173bd6bc1fc7fe016f386a849bd8fa2c022f98bda",
+      "inputContextSha256": "6ddda123d183073e8889b6f4f86c8734016d656042eaf77e7314b6b832745aa1",
+      "inputPresentationSha256": "96eaa07233a5588a99158d739515f5917d5f50332f5d2a52f43016f65857237a",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "完整题面及准确标记下核读两模型全文，逐项与公开参考对照；开放题允许合理不同表述。19道阅读的Astra已标注参考暴露，不宣称盲答。原始扫描尚待核实。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:25:49.467Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2018-shici:3",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2018北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL公开参考，来源非官方链，逐项审查而非照录",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "龙吟虎啸指词气势豪迈、情怀壮阔：以诸葛表、相如檄寄托报国安民、建立功业的抱负，以功名和如椽笔称许友人才干；庐山、赤壁、襄阳等广阔空间和千古浪等意象也使境界雄阔。和缓则指豪放之中有细腻温厚、舒徐曲折的情意：自叹中年多病、不堪离别写个人身世与惜别；君休滴含有相劝相慰；结尾不直说离愁，而想象万里雪深时彼此相忆，用梅雪之景收束为深情的叮咛。两者交融，使送别既有建功报国的激昂，又有人情牵挂的柔婉，豪放而不粗厉。",
+          "inputSha256": "fd2200a1b27d23f8ca9bb0eb07204e34826058e0d1d0fb44fcbd5b4855cdf6d1",
+          "inputContextSha256": "419cc0fa62f7cbabba6bee054263024982122baf7ae9e7ea6713a3fb551b15b1",
+          "inputPresentationSha256": "8c9c6c09847639838e6d87abf3cd8b0cb54b1c931faf7b103f619c14459e9212",
+          "generatedAt": "2026-10-03T06:14:09.451Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2018.json",
+            "evidence": "answers-six-sites-20261002/root-2018-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2018-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "豪放与柔婉交融，两种赏析可兼容。以家国功业用典对应雄健、惜别相忆对应细腻最稳妥；不把每一山水意象都强行判作同一种风格。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "陈廷焯的评语是说这首词兼有两种风格：既有豪放雄健、气势磅礴的一面（“龙吟虎啸”），又有深婉平和、情意绵长的一面（“和缓”），刚柔相济，豪放而不流于粗率。\n\n“龙吟虎啸”体现在：\n①“东北看惊诸葛表，西南更草相如檄。把功名收拾付君侯，如椽笔”，连用诸葛亮出师、司马相如草檄的典故，把友人入蜀与北伐中原、安定西南的大业联系起来，勉励他挥如椽大笔建功立业，笔力雄健，充满报国豪情，也隐含词人自己壮志难酬的激愤。\n②“儿女泪，君休滴”，短句斩截有力，劝友人不作儿女之态，气度豪迈。\n③“赤壁矶头千古浪，铜鞮陌上三更月”，写江山胜迹，境界阔大，气象雄浑。\n\n“和缓”体现在：\n①“还自叹中年多病，不堪离别”，直抒病中送别的伤感，语调低回，情意真切。\n②“荆楚路，吾能说。要新诗准备，庐山山色”，像朋友间娓娓叙谈，为友人指点沿途风光，语气亲切从容。\n③“正梅花万里雪深时，须相忆”，以梅花、深雪的清幽画面作结，叮嘱友人别后相忆，含蓄深情，余味悠长。\n\n全词把慷慨的家国之志和温厚的朋友之情融为一体，时而激昂，时而舒缓，所以说“龙吟虎啸之中，却有多少和缓”。",
+          "inputSha256": "fd2200a1b27d23f8ca9bb0eb07204e34826058e0d1d0fb44fcbd5b4855cdf6d1",
+          "inputContextSha256": "419cc0fa62f7cbabba6bee054263024982122baf7ae9e7ea6713a3fb551b15b1",
+          "inputPresentationSha256": "8c9c6c09847639838e6d87abf3cd8b0cb54b1c931faf7b103f619c14459e9212",
+          "generatedAt": "2026-10-03T06:16:18.735203+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "豪放与柔婉交融，两种赏析可兼容。以家国功业用典对应雄健、惜别相忆对应细腻最稳妥；不把每一山水意象都强行判作同一种风格。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2018-reading-result.json",
+            "inputPromptSha256": "2344782243c8123652f37baa506323e12ede339dca1b5a3a6bce9ff808fdf609",
+            "responseStreamSha256": "382a55b7a7abb5e2e5be73158c5f055d6fdc33c4df4d5d298dc82b18ca4e9236",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "fd2200a1b27d23f8ca9bb0eb07204e34826058e0d1d0fb44fcbd5b4855cdf6d1",
+      "inputContextSha256": "419cc0fa62f7cbabba6bee054263024982122baf7ae9e7ea6713a3fb551b15b1",
+      "inputPresentationSha256": "8c9c6c09847639838e6d87abf3cd8b0cb54b1c931faf7b103f619c14459e9212",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "豪放与柔婉交融，两种赏析可兼容。以家国功业用典对应雄健、惜别相忆对应细腻最稳妥；不把每一山水意象都强行判作同一种风格。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:25:49.468Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2018-lunyu:1",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2018北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL公开参考，来源非官方链，逐项审查而非照录",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "第一次回答子路：父亲兄长还在，听到合宜的道理或事情，不能不加请教和考虑便立刻去做。第二次回答冉有：听到了就应当去实践。第三次向公西华解释同问异答的理由：冉有容易退缩，所以鼓励他前进；子路好勇、敢于作为，所以提醒他退让、审慎。短文体现因材施教：依据学生不同性格和实际需要采取不同引导，使其弥补不足、获得成长，而不以同一种话术对待所有学生。",
+          "inputSha256": "7fb7c2d90067f795466ba9f682eb665a8cd98b02ecfb7c228ace3776a8f7ac9c",
+          "inputContextSha256": "238d45c83fea4d5be10b66e49d60eb3e4eef013d744037c1877e632f903be5a4",
+          "inputPresentationSha256": "32234c1460d20796b276ad659e9b217baa0d9525fbec0d45efe9642edf00c83e",
+          "generatedAt": "2026-10-03T06:14:09.451Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2018.json",
+            "evidence": "answers-six-sites-20261002/root-2018-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2018-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "三次答语与因材施教是核心。Claude补充中庸可作有依据的延伸，不设为必答项；其关于题干未给分值的备注只是输入元信息观察，不修改存储分值。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "三次回答的内容：\n①子路问“听到了就去做吗”，孔子回答：有父亲兄长在，怎么能听到了就去做呢？意思是应先请教父兄，不可贸然行事。\n②冉有问同样的问题，孔子回答：听到了就去做。意思是鼓励他立即行动。\n③公西华对两个截然相反的回答感到困惑，孔子解释：冉有遇事退缩、不够果敢，所以要鼓励他前进；子路勇于作为、容易冒进，所以要约束他，让他退一步。\n\n反映的思想：\n①因材施教的教育思想。孔子深入了解学生的性格特点，针对不同的人给予不同的教导，而不是用同一个标准答案对待所有人。\n②“过犹不及”的中庸思想。退缩是不及，冒进是过头，孔子对前者“进之”，对后者“退之”，目的是让学生的行为都归于适度、恰当。",
+          "inputSha256": "7fb7c2d90067f795466ba9f682eb665a8cd98b02ecfb7c228ace3776a8f7ac9c",
+          "inputContextSha256": "238d45c83fea4d5be10b66e49d60eb3e4eef013d744037c1877e632f903be5a4",
+          "inputPresentationSha256": "32234c1460d20796b276ad659e9b217baa0d9525fbec0d45efe9642edf00c83e",
+          "generatedAt": "2026-10-03T06:16:18.735203+00:00",
+          "uncertainties": [
+            "题干未给出分值，按原卷第13题共5分的要求作答。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "三次答语与因材施教是核心。Claude补充中庸可作有依据的延伸，不设为必答项；其关于题干未给分值的备注只是输入元信息观察，不修改存储分值。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2018-reading-result.json",
+            "inputPromptSha256": "2344782243c8123652f37baa506323e12ede339dca1b5a3a6bce9ff808fdf609",
+            "responseStreamSha256": "382a55b7a7abb5e2e5be73158c5f055d6fdc33c4df4d5d298dc82b18ca4e9236",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "7fb7c2d90067f795466ba9f682eb665a8cd98b02ecfb7c228ace3776a8f7ac9c",
+      "inputContextSha256": "238d45c83fea4d5be10b66e49d60eb3e4eef013d744037c1877e632f903be5a4",
+      "inputPresentationSha256": "32234c1460d20796b276ad659e9b217baa0d9525fbec0d45efe9642edf00c83e",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "三次答语与因材施教是核心。Claude补充中庸可作有依据的延伸，不设为必答项；其关于题干未给分值的备注只是输入元信息观察，不修改存储分值。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:25:49.468Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2018-sanwen:1",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2018北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL公开参考，来源非官方链，逐项审查而非照录",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选B。热烈形容儿童梦想中情感和期待强烈、热切，不能解释成外界场面热闹或令人眼花缭乱。雄踞带有颇有气势地占据一处的拟人意味，正规符合孩童想象中的完整仙女模样，泛滥指情感不加节制、过度流露，都合乎具体语境。",
+          "inputSha256": "377ff3b6d15c3f5c9340ddcfd6d2cc1b9cb8cb95df339ac865ed63f4b70b57ef",
+          "inputContextSha256": "923569bf605e08c20e3a078c264a341cdd3e00fc86f26477750abf366434143b",
+          "inputPresentationSha256": "0c1112c8424da1c2cfcc1bbc3e3fc4e0a86dd1ed8c5ff542f65285e58e512a09",
+          "generatedAt": "2026-10-03T06:14:09.451Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2018.json",
+            "evidence": "answers-six-sites-20261002/root-2018-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2018-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "完整题面及准确标记下核读两模型全文，逐项与公开参考对照；开放题允许合理不同表述。19道阅读的Astra已标注参考暴露，不宣称盲答。原始扫描尚待核实。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。A项正确，“雄踞”用拟人手法写水缸很有气势地蹲坐在厨房一角，与后文“大肚子巨人”“傲慢的家庭成员”相呼应。B项不正确，“热烈”在这里形容梦想的强烈、炽热，表现“我”对仙女出现的急切盼望和兴奋激动的心情，并不是“热闹，眼花缭乱”。C项正确，“正规仙女”带有童趣和幽默，指仙女长成了与“我”想象中的标准仙女相符的样子。D项正确，“泛滥”比喻情感过度、不加节制，作者表示不愿滥情地美化童年。",
+          "inputSha256": "377ff3b6d15c3f5c9340ddcfd6d2cc1b9cb8cb95df339ac865ed63f4b70b57ef",
+          "inputContextSha256": "923569bf605e08c20e3a078c264a341cdd3e00fc86f26477750abf366434143b",
+          "inputPresentationSha256": "0c1112c8424da1c2cfcc1bbc3e3fc4e0a86dd1ed8c5ff542f65285e58e512a09",
+          "generatedAt": "2026-10-03T06:16:18.735203+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "完整题面及准确标记下核读两模型全文，逐项与公开参考对照；开放题允许合理不同表述。19道阅读的Astra已标注参考暴露，不宣称盲答。原始扫描尚待核实。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2018-reading-result.json",
+            "inputPromptSha256": "2344782243c8123652f37baa506323e12ede339dca1b5a3a6bce9ff808fdf609",
+            "responseStreamSha256": "382a55b7a7abb5e2e5be73158c5f055d6fdc33c4df4d5d298dc82b18ca4e9236",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "377ff3b6d15c3f5c9340ddcfd6d2cc1b9cb8cb95df339ac865ed63f4b70b57ef",
+      "inputContextSha256": "923569bf605e08c20e3a078c264a341cdd3e00fc86f26477750abf366434143b",
+      "inputPresentationSha256": "0c1112c8424da1c2cfcc1bbc3e3fc4e0a86dd1ed8c5ff542f65285e58e512a09",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "完整题面及准确标记下核读两模型全文，逐项与公开参考对照；开放题允许合理不同表述。19道阅读的Astra已标注参考暴露，不宣称盲答。原始扫描尚待核实。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:25:49.468Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2018-sanwen:2",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2018北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL公开参考，来源非官方链，逐项审查而非照录",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D。作者回望童年，认为物质匮乏在自己的经历中意外激发了好奇，并不说只有贫困才能刺激想象，更明确不愿过度美化童年。D把个人反思扩大成唯一因果。A抓住孩子眼中的水缸地位，B写成人对儿童想象实验的嗔怪和不理解，C说明由童年转向成人好奇心再到文学创作的论述推进，均恰当。",
+          "inputSha256": "64ea582bdf09f855d71fab6dd9f52a1aa493b50a69eae394e1903be5e297b8d4",
+          "inputContextSha256": "f0d73b252b32f1a35c3616086e169d6e8724bda9c0177938de1aa5884dc2c15f",
+          "inputPresentationSha256": "bf79c796feafa78f6f68413177125903a7b5e23a778dad9affd14ea67cafa784",
+          "generatedAt": "2026-10-03T06:14:09.451Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2018.json",
+            "evidence": "answers-six-sites-20261002/root-2018-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2018-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "完整题面及准确标记下核读两模型全文，逐项与公开参考对照；开放题允许合理不同表述。19道阅读的Astra已标注参考暴露，不宣称盲答。原始扫描尚待核实。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。A项正确，把水缸比作“傲慢的家庭成员”，以孩子的眼光写出水缸在家中的重要地位和气派。B项正确，“聪明面孔笨肚肠”是家里人带着责备又不失亲昵的嗔怪，大人只看到水被弄脏，不理解孩子试验童话的纯真心理。C项正确，第⑦段由前文对童年生活和梦想的感悟，转入对成年人好奇心的议论，最后落到作家的好奇心与创作的关系上。D项不正确：其一，作者说“从不喜欢过度美化童年的生活”，他不忍抛弃的是关于水缸的记忆和对奇迹的向往，而不是贫困生活本身；其二，“特别的恩赐”是指因一无所有而格外好奇，并没有说“只有这样的生活才能刺激想象”，说法过于绝对。",
+          "inputSha256": "64ea582bdf09f855d71fab6dd9f52a1aa493b50a69eae394e1903be5e297b8d4",
+          "inputContextSha256": "f0d73b252b32f1a35c3616086e169d6e8724bda9c0177938de1aa5884dc2c15f",
+          "inputPresentationSha256": "bf79c796feafa78f6f68413177125903a7b5e23a778dad9affd14ea67cafa784",
+          "generatedAt": "2026-10-03T06:16:18.735203+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "完整题面及准确标记下核读两模型全文，逐项与公开参考对照；开放题允许合理不同表述。19道阅读的Astra已标注参考暴露，不宣称盲答。原始扫描尚待核实。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2018-reading-result.json",
+            "inputPromptSha256": "2344782243c8123652f37baa506323e12ede339dca1b5a3a6bce9ff808fdf609",
+            "responseStreamSha256": "382a55b7a7abb5e2e5be73158c5f055d6fdc33c4df4d5d298dc82b18ca4e9236",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "64ea582bdf09f855d71fab6dd9f52a1aa493b50a69eae394e1903be5e297b8d4",
+      "inputContextSha256": "f0d73b252b32f1a35c3616086e169d6e8724bda9c0177938de1aa5884dc2c15f",
+      "inputPresentationSha256": "bf79c796feafa78f6f68413177125903a7b5e23a778dad9affd14ea67cafa784",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "完整题面及准确标记下核读两模型全文，逐项与公开参考对照；开放题允许合理不同表述。19道阅读的Astra已标注参考暴露，不宣称盲答。原始扫描尚待核实。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:25:49.468Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2018-sanwen:3",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2018北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL公开参考，来源非官方链，逐项审查而非照录",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "第三段讲的是相对概括的民间童话：仙女因青年怜惜河蚌而报恩，替他做饭，使他脱贫。第四段把童话移入我家的具体生活，由我亲自想象仙女从珍珠般小渐渐长大、出缸、擦桌、反复端菜，并细写鸡鸭猪肝红烧肉，特意不安排我不爱吃的鱼。它增加了动作、形态、滋味等可感细节，也带上了孩子的个人偏好和物质愿望。这样写使梦想生动亲切而富于童趣，显出儿童如何以好奇和想象重新创造已有故事，具体说明文学梦由何萌芽，并为下文把凝视水缸视为阅读、讨论好奇心与创作的关系作铺垫。",
+          "inputSha256": "6ac33ef32dc4fe4004473d9c4aebbdd32a1b3d9410848e573fa50d01caae97ee",
+          "inputContextSha256": "abbb2076713d1aabac83b8765dfefd5b08b2562b70deb17b1173a4484a46aaed",
+          "inputPresentationSha256": "6cb4b019dd872e05828669d7f28397f08d126b480c7c6378c26f88b73250f203",
+          "generatedAt": "2026-10-03T06:14:09.451Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2018.json",
+            "evidence": "answers-six-sites-20261002/root-2018-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2018-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "比较概括转述与具体个性化想象，联系好奇心、物质生活与文学启蒙。公开参考把原童话读成好逸恶劳、期待天上掉馅饼，属于无充分文本支持的贬义扩张，不采作评分点。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "不同之处：\n①叙述角度和主人公不同。第③段是转述大人讲的童话，主人公是贫穷善良的青年，属于客观复述；第④段是“我”自己的梦想，仙女来到“我”家的水缸和八仙桌，“我”成了故事的受益者。\n②详略和笔法不同。第③段是概括叙述，交代故事梗概，语言平实；第④段是细致描绘，写仙女从珍珠大小“上升，上升，渐渐变大”的过程，写她清扫桌子、从水里搬出一盘盘菜，画面生动具体。\n③内容侧重不同。第③段只说“做好了饭菜”，重在报恩和摆脱贫困的结局；第④段把饭菜具体化为鸡、鸭、炒猪肝、红烧肉，还按“我”的口味去掉了鱼，融入了孩子的个人愿望，充满童趣。\n\n作用：\n①表现了孩子丰富的想象力和强烈的好奇心，说明“我”对童话进行了再创造，这种“凝视水缸”就是最早的阅读和文学想象，照应了开头“文学梦从水缸里萌芽”。\n②那些“动人而实惠”的菜肴，真实地反映了童年物质生活的贫困和孩子对美好生活的渴望，为下文“因为一无所有，所以格外好奇”作铺垫。\n③详细的描写使文章富有童真和幽默感，生动亲切，增强了感染力。",
+          "inputSha256": "6ac33ef32dc4fe4004473d9c4aebbdd32a1b3d9410848e573fa50d01caae97ee",
+          "inputContextSha256": "abbb2076713d1aabac83b8765dfefd5b08b2562b70deb17b1173a4484a46aaed",
+          "inputPresentationSha256": "6cb4b019dd872e05828669d7f28397f08d126b480c7c6378c26f88b73250f203",
+          "generatedAt": "2026-10-03T06:16:18.735203+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "比较概括转述与具体个性化想象，联系好奇心、物质生活与文学启蒙。公开参考把原童话读成好逸恶劳、期待天上掉馅饼，属于无充分文本支持的贬义扩张，不采作评分点。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2018-reading-result.json",
+            "inputPromptSha256": "2344782243c8123652f37baa506323e12ede339dca1b5a3a6bce9ff808fdf609",
+            "responseStreamSha256": "382a55b7a7abb5e2e5be73158c5f055d6fdc33c4df4d5d298dc82b18ca4e9236",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "6ac33ef32dc4fe4004473d9c4aebbdd32a1b3d9410848e573fa50d01caae97ee",
+      "inputContextSha256": "abbb2076713d1aabac83b8765dfefd5b08b2562b70deb17b1173a4484a46aaed",
+      "inputPresentationSha256": "6cb4b019dd872e05828669d7f28397f08d126b480c7c6378c26f88b73250f203",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "比较概括转述与具体个性化想象，联系好奇心、物质生活与文学启蒙。公开参考把原童话读成好逸恶劳、期待天上掉馅饼，属于无充分文本支持的贬义扩张，不采作评分点。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:25:49.468Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2018-sanwen:4",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2018北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL公开参考，来源非官方链，逐项审查而非照录",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "寓意：水缸并不真的装着一本书或仙女，却是童年我接触童话、凝视生活、展开想象的载体，我在其中寄托愿望、追寻奇迹，文学梦由此萌芽。成年写作仍重复揭开水缸的动作，意味着保有好奇与期待，从平凡现实中寻找未被看见的可能，将童年想象转化为认识、表达世界的创造活动。\n效果：把日常器物水缸与抽象文学相连，形成新奇而有悬念的组合，吸引阅读；用具体意象贯穿童年故事和成年创作思考，统摄全文；以小见大、化抽象为具体，使文学与生活、好奇心的关系可感，也含蓄表达对童年精神资源的珍惜。它并非宣称贫困必然造就文学。",
+          "inputSha256": "f69c9a307b6e500471d17e9bf1f993f9cd71fb7c11e7f3fb15edd9938cfeffca",
+          "inputContextSha256": "9e2e3ad385543d1497b4c8887da5939e1b53bee1c80882f57ced38460126a384",
+          "inputPresentationSha256": "22b326a25372ec07902540b22c207d2b7dd7ded37bef4581dea69f1de103f850",
+          "generatedAt": "2026-10-03T06:14:09.451Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2018.json",
+            "evidence": "answers-six-sites-20261002/root-2018-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2018-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "水缸承载文学萌芽、好奇想象及揭开日常寻找奇迹的动作。以小见大、线索及悬念可成立；水缸粗朴而文学高雅并非必要价值排序，不能把贫困说成文学创造的充分或必要条件。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "寓意：\n①水缸是作者文学梦萌芽的地方。童年时“我”对着水缸幻想河蚌仙女的故事，“凝视水缸”是最早的阅读方式，水缸里盛着的是一个孩子最初的想象和文学启蒙。\n②水缸象征着由贫乏生活激发出来的好奇心和想象力。物质和书籍都匮乏，但一只普通的水缸足以让梦想像鱼一样畅游，而这种好奇心正是文学创作的源头和动力。\n③水缸象征着对奇迹的向往与追寻。作者说自己在写作中一直重复“揭开水缸的动作”，文学创作就是带着童年的好奇，在平凡的生活中等待和追求“奇迹的光芒”。\n\n表达效果：\n①新颖别致，引人思考。把日常、粗朴的“水缸”和高雅的“文学”这两个看似无关的事物组合在一起，形成反差，能激发读者的阅读兴趣。\n②以小见大，化抽象为具体。用一只水缸来承载文学梦、好奇心、创作动力等抽象的话题，形象可感，意蕴含蓄。\n③点明主旨，贯穿全文。水缸既是回忆的对象，也是全文的线索，题目把童年记忆和创作感悟连结起来，使文章结构集中，首尾呼应。",
+          "inputSha256": "f69c9a307b6e500471d17e9bf1f993f9cd71fb7c11e7f3fb15edd9938cfeffca",
+          "inputContextSha256": "9e2e3ad385543d1497b4c8887da5939e1b53bee1c80882f57ced38460126a384",
+          "inputPresentationSha256": "22b326a25372ec07902540b22c207d2b7dd7ded37bef4581dea69f1de103f850",
+          "generatedAt": "2026-10-03T06:16:18.735203+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "水缸承载文学萌芽、好奇想象及揭开日常寻找奇迹的动作。以小见大、线索及悬念可成立；水缸粗朴而文学高雅并非必要价值排序，不能把贫困说成文学创造的充分或必要条件。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2018-reading-result.json",
+            "inputPromptSha256": "2344782243c8123652f37baa506323e12ede339dca1b5a3a6bce9ff808fdf609",
+            "responseStreamSha256": "382a55b7a7abb5e2e5be73158c5f055d6fdc33c4df4d5d298dc82b18ca4e9236",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "f69c9a307b6e500471d17e9bf1f993f9cd71fb7c11e7f3fb15edd9938cfeffca",
+      "inputContextSha256": "9e2e3ad385543d1497b4c8887da5939e1b53bee1c80882f57ced38460126a384",
+      "inputPresentationSha256": "22b326a25372ec07902540b22c207d2b7dd7ded37bef4581dea69f1de103f850",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "水缸承载文学萌芽、好奇想象及揭开日常寻找奇迹的动作。以小见大、线索及悬念可成立；水缸粗朴而文学高雅并非必要价值排序，不能把贫困说成文学创造的充分或必要条件。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:25:49.468Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2018-sanwen:5",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2018北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL公开参考，来源非官方链，逐项审查而非照录",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "示例：我曾把街角那棵树当作一本慢慢展开的书。初春，光秃的枝端只多了一点浅绿，我几天后再看，叶片已经把树影织得细密。夏日骤雨打落几片叶子，断枝旁却仍有新芽；入秋后，树冠又显出不同深浅的黄。我开始明白，观察不只是匆匆辨认这是何种树，还要给变化留下时间。起初我以为树木每天都差不多，后来才知道，是自己没有耐心看。这类阅读让我从细节中体会生命的节奏，也提醒我，理解一个人、一段生活，同样需要持续的注意，不能凭一眼便急着下结论。",
+          "inputSha256": "887ca485bcd72253e04f72c38ac31f91893f89adfc6aa6f272068008ed4d38df",
+          "inputContextSha256": "0c87ccd79ed1c7a01130f3986fe072f9a32750860100e5092d5f025cfae8cf74",
+          "inputPresentationSha256": "bc22fba9925491a020b5b2c162f938ab452de79b9a55e52a5b44c26e1e3a67e0",
+          "generatedAt": "2026-10-03T06:14:09.451Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2018.json",
+            "evidence": "answers-six-sites-20261002/root-2018-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2018-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "两份均为原创虚构教学示例，不冒充个人亲历。Claude非书本阅读不直接给人知识过于绝对，观察生活也可以形成知识；保留原文附评，不采此限制。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "示例：\n我小时候常“阅读”的是外婆家屋后的一棵老槐树。夏天的午后，我喜欢仰头看它的树干和枝叶：树皮上一道道裂纹像老人手背上的皱纹，蚂蚁排着队沿着裂缝往上爬，阳光从叶缝里漏下来，在地上晃成一片碎金。看久了，我会给蚂蚁编故事，猜它们搬运的是哪一家的粮食；也会数树上的疤痕，想象哪一道是被雷劈的，哪一道是外公年轻时拴牛留下的。\n这种“阅读”没有文字，却让我学会了安静地观察和耐心地等待。我从中体会到，一棵树也是一本书，年轮里记着时间，疤痕里藏着往事；它教给我的是，生活本身处处有可读的内容，只要怀着好奇心去凝视，寻常的事物也能生出想象和思考。后来我读书、写作文时，总愿意多看一眼细节、多问一句“为什么”，这个习惯就是从那棵老槐树下养成的。可见非书本的“阅读”虽然不直接给人知识，却能滋养人的感受力和想象力，这同样是一种宝贵的成长。",
+          "inputSha256": "887ca485bcd72253e04f72c38ac31f91893f89adfc6aa6f272068008ed4d38df",
+          "inputContextSha256": "0c87ccd79ed1c7a01130f3986fe072f9a32750860100e5092d5f025cfae8cf74",
+          "inputPresentationSha256": "bc22fba9925491a020b5b2c162f938ab452de79b9a55e52a5b44c26e1e3a67e0",
+          "generatedAt": "2026-10-03T06:16:18.735203+00:00",
+          "uncertainties": [
+            "本题为开放性题目，要求结合个人经历作答，以上为原创示例，所写经历为示例性内容。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "两份均为原创虚构教学示例，不冒充个人亲历。Claude非书本阅读不直接给人知识过于绝对，观察生活也可以形成知识；保留原文附评，不采此限制。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2018-reading-result.json",
+            "inputPromptSha256": "2344782243c8123652f37baa506323e12ede339dca1b5a3a6bce9ff808fdf609",
+            "responseStreamSha256": "382a55b7a7abb5e2e5be73158c5f055d6fdc33c4df4d5d298dc82b18ca4e9236",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "887ca485bcd72253e04f72c38ac31f91893f89adfc6aa6f272068008ed4d38df",
+      "inputContextSha256": "0c87ccd79ed1c7a01130f3986fe072f9a32750860100e5092d5f025cfae8cf74",
+      "inputPresentationSha256": "bc22fba9925491a020b5b2c162f938ab452de79b9a55e52a5b44c26e1e3a67e0",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两份均为原创虚构教学示例，不冒充个人亲历。Claude非书本阅读不直接给人知识过于绝对，观察生活也可以形成知识；保留原文附评，不采此限制。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:25:49.468Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2018-weixiezuo:1",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2018北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL公开参考，来源非官方链，逐项审查而非照录",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "《老人与海》是一盏风浪中的灯，让我在失败逼近时仍看清尊严的方向；《老人与海》是一把磨亮意志的锉，教我不以眼前得失衡量全部努力；《老人与海》是一扇朝向大海的窗，使我懂得人的力量虽有限，认真生活的勇气却能越过伤痛，照亮下一次出发。",
+          "inputSha256": "37a6a5698473ae3f2f7b10fe464f561458b042458466ac3ab8742526558f96d9",
+          "inputContextSha256": "6f8e8a60b8eb0823467169c6f24e7fc5b3ee44765d5285481c7224017c34f387",
+          "inputPresentationSha256": "8eb658701a041ca588707d7d8f1e65a752f89593bf89c7ff68bcd85d9d969a1f",
+          "generatedAt": "2026-10-03T06:14:09.451Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2018-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2018-writing-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "正文Astra113、Claude133非空白字符，题限120字左右；三句排比各有比喻，均完成教益表达。Claude对老人与海名句为译意，不标成某一中译本逐字引文。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "选择《老人与海》作答，示例如下（约120字）：\n\n《老人与海》是一盏灯，照亮我在失败的暗夜里摸索的路，告诉我人可以被毁灭，却不能被打败；《老人与海》是一面鼓，在我想要松手的时刻擂响，催我像圣地亚哥攥紧钓索那样攥紧自己的目标；《老人与海》是一把尺，量出了成败之外的高度，让我明白拖回的纵然只是一副鱼骨，尊严却完好无损。\n\n说明：全段由三个分句构成排比，每句各用一个比喻（灯、鼓、尺）。教益分别对应原著中“人可以被毁灭，但不能被打败”的信念、老人与大马林鱼相持不放的情节、以及只拖回鱼骨的结局。",
+          "inputSha256": "37a6a5698473ae3f2f7b10fe464f561458b042458466ac3ab8742526558f96d9",
+          "inputContextSha256": "6f8e8a60b8eb0823467169c6f24e7fc5b3ee44765d5285481c7224017c34f387",
+          "inputPresentationSha256": "8eb658701a041ca588707d7d8f1e65a752f89593bf89c7ff68bcd85d9d969a1f",
+          "generatedAt": "2026-10-03T06:21:38.679257+00:00",
+          "uncertainties": [
+            "本大题为三选一，这里按要求对三个id分别给出示例，实际考试只需任选一题作答。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "正文Astra113、Claude133非空白字符，题限120字左右；三句排比各有比喻，均完成教益表达。Claude对老人与海名句为译意，不标成某一中译本逐字引文。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2018-writing-result.json",
+            "inputPromptSha256": "1bd03d54f13fd86b08e11e80e6e89fb03cc8f3238ec5259844531119e64c1a4a",
+            "responseStreamSha256": "c5d8764c1b43423e3f901aecac40d04b3b1c12ca2eb3cb84ada2de4439821ef1",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "37a6a5698473ae3f2f7b10fe464f561458b042458466ac3ab8742526558f96d9",
+      "inputContextSha256": "6f8e8a60b8eb0823467169c6f24e7fc5b3ee44765d5285481c7224017c34f387",
+      "inputPresentationSha256": "8eb658701a041ca588707d7d8f1e65a752f89593bf89c7ff68bcd85d9d969a1f",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "正文Astra113、Claude133非空白字符，题限120字左右；三句排比各有比喻，均完成教益表达。Claude对老人与海名句为译意，不标成某一中译本逐字引文。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:25:49.468Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2018-weixiezuo:2",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2018北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL公开参考，来源非官方链，逐项审查而非照录",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        },
+        {
+          "type": "source_text",
+          "title": "鲁迅孔乙己全文",
+          "url": "https://zh.wikisource.org/zh-hans/%E5%AD%94%E4%B9%99%E5%B7%B1_(1948%E5%B9%B4%E6%9C%AC)"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "《呐喊》中的孔乙己令人可悲又可叹。他穷困潦倒，却始终放不下读书人的身份，穿着破旧长衫，在酒店里用之乎者也维护体面。他会把茴香豆分给孩子，保有一点善意；却又好喝懒做，偷窃后仍竭力辩解。被打断腿后，他用手撑着地爬来喝酒，最终在旁人冷漠的笑声与遗忘中消失。他的悲剧既有自身迂腐和无力自救的原因，也显出旧式教育对人的束缚以及周围社会的冷酷。我们不能只把他当作笑料，更应看见一个人被损害的尊严。",
+          "inputSha256": "3437e6401a33867fd17c7439c752122224b00bf06e24fcdeef55e7eb8d97acc2",
+          "inputContextSha256": "ec5f1aa5af14ac21ca9f90003a6d70955eb754124f6e9c2293aa8be3bd38f521",
+          "inputPresentationSha256": "13f12efbfffe36fc9b08034799ef76a068d1db06d7bf1284db3e361dbd0e838f",
+          "generatedAt": "2026-10-03T06:14:09.451Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2018-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2018-writing-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "正文Astra192、Claude188非空白字符，均在150至200范围。人物主要情节已对鲁迅原文；Claude最后一碗酒只能指叙述中最后一次出现，原著未证实其此后再未饮酒。至死不悟是强解释，不能作为原著明言。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "选择《呐喊》中的孔乙己作答，示例如下（约190字）：\n\n孔乙己是《呐喊》中可悲又可叹的人物。他是咸亨酒店里唯一站着喝酒而穿长衫的人，读过书却没有进学，又不会营生，只靠替人抄书糊口，偶尔偷窃。他满口“之乎者也”，以“窃书不能算偷”自辩，在哄笑中硬撑着读书人的架子；可他从不拖欠酒钱，还分茴香豆给孩子。后来他偷到丁举人家，被打折了腿，用手“走”来喝了最后一碗酒，从此不见踪影。可悲的是他受科举毒害而至死不悟，可叹的是世人凉薄，无人怜惜。\n\n说明：所述情节（站着喝酒穿长衫、抄书、窃书之辩、分茴香豆、被丁举人打折腿、用手走来喝酒）均出自原著；结尾点明“可悲”在自身不悟，“可叹”在社会冷漠。",
+          "inputSha256": "3437e6401a33867fd17c7439c752122224b00bf06e24fcdeef55e7eb8d97acc2",
+          "inputContextSha256": "ec5f1aa5af14ac21ca9f90003a6d70955eb754124f6e9c2293aa8be3bd38f521",
+          "inputPresentationSha256": "13f12efbfffe36fc9b08034799ef76a068d1db06d7bf1284db3e361dbd0e838f",
+          "generatedAt": "2026-10-03T06:21:38.679257+00:00",
+          "uncertainties": [
+            "本大题为三选一，这里按要求对三个id分别给出示例，实际考试只需任选一题作答。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "正文Astra192、Claude188非空白字符，均在150至200范围。人物主要情节已对鲁迅原文；Claude最后一碗酒只能指叙述中最后一次出现，原著未证实其此后再未饮酒。至死不悟是强解释，不能作为原著明言。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2018-writing-result.json",
+            "inputPromptSha256": "1bd03d54f13fd86b08e11e80e6e89fb03cc8f3238ec5259844531119e64c1a4a",
+            "responseStreamSha256": "c5d8764c1b43423e3f901aecac40d04b3b1c12ca2eb3cb84ada2de4439821ef1",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "3437e6401a33867fd17c7439c752122224b00bf06e24fcdeef55e7eb8d97acc2",
+      "inputContextSha256": "ec5f1aa5af14ac21ca9f90003a6d70955eb754124f6e9c2293aa8be3bd38f521",
+      "inputPresentationSha256": "13f12efbfffe36fc9b08034799ef76a068d1db06d7bf1284db3e361dbd0e838f",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "正文Astra192、Claude188非空白字符，均在150至200范围。人物主要情节已对鲁迅原文；Claude最后一碗酒只能指叙述中最后一次出现，原著未证实其此后再未饮酒。至死不悟是强解释，不能作为原著明言。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:25:49.468Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2018-weixiezuo:3",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2018北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL公开参考，来源非官方链，逐项审查而非照录",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        },
+        {
+          "type": "source_text",
+          "title": "论语雍也",
+          "url": "https://zh.wikisource.org/zh-hans/%E8%AB%96%E8%AA%9E/%E9%9B%8D%E4%B9%9F%E7%AC%AC%E5%85%AD"
+        },
+        {
+          "type": "source_text",
+          "title": "论语解卷三所收弗如不同解释",
+          "url": "https://zh.wikisource.org/zh-hant/%E8%AB%96%E8%AA%9E%E8%A7%A3_%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B703"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答（字数收紧）",
+          "text": "我喜欢颜回。他居处简陋，饮食粗淡，别人难以忍受，他却不改变求道的快乐，可见内心并不随物质得失轻易摇摆。孔子称赞他好学、不迁怒、不贰过，令我敬重：学习不仅是积累知识，也是检视情绪、修正行为，不把怒气转嫁给旁人，不让同样的过错反复发生。颜回的可贵不是赞美贫穷，更不是一味沉默顺从，而是在困顿中保持精神追求，在日常中认真完善自己。这提醒我，评价成长不只看外在收获，还要看是否比昨日更明理、更能自律。",
+          "inputSha256": "727ec0fef3e4401b018aa9fb16da88be4c79fa8dbba30029ef5b3b966be670d9",
+          "inputContextSha256": "c5f4e58a36e0e7c46ff66404d3c21bdc52e635b8974a4ed83f057c1368b543da",
+          "inputPresentationSha256": "4cb73eaae9e0a3688e920c0ab319d3d6dbdf4201a3aa9104cc8bae8af04a37f0",
+          "generatedAt": "2026-10-03T06:14:44.431121+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent_length_revision",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2018-writing-length-revision.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2018-writing-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "Astra初稿205字符已在Claude调用前存档并收紧为196；Claude正文203非空白字符、160汉字，含标点口径略超过200。孔子称许颜回好学等有原文依据；吾与女弗如也存在我赞同你不如与我和你不如等解释，Claude老师自叹弗如不可当成唯一确解。默认采用Astra当前稿，保留Claude全文及限制。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          }
+        },
+        "gpt_6_astra_initial": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 初稿（字数收紧前存档）",
+          "text": "我喜欢颜回。他居处简陋，饮食粗淡，别人难以忍受，他却不改变求道的快乐，可见内心并不随物质得失轻易摇摆。孔子称赞他好学、不迁怒、不贰过，尤其令我敬重：学习不仅是积累知识，也是检视情绪、修正行为，不把怒气转嫁给旁人，不让同样的过错反复发生。颜回的可贵不是赞美贫穷，更不是一味沉默顺从，而是在困顿中保持精神追求，在日常中认真完善自己。这样的安定与自省提醒我，评价成长不只看外在收获，还要看是否比昨日更明理、更能自律。",
+          "inputSha256": "727ec0fef3e4401b018aa9fb16da88be4c79fa8dbba30029ef5b3b966be670d9",
+          "inputContextSha256": "c5f4e58a36e0e7c46ff66404d3c21bdc52e635b8974a4ed83f057c1368b543da",
+          "inputPresentationSha256": "4cb73eaae9e0a3688e920c0ab319d3d6dbdf4201a3aa9104cc8bae8af04a37f0",
+          "generatedAt": "2026-10-03T06:14:09.451Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2018-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2018-writing-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "Astra初稿205字符已在Claude调用前存档并收紧为196；Claude正文203非空白字符、160汉字，含标点口径略超过200。孔子称许颜回好学等有原文依据；吾与女弗如也存在我赞同你不如与我和你不如等解释，Claude老师自叹弗如不可当成唯一确解。默认采用Astra当前稿，保留Claude全文及限制。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "选择颜回作答，示例如下（约195字）：\n\n颜回，你是孔门中最令我敬慕的一位。论安贫，你“一箪食，一瓢饮，在陋巷，人不堪其忧”，你却“不改其乐”，清贫夺不走你求道的快乐；论好学，你“不迁怒，不贰过”，闻一知十，连老师也自叹“弗如”；论修身，你“三月不违仁”，问仁之后便说“请事斯语”，言出必行。你对夫子之道“仰之弥高，钻之弥坚”，终生追随，欲罢不能。可惜天不假年，你早早离世，令夫子恸哭“天丧予”。你用短暂的一生告诉后人：精神的富足远胜于物质的丰盈。\n\n说明：评语用第二人称，从安贫乐道、好学、践仁三个方面概括颜回的特征，所引均为《论语》中有关颜回的语句，最后给出总体评价。",
+          "inputSha256": "727ec0fef3e4401b018aa9fb16da88be4c79fa8dbba30029ef5b3b966be670d9",
+          "inputContextSha256": "c5f4e58a36e0e7c46ff66404d3c21bdc52e635b8974a4ed83f057c1368b543da",
+          "inputPresentationSha256": "4cb73eaae9e0a3688e920c0ab319d3d6dbdf4201a3aa9104cc8bae8af04a37f0",
+          "generatedAt": "2026-10-03T06:21:38.679257+00:00",
+          "uncertainties": [
+            "本大题为三选一，这里按要求对三个id分别给出示例，实际考试只需任选一题作答。",
+            "《论语》引文凭记忆写出，个别字词可能与通行本略有出入。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "Astra初稿205字符已在Claude调用前存档并收紧为196；Claude正文203非空白字符、160汉字，含标点口径略超过200。孔子称许颜回好学等有原文依据；吾与女弗如也存在我赞同你不如与我和你不如等解释，Claude老师自叹弗如不可当成唯一确解。默认采用Astra当前稿，保留Claude全文及限制。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2018-writing-result.json",
+            "inputPromptSha256": "1bd03d54f13fd86b08e11e80e6e89fb03cc8f3238ec5259844531119e64c1a4a",
+            "responseStreamSha256": "c5d8764c1b43423e3f901aecac40d04b3b1c12ca2eb3cb84ada2de4439821ef1",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "727ec0fef3e4401b018aa9fb16da88be4c79fa8dbba30029ef5b3b966be670d9",
+      "inputContextSha256": "c5f4e58a36e0e7c46ff66404d3c21bdc52e635b8974a4ed83f057c1368b543da",
+      "inputPresentationSha256": "4cb73eaae9e0a3688e920c0ab319d3d6dbdf4201a3aa9104cc8bae8af04a37f0",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "Astra初稿205字符已在Claude调用前存档并收紧为196；Claude正文203非空白字符、160汉字，含标点口径略超过200。孔子称许颜回好学等有原文依据；吾与女弗如也存在我赞同你不如与我和你不如等解释，Claude老师自叹弗如不可当成唯一确解。默认采用Astra当前稿，保留Claude全文及限制。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:25:49.468Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2018-dazuowen:1",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2018北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL公开参考，来源非官方链，逐项审查而非照录",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        },
+        {
+          "type": "institutional",
+          "title": "WTO中国成员信息",
+          "url": "https://www.wto.org/english/thewto_e/countries_e/china_e.htm"
+        },
+        {
+          "type": "institutional",
+          "title": "吉林大学黄大年生平",
+          "url": "https://www.jlu.edu.cn/info/1096/49820.htm"
+        },
+        {
+          "type": "institutional",
+          "title": "国家天文台FAST22年历程",
+          "url": "https://nao.cas.cn/news/zh/201810/t20181018_6407042.html"
+        },
+        {
+          "type": "institutional",
+          "title": "中国载人航天神舟七号任务",
+          "url": "https://en.cmse.gov.cn/missions/shenzhouvii/"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "新时代新青年——谈在祖国发展中成长\n\n青年与时代的关系，并不是列车与乘客的关系。我们确实乘着社会发展的便利走向更广阔的世界，却也将在某一站接过工具，参与铺设新的轨道。在祖国发展中成长，意味着看见自己的机会从何而来，也懂得把这些机会转化为能力与责任。\n\n回望十八年的生活，许多变化已成为我们习以为常的背景。交通更加便捷，让远方不再只是地图上的地名；互联网进入学习生活，使一间普通教室能够连接丰富的知识资源；公共文化空间不断发展，让阅读、观展和交流有了更多可能。我们在这样的环境中长大，个人眼界的打开与国家建设、无数普通人的劳动密不可分。承认这一点，并不是否定个人努力，而是使我们更准确地理解努力赖以展开的条件。一个人懂得来路，才不容易把所得全部视为理所当然。\n\n然而，条件改善并不自动等于人的成长。网络可以帮助我们查阅资料，也可能让我们习惯复制未经思考的结论；更快的交通可以扩展经验，也可能只是把走马观花的脚步移得更远。新时代的新，不应只由我们使用了多少新设备来证明。面对丰富信息，能够核实来源、区分事实与意见，是新的学习能力；面对复杂问题，愿意倾听不同经历、修正先入之见，是新的思想能力。把外部便利转化为内在判断，青年才真正成为发展的受益者。\n\n这种判断也应使我们看见发展尚未完成的部分。不同地方获取教育资源的条件仍有差异，一些老人面对数字服务还会困惑，城市建设也不断面临环境保护与生活便利之间的协调。看到这些，并不削弱我们对祖国的感情。恰恰因为珍惜已经取得的进步，才会认真对待仍待解决的问题。把热爱停留在赞美里容易，把热爱落实为准确的问题、耐心的工作更难，也更有价值。\n\n青年所能承担的责任，可以从身边开始。帮助长辈理解一种新的办事方式时，我们不仅教会几个按钮，也应尊重他们的节奏；参加志愿服务时，应先了解实际需求，再决定怎样提供帮助；学习一门专业时，应把基础打牢，意识到未来的一次计算、一份设计、一项研究都可能影响别人的生活。这些行动未必引人注目，却把个人成长与公共生活连在一起。责任不是喊得响亮的身份，而是把具体事情做好时对他人的顾念。\n\n当然，青年也需要尝试与犯错的空间。期待我们贡献，并不意味着要求每个人立即承担宏大使命。找到自己的兴趣，培养可靠的能力，在遇到困难时愿意请教、重新学习，同样是在为未来准备。国家的发展提供舞台，青年以各自不同的道路丰富舞台；这种关系应当允许多样选择，也共同尊重诚实与勤勉。\n\n走进高考考场，我们正站在一个新的起点。真正值得带走的，不只是时代给予的便利，还有理解来路的清醒、面对问题的勇气和付诸行动的耐心。让个人的每一点成长，都有机会成为他人生活中一份可靠的帮助，这便是我理解的新时代新青年。",
+          "inputSha256": "6a42bbbe40e2fc67f811c6142595553451bd8ea991bef6a39328a562d1144b0d",
+          "inputContextSha256": "96787d78ef0920ac54643e9dcb4335f2c767f56880a6ecfb9b808faa48c4258a",
+          "inputPresentationSha256": "0d9a9c76dffc64c4c65270861a24c3edc9a624d72d0c0a74ecfb0c62c8c6d907",
+          "generatedAt": "2026-10-03T06:14:09.451Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2018-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2018-writing-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "Astra1006、Claude835汉字，均超过700。2001入世、2008神七、黄大年2009末回国至2017初去世、FAST1994至2016年22年建设均有机构资料支持。Claude我们没有经历物质匮乏及一部手机走遍天下概括过强；本世纪中叶建成目标须读作当年愿景，不当作已实现事实。默认Astra更审慎的论述。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "原创示例（议论文，约860字）：\n\n新时代新青年——谈在祖国发展中成长\n\n2000年出生的我们，被称作“世纪宝宝”。十八年来，我们一寸寸长高，祖国一步步走强。回望来路，我愈发确信：青年的成长从来不是孤立的，祖国的发展是我们成长的土壤，而我们的成长，也终将成为祖国发展的动力。\n\n祖国的发展，给了我们成长的底气。我们出生的第二年，中国加入世贸组织；上小学时，北京奥运会的焰火照亮了鸟巢，神舟七号的航天员在太空中挥动五星红旗；进入中学，高铁把千里之遥缩成半日之程，移动支付让一部手机走遍天下，“蛟龙”入海，“天眼”望星。我们没有经历过物质匮乏的年代，在宽敞的教室里读书，在互联网上与世界对话。正因为祖国站得稳、走得快，我们才得以平视这个世界，才能把目光投向更远的地方。这份自信，是时代赠予我们的第一份成人礼。\n\n祖国的发展，也教给我们成长的担当。发展从不是坦途上的漫步。2008年汶川地震，年幼的我们在电视机前看到子弟兵逆行的背影，看到全国人民的捐款与守望，第一次懂得什么叫“一方有难，八方支援”。我们还看到，黄大年放弃国外的优厚待遇回国，把生命的最后七年全部交给了地球深部探测；南仁东用二十二年的时间，在贵州的大山里守出了一口“天眼”。他们让我们明白：祖国的每一步跨越，都是由一个个具体的人扛起来的。享受发展成果的人，理应成为接续奋斗的人。\n\n有人说，这一代青年是温室里的花朵，只会索取，不懂付出。我不同意。诚然，优渥的环境可能滋生安逸，但环境并不决定人的选择。在支教的山村课堂里，在志愿服务的队伍中，在实验室通宵亮着的灯光下，都有同龄人的身影。条件好了，奋斗的内容变了，奋斗的精神却不该变，也没有变。真正的危险不在于生得太好，而在于把时代的馈赠当作理所当然，躺在前人的功劳簿上止步不前。\n\n因此，新时代的新青年，要把个人的成长汇入祖国的发展。这并不意味着人人都要做惊天动地的大事，而是把自己的志趣与国家的需要连在一起：想学医的，把病人的安危放在心上；想做工程的，把每一颗螺丝拧紧；想当教师的，把讲台站成一生的事业。到本世纪中叶，祖国建成社会主义现代化强国之时，我们正值壮年。那幅蓝图上的每一笔，都要由我们这一代人亲手画就。\n\n祖国发展，我们成长；我们成长，祖国更好地发展。十八岁，走出考场，便是走向更辽阔的天地。愿我们不负这个时代，以青春之我，建设青春之国家。\n\n说明：中心论点是“祖国发展是青年成长的土壤，青年成长是祖国发展的动力”。正文分“底气”“担当”两层立论，再驳“温室花朵”之说，最后落到青年应如何做。",
+          "inputSha256": "6a42bbbe40e2fc67f811c6142595553451bd8ea991bef6a39328a562d1144b0d",
+          "inputContextSha256": "96787d78ef0920ac54643e9dcb4335f2c767f56880a6ecfb9b808faa48c4258a",
+          "inputPresentationSha256": "0d9a9c76dffc64c4c65270861a24c3edc9a624d72d0c0a74ecfb0c62c8c6d907",
+          "generatedAt": "2026-10-03T06:21:38.679257+00:00",
+          "uncertainties": [
+            "大作文为二选一，这里按要求对两个id分别给出示例，实际考试只需任选一题作答。",
+            "文中史实（2001年入世、2008年奥运与神七、黄大年、南仁东等）凭记忆写出，未经核对。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "Astra1006、Claude835汉字，均超过700。2001入世、2008神七、黄大年2009末回国至2017初去世、FAST1994至2016年22年建设均有机构资料支持。Claude我们没有经历物质匮乏及一部手机走遍天下概括过强；本世纪中叶建成目标须读作当年愿景，不当作已实现事实。默认Astra更审慎的论述。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2018-writing-result.json",
+            "inputPromptSha256": "1bd03d54f13fd86b08e11e80e6e89fb03cc8f3238ec5259844531119e64c1a4a",
+            "responseStreamSha256": "c5d8764c1b43423e3f901aecac40d04b3b1c12ca2eb3cb84ada2de4439821ef1",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "6a42bbbe40e2fc67f811c6142595553451bd8ea991bef6a39328a562d1144b0d",
+      "inputContextSha256": "96787d78ef0920ac54643e9dcb4335f2c767f56880a6ecfb9b808faa48c4258a",
+      "inputPresentationSha256": "0d9a9c76dffc64c4c65270861a24c3edc9a624d72d0c0a74ecfb0c62c8c6d907",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "Astra1006、Claude835汉字，均超过700。2001入世、2008神七、黄大年2009末回国至2017初去世、FAST1994至2016年22年建设均有机构资料支持。Claude我们没有经历物质匮乏及一部手机走遍天下概括过强；本世纪中叶建成目标须读作当年愿景，不当作已实现事实。默认Astra更审慎的论述。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:25:49.468Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2018-dazuowen:2",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2018北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL公开参考，来源非官方链，逐项审查而非照录",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201806/W020220527578576687930.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "绿水青山图\n\n天刚亮，我背着画夹沿河往上走。雨后的石阶泛着淡淡的光，苔藓贴在石缝里，像尚未干透的颜料。山在薄雾后露出一点青色。我想赶在游客到来以前，给这条河画一幅像。\n\n桥头的竹门却先开了。林叔提着两只竹筐出来，一只装着新摘的菜，另一只空着。他看见我，指了指旧渡口：“去那边坐，水上有鸟。”\n\n我把画板支在岸边。对岸树枝垂得很低，河面映着叶影，一只白鸟站在浅水中，腿细得像两根将要折断的线。我刚用铅笔描下它的轮廓，林叔便走过来，把空筐放在脚边，弯腰捡起草丛里一个被雨水冲下来的塑料袋。\n\n“你不是要去卖菜？”\n\n“顺手带走。”他把袋子压进筐底，又看我的画，“水别画得太蓝，桥边那一片，有树影呢。”\n\n我把蓝色调浅，添了一点绿。小时候我曾来过这里，那时岸边杂物不少，大人总把孩子叫得远远的。我问他，这几年河水怎么变清了。林叔指向村口，说村里逐步接好了污水管线，沿河住户也商量了垃圾收集的办法。“光叫大家爱护不行，总得有地方放，有人运。”他说得很慢，像在解释一幅画为何需要先铺好底色。\n\n太阳升起来，游客陆续到桥头。有个孩子看见白鸟，举着面包便要往岸下跑。林叔拦住他，指了指木牌：请勿投喂，保持距离。孩子不情愿地收回手，母亲陪他蹲在护栏外看。过了一会儿，白鸟轻轻挪动脚步，低头从水里觅食，孩子小声惊呼，随即又自己捂住了嘴。\n\n我把这两个人也添进画里，却没有让他们站在最显眼的地方。他们只是远远地看着，让出了河岸的一角。原来人与自然同在一幅图里，并不一定需要靠得很近；有时，一段愿意保留的距离，也是亲近。\n\n午前，林叔卖完菜回来，筐里多了几个空瓶。他在桥头店里洗了手，端来一碗面。我指着山脚一片新栽的树问，那里的步道什么时候能开放。他摇摇头：“还要等。前阵子雨多，土松，树也没长稳。等养好了，再走。”\n\n我原想从那条路上山俯看全村，听完却把画夹重新放回膝上。眼前的景色并不缺少什么：河水绕过石头，树影被微风揉开，桥边的人说着轻轻的话。等待一片林子长稳，也许比赶着多看一个景点更值得。\n\n收笔时，我发现画上没有一处颜色特别耀眼。绿是叶子的绿，青是远山的青，水里留着许多未涂满的白。林叔站在旁边看了半晌，说：“像咱们这儿。”\n\n我在画纸右下角写下《绿水青山图》。它并不是一张只有山水的画：河边有人弯腰，桥上有人停步，山脚有一条暂时不走的路。那些细小的动作，也成了画里的颜色。",
+          "inputSha256": "b6fea57cee1472c081270be7a1ca2c76d34ddfd40b558e30a1bc2997a3987c4a",
+          "inputContextSha256": "f322def68aa502c9dfa3d2e26820783ffa544873235a4a202bf1a128b00d17c3",
+          "inputPresentationSha256": "3d9ad4a556747707ff394c9bdd6f498bc86146021e6d22f420f4ce1f5cd8884f",
+          "generatedAt": "2026-10-03T06:14:09.451Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2018-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2018-writing-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "Astra834、Claude756汉字，均超过700。两篇人物、村庄和整治经历为虚构。Claude今年暑假按2018高考时点尚未来到，可作题设允许的想象，不能当作已亲历纪实；白鹭归来不能替代水质科学验收。默认Astra当前完整稿。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "原创示例（记叙文，约900字）：\n\n绿水青山图\n\n外公是个画匠，画了一辈子山水，堂屋正中却始终空着一面墙。他说，那里要留给一幅《绿水青山图》，可是动笔三次，都撕了。\n\n我小时候不懂。那时村后的山被采石场啃去了半边，露出灰白的石骨，像一道不肯愈合的伤口；村前的清溪漂着白沫，鱼虾早已绝迹。外公坐在门槛上，望着山叹气：“眼里没有，笔下哪来？”\n\n后来采石场关了。村里人扛着锄头上山，在碎石缝里填土、栽苗。外公也去，背篓里装着杉树苗，画笔换成了铁锹。我跟在他身后，提着小桶浇水，水渗进土里，嗞嗞地响。外公说：“树比画难，画错了能撕，树栽下去，得等它十年。”\n\n今年暑假，我又回到村里。\n\n清晨，我是被鸟声叫醒的。推开窗，雾正从山谷里慢慢升起来，像谁在宣纸上晕开的一笔淡墨。当年的伤口不见了，杉树、毛竹、樟树层层叠叠，绿得深深浅浅，风一过，整座山便起伏如浪。\n\n外公带我去溪边。溪水清得能数清水底的卵石，一群小鱼逆着水流摆尾，我一伸手，它们倏地散开，又在不远处聚拢。几个孩子挽着裤腿在浅滩上摸螺蛳，笑声溅得比水花还高。对岸，三婶在石阶上洗菜，菜叶子顺水漂走一片，立刻被鱼儿围住。一只白鹭立在水田中央，单腿站着，一动不动，仿佛在等谁来给它画像。\n\n“白鹭有二十年没来了。”外公眯着眼说，“前年来了两只，今年来了一群。它们比人精，哪里的水干净，它们晓得。”\n\n沿溪往上，原先的采石场成了一片茶园。茶农老陈戴着斗笠在垄间除草，不用除草剂，全靠一双手。他直起腰朝我们喊：“城里人就认咱这山泉水养的茶，一斤比从前卖石头强多了！”他身后，新修的步道上有游客举着相机，镜头对准的正是我们村那几间白墙黑瓦的老屋，炊烟正从屋顶袅袅地升起。\n\n傍晚回到家，外公铺开宣纸，研墨，调色。这一次他没有犹豫。远山用花青层层渲染，近水留出大片空白，只在水边点了一只白鹭、两三个摸螺蛳的孩子，又在山腰添了一个戴斗笠的人。最后，他在山脚画了一老一少，一个背着背篓，一个提着小桶。\n\n“外公，这是我们吗？”\n\n他笑了，搁下笔：“没有人，山水是死的；人不惜山水，山水也活不成。”\n\n画挂上了堂屋那面空了多年的墙。我站在画前，又转头望向窗外：暮色里，青山静默，溪水有声，分不清哪一幅是画，哪一幅是真。\n\n说明：全文以“外公画不成画到终于画成”为线索，用第一人称叙事。先写采石毁山、溪水污染的过去，再写村民种树后的今天，通过白鹭归来、孩子摸螺蛳、茶园代替采石场等细节展现人与自然和谐相处的图景。结尾画与实景交融，点题“绿水青山图”。",
+          "inputSha256": "b6fea57cee1472c081270be7a1ca2c76d34ddfd40b558e30a1bc2997a3987c4a",
+          "inputContextSha256": "f322def68aa502c9dfa3d2e26820783ffa544873235a4a202bf1a128b00d17c3",
+          "inputPresentationSha256": "3d9ad4a556747707ff394c9bdd6f498bc86146021e6d22f420f4ce1f5cd8884f",
+          "generatedAt": "2026-10-03T06:21:38.679257+00:00",
+          "uncertainties": [
+            "大作文为二选一，这里按要求对两个id分别给出示例，实际考试只需任选一题作答。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "Astra834、Claude756汉字，均超过700。两篇人物、村庄和整治经历为虚构。Claude今年暑假按2018高考时点尚未来到，可作题设允许的想象，不能当作已亲历纪实；白鹭归来不能替代水质科学验收。默认Astra当前完整稿。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2018.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2018-writing-result.json",
+            "inputPromptSha256": "1bd03d54f13fd86b08e11e80e6e89fb03cc8f3238ec5259844531119e64c1a4a",
+            "responseStreamSha256": "c5d8764c1b43423e3f901aecac40d04b3b1c12ca2eb3cb84ada2de4439821ef1",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "b6fea57cee1472c081270be7a1ca2c76d34ddfd40b558e30a1bc2997a3987c4a",
+      "inputContextSha256": "f322def68aa502c9dfa3d2e26820783ffa544873235a4a202bf1a128b00d17c3",
+      "inputPresentationSha256": "3d9ad4a556747707ff394c9bdd6f498bc86146021e6d22f420f4ce1f5cd8884f",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "Astra834、Claude756汉字，均超过700。两篇人物、村庄和整治经历为虚构。Claude今年暑假按2018高考时点尚未来到，可作题设允许的想象，不能当作已亲历纪实；白鹭归来不能替代水质科学验收。默认Astra当前完整稿。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:25:49.468Z",
+      "currentVersion": "gpt_6_astra"
     }
   ],
   "releaseBlockers": [
@@ -22261,6 +24295,29 @@
         "2019-feilian"
       ],
       "detail": "Unit2019-feilian:5 combines originalq5choice(3points) andq6openresponse(7points),legacy score3 preserved. Both parts must be answered; treat as composite/open until compatible explicit subquestion grading is implemented. Never grade the whole unit as a single choice or silently rescale prior records."
+    },
+    {
+      "id": "2018-original-scan",
+      "status": "open",
+      "recordIds": [
+        "2018-feilian",
+        "2018-guwen",
+        "2018-shici",
+        "2018-lunyu",
+        "2018-moxie",
+        "2018-sanwen",
+        "2018-weixiezuo",
+        "2018-dazuowen"
+      ],
+      "detail": "Current source corrected against EOL public retypeset images/DOCX and corroborating jhcee retypeset PDF. The original ten-page exam scan and full original emphasis still need qualification; retypeset corroboration is not original-source proof."
+    },
+    {
+      "id": "2018-composite-score",
+      "status": "open",
+      "recordIds": [
+        "2018-feilian"
+      ],
+      "detail": "2018-feilian:5 bundles original question5choice3points, question6choice3points and question7open5points; preserve legacy score3 and all IDs/history. Require compatible subquestion grading, not a single-choice aggregate."
     }
   ]
 }

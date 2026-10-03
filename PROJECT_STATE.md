@@ -1,3 +1,9 @@
+## 2026-10-02 — 2018 qualified review and first-compaction checkpoint
+
+Coverage270/612:266reviewed,four existing disputes,342uncovered plus specialist-only;213current dual-model v3proofs and57gaps. Added23units and re-reviewed2018-guwen:2 after exact marking repairs. All669prior model texts/dates remain current or archived;246prior authority records unchanged. All IDs/qIndex/scores/legacyfields preserved. 19root reading responses explicitly record reference exposure;fivewritingresponses precededClaude. Both finite providerjobs complete and rawoutputs retained.
+
+Public retypeset images/DOCX/PDF support local source corrections, but original2018scan remains blocked. Thefeilian5composite preservesall original5/6/7answers withlegacy score3;3+3+5compatiblescoring remains blocked. PinnedNode24.18.0passes15authoritytests and201/612/468data validation with0errors. Details:/Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/REVIEW-2018.md. No push,upload,release,authenticatedacceptance,statuspublicationorlearnerwrite. Firstcompactioncheckpoint saved;continue2017source-firstreview.
+
 ## 2026-10-02 — 2019 answers reviewed, candidate only
 
 Coverage is 247/612: 243 reviewed, four existing disputes, 365 uncovered plus specialist-only items. The 25 complete Astra answers preceded Claude and reference inspection. Both finite Claude jobs completed once under actual claude-opus-5-5; raw outputs are retained. Current dual-model v3 proof covers 189 units, with 58 earlier gaps. All source bytes, 222 old authority records and 618 old model texts/dates are unchanged. One new Astra translation explanation is refined with its initial version archived.

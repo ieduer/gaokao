@@ -1630,7 +1630,7 @@
       {
         "key": "material1",
         "label": "材料1",
-        "text": "材料一\n\n当年，科学技术的巨大进步推动了人工智能的迅猛发展，人工智能成了全球产业界、学术界的高频词。有研究者将人工智能定义为：对一种通过计算机实现人脑思维结果，能从环境中获取感知并执行行动的智能体的描述和构建。\n\n人工智能并不是新鲜事物。20世纪中叶，“机器思维”就已出现在这个世界上。1936年，英国数学家阿兰·麦席森·图灵从模拟人类思考和证明的过程入手，提出利用机器执行逻辑代码来模拟人类的各种计算和逻辑思维过程的设想。1950年，他发表了《计算机器与智能》一文，提出了判断机器是否具有智能的标准，即“图灵测试”。“图灵测试”是指一台机器如果能在5分钟内回答由人类测试者提出的一系列问题，且超过30%的回答让测试者误认为是人类所答，那么就可以认为这台机器具有智能。\n\n20世纪80年代，美国哲学家约翰·希尔勒教授用“中文房间”的思维实验，表达了对“智能”的不同思考。一个不懂中文只会说英语的人被关在一个封闭的房间里，他只有铅笔、纸张和一大本指导手册，不时会有画着陌生符号的纸张被递进来。被测试者只能通过阅读指导手册找寻对应指令来分析这些符号。之后，他向屋外的人交出一份同样写满符号的答卷。被测试者全程都不知道，其实这些纸上用来记录问题和答案的符号是中文。他完全不懂中文，但他的回答是完全正确的。上述过程中，被测试者代表计算机，他所经历的也正是计算机的工作内容，即遵循规则，操控符号。“中文房间”实验说明看起来完全智能的计算机程序其实根本不理解自身处理的各种信息。希尔勒认为，如果机器有“智能”，就意味着它具有理解能力。既然机器没有理解能力，那么所谓的“让机器拥有人类智能”的说法就是无稽之谈了。\n\n在人工智能研究领域中，不同学派的科学家对“何为智能”的理解不尽相同。符号主义学派认为“智能”的实质就是具体问题的求解能力，他们会为所设想的智能机器规划好不同的问题求解路径，运用形式推理和数理逻辑的方法，让计算机模仿人类思维进行决策和推理。联结主义学派认为“智能”的实质就是非智能部件相互作用的产物，在他们眼里人类也是一种机器，其智能来源于许多非智能但半自主的组成大脑的物质间的相互作用。他们研究大脑的结构，让计算机去模仿人类的大脑，并且用某种数学模型去重建一个简化的神经元网络。行为主义学派认为“智能”的实质是机器和人类的行为相似，研究人工智能应该研究人类感知和行动的本能，而不是高级的逻辑推理，不解决基本问题就无法实现复杂的思维模拟。因而他们让计算机模仿人的行为，建立人工智能系统。\n\n时至今日，研究者们对“智能”的理解仍未形成共识。但是，正是对“何为智能”这个核心问题的不断思考和解答，推动了人工智能技术在不同层面的发展。\n\n                （取材于谭营等人的文章）"
+        "text": "材料一\n\n当前，科学技术的巨大进步推动了人工智能的迅猛发展，人工智能成了全球产业界、学术界的高频词。有研究者将人工智能定义为：对一种通过计算机实现人脑思维结果，能从环境中获取感知并执行行动的智能体的描述和构建。\n\n人工智能并不是新鲜事物。20世纪中叶，“机器思维”就已出现在这个世界上。1936年，英国数学家阿兰·麦席森·图灵从模拟人类思考和证明的过程入手，提出利用机器执行逻辑代码来模拟人类的各种计算和逻辑思维过程的设想。1950年，他发表了《计算机器与智能》一文，提出了判断机器是否具有智能的标准，即“图灵测试”。“图灵测试”是指一台机器如果能在5分钟内回答由人类测试者提出的一系列问题，且超过30%的回答让测试者误认为是人类所答，那么就可以认为这台机器具有智能。\n\n20世纪80年代，美国哲学家约翰·希尔勒教授用“中文房间”的思维实验，表达了对“智能”的不同思考。一个不懂中文只会说英语的人被关在一个封闭的房间里，他只有铅笔、纸张和一大本指导手册，不时会有画着陌生符号的纸张被递进来。被测试者只能通过阅读指导手册找寻对应指令来分析这些符号。之后，他向屋外的人交出一份同样写满符号的答卷。被测试者全程都不知道，其实这些纸上用来记录问题和答案的符号是中文。他完全不懂中文，但他的回答是完全正确的。上述过程中，被测试者代表计算机，他所经历的也正是计算机的工作内容，即遵循规则，操控符号。“中文房间”实验说明看起来完全智能的计算机程序其实根本不理解自身处理的各种信息。希尔勒认为，如果机器有“智能”，就意味着它具有理解能力。既然机器没有理解能力，那么所谓的“让机器拥有人类智能”的说法就是无稽之谈了。\n\n在人工智能研究领域中，不同学派的科学家对“何为智能”的理解不尽相同。符号主义学派认为“智能”的实质就是具体问题的求解能力，他们会为所设想的智能机器规划好不同的问题求解路径，运用形式推理和数理逻辑的方法，让计算机模仿人类思维进行决策和推理。联结主义学派认为“智能”的实质就是非智能部件相互作用的产物，在他们眼里人类也是一种机器，其智能来源于许多非智能但半自主的组成大脑的物质间的相互作用。他们研究大脑的结构，让计算机去模仿人类的大脑，并且用某种数学模型去重建一个简化的神经元网络。行为主义学派认为“智能”的实质是机器和人类的行为相似，研究人工智能应该研究人类感知和行动的本能，而不是高级的逻辑推理，不解决基本问题就无法实现复杂的思维模拟。因而他们让计算机模仿人的行为，建立人工智能系统。\n\n时至今日，研究者们对“智能”的理解仍未形成共识。但是，正是对“何为智能”这个核心问题的不断思考和解答，推动了人工智能技术在不同层面的发展。\n\n                （取材于谭营等人的文章）"
       },
       {
         "key": "material2",
@@ -1673,40 +1673,49 @@
     "_legacyReferenceAnswer": "1．A\n2．B\n3．B\n4．D\n5．A\n6．C\n7．（1）对于“人工智能”的理解、思考不断深入，深化了对人工智能的认识。\n20世纪中叶：“机器思维”，图灵提出利用计算机模拟人类思考和证明的过程；20世纪80年代，希尔勒用“中文房间”提出“智能”需意味着具有理解能力；不同学派对“智能”的不同认识，也推动了对其认识的不断深化。（2）“人工智能”的发展引发了如何认识、应对“人工智能”的思考，深化了对人工智能的认识\n“人工智能”开发过程中，设计者对伦理问题的思考；“奇点”概念的提出，对人类可能被人工智能“异化”的思考；面对可能存在的冲击，阿西莫夫提出的三大定律都不断深化着对于人工智能的认识。",
     "annotations": [
       {
-        "qIndex": 4,
-        "type": "dot",
+        "qIndex": 1,
         "material": "material1",
-        "start": 694,
-        "end": 695,
-        "anchor": "稽",
-        "rationale": "题目4A选项考查「稽」字含义"
+        "type": "underline",
+        "start": 63,
+        "end": 104,
+        "anchor": "对一种通过计算机实现人脑思维结果，能从环境中获取感知并执行行动的智能体的描述和构建",
+        "rationale": "2018 EOL public retypeset image and DOCX run-format verification; original scan pending"
       },
       {
         "qIndex": 4,
+        "material": "material1",
         "type": "dot",
+        "start": 693,
+        "end": 697,
+        "anchor": "无稽之谈",
+        "rationale": "2018 EOL public retypeset image and DOCX run-format verification; original scan pending"
+      },
+      {
+        "qIndex": 4,
         "material": "material2",
+        "type": "dot",
         "start": 165,
         "end": 169,
         "anchor": "进退维谷",
-        "rationale": "题目4B选项考查成语「进退维谷」"
+        "rationale": "2018 EOL public retypeset image and DOCX run-format verification; original scan pending"
       },
       {
         "qIndex": 4,
-        "type": "dot",
         "material": "material2",
+        "type": "dot",
         "start": 1003,
         "end": 1007,
         "anchor": "袖手旁观",
-        "rationale": "题目4C选项考查成语「袖手旁观」"
+        "rationale": "2018 EOL public retypeset image and DOCX run-format verification; original scan pending"
       },
       {
         "qIndex": 4,
-        "type": "dot",
         "material": "material2",
+        "type": "dot",
         "start": 1115,
         "end": 1119,
         "anchor": "未雨绸缪",
-        "rationale": "题目4D选项考查成语「未雨绸缪」"
+        "rationale": "2018 EOL public retypeset image and DOCX run-format verification; original scan pending"
       }
     ],
     "ai_answers": {
@@ -4737,111 +4746,165 @@
     "annotations": [
       {
         "qIndex": 1,
-        "type": "dot",
         "material": "material1",
+        "type": "dot",
         "start": 14,
         "end": 15,
         "anchor": "时",
-        "rationale": "题目1A项考查加点词时"
+        "rationale": "2018 EOL public retypeset image and DOCX run-format verification; original scan pending"
       },
       {
         "qIndex": 1,
-        "type": "dot",
         "material": "material1",
+        "type": "dot",
         "start": 145,
         "end": 146,
         "anchor": "戚",
-        "rationale": "题目1B项考查加点词戚"
+        "rationale": "2018 EOL public retypeset image and DOCX run-format verification; original scan pending"
       },
       {
         "qIndex": 1,
-        "type": "dot",
         "material": "material2",
+        "type": "dot",
         "start": 71,
         "end": 73,
         "anchor": "相与",
-        "rationale": "题目1C项考查加点词相与"
+        "rationale": "2018 EOL public retypeset image and DOCX run-format verification; original scan pending"
       },
       {
         "qIndex": 1,
-        "type": "dot",
         "material": "material2",
+        "type": "dot",
         "start": 206,
         "end": 207,
         "anchor": "行",
-        "rationale": "题目1D项考查加点词行"
+        "rationale": "2018 EOL public retypeset image and DOCX run-format verification; original scan pending"
       },
       {
         "qIndex": 2,
-        "type": "dot",
         "material": "material1",
-        "start": 8,
-        "end": 9,
+        "type": "dot",
+        "start": 108,
+        "end": 109,
+        "anchor": "日",
+        "rationale": "2018 EOL public retypeset image and DOCX run-format verification; original scan pending"
+      },
+      {
+        "qIndex": 2,
+        "material": "material1",
+        "type": "dot",
+        "start": 131,
+        "end": 132,
+        "anchor": "日",
+        "rationale": "2018 EOL public retypeset image and DOCX run-format verification; original scan pending"
+      },
+      {
+        "qIndex": 2,
+        "material": "material1",
+        "type": "dot",
+        "start": 171,
+        "end": 172,
         "anchor": "胜",
-        "rationale": "题目2B项考查加点词胜"
+        "rationale": "2018 EOL public retypeset image and DOCX run-format verification; original scan pending"
       },
       {
         "qIndex": 2,
-        "type": "dot",
         "material": "material1",
-        "start": 38,
-        "end": 39,
-        "anchor": "之",
-        "rationale": "题目2C项考查加点词之"
+        "type": "dot",
+        "start": 196,
+        "end": 197,
+        "anchor": "胜",
+        "rationale": "2018 EOL public retypeset image and DOCX run-format verification; original scan pending"
       },
       {
         "qIndex": 2,
+        "material": "material1",
         "type": "dot",
+        "start": 246,
+        "end": 247,
+        "anchor": "之",
+        "rationale": "2018 EOL public retypeset image and DOCX run-format verification; original scan pending"
+      },
+      {
+        "qIndex": 2,
         "material": "material2",
-        "start": 110,
-        "end": 111,
+        "type": "dot",
+        "start": 19,
+        "end": 20,
+        "anchor": "之",
+        "rationale": "2018 EOL public retypeset image and DOCX run-format verification; original scan pending"
+      },
+      {
+        "qIndex": 2,
+        "material": "material2",
+        "type": "dot",
+        "start": 117,
+        "end": 118,
         "anchor": "其",
-        "rationale": "题目2D项考查加点词其"
+        "rationale": "2018 EOL public retypeset image and DOCX run-format verification; original scan pending"
+      },
+      {
+        "qIndex": 2,
+        "material": "material2",
+        "type": "dot",
+        "start": 226,
+        "end": 227,
+        "anchor": "其",
+        "rationale": "2018 EOL public retypeset image and DOCX run-format verification; original scan pending"
       },
       {
         "qIndex": 3,
-        "type": "wave",
         "material": "material1",
+        "type": "underline",
         "start": 65,
         "end": 71,
         "anchor": "小事之至也数",
-        "rationale": "题目3A项考查语句理解"
+        "rationale": "2018 EOL public retypeset image and DOCX run-format verification; original scan pending"
       },
       {
         "qIndex": 3,
-        "type": "wave",
         "material": "material1",
+        "type": "underline",
         "start": 122,
         "end": 126,
         "anchor": "大荒者亡",
-        "rationale": "题目3B项考查语句理解"
+        "rationale": "2018 EOL public retypeset image and DOCX run-format verification; original scan pending"
       },
       {
         "qIndex": 3,
-        "type": "wave",
         "material": "material1",
+        "type": "underline",
         "start": 175,
         "end": 181,
         "anchor": "霸者之善著焉",
-        "rationale": "题目3C项考查语句理解"
+        "rationale": "2018 EOL public retypeset image and DOCX run-format verification; original scan pending"
       },
       {
         "qIndex": 3,
-        "type": "wave",
         "material": "material2",
+        "type": "underline",
         "start": 180,
         "end": 184,
         "anchor": "赐失之矣",
-        "rationale": "题目3D项考查语句理解"
+        "rationale": "2018 EOL public retypeset image and DOCX run-format verification; original scan pending"
       },
       {
         "qIndex": 4,
+        "material": "material1",
         "type": "underline",
+        "start": 230,
+        "end": 243,
+        "anchor": "德輶【4】如毛，民鲜克举之",
+        "rationale": "2018 EOL public retypeset image and DOCX run-format verification; original scan pending"
+      },
+      {
+        "qIndex": 4,
         "material": "material2",
+        "type": "underline",
         "start": 208,
         "end": 219,
         "anchor": "不取其金，则不复赎人矣",
-        "rationale": "题目4第2问翻译"
+        "rationale": "2018 EOL public retypeset image and DOCX run-format verification; original scan pending"
       }
     ],
     "ai_answers": {
@@ -8415,44 +8478,7 @@
       }
     ],
     "_legacyReferenceAnswer": "14．D\n15．A\n16．虎啸龙吟与和缓相对，分别指诗人用典的大气与情感的细腻，诗人通过“诸葛表”“相如檄”等典故，表达对友人祝愿和期许，希望他能为国建功立业，给人以“虎啸龙吟”之感；又通过“中年多病”“儿女泪”“须相忆”几句感怀自身老病交加，怀才不遇同时抒发了对友人远行的不舍之情，为此“和缓”。",
-    "annotations": [
-      {
-        "qIndex": 2,
-        "type": "dot",
-        "material": "material1",
-        "start": 21,
-        "end": 25,
-        "anchor": "蜀道登天",
-        "rationale": "题目 2 C 选项考查词句含义"
-      },
-      {
-        "qIndex": 2,
-        "type": "dot",
-        "material": "material1",
-        "start": 54,
-        "end": 57,
-        "anchor": "诸葛表",
-        "rationale": "题目 2 A 选项考查典故含义"
-      },
-      {
-        "qIndex": 2,
-        "type": "dot",
-        "material": "material1",
-        "start": 110,
-        "end": 117,
-        "anchor": "赤壁矶头千古浪",
-        "rationale": "题目 2 B 选项考查典故含义"
-      },
-      {
-        "qIndex": 2,
-        "type": "dot",
-        "material": "material1",
-        "start": 83,
-        "end": 90,
-        "anchor": "儿女泪，君休滴",
-        "rationale": "题目 2 D 选项考查化用典故含义"
-      }
-    ],
+    "annotations": [],
     "ai_answers": {
       "1": "GPT-5.5 pro 版本答案：\n答案：D\n\n选项分析：\nA项正确：词开头“蜀道登天”写友人行程，“还自叹中年多病，不堪离别”写自己状态，词人借离别抒发壮志难酬、蹉跎失志的感慨。\nB项正确：作者称赞李正之有“如椽笔”，意指友人具有卓越的文学才华和处理政务的能力，这是对他才华的充分肯定。\nC项正确：词中明确提到“荆楚路，吾能说”，随后列举“庐山山色”、“赤壁矶头千古浪”、“铜鞮陌上三更月”，这些都是荆楚路上的胜景，作者嘱托友人将其入诗。\nD项错误：结尾“正梅花万里雪深时，须相忆”并非怀念“过去”同游的情景，而是想象未来在梅花盛开、大雪纷飞的寒冬时节，两人虽相隔万里，仍能互相思念。这是对未来友谊的期许，而非对往事的追忆。",
       "2": "GPT-5.5 pro 版本答案：\n答案：A\n\n选项分析：\nA项正确：诸葛亮《出师表》是忠君报国的典范，此处借用此典故，意在勉励李正之入蜀后能如诸葛亮般建功立业、展现才干。\nB项错误：此处虽化用苏轼《念奴娇·赤壁怀古》意象，但主要是为了营造雄阔的意境，展现壮阔的自然景观，并未侧重抒发“人生短暂”的感慨。\nC项错误：“蜀道登天”虽化用了李白的诗句，但词人意在赞美蜀道之险峻及友人入蜀之壮举，而非表达对友人的担忧或望其早归。\nD项错误：“儿女泪，君休滴”化用王勃诗句，意在劝慰友人不必作儿女态，体现的是一种豪迈、豁达的送别情怀，而非表现宦游漂泊的凄苦。",
@@ -13292,33 +13318,6 @@
         "end": 1743,
         "anchor": "泛滥",
         "rationale": "题目 1 D 选项考查词语"
-      },
-      {
-        "qIndex": 2,
-        "type": "wave",
-        "material": "material1",
-        "start": 97,
-        "end": 120,
-        "anchor": "像一个冰凉的大肚子巨人，也像一个傲慢的家庭成员",
-        "rationale": "题目 2 A 项考查比喻修辞"
-      },
-      {
-        "qIndex": 2,
-        "type": "wave",
-        "material": "material1",
-        "start": 1033,
-        "end": 1045,
-        "anchor": "你这孩子，聪明面孔笨肚肠",
-        "rationale": "题目 2 B 项考查理解细节"
-      },
-      {
-        "qIndex": 2,
-        "type": "wave",
-        "material": "material1",
-        "start": 1162,
-        "end": 1177,
-        "anchor": "因为一无所有，所以我们格外好奇",
-        "rationale": "题目 2 D 项考查观点理解"
       }
     ],
     "ai_answers": {
