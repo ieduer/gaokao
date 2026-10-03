@@ -260,3 +260,11 @@ Depends on the accepted User Center learning journal/recorder before this leaf m
 PLAN22受限环境作答前登录读取失败、无模型/费用0；host只读auth确认既有登录后另立PLAN23，串行两批费用标价等价0.3700352USD。源字节自b698037不变，977前存完整模型、380其他审核和全部身份/分值/旧AI保持不变。15authority测试、201/612/441/0数据、输入/hash/完整原始证据/历史/字数验证通过。宋濂原文米与题面半、原卷标记/分值相容及全部发布门禁继续保留。
 
 证据 /Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/REVIEW-2012.md 和verification-2012.json。当前唯一串行owner codex-01a1014f-gpt-6-astra，实际gpt-6-astra/xhigh。未push、上传、正式build、生产/学生写入、认证验收、status或通知；下一步2011来源准备。
+
+## 2026-10-03 — 2011限定来源准备与首次压缩检查点
+
+五组题源40处限定修复（含题面标记说明），旧古文2/默写1审核完整归档。原10断句与原12①/12②/13诗歌四单元另存两记录，仍未正式入库；累计9个补录单元不计612旧单元。原卷8页未获，现为19页重排PDF及存在共同错字的转录；散文局部据作者文本校勘，不能认作原卷认证。原语言2旧score90及其他null分值不变，真实3分与历史兼容待解；选项下划线范围明示，实际渲染缺口继续阻断。
+
+391 reviewed、7 disputed、2 draft、212未覆盖；398当前上下文证明、347标记证明，53缺口。1019前存完整模型、398其他审核和全部题目身份/旧score/旧AI保全。15authority测试、201/612/434/0数据、来源文件hash/冻结输入/历史校验和diff检查通过。作文原文未改。证据 /Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/REVIEW-2011-SOURCE.md 与 verification-2011-source.json。
+
+当前聊天01a1014f首次压缩的来源原子步骤已完成并保存检查点；下一阶段20阅读含4补录+1作文先由本人完整作答、冻结，再新PLAN24串行Claude。阅读已有参考暴露，作文未读2011成文。未新作答或调用提供商，未push、正式build、上传、生产/学生写入、认证验收、status或通知。所有既有发布门禁保留。

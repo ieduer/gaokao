@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261003-reviewed-400-qualified-2012",
+  "revision": "20261003-source2011-qualified-pending",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -3120,13 +3120,11 @@
     },
     {
       "id": "2011-guwen:2",
-      "inputSha256": "d74f2198438a871b6ea7a938c1c74825095d865524923ed791b3475364e08ddb",
-      "status": "reviewed",
+      "inputSha256": "d8a3273e54d929d56c6c5a2c31c8119df805de1d1db00dd53de41eb3cb545880",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "C"
-      ],
-      "explanation": "使在此不表示命令他人行动；不与常用使令义混同。",
+      "correctOptions": [],
+      "explanation": "2011题源和标记校勘后待完整重审；旧题面和全部完整模型均保存在history。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T03:03:23.208Z",
       "sources": [
@@ -3140,83 +3138,167 @@
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 完整附注复核",
-          "text": "答案：C。两处使都提出假设，分别设想曹子不顾后来、管仲赴死，后文据此推演；均可理解为假使。A项可行而不可言是转折，独见而留意则连接相承相合的认识与态度。B项前为表示替鲁国领兵，后为说明最终成为何种人。D项前臣是把某人当臣属看待的动词性用法，后臣是被评论的臣子。",
-          "inputSha256": "d74f2198438a871b6ea7a938c1c74825095d865524923ed791b3475364e08ddb",
-          "generatedAt": "2026-10-03T03:03:23.208Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review_reaffirmation",
-            "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
-            "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "priorAnswerSha256": "7c1d2201b517bfec90856da9bc5cd026e30aa9e23bb1637fd566e46255edbe4b",
-            "annotationEffect": "誳、河上、涔均有明确注释；比喻及人物论证不改变两处使为假设。"
+      "modelAnswers": {},
+      "inputContextSha256": "a706549b484809939c1816ac62940065d01200600d110df1de826cd19b9e06dd",
+      "history": [
+        {
+          "source": {
+            "id": "2011-guwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "事有可行而不可言者，有可言而不可行者。有易为而难成者，有难成而易败者。此四策者，圣人之所独见而留意也。\n\n誳①寸而伸尺，圣人为之；小枉而大直，君子行之。周公有杀弟之累，齐桓有争国之名；然而周公以义补缺，桓公以功灭丑，而皆为贤。今以人之小过，掩其大美，则天下无圣王贤相矣。故目中有疵，不害于视，不可灼也；喉中有病，无害于息，不可凿也。河上②之丘冢，不可胜数，犹之为易也；水激兴波，高下相临，差以寻常，犹之为平。昔者，曹子为鲁将兵，三战不胜，亡地千里。使曹子计不顾后，足不旋踵，刎颈于陈中，则终身为破军擒将矣。然而曹子不羞其败，耻死而无功。柯之盟，揄三尺之刃，造桓公之胸，三战所亡，一朝而反之，勇闻于天下，功立于鲁国。管仲辅公子纠而不能遂，不可谓智；遁逃奔走，不使其难，不可谓勇；束缚桎梏，不讳其耻，不可谓贞。当此三行者，布衣弗友，人君弗臣。然而管仲免于累绁之中，立齐国之政，九合诸侯，一匡天下。使管仲出死捐躯，不顾后图，岂有此霸功哉！   \n\n今人君之论其臣也，不计其大功，总其略行，而求其小善，则失贤之数也。故人有厚德，无问其小节；而有大誉，无疵其小故，夫牛蹄之涔③，不能生鳝鳢鲔，而蜂房不容鹄卵；小形不足以包大体也。\n\n（取材于《淮南子·汜论训》）"
+              }
+            ],
+            "topic": "二、本大题共4小题，每小题3分，共12分。阅读下面的文言文，完成文后各题。",
+            "annotation": "注释：①誳：弯曲。②河上：黄河边，这里指黄河边的平地。③涔：积水。",
+            "annotations": [
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 4,
+                "end": 5,
+                "anchor": "而"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 21,
+                "end": 22,
+                "anchor": "为"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 224,
+                "end": 225,
+                "anchor": "使"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 367,
+                "end": 368,
+                "anchor": "臣"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 2,
+                "id": "q2",
+                "text": "7．下列各组语句中，加点的词意义和用法都相同的一组是（    ）\nA．事有可行*而*不可言者\n圣人之所独见*而*留意也\nB．昔者，曹子*为*鲁将兵\n则终身*为*破军擒将矣\nC．*使*曹子计不顾后\n*使*管仲出死捐躯\nD．布衣弗友，人君弗*臣*\n今人君论其*臣*也",
+                "score": null
+              }
+            ]
           },
-          "inputContextSha256": "07b358102c58e7279820cac30347e3c82a054308ea2ba1e0f5457b0e7fbd6270"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 来源复核后修订",
-          "text": "答案：C。\n选C。A项：“事有可行而不可言者”的“而”表转折；“圣人之所独见而留意也”的“而”表并列（承接），不同。B项：“曹子为鲁将兵”的“为”是介词“替、给”；“则终身为破军擒将矣”的“为”是动词“是、成为”，不同。C项：“使曹子计不顾后”“使管仲出死捐躯”的“使”都是连词“假使、如果”，相同。D项：“人君弗臣”的“臣”是名词活用作动词，“以……为臣”；“论其臣也”的“臣”是名词“臣子”，不同。",
-          "inputSha256": "d74f2198438a871b6ea7a938c1c74825095d865524923ed791b3475364e08ddb",
-          "inputContextSha256": "07b358102c58e7279820cac30347e3c82a054308ea2ba1e0f5457b0e7fbd6270",
-          "generatedAt": "2026-10-03T03:01:54.821132+00:00",
-          "uncertainties": [],
-          "selectedOptions": [
-            "C"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
-            "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
-            "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
-            "stage": "source_review"
+          "review": {
+            "id": "2011-guwen:2",
+            "inputSha256": "d74f2198438a871b6ea7a938c1c74825095d865524923ed791b3475364e08ddb",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "C"
+            ],
+            "explanation": "使在此不表示命令他人行动；不与常用使令义混同。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:03:23.208Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内完整题目及相关材料"
+              },
+              {
+                "type": "dictionary_revision",
+                "title": "文言站2026-09-16-r3词典校订，保留争议"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "答案：C。两处使都提出假设，分别设想曹子不顾后来、管仲赴死，后文据此推演；均可理解为假使。A项可行而不可言是转折，独见而留意则连接相承相合的认识与态度。B项前为表示替鲁国领兵，后为说明最终成为何种人。D项前臣是把某人当臣属看待的动词性用法，后臣是被评论的臣子。",
+                "inputSha256": "d74f2198438a871b6ea7a938c1c74825095d865524923ed791b3475364e08ddb",
+                "generatedAt": "2026-10-03T03:03:23.208Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "7c1d2201b517bfec90856da9bc5cd026e30aa9e23bb1637fd566e46255edbe4b",
+                  "annotationEffect": "誳、河上、涔均有明确注释；比喻及人物论证不改变两处使为假设。"
+                },
+                "inputContextSha256": "07b358102c58e7279820cac30347e3c82a054308ea2ba1e0f5457b0e7fbd6270"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "答案：C。\n选C。A项：“事有可行而不可言者”的“而”表转折；“圣人之所独见而留意也”的“而”表并列（承接），不同。B项：“曹子为鲁将兵”的“为”是介词“替、给”；“则终身为破军擒将矣”的“为”是动词“是、成为”，不同。C项：“使曹子计不顾后”“使管仲出死捐躯”的“使”都是连词“假使、如果”，相同。D项：“人君弗臣”的“臣”是名词活用作动词，“以……为臣”；“论其臣也”的“臣”是名词“臣子”，不同。",
+                "inputSha256": "d74f2198438a871b6ea7a938c1c74825095d865524923ed791b3475364e08ddb",
+                "inputContextSha256": "07b358102c58e7279820cac30347e3c82a054308ea2ba1e0f5457b0e7fbd6270",
+                "generatedAt": "2026-10-03T03:01:54.821132+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "C"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
+                  "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
+                  "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
+                  "stage": "source_review"
+                }
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "答案：C。两处使都提出假设，分别设想曹子不顾后来、管仲赴死，后文据此推演；均可理解为假使。A项可行而不可言是转折，独见而留意则连接相承相合的认识与态度。B项前为表示替鲁国领兵，后为说明最终成为何种人。D项前臣是把某人当臣属看待的动词性用法，后臣是被评论的臣子。",
+                "inputSha256": "d74f2198438a871b6ea7a938c1c74825095d865524923ed791b3475364e08ddb",
+                "generatedAt": "2026-10-03T00:07:56.018Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
+                }
+              },
+              "claude_opus_5_5_initial": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答（修订前存档）",
+                "text": "答案：C。\nA项不同。“事有可行而不可言者”中，“而”表转折，意为“却”；“圣人之所独见而留意也”中，“而”表顺承或并列。B项不同。“曹子为鲁将兵”中，“为”是介词“替、给”；“则终身为破军擒将矣”中，“为”是动词“成为、是”。C项相同。“使曹子计不顾后”“使管仲出死捐躯”中的“使”都是连词，表假设，意为“假使、如果”。D项不同。“人君弗臣”中，“臣”是名词活用为意动用法，意为“以之为臣”；“今人君之论其臣也”中，“臣”是名词“臣子”。故选C。",
+                "inputSha256": "d74f2198438a871b6ea7a938c1c74825095d865524923ed791b3475364e08ddb",
+                "generatedAt": "2026-10-03T00:39:17.649838+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "C"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
+                  "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
+                  "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "dc8800465e0e9c2c08a94b38e44d03eba53b2bfb6fa2668712fffc517644cebc"
+              }
+            },
+            "inputContextSha256": "07b358102c58e7279820cac30347e3c82a054308ea2ba1e0f5457b0e7fbd6270"
           }
-        },
-        "gpt_6_astra_before_context_review": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
-          "text": "答案：C。两处使都提出假设，分别设想曹子不顾后来、管仲赴死，后文据此推演；均可理解为假使。A项可行而不可言是转折，独见而留意则连接相承相合的认识与态度。B项前为表示替鲁国领兵，后为说明最终成为何种人。D项前臣是把某人当臣属看待的动词性用法，后臣是被评论的臣子。",
-          "inputSha256": "d74f2198438a871b6ea7a938c1c74825095d865524923ed791b3475364e08ddb",
-          "generatedAt": "2026-10-03T00:07:56.018Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
-          }
-        },
-        "claude_opus_5_5_initial": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答（修订前存档）",
-          "text": "答案：C。\nA项不同。“事有可行而不可言者”中，“而”表转折，意为“却”；“圣人之所独见而留意也”中，“而”表顺承或并列。B项不同。“曹子为鲁将兵”中，“为”是介词“替、给”；“则终身为破军擒将矣”中，“为”是动词“成为、是”。C项相同。“使曹子计不顾后”“使管仲出死捐躯”中的“使”都是连词，表假设，意为“假使、如果”。D项不同。“人君弗臣”中，“臣”是名词活用为意动用法，意为“以之为臣”；“今人君之论其臣也”中，“臣”是名词“臣子”。故选C。",
-          "inputSha256": "d74f2198438a871b6ea7a938c1c74825095d865524923ed791b3475364e08ddb",
-          "generatedAt": "2026-10-03T00:39:17.649838+00:00",
-          "uncertainties": [],
-          "selectedOptions": [
-            "C"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
-            "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
-            "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
-            "stage": "independent"
-          },
-          "inputContextSha256": "dc8800465e0e9c2c08a94b38e44d03eba53b2bfb6fa2668712fffc517644cebc"
         }
-      },
-      "inputContextSha256": "07b358102c58e7279820cac30347e3c82a054308ea2ba1e0f5457b0e7fbd6270"
+      ],
+      "inputPresentationSha256": "c24f20e9a63601fbe731c52fe25c8f222de495dae5fb53e254dd6de85a935020"
     },
     {
       "id": "2010-guwen:2",
@@ -11120,11 +11202,11 @@
     },
     {
       "id": "2011-moxie:1",
-      "inputSha256": "6e8a062d24ff2efb47422edceacbcd1243fa109e4835f37a0e3c7110cf198089",
-      "status": "reviewed",
+      "inputSha256": "7eb3de79931ff0ae6a479dcad98e0a9130bedf1430be131323e56d8fdb60b347",
+      "status": "draft",
       "kind": "open",
       "correctOptions": [],
-      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "explanation": "2011题源和标记校勘后待完整重审；旧题面和全部完整模型均保存在history。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T01:38:23.281Z",
       "sources": [
@@ -11134,66 +11216,111 @@
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答",
-          "text": "①春服既成；浴乎沂。②水击三千里，抟扶摇而上者九万里。③庶竭驽钝，攘除奸凶。④浩浩汤汤；朝晖夕阴。⑤铁马秋风大散关；塞上长城空自许。⑥青山遮不住；江晚正愁余。当前题文的“曾暂”“徒于南冥”等录字有误，原篇名人物为曾皙，原文为“徙于南冥”；所填各空应按原作。题目限选四道，以上列全供核对。",
-          "inputSha256": "6e8a062d24ff2efb47422edceacbcd1243fa109e4835f37a0e3c7110cf198089",
-          "generatedAt": "2026-10-03T01:38:23.281Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
-            "contextEvidence": {
-              "method": "no_annotation_v1_equivalence",
-              "originalInputSha256": "6e8a062d24ff2efb47422edceacbcd1243fa109e4835f37a0e3c7110cf198089",
-              "originalEvidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
-              "originalAnswerSha256": "95ced08bff83ea3e3c2e9054a82dee355f563261110f2457a5f1f1a8049b6d6d",
-              "contextSha256": "94b91fccf46f0bda8612894dc84831f90ddd3af7897dd9dd69dcf4bec4b64db7",
-              "sourceAnnotation": null,
-              "evidence": "answers-six-sites-20261002/no-annotation-context-proof.json"
+      "modelAnswers": {},
+      "inputContextSha256": "c0cecba77f482d48b68771952aba7dec13b60c26331dba027c683c6397e523d6",
+      "inputPresentationSha256": "fae00677d58134c7f22cd6d7c7c876df923d5d45e751c162eff312c1d498eddc",
+      "history": [
+        {
+          "source": {
+            "id": "2011-moxie",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "①莫春者，                   ，冠者五六人，童子六七人，              ，风乎舞雩，咏而归。                  （《论语·子路、曾暂、冉有、公西华侍坐》）\n②鹏之徒于南冥也，                ，                   ，去以六月息者也。（《庄子·逍遥游》）\n3当奖率三军，北定中原，           ，                ，兴复汉室，还于旧都。（诸葛亮《出师表》）\n4衔远山，吞长江，           ，横无际涯，               ，气象万千。  （范仲淹《岳阳楼记》）\n5楼船夜雪瓜洲渡，               ，              ，镜中衰鬓已先斑。   （陆游《书愤》）\n6          ，毕竟东流去。           ，山深闻鹧鸪。  （辛弃疾《菩萨蛮·书江西造口壁》）"
+              }
+            ],
+            "topic": "11．在横线处写出诗文原句（限选其中4道题）。（8分）",
+            "annotation": null,
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "11．在横线处写出诗文原句（限选其中4道题）。（8分）\n①莫春者，                   ，冠者五六人，童子六七人，              ，风乎舞雩，咏而归。                  （《论语·子路、曾暂、冉有、公西华侍坐》）\n②鹏之徒于南冥也，                ，                   ，去以六月息者也。（《庄子·逍遥游》）\n3当奖率三军，北定中原，           ，                ，兴复汉室，还于旧都。（诸葛亮《出师表》）\n4衔远山，吞长江，           ，横无际涯，               ，气象万千。  （范仲淹《岳阳楼记》）\n5楼船夜雪瓜洲渡，               ，              ，镜中衰鬓已先斑。   （陆游《书愤》）\n6          ，毕竟东流去。           ，山深闻鹧鸪。  （辛弃疾《菩萨蛮·书江西造口壁》）",
+                "score": 8
+              }
+            ]
+          },
+          "review": {
+            "id": "2011-moxie:1",
+            "inputSha256": "6e8a062d24ff2efb47422edceacbcd1243fa109e4835f37a0e3c7110cf198089",
+            "status": "reviewed",
+            "kind": "open",
+            "correctOptions": [],
+            "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T01:38:23.281Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2011北京卷原题及完整材料"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答",
+                "text": "①春服既成；浴乎沂。②水击三千里，抟扶摇而上者九万里。③庶竭驽钝，攘除奸凶。④浩浩汤汤；朝晖夕阴。⑤铁马秋风大散关；塞上长城空自许。⑥青山遮不住；江晚正愁余。当前题文的“曾暂”“徒于南冥”等录字有误，原篇名人物为曾皙，原文为“徙于南冥”；所填各空应按原作。题目限选四道，以上列全供核对。",
+                "inputSha256": "6e8a062d24ff2efb47422edceacbcd1243fa109e4835f37a0e3c7110cf198089",
+                "generatedAt": "2026-10-03T01:38:23.281Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
+                  "contextEvidence": {
+                    "method": "no_annotation_v1_equivalence",
+                    "originalInputSha256": "6e8a062d24ff2efb47422edceacbcd1243fa109e4835f37a0e3c7110cf198089",
+                    "originalEvidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
+                    "originalAnswerSha256": "95ced08bff83ea3e3c2e9054a82dee355f563261110f2457a5f1f1a8049b6d6d",
+                    "contextSha256": "94b91fccf46f0bda8612894dc84831f90ddd3af7897dd9dd69dcf4bec4b64db7",
+                    "sourceAnnotation": null,
+                    "evidence": "answers-six-sites-20261002/no-annotation-context-proof.json"
+                  },
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "94b91fccf46f0bda8612894dc84831f90ddd3af7897dd9dd69dcf4bec4b64db7"
+                  }
+                },
+                "inputContextSha256": "94b91fccf46f0bda8612894dc84831f90ddd3af7897dd9dd69dcf4bec4b64db7",
+                "inputPresentationSha256": "17ffece7b346dee2a1e70bed3f0260e519638e48cd6653376a41aceff0fd2365"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "题目要求限选4题，现全部作答供参考：\n①春服既成；浴乎沂。（《论语·子路、曾皙、冉有、公西华侍坐》）\n②水击三千里，抟扶摇而上者九万里。（《庄子·逍遥游》）\n③庶竭驽钝，攘除奸凶。（诸葛亮《出师表》）\n④浩浩汤汤；朝晖夕阴。（范仲淹《岳阳楼记》）\n⑤铁马秋风大散关，塞上长城空自许。（陆游《书愤》）\n⑥青山遮不住；江晚正愁余。（辛弃疾《菩萨蛮·书江西造口壁》）",
+                "inputSha256": "6e8a062d24ff2efb47422edceacbcd1243fa109e4835f37a0e3c7110cf198089",
+                "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+                "uncertainties": [
+                  "题中篇名“曾暂”应为“曾皙”，系题文笔误，不影响作答。"
+                ],
+                "selectedOptions": [],
+                "assessment": {
+                  "matchesConclusion": null
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+                  "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+                  "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+                  "stage": "independent",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "94b91fccf46f0bda8612894dc84831f90ddd3af7897dd9dd69dcf4bec4b64db7"
+                  }
+                },
+                "inputContextSha256": "94b91fccf46f0bda8612894dc84831f90ddd3af7897dd9dd69dcf4bec4b64db7",
+                "inputPresentationSha256": "17ffece7b346dee2a1e70bed3f0260e519638e48cd6653376a41aceff0fd2365"
+              }
             },
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "94b91fccf46f0bda8612894dc84831f90ddd3af7897dd9dd69dcf4bec4b64db7"
-            }
-          },
-          "inputContextSha256": "94b91fccf46f0bda8612894dc84831f90ddd3af7897dd9dd69dcf4bec4b64db7",
-          "inputPresentationSha256": "17ffece7b346dee2a1e70bed3f0260e519638e48cd6653376a41aceff0fd2365"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "题目要求限选4题，现全部作答供参考：\n①春服既成；浴乎沂。（《论语·子路、曾皙、冉有、公西华侍坐》）\n②水击三千里，抟扶摇而上者九万里。（《庄子·逍遥游》）\n③庶竭驽钝，攘除奸凶。（诸葛亮《出师表》）\n④浩浩汤汤；朝晖夕阴。（范仲淹《岳阳楼记》）\n⑤铁马秋风大散关，塞上长城空自许。（陆游《书愤》）\n⑥青山遮不住；江晚正愁余。（辛弃疾《菩萨蛮·书江西造口壁》）",
-          "inputSha256": "6e8a062d24ff2efb47422edceacbcd1243fa109e4835f37a0e3c7110cf198089",
-          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
-          "uncertainties": [
-            "题中篇名“曾暂”应为“曾皙”，系题文笔误，不影响作答。"
-          ],
-          "selectedOptions": [],
-          "assessment": {
-            "matchesConclusion": null
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
-            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
-            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
-            "stage": "independent",
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "94b91fccf46f0bda8612894dc84831f90ddd3af7897dd9dd69dcf4bec4b64db7"
-            }
-          },
-          "inputContextSha256": "94b91fccf46f0bda8612894dc84831f90ddd3af7897dd9dd69dcf4bec4b64db7",
-          "inputPresentationSha256": "17ffece7b346dee2a1e70bed3f0260e519638e48cd6653376a41aceff0fd2365"
+            "inputContextSha256": "94b91fccf46f0bda8612894dc84831f90ddd3af7897dd9dd69dcf4bec4b64db7",
+            "inputPresentationSha256": "17ffece7b346dee2a1e70bed3f0260e519638e48cd6653376a41aceff0fd2365"
+          }
         }
-      },
-      "inputContextSha256": "94b91fccf46f0bda8612894dc84831f90ddd3af7897dd9dd69dcf4bec4b64db7",
-      "inputPresentationSha256": "17ffece7b346dee2a1e70bed3f0260e519638e48cd6653376a41aceff0fd2365"
+      ]
     },
     {
       "id": "2010-moxie:1",
@@ -36209,6 +36336,19 @@
         }
       ],
       "evidence": "answers-six-sites-20261002/REVIEW-2012.md"
+    },
+    {
+      "id": "2011-source-coverage-and-marking",
+      "status": "open",
+      "recordIds": [
+        "2011-feilian",
+        "2011-guwen",
+        "2011-moxie",
+        "2011-sanwen",
+        "2011-yuyanjichu",
+        "2011-dazuowen"
+      ],
+      "detail": "仅有19页重排PDF（自称原卷8页）和Gzywtk转录，未获得原8页试卷、答题卡或独立出版链；PDF重新合并编号为12题。共同错字不能以两站一致冒称原卷证据。全部8题面页均已目视，原版标点/加点/划线/方格仍待核。 散文局部据作者文本明示校勘，未移入作者全文增删；夐列/层峦叠嶂、原18题名等仍需原卷确认。保留试题现有其他删改、150年前、神祗、银发飘洒等，不把作者全文当作考试版本。非连粉碎适用更正粉碎使用属编辑校勘；原6D故意错误略:简略以及语言错字/病句保留。 缺失原10断句与原12①/12②/13诗歌共4作答单元，另存2来源记录，尚未正式入库和跨站历史映射；不计612分母，不得据612声称原卷全覆盖。断句所以教采用PDF与朱熹文本，不采用Gzywtk所以敬。诗歌C去/去却校为却，属明示校勘。 语言2旧score90来自题内90分钟，原语言各小题3分；古文和其他语言null旧分值均保留。必须先解决历史成绩兼容，禁止直接重算旧成绩或改学生记录。 阅读含补录全部登记参考暴露：搜索/参考解析已出现答案和解释，旧2011-guwen:2也已有审核。主作文仅见题材和要求，未读2011模型成文；不宣称全部盲答。新根答案须20阅读含补录+1作文完整冻结后，才允许下一有限PLAN24，延伸各至少200字、作文至少800字。此步0提供商调用、0新答案。 能源材料的历史数据、食醋美容的错误选项和文学神话不代表已验证的当代技术、医学、历史事实；只用于原文理解，答案裁定需限定。原卷来源、标记、计分、补录、早期v3和六站消费者/发布/真实验收等所有既有门禁继续保留。 原2下划线范围已在注释明示，formatter不支持选项下划线的呈现缺口仍阻断；不能把无标记v3输入冒称原图恢复。"
     }
   ]
 }
