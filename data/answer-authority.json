@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261003-source2015-qualified-pending",
+  "revision": "20261003-reviewed-338-qualified-2015",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -2358,12 +2358,14 @@
     {
       "id": "2015-guwen:2",
       "inputSha256": "8a344108f2e7ee23449dabc074284666f55228c7bcb6949eb00ad39bff884db4",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "single_choice",
-      "correctOptions": [],
-      "explanation": "2015转录/完整上下文修复后的待重审输入；旧输入及模型原文留存history。原卷来源与准确标记资格仍阻断。",
-      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:03:23.208Z",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "A。其分别为疑问语气与指代；之为结构助词；遂为于是；者指所述之人。准确比较原加点对象，不能拿材料开篇遂长替换本题而遂杀之。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
+      "reviewedAt": "2026-10-03T09:30:04.042Z",
       "sources": [
         {
           "type": "source_material",
@@ -2372,10 +2374,59 @@
         {
           "type": "dictionary_revision",
           "title": "文言站2026-09-16-r3词典校订，保留争议"
+        },
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2015北京语文新浪转载重排，仅作限定来源复核，原卷仍待核",
+          "url": "https://edu.sina.com.cn/gaokao/2015-06-07/1622471853.shtml"
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {},
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "答案：A。其谁可而为之中的其是句首语气词，与谁配合提出疑问，可译究竟谁可以担任；君知其难也中的其是指代性的用法，指前述事情或其困难。B两之均为结构助词，表示领属关系；C两遂均表示于是、就，承接前事；D两者均使前面的描述指称一类人，即伤人的人、和我一样的人。必须看题中被标出的其、之、遂、者，不能沿用旧错误位置，把万物得遂长的遂拿来比较。",
+          "inputSha256": "8a344108f2e7ee23449dabc074284666f55228c7bcb6949eb00ad39bff884db4",
+          "inputContextSha256": "145afc148d3a6d1d1d8ecfc5b6800118b31e9ba5003bdda1663669550d64a6ee",
+          "inputPresentationSha256": "bafd6d7d46a15e7c9f226c76bd6cbaa1d17e4dd42ee41c048262ca60ef501174",
+          "generatedAt": "2026-10-03T09:24:35.450451+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2015-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2015-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2015-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\n选A。\nA项不同：“其谁可而为之”的“其”是语气副词，用在疑问句中加强语气，不译或译为“那么”；“君知其难也”（《烛之武退秦师》）的“其”是代词，指代“越国以鄙远”这件事。\nB项相同：“子之子”“小人之言”的“之”都是结构助词“的”。\nC项相同：“而遂杀之”“后遂无问津者”的“遂”都是副词，于是、就。\nD项相同：“伤人者”“同予者”的“者”都是代词，译为“……的人”。",
+          "inputSha256": "8a344108f2e7ee23449dabc074284666f55228c7bcb6949eb00ad39bff884db4",
+          "inputContextSha256": "145afc148d3a6d1d1d8ecfc5b6800118b31e9ba5003bdda1663669550d64a6ee",
+          "inputPresentationSha256": "bafd6d7d46a15e7c9f226c76bd6cbaa1d17e4dd42ee41c048262ca60ef501174",
+          "generatedAt": "2026-10-03T09:26:48.669792+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2015-reading-result.json",
+            "inputPromptSha256": "21a40096fed41d98960c84e3e849380da636636a5461d16983df94ce896f5c98",
+            "responseStreamSha256": "05444e82449710792b1426c04c34bc2f109583f009f3b4d5127898cd50f909c7",
+            "stage": "independent"
+          }
+        }
+      },
       "inputContextSha256": "145afc148d3a6d1d1d8ecfc5b6800118b31e9ba5003bdda1663669550d64a6ee",
       "history": [
         {
@@ -9998,20 +10049,77 @@
     {
       "id": "2015-moxie:1",
       "inputSha256": "04cabb1ec28ebfa3cb05a92b1d341ad9b766e23d8b50b23849f05807a149389d",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "open",
       "correctOptions": [],
-      "explanation": "2015转录/完整上下文修复后的待重审输入；旧输入及模型原文留存history。原卷来源与准确标记资格仍阻断。",
-      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "explanation": "登东皋以舒啸，临清流而赋诗；山水之乐，得之心而寓之酒也。公共古籍正文交叉核对；字形与题内语境相合，不制造唯一权威底本声明。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
+      "reviewedAt": "2026-10-03T09:30:04.042Z",
       "sources": [
         {
           "type": "source_material",
           "title": "站内2015北京卷原题及完整材料"
+        },
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2015北京语文新浪转载重排，仅作限定来源复核，原卷仍待核",
+          "url": "https://edu.sina.com.cn/gaokao/2015-06-07/1622471853.shtml"
+        },
+        {
+          "type": "source_text",
+          "title": "醉翁亭记正文",
+          "url": "https://zh.wikisource.org/zh/醉翁亭記"
+        },
+        {
+          "type": "literary_research",
+          "title": "陶渊明笔下的声音世界，引归去来兮辞原句",
+          "url": "https://www.nydi.gov.cn/sitesources/nysjwjw/page_pc/xcjd/s/articlecca7e09f36144cb78c40a5b558547e88.html"
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {},
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "①登东皋以舒啸，临清流而赋诗。\n②山水之乐，得之心而寓之酒也。\n注意皋、啸、赋、寓的字形。第一处两句写登高长啸与临流赋诗；第二处说明山水之乐寄寓于酒，与题目所给醉翁意趣相照应。",
+          "inputSha256": "04cabb1ec28ebfa3cb05a92b1d341ad9b766e23d8b50b23849f05807a149389d",
+          "inputContextSha256": "d429485bc7a708662f86c97d6b93646845697838ca6737b8f619c7a9e775b563",
+          "inputPresentationSha256": "27e59625f65faefb6662fe943f5bb08a261ad7c209d4d24d660ad92e5ce9b521",
+          "generatedAt": "2026-10-03T09:24:35.450451+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2015-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2015-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2015-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "①登东皋以舒啸，临清流而赋诗。\n②山水之乐，得之心而寓之酒也。",
+          "inputSha256": "04cabb1ec28ebfa3cb05a92b1d341ad9b766e23d8b50b23849f05807a149389d",
+          "inputContextSha256": "d429485bc7a708662f86c97d6b93646845697838ca6737b8f619c7a9e775b563",
+          "inputPresentationSha256": "27e59625f65faefb6662fe943f5bb08a261ad7c209d4d24d660ad92e5ce9b521",
+          "generatedAt": "2026-10-03T09:26:48.669792+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2015-reading-result.json",
+            "inputPromptSha256": "21a40096fed41d98960c84e3e849380da636636a5461d16983df94ce896f5c98",
+            "responseStreamSha256": "05444e82449710792b1426c04c34bc2f109583f009f3b4d5127898cd50f909c7",
+            "stage": "independent"
+          }
+        }
+      },
       "inputContextSha256": "d429485bc7a708662f86c97d6b93646845697838ca6737b8f619c7a9e775b563",
       "inputPresentationSha256": "27e59625f65faefb6662fe943f5bb08a261ad7c209d4d24d660ad92e5ce9b521",
       "history": [
@@ -28826,6 +28934,1687 @@
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T08:58:35.311Z",
       "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2015-feilian:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2015北京语文新浪转载重排，仅作限定来源复核，原卷仍待核",
+          "url": "https://edu.sina.com.cn/gaokao/2015-06-07/1622471853.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "答案：B。计算机历史短是与汉字历史长相对的背景，不是中国独有的印刷技术困境。材料明确显示，国外照排机已发展到第四代，中国仍沿用旧技术；汉字数量、字体字号众多造成庞大字库；底片与阴极射线管分辨率等技术条件不足。这分别支持A、C、D。不能因某句出现于文章，就把它当成问题所问的原因。",
+          "inputSha256": "8122f378399e59caac28eaa2bc9233458324e23c4fc7411b524a8fc1985ad6cb",
+          "inputContextSha256": "0d044e54a45f80670027bb0dc35775515c2fce6ea00d9f49caf6f2d3c7449c2a",
+          "inputPresentationSha256": "23496fb826cdf4b27da43c90cca44c1066e70c79a5e56877fdba97524bfac6a1",
+          "generatedAt": "2026-10-03T09:24:35.450451+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2015-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2015-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2015-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。A项正确：材料一第二、三段写美、德、英、日已先后研制出四代排字机，而中国仍在沿用古代技术，研究进程落后。B项不正确：原文“只有几十年历史的计算机，向拥有数千年历史的汉字提出了严峻的挑战”，是说新兴的计算机技术给汉字带来挑战，“历史短”只是修饰语，并非中国印刷业陷入危机的原因。C项正确：汉字数量巨大，字体、字号繁多，又要求字形美观、笔锋明晰，是汉字自身特征带来的困难。D项正确：第三代排字机对底片和阴极射线管分辨率要求高，“在中国当时的技术条件下难以克服”。",
+          "inputSha256": "8122f378399e59caac28eaa2bc9233458324e23c4fc7411b524a8fc1985ad6cb",
+          "inputContextSha256": "0d044e54a45f80670027bb0dc35775515c2fce6ea00d9f49caf6f2d3c7449c2a",
+          "inputPresentationSha256": "23496fb826cdf4b27da43c90cca44c1066e70c79a5e56877fdba97524bfac6a1",
+          "generatedAt": "2026-10-03T09:26:48.669792+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2015-reading-result.json",
+            "inputPromptSha256": "21a40096fed41d98960c84e3e849380da636636a5461d16983df94ce896f5c98",
+            "responseStreamSha256": "05444e82449710792b1426c04c34bc2f109583f009f3b4d5127898cd50f909c7",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "8122f378399e59caac28eaa2bc9233458324e23c4fc7411b524a8fc1985ad6cb",
+      "inputContextSha256": "0d044e54a45f80670027bb0dc35775515c2fce6ea00d9f49caf6f2d3c7449c2a",
+      "inputPresentationSha256": "23496fb826cdf4b27da43c90cca44c1066e70c79a5e56877fdba97524bfac6a1",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "B。计算机历史短是修饰背景，不能当成中国印刷业困境的原因。Claude首句概括美德英日已研制四代易使人误认为日本也完成第四代；原文恰说日本尚未成功，必须保留这个区别。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
+      "reviewedAt": "2026-10-03T09:30:04.042Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2015-feilian:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2015北京语文新浪转载重排，仅作限定来源复核，原卷仍待核",
+          "url": "https://edu.sina.com.cn/gaokao/2015-06-07/1622471853.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "答案：C。汉字的表意体系及复杂字形使存储和高质量排印更困难，并不意味着无法用于排字机；材料还举出日本已研制汉字排字机的事实。A对应数量与存贮，B对应多种字体字号形成的庞大字库，D对应字形美观和笔锋明晰的要求，都有材料依据。",
+          "inputSha256": "298ed3cba3013d1b3807c63a01b147da1c7c59df183ca04fa29f875800aa3177",
+          "inputContextSha256": "7757ca97a1041856ca30f9a7cd8ee17c35d891a692f1b641b4aa9ec86c67ec94",
+          "inputPresentationSha256": "99cf08721916bb8a3404b5458b340759f693dd3dce7553c096522859b9728a22",
+          "generatedAt": "2026-10-03T09:24:35.450451+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2015-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2015-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2015-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。A项正确：原文“汉字的巨大数量，为排字机字库的存贮带来了极大的挑战”。B项正确：字体有十多种，字号有十五种，字库收字成倍增长，排版繁复。C项不正确：材料只说汉字相比表音文字数量巨大，给排字机带来技术困难，并未说汉字“无法适用于”排字机，而且日本已研制出第二、三代汉字排字机，此项说法绝对化。D项正确：原文“要保证字形美观、笔锋明晰，汉字带给排字机的技术困难就会更大”。",
+          "inputSha256": "298ed3cba3013d1b3807c63a01b147da1c7c59df183ca04fa29f875800aa3177",
+          "inputContextSha256": "7757ca97a1041856ca30f9a7cd8ee17c35d891a692f1b641b4aa9ec86c67ec94",
+          "inputPresentationSha256": "99cf08721916bb8a3404b5458b340759f693dd3dce7553c096522859b9728a22",
+          "generatedAt": "2026-10-03T09:26:48.669792+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2015-reading-result.json",
+            "inputPromptSha256": "21a40096fed41d98960c84e3e849380da636636a5461d16983df94ce896f5c98",
+            "responseStreamSha256": "05444e82449710792b1426c04c34bc2f109583f009f3b4d5127898cd50f909c7",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "298ed3cba3013d1b3807c63a01b147da1c7c59df183ca04fa29f875800aa3177",
+      "inputContextSha256": "7757ca97a1041856ca30f9a7cd8ee17c35d891a692f1b641b4aa9ec86c67ec94",
+      "inputPresentationSha256": "99cf08721916bb8a3404b5458b340759f693dd3dce7553c096522859b9728a22",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "C。存在技术困难不等于表意文字无法适用于排字机，材料已述日本第二、三代汉字排字机。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
+      "reviewedAt": "2026-10-03T09:30:04.042Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2015-feilian:3",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2015北京语文新浪转载重排，仅作限定来源复核，原卷仍待核",
+          "url": "https://edu.sina.com.cn/gaokao/2015-06-07/1622471853.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "答案：B。材料从激光照排的技术背景写起，着重叙述我国解决字模存贮、文字变倍等问题，研制信息压缩技术、参数控制方法并取得成功，中心是汉字照排技术的突破与创新。A偏重原理及使用，不能涵盖创新过程；C偏重设备性能，范围较窄；D将具体领域的创新概括成汉字信息处理技术整体领先世界，超出了论述范围。",
+          "inputSha256": "69fcf22249c3bfbf9285ed14d39d66f328118ed7a9be3398a4a9f6e7aa075ef6",
+          "inputContextSha256": "c80490ea5af75488eaf016fc13a89d825dfcedb923796feabb44202c95a38533",
+          "inputPresentationSha256": "4df6b069d1afb9abd682781ab5e1c3ac656db900527b531c0cb90d4685bea858",
+          "generatedAt": "2026-10-03T09:24:35.450451+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2015-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2015-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2015-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。材料二先介绍第四代激光排字技术，再写汉字激光照排要攻克字模存贮等难关，重点写王选团队研制出高倍数汉字信息压缩技术和用参数信息控制文字变倍变形的方法，最后写国产系统胜出、印刷业进入“光与电”时代。全文核心是汉字照排技术的突破与自主创新，B项概括最全面。A项不当：材料没有重点讲系统原理，更没有讲“使用”。C项不当：“高速廉价的照排机”只是压缩技术带来的一个结果，以偏概全。D项不当：“领先世界”只是参数控制方法这一点，以此概括全文范围过大，也偏离了“照排”这一中心。",
+          "inputSha256": "69fcf22249c3bfbf9285ed14d39d66f328118ed7a9be3398a4a9f6e7aa075ef6",
+          "inputContextSha256": "c80490ea5af75488eaf016fc13a89d825dfcedb923796feabb44202c95a38533",
+          "inputPresentationSha256": "4df6b069d1afb9abd682781ab5e1c3ac656db900527b531c0cb90d4685bea858",
+          "generatedAt": "2026-10-03T09:26:48.669792+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2015-reading-result.json",
+            "inputPromptSha256": "21a40096fed41d98960c84e3e849380da636636a5461d16983df94ce896f5c98",
+            "responseStreamSha256": "05444e82449710792b1426c04c34bc2f109583f009f3b4d5127898cd50f909c7",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "69fcf22249c3bfbf9285ed14d39d66f328118ed7a9be3398a4a9f6e7aa075ef6",
+      "inputContextSha256": "c80490ea5af75488eaf016fc13a89d825dfcedb923796feabb44202c95a38533",
+      "inputPresentationSha256": "4df6b069d1afb9abd682781ab5e1c3ac656db900527b531c0cb90d4685bea858",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "B。全文中心为汉字照排技术的突破与创新；不能把局部参数方法世界首创扩成全部信息处理技术领先世界。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
+      "reviewedAt": "2026-10-03T09:30:04.042Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2015-feilian:4",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2015北京语文新浪转载重排，仅作限定来源复核，原卷仍待核",
+          "url": "https://edu.sina.com.cn/gaokao/2015-06-07/1622471853.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后修订",
+          "text": "本题保留争议，不给出确定性自动评分键。若按材料第二段列举的三项待解决问题来对应选项，预期选择B：字模存贮、文字变倍和只能逐线扫描的限制对应A、C、D，汉字信息压缩则在后文作为解决存贮问题的手段出现。但题干只说不属于技术难关，研制压缩技术本身也完全可能构成难关；D又只写激光逐线扫描，省掉了原文只能逐线而不能逐字这一限制。于是，若把D理解为已经采用的第四代激光扫描技术本身，也有排除D的理由。公开重排版答案存在B与D冲突，原始试卷及权威释题尚未核实。保留B为按列举结构推得的意向答案、D为另一解释下的候选，不将二者当成多选题答案。",
+          "inputSha256": "05f09b817506ad5b6c0f1ec0b00a1e2f108f85cb7ee66db286d2729dcd62b28f",
+          "inputContextSha256": "8522bc28b0c59349b45e2f70d437f13ab713ae3ed538532eec62abe746899bc3",
+          "inputPresentationSha256": "892df6a552e403338b27e376bf45e5be9d8dabf89e97189a89aeaad24c91b0c9",
+          "generatedAt": "2026-10-03T09:30:04.042Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2015-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2015-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2015-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh",
+            "refinementEvidence": "answers-six-sites-20261002/root-2015-refinements.json",
+            "refinementReason": "两模型均按文段列举选B，但公开重排答案有B/D冲突，选项把技术限制缩写为技术名称，难关与解决手段的区分不是严格互斥。原卷未取得，保留争议而非将一致意见当作唯一性证明。",
+            "initialVersion": "gpt_6_astra_initial"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。材料二第二段明确说汉字激光照排系统“要解决字模存贮、文字变倍、激光只能逐线扫描而不能逐字扫描等关键问题”，所以A、C、D都属于技术难关。B项“汉字信息压缩”是王选团队为解决字模存贮难题而研制出的技术，是解决难关的办法和成果，不是难关本身。",
+          "inputSha256": "05f09b817506ad5b6c0f1ec0b00a1e2f108f85cb7ee66db286d2729dcd62b28f",
+          "inputContextSha256": "8522bc28b0c59349b45e2f70d437f13ab713ae3ed538532eec62abe746899bc3",
+          "inputPresentationSha256": "892df6a552e403338b27e376bf45e5be9d8dabf89e97189a89aeaad24c91b0c9",
+          "generatedAt": "2026-10-03T09:26:48.669792+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2015-reading-result.json",
+            "inputPromptSha256": "21a40096fed41d98960c84e3e849380da636636a5461d16983df94ce896f5c98",
+            "responseStreamSha256": "05444e82449710792b1426c04c34bc2f109583f009f3b4d5127898cd50f909c7",
+            "stage": "independent"
+          }
+        },
+        "gpt_6_astra_initial": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "按材料列举问题与介绍解决方法的结构，选B。第二段明确列为待解决问题的是字模存贮、文字变倍以及激光只能逐线而不能逐字扫描，对应A、C、D；汉字信息压缩在后段作为突破存贮难关的关键方法出现。这里的排除只是依据本文的分类方式，不能理解成信息压缩研究毫无困难、不重要，或没有技术挑战。题目若把技术难关泛指所有创新任务，会有表述边界，讲解应说明这一限定。",
+          "inputSha256": "05f09b817506ad5b6c0f1ec0b00a1e2f108f85cb7ee66db286d2729dcd62b28f",
+          "inputContextSha256": "8522bc28b0c59349b45e2f70d437f13ab713ae3ed538532eec62abe746899bc3",
+          "inputPresentationSha256": "892df6a552e403338b27e376bf45e5be9d8dabf89e97189a89aeaad24c91b0c9",
+          "generatedAt": "2026-10-03T09:24:35.450451+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2015-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2015-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2015-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          }
+        }
+      },
+      "inputSha256": "05f09b817506ad5b6c0f1ec0b00a1e2f108f85cb7ee66db286d2729dcd62b28f",
+      "inputContextSha256": "8522bc28b0c59349b45e2f70d437f13ab713ae3ed538532eec62abe746899bc3",
+      "inputPresentationSha256": "892df6a552e403338b27e376bf45e5be9d8dabf89e97189a89aeaad24c91b0c9",
+      "status": "disputed",
+      "kind": "single_choice",
+      "correctOptions": [],
+      "explanation": "保留争议。按明确列举问题与后文解决手段区分，两模型原答均B；但压缩技术研制亦可能是难关，D省略只能逐线不能逐字的限制，使技术与难题界限不严。公开转载B/D互异、原卷仍缺，不以一致意见消除问题。current correctOptions为空，候选B/D只解释可能读法，不是多选答案。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
+      "reviewedAt": "2026-10-03T09:30:04.042Z",
+      "currentVersion": "gpt_6_astra",
+      "candidateOptions": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "2015-feilian:5",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2015北京语文新浪转载重排，仅作限定来源复核，原卷仍待核",
+          "url": "https://edu.sina.com.cn/gaokao/2015-06-07/1622471853.shtml"
+        },
+        {
+          "type": "dictionary",
+          "title": "汉典凹：笔顺25251",
+          "url": "https://www.zdic.net/hans/凹"
+        },
+        {
+          "type": "dictionary",
+          "title": "汉典凸：笔顺21251",
+          "url": "https://www.zdic.net/hans/凸"
+        },
+        {
+          "type": "dictionary",
+          "title": "教育部成语典：数典忘祖的礼制历史义",
+          "url": "https://dict.idioms.moe.edu.tw/idiomView.jsp?ID=274&la=0&webMd=1"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "本单元包括原第5、6、7、8四题。\n第5题：D。另辟蹊径的辟是开辟，不能换成僻；凹、凸起笔为竖，亘读gèn，贮读zhù。\n第6题：A。所指是印刷术。前文先说印刷术使科技文化传播，随后写其在信息时代遇到困难及王选继承发展的贡献，不能把独领风骚直接扩大成所有四大发明，也不是前段吴文俊的算法数学。\n第7题：①攻克汉字字模存贮等瓶颈，实现兼顾速度、质量与成本的现代照排，推动中文印刷从铅与火走向光与电。②使我国计算机编辑排版和汉字信息处理达到新水平，国产系统在市场竞争中取得优势，体现自主创新能力。③以现代技术继承和发展中国的印刷传统，促进汉字及中国科技文化的传播，为在传统基础上创新提供实例。以上按材料的历史叙述作概括，不把文中所有技术数量或市场断言当作已独立认证的当前事实。\n第8题：D。数典忘祖的典指历来的制度、事迹等，不是经典著作；制可指著述，流指水流，息是停止。原第5/6/7/8为2+3+6+2分，须分别作答，不能只按旧合并score2判分。",
+          "inputSha256": "3e97e8ab6e71f294b7348d73982f02fa0d013606fa2291518b31d31908737a8c",
+          "inputContextSha256": "03fa93e30cc0dc64cd7929ca6518b7661c4899fc41fe857be7699e996b27bdcd",
+          "inputPresentationSha256": "f037f27c0365788cc14318c8bad26c65e0f2922abed5934aba783fea5d7a4530",
+          "generatedAt": "2026-10-03T09:24:35.450451+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2015-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2015-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2015-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n本条包含第5、6、7、8四道小题，逐题作答如下。\n\n【第5题】选D。A项正确：“凹”“凸”第一笔都是竖。B项正确：“亘”读gèn。C项正确：“贮”读zhù。D项不正确：“另辟蹊径”的“辟”是开辟的意思，不能写成表示偏僻的“僻”。\n\n【第6题】选A。原句说王选团队“卓有成效地继承并发展了独领风骚的中国古代科技”，前文讲的是印刷术使中国科技文化广泛传播，而20世纪汉字排版与印刷落后于西方；后文又说王选掀起的是“印刷技术的革命”。所以这里指的是曾领先西方数百年的印刷术。B项“研究思想”和D项“算法的数学”属于上一段吴文俊的例子，与王选无关。C项“四大发明”范围过大。\n\n【第7题】意义可从以下几方面回答：\n①技术上：攻克了汉字字模存贮、文字变倍等难关，使我国计算机编辑排版系统和汉字信息处理技术达到新水平，其中参数控制方法为世界首创，并获得我国第一项欧洲专利。\n②产业上：使中文印刷业告别“铅与火”，跨进“光与电”时代，扭转了我国印刷业在20世纪落后于西方的局面。\n③市场上：国产照排系统在与国外产品的竞争中大获全胜，外国公司全部退出中国出版领域的照排市场。\n④汉字与文化上：解决了汉字进入信息时代的难题，回应了“汉字不废除就不能进入现代文明”的论调；继承并发展了中国古代印刷术，弘扬和传播了中国的科技与文化。\n⑤启示上：证明了在继承传统基础上自主创新的道路可行，为建设创新型国家提供了范例。\n\n【第8题】选D。A项正确：“鸿篇巨制”的“制”指著作、著述。B项正确：“源远流长”的“流”指水流。C项正确：“自强不息”的“息”指停止。D项不正确：“数典忘祖”的“典”指典籍、典章制度及历来的事迹掌故，不是“经典”。",
+          "inputSha256": "3e97e8ab6e71f294b7348d73982f02fa0d013606fa2291518b31d31908737a8c",
+          "inputContextSha256": "03fa93e30cc0dc64cd7929ca6518b7661c4899fc41fe857be7699e996b27bdcd",
+          "inputPresentationSha256": "f037f27c0365788cc14318c8bad26c65e0f2922abed5934aba783fea5d7a4530",
+          "generatedAt": "2026-10-03T09:26:48.669792+00:00",
+          "uncertainties": [
+            "本条id下合并了第5、6、7、8四道小题：第5题D，第6题A，第8题D，第7题为主观题。answer数组只填了第5题的选项，其余见analysis。"
+          ],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2015-reading-result.json",
+            "inputPromptSha256": "21a40096fed41d98960c84e3e849380da636636a5461d16983df94ce896f5c98",
+            "responseStreamSha256": "05444e82449710792b1426c04c34bc2f109583f009f3b4d5127898cd50f909c7",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "3e97e8ab6e71f294b7348d73982f02fa0d013606fa2291518b31d31908737a8c",
+      "inputContextSha256": "03fa93e30cc0dc64cd7929ca6518b7661c4899fc41fe857be7699e996b27bdcd",
+      "inputPresentationSha256": "f037f27c0365788cc14318c8bad26c65e0f2922abed5934aba783fea5d7a4530",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "本单元完整回答原5D、6A、7意义、8D。汉典凹25251凸21251均起竖。Sina第8题标B而解析说D错，不能照抄键。典指典章制度、历来掌故事迹，题中经典释义不当。Claude把参数控制首创与前段欧洲专利并在一句，不能据此断言专利属于后来所述参数方法；外国公司退出等仅按材料历史叙述。其机器字段只填第5题D，原样保存，全文齐全；authority整体open且无选择评分键。原2+3+6+2、旧score2，兼容计分仍阻断。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
+      "reviewedAt": "2026-10-03T09:30:04.042Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2015-guwen:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2015北京语文新浪转载重排，仅作限定来源复核，原卷仍待核",
+          "url": "https://edu.sina.com.cn/gaokao/2015-06-07/1622471853.shtml"
+        },
+        {
+          "type": "dictionary",
+          "title": "教育部异体字字典：忍的狠心义",
+          "url": "https://dict.variants.moe.edu.tw/dictView.jsp?ID=14731&la=1"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "①选B。至公指极其公正，至是极、最。②选C。前句明确子，人之所私也，所私指自己偏爱的儿子；忍所私在这一结构中是对自己所爱之人狠下心。D抑制容易把所私改解成抽象的私情，不能替代文中紧接子而来的指代关系。须保留两项各自的答案B、C，不当成一题单选或只存一个字母。原题两项共2分，具体分项计分应与历史分值兼容。",
+          "inputSha256": "690b15f4f82064968cbf4cfdbec94b6896bf3f2d0c7ebb4cced2298aa4b7a9c9",
+          "inputContextSha256": "b75cc4aa493b9ae1b520fb9c334528b19daf11c3733f6d0d4bd4a614a0baad22",
+          "inputPresentationSha256": "206e67ce6db1ec32165d733f44f8d14ddadcf0f5bb5b3f6cd0aa892d244c3a73",
+          "generatedAt": "2026-10-03T09:24:35.450451+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2015-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2015-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2015-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B、C。\n本条含两个小题，各为单选：①选B，②选C。\n\n①“至公也”：“至”是程度副词，意为极、最，“至公”即最公正、公正到极点。A“到达”、C“至于”、D“导致”放入句中都讲不通。\n\n②“忍所私以行大义”：前文说“子，人之所私也”，可见“所私”指自己偏爱的儿子。“忍”在这里是忍心、狠心的意思，全句是说对自己所偏爱的儿子狠下心来（忍痛割爱）以推行大义。所以选C“对……狠心”。A“忍耐”、B“容忍”与文意不合。D“抑制”的对象应是情感，而这里“所私”指的是人，不如C贴切。",
+          "inputSha256": "690b15f4f82064968cbf4cfdbec94b6896bf3f2d0c7ebb4cced2298aa4b7a9c9",
+          "inputContextSha256": "b75cc4aa493b9ae1b520fb9c334528b19daf11c3733f6d0d4bd4a614a0baad22",
+          "inputPresentationSha256": "206e67ce6db1ec32165d733f44f8d14ddadcf0f5bb5b3f6cd0aa892d244c3a73",
+          "generatedAt": "2026-10-03T09:26:48.669792+00:00",
+          "uncertainties": [
+            "本条是两个单选小题合在一起，answer数组依次对应①B、②C，并非一道多选题。",
+            "第②小题C与D较接近，我依据“所私”指儿子判断为C。"
+          ],
+          "selectedOptions": [
+            "B",
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2015-reading-result.json",
+            "inputPromptSha256": "21a40096fed41d98960c84e3e849380da636636a5461d16983df94ce896f5c98",
+            "responseStreamSha256": "05444e82449710792b1426c04c34bc2f109583f009f3b4d5127898cd50f909c7",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "690b15f4f82064968cbf4cfdbec94b6896bf3f2d0c7ebb4cced2298aa4b7a9c9",
+      "inputContextSha256": "b75cc4aa493b9ae1b520fb9c334528b19daf11c3733f6d0d4bd4a614a0baad22",
+      "inputPresentationSha256": "206e67ce6db1ec32165d733f44f8d14ddadcf0f5bb5b3f6cd0aa892d244c3a73",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "原9两单选①B②C。所私承前文子，忍解释为对所爱之人狠心更贴切；教育部字典支持狠心义，不能只凭词条替代语境。Claude机器字段multiple_choice/B,C明言是两个子题，原样保存；本单元open，不能当成一次多选评分。旧null及分项计分未变。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
+      "reviewedAt": "2026-10-03T09:30:04.042Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2015-guwen:3",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2015北京语文新浪转载重排，仅作限定来源复核，原卷仍待核",
+          "url": "https://edu.sina.com.cn/gaokao/2015-06-07/1622471853.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "答案：B。君问可是说国君问的是谁能够担任这个职位，祁黄羊是在区分任人标准与私人关系，并非评价君主的发问恰当。A说明不把君位传给儿子而授予舜；C是秦惠王希望墨者在此事上听从自己的意思；D说明有关法令用来禁止杀伤人的行为，均与上下文相合。",
+          "inputSha256": "8be9155fd77e76fff7ff1bcd5f775333e60df5da8c7ebfb5aa8c7bf6e03302d9",
+          "inputContextSha256": "bccb738bec134bcc43a7926c8c707bf5509c8999bfa2508d8d774f5345eb6da4",
+          "inputPresentationSha256": "7c6eefb2e6d1aefce3ba7067fd39bc5fc5a1df5df2b756e7702c49f014c3a49a",
+          "generatedAt": "2026-10-03T09:24:35.450451+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2015-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2015-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2015-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。\nA项正确：“与”是给予、传给，“授”是传授（帝位），译文无误。\nB项不正确：“君问可”的“可”承接上文“其谁可而为之”，指可以胜任的人。全句应译为“您问的是谁可以胜任，不是问谁是我的仇人”。译成“您的发问是恰当的”是误解。\nC项正确：“以此”即在这件事上，“听”是听从，句子表示希望的语气。\nD项正确：“所以”表示“用来……的（办法）”，译文无误。",
+          "inputSha256": "8be9155fd77e76fff7ff1bcd5f775333e60df5da8c7ebfb5aa8c7bf6e03302d9",
+          "inputContextSha256": "bccb738bec134bcc43a7926c8c707bf5509c8999bfa2508d8d774f5345eb6da4",
+          "inputPresentationSha256": "7c6eefb2e6d1aefce3ba7067fd39bc5fc5a1df5df2b756e7702c49f014c3a49a",
+          "generatedAt": "2026-10-03T09:26:48.669792+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2015-reading-result.json",
+            "inputPromptSha256": "21a40096fed41d98960c84e3e849380da636636a5461d16983df94ce896f5c98",
+            "responseStreamSha256": "05444e82449710792b1426c04c34bc2f109583f009f3b4d5127898cd50f909c7",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "8be9155fd77e76fff7ff1bcd5f775333e60df5da8c7ebfb5aa8c7bf6e03302d9",
+      "inputContextSha256": "bccb738bec134bcc43a7926c8c707bf5509c8999bfa2508d8d774f5345eb6da4",
+      "inputPresentationSha256": "7c6eefb2e6d1aefce3ba7067fd39bc5fc5a1df5df2b756e7702c49f014c3a49a",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "B。君问可是君问谁能胜任，非评价发问恰当；A/C/D依完整文意可通。原题3分与旧null的兼容评分未解决。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
+      "reviewedAt": "2026-10-03T09:30:04.042Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2015-guwen:4",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2015北京语文新浪转载重排，仅作限定来源复核，原卷仍待核",
+          "url": "https://edu.sina.com.cn/gaokao/2015-06-07/1622471853.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后修订",
+          "text": "画线部分译为：太阳和月亮照耀万物而没有偏私，四季运行而没有偏私。它们施行各自的恩泽，使万物都得以顺利生长。烛是照耀，行分别联系四季运行和施行恩泽理解，遂长是顺利生长。其承接前文天地、日月、四时，译文可用它们统摄；焉在这里不必机械另译为在其中。指定画线从日月无私烛也起，到万物得遂长焉止，前两句天覆地载不属于这段已核对的画线范围。",
+          "inputSha256": "61e89b0edfb59af0adeba1d621a35fcf4851a5caa30d70080df22d44500cfc10",
+          "inputContextSha256": "df7f6c7883046ad59298c4583da7c4d548b85dcd7a46a1d702de1b659f9c0e24",
+          "inputPresentationSha256": "58973d593ba2fc3ac206b0a4c59934f0541d24184951c3c6abcdc032558bb5f2",
+          "generatedAt": "2026-10-03T09:30:04.042Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2015-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2015-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2015-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh",
+            "refinementEvidence": "answers-six-sites-20261002/root-2015-refinements.json",
+            "refinementReason": "将德落实为施惠万物的恩泽，避免把句末焉机械指定为在其中；译文只覆盖实际可见的日月起画线范围。保留初答全文。",
+            "initialVersion": "gpt_6_astra_initial"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "译文：太阳和月亮没有偏私地照耀万物，春夏秋冬四季没有偏私地运行。它们（天地、日月、四季）施行各自的恩德，万物于是得以顺利地生长。\n\n要点：“烛”是名词用作动词，照耀；“四时”指四季；“行”前一个是运行，后一个是施行；“德”是恩德、德泽；“遂”是顺利地成长、成就；“焉”是句末语气词。",
+          "inputSha256": "61e89b0edfb59af0adeba1d621a35fcf4851a5caa30d70080df22d44500cfc10",
+          "inputContextSha256": "df7f6c7883046ad59298c4583da7c4d548b85dcd7a46a1d702de1b659f9c0e24",
+          "inputPresentationSha256": "58973d593ba2fc3ac206b0a4c59934f0541d24184951c3c6abcdc032558bb5f2",
+          "generatedAt": "2026-10-03T09:26:48.669792+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2015-reading-result.json",
+            "inputPromptSha256": "21a40096fed41d98960c84e3e849380da636636a5461d16983df94ce896f5c98",
+            "responseStreamSha256": "05444e82449710792b1426c04c34bc2f109583f009f3b4d5127898cd50f909c7",
+            "stage": "independent"
+          }
+        },
+        "gpt_6_astra_initial": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "画线部分译为：太阳和月亮的照耀没有偏私，四季的运行没有偏私。它们施行各自的德性，万物因而都得以顺利生长。烛是照耀，行分别联系四时运行和施行其德理解，遂长是顺利生长，焉可结合语意译为在其中或据此。译文对应日月起至万物得遂长焉止的画线范围；前两句天覆地载不是这道翻译题的指定全部范围。",
+          "inputSha256": "61e89b0edfb59af0adeba1d621a35fcf4851a5caa30d70080df22d44500cfc10",
+          "inputContextSha256": "df7f6c7883046ad59298c4583da7c4d548b85dcd7a46a1d702de1b659f9c0e24",
+          "inputPresentationSha256": "58973d593ba2fc3ac206b0a4c59934f0541d24184951c3c6abcdc032558bb5f2",
+          "generatedAt": "2026-10-03T09:24:35.450451+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2015-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2015-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2015-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          }
+        }
+      },
+      "inputSha256": "61e89b0edfb59af0adeba1d621a35fcf4851a5caa30d70080df22d44500cfc10",
+      "inputContextSha256": "df7f6c7883046ad59298c4583da7c4d548b85dcd7a46a1d702de1b659f9c0e24",
+      "inputPresentationSha256": "58973d593ba2fc3ac206b0a4c59934f0541d24184951c3c6abcdc032558bb5f2",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "只译日月至遂长画线，德为施惠万物的恩泽，遂长为顺利生长。本人初答的焉在其中赘释已修订，保留初答全文。Claude烛名词作动词的词性标签不作为必需得分点；核心为照耀义与无私。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
+      "reviewedAt": "2026-10-03T09:30:04.042Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2015-guwen:5",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2015北京语文新浪转载重排，仅作限定来源复核，原卷仍待核",
+          "url": "https://edu.sina.com.cn/gaokao/2015-06-07/1622471853.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "第13题任选两人，各用两个熟语。示例：晋平公——从善如流、任人唯贤；他向祁黄羊询问人选，并接受举荐。祁黄羊——大公无私、举贤不避亲；他举荐仇人解狐和儿子午，都以是否适任为准。若另选腹䵍，可用不徇私情、大义灭亲，并联系他不接受君王赦免儿子的叙述。大义灭亲在这里是古文人物评价，不能转成现代生活中可以私自执法的行为主张。\n第14题：①平公的善肯定祁黄羊的举荐意见，认为人选合适。②国人称善紧接遂用之，肯定选贤任能、任用得当的结果；不能凭空补出官员上任后的具体政绩。③孔子的善肯定祁黄羊举人唯贤的主张与公正原则，即外举不避仇、内举不避子。三处不能笼统都答人物人品好，要区分举荐、任用和原则的语境。两原题4+3分均需回答，旧合并score4保留待兼容计分。",
+          "inputSha256": "039b8eaccc684e192e7d03cbacad2a9fecaa139d7ece083b6a01a26b2cc4edc9",
+          "inputContextSha256": "5b34b2ec7718abe4de035a7e5b0b57d15d16700bd506adc07a5e32c585118bc2",
+          "inputPresentationSha256": "2b60af364b4e1ff838f9a8e4d0bd35af395637c48261e8806aea45af5eb4c569",
+          "generatedAt": "2026-10-03T09:24:35.450451+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2015-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2015-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2015-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【第13题】任选两人作答，下面三人都给出，供选用。\n①晋平公：从善如流、知人善任（也可用“虚怀若谷”“用人不疑”）。他两次向祁黄羊询问人选，听了对方的道理立即称“善”并加以任用。\n②祁黄羊：大公无私、任人唯贤（也可用“外举不避仇，内举不避亲”“出以公心”）。他推荐人才只看能否胜任，既不回避仇人解狐，也不回避儿子祁午。\n③腹䵍：大义灭亲、铁面无私（也可用“执法如山”“公而忘私”）。儿子杀人，秦惠王已下令赦免，他仍坚持按墨者之法处死独子。\n\n【第14题】\n①平公曰“善”：指向祁黄羊的回答，即“君问可，非问臣之仇（子）也”这番话和他的举荐意见。平公认为说得对，表示赞同并采纳。\n②国人称善：指向晋平公任用解狐为南阳令、任用午为尉这件事。国人认为人选得当、用人得当。\n③孔子“善哉”：指向祁黄羊举荐人才的主张和做法，即“外举不避仇，内举不避子”所体现的公正无私。",
+          "inputSha256": "039b8eaccc684e192e7d03cbacad2a9fecaa139d7ece083b6a01a26b2cc4edc9",
+          "inputContextSha256": "5b34b2ec7718abe4de035a7e5b0b57d15d16700bd506adc07a5e32c585118bc2",
+          "inputPresentationSha256": "2b60af364b4e1ff838f9a8e4d0bd35af395637c48261e8806aea45af5eb4c569",
+          "generatedAt": "2026-10-03T09:26:48.669792+00:00",
+          "uncertainties": [
+            "本条id下合并了第13、14两道主观题，已分别作答。第13题熟语答案不唯一，贴合人物即可。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2015-reading-result.json",
+            "inputPromptSha256": "21a40096fed41d98960c84e3e849380da636636a5461d16983df94ce896f5c98",
+            "responseStreamSha256": "05444e82449710792b1426c04c34bc2f109583f009f3b4d5127898cd50f909c7",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "039b8eaccc684e192e7d03cbacad2a9fecaa139d7ece083b6a01a26b2cc4edc9",
+      "inputContextSha256": "5b34b2ec7718abe4de035a7e5b0b57d15d16700bd506adc07a5e32c585118bc2",
+      "inputPresentationSha256": "2b60af364b4e1ff838f9a8e4d0bd35af395637c48261e8806aea45af5eb4c569",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "原13任选两人每人两个贴切熟语；14区分平公肯定举荐意见、国人赞任用得当、孔子赞公正举贤原则。没有官员上任政绩证据，不增写政绩。腹䵍之事是古文伦理叙述。原4+3与旧score4，两个子题均保留。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
+      "reviewedAt": "2026-10-03T09:30:04.042Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2015-shici:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2015北京语文新浪转载重排，仅作限定来源复核，原卷仍待核",
+          "url": "https://edu.sina.com.cn/gaokao/2015-06-07/1622471853.shtml"
+        },
+        {
+          "type": "dictionary",
+          "title": "汉典徽：系弦绳与琴面标识的多义",
+          "url": "https://www.zdic.net/hans/徽"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "答案：C。醉翁去后，空有朝吟夜怨，承接的是流泉，主要把泉声写成醉翁离去后的吟怨，不是叙述苏轼本人站在泉边朝夜吟诵。全词确含怀念欧阳修之情，不能为排除C而说全词没有思念。A以空山写空寂环境，B借荷蒉者赞有心之人来衬托醉翁知音，D联系翁今为飞仙与此意在人间，说明人去而艺术意境犹存。",
+          "inputSha256": "0d75a19a6f93d1c3c578b11eb7b9554c6073308f2cb1a735dab4d029deb35df4",
+          "inputContextSha256": "e868c7e585a7a051938a3bee7c92ce78ef46216f299bf743871f3d73fc116edf",
+          "inputPresentationSha256": "425f04d80f510b87584811828f85c31636cd6b5e595a263baa5529e21510a22e",
+          "generatedAt": "2026-10-03T09:24:35.450451+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2015-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2015-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2015-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。\nA项正确：两处“空山”都写出了山的空旷幽寂，本词是以泉声回响来衬托。\nB项正确：“荷蒉过山前，曰有心也哉此贤”化用《论语》中荷蒉者听孔子击磬而称“有心哉”的典故，赞赏醉翁是懂得泉声妙趣的有心人、知音。\nC项不正确：“醉翁去后，空有朝吟夜怨”的主语是流泉，说醉翁离去后无人与泉声相和，泉水只能徒然地朝夕吟唱、如怨如诉。这是拟人写法，不是作者面对流泉吟诵。\nD项正确：“翁今为飞仙。此意在人间，试听徽外三两弦”说醉翁虽已仙逝，他与流泉相和的意趣仍借琴曲留在人间。",
+          "inputSha256": "0d75a19a6f93d1c3c578b11eb7b9554c6073308f2cb1a735dab4d029deb35df4",
+          "inputContextSha256": "e868c7e585a7a051938a3bee7c92ce78ef46216f299bf743871f3d73fc116edf",
+          "inputPresentationSha256": "425f04d80f510b87584811828f85c31636cd6b5e595a263baa5529e21510a22e",
+          "generatedAt": "2026-10-03T09:26:48.669792+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2015-reading-result.json",
+            "inputPromptSha256": "21a40096fed41d98960c84e3e849380da636636a5461d16983df94ce896f5c98",
+            "responseStreamSha256": "05444e82449710792b1426c04c34bc2f109583f009f3b4d5127898cd50f909c7",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "0d75a19a6f93d1c3c578b11eb7b9554c6073308f2cb1a735dab4d029deb35df4",
+      "inputContextSha256": "e868c7e585a7a051938a3bee7c92ce78ef46216f299bf743871f3d73fc116edf",
+      "inputPresentationSha256": "425f04d80f510b87584811828f85c31636cd6b5e595a263baa5529e21510a22e",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "C。朝吟夜怨主体为流泉，拟人写其无人相和；全词确有怀念欧阳修，不能沿用转载解析全词不写思念的错误。徽有系琴弦绳的旧义，也有琴面标识义，不能仅据现代古琴定义判题注错误；原卷文字资格仍待。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
+      "reviewedAt": "2026-10-03T09:30:04.042Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2015-shici:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2015北京语文新浪转载重排，仅作限定来源复核，原卷仍待核",
+          "url": "https://edu.sina.com.cn/gaokao/2015-06-07/1622471853.shtml"
+        },
+        {
+          "type": "source_text",
+          "title": "琵琶行正文及异文",
+          "url": "https://zh.wikisource.org/zh/琵琶行"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "①选B。商声寥亮羽声苦直接说明音乐音调、声情，后句江天江枫营造秋日氛围，没有借另一种声音来描写笛声。A用龙吟虎啸、万籁百泉，C用蜂吟蝉声，D用白玉相敲、黄莺鸣啭，都是以其他声音表现乐声。不能把任何描写音乐的句子都归为以声写声。\n②嘈嘈切切错杂弹，大珠小珠落玉盘。此处以珠落玉盘之声表现琵琶声，与后文莺语泉流共同构成声音比拟。原题①3分、②2分，不可只保存选择题B而遗漏两句默写。",
+          "inputSha256": "caf907f7da7c4bf6f26c9db00aaca9660f758058cd3a6965c97f6468f662bbff",
+          "inputContextSha256": "b4c8fe13a260f558de42844d39f490459f8e38063eef859de3b6d8b3176d7b50",
+          "inputPresentationSha256": "4899585c160b7d3f50f398cfa7a30e9d8fd40fffacf386ea4d1aefa3e855a58c",
+          "generatedAt": "2026-10-03T09:24:35.450451+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2015-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2015-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2015-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n【第17题①】选B。\nA项运用了：以“龙吟虎啸”和“万籁百泉”的声音来形容觱篥声。\nB项没有运用：“商声寥亮羽声苦”是直接描述笛声的音调特点，“江天寂历江枫秋”是以景物渲染氛围，没有借另一种声音来比拟笛声。\nC项运用了：以蜂群在野花间的细吟、蝉移高柳时的残鸣来形容琴声。\nD项运用了：以敲击白玉的声音、黄莺娇啼来形容胡琴声。\n\n【第17题②】嘈嘈切切错杂弹，大珠小珠落玉盘。",
+          "inputSha256": "caf907f7da7c4bf6f26c9db00aaca9660f758058cd3a6965c97f6468f662bbff",
+          "inputContextSha256": "b4c8fe13a260f558de42844d39f490459f8e38063eef859de3b6d8b3176d7b50",
+          "inputPresentationSha256": "4899585c160b7d3f50f398cfa7a30e9d8fd40fffacf386ea4d1aefa3e855a58c",
+          "generatedAt": "2026-10-03T09:26:48.669792+00:00",
+          "uncertainties": [
+            "本条含一道单选和一道默写，answer数组只填单选的选项，默写答案见analysis。"
+          ],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2015-reading-result.json",
+            "inputPromptSha256": "21a40096fed41d98960c84e3e849380da636636a5461d16983df94ce896f5c98",
+            "responseStreamSha256": "05444e82449710792b1426c04c34bc2f109583f009f3b4d5127898cd50f909c7",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "caf907f7da7c4bf6f26c9db00aaca9660f758058cd3a6965c97f6468f662bbff",
+      "inputContextSha256": "b4c8fe13a260f558de42844d39f490459f8e38063eef859de3b6d8b3176d7b50",
+      "inputPresentationSha256": "4899585c160b7d3f50f398cfa7a30e9d8fd40fffacf386ea4d1aefa3e855a58c",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "原17①B；②嘈嘈切切错杂弹，大珠小珠落玉盘。词声与环境写景不能都算以声写声。Claude机器字段仅B，但analysis包含完整默写，原样保存；本单元open无选择评分键，保留原3+2总5及分项兼容门禁。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
+      "reviewedAt": "2026-10-03T09:30:04.042Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2015-shici:5",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2015北京语文新浪转载重排，仅作限定来源复核，原卷仍待核",
+          "url": "https://edu.sina.com.cn/gaokao/2015-06-07/1622471853.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "景色方面，《醉翁亭记》铺写山中朝暮及春花、夏木、秋霜、冬石等四时变化，兼有游人、宴饮的热闹场面；本词重在月明风露、空山流泉的清幽境界，尤其以玉声、琴声等联想描写泉声，使听觉成为景物描写的中心。山有时童巅、水有时回川写自然随时变迁，不能硬当成眼前一次四季游览。\n情怀方面，前者借山水之乐表达醉翁自得和与民同乐；本词赞美醉翁能领悟自然妙趣、与流泉相和，借人去泉鸣寄托对欧阳修的怀念。自然会变、人已离世，而词曲所承载的意趣仍在人间，结尾还包含对其风神和艺术境界得以流传的欣慰。两者有关联，但不可把与民同乐原封不动套进这首词。",
+          "inputSha256": "3b3f6adaa560493807f5c54afdab14caf46716dac12f03f5279ab97684b303a4",
+          "inputContextSha256": "4ffa5f8c344a991e69fc0ec87a5918be588d017147c8d3b59cf88f6c51f14cec",
+          "inputPresentationSha256": "d3dfa431b5a593e0987e7af3437be48f17b67a7fc6c94c7b67168b26dd9bd835",
+          "generatedAt": "2026-10-03T09:24:35.450451+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2015-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2015-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2015-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "景色不同：\n《醉翁亭记》写的是琅琊山朝暮、四季的多样景色，如日出林霏开、云归岩穴暝、野芳幽香、佳木繁阴、风霜高洁、水落石出，还有滁人游山、宴饮的热闹场面，景象明丽丰富。\n《醉翁操》只集中写月夜空山中的泉声：琅然清圆的泉响回荡空山，月明、风露娟娟。它以听觉为主，营造出清幽空灵、宁静悠远的意境。\n\n情怀不同：\n《醉翁亭记》表现的是欧阳修寄情山水的自适之乐和太守与民同乐的情怀。\n《醉翁操》表现的有三层：\n①对醉翁的推重。上片“惟翁醉中知其天”，又借荷蒉者的典故，赞赏醉翁是唯一能领会泉声天然妙趣的知音。\n②对醉翁的思念。下片写醉翁去后流泉“空有朝吟夜怨”，山会秃、水会回流，而“思翁无岁年”，世事可变，对已成“飞仙”的醉翁的追怀没有尽期。\n③一份慰藉。醉翁寄情山水的意趣借琴曲长留人间（“此意在人间”），含有以琴声传承其精神的意思。",
+          "inputSha256": "3b3f6adaa560493807f5c54afdab14caf46716dac12f03f5279ab97684b303a4",
+          "inputContextSha256": "4ffa5f8c344a991e69fc0ec87a5918be588d017147c8d3b59cf88f6c51f14cec",
+          "inputPresentationSha256": "d3dfa431b5a593e0987e7af3437be48f17b67a7fc6c94c7b67168b26dd9bd835",
+          "generatedAt": "2026-10-03T09:26:48.669792+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2015-reading-result.json",
+            "inputPromptSha256": "21a40096fed41d98960c84e3e849380da636636a5461d16983df94ce896f5c98",
+            "responseStreamSha256": "05444e82449710792b1426c04c34bc2f109583f009f3b4d5127898cd50f909c7",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "3b3f6adaa560493807f5c54afdab14caf46716dac12f03f5279ab97684b303a4",
+      "inputContextSha256": "4ffa5f8c344a991e69fc0ec87a5918be588d017147c8d3b59cf88f6c51f14cec",
+      "inputPresentationSha256": "d3dfa431b5a593e0987e7af3437be48f17b67a7fc6c94c7b67168b26dd9bd835",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "比较朝暮四时与月明风露、空山流泉，以及与民同乐和思翁传承艺术意趣。Claude只集中写月夜过窄，词另有朝吟夜怨、山水变迁，不可据此说全词只有月夜；唯一知音是词中惟翁的艺术强调，并非历史上再无知音的事实断言。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
+      "reviewedAt": "2026-10-03T09:30:04.042Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2015-lunyu:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2015北京语文新浪转载重排，仅作限定来源复核，原卷仍待核",
+          "url": "https://edu.sina.com.cn/gaokao/2015-06-07/1622471853.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "四个括号依次填写：曾皙、孔子、曾皙、孔子。第二种标点构成曾皙提出疑问、孔子回答的两轮对话；人物次序不能只填一个人，也不能把四句全当作孔子独白。",
+          "inputSha256": "bdcbed99591aded3e04e8bcfba414df89c91fb54e70c5621acecac26d5f2306e",
+          "inputContextSha256": "b86eb346f1720f31ed0772c831ad6580d710bcb16900a2b53c8fdaac46e6b9a3",
+          "inputPresentationSha256": "424404fc7c17c141134a589801f97eee56f94064a38df3a7540ec0950419dd39",
+          "generatedAt": "2026-10-03T09:24:35.450451+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2015-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2015-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2015-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "四个括号内依次是：曾皙、孔子、曾皙、孔子。\n\n即：（曾皙）“唯求则非邦也与？”（孔子）“安见方六七十，如五六十而非邦也者？”（曾皙）“唯赤则非邦也与？”（孔子）“宗庙会同，非诸侯而何？赤也为之小，孰能为之大？”",
+          "inputSha256": "bdcbed99591aded3e04e8bcfba414df89c91fb54e70c5621acecac26d5f2306e",
+          "inputContextSha256": "b86eb346f1720f31ed0772c831ad6580d710bcb16900a2b53c8fdaac46e6b9a3",
+          "inputPresentationSha256": "424404fc7c17c141134a589801f97eee56f94064a38df3a7540ec0950419dd39",
+          "generatedAt": "2026-10-03T09:26:48.669792+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2015-reading-result.json",
+            "inputPromptSha256": "21a40096fed41d98960c84e3e849380da636636a5461d16983df94ce896f5c98",
+            "responseStreamSha256": "05444e82449710792b1426c04c34bc2f109583f009f3b4d5127898cd50f909c7",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "bdcbed99591aded3e04e8bcfba414df89c91fb54e70c5621acecac26d5f2306e",
+      "inputContextSha256": "b86eb346f1720f31ed0772c831ad6580d710bcb16900a2b53c8fdaac46e6b9a3",
+      "inputPresentationSha256": "424404fc7c17c141134a589801f97eee56f94064a38df3a7540ec0950419dd39",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "四括号依次曾皙、孔子、曾皙、孔子；完整保留，原1分如何拆分仍待核。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
+      "reviewedAt": "2026-10-03T09:30:04.042Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2015-lunyu:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2015北京语文新浪转载重排，仅作限定来源复核，原卷仍待核",
+          "url": "https://edu.sina.com.cn/gaokao/2015-06-07/1622471853.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "不同之处：第一种标点中，孔子回答为何笑子路后，继续自己设问、自己解释冉有和公西华所谈的也都是邦国事务；第二种则将唯求则非邦也与、唯赤则非邦也与视为曾皙的追问，由孔子分别答复。\n我赞成第二种。曾皙听到孔子因子路言不让而笑，便追问冉有、公西华所谈是否也涉及治国，表现学生在比较中求解；孔子依据治理地域、宗庙会同等具体内容启发他，问答逐层展开，更贴近篇末师生对话的情境，也使对治国与谦让的辨析更清楚。第一种作为孔子自问自答的启发性说理亦可成立，不应断言语法错误；选择应有文本和表达效果依据，而非只说第二种更生动。",
+          "inputSha256": "b30a386b45664c9ea5da67ed2c1b663af668fd00411925cad059175b4aad3132",
+          "inputContextSha256": "5169b052e817fd8332538711b28e3c4447267be720f5b0f35867d6d39f61950e",
+          "inputPresentationSha256": "0c46825ea7927057efd27fe9fb20a6f1f097dac88c6f7b04febb7857d5b7a672",
+          "generatedAt": "2026-10-03T09:24:35.450451+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2015-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2015-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2015-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "不同之处：\n第一种标点把这段话全看作孔子一人所说。“唯求则非邦也与”“唯赤则非邦也与”是孔子的自问自答（设问），意在说明自己笑子路并不是因为他讲治国，冉有、公西华讲的也是治国，笑的只是他“其言不让”。\n第二种标点把它看作师生问答。两句“唯……则非邦也与”是曾皙的追问，“安见……”“宗庙会同……”是孔子的回答。这样对话就有三问三答，孔子除解释“哂由”外，还分别回应了对冉有、公西华的看法。\n\n我赞成第二种，理由如下：\n①合乎上文语境。曾皙在三人退出后留下来，先问“夫三子者之言何如”，再问“夫子何哂由也”，是在逐一追问。接着问到冉求、公西赤，正与前面的问法一脉相承，也符合他细心好问的形象。\n②合乎问答逻辑。孔子说“为国以礼，其言不让，是故哂之”，已经把“哂由”的原因答完。曾皙由此产生疑问：冉有、公西华说得谦虚，难道他们讲的就不是治国吗？这样追问很自然。若全是孔子所说，孔子无人发问而连续自问自答，显得突兀。\n③更能体现《论语》语录体的特点和孔子循循善诱的风格。一问一答层次清楚，孔子在答问中肯定了冉有、公西华的才能（“赤也为之小，孰能为之大”），人物形象更鲜明。\n\n（若赞成第一种，可答：全作孔子语，语意连贯，紧扣“哂由”的原因，用反问强调笑的只是“不让”，而不是治国之志，重点更集中，也说得通。）",
+          "inputSha256": "b30a386b45664c9ea5da67ed2c1b663af668fd00411925cad059175b4aad3132",
+          "inputContextSha256": "5169b052e817fd8332538711b28e3c4447267be720f5b0f35867d6d39f61950e",
+          "inputPresentationSha256": "0c46825ea7927057efd27fe9fb20a6f1f097dac88c6f7b04febb7857d5b7a672",
+          "generatedAt": "2026-10-03T09:26:48.669792+00:00",
+          "uncertainties": [
+            "本题为开放性题目，两种解读都可成立，言之成理即可，这里选择的是第二种。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2015-reading-result.json",
+            "inputPromptSha256": "21a40096fed41d98960c84e3e849380da636636a5461d16983df94ce896f5c98",
+            "responseStreamSha256": "05444e82449710792b1426c04c34bc2f109583f009f3b4d5127898cd50f909c7",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "b30a386b45664c9ea5da67ed2c1b663af668fd00411925cad059175b4aad3132",
+      "inputContextSha256": "5169b052e817fd8332538711b28e3c4447267be720f5b0f35867d6d39f61950e",
+      "inputPresentationSha256": "0c46825ea7927057efd27fe9fb20a6f1f097dac88c6f7b04febb7857d5b7a672",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两种标点分别作孔子自问自答与师生逐层问答，支持任一均需语境理由。Claude说第二种有三问三答应以明确截取从哂由开始的段落理解；全文另有夫三子者之言何如，不能混作全段问答总数。自问自答并非天然突兀或错误。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
+      "reviewedAt": "2026-10-03T09:30:04.042Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2015-sanwen:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2015北京语文新浪转载重排，仅作限定来源复核，原卷仍待核",
+          "url": "https://edu.sina.com.cn/gaokao/2015-06-07/1622471853.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "答案：C。说起梅花是谈起、讲起梅花，话说的说与之接近。游说侧重劝说，说合侧重从中介绍、撮合或调解，学说是系统的主张或理论，都不是此处的谈说义。所据转载也有说和的异文，不改变这一语义比较，但原题字形应另核。",
+          "inputSha256": "9e6645ca4b77145d1080cad771870b36f5ac86dd38a407ef29a888a07a6eef10",
+          "inputContextSha256": "630ee58c40575026a5206d008850cff86c57cc6a009d96e16a6f1a6e30051b07",
+          "inputPresentationSha256": "06254dad242b99e2123f3a9dea406c07f3c7f6cceabb83fd227afdad722ab494",
+          "generatedAt": "2026-10-03T09:24:35.450451+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2015-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2015-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2015-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。“说起梅花”的“说”是谈论、讲述的意思。\nA项“游说”的“说”读shuì，指用话劝说别人听从自己的主张，不同。\nB项“说合”的“说”指从中介绍、撮合，不同。\nC项“话说”的“说”是讲述、谈起，与“说起”的“说”最接近。\nD项“学说”的“说”是名词，指言论、主张，不同。",
+          "inputSha256": "9e6645ca4b77145d1080cad771870b36f5ac86dd38a407ef29a888a07a6eef10",
+          "inputContextSha256": "630ee58c40575026a5206d008850cff86c57cc6a009d96e16a6f1a6e30051b07",
+          "inputPresentationSha256": "06254dad242b99e2123f3a9dea406c07f3c7f6cceabb83fd227afdad722ab494",
+          "generatedAt": "2026-10-03T09:26:48.669792+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2015-reading-result.json",
+            "inputPromptSha256": "21a40096fed41d98960c84e3e849380da636636a5461d16983df94ce896f5c98",
+            "responseStreamSha256": "05444e82449710792b1426c04c34bc2f109583f009f3b4d5127898cd50f909c7",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "9e6645ca4b77145d1080cad771870b36f5ac86dd38a407ef29a888a07a6eef10",
+      "inputContextSha256": "630ee58c40575026a5206d008850cff86c57cc6a009d96e16a6f1a6e30051b07",
+      "inputPresentationSha256": "06254dad242b99e2123f3a9dea406c07f3c7f6cceabb83fd227afdad722ab494",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "C。说起与话说为谈论、讲述；游说、说合、学说义项不同。转载说合/说和异文仍列来源待核。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
+      "reviewedAt": "2026-10-03T09:30:04.042Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2015-sanwen:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2015北京语文新浪转载重排，仅作限定来源复核，原卷仍待核",
+          "url": "https://edu.sina.com.cn/gaokao/2015-06-07/1622471853.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "答案：D。梅与作者名字、日常交谈和审美生活相连，也承载她所理解的民族文化精神。A把名字常见、觉得俗及启齿的尴尬直接归结为名字不动听，失之简单；B艺术感受力是作者起初的期待，后文写意大利人仍误解墨梅；C忽略作者有意识地组织这些故事以表现交流中的理解障碍及可能的共鸣。",
+          "inputSha256": "1dfe3899a411ef10cc403f2664aaf652dafa493f723ef8da41c0b8f7c2523e20",
+          "inputContextSha256": "1fe67e4e9ba2076bd89c3f5c21fe0698b5d32a38b5edc06e0135bcd1831b5746",
+          "inputPresentationSha256": "c4d4fa07dcfadd571ba6c8ca2fa9527d4f6a8edc469dc405a6bfb44d05f0e673",
+          "generatedAt": "2026-10-03T09:24:35.450451+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2015-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2015-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2015-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。\nA项不准确：作者对“梅”这个名字感到尴尬，主要是嫌它“太俗了，取这个名字的人太多”，声音闷只是次要原因，而且作者明说“知道这名字极美”。此项把原因归结为“不大动听”，以偏概全。\nB项不准确：作者起初只是“想”这位意大利音乐人有艺术感受力，结果他把墨梅看成“枯瘦的桃花”，“显然这位艺术家也误解了梅花”。\nC项不准确：外国人对中国文化的隔膜是作者有意通过几个故事表现的，并非“在无意识中”流露。\nD项准确：作者因梅得名，自幼背梅花诗，在海外一再向人说梅，梅已融入她的生活；文中又直接说梅花是“中国民族精神的象征”“民族精神的写照”。",
+          "inputSha256": "1dfe3899a411ef10cc403f2664aaf652dafa493f723ef8da41c0b8f7c2523e20",
+          "inputContextSha256": "1fe67e4e9ba2076bd89c3f5c21fe0698b5d32a38b5edc06e0135bcd1831b5746",
+          "inputPresentationSha256": "c4d4fa07dcfadd571ba6c8ca2fa9527d4f6a8edc469dc405a6bfb44d05f0e673",
+          "generatedAt": "2026-10-03T09:26:48.669792+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2015-reading-result.json",
+            "inputPromptSha256": "21a40096fed41d98960c84e3e849380da636636a5461d16983df94ce896f5c98",
+            "responseStreamSha256": "05444e82449710792b1426c04c34bc2f109583f009f3b4d5127898cd50f909c7",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "1dfe3899a411ef10cc403f2664aaf652dafa493f723ef8da41c0b8f7c2523e20",
+      "inputContextSha256": "1fe67e4e9ba2076bd89c3f5c21fe0698b5d32a38b5edc06e0135bcd1831b5746",
+      "inputPresentationSha256": "c4d4fa07dcfadd571ba6c8ca2fa9527d4f6a8edc469dc405a6bfb44d05f0e673",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "D。其余把局部原因当全部、将期待当现实或误把有意构思当无意识。海外见闻不代表所有外国人。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
+      "reviewedAt": "2026-10-03T09:30:04.042Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2015-sanwen:3",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2015北京语文新浪转载重排，仅作限定来源复核，原卷仍待核",
+          "url": "https://edu.sina.com.cn/gaokao/2015-06-07/1622471853.shtml"
+        },
+        {
+          "type": "museum",
+          "title": "故宫博物院：林逋为北宋诗人",
+          "url": "https://www.dpm.org.cn/lemmas/242588.html"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "答案：B。林和靖即宋代林逋，众芳摇落独暄妍出自七言律诗《山园小梅》，不能据其诗体断成魏晋之作。律诗的成熟与魏晋古体不同；诗体也不能单独精确确定作者年代，仍须结合作者和作品。墨梅指用水墨画梅，尤物在此是特别美好之物，松竹梅是岁寒三友，A、C、D的理解与语境相合。",
+          "inputSha256": "f62f68705f7dbce5391c811780f62930ba2c16f4bf8d4b279e81003774353b59",
+          "inputContextSha256": "8690ef85d1c1d98a4dfd25dd8cb057d6f876eaff2e027f261dfd5ed9fed23daf",
+          "inputPresentationSha256": "bdb23d47b3065a21db415375152e49d72a92333b515f1d4328e118df2c9359d8",
+          "generatedAt": "2026-10-03T09:24:35.450451+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2015-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2015-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2015-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。\nA项正确：墨梅是用水墨画成的梅花，以墨色浓淡表现梅的疏、瘦、清、斜之美。\nB项不正确：文中说这首诗是“七律”，七言律诗到唐代才定型成熟，不可能写于魏晋。林和靖（林逋）是北宋诗人，此诗即《山园小梅》。\nC项正确：“尤物”在这里指特别美好、珍奇的事物。\nD项正确：松、竹、梅并称“岁寒三友”，是历代中国画家喜爱的题材。",
+          "inputSha256": "f62f68705f7dbce5391c811780f62930ba2c16f4bf8d4b279e81003774353b59",
+          "inputContextSha256": "8690ef85d1c1d98a4dfd25dd8cb057d6f876eaff2e027f261dfd5ed9fed23daf",
+          "inputPresentationSha256": "bdb23d47b3065a21db415375152e49d72a92333b515f1d4328e118df2c9359d8",
+          "generatedAt": "2026-10-03T09:26:48.669792+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2015-reading-result.json",
+            "inputPromptSha256": "21a40096fed41d98960c84e3e849380da636636a5461d16983df94ce896f5c98",
+            "responseStreamSha256": "05444e82449710792b1426c04c34bc2f109583f009f3b4d5127898cd50f909c7",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "f62f68705f7dbce5391c811780f62930ba2c16f4bf8d4b279e81003774353b59",
+      "inputContextSha256": "8690ef85d1c1d98a4dfd25dd8cb057d6f876eaff2e027f261dfd5ed9fed23daf",
+      "inputPresentationSha256": "bdb23d47b3065a21db415375152e49d72a92333b515f1d4328e118df2c9359d8",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "B。林逋北宋作品七律不能推为魏晋；七律定型年代可排除这个选项，诗体不能单独锁定具体作者朝代。A墨梅、C尤物、D岁寒三友语境可通。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
+      "reviewedAt": "2026-10-03T09:30:04.042Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2015-sanwen:4",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2015北京语文新浪转载重排，仅作限定来源复核，原卷仍待核",
+          "url": "https://edu.sina.com.cn/gaokao/2015-06-07/1622471853.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "构思上，以梅花和作者的名字为线索，从名字太常见带来的尴尬写到向外国人介绍梅花。墨西哥人的追问先引出名称翻译的困难；美国人的猜花及寻果，把话题从名称推向用途与审美；意大利人误解墨梅，则进一步触及诗画传统和文化感受。这些故事有递进，也有反复受挫的照应，问答和误会使文章亲切而有幽默感。最后日本人谈本国花时的激动，与作者谈梅形成对应，使叙述从难以解释转向感情上的相通。\n立意上，几个具体的人和交谈使抽象的文化内涵变得可感，逐层显出梅与作者生活、诗画积累和精神世界的联系。既写不同文化经验造成理解障碍，也写对美好事物的深情可能跨越差异。不能把故事扩大成所有外国人不懂中国，或简单讥讽对方；文中也有作者对自身表达困难的自省。",
+          "inputSha256": "b4ee0ed481da5f04395265c9888ccc65e6fccadb4ea163af1b981da95c8397e1",
+          "inputContextSha256": "d82622f56b1de66250419efb5b73f250dae8d2e3e7d99cd774de9542e23517ab",
+          "inputPresentationSha256": "ce97de4cd515e02586a1d04711e1b873c15094c887286adfa243d52457b81b43",
+          "generatedAt": "2026-10-03T09:24:35.450451+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2015-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2015-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2015-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "谋篇方面：\n①线索集中，结构清晰。全文以“说起梅花”为线索，从自己因梅得名、嫌名字俗写起，依次写与墨西哥人、美国人、意大利人、日本人“说梅”的几个小故事，最后以议论抒情收束，卒章显志。\n②层层递进，富有波折。对墨西哥人，她只说出“plum”，无从解释。对美国人，她一再启发，对方却猜成玫瑰、牡丹，后来又只认得梅的果子。对搞音乐的意大利人，她寄望最高，讲得最详，对方却把墨梅看成“枯瘦的桃花”。到日本人时，彼此虽不懂对方所说，却在“对一种花的深入灵魂的热爱”上相通。在这个过程中，作者对梅的讲述越来越深，由名称到外形，再到诗文典故和神韵，情感也逐步升温。\n③详略得当，手法多样。几个故事有详有略，以意大利人一段为重点。文中穿插梅花诗句和林和靖、陈介眉的典故，增加了文化意蕴。叙述中又带有幽默的对话和三个“怎么告诉他”的排比抒情，文气活泼而有起伏。\n④对比衬托，先抑后扬。外国人的隔膜与误解，反衬出梅花在中国人心中的独特地位。作者从嫌名字“俗”到满怀深情地说梅，前后态度的变化突出了她对梅的热爱。\n\n立意方面：\n①以小见大，视角新颖。作者不是孤立地咏梅，而是把梅花放在向外国人介绍的跨文化情境中，借日常小事写出梅花的美和它所承载的文化内涵、民族精神。\n②内涵丰富。文章既写出身在海外的作者对梅花和民族文化的热爱、认同与自豪，也写出不同文化之间的隔膜，以及人类对美的热爱可以相通，最终点明梅魂“在与世界相遇的过程中焕发出独异的魅力，成为民族精神的写照”。",
+          "inputSha256": "b4ee0ed481da5f04395265c9888ccc65e6fccadb4ea163af1b981da95c8397e1",
+          "inputContextSha256": "d82622f56b1de66250419efb5b73f250dae8d2e3e7d99cd774de9542e23517ab",
+          "inputPresentationSha256": "ce97de4cd515e02586a1d04711e1b873c15094c887286adfa243d52457b81b43",
+          "generatedAt": "2026-10-03T09:26:48.669792+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2015-reading-result.json",
+            "inputPromptSha256": "21a40096fed41d98960c84e3e849380da636636a5461d16983df94ce896f5c98",
+            "responseStreamSha256": "05444e82449710792b1426c04c34bc2f109583f009f3b4d5127898cd50f909c7",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "b4ee0ed481da5f04395265c9888ccc65e6fccadb4ea163af1b981da95c8397e1",
+      "inputContextSha256": "d82622f56b1de66250419efb5b73f250dae8d2e3e7d99cd774de9542e23517ab",
+      "inputPresentationSha256": "ce97de4cd515e02586a1d04711e1b873c15094c887286adfa243d52457b81b43",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "线索集中、故事递进、误会与共鸣相对，文化积累通过交谈可感。所谓先抑后扬主要指名字尴尬到深情表达，不能说作者起初不爱梅，开篇已有美的认同。文中林逋一辈子不下山和陈介眉弃官等属于作者讲述，未独立核成历史事实。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
+      "reviewedAt": "2026-10-03T09:30:04.042Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2015-sanwen:5",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2015北京语文新浪转载重排，仅作限定来源复核，原卷仍待核",
+          "url": "https://edu.sina.com.cn/gaokao/2015-06-07/1622471853.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "第24题：一是在万木萧瑟、大雪压境时见梅迎雪开花，突出凌寒不屈的生命力；二是千年老梅铁枝铜干、看似枯死，却在风雪后忽然吐艳，突出坚韧、苍劲及绝处逢生的力量；三是为情困扰、辗转难眠时忽闻若有若无的梅香，写其幽微清雅和慰藉心灵的魅力；四是设想淡云晓日、薄寒细雨、小桥清溪等清幽环境，再伴以诗酒琴笛，表现梅的清逸高洁及超尘脱俗的格调。不能只罗列景物而不说明梅的品质。\n第25题：书香指梅在历代诗文、书画及阅读传统中的积累；诗心指诗人、欣赏者寄托于梅的情感、理想和人格追求。长期的吟咏与观照让自然之梅拥有了坚贞、清高、凌寒自强等文化意味，因此它对作者的吸引不只在形色香气，更在深入精神生活的美。这不是说诗文在生物学上改造了梅，也不是排斥其他文化理解梅；结尾承接与日本人的感情共鸣，显出自己的文化之美与交流的可能。两原题6+4分均应作答，不能只按旧合并score6处理。",
+          "inputSha256": "f12c36f05661eff21d6e626b914696d7bff293f4e7f5fb5f345dba093501f918",
+          "inputContextSha256": "16376ef207d1d7cd742c31300563e3a75b16ef60965858c5015f56cf7a9e225c",
+          "inputPresentationSha256": "58cd139aa3d9d4b2e241dc6e30cbc6d13c90ab0fd7ff2e2fa072dccd6f461fb5",
+          "generatedAt": "2026-10-03T09:24:35.450451+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2015-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2015-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2015-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【第24题】\n赏梅的情境有四种：\n①万木萧瑟、大雪压境的冬天，忽见一树梅花迎雪吐艳，令人惊心动魄。\n②千年老梅铁枝铜干、如枯若死，一夜风雪后突然琼枝吐艳，给人绝处逢生的沧桑感。\n③人为情所困、辗转反侧时，一股梅香幽幽袭来又悄然而去，令人神魂颠倒。\n④在淡云、晓日、薄寒、细雨的天气里，或在小桥、清溪、明窗、疏篱旁，伴着诗酒横琴、林间吹笛赏梅，使人超凡脱俗。\n\n品质与格调：\n前两种情境写出了梅花凌寒傲雪、不屈不挠、坚韧顽强、生命力旺盛的品质。\n后两种情境写出了梅花幽香清逸、淡雅高洁、超凡脱俗的格调。\n梅花的美“摄人魂魄”，是“人间与仙境的使者”，既有风骨又有神韵。\n\n【第25题】\n①“书香”指数千年来与梅有关的诗文、绘画、音乐和典故等文化积累。文中有作者自幼背诵的咏梅诗句，有林和靖的诗和他以梅为妻、陈介眉弃官看梅的故事，还有《墨梅》图和《梅花三弄》。人们种梅、赏梅、写梅、画梅，使梅花浸润在浓厚的文化氛围中，它不再只是一种自然的花，而有了清高的风骨和神韵，所以说“骨清魂香”。\n②“诗心”指历代中国人寄托在梅花上的审美情趣、情感和人格理想。人们以诗意的眼光欣赏梅的疏、瘦、清、斜，把凌寒不屈、高洁脱俗的精神追求赋予它，梅才变得“如此美丽”。这种美是人文陶冶出来的美。\n③这句话是说，梅花的美和魂是中国文化长期熏陶、积淀的结果，梅因此成为民族精神的写照。这也解释了为什么外国人难以真正理解梅花，同时表达了作者对梅花和民族文化的热爱与自豪。",
+          "inputSha256": "f12c36f05661eff21d6e626b914696d7bff293f4e7f5fb5f345dba093501f918",
+          "inputContextSha256": "16376ef207d1d7cd742c31300563e3a75b16ef60965858c5015f56cf7a9e225c",
+          "inputPresentationSha256": "58cd139aa3d9d4b2e241dc6e30cbc6d13c90ab0fd7ff2e2fa072dccd6f461fb5",
+          "generatedAt": "2026-10-03T09:26:48.669792+00:00",
+          "uncertainties": [
+            "本条id下合并了第24、25两道主观题，已分别作答。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2015-reading-result.json",
+            "inputPromptSha256": "21a40096fed41d98960c84e3e849380da636636a5461d16983df94ce896f5c98",
+            "responseStreamSha256": "05444e82449710792b1426c04c34bc2f109583f009f3b4d5127898cd50f909c7",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "f12c36f05661eff21d6e626b914696d7bff293f4e7f5fb5f345dba093501f918",
+      "inputContextSha256": "16376ef207d1d7cd742c31300563e3a75b16ef60965858c5015f56cf7a9e225c",
+      "inputPresentationSha256": "58cd139aa3d9d4b2e241dc6e30cbc6d13c90ab0fd7ff2e2fa072dccd6f461fb5",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "原24四情境及相应凌寒坚韧、幽香清逸格调；25区分书香文化积累与诗心审美人格。文化解释应保留日本人段的共鸣，不把结论化成外国人永远无法理解梅。完整两题6+4与旧score6，计分仍阻断。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
+      "reviewedAt": "2026-10-03T09:30:04.042Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2015-weixiezuo:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2015北京语文新浪转载重排，仅作限定来源复核，原卷仍待核",
+          "url": "https://edu.sina.com.cn/gaokao/2015-06-07/1622471853.shtml"
+        },
+        {
+          "type": "source_text",
+          "title": "三国演义第四十三回",
+          "url": "https://zh.wikisource.org/zh/三國演義/第043回"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "我推荐研读《三国演义》中诸葛亮舌战群儒的片段。群儒轮番诘难，诸葛亮或抓住对方言语的矛盾，或转守为攻，言辞随对手而变。研读时可比较几轮问答，分析他怎样调整论辩策略，也讨论他的反驳是否都充分有理。人物才智与小说的叙事趣味，都能在对话中细读出来。",
+          "inputSha256": "1851bf8ca139e032e5d97514a4eea76eb929037aa1be8219a0ee301a6fa899ce",
+          "inputContextSha256": "aab17bd62453474e7e9ae4e5fdf9205130305085ad85ff0b58ab9244356ae23d",
+          "inputPresentationSha256": "7f5a85b37484e6a0066deeb70907b094da2f22b6f10dc3bdf066641ca510e908",
+          "generatedAt": "2026-10-03T09:24:35.450451+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2015-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2015-writing-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【示例作答】\n我推荐《三国演义》第四十三回“诸葛亮舌战群儒”。理由有三：其一，诸葛亮面对东吴群臣的轮番诘难，或正面驳斥，或反唇相讥，是学习论辩艺术的绝佳范本；其二，人物语言个性鲜明，寥寥数语便见张昭之老成、孔明之从容；其三，此段上承长坂之败，下启赤壁之战，研读它有助于把握全书结构与孙刘联盟的大势。\n\n【说明】开头用一句话点明著作与片段，随后从论辩艺术、人物语言、结构作用三方面陈述理由，全文不超过150字。",
+          "inputSha256": "1851bf8ca139e032e5d97514a4eea76eb929037aa1be8219a0ee301a6fa899ce",
+          "inputContextSha256": "aab17bd62453474e7e9ae4e5fdf9205130305085ad85ff0b58ab9244356ae23d",
+          "inputPresentationSha256": "7f5a85b37484e6a0066deeb70907b094da2f22b6f10dc3bdf066641ca510e908",
+          "generatedAt": "2026-10-03T09:28:28.547269+00:00",
+          "uncertainties": [
+            "原题为三题任选其一，此处按要求对每个id分别给出示例；主观题无唯一答案，以上为个人原创示例。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2015-writing-result.json",
+            "inputPromptSha256": "e6a904561835b7af65062c18a3f3fd8f384d281544e409b18f594314fb157bf2",
+            "responseStreamSha256": "52828549af55479d28cb91f40161e8b32487150aed3067c1d753ff0627fd03f8",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "1851bf8ca139e032e5d97514a4eea76eb929037aa1be8219a0ee301a6fa899ce",
+      "inputContextSha256": "aab17bd62453474e7e9ae4e5fdf9205130305085ad85ff0b58ab9244356ae23d",
+      "inputPresentationSha256": "7f5a85b37484e6a0066deeb70907b094da2f22b6f10dc3bdf066641ca510e908",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "完整推荐示例，首句明确著作和片段、后述研读理由，150字限制逐模型验证。本人舌战群儒与《三国演义》第43回正文核对，人物论辩可批评性研读，不把小说当史实。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
+      "reviewedAt": "2026-10-03T09:30:04.042Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2015-weixiezuo:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2015北京语文新浪转载重排，仅作限定来源复核，原卷仍待核",
+          "url": "https://edu.sina.com.cn/gaokao/2015-06-07/1622471853.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "朋友，白墙不是留言簿，先请您的大作在笔尖稍候。它刚穿好的白衬衫，可舍不得添一朵墨花！若想留下到此一游的纪念，不妨拍张笑脸；让照片收藏您的快乐，让干净的墙面迎接下一位客人。谢谢您手下留白。",
+          "inputSha256": "059f636b4f8a18c9bb104fde9cba6f9068fd66960c04c102b62894f106b7c5a8",
+          "inputContextSha256": "35f38f9fda5d13bd5803292ac3e62e24449fbba04d31aabfc9437af48d2d0e21",
+          "inputPresentationSha256": "eaa2267209e0b2916c9a00e90265707f213e8d8f428193855758b12dcd8cc915",
+          "generatedAt": "2026-10-03T09:24:35.450451+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2015-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2015-writing-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【示例作答】（针对公共场所违禁吸烟）\n老兄，冒昧“点”您一下：您指间这支烟，自己只享用了三成，剩下七成全慷慨“请客”给了我们这些邻座——如此大方，实在受之有愧！墙上写着“禁止吸烟”，可没写“禁止帅气”。不如把烟掐了，把火气留给涮锅，把清新留给大家。您少吸一口，北京的蓝天就多一分底气。谢谢您嘞！\n\n【说明】对象明确，针对一种不文明现象；称呼与结尾用京味口语，态度友善；以“请客”“禁止帅气”等说法制造幽默，寓劝于谐；全文不超过150字。",
+          "inputSha256": "059f636b4f8a18c9bb104fde9cba6f9068fd66960c04c102b62894f106b7c5a8",
+          "inputContextSha256": "35f38f9fda5d13bd5803292ac3e62e24449fbba04d31aabfc9437af48d2d0e21",
+          "inputPresentationSha256": "eaa2267209e0b2916c9a00e90265707f213e8d8f428193855758b12dcd8cc915",
+          "generatedAt": "2026-10-03T09:28:28.547269+00:00",
+          "uncertainties": [
+            "原题为三题任选其一，此处按要求对每个id分别给出示例；主观题无唯一答案，以上为个人原创示例。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2015-writing-result.json",
+            "inputPromptSha256": "e6a904561835b7af65062c18a3f3fd8f384d281544e409b18f594314fb157bf2",
+            "responseStreamSha256": "52828549af55479d28cb91f40161e8b32487150aed3067c1d753ff0627fd03f8",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "059f636b4f8a18c9bb104fde9cba6f9068fd66960c04c102b62894f106b7c5a8",
+      "inputContextSha256": "35f38f9fda5d13bd5803292ac3e62e24449fbba04d31aabfc9437af48d2d0e21",
+      "inputPresentationSha256": "eaa2267209e0b2916c9a00e90265707f213e8d8f428193855758b12dcd8cc915",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "默认本人作答针对乱涂墙面，友善幽默且合字数；仅示例，不发送消息。Claude禁烟短信虽结构合题，但自己吸三成、邻座七成是未提供证据的定量断言，不能当健康事实，亦不能因幽默而免核；保留原文供比较，不采用该数字作为推荐表达。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
+      "reviewedAt": "2026-10-03T09:30:04.042Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2015-weixiezuo:3",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2015北京语文新浪转载重排，仅作限定来源复核，原卷仍待核",
+          "url": "https://edu.sina.com.cn/gaokao/2015-06-07/1622471853.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "圆\n\n母亲把一碗热汤\n轻轻推到我的面前。\n碗沿小小的一圈，\n盛住了窗外的风雪。\n\n我曾沿着地图走远，\n以为远方没有边。\n归来才懂得，\n再长的路，\n也想在这盏灯下\n画完一个圆。",
+          "inputSha256": "19e9991ec8c5ac0b3cf1cd3c204992957ae8706b19632714d3b5c167cb9db968",
+          "inputContextSha256": "d49f6c292bff98a91d5e45ce8dc193693716cd00a52483885eccded2952316a5",
+          "inputPresentationSha256": "f968d1c64b5ca8847669460c5fd9cdc070caf7f1cdbb4128ce16dc44038bf7d9",
+          "generatedAt": "2026-10-03T09:24:35.450451+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2015-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2015-writing-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【示例作答】\n圆\n\n小时候，圆是外婆手里的月饼，\n掰开来，一半是甜，一半是等。\n长大后，圆是站台上滚动的车轮，\n一头是远方，一头是家门。\n而现在，圆是我笔下画不拢的句号——\n起点处，母亲还站在那里，\n把我走过的弯路，\n一一收成团圆。\n\n【说明】以“圆”为题，借月饼、车轮、句号三个意象，由形之圆写到情之圆（团圆），抒发对亲情与家的眷恋；全文不超过150字。",
+          "inputSha256": "19e9991ec8c5ac0b3cf1cd3c204992957ae8706b19632714d3b5c167cb9db968",
+          "inputContextSha256": "d49f6c292bff98a91d5e45ce8dc193693716cd00a52483885eccded2952316a5",
+          "inputPresentationSha256": "f968d1c64b5ca8847669460c5fd9cdc070caf7f1cdbb4128ce16dc44038bf7d9",
+          "generatedAt": "2026-10-03T09:28:28.547269+00:00",
+          "uncertainties": [
+            "原题为三题任选其一，此处按要求对每个id分别给出示例；主观题无唯一答案，以上为个人原创示例。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2015-writing-result.json",
+            "inputPromptSha256": "e6a904561835b7af65062c18a3f3fd8f384d281544e409b18f594314fb157bf2",
+            "responseStreamSha256": "52828549af55479d28cb91f40161e8b32487150aed3067c1d753ff0627fd03f8",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "19e9991ec8c5ac0b3cf1cd3c204992957ae8706b19632714d3b5c167cb9db968",
+      "inputContextSha256": "d49f6c292bff98a91d5e45ce8dc193693716cd00a52483885eccded2952316a5",
+      "inputPresentationSha256": "f968d1c64b5ca8847669460c5fd9cdc070caf7f1cdbb4128ce16dc44038bf7d9",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "题为圆，完整抒情小诗，以归家与圆相连；逐模型核验150字以内。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
+      "reviewedAt": "2026-10-03T09:30:04.042Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2015-dazuowen:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2015北京语文新浪转载重排，仅作限定来源复核，原卷仍待核",
+          "url": "https://edu.sina.com.cn/gaokao/2015-06-07/1622471853.shtml"
+        },
+        {
+          "type": "historical_background",
+          "title": "中科院邓稼先传记，仅支持已核基本背景",
+          "url": "https://www.cas.cn/zt/hyzt/ysdh21st/ysfc/202406/t20240622_5022467.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "假如我与心中的英雄生活一天\n\n清晨，我被窗外的潮声惊醒。案头摆着一盏油灯，灯下不是我熟悉的课本，而是一摞卷起边角的册子。一个穿着旧官服的人正低头看它们，听见响动，抬起头问我：会算账吗？\n\n我认出了林则徐。昨日还在书页上的名字，今日竟坐在眼前。我用力点头，心里却有些失望。我想象过同英雄生活的一天：也许迎着海风，看他一声令下，让天地为之变色。怎么一开始，竟是算账？\n\n他把一本册子推来，让我核对几项物资的数量。我算得飞快，终于在一页末尾发现数字不合。我把笔往桌上一放，颇有些得意地指给他看。他没有立即称赞，而是问：前一页呢？我翻回去，才发现漏算了一笔结转。脸上的热度一下升了起来。\n\n他把册子重新摊平，等我逐项重算。窗外有人催促，他只答了一句稍候。没有训斥，没有长篇道理，只有那根停在纸边的手指，陪我把每一个数找回原处。我忽然觉得，英雄也许正是这样，能在众人急着往前时，为一件必须弄清的事停下来。\n\n午后，我跟着他走过街巷。天闷得厉害，一位老人坐在门槛上咳嗽。林则徐停下脚步，俯身听老人说话。我原以为老人会谈什么天下大事，听到的却是家里的病人、涨价的米粮，还有一个迟迟未归的儿子。老人说得慢，话也重复，他始终没有打断。身后的人几次挪动脚步，他仍认真听着，临走前又回头确认了老人的住处。\n\n走出很远，我问：这些小事，您也要管吗？他看了我一眼，目光里并没有责怪。我突然想起自己读过的那些宏大的词语，第一次感到，它们下面应当站着一个个有姓名、有饭碗、有牵挂的人。倘若连他们的声音都嫌细碎，所谓担当又将落在哪里呢？\n\n傍晚，海风凉下来。他独自在院里坐了一会儿，掌心里是一封尚未写完的家书。我不小心瞥见开头问候家人的话，便赶紧移开眼睛。他笑了，说夜深之后还要再写。我有些吃惊：原来这个让我觉得坚硬如石的人，也会惦记远方的一盏灯，也会斟酌给亲人报平安的话。\n\n我终于问出憋了一天的问题：您不怕吗？他没有给我一句慷慨激昂的回答，只把家书收好，起身去点灯。火苗晃了几下，照见他眼下的疲惫，也照见桌上仍未处理完的册子。他招呼我坐下，继续核对。那一刻，我懂得勇敢并不意味着没有牵挂。正因为知道寻常生活的温暖，才更不肯任它被伤害。\n\n灯花轻轻爆了一声，我回到了自己的书桌前。窗外没有潮声，只有城市将醒未醒的微光。摊开的课本上，林则徐的名字安静地印着。\n\n我拿起笔，先把昨日敷衍写下的一处答案重新查证。与英雄相处的一天，没有让我立即变得伟大，却让我知道，敬仰不只发生在抬头的瞬间。它也可以从低下头，认真做好眼前的一件事开始。\n\n【说明】这是依据题意创作的想象性记叙文。算账、访谈、家书场景及对话均为文学虚构，不作为林则徐生平史料。",
+          "inputSha256": "ec465577a2361e1b0d2bf629cbf06779c0dd66945cd07f6ca76c1e00f23d5a4e",
+          "inputContextSha256": "6810aabc5408ccf1929911f21d3f2129521db3ee79f847695f581c0d7b7e11bf",
+          "inputPresentationSha256": "43ab0a8d234cdc3a0ed9b5d63859cfa7ff804e33806671a57c9c2aff69b5ec5c",
+          "generatedAt": "2026-10-03T09:24:35.450451+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2015-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2015-writing-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【示例作文】\n假如我与心中的英雄生活一天\n\n风是从凌晨四点刮起来的。我在干打垒的土屋里被沙粒打醒，睁眼看见一盏马灯，灯下伏着一个穿旧棉袄的人。他回过头，圆脸，笑得憨厚：“醒了？戈壁滩的风没礼貌，别见怪。”\n\n我认得这张脸。课本里，他叫邓稼先。\n\n“老邓，”我学着别人这样叫他，“您一夜没睡？”\n\n“有一组数据不放心，再算一遍。”他把算盘往我面前一推，“来，帮我打下手。”桌上是成摞的草稿纸，密密麻麻，一直堆到窗台。我报数，他拨珠，噼里啪啦的声音竟压过了风声。算到第三遍，结果与前两遍分毫不差，他才长长舒了口气，像孩子似的搓了搓手：“太阳出来喽！”\n\n早饭是窝头和咸菜，水是苦的，带着碱味。他却吃得很香，还把自己碗里仅有的几片菜叶拨给一个年轻技术员：“你们年轻人长身体。”那人不肯，他眼一瞪：“这是命令。”转头又冲我眨眨眼，小声说：“其实我最馋的是北京的烤鸭，等这件事干成了，我请你。”\n\n上午去现场。吉普车在搓板路上颠得人五脏挪位，他却在车里哼起了京戏，一句“我正在城楼观山景”，荒腔走板，自得其乐。到了工号，他一下子换了个人：不说笑，不多话，俯下身一颗螺丝一颗螺丝地看过去。有人劝他站远些，他摆摆手：“我签了字的，我得在这儿。”那一刻我忽然明白，所谓英雄，并不是不知道危险，而是知道了，仍然往前走一步。\n\n傍晚收工，戈壁的落日大得惊人。他坐在沙丘上，从贴身衣袋里摸出一张照片，边角已经磨白，上面是一位清秀的女子和两个孩子。\n\n“我爱人，希希。走的那天我只对她说，要调动工作，去哪儿、干什么、多久，都不能讲。”他用拇指轻轻抹去照片上的沙，“她没多问，只说了一句：我支持你。”\n\n“您想家吗？”\n\n他沉默了很久。“想啊。孩子们该长高了，我连他们如今多高都不知道。”风把他的声音吹得有些散，“可是总得有人让他们以后不用怕。有了这个东西，别人就不敢欺负咱们。这辈子做成这一件事，值。”\n\n他说“值”的时候，没有慷慨激昂，就像说今天的窝头不错一样平常。我的眼眶却热了。\n\n夜里，马灯又亮起来。我困得睁不开眼，朦胧中感到有人把那件旧棉袄盖在我身上，带着沙土和太阳的气味。\n\n再醒来，是在自己的书桌前，窗外是万家灯火的北京，物理练习册摊在面前。我没能吃上他许诺的烤鸭——他后来再没有机会从容地坐下来吃一顿饭。但我记得那双拨算盘的手，记得落日里那张磨白的照片。\n\n我提起笔，把那道刚才想放弃的题，从头又算了一遍。\n\n【说明】文体为记叙文，以想象中的“一天”为线索（凌晨、早饭、上午、傍晚、夜里）。既写邓稼先严谨担当、不畏危险的英雄风貌，也写他对妻儿的思念与爱吃烤鸭、爱哼京戏的常人情味，扣住题干“儿女情长”的提示。“我”的情感由好奇到敬重再到自我激励，结尾回到现实。全文约950字，满足不少于700字的要求。",
+          "inputSha256": "ec465577a2361e1b0d2bf629cbf06779c0dd66945cd07f6ca76c1e00f23d5a4e",
+          "inputContextSha256": "6810aabc5408ccf1929911f21d3f2129521db3ee79f847695f581c0d7b7e11bf",
+          "inputPresentationSha256": "43ab0a8d234cdc3a0ed9b5d63859cfa7ff804e33806671a57c9c2aff69b5ec5c",
+          "generatedAt": "2026-10-03T09:28:28.547269+00:00",
+          "uncertainties": [
+            "原题为两题任选其一，此处按要求对每个id分别给出示例；作文无唯一答案，以上为个人原创示例。",
+            "文中对话与场景为题目要求的想象性叙述，并非史实实录；所依托的人物背景（隐姓埋名赴西北、妻子许鹿希、喜爱京戏等）凭记忆写出，细节未经核对。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2015-writing-result.json",
+            "inputPromptSha256": "e6a904561835b7af65062c18a3f3fd8f384d281544e409b18f594314fb157bf2",
+            "responseStreamSha256": "52828549af55479d28cb91f40161e8b32487150aed3067c1d753ff0627fd03f8",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "ec465577a2361e1b0d2bf629cbf06779c0dd66945cd07f6ca76c1e00f23d5a4e",
+      "inputContextSha256": "6810aabc5408ccf1929911f21d3f2129521db3ee79f847695f581c0d7b7e11bf",
+      "inputPresentationSha256": "43ab0a8d234cdc3a0ed9b5d63859cfa7ff804e33806671a57c9c2aff69b5ec5c",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "默认本人林则徐示例具完整题名及一日叙事，场景对话明确虚构，至少700汉字。Claude邓稼先示例亦完整，但末段他后来再没有机会从容吃一顿饭是越出一日想象的过度绝对生平断言，没有史料支持，不作推荐结论；烤鸭、现场螺丝检查、京戏等具体细节未认证。中科院来源只支持研制事业、妻子许鹿希等基本背景，不能替所有虚构细节背书。原始Claude全文与自报不确定性均保留，不冒充史实或用户经历。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
+      "reviewedAt": "2026-10-03T09:30:04.042Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2015-dazuowen:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2015北京语文新浪转载重排，仅作限定来源复核，原卷仍待核",
+          "url": "https://edu.sina.com.cn/gaokao/2015-06-07/1622471853.shtml"
+        },
+        {
+          "type": "botanical",
+          "title": "国家林草局：国槐花期7—8月",
+          "url": "https://www.forestry.gov.cn/c/www/gggddt/551144.jhtml"
+        },
+        {
+          "type": "municipal",
+          "title": "北京园林绿化局：国槐与侧柏为市树",
+          "url": "https://yllhj.beijing.gov.cn/ztxx/bjhx/hsdt/202106/t20210621_2417197.shtml"
+        },
+        {
+          "type": "source_text",
+          "title": "中国哲学书电子化计划：三槐三公用例",
+          "url": "https://ctext.org/dictionary.pl?char=三槐&if=en&remap=gb"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "深入灵魂的热爱\n\n我书桌上有一本旧字典。封面已经褪色，书脊曾经开裂，后来用透明胶带贴好。它不名贵，放在一排装帧精美的书中，甚至有些寒酸。然而，如果只能带走书桌上的一件东西，我会先伸手拿它。\n\n最初喜欢它，是因为它像一座可以凭钥匙进入的小城。我认识的字不多，遇到陌生的方块，总有一种被挡在门外的懊恼。学会查部首和笔画之后，那些紧闭的门忽然有了把手。我把手指沿着索引一行行移下去，再翻到对应的页码，看见陌生字被声音和意义慢慢照亮。那份快乐很小，却确实属于我自己。\n\n后来，它留住的不只是认识新字的快乐。一次写作文，我用了一个自以为漂亮的词。父亲读到那里，没有说好，也没有说不好，只问：这个词在这里合适吗？我马上把字典搬来，准备证明自己。可查到解释后，我才发现，只因这个词常出现在夸奖人的句子里，我便想当然地把它当作万用的赞美。它其实有更具体的意思，放在我的句子里并不妥帖。\n\n我记得那天的难堪，也记得改完之后的轻松。一个句子终于说出了我真正想说的话。字典没有替我保住面子，却帮我找到了语言的分寸。从那以后，我渐渐喜欢查那些看似熟悉的字。越查越知道，熟悉有时只是看见过，理解却还需要走近一步。\n\n再后来，手机轻轻一点就能给出答案，这本字典被搁在桌角。我也曾嫌它慢：找部首，数笔画，翻错页，再翻回来。直到有一次，同一个问题在不同页面上出现了互不相同的解释，我才重新拿起它。我不再把某一本书当成永不出错的裁判，而是比较解释所适用的语境，留意版本和用例，必要时再查别的工具书。旧字典教给我的，竟不是依赖一个现成答案，而是愿意为一个答案付出核实的耐心。\n\n它最动人的地方，也在这种安静里。薄薄的纸页上，一个字可以通向生活里的许多方向：声音、形状、动作、情绪，甚至人与人相处时微妙的距离。同一句话，换一个字，可能少一分生硬，多一分体谅。我越来越感到，认真使用语言，就是认真对待接收这句话的人。\n\n这些年，字典的页角渐渐卷起，我也经历过考试失利、争辩受挫和许多说不清的困惑。每当急着给一件事下结论时，想到当年那个被我误用的词，我便愿意再等一等。去看事实，去听别人把话说完，承认自己也可能只懂了一半。一本旧工具书，竟把这样的习惯一点点带进了我的生活。\n\n所谓深入灵魂的热爱，也许并不总有惊天动地的开端。它起初只是手指翻过纸页时的一点好奇，后来成为遇见疑问时不愿敷衍的坚持，成为说话之前愿意多想一想的温柔。旧字典并不会回答我的全部人生，但它让我愿意带着问题，诚实地走下去。\n\n夜深了，我把它合上，仍放在伸手能够碰到的地方。书脊上的胶带映着台灯的光。我知道自己爱的不只是这本已经破旧的器物，也是它陪我慢慢学会的生活方式：对一个字认真，对一个人认真，也对尚未弄懂的世界保持谦逊。\n\n【说明】这是按题意创作的完整示例，叙述者经历属于文学虚构，不代表用户的真实经历。",
+          "inputSha256": "c4bc11c5c6e677bea5496ffebf3ed3317d73d0626029d0be412195b3db0a793c",
+          "inputContextSha256": "042afa48997ed586f43ab8ad741bf3e99d805966b15b97b3fa955371787dd1fa",
+          "inputPresentationSha256": "f928dac84530cea81c175f676d168b5927a4f6f3b64e99c062b28736473e6cc6",
+          "generatedAt": "2026-10-03T09:24:35.450451+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2015-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2015-writing-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【示例作文】\n深入灵魂的热爱\n\n我热爱的那一种物，并不名贵。它就站在北京的胡同口，站在我十八年生命的每一个夏天里——国槐。\n\n最初的热爱是味觉的。小时候住在姥姥家的院子里，院中一棵老槐，树干要我和表哥两人才能合抱。七月，槐花落了一地，米粒大，淡淡的黄白色，踩上去有细细的沙沙声。姥姥在树下支起小桌，凉面、黄瓜丝、一碗芝麻酱，槐花偶尔落进碗里，她也不挑，笑着说：“添个香。”那时我不懂什么叫热爱，只知道树荫底下的饭格外好吃，树荫底下的午觉格外长。\n\n后来的热爱是视觉的。上了中学，我开始留意它的样子。国槐不像杨树那样急着往高处蹿，也不像柳树那样处处低眉，它的枝干黝黑、虬曲，每一道弯都像是和风商量过后才拐的。冬天叶子落尽，那些枝条印在灰蓝的天上，是一幅不着一字的碑帖。我在树下站久了，会觉得心里某些毛躁的东西被一点点抚平。它教给我一种姿态：不争高，不媚俗，把根扎深，把荫留给别人。\n\n真正让这热爱沉到灵魂里去的，是一次险些发生的失去。初三那年，院子拆迁，姥姥搬进楼房。我最后一次回去，推土机还没到，老槐孤零零立在半截残墙边，树身上还留着当年姥爷钉晾衣绳的铁钉，早被树皮裹住了半截。我伸手去摸，粗糙，温热，像摸一只老人的手。那一刻我忽然明白，这棵树里收着我们一家人的日子：姥爷的咳嗽，姥姥的蒲扇，表哥爬树摔下来的哭声，还有我自己一去不返的童年。我爱的不只是一棵树，而是它替我保管的那段时间。\n\n所幸树没有被伐。它被围上栏杆，挂了一块写着“古树”的牌子，留在新建的小区花园里。姥姥每天下楼，还去树下坐一坐。\n\n如今我常想，一种热爱为什么能够深入灵魂？大约要过三道门。第一道是陪伴，它须在你的日子里足够久，久到成为记忆的底色；第二道是懂得，你须从它身上看见一种你愿意成为的品格；第三道是血脉，它须连着你的亲人、你的故土、你所属的文化。国槐于我，三者俱全。北京人把它定为市树，古人以“三槐”喻三公，山西洪洞的大槐树下更系着无数人家的乡愁——“问我祖先在何处，山西洪洞大槐树”。原来我在一棵树下感到的安稳，千百年来有无数人同样感到过。个人的爱，汇进了一个民族的爱里，这才有了重量。\n\n今年夏天，我又站到那棵老槐下。槐花照旧落着，落在我的肩上、书页上。我没有拂去。我知道无论将来走到哪里，只要闻到这清淡的、微微发苦的香气，我就回到了家。\n\n那是长在我灵魂里的一棵树。\n\n【说明】所选之物为国槐（植物，非梅花）。全文回答了题干两问：“哪一种物”即国槐；“为什么能深入灵魂”则以味觉、视觉、险些失去三层递进叙述，再以“陪伴、懂得、血脉”三道门作理性归结，并由个人情感上升到文化认同，呼应阅读材料中“民族精神”的立意。文体为叙议结合的散文，全文约950字，满足不少于700字的要求。",
+          "inputSha256": "c4bc11c5c6e677bea5496ffebf3ed3317d73d0626029d0be412195b3db0a793c",
+          "inputContextSha256": "042afa48997ed586f43ab8ad741bf3e99d805966b15b97b3fa955371787dd1fa",
+          "inputPresentationSha256": "f928dac84530cea81c175f676d168b5927a4f6f3b64e99c062b28736473e6cc6",
+          "generatedAt": "2026-10-03T09:28:28.547269+00:00",
+          "uncertainties": [
+            "原题为两题任选其一，此处按要求对每个id分别给出示例；作文无唯一答案，以上为个人原创示例。",
+            "文中“三槐喻三公”、洪洞大槐树民谣、国槐为北京市树等文化常识凭记忆引用，民谣字句各地流传版本略有出入。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2015-writing-result.json",
+            "inputPromptSha256": "e6a904561835b7af65062c18a3f3fd8f384d281544e409b18f594314fb157bf2",
+            "responseStreamSha256": "52828549af55479d28cb91f40161e8b32487150aed3067c1d753ff0627fd03f8",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "c4bc11c5c6e677bea5496ffebf3ed3317d73d0626029d0be412195b3db0a793c",
+      "inputContextSha256": "042afa48997ed586f43ab8ad741bf3e99d805966b15b97b3fa955371787dd1fa",
+      "inputPresentationSha256": "f928dac84530cea81c175f676d168b5927a4f6f3b64e99c062b28736473e6cc6",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "默认本人旧字典属器物，完整题名、至少700汉字，说明热爱如何进入人格与生活。Claude国槐示例亦完整合题，林草局证7—8月花期，北京园林绿化局证国槐与侧柏同为市树；三槐三公见周礼用例。家庭拆迁保树故事为虚构，洪洞民谣不作为唯一固定文本；落花入碗不是经过验证的食用建议。两模型经历均非用户真实经历。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
+      "reviewedAt": "2026-10-03T09:30:04.042Z",
+      "currentVersion": "gpt_6_astra"
     }
   ],
   "releaseBlockers": [
@@ -29007,7 +30796,15 @@
         "2015-sanwen",
         "2015-dazuowen"
       ],
-      "detail": "No original exam-agency scan acquired. Sina contemporaneous text, EOL yw/ywda retypeset fragments and public twelve-page PDF show shared errors, inconsistent numbering and missing glyphs. They corroborate specific repairs but do not certify original text/marks or independent provenance. Question9 second A label duplicated B in two reproductions; keep existing A/B/C/D structure. Exact rare name glyph/toned note, punctuation, material1文字vs汉字, storage quantity1万6千兆, material2 author王素宝, first encounter wording第一个有个vs第一次, guwen孔子quotation closure and 琴徽 note need authoritative original/primary checks. Printed-emphasis copy is incomplete; retained observed underlines and removed invented waves/unrelated-dot anchors. Original question emphasis still represented partly by legacy inline dots/asterisks; certify genuine original marking and actual render before release. All21reading units conservatively reference-exposed during source discovery: search/PDF/Sina and ywda images showed keys and explanations. No new root answers or provider calls yet. Five writing options not exposed to sample compositions. EOL yw1-10 are not ordered exam pages; yw2 has shifted prose numbers; source metadata explicitly records this. Do not use filename original in early ywda download names as source authority."
+      "detail": "No original exam-agency scan acquired. Sina contemporaneous text, EOL yw/ywda retypeset fragments and public twelve-page PDF show shared errors, inconsistent numbering and missing glyphs. They corroborate specific repairs but do not certify original text/marks or independent provenance. Question9 second A label duplicated B in two reproductions; keep existing A/B/C/D structure. Exact rare name glyph/toned note, punctuation, material1文字vs汉字, storage quantity1万6千兆, material2 author王素宝, first encounter wording第一个有个vs第一次, guwen孔子quotation closure and 琴徽 note need authoritative original/primary checks. Printed-emphasis copy is incomplete; retained observed underlines and removed invented waves/unrelated-dot anchors. Original question emphasis still represented partly by legacy inline dots/asterisks; certify genuine original marking and actual render before release. All21reading units conservatively reference-exposed during source discovery: search/PDF/Sina and ywda images showed keys and explanations. All26 complete root answers saved before two terminal finite Claude batches; all21reading reference-exposed, five writing examples independently composed. Two initial root versions retained after refinement. Question4 B/D interpretation remains disputed; no deterministic key. 徽系弦绳 is an attested dictionary sense, not established as a factual error; exact original note and print qualification remain pending. EOL yw1-10 are not ordered exam pages; yw2 has shifted prose numbers; source metadata explicitly records this. Do not use filename original in early ywda download names as source authority.",
+      "detailHistory": [
+        {
+          "at": "2026-10-03T09:30:04.042Z",
+          "detail": "No original exam-agency scan acquired. Sina contemporaneous text, EOL yw/ywda retypeset fragments and public twelve-page PDF show shared errors, inconsistent numbering and missing glyphs. They corroborate specific repairs but do not certify original text/marks or independent provenance. Question9 second A label duplicated B in two reproductions; keep existing A/B/C/D structure. Exact rare name glyph/toned note, punctuation, material1文字vs汉字, storage quantity1万6千兆, material2 author王素宝, first encounter wording第一个有个vs第一次, guwen孔子quotation closure and 琴徽 note need authoritative original/primary checks. Printed-emphasis copy is incomplete; retained observed underlines and removed invented waves/unrelated-dot anchors. Original question emphasis still represented partly by legacy inline dots/asterisks; certify genuine original marking and actual render before release. All21reading units conservatively reference-exposed during source discovery: search/PDF/Sina and ywda images showed keys and explanations. No new root answers or provider calls yet. Five writing options not exposed to sample compositions. EOL yw1-10 are not ordered exam pages; yw2 has shifted prose numbers; source metadata explicitly records this. Do not use filename original in early ywda download names as source authority.",
+          "evidence": "answers-six-sites-20261002/REVIEW-2015-SOURCE.md"
+        }
+      ],
+      "evidence": "answers-six-sites-20261002/REVIEW-2015.md"
     },
     {
       "id": "2015-composite-scores",
