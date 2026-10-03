@@ -18,13 +18,41 @@ export function questionContextDigest(record, question) {
   })).digest('hex');
 }
 
+export function questionEmphasis(record, question) {
+  const material = new Map((record.materials || []).map(m => [m.key, m.text]));
+  return (record.annotations || []).filter(a => Number(a.qIndex) === Number(question.qIndex)).map(a => {
+    const text = material.get(a.material) ?? record[a.material];
+    if (!['dot', 'underline', 'wave', 'highlight'].includes(a.type) || typeof text !== 'string'
+      || !Number.isInteger(a.start) || !Number.isInteger(a.end) || a.start < 0 || a.end <= a.start
+      || !a.anchor || text.slice(a.start, a.end) !== a.anchor)
+      throw Error(`Invalid question emphasis: ${record.id}:${question.qIndex}`);
+    return { qIndex: question.qIndex, material: a.material, type: a.type,
+      start: a.start, end: a.end, anchor: a.anchor };
+  });
+}
+
+export function questionPresentationDigest(record, question) {
+  // v3 adds actual per-question display ranges. A matching letter elsewhere
+  // in the passage is a different input even when the v2 text is identical.
+  return createHash('sha256').update(JSON.stringify({ version: 3,
+    contextSha256: questionContextDigest(record, question), emphasis: questionEmphasis(record, question),
+  })).digest('hex');
+}
+
+function historicalContextDigest(source, question) {
+  // Legacy snapshots did not preserve display ranges; do not invent them.
+  return Object.hasOwn(source, 'annotations')
+    ? questionPresentationDigest(source, question) : questionContextDigest(source, question);
+}
+
 export function snapshotReview(record, question, review) {
   if (`${record.id}:${question.qIndex}` !== review.id || questionDigest(record, question) !== review.inputSha256)
     throw Error(`Cannot archive mismatched review: ${review.id}`);
   const archived = structuredClone(review);
   delete archived.history;
   return { source: structuredClone({ id: record.id, materials: record.materials,
-    topic: record.topic, annotation: record.annotation ?? null, questions: [question] }), review: archived };
+    topic: record.topic, annotation: record.annotation ?? null,
+    annotations: questionEmphasis(record, question), questions: [question] }), review: archived };
 }
 
 export function questionIndex(records) {
@@ -49,12 +77,16 @@ export function validateAuthority(records, authority, { requireComplete = false 
     const contextDigest = questionContextDigest(source.record, source.question);
     if (review.inputContextSha256 && review.inputContextSha256 !== contextDigest)
       throw Error(`Question context changed: ${review.id}`);
+    const presentationDigest = questionPresentationDigest(source.record, source.question);
+    if (review.inputPresentationSha256 && review.inputPresentationSha256 !== presentationDigest)
+      throw Error(`Question emphasis changed: ${review.id}`);
     const archivedContexts = new Set();
     for (const archived of review.history || []) {
       if (archived.review?.id !== review.id || archived.review?.history?.length || archived.source?.questions?.length !== 1)
         throw Error(`Invalid historical review: ${review.id}`);
-      const oldContext = questionContextDigest(archived.source, archived.source.questions[0]);
-      if (archivedContexts.has(oldContext) || oldContext === contextDigest)
+      const oldContext = historicalContextDigest(archived.source, archived.source.questions[0]);
+      const currentContext = presentationDigest;
+      if (archivedContexts.has(oldContext) || oldContext === currentContext)
         throw Error(`Repeated historical context: ${review.id}`);
       archivedContexts.add(oldContext);
       validateAuthority([archived.source], { schemaVersion: 1, revision: 'historical', questions: [archived.review] });
@@ -78,6 +110,8 @@ export function validateAuthority(records, authority, { requireComplete = false 
         throw Error(`Unproven model result: ${review.id}/${version}`);
       if (model.inputContextSha256 && !/^[a-f0-9]{64}$/.test(model.inputContextSha256))
         throw Error(`Invalid model context: ${review.id}/${version}`);
+      if (model.inputPresentationSha256 && !/^[a-f0-9]{64}$/.test(model.inputPresentationSha256))
+        throw Error(`Invalid model presentation: ${review.id}/${version}`);
       if (model.provenance.kind === 'cli_response' && model.provenance.responseModel !== model.modelId)
         throw Error(`Response model mismatch: ${review.id}/${version}`);
     }
@@ -99,6 +133,13 @@ export function validateAuthority(records, authority, { requireComplete = false 
         || !completeModels.some(x => x.modelId.startsWith('claude-') && x.provenance.kind === 'cli_response')
         || review.modelAnswers[review.currentVersion]?.inputContextSha256 !== context)
         throw Error(`Incomplete full-context evidence: ${review.id}`);
+      const presentation = questionPresentationDigest(source.record, source.question);
+      const presentedModels = completeModels.filter(x => x.inputPresentationSha256 === presentation);
+      if (review.inputPresentationSha256 !== presentation
+        || !presentedModels.some(x => x.modelId === 'gpt-6-astra' && x.provenance.kind === 'codex_turn')
+        || !presentedModels.some(x => x.modelId.startsWith('claude-') && x.provenance.kind === 'cli_response')
+        || review.modelAnswers[review.currentVersion]?.inputPresentationSha256 !== presentation)
+        throw Error(`Incomplete rendered-emphasis evidence: ${review.id}`);
     }
   }
   return { questions: index.size, reviewed: authority.questions.filter(q => q.status === 'reviewed').length,
@@ -118,15 +159,16 @@ export function projectAuthority(records, authority) {
       sources: review.sources, currentVersion: review.currentVersion, reviewedAt: review.reviewedAt,
       inputSha256: review.inputSha256, modelVersions: Object.keys(review.modelAnswers || {}),
       inputContextSha256: review.inputContextSha256 || null,
+      inputPresentationSha256: review.inputPresentationSha256 || null,
       assessments: Object.fromEntries(Object.entries(review.modelAnswers || {}).filter(([,m])=>m.assessment).map(([v,m])=>[v,m.assessment])),
       ...(review.scoringPolicy ? {scoringPolicy:review.scoringPolicy} : {}) };
     record.ai_answer_versions ||= {};
     if (review.history?.length) {
       record.answer_review_history ||= {};
       record.answer_review_history[key] = review.history.map(archived => ({ ...structuredClone(archived),
-        contextSha256: questionContextDigest(archived.source, archived.source.questions[0]) }));
+        contextSha256: historicalContextDigest(archived.source, archived.source.questions[0]) }));
       for (const archived of review.history) {
-        const context = questionContextDigest(archived.source, archived.source.questions[0]);
+        const context = historicalContextDigest(archived.source, archived.source.questions[0]);
         for (const [version, model] of Object.entries(archived.review.modelAnswers || {})) {
           const historyKey = `${version}_source_${context}`;
           const label = `${model.label}（旧题面）`;
@@ -136,6 +178,7 @@ export function projectAuthority(records, authority) {
           slot.answers[key] = model.text;
           slot.provenance[key] = { ...model.provenance, label, generatedAt: model.generatedAt,
             inputSha256: model.inputSha256, inputContextSha256: model.inputContextSha256 || null,
+            inputPresentationSha256: model.inputPresentationSha256 || null,
             historicalSourceContext: context };
         }
       }
@@ -146,7 +189,8 @@ export function projectAuthority(records, authority) {
       slot.answers[key] = model.text;
       slot.provenance ||= {};
       slot.provenance[key] = { ...model.provenance, label:model.label, generatedAt: model.generatedAt,
-        inputSha256: model.inputSha256, inputContextSha256: model.inputContextSha256 || null };
+        inputSha256: model.inputSha256, inputContextSha256: model.inputContextSha256 || null,
+        inputPresentationSha256: model.inputPresentationSha256 || null };
     }
     // Original model slots remain intact; only the current per-question view advances.
     record.ai_answers[key] = review.status === 'disputed'

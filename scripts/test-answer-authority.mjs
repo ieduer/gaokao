@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { questionDigest, questionContextDigest, snapshotReview, validateAuthority, projectAuthority } from './lib/answer-authority.mjs';
+import { questionDigest, questionContextDigest, questionPresentationDigest, snapshotReview, validateAuthority, projectAuthority } from './lib/answer-authority.mjs';
 import { versionsForQuestion } from '../assets/js/answer-versions.js';
 import { spawnSync } from 'node:child_process';
 import { readFileSync, existsSync } from 'node:fs';
@@ -10,10 +10,11 @@ const records = [{id:'2009-sanwen',topic:'阅读',materials:[{key:'m1',text:'完
 function fixture() {
   const inputSha256=questionDigest(records[0],records[0].questions[0]);
   const inputContextSha256=questionContextDigest(records[0],records[0].questions[0]);
-  return {schemaVersion:1,revision:'test',questions:[{id:'2009-sanwen:1',inputSha256,inputContextSha256,status:'reviewed',kind:'multiple_choice',
+  const inputPresentationSha256=questionPresentationDigest(records[0],records[0].questions[0]);
+  return {schemaVersion:1,revision:'test',questions:[{id:'2009-sanwen:1',inputSha256,inputContextSha256,inputPresentationSha256,status:'reviewed',kind:'multiple_choice',
     correctOptions:['B','E'],explanation:'逐项比较',reviewedBy:'test-reviewer',reviewedAt:'2026-10-02T23:00:00Z',sources:[{type:'test_fixture'}],
     currentVersion:'gpt_6_astra',modelAnswers:{gpt_6_astra:{modelId:'gpt-6-astra',label:'GPT-6 Astra',text:'答案：B、E',
-      inputSha256,inputContextSha256,generatedAt:'2026-10-02T23:00:00Z',provenance:{kind:'codex_turn',evidence:'test fixture'}}}}]};
+      inputSha256,inputContextSha256,inputPresentationSha256,generatedAt:'2026-10-02T23:00:00Z',provenance:{kind:'codex_turn',evidence:'test fixture'}}}}]};
 }
 test('retains old answers and IDs while projecting complete multiple-choice key',()=>{
   const original=structuredClone(records),out=projectAuthority(records,fixture());
@@ -67,14 +68,60 @@ test('omitted notes do not qualify as complete dual-model context',()=>{
   delete review.modelAnswers.claude.inputContextSha256;
   assert.throws(()=>validateAuthority(records,a,{requireComplete:true}),/Incomplete full-context evidence/);
 });
+function markedFixture() {
+  const source=structuredClone(records),a=fixture(),review=a.questions[0];
+  source[0].materials[0].text='甲之乙之丙';
+  source[0].annotations=[{qIndex:1,material:'m1',type:'dot',start:1,end:2,anchor:'之'}];
+  review.inputSha256=questionDigest(source[0],source[0].questions[0]);
+  review.inputContextSha256=questionContextDigest(source[0],source[0].questions[0]);
+  review.inputPresentationSha256=questionPresentationDigest(source[0],source[0].questions[0]);
+  Object.assign(review.modelAnswers.gpt_6_astra,{inputSha256:review.inputSha256,
+    inputContextSha256:review.inputContextSha256,inputPresentationSha256:review.inputPresentationSha256});
+  review.modelAnswers.claude={...review.modelAnswers.gpt_6_astra,modelId:'claude-opus-5-5',
+    provenance:{kind:'cli_response',evidence:'test fixture',responseModel:'claude-opus-5-5'}};
+  return {source,a,review};
+}
+test('matching text with another marked occurrence cannot reuse current review',()=>{
+  const {source,a}=markedFixture();validateAuthority(source,a,{requireComplete:true});
+  for(const patch of [{start:3,end:4},{type:'underline'},{start:0,end:2,anchor:'甲之'}]){
+    const changed=structuredClone(source);Object.assign(changed[0].annotations[0],patch);
+    assert.equal(questionContextDigest(changed[0],changed[0].questions[0]),a.questions[0].inputContextSha256);
+    assert.throws(()=>projectAuthority(changed,a),/Question emphasis changed/);
+  }
+});
+test('v2 model proof and a newly attached review hash are insufficient for publication',()=>{
+  const {source,a,review}=markedFixture();delete review.modelAnswers.claude.inputPresentationSha256;
+  validateAuthority(source,a);
+  assert.throws(()=>validateAuthority(source,a,{requireComplete:true}),/Incomplete rendered-emphasis evidence/);
+  delete review.inputPresentationSha256;delete review.modelAnswers.gpt_6_astra.inputPresentationSha256;
+  assert.throws(()=>validateAuthority(source,a,{requireComplete:true}),/Incomplete rendered-emphasis evidence/);
+});
+test('invalid display anchors fail even when answer text has not changed',()=>{
+  const {source,a}=markedFixture();source[0].annotations[0].start=0;
+  assert.throws(()=>validateAuthority(source,a),/Invalid question emphasis/);
+});
+test('marking-only source changes preserve old ranges and model proof separately',()=>{
+  const {source,a,review}=markedFixture(),old=review.inputPresentationSha256;
+  review.history=[snapshotReview(source[0],source[0].questions[0],review)];
+  Object.assign(source[0].annotations[0],{start:3,end:4});
+  review.inputPresentationSha256=questionPresentationDigest(source[0],source[0].questions[0]);
+  for(const model of Object.values(review.modelAnswers))model.inputPresentationSha256=review.inputPresentationSha256;
+  const out=projectAuthority(source,a),history=out[0].answer_review_history[1][0];
+  assert.equal(history.source.annotations[0].start,1);
+  assert.equal(history.review.modelAnswers.gpt_6_astra.inputPresentationSha256,old);
+  assert.notEqual(history.contextSha256,review.inputPresentationSha256);
+  assert.deepEqual(projectAuthority(out,a),out);
+  assert.equal(versionsForQuestion(out[0],1).filter(v=>v.historicalSource).length,2);
+});
 test('changed source retains exact old inputs and model results outside current approval',()=>{
   const changed=structuredClone(records),a=fixture(),review=a.questions[0];
   const history=snapshotReview(records[0],records[0].questions[0],review);
   changed[0].materials[0].text='改正后的完整材料';
   review.history=[history];review.inputSha256=questionDigest(changed[0],changed[0].questions[0]);
   review.inputContextSha256=questionContextDigest(changed[0],changed[0].questions[0]);
+  review.inputPresentationSha256=questionPresentationDigest(changed[0],changed[0].questions[0]);
   review.modelAnswers.gpt_6_astra={...review.modelAnswers.gpt_6_astra,inputSha256:review.inputSha256,
-    inputContextSha256:review.inputContextSha256,text:'新题面重新核对后的答案'};
+    inputContextSha256:review.inputContextSha256,inputPresentationSha256:review.inputPresentationSha256,text:'新题面重新核对后的答案'};
   const out=projectAuthority(changed,a),oldSlot=Object.entries(out[0].ai_answer_versions).find(([k])=>k.includes('_source_'));
   assert.equal(oldSlot[1].answers[1],'答案：B、E');
   assert.equal(oldSlot[1].provenance[1].inputSha256,history.review.inputSha256);
