@@ -18,7 +18,9 @@ export function versionsForQuestion(record, qIndex) {
   const versions = answerVersionSpecs(record).flatMap(spec => {
     const slot = record.ai_answer_versions[spec.key], text = slot.answers?.[key];
     if (!text) return [];
-    return [{ ...spec, text, current: spec.key === current, independentlyReviewed: review?.modelVersions?.includes(spec.key) || false,
+    return [{ ...spec, label:slot.provenance?.[key]?.label || spec.label,
+      text, current: spec.key === current, independentlyReviewed: (review?.modelVersions?.includes(spec.key) && slot.provenance?.[key]?.stage !== 'source_review') || false,
+      inReview:review?.modelVersions?.includes(spec.key) || false, assessment:review?.assessments?.[spec.key] || null,
       generatedAt: slot.provenance?.[key]?.generatedAt || slot.generated_at || null }];
   });
   if (!versions.length && preferredAnswer(record, qIndex))

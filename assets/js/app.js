@@ -681,11 +681,16 @@ function renderAnswerVersions(aiBody, rec, qIndex) {
     const section = document.createElement(version.current ? 'section' : 'details');
     section.className = "ai-version";
     const title = document.createElement(version.current ? 'h4' : 'summary');
-    title.textContent = `${version.label}${version.current ? ' · 当前版本' : version.independentlyReviewed ? ' · 独立对照' : ' · 历史对照'}`;
+    title.textContent = `${version.label}${version.current ? ' · 当前版本' : version.independentlyReviewed ? ' · 独立对照' : version.inReview ? ' · 本轮复核' : ' · 历史对照'}${version.assessment?.matchesConclusion === false ? ' · 与核查结论不同' : ''}`;
     const text = document.createElement("div");
     text.className = "ai-version-text";
     text.textContent = version.text;
     section.appendChild(title);
+    if (version.assessment?.note) {
+      const note = document.createElement('p');
+      note.className = 'answer-review-explanation'; note.textContent = version.assessment.note;
+      section.appendChild(note);
+    }
     if (version.model || version.generatedAt) {
       const metadata = document.createElement('p');
       metadata.className = 'answer-provenance';
@@ -694,6 +699,19 @@ function renderAnswerVersions(aiBody, rec, qIndex) {
     }
     section.appendChild(text);
     aiBody.appendChild(section);
+  }
+  if (review?.sources?.length) {
+    const sources = document.createElement('p'); sources.className = 'answer-provenance';
+    sources.appendChild(document.createTextNode('核查依据：'));
+    review.sources.forEach((source, index) => {
+      if (index) sources.appendChild(document.createTextNode('；'));
+      let url;
+      try { const parsed = new URL(source.url); if (['http:','https:'].includes(parsed.protocol)) url = parsed.href; } catch {}
+      const item = document.createElement(url ? 'a' : 'span'); item.textContent = source.title || '题目材料';
+      if (url) { item.href = url; item.target = '_blank'; item.rel = 'noopener noreferrer'; }
+      sources.appendChild(item);
+    });
+    aiBody.appendChild(sources);
   }
   appendAIAnswerNote(aiBody);
 }

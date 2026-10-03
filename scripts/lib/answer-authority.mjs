@@ -37,6 +37,8 @@ export function validateAuthority(records, authority, { requireComplete = false 
     if (review.status === 'reviewed' && ((review.kind === 'single_choice' && options.length !== 1)
       || (review.kind === 'multiple_choice' && options.length < 2))) throw Error(`Truncated choice key: ${review.id}`);
     if (review.status === 'disputed' && options.length) throw Error(`Dispute cannot carry a grading key: ${review.id}`);
+    if (review.scoringPolicy && (review.kind !== 'multiple_choice' || review.scoringPolicy.kind !== 'exact_set'
+      || review.scoringPolicy.basis !== 'practice')) throw Error(`Unsupported scoring policy: ${review.id}`);
     for (const [version, model] of Object.entries(review.modelAnswers || {})) {
       if (!model.modelId?.trim() || !model.label?.trim() || !model.text?.trim()
         || !Number.isFinite(Date.parse(model.generatedAt)) || model.inputSha256 !== review.inputSha256
@@ -72,14 +74,16 @@ export function projectAuthority(records, authority) {
     record.answer_reviews[key] = { revision: authority.revision, status: review.status,
       kind: review.kind, correctOptions: review.correctOptions, explanation: review.explanation,
       sources: review.sources, currentVersion: review.currentVersion, reviewedAt: review.reviewedAt,
-      inputSha256: review.inputSha256, modelVersions: Object.keys(review.modelAnswers || {}) };
+      inputSha256: review.inputSha256, modelVersions: Object.keys(review.modelAnswers || {}),
+      assessments: Object.fromEntries(Object.entries(review.modelAnswers || {}).filter(([,m])=>m.assessment).map(([v,m])=>[v,m.assessment])),
+      ...(review.scoringPolicy ? {scoringPolicy:review.scoringPolicy} : {}) };
     record.ai_answer_versions ||= {};
     for (const [version, model] of Object.entries(review.modelAnswers || {})) {
       const slot = record.ai_answer_versions[version] ||= { label: model.label, model: model.modelId, answers: {}, provenance: {} };
       if (slot.model !== model.modelId) throw Error(`Model version collision: ${version}`);
       slot.answers[key] = model.text;
       slot.provenance ||= {};
-      slot.provenance[key] = { ...model.provenance, generatedAt: model.generatedAt, inputSha256: model.inputSha256 };
+      slot.provenance[key] = { ...model.provenance, label:model.label, generatedAt: model.generatedAt, inputSha256: model.inputSha256 };
     }
     // Original model slots remain intact; only the current per-question view advances.
     record.ai_answers[key] = review.status === 'disputed'

@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
-  "revision": "20261002-xuci-review-draft",
+  "revision": "20261002-reviewed-45",
   "questions": [
     {
       "id": "2023-guwen:2",
       "inputSha256": "1063acee070aa24df7ed6185354344d66aa3e0efa037dd2ddb99b4f32b12a15e",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "single_choice",
       "correctOptions": [
         "C"
       ],
       "explanation": "结论与文言站校订及所核查的公开解析相合。‘属之豪绅’按指代前述事务理解；不要额外引申成原文未说明的主动托付行为。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-02T23:52:23.736Z",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
       "sources": [
         {
           "type": "source_material",
@@ -36,20 +36,42 @@
             "kind": "codex_turn",
             "evidence": "answers-six-sites-20261002/gpt-astra-initial-reviews"
           }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\nA项：“无不属之豪绅”中，“之”是代词，指代前文的“水利碾硙，场渡市集”；也可理解为“于”，意为全都归属于豪绅。“行一切之变”中，“之”是结构助词，相当于“的”。两者不同。\nB项：“是以天下奢侈”中，“是以”即“以是”，“以”是介词，意为“因为”，全句意为“因此天下奢侈”。“相沿以为常事矣”中，“以为”即“以（之）为”，“以”意为“把”，全句意为“把它当作平常之事”。两者不同。\nC项：“（郡国恐其诛，）则择便巧史书……者”中，“则”是连词，表承接，意为“就”。“（亡但免官，）则争尽力为善”中，“则”也是承接前面条件的连词，意为“就、那么”。两者意义和用法相同。\nD项：“数十年于此矣”是倒装句，即“于此数十年”，“于”是介词，意为“到、在”，指到现在已有几十年。“有甚于此”中，“于”是介词，表比较，意为“比”。两者不同。\n故选C。",
+          "inputSha256": "1063acee070aa24df7ed6185354344d66aa3e0efa037dd2ddb99b4f32b12a15e",
+          "generatedAt": "2026-10-03T00:24:27.957037+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-conflicts-01-result.json",
+            "inputPromptSha256": "2e12fd9b807bfe72958a969f6da9549adb07a12724f37771cb37153b9f29a421",
+            "responseStreamSha256": "6fbd4bfcc76892489ad3a925112b29d3746116e1ff5cc018cb71264378f90369",
+            "stage": "independent"
+          }
         }
       }
     },
     {
       "id": "2022-guwen:2",
       "inputSha256": "bba73ae1f6fb495e4422f5d9ebd9c0479d132ad504aef53696fc01c4e1a92ee6",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "single_choice",
       "correctOptions": [
         "C"
       ],
       "explanation": "公开参考答案亦为C。保留文言站关于‘亡以异’与‘或异’细分词类的审查说明，不把它们制成无争议词性练习。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-02T23:52:23.736Z",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
       "sources": [
         {
           "type": "source_material",
@@ -73,20 +95,68 @@
             "kind": "codex_turn",
             "evidence": "answers-six-sites-20261002/gpt-astra-initial-reviews"
           }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 来源复核后修订",
+          "text": "答案：C。\nA项不同。“二世而亡”的“亡”是动词，意为灭亡；“天下之情与器亡以异”的“亡”通“无”，“亡以异”即没有什么不同。\nB项不同。“法之所用易见”与下句“礼之所为难知”对举。“所用”“所为”是名词性的“所”字结构，指法、礼所起的作用。“法之所用”是偏正短语，意为“法的作用”，“之”是结构助词，相当于“的”。“秦王之欲尊宗庙而安子孙，与汤武同”中，“秦王欲尊宗庙而安子孙”本身是一个主谓结构，“之”用在主谓之间，取消句子独立性，使它充当整句的主语。两处“之”的语法功能不同。\nC项相同。“使民日迁善远罪而不自知也”意为使百姓一天天趋向善良、远离罪恶，却自己并不察觉。前后语意相逆，“而”表转折，相当于“却”。“世主欲民之善同，而所以使民善者或异”意为君主希望百姓向善的愿望相同，但用来使百姓向善的方法却有不同。“而”也表转折，相当于“但是”。两处意义和用法相同。\nD项不同。“所以使民善者或异”的“或”指用来使民向善的方法中“有的”（不同），所指是事物，也可理解为副词“有所”。“今或言礼义之不如法令”的“或”是无定代词，意为“有人”，所指是人。两者所指和意义不同，不符合“意义和用法都相同”的要求。\n综合判断，选C。",
+          "inputSha256": "bba73ae1f6fb495e4422f5d9ebd9c0479d132ad504aef53696fc01c4e1a92ee6",
+          "generatedAt": "2026-10-03T00:43:53.716690+00:00",
+          "uncertainties": [
+            "B项中“X之所V”结构的“之”，有的教辅也归为用于主谓之间取消独立性。本答案依据“所用”与“所为”对举、充当名词中心语的语境，判为结构助词“的”。即使采用另一种归类，C项仍是意义和用法最确定相同的一组，结论不受影响。",
+            "材料中“必也使毋讼平乎！”疑为“必也使毋讼乎！”的录入讹误（引号也未闭合），不影响本题判断。"
+          ],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-source-review-01-result.json",
+            "inputPromptSha256": "ce426208a0a6adc0237edf91f5eb8cfa8574192829abf593db120d4bafa1da7b",
+            "responseStreamSha256": "c985407509b490ff104f2d3704b52e676630c279e98ccbe6597af4af7b9e7234",
+            "stage": "source_review"
+          }
+        },
+        "claude_opus_5_5_initial": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 初次独立作答（复核前）",
+          "text": "答案：B。\nA项：“秦为天子，二世而亡”中，“亡”是动词，意为“灭亡”。“天下之情与器亡以异”中，“亡”通“无”，“亡以异”意为“没有什么不同”。两者不同。\nB项：“法之所用易见”中，“之”用在主语“法”与谓语部分之间，取消句子独立性。“秦王之欲尊宗庙而安子孙”中，“之”同样用在主语“秦王”与谓语“欲……”之间，取消句子独立性。两者意义和用法相同。\nC项：“使民日迁善远罪而不自知也”中，“而”连接“迁善远罪”与“不自知”，表顺承或修饰，意为“却浑然不觉”中的承接关系，语气上带有轻微转折但不构成对立。“世主欲民之善同，而所以使民善者或异”中，“而”明确表转折，意为“但是”，前后形成“目标相同、方法不同”的对立。两者不同。\nD项：“而所以使民善者或异”中，“或”意为“有的”，指君主所用的方法有的不同，下文“或道之以德教，或驱之以法令”可以印证。“今或言礼义之不如法令”中，“或”是无定代词，意为“有人”。两者不同。\n故选B。",
+          "inputSha256": "bba73ae1f6fb495e4422f5d9ebd9c0479d132ad504aef53696fc01c4e1a92ee6",
+          "generatedAt": "2026-10-03T00:24:27.957037+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": false,
+            "note": "初次选择B有误：不能将“法之所用”与另一处之不加区分，也不能否认C两处而的转折关系。来源复核后的Claude修订为C，初答保留供对照。"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-conflicts-01-result.json",
+            "inputPromptSha256": "2e12fd9b807bfe72958a969f6da9549adb07a12724f37771cb37153b9f29a421",
+            "responseStreamSha256": "6fbd4bfcc76892489ad3a925112b29d3746116e1ff5cc018cb71264378f90369",
+            "stage": "independent"
+          }
         }
       }
     },
     {
       "id": "2021-guwen:2",
       "inputSha256": "74245d4b010af8fdacfd4299703d704d99e7e486547c997c840e0d535988dff4",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "single_choice",
       "correctOptions": [
         "B"
       ],
       "explanation": "独立作答与文言站结论相合；尚未取得本轮可核验的考试主管部门答案。‘以……为……’结构的内部词类口径不作排他判分依据。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-02T23:52:23.736Z",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
       "sources": [
         {
           "type": "source_material",
@@ -109,20 +179,44 @@
             "kind": "codex_turn",
             "evidence": "answers-six-sites-20261002/gpt-astra-initial-reviews"
           }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\nA项：“上下乱而阴阳谬”中，“而”是连词，表并列或顺承，上下秩序混乱，阴阳也随之错乱。“故事或无益，而益者须之”中，“而”是连词，表转折，意为“但是、然而”，指事情有的看似无益，但有益之事要依赖它。两者不同。\nB项：“以旧礼为无补而去之”中，“以……为……”意为“认为……是……”，指认为旧礼没有补益就废弃它。“以此二子解沮齐众”中，“以”也是动词，意为“认为”，指太公认为这两个人会涣散、败坏齐国民众（使民众开启不为君上所用的风气），所以诛杀了他们。两者都作动词“认为”，意义和用法相同。\nC项：“此礼义为业者也”中，“者”是代词，与前面词语组成“者”字结构，意为“……的人”，指“以礼义为业的人”。“国之所以存者”中，“者”与“所以”构成“……的原因”的结构，用于判断句主语之后表停顿，引出判断（“礼义也”）。两者不同。\nD项：“人民为善”中，“为”是动词，意为“做、行”。“开不为上用之路”中，“为”是介词，表被动，意为“被”，指开启不被君上任用的风气。两者不同。\n故选B。",
+          "inputSha256": "74245d4b010af8fdacfd4299703d704d99e7e486547c997c840e0d535988dff4",
+          "generatedAt": "2026-10-03T00:24:27.957037+00:00",
+          "uncertainties": [
+            "B项“以此二子解沮齐众”中的“以”，有人可能理解为“因为”（介词）。但结合语境与“以旧礼为无补”对照，理解为“认为”更为通顺；即便按“因为”理解，其余三项的差异仍然更为明显，B仍是最优选项。"
+          ],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-conflicts-01-result.json",
+            "inputPromptSha256": "2e12fd9b807bfe72958a969f6da9549adb07a12724f37771cb37153b9f29a421",
+            "responseStreamSha256": "6fbd4bfcc76892489ad3a925112b29d3746116e1ff5cc018cb71264378f90369",
+            "stage": "independent"
+          }
         }
       }
     },
     {
       "id": "2017-guwen:2",
       "inputSha256": "d1f55d7e0b9fb48cfe339097b5e2e7da45c912672ea3256f12b69143eb023b4f",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "single_choice",
       "correctOptions": [
         "C"
       ],
       "explanation": "独立作答与文言站校订相合，保留原题选‘不同’的方向；本轮未新取得官方答案原件。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-02T23:52:23.736Z",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
       "sources": [
         {
           "type": "source_material",
@@ -145,20 +239,42 @@
             "kind": "codex_turn",
             "evidence": "answers-six-sites-20261002/gpt-astra-initial-reviews"
           }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n逐项辨析：\nA项，“以有侯王”中“以”是介词，意为“因为”：天下人苦于战斗不休，是因为有侯王。“争必以利”中“以”也是介词，意为“因为”：争斗一定是因为利益。两处相同。\nB项，“三代之兴”与“知诸侯之不可复”中的“之”都是结构助词，用在主谓之间，取消句子独立性。两处相同。\nC项，“而学士大夫多非之”中“而”是连词，表转折，意为“然而、可是”：秦设郡县本合时宜，可是学士大夫多加非议。“宗元之论出，而诸子之论废矣”中“而”是连词，表顺承，意为“就、便”：柳宗元的言论一出，诸家之论便被废弃。两处不同。\nD项，“有不出于袭封而争位者乎”与“君臣父子相贼虐者”中的“者”都是代词，与前面的词语构成“者”字结构，意为“……的人（情况）”。两处相同。\n故选C。",
+          "inputSha256": "d1f55d7e0b9fb48cfe339097b5e2e7da45c912672ea3256f12b69143eb023b4f",
+          "generatedAt": "2026-10-03T00:26:53.718784+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-conflicts-02-result.json",
+            "inputPromptSha256": "f8a1148da76a7e0ba7a825233e4191475da51a3746bf2ecbe91c978112f2a893",
+            "responseStreamSha256": "b7c1ba7dfc88c87ef0eabb89ea42b15aa7a79dc87804ff168601cf364c8071d0",
+            "stage": "independent"
+          }
         }
       }
     },
     {
       "id": "2005-guwen:2",
       "inputSha256": "16bd991c0ba9d012244f6db15098f99fb599b73df4130320357671a1258c9c00",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "single_choice",
       "correctOptions": [
         "A"
       ],
       "explanation": "选择结论与文言站相合。站内全文存在明显OCR残损；本答案仅针对可完整读出的四组选项，不宣称整篇已经校勘。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-02T23:52:23.736Z",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
       "sources": [
         {
           "type": "source_material",
@@ -181,21 +297,71 @@
             "kind": "codex_turn",
             "evidence": "answers-six-sites-20261002/gpt-astra-initial-reviews"
           }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 来源复核后修订",
+          "text": "答案：A。\nA项相同。“庄公死，更立景公”是说庄公死后，另外再立景公为君。“更”是副词，修饰动词“立”，表示在前一个国君之后再立一君，有“另、再”的意思。“欲穷千里目，更上一层楼”的“更”也是副词，意为“再”“又”，修饰“上”。两处都作状语，表示动作的再次、另行进行，意义和用法相同。\nB项不同。“得庆封，负之斧质”的“之”是代词，指庆封。这里是处刑示众的语境，意为把庆封押上斧质（腰斩刑具）示众，不宜理解为让庆封背着刑具。“何功之有哉”的“之”是宾语前置的标志，无实义。\nC项不同。“后世以为法程”是“以（之）为法程”的省略，意为“把它当作法度准则”，“以”是介词。“夫夷以近”的“以”是连词，相当于“而”，连接“夷”与“近”。\nD项不同。“其始相助，后必相恶”的“相”是副词，表示互相，即彼此帮助、彼此憎恶。“路见不平，拔刀相助”的“相”是偏指一方，指帮助他（受欺者），具有指代作用。两者虽都放在动词前，意义并不相同。\n综合判断，选A。",
+          "inputSha256": "16bd991c0ba9d012244f6db15098f99fb599b73df4130320357671a1258c9c00",
+          "generatedAt": "2026-10-03T00:43:53.716690+00:00",
+          "uncertainties": [
+            "A项的“更立景公”也可以理解为“改立”（gēng，更换），这时“更”带有动词“改换”的意味，与“更上一层楼”的副词“再”不完全等同。本答案依据“庄公死后再立一君”的语境，以及B、C、D三项明显不同，判为A。",
+            "材料存在录入缺损：“于是扌豕崔杼之于”中的“扌豕”是无法识别的字形（原文应是表示挑拨、离间之义的字，此处不臆补），“之于”疑为“之子”；“又去鲁而如昊”的“昊”疑为“吴”。这些缺损不影响本题判断。"
+          ],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-source-review-01-result.json",
+            "inputPromptSha256": "ce426208a0a6adc0237edf91f5eb8cfa8574192829abf593db120d4bafa1da7b",
+            "responseStreamSha256": "c985407509b490ff104f2d3704b52e676630c279e98ccbe6597af4af7b9e7234",
+            "stage": "source_review"
+          }
+        },
+        "claude_opus_5_5_initial": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 初次独立作答（复核前）",
+          "text": "答案：D。\n逐项辨析：\nA项，“更立景公”中“更”意为“改、另外”，指另立景公；“更上一层楼”中“更”是副词，意为“再”。两处不同。\nB项，“负之斧质”中“之”是代词，指庆封，意为让他背负斧质；“何功之有哉”中“之”是助词，作宾语前置的标志（即“有何功”）。两处不同。\nC项，“后世以为法程”中“以”是介词，意为“把”，后面省略“之”，即“以（之）为法程”，把它当作准则；“夫夷以近”中“以”是连词，相当于“而”。两处不同。\nD项，“其始相助”中“相”是副词，作用于“助”这一动作，意为互相帮助；“拔刀相助”中“相”也是副词，修饰“助”。两处同为副词，用法最接近。\nA、B、C三项差异明确，按题意应选D。",
+          "inputSha256": "16bd991c0ba9d012244f6db15098f99fb599b73df4130320357671a1258c9c00",
+          "generatedAt": "2026-10-03T00:26:53.718784+00:00",
+          "uncertainties": [
+            "“拔刀相助”中的“相”一般解释为偏指一方（帮助他、帮助受欺者）；“其始相助”中的“相”是“互相”。若严格区分，两处在意义上也有差别。本题按副词用法一致、其余三项明显不同选D，但这一点存在一定歧义。"
+          ],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": false,
+            "note": "初次选择D有误：互指与偏指不能因同属副词而归为意义用法相同；更立可取再立义。来源复核后的Claude修订为A。"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-conflicts-02-result.json",
+            "inputPromptSha256": "f8a1148da76a7e0ba7a825233e4191475da51a3746bf2ecbe91c978112f2a893",
+            "responseStreamSha256": "b7c1ba7dfc88c87ef0eabb89ea42b15aa7a79dc87804ff168601cf364c8071d0",
+            "stage": "independent"
+          }
         }
       }
     },
     {
       "id": "2009-sanwen:1",
       "inputSha256": "5762506877cc8aa13b6eff96426482e20d5a12ef8f469e7afeb59025e9ea31b0",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "multiple_choice",
       "correctOptions": [
         "B",
         "E"
       ],
-      "explanation": "独立作答与原库参考答案、旧Claude结论相合；选择两项的题型和完整集合必须同时修正。",
+      "explanation": "独立作答与原库参考答案、旧Claude结论相合；选择两项的题型和完整集合必须同时修正。 本轮Claude独立作答亦为B、E；完整选项已核定，细分给分规则未在原参考答案中说明，不能冒称已核定官方部分分值。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-02T23:52:23.736Z",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
       "sources": [
         {
           "type": "source_material",
@@ -204,6 +370,11 @@
         {
           "type": "legacy_reference",
           "title": "原库参考答案第17题B、E；尚未新取得官方原件"
+        },
+        {
+          "type": "reference_reprint",
+          "title": "2009北京卷参考答案转载：第17题B、E",
+          "url": "https://www.gzywtk.com/sjbrow/128-4.html?deviceType=Desktop"
         }
       ],
       "currentVersion": "gpt_6_astra",
@@ -218,20 +389,50 @@
             "kind": "codex_turn",
             "evidence": "answers-six-sites-20261002/gpt-astra-initial-reviews"
           }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B、E。\n逐项辨析：\nA项错误，属强加因果。原文“与司马迁结缘的汉武帝”只是交代汉武帝与司马迁有渊源。在芝川挖到灵芝的结果，是陶渠水更名为芝水，并不是汉武帝与司马迁结缘的原因。\nB项正确。文章由“地以人传”说起，写韩城地势之高、城郭之阔、田园之丽，芝川盆地的好风水，以及古道上演过的历史活剧。这些人文历史与地理风貌，共同烘托出史圣故里的人杰地灵，最终归结到司马迁及其精神。\nC项错误，曲解作者观点。“不能埋入祖茔”是文中引述的“有种说法”。作者用“这是谁的悲哀呢”加以反问，表示对这种观念的质疑，并说“我宁可认为……是史圣最佳的长眠之处”。作者并不认为这是史圣最大的悲哀。\nD项错误。褚遂良梦碑只是文中介绍的一处碑刻，“是实录还是虚幻，莫衷一是”针对的是梦碑内容。本文以游踪为线索，由小石桥、古道、神道写到祠院、墓冢，层次清晰，并没有“虚虚实实、扑朔迷离”的整体风格。\nE项正确。文章在实地游览中融入对历史的追想（古道上的历代兵马、汉武帝求灵芝、梦碑、塑像、墓冢的传说），又有作者的现实感怀（“这是谁的悲哀呢”“这是天问！我听见史圣在歌唱”），使这篇游记显得厚重，富有文化内涵。\n故选B、E。",
+          "inputSha256": "5762506877cc8aa13b6eff96426482e20d5a12ef8f469e7afeb59025e9ea31b0",
+          "generatedAt": "2026-10-03T00:26:53.718784+00:00",
+          "uncertainties": [
+            "B项“凸显人杰地灵”的说法稍有概括过度之嫌，因为文章重心在司马迁的精神。但与A、C、D的明显错误相比，B、E是最合理的两项。"
+          ],
+          "selectedOptions": [
+            "B",
+            "E"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-conflicts-02-result.json",
+            "inputPromptSha256": "f8a1148da76a7e0ba7a825233e4191475da51a3746bf2ecbe91c978112f2a893",
+            "responseStreamSha256": "b7c1ba7dfc88c87ef0eabb89ea42b15aa7a79dc87804ff168601cf364c8071d0",
+            "stage": "independent"
+          }
         }
+      },
+      "scoringPolicy": {
+        "kind": "exact_set",
+        "basis": "practice",
+        "note": "本站多选练习要求完整选择且无错项，不声称复现高考官方细分给分；历史结果不重写。"
       }
     },
     {
       "id": "2026-guwen:2",
       "inputSha256": "7ad4bb12561bfaea85f1162a841229f44db6393749c80fc26e5fd11398f4af27",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "single_choice",
       "correctOptions": [
         "C"
       ],
       "explanation": "依据高考站已校订2026题文重答；字词细分争议不影响C。未将专门站旧转录用作本次题文权威。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T00:07:56.018Z",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
       "sources": [
         {
           "type": "source_material",
@@ -254,20 +455,44 @@
             "kind": "codex_turn",
             "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
           }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\nA项不同：“为杜弢所困”中“为……所”表被动，“为”是介词，可译为“被”；“朝野以为美谈”中“以为”是“以之为”的省略，“为”是动词，意为“当作、作为”。B项不同：“乃自径道还郡以待之”中“以”是连词，表目的，相当于“来”；“以其从弟廙为荆州刺史”中“以”是介词，意为“用、任用”。C项相同：“攀等以侃始灭大贼，而更被黜”意为陶侃刚消灭大敌，却反被贬斥；“安有断人左手而右手不应者乎”意为哪有砍断人的左手，右手却不反应的呢。两个“而”都是连词，表转折，意为“却”。D项不同：“周访与侃亲姻”中“与”是介词，意为“和、跟”；“梅陶与亲人书”中“与”是介词，意为“给”。故选C。",
+          "inputSha256": "7ad4bb12561bfaea85f1162a841229f44db6393749c80fc26e5fd11398f4af27",
+          "generatedAt": "2026-10-03T00:30:26.676473+00:00",
+          "uncertainties": [
+            "C项后句“而”也有人理解为表顺承或假设的连接，但联系语境，“砍断左手而右手不响应”含有违反常理的转折意味，判为转折较稳妥。"
+          ],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
+            "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
+            "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
+            "stage": "independent"
+          }
         }
       }
     },
     {
       "id": "2025-guwen:2",
       "inputSha256": "6659d911c8674642df02adc2cd4c07d953fee8f179c030c227650201675f9ed4",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "single_choice",
       "correctOptions": [
         "B"
       ],
       "explanation": "与既有语境校订一致，理由重新按完整选项组织。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T00:07:56.018Z",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
       "sources": [
         {
           "type": "source_material",
@@ -290,20 +515,42 @@
             "kind": "codex_turn",
             "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
           }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\nA项不同。“耳目遗俗而可与定世”中，“与”是介词“和、同”，后面省略宾语，即可以和他安定天下；“赵以伯阳邑与之”中，“与”是动词“给予”。B项相同。“难动以物”意为“难以用外物打动他”，“田骈送之以目”意为“田骈用目光送他”，两个“以”都是介词“用”，所在短语都作状语后置。C项不同。“弟子谓田骈曰”中，“谓”是“对……说”；“其故人谓唐尚愿之”中，“谓”是“认为”，即故人认为唐尚想当史官。D项不同。“国虽大不为王”中，“为”是动词“成为、称（王）”；“其故人为其兄请”中，“为”是介词“替、给”。故选B。",
+          "inputSha256": "6659d911c8674642df02adc2cd4c07d953fee8f179c030c227650201675f9ed4",
+          "generatedAt": "2026-10-03T00:39:17.649838+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
+            "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
+            "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
+            "stage": "independent"
+          }
         }
       }
     },
     {
       "id": "2024-guwen:2",
       "inputSha256": "5af8b4034eaf2a3cef2b504797a2659343b99da6cd6d2f5865f43f8625195415",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "single_choice",
       "correctOptions": [
         "D"
       ],
       "explanation": "结论D；不采用简单对调、删字或仅看现代译词的判法。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T00:07:56.018Z",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
       "sources": [
         {
           "type": "source_material",
@@ -326,20 +573,44 @@
             "kind": "codex_turn",
             "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
           }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\nA项不同。“下以阻百姓之从事”中，“之”用在主谓结构“百姓从事”之间，取消句子独立性；“是灭天下之人也”中，“之”是结构助词，译为“的”。B项不同。“故执有命者不仁”中，“者”是代词，译为“……的人”，即持有命论的人。“而强执此者，此特凶言之所自生，而暴人之道也”中，后文用“此”复指，并判断它是“凶言所自生”“暴人之道”，可见所指是“顽固坚持这种主张”这件事，而不是人，“者”应作提顿助词或指代“……的做法”。两句用法不同。C项不同。“或以命为有”中，“以……为”译为“认为、把……当作”；“所以听狱制罪者”中，“所以”译为“用来……的（手段）”，“以”是介词“用”。D项相同。“此上之所赏而百姓之所誉也”意为“这是君上所奖赏并且是百姓所称誉的”；“欲天下之治而恶其乱”意为“希望天下太平并且厌恶它混乱”。两个“而”都是连词，表并列。故选D。",
+          "inputSha256": "5af8b4034eaf2a3cef2b504797a2659343b99da6cd6d2f5865f43f8625195415",
+          "generatedAt": "2026-10-03T00:39:17.649838+00:00",
+          "uncertainties": [
+            "B项后一句“者”是指人还是表提顿、指事，理解上有一定争议。本答案依据后文“此……暴人之道也”判断它不指人。"
+          ],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
+            "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
+            "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
+            "stage": "independent"
+          }
         }
       }
     },
     {
       "id": "2020-guwen:2",
       "inputSha256": "8cf348a4059a8406f69705907bb3ee9f5360d1d86d28fed93bb22afd9e12226f",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "single_choice",
       "correctOptions": [
         "B"
       ],
       "explanation": "保留认为与因由两种分析口径；本题明确只判释义用不成立。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T00:07:56.018Z",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
       "sources": [
         {
           "type": "source_material",
@@ -362,20 +633,42 @@
             "kind": "codex_turn",
             "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
           }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\nA项正确。“欲以伐四卿”是说出公想凭借齐、鲁的力量讨伐四卿，“以”后省略“之”（指齐、鲁），解释为“凭借”说得通。B项不正确。“以汾水可以灌魏之安邑，绛水可以灌韩之平阳也”是在说明桓子、康子用肘碰、用脚踩暗示对方的原因：智伯说“水可以亡人国”，让他们联想到汾水可灌安邑、绛水可灌平阳。这里的“以”是连词，应解释为“因为”，不是“用”。C项正确。“主何以臣之言告二子也”意为“您为什么把我的话告诉韩、魏二人”，“以”是介词“把”。D项正确。“子何以知之”意为“您根据什么知道这件事”，后文答“以人事知之”，“以”解释为“依据、凭借”正确。故选B。",
+          "inputSha256": "8cf348a4059a8406f69705907bb3ee9f5360d1d86d28fed93bb22afd9e12226f",
+          "generatedAt": "2026-10-03T00:39:17.649838+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
+            "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
+            "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
+            "stage": "independent"
+          }
         }
       }
     },
     {
       "id": "2018-guwen:2",
       "inputSha256": "6b7b3e399444cad52c3b8d5f8f44679fe021d32e5eb1297c854e4675968fab0e",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "single_choice",
       "correctOptions": [
         "C"
       ],
       "explanation": "本题细分词类有历史分歧；C的结构差异明确。胜和其的精细标签仍不作独立排他词性练习。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T00:07:56.018Z",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
       "sources": [
         {
           "type": "source_material",
@@ -398,20 +691,45 @@
             "kind": "codex_turn",
             "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
           }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\nA项相同。“善日者王”指善于把握每一天的人能称王，“王者敬日”指称王者珍惜每一天，两个“日”都是名词，指每一天、日积之功。B项相同。“不可胜悔”是后悔不完，“不可胜日志”是不能每天记载完，两个“胜”都是“尽”。C项不同。“此之谓也”中，“之”是宾语前置的标志，即“谓此也”；“若白垩之与黑漆”中，“之”用在“白垩与黑漆”之间，取消句子独立性。D项基本相同。“察其秋毫”中，“其”是代词，指治乱存亡的开端（“它的”）；“其人拜之以牛”中，“其”是代词，指那个被救的人。两者都是代词。故选C。",
+          "inputSha256": "6b7b3e399444cad52c3b8d5f8f44679fe021d32e5eb1297c854e4675968fab0e",
+          "generatedAt": "2026-10-03T00:39:17.649838+00:00",
+          "uncertainties": [
+            "D项两个“其”一个偏人称代词（它的），一个偏指示代词（那个），细分也有差别。但两者都属代词，差别远不如C项明显，所以仍选C。"
+          ],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "note": "答案C与核查结论相合；“白垩之与黑漆”不宜不加说明地归为主谓间取独。判定重点是它不标记前置宾语。"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
+            "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
+            "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
+            "stage": "independent"
+          }
         }
       }
     },
     {
       "id": "2016-guwen:2",
       "inputSha256": "ff0ddb83e57ff78dbc381be4f072fe2ec8828b62dafbc7a0bad11b727227c8d4",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "single_choice",
       "correctOptions": [
         "D"
       ],
       "explanation": "题面中的群害等转录应另行核原卷，不在答案更新中猜补。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T00:07:56.018Z",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
       "sources": [
         {
           "type": "source_material",
@@ -434,20 +752,42 @@
             "kind": "codex_turn",
             "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
           }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\nA项相同。“使人之楚”“载粟而之齐”中的“之”都是动词，意为“到、往”。B项相同。“战斗之道”“衡山之械器”中的“之”都是结构助词“的”。C项相同。“楚王果自得而求谷”“果令人之衡山求买械器”中的“果”都是副词“果然”，表示事态如管子所料。D项不同。“今齐以其重宝贵买吾群害”中，“以”是介词“用、拿”；“楚以生鹿藏钱五倍”意为楚国因为（凭借）卖生鹿而藏钱增加五倍，“以”是介词“因为、凭借”。两者意义不同。故选D。",
+          "inputSha256": "ff0ddb83e57ff78dbc381be4f072fe2ec8828b62dafbc7a0bad11b727227c8d4",
+          "generatedAt": "2026-10-03T00:39:17.649838+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
+            "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
+            "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
+            "stage": "independent"
+          }
         }
       }
     },
     {
       "id": "2015-guwen:2",
       "inputSha256": "3e4943d0793fa56338354bfab4bc077c8a8acd42cae1cd8f8a7781a61b670e33",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "single_choice",
       "correctOptions": [
         "A"
       ],
       "explanation": "仅校核本小题，全文缺损和补字需独立原卷核验。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T00:07:56.018Z",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
       "sources": [
         {
           "type": "source_material",
@@ -470,20 +810,44 @@
             "kind": "codex_turn",
             "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
           }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\nA项不同。“其谁可而为之”中，“其”是语气副词，表示商量、推测，可译为“大概”；“君知其难也”中，“其”是代词，指那件事。B项相同。“午非子之子邪”“今者有小人之言”中的“之”都是结构助词“的”。C项基本相同。“（王虽……）而遂杀之”中，“遂”是副词，意为“终于、于是就”，指腹𦟝最终还是杀了儿子；“后遂无问津者”中，“遂”也是副词，意为“于是、就（再也）”。D项相同。“伤人者刑”“同予者何人”中的“者”都是代词，意为“……的人”。故选A。",
+          "inputSha256": "3e4943d0793fa56338354bfab4bc077c8a8acd42cae1cd8f8a7781a61b670e33",
+          "generatedAt": "2026-10-03T00:39:17.649838+00:00",
+          "uncertainties": [
+            "材料中墨者钜子腹𦟝一段有明显缺字、脱句（如“先生之以此听寡人也人者死”“王虽遂杀之”），C项所在原句不完整。本题依据《吕氏春秋·去私》通行文本理解为“而遂杀之”。"
+          ],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
+            "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
+            "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
+            "stage": "independent"
+          }
         }
       }
     },
     {
       "id": "2013-guwen:2",
       "inputSha256": "c1d2a9028fcd835873e271ce849049f85f8c10b3207c7fd63c591902e68c4897",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "single_choice",
       "correctOptions": [
         "D"
       ],
       "explanation": "保留A项的判准粒度说明；当前独立答案D，未把旧题的概括口径提升为普遍语法规则。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T00:07:56.018Z",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
       "sources": [
         {
           "type": "source_material",
@@ -506,20 +870,44 @@
             "kind": "codex_turn",
             "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
           }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\nA项基本相同。“以百玩之具罗于席”意为“拿各种玩具陈列在席上”；“吴越人以轻舟追遗之”意为“吴越人用轻舟追来赠送他”。两个“以”都是介词，引出所拿、所用之物，可译为“用、拿”。B项相同。“观其所取”“一无所受”中的“所”都是助词，与后面的动词组成名词性结构，意为“……的东西”。C项相同。“汝何故疏我”“吾何功哉”中的“何”都是疑问代词“什么”。D项不同。“彬之总师也”中，“之”用在主谓之间，取消句子独立性；“上临哭之恸”中，“之”是代词，指曹彬。故选D。",
+          "inputSha256": "c1d2a9028fcd835873e271ce849049f85f8c10b3207c7fd63c591902e68c4897",
+          "generatedAt": "2026-10-03T00:39:17.649838+00:00",
+          "uncertainties": [
+            "材料文字有讹误（如“是近名夜”应为“是近名也”，“非风湿未尝造门”应为“非公事未尝造门”，“胃曰”应为“谓曰”，“新汝”应为“亲汝”）。这些讹误不影响本题判断。"
+          ],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
+            "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
+            "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
+            "stage": "independent"
+          }
         }
       }
     },
     {
       "id": "2012-guwen:2",
       "inputSha256": "cda16ce1e07b5c9a679095dc2eb55a99d366ac7763251b4171ecc8d2494040a5",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "single_choice",
       "correctOptions": [
         "D"
       ],
       "explanation": "语境比较重答，结论D。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T00:07:56.018Z",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
       "sources": [
         {
           "type": "source_material",
@@ -535,12 +923,37 @@
         "gpt_6_astra": {
           "modelId": "gpt-6-astra",
           "label": "GPT-6 Astra 独立作答",
-          "text": "答案：D。何以为报中的以引出用于回报的凭借，何是前置的宾语；妻卧草中以号中的以把卧于草中的状态与号哭连接起来，不引进一个名词性工具。A项舍结合收留遇难者的语境均作收留，不能因现代常用舍弃义误读。B项然均承接转折，C项为均处在被动结构中，后一处另有所以形成显式为……所……格式。",
+          "text": "答案：D。何以为报中的以引出用于回报的凭借，何是前置的宾语；妻卧草中以号中的以把卧于草中的状态与号哭连接起来，不引进一个名词性工具。A项舍结合收留遇难者的语境均作收留，不能因现代常用舍弃义误读。B项然均承接转折，C项为均处在被动结构中，后一处与“所”配合，构成“为……所……”格式。",
           "inputSha256": "cda16ce1e07b5c9a679095dc2eb55a99d366ac7763251b4171ecc8d2494040a5",
           "generatedAt": "2026-10-03T00:07:56.018Z",
           "provenance": {
             "kind": "codex_turn",
             "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\nA项相同。“人莫舍我”是说没人肯留我住，“吾宁舍之而受祸”是说我宁愿收留她而遭受祸患，两个“舍”都是动词，意为“留宿、收留”。B项相同。“然独好周人急”承接“固贫甚”，“然其行最著”承接“辞不就”，两个“然”都是转折连词“然而、但是”。C项相同。“恐为他人得”“倘育而为风露所感”中的“为”都是介词，表被动，意为“被”。D项不同。“何以为报”（材料作“何以报为”）中，“以”是介词“用、拿”，意为“拿什么作为报答、何必报答”；“妻卧草中以号”中，“以”是连词，连接“卧草中”和“号”，相当于“而”。两者意义、用法都不同。故选D。",
+          "inputSha256": "cda16ce1e07b5c9a679095dc2eb55a99d366ac7763251b4171ecc8d2494040a5",
+          "generatedAt": "2026-10-03T00:39:17.649838+00:00",
+          "uncertainties": [
+            "题干D项作“何以为报”，材料原文作“何以报为”，两处文字不一致。但两种写法中的“以”都是介词，不影响判断。",
+            "题干称“加点的词意义和用法都不相同的一项”，以四项比较看，只有D项不同，按此作答。"
+          ],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
+            "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
+            "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
+            "stage": "independent"
           }
         }
       }
@@ -548,14 +961,14 @@
     {
       "id": "2011-guwen:2",
       "inputSha256": "d74f2198438a871b6ea7a938c1c74825095d865524923ed791b3475364e08ddb",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "single_choice",
       "correctOptions": [
         "C"
       ],
       "explanation": "使在此不表示命令他人行动；不与常用使令义混同。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T00:07:56.018Z",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
       "sources": [
         {
           "type": "source_material",
@@ -578,20 +991,42 @@
             "kind": "codex_turn",
             "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
           }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\nA项不同。“事有可行而不可言者”中，“而”表转折，意为“却”；“圣人之所独见而留意也”中，“而”表顺承或并列。B项不同。“曹子为鲁将兵”中，“为”是介词“替、给”；“则终身为破军擒将矣”中，“为”是动词“成为、是”。C项相同。“使曹子计不顾后”“使管仲出死捐躯”中的“使”都是连词，表假设，意为“假使、如果”。D项不同。“人君弗臣”中，“臣”是名词活用为意动用法，意为“以之为臣”；“今人君之论其臣也”中，“臣”是名词“臣子”。故选C。",
+          "inputSha256": "d74f2198438a871b6ea7a938c1c74825095d865524923ed791b3475364e08ddb",
+          "generatedAt": "2026-10-03T00:39:17.649838+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
+            "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
+            "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
+            "stage": "independent"
+          }
         }
       }
     },
     {
       "id": "2010-guwen:2",
       "inputSha256": "b505082ac10295924361b13ae58ab3aee9c0f1fa5aa19f324249cc1c1c9f4d31",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "single_choice",
       "correctOptions": [
         "D"
       ],
       "explanation": "结论D。清优主之的指代依上下文是卖药来者，不是药材。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T00:07:56.018Z",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
       "sources": [
         {
           "type": "source_material",
@@ -614,20 +1049,44 @@
             "kind": "codex_turn",
             "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
           }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\nA项不同。“清优主之”中，“之”是代词，指从山泽来卖药的人；“不害清之为富也”中，“之”用在主谓之间，取消句子独立性（题干中“为”字疑脱漏）。B项不同。“市人以其异”中，“以”是介词“因为”；“清不以怠遇其人”中，“以”是介词“用、拿”，指不用怠慢的态度对待那人。C项不同。“清其有道者欤”中，“其”是语气副词，表推测，意为“大概”；“执其道不废”中，“其”是代词“他的”。D项相同。“其应益广”“益厚报清”中的“益”都是副词“更加”。故选D。",
+          "inputSha256": "b505082ac10295924361b13ae58ab3aee9c0f1fa5aa19f324249cc1c1c9f4d31",
+          "generatedAt": "2026-10-03T00:39:17.649838+00:00",
+          "uncertainties": [
+            "A项题干作“不害清之富也”，材料原句为“不害清之为富也”，疑题干脱“为”字，不影响判断。"
+          ],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
+            "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
+            "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
+            "stage": "independent"
+          }
         }
       }
     },
     {
       "id": "2004-guwen:2",
       "inputSha256": "065cc4d4c75baa3d65c1b9896e6934bc296ccd8809e9c917e040aa8dcec181d4",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "single_choice",
       "correctOptions": [
         "A"
       ],
       "explanation": "保持经源校订的若入前为寿，不把入误读为人。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T00:07:56.018Z",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
       "sources": [
         {
           "type": "source_material",
@@ -650,18 +1109,44 @@
             "kind": "codex_turn",
             "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
           }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\nA项相同。“为母氏所养”“身死人手，为天下笑者，何也”中的“为”都是介词，表被动，意为“被”。B项不同。“若一人有疾”中，“若”是连词“如果”；“若入前为寿”中，“若”是代词“你”。C项不同。“因留养之”中，“因”是副词“于是、就”；“因宾客至蔺相如门谢罪”中，“因”是介词“通过、经由”。D项不同。“岂有禁人在狱而心自安乎”中，“乎”是语气词，表反问，意为“吗”；“齐其庶几乎”中，“乎”是语气词，表推测，意为“吧”。故选A。",
+          "inputSha256": "065cc4d4c75baa3d65c1b9896e6934bc296ccd8809e9c917e040aa8dcec181d4",
+          "generatedAt": "2026-10-03T00:39:17.649838+00:00",
+          "uncertainties": [
+            "A项题干将“为母氏所养”与课文句“身死人手，为天下笑者，何也”排在一行，排版粘连，但可以辨认。"
+          ],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
+            "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
+            "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
+            "stage": "independent"
+          }
         }
       }
     },
     {
       "id": "2003-guwen:3",
       "inputSha256": "e9353a59ec03a48c410ffe0c78e287f468c0462a5a1a7755dd247f166354cdcf",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "single_choice",
-      "correctOptions": [],
-      "explanation": "独立审读倾向C具有直接句法依据，同时不能排除A的伴随解释；维持review_required，选项集合留空。",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "由暂缓裁决推进为校订参考答案C：新增可核查的试卷参考答案转载，与本轮语法分析及Claude独立答案相合。转载并非考试主管部门的官方认证；旧A保留作历史版本。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T00:07:56.018Z",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
       "sources": [
         {
           "type": "source_material",
@@ -670,6 +1155,11 @@
         {
           "type": "dictionary_revision",
           "title": "文言站2026-09-16-r3词典校订，保留争议"
+        },
+        {
+          "type": "reference_reprint",
+          "title": "2003年北京卷参考答案转载：第13题C",
+          "url": "https://www.gzywtk.com/sjbrow/44-2.html?deviceType=Desktop"
         }
       ],
       "currentVersion": "gpt_6_astra",
@@ -677,12 +1167,36 @@
         "gpt_6_astra": {
           "modelId": "gpt-6-astra",
           "label": "GPT-6 Astra 独立作答",
-          "text": "本题暂不认定唯一答案，停止确定判分。按所见题面，C中海之深、郦元之简均可分析为主谓性结构进入知、叹的宾语位置，不能只将前者译成大海的深度便排除这种分析。A中经过书舍旁而哭，可读为先后发生，也可读为经过时哭泣；拱而立则明确是伴随状态。单凭两处而的出现，无法强证A唯一。B中其分别在不孤这一小句内指人、在强前作限定；D中以分别引进书信这一凭借与合宜时令。旧库A可作历史记录，但还需可核查原卷、当年答案与语法论证来裁决，不以模型投票取代证据。",
+          "text": "答案：C。‘不知海之深’中的海深、‘叹郦元之简’中的郦元简，均是主谓性结构；‘之’置于其中，使这一结构进入知、叹等动词之后，意义和用法相同。不能只因前一处可以译成‘大海的深度’，就把它机械判为与后一处不同。A项按试题语境，经过书舍旁而哭为动作相承，拱手而立为伴随状态；B项‘其不孤’的其指所羡慕的孩子，在小句中作主语，‘其强’的其限定秦国的强大；D项以分别引入书信这一凭借与合宜时令。本轮已核到的北京卷参考答案转载也标第13题C，因此修正旧模型的A。细分语法时仍应说明判准，不把所有‘而’都按字面作同一种关系。",
           "inputSha256": "e9353a59ec03a48c410ffe0c78e287f468c0462a5a1a7755dd247f166354cdcf",
-          "generatedAt": "2026-10-03T00:07:56.018Z",
+          "generatedAt": "2026-10-03T00:43:33.956398+00:00",
           "provenance": {
             "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
+            "evidence": "answers-six-sites-20261002/gpt-astra-2003-revision.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\nA项不同。“原过其旁而泣”中，“而”连接“过其旁”和“泣”两个动作，表顺承；“子路拱而立”中，“而”表修饰，即拱着手站立。B项不同。“一则羡其不孤”中，“其”是代词，指书舍中读书的孩子（他们），在句中作主谓结构的主语；“秦贪，负其强”中，“其”是代词“它的”，指秦国自身，作定语。C项相同。“海之深”“山之高”“郦元之简”“李渤之陋”中的“之”都用在主谓之间，取消句子独立性。D项不同。“当以书相分”中，“以”是介词“用”；“斧斤以时入山林”中，“以”是介词“按照”。故选C。",
+          "inputSha256": "e9353a59ec03a48c410ffe0c78e287f468c0462a5a1a7755dd247f166354cdcf",
+          "generatedAt": "2026-10-03T00:39:17.649838+00:00",
+          "uncertainties": [
+            "C项后句“李渤·之陋”中多一个间隔符，属录入问题，据《石钟山记》原句“盖叹郦元之简，而笑李渤之陋也”理解。"
+          ],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
+            "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
+            "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
+            "stage": "independent"
           }
         }
       }
@@ -690,14 +1204,14 @@
     {
       "id": "2002-guwen:3",
       "inputSha256": "bccf2397266d1679212fc3f9d01de17ade781ce9cc8cc964ac4d90876adee16e",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "single_choice",
       "correctOptions": [
         "B"
       ],
       "explanation": "结论B，按完整语句重答。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T00:07:56.018Z",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
       "sources": [
         {
           "type": "source_material",
@@ -719,6 +1233,1372 @@
           "provenance": {
             "kind": "codex_turn",
             "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\nA项不同。“过于荆”中，“于”是介词，引出处所，意为“经过（楚国）”；“苛政猛于虎也”中，“于”是介词，表比较，意为“比”。B项相同。“因如吴”中，“因”是副词“于是、就”；“因留怀王以求割地”中，“因”也是副词“于是、趁势就”。两者用法一致。C项不同。“此有道者之所以异乎俗也”中，“之”用在主谓之间，取消句子独立性；“宋何罪之有”中，“之”是宾语前置的标志。D项不同。“知不以利为利矣”中，“以”是介词“把”，构成“以……为……”；“日削月割，以趋于亡”中，“以”是连词，表结果，意为“以致、而”。故选B。",
+          "inputSha256": "bccf2397266d1679212fc3f9d01de17ade781ce9cc8cc964ac4d90876adee16e",
+          "generatedAt": "2026-10-03T00:39:17.649838+00:00",
+          "uncertainties": [
+            "材料中“而越人信 ”后有缺字（通行本作“而越人信禨”），与本题无关。"
+          ],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
+            "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
+            "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2026-feilian:1",
+      "inputSha256": "d3ba0610c40acea070112bb7c3e7ddf737103a8b403824cd15643913741b6e06",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2026北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：B。材料一明确把基于物理参数的声学研究与主要从审美、人文角度展开的声景学区分开来。声景学以整个声环境为对象，研究人与声音、环境的关系，A、C、D均有直接依据；B把另一研究路径误作声景学的侧重点。",
+          "inputSha256": "d3ba0610c40acea070112bb7c3e7ddf737103a8b403824cd15643913741b6e06",
+          "generatedAt": "2026-10-03T00:23:44.075Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\nA项正确，材料一说“声景学就是以整个声环境为研究对象”。B项错误，材料一说声景学“不同于基于物理参数的声学研究”，主要从审美和人文角度研究声音。“侧重于测量噪声的声学参数”与原文相反，而且研究对象也不限于噪声。C项正确，原文明说“主要从审美的角度和人文的角度研究声音”。D项正确，原文说声景学“探讨人、声音、环境三者的关系”。故选B。",
+          "inputSha256": "d3ba0610c40acea070112bb7c3e7ddf737103a8b403824cd15643913741b6e06",
+          "generatedAt": "2026-10-03T00:30:26.676473+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
+            "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
+            "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2026-feilian:2",
+      "inputSha256": "76cdafaf94889068aeca0d1f716956f839cdca0ac46d1d9821aab4e529d61d2d",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2026北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：B。‘寂处闻音’说的是听者的审美体验，并非物理意义上的无声或低声强。材料还说明环境的‘静’与声音的物理参数没有必然联系。声景与视觉景观结合，天籁的动态美与亭台山石的静态美相映，分别支持A、C、D。",
+          "inputSha256": "76cdafaf94889068aeca0d1f716956f839cdca0ac46d1d9821aab4e529d61d2d",
+          "generatedAt": "2026-10-03T00:23:44.075Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\nA项正确，原文说声音景观同视觉景观结合，创造了“有声有色”的风景。B项错误，原文说园林环境的“静”与声音的物理参数没有必然联系，“往往表现为一种‘寂处闻音’的经验”。可见“寂处闻音”是一种审美体验，不是物理学意义上的安静，物理上恰恰有声。C项正确，原文说燕语莺啼、竹韵泉鸣“都有一种稍纵即逝、富于变化的动态美感”。D项正确，原文用“蝉噪林逾静，鸟鸣山更幽”说明闹与静的辩证关系，天籁又为静默的亭台山石增添生气，体现动静结合。故选B。",
+          "inputSha256": "76cdafaf94889068aeca0d1f716956f839cdca0ac46d1d9821aab4e529d61d2d",
+          "generatedAt": "2026-10-03T00:30:26.676473+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
+            "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
+            "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2026-feilian:3",
+      "inputSha256": "997a9690765bd5a644d2e515a8253c4cb0f53137d1a2b5e12dcf6102aca7dc8e",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2026北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：D。材料二用幽静山谷与繁忙马路作比较：同一声音在山谷中传播得更远而仍可清楚听见，听觉空间更大。A把三种声景元素中的‘标志声’换成‘噪声’；B把噪声的重要特征‘低保真度’说成高；C否定了材料明确提出的听觉空间与声景质量的联系。",
+          "inputSha256": "997a9690765bd5a644d2e515a8253c4cb0f53137d1a2b5e12dcf6102aca7dc8e",
+          "generatedAt": "2026-10-03T00:23:44.075Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\nA项错误，材料二所说三种声景元素是基调声、信号声和标志声，不是噪声。B项错误，原文说声级、频谱或节奏失去平衡属于低保真度的声景，“低保真度是噪声的重要特征”，所以噪声保真度低，不是高。C项错误，原文说“声景优劣还可以结合听觉空间来考察”，“听觉空间越大，反映该区域的声景越好”，听觉空间大小会影响对声景优劣的判断。D项正确，原文举例说同一声音在交通繁忙的马路边听觉空间小，在幽静山谷里听觉空间大，由此可以推断同一声音在幽谷的听觉空间比在闹市更大。故选D。",
+          "inputSha256": "997a9690765bd5a644d2e515a8253c4cb0f53137d1a2b5e12dcf6102aca7dc8e",
+          "generatedAt": "2026-10-03T00:30:26.676473+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
+            "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
+            "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2026-feilian:4",
+      "inputSha256": "fa10b937a39becfe56eae03c6652732275e2ecfc4cfa0ea1ddf35d184cca1370",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2026北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：C。建筑布局和细部设计会影响声音效果，例如凹凸表面可以缩短混响时间，所以声景设计应与建筑设计协调。A符合叫卖声的地域文化特征；B对应声音可清晰辨识的优良声景；D对应噪声随空间和时间变化的特点。",
+          "inputSha256": "fa10b937a39becfe56eae03c6652732275e2ecfc4cfa0ea1ddf35d184cca1370",
+          "generatedAt": "2026-10-03T00:23:44.075Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\nA项正确，材料二说标志声“显示了独特的地域特征”，材料一说吆喝声的京音京调、京腔京韵带有独特的地域文化意义，是根植于百姓生活的民俗文化形式，所以可视为带有民俗文化意义的标志声。B项正确，能清晰听到鸟啼虫鸣、流水潺潺，说明这些声音听觉空间较大、声音之间区分清楚、保真度高，由此可推断声景较好。C项错误，材料二说声景设计除考虑声景元素本身的特性，“公共开放空间中建筑物的布局和细部设计也会影响声音效果”，并举凹凸建筑表面缩短混响时间为例，还要求注意声音与整体环境协调。可见二者应统筹协调，不能分别、独立进行。D项正确，材料二说噪声“空间分布不均匀、随时间而变化”，动态噪声地图可以分区域、分时段监测。故选C。",
+          "inputSha256": "fa10b937a39becfe56eae03c6652732275e2ecfc4cfa0ea1ddf35d184cca1370",
+          "generatedAt": "2026-10-03T00:30:26.676473+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
+            "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
+            "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2026-feilian:5",
+      "inputSha256": "abffad32457706a3dcb90e2b0928fe5df8d4bec252f1b8d09021d8373fa0a732",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2026北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "①保护、留存和记录具有历史与地域文化内涵的声音遗产，如老北京叫卖声，使城市保有可辨认的文化记忆。②统筹基调声、信号声、标志声与整体环境，兼顾声音的物理、心理特性和听者的真实感受；借助自然声景及声、景结合提升审美体验。③将声景规划与建筑布局、细部设计结合，改善混响等声音效果，营造健康舒适的听觉空间。④运用动态噪声地图分析不同区域、不同时段的噪声特征，实施精准监测与管控。作答应分别落实文化保护、协调设计和噪声治理，不能只写‘减少声音’。",
+          "inputSha256": "abffad32457706a3dcb90e2b0928fe5df8d4bec252f1b8d09021d8373fa0a732",
+          "generatedAt": "2026-10-03T00:23:44.075Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "城市声景建设的方法：①借鉴中国古典园林营造声景的经验，把声音当作景观要素，让声音景观与视觉景观结合，引入鸟鸣、泉声、风声等自然之声，营造动静相宜、富有审美价值的声环境。②重视声景的人文内涵，对有历史和地域文化内涵的“声音遗产”（如老北京吆喝声）以及有地域特征的标志声加以保护、留存和记录，延续城市记忆和地域文化。③统筹规划设计基调声、信号声、标志声等声景元素，使声音层次清楚、彼此可辨，提高声景保真度，扩大有益声音的听觉空间。④注意声音与整体环境协调，重视听者的主观真实感受；兼顾声景元素的物理、心理特性，并通过建筑布局和细部设计（如采用凹凸的建筑表面缩短混响时间）改善声音的舒适度。⑤加强噪声污染防治，利用基于GIS的动态噪声地图，从空间和时间两个维度划分热闹、缓冲、安静区段，分析噪声的特征和变化规律，分区域、分时段精准监测和管控，为城市规划与环境管理提供依据。",
+          "inputSha256": "abffad32457706a3dcb90e2b0928fe5df8d4bec252f1b8d09021d8373fa0a732",
+          "generatedAt": "2026-10-03T00:30:26.676473+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
+            "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
+            "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2026-guwen:1",
+      "inputSha256": "236b151da8b8d97a1fb58e76ab66134a2577d3180ea977b71c7008cdc34100b6",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2026北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：D。‘敦意解’承接梅陶等人的劝说，指王敦的杀意、怒意消解，不是‘懂得’。刘弘早知陶侃忠诚能干，‘得’为知晓；‘逆击’为迎击来敌；钱凤嫉妒功劳而多次诋毁，‘疾’为嫉妒，A、B、C均合语境。",
+          "inputSha256": "236b151da8b8d97a1fb58e76ab66134a2577d3180ea977b71c7008cdc34100b6",
+          "generatedAt": "2026-10-03T00:23:44.075Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\nA项正确，“吾得之已久”指刘弘了解、知晓陶侃的忠诚和才能已经很久了，“得”可释为知晓、了解。B项正确，“逆击”即迎击，“逆”指迎、迎战。C项正确，钱凤“疾侃之功”，即嫉妒陶侃的功劳，“疾”通“嫉”。D项错误，“敦意解”指王敦的疑虑、杀意消除了，“解”是消除、消散，不是“懂得”。故选D。",
+          "inputSha256": "236b151da8b8d97a1fb58e76ab66134a2577d3180ea977b71c7008cdc34100b6",
+          "generatedAt": "2026-10-03T00:30:26.676473+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
+            "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
+            "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2026-guwen:3",
+      "inputSha256": "978edc6e9ceb4ec491966dd36e80916115216cafbdda808a49988b24a381d9be",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2026北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：A。羊祜所说的是刘弘‘以后’会担任自己当时的职位。‘吾’指刘弘，‘后’是后来，并非‘我的后人’。B的‘脱’为倘若；C的‘意’为猜想，‘风旨’指暗示的意旨；D结合陶侃辞让高位、不参与朝廷权争可成立。",
+          "inputSha256": "978edc6e9ceb4ec491966dd36e80916115216cafbdda808a49988b24a381d9be",
+          "generatedAt": "2026-10-03T00:23:44.075Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\nA项错误。“谓吾后当居身处”意为羊公认为我以后应当会处在他（羊公）的位置上。“吾后”是“我以后”，不是“我的后人”；“身处”指羊公自身所处的地位。下文“今观卿，必继老夫矣”即刘弘说陶侃将来必定接替自己，与羊公当年预言刘弘相互对应，可以印证。B项正确，“脱”是倘若，“异志”是异心，“荆州无东门”即荆州失去东面的门户。C项正确，“意”是猜测、怀疑，“承侃风旨”是秉承陶侃的意图、暗示。D项正确，“满盈”指位高权重、功名盛满，“深以满盈自惧”即深恐因盈满而招祸，与下文辞让大将军殊礼、“不预朝权”“屡欲告老”相合。故选A。",
+          "inputSha256": "978edc6e9ceb4ec491966dd36e80916115216cafbdda808a49988b24a381d9be",
+          "generatedAt": "2026-10-03T00:30:26.676473+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
+            "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
+            "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2026-guwen:4",
+      "inputSha256": "adaab7acd1dd9e598109cd1c1c8073b18c1046316890ff067576fe0c04af82f0",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2026北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：A。刘弘面对扈怀的挑拨明确表示信任陶侃。陶侃遣子侄前往是‘以自固’，表明忠诚、巩固双方关系，并非派去打探。B与王敦数次欲杀而终设宴送行相合；C的物资交接体现奉公自律；D据民众庆贺与境内秩序作出合理概括。",
+          "inputSha256": "adaab7acd1dd9e598109cd1c1c8073b18c1046316890ff067576fe0c04af82f0",
+          "generatedAt": "2026-10-03T00:23:44.075Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\nA项错误。怀疑陶侃的是扈怀，刘弘明确表示“侃之忠能，吾得之已久，必无是也”，并不怀疑陶侃。陶侃派儿子和侄子到刘弘处是“以自固”，即以子侄为质，表明忠心、坚定上司的信任，不是去“打探”。刘弘随后把他们引为参军，又资助遣返，也说明这是示诚之举。B项正确，王敦“被甲持矛将杀侃，出而复还者数四”，可见犹豫不决；后经梅陶等劝说，“敦意解”，设宴饯行，陶侃连夜出发，化险为夷。C项正确，陶侃归长沙前将军资、器仗、牛马、舟船登记造册，封印仓库，亲加锁钥，交付右司马，可见他公私分明、克己奉公。D项正确，“荆州士女相庆”和“数千里中，路不拾遗”分别从民心和治绩两方面说明陶侃治理有方、深得民心。故选A。",
+          "inputSha256": "adaab7acd1dd9e598109cd1c1c8073b18c1046316890ff067576fe0c04af82f0",
+          "generatedAt": "2026-10-03T00:30:26.676473+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
+            "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
+            "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2026-guwen:5",
+      "inputSha256": "9ebcb4cef4adf5f8e0ef3688f9bf12f2c2c632da2c5362e36c5be5c1f8d06ee5",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2026北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "①忠诚坦荡，重信守义。遭人疑忌时派子侄赴刘弘处表明忠心，面对王敦的诋毁与猜忌也亲自前往陈述，并不以暗中反抗应对。②善于判断形势，处事有谋略。预见杜弢将步攻武昌，走近路返郡等待，命朱伺迎击，最终破敌。③临危沉着而刚正，同时懂得趋避。在王敦欲杀而犹疑时正色直言，随后起身如厕；获得饯行机会便连夜离开。分析应兼顾刚直与机变，不能把冒险赴见简单赞为毫无风险的最佳选择。",
+          "inputSha256": "9ebcb4cef4adf5f8e0ef3688f9bf12f2c2c632da2c5362e36c5be5c1f8d06ee5",
+          "generatedAt": "2026-10-03T00:23:44.075Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "①谨慎周全，主动避嫌、示忠。第二段中，陶侃与陈敏同郡、同岁举吏，奉命屯兵夏口时遭扈怀猜疑。他听说后主动派儿子和侄子到刘弘处“以自固”，以实际行动表明忠心，消除上司可能的顾虑，处事稳妥周到。②料敌在先，判断精准，用兵果断。第三段中，周顗被困，陶侃断定“弢必步向武昌”，立即抄近路回郡等候，杜弢果然来攻；他又派朱伺迎击，大破敌军。可见他目光敏锐、善于决断，也善于用人。③坦荡磊落，临危不惧，沉着机智。第四段中，陶侃遭钱凤谗毁，仍不顾朱伺劝阻，亲自去见王敦当面陈述，光明磊落。王敦披甲持矛几番欲杀他，他“正色”说“使君雄断，当裁天下，何此不决乎”，以言语激之，从容如厕，镇定自若。王敦疑虑一消，他便“夜发”，当机立断，迅速脱离险境。总之，陶侃处事忠诚谨慎而又果敢机敏，刚正坦荡而又沉稳练达。",
+          "inputSha256": "9ebcb4cef4adf5f8e0ef3688f9bf12f2c2c632da2c5362e36c5be5c1f8d06ee5",
+          "generatedAt": "2026-10-03T00:30:26.676473+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
+            "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
+            "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2026-shici:1",
+      "inputSha256": "fca167c44ba8f2b9a035dcea2eb33844a20e9a69e496b780444bfd579d045e19",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2026北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：C。‘斜行横阵’写雁阵形态，‘才疏又缀’写队列刚疏散又重新连缀；不能解释成飞行时而高远、时而停顿。A契合寒露冷烟与衰老蒹葭；B借拟想写南方栖居地的安静与食物丰足；D写捣衣女子的相思泪。",
+          "inputSha256": "fca167c44ba8f2b9a035dcea2eb33844a20e9a69e496b780444bfd579d045e19",
+          "generatedAt": "2026-10-03T00:23:44.075Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\nA项正确，露寒、烟冷、蒹葭老，正是深秋景物的特点。B项正确，“应念潇湘”写雁心中惦念潇湘，那里岸远人静、水中菰米丰饶，安宁而富足，是雁理想的栖息之地。C项错误，“斜行横阵，才疏又缀”写雁群在万重云外飞行，队形时而斜行、时而横列，刚刚稀疏又连缀起来，表现的是队形疏密变化。词中并没有“时而高远，时而停顿”的意思，“才疏又缀”不能解作停顿。D项正确，结尾写闺中佳人想到远方征人的寒衣还没捣制，轻拂捣衣杵，泪水盈盈，表现思念之情。故选C。",
+          "inputSha256": "fca167c44ba8f2b9a035dcea2eb33844a20e9a69e496b780444bfd579d045e19",
+          "generatedAt": "2026-10-03T00:30:26.676473+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
+            "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
+            "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2026-shici:2",
+      "inputSha256": "567ccf8d08c7e6863f4fca952443ed0dcb4e7419670b30c20124f0efe094ae0c",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2026北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：B。‘徘徊’‘惊起’刻画雁欲栖又飞的动作，‘影摇寒水’以倒影写动态，均使形象鲜活。A把无明文的‘叹息之声’当成具体声响；C将用典效果归结为‘严肃性’，偏离怀人伤离的情味；D罗列比喻、排比等手法缺少相应文本依据。",
+          "inputSha256": "567ccf8d08c7e6863f4fca952443ed0dcb4e7419670b30c20124f0efe094ae0c",
+          "generatedAt": "2026-10-03T00:23:44.075Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\nA项错误，上阕确实写雁声从“天外”“寥唳”到“一声初至”，但“长门灯悄”只是借长门宫渲染冷寂孤寂的氛围，词中并没有写宫中人的“叹息之声”，“乡关之思”也缺乏依据，属于过度解读。B项正确，“徘徊欲下”写雁想落又迟疑，“依前被、风惊起”写它受惊又飞起，“影摇寒水”写雁影随水波摇荡，都细致描摹了雁的情态，富于动态美。C项错误，词中确实用了长门、衡阳雁回、仙掌等典故，增加了历史感和苍凉意味，但“严肃性”不当，这些典故主要用来营造孤寂凄清的意境、寄托身世之感。D项错误，词中有拟人（雁“念”潇湘、“徘徊”），但看不出明显的比喻和排比，说“综合运用拟人、比喻、排比”不符合原词。故选B。",
+          "inputSha256": "567ccf8d08c7e6863f4fca952443ed0dcb4e7419670b30c20124f0efe094ae0c",
+          "generatedAt": "2026-10-03T00:30:26.676473+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
+            "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
+            "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2026-shici:3",
+      "inputSha256": "40cc54c353337bd893e1248e101cee92b13f868a131abb792884cdcce1048e28",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2026北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "苏词中的雁远飞南去，向往安宁丰足的栖息处，却徘徊惊起，又引出书信与捣衣思人，是漂泊、难安并牵系离情的鸿雁；寄托词人辗转旅途的身世感慨、对安定生活的企盼及怀人之情。范词中的雁逢秋径直南归、毫无留意，反衬戍边将士因边事未平而不能归乡，包含思乡与担当边防责任的矛盾。李词中的雁是从前相识的过雁，勾连旧日生活和音书记忆，物似依旧而人事已非，加深词人的孤独、悼亡与身世之悲。三者须从各自语境区分，不宜都套成泛泛的‘思乡’。",
+          "inputSha256": "40cc54c353337bd893e1248e101cee92b13f868a131abb792884cdcce1048e28",
+          "generatedAt": "2026-10-03T00:23:44.075Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 来源复核后修订",
+          "text": "【苏词中的鸿雁形象】苏词写的是秋夜南飞、漂泊难栖的雁群。上片写露寒烟冷、蒹葭已老的深秋，征鸿从天外而来，鸣声寥唳。它们心念潇湘的水多菰米、岸遥人静，想在平田上落脚，“徘徊欲下”，却“依前被、风惊起”，欲栖而不得，惊魂难定。下片写它们远赴万里之外的衡阳，“斜行横阵，才疏又缀”，在万重云外艰难地保持队形；月照仙掌，影落石头城下的寒水。雁又被当作传递锦书的信使，牵连着捣衣怀人、盈盈落泪的佳人。所以，这是一群辗转万里、疲惫惊惶、找不到安稳栖处的鸿雁。它也是寄托书信与离情的意象。\n【苏轼的情感】词作于苏轼离开贬地黄州、赴常州途经金陵之时。他借雁群的“欲下又惊起”，写自己经历贬谪之后惊惧未消、宦海漂泊、身不由己的处境，也表达了渴望觅得安身之所的愿望。“长门”“仙掌”关合宫廷与长安，暗含失意之感，也透露出对朝廷的眷念。结尾写锦书、捣衣与佳人之泪，又融入了羁旅中的离别怀人之思。全词情调凄清孤寂。这里的“孤寂”是就人的心境而言，雁本身是成群而飞的。\n【范词中的鸿雁形象】“衡阳雁去无留意”写边塞秋来，大雁毫不留恋地南飞衡阳。这是一种急于离开苦寒边地的南归之雁，从侧面衬托出塞下秋景荒凉萧瑟、不宜久留。\n【范仲淹的情感】雁能毫无留意地南归，戍边将士却“燕然未勒归无计”，有家难回。词人以雁去反衬人留，写出将士思乡的愁苦和边塞的苍凉。同时，功业未成、不能归去，又流露出以身许国、守边御敌的责任感。全词情调苍凉悲壮，思乡与报国两种情感交织。\n【李词中的鸿雁形象】“雁过也，正伤心，却是旧时相识”写的是从北方飞来、词人在故乡时曾经见过的“旧相识”之雁。雁依旧南来，词人却已流落江南，雁成了勾起往昔记忆的物象。\n【李清照的情感】旧时相识的雁唤起昔日安定美满的生活。如今国破、家亡、夫丧，词人孤身漂泊，物是人非，雁的出现只是加深了伤心。这里寄寓着她对故乡、故国和往昔的怀念，以及晚年孤苦凄凉的身世之悲。\n【比较小结】苏词之雁漂泊惊惶、欲栖不得，抒写贬谪后的身世飘零与离情；范词之雁南去无留，反衬征人归不得，抒写思乡与报国交织的苍凉悲壮；李词之雁是旧时相识，触发物是人非、家国身世的深悲。",
+          "inputSha256": "40cc54c353337bd893e1248e101cee92b13f868a131abb792884cdcce1048e28",
+          "generatedAt": "2026-10-03T00:43:53.716690+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-source-review-01-result.json",
+            "inputPromptSha256": "ce426208a0a6adc0237edf91f5eb8cfa8574192829abf593db120d4bafa1da7b",
+            "responseStreamSha256": "c985407509b490ff104f2d3704b52e676630c279e98ccbe6597af4af7b9e7234",
+            "stage": "source_review"
+          }
+        },
+        "claude_opus_5_5_initial": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 初次独立作答（复核前）",
+          "text": "①苏轼词中的雁：是一只漂泊无依、屡受惊扰、难以安栖的孤雁。它在寒秋中远征，心念安宁富足的潇湘，看到平田想落下，却“依前被、风惊起”；又在万里长空、万重云外辗转飞行，身影摇荡在石头城下的寒水中。此词作于苏轼离开贬地黄州、赴常州途中，雁的漂泊和惊惶正是他自己的写照：经历乌台诗案和长期贬谪，他惊魂未定、辗转流离，渴望安定的归宿。结尾由雁写到捣衣的佳人和远方的征人，又寄寓了羁旅漂泊的孤寂和对亲人的思念。②范仲淹词中的雁：是决然南飞、毫无留恋的雁。“衡阳雁去无留意”，连大雁都不愿在边塞停留，以此衬托边地秋景萧瑟荒凉、环境艰苦，也反衬戍边将士有家不能归。词人借此抒发边塞将士浓重的思乡之情，以及边患未平、功业未成的悲凉，情感苍凉而沉郁。③李清照词中的雁：是“旧时相识”的雁，即昔日曾传书寄情的雁。雁依旧，人事却全变了：国破家亡，丈夫去世，自己流落异乡，昔日的书信往来再不可得。旧雁触发物是人非之感，抒发了词人晚年孤苦飘零、国破家亡的深沉哀痛，正应了“正伤心”。三首词都借雁抒情：苏词重在身世漂泊、惊魂难定，范词重在边塞思乡、壮志难酬，李词重在物是人非、孤苦伤痛。",
+          "inputSha256": "40cc54c353337bd893e1248e101cee92b13f868a131abb792884cdcce1048e28",
+          "generatedAt": "2026-10-03T00:30:26.676473+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": false,
+            "note": "初答“一只孤雁”不符合词中“斜行横阵”的雁群描写；来源复核已修订。"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
+            "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
+            "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2026-moxie:1",
+      "inputSha256": "eafc88489b154ed430514c15e52183a56db957f5b96dd080c580adfcb810d05c",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2026北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "（1）思国之安者，必积其德义。（2）战不善，弊在赂秦。（3）户庭无尘杂，虚室有余闲。（4）小楼一夜听春雨，深巷明朝卖杏花。注意‘浚’与题中已给内容对应，填空不要重复；‘弊’‘赂’‘巷’等字须准确。",
+          "inputSha256": "eafc88489b154ed430514c15e52183a56db957f5b96dd080c580adfcb810d05c",
+          "generatedAt": "2026-10-03T00:23:44.075Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "（1）思国之安者，必积其德义\n（2）战不善，弊在赂秦\n（3）户庭无尘杂，虚室有余闲\n（4）小楼一夜听春雨，深巷明朝卖杏花",
+          "inputSha256": "eafc88489b154ed430514c15e52183a56db957f5b96dd080c580adfcb810d05c",
+          "generatedAt": "2026-10-03T00:30:26.676473+00:00",
+          "uncertainties": [
+            "（1）题干说“以自然之理喻治国之道”，按原文顺序，“欲流之远者，必浚其泉源”之后接的是“思国之安者，必积其德义”，据此作答。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
+            "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
+            "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2026-honglou:1",
+      "inputSha256": "8cb8626738eef32a10b0c57db7234337a0996e653394562f02c8b05a322b4b87",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2026北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "（1）知书守礼：李纨援引《广舆记》与关羽多处坟墓的见闻，能辨有据史实与后人附会，显出读书识见；又特意申明怀古作诗并不等于阅读被礼教视为‘邪书’的《西厢》《牡丹》词曲，仍以闺阁礼法划定边界。通情达理：她承认宝琴亲历其地，理解传说古迹往往源于敬爱，且相关故事老少皆知，因而不苛求两首诗都有史鉴根据，劝宝钗让它们保留。（2）宝黛关系：二人共读《西厢记》，宝玉借曲文表达情意；黛玉听《牡丹亭》曲文而触动青春、爱情与身世之感，二者共同的情感体验促进相知。钗黛关系：黛玉在宴席行令时无意用了《西厢》《牡丹》的曲词，宝钗事后私下劝诫，既指出礼法禁忌又不当众使她难堪；黛玉逐渐感受到宝钗的关心，再加后来燕窝等关怀，猜疑减轻、关系亲近。不要把二人共读《西厢》误写成共读两部作品。",
+          "inputSha256": "8cb8626738eef32a10b0c57db7234337a0996e653394562f02c8b05a322b4b87",
+          "generatedAt": "2026-10-03T00:23:44.075Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "（1）知书：李纨熟知历史，指出“关夫子一生事业，皆是有据的”，还引《广舆记》说明自古名人坟多、无考古迹更多，见识广博，说理有据。守礼：她特意说明这两首诗“并不是看了‘西厢’‘牡丹’的词曲，怕看了邪书”，诗中的故事是说书唱戏、签上注批、老少男女人人皆知的，并不涉及闺阁女子不宜看的“邪书”。可见她仍守着礼教为闺阁设下的界限，同时也照顾到宝钗的顾虑。通情达理：她先说宝琴“原是到过这个地方的”，为宝琴开脱；再说古迹多是后人出于敬爱附会出来的，“以讹传讹”是人之常情，不必拘泥于史鉴有无记载。既肯定了黛玉、探春的意见，又给了宝钗台阶，一句“这竟无妨，只管留着”平息分歧，宝钗也“方罢了”。她以长嫂和诗社社长的身份持论公允、平和周全，正体现了通情达理。\n（2）对宝黛关系：第二十三回，宝玉在沁芳闸桥边桃花树下偷读《西厢记》，黛玉葬花时遇见，二人同读，“越看越爱”。宝玉借“我就是个多愁多病身，你就是那倾国倾城貌”向黛玉表白，黛玉含嗔带怒，又回敬“原来是个苗而不秀，是个银样镴枪头”，二人借曲词含蓄传情。随后黛玉路过梨香院，听到《牡丹亭》“原来姹紫嫣红开遍”“如花美眷，似水流年”等曲词，“心动神摇”“如醉如痴”，青春意识和爱情意识由此觉醒。第二十六回，宝玉又借《西厢记》“若共你多情小姐同鸳帐，怎舍得叠被铺床”打趣黛玉，惹她哭恼。两部作品成为宝黛借以表达爱情、心意相通的媒介，推动二人由青梅竹马走向知己相爱。\n对钗黛关系：第四十回宴席上行酒令，黛玉情急之下脱口说出“良辰美景奈何天”（《牡丹亭》）、“纱窗也没有红娘报”（《西厢记》）。宝钗察觉后，第四十二回“蘅芜君兰言解疑癖”中私下“审问”黛玉，又坦言自己小时候也偷看过这类书，劝她这些杂书“移了性情”，女孩儿应以针黹为本。黛玉羞愧，心中暗服，此前对宝钗的猜忌和芥蒂渐渐消除。到第四十五回“金兰契互剖金兰语”，黛玉感激宝钗，承认“往日竟是我错了”，二人结为知己。第四十九回宝玉见钗黛亲密，还借《西厢记》问“是几时孟光接了梁鸿案”，黛玉笑述其中原委。可见《西厢记》《牡丹亭》成了钗黛由猜忌、对立转向和解、亲近的契机。",
+          "inputSha256": "8cb8626738eef32a10b0c57db7234337a0996e653394562f02c8b05a322b4b87",
+          "generatedAt": "2026-10-03T00:30:26.676473+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
+            "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
+            "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2026-sanwen:1",
+      "inputSha256": "2e0d78bedd10ee8aa31c08cfc95f1c0234bc0000d286cddee646366b01a36f0e",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2026北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：B。这里的‘森然’写陡峭岩壁高耸、令人凛然的形态与气势；上下文说岩壁如刀劈、几无坡度，并非形容植被茂密。其他解释均与橹声、开阔视野和低声自语的具体语境相合。",
+          "inputSha256": "2e0d78bedd10ee8aa31c08cfc95f1c0234bc0000d286cddee646366b01a36f0e",
+          "generatedAt": "2026-10-03T00:23:44.075Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\nA项基本正确，“咿呀有韵”形容橹声有节奏、有韵律。B项错误，“森然”形容高耸、阴森，令人生畏。文中说“环湖的岩壁如刀劈出一般”“陡峭的山崖像是要迎头倒压下来”，写的是峭壁陡直森严、令人惊畏，不是植被茂密。C项正确，“豁然开朗”指由狭窄幽暗忽然变得开阔明亮，文中指穿过宅院后视野突然开阔。D项正确，“喃喃自语”指自己小声地自言自语。故选B。",
+          "inputSha256": "2e0d78bedd10ee8aa31c08cfc95f1c0234bc0000d286cddee646366b01a36f0e",
+          "generatedAt": "2026-10-03T00:30:26.676473+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
+            "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
+            "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2026-sanwen:2",
+      "inputSha256": "e1defb1589d9db6d0903a7d913362977b5d73089279225b086070b7c25fd15c4",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2026北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：A。开篇的水乡风光与江南人灵动柔和的印象没有贬义，从水转到石是铺垫、对照并拓展认识，不能称为先贬后褒。B对应无意造景却创造胜景；C以喷泉表现劳作声与蓬勃生命力；D须限于文中整块、成方开采岩石的工作，不宜扩大成机器不能参与任何采石活动。",
+          "inputSha256": "e1defb1589d9db6d0903a7d913362977b5d73089279225b086070b7c25fd15c4",
+          "generatedAt": "2026-10-03T00:23:44.075Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\nA项错误，文章开篇写江南的水、水乡风景以及“灵动、柔和”的江南人，并没有贬低之意。这里是由常见印象引出下文，形成水与石的对照和衬托，为后文写绍兴的石、对江南人产生新认识作铺垫，不是“先贬后褒”。B项正确，原文说“采石的工匠们无意造景，后人却在他们流血流汗的劳动场所发现了世所罕见的奇妙胜景”。C项正确，作者把石工的呐喊和锤声比作“从地层深处涌出的喷泉”，“带着原始生命强有力的呼啸”，形象地表现了石工蓬勃强劲的生命力。D项正确，原文说成块成方地凿下岩石“并不是一件轻而易举的事情”，“这样的工作确实是炸药和机器无能为力的”。故选A。",
+          "inputSha256": "e1defb1589d9db6d0903a7d913362977b5d73089279225b086070b7c25fd15c4",
+          "generatedAt": "2026-10-03T00:30:26.676473+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
+            "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
+            "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2026-sanwen:3",
+      "inputSha256": "a064024a6d9091b3cf5ab407c425955ec9e5b85a148a60b9868419167fa8e72c",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2026北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "构思上立足俯瞰深坑的视角，以‘脊背—头发—臂膀与铁锤’三个局部连续聚焦，把汗水、尘土、色彩和挥锤动作组织成劳动群像；末一层从身体静态特征转向反复的动作弧线。作用上，反复的‘只看见’突出眼前景象对作者的强烈冲击，长短相接的排比形成节奏，具体展现劳动的艰苦、力量和持续性，表达震撼、敬意，为后文歌咏劳动者的‘石魂’蓄势。这里既有可见的艰辛，也有生命力，不应只答‘句式整齐、增强气势’。",
+          "inputSha256": "a064024a6d9091b3cf5ab407c425955ec9e5b85a148a60b9868419167fa8e72c",
+          "generatedAt": "2026-10-03T00:23:44.075Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "构思：①视角真实。作者站在坑口“俯瞰坑底”，从这个角度看不见石工的面目，只能看到脊背、头发、臂膀和挥动的铁锤，“只看见”既符合实际所见，又限定了视线。②截取特写。三个分句由人体（脊背、头发）写到人与工具一同运动（臂膀和铁锤画出弧线），由静态到动态，层层推进；并用“古铜色”“灰蒙蒙”“油亮”“黑色”“青灰色”等色彩词，画面感强。\n作用：①突出石工劳动的艰辛和体魄的强健。“汗水淋漓”“灰蒙蒙的头发”（沾满石粉）写出劳作的辛苦，“古铜色脊背”“油亮的臂膀”写出常年劳动锻炼出的强健身躯，“不停地画着一道又一道弧线”写出劳动的持续不息。②塑造群像。不写个人面目，石工就成了无名劳动者的群体形象，象征世世代代默默开山采石的江南石工，与结尾“世世代代的劳动者血汗凝成的‘石魂’”呼应。③排比句式加强语势，节奏铿锵，与下文“粗犷的呐喊和铿锵的锤声”相配合，渲染出震撼人心的劳动场面。“只”字也表明作者的目光完全被这一场景吸引，传达出他的惊叹和敬佩，照应前文“展现在眼前的景象我将终生难忘”。",
+          "inputSha256": "a064024a6d9091b3cf5ab407c425955ec9e5b85a148a60b9868419167fa8e72c",
+          "generatedAt": "2026-10-03T00:30:26.676473+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
+            "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
+            "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2026-sanwen:4",
+      "inputSha256": "33320768b5bb59e34ff7dfc4342ad40bf7da00675247ca8ffa222e285ab2918e",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2026北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "起初作者把江南与水联系起来，对江南人的印象主要是灵动柔和。见绍兴满城石构，游东湖得知奇景来自历代石工的劳动，原有认识受到冲击，开始追问江南石工是怎样的人。看到云骨并获知整山被凿平，更惊叹他们的勇气、毅力与耐心；亲见采石现场后，对劳动者的强健、技艺与锲而不舍有了切身理解。友人举勾践为例，使这种认识扩展到江南人刚毅坚韧的性格传统。结尾视云骨为劳动者的丰碑，以‘石魂’概括血汗与精神。变化是从单一的柔美印象走向刚柔兼具的完整认识，并非否定其灵动柔和。",
+          "inputSha256": "33320768b5bb59e34ff7dfc4342ad40bf7da00675247ca8ffa222e285ab2918e",
+          "generatedAt": "2026-10-03T00:23:44.075Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "作者对江南人的认识，由片面的固有印象变为全面深刻的理解。①起初，作者从水认识江南：水网纵横、帆影橹声、莲荷菱花，认为江南人的性格也像水一样“灵动、柔和”，甚至以为开山石工应该是“剽悍的北方大汉”，与江南无关。这是一种刻板印象。②到了绍兴，作者发现处处是石，绍兴“不仅是水城，也是石头城”。东湖峭壁上的斧凿痕迹和采石留下的深潭，让他惊叹“这奇山奇水，竟是江南石工长年累月劳动的结果”，并开始追问这些石工“是一些什么样的人”，原有印象开始动摇。③在柯岩，得知云骨是石工凿平大山后留下的，作者“惊愕得说不出一句话”；又亲眼看到采石场上石工挥汗凿石、呐喊震荡，认识到他们有凿平大山的毅力、勇气和耐心，有锲而不舍、吃苦耐劳的品格。④友人提起越王勾践卧薪尝胆，“凭的正是岩石一般的性格”，使作者的认识上升到地域精神和历史传统层面：江南人不只有水的灵动柔和，还有石的坚韧刚毅、百折不挠。⑤结尾作者把云骨看作“举世无双的丰碑”，认定其中凝聚着世代劳动者血汗铸成的“石魂”，表达了对江南劳动者的由衷赞美和敬意。文章从水写到石，再写到“石魂”，由景到人，由人到精神，层层深入，完成了认识上的转变。",
+          "inputSha256": "33320768b5bb59e34ff7dfc4342ad40bf7da00675247ca8ffa222e285ab2918e",
+          "generatedAt": "2026-10-03T00:30:26.676473+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
+            "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
+            "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2026-yuyanjichu:1",
+      "inputSha256": "90f3686d486f3ea4e3f2e9b335134971af534fe62d299cfcc5d4f5b52995e70c",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2026北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：D。‘缓解水荒’搭配自然，‘疏解’通常指疏通、疏散某种拥堵或压力，不能在此与‘缓解’直接互换。A正确：‘开始了……先河’搭配不当，可改为‘开创了……先河’。B正确：先说明水库有水却难输城的困境，再归纳双重压力并提出建渠必要，衔接顺序清楚。C把缺少恰当句法连接的‘来自……压力’改为‘在……压力下’，使其成为后句的状语。",
+          "inputSha256": "90f3686d486f3ea4e3f2e9b335134971af534fe62d299cfcc5d4f5b52995e70c",
+          "generatedAt": "2026-10-03T00:23:44.075Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n本题选不正确的一项，答案为D。\nA项正确。第①句“开始了北京城市引水工程的先河”搭配不当。“先河”只与“开”构成固定搭配，即“开……先河”，“开始了……先河”不规范，应改为“开创了……的先河”或“开了……的先河”。所以第①句确有语病。\nB项正确。第③句以“与此同时”开头，承接第②句20世纪60年代“供需矛盾突出、持续干旱”的背景，补充“有水在库，难以入城”这一矛盾。第④句用“双重压力”总括前两句：“水资源时空分布不均”对应②的持续干旱和③的水在库、需在城，“用水需求急剧增长”对应②的城市快速发展。第④句再推出“建设输水通道刻不容缓”，引出第⑤句修渠。③是分述，④是总结并过渡，两句顺序不能互换。\nC项正确。第④句“来自……的双重压力”是名词性短语，后面直接接“建设……刻不容缓”，前后没有合理的语法关系，属于句式杂糅或成分残缺。改为“在……的双重压力下”，就成了表示条件或背景的状语，句子通顺。\nD项不正确。“缓解”指使紧张、严重的程度减轻，“缓解‘水荒’”搭配恰当。“疏解”侧重疏通、分散，常说“疏解交通拥堵”“疏解非首都功能”“疏解情绪”，与“水荒”（缺水）搭配不当，也不符合“使缺水状况减轻”的语意。所以不能替换。",
+          "inputSha256": "90f3686d486f3ea4e3f2e9b335134971af534fe62d299cfcc5d4f5b52995e70c",
+          "generatedAt": "2026-10-03T00:33:22.993673+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2026-02-result.json",
+            "inputPromptSha256": "afc11b3d8a90e8cec0e7c054d8f75b231f3a603848d59961973d460e31c3c9b7",
+            "responseStreamSha256": "bacb814fa3e9b28059cee188e0f50ecb11d45e3b803eb88602020c3be6e95fa7",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2026-yuyanjichu:2",
+      "inputSha256": "6d438a90d1a4b549d4e80b55b33537b51d1bf1dcd16acf7f6ad7c172f4f1bde5",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2026北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "示例：从通惠河引白浮泉水入大都。与下文‘到京密引水渠将水引入城区’形成‘从……到……’的照应，点出前一工程及水源、去向，共12个汉字，不超过15字。",
+          "inputSha256": "6d438a90d1a4b549d4e80b55b33537b51d1bf1dcd16acf7f6ad7c172f4f1bde5",
+          "generatedAt": "2026-10-03T00:23:44.075Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "示例答案：从元代通惠河将白浮泉水引入大都（15字）\n理由：\n1. 横线后是“到京密引水渠将水引入城区”，横线处应与它构成“从……到……”的结构，句式对应，都写成“某工程将某水引入某城”。\n2. 后文“时隔数百年”“两项引水工程一脉相承”，要求横线处点明元代和第一项工程。所以要写出“元代”“通惠河”，并与第①句的“白浮泉水”“大都城”照应。\n3. 字数为15字，符合要求。\n也可答：从郭守敬修通惠河引水入大都（13字）。",
+          "inputSha256": "6d438a90d1a4b549d4e80b55b33537b51d1bf1dcd16acf7f6ad7c172f4f1bde5",
+          "generatedAt": "2026-10-03T00:33:22.993673+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2026-02-result.json",
+            "inputPromptSha256": "afc11b3d8a90e8cec0e7c054d8f75b231f3a603848d59961973d460e31c3c9b7",
+            "responseStreamSha256": "bacb814fa3e9b28059cee188e0f50ecb11d45e3b803eb88602020c3be6e95fa7",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2026-weixiezuo:1",
+      "inputSha256": "87dab63502a3c61f3915cf8cf7ac4921678ccb90ca9e00aee415c324971f077e",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "正文不超过150字；示例不使用真实学校或个人信息。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2026北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "示例：建议开展社区公共花坛养护。先请园艺师讲解分辨杂草和浇水的方法，再分组除草、松土、补种，最后清点工具、记录养护要点。半天内可完成一个小花坛，任务具体、安全可控；同学们既能掌握劳动技能，也能体会整洁环境来之不易，并约定轮流回访，让劳动不止于一次活动。",
+          "inputSha256": "87dab63502a3c61f3915cf8cf7ac4921678ccb90ca9e00aee415c324971f077e",
+          "generatedAt": "2026-10-03T00:23:44.075Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "示例：\n我建议开展“楼道焕新”劳动实践活动。主要内容是：分组清理社区楼道杂物和小广告，擦拭扶手、信报箱；然后在垃圾投放点协助居民分类投放。理由如下：一是任务具体，半天可以完成，人人有事做；二是贴近生活，能体会保洁工作的辛苦，学会尊重劳动者；三是服务社区，成果看得见，能增强劳动意识和责任感。",
+          "inputSha256": "87dab63502a3c61f3915cf8cf7ac4921678ccb90ca9e00aee415c324971f077e",
+          "generatedAt": "2026-10-03T00:33:22.993673+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2026-02-result.json",
+            "inputPromptSha256": "afc11b3d8a90e8cec0e7c054d8f75b231f3a603848d59961973d460e31c3c9b7",
+            "responseStreamSha256": "bacb814fa3e9b28059cee188e0f50ecb11d45e3b803eb88602020c3be6e95fa7",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2026-weixiezuo:2",
+      "inputSha256": "3a3def5fa396ab577fc72ff105e6b10cb8abe1649ad661fabec3491769c1d43c",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "宣传语不应承诺AI诊断疗效或索要隐私；正文不超过150字。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2026北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "示例：爷爷奶奶，重阳相聚，来和我们试试AI新帮手吧！说句话找一首老歌，拍张照片放大看，一起学辨可疑信息。志愿者一对一陪您慢慢操作，不会也没关系。带上好奇心，让新技术为日常添一份方便，让熟悉的歌声为相聚添一份温暖。期待您的到来！",
+          "inputSha256": "3a3def5fa396ab577fc72ff105e6b10cb8abe1649ad661fabec3491769c1d43c",
+          "generatedAt": "2026-10-03T00:23:44.075Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "示例：\n爷爷奶奶们：重阳敬老情意长，智能时代我陪您！重阳节上午，我们将来到您身边，手把手教您用语音和AI助手聊天、查天气、听戏曲，帮您用AI修复老照片，还能一键和远方的儿女视频。不怕学不会，我们慢慢讲、反复教。科技不只属于年轻人，也能让您的晚年更便捷、更多彩。快来和我们一起，“智”享幸福晚年吧！",
+          "inputSha256": "3a3def5fa396ab577fc72ff105e6b10cb8abe1649ad661fabec3491769c1d43c",
+          "generatedAt": "2026-10-03T00:33:22.993673+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2026-02-result.json",
+            "inputPromptSha256": "afc11b3d8a90e8cec0e7c054d8f75b231f3a603848d59961973d460e31c3c9b7",
+            "responseStreamSha256": "bacb814fa3e9b28059cee188e0f50ecb11d45e3b803eb88602020c3be6e95fa7",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2026-weixiezuo:3",
+      "inputSha256": "d1836192828e9c46dff0b4259e1ca4a6e9abe53f29cf49665ba7462958509edc",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "诗歌示例；题目与正文均保留，正文不超过150字。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2026北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "因为向往\n\n因为向往春天，\n我把一粒种子埋进冷土，\n每天俯身，听一听沉默。\n风吹过空花盆，\n我仍给它留着水和阳光。\n直到细小的绿推开泥块，\n我才懂得：\n向往不是站在远处等花开，\n是把双手伸进泥土，\n陪一个看不见的明天长大。",
+          "inputSha256": "d1836192828e9c46dff0b4259e1ca4a6e9abe53f29cf49665ba7462958509edc",
+          "generatedAt": "2026-10-03T00:23:44.075Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "示例：\n因为向往\n\n因为向往，\n种子顶开冻土，\n把整个春天举过头顶；\n因为向往，\n溪流穿过千山，\n在断崖处唱出瀑布的歌。\n因为向往，\n我在灯下一遍遍演算，\n让汗水浇灌梦想的根。\n远方从不遥远——\n它就在每一步坚定的脚印里，\n在每一次跌倒后\n重新挺直的脊梁上。",
+          "inputSha256": "d1836192828e9c46dff0b4259e1ca4a6e9abe53f29cf49665ba7462958509edc",
+          "generatedAt": "2026-10-03T00:33:22.993673+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2026-02-result.json",
+            "inputPromptSha256": "afc11b3d8a90e8cec0e7c054d8f75b231f3a603848d59961973d460e31c3c9b7",
+            "responseStreamSha256": "bacb814fa3e9b28059cee188e0f50ecb11d45e3b803eb88602020c3be6e95fa7",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2026-dazuowen:1",
+      "inputSha256": "e06998f2b052c785402a8e955548ab389f7e9c20a6dd2575a0060ea6da68eb55",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "独立议论文示例，非唯一标准作文；例证中的社区情境为说明性设例。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2026北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "做规划与下功夫\n\n面对一部厚书，我们常有两种冲动：一种是立即翻开，读到哪里算哪里；另一种是先画出精密日程，把每一天安排得满满当当。前者可能在岔路上消耗热情，后者也可能把计划表本身当成成果。读书如此，做其他事情亦如此。有效的成长，需要规划指明方向，也需要功夫把纸上的路径变成脚下的路。\n\n规划首先帮助我们看清事情的次序。程端礼把经典阅读分为阶段，规定阅读顺序与精读方法，其意义不只在于要求读得多，更在于让学习者知道先立什么基础，再解决什么问题。一个刚接触古文的人，若只求一天读完多少篇，却不积累词义、不理解句式，进度越快，漏洞可能越多。合宜的规划应当从实际水平出发，辨认目标与条件之间的距离，把遥远的愿望分解成可以检验的步骤。它不是对未来每个细节的预言，而是为行动确定一条有根据的起点。\n\n然而，路径画得再清楚，也不能替代行走。理解一个词，需要联系上下文反复推敲；掌握一种方法，需要在不同问题上试用、纠错；形成自己的见解，更要经过材料的比较与思考。把这些工作写进计划，只是许下承诺，真正的积累发生在专注做事的时刻。有人不断更换记笔记的方法、购买新的工具，却迟迟不肯读完手边的一章，正是把准备行动的轻快感误认成了行动的成效。下功夫意味着愿意面对困难，而不只是享受安排未来的满足。\n\n但下功夫也不是盲目堆积时间。一份已经失效的计划，不能靠更辛苦的重复来拯救。假如读书时发现前面的基础尚未扎实，就应放慢进度；假如某种练习长期不能改善理解，就该检查方法。实践把真实的阻力呈现出来，规划则据此调整方向。二者并非先后分离的两个阶段，而应形成持续的往返：先计划，后行动，再用行动的结果修订计划。肯承认偏差并及时修改，并不比一丝不苟地执行更容易，却常常更需要诚实与勇气。\n\n从个人读书到公共建设，这个道理同样成立。为社区改造一条步道，需要先调查居民需求、排定施工步骤，也需要工作人员把坡度、排水和照明逐处落实。图纸上的便利，只有经过现场的认真检验，才能成为老人孩子真实的便利。倘若只看完成日期而不听使用者的反馈，即使如期交付，也未必实现了规划最初的目的。因此，好的规划还应留出检查与修正的空间，扎实的功夫则应始终围绕所要解决的问题展开。\n\n做规划，是让努力有方向；下功夫，是让方向有着落。我们既不必等到计划毫无破绽才开始，也不应以已经忙碌为由拒绝思考。今天确定一个切实的目标，完成一段真正投入的工作，再诚恳地检视得失，便是在把二者结合起来。学海无涯，地图不能代替舟楫，划桨也不能没有航向。带着规划出发，在功夫中校准，才能走得坚定而长远。",
+          "inputSha256": "e06998f2b052c785402a8e955548ab389f7e9c20a6dd2575a0060ea6da68eb55",
+          "generatedAt": "2026-10-03T00:23:44.075Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 来源复核后修订",
+          "text": "做规划与下功夫\n\n元代学者程端礼编撰《读书分年日程》，分阶段规定核心经典的阅读顺序与精读方法，陪伴读书人从童蒙走向青年。这部书之所以有价值，不仅因为它告诉人读什么，更因为它告诉人先读什么、后读什么、怎样读。它提醒我们：无论个人成长还是国家发展，都要先做规划，确定方向和次序；再下功夫，把蓝图一步步变成现实。规划是功夫的方向，功夫是规划的落实，两者缺一不可。\n\n做规划，就是知所先后，让努力有章可循。《礼记·大学》说：“物有本末，事有终始，知所先后，则近道矣。”《中庸》也说：“凡事豫则立，不豫则废。”学问有台阶，成长有阶段。基础未稳就去攀高，往往欲速则不达；没有目标就四面出击，又容易事倍功半。《读书分年日程》的可贵，正在于把漫长的读书之路分成若干阶段，每一阶段都有明确的书目和方法，学习者因此知道此刻该做什么、下一步走向哪里。国家发展同样如此。新中国自1953年起编制实施第一个五年计划，此后一个个五年规划（计划）接续推进，把长远目标分解为阶段任务。规划使分散的力量形成合力，也使长远的追求有了可以检验的节点。\n\n下功夫，就是身体力行，让规划真正落地。再周密的规划，如果停留在纸上，也只是一张空图。荀子说：“不积跬步，无以至千里；不积小流，无以成江海。”又说：“锲而不舍，金石可镂。”程端礼规定的精读方法，最终要靠读书人一字一句地读、一遍一遍地思，才能化为自身的学养。不妨设想这样一个情境：一位同学在开学时制定了详细的阅读计划，表格画得整整齐齐，可每天总以“明天再读”为由推迟，学期结束，书仍是新的。这个设例说明，规划只是起点。只有日日践行、持之以恒，规划才有意义。\n\n当然，下功夫不等于拼时间，更不等于熬通宵、透支身体。朱熹讲读书要“心到、眼到、口到”，强调的是专注和方法，而不是时长的堆积。真正的功夫，是按照规律、讲究方法、保持节律的持续投入：该精读时不囫囵吞枣，该复习时不贪多求新，该休息时也要休息，以便长久地走下去。把熬夜当作勤奋的标志，恰恰违背了科学精神，也背离了循序渐进的本意。可见，下功夫本身也需要规划；而好的规划，正是为了让功夫用在刀刃上。\n\n规划和功夫还在实践中相互校正。规划指导行动，行动又检验规划。在下功夫的过程中，我们会发现原定的进度过快或过慢，某个环节需要补强，于是调整规划，使它更切合实际。国家的五年规划在实施中要评估、要总结，个人的学习计划也应随着实际情况修订。这种调整不是放弃规划，而是在功夫的积累中让规划更加科学。规划与功夫之间，是一个螺旋上升的过程。\n\n反观现实，两种偏差都值得警惕。一种是只规划不下功夫，热衷于制定目标、描绘愿景，却缺少脚踏实地的行动，最终流于空谈。另一种是只下功夫不做规划，埋头苦干却方向不明、次序混乱，付出很多，收效甚微，甚至南辕北辙。前者是“思而不学则殆”，后者是“学而不思则罔”。唯有二者结合，才能既走得对，又走得远。\n\n学海无涯，读书有法；前路漫长，行之有方。作为青年学生，我们既要学会为自己的学习和人生做规划，明确阶段目标、理清先后次序；也要甘于在每一个平凡的日子里下真功夫，一页一页地读，一步一步地走。个人如此，国家亦然。以规划定方向，以功夫成事业，我们便能在循序渐进中走向更远的地方。",
+          "inputSha256": "e06998f2b052c785402a8e955548ab389f7e9c20a6dd2575a0060ea6da68eb55",
+          "generatedAt": "2026-10-03T00:43:53.716690+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-source-review-01-result.json",
+            "inputPromptSha256": "ce426208a0a6adc0237edf91f5eb8cfa8574192829abf593db120d4bafa1da7b",
+            "responseStreamSha256": "c985407509b490ff104f2d3704b52e676630c279e98ccbe6597af4af7b9e7234",
+            "stage": "source_review"
+          }
+        },
+        "claude_opus_5_5_initial": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 初次独立作答（复核前）",
+          "text": "做规划与下功夫\n\n元代学者程端礼编撰《读书分年日程》，从八岁入学读《小学》、四书，到十五岁以后研读经注、看史、学文，何时读何书、每日读几遍、如何抄、如何温，都安排得井井有条。这份“读书日程表”流传数百年，给我们一个启示：成事之道，一在做规划，二在下功夫。规划为功夫指明方向，功夫让规划落到实处，二者相辅相成，缺一不可。\n\n做规划，是在起点处看清终点，让努力有方向、有次序。“凡事预则立，不预则废。”没有规划的奔跑常常南辕北辙，用力越猛，离目标越远。朱熹论读书，主张“循序而渐进”，是看到了学问自有阶梯：不识字句，难通义理；不通经义，难论古今。个人如此，国家更是如此。从第一个五年计划奠定工业化基础，到“十四五”规划擘画高质量发展蓝图，再到“十五五”规划开篇谋局，一个个五年规划首尾相接，使一个大国在纷繁复杂的形势中始终目标清晰、步调稳健。中国探月工程定下“绕、落、回”三步走，一步一个台阶，才有了嫦娥六号从月球背面携壤而归。规划，就是把宏大的理想拆解成一个个可以抵达的路标。\n\n然而，规划只是蓝图，下功夫才是施工。程端礼的日程再周密，如果不能“字求其训，句索其旨”，不能日日诵读温习，也不过是一纸空文。王羲之临池学书，池水尽墨；司马光编《资治通鉴》，十九年间残稿盈屋。成就从来不是规划出来的，而是一笔一画、一字一句磨出来的。今天的航天人为攻克一个技术难题，可以反复试验成百上千次；科研工作者为了一个关键数据，可以在实验室里熬过无数个通宵。所谓“功夫”，就是把规划中的每一个节点，变成实实在在的汗水与坚持。有规划而不下功夫，就像赵括谈兵，言之凿凿，临阵即溃。\n\n更重要的是，做规划与下功夫并不是先后割裂的两个环节，而是彼此成就的循环。规划让功夫用在刀刃上，避免盲目蛮干；功夫又反过来检验规划、修正规划，让它更贴合实际。《读书分年日程》本身，就是程端礼在长期教学实践中反复摸索的结晶；国家的每一个五年规划，也都是在总结上一阶段实践经验的基础上制定的。真正的成事者，既能仰望星空、谋划长远，又肯脚踏实地、日拱一卒。\n\n作为即将走向更广阔天地的青年，我们更应把这两件事做好。面对繁重的学业，与其焦虑地“眉毛胡子一把抓”，不如静下心来规划：哪些知识需要夯实，哪些能力需要提升，每周完成什么，每天落实什么。规划既定，就要咬定青山不放松，不因一时疲惫而松懈，不因一次挫折而动摇。人生如一幅长卷，既要先有构图，也要一笔一笔细细描摹。\n\n学海无涯，行路亦无涯。愿我们以规划为舟楫，以功夫为桨橹，循序渐进，久久为功，在个人成长与时代发展的长河中行稳致远。",
+          "inputSha256": "e06998f2b052c785402a8e955548ab389f7e9c20a6dd2575a0060ea6da68eb55",
+          "generatedAt": "2026-10-03T00:33:22.993673+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": false,
+            "note": "初答含题面未给出的具体年龄及传说例证，本轮未逐项核实；新版改用可说明的材料与明确设例。"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2026-02-result.json",
+            "inputPromptSha256": "afc11b3d8a90e8cec0e7c054d8f75b231f3a603848d59961973d460e31c3c9b7",
+            "responseStreamSha256": "bacb814fa3e9b28059cee188e0f50ecb11d45e3b803eb88602020c3be6e95fa7",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2026-dazuowen:2",
+      "inputSha256": "a29bf69e30bcda3b33ef3b6c06a1406e3790be4e5ce3a57a723812b340707729",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "独立虚构记叙文示例，不是作者真实经历；不少于700字。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2026北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "含英咀华\n\n我第一次读到‘小楼一夜听春雨’，正赶着完成一页练习。窗外阳光明亮，楼下有人搬动自行车，我把‘小楼’‘春雨’圈出来，在旁边写了‘清新优美’，便翻到了下一题。那时我以为，读懂一首诗，就是尽快替它找到几个合适的词。\n\n后来一个雨夜，我住到外婆家。房子临着一条小巷，窗外的雨水顺着屋檐落进铁桶，起初疏疏的，渐渐连成一串。外婆把桌上的书往里推了推，给我留出摊纸的地方。我忽然想起那句诗，随口念了一遍。她没有接话，只把台灯调暗些，说：‘先听一会儿。’\n\n我停下笔。雨落在叶片上，是轻而散的声音；落到棚顶上，便密实起来。偶尔一阵风掠过，水声向窗边涌来，随即又退远。墙上的钟走得很慢，巷里最后一辆车过去以后，整栋房子仿佛只剩下这场雨。原来‘听’不是诗句里可以轻轻滑过去的一个字。它需要一个人停下来，也需要四周渐渐安静。\n\n‘一夜呢？’外婆问。\n\n我本想回答‘下了一夜雨’，话到嘴边又停住了。如果只是写雨久，为什么还要写听雨的人？我重新打开诗集，从头慢慢读。诗里有客居，有闲居中的书写与品茶，也有末尾关于归家的话。白天练习纸上那四个字，忽然显得太轻，像一把小伞，遮不住这整夜的心事。\n\n外婆已经去睡了。我把书放在膝上，看玻璃上的水珠聚成细线。隔着雨声，我开始想象一个客居的人：夜已深，事情还没有结果，白天可以排遣的念头，到夜里又回来。小楼并不只有雅致，春雨也不只是好听。我不敢说自己已经完全明白诗人，却第一次愿意在不明白的地方多停留一会儿。\n\n第二天清早，巷口传来卖菜人的吆喝。我推开窗，湿润的风扑到脸上。不是杏花，也不是诗里的杭州，只是熟悉的青菜、豆腐和一串朴素的价钱。外婆提着篮子回来，袖口沾着水。她把菜放到桌上，笑着说今天的葱很新鲜。街巷照常醒来，昨夜独坐的心情却还在我胸口，与眼前明亮的日常轻轻碰撞。\n\n我这才觉得，‘深巷明朝卖杏花’不只是补上一幅美景。声音把室外的春天送进小楼，把人的心事放在热闹生活旁边。二者相连，却未必相同。我拿出昨晚的纸，把原先的批注留着，又在下面写：同一场春雨，有街巷的生意，也有客中的等待。写完，我没有急着寻找下一条可以背诵的结论。\n\n临走时，外婆把诗集递给我，书角夹着一张普通的车票，算作书签。此后我再读这两句，总会想起雨敲铁桶的声音，想起窗前那一点昏黄的灯，也想起自己把笔放下的片刻。生活没有替诗写出唯一的注释，却让我学会调动自己的耳朵、记忆与心去接近它。\n\n原来含英咀华，不是把一句好诗迅速拆成答案，再匆匆咽下。是让它在心里停一停，和一次雨声、一次等待相遇；是读过之后，仍愿意回来，再听见一点从前没有听见的东西。",
+          "inputSha256": "a29bf69e30bcda3b33ef3b6c06a1406e3790be4e5ce3a57a723812b340707729",
+          "generatedAt": "2026-10-03T00:23:44.075Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "含英咀华\n\n爷爷的书柜里有一本泛黄的《唐宋词选》，书页边上密密麻麻写满了蝇头小楷。小时候我总奇怪：一首几十个字的词，有什么可写这么多的？直到那个初夏的雨天，我才明白，有些文字，是要含在嘴里慢慢嚼的。\n\n那年我读高一，语文老师布置背诵苏轼的《定风波》。我扫了两遍，“莫听穿林打叶声，何妨吟啸且徐行”，不到十分钟就背得滚瓜烂熟。晚饭时，我得意地向爷爷炫耀，一口气背完，中间都没停顿。\n\n爷爷放下筷子，笑眯眯地问：“背得是快。那你说说，‘也无风雨也无晴’是什么意思？”\n\n“就是……雨停了，天也没晴呗。”我脱口而出。\n\n爷爷摇摇头，转身取来那本《唐宋词选》，翻到《定风波》那一页。纸上用红笔圈着“谁怕”两个字，旁边写着：“一问一答，胆气全出。”“回首向来萧瑟处”下面，又是一行小字：“萧瑟者，岂止风雨？”\n\n“读词啊，不能像吃压缩饼干，得像含一朵花。”爷爷用粗糙的手指轻轻点着书页，“含在嘴里慢慢嚼，香味才出得来。你先别急着背，就琢磨‘谁怕’这两个字，琢磨一个星期。”\n\n一个星期琢磨两个字？我觉得爷爷小题大做，嘴上答应着，心里却不以为然。\n\n没想到，几天后的一场雨，替我嚼开了这两个字。\n\n那天期中考试成绩公布，我数学考砸了，比平时低了二十多分。放学时天色阴沉，刚走出校门，豆大的雨点就砸了下来。我没带伞，同学们有的撑起伞，有的钻进家长的车里，只剩我站在校门口，雨水顺着刘海往下淌，心里比天还灰。\n\n我咬咬牙冲进雨里。雨点打在树叶上，噼噼啪啪，像在嘲笑我。跑了一段，鞋子灌满了水，每走一步都“咕叽”一声。我索性停下来不跑了——反正已经湿透了，还怕什么呢？\n\n就在那一刻，“谁怕”两个字突然跳进脑海。\n\n我仿佛看见九百多年前那个春日，苏轼和同伴在沙湖道中遇雨，雨具已被先行的人带走，同行者都狼狈不堪，只有他拄着竹杖、穿着草鞋，在风雨里慢慢走，还吟诗长啸。那时他经历了乌台诗案，刚被贬到黄州，仕途上的风雨远比这场春雨猛烈。可他说：“谁怕？”这不是逞强，而是看透之后的从容。我放慢脚步，听着“穿林打叶声”，竟第一次觉得雨声有些好听。\n\n雨渐渐停了。走到家附近的小桥上，一缕夕阳从云缝里漏出来，照在湿漉漉的石板路上——“山头斜照却相迎”。我站在桥上回头望，那条刚才让我狼狈不堪的路，此刻安静地泛着微光。\n\n“回首向来萧瑟处，归去，也无风雨也无晴。”\n\n我终于懂了。“也无风雨也无晴”说的不是天气，而是心境：风雨也好，晴天也罢，都不再能扰乱内心的平静。一次考试失利，又何尝不是人生路上一阵穿林打叶的雨呢？\n\n回到家，爷爷看见浑身湿透的我，吓了一跳。我却笑着说：“爷爷，我嚼出‘谁怕’的味道了。”爷爷愣了一下，随即眼角的皱纹舒展开来，像一朵绽开的菊花。\n\n那天晚上，我在课本上《定风波》的旁边，郑重地写下自己的第一行批注：“谁怕？不是不怕风雨，而是不再怕自己。”\n\n从那以后，我读书慢了下来。读《赤壁赋》，我会在“惟江上之清风，与山间之明月”处停留良久；读《登高》，我会反复揣摩“万里悲秋常作客”里层层叠加的悲凉。原来，经典之所以成为经典，是因为它值得一遍遍含在嘴里细细咀嚼，而每一次咀嚼，都能尝出新的滋味。\n\n含英咀华，咀嚼的是文字，品出的是人生。",
+          "inputSha256": "a29bf69e30bcda3b33ef3b6c06a1406e3790be4e5ce3a57a723812b340707729",
+          "generatedAt": "2026-10-03T00:33:22.993673+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2026-02-result.json",
+            "inputPromptSha256": "afc11b3d8a90e8cec0e7c054d8f75b231f3a603848d59961973d460e31c3c9b7",
+            "responseStreamSha256": "bacb814fa3e9b28059cee188e0f50ecb11d45e3b803eb88602020c3be6e95fa7",
+            "stage": "independent"
           }
         }
       }
