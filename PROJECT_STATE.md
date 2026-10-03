@@ -1,3 +1,13 @@
+## 2026-10-03 — 2008完整初稿冻结，Claude额度终态，继续来源工作
+
+唯一owner codex-01a101ef-gpt-6-astra，实际turn_context为gpt-6-astra/xhigh。24阅读含3补录及1作文全文已冻结于reference-exposure-2008-before-claude.json；全2008参考暴露。本人查看实际配图，配文32字符、展板含标题63字符，作文正文1236汉字。古文8现存C/D双错预先记争议，无唯一评分键。
+
+新图片runner离线13正反检查通过；PLAN27阅读只尝试一次，CLI原消息回显包含base64原图且逐字节/hash相同。模型尚未阅读：实际只有synthetic额度错误，无模型用量，费用0，退出1；作文未启动。原错误为You've hit your session limit · resets 8am (America/Los_Angeles)，事件resetsAt=1791039600，即2026-10-03 08:00 PDT。PLAN27终态不重跑，不转模型、不加额；未导入答库。原文字runner及全部旧批次不变。
+
+用户指示暂不调用Claude、等重置并推进其他；继续2007题源/本地校勘。未来有额度后须刷新owner/source/config/baseline/rollback建立新有限计划，不能复用终态批次；2008双方实际视觉作答仍待。题库及authority与be6c1d47逐字节相同，覆盖仍439reviewed/10disputed/1draft、450审核条目、162未覆盖、449v2/399v3/51标记缺口。验证见verification-2008-pending.json及plan27-terminal-image-evidence.json；19补录仍未入库。
+
+未push、build、upload、deploy、学生写入、通知或status；无活动provider/browser/下载。manifest沿用3GiB，报告历史累计75MiB跨原60MiB行预算，依据具体历史patch及后续证据需求重估该行为120000KiB，未删证据；全任务约447352KiB，25GiBreserve与running guardPASS。所有来源/旧评分/映射/八消费者/注册发布/真实验收/status门禁保留。
+
 ## 2026-10-03 — 2008来源准备与第二次压缩交接
 
 七记录64项限定题面/标记校勘，原7所字及相字错位纠正，原8C划线恢复整句，诗歌无据点撤除，默写补空格并归档旧审核。九页公开PDF预览均已目视，是重新排版而非原卷扫描；PDF未下载，出版链和共同错字仍未认证，编辑校勘均明示。语言5下划线存说明，问句呈现待验收。
