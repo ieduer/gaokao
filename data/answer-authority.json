@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261003-reviewed-450-qualified-2009",
+  "revision": "20261003-source2008-qualified-pending",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -12051,11 +12051,11 @@
     },
     {
       "id": "2008-moxie:1",
-      "inputSha256": "d0af5c1a2134a750a25e7b9d676f558be9fcf1e54007c3ee2454574c9c179845",
-      "status": "reviewed",
+      "inputSha256": "0edb8f98cc7e9940042314742aa4c1e8383dcfe962d8a1d8c12ba961e508472b",
+      "status": "draft",
       "kind": "open",
       "correctOptions": [],
-      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "explanation": "2008题面修复后待完整重审；旧题面、完整模型和旧审核保存在history。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T01:38:23.281Z",
       "sources": [
@@ -12065,66 +12065,111 @@
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答",
-          "text": "①渺沧海之一粟；羡长江之无穷。②盈盈一水间，脉脉不得语。③波心荡，冷月无声。④所给上下文应补：只合把清浊分辨。原段为“天地也！只合把清浊分辨，可怎生糊突了盗跖、颜渊？”现有转录没有明确显示第④处横线，须核原卷空位；“苏试”应为苏轼。",
-          "inputSha256": "d0af5c1a2134a750a25e7b9d676f558be9fcf1e54007c3ee2454574c9c179845",
-          "generatedAt": "2026-10-03T01:38:23.281Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
-            "contextEvidence": {
-              "method": "no_annotation_v1_equivalence",
-              "originalInputSha256": "d0af5c1a2134a750a25e7b9d676f558be9fcf1e54007c3ee2454574c9c179845",
-              "originalEvidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
-              "originalAnswerSha256": "e25229c93c3054b38b1dd218fe55a0d12fc51b6d5c7e0286e79e273deb4feaa3",
-              "contextSha256": "40f1c1a75dca29a79971ff39a3f3754d5dc91b85617d5aa4d0badd13182585ba",
-              "sourceAnnotation": null,
-              "evidence": "answers-six-sites-20261002/no-annotation-context-proof.json"
+      "modelAnswers": {},
+      "inputContextSha256": "ab43b87fdfc8f2d34bfe2d8e79f6b1eea69e2639c8b20f78044090840c451dc7",
+      "inputPresentationSha256": "ce242afbc8b0c765a2f77078c7a4cd7cd177784f4e273fd91e5209c564d456e9",
+      "history": [
+        {
+          "source": {
+            "id": "2008-moxie",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "①寄蜉蝣于天地，             。哀吾生之须臾，            。\n（苏试《前赤壁赋》）\n②河汉清且浅，相去复几许？                  ，                  。\n（《古诗十九首·迢迢牵牛星》）\n③二十四桥仍在，               ，                  。念桥边红药，年年知为谁生！       \n（姜夔《扬州慢》）\n④天地也！，可怎生糊突了盗跖、颜渊？（关汉卿《窦娥冤》）"
+              }
+            ],
+            "topic": "13．在横线上填写作品的原文。（7分）",
+            "annotation": null,
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "13．在横线上填写作品的原文。（7分）\n①寄蜉蝣于天地，             。哀吾生之须臾，            。\n（苏试《前赤壁赋》）\n②河汉清且浅，相去复几许？                  ，                  。\n（《古诗十九首·迢迢牵牛星》）\n③二十四桥仍在，               ，                  。念桥边红药，年年知为谁生！       \n（姜夔《扬州慢》）\n④天地也！，可怎生糊突了盗跖、颜渊？（关汉卿《窦娥冤》）",
+                "score": 7
+              }
+            ]
+          },
+          "review": {
+            "id": "2008-moxie:1",
+            "inputSha256": "d0af5c1a2134a750a25e7b9d676f558be9fcf1e54007c3ee2454574c9c179845",
+            "status": "reviewed",
+            "kind": "open",
+            "correctOptions": [],
+            "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T01:38:23.281Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2008北京卷原题及完整材料"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答",
+                "text": "①渺沧海之一粟；羡长江之无穷。②盈盈一水间，脉脉不得语。③波心荡，冷月无声。④所给上下文应补：只合把清浊分辨。原段为“天地也！只合把清浊分辨，可怎生糊突了盗跖、颜渊？”现有转录没有明确显示第④处横线，须核原卷空位；“苏试”应为苏轼。",
+                "inputSha256": "d0af5c1a2134a750a25e7b9d676f558be9fcf1e54007c3ee2454574c9c179845",
+                "generatedAt": "2026-10-03T01:38:23.281Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
+                  "contextEvidence": {
+                    "method": "no_annotation_v1_equivalence",
+                    "originalInputSha256": "d0af5c1a2134a750a25e7b9d676f558be9fcf1e54007c3ee2454574c9c179845",
+                    "originalEvidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
+                    "originalAnswerSha256": "e25229c93c3054b38b1dd218fe55a0d12fc51b6d5c7e0286e79e273deb4feaa3",
+                    "contextSha256": "40f1c1a75dca29a79971ff39a3f3754d5dc91b85617d5aa4d0badd13182585ba",
+                    "sourceAnnotation": null,
+                    "evidence": "answers-six-sites-20261002/no-annotation-context-proof.json"
+                  },
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "40f1c1a75dca29a79971ff39a3f3754d5dc91b85617d5aa4d0badd13182585ba"
+                  }
+                },
+                "inputContextSha256": "40f1c1a75dca29a79971ff39a3f3754d5dc91b85617d5aa4d0badd13182585ba",
+                "inputPresentationSha256": "cb169c31ea165c7149bda3fa833de8880d937a31150d0e01031f7d5242b11f5f"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "①渺沧海之一粟；羡长江之无穷。（苏轼《赤壁赋》）\n②盈盈一水间，脉脉不得语。（《古诗十九首·迢迢牵牛星》）\n③波心荡，冷月无声。（姜夔《扬州慢》）\n④只合把清浊分辨。（关汉卿《窦娥冤》【滚绣球】）",
+                "inputSha256": "d0af5c1a2134a750a25e7b9d676f558be9fcf1e54007c3ee2454574c9c179845",
+                "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+                "uncertainties": [
+                  "作者名“苏试”应为“苏轼”，系录入错误。第④题横线位置显示不清（“天地也！，”），依原曲文补“只合把清浊分辨”。"
+                ],
+                "selectedOptions": [],
+                "assessment": {
+                  "matchesConclusion": null
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+                  "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+                  "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+                  "stage": "independent",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "40f1c1a75dca29a79971ff39a3f3754d5dc91b85617d5aa4d0badd13182585ba"
+                  }
+                },
+                "inputContextSha256": "40f1c1a75dca29a79971ff39a3f3754d5dc91b85617d5aa4d0badd13182585ba",
+                "inputPresentationSha256": "cb169c31ea165c7149bda3fa833de8880d937a31150d0e01031f7d5242b11f5f"
+              }
             },
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "40f1c1a75dca29a79971ff39a3f3754d5dc91b85617d5aa4d0badd13182585ba"
-            }
-          },
-          "inputContextSha256": "40f1c1a75dca29a79971ff39a3f3754d5dc91b85617d5aa4d0badd13182585ba",
-          "inputPresentationSha256": "cb169c31ea165c7149bda3fa833de8880d937a31150d0e01031f7d5242b11f5f"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "①渺沧海之一粟；羡长江之无穷。（苏轼《赤壁赋》）\n②盈盈一水间，脉脉不得语。（《古诗十九首·迢迢牵牛星》）\n③波心荡，冷月无声。（姜夔《扬州慢》）\n④只合把清浊分辨。（关汉卿《窦娥冤》【滚绣球】）",
-          "inputSha256": "d0af5c1a2134a750a25e7b9d676f558be9fcf1e54007c3ee2454574c9c179845",
-          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
-          "uncertainties": [
-            "作者名“苏试”应为“苏轼”，系录入错误。第④题横线位置显示不清（“天地也！，”），依原曲文补“只合把清浊分辨”。"
-          ],
-          "selectedOptions": [],
-          "assessment": {
-            "matchesConclusion": null
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
-            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
-            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
-            "stage": "independent",
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "40f1c1a75dca29a79971ff39a3f3754d5dc91b85617d5aa4d0badd13182585ba"
-            }
-          },
-          "inputContextSha256": "40f1c1a75dca29a79971ff39a3f3754d5dc91b85617d5aa4d0badd13182585ba",
-          "inputPresentationSha256": "cb169c31ea165c7149bda3fa833de8880d937a31150d0e01031f7d5242b11f5f"
+            "inputContextSha256": "40f1c1a75dca29a79971ff39a3f3754d5dc91b85617d5aa4d0badd13182585ba",
+            "inputPresentationSha256": "cb169c31ea165c7149bda3fa833de8880d937a31150d0e01031f7d5242b11f5f"
+          }
         }
-      },
-      "inputContextSha256": "40f1c1a75dca29a79971ff39a3f3754d5dc91b85617d5aa4d0badd13182585ba",
-      "inputPresentationSha256": "cb169c31ea165c7149bda3fa833de8880d937a31150d0e01031f7d5242b11f5f"
+      ]
     },
     {
       "id": "2007-moxie:1",
@@ -40699,6 +40744,23 @@
         }
       ],
       "evidence": "answers-six-sites-20261002/REVIEW-2009.md"
+    },
+    {
+      "id": "2008-source-coverage-marking-and-image",
+      "status": "open",
+      "recordIds": [
+        "2008-feilian",
+        "2008-guwen",
+        "2008-shici",
+        "2008-moxie",
+        "2008-sanwen",
+        "2008-yuyanjichu",
+        "2008-dazuowen",
+        "2008-duanju",
+        "2008-yuyan-image",
+        "2008-yuyan-application"
+      ],
+      "detail": "通通好课公开PDF预览JPG第1—9页逐页目视，重新排版且与Gzy转录存在共同错误；未下载PDF文件，未取得原卷扫描或考试机构出版链。 教育在线首图实际为404占位图，不作试题；Gzy与本预览的共同错字不构成独立互证。原卷、答题卡、印刷方格、出版链及历史评分兼容仍未认证。 古文原8C译白为公布、至后/后至异文及第3段引号缺失仍留待核，不能为迎合单选答案擅改错误选项；原7所/相错误点位已修。语病原4恢复可见增加但题源身份仍有限定；语言5精确划线目前以说明存入annotation，实际问句呈现待处理。 正文与题面若干明显损词为明示编辑校勘，非原卷恢复。诗句消/销、散文五颜六色/转载五颜十色、他们/它们等异文未强行统一；没有以转载全部覆盖较清晰的旧文。默写苏轼、断句贵/美、作文重复字等原文与理由完整保留。 漏收原11断句、原21配图、原22展板共3单元独立保存；补录累计19，其中16已有双模型、3仅来源，全部未入库，不计612。24阅读（21旧+3补录）及1主作文共25个单元；旧ID/qIndex/score/AI保留，合并小问全部作答，不重算历史成绩或写学生记录。 原21配图已获得并哈希绑定，但现有文字runner未证实可发送实际图像；后续必须先解决双方完整同图输入及可验证响应，不能用人工描述替代图片，也不能把仅一个URL冒充图像输入。钟面时间不可从模糊图形臆造为已读事实。 本轮2008全部参考暴露：Gzy第3页参考解析及预览第9页参考答已见，旧默写也已有模型，不能称盲答。没有2008本人新答案或provider调用；本人25完整作答冻结后才新有限PLAN27。配图≤45字，展板含标题保守总计≤80字，主作文≥800字；虚构经历必须明示。 塑料袋材料数据只服务2008给定文本理解，不当作当前生命周期评估结论；地震和奥运源文数字独立事实认证另待。既往全部来源/旧分值/早期v3/跨站映射/六站八消费者/注册发布/真实认证/status门禁继续。当前第二次压缩，只完成来源原子步再一个LOCAL串行接续，不在本聊天启动答案阶段。"
     }
   ]
 }
