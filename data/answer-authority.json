@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261003-source2010-qualified-pending",
+  "revision": "20261003-reviewed-432-qualified-2010",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -3362,12 +3362,14 @@
     {
       "id": "2010-guwen:2",
       "inputSha256": "b266a33e0c0a41034e581e6841c57fac96668e1ffdfe3c2bd0858c8885ffd68b",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "single_choice",
-      "correctOptions": [],
-      "explanation": "2010题面与标记校勘后待完整重审，原输入及全部完整模型存history。",
-      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:03:23.208Z",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "两全文一致选D，益均为更加；之分别为代词和主谓间助词、以为原因/方式、其为推测/指代。保留题文长短版本及其道的领属/指示表述空间，不制造分歧；本次完整输入替代draft资格，旧审核与模型保存在history。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:10:22.344Z",
       "sources": [
         {
           "type": "source_material",
@@ -3376,10 +3378,67 @@
         {
           "type": "dictionary_revision",
           "title": "文言站2026-09-16-r3词典校订，保留争议"
+        },
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2010北京题源：18页重排PDF与Gzywtk、明确校勘，原7页卷未认证",
+          "url": "https://cdn.gaokzx.com/zixunzhan/202403/d77fabda-ee06-45c5-b24e-19357370805a.pdf"
+        },
+        {
+          "type": "adjudication",
+          "title": "2010完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2010.json"
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {},
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D。求者益众和益厚报清中的益都是程度副词，更加，前者修饰众，后者修饰厚。A清优主之的之为代词，指前来售药的人；清之为富也的之用于主谓之间，使清为富成为句中成分。B市人以其异的以引出原因，因为；不以怠遇其人的以表示以某种态度相待，可释用。C清其有道者欤的其表推测语气，大概、莫非；执其道不废的其为指示或领属用法，指所坚持的那种处世经商之道。因此只有D的意义和用法均相同。",
+          "selectedOptions": [
+            "D"
+          ],
+          "inputSha256": "b266a33e0c0a41034e581e6841c57fac96668e1ffdfe3c2bd0858c8885ffd68b",
+          "inputContextSha256": "4dfc4a1c3950abad91407e998cc5be9319fd6ad5da4556db7d32ed85947634fa",
+          "inputPresentationSha256": "e3bc18772552569aceac1ca47c210bbeb336432a3ae1f8015bdc67bc0781b802",
+          "generatedAt": "2026-10-03T12:01:37.602992+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2010-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2010-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2010.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。A项：“清优主之”的“之”是代词，指来卖药的人；“不害清之为富”的“之”是助词，用在主谓之间取消句子独立性，不同。B项：“市人以其异”的“以”是因为；“不以怠遇其人”的“以”是用、拿（用怠慢的态度），不同。C项：“清其有道者欤”的“其”是语气副词，表推测，相当于“大概”；“执其道不废”的“其”是代词，他的，不同。D项：两个“益”都是副词“更加”，意义和用法相同。",
+          "inputSha256": "b266a33e0c0a41034e581e6841c57fac96668e1ffdfe3c2bd0858c8885ffd68b",
+          "inputContextSha256": "4dfc4a1c3950abad91407e998cc5be9319fd6ad5da4556db7d32ed85947634fa",
+          "inputPresentationSha256": "e3bc18772552569aceac1ca47c210bbeb336432a3ae1f8015bdc67bc0781b802",
+          "generatedAt": "2026-10-03T12:03:44.982642+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2010-reading-result.json",
+            "inputPromptSha256": "91930b576979c6eacd028d192850c145beb0c77cb2561e817327727493410b3c",
+            "responseStreamSha256": "1e43b99898ca374332efc774f52c7d373484890b070e3a324768bbd60df3cf78",
+            "stage": "independent"
+          }
+        }
+      },
       "inputContextSha256": "4dfc4a1c3950abad91407e998cc5be9319fd6ad5da4556db7d32ed85947634fa",
       "history": [
         {
@@ -11522,20 +11581,73 @@
     {
       "id": "2010-moxie:1",
       "inputSha256": "33826433e74af3e466a3cc6fed56807b89f6ddd30b350ee2855a36bd01f64d4d",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "open",
       "correctOptions": [],
-      "explanation": "2010题面与标记校勘后待完整重审，原输入及全部完整模型存history。",
-      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "explanation": "两模型十二空全一致。六组选四组、总分八分是题面明确限制；全六组供核对，不强制全答、不增加旧分值。悟言/云销/雕栏等给定版本字不被答案悄改。旧审核完整归档。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:10:22.344Z",
       "sources": [
         {
           "type": "source_material",
           "title": "站内2010北京卷原题及完整材料"
+        },
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2010北京题源：18页重排PDF与Gzywtk、明确校勘，原7页卷未认证",
+          "url": "https://cdn.gaokzx.com/zixunzhan/202403/d77fabda-ee06-45c5-b24e-19357370805a.pdf"
+        },
+        {
+          "type": "adjudication",
+          "title": "2010完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2010.json"
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {},
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "本题考试要求六组选做四组，以下列全六组供核对，不能把全部六组都计入八分总分。①虚室有余闲；久在樊笼里。②或因寄所托；放浪形骸之外。③落霞与孤鹜齐飞；秋水共长天一色。④谈笑有鸿儒；往来无白丁。⑤只是朱颜改；恰似一江春水向东流。⑥芳草无情；更在斜阳外。注意鸿儒的鸿、孤鹜的鹜及樊笼的樊。题干给出的悟言、云销、雕栏等版本用字属于已提供的上下文，不应通过填空答案悄悄改写。",
+          "selectedOptions": [],
+          "inputSha256": "33826433e74af3e466a3cc6fed56807b89f6ddd30b350ee2855a36bd01f64d4d",
+          "inputContextSha256": "63ef1a91d6b18f7eec0403288dd81e6e969141d5166d9dba96302e73c835e144",
+          "inputPresentationSha256": "d63ab3d25c3bf79391c1059177961dbd42b748b554977e90936059959339f5e4",
+          "generatedAt": "2026-10-03T12:01:37.602992+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2010-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2010-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2010.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "题目限选4道，以下六道均给出，供任选：\n①虚室有余闲；久在樊笼里\n②或因寄所托，放浪形骸之外\n③落霞与孤鹜齐飞，秋水共长天一色\n④谈笑有鸿儒，往来无白丁\n⑤只是朱颜改；恰似一江春水向东流\n⑥芳草无情，更在斜阳外",
+          "inputSha256": "33826433e74af3e466a3cc6fed56807b89f6ddd30b350ee2855a36bd01f64d4d",
+          "inputContextSha256": "63ef1a91d6b18f7eec0403288dd81e6e969141d5166d9dba96302e73c835e144",
+          "inputPresentationSha256": "d63ab3d25c3bf79391c1059177961dbd42b748b554977e90936059959339f5e4",
+          "generatedAt": "2026-10-03T12:03:44.982642+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2010-reading-result.json",
+            "inputPromptSha256": "91930b576979c6eacd028d192850c145beb0c77cb2561e817327727493410b3c",
+            "responseStreamSha256": "1e43b99898ca374332efc774f52c7d373484890b070e3a324768bbd60df3cf78",
+            "stage": "independent"
+          }
+        }
+      },
       "inputContextSha256": "63ef1a91d6b18f7eec0403288dd81e6e969141d5166d9dba96302e73c835e144",
       "inputPresentationSha256": "d63ab3d25c3bf79391c1059177961dbd42b748b554977e90936059959339f5e4",
       "history": [
@@ -37442,6 +37554,1255 @@
       "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
       "reviewedAt": "2026-10-03T11:24:24.001Z",
       "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2010-feilian:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2010北京题源：18页重排PDF与Gzywtk、明确校勘，原7页卷未认证",
+          "url": "https://cdn.gaokzx.com/zixunzhan/202403/d77fabda-ee06-45c5-b24e-19357370805a.pdf"
+        },
+        {
+          "type": "adjudication",
+          "title": "2010完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2010.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D。末段以相对论和量子力学为基础，说明核能等二十世纪技术的发展，因此D符合文意。A倒置了概念关系：材料说艺术和科学以人类创造力为共同基础，深藏的情感则是艺术唤起的对象，不能直接把它等同于创造力的基础。B中的两例都围绕月亮展开，重点在于创新表达及跨越时代的情感共鸣，不是用不同题材证明共鸣。C把文中的关系说反了，材料认为定律表述越简单、应用越广泛，科学越深刻。此处判读的是给定文章的论述；其中关于物质组成及科学史的概括不应不加限定地作为今日科学知识条目。",
+          "selectedOptions": [
+            "D"
+          ],
+          "inputSha256": "8e4689ab596bb467c307387ee1b3cb6d97e87a18f823f7cba090ea1eb857f237",
+          "inputContextSha256": "64254dfbfae4fa992bd88ed829fc1c996b26f69ac422f31c2f5871259d74031d",
+          "inputPresentationSha256": "4e10b93098b4a81042a6e03a41cbd242f3de307d6445ae6f2fca619465dba608",
+          "generatedAt": "2026-10-03T12:01:37.602992+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2010-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2010-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2010.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。A项错：原文说“艺术和科学的共同基础是人类的创造力”，深藏的情感是艺术要唤起的对象，不是创造力的基础。B项错：李白、苏轼两首作品都是把酒问月，题材相同；举例是为了说明优秀艺术能跨越时代引起共鸣，而不是说明“题材不同”。C项错：原文是“定律的阐述越简单、应用越广泛，科学就越深刻”，是正向关系，不是成反比。D项对：原文说“正是有了相对论和量子力学，20世纪的科技发展，如核能……才得以存在”，与选项一致。",
+          "inputSha256": "8e4689ab596bb467c307387ee1b3cb6d97e87a18f823f7cba090ea1eb857f237",
+          "inputContextSha256": "64254dfbfae4fa992bd88ed829fc1c996b26f69ac422f31c2f5871259d74031d",
+          "inputPresentationSha256": "4e10b93098b4a81042a6e03a41cbd242f3de307d6445ae6f2fca619465dba608",
+          "generatedAt": "2026-10-03T12:03:44.982642+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2010-reading-result.json",
+            "inputPromptSha256": "91930b576979c6eacd028d192850c145beb0c77cb2561e817327727493410b3c",
+            "responseStreamSha256": "1e43b99898ca374332efc774f52c7d373484890b070e3a324768bbd60df3cf78",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "8e4689ab596bb467c307387ee1b3cb6d97e87a18f823f7cba090ea1eb857f237",
+      "inputContextSha256": "64254dfbfae4fa992bd88ed829fc1c996b26f69ac422f31c2f5871259d74031d",
+      "inputPresentationSha256": "4e10b93098b4a81042a6e03a41cbd242f3de307d6445ae6f2fca619465dba608",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "两全文逐项一致，D符合材料。A倒置创造力与情感对象，B误称题材不同，C反转简单/深刻关系。按文章内部逻辑判读；材料中所有物质由分子原子构成、技术皆由两个理论产生等简化科学叙述，不升级成不受适用条件限制的科学事实。默认根版。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:10:22.344Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2010-feilian:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2010北京题源：18页重排PDF与Gzywtk、明确校勘，原7页卷未认证",
+          "url": "https://cdn.gaokzx.com/zixunzhan/202403/d77fabda-ee06-45c5-b24e-19357370805a.pdf"
+        },
+        {
+          "type": "adjudication",
+          "title": "2010完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2010.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "艺术所追求的普遍性，是作品以创新的表达唤起人们共同而珍贵的情感，使不同时代、社会和地域的人都能产生共鸣。科学所追求的普遍性，是从自然现象中抽象出准确、简洁而适用范围广的规律；这些原理可以具有多种应用形式，应用形式的变化不改变其作为共同原理的作用。两者的共同点在于超越个别现象而具有广泛意义，前者主要表现为情感共鸣的广泛性，后者主要表现为规律解释和应用的广泛性。这里沿用材料的概念框架，不把它理解为任何定律都没有适用条件、永远不需修正。",
+          "selectedOptions": [],
+          "inputSha256": "d07e21843098c8011c91a7b7141e4db5e0dac5c390d86dffa742085ce8623107",
+          "inputContextSha256": "c1e9dce7cf8efb59f8c3fa286ce9c13c9daa3d9e0ba3eacb1c3a5b02cbbae576",
+          "inputPresentationSha256": "9c2f5432cff145ea13ae94910adb876e9cf5056cae91dbb78bdc7993e76f55ef",
+          "generatedAt": "2026-10-03T12:01:37.602992+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2010-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2010-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2010.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "艺术追求的普遍性：用创新的手法唤起每个人意识或潜意识中深藏着的、已经存在的情感，使作品能跨越时代、地域和社会引起人们普遍的情感共鸣；情感越珍贵、反响越普遍、跨越的范围越广，艺术就越优秀。\n科学追求的普遍性：对自然现象作出新的、准确的抽象（即自然定律），定律的阐述越简单、应用越广泛，科学就越深刻；科学技术的应用形式会不断变化，但科学原理并不随应用而改变，能够广泛适用。",
+          "inputSha256": "d07e21843098c8011c91a7b7141e4db5e0dac5c390d86dffa742085ce8623107",
+          "inputContextSha256": "c1e9dce7cf8efb59f8c3fa286ce9c13c9daa3d9e0ba3eacb1c3a5b02cbbae576",
+          "inputPresentationSha256": "9c2f5432cff145ea13ae94910adb876e9cf5056cae91dbb78bdc7993e76f55ef",
+          "generatedAt": "2026-10-03T12:03:44.982642+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2010-reading-result.json",
+            "inputPromptSha256": "91930b576979c6eacd028d192850c145beb0c77cb2561e817327727493410b3c",
+            "responseStreamSha256": "1e43b99898ca374332efc774f52c7d373484890b070e3a324768bbd60df3cf78",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "d07e21843098c8011c91a7b7141e4db5e0dac5c390d86dffa742085ce8623107",
+      "inputContextSha256": "c1e9dce7cf8efb59f8c3fa286ce9c13c9daa3d9e0ba3eacb1c3a5b02cbbae576",
+      "inputPresentationSha256": "9c2f5432cff145ea13ae94910adb876e9cf5056cae91dbb78bdc7993e76f55ef",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两答均明确艺术的跨时空情感共鸣和科学定律的广泛适用，兼顾创新/抽象及形式变化。不能把原理不随应用形式改变解释为定律没有条件或永不修正，根版已限定。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:10:22.344Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2010-guwen:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2010北京题源：18页重排PDF与Gzywtk、明确校勘，原7页卷未认证",
+          "url": "https://cdn.gaokzx.com/zixunzhan/202403/d77fabda-ee06-45c5-b24e-19357370805a.pdf"
+        },
+        {
+          "type": "adjudication",
+          "title": "2010完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2010.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D。“终不复言”承接焚毁欠条，意为终于不再提起此事，复是再、又，不是回答。A居善药是储存、聚集好药，释聚积、搜集可通；B券是记载欠款的凭据；C诣是到、前往，未尝诣取直意为不曾登门索取药钱。",
+          "selectedOptions": [
+            "D"
+          ],
+          "inputSha256": "a59c8d414b107d07ae760b5b674c234fa18c767e8b05b3f3e340fca1e73b249b",
+          "inputContextSha256": "c9b04bed832d35a6da63eefb3d5d82aa9bfd6e14171c68d75c543eb791672c5b",
+          "inputPresentationSha256": "bff7931c6cc8133a0d3166e68e36bf6d9c3bdcb328e44f3877eae8070a49b30b",
+          "generatedAt": "2026-10-03T12:01:37.602992+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2010-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2010-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2010.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。A项“居善药”的“居”是囤积、储存，解释为“聚积，搜集”可通。B项“积券如山”的“券”指欠条、借据，正确。C项“未尝诣取直”的“诣”是到、前往，正确。D项“终不复言”意为“始终不再提起”，“复”是“再、又”，不是“回答”，解释错误。",
+          "inputSha256": "a59c8d414b107d07ae760b5b674c234fa18c767e8b05b3f3e340fca1e73b249b",
+          "inputContextSha256": "c9b04bed832d35a6da63eefb3d5d82aa9bfd6e14171c68d75c543eb791672c5b",
+          "inputPresentationSha256": "bff7931c6cc8133a0d3166e68e36bf6d9c3bdcb328e44f3877eae8070a49b30b",
+          "generatedAt": "2026-10-03T12:03:44.982642+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2010-reading-result.json",
+            "inputPromptSha256": "91930b576979c6eacd028d192850c145beb0c77cb2561e817327727493410b3c",
+            "responseStreamSha256": "1e43b99898ca374332efc774f52c7d373484890b070e3a324768bbd60df3cf78",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "a59c8d414b107d07ae760b5b674c234fa18c767e8b05b3f3e340fca1e73b249b",
+      "inputContextSha256": "c9b04bed832d35a6da63eefb3d5d82aa9bfd6e14171c68d75c543eb791672c5b",
+      "inputPresentationSha256": "bff7931c6cc8133a0d3166e68e36bf6d9c3bdcb328e44f3877eae8070a49b30b",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "两全文一致选D，复为再而非回答，居/券/诣三项解释成立。题干星号加点与正文标记证据仍按来源阶段限定，不能由解答正确推得原卷认证。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:10:22.344Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2010-guwen:3",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2010北京题源：18页重排PDF与Gzywtk、明确校勘，原7页卷未认证",
+          "url": "https://cdn.gaokzx.com/zixunzhan/202403/d77fabda-ee06-45c5-b24e-19357370805a.pdf"
+        },
+        {
+          "type": "adjudication",
+          "title": "2010完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2010.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选A。“其馈遗清者，相属于户”说那些给宋清赠送财物的人接连来到他的门前。馈遗的对象是宋清，A却说人们等待宋清馈赠，把施受关系颠倒了。B翦翦表现见利短浅，与前面的小市人一不得钱就怨怒相应；C反问现在交往的人是否能像宋清这样从长远考虑回报；D说陷于穷困、失意受辱的人能免于死亡的会更多，均能概括句意。C在题干中采用短引，正文保留更长句式，两者的题源差异已另行记录，不将短引倒填为所谓原卷正文。",
+          "selectedOptions": [
+            "A"
+          ],
+          "inputSha256": "27c4372f36dde44896a27c8709057eeced19f6e3de8f652b52cf76478a00a410",
+          "inputContextSha256": "7a3df8de9ab2682b2f059e2ff2e6994b48767ac93b66fed3a7c54a3483aba1de",
+          "inputPresentationSha256": "9bbe477ecc9e4a2b6f68bafdc14e043fca7de44bc8305938cb967eb18eb89f40",
+          "generatedAt": "2026-10-03T12:01:37.602992+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2010-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2010-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2010.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\n选A。A项错：“馈遗清者”是“馈赠宋清的人”，不是“等待宋清馈赠的人”；全句意为“那些给宋清送礼的人，在门前接连不断”。B项对：“翦翦”指浅薄、短浅。C项对：意为现在与人交往的人中，有像宋清那样把回报看得长远的吗。D项基本符合：意为天下穷困潦倒、被废黜受辱的人能够免于死亡的就多了。",
+          "inputSha256": "27c4372f36dde44896a27c8709057eeced19f6e3de8f652b52cf76478a00a410",
+          "inputContextSha256": "7a3df8de9ab2682b2f059e2ff2e6994b48767ac93b66fed3a7c54a3483aba1de",
+          "inputPresentationSha256": "9bbe477ecc9e4a2b6f68bafdc14e043fca7de44bc8305938cb967eb18eb89f40",
+          "generatedAt": "2026-10-03T12:03:44.982642+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2010-reading-result.json",
+            "inputPromptSha256": "91930b576979c6eacd028d192850c145beb0c77cb2561e817327727493410b3c",
+            "responseStreamSha256": "1e43b99898ca374332efc774f52c7d373484890b070e3a324768bbd60df3cf78",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "27c4372f36dde44896a27c8709057eeced19f6e3de8f652b52cf76478a00a410",
+      "inputContextSha256": "7a3df8de9ab2682b2f059e2ff2e6994b48767ac93b66fed3a7c54a3483aba1de",
+      "inputPresentationSha256": "9bbe477ecc9e4a2b6f68bafdc14e043fca7de44bc8305938cb967eb18eb89f40",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "两全文一致选A，馈遗清者是赠与宋清的人，原选项施受倒置。其余译意通顺；C短引和正文较长句式的差异不回填抹平，D是概括，不作逐字译文模板。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:10:22.344Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2010-guwen:4",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2010北京题源：18页重排PDF与Gzywtk、明确校勘，原7页卷未认证",
+          "url": "https://cdn.gaokzx.com/zixunzhan/202403/d77fabda-ee06-45c5-b24e-19357370805a.pdf"
+        },
+        {
+          "type": "adjudication",
+          "title": "2010完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2010.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选B。宋清明说自己逐利以活妻子，即为获利以养活妻子儿女；他并不否认求利，而是目光长远，不因欠款或对方失势便苛刻相待。B把这种长远求利说成不为赚钱，违背原文。A以宋清说明商业交往也可不计眼前得失；C概括作者对小市人及某些士大夫短视趋利行为的批评；D对应结尾然则清非独异于市人也，均有依据。C是文中比较的概括，不宜扩展成所有商人或士大夫的本性判定。",
+          "selectedOptions": [
+            "B"
+          ],
+          "inputSha256": "db66abe04e56127a566535017ef9b8dd73ff0a72f0f2c62a8db6c2b1dcd3500b",
+          "inputContextSha256": "c637e89236d8bfb44a8c7c1192500b31d20d9d711201c124b1cb131ae162a3c1",
+          "inputPresentationSha256": "58ec3cdf32bc35850ce841c7f9cb869e019b7ba48fe092c21d381da881d463a7",
+          "generatedAt": "2026-10-03T12:01:37.602992+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2010-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2010-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2010.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。A项对：宋清赊药不讨债、岁终焚券，说明经商未必都斤斤计较。B项错：宋清自己说“清逐利以活妻子耳，非有道也”，明确承认是为求利养家，并不是追求高尚的做人境界。C项对：小市人“一不得直，则怫然怒”，而以士大夫自名者“反争为之不已”，可见这也是某些士大夫的通病。D项对：文末“清居市不为市之道”“清非独异于市人也”，说明宋清既不同于一般商人，也高于某些以士大夫自居的人。",
+          "inputSha256": "db66abe04e56127a566535017ef9b8dd73ff0a72f0f2c62a8db6c2b1dcd3500b",
+          "inputContextSha256": "c637e89236d8bfb44a8c7c1192500b31d20d9d711201c124b1cb131ae162a3c1",
+          "inputPresentationSha256": "58ec3cdf32bc35850ce841c7f9cb869e019b7ba48fe092c21d381da881d463a7",
+          "generatedAt": "2026-10-03T12:03:44.982642+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2010-reading-result.json",
+            "inputPromptSha256": "91930b576979c6eacd028d192850c145beb0c77cb2561e817327727493410b3c",
+            "responseStreamSha256": "1e43b99898ca374332efc774f52c7d373484890b070e3a324768bbd60df3cf78",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "db66abe04e56127a566535017ef9b8dd73ff0a72f0f2c62a8db6c2b1dcd3500b",
+      "inputContextSha256": "c637e89236d8bfb44a8c7c1192500b31d20d9d711201c124b1cb131ae162a3c1",
+      "inputPresentationSha256": "58ec3cdf32bc35850ce841c7f9cb869e019b7ba48fe092c21d381da881d463a7",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "两全文一致选B，关键是宋清自称逐利养家，不能说他不为赚钱。Claude并不是追求高尚境界仅可限为自述动机，不能据此否认行为的道德价值；C亦不扩为所有商人/士大夫的本性。默认根版。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:10:22.344Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2010-shici:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2010北京题源：18页重排PDF与Gzywtk、明确校勘，原7页卷未认证",
+          "url": "https://cdn.gaokzx.com/zixunzhan/202403/d77fabda-ee06-45c5-b24e-19357370805a.pdf"
+        },
+        {
+          "type": "adjudication",
+          "title": "2010完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2010.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选A。前四句虽然视野开阔，却有秋霜遍被、旷野风寒等意象，营造的是苍茫萧瑟的氛围，与后文荣华消逝、世事波澜及贤愚倒置的感慨相应，不能概括为昂扬奋发。B两处东流水都寄寓荣华或世事流逝的感受；C白日将尽、浮云无定确能含蓄表现对世事变化的感受；D说明燕雀与鸳鸾栖处错置，与诗句及注释一致。",
+          "selectedOptions": [
+            "A"
+          ],
+          "inputSha256": "fd1789e804ac4bc59d9e6c67507f4abbf02deaeadacc8e7edbdab8cbf64b9602",
+          "inputContextSha256": "e9ae344f00fc47799d9314db86af82208feadfdf836c5bc00daa1e44d41949a6",
+          "inputPresentationSha256": "ed2fb5644068e971f8fd1f6de1d1de4692fdc4799780715fa514a2d2b3686eb6",
+          "generatedAt": "2026-10-03T12:01:37.602992+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2010-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2010-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2010.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\n选A。A项错：前四句写天地漫漫、霜覆万物、风飘大荒的萧瑟寒凉秋景，奠定的是苍凉悲慨的基调，不是“昂扬奋发”。B项对：“荣华东流水”与“古来万事东流水”都表达荣华富贵、世事如流水般易逝无常。C项对：白日余晖被掩、浮云变幻不定，含蓄写出世事昏暗、人生无常的感受（也可理解为暗指朝政昏暗、小人得势）。D项对：两句以鸳鸾栖于枳棘、燕雀巢于梧桐，比喻贤才失位而小人得志。",
+          "inputSha256": "fd1789e804ac4bc59d9e6c67507f4abbf02deaeadacc8e7edbdab8cbf64b9602",
+          "inputContextSha256": "e9ae344f00fc47799d9314db86af82208feadfdf836c5bc00daa1e44d41949a6",
+          "inputPresentationSha256": "ed2fb5644068e971f8fd1f6de1d1de4692fdc4799780715fa514a2d2b3686eb6",
+          "generatedAt": "2026-10-03T12:03:44.982642+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2010-reading-result.json",
+            "inputPromptSha256": "91930b576979c6eacd028d192850c145beb0c77cb2561e817327727493410b3c",
+            "responseStreamSha256": "1e43b99898ca374332efc774f52c7d373484890b070e3a324768bbd60df3cf78",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "fd1789e804ac4bc59d9e6c67507f4abbf02deaeadacc8e7edbdab8cbf64b9602",
+      "inputContextSha256": "e9ae344f00fc47799d9314db86af82208feadfdf836c5bc00daa1e44d41949a6",
+      "inputPresentationSha256": "ed2fb5644068e971f8fd1f6de1d1de4692fdc4799780715fa514a2d2b3686eb6",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "两全文一致选A，苍凉秋景与昂扬基调不符。B荣华流逝，C景象与无常感，D贤愚失位均据诗文。Claude将C进一步联系朝政小人属可提出的寓意解释，不是题面证实的唯一历史情境。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:10:22.344Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2010-shici:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2010北京题源：18页重排PDF与Gzywtk、明确校勘，原7页卷未认证",
+          "url": "https://cdn.gaokzx.com/zixunzhan/202403/d77fabda-ee06-45c5-b24e-19357370805a.pdf"
+        },
+        {
+          "type": "adjudication",
+          "title": "2010完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2010.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "结句在登高见秋寒、感叹荣华流逝和世事多变之后，以抚剑而歌、叹行路之难收束全诗，抒发诗人对现实不合理处境的不平及有才难以施展的苦闷。梧桐被燕雀占据、鸳鸾反而栖于枳棘，寄寓对贤愚倒置、贤者不得其所的愤慨；且复归去来又表现出离开这种处境的退隐之意。但剑歌的动作仍带着不甘，说明归去的愿望中交织着壮志难酬、抱负难伸的悲愤。这里据全诗及意象作解释，不把某次具体政治事件或单一典故断言为题面已经证明的事实。",
+          "selectedOptions": [],
+          "inputSha256": "445f349843244f2c593f9a5ece4b94ddd6de52135c22d5a92b9a28928a4686b2",
+          "inputContextSha256": "94d4c05c2b33dace128a3f7e02d44cfec24146250a5e836ca8f71436010dbb97",
+          "inputPresentationSha256": "cc33f28592eee047a170d2e962625a7b8de7fa47146f0f7f6e1e54bf4a5e455d",
+          "generatedAt": "2026-10-03T12:01:37.602992+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2010-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2010-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2010.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "“剑歌行路难”意为弹剑高歌《行路难》，表达了诗人复杂的感情：\n①悲愤不平。诗人登高所见一片萧瑟，“梧桐巢燕雀，枳棘栖鸳鸾”写出贤愚颠倒、小人得志而贤才失所的现实，结尾弹剑而歌，抒发了怀才不遇、壮志难酬的愤懑。\n②感慨世路艰难。“荣华东流水，万事皆波澜”写出荣华易逝、世事多变，“行路难”正是对人生道路艰险、仕途坎坷的慨叹。\n③无奈中的决绝。“且复归去来”表明诗人不愿同流合污，决意离去归隐；但以“剑歌”作结，悲凉中仍有慷慨不屈之气，并非一味消沉。",
+          "inputSha256": "445f349843244f2c593f9a5ece4b94ddd6de52135c22d5a92b9a28928a4686b2",
+          "inputContextSha256": "94d4c05c2b33dace128a3f7e02d44cfec24146250a5e836ca8f71436010dbb97",
+          "inputPresentationSha256": "cc33f28592eee047a170d2e962625a7b8de7fa47146f0f7f6e1e54bf4a5e455d",
+          "generatedAt": "2026-10-03T12:03:44.982642+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2010-reading-result.json",
+            "inputPromptSha256": "91930b576979c6eacd028d192850c145beb0c77cb2561e817327727493410b3c",
+            "responseStreamSha256": "1e43b99898ca374332efc774f52c7d373484890b070e3a324768bbd60df3cf78",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "445f349843244f2c593f9a5ece4b94ddd6de52135c22d5a92b9a28928a4686b2",
+      "inputContextSha256": "94d4c05c2b33dace128a3f7e02d44cfec24146250a5e836ca8f71436010dbb97",
+      "inputPresentationSha256": "cc33f28592eee047a170d2e962625a7b8de7fa47146f0f7f6e1e54bf4a5e455d",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两全文覆盖世途艰难、怀才不遇、愤慨及归去之意。Claude弹剑高歌《行路难》、决意归隐、不愿同流合污为较强解释，不能当作确证的行为/歌名/唯一典故；且复含暂且意味，宜说有退意又不甘，而非断言已决绝归隐。默认根版，保留原文。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:10:22.344Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2010-sanwen:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2010北京题源：18页重排PDF与Gzywtk、明确校勘，原7页卷未认证",
+          "url": "https://cdn.gaokzx.com/zixunzhan/202403/d77fabda-ee06-45c5-b24e-19357370805a.pdf"
+        },
+        {
+          "type": "adjudication",
+          "title": "2010完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2010.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选A、C。A以海棠花连缀故乡、北京及德国的生活片段，结尾看花回应开头，晚霞又照应故乡回忆，情感寄托于花，表述正确。C对应作者立志仔细过日子却仍捉摸不住时间流逝的叙述，正确。B把对屋顶的海浪联想误说成实写海景。D将原先用苦行者精神念书的决心说成始终如此，忽略现实阻碍和乡思牵动，且不能据此推出无暇顾及花的唯一原因。E虽借写作时间说到战争背景，但文章中心是异乡游子的乡思与祖国之情，不是对德国社会现实的系统省察。",
+          "selectedOptions": [
+            "A",
+            "C"
+          ],
+          "inputSha256": "a59e2afebe06bfa39e6b4e6c92c95d5bd0e3dc116e94887f27af81dc56407e4e",
+          "inputContextSha256": "58fd72c3d15568ff6da8a8bd9fffb89ff74a10654bc69913dee7c7e42eb07b5c",
+          "inputPresentationSha256": "68bdaf4b64a46d22ce1e9bd0a0e4e6559db865ed80e07a06f10c3467e9f6b1b8",
+          "generatedAt": "2026-10-03T12:01:37.602992+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2010-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2010-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2010.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A、C。\n选A、C。A项对：文章由哥廷根的海棠花串起故乡、北京、德国的生活片断，开头早晨见海棠、结尾晚上再看海棠，首尾照应，并借海棠寄托乡思。B项错：文中是把一片屋顶“幻想出一片海浪”，并不存在真实的“海景”，“同样单调的海景”属无中生有。C项对：作者读到那句话“颇有同感”，觉得自己也应仔仔细细过日子，但后来仍然“捉摸不住，不知道日子是怎样过去的”，未能如愿。D项错：作者“本来下定了决心”用苦行者的精神念书，但“现实的情况又不允许我这样做”，并非“始终”如此；没注意海棠是因为满眼繁花叫不出名字。E项错：文章抒发的是对故乡和祖国的思念，没有对德国社会现实的思考与省察。",
+          "inputSha256": "a59e2afebe06bfa39e6b4e6c92c95d5bd0e3dc116e94887f27af81dc56407e4e",
+          "inputContextSha256": "58fd72c3d15568ff6da8a8bd9fffb89ff74a10654bc69913dee7c7e42eb07b5c",
+          "inputPresentationSha256": "68bdaf4b64a46d22ce1e9bd0a0e4e6559db865ed80e07a06f10c3467e9f6b1b8",
+          "generatedAt": "2026-10-03T12:03:44.982642+00:00",
+          "uncertainties": [
+            "C项“十分渴望”比原文“颇有同感”程度略重，但在五个选项中仍属与文意相符的一项。"
+          ],
+          "selectedOptions": [
+            "A",
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2010-reading-result.json",
+            "inputPromptSha256": "91930b576979c6eacd028d192850c145beb0c77cb2561e817327727493410b3c",
+            "responseStreamSha256": "1e43b99898ca374332efc774f52c7d373484890b070e3a324768bbd60df3cf78",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "a59e2afebe06bfa39e6b4e6c92c95d5bd0e3dc116e94887f27af81dc56407e4e",
+      "inputContextSha256": "58fd72c3d15568ff6da8a8bd9fffb89ff74a10654bc69913dee7c7e42eb07b5c",
+      "inputPresentationSha256": "68bdaf4b64a46d22ce1e9bd0a0e4e6559db865ed80e07a06f10c3467e9f6b1b8",
+      "status": "reviewed",
+      "kind": "multiple_choice",
+      "correctOptions": [
+        "A",
+        "C"
+      ],
+      "explanation": "两全文一致AC。B屋顶的海浪联想不是实有海景；D初衷不等于始终实现；E缺乏德国社会省察内容。Claude保留C十分渴望较颇有同感更强的措辞提示，可作为限定，尚不足改变本组选项判断。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:10:22.344Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2010-sanwen:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2010北京题源：18页重排PDF与Gzywtk、明确校勘，原7页卷未认证",
+          "url": "https://cdn.gaokzx.com/zixunzhan/202403/d77fabda-ee06-45c5-b24e-19357370805a.pdf"
+        },
+        {
+          "type": "adjudication",
+          "title": "2010完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2010.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "①并非真正无缘。作者说似乎无缘，是因为记忆中亲见故乡海棠盛开的次数很少，在北京又少有赏海棠的机会；但他一直喜爱海棠，故乡赏花、树下乘凉的情景留在记忆里，异域再次见花还唤起浓烈乡思，所以与海棠有深厚的情感联系。②海棠花是贯串全文的线索：由德国见花引出故乡往事，再回到眼前的花，组织起回忆与现实。它也是故乡与祖国的具体象征和情感寄托，以可见的景物连接相隔遥远的生活空间，触发并承载思乡爱国之情。开头和结尾的花相互照应，使感情在回环中加深；结尾晚霞又呼应故乡海棠的绚烂，使眼前景与记忆相融。",
+          "selectedOptions": [],
+          "inputSha256": "c43a47fccebb1f9ce8a7b2d06ac4e2408c41709eb7d15fe2751ffdb6a1242ac8",
+          "inputContextSha256": "59609a12e403aa46cd824141d149e63a3ee3d5eeedf851a2e55c597af3ce70c5",
+          "inputPresentationSha256": "f50c2ff5d3e701676dbf4bfbea485b5f8ec9a26157a02ea87e29eca6a7d193fd",
+          "generatedAt": "2026-10-03T12:01:37.602992+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2010-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2010-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2010.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "①不是真的“无缘”。所谓“无缘”，只是说作者春天多在北京、后来又远赴德国，很少有机会看到故乡海棠开花。实际上作者与海棠缘分很深：故乡院子里就有两棵海棠；少年时曾在海棠树下一直站到黄昏，夏夜常在树下乘凉、听雨打海棠叶；离乡时正值海棠叶转黄；在异国又是海棠花唤起了他的乡思。海棠始终伴随着他的生命记忆和情感，“无缘”是欲扬先抑的说法，反衬出他对海棠的喜爱与眷恋。\n②作用：a.结构上，海棠花是贯穿全文的线索，把故乡、北京、德国的生活片断串联起来，开头结尾都写海棠，首尾呼应，结构完整。b.内容上，海棠花是触发情感的媒介，由异国的海棠联想到故乡的海棠，引出对往事的回忆和浓烈的乡思。c.情感上，海棠花是故乡和祖国的象征，寄托着作者对故乡的眷恋和对苦难中祖国的深切思念，使抽象的情感变得具体可感，深化了主题。",
+          "inputSha256": "c43a47fccebb1f9ce8a7b2d06ac4e2408c41709eb7d15fe2751ffdb6a1242ac8",
+          "inputContextSha256": "59609a12e403aa46cd824141d149e63a3ee3d5eeedf851a2e55c597af3ce70c5",
+          "inputPresentationSha256": "f50c2ff5d3e701676dbf4bfbea485b5f8ec9a26157a02ea87e29eca6a7d193fd",
+          "generatedAt": "2026-10-03T12:03:44.982642+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2010-reading-result.json",
+            "inputPromptSha256": "91930b576979c6eacd028d192850c145beb0c77cb2561e817327727493410b3c",
+            "responseStreamSha256": "1e43b99898ca374332efc774f52c7d373484890b070e3a324768bbd60df3cf78",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "c43a47fccebb1f9ce8a7b2d06ac4e2408c41709eb7d15fe2751ffdb6a1242ac8",
+      "inputContextSha256": "59609a12e403aa46cd824141d149e63a3ee3d5eeedf851a2e55c597af3ce70c5",
+      "inputPresentationSha256": "f50c2ff5d3e701676dbf4bfbea485b5f8ec9a26157a02ea87e29eca6a7d193fd",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两全文答全两小问，区分少见花与深情，并说明线索、时空联结、乡思寄托与首尾照应。Claude称无缘为欲扬先抑可作结构解释，不是唯一术语；始终伴随应理解为记忆中的关联，不是每段都实际见花。默认根版。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:10:22.344Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2010-sanwen:3",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2010北京题源：18页重排PDF与Gzywtk、明确校勘，原7页卷未认证",
+          "url": "https://cdn.gaokzx.com/zixunzhan/202403/d77fabda-ee06-45c5-b24e-19357370805a.pdf"
+        },
+        {
+          "type": "adjudication",
+          "title": "2010完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2010.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "画线部分写出作者理想与现实冲突、求学愿望与思乡之情牵扯的复杂心境：他原想专心读书，现实却不允许；身在异域，祖国又屡屡入梦，因此内心挣扎、不安，回顾六年还感到时光倏忽而过。它为下文见海棠而忽然惊醒、乡思难排蓄势，也说明乡思早已积存在心，并非当天凭空出现。下文进一步写思乡带来痛苦，却又使自己确认与故乡祖国的联系，丰富了前面挣扎心境的内涵。答案依据本次扩展到完整心境段的下划线范围，不能仅围绕末句六年流逝作答。",
+          "selectedOptions": [],
+          "inputSha256": "e9816ff79bd7d195591ba4fbb5dc3337dbb1ab70c000f5a41b9d324f35bdd75f",
+          "inputContextSha256": "07a3ad25d3675be8c42559da2c4a226e23e0f1d7688f0a5863b7c56c31627624",
+          "inputPresentationSha256": "73d1d1aa6b0fb22448f74d1b821fc9d8ec7a8cb67c6b6bc91d530d54d70a5e0f",
+          "generatedAt": "2026-10-03T12:01:37.602992+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2010-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2010-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2010.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "心境：写出了作者身处异国时矛盾、挣扎、不能平静的心境。他本想像苦行者一样专心读书，现实却不允许；祖国时来入梦，游子的牵挂使他内心不安；他在幻想与现实、祖国与异域之间苦苦挣扎，日子在恍惚和焦虑中不知不觉流逝。\n与下文的关联：a.解释了下文作者为何六年间“一直没注意到这里也有海棠花”，因为他心绪不宁、无心细赏。b.为下文蓄势铺垫：正因长期压抑着对祖国的思念，一旦看到海棠花，才会“心一动”，如梦初醒般惊觉已在异域六年，浓烈的乡思随之喷涌而出；同时“祖国时来入梦”也与第⑧段“我的祖国正在苦难中，我是多么想看到它”相呼应。",
+          "inputSha256": "e9816ff79bd7d195591ba4fbb5dc3337dbb1ab70c000f5a41b9d324f35bdd75f",
+          "inputContextSha256": "07a3ad25d3675be8c42559da2c4a226e23e0f1d7688f0a5863b7c56c31627624",
+          "inputPresentationSha256": "73d1d1aa6b0fb22448f74d1b821fc9d8ec7a8cb67c6b6bc91d530d54d70a5e0f",
+          "generatedAt": "2026-10-03T12:03:44.982642+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2010-reading-result.json",
+            "inputPromptSha256": "91930b576979c6eacd028d192850c145beb0c77cb2561e817327727493410b3c",
+            "responseStreamSha256": "1e43b99898ca374332efc774f52c7d373484890b070e3a324768bbd60df3cf78",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "e9816ff79bd7d195591ba4fbb5dc3337dbb1ab70c000f5a41b9d324f35bdd75f",
+      "inputContextSha256": "07a3ad25d3675be8c42559da2c4a226e23e0f1d7688f0a5863b7c56c31627624",
+      "inputPresentationSha256": "73d1d1aa6b0fb22448f74d1b821fc9d8ec7a8cb67c6b6bc91d530d54d70a5e0f",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两全文能概括理想/现实、祖国/异域之间的挣扎并与后文乡思相连。Claude把六年未注意海棠直接归因于心绪不宁、无心细赏，超出文本且忽略第六段明示的满眼繁花、叫不出名字，不能采用为确定因果；长期压抑也比原文时来入梦更强。应以乡思早存、见花触发、前后照应作答，根版已明确。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:10:22.344Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2010-sanwen:4",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2010北京题源：18页重排PDF与Gzywtk、明确校勘，原7页卷未认证",
+          "url": "https://cdn.gaokzx.com/zixunzhan/202403/d77fabda-ee06-45c5-b24e-19357370805a.pdf"
+        },
+        {
+          "type": "adjudication",
+          "title": "2010完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2010.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "这句话表现的是实际距离与心理距离之间的反向变化。作者身在远方，与故乡祖国相隔万里，离开的时间也越来越长；但记忆、牵挂和共同生活留下的感受并未随之消散，反而在异域见到海棠时更加鲜明。所谓近在眼前，并不是空间真的缩短了，而是故乡和祖国在心中变得更有分量。我读《静夜思》时，也能感到这种体验。诗中的人身处异地，眼前只有月光，却由月光想到故乡；熟悉的景象成为桥梁，使不在眼前的人和地方重新进入心中。离别有时会让人看清习以为常的事物：一起吃饭的声音、回家经过的街道，在身边时未必特别留意，远离后却能在记忆中不断浮现。不过，心理上的亲近并不能取消不能团聚的痛苦。正因为仍然相隔，人们才更珍惜联系，也更懂得故乡给予自己的影响。对季羡林而言，这种联系还超越个人居所，指向处在苦难中的祖国；海棠带来的不仅是怀旧的温暖，更是无法卸下的牵挂。",
+          "selectedOptions": [],
+          "inputSha256": "cbd304e6f98c2c0d7360c56b93cade1de38b14cacb63ba7310c63b5cd9d948e7",
+          "inputContextSha256": "4be699b4eac7849b86b8841d04fb4389de33a25a8236f7a1f0800d5356b9d670",
+          "inputPresentationSha256": "985e9a6ad557400d99cc642409bec1fb9b512755726892d9b8384380a1877fad",
+          "generatedAt": "2026-10-03T12:01:37.602992+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2010-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2010-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2010.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "体验：作者体验到空间、时间上的距离与心理上的距离恰恰相反。故乡和祖国在地理上远在天边，离开的时间也越来越久，但思念却随着时空的拉大而日益浓烈，它们在心里反而越来越近、越来越清晰。距离没有冲淡情感，反而让人更真切地认识到自己是“有故乡和祖国的人”。\n感受（示例）：我对这种体验深有同感。上初中以前，我一直住在外婆家的小镇上，那时只嫌它小而旧，巷子窄，冬天湿冷，一心盼着到城里去。后来真的离开了，住进了高楼，却常常在晚自习后的路上想起外婆灶间的柴火味，想起巷口那棵老槐树和树下摇着蒲扇的老人。奇怪的是，在小镇时我从没留意过这些，离得越久，它们反倒越鲜明，连外婆唤我回家吃饭的声调都记得清清楚楚。我这才明白，距离像一面筛子，筛去了琐碎与不满，留下的全是最珍贵的东西。正如余光中在《乡愁》里把思念写成一枚邮票、一湾海峡，隔得越远，牵得越紧。人往往要在远离之后，才懂得自己的根在哪里。（示例约270字）",
+          "inputSha256": "cbd304e6f98c2c0d7360c56b93cade1de38b14cacb63ba7310c63b5cd9d948e7",
+          "inputContextSha256": "4be699b4eac7849b86b8841d04fb4389de33a25a8236f7a1f0800d5356b9d670",
+          "inputPresentationSha256": "985e9a6ad557400d99cc642409bec1fb9b512755726892d9b8384380a1877fad",
+          "generatedAt": "2026-10-03T12:03:44.982642+00:00",
+          "uncertainties": [
+            "后半部分为开放性作答，所给内容为原创示例，并非唯一答法。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2010-reading-result.json",
+            "inputPromptSha256": "91930b576979c6eacd028d192850c145beb0c77cb2561e817327727493410b3c",
+            "responseStreamSha256": "1e43b99898ca374332efc774f52c7d373484890b070e3a324768bbd60df3cf78",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "cbd304e6f98c2c0d7360c56b93cade1de38b14cacb63ba7310c63b5cd9d948e7",
+      "inputContextSha256": "4be699b4eac7849b86b8841d04fb4389de33a25a8236f7a1f0800d5356b9d670",
+      "inputPresentationSha256": "985e9a6ad557400d99cc642409bec1fb9b512755726892d9b8384380a1877fad",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两全文均辨实际时空距离和情感距离，满足200字。Claude外婆家、小镇、高楼、晚自习等是题面之外的虚构示例，不是模型或用户亲历；其筛去了不满、留下全是珍贵及距离越远感情越深不能泛化为心理定律。根版以《静夜思》作文学联系并承认离别痛苦，默认根版；原响应与虚构标识保留。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:10:22.344Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2010-yuyanjichu:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2010北京题源：18页重排PDF与Gzywtk、明确校勘，原7页卷未认证",
+          "url": "https://cdn.gaokzx.com/zixunzhan/202403/d77fabda-ee06-45c5-b24e-19357370805a.pdf"
+        },
+        {
+          "type": "adjudication",
+          "title": "2010完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2010.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选C。纪传体、多难兴邦字形正确，叨扰的叨读tāo，一气呵成的呵读hē。A供认不悔应为供认不讳，穷源朔流应为穷源溯流，溯读sù；对称的称读chèn正确。B一拉罐应为易拉罐，隽永的隽读juàn；转弯抹角字形及令人发指的发读fà均正确。D化装品在该词义下应为化妆品，倾轧的轧读yà，囤积的囤读tún正确。题中故意供辨析的错字保留原状；A朔/溯的转载差异另有来源记录，不以解题时的正确写法替换试题选项。",
+          "selectedOptions": [
+            "C"
+          ],
+          "inputSha256": "ca41525c052c4f60ff618d3bbe12cb58e61db5fab6e937e375fad255f7135553",
+          "inputContextSha256": "0d96d17bac29fd58b9589c7eab743d26e8873f212176a53324c1cb164475a2bd",
+          "inputPresentationSha256": "8222a11bd95c26631723f29807458d945895a79029480970e1851dbc66de29d7",
+          "generatedAt": "2026-10-03T12:01:37.602992+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2010-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2010-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2010.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。A项：“供认不悔”应为“供认不讳”；“穷源朔流”应为“穷源溯流”，“溯”读sù。B项：“一拉罐”应为“易拉罐”；“隽永”的“隽”应读juàn。C项：纪传体、多难兴邦、叨（tāo）扰、一气呵（hē）成，字形和读音全都正确。D项：“化装品”应为“化妆品”；“倾轧”的“轧”应读yà。",
+          "inputSha256": "ca41525c052c4f60ff618d3bbe12cb58e61db5fab6e937e375fad255f7135553",
+          "inputContextSha256": "0d96d17bac29fd58b9589c7eab743d26e8873f212176a53324c1cb164475a2bd",
+          "inputPresentationSha256": "8222a11bd95c26631723f29807458d945895a79029480970e1851dbc66de29d7",
+          "generatedAt": "2026-10-03T12:03:44.982642+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2010-reading-result.json",
+            "inputPromptSha256": "91930b576979c6eacd028d192850c145beb0c77cb2561e817327727493410b3c",
+            "responseStreamSha256": "1e43b99898ca374332efc774f52c7d373484890b070e3a324768bbd60df3cf78",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "ca41525c052c4f60ff618d3bbe12cb58e61db5fab6e937e375fad255f7135553",
+      "inputContextSha256": "0d96d17bac29fd58b9589c7eab743d26e8873f212176a53324c1cb164475a2bd",
+      "inputPresentationSha256": "8222a11bd95c26631723f29807458d945895a79029480970e1851dbc66de29d7",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "两全文一致选C，讳/易/妆、溯sù、隽juàn、轧yà的辨析一致；转弯抹角本身不误。教育部辞典叨扰与倾轧读音作辅助核查，跨地区规范不扩为全套原卷字形认证。试题故意错字及朔/溯转载差异保留。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:10:22.344Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2010-yuyanjichu:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2010北京题源：18页重排PDF与Gzywtk、明确校勘，原7页卷未认证",
+          "url": "https://cdn.gaokzx.com/zixunzhan/202403/d77fabda-ee06-45c5-b24e-19357370805a.pdf"
+        },
+        {
+          "type": "adjudication",
+          "title": "2010完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2010.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选B。无地自容形容羞愧到了极点，强调羞惭，而句中要表达的是目标被锁定后无处藏身、难以逃脱，语义不合。A防患于未然指灾祸尚未发生便加以预防；C信马由缰在此比喻创意不受必要约束，与必须遵守规定的语境相合；D殊途同归指方法途径不同而达到共同目的，与前文方法不同、根本目标不相悖相照应。本题仅判断词语使用，不将极超音速导弹的效能断言当作经过核实的技术结论。",
+          "selectedOptions": [
+            "B"
+          ],
+          "inputSha256": "96166dc4a0d86087b29c34ea178d4d1faf42c6a63320d93562d8b12adb750e7d",
+          "inputContextSha256": "f43df69496dfe494bda8eadf0be5aef640005d8325fa443b5da850a251219edf",
+          "inputPresentationSha256": "553b6ed30e1c2d5da191e66f8a6abae228250158c3cbf3ac3a33d202aad2db92",
+          "generatedAt": "2026-10-03T12:01:37.602992+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2010-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2010-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2010.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。A项“防患于未然”指在祸患发生之前加以防备，使用恰当。B项“无地自容”形容羞愧到极点，没有地方可以藏身；句中要表达的是恐怖分子无处可逃、无处藏身，属望文生义，使用不当。C项“信马由缰”比喻随意而行、不受约束，用于说明创意不能漫无限制，恰当。D项“殊途同归”比喻采取不同的方法而得到相同的结果，恰当。",
+          "inputSha256": "96166dc4a0d86087b29c34ea178d4d1faf42c6a63320d93562d8b12adb750e7d",
+          "inputContextSha256": "f43df69496dfe494bda8eadf0be5aef640005d8325fa443b5da850a251219edf",
+          "inputPresentationSha256": "553b6ed30e1c2d5da191e66f8a6abae228250158c3cbf3ac3a33d202aad2db92",
+          "generatedAt": "2026-10-03T12:03:44.982642+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2010-reading-result.json",
+            "inputPromptSha256": "91930b576979c6eacd028d192850c145beb0c77cb2561e817327727493410b3c",
+            "responseStreamSha256": "1e43b99898ca374332efc774f52c7d373484890b070e3a324768bbd60df3cf78",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "96166dc4a0d86087b29c34ea178d4d1faf42c6a63320d93562d8b12adb750e7d",
+      "inputContextSha256": "f43df69496dfe494bda8eadf0be5aef640005d8325fa443b5da850a251219edf",
+      "inputPresentationSha256": "553b6ed30e1c2d5da191e66f8a6abae228250158c3cbf3ac3a33d202aad2db92",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "两全文一致选B，无地自容的羞愧义不适合无处逃脱语境，其他三项符合语境。不据题干断言具体导弹性能或反恐结局。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:10:22.344Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2010-yuyanjichu:3",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2010北京题源：18页重排PDF与Gzywtk、明确校勘，原7页卷未认证",
+          "url": "https://cdn.gaokzx.com/zixunzhan/202403/d77fabda-ee06-45c5-b24e-19357370805a.pdf"
+        },
+        {
+          "type": "adjudication",
+          "title": "2010完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2010.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D。D用一些跨国公司开拓国际市场及其他国家跟进的情形，说明竞争格局发生变化，主要成分和语意衔接成立。A后半句赞不绝口缺少恰当的承接主语，表面承接记者或神仙茶，实际应指那些老年人，可补他们。B实现与纪录搭配不当，可说创造纪录；将再度与实现了的时态关系，以及唯一的一次所指也不清。C这份引以为豪的美国期刊省略了谁引以为豪，容易在中国人和美国人之间造成语意不明，应明确为美国人引以为豪等。这里评价句子的语法和表达，不认证茶剂功效、商业传闻或国际经济现状。",
+          "selectedOptions": [
+            "D"
+          ],
+          "inputSha256": "c6b90ca2209b23da365e62ee4348d442869f5519ca98839f3d29ae089d76a8da",
+          "inputContextSha256": "4f2069704677642c7c279f06b95aec967224394bf1551f28b4925130f4245651",
+          "inputPresentationSha256": "1c07791f5eefab3de4da5e313a863f86e277f0f2ab132ff1b0715bfa03077352",
+          "generatedAt": "2026-10-03T12:01:37.602992+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2010-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2010-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2010.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。A项：后一分句“对……赞不绝口”缺主语，前句主语是“神仙茶”，应在“对”前补上“他们”或“老人们”。B项：“实现……纪录”搭配不当，应为“创造”或“刷新”纪录；“在其演出的艺术历程中也是唯一的一次”指代不清、表意不明。C项：“引以为豪”的主体不明，按句子结构成了中国人以这份期刊为豪，而实际应是美国人引以为豪，表意不当。D项：句子结构完整，搭配得当，没有语病。",
+          "inputSha256": "c6b90ca2209b23da365e62ee4348d442869f5519ca98839f3d29ae089d76a8da",
+          "inputContextSha256": "4f2069704677642c7c279f06b95aec967224394bf1551f28b4925130f4245651",
+          "inputPresentationSha256": "1c07791f5eefab3de4da5e313a863f86e277f0f2ab132ff1b0715bfa03077352",
+          "generatedAt": "2026-10-03T12:03:44.982642+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2010-reading-result.json",
+            "inputPromptSha256": "91930b576979c6eacd028d192850c145beb0c77cb2561e817327727493410b3c",
+            "responseStreamSha256": "1e43b99898ca374332efc774f52c7d373484890b070e3a324768bbd60df3cf78",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "c6b90ca2209b23da365e62ee4348d442869f5519ca98839f3d29ae089d76a8da",
+      "inputContextSha256": "4f2069704677642c7c279f06b95aec967224394bf1551f28b4925130f4245651",
+      "inputPresentationSha256": "1c07791f5eefab3de4da5e313a863f86e277f0f2ab132ff1b0715bfa03077352",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "两全文一致选D。A缺恰当承接主语；Claude称前句主语是神仙茶只能限于发现的宾语小句，不能覆盖全句记者主语。B实现纪录搭配不当，C引以为豪主体不明；应明确主体而非从语病题证明美国人的实际心情。句中健康/商业/经济陈述不作为经核实事实。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:10:22.344Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2010-yuyanjichu:4",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2010北京题源：18页重排PDF与Gzywtk、明确校勘，原7页卷未认证",
+          "url": "https://cdn.gaokzx.com/zixunzhan/202403/d77fabda-ee06-45c5-b24e-19357370805a.pdf"
+        },
+        {
+          "type": "adjudication",
+          "title": "2010完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2010.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选C。塞万提斯是西班牙作家，不是意大利小说家，《堂吉诃德》的作者对应无误，错误在国别。A对《楚辞》的楚地色彩及《离骚》的代表地位的概括成立；B区分白居易两篇长篇叙事诗的感伤色彩和《新乐府》的讽谕批判精神，成立；D对《哈姆莱特》的复仇主线、作者及四大悲剧归属的说明成立。",
+          "selectedOptions": [
+            "C"
+          ],
+          "inputSha256": "4b35ecda7b1f3829a932d0dc0db0a8f9b81fda4056f5d21864dc8012ecbf895d",
+          "inputContextSha256": "263041111fb3b20e2bd42c53ef2ceb62b1ae48780b5cf3aa5e1f8c197463bf69",
+          "inputPresentationSha256": "9cc96598f8e385c61fa6db3e34717e33ea07db67387d72c44df3eaaabecf6570",
+          "generatedAt": "2026-10-03T12:01:37.602992+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2010-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2010-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2010.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。A项正确：《楚辞》收屈原、宋玉等人的作品，带有浓厚的楚地色彩，《离骚》是其代表作。B项正确：《长恨歌》《琵琶行》是感伤诗中的长篇叙事名作，《新乐府》属讽喻诗，有较强的批判现实精神。C项错误：塞万提斯是西班牙作家，不是意大利小说家。D项正确：《哈姆莱特》写丹麦王子为父复仇，是莎士比亚四大悲剧之一。",
+          "inputSha256": "4b35ecda7b1f3829a932d0dc0db0a8f9b81fda4056f5d21864dc8012ecbf895d",
+          "inputContextSha256": "263041111fb3b20e2bd42c53ef2ceb62b1ae48780b5cf3aa5e1f8c197463bf69",
+          "inputPresentationSha256": "9cc96598f8e385c61fa6db3e34717e33ea07db67387d72c44df3eaaabecf6570",
+          "generatedAt": "2026-10-03T12:03:44.982642+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2010-reading-result.json",
+            "inputPromptSha256": "91930b576979c6eacd028d192850c145beb0c77cb2561e817327727493410b3c",
+            "responseStreamSha256": "1e43b99898ca374332efc774f52c7d373484890b070e3a324768bbd60df3cf78",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "4b35ecda7b1f3829a932d0dc0db0a8f9b81fda4056f5d21864dc8012ecbf895d",
+      "inputContextSha256": "263041111fb3b20e2bd42c53ef2ceb62b1ae48780b5cf3aa5e1f8c197463bf69",
+      "inputPresentationSha256": "9cc96598f8e385c61fa6db3e34717e33ea07db67387d72c44df3eaaabecf6570",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "两全文一致选C，错误在塞万提斯国别，西班牙而非意大利；作品作者、其他三项概括成立。塞万提斯学院出版材料可辅助确认国别与作品。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:10:22.344Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2010-yuyanjichu:5",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2010北京题源：18页重排PDF与Gzywtk、明确校勘，原7页卷未认证",
+          "url": "https://cdn.gaokzx.com/zixunzhan/202403/d77fabda-ee06-45c5-b24e-19357370805a.pdf"
+        },
+        {
+          "type": "adjudication",
+          "title": "2010完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2010.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选A。第一空用滋养，能照应水库之水给苍生万物提供滋润和养分，适用范围比侧重生育养育关系的养育更贴切。第二空先说流到渠里，再比作白色游龙，承接水从水库进入渠道的过程，又自然引出游龙触须四散的比喻。第三空用浸润，写水慢慢渗入、润泽农田，语意柔和且切合灌溉；浸渍更偏向浸泡，放在这里不如浸润恰当。因此三处结合以A最合适，而不能只凭单个词偶尔可用来决定整组选项。",
+          "selectedOptions": [
+            "A"
+          ],
+          "inputSha256": "c862d98ceca76ff1cf833feaf74815f2e93a1f25bb172d1a6a7c2622e6f3f1c0",
+          "inputContextSha256": "2c7d340c158713551ca3c23c8e0efe2257dfb7cb2a7a78028fa0faa02062c249",
+          "inputPresentationSha256": "ad0b30fdd462dec438d89f51a635c64615465fbc5d5cac6d00770917a88f89ee",
+          "generatedAt": "2026-10-03T12:01:37.602992+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2010-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2010-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2010.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\n选A。①处：对象是“苍生万物”，由水来供给养分，用“滋养”更贴切；“养育”多指抚养、教育后代，与“万物”搭配不如“滋养”自然，排除B、C。②处：前文说水库的水是“绿蓝绿蓝的”，按事理应先“流到渠里”，再“变成白色的游龙”，且“游龙”正好引出后文的“触须沿途四散”；“变成白色游龙就一路流到渠里”顺序颠倒，排除B、D。③处：“浸润”指液体逐渐渗入、滋润，适合写水灌溉农田；“浸渍”指用液体浸泡，不合语境。综合以上三处，A项最恰当。",
+          "inputSha256": "c862d98ceca76ff1cf833feaf74815f2e93a1f25bb172d1a6a7c2622e6f3f1c0",
+          "inputContextSha256": "2c7d340c158713551ca3c23c8e0efe2257dfb7cb2a7a78028fa0faa02062c249",
+          "inputPresentationSha256": "ad0b30fdd462dec438d89f51a635c64615465fbc5d5cac6d00770917a88f89ee",
+          "generatedAt": "2026-10-03T12:03:44.982642+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2010-reading-result.json",
+            "inputPromptSha256": "91930b576979c6eacd028d192850c145beb0c77cb2561e817327727493410b3c",
+            "responseStreamSha256": "1e43b99898ca374332efc774f52c7d373484890b070e3a324768bbd60df3cf78",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "c862d98ceca76ff1cf833feaf74815f2e93a1f25bb172d1a6a7c2622e6f3f1c0",
+      "inputContextSha256": "2c7d340c158713551ca3c23c8e0efe2257dfb7cb2a7a78028fa0faa02062c249",
+      "inputPresentationSha256": "ad0b30fdd462dec438d89f51a635c64615465fbc5d5cac6d00770917a88f89ee",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "两全文一致选A，滋养万物、流到渠里后化为游龙、浸润农田共同决定最恰当组合。养育并非绝不能作文学比喻，浸渍亦不一概有贬义；此处比较搭配和衔接，不作绝对词法禁用规则。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:10:22.344Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2010-dazuowen:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2010北京题源：18页重排PDF与Gzywtk、明确校勘，原7页卷未认证",
+          "url": "https://cdn.gaokzx.com/zixunzhan/202403/d77fabda-ee06-45c5-b24e-19357370805a.pdf"
+        },
+        {
+          "type": "adjudication",
+          "title": "2010完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2010.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "仰望星空与脚踏实地\n\n夜里抬头望见星空，人容易想到那些尚未抵达的远方；低头看脚下的路，又会发现每一步都有具体的方向和分量。把这两个动作放在一起，我想到理想与行动的关系：理想使人知道为什么出发，行动使出发不止于一个愿望。一个人既需要能看得远，也需要愿意从眼前做起。\n\n仰望星空，首先意味着不把现有生活当作全部可能。如果只按眼下最方便的方式安排日子，人也许能够少遇见困难，却可能渐渐失去追问的能力。我们为什么学习，想解决什么问题，希望自己成为怎样的人，这些问题未必立即带来分数，却能帮助我们判断时间应当花在哪里。理想不必都是惊天动地的事业，也可以是把一门手艺学好，让身边的人获得更可靠的帮助。只要它使人走出惯性，认真想象一种更好的生活，便有向上看的意义。\n\n然而，愿望说得动听，并不会自动缩短我们与它之间的距离。一个人想写出有力量的文章，需要先学会观察、阅读和修改；想理解复杂的问题，也需要把概念和证据逐一弄清。脚踏实地不是只做容易完成的事情，而是承认目标有实现的条件，愿意在条件尚不具备时持续准备。它要求我们面对自己的不足，也要求我们把宏大的语言换成可以检验的工作。\n\n不妨设想，一组同学希望让学校周围的环境更整洁。他们可以很快写出一份充满热情的倡议，但如果不知道垃圾主要出现在哪里、现有垃圾桶是否便利、保洁人员已经承担了什么工作，倡议便可能停留在纸上。认真走访、记录不同时段的情况，听取工作人员和同学的意见，再选择一个小范围尝试改进，事情才真正开始。那些不起眼的记录和核对，正是愿望接触现实的地方。\n\n在这个过程中，星空并没有变得多余。若失去改善公共环境的初衷，小组也可能只关心拍几张好看的照片、做一份漂亮的展示，甚至把短暂的清扫等同于问题已经解决。持续记得为什么做这件事，才能促使他们追问：新办法是否给别人增加了负担，过了一周还有效吗，哪些人的意见尚未被听见？理想给行动以方向，也给成果以衡量的尺度。\n\n与此同时，行动会反过来修正理想。原先以为只需增加提醒，调查后却发现更需要调整设施；原先追求一次轰动的活动，后来懂得稳定而平常的维护更有价值。这样的改变并非向现实认输，而是对目标有了更深的理解。真正值得坚持的，往往是目标中的价值，而不是最初设想的每一个步骤。愿意依据事实调整路径，才可能使理想逐渐成熟。\n\n因此，脚踏实地也包含停下来思考的能力。如果一项做法已经证明无效，仍因投入过时间而机械重复，不能算作踏实。踏实要求我们诚实地承认结果，区分认真工作与看起来忙碌，必要时重新学习、改变安排。它同样不应被理解为不顾身体和条件的一味苦撑。能够合理休息、寻求合作，才能使努力持续得更久，让人真正承担起所选择的责任。\n\n仰望星空与脚踏实地，也不必被分配成生命中互不相干的两个阶段，仿佛先想好全部未来，随后只管埋头执行。很多时候，我们是在一步步行动中发现更值得追求的事，也是在重新看向远方时，才察觉脚下的路已经偏离方向。抬头与低头交替进行，愿望与经验相互检验，一个人便能既保持开阔的视野，又不轻视细小工作的价值。\n\n星空之远，提醒我们仍有未完成的愿望；土地之实，提醒我们今天就可以承担一件具体的事。让远方照亮眼前，让眼前的努力经得起远方的追问，我们便不必在理想和现实之间空耗。每一次认真观察、每一次诚实修正、每一次愿意继续的行动，都能使仰望获得分量，也使脚下的道路通向更清楚的未来。",
+          "selectedOptions": [],
+          "inputSha256": "c9c831b11083aaa400f1b65cf0c2072cbdba2aa1a3ad6ceeaaabf81914a4984b",
+          "inputContextSha256": "e235a1b2ccb5e03e13c00e634f4baadb81aa90d911fbaff491a06f812d9feb27",
+          "inputPresentationSha256": "eefb2525d699eff70614512299432e5953675f176bc6845510ffca828c203ed3",
+          "generatedAt": "2026-10-03T12:01:37.602992+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2010-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2010-writing-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2010.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【审题立意】题目“仰望星空与脚踏实地”是并列关系的命题作文，题目不能改动。“仰望星空”指理想、信念和对未知与真理的追问，“脚踏实地”指务实、勤勉和一步一步的行动。写作重点在“与”字，即两者的关系：理想为行动指明方向，行动使理想得以实现，二者相辅相成，偏于任何一端都不行。只谈其一或把二者割裂，都属偏题。文体除诗歌外不限，以下示例为议论文，正文约1100字，符合不少于800字的要求。\n\n【示例作文】\n\n仰望星空与脚踏实地\n\n古希腊哲学家泰勒斯夜行时只顾仰头观星，一脚跌进了路边的土坑。女仆笑他：连脚下的路都看不清，还想知道天上的事。两千多年来，这个故事被人反复讲述，有人笑哲学家的迂阔，有人叹女仆的短视。在我看来，这笑声与叹息恰好说出了一个朴素的道理：人既不能没有头顶的星空，也不能没有脚下的土地。\n\n仰望星空，是为了给人生找一个方向。星空遥远，摸不着，也换不来柴米油盐，可是一个从不抬头的人，走得再稳，也可能只是在原地打转。屈原在流放途中写下《天问》，一口气向苍穹发出一百七十多个问题；张衡夜夜观天，才造出了浑天仪。他们仰望的，其实不只是星辰，更是对未知的好奇，对真理的敬畏，对“人应当怎样活着”的追问。有了这样的仰望，人才不至于被眼前的琐屑淹没，一个民族才有了精神的高度。\n\n然而，只有仰望是不够的。星空再美，也不会自己落到手里。通向星空的路，从来都铺在地上。钱学森早就立志让中国人拥有自己的火箭，回国之后，他面对的却是一穷二白的戈壁滩：没有资料，就一页一页地推演；没有先进的设备，就和同事们一遍一遍地手算。袁隆平说自己做过一个“禾下乘凉”的梦，稻子长得比高粱还高，穗子像扫帚那么长。可是为了这个梦，他在水田里弯了几十年的腰，一株一株地寻找，一季一季地试验。人们记住了他们的梦想，却往往忘了，那梦想是被无数个平淡甚至枯燥的日子托起来的。\n\n由此可见，仰望星空与脚踏实地并不是非此即彼的选择，而是一件事的两面。没有星空的指引，踏实容易变成麻木，日复一日，只是低头拉磨；没有大地的支撑，仰望又容易变成空想，说得天花乱坠，终究一事无成。荀子说：“不积跬步，无以至千里。”千里是星空，跬步是大地；心中装着千里，脚下才肯一步一步地走，而每走一步，千里便近了一分。\n\n反观我们身边，偏于一端的人并不少见。有的同学谈起理想滔滔不绝，要当科学家，要改变世界，可一道数学题稍难一些便扔下笔去；也有的同学终日埋在题海里，分数不低，被问到将来想做什么，却只茫然地摇头。前者是只看天不看路，后者是只看路不看天。我自己也曾在日记本的扉页上写下宏大的计划，三天之后便再没有翻开；后来我学着把计划拆成每天背二十个单词、读十页书，一个学期下来，才第一次尝到“说到做到”的踏实滋味。原来理想并不怕远，怕的是不肯迈出眼前的这一步。\n\n夜深的时候，我喜欢在阳台上站一会儿。城市的灯火太亮，只看得见寥寥几颗星，但它们一直都在那里。看过了星星，我回到书桌前，继续演算那道没有做完的题。我想，这大概就是一个中学生所能做到的仰望与踏实：让目光望得远一些，让脚步踩得实一些。头顶有星空，心中便有方向；脚下有大地，梦想才有归处。",
+          "inputSha256": "c9c831b11083aaa400f1b65cf0c2072cbdba2aa1a3ad6ceeaaabf81914a4984b",
+          "inputContextSha256": "e235a1b2ccb5e03e13c00e634f4baadb81aa90d911fbaff491a06f812d9feb27",
+          "inputPresentationSha256": "eefb2525d699eff70614512299432e5953675f176bc6845510ffca828c203ed3",
+          "generatedAt": "2026-10-03T12:05:14.679544+00:00",
+          "uncertainties": [
+            "作文题没有唯一答案，以上为原创示例，仅供参考，实际得分取决于阅卷标准。",
+            "文中事例（泰勒斯观星落坑、《天问》的问题数量、钱学森与袁隆平的事迹）凭记忆概述，未经核查，细节表述可能与史料略有出入。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2010-writing-result.json",
+            "inputPromptSha256": "779da3d911446a4a6dc3deca9bc6f26820139be4929b1b2fb107b8eb0465bb8d",
+            "responseStreamSha256": "f75c68a01443d1944ac4e7e9ae9ae16dcb5981519f048fbe41c8239be59dc81b",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "c9c831b11083aaa400f1b65cf0c2072cbdba2aa1a3ad6ceeaaabf81914a4984b",
+      "inputContextSha256": "e235a1b2ccb5e03e13c00e634f4baadb81aa90d911fbaff491a06f812d9feb27",
+      "inputPresentationSha256": "eefb2525d699eff70614512299432e5953675f176bc6845510ffca828c203ed3",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "双方均完整扣题，主张目标与行动相互支持，实测正文均超过800字。根版校园环境调查明确为设想，不含虚构名人事实，作为默认版。Claude首段泰勒斯故事应称古代传述/哲学寓言，不作亲历实录；井/坑译法和夜行情境不认证。屈原流放中写《天问》的具体时间及问题数量、张衡夜夜观天才造仪的过程、钱学森回国即面对戈壁且没有资料等细节均不能凭记忆断言。国家航天局/钱学森图书馆支持1956年国防部五院成立的制度事实，不能支持上述戏剧化场景；博物馆索引只支持张衡研制水运仪器。袁隆平本人讲话证实禾下乘凉梦，但不同时认证文中所有稻株尺寸及劳动细节。日记、背词、阳台看星等均是虚构示例，不冒作用户或模型亲历。原模型完整保留，事实限定须随展示带出。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:10:22.344Z",
+      "currentVersion": "gpt_6_astra"
     }
   ],
   "releaseBlockers": [
@@ -37746,7 +39107,15 @@
         "2010-yuyanjichu",
         "2010-dazuowen"
       ],
-      "detail": "仅有自称原7页的18页重排PDF（题面1—8，答案9—18）与Gzywtk四页转载；原7页卷、答题卡、独立出版链与准确原卷印刷仍未取得。八题面页全目视不能据此认证原卷。 宋清传：PDF有世之言徒曰市道交而旧库/Gzy无，求者益广/求者益众其应益广异文，旧附加蚩注非所见原题注，亲与交标点和疾病庀疡等未定；不把单一转载缺句或语义推断静默定稿。语言1朔/溯、诗徂晖/辉和默写悟/晤等异文保留证据。 海棠花旧库/Gzy长版与PDF短版有整段删改和高崖/高屋等差异，保留旧长版，仅局部明示勘误。原18划线依PDF扩大至可是现实…过了六年；正文它们采用旧题19引文，PDF他们异文保留。作者文本转载仅佐证引号及译秦名非误字，未作为考试删改版认证。 漏收原10宋清传延伸（不少于200字，10分）与原11苏轼仁说两划线区域断句（5分），分离保存2来源记录，不入旧612分母。仁说采用于中/不修/不期中，PDF与中及Gzy布修/不其中属异文，参考苏轼原文转录作明示校勘。 全部2010阅读与作文保守登记参考暴露：搜索出现参考解析，PDF9—18页提取的头部有答案与作文片段，本轮又读到历史AI字段。后续不得宣称盲答；仍要求本人20阅读含2补录+1作文完整冻结后才有限Claude。延伸各≥200字，主作文≥800字。本来源步骤0新答案0提供商调用。 全部旧ID/qIndex/score/AI保留。旧古文语言null分值与真实3分、合并题小分、补录历史映射未解决，不改旧成绩或学生记录。原始来源、标记、全题覆盖、早期v3、消费者投影、正式build、注册publisher、真实验收和status等全部既有发布门禁继续保留。 非连中的历史科学概述只作为原文理解，不认证为无条件当代物理结论；语言神仙茶错误病句不能当作健康建议。虚构范文必须明确示例性质。"
+      "detail": "仅有自称原7页的18页重排PDF（题面1—8，答案9—18）与Gzywtk四页转载；原7页卷、答题卡、独立出版链与准确原卷印刷仍未取得。八题面页全目视不能据此认证原卷。 宋清传：PDF有世之言徒曰市道交而旧库/Gzy无，求者益广/求者益众其应益广异文，旧附加蚩注非所见原题注，亲与交标点和疾病庀疡等未定；不把单一转载缺句或语义推断静默定稿。语言1朔/溯、诗徂晖/辉和默写悟/晤等异文保留证据。 海棠花旧库/Gzy长版与PDF短版有整段删改和高崖/高屋等差异，保留旧长版，仅局部明示勘误。原18划线依PDF扩大至可是现实…过了六年；正文它们采用旧题19引文，PDF他们异文保留。作者文本转载仅佐证引号及译秦名非误字，未作为考试删改版认证。 漏收原10宋清传延伸（不少于200字，10分）与原11苏轼仁说两划线区域断句（5分），分离保存2来源记录，不入旧612分母。仁说采用于中/不修/不期中，PDF与中及Gzy布修/不其中属异文，参考苏轼原文转录作明示校勘。 全部2010阅读与作文保守登记参考暴露：搜索出现参考解析，PDF9—18页提取的头部有答案与作文片段，本轮又读到历史AI字段。后续不得宣称盲答；仍要求本人20阅读含2补录+1作文完整冻结后才有限Claude。延伸各≥200字，主作文≥800字。本来源步骤0新答案0提供商调用。 全部旧ID/qIndex/score/AI保留。旧古文语言null分值与真实3分、合并题小分、补录历史映射未解决，不改旧成绩或学生记录。原始来源、标记、全题覆盖、早期v3、消费者投影、正式build、注册publisher、真实验收和status等全部既有发布门禁继续保留。 非连中的历史科学概述只作为原文理解，不认证为无条件当代物理结论；语言神仙茶错误病句不能当作健康建议。虚构范文必须明确示例性质。 All21root full bodies frozen before sequential PLAN25. Both batches complete, exited0,actualopus5.5/high,total0.3929112USD. All21fullresponses individuallyread/adjudicated; allrootinputreferenceexposure recorded. Claude source inference, scoring assurance and unsupported historical details explicitly qualified, originaloutputs preserved; root default. Extensions root326/358,Claude228/350Han(combined宋清example+reflection);writing1244/947Han. Separate2supplement:1reviewed/1disputed,notintegrated. Originalpaper/printing,long-shortvariants,nullscores/partialscorecompatibility,history,mapping,allconsumer/release/acceptancegates remain open.",
+      "detailHistory": [
+        {
+          "at": "2026-10-03T12:10:22.344Z",
+          "detail": "仅有自称原7页的18页重排PDF（题面1—8，答案9—18）与Gzywtk四页转载；原7页卷、答题卡、独立出版链与准确原卷印刷仍未取得。八题面页全目视不能据此认证原卷。 宋清传：PDF有世之言徒曰市道交而旧库/Gzy无，求者益广/求者益众其应益广异文，旧附加蚩注非所见原题注，亲与交标点和疾病庀疡等未定；不把单一转载缺句或语义推断静默定稿。语言1朔/溯、诗徂晖/辉和默写悟/晤等异文保留证据。 海棠花旧库/Gzy长版与PDF短版有整段删改和高崖/高屋等差异，保留旧长版，仅局部明示勘误。原18划线依PDF扩大至可是现实…过了六年；正文它们采用旧题19引文，PDF他们异文保留。作者文本转载仅佐证引号及译秦名非误字，未作为考试删改版认证。 漏收原10宋清传延伸（不少于200字，10分）与原11苏轼仁说两划线区域断句（5分），分离保存2来源记录，不入旧612分母。仁说采用于中/不修/不期中，PDF与中及Gzy布修/不其中属异文，参考苏轼原文转录作明示校勘。 全部2010阅读与作文保守登记参考暴露：搜索出现参考解析，PDF9—18页提取的头部有答案与作文片段，本轮又读到历史AI字段。后续不得宣称盲答；仍要求本人20阅读含2补录+1作文完整冻结后才有限Claude。延伸各≥200字，主作文≥800字。本来源步骤0新答案0提供商调用。 全部旧ID/qIndex/score/AI保留。旧古文语言null分值与真实3分、合并题小分、补录历史映射未解决，不改旧成绩或学生记录。原始来源、标记、全题覆盖、早期v3、消费者投影、正式build、注册publisher、真实验收和status等全部既有发布门禁继续保留。 非连中的历史科学概述只作为原文理解，不认证为无条件当代物理结论；语言神仙茶错误病句不能当作健康建议。虚构范文必须明确示例性质。",
+          "evidence": "answers-six-sites-20261002/REVIEW-2010-SOURCE.md"
+        }
+      ],
+      "evidence": "answers-six-sites-20261002/REVIEW-2010.md"
     }
   ]
 }
