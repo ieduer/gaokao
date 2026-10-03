@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261002-reviewed-292-qualified-2017",
+  "revision": "20261003-reviewed-314-qualified-2016",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -1984,13 +1984,15 @@
     },
     {
       "id": "2016-guwen:2",
-      "inputSha256": "2a062a5d53834b4079503f1c31c8abfe0759746136eab86b3a067a437858d0de",
-      "status": "draft",
+      "inputSha256": "e666694fcbb21a2c6040aa1ef61e3373dc376eaef3805f5b1cb9baa79b3bc197",
+      "status": "reviewed",
       "kind": "single_choice",
-      "correctOptions": [],
-      "explanation": "2016原卷题面与标记修复后的待重审输入；旧输入及模型原文保存在history，未为新输入伪造证明。",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "B。第一其为领属代词，第二其表祈使语气，可译还是/应当；之为到往，以为用，果为果然，须依据完整句法。题面B原印加点其，不是之；字典列义不替代本句语境判断。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:03:23.208Z",
+      "reviewedAt": "2026-10-03T08:58:35.311Z",
       "sources": [
         {
           "type": "source_material",
@@ -1999,11 +2001,88 @@
         {
           "type": "dictionary_revision",
           "title": "文言站2026-09-16-r3词典校订，保留争议"
+        },
+        {
+          "type": "public_exam_scan",
+          "title": "2016北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://slide.edu.sina.com.cn/slide_11_78377_35062.html"
+        },
+        {
+          "type": "dictionary",
+          "title": "汉典其：代词与祈使语气",
+          "url": "https://zdic.net/hans/%E5%85%B6"
+        },
+        {
+          "type": "dictionary",
+          "title": "汉典之：到往",
+          "url": "https://zdic.net/hans/%E4%B9%8B"
+        },
+        {
+          "type": "dictionary",
+          "title": "汉典以",
+          "url": "https://zdic.net/hans/%E4%BB%A5"
+        },
+        {
+          "type": "dictionary",
+          "title": "汉典果",
+          "url": "https://zdic.net/hans/%E6%9E%9C"
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {},
-      "inputContextSha256": "1f2b6f6ea1a3429c1049dd2b4867050c0b55acfbea14f36de78a7df518811c86",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "答案：B。第一句‘其人民习战斗之道’的其为代词，指楚国的；第二句‘公其令人贵买衡山之械器’的其为语气副词，表示劝令或商量，可译为‘您还是／不妨派人……’，不是指代。A两之均是动词，到、往；C两果均是副词，果然；D两以均为介词，用、拿，以重宝买鹿和以鹿换钱的手段不同，但以的语法功能一致。本题B组印刷加点是其，不能按旧误标之字判题。",
+          "inputSha256": "e666694fcbb21a2c6040aa1ef61e3373dc376eaef3805f5b1cb9baa79b3bc197",
+          "inputContextSha256": "a61cb4290ee5886e8c7b62cc13d13fb2b4ecd788fa8de19f4d053ec08d8fe773",
+          "inputPresentationSha256": "6f04cc6e6ed20093d8c87c3b4c5bf656590e32ef83455e60f13972d2b6cc379a",
+          "generatedAt": "2026-10-03T08:49:13.473289+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2016-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2016-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2016-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "B。第一其为领属代词，第二其表祈使语气，可译还是/应当；之为到往，以为用，果为果然，须依据完整句法。题面B原印加点其，不是之；字典列义不替代本句语境判断。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 来源复核后修订",
+          "text": "答案：B。\n选B。A两个“之”都是动词，到、往。B前一个“其”是代词，指楚国的；后一个“其”是语气副词，表示希望、祈使，可译为“还是、可要”，意义和用法都不同。C两个“果”都是副词，果然。D两个“以”都是介词，用、凭借（用贵重的钱财买；凭借活鹿积存钱币）。",
+          "inputSha256": "e666694fcbb21a2c6040aa1ef61e3373dc376eaef3805f5b1cb9baa79b3bc197",
+          "inputContextSha256": "a61cb4290ee5886e8c7b62cc13d13fb2b4ecd788fa8de19f4d053ec08d8fe773",
+          "inputPresentationSha256": "6f04cc6e6ed20093d8c87c3b4c5bf656590e32ef83455e60f13972d2b6cc379a",
+          "generatedAt": "2026-10-03T08:51:13.793173+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "B。第一其为领属代词，第二其表祈使语气，可译还是/应当；之为到往，以为用，果为果然，须依据完整句法。题面B原印加点其，不是之；字典列义不替代本句语境判断。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2016-reading-result.json",
+            "inputPromptSha256": "c7a22789227ee73a9268c76f6e90029895eb3e7df214ff5e943d6c41d76de52c",
+            "responseStreamSha256": "9b283bcb7ce95ca85dc25a76330be3e3020b7ed84e62ecd469f75f0dfe697eda",
+            "stage": "source_review"
+          }
+        }
+      },
+      "inputContextSha256": "a61cb4290ee5886e8c7b62cc13d13fb2b4ecd788fa8de19f4d053ec08d8fe773",
       "history": [
         {
           "source": {
@@ -2160,9 +2239,121 @@
             },
             "inputContextSha256": "6a15e80247a589a265b98e29eef7bcd95ab227ab6908e0c71324c63ca1e3030a"
           }
+        },
+        {
+          "source": {
+            "id": "2016-guwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "桓公问于管子曰：“楚者，山东之强国也，其人民习战斗之道。举兵伐之，恐力不能过。兵弊于楚，功不成于周，为之奈何？”管子对曰：“即以战斗之道与之矣。”公曰：“何谓也？”管子对曰：“公贵买其鹿。”\n\n桓公即使人之楚买生鹿。管子即令桓公告民，藏谷十之六。令左司马伯公将白徒而铸钱于庄山，令中大夫王邑载钱二千万，求生鹿于楚。楚王闻之，告其相曰：“彼金钱，人之所重也，国之所以存，明主之所以赏有功。禽兽者，群害也，明王之所弃逐也。今齐以其重宝贵买吾群害，则是楚之福也，天且以齐私楚也。子告吾民，急求生鹿，以尽齐之宝。”楚民即释其耕农而田鹿。管子告楚之贾人曰：“子为我致生鹿，二十赐子金百斤。什至而金千斤也。”则是楚不赋于民而财用足也。\n\n楚之男女皆居外求鹿。隰朋【1】教民藏谷五倍，楚以生鹿藏钱五倍。管子曰：“楚可下矣。”公曰：“奈何？”管子对曰：“楚钱五倍，其君且自得而求谷。”桓公曰：“诺。”因令人闭关，不与楚通使。楚王果自得而求谷，谷不可三月而得也，楚籴石四百，齐因令人载粟处芊【2】之南，楚人降齐者十分之四。三年而楚服。\n\n桓公问于管子曰：“吾欲制衡山【3】之术，为之奈何？”管子对曰：“公其令人贵买衡山之械器。燕、代必从公而买之，秦、赵闻之，必与公争之。衡山之械器必倍其价，天下争之，衡山械器必什倍以上。”公曰：“诺。”因令人之衡山求买械器，不敢辩其价。齐修械器【4】于衡山十月，燕、代闻之，果令人之衡山求买械器，燕、代修三月，秦国闻之，果令人之衡山求买械器。衡山之君告其相曰：“天下争吾械器，令其价再什以上。”衡山之民释其本，修械器之巧。齐即令隰朋漕粟于赵。赵粟石十五，隰朋取之石五十。天下闻之，载粟而之齐。齐修械器十七月，修食五月，即闭关不与衡山通使。燕、代、秦即引其使而归。衡山械器尽，鲁削衡山之南，齐削衡山之北。内自量无械器以应二敌，即奉国而归齐矣。"
+              }
+            ],
+            "topic": "二、本大题共6小题，共24分。\n阅读下面文言文完成9--14题",
+            "annotation": "（取材于《管子·轻重》）\n注释：【1】隰朋：春秋时齐国大夫。【2】芊：地名，位于齐楚接壤处。【3】衡山：齐鲁之间的小国。【4】修械器：意思是施行购买兵器的策略。",
+            "annotations": [
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 102,
+                "end": 103,
+                "anchor": "之"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 701,
+                "end": 702,
+                "anchor": "之"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 19,
+                "end": 20,
+                "anchor": "其"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 493,
+                "end": 494,
+                "anchor": "其"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 406,
+                "end": 407,
+                "anchor": "果"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 595,
+                "end": 596,
+                "anchor": "果"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 211,
+                "end": 212,
+                "anchor": "以"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 336,
+                "end": 337,
+                "anchor": "以"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 2,
+                "id": "q2",
+                "text": "10．下列各组语句中加点词的意义和用法，不同的一项是（3分）\nA．使人*之*楚买生鹿\n载粟而*之*齐\nB．*其*人民习战斗之道\n公*其*令人贵买衡山之械器\nC．楚王*果*自得而求谷\n*果*令人之衡山求买械器\nD．今齐*以*其重宝贵买吾群害\n楚*以*生鹿藏钱五倍",
+                "score": 3
+              }
+            ]
+          },
+          "review": {
+            "id": "2016-guwen:2",
+            "inputSha256": "2a062a5d53834b4079503f1c31c8abfe0759746136eab86b3a067a437858d0de",
+            "status": "draft",
+            "kind": "single_choice",
+            "correctOptions": [],
+            "explanation": "2016原卷题面与标记修复后的待重审输入；旧输入及模型原文保存在history，未为新输入伪造证明。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:03:23.208Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内完整题目及相关材料"
+              },
+              {
+                "type": "dictionary_revision",
+                "title": "文言站2026-09-16-r3词典校订，保留争议"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {},
+            "inputContextSha256": "1f2b6f6ea1a3429c1049dd2b4867050c0b55acfbea14f36de78a7df518811c86",
+            "inputPresentationSha256": "868f1a3e794803f38e7de83c14d89071def26cc64d66642664f3d38317d4b9dc"
+          }
         }
       ],
-      "inputPresentationSha256": "868f1a3e794803f38e7de83c14d89071def26cc64d66642664f3d38317d4b9dc"
+      "inputPresentationSha256": "6f04cc6e6ed20093d8c87c3b4c5bf656590e32ef83455e60f13972d2b6cc379a"
     },
     {
       "id": "2015-guwen:2",
@@ -9540,20 +9731,83 @@
     {
       "id": "2016-moxie:1",
       "inputSha256": "2ce442359d13949b480133b586c0e93f8db4d4d2b39a6bbcdb746cccd5884419",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "open",
       "correctOptions": [],
-      "explanation": "2016原卷题面与标记修复后的待重审输入；旧输入及模型原文保存在history，未为新输入伪造证明。",
+      "explanation": "八空逐一作答。土地平旷、屋舍俨然、阡陌交通、鸡犬相闻；楼船夜雪瓜洲渡、铁马秋风大散关。登高默认提供颔联/颈联；Claude另给首尾联，四联确都有对仗，不能当成文学错误，但本题两联的实际阅卷接受范围未获正式细则，不能擅自扩大自动接受集。八空/六分分配仍阻断。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "reviewedAt": "2026-10-03T08:58:35.311Z",
       "sources": [
         {
           "type": "source_material",
           "title": "站内2016北京卷原题及完整材料"
+        },
+        {
+          "type": "public_exam_scan",
+          "title": "2016北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://slide.edu.sina.com.cn/slide_11_78377_35062.html"
+        },
+        {
+          "type": "source_text",
+          "title": "杜甫登高全文",
+          "url": "https://zh.wikisource.org/zh/%E7%99%BB%E9%AB%98"
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {},
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "①土地平旷，屋舍俨然；阡陌交通，鸡犬相闻。\n②楼船夜雪瓜洲渡，铁马秋风大散关。\n③无边落木萧萧下，不尽长江滚滚来。\n第③组也可写：万里悲秋常作客，百年多病独登台。两种完整对仗联任选一联即可，不能把两联各取一句拼接。注意俨、阡陌、瓜洲、萧萧、作客等字。第①组共有四个空；全题八空而标6分，不能擅定每空1分或据此改动原有总分，须另核评分分配。",
+          "inputSha256": "2ce442359d13949b480133b586c0e93f8db4d4d2b39a6bbcdb746cccd5884419",
+          "inputContextSha256": "fc99fe6ed5d2c51341bc060e9e4b9a6bd5c3597b79367707c522030a53e89005",
+          "inputPresentationSha256": "0245502407382675e9c2c022db5e28628db8e58cecee010e0590c57bc36e90f9",
+          "generatedAt": "2026-10-03T08:49:13.473289+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2016-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2016-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2016-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "八空逐一作答。土地平旷、屋舍俨然、阡陌交通、鸡犬相闻；楼船夜雪瓜洲渡、铁马秋风大散关。登高默认提供颔联/颈联；Claude另给首尾联，四联确都有对仗，不能当成文学错误，但本题两联的实际阅卷接受范围未获正式细则，不能擅自扩大自动接受集。八空/六分分配仍阻断。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 来源复核后修订",
+          "text": "①土地平旷，屋舍俨然；阡陌交通，鸡犬相闻。\n②楼船夜雪瓜洲渡，铁马秋风大散关。\n③无边落木萧萧下，不尽长江滚滚来。（也可写“万里悲秋常作客，百年多病独登台”，或“风急天高猿啸哀，渚清沙白鸟飞回”，或“艰难苦恨繁霜鬓，潦倒新停浊酒杯”，任写一联即可。）",
+          "inputSha256": "2ce442359d13949b480133b586c0e93f8db4d4d2b39a6bbcdb746cccd5884419",
+          "inputContextSha256": "fc99fe6ed5d2c51341bc060e9e4b9a6bd5c3597b79367707c522030a53e89005",
+          "inputPresentationSha256": "0245502407382675e9c2c022db5e28628db8e58cecee010e0590c57bc36e90f9",
+          "generatedAt": "2026-10-03T08:51:13.793173+00:00",
+          "uncertainties": [
+            "第②空也有人填“早岁那知世事艰，中原北望气如山”，但直接回忆抗金战事的是“楼船”一联，我取后者。",
+            "题干说《登高》“也有两联是对仗的”，实际上此诗四联都对仗；通常以中间两联为最稳妥的答案。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "八空逐一作答。土地平旷、屋舍俨然、阡陌交通、鸡犬相闻；楼船夜雪瓜洲渡、铁马秋风大散关。登高默认提供颔联/颈联；Claude另给首尾联，四联确都有对仗，不能当成文学错误，但本题两联的实际阅卷接受范围未获正式细则，不能擅自扩大自动接受集。八空/六分分配仍阻断。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2016-reading-result.json",
+            "inputPromptSha256": "c7a22789227ee73a9268c76f6e90029895eb3e7df214ff5e943d6c41d76de52c",
+            "responseStreamSha256": "9b283bcb7ce95ca85dc25a76330be3e3020b7ed84e62ecd469f75f0dfe697eda",
+            "stage": "source_review"
+          }
+        }
+      },
       "inputContextSha256": "fc99fe6ed5d2c51341bc060e9e4b9a6bd5c3597b79367707c522030a53e89005",
       "inputPresentationSha256": "0245502407382675e9c2c022db5e28628db8e58cecee010e0590c57bc36e90f9",
       "history": [
@@ -26709,6 +26963,1742 @@
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T06:50:26.137Z",
       "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2016-feilian:1",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2016北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://slide.edu.sina.com.cn/slide_11_78377_35062.html"
+        },
+        {
+          "type": "dated_fact_check",
+          "title": "美国海军Trieste设计建造与购入史",
+          "url": "https://www.navy.mil/Press-Office/News-Stories/display-news/Article/2259907/us-navy-submarine-history-makes-deep-stem-impact-on-students/"
+        },
+        {
+          "type": "dated_fact_check",
+          "title": "WHOI National Deep Submergence Facility Alvin6500升级",
+          "url": "https://ndsf.whoi.edu/alvin/"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "答案：D。A对应我国成为第五个掌握大深度载人深潜技术的国家；B对应首次获得7000米深处动物影像和样本；C对应首次搭载科学家取得大量样品，从而具备深海实地科研能力。D把若干指标领先扩大为研发能力和水平‘全面领先’，材料不支持。与新阿尔文号相比，两者工作时间、科学负载、操纵和悬停能力仍相同或相近，不能以局部优势推出全面领先。",
+          "inputSha256": "e47cca54d0efbfd1f4437d65038dd3641b2373a5dd2666ca44536bac67cef42e",
+          "inputContextSha256": "6a0ae5f9fb2395e42ccac506acbdde3c25d70d65806fb15a836994a5237149e5",
+          "inputPresentationSha256": "288703da8ef712e6744601b2fabd75055c4db2b509b6ffbe07f1e8e291b836ab",
+          "generatedAt": "2026-10-03T08:49:13.473289+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2016-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2016-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2016-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "D。材料已有取样等作业，不能说最初仅能探测而不能作业。B把这一海域7000米范围略有扩张，讲解须保留原限定，不当作全球首次。材料的历史时点与计划不替代当前科技实绩。 史实另注：Trieste为瑞士设计、意大利建造，1958年由美国海军购入；Alvin的6500米升级最终在2022年完成，不能把2016题源的6500米新阿尔文比较当作当年已认证实绩。此注不改动阅读题原材料或重写原模型回答。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。A正确：材料一说“蛟龙”号使我国成为继美、法、俄、日之后第五个掌握大深度载人深潜技术的国家。B基本正确：2012年7000米级海试“首次获取了这一海域7000米深度的动物影像和样本”。C正确：2013年首次搭载科学家下潜，“标志着我国已经具备了进行深海实地科学考察和研究的能力”。D错误：材料一只说“蛟龙”号与“新阿尔文”号相比，工作时间、有效负载“相同”“相当”，操纵和悬停“相近”，仅在下潜深度、自动驾驶、水声通信等方面占优，谈不上“全面领先其他发达国家”。",
+          "inputSha256": "e47cca54d0efbfd1f4437d65038dd3641b2373a5dd2666ca44536bac67cef42e",
+          "inputContextSha256": "6a0ae5f9fb2395e42ccac506acbdde3c25d70d65806fb15a836994a5237149e5",
+          "inputPresentationSha256": "288703da8ef712e6744601b2fabd75055c4db2b509b6ffbe07f1e8e291b836ab",
+          "generatedAt": "2026-10-03T08:51:13.793173+00:00",
+          "uncertainties": [
+            "B项把原文“这一海域7000米深度”概括为“7000米深海”，略有扩大，但D项错误更明显。"
+          ],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "D。材料已有取样等作业，不能说最初仅能探测而不能作业。B把这一海域7000米范围略有扩张，讲解须保留原限定，不当作全球首次。材料的历史时点与计划不替代当前科技实绩。 史实另注：Trieste为瑞士设计、意大利建造，1958年由美国海军购入；Alvin的6500米升级最终在2022年完成，不能把2016题源的6500米新阿尔文比较当作当年已认证实绩。此注不改动阅读题原材料或重写原模型回答。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2016-reading-result.json",
+            "inputPromptSha256": "c7a22789227ee73a9268c76f6e90029895eb3e7df214ff5e943d6c41d76de52c",
+            "responseStreamSha256": "9b283bcb7ce95ca85dc25a76330be3e3020b7ed84e62ecd469f75f0dfe697eda",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "e47cca54d0efbfd1f4437d65038dd3641b2373a5dd2666ca44536bac67cef42e",
+      "inputContextSha256": "6a0ae5f9fb2395e42ccac506acbdde3c25d70d65806fb15a836994a5237149e5",
+      "inputPresentationSha256": "288703da8ef712e6744601b2fabd75055c4db2b509b6ffbe07f1e8e291b836ab",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "D。材料已有取样等作业，不能说最初仅能探测而不能作业。B把这一海域7000米范围略有扩张，讲解须保留原限定，不当作全球首次。材料的历史时点与计划不替代当前科技实绩。 史实另注：Trieste为瑞士设计、意大利建造，1958年由美国海军购入；Alvin的6500米升级最终在2022年完成，不能把2016题源的6500米新阿尔文比较当作当年已认证实绩。此注不改动阅读题原材料或重写原模型回答。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T08:58:35.311Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2016-feilian:2",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2016北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://slide.edu.sina.com.cn/slide_11_78377_35062.html"
+        },
+        {
+          "type": "dated_fact_check",
+          "title": "美国海军Trieste设计建造与购入史",
+          "url": "https://www.navy.mil/Press-Office/News-Stories/display-news/Article/2259907/us-navy-submarine-history-makes-deep-stem-impact-on-students/"
+        },
+        {
+          "type": "dated_fact_check",
+          "title": "WHOI National Deep Submergence Facility Alvin6500升级",
+          "url": "https://ndsf.whoi.edu/alvin/"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "答案：D。材料直接说明微地形地貌探测能力是新阿尔文号所不具备的，故是本题比较范围内蛟龙号的独有能力。A水下工作时间极限相同，B悬停能力相近；C是自动驾驶水平略胜一筹，表示双方都有这种能力，并非蛟龙独有。‘独有’只限材料中两种潜水器的比较，不能扩大为全世界只有蛟龙具备。",
+          "inputSha256": "f3421486c55789b2d9a3cd6769b4da30cc2a9d7c070c480026117004ccab5f60",
+          "inputContextSha256": "74bc373f09796e6f5e4dcd3e7af74bef74e0200279229b54260500c0b659a265",
+          "inputPresentationSha256": "d18ea411182715f95caf156596b8ecf70d3cc37d797c3ac52d7a78025bd0123a",
+          "generatedAt": "2026-10-03T08:49:13.473289+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2016-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2016-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2016-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "D。微地形地貌探测能力是材料列出的新阿尔文所不具备的能力；独有限于这两种潜水器比较，不能推广为世界唯一。自动驾驶略胜一筹不等于独有。 史实另注：Trieste为瑞士设计、意大利建造，1958年由美国海军购入；Alvin的6500米升级最终在2022年完成，不能把2016题源的6500米新阿尔文比较当作当年已认证实绩。此注不改动阅读题原材料或重写原模型回答。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。材料一末段说“水声通信传输图像的能力和微地形地貌的探测能力更是‘新阿尔文’号所不具备的”，所以探测海底微地形地貌是“蛟龙”号独有的能力。A水下工作时间极限两者“相同”；B悬停作业能力两者“相近”；C自动驾驶只是“蛟龙”号“略胜一筹”，说明对方也有这一能力，都不是独有。",
+          "inputSha256": "f3421486c55789b2d9a3cd6769b4da30cc2a9d7c070c480026117004ccab5f60",
+          "inputContextSha256": "74bc373f09796e6f5e4dcd3e7af74bef74e0200279229b54260500c0b659a265",
+          "inputPresentationSha256": "d18ea411182715f95caf156596b8ecf70d3cc37d797c3ac52d7a78025bd0123a",
+          "generatedAt": "2026-10-03T08:51:13.793173+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "D。微地形地貌探测能力是材料列出的新阿尔文所不具备的能力；独有限于这两种潜水器比较，不能推广为世界唯一。自动驾驶略胜一筹不等于独有。 史实另注：Trieste为瑞士设计、意大利建造，1958年由美国海军购入；Alvin的6500米升级最终在2022年完成，不能把2016题源的6500米新阿尔文比较当作当年已认证实绩。此注不改动阅读题原材料或重写原模型回答。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2016-reading-result.json",
+            "inputPromptSha256": "c7a22789227ee73a9268c76f6e90029895eb3e7df214ff5e943d6c41d76de52c",
+            "responseStreamSha256": "9b283bcb7ce95ca85dc25a76330be3e3020b7ed84e62ecd469f75f0dfe697eda",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "f3421486c55789b2d9a3cd6769b4da30cc2a9d7c070c480026117004ccab5f60",
+      "inputContextSha256": "74bc373f09796e6f5e4dcd3e7af74bef74e0200279229b54260500c0b659a265",
+      "inputPresentationSha256": "d18ea411182715f95caf156596b8ecf70d3cc37d797c3ac52d7a78025bd0123a",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "D。微地形地貌探测能力是材料列出的新阿尔文所不具备的能力；独有限于这两种潜水器比较，不能推广为世界唯一。自动驾驶略胜一筹不等于独有。 史实另注：Trieste为瑞士设计、意大利建造，1958年由美国海军购入；Alvin的6500米升级最终在2022年完成，不能把2016题源的6500米新阿尔文比较当作当年已认证实绩。此注不改动阅读题原材料或重写原模型回答。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T08:58:35.311Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2016-feilian:3",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2016北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://slide.edu.sina.com.cn/slide_11_78377_35062.html"
+        },
+        {
+          "type": "dated_fact_check",
+          "title": "ISRO载人计划2018年提出，不支持2016自主载人能力陈述",
+          "url": "https://www.isro.gov.in/ISRO_EN/Message%20from%20Chairman%27s%20desk.html"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "通常命题意图下选A，但题目措辞有边界。B对应美国所说的科技竞赛、领先地位，C对应4000多米及未来7000米下潜深度，D对应科学调查、资源利用以及潜在军事用途。媒体并未把可搭载人数等载人性能作为单独比较指标，按这一理解A最符合预期。可是材料确实说蛟龙将是少数能把人类带到6500米深海的潜水器之一；若‘载人能力’理解为深海载人的能力，A也有文本依据。因此不能把‘材料完全没有关注载人能力’说成无条件事实，应保留这一表述歧义。材料中的印度航天陈述另属事实核验问题，不应用来替换阅读题所给材料。",
+          "inputSha256": "aab3d839219f99607fbfdfc2731a8e1f5e32436e3c34d6c6475f83f0ce102db1",
+          "inputContextSha256": "3b55c884ea41f7c5b4173ff06c267e3a4fc01945d1183a9a3efc3cb1bc4cb0fc",
+          "inputPresentationSha256": "d386e659fc3bc4b505df7220df43e6fa2de90f1b20127c782ad3f9b9529250ba",
+          "generatedAt": "2026-10-03T08:49:13.473289+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2016-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2016-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2016-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "disputed_wording",
+            "note": "争议。两模型均按通常命题意图选A，但载人能力未限定为搭载人数；材料确有能把人带到6500米深海的表述。若取载人深潜能力的宽义，A亦有文本依据。保留两份选A原答，correctOptions置空，不提供确定性判分键。Claude称载人能力只出现在航天部分过于绝对；不能以两模型一致消除题意歧义。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\n选A。B科技竞争力：美国网站称美国领先地位将被超越，《华尔街日报》称这是“关系重大的科技竞赛”，日本媒体称这是“技术竞争”。C下潜深度：英国媒体关注下潜7000米能否成功、能否把人带到6500米深海，并与日、俄潜水器比较。D深潜意图：外媒议论其商业、科学、军事意义，谈到利用金属矿藏、切断海底电缆、回收武器等。A载人能力：材料二中“载人能力”只在说载人航天时出现，外媒并未把“蛟龙”号能否载人作为关注点，载人只是既定前提。",
+          "inputSha256": "aab3d839219f99607fbfdfc2731a8e1f5e32436e3c34d6c6475f83f0ce102db1",
+          "inputContextSha256": "3b55c884ea41f7c5b4173ff06c267e3a4fc01945d1183a9a3efc3cb1bc4cb0fc",
+          "inputPresentationSha256": "d386e659fc3bc4b505df7220df43e6fa2de90f1b20127c782ad3f9b9529250ba",
+          "generatedAt": "2026-10-03T08:51:13.793173+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "disputed_wording",
+            "note": "争议。两模型均按通常命题意图选A，但载人能力未限定为搭载人数；材料确有能把人带到6500米深海的表述。若取载人深潜能力的宽义，A亦有文本依据。保留两份选A原答，correctOptions置空，不提供确定性判分键。Claude称载人能力只出现在航天部分过于绝对；不能以两模型一致消除题意歧义。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2016-reading-result.json",
+            "inputPromptSha256": "c7a22789227ee73a9268c76f6e90029895eb3e7df214ff5e943d6c41d76de52c",
+            "responseStreamSha256": "9b283bcb7ce95ca85dc25a76330be3e3020b7ed84e62ecd469f75f0dfe697eda",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "aab3d839219f99607fbfdfc2731a8e1f5e32436e3c34d6c6475f83f0ce102db1",
+      "inputContextSha256": "3b55c884ea41f7c5b4173ff06c267e3a4fc01945d1183a9a3efc3cb1bc4cb0fc",
+      "inputPresentationSha256": "d386e659fc3bc4b505df7220df43e6fa2de90f1b20127c782ad3f9b9529250ba",
+      "status": "disputed",
+      "kind": "single_choice",
+      "correctOptions": [],
+      "explanation": "争议。两模型均按通常命题意图选A，但载人能力未限定为搭载人数；材料确有能把人带到6500米深海的表述。若取载人深潜能力的宽义，A亦有文本依据。保留两份选A原答，correctOptions置空，不提供确定性判分键。Claude称载人能力只出现在航天部分过于绝对；不能以两模型一致消除题意歧义。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T08:58:35.311Z",
+      "currentVersion": "gpt_6_astra",
+      "candidateOptions": [
+        "A"
+      ]
+    },
+    {
+      "id": "2016-feilian:4",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2016北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://slide.edu.sina.com.cn/slide_11_78377_35062.html"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "答案：C（2011年）。2009年是1000米级试验，2010年下潜3759米，均尚未到4000多米；2011年进行5000米级试验，首次达到4000多米应在这一阶段。材料二还把7000米作为一两年后的目标，材料一载明2012年已达到7062米，也与2011年的推断相合。D所指2012年已经达到7000米级，不能当作材料所述首次4000多米的时间。",
+          "inputSha256": "6a34ce870135d1d40e4cb45f0fc4bc1063d04334b1c77493731bb292100ed067",
+          "inputContextSha256": "af418cd3bb70cff51e92a282e19e0f4d48090262e632146ff8d7021abe29ca9b",
+          "inputPresentationSha256": "b51bca552c47c7cf7bcec5a42cf890dfc9b917d57d167ed9d969cb347ebd01de",
+          "generatedAt": "2026-10-03T08:49:13.473289+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2016-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2016-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2016-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "C，2011年。对照2010年3759米、2011年5000米级、2012年7062米，材料二首次4000多米处在2011阶段；一两年后7000米是该文叙述时点的未来目标。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。材料一：2009年做1000米级试验，2010年下潜到3759米（不足4000米），2011年7-8月做5000米级试验，2012年6月下潜到7062米。因此首次突破4000米只能在2011年。材料二可以印证：英国媒体说“如果‘蛟龙’号一两年内下潜7000米成功”，说明报道时7000米尚未实现，时间在2012年之前。A、B年份深度未到4000米，D年份已是7000米级，均不符。",
+          "inputSha256": "6a34ce870135d1d40e4cb45f0fc4bc1063d04334b1c77493731bb292100ed067",
+          "inputContextSha256": "af418cd3bb70cff51e92a282e19e0f4d48090262e632146ff8d7021abe29ca9b",
+          "inputPresentationSha256": "b51bca552c47c7cf7bcec5a42cf890dfc9b917d57d167ed9d969cb347ebd01de",
+          "generatedAt": "2026-10-03T08:51:13.793173+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "C，2011年。对照2010年3759米、2011年5000米级、2012年7062米，材料二首次4000多米处在2011阶段；一两年后7000米是该文叙述时点的未来目标。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2016-reading-result.json",
+            "inputPromptSha256": "c7a22789227ee73a9268c76f6e90029895eb3e7df214ff5e943d6c41d76de52c",
+            "responseStreamSha256": "9b283bcb7ce95ca85dc25a76330be3e3020b7ed84e62ecd469f75f0dfe697eda",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "6a34ce870135d1d40e4cb45f0fc4bc1063d04334b1c77493731bb292100ed067",
+      "inputContextSha256": "af418cd3bb70cff51e92a282e19e0f4d48090262e632146ff8d7021abe29ca9b",
+      "inputPresentationSha256": "b51bca552c47c7cf7bcec5a42cf890dfc9b917d57d167ed9d969cb347ebd01de",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "C，2011年。对照2010年3759米、2011年5000米级、2012年7062米，材料二首次4000多米处在2011阶段；一两年后7000米是该文叙述时点的未来目标。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T08:58:35.311Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2016-feilian:5",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2016北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://slide.edu.sina.com.cn/slide_11_78377_35062.html"
+        },
+        {
+          "type": "terminology",
+          "title": "彩虹鱼动力锂离子蓄电池专利：只作术语核对",
+          "url": "https://patents.google.com/patent/CN111540850A/zh"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "第5题：D。‘堪比’意为可以相比、足以比得上，不是难以相比。A原卷为迅的起笔钩形笔画，不能把它转录成独立汉字乙；B‘载人’读zài；C‘略胜一筹’就是比较起来稍好一些。\n第6题：B。载人潜水器只是流动实验室的核心，实验室还包括无人潜水器、着陆器和科考母船，不能把组成部分等同于整体。A为深渊科学考察，C为所要克服的技术难题，D与‘正在研制’及后续计划一致。\n第7题：B。材料说蛟龙垂直下潜，彩虹鱼拟以45度倾斜下潜；瘦长鱼雷外形、新型材料和更强抗压能力都符合设计。\n第8题：①突出自主科技创新，通过关键技术研发提升我国深潜装备能力；②发展速度快，蛟龙在数年间逐级突破潜深，继而向万米全海深推进；③在既有成果上持续升级，潜深、外形、材料、耐压和动力等指标协同改进；④由试验走向科学应用，并由单艇向载人艇、无人艇、着陆器和母船协同作业的系统发展；⑤瞄准世界先进水平和前沿科研需求，增强深海资源调查与多学科研究能力，引起国际关注。彩虹鱼的万米载人作业在文中仍属研制目标，不应写成2016年已实现。\n本单元合并原第5—8题，须全部作答，不能用一个选项代替四题。",
+          "inputSha256": "0c1aa475ac09500e1647615274e684bfd38fb9adb25733ed28e6db6a419503c9",
+          "inputContextSha256": "8e9cc88a8d4996b72a986717cf7373abf61b14785449d4c9b370443d473ea5da",
+          "inputPresentationSha256": "2cc9f551c03dc989b98edc48166cbe90cb80db0b0ab59ff1d663ec81b96a693c",
+          "generatedAt": "2026-10-03T08:49:13.473289+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2016-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2016-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2016-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "合并原5/6/7/8：D/B/B及完整概括。首笔按清晰原卷恢复横斜钩字形⺄，不是独体乙；题目所在material2字段也包含材料三。原文锂电子电池照录并另注规范术语锂离子电池。概括从追赶到领先须区分已完成蛟龙试验与彩虹鱼未来计划，不能把科研和作业割裂成先后互斥阶段。整体open无选择判分键，旧score3不变，原3+3+2+5兼容计分仍阻断。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "第5题：选D。A正确，“迅”先写里面的部分，第一笔是横斜钩“⺄”，最后写走之。B正确，“载人”的“载”是装载义，读zài。C正确，“略胜一筹”指比较起来稍微强一点。D错误，“堪”是“能够、可以”，“堪比”意为“可以与……相比”，文中指深海竞赛的意义可与太空探索相比，不是“难以相比”。\n\n第6题：选B。A正确，“彩虹鱼”号向11000米深渊极限挑战，用于对深渊海沟开展科学普查。B错误，“深渊科学技术流动实验室”由载人潜水器、1台无人潜水器、3台着陆器和科考母船“张骞”号共同构成，“彩虹鱼”号载人潜水器只是其核心，不等于实验室本身。C正确，是原文第三段的原话。D正确，原文说“正在研制”，计划2018年完成研制。\n\n第7题：选B。材料三说“蛟龙”号垂直下潜，“彩虹鱼”号采取45度倾斜下潜，所以垂直下潜不是“彩虹鱼”号的特点。A瘦长鱼雷状外形、C使用新型材料马氏体镍钢、D抗压能力要求更高并提升耐压性能，都是它的特点。\n\n第8题：我国载人深海潜水事业的发展有以下特点。\n①起步晚但发展快：美国等国在20世纪60至80年代已有大深度载人潜水器，我国2009年才开始1000米级试验，2012年即达7062米，几年内又向万米进军。\n②坚持自主创新：“蛟龙”号体现自主科技创新的追求，“彩虹鱼”号在外形、材料、电池等方面继续自主研发。\n③下潜深度不断突破：从1000米、3000米、5000米、7000米级的深海，到挑战11000米的深渊极限。\n④技术性能不断升级：从钛合金到马氏体镍钢，耐压性能、电力系统等全面提升。\n⑤从试验走向应用，从单一潜水器走向协同作业：“蛟龙”号由海试转入科学应用，“彩虹鱼”项目则由载人潜水器、无人潜水器、着陆器和母船构成流动实验室。\n⑥从追赶到领先：由第五个掌握该技术的国家，发展到创造同类潜水器深度纪录，并力图占领世界深渊科技的制高点，受到世界关注。",
+          "inputSha256": "0c1aa475ac09500e1647615274e684bfd38fb9adb25733ed28e6db6a419503c9",
+          "inputContextSha256": "8e9cc88a8d4996b72a986717cf7373abf61b14785449d4c9b370443d473ea5da",
+          "inputPresentationSha256": "2cc9f551c03dc989b98edc48166cbe90cb80db0b0ab59ff1d663ec81b96a693c",
+          "generatedAt": "2026-10-03T08:51:13.793173+00:00",
+          "uncertainties": [
+            "第8题为开放性概括题，要点的表述和取舍可能与阅卷细则不完全一致。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "合并原5/6/7/8：D/B/B及完整概括。首笔按清晰原卷恢复横斜钩字形⺄，不是独体乙；题目所在material2字段也包含材料三。原文锂电子电池照录并另注规范术语锂离子电池。概括从追赶到领先须区分已完成蛟龙试验与彩虹鱼未来计划，不能把科研和作业割裂成先后互斥阶段。整体open无选择判分键，旧score3不变，原3+3+2+5兼容计分仍阻断。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2016-reading-result.json",
+            "inputPromptSha256": "c7a22789227ee73a9268c76f6e90029895eb3e7df214ff5e943d6c41d76de52c",
+            "responseStreamSha256": "9b283bcb7ce95ca85dc25a76330be3e3020b7ed84e62ecd469f75f0dfe697eda",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "0c1aa475ac09500e1647615274e684bfd38fb9adb25733ed28e6db6a419503c9",
+      "inputContextSha256": "8e9cc88a8d4996b72a986717cf7373abf61b14785449d4c9b370443d473ea5da",
+      "inputPresentationSha256": "2cc9f551c03dc989b98edc48166cbe90cb80db0b0ab59ff1d663ec81b96a693c",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "合并原5/6/7/8：D/B/B及完整概括。首笔按清晰原卷恢复横斜钩字形⺄，不是独体乙；题目所在material2字段也包含材料三。原文锂电子电池照录并另注规范术语锂离子电池。概括从追赶到领先须区分已完成蛟龙试验与彩虹鱼未来计划，不能把科研和作业割裂成先后互斥阶段。整体open无选择判分键，旧score3不变，原3+3+2+5兼容计分仍阻断。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T08:58:35.311Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2016-guwen:1",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2016北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://slide.edu.sina.com.cn/slide_11_78377_35062.html"
+        },
+        {
+          "type": "dictionary",
+          "title": "教育部重编国语辞典赋：征收及给予",
+          "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=1897&la=0&powerMode=0"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后修订",
+          "text": "答案：C。‘楚不赋于民而财用足也’是说楚国不向百姓征收赋税而财用充足，赋在此为征收，不是给予。A‘将’为率领；B什为十倍，与生鹿数量增加、赏金相应增加的语境相合；D本指根本生业，即农业，后文制作兵器而弃农与之相应。赋确有给予这一其他义项，但在本句不能如此解释。",
+          "inputSha256": "2c547cfa1ab8721576fc04f03791bec0028ca84097627b3d1474f8cc9d02f56e",
+          "inputContextSha256": "02f358476456e43e7d420cf8ec0520f340b74313685662d87582cbf476e550e2",
+          "inputPresentationSha256": "77788f869d4d65b874cae037148174fd04ac98827328ffacba6e0a8b0625e198",
+          "generatedAt": "2026-10-03T08:58:35.311Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2016-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2016-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2016-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh",
+            "refinementEvidence": "answers-six-sites-20261002/root-2016-refinements.json",
+            "refinementReason": "删去未单独核实且非考点所需的白徒身份释义；保留初答全文。",
+            "initialVersion": "gpt_6_astra_initial"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "C。赋在此为征收，不是否认该字另有给予义。本人初答把白徒直接说成无官职者、Claude说未受军事训练者，均未作专门语源核实，不列为必要知识点；本人已删去这项赘释，原答存initial版本。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。A正确，“将白徒”即率领没有受过军事训练的人，“将”是率领。B正确，“什至”与上句“二十赐子金百斤”相对，指十倍，即送来十倍的鹿就给千斤金。C错误，“楚不赋于民而财用足”是说楚国不向百姓征收赋税而财用充足，“赋”是征收赋税，不是给予。D正确，古代以农为本，“释其本”即放弃农耕。",
+          "inputSha256": "2c547cfa1ab8721576fc04f03791bec0028ca84097627b3d1474f8cc9d02f56e",
+          "inputContextSha256": "02f358476456e43e7d420cf8ec0520f340b74313685662d87582cbf476e550e2",
+          "inputPresentationSha256": "77788f869d4d65b874cae037148174fd04ac98827328ffacba6e0a8b0625e198",
+          "generatedAt": "2026-10-03T08:51:13.793173+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "C。赋在此为征收，不是否认该字另有给予义。本人初答把白徒直接说成无官职者、Claude说未受军事训练者，均未作专门语源核实，不列为必要知识点；本人已删去这项赘释，原答存initial版本。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2016-reading-result.json",
+            "inputPromptSha256": "c7a22789227ee73a9268c76f6e90029895eb3e7df214ff5e943d6c41d76de52c",
+            "responseStreamSha256": "9b283bcb7ce95ca85dc25a76330be3e3020b7ed84e62ecd469f75f0dfe697eda",
+            "stage": "independent"
+          }
+        },
+        "gpt_6_astra_initial": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "答案：C。‘楚不赋于民而财用足也’是说楚国不向百姓征收赋税而财用充足，赋在此为征收，不是给予。A将白徒，指率领没有官职的人；B什为十倍，与生鹿数量增加、赏金相应增加的语境相合；D本指根本生业，即农业，后文制作兵器而弃农与之相应。",
+          "inputSha256": "2c547cfa1ab8721576fc04f03791bec0028ca84097627b3d1474f8cc9d02f56e",
+          "inputContextSha256": "02f358476456e43e7d420cf8ec0520f340b74313685662d87582cbf476e550e2",
+          "inputPresentationSha256": "77788f869d4d65b874cae037148174fd04ac98827328ffacba6e0a8b0625e198",
+          "generatedAt": "2026-10-03T08:49:13.473289+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2016-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2016-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2016-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          }
+        }
+      },
+      "inputSha256": "2c547cfa1ab8721576fc04f03791bec0028ca84097627b3d1474f8cc9d02f56e",
+      "inputContextSha256": "02f358476456e43e7d420cf8ec0520f340b74313685662d87582cbf476e550e2",
+      "inputPresentationSha256": "77788f869d4d65b874cae037148174fd04ac98827328ffacba6e0a8b0625e198",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "C。赋在此为征收，不是否认该字另有给予义。本人初答把白徒直接说成无官职者、Claude说未受军事训练者，均未作专门语源核实，不列为必要知识点；本人已删去这项赘释，原答存initial版本。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T08:58:35.311Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2016-guwen:3",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2016北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://slide.edu.sina.com.cn/slide_11_78377_35062.html"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "答案：D。‘其使’指燕、代、秦各国自己的使者；它们撤回派往衡山的使者，不是带领衡山的使者回国。A藏谷十之六可理解为把十分之六的粮食储藏起来；B私为偏爱、惠及，楚王自以为上天借齐国财货惠及楚国；C倍其价就是使价格翻倍。错误关键在D的人称指向，不在‘引……而归’这一动作本身。",
+          "inputSha256": "cb34d8a9da29568c4d4a1137e3201579ea4200c4f5b173b0309be109d36c7585",
+          "inputContextSha256": "50f222a1d34c518573b90f0ae4854cb1b91dbf1442afdf5dd2830897bad676bb",
+          "inputPresentationSha256": "3d35b2496bd1e92f7bd6acc2e9164302fbf1e354237ec1a67d1e4125fdd706ec",
+          "generatedAt": "2026-10-03T08:49:13.473289+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2016-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2016-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2016-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "D。引其使而归指召回使者返回，不是率军归顺。公开新浪参考版误列C，且自称非正式；不采错误参考键。保留原句断句与下划线范围。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。A正确，“十之六”即十分之六。B正确，“且”是将要，“私”是偏爱、给好处，句意是上天将拿齐国的财富来惠及楚国。C正确，“倍其价”即价格翻倍。D错误，“引”是撤回、召回，“其使”指燕、代、秦各自派往衡山的使者，句意是燕、代、秦随即召回了自己的使者，不是带领衡山的使节回国。",
+          "inputSha256": "cb34d8a9da29568c4d4a1137e3201579ea4200c4f5b173b0309be109d36c7585",
+          "inputContextSha256": "50f222a1d34c518573b90f0ae4854cb1b91dbf1442afdf5dd2830897bad676bb",
+          "inputPresentationSha256": "3d35b2496bd1e92f7bd6acc2e9164302fbf1e354237ec1a67d1e4125fdd706ec",
+          "generatedAt": "2026-10-03T08:51:13.793173+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "D。引其使而归指召回使者返回，不是率军归顺。公开新浪参考版误列C，且自称非正式；不采错误参考键。保留原句断句与下划线范围。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2016-reading-result.json",
+            "inputPromptSha256": "c7a22789227ee73a9268c76f6e90029895eb3e7df214ff5e943d6c41d76de52c",
+            "responseStreamSha256": "9b283bcb7ce95ca85dc25a76330be3e3020b7ed84e62ecd469f75f0dfe697eda",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "cb34d8a9da29568c4d4a1137e3201579ea4200c4f5b173b0309be109d36c7585",
+      "inputContextSha256": "50f222a1d34c518573b90f0ae4854cb1b91dbf1442afdf5dd2830897bad676bb",
+      "inputPresentationSha256": "3d35b2496bd1e92f7bd6acc2e9164302fbf1e354237ec1a67d1e4125fdd706ec",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "D。引其使而归指召回使者返回，不是率军归顺。公开新浪参考版误列C，且自称非正式；不采错误参考键。保留原句断句与下划线范围。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T08:58:35.311Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2016-guwen:4",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2016北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://slide.edu.sina.com.cn/slide_11_78377_35062.html"
+        },
+        {
+          "type": "dictionary",
+          "title": "汉典畋",
+          "url": "https://zdic.net/hans/%E7%95%8B"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后修订",
+          "text": "①楚国百姓于是放下耕作，去捕猎鹿。‘即’译为于是，‘释’译为放下、放弃，‘耕农’为农业耕作，‘畋’为打猎。\n②（衡山国君）自己心里估量，没有兵器用来抵御齐、鲁两个敌国，便把国家献出，归顺齐国了。‘内自量’指自己心里估量，‘以’表示用来，‘应’指应付、抵御，‘奉国’为献出国家，‘归齐’为归附齐国。原句主语随上下文补明，不能翻成衡山主动拿兵器进攻两国。",
+          "inputSha256": "a35cb31f3b2cb4dc86ac0c64b8a0ee8249e9602768cc2018d3c4de416f99eb4b",
+          "inputContextSha256": "7d06155f91816ce0bf1ae59a9ccfb54dccf7663a0f9bbc97fb71fd011af5f1e8",
+          "inputPresentationSha256": "80ebb4f70221c953c9258348347a09ec73d02c39bc99905000a0585b53396bcd",
+          "generatedAt": "2026-10-03T08:58:35.311Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2016-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2016-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2016-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh",
+            "refinementEvidence": "answers-six-sites-20261002/root-2016-refinements.json",
+            "refinementReason": "结合句法及新东方公开解析的内心义，改正初答将内硬释为在国内；保留初答全文。",
+            "initialVersion": "gpt_6_astra_initial"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "两句完整翻译。畋为打猎；内自量为自己心里估量，不硬译为在国内，本人初答已存initial后修订；以表用来，应为抵御，奉国归齐为献国归附。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "①楚国的百姓就放弃了他们的农耕之事而去猎捕鹿。（释：放弃；耕农：耕种、农事；畋：打猎。）\n②（衡山国君）心里估量自己没有兵器来应对两个敌国，就献出国家归顺齐国了。（内：内心；量：估量；应：应对、抵御；奉：献上；归：归附。）",
+          "inputSha256": "a35cb31f3b2cb4dc86ac0c64b8a0ee8249e9602768cc2018d3c4de416f99eb4b",
+          "inputContextSha256": "7d06155f91816ce0bf1ae59a9ccfb54dccf7663a0f9bbc97fb71fd011af5f1e8",
+          "inputPresentationSha256": "80ebb4f70221c953c9258348347a09ec73d02c39bc99905000a0585b53396bcd",
+          "generatedAt": "2026-10-03T08:51:13.793173+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "两句完整翻译。畋为打猎；内自量为自己心里估量，不硬译为在国内，本人初答已存initial后修订；以表用来，应为抵御，奉国归齐为献国归附。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2016-reading-result.json",
+            "inputPromptSha256": "c7a22789227ee73a9268c76f6e90029895eb3e7df214ff5e943d6c41d76de52c",
+            "responseStreamSha256": "9b283bcb7ce95ca85dc25a76330be3e3020b7ed84e62ecd469f75f0dfe697eda",
+            "stage": "independent"
+          }
+        },
+        "gpt_6_astra_initial": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "①楚国百姓于是放下耕作，去捕猎鹿。‘即’译为于是，‘释’译为放下、放弃，‘耕农’为农业耕作，‘畋’为打猎。\n②（衡山国君）在国内估量自己没有兵器来抵御齐、鲁两个敌国，便把国家献出，归顺齐国了。‘内’指在国内，‘自量’指估量自己的力量，‘以’表示用来，‘应’指应付、抵御，‘奉国’为献出国家，‘归齐’为归附齐国。原句的主语可随上下文补明，但不能翻成衡山主动拿兵器进攻两国。",
+          "inputSha256": "a35cb31f3b2cb4dc86ac0c64b8a0ee8249e9602768cc2018d3c4de416f99eb4b",
+          "inputContextSha256": "7d06155f91816ce0bf1ae59a9ccfb54dccf7663a0f9bbc97fb71fd011af5f1e8",
+          "inputPresentationSha256": "80ebb4f70221c953c9258348347a09ec73d02c39bc99905000a0585b53396bcd",
+          "generatedAt": "2026-10-03T08:49:13.473289+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2016-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2016-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2016-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          }
+        }
+      },
+      "inputSha256": "a35cb31f3b2cb4dc86ac0c64b8a0ee8249e9602768cc2018d3c4de416f99eb4b",
+      "inputContextSha256": "7d06155f91816ce0bf1ae59a9ccfb54dccf7663a0f9bbc97fb71fd011af5f1e8",
+      "inputPresentationSha256": "80ebb4f70221c953c9258348347a09ec73d02c39bc99905000a0585b53396bcd",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两句完整翻译。畋为打猎；内自量为自己心里估量，不硬译为在国内，本人初答已存initial后修订；以表用来，应为抵御，奉国归齐为献国归附。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T08:58:35.311Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2016-guwen:5",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2016北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://slide.edu.sina.com.cn/slide_11_78377_35062.html"
+        },
+        {
+          "type": "dictionary",
+          "title": "汉典糶：出售谷物",
+          "url": "https://zdic.net/hans/%E7%B3%B6"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "第13题：①桓公：从善如流。面对强敌主动问计，听取并执行管子的策略。②管子：深谋远虑。通过高价收购与粮食储备、贸易封锁的配合，预先布局而使对方归服。③衡山之君：见利忘本。只看到兵器涨价的眼前收益，忽略农业和自身防卫需要。这里每人各给一个成语；虚心纳谏、足智多谋、鼠目寸光等如有充分依据，也可作合理替代。\n第14题：①要重视支撑长远发展的根本。楚人弃农逐鹿，衡山民众弃农制械，齐国却预先储粮，说明不能让短期高利挤垮基本生产和必要储备。②决策应识别外部诱因、通观全局。楚王把高价收鹿视为天赐之福，衡山君只见天下争购兵器，均未察觉齐国的整体安排。③解决问题要善用分析和谋划。管子没有拘泥于正面交战，而是根据各方逐利心理与粮食需求制定连续策略；桓公能够问计纳谏，也是计划得以执行的条件。启示须由文中具体得失推出，不应把损害他国百姓的做法无条件当作今日行为规范。\n本单元包含原第13题4分和第14题5分；旧存储分值4不能代表两题总分。",
+          "inputSha256": "73e937eac0a07ea7b54f87849759ce78f4288098b94e060f3a01bd044b9b22bd",
+          "inputContextSha256": "d3d177a6fcaf62f24797e6d981823bac4ba4b1a5221550716d717fa452d12523",
+          "inputPresentationSha256": "68ebe753a86dec94cf0f4ef2645736b9862a69f010a0d0b65d2da7d52613ba84",
+          "generatedAt": "2026-10-03T08:49:13.473289+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2016-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2016-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2016-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "原13分别评价桓公/管子/衡山之君并给文据，原14结合两段谈启示。Claude不耻下问无明确身份依据，见利忘义的义与不动刀兵都不如见利忘本、以经济手段削弱对手严谨；原文仍有齐鲁削地压力。不得将春秋寓言式政论当作已核历史事实。原13/14清楚为4/5分，旧合并score4保留，兼容计分阻断。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "第13题：\n①桓公：从善如流（也可答虚心纳谏、知人善任、不耻下问）。他遇事向管子请教，听后即答“诺”并立刻照办。\n②管子：足智多谋（也可答深谋远虑、运筹帷幄、神机妙算）。他不动刀兵，用贵买鹿和械器的计策使楚、衡山屈服。\n③衡山之君：鼠目寸光（也可答利令智昏、见利忘义、因小失大、捡了芝麻丢了西瓜）。他只见械器涨价之利，放任百姓弃农，最终亡国。\n\n第14题：启示可从以下几方面谈。\n①从管子看：解决问题要善用智谋，不能只靠硬拼。楚国强而善战，管子不出兵，而用高价买鹿诱使楚人弃农，再闭关断粮，三年使楚屈服，这是以经济手段达到军事目的，是不战而屈人之兵。\n②从楚王和衡山之君看：不能贪图眼前利益而丢掉根本。楚民“释其耕农而畋鹿”，衡山之民“释其本，修械器之巧”，钱虽多了，却没有粮食和兵器，最终受制于人。粮食和农业是立国之本，国家命脉必须掌握在自己手中，发展要有长远眼光，产业不能单一。\n③从桓公看：领导者要有自知之明，善于听取并采纳高明的意见。桓公自知强攻难胜，便虚心问计、果断执行，所以成功。\n④从全局看：面对突如其来的好处要保持清醒。楚王把齐国高价买鹿看作“天且以齐私楚”，没有察觉背后的图谋，说明居安思危、识破对手意图十分重要。",
+          "inputSha256": "73e937eac0a07ea7b54f87849759ce78f4288098b94e060f3a01bd044b9b22bd",
+          "inputContextSha256": "d3d177a6fcaf62f24797e6d981823bac4ba4b1a5221550716d717fa452d12523",
+          "inputPresentationSha256": "68ebe753a86dec94cf0f4ef2645736b9862a69f010a0d0b65d2da7d52613ba84",
+          "generatedAt": "2026-10-03T08:51:13.793173+00:00",
+          "uncertainties": [
+            "第13题答案不唯一，只要与人物在文中的表现相符即可。",
+            "第14题为开放题，要点不必与阅卷细则完全一致。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "原13分别评价桓公/管子/衡山之君并给文据，原14结合两段谈启示。Claude不耻下问无明确身份依据，见利忘义的义与不动刀兵都不如见利忘本、以经济手段削弱对手严谨；原文仍有齐鲁削地压力。不得将春秋寓言式政论当作已核历史事实。原13/14清楚为4/5分，旧合并score4保留，兼容计分阻断。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2016-reading-result.json",
+            "inputPromptSha256": "c7a22789227ee73a9268c76f6e90029895eb3e7df214ff5e943d6c41d76de52c",
+            "responseStreamSha256": "9b283bcb7ce95ca85dc25a76330be3e3020b7ed84e62ecd469f75f0dfe697eda",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "73e937eac0a07ea7b54f87849759ce78f4288098b94e060f3a01bd044b9b22bd",
+      "inputContextSha256": "d3d177a6fcaf62f24797e6d981823bac4ba4b1a5221550716d717fa452d12523",
+      "inputPresentationSha256": "68ebe753a86dec94cf0f4ef2645736b9862a69f010a0d0b65d2da7d52613ba84",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "原13分别评价桓公/管子/衡山之君并给文据，原14结合两段谈启示。Claude不耻下问无明确身份依据，见利忘义的义与不动刀兵都不如见利忘本、以经济手段削弱对手严谨；原文仍有齐鲁削地压力。不得将春秋寓言式政论当作已核历史事实。原13/14清楚为4/5分，旧合并score4保留，兼容计分阻断。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T08:58:35.311Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2016-shici:1",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2016北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://slide.edu.sina.com.cn/slide_11_78377_35062.html"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "答案：A。‘往岁求浆忆叩门’是回忆往年叩门求水之事，末句‘细云新月耿黄昏’是本次游村、写诗时的眼前景象；A把两个时间层面合并成同一次黄昏叩门。B两个初都可释为才、刚刚；C由风送禽语写山村幽静，以声衬静；D说残壁青苔侵蚀旧日醉墨痕迹，与诗句相符。",
+          "inputSha256": "95d780e20d2ab667102b8696624acb7bcac667c8156f77db99f60dc19f6792b0",
+          "inputContextSha256": "053bd0ec21cbb5eaba6b1ef262b7b352079832ee41562cfe407f9de65d07f0d7",
+          "inputPresentationSha256": "df09b4951f8604ce88c3b20f1a74b530a14c40318ac74050ca0804dc59148fcb",
+          "generatedAt": "2026-10-03T08:49:13.473289+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2016-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2016-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2016-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "A。往岁求浆属于回忆，末句新月黄昏属于本次游村景象，不能并为同一次黄昏叩门。以声衬静、旧壁醉墨须结合各句准确解释。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\n选A。A错误：“往岁求浆忆叩门”是回忆往年到西村叩门讨水喝的事，而“细云新月耿黄昏”是今天重游、写诗时的景象，A把过去的事和今天的时间混在一起了。B正确，两个“初”都是刚刚、才的意思（刚转过马头；刚出嫁）。C正确，风送来林中鸟鸣，以声衬静，突出西村的幽静。D正确，残破的墙壁上，青苔侵蚀了昔日醉后题写的墨迹。",
+          "inputSha256": "95d780e20d2ab667102b8696624acb7bcac667c8156f77db99f60dc19f6792b0",
+          "inputContextSha256": "053bd0ec21cbb5eaba6b1ef262b7b352079832ee41562cfe407f9de65d07f0d7",
+          "inputPresentationSha256": "df09b4951f8604ce88c3b20f1a74b530a14c40318ac74050ca0804dc59148fcb",
+          "generatedAt": "2026-10-03T08:51:13.793173+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "A。往岁求浆属于回忆，末句新月黄昏属于本次游村景象，不能并为同一次黄昏叩门。以声衬静、旧壁醉墨须结合各句准确解释。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2016-reading-result.json",
+            "inputPromptSha256": "c7a22789227ee73a9268c76f6e90029895eb3e7df214ff5e943d6c41d76de52c",
+            "responseStreamSha256": "9b283bcb7ce95ca85dc25a76330be3e3020b7ed84e62ecd469f75f0dfe697eda",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "95d780e20d2ab667102b8696624acb7bcac667c8156f77db99f60dc19f6792b0",
+      "inputContextSha256": "053bd0ec21cbb5eaba6b1ef262b7b352079832ee41562cfe407f9de65d07f0d7",
+      "inputPresentationSha256": "df09b4951f8604ce88c3b20f1a74b530a14c40318ac74050ca0804dc59148fcb",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "A。往岁求浆属于回忆，末句新月黄昏属于本次游村景象，不能并为同一次黄昏叩门。以声衬静、旧壁醉墨须结合各句准确解释。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T08:58:35.311Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2016-shici:2",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2016北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://slide.edu.sina.com.cn/slide_11_78377_35062.html"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "答案：B。‘横笛闻声’诉诸听觉，‘红旗’及‘天山雪’形成鲜明的视觉色彩，声与色兼备。A歌管、风铃主要写声音，未突出色彩；C茗叶白、梅梢红写颜色，没有声音；D梅酸着重味觉和齿感，芭蕉绿写色彩，没有听觉描写。不能把句中任何可见物都直接等同于题目所要求的色彩表现。",
+          "inputSha256": "979109da5ed0db214dc0251219dc43bb2df1e0e14a6ed3abfa8d1dd5cb803e71",
+          "inputContextSha256": "b2780126c74090735d11c83ced3b765bcd263086e1d30b08109f0b6f3ff3d75d",
+          "inputPresentationSha256": "59522c243ffbc273f7a8f32d536bbd37f2d8d3cfb6737590fdcf2a4718212e5c",
+          "generatedAt": "2026-10-03T08:49:13.473289+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2016-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2016-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2016-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "B。横笛之声与红旗、天山雪的色彩兼具声色；可见物并不自动等同于明确的色彩描写。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。A“歌管”“风摇九子铃”都是声音，有声而无色。B“横笛闻声”写听觉，“红旗直上天山雪”以红旗与白雪相映写视觉色彩，声色兼备。C“争白”“放红”只写色彩，没有声音。D“梅子留酸”写味觉，“芭蕉分绿”写色彩，没有声音。",
+          "inputSha256": "979109da5ed0db214dc0251219dc43bb2df1e0e14a6ed3abfa8d1dd5cb803e71",
+          "inputContextSha256": "b2780126c74090735d11c83ced3b765bcd263086e1d30b08109f0b6f3ff3d75d",
+          "inputPresentationSha256": "59522c243ffbc273f7a8f32d536bbd37f2d8d3cfb6737590fdcf2a4718212e5c",
+          "generatedAt": "2026-10-03T08:51:13.793173+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "B。横笛之声与红旗、天山雪的色彩兼具声色；可见物并不自动等同于明确的色彩描写。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2016-reading-result.json",
+            "inputPromptSha256": "c7a22789227ee73a9268c76f6e90029895eb3e7df214ff5e943d6c41d76de52c",
+            "responseStreamSha256": "9b283bcb7ce95ca85dc25a76330be3e3020b7ed84e62ecd469f75f0dfe697eda",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "979109da5ed0db214dc0251219dc43bb2df1e0e14a6ed3abfa8d1dd5cb803e71",
+      "inputContextSha256": "b2780126c74090735d11c83ced3b765bcd263086e1d30b08109f0b6f3ff3d75d",
+      "inputPresentationSha256": "59522c243ffbc273f7a8f32d536bbd37f2d8d3cfb6737590fdcf2a4718212e5c",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "B。横笛之声与红旗、天山雪的色彩兼具声色；可见物并不自动等同于明确的色彩描写。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T08:58:35.311Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2016-shici:3",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2016北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://slide.edu.sina.com.cn/slide_11_78377_35062.html"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "相同点：①都写山间村落幽美的自然景色。《西村》有乱山、高柳、流水、茂林，《游山西村》有山重水复、柳暗花明；景色都富有生机而远离喧嚣。②都有与村人交往的内容：前者忆往年叩门求浆，后者写农家备酒杀鸡款待，两诗都流露对乡村生活的亲近与喜爱。\n不同点：①《西村》以眼前游踪和景物为主，禽语、苔痕、细云、新月共同写出幽静清雅的意境，又用往岁、今夕及旧日墨痕勾连重游的回忆；《游山西村》更着重农家待客、春社箫鼓和衣冠古风，突出人情淳厚、风俗质朴。②《西村》以写诗记今夕收束，重在记录当前游兴；《游山西村》末尾设想今后乘月再访、拄杖叩门，表达继续往来的愿望。③‘山重水复疑无路，柳暗花明又一村’除写实际所见，还能使读者体会困顿中忽见新境的理趣；《西村》没有相同的由疑无路到豁然开朗的突出转折。不能仅凭残壁苔痕就断言作者悲叹国家衰亡或强烈伤感。",
+          "inputSha256": "6d55e365355f5d093535eae6d120c864e6fe2c5e067ff471872c5e74cdd3278c",
+          "inputContextSha256": "b5ae44f9bfb0a97a28c6035ce705ca22994f092c1d6f1d19ec2c97e4ce0c069a",
+          "inputPresentationSha256": "2a431ac09b4e591be0e27c61becf3a3e65deaaa2f7b420ea28255b3cc94fd300",
+          "generatedAt": "2026-10-03T08:49:13.473289+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2016-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2016-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2016-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "两诗都写乡村与游赏；游山西村有人情热闹、曲折中出现新境界，西村重幽静景物、旧游重到。Claude几乎不写人事只是相对说法，怀旧惆怅不能定为唯一情绪，原诗也有喜悦闲适。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "相同点：\n①都写了山村幽美的自然环境。《游山西村》有“山重水复疑无路，柳暗花明又一村”，《西村》有“乱山深处小桃源”“高柳簇桥初转马，数家临水自成村”，两处都是山水环抱、柳树掩映的村落。\n②都流露出对山村生活的喜爱和留恋。前者说“从今若许闲乘月，拄杖无时夜叩门”，后者称西村为“小桃源”，并要用“一首清诗记今夕”。两诗还都写到“叩门”。\n\n不同点：\n①侧重的内容不同。《游山西村》重在写人情风俗：“丰年留客足鸡豚”写农家热情好客，“箫鼓追随春社近，衣冠简朴古风存”写热闹的春社和淳朴的古风。《西村》重在写自然景物的清幽：“茂林风送幽禽语”“细云新月耿黄昏”，几乎不写人事活动。\n②时间角度不同。《游山西村》写的是当下的游历，并期待今后再来。《西村》写的是重游，融入对往事的追忆，“往岁求浆忆叩门”“坏壁苔侵醉墨痕”，旧日题壁已被青苔侵蚀，带有今昔变迁的感慨。\n③情调不同。前者明快热烈，充满丰年的喜悦；后者幽静淡远，在闲适中带一点怀旧的惆怅。",
+          "inputSha256": "6d55e365355f5d093535eae6d120c864e6fe2c5e067ff471872c5e74cdd3278c",
+          "inputContextSha256": "b5ae44f9bfb0a97a28c6035ce705ca22994f092c1d6f1d19ec2c97e4ce0c069a",
+          "inputPresentationSha256": "2a431ac09b4e591be0e27c61becf3a3e65deaaa2f7b420ea28255b3cc94fd300",
+          "generatedAt": "2026-10-03T08:51:13.793173+00:00",
+          "uncertainties": [
+            "比较题要点的归纳方式可能与阅卷细则有出入。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "两诗都写乡村与游赏；游山西村有人情热闹、曲折中出现新境界，西村重幽静景物、旧游重到。Claude几乎不写人事只是相对说法，怀旧惆怅不能定为唯一情绪，原诗也有喜悦闲适。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2016-reading-result.json",
+            "inputPromptSha256": "c7a22789227ee73a9268c76f6e90029895eb3e7df214ff5e943d6c41d76de52c",
+            "responseStreamSha256": "9b283bcb7ce95ca85dc25a76330be3e3020b7ed84e62ecd469f75f0dfe697eda",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "6d55e365355f5d093535eae6d120c864e6fe2c5e067ff471872c5e74cdd3278c",
+      "inputContextSha256": "b5ae44f9bfb0a97a28c6035ce705ca22994f092c1d6f1d19ec2c97e4ce0c069a",
+      "inputPresentationSha256": "2a431ac09b4e591be0e27c61becf3a3e65deaaa2f7b420ea28255b3cc94fd300",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两诗都写乡村与游赏；游山西村有人情热闹、曲折中出现新境界，西村重幽静景物、旧游重到。Claude几乎不写人事只是相对说法，怀旧惆怅不能定为唯一情绪，原诗也有喜悦闲适。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T08:58:35.311Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2016-sanwen:1",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2016北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://slide.edu.sina.com.cn/slide_11_78377_35062.html"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "答案：C。乡党在此指同乡、乡亲，并不要求志同道合；作者试图排除乡情造成的偏爱，正好说明这是地域关系。A以现代通俗语解释强烈赞叹，符合喝彩语境；B指老腔的韵味充溢于作品；D对应濮存昕突然投入表演、观众因惊讶赞赏而沸腾的情景。",
+          "inputSha256": "cbac5bfcbf99f6caa9cadb43a28bc7ef8be3e124a28f08160d00b8f2a7dd6ffb",
+          "inputContextSha256": "76701a58613b2df6e4a6c85447b029e3cd84f0dbb09f80b0fbe46baf6de8398d",
+          "inputPresentationSha256": "883a33ff1fa1d67d3bb67ca67aae14eeae9e443cd9a3f48718c8901db5e3ffdd",
+          "generatedAt": "2026-10-03T08:49:13.473289+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2016-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2016-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2016-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "C。乡党为同乡，不以志同道合为条件；与作者想排除乡情偏爱相照应。保留各解释所对应的准确印刷标记。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。A正确，“太斩劲了”是关中土语的喝彩，与“美得很”并列，相当于非常带劲、非常给力。B正确，“气韵弥漫”指老腔的神气韵味充满整个小说的叙述文字。C错误，“乡党”在文中就是同乡、老乡，作者与演员同是关中人，并不含“志同道合”的意思。D基本正确，濮存昕的举动出人意料，全场因惊讶而轰动，随后“观众顿时沸腾起来”。",
+          "inputSha256": "cbac5bfcbf99f6caa9cadb43a28bc7ef8be3e124a28f08160d00b8f2a7dd6ffb",
+          "inputContextSha256": "76701a58613b2df6e4a6c85447b029e3cd84f0dbb09f80b0fbe46baf6de8398d",
+          "inputPresentationSha256": "883a33ff1fa1d67d3bb67ca67aae14eeae9e443cd9a3f48718c8901db5e3ffdd",
+          "generatedAt": "2026-10-03T08:51:13.793173+00:00",
+          "uncertainties": [
+            "D项“赞赏”一义是结合下文推出的，“哗然”本义只是许多人同时发出声音、议论纷纷，但C项错误更明确。"
+          ],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "C。乡党为同乡，不以志同道合为条件；与作者想排除乡情偏爱相照应。保留各解释所对应的准确印刷标记。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2016-reading-result.json",
+            "inputPromptSha256": "c7a22789227ee73a9268c76f6e90029895eb3e7df214ff5e943d6c41d76de52c",
+            "responseStreamSha256": "9b283bcb7ce95ca85dc25a76330be3e3020b7ed84e62ecd469f75f0dfe697eda",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "cbac5bfcbf99f6caa9cadb43a28bc7ef8be3e124a28f08160d00b8f2a7dd6ffb",
+      "inputContextSha256": "76701a58613b2df6e4a6c85447b029e3cd84f0dbb09f80b0fbe46baf6de8398d",
+      "inputPresentationSha256": "883a33ff1fa1d67d3bb67ca67aae14eeae9e443cd9a3f48718c8901db5e3ffdd",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "C。乡党为同乡，不以志同道合为条件；与作者想排除乡情偏爱相照应。保留各解释所对应的准确印刷标记。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T08:58:35.311Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2016-sanwen:2",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2016北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://slide.edu.sina.com.cn/slide_11_78377_35062.html"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "答案：C。朋友遗憾小说没写老腔，作者进一步想到不仅应有老腔画面，更希望其气韵弥漫整部作品，两者同有遗憾而作者体会更深。A漏掉赵季平的郑重介绍和赏识这一认识转变的直接推动因素；B把艺术震撼使观众一时安静误解为声音大小相互遮盖，而且‘经常’无据；D把作者‘也许从宋代’的推想当成确定历史，又把历久存在误推成一直流行。",
+          "inputSha256": "785a8d5e31134b71f57189cc7f0540437f72280781dd6f1977ac12ef6144d90d",
+          "inputContextSha256": "6c22a947514cc84d4e5483d9261ca5de1bc93d8a550af20a2d63d40774c588d8",
+          "inputPresentationSha256": "8f2cf442330a7710167dd7484fe2d6b1d49fd727d4d968bb4022416fc5d55e35",
+          "generatedAt": "2026-10-03T08:49:13.473289+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2016-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2016-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2016-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "C。朋友与作者同有小说未写老腔的遗憾，作者更希望气韵贯穿作品。A遗漏赵季平的推动作用；B混淆艺术震撼与音量压过，且经常无据；D把也许宋代当作定论、存在当作一直流行。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。A错误：作者起初看见这群关中乡村人“也未太注意”，是在得知老腔受到作曲家赵季平的赏识之后，再看安静坐着的白眉老汉，才“突然生出神秘感”。B错误：敲击板凳只是把掌声和叫好声“震哑”了一次，出现短暂静场，随后掌声更响，并非“经常掩盖”。C正确：朋友遗憾小说里没有“一笔老腔的画面”，作者更进一步，希望整个叙述文字都有老腔的气韵，并说自己“懊丧自责”，后来话剧加入老腔才“释然”，可见深有同感。D错误：“也许从宋代就唱着”只是推测，而且作者在关中生活几十年都没听说过老腔，可见其影响范围很窄，谈不上“一直很流行”。",
+          "inputSha256": "785a8d5e31134b71f57189cc7f0540437f72280781dd6f1977ac12ef6144d90d",
+          "inputContextSha256": "6c22a947514cc84d4e5483d9261ca5de1bc93d8a550af20a2d63d40774c588d8",
+          "inputPresentationSha256": "8f2cf442330a7710167dd7484fe2d6b1d49fd727d4d968bb4022416fc5d55e35",
+          "generatedAt": "2026-10-03T08:51:13.793173+00:00",
+          "uncertainties": [
+            "C项中作者的想法比朋友更进一层（不止一笔画面），“深有同感”略显宽泛，但在四项中最恰当。"
+          ],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "C。朋友与作者同有小说未写老腔的遗憾，作者更希望气韵贯穿作品。A遗漏赵季平的推动作用；B混淆艺术震撼与音量压过，且经常无据；D把也许宋代当作定论、存在当作一直流行。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2016-reading-result.json",
+            "inputPromptSha256": "c7a22789227ee73a9268c76f6e90029895eb3e7df214ff5e943d6c41d76de52c",
+            "responseStreamSha256": "9b283bcb7ce95ca85dc25a76330be3e3020b7ed84e62ecd469f75f0dfe697eda",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "785a8d5e31134b71f57189cc7f0540437f72280781dd6f1977ac12ef6144d90d",
+      "inputContextSha256": "6c22a947514cc84d4e5483d9261ca5de1bc93d8a550af20a2d63d40774c588d8",
+      "inputPresentationSha256": "8f2cf442330a7710167dd7484fe2d6b1d49fd727d4d968bb4022416fc5d55e35",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "C。朋友与作者同有小说未写老腔的遗憾，作者更希望气韵贯穿作品。A遗漏赵季平的推动作用；B混淆艺术震撼与音量压过，且经常无据；D把也许宋代当作定论、存在当作一直流行。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T08:58:35.311Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2016-sanwen:3",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2016北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://slide.edu.sina.com.cn/slide_11_78377_35062.html"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "最初从未听过老腔，因其影响似乎有限而不以为意，也未特别留意乡村演员；看到赵季平的亲近和郑重推介，开始刮目相看并产生神秘感。正式演出后，被唱腔和板凳敲击的强烈艺术力量震撼，沉迷遐想，认识到它与关中土地、乡村生活的深厚联系。继而因相见恨晚而自责，遗憾自己的小说未能吸纳老腔的气韵；得知话剧加入老腔，又感到释然。再次听演出时，认识到它能超越地方语言而引起普遍的心灵应和；主动坐远想排除乡情偏爱，最终由濮存昕的投入确认艺术本身的感染力，明白刻意拉开距离并无必要。",
+          "inputSha256": "c167de995f07864cafdda5626987c10df30f9703b6588b45903ef6e294f21430",
+          "inputContextSha256": "dc465e0fcfa47a4373fb3c3ea64c98a18a221a65b7e6a869ee2f29d8d65ab6b7",
+          "inputPresentationSha256": "7d942f47d066bf50a9658ad2a8aabc81094daa89c5d0aa1a283b9f8bf4821217",
+          "generatedAt": "2026-10-03T08:49:13.473289+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2016-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2016-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2016-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "答出认识与感受变化并联系演出细节。跨地域观众共鸣有文本支撑，Claude打动所有人超出文据，不作普遍定律。原21旧score为null、印刷4分，计分兼容仍待；原20同为旧null、印刷3分。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "作者对老腔的认识经历了由不了解到深深折服的过程。\n①起初不以为意：在关中生活几十年却从未听说过老腔，朋友介绍时也“很难产生惊诧”，看到演员时“未太注意”。\n②刮目相看、心生好奇：得知老腔受到赵季平的赏识，便对它刮目相看，并生出神秘感。\n③被震撼而沉迷：第一次看演出，被它酣畅淋漓、撼人胸腑的神韵打动，产生相见恨晚、懊丧自责的心绪，遗憾小说《白鹿原》里没有老腔的气韵。\n④理性思考其魅力：在中山音乐堂再次欣赏时，思考老腔为何能感染听不懂方言的观众，认识到它是发自久远时空、饱含关中大地神韵的民间原生形态的旋律，并拉开距离，确认这魅力出自老腔自身而非乡情偏爱。\n⑤彻底认同：看到濮存昕也情不自禁地融入老腔，意识到刻意寻求客观欣赏是多余的，老腔的魅力能打动所有人。",
+          "inputSha256": "c167de995f07864cafdda5626987c10df30f9703b6588b45903ef6e294f21430",
+          "inputContextSha256": "dc465e0fcfa47a4373fb3c3ea64c98a18a221a65b7e6a869ee2f29d8d65ab6b7",
+          "inputPresentationSha256": "7d942f47d066bf50a9658ad2a8aabc81094daa89c5d0aa1a283b9f8bf4821217",
+          "generatedAt": "2026-10-03T08:51:13.793173+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "答出认识与感受变化并联系演出细节。跨地域观众共鸣有文本支撑，Claude打动所有人超出文据，不作普遍定律。原21旧score为null、印刷4分，计分兼容仍待；原20同为旧null、印刷3分。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2016-reading-result.json",
+            "inputPromptSha256": "c7a22789227ee73a9268c76f6e90029895eb3e7df214ff5e943d6c41d76de52c",
+            "responseStreamSha256": "9b283bcb7ce95ca85dc25a76330be3e3020b7ed84e62ecd469f75f0dfe697eda",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "c167de995f07864cafdda5626987c10df30f9703b6588b45903ef6e294f21430",
+      "inputContextSha256": "dc465e0fcfa47a4373fb3c3ea64c98a18a221a65b7e6a869ee2f29d8d65ab6b7",
+      "inputPresentationSha256": "7d942f47d066bf50a9658ad2a8aabc81094daa89c5d0aa1a283b9f8bf4821217",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "答出认识与感受变化并联系演出细节。跨地域观众共鸣有文本支撑，Claude打动所有人超出文据，不作普遍定律。原21旧score为null、印刷4分，计分兼容仍待；原20同为旧null、印刷3分。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T08:58:35.311Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2016-sanwen:4",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2016北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://slide.edu.sina.com.cn/slide_11_78377_35062.html"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "例一：演出前，作曲家赵季平刚落座又起身，与白眉老汉等人握手拍肩，并郑重赞赏老腔。通过熟悉音乐的观众的举动和评价，从侧面衬托老腔非凡的艺术价值，也推动作者由轻忽转向期待。\n例二：木砖敲击板凳后，观众先鸦雀无声，短暂静默后掌声、欢呼骤然爆发并经久不息。由观众先被震住、后热烈回应的反差，表现老腔的强大震撼力。\n也可用濮存昕的举动作例：他从主持人位置走上台，夺凳取砖、敲击吼唱，忘情地融入演出。通过观演者转为参与者的反应，侧面显示老腔打动人心的感染力。作答任选两例并讲清各自怎样衬托，不能只摘抄掌声二字。",
+          "inputSha256": "26465516f400b495da34dedab3994a1115e890d2ece0aa29e9c6dde1441a9f31",
+          "inputContextSha256": "adf05bd5a0f7d47483ba90c0b1425993f2cbf3ad9e2d4d3ce320ce4bd44765d2",
+          "inputPresentationSha256": "6ad1a9e12a88466aeab2c2343147f67a1f5a530fb239978794b955501319c46e",
+          "generatedAt": "2026-10-03T08:49:13.473289+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2016-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2016-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2016-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "侧面描写任选两例：赵季平的赞赏与郑重介绍，观众先静后热烈回应，或濮存昕由主持转为参与。逐例说明如何衬托老腔艺术价值，不能只列掌声。原22旧score为null、印刷4分，计分兼容仍待。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "示例一：写作曲家赵季平的举动。他刚落座就“忽然站起，匆匆离席”，赶到台下与白眉老汉“握手拍肩，异常热乎”，又郑重地介绍“老腔是了不得的一种唱法”。借一位著名作曲家的敬重和推崇，从侧面说明老腔艺术价值很高，也为下文的演出作了铺垫。\n\n示例二：写观众的反应。演员刚唱两句，台下便“爆出掌声”，有人用关中土语高喊“美得很”“太斩劲了”，“掌声连着掌声，喝彩连着喝彩”；敲击板凳时全场“鸦雀无声”，之后掌声和欢呼“骤然爆响，经久不息”。不直接写唱腔如何，而以观众由喝彩到屏息再到沸腾的变化，烘托出老腔震撼人心的感染力。\n\n示例三（备选）：写主持人濮存昕的举动。他从演员手中夺下长条板凳和木砖，自己猛砸、高声吼唱，观众顿时沸腾。一位声名显赫的话剧演员情不自禁地投入其中，从侧面表现老腔具有让人忘我、与之融合的魅力。",
+          "inputSha256": "26465516f400b495da34dedab3994a1115e890d2ece0aa29e9c6dde1441a9f31",
+          "inputContextSha256": "adf05bd5a0f7d47483ba90c0b1425993f2cbf3ad9e2d4d3ce320ce4bd44765d2",
+          "inputPresentationSha256": "6ad1a9e12a88466aeab2c2343147f67a1f5a530fb239978794b955501319c46e",
+          "generatedAt": "2026-10-03T08:51:13.793173+00:00",
+          "uncertainties": [
+            "题目要求举两例，这里多给一例备选，作答时任选两例即可。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "侧面描写任选两例：赵季平的赞赏与郑重介绍，观众先静后热烈回应，或濮存昕由主持转为参与。逐例说明如何衬托老腔艺术价值，不能只列掌声。原22旧score为null、印刷4分，计分兼容仍待。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2016-reading-result.json",
+            "inputPromptSha256": "c7a22789227ee73a9268c76f6e90029895eb3e7df214ff5e943d6c41d76de52c",
+            "responseStreamSha256": "9b283bcb7ce95ca85dc25a76330be3e3020b7ed84e62ecd469f75f0dfe697eda",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "26465516f400b495da34dedab3994a1115e890d2ece0aa29e9c6dde1441a9f31",
+      "inputContextSha256": "adf05bd5a0f7d47483ba90c0b1425993f2cbf3ad9e2d4d3ce320ce4bd44765d2",
+      "inputPresentationSha256": "6ad1a9e12a88466aeab2c2343147f67a1f5a530fb239978794b955501319c46e",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "侧面描写任选两例：赵季平的赞赏与郑重介绍，观众先静后热烈回应，或濮存昕由主持转为参与。逐例说明如何衬托老腔艺术价值，不能只列掌声。原22旧score为null、印刷4分，计分兼容仍待。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T08:58:35.311Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2016-sanwen:5",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2016北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://slide.edu.sina.com.cn/slide_11_78377_35062.html"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "第23题：①题目中的白鹿原既唤起同名小说，也指向孕育作品和老腔的关中土地，二者有共同的乡土生活与文化根基，并非声称小说原文已经描写过老腔。②作者第一次听老腔后遗憾未将它写入小说，更希望其气韵弥漫文字；后来话剧《白鹿原》实际加入老腔，使‘奏响’有了直接的艺术事实。③题目把小说、话剧与民间音乐联系起来，概括作者逐步认识老腔的过程，表达对乡土文化生命力和老腔走上更广阔舞台的欣喜与赞美。\n第24题：①以遐想展开联想、想象，把听到的老腔联系到渭水、秋禾、春麦与村巷声息，使抽象的音乐感受变成具体的乡土生活图景。②运用比喻，以渭水涛声、骤雨啸响表现其雄浑激越，以好雨润麦的细柔声表现其柔和细腻，呈现唱腔刚柔相济的层次。③连续铺陈多个声音意象，形成近于排比的舒展句式，从自然声响延伸到牛哞马叫，突出丰富的声音质感与关中生活气息。④化用‘好雨知时节’的诗意，把滋润春麦与音乐滋养心灵相联系，表达沉醉、亲切和赞叹。这里主要是以生活中的声音联想音乐的声音，不必强称每一处都构成通感。\n本单元包含原第23题5分和第24题6分，两题均须回答；不能拿旧空分值作评分标准。",
+          "inputSha256": "fea68cebe1eae76f8ae5928f6ae1ff7e929b1abfe9bb7a77e1c3c15d8302bf03",
+          "inputContextSha256": "03b3efd4bb52bffd58cde693dbf7a7fa3093d3a9e9c758fc8203e2bdce2ed614",
+          "inputPresentationSha256": "b2e3c38e2b86b10f8770214c24f57a8cc0196b11ab698ade146bfe4a6c2c7ada",
+          "generatedAt": "2026-10-03T08:49:13.473289+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2016-successor.json",
+            "evidence": "answers-six-sites-20261002/root-2016-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2016-reading-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "原23标题含义与原24写唱腔的手法均完整作答。标题联系小说、话剧、土地与老腔；遐想、比喻、铺陈把声音具体化，主要是声音之间联想，不强判每处通感。麦苗牛马并非关中专有，Claude特有须限为本文组织的地域组合。合并23/24印刷5+6/旧null保留阻断。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "第23题：\n①标题中的“白鹿原”有多层含义：既是小说《白鹿原》和据此改编的话剧，也是作者生活和书写的那片关中大地。\n②小说里虽没写老腔，但话剧《白鹿原》加入了老腔演唱，老腔由此登上北京人艺的舞台，在“白鹿原”上真正奏响了；这弥补了作者的遗憾，让他“释然”。\n③老腔是发自关中大地深处的声响，与《白鹿原》所写的土地、人民和文化同出一源，气韵相通。以此为题，点明老腔是这片土地上原生的艺术。\n④标题也寄托了作者的感情：既有对老腔的赞美和相见恨晚的自责，也有希望自己的文字弥漫老腔气韵、希望这种民间艺术被更多人听见的愿望。\n⑤从效果上看，借《白鹿原》的知名度引出人们陌生的老腔，标题新颖，引人注意。\n\n第24题：\n①联想和想象。作者在腔调里“沉迷且陷入遐想”，由老腔想到关中大地深处的声响、渭水的涛声、骤雨拍击秋禾的啸响、春雨润泽麦苗的柔声、村巷里的牛哞马叫，把抽象难言的听觉感受化为具体可感的画面和声音。\n②比喻兼博喻（以声喻声）。用“渭水波浪的涛声”“骤雨拍击无边秋禾的啸响”等一连串喻体来形容老腔，写出它雄浑、粗犷、奔放的特点。\n③排比。“这是……抑或是……也像是……亦不无……甚至……”层层铺排，句式连贯，气势酣畅，与老腔酣畅淋漓的风格相应，也表现出作者感受的丰富和激动。\n④刚柔对比（映衬）。既有涛声、骤雨的“啸响”，又有好雨润苗“细近于无的柔声”，说明老腔既刚劲豪放，又有细腻柔和的一面，表现力丰富。\n⑤化用诗句。“知时节的好雨”化用杜甫“好雨知时节”“润物细无声”，增添了文化韵味。\n⑥选用关中特有的意象。渭水、秦川、麦苗、柴烟弥漫的村巷、牛哞马叫，都是关中乡土的景物，说明老腔扎根于这片土地和乡村生活，也流露出作者对故乡的深情。段末的省略号表示联想不尽、余味悠长。\n总体上，这一段写出了作者被老腔深深震撼、沉醉其中的感受，以及对这门源自关中大地的民间艺术的赞美。",
+          "inputSha256": "fea68cebe1eae76f8ae5928f6ae1ff7e929b1abfe9bb7a77e1c3c15d8302bf03",
+          "inputContextSha256": "03b3efd4bb52bffd58cde693dbf7a7fa3093d3a9e9c758fc8203e2bdce2ed614",
+          "inputPresentationSha256": "b2e3c38e2b86b10f8770214c24f57a8cc0196b11ab698ade146bfe4a6c2c7ada",
+          "generatedAt": "2026-10-03T08:51:13.793173+00:00",
+          "uncertainties": [
+            "第23、24题为开放性鉴赏题，要点与表述可能与阅卷细则不完全一致。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "原23标题含义与原24写唱腔的手法均完整作答。标题联系小说、话剧、土地与老腔；遐想、比喻、铺陈把声音具体化，主要是声音之间联想，不强判每处通感。麦苗牛马并非关中专有，Claude特有须限为本文组织的地域组合。合并23/24印刷5+6/旧null保留阻断。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2016-reading-result.json",
+            "inputPromptSha256": "c7a22789227ee73a9268c76f6e90029895eb3e7df214ff5e943d6c41d76de52c",
+            "responseStreamSha256": "9b283bcb7ce95ca85dc25a76330be3e3020b7ed84e62ecd469f75f0dfe697eda",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "fea68cebe1eae76f8ae5928f6ae1ff7e929b1abfe9bb7a77e1c3c15d8302bf03",
+      "inputContextSha256": "03b3efd4bb52bffd58cde693dbf7a7fa3093d3a9e9c758fc8203e2bdce2ed614",
+      "inputPresentationSha256": "b2e3c38e2b86b10f8770214c24f57a8cc0196b11ab698ade146bfe4a6c2c7ada",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "原23标题含义与原24写唱腔的手法均完整作答。标题联系小说、话剧、土地与老腔；遐想、比喻、铺陈把声音具体化，主要是声音之间联想，不强判每处通感。麦苗牛马并非关中专有，Claude特有须限为本文组织的地域组合。合并23/24印刷5+6/旧null保留阻断。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T08:58:35.311Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2016-weixiezuo:1",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2016北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://slide.edu.sina.com.cn/slide_11_78377_35062.html"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "进入高中，我建议你先学会主动提问，再学会定期整理。课前标出不懂处，课堂上带着问题听讲，课后用自己的话解释概念；如果只能背答案，就回到例题追问理由。每周留一段时间整理错题，写清错误原因并尝试重做，不必把每道题都抄进厚本子。也别让计划挤掉睡眠和运动。稳定的学习节奏，比临时熬夜更能帮助你走远。遇到困难，及时向老师或同伴求助，也是主动学习。",
+          "inputSha256": "6d3539323fade7c757538d6377463f011ed87d3c86a0cf4645f7ef8425f465fe",
+          "inputContextSha256": "75bb267079ae994f1fc451acc7548eb50ccd067fbaf4b97cc2fd3c1ead5db2e8",
+          "inputPresentationSha256": "1b2dd8c996ae54c0540cd008d8ff4a37c24473f9bc88b0667e44baedeaa98c11",
+          "generatedAt": "2026-10-03T08:49:13.473289+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2016-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2016-writing-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "给即将进入高中的同学的完整建议：Astra150汉字/167非空白，Claude131/153（不含示例标签及说明）。各有两项主要建议与具体做法，其他辅助提醒不另列成第三项主建议；学习效果不当作保证。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【示例】\n进入高中，我想提两条建议。其一，学会自主规划。高中科目多、节奏快，老师不再事事叮嘱，你要每晚列出次日任务，分清轻重缓急，把时间握在自己手里。其二，重视错题与反思。题海无涯，与其盲目刷题，不如备一本错题本，写明错因、归纳方法，每周回看一次，让每一次跌倒都变成台阶。主动安排，及时回头，三年之路便能走得稳而远。\n\n【说明】对象是即将升入高中的同学，只提两条建议（自主规划、错题反思），每条都有具体做法，以“其一”“其二”分层，约150字。",
+          "inputSha256": "6d3539323fade7c757538d6377463f011ed87d3c86a0cf4645f7ef8425f465fe",
+          "inputContextSha256": "75bb267079ae994f1fc451acc7548eb50ccd067fbaf4b97cc2fd3c1ead5db2e8",
+          "inputPresentationSha256": "1b2dd8c996ae54c0540cd008d8ff4a37c24473f9bc88b0667e44baedeaa98c11",
+          "generatedAt": "2026-10-03T08:52:53.673180+00:00",
+          "uncertainties": [
+            "原题为三选一，此处按要求对三个小题分别给出示例；本文为个人原创示例，非官方答案。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "给即将进入高中的同学的完整建议：Astra150汉字/167非空白，Claude131/153（不含示例标签及说明）。各有两项主要建议与具体做法，其他辅助提醒不另列成第三项主建议；学习效果不当作保证。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2016-writing-result.json",
+            "inputPromptSha256": "3abbcafa999916d807162daf1726445a7b87e6923ce351c5b2d47297b3519d5e",
+            "responseStreamSha256": "229638ef05634680a3f30f5f70ee7744676f950c093bb6cd46328c7ed61ba432",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "6d3539323fade7c757538d6377463f011ed87d3c86a0cf4645f7ef8425f465fe",
+      "inputContextSha256": "75bb267079ae994f1fc451acc7548eb50ccd067fbaf4b97cc2fd3c1ead5db2e8",
+      "inputPresentationSha256": "1b2dd8c996ae54c0540cd008d8ff4a37c24473f9bc88b0667e44baedeaa98c11",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "给即将进入高中的同学的完整建议：Astra150汉字/167非空白，Claude131/153（不含示例标签及说明）。各有两项主要建议与具体做法，其他辅助提醒不另列成第三项主建议；学习效果不当作保证。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T08:58:35.311Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2016-weixiezuo:2",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2016北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://slide.edu.sina.com.cn/slide_11_78377_35062.html"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "家长群可以成为沟通的便利工具，却不该成为比较孩子的赛场。共享活动安排、澄清通知疑问，能减少信息遗漏；公开晒分数、转发未经核实的消息，则容易制造焦虑。我赞成建群，也建议约定用途与边界：通知集中发布，个人问题私下沟通，孩子的成绩和照片不随意传播。家长还应先听孩子自己的说明，给他们安排学习、承担责任的空间。群里的热闹，不能替代家庭中的倾听。",
+          "inputSha256": "a358f3d9199059dfa2e816f68efdbee3a69d93828b51e936f23bbf3e4f94c3af",
+          "inputContextSha256": "8c17161165819037d514060200d1443a587e7cf1f58eda0eacaafeda3ab568cb",
+          "inputPresentationSha256": "1f050a9507968b97547f566e454f8e4fcd8817362b420c1dce9321902318a8f0",
+          "generatedAt": "2026-10-03T08:49:13.473289+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2016-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2016-writing-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "家长群的完整评论：Astra150汉字/168非空白，Claude143/168（不含示例标签及说明）。兼顾沟通便利与攀比、隐私、边界问题，有明确观点与理由；不将群体行为的举例当作实际调查结果。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【示例】\n家长群是一把双刃剑。它让家校沟通变得便捷：通知即时送达，孩子在校情况一目了然，家长之间也能交流经验，这是技术带来的善意。然而，当群里充斥着刷屏式的“收到”“老师辛苦了”，当晒成绩、攀比、布置“家长作业”成为常态，它便异化为焦虑的放大器和责任的转嫁地。我以为，家长群应回归工具本位：立规矩，少客套，重沟通，守边界，方能真正为孩子成长助力。\n\n【说明】先肯定其便利，再指出其异化，最后提出“回归工具本位”的看法，观点明确、能自圆其说，约150字。",
+          "inputSha256": "a358f3d9199059dfa2e816f68efdbee3a69d93828b51e936f23bbf3e4f94c3af",
+          "inputContextSha256": "8c17161165819037d514060200d1443a587e7cf1f58eda0eacaafeda3ab568cb",
+          "inputPresentationSha256": "1f050a9507968b97547f566e454f8e4fcd8817362b420c1dce9321902318a8f0",
+          "generatedAt": "2026-10-03T08:52:53.673180+00:00",
+          "uncertainties": [
+            "原题为三选一，此处按要求对三个小题分别给出示例；本文为个人原创示例，非官方答案。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "家长群的完整评论：Astra150汉字/168非空白，Claude143/168（不含示例标签及说明）。兼顾沟通便利与攀比、隐私、边界问题，有明确观点与理由；不将群体行为的举例当作实际调查结果。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2016-writing-result.json",
+            "inputPromptSha256": "3abbcafa999916d807162daf1726445a7b87e6923ce351c5b2d47297b3519d5e",
+            "responseStreamSha256": "229638ef05634680a3f30f5f70ee7744676f950c093bb6cd46328c7ed61ba432",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "a358f3d9199059dfa2e816f68efdbee3a69d93828b51e936f23bbf3e4f94c3af",
+      "inputContextSha256": "8c17161165819037d514060200d1443a587e7cf1f58eda0eacaafeda3ab568cb",
+      "inputPresentationSha256": "1f050a9507968b97547f566e454f8e4fcd8817362b420c1dce9321902318a8f0",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "家长群的完整评论：Astra150汉字/168非空白，Claude143/168（不含示例标签及说明）。兼顾沟通便利与攀比、隐私、边界问题，有明确观点与理由；不将群体行为的举例当作实际调查结果。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T08:58:35.311Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2016-weixiezuo:3",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2016北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://slide.edu.sina.com.cn/slide_11_78377_35062.html"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "荷\n\n你把根藏进淤泥，\n把清晨举出水面。\n雨点在宽大的叶上滚动，\n像迟迟不肯说出的心愿。\n\n有人只看见一朵花开，\n我却想起水下漫长的黑暗。\n你不急着解释，\n只让淡淡的香，\n越过池岸。\n\n等风来，\n你轻轻弯下身子，\n又托起一片天空。",
+          "inputSha256": "86bcc7a606485828c4385f53a75d20725f94fa42af7ec242f1e9ed6d251f70c6",
+          "inputContextSha256": "37963847507d45fc4a5ebd5f260cea5d0e739575a113cb807fbcda0a16f43c3f",
+          "inputPresentationSha256": "13ba897b5e10d38f49d6396c42496b70a7b4ef2a2c724829f7d4e3a7d7664a51",
+          "generatedAt": "2026-10-03T08:49:13.473289+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2016-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2016-writing-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "荷的诗歌示例，Astra88汉字/100非空白，Claude107/125（不含说明），均在150字以内；意象为文学创作，不作植物学事实说明。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【示例】\n荷\n\n淤泥是你沉默的来处，\n你却不曾向它交出颜色。\n六月把整片池塘点燃，\n你只举起一盏\n清清淡淡的灯。\n\n风来，你摇一摇，\n不辩解，也不折腰；\n雨来，你捧住它，\n又轻轻倾还给水。\n\n待到秋深，花褪叶残，\n你把甜藏进莲子，\n把苦留在心中，\n把洁白的自己\n埋进更深的泥里——\n等下一个夏天。\n\n【说明】以“荷”为题写诗，借出淤泥而不染、迎风雨而不折、花残后结莲藏藕的形象，抒发对高洁、从容、内敛品格的赞美，全诗不超过150字。",
+          "inputSha256": "86bcc7a606485828c4385f53a75d20725f94fa42af7ec242f1e9ed6d251f70c6",
+          "inputContextSha256": "37963847507d45fc4a5ebd5f260cea5d0e739575a113cb807fbcda0a16f43c3f",
+          "inputPresentationSha256": "13ba897b5e10d38f49d6396c42496b70a7b4ef2a2c724829f7d4e3a7d7664a51",
+          "generatedAt": "2026-10-03T08:52:53.673180+00:00",
+          "uncertainties": [
+            "原题为三选一，此处按要求对三个小题分别给出示例；本文为个人原创示例，非官方答案。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "荷的诗歌示例，Astra88汉字/100非空白，Claude107/125（不含说明），均在150字以内；意象为文学创作，不作植物学事实说明。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2016-writing-result.json",
+            "inputPromptSha256": "3abbcafa999916d807162daf1726445a7b87e6923ce351c5b2d47297b3519d5e",
+            "responseStreamSha256": "229638ef05634680a3f30f5f70ee7744676f950c093bb6cd46328c7ed61ba432",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "86bcc7a606485828c4385f53a75d20725f94fa42af7ec242f1e9ed6d251f70c6",
+      "inputContextSha256": "37963847507d45fc4a5ebd5f260cea5d0e739575a113cb807fbcda0a16f43c3f",
+      "inputPresentationSha256": "13ba897b5e10d38f49d6396c42496b70a7b4ef2a2c724829f7d4e3a7d7664a51",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "荷的诗歌示例，Astra88汉字/100非空白，Claude107/125（不含说明），均在150字以内；意象为文学创作，不作植物学事实说明。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T08:58:35.311Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2016-dazuowen:1",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2016北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://slide.edu.sina.com.cn/slide_11_78377_35062.html"
+        },
+        {
+          "type": "source_text",
+          "title": "诗经七月",
+          "url": "https://zh.wikisource.org/zh-hans/%E8%A9%A9%E7%B6%93/%E4%B8%83%E6%9C%88"
+        },
+        {
+          "type": "literary_research",
+          "title": "中国社会科学网采诗观风研究引何休",
+          "url": "https://www.cssn.cn/wx/wx_zggdwx/202208/t20220802_5442855.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "“老腔”何以令人震撼\n\n木凳、木砖、粗布衣衫，一群看似普通的乡村人走上舞台，竟使观众先屏息，继而爆发出持久的掌声。老腔何以令人震撼？在我看来，是因为这种艺术把土地上的生活积淀转化为真切而有力量的表达，使不同来处的听众听见了与自己相通的生命。\n\n震撼首先来自表达的根深。老腔不是为一次演出临时拼装的奇观，它生长于乡野，与当地人的劳动、悲欢和相聚相伴。陈忠实从唱腔中想到河流、秋禾、春麦和村巷，正说明这种艺术具有具体生活的质地。离开生活，音量再大也可能只是喧嚣；进入生活，寻常的板凳也能成为有表现力的乐器。艺术的力量不由材料的昂贵决定，而与它承载了怎样的经验密切相关。\n\n这种根深的力量，在其他作品中同样可以感受。《诗经·七月》写耕作、蚕桑、收获与寒暑，劳动的细节使我们得以接近遥远时代里人的生活。它吸引后人，并非因为古老二字本身，而是岁月没有磨去那些经验中鲜明的感受。老腔也是如此：乡土不是供人远观的标签，而是长久生活留下的声音。当艺术让这些声音保持可感的温度，听众便不只是在观看一种风俗，更是在与他人的生命相遇。\n\n震撼还来自表演者的全身心投入。老腔演员登台时没有刻意装饰的步伐，开唱后却尽兴尽情。质朴不意味着没有技艺，随意的外表也不等于随便的表达；长久磨炼与真切情感结合，才使唱腔富于感染力。假如只是模仿吼声、敲响板凳，却没有节奏、配合和内在感受，形式虽然相似，艺术效果未必相同。我们欣赏原生态艺术，应珍惜其创造者积累的能力，不能把它简化为未经学习的本能。\n\n更深一层，老腔能够在保持自身特色的同时，唤起超出地域的共鸣。中山音乐堂的观众未必听懂每一句方言，却能感受声调中的激越与舒缓，感受演员投入的热情。这说明地方性并不必然妨碍普遍性。艺术越具体地表现一种生活，就越可能让人从中辨认自己的欢喜、坚忍与渴望。濮存昕忍不住加入表演，正是这种共鸣转化为行动的鲜明一刻。\n\n当然，令人震撼不等于只能依赖强烈的声响。细雨般的低吟、短暂的停顿，也可能触及人心；传统艺术也不能仅靠年龄获得永恒的吸引力。老腔进入话剧、走上音乐堂，提示我们：保存根脉与寻找新的相遇方式可以同时进行。保护它，应让表演者能够持续生活、学习和传承，也让观众有机会理解其声音背后的世界，而不只是截取一段热闹的场面。\n\n因此，老腔的震撼既在声音之中，也在声音背后。土地给予它根，人的投入给予它温度，跨越地域的理解使它继续生长。当这些力量汇聚，普通木凳上敲出的便不只是节奏，更是我们共同生活过、并仍将生活下去的回声。",
+          "inputSha256": "b36fa9fb6c144ca4510e70e70acd04efac0705053c7d310f05912c35e338bade",
+          "inputContextSha256": "fa363179e4448905b9778d797456a119844f511a6283dacd68fa330ea1fd7715",
+          "inputPresentationSha256": "5c8dd61c5214018b511f6a7c69e844f88823da73a30eb71b6c3a321cb3812bac",
+          "generatedAt": "2026-10-03T08:49:13.473289+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2016-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2016-writing-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "Astra924、Claude900汉字，均超过700。Claude没有精致唱词、想吼便吼想砸便砸、千百年不曾断绝、无人喝彩也照唱等超出文据，尤其不可否定老腔的编排和技艺；现代人日益纤弱为过度泛化。饥者歌其食劳者歌其事有何休解诂引文依据。Astra诗经七月耕作蚕桑有原典支持，作为文学论据非直接历史传承证明。默认Astra。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【原创示例，议论文，约1000字】\n\n“老腔”何以令人震撼\n\n一条长板凳，一块木砖，几位关中老汉，一声从胸腔里迸出的吼唱，竟让西安的大戏台、北京的音乐堂掌声雷动。老腔没有华丽的布景，没有精致的唱词，甚至多数观众听不懂那东府土语，可它偏偏“撼人肺腑”。老腔何以令人震撼？我以为，震撼人的不只是那一腔一调，更是它所象征的东西：扎根大地的本真、未经雕饰的生命力，以及千百年来不曾断绝的文化血脉。\n\n老腔之震撼，首在一个“真”字。演员提着自家的板凳上台，迈着在村巷里走动的步子，不摆身段，不作姿态，想吼便吼，想砸便砸。这种真，在讲究包装的时代尤显珍贵。我们见惯了修过音的歌声、滤镜下的面孔、精心设计的“人设”，耳目被喂得精细，心却日渐麻木。而老腔劈面而来，如同一捧带着泥土的新麦，粗粝，却有太阳的味道。《诗经》中的“国风”之所以历经数千年而依然动人，正因为那是田间陌上“饥者歌其食，劳者歌其事”的真声音。真，是一切艺术打动人心的起点。\n\n老腔之震撼，更在一个“力”字。那是生命本身的力量。关中汉子面对黄土与旱塬，把劳作的艰辛、生存的倔强都吼进了腔里，于是声音里有渭水的涛声，有骤雨击打秋禾的啸响。这种力量并不独属于老腔：陕北的信天游在沟壑间回荡，安塞腰鼓捶起漫天黄尘，川江号子压过了险滩的咆哮。它们都是人在与自然、与命运的角力中迸发的呐喊。现代人久居楼宇，生活日益安稳，也日益纤弱，当那原始而强悍的生命力扑面而来，心底那根沉睡的神经便被猛然撞响。濮存昕夺过木砖猛砸板凳的那一刻，正是被这股力量唤醒的时刻。\n\n老腔之震撼，还在一个“根”字。它也许从宋代唱来，历元明清而至今日，始终在乡野、村舍、庙会里唱着，无人喝彩时也照样唱着。这份坚守本身便是一种庄严。一个民族走得再远，总要回头辨认自己的来路。我们之所以在听不懂唱词的情况下仍为之动容，是因为那旋律里有祖辈的呼吸，有我们共同的文化记忆。正如昆曲的水磨调、古琴的泛音，一旦响起，血脉里的东西便会应和。老腔让人震撼，是因为它让人找到了根。\n\n当然，推崇老腔并非拒斥现代，更不是以粗朴否定精致。老腔正是借助话剧《白鹿原》、借助现代舞台，才走出华阴，为更多人所知。传统要活下去，既要守得住本色，也要走得出村巷。但无论形式如何翻新，那份真、那股力、那条根，是不可丢失的魂。\n\n老腔之所以超越艺术形式而成为一种象征，就在于它提醒我们：在这个追逐新奇与精致的时代，仍有一种朴素而雄浑的声音值得倾听。愿我们每个人心底，都留有一条长板凳、一块木砖，在需要的时候，能吼出属于自己的那一声老腔。\n\n【说明】中心论点：老腔的震撼来自它所象征的本真、生命力与文化之根。三个分论点“真—力—根”并列展开，论据由老腔延伸到《诗经》国风、信天游、安塞腰鼓、川江号子、昆曲、古琴，不局限于原文；倒数第二段作辩证补充，结尾回扣题目。",
+          "inputSha256": "b36fa9fb6c144ca4510e70e70acd04efac0705053c7d310f05912c35e338bade",
+          "inputContextSha256": "fa363179e4448905b9778d797456a119844f511a6283dacd68fa330ea1fd7715",
+          "inputPresentationSha256": "5c8dd61c5214018b511f6a7c69e844f88823da73a30eb71b6c3a321cb3812bac",
+          "generatedAt": "2026-10-03T08:52:53.673180+00:00",
+          "uncertainties": [
+            "原题为二选一，此处按要求两题均给出示例；本文为个人原创示例，非官方范文。",
+            "“饥者歌其食，劳者歌其事”凭记忆引用（出自何休《春秋公羊传解诂》），未经工具核对。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "Astra924、Claude900汉字，均超过700。Claude没有精致唱词、想吼便吼想砸便砸、千百年不曾断绝、无人喝彩也照唱等超出文据，尤其不可否定老腔的编排和技艺；现代人日益纤弱为过度泛化。饥者歌其食劳者歌其事有何休解诂引文依据。Astra诗经七月耕作蚕桑有原典支持，作为文学论据非直接历史传承证明。默认Astra。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2016-writing-result.json",
+            "inputPromptSha256": "3abbcafa999916d807162daf1726445a7b87e6923ce351c5b2d47297b3519d5e",
+            "responseStreamSha256": "229638ef05634680a3f30f5f70ee7744676f950c093bb6cd46328c7ed61ba432",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "b36fa9fb6c144ca4510e70e70acd04efac0705053c7d310f05912c35e338bade",
+      "inputContextSha256": "fa363179e4448905b9778d797456a119844f511a6283dacd68fa330ea1fd7715",
+      "inputPresentationSha256": "5c8dd61c5214018b511f6a7c69e844f88823da73a30eb71b6c3a321cb3812bac",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "Astra924、Claude900汉字，均超过700。Claude没有精致唱词、想吼便吼想砸便砸、千百年不曾断绝、无人喝彩也照唱等超出文据，尤其不可否定老腔的编排和技艺；现代人日益纤弱为过度泛化。饥者歌其食劳者歌其事有何休解诂引文依据。Astra诗经七月耕作蚕桑有原典支持，作为文学论据非直接历史传承证明。默认Astra。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T08:58:35.311Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2016-dazuowen:2",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2016北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://slide.edu.sina.com.cn/slide_11_78377_35062.html"
+        },
+        {
+          "type": "source_text",
+          "title": "红楼梦第三回，底本异文限定",
+          "url": "https://zh.wikisource.org/zh-hans/%E7%B4%85%E6%A8%93%E5%A4%A2/%E7%AC%AC003%E5%9B%9E"
+        },
+        {
+          "type": "source_text",
+          "title": "红楼梦第五回，飞鸟各投林",
+          "url": "https://zh.wikisource.org/zh-hant/%E7%B4%85%E6%A8%93%E5%A4%A2/%E7%AC%AC005%E5%9B%9E"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "神奇的书签\n\n那枚书签是从旧书架后面掉出来的。薄薄的木片，一面刻着半片叶子，另一面只有四个小字：请再看一眼。\n\n我把它夹进《昆虫记》，准备第二天交读书笔记。其实我只读了几页，已经在纸上写好‘生命神奇，值得敬畏’。正想再添两句，书页里忽然传出一声轻咳。\n\n‘你见过什么，才觉得神奇？’\n\n我吓得把笔掉在地上。书签在纸间立起，木纹一明一暗，像一只正在呼吸的眼睛。‘你会说话？’我问。它没有回答，只用尖角点了点我的空白笔记。\n\n‘那你帮我写完吧。’我连忙把本子推过去。\n\n‘我能帮你实现一个读书的愿望。’它说，‘但愿望不能由我替你拥有。’\n\n我想了想：‘我想知道，作者为什么能对那么小的虫子看那么久。’木片上的半片叶子忽然舒展开来，一束绿光沿着纸边流过。我听见风吹动草叶的声音，书桌、台灯和窗帘一齐退远了。\n\n再睁眼时，我蹲在一丛草旁。露水悬在叶尖，比我的拳头还大。一只蚂蚁从面前走过，触角轻轻碰了碰地面。我惊得向后缩，书签却横在掌心：‘别急，只看。’\n\n蚂蚁正拖着一粒碎屑。它绕过一段枯茎，又被泥粒挡住，退后，换一个方向，再试一次。我忍不住伸手，想替它把障碍拿开。书签轻轻一颤：‘你想知道它会怎样做，还是想让它照你的办法做？’\n\n我的手停住了。过了一会儿，蚂蚁改变了拖拽的方向，碎屑从缝隙里慢慢转过去。我第一次发现，等待并不是空白。刚才那些被我看成重复的动作，每一次都有细小的变化。\n\n天色暗下来，我又听见翻书声。台灯仍亮着，窗外才过去几分钟。我急忙写下刚才看见的一切，末尾却犹豫了：这是魔法带来的经历，能直接当成书里的事实吗？\n\n‘不能。’书签说，‘回去找作者真正写过的话，也去看看你自己的世界。’\n\n第二天下午，我带着书和一个小本子到了楼下花园。我没有找到昨夜那只蚂蚁，只看见一条细细的蚁路。起初我仍嫌慢，几次想掏手机；后来我开始记时间，画路线，把看见的和猜想的分开写。回家翻书时，才注意到作者是怎样提出问题，怎样描述观察，又怎样修正自己的判断。那些原先被我跳过的过程，比我准备摘抄的结论更有意思。\n\n读书笔记交迟了一天。我向老师说明原因，重新写的文章也没有使用那些漂亮的套话。我写一只蚂蚁怎样搬运碎屑，写自己差点伸出去的手，也写有些问题还没有答案。老师在末尾批了两个字：继续。\n\n此后我读书，仍会遇到读不懂、读不下去的时候。书签有时解释一个词，有时让我把前后两段再读一遍，却从不替我写下最后的感受。我开始选择那些能让我认真观察、不断追问的书，也愿意把一本好书读得慢一些。\n\n后来，书签不再说话了。我把它翻来覆去地看，木片还是那样薄，那半片叶子也没有再亮起。但每当我想匆忙翻过一页，它总恰好挡在那里。\n\n请再看一眼。\n\n我知道，神奇的愿望还在继续实现。",
+          "inputSha256": "9761f4933d62d015e1ce5e4e2e73eaece9c8f11548ce1c53d45866a017e3cfbe",
+          "inputContextSha256": "5dfc26072364a8977aef46850b60348933f03db657295bc14276eec41dc3172e",
+          "inputPresentationSha256": "3bbb8c977e9ea0ce116f86c3f0cd73b687815682f0e0040c4bba6fa2111dc1e3",
+          "generatedAt": "2026-10-03T08:49:13.473289+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2016-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2016-writing-job.json",
+            "reviewerThread": "01a100e6-8939-73a1-85e4-0fdbb9a5c73d",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "Astra948、Claude881汉字，均超过700。均为虚构神奇书签故事；昆虫观察场景不冒充昆虫记原著记载。Claude黛玉眉目引文存在版本差异，本次维基文库底本为似泣非泣含露目，未证其所引版本；白茫茫大地真干净出自第五回曲文而非末回。少平在矿井下读书的精确场景未核，不作原著事实。默认Astra。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【原创示例，记叙文，约1000字】\n\n神奇的书签\n\n那枚书签，是我在外公的旧书箱里翻到的。薄薄一片黄铜，镂着一枝瘦梅，边缘已被摩挲得发亮。我随手把它夹进刚买的一本网络小说里，便去刷手机了。\n\n夜里十一点，台灯下，我翻开小说，书签忽然微微一颤，梅枝上竟亮起一点豆大的金光。\n\n“这本书，你昨天看了四十页，记住了什么？”一个苍老又清亮的声音，像铜铃被风轻轻碰了一下。\n\n我吓得差点把书扔出去。定了定神，才结结巴巴地答：“主角……又升级了。”\n\n“然后呢？”\n\n我答不上来。书签上的光暗了暗，仿佛叹了口气：“我在你外公的《红楼梦》里住了四十年。他每读一回，都用铅笔在页边写字，我看着那些字，从少年的工整，变成老年的颤抖。那才叫读书。”\n\n我脸上一热，嘴上却不服气：“那些书太厚，读不进去。”\n\n“读不进去，是因为没人领你进门。”书签说，“把我夹进那本书里，试试看。”\n\n我将信将疑，从书架顶层抽下落满灰尘的《红楼梦》，把书签夹进第三回。金光倏地漫开，纸页间仿佛起了一层薄雾。我低头读去：“两弯似蹙非蹙罥烟眉，一双似喜非喜含情目……”奇怪，那些原本生涩的字句，此刻竟像被温水化开的茶叶，一片片舒展开来。我似乎看见一个瘦弱的女孩，提着裙角，小心翼翼地迈进贾府高高的门槛，步步留心，时时在意。\n\n“她怕什么？”书签轻声问。\n\n“怕被人耻笑。”我脱口而出，又忽然怔住——初到新班级时，那个不敢多说一句话的我，不也是这样吗？\n\n“你看，好书里有你自己。”书签的光暖暖地跳了一下。\n\n从那以后，每晚的台灯下，便有了我和书签的约定。它从不替我读，只在我想跳页时轻轻发烫，在我读到妙处时亮起一朵小小的梅花。读《平凡的世界》时，它问我：“少平在矿井下还要读书，图什么？”我想了三天，在页边写下：“图的是不让心也陷在井底。”读《乡土中国》读得昏昏欲睡，它便给我讲外公当年如何抄书，一个字一个字地啃。慢慢地，我的手机在抽屉里待的时间越来越长，书架上被翻旧的书越来越多，页边也有了我自己歪歪扭扭的字迹。\n\n期末前的一个夜晚，我读完了《红楼梦》的最后一回。白茫茫大地真干净，我合上书，久久说不出话。\n\n“难过吗？”书签问。\n\n“难过，可是又觉得心里装进了很多东西。”\n\n“那就对了。”它的声音渐渐低下去，“我的光快用完了。其实我没什么神奇，我只是让你慢下来，问一问自己。往后，你自己就是书签。”\n\n金光一点点收拢，最后只剩梅枝上淡淡的铜色。我唤它，它再没有回答。\n\n如今，那枚书签仍夹在我正读的书里，安安静静。每当我想草草翻过一页，指尖触到那枝微凉的瘦梅，耳边便仿佛又响起那声铜铃般的发问：“然后呢？你记住了什么？”\n\n我便坐直身子，把那一页，重新读过。\n\n【说明】以想象展开：书签会说话、会发光，引导“我”从浅阅读转向读经典，对应“能交流”“助你实现读书愿望”。有外貌、对话、心理等细节描写，结尾“你自己就是书签”点明爱读书、读好书的主题。",
+          "inputSha256": "9761f4933d62d015e1ce5e4e2e73eaece9c8f11548ce1c53d45866a017e3cfbe",
+          "inputContextSha256": "5dfc26072364a8977aef46850b60348933f03db657295bc14276eec41dc3172e",
+          "inputPresentationSha256": "3bbb8c977e9ea0ce116f86c3f0cd73b687815682f0e0040c4bba6fa2111dc1e3",
+          "generatedAt": "2026-10-03T08:52:53.673180+00:00",
+          "uncertainties": [
+            "原题为二选一，此处按要求两题均给出示例；本文为个人原创示例，非官方范文。",
+            "文中所引《红楼梦》第三回语句存在版本差异（如“似喜非喜含情目”另有“似泣非泣含露目”等异文），此处凭记忆采用通行本文字，未经工具核对。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "Astra948、Claude881汉字，均超过700。均为虚构神奇书签故事；昆虫观察场景不冒充昆虫记原著记载。Claude黛玉眉目引文存在版本差异，本次维基文库底本为似泣非泣含露目，未证其所引版本；白茫茫大地真干净出自第五回曲文而非末回。少平在矿井下读书的精确场景未核，不作原著事实。默认Astra。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2016-writing-result.json",
+            "inputPromptSha256": "3abbcafa999916d807162daf1726445a7b87e6923ce351c5b2d47297b3519d5e",
+            "responseStreamSha256": "229638ef05634680a3f30f5f70ee7744676f950c093bb6cd46328c7ed61ba432",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "9761f4933d62d015e1ce5e4e2e73eaece9c8f11548ce1c53d45866a017e3cfbe",
+      "inputContextSha256": "5dfc26072364a8977aef46850b60348933f03db657295bc14276eec41dc3172e",
+      "inputPresentationSha256": "3bbb8c977e9ea0ce116f86c3f0cd73b687815682f0e0040c4bba6fa2111dc1e3",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "Astra948、Claude881汉字，均超过700。均为虚构神奇书签故事；昆虫观察场景不冒充昆虫记原著记载。Claude黛玉眉目引文存在版本差异，本次维基文库底本为似泣非泣含露目，未证其所引版本；白茫茫大地真干净出自第五回曲文而非末回。少平在矿井下读书的精确场景未核，不作原著事实。默认Astra。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T08:58:35.311Z",
+      "currentVersion": "gpt_6_astra"
     }
   ],
   "releaseBlockers": [
@@ -26849,7 +28839,15 @@
         "2016-weixiezuo",
         "2016-dazuowen"
       ],
-      "detail": "Scans bear extensive handwritten circles, crosses and underlines; source-annotation exposure, not an authoritative answer key. Original exam-agency publication chain unverified. Printed material2 itself lists India among countries possessing crewed-spaceflight capability; retain exam wording, separately qualify factual accuracy before publication. Question5 first-stroke glyph is washed out. Legacy 乙 retained pending cleaner scan; exact original glyph not certified. Other faint/watermarked type incl. guwen opening reply and note2 place-name needs final cleaner-source readback. Question13/14 score labels appear4/5 and retained; do not infer3/6 from number of people. Confirm faint score glyphs against a cleaner original. Moxie has eight visible blanks but six printed points; scoring allocation unresolved. Preserve stored score6. EOL downloadable DOC repeats many legacy OCR defects and is not independent corroboration. Never override the exam scan with it. Question10 second 果 quotation occurs twice in the passage; its first identical-context occurrence is the mapped anchor. B targets 其, not 之. Predecessor accidentally emitted legacy2016model fields in an overbroad source read before any2016drafts; no new2016root or provider answers generated. Any later blind claim must describe the new answering agent actual exposure."
+      "detail": "Clean ten-page Sina/New Oriental exam photos individually viewed. Nine additional source corrections and ten exact printed underlines are evidenced in source-2016-sina-refinement.json. First-stroke glyph ⺄, opening 当, place 芊, 畋/粜, and original13/14 score4/5 now verified. Original exam-agency publication chain remains unverified. Printed India crewed-spaceflight assertion and 锂电子电池 are preserved as source wording with factual/terminological qualifications; 彩虹鱼 plans are not accomplished facts. All19 root reading units explicitly reference-exposed; five original writing responses saved before Claude/sample compositions. Eight memorization blanks/six points allocation remains unresolved. Annotated EOL/defective DOC and nonofficial Sina reference answers do not override clean exam photos. Additional primary-source checks: Trieste Swiss design/Italian construction and US1958 acquisition; Alvin6500 upgrade completed2022. Source historical claims remain printed, separately qualified.",
+      "detailHistory": [
+        {
+          "at": "2026-10-03T08:58:35.311Z",
+          "detail": "Scans bear extensive handwritten circles, crosses and underlines; source-annotation exposure, not an authoritative answer key. Original exam-agency publication chain unverified. Printed material2 itself lists India among countries possessing crewed-spaceflight capability; retain exam wording, separately qualify factual accuracy before publication. Question5 first-stroke glyph is washed out. Legacy 乙 retained pending cleaner scan; exact original glyph not certified. Other faint/watermarked type incl. guwen opening reply and note2 place-name needs final cleaner-source readback. Question13/14 score labels appear4/5 and retained; do not infer3/6 from number of people. Confirm faint score glyphs against a cleaner original. Moxie has eight visible blanks but six printed points; scoring allocation unresolved. Preserve stored score6. EOL downloadable DOC repeats many legacy OCR defects and is not independent corroboration. Never override the exam scan with it. Question10 second 果 quotation occurs twice in the passage; its first identical-context occurrence is the mapped anchor. B targets 其, not 之. Predecessor accidentally emitted legacy2016model fields in an overbroad source read before any2016drafts; no new2016root or provider answers generated. Any later blind claim must describe the new answering agent actual exposure.",
+          "evidence": "answers-six-sites-20261002/REVIEW-2016-SOURCE.md"
+        }
+      ],
+      "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
     },
     {
       "id": "2016-composite-scores",
@@ -26860,7 +28858,15 @@
         "2016-sanwen",
         "2016-moxie"
       ],
-      "detail": "Preserve all legacy scores and IDs: feilian5 combines originals5/6/7/8(3+3+2+5) with stored3; guwen5 combines13/14(4+5, faint scan labels pending clean verification) with stored4; sanwen5 combines23/24(5+6) with storednull; sanwen20/21/22 have printed3/4/4 with storednull; moxie8blanks/6points allocation unverified. Compatible subquestion scoring required before release."
+      "detail": "Preserve all legacy scores and IDs: feilian5 combines originals5/6/7/8(3+3+2+5) with stored3; guwen5 combines13/14(4+5, confirmed clean photos) with stored4; sanwen5 combines23/24(5+6) with storednull; sanwen20/21/22 have printed3/4/4 with storednull; moxie8blanks/6points allocation unverified. Compatible subquestion scoring required before release.",
+      "detailHistory": [
+        {
+          "at": "2026-10-03T08:58:35.311Z",
+          "detail": "Preserve all legacy scores and IDs: feilian5 combines originals5/6/7/8(3+3+2+5) with stored3; guwen5 combines13/14(4+5, faint scan labels pending clean verification) with stored4; sanwen5 combines23/24(5+6) with storednull; sanwen20/21/22 have printed3/4/4 with storednull; moxie8blanks/6points allocation unverified. Compatible subquestion scoring required before release.",
+          "evidence": "answers-six-sites-20261002/REVIEW-2016-SOURCE.md"
+        }
+      ],
+      "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
     }
   ]
 }
