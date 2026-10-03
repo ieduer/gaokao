@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261003-source2008-qualified-pending",
+  "revision": "20261003-source2007-qualified-pending",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -12173,11 +12173,11 @@
     },
     {
       "id": "2007-moxie:1",
-      "inputSha256": "5b3e8a5b4a568a8e5934b1647da838a491f49d2c9b64bd186b3b65e508a5fbc7",
-      "status": "reviewed",
+      "inputSha256": "01a150b2754fed124fc0fcf366374c2d9fe4db881dc0e3ff4e8704eb667c00f8",
+      "status": "draft",
       "kind": "open",
       "correctOptions": [],
-      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "explanation": "2007题面修复后待完整重审；旧题面、完整模型和旧审核保存在history。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T01:38:23.281Z",
       "sources": [
@@ -12187,64 +12187,109 @@
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答",
-          "text": "①客之美我者，欲有求于我也。②晴空一鹤排云上，便引诗情到碧霄。③至今商女；后庭遗曲。④晓来谁染霜林醉，总是离人泪。题目任选三题，这里列全；“排云”“碧霄”“霜林”不要混写。",
-          "inputSha256": "5b3e8a5b4a568a8e5934b1647da838a491f49d2c9b64bd186b3b65e508a5fbc7",
-          "generatedAt": "2026-10-03T01:38:23.281Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
-            "contextEvidence": {
-              "method": "no_annotation_v1_equivalence",
-              "originalInputSha256": "5b3e8a5b4a568a8e5934b1647da838a491f49d2c9b64bd186b3b65e508a5fbc7",
-              "originalEvidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
-              "originalAnswerSha256": "be53509854e92bd8f7f118e1784e42369f417ec853fb72f556eeb58f6644115e",
-              "contextSha256": "bc82913fddc95f76a0ce5dc68f2eec02d4bc5c4d4d3617efc24a6935e97516d5",
-              "sourceAnnotation": null,
-              "evidence": "answers-six-sites-20261002/no-annotation-context-proof.json"
+      "modelAnswers": {},
+      "inputContextSha256": "e8fb029e9ecb787dd38c15809e800d59c2fa4e55532ee33dfab4724f7f513538",
+      "inputPresentationSha256": "2368c829b092f89f61e9b0d188ebddd098823cde3f942b38d16e6fdb2a7644a5",
+      "history": [
+        {
+          "source": {
+            "id": "2007-moxie",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "①（邹忌）曰：吾妻之美我者，私我也；妾之美我者，畏我也；                   ，\n。（《邹忌讽齐王纳谏》）\n②自古逢秋悲寂寥，我言秋日胜春朝。                     ，              。（刘禹锡《秋词》）\n③六朝旧事随流水，但寒烟衰草凝绿。               ，时时犹唱，              。（王安石《桂枝香·金陵怀古》）\n④碧云天，黄花地，西风紧，北雁南飞。                   ？                 。（王实甫《长亭送别》）"
+              }
+            ],
+            "topic": "13．在横线上填写作品的原文（任选3题）",
+            "annotation": null,
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "13．在横线上填写作品的原文（任选3题）\n①（邹忌）曰：吾妻之美我者，私我也；妾之美我者，畏我也；                   ，\n。（《邹忌讽齐王纳谏》）\n②自古逢秋悲寂寥，我言秋日胜春朝。                     ，              。（刘禹锡《秋词》）\n③六朝旧事随流水，但寒烟衰草凝绿。               ，时时犹唱，              。（王安石《桂枝香·金陵怀古》）\n④碧云天，黄花地，西风紧，北雁南飞。                   ？                 。（王实甫《长亭送别》）",
+                "score": null
+              }
+            ]
+          },
+          "review": {
+            "id": "2007-moxie:1",
+            "inputSha256": "5b3e8a5b4a568a8e5934b1647da838a491f49d2c9b64bd186b3b65e508a5fbc7",
+            "status": "reviewed",
+            "kind": "open",
+            "correctOptions": [],
+            "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T01:38:23.281Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2007北京卷原题及完整材料"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答",
+                "text": "①客之美我者，欲有求于我也。②晴空一鹤排云上，便引诗情到碧霄。③至今商女；后庭遗曲。④晓来谁染霜林醉，总是离人泪。题目任选三题，这里列全；“排云”“碧霄”“霜林”不要混写。",
+                "inputSha256": "5b3e8a5b4a568a8e5934b1647da838a491f49d2c9b64bd186b3b65e508a5fbc7",
+                "generatedAt": "2026-10-03T01:38:23.281Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
+                  "contextEvidence": {
+                    "method": "no_annotation_v1_equivalence",
+                    "originalInputSha256": "5b3e8a5b4a568a8e5934b1647da838a491f49d2c9b64bd186b3b65e508a5fbc7",
+                    "originalEvidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
+                    "originalAnswerSha256": "be53509854e92bd8f7f118e1784e42369f417ec853fb72f556eeb58f6644115e",
+                    "contextSha256": "bc82913fddc95f76a0ce5dc68f2eec02d4bc5c4d4d3617efc24a6935e97516d5",
+                    "sourceAnnotation": null,
+                    "evidence": "answers-six-sites-20261002/no-annotation-context-proof.json"
+                  },
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "bc82913fddc95f76a0ce5dc68f2eec02d4bc5c4d4d3617efc24a6935e97516d5"
+                  }
+                },
+                "inputContextSha256": "bc82913fddc95f76a0ce5dc68f2eec02d4bc5c4d4d3617efc24a6935e97516d5",
+                "inputPresentationSha256": "29a95d6fc5bd946e2d492ec1d4132eb2913a059aa9310362210d99c71a625c68"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "题目要求任选3题，现全部作答供参考：\n①客之美我者，欲有求于我也。（《邹忌讽齐王纳谏》）\n②晴空一鹤排云上，便引诗情到碧霄。（刘禹锡《秋词》）\n③至今商女；后庭遗曲。（王安石《桂枝香·金陵怀古》）\n④晓来谁染霜林醉？总是离人泪。（王实甫《长亭送别》）",
+                "inputSha256": "5b3e8a5b4a568a8e5934b1647da838a491f49d2c9b64bd186b3b65e508a5fbc7",
+                "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+                "uncertainties": [],
+                "selectedOptions": [],
+                "assessment": {
+                  "matchesConclusion": null
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+                  "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+                  "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+                  "stage": "independent",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "bc82913fddc95f76a0ce5dc68f2eec02d4bc5c4d4d3617efc24a6935e97516d5"
+                  }
+                },
+                "inputContextSha256": "bc82913fddc95f76a0ce5dc68f2eec02d4bc5c4d4d3617efc24a6935e97516d5",
+                "inputPresentationSha256": "29a95d6fc5bd946e2d492ec1d4132eb2913a059aa9310362210d99c71a625c68"
+              }
             },
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "bc82913fddc95f76a0ce5dc68f2eec02d4bc5c4d4d3617efc24a6935e97516d5"
-            }
-          },
-          "inputContextSha256": "bc82913fddc95f76a0ce5dc68f2eec02d4bc5c4d4d3617efc24a6935e97516d5",
-          "inputPresentationSha256": "29a95d6fc5bd946e2d492ec1d4132eb2913a059aa9310362210d99c71a625c68"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "题目要求任选3题，现全部作答供参考：\n①客之美我者，欲有求于我也。（《邹忌讽齐王纳谏》）\n②晴空一鹤排云上，便引诗情到碧霄。（刘禹锡《秋词》）\n③至今商女；后庭遗曲。（王安石《桂枝香·金陵怀古》）\n④晓来谁染霜林醉？总是离人泪。（王实甫《长亭送别》）",
-          "inputSha256": "5b3e8a5b4a568a8e5934b1647da838a491f49d2c9b64bd186b3b65e508a5fbc7",
-          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
-          "uncertainties": [],
-          "selectedOptions": [],
-          "assessment": {
-            "matchesConclusion": null
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
-            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
-            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
-            "stage": "independent",
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "bc82913fddc95f76a0ce5dc68f2eec02d4bc5c4d4d3617efc24a6935e97516d5"
-            }
-          },
-          "inputContextSha256": "bc82913fddc95f76a0ce5dc68f2eec02d4bc5c4d4d3617efc24a6935e97516d5",
-          "inputPresentationSha256": "29a95d6fc5bd946e2d492ec1d4132eb2913a059aa9310362210d99c71a625c68"
+            "inputContextSha256": "bc82913fddc95f76a0ce5dc68f2eec02d4bc5c4d4d3617efc24a6935e97516d5",
+            "inputPresentationSha256": "29a95d6fc5bd946e2d492ec1d4132eb2913a059aa9310362210d99c71a625c68"
+          }
         }
-      },
-      "inputContextSha256": "bc82913fddc95f76a0ce5dc68f2eec02d4bc5c4d4d3617efc24a6935e97516d5",
-      "inputPresentationSha256": "29a95d6fc5bd946e2d492ec1d4132eb2913a059aa9310362210d99c71a625c68"
+      ]
     },
     {
       "id": "2006-moxie:1",
@@ -40761,6 +40806,25 @@
         "2008-yuyan-application"
       ],
       "detail": "通通好课公开PDF预览JPG第1—9页逐页目视，重新排版且与Gzy转录存在共同错误；未下载PDF文件，未取得原卷扫描或考试机构出版链。 教育在线首图实际为404占位图，不作试题；Gzy与本预览的共同错字不构成独立互证。原卷、答题卡、印刷方格、出版链及历史评分兼容仍未认证。 古文原8C译白为公布、至后/后至异文及第3段引号缺失仍留待核，不能为迎合单选答案擅改错误选项；原7所/相错误点位已修。语病原4恢复可见增加但题源身份仍有限定；语言5精确划线目前以说明存入annotation，实际问句呈现待处理。 正文与题面若干明显损词为明示编辑校勘，非原卷恢复。诗句消/销、散文五颜六色/转载五颜十色、他们/它们等异文未强行统一；没有以转载全部覆盖较清晰的旧文。默写苏轼、断句贵/美、作文重复字等原文与理由完整保留。 漏收原11断句、原21配图、原22展板共3单元独立保存；补录累计19，其中16已有双模型、3仅来源，全部未入库，不计612。24阅读（21旧+3补录）及1主作文共25个单元；旧ID/qIndex/score/AI保留，合并小问全部作答，不重算历史成绩或写学生记录。 原21配图已获得并哈希绑定，但现有文字runner未证实可发送实际图像；后续必须先解决双方完整同图输入及可验证响应，不能用人工描述替代图片，也不能把仅一个URL冒充图像输入。钟面时间不可从模糊图形臆造为已读事实。 本轮2008全部参考暴露：Gzy第3页参考解析及预览第9页参考答已见，旧默写也已有模型，不能称盲答。没有2008本人新答案或provider调用；本人25完整作答冻结后才新有限PLAN27。配图≤45字，展板含标题保守总计≤80字，主作文≥800字；虚构经历必须明示。 塑料袋材料数据只服务2008给定文本理解，不当作当前生命周期评估结论；地震和奥运源文数字独立事实认证另待。既往全部来源/旧分值/早期v3/跨站映射/六站八消费者/注册发布/真实认证/status门禁继续。当前第二次压缩，只完成来源原子步再一个LOCAL串行接续，不在本聊天启动答案阶段。"
+    },
+    {
+      "id": "2007-source-coverage-marking-and-year-attribution",
+      "status": "open",
+      "recordIds": [
+        "2007-feilian",
+        "2007-guwen",
+        "2007-shici",
+        "2007-moxie",
+        "2007-yuyanjichu",
+        "2007-yuyanjichu-2",
+        "2007-dazuowen",
+        "2007-duanju",
+        "2007-sanwen",
+        "2007-yuyan-ordering",
+        "2007-yuyan-news",
+        "2007-yuyan-tourism"
+      ],
+      "detail": "新浪2007年北京卷七张题目拼接图覆盖原1—25题，已逐图目视；不是完整14物理页原卷或考试机构出版链认证。 七张拼接图不是十四页完整原卷，不认证考试机构原始出版链、答题卡、印刷方格；Gzy与旧库共同OCR错误不构成独立互证。 旧2007-yuyanjichu-2三题年份混入，原22/23与2005旧库逐字重复，三题题型标题均列在Gzy2005索引。保留全部身份、原文、score和旧AI；只加警示并排除2007新输入。真实年份最终入库、2005第三题旧损文、历史进度合并与评分兼容仍待，不能直接改year/ID或重算成绩。 补录原11断句、原18—21散文、原22—24三应用，共8单元独立保存，未入612；27实际2007单元为19有效旧单元和8补录，26阅读及1主作文。累计27补录中16早已有双模型、11仅来源，全部未入库/映射。 原6/7点在选项，正文推定点撤除；原8四线恢复，诗歌六推定点撤除。旧null分值、合并子题及前存语文历史不改；原卷标记和全部站点最终渲染仍待。 《湿湿的想念》“无须”按可见图更正Gzy“必须”，影响全文理解。凤头砖瓦楼按图保留，“黏合”被水印覆盖较重，按Gzy保留并标待原卷辨清；断句后文辨/辩异文按可见图取辨，不把低清图当字形绝对证明。 全部2007保守标参考暴露：已见Gzy部分参考、旧默写审核及本次读取的部分旧reference/AI字段，不称盲答。本步骤未写2007本人答案、未调用provider。用户要求Claude暂停，PLAN27额度终态不可重跑；有额度后也须新有限计划。 给定2007新闻的工期及数字仅服务文本理解，不证明工程后来实际进展；作文完整800字以上、文化介绍不少60字、新闻每条不超25字后续分别验证。没有学生写入或通知。 2008本人25全文和图像绑定仍冻结，CLI回显像素不等于模型看过，双方实际视觉作答待。所有前存来源、旧评分、早期v3、六站八消费者、受控注册发布、真实认证和status门禁保持。当前聊天首次压缩，完成本来源原子步必须刷新检查点再开始答案阶段。"
     }
   ]
 }
