@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261003-source2009-qualified-pending",
+  "revision": "20261003-reviewed-450-qualified-2009",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -990,12 +990,15 @@
     {
       "id": "2009-sanwen:1",
       "inputSha256": "b1d1a61b7927e8388f6bf9c52695b2175893d422da342e09e786bf11032de2a4",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "multiple_choice",
-      "correctOptions": [],
-      "explanation": "2009题面及标记修正后待完整重审，旧输入和全部原模型完整存history。",
-      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
+      "correctOptions": [
+        "B",
+        "E"
+      ],
+      "explanation": "两者BE。A为无据因果，Claude称因果倒置不够准确，并没有可简单倒转的原文因果；其补入君臣受刑背景不能替代文章依据。C的最大悲哀被作者重新评价所否定；D不得以梦碑概括全篇。根版本更审慎。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:54:17.016Z",
       "sources": [
         {
           "type": "source_material",
@@ -1009,10 +1012,69 @@
           "type": "reference_reprint",
           "title": "2009北京卷参考答案转载：第17题B、E",
           "url": "https://www.gzywtk.com/sjbrow/128-4.html?deviceType=Desktop"
+        },
+        {
+          "type": "qualified_public_scan",
+          "title": "2009北京题源：新浪原卷样式6页逐页目视，第2页缺失，Gzy转载异文限定",
+          "url": "https://slide.edu.sina.com.cn/slide_11_272_71.html?img=708"
+        },
+        {
+          "type": "adjudication",
+          "title": "2009完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2009.json"
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {},
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选B、E。B对应作者因人而慕地，写韩城高阔秀丽及悠久人文历史，突出史圣故乡的地灵与文化积淀。E概括游踪、历史叙述、传说想象和现实感怀交织，使游记具有文化厚度。A把汉武帝在当地求得灵芝与他和司马迁结缘硬接成因果，原文没有这种关系。C把不能入祖茔认定为史圣最大的悲哀，忽略作者的反问以及宁可认为这里是最佳长眠处的重新评价。D把个别梦境传说的虚实未定扩大为全篇扑朔迷离的风格；本文游踪清楚，情感指向明确，不靠悬疑取胜。这里判断的是文章如何叙述，传说内容不因此成为已证史实。",
+          "selectedOptions": [
+            "B",
+            "E"
+          ],
+          "inputSha256": "b1d1a61b7927e8388f6bf9c52695b2175893d422da342e09e786bf11032de2a4",
+          "inputContextSha256": "3d9551110acc448b0786dae2afe65af329cc7b6fc06e3313404bb528173eb7c6",
+          "inputPresentationSha256": "07d296aa36806eb921641dd3d5f2cf28c1f1f86b27a43477f5b1d842d7ac43ea",
+          "generatedAt": "2026-10-03T12:47:36.533060+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2009-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2009-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2009.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B、E。\n选B、E。A项因果倒置：汉武帝与司马迁“结缘”是因为君臣关系和司马迁受刑著史的遭遇，挖到灵芝只是河流改名的由来。B项正确：文章写芝川的好风水、古道上的历史活剧，又说“地以人传”，突出的是史圣故里的人杰地灵。C项错误：作者对“未能埋入祖茔”反问“这是谁的悲哀呢”，并认为此处是史圣最佳的长眠之处，并不认为这是史圣的悲哀。D项错误：梦碑虚实难辨只是文中一处材料，全文按游踪写来，脉络清楚，并非扑朔迷离的风格。E项正确：文章把韩信、李世民、李自成等历史想象与登祠拜谒的现实感受融合在一起，使游记厚重而有文化内涵。",
+          "inputSha256": "b1d1a61b7927e8388f6bf9c52695b2175893d422da342e09e786bf11032de2a4",
+          "inputContextSha256": "3d9551110acc448b0786dae2afe65af329cc7b6fc06e3313404bb528173eb7c6",
+          "inputPresentationSha256": "07d296aa36806eb921641dd3d5f2cf28c1f1f86b27a43477f5b1d842d7ac43ea",
+          "generatedAt": "2026-10-03T12:49:27.258825+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B",
+            "E"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2009-reading-result.json",
+            "inputPromptSha256": "f9bf65e96b8675516bda33bb90ab8d9bfb057a5d385804db05b66bf940910146",
+            "responseStreamSha256": "404700d114b3d1fdc4abafbfb80b0cf94e377bba77b4c964b7624c0a1ec203c6",
+            "stage": "independent"
+          }
+        }
+      },
       "scoringPolicy": {
         "kind": "exact_set",
         "basis": "practice",
@@ -11815,20 +11877,73 @@
     {
       "id": "2009-moxie:1",
       "inputSha256": "628264586662840b802ad73d31a7a5de4694432d7ab5a6cd43af59f39f285a64",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "open",
       "correctOptions": [],
-      "explanation": "2009题面及标记修正后待完整重审，旧输入和全部原模型完整存history。",
-      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "explanation": "两者七空相同，新浪参考图13也一致。保持涌/岂/著/族等字形，旧分值7不变；古诗文网搜索索引补证旅夜书怀，打开超时，不能声称全文在线核验。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:54:17.016Z",
       "sources": [
         {
           "type": "source_material",
           "title": "站内2009北京卷原题及完整材料"
+        },
+        {
+          "type": "qualified_public_scan",
+          "title": "2009北京题源：新浪原卷样式6页逐页目视，第2页缺失，Gzy转载异文限定",
+          "url": "https://slide.edu.sina.com.cn/slide_11_272_71.html?img=708"
+        },
+        {
+          "type": "adjudication",
+          "title": "2009完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2009.json"
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {},
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "①聊乘化以归尽；乐夫天命复奚疑。\n②月涌大江流；名岂文章著。\n③族秦者秦也；非天下也。\n④又岂在朝朝暮暮。\n依次填写七处原句，第二组注意涌、岂、著，第三组族是使宗族灭亡之意，不能因前一句灭六国而改写成灭秦者。第四组末尾按题面用叹号。",
+          "selectedOptions": [],
+          "inputSha256": "628264586662840b802ad73d31a7a5de4694432d7ab5a6cd43af59f39f285a64",
+          "inputContextSha256": "dfc5d2fc589bdc079868d35bd71daa864cc7c153a8631d5bb1fa39ac07c10afb",
+          "inputPresentationSha256": "f8dd40fc67e7e6b30203a1aff4303f4cf9b7a8e92902ddeeaac0c9fcfc0287d5",
+          "generatedAt": "2026-10-03T12:47:36.533060+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2009-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2009-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2009.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "①聊乘化以归尽，乐夫天命复奚疑\n②月涌大江流；名岂文章著\n③族秦者秦也，非天下也\n④又岂在朝朝暮暮",
+          "inputSha256": "628264586662840b802ad73d31a7a5de4694432d7ab5a6cd43af59f39f285a64",
+          "inputContextSha256": "dfc5d2fc589bdc079868d35bd71daa864cc7c153a8631d5bb1fa39ac07c10afb",
+          "inputPresentationSha256": "f8dd40fc67e7e6b30203a1aff4303f4cf9b7a8e92902ddeeaac0c9fcfc0287d5",
+          "generatedAt": "2026-10-03T12:49:27.258825+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2009-reading-result.json",
+            "inputPromptSha256": "f9bf65e96b8675516bda33bb90ab8d9bfb057a5d385804db05b66bf940910146",
+            "responseStreamSha256": "404700d114b3d1fdc4abafbfb80b0cf94e377bba77b4c964b7624c0a1ec203c6",
+            "stage": "independent"
+          }
+        }
+      },
       "inputContextSha256": "dfc5d2fc589bdc079868d35bd71daa864cc7c153a8631d5bb1fa39ac07c10afb",
       "inputPresentationSha256": "f8dd40fc67e7e6b30203a1aff4303f4cf9b7a8e92902ddeeaac0c9fcfc0287d5",
       "history": [
@@ -38907,6 +39022,1348 @@
       "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
       "reviewedAt": "2026-10-03T12:10:22.344Z",
       "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2009-guwen:1",
+      "sources": [
+        {
+          "type": "qualified_public_scan",
+          "title": "2009北京题源：新浪原卷样式6页逐页目视，第2页缺失，Gzy转载异文限定",
+          "url": "https://slide.edu.sina.com.cn/slide_11_272_71.html?img=708"
+        },
+        {
+          "type": "adjudication",
+          "title": "2009完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2009.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选C。鄙在这里指见识浅陋、不知变通，并非道德品质低下。叔孙通用不知时变解释自己的批评，重点是两位儒生不能适应时代处境。A益为逐渐、更加，写刘邦越来越厌烦群臣失礼；B度为估量，刘邦要求礼仪在自己能做到的范围内；D竟为从头至尾、终了，句意是整个朝会饮酒过程没有人喧哗失礼。D不宜译为直到朝会结束才开始设宴，原句强调朝会与饮酒期间的秩序。",
+          "selectedOptions": [
+            "C"
+          ],
+          "inputSha256": "c27e3eda1d77e494bb837742e577ca88dbc85b032a0b9099836728c564fcb4c5",
+          "inputContextSha256": "a8add84bd51b7bba0bd7286957e35f6e74a7fb207a37241e3f9ca313e1ae6f54",
+          "inputPresentationSha256": "2bce656a6f01a5e373cefc42a84c9607383c97246006ae802de3080dc289a674",
+          "generatedAt": "2026-10-03T12:47:36.533060+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2009-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2009-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2009.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。A项“益”解作“渐渐”（也可理解为“越来越”），符合语境：高帝对群臣失礼越来越厌恶。B项“度”读duó，意为估量、考虑，正确。C项“鄙”不是“品德低下”，而是见识浅陋、迂腐不通；叔孙通笑两生“不知时变”，是说他们目光短浅，并非指责其品德，故此项错误。D项“竟朝置酒”的“竟”指从头到尾、直至终了，正确。",
+          "inputSha256": "c27e3eda1d77e494bb837742e577ca88dbc85b032a0b9099836728c564fcb4c5",
+          "inputContextSha256": "a8add84bd51b7bba0bd7286957e35f6e74a7fb207a37241e3f9ca313e1ae6f54",
+          "inputPresentationSha256": "2bce656a6f01a5e373cefc42a84c9607383c97246006ae802de3080dc289a674",
+          "generatedAt": "2026-10-03T12:49:27.258825+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2009-reading-result.json",
+            "inputPromptSha256": "f9bf65e96b8675516bda33bb90ab8d9bfb057a5d385804db05b66bf940910146",
+            "responseStreamSha256": "404700d114b3d1fdc4abafbfb80b0cf94e377bba77b4c964b7624c0a1ec203c6",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "c27e3eda1d77e494bb837742e577ca88dbc85b032a0b9099836728c564fcb4c5",
+      "inputContextSha256": "a8add84bd51b7bba0bd7286957e35f6e74a7fb207a37241e3f9ca313e1ae6f54",
+      "inputPresentationSha256": "2bce656a6f01a5e373cefc42a84c9607383c97246006ae802de3080dc289a674",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "两者C。鄙为浅陋而非品德低下；竟朝置酒是全程约束，不是等朝会结束才设宴。完整正文缺页保留，选项与字义可据当前材料判读。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:54:17.016Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2009-guwen:2",
+      "sources": [
+        {
+          "type": "qualified_public_scan",
+          "title": "2009北京题源：新浪原卷样式6页逐页目视，第2页缺失，Gzy转载异文限定",
+          "url": "https://slide.edu.sina.com.cn/slide_11_272_71.html?img=708"
+        },
+        {
+          "type": "adjudication",
+          "title": "2009完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2009.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选A。两句因都承接前事，表示于是、就：汉王败退，叔孙通于是始终跟随汉王；项王于是留下沛公一同饮酒。B前之是动词，到、往，后之是结构助词，连接皇帝与贵。C前以表示依照，以次即按次序；后以下是方位范围结构，表示丞相及其以下的文官，两者不能视作意义、用法都相同。D前为是动词，制定、做，后为是引出施事者的被动介词，被秦所灭。",
+          "selectedOptions": [
+            "A"
+          ],
+          "inputSha256": "5a3ea757cd8b04feebf8d0e795b928802cae3339dcc7cddee70da8a2dfede31c",
+          "inputContextSha256": "78c638e98c9cc4189ac59af7b10f10b9894401aa08087837ed5b857820ef7190",
+          "inputPresentationSha256": "07bc1d1589087c459a99079161c987f0c9f183cf1b5f16a48ed2c85e9d5c33a5",
+          "generatedAt": "2026-10-03T12:47:36.533060+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2009-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2009-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2009.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\n选A。A项两个“因”都是副词，意为“于是、就”：汉王败退西去，叔孙通于是最终跟随了汉；项王当天就留沛公一起饮酒。B项前一个“之”是动词“到、往”，后一个是结构助词“的”，不同。C项“以次”的“以”是介词“按照”，“以下”的“以”表示范围界限，不同。D项前一个“为”是动词“制定、做”，后一个“为……所”表被动，不同。",
+          "inputSha256": "5a3ea757cd8b04feebf8d0e795b928802cae3339dcc7cddee70da8a2dfede31c",
+          "inputContextSha256": "78c638e98c9cc4189ac59af7b10f10b9894401aa08087837ed5b857820ef7190",
+          "inputPresentationSha256": "07bc1d1589087c459a99079161c987f0c9f183cf1b5f16a48ed2c85e9d5c33a5",
+          "generatedAt": "2026-10-03T12:49:27.258825+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2009-reading-result.json",
+            "inputPromptSha256": "f9bf65e96b8675516bda33bb90ab8d9bfb057a5d385804db05b66bf940910146",
+            "responseStreamSha256": "404700d114b3d1fdc4abafbfb80b0cf94e377bba77b4c964b7624c0a1ec203c6",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "5a3ea757cd8b04feebf8d0e795b928802cae3339dcc7cddee70da8a2dfede31c",
+      "inputContextSha256": "78c638e98c9cc4189ac59af7b10f10b9894401aa08087837ed5b857820ef7190",
+      "inputPresentationSha256": "07bc1d1589087c459a99079161c987f0c9f183cf1b5f16a48ed2c85e9d5c33a5",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "两者A。因承接为于是；之动词/助词、以次/以下、为动词/被动区分完整。保留正文来源和加点范围限制，不以双模型一致解除来源门禁。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:54:17.016Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2009-guwen:3",
+      "sources": [
+        {
+          "type": "qualified_public_scan",
+          "title": "2009北京题源：新浪原卷样式6页逐页目视，第2页缺失，Gzy转载异文限定",
+          "url": "https://slide.edu.sina.com.cn/slide_11_272_71.html?img=708"
+        },
+        {
+          "type": "adjudication",
+          "title": "2009完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2009.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选C。陈车骑步卒卫宫意为列布车骑和步兵以护卫宫殿，设兵张旗帜意为陈设兵器、张开旗帜。兵在这里是兵器，C译成设置士兵的队列不合句意。A的共尊是共同尊奉、拥戴，B的且是将近、面谀是当面奉承、亲贵是受亲近而显贵，D的以尊卑次是按尊卑次序、上寿是向皇帝祝寿，其基本理解都成立。正文旗志与选项旗帜存在转录异文，不据正确解释反改原题中的故意错误译文。",
+          "selectedOptions": [
+            "C"
+          ],
+          "inputSha256": "6a0debe87ff68b2940deb77909108245796df3ba6b6e74842d53a2fa6717d501",
+          "inputContextSha256": "8706d3df92f2b036d48dad03b819390ed00a8a65b7cbf46f726252a2c7cfe39a",
+          "inputPresentationSha256": "719ebf0b074670f47386c5092e8032e016c70d18d3dbf1ad3a640326da818fbc",
+          "generatedAt": "2026-10-03T12:47:36.533060+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2009-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2009-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2009.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。“设兵张旗帜”的“兵”指兵器，意为陈列兵器、竖起旗帜，译成“设置士兵的队列”不符合文意。A项译出了状语后置“于定陶”，正确。B项“且”为“将近”，“面谀”为当面奉承，“亲贵”为受亲信而显贵，正确。D项“以尊卑次”即按地位高低的次序，“上寿”即敬酒祝寿，正确。",
+          "inputSha256": "6a0debe87ff68b2940deb77909108245796df3ba6b6e74842d53a2fa6717d501",
+          "inputContextSha256": "8706d3df92f2b036d48dad03b819390ed00a8a65b7cbf46f726252a2c7cfe39a",
+          "inputPresentationSha256": "719ebf0b074670f47386c5092e8032e016c70d18d3dbf1ad3a640326da818fbc",
+          "generatedAt": "2026-10-03T12:49:27.258825+00:00",
+          "uncertainties": [
+            "题干C项引文作“旗帜”，材料原文作“旗志”，属文字转录差异，不影响判断。"
+          ],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2009-reading-result.json",
+            "inputPromptSha256": "f9bf65e96b8675516bda33bb90ab8d9bfb057a5d385804db05b66bf940910146",
+            "responseStreamSha256": "404700d114b3d1fdc4abafbfb80b0cf94e377bba77b4c964b7624c0a1ec203c6",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "6a0debe87ff68b2940deb77909108245796df3ba6b6e74842d53a2fa6717d501",
+      "inputContextSha256": "8706d3df92f2b036d48dad03b819390ed00a8a65b7cbf46f726252a2c7cfe39a",
+      "inputPresentationSha256": "719ebf0b074670f47386c5092e8032e016c70d18d3dbf1ad3a640326da818fbc",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "两者C。兵是兵器，故意错误译文不能改成正确译文。旗志/旗帜异文均如实限定。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:54:17.016Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2009-guwen:4",
+      "sources": [
+        {
+          "type": "qualified_public_scan",
+          "title": "2009北京题源：新浪原卷样式6页逐页目视，第2页缺失，Gzy转载异文限定",
+          "url": "https://slide.edu.sina.com.cn/slide_11_272_71.html?img=708"
+        },
+        {
+          "type": "adjudication",
+          "title": "2009完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2009.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选B，即①③④。①汉王战败后仍追随，说明他对所从对象的判断并非只看眼前胜败；③指出儒者可参与守成，切合统一后建立朝廷秩序的需要；④批评不知时变，直接表现他重视因时调整。②写刘邦的简易主张，不是叔孙通的行为；⑤写御史执行礼制、惩治失礼者，主语也不是叔孙通。⑥是诸生对他的赞誉，属于旁人的评价，不是他的直接言行。只有B三句都直接表现题目所问，其他组合均含②或⑤。",
+          "selectedOptions": [
+            "B"
+          ],
+          "inputSha256": "6d29da689a92c276a55cd54456f63636a324220aa805c2a1487bec3cbd6e4d88",
+          "inputContextSha256": "6a1cccf63972b97cbcb5d7f48ce0dd412cd1a3a6ffbf136c649e1ee1f4b514ce",
+          "inputPresentationSha256": "a888cffa1a742ed7950ff5ff84e8242c3c196d60314ba9ccb3c47e7d28886cee",
+          "generatedAt": "2026-10-03T12:47:36.533060+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2009-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2009-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2009.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。①汉王兵败时叔孙通仍认定并始终跟随汉王，可见其眼光。③他指出儒者“难与进取，可与守成”，看准天下已定、需要制礼守成的时机，是识时务。④他讥笑鲁两生“不知时变”，反衬自己通晓时变。②写高帝废除秦朝苛细仪法，与叔孙通无关。⑤写御史在朝会上执行礼法，是朝仪的情形，不直接表现叔孙通。⑥是诸生的称赞，可作侧面印证，但含⑥的A、C两组都夹有②，故排除。全部符合的只有①③④。",
+          "inputSha256": "6d29da689a92c276a55cd54456f63636a324220aa805c2a1487bec3cbd6e4d88",
+          "inputContextSha256": "6a1cccf63972b97cbcb5d7f48ce0dd412cd1a3a6ffbf136c649e1ee1f4b514ce",
+          "inputPresentationSha256": "a888cffa1a742ed7950ff5ff84e8242c3c196d60314ba9ccb3c47e7d28886cee",
+          "generatedAt": "2026-10-03T12:49:27.258825+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2009-reading-result.json",
+            "inputPromptSha256": "f9bf65e96b8675516bda33bb90ab8d9bfb057a5d385804db05b66bf940910146",
+            "responseStreamSha256": "404700d114b3d1fdc4abafbfb80b0cf94e377bba77b4c964b7624c0a1ec203c6",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "6d29da689a92c276a55cd54456f63636a324220aa805c2a1487bec3cbd6e4d88",
+      "inputContextSha256": "6a1cccf63972b97cbcb5d7f48ce0dd412cd1a3a6ffbf136c649e1ee1f4b514ce",
+      "inputPresentationSha256": "a888cffa1a742ed7950ff5ff84e8242c3c196d60314ba9ccb3c47e7d28886cee",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "两者B。①③④对应眼光和时变；②为高帝行为、⑤为御史执法。⑥可侧面佐证，不应把不是直接言行说成完全不相关；其所在其他组合均有②足以排除。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:54:17.016Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2009-guwen:5",
+      "sources": [
+        {
+          "type": "qualified_public_scan",
+          "title": "2009北京题源：新浪原卷样式6页逐页目视，第2页缺失，Gzy转载异文限定",
+          "url": "https://slide.edu.sina.com.cn/slide_11_272_71.html?img=708"
+        },
+        {
+          "type": "adjudication",
+          "title": "2009完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2009.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D。原文明确说鲁有两生不肯行，之后叔孙通带着征来的三十人西行，并与其他儒生和弟子共同练习，所以不能说鲁地儒生皆不合作。A对应高帝悉去秦苛仪法、为简易；B对应群臣饮酒争功、醉后呼叫甚至拔剑击柱，概括他们失礼的表现；C对应礼仪实施后群臣肃敬、无人喧哗以及刘邦感到皇帝尊贵，均有文本依据。D的皆把局部扩大为全部。",
+          "selectedOptions": [
+            "D"
+          ],
+          "inputSha256": "b29c87a5e7e95fb7a317cb5a31bed0298f580a7efc7c04befdd5d1598db75cf7",
+          "inputContextSha256": "1e4731104a312ce7a0c96d069466dd578fd0e6bdcf4ba5ddf5313ad8ba345fcd",
+          "inputPresentationSha256": "132b91c8b3fc8ad278d48d718795eed9dfa965ef0b88b87f7b73170c363894ac",
+          "generatedAt": "2026-10-03T12:47:36.533060+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2009-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2009-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2009.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。原文只说“鲁有两生不肯行”，其余三十人应征随叔孙通西行，所以“鲁地儒生皆固守气节，坚决不与叔孙通合作”以偏概全，不正确。A项对应“高帝悉去秦苛仪法，为简易”。B项对应“群臣饮酒争功，醉或妄呼，拔剑击柱”。C项对应长乐宫朝会上“莫不振恐肃敬”“无敢喧哗失礼者”。",
+          "inputSha256": "b29c87a5e7e95fb7a317cb5a31bed0298f580a7efc7c04befdd5d1598db75cf7",
+          "inputContextSha256": "1e4731104a312ce7a0c96d069466dd578fd0e6bdcf4ba5ddf5313ad8ba345fcd",
+          "inputPresentationSha256": "132b91c8b3fc8ad278d48d718795eed9dfa965ef0b88b87f7b73170c363894ac",
+          "generatedAt": "2026-10-03T12:49:27.258825+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2009-reading-result.json",
+            "inputPromptSha256": "f9bf65e96b8675516bda33bb90ab8d9bfb057a5d385804db05b66bf940910146",
+            "responseStreamSha256": "404700d114b3d1fdc4abafbfb80b0cf94e377bba77b4c964b7624c0a1ec203c6",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "b29c87a5e7e95fb7a317cb5a31bed0298f580a7efc7c04befdd5d1598db75cf7",
+      "inputContextSha256": "1e4731104a312ce7a0c96d069466dd578fd0e6bdcf4ba5ddf5313ad8ba345fcd",
+      "inputPresentationSha256": "132b91c8b3fc8ad278d48d718795eed9dfa965ef0b88b87f7b73170c363894ac",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "两者D。两生不行与三十人应征形成明确证据，皆是以偏概全；其余判断按给定文本。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:54:17.016Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2009-shici:1",
+      "sources": [
+        {
+          "type": "qualified_public_scan",
+          "title": "2009北京题源：新浪原卷样式6页逐页目视，第2页缺失，Gzy转载异文限定",
+          "url": "https://slide.edu.sina.com.cn/slide_11_272_71.html?img=708"
+        },
+        {
+          "type": "adjudication",
+          "title": "2009完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2009.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后修订",
+          "text": "就公开参考与常见时序解释而言，D是预期答案：题注明确船行被风阻住，鳞鳞细浪可理解为把困境诗意化；末联可以读为今夜以涛声想象水晶宫奏乐，明日准到岳阳楼，D将两层情境混在一起。但是，单凭细浪不能量定真实风浪强弱，水晶宫奏乐与岳阳楼之间也存在联结解释的空间。Claude选B并给出另一读法；新浪公开参考图第12①列D，尚不能当作经过认证的原命题释义。因此本题保留D/B争议，暂不设唯一自动评分键。初稿关于D的判断与完整逐项分析仍存，不以修订抹去分歧。",
+          "selectedOptions": [
+            "D"
+          ],
+          "inputSha256": "6e6474d92ff74941f1b0715c7f3f4e3446399e1d5c4017df0051cf1ae78fb93a",
+          "inputContextSha256": "7221f5868a70746efd1ae3d5b5c9628d0face6ad819ebacd6df6adb4f9834c67",
+          "inputPresentationSha256": "f065265e0ed2e433d700e67f3e199c2b301faf1dd19cbb3a8458a16eba50c523",
+          "generatedAt": "2026-10-03T12:54:17.016Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2009-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2009-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2009.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh",
+            "refinementEvidence": "answers-six-sites-20261002/root-2009-refinements.json",
+            "refinementReason": "完整读回发现ClaudeB与本人D分歧；公开参考D未独立解决诗句联结解释和原命题释义，增加限制并保留初稿。",
+            "initialVersion": "gpt_6_astra_initial"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。A项：“秋色”点明季节，“平铺十里湖光”写湖面平阔如铺，是风浪未起时的景色，正确。B项：三、四句用拟人手法，说水神有意留客看斜阳，确有主观想象色彩；但“鳞鳞细浪”就是夕阳下如鱼鳞般的细密波纹，是风初起时的实景，说它“实际指滚滚波涛”与词面和全词轻快的情调不合，故不正确。C项：“风回”指风向转为顺风，“露宿何妨”表达随遇而安，正确。D项：末两句想象风顺之后到岳阳楼上，听湖中波涛如水晶宫奏出的《霓裳》仙乐，理解为期盼之辞可以成立。",
+          "inputSha256": "6e6474d92ff74941f1b0715c7f3f4e3446399e1d5c4017df0051cf1ae78fb93a",
+          "inputContextSha256": "7221f5868a70746efd1ae3d5b5c9628d0face6ad819ebacd6df6adb4f9834c67",
+          "inputPresentationSha256": "f065265e0ed2e433d700e67f3e199c2b301faf1dd19cbb3a8458a16eba50c523",
+          "generatedAt": "2026-10-03T12:49:27.258825+00:00",
+          "uncertainties": [
+            "此词因阻风而作，B项的说法有一定依据；D项也有另一种读法（今夜涛声即水府仙乐，明日准到岳阳楼）。我判断B项偏差更大，但把握不是十足。"
+          ],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": false
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2009-reading-result.json",
+            "inputPromptSha256": "f9bf65e96b8675516bda33bb90ab8d9bfb057a5d385804db05b66bf940910146",
+            "responseStreamSha256": "404700d114b3d1fdc4abafbfb80b0cf94e377bba77b4c964b7624c0a1ec203c6",
+            "stage": "independent"
+          }
+        },
+        "gpt_6_astra_initial": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D。末两句把露宿湖上的情境想象为水晶宫中演奏霓裳，并以准拟岳阳楼上表达对继续前行的期待，不能合并解释为要到岳阳楼上听水下传来的乐曲。A以秋色与湖光概括起笔景象；B联系题注所说阻风，把实际阻行的风浪美化成波神相留、鳞鳞细浪，表现主观想象，不应只按细浪字面便排除B；C正是明日转风便可前行、今夜露宿无妨的意思。词中的乐曲属于浪漫想象，并非实际水下演奏记录。",
+          "selectedOptions": [
+            "D"
+          ],
+          "inputSha256": "6e6474d92ff74941f1b0715c7f3f4e3446399e1d5c4017df0051cf1ae78fb93a",
+          "inputContextSha256": "7221f5868a70746efd1ae3d5b5c9628d0face6ad819ebacd6df6adb4f9834c67",
+          "inputPresentationSha256": "f065265e0ed2e433d700e67f3e199c2b301faf1dd19cbb3a8458a16eba50c523",
+          "generatedAt": "2026-10-03T12:47:36.533060+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2009-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2009-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2009.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        }
+      },
+      "inputSha256": "6e6474d92ff74941f1b0715c7f3f4e3446399e1d5c4017df0051cf1ae78fb93a",
+      "inputContextSha256": "7221f5868a70746efd1ae3d5b5c9628d0face6ad819ebacd6df6adb4f9834c67",
+      "inputPresentationSha256": "f065265e0ed2e433d700e67f3e199c2b301faf1dd19cbb3a8458a16eba50c523",
+      "status": "disputed",
+      "kind": "single_choice",
+      "correctOptions": [],
+      "explanation": "保留D/B实质争议，correctOptions为空。本人初答D、ClaudeB均原样保留；新浪同图集第8页公开参考明确原12①D，但非独立认证出版链。题注阻风支持把细浪理解为乐观美化，今宵/明日时序支持D混同当前想象与未来地点；然而水晶宫/岳阳楼上下句的联结仍有解释余地，不能只拿参考字母消除异读。搜索另出现大学图书馆论张孝祥山水词PDF的不同解读线索，全文未取得，不当作已核学术证据。本人新增限定版并保留初稿；待更强词义/版本证据或原命题释义再定正式评分。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:54:17.016Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2009-shici:2",
+      "sources": [
+        {
+          "type": "qualified_public_scan",
+          "title": "2009北京题源：新浪原卷样式6页逐页目视，第2页缺失，Gzy转载异文限定",
+          "url": "https://slide.edu.sina.com.cn/slide_11_272_71.html?img=708"
+        },
+        {
+          "type": "adjudication",
+          "title": "2009完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2009.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "苏轼、辛弃疾；豪放派。这首词面对阻风仍视野开阔，想象自由，情绪乐观而豪迈，按题目通常的风格分类，可与苏、辛相联系。这里是在具体作品风格上作比较，并不是说两位词人的所有作品都只有一种面貌。",
+          "selectedOptions": [],
+          "inputSha256": "c02ac4c57d7a955c1bc70abfe200abdd03559c21ee1c8d71a9846d59533ebcc3",
+          "inputContextSha256": "7ce6b06249211ccd5c99c3e95777ca5252b3c16b2ea6379b20cc2c59d87e6e70",
+          "inputPresentationSha256": "bc309067c693543f23592dab9d1d00593bf795f5d95dd6b064ae00fc90034025",
+          "generatedAt": "2026-10-03T12:47:36.533060+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2009-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2009-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2009.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "这首词的风格与苏轼、辛弃疾比较接近；这种风格的词人属于豪放派。张孝祥上承苏轼、下启辛弃疾，词风清旷豪迈。",
+          "inputSha256": "c02ac4c57d7a955c1bc70abfe200abdd03559c21ee1c8d71a9846d59533ebcc3",
+          "inputContextSha256": "7ce6b06249211ccd5c99c3e95777ca5252b3c16b2ea6379b20cc2c59d87e6e70",
+          "inputPresentationSha256": "bc309067c693543f23592dab9d1d00593bf795f5d95dd6b064ae00fc90034025",
+          "generatedAt": "2026-10-03T12:49:27.258825+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2009-reading-result.json",
+            "inputPromptSha256": "f9bf65e96b8675516bda33bb90ab8d9bfb057a5d385804db05b66bf940910146",
+            "responseStreamSha256": "404700d114b3d1fdc4abafbfb80b0cf94e377bba77b4c964b7624c0a1ec203c6",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "c02ac4c57d7a955c1bc70abfe200abdd03559c21ee1c8d71a9846d59533ebcc3",
+      "inputContextSha256": "7ce6b06249211ccd5c99c3e95777ca5252b3c16b2ea6379b20cc2c59d87e6e70",
+      "inputPresentationSha256": "bc309067c693543f23592dab9d1d00593bf795f5d95dd6b064ae00fc90034025",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两者苏轼、辛弃疾、豪放派一致。按本题词风比较，不把作者所有作品归为单一情调；Claude上承下启属概括性定位，不当成逐项影响史认证。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:54:17.016Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2009-shici:3",
+      "sources": [
+        {
+          "type": "qualified_public_scan",
+          "title": "2009北京题源：新浪原卷样式6页逐页目视，第2页缺失，Gzy转载异文限定",
+          "url": "https://slide.edu.sina.com.cn/slide_11_272_71.html?img=708"
+        },
+        {
+          "type": "adjudication",
+          "title": "2009完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2009.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "作者以旷达、乐观、豪迈的胸怀面对风波险阻。第一处是波神留我看斜阳，唤起鳞鳞细浪：本来是风浪阻止行舟，词人却把它想成水神好意挽留自己赏景，用拟人和想象把困境转为审美的机会。第二处是明日风回更好，今宵露宿何妨：他相信风向会转好，对眼前露宿以反问表示不介意，既有前行的希望，也有安然接受暂时不顺的从容。结合开头一船秋色、十里湖光的宽阔画面，可见他没有被阻风压缩心境。",
+          "selectedOptions": [],
+          "inputSha256": "672901fbdaed651ada07f3f8f3ad31405f67fc3ff84f7df4892ebd09fb232261",
+          "inputContextSha256": "c86e019d72d7ebc1485386f767a4073655aa9f6f16f0e9f514d410ba698c91e0",
+          "inputPresentationSha256": "c9cd0932735cf8daa417fa5502b388f5421889cbbc65e8615b0b4f8d7f138079",
+          "generatedAt": "2026-10-03T12:47:36.533060+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2009-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2009-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2009.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "作者以乐观旷达、从容洒脱的胸怀对待风波险阻。\n其一，“波神留我看斜阳，唤起鳞鳞细浪”：明明是被风浪阻住行程，作者却用拟人手法说成水神好意挽留自己观赏夕阳美景，把恼人的阻滞化作赏心乐事，可见其豁达与风趣。\n其二，“明日风回更好，今宵露宿何妨”：用反问语气表示今夜露宿算不了什么，相信明天风向转顺会更好，表现出随遇而安、对前程充满信心的态度。\n其三（可替换）：“水晶宫里奏《霓裳》，准拟岳阳楼上”，把波涛之声想象成水府仙乐，并畅想登上岳阳楼的快意，以浪漫想象超越眼前困境。",
+          "inputSha256": "672901fbdaed651ada07f3f8f3ad31405f67fc3ff84f7df4892ebd09fb232261",
+          "inputContextSha256": "c86e019d72d7ebc1485386f767a4073655aa9f6f16f0e9f514d410ba698c91e0",
+          "inputPresentationSha256": "c9cd0932735cf8daa417fa5502b388f5421889cbbc65e8615b0b4f8d7f138079",
+          "generatedAt": "2026-10-03T12:49:27.258825+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2009-reading-result.json",
+            "inputPromptSha256": "f9bf65e96b8675516bda33bb90ab8d9bfb057a5d385804db05b66bf940910146",
+            "responseStreamSha256": "404700d114b3d1fdc4abafbfb80b0cf94e377bba77b4c964b7624c0a1ec203c6",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "672901fbdaed651ada07f3f8f3ad31405f67fc3ff84f7df4892ebd09fb232261",
+      "inputContextSha256": "c86e019d72d7ebc1485386f767a4073655aa9f6f16f0e9f514d410ba698c91e0",
+      "inputPresentationSha256": "c9cd0932735cf8daa417fa5502b388f5421889cbbc65e8615b0b4f8d7f138079",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两者均有具体诗句和旷达胸怀解释，波神相留与露宿何妨两例充分。末联未来/当前时序争议详选择题，不影响这两处例证；根版本作当前答案。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:54:17.016Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2009-honglou:1",
+      "sources": [
+        {
+          "type": "qualified_public_scan",
+          "title": "2009北京题源：新浪原卷样式6页逐页目视，第2页缺失，Gzy转载异文限定",
+          "url": "https://slide.edu.sina.com.cn/slide_11_272_71.html?img=708"
+        },
+        {
+          "type": "adjudication",
+          "title": "2009完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2009.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "①《红楼梦》是曹雪芹创作的、揭露封建制度黑暗腐朽和没落的我国古代最伟大的长篇小说。\n②曹雪芹是揭露封建制度黑暗腐朽和没落的我国古代最伟大的长篇小说《红楼梦》的作者。\n两句分别以书名和作者作主语，把其余信息变为定语，均保留作品地位、作者关系与揭露内容。第二句的揭露等修饰长篇小说，不把原文关于作品的评价偷换成对作者全部创作的评价。",
+          "selectedOptions": [],
+          "inputSha256": "ea3ad7abb1ceaab646a508fb7a1aa67770fb2bc6721cfe54ca73c5d3edda6bfc",
+          "inputContextSha256": "9f5c6aed8cfa239a1571c651c7a1371e78162ca5ccda2c88002222ace205fb96",
+          "inputPresentationSha256": "beeca00e6b7c5f7cf846bbb138fb55ea636583b683da7da94878a88a758e87c6",
+          "generatedAt": "2026-10-03T12:47:36.533060+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2009-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2009-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2009.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "①以《红楼梦》为主语：《红楼梦》是曹雪芹创作的、揭露了封建制度黑暗腐朽和没落的我国古代最伟大的长篇小说。\n②以曹雪芹为主语：曹雪芹是揭露了封建制度的黑暗腐朽和没落的我国古代最伟大的长篇小说《红楼梦》的作者。\n两句都保留了三条信息：作者是曹雪芹、是我国古代最伟大的长篇小说、揭露了封建制度的黑暗腐朽和没落。",
+          "inputSha256": "ea3ad7abb1ceaab646a508fb7a1aa67770fb2bc6721cfe54ca73c5d3edda6bfc",
+          "inputContextSha256": "9f5c6aed8cfa239a1571c651c7a1371e78162ca5ccda2c88002222ace205fb96",
+          "inputPresentationSha256": "beeca00e6b7c5f7cf846bbb138fb55ea636583b683da7da94878a88a758e87c6",
+          "generatedAt": "2026-10-03T12:49:27.258825+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2009-reading-result.json",
+            "inputPromptSha256": "f9bf65e96b8675516bda33bb90ab8d9bfb057a5d385804db05b66bf940910146",
+            "responseStreamSha256": "404700d114b3d1fdc4abafbfb80b0cf94e377bba77b4c964b7624c0a1ec203c6",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "ea3ad7abb1ceaab646a508fb7a1aa67770fb2bc6721cfe54ca73c5d3edda6bfc",
+      "inputContextSha256": "9f5c6aed8cfa239a1571c651c7a1371e78162ca5ccda2c88002222ace205fb96",
+      "inputPresentationSha256": "beeca00e6b7c5f7cf846bbb138fb55ea636583b683da7da94878a88a758e87c6",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两者均完成两个主语改写且保留三条信息，采用长单句而非只串接三句话。继续原2009-honglou:1身份，之前临时补录重复项已移除并保留证据，不增加覆盖分母。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:54:17.016Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2009-sanwen:2",
+      "sources": [
+        {
+          "type": "qualified_public_scan",
+          "title": "2009北京题源：新浪原卷样式6页逐页目视，第2页缺失，Gzy转载异文限定",
+          "url": "https://slide.edu.sina.com.cn/slide_11_272_71.html?img=708"
+        },
+        {
+          "type": "adjudication",
+          "title": "2009完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2009.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "在结构上，这句话承接进入韩城、过桥穿坊的游踪，领起下文沿古道、神道逐层登临司马祠的过程。在情感和主旨上，仰望既是看高处的动作，也含景仰史圣之意，使身体上的登攀与精神上的追慕相联系，贯穿后文对司马迁人格和历史贡献的理解。",
+          "selectedOptions": [],
+          "inputSha256": "f8a58cb39344750907aba9a45504d4ef869b0ad47aa7777aa83480aa6996d65b",
+          "inputContextSha256": "d3e6389f33516eba5a71c47bd034ff3414c37a113802d055463b329864eca2c1",
+          "inputPresentationSha256": "70347da6a5e270afbaa83642cd1c6cea3ac126c1cf307dc207f5697b1c4110f9",
+          "generatedAt": "2026-10-03T12:47:36.533060+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2009-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2009-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2009.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "①结构上承上启下：收束前文对韩城、芝川风貌的介绍，引出下文沿古道、神道登上祠院和墓冢的游览过程，是全文游踪的起点。\n②内容上语带双关：“仰望”既写司马祠地势高峻、须抬头攀登的实景，又表达作者对司马迁的景仰崇敬（与后文“高山仰止”呼应），为全文定下拜谒的感情基调。",
+          "inputSha256": "f8a58cb39344750907aba9a45504d4ef869b0ad47aa7777aa83480aa6996d65b",
+          "inputContextSha256": "d3e6389f33516eba5a71c47bd034ff3414c37a113802d055463b329864eca2c1",
+          "inputPresentationSha256": "70347da6a5e270afbaa83642cd1c6cea3ac126c1cf307dc207f5697b1c4110f9",
+          "generatedAt": "2026-10-03T12:49:27.258825+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2009-reading-result.json",
+            "inputPromptSha256": "f9bf65e96b8675516bda33bb90ab8d9bfb057a5d385804db05b66bf940910146",
+            "responseStreamSha256": "404700d114b3d1fdc4abafbfb80b0cf94e377bba77b4c964b7624c0a1ec203c6",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "f8a58cb39344750907aba9a45504d4ef869b0ad47aa7777aa83480aa6996d65b",
+      "inputContextSha256": "d3e6389f33516eba5a71c47bd034ff3414c37a113802d055463b329864eca2c1",
+      "inputPresentationSha256": "70347da6a5e270afbaa83642cd1c6cea3ac126c1cf307dc207f5697b1c4110f9",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两者都说明游踪承接和景仰双关，完整。Claude称全文游踪起点较绝对，前文已有韩城到芝川过程，确切说是登攀部分的起点。保留根版。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:54:17.016Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2009-sanwen:3",
+      "sources": [
+        {
+          "type": "qualified_public_scan",
+          "title": "2009北京题源：新浪原卷样式6页逐页目视，第2页缺失，Gzy转载异文限定",
+          "url": "https://slide.edu.sina.com.cn/slide_11_272_71.html?img=708"
+        },
+        {
+          "type": "adjudication",
+          "title": "2009完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2009.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "①石砌古道：坚硬而历久不毁，承载太史公前后的历史活动，像写在石头上的史记，联系到司马迁记述历史、使历史留传的事业。\n②神道及九十九级台阶：登临艰难、层层向上，文章借此象征司马迁经受曲折磨难而达到史圣的精神高度；太史令官位不高却有尊崇的神道，也体现后人超越官爵、景仰其人格的评价。\n③祠院中的泥塑与圆形墓冢：壮年有须的塑像维护史圣有尊严的形象，墓地枕山临河及卦象寄寓对其胸襟和智慧的赞颂；墓顶柏树傲指苍穹，进一步象征其不屈和追问精神。\n这些内涵是文章赋予景物的文化意义。梦碑、泥塑来历、夫人运骨等叙述中有传说和推测，答题不应把它们当作已经独立考证的事实。",
+          "selectedOptions": [],
+          "inputSha256": "db54f8ba07ea2a36dcc60fd6a0f6b9512a20413cb33b0a03a1eaf754869cb33a",
+          "inputContextSha256": "ee5c18e95ccc86b81af564798f092388f6f3b3edb87f95b75dcc47e0159cfde1",
+          "inputPresentationSha256": "386ef81edaf2c6c69cf08c5eb6a45ad652e14c61d79620443a575850d011d43b",
+          "generatedAt": "2026-10-03T12:47:36.533060+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2009-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2009-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2009.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "文章侧重描述了四个“有形”的部分：\n①石砌古道。它历经数千年而牢固如初，见证过无数金戈铁马，是“书写在石头上的史记”，负载着历史的厚重沧桑，也象征司马迁秉笔记史的不朽功业。\n②牌坊和九十九级台阶的神道。“高山仰止”和“九九至高无上”，负载着后人对司马迁的无比崇敬和他至高的史圣地位，含有藐视皇权之意，也寓指他历经坎坷磨难、忍辱负重才登上史学巅峰。\n③祠院里的碑碣与泥塑像。梦碑和壮年塑像负载着人们对他不幸遭遇的同情、对他完整人格尊严的维护，也表现他重情重义、心念故友。\n④墓冢。枕山临河的气势、八卦砖雕和傲指苍穹的古柏，负载着他通神明、类万物的大智大慧，以及不屈于强权、向天发问的傲岸风骨。",
+          "inputSha256": "db54f8ba07ea2a36dcc60fd6a0f6b9512a20413cb33b0a03a1eaf754869cb33a",
+          "inputContextSha256": "ee5c18e95ccc86b81af564798f092388f6f3b3edb87f95b75dcc47e0159cfde1",
+          "inputPresentationSha256": "386ef81edaf2c6c69cf08c5eb6a45ad652e14c61d79620443a575850d011d43b",
+          "generatedAt": "2026-10-03T12:49:27.258825+00:00",
+          "uncertainties": [
+            "题目未限定要点数量，我按古道、神道、祠院、墓冢四部分作答，评分细则可能只要求其中三项。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2009-reading-result.json",
+            "inputPromptSha256": "f9bf65e96b8675516bda33bb90ab8d9bfb057a5d385804db05b66bf940910146",
+            "responseStreamSha256": "404700d114b3d1fdc4abafbfb80b0cf94e377bba77b4c964b7624c0a1ec203c6",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "db54f8ba07ea2a36dcc60fd6a0f6b9512a20413cb33b0a03a1eaf754869cb33a",
+      "inputContextSha256": "ee5c18e95ccc86b81af564798f092388f6f3b3edb87f95b75dcc47e0159cfde1",
+      "inputPresentationSha256": "386ef81edaf2c6c69cf08c5eb6a45ad652e14c61d79620443a575850d011d43b",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两者有形与无形逐对说明完整，题干不强定三或四点。Claude把心念故友、不得入祖茔等写得偏确定，原文有吧/传说/有种说法；这都是文学解释，非历史认证。根版明确边界，无凭空恢复旧误文。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:54:17.016Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2009-sanwen:4",
+      "sources": [
+        {
+          "type": "qualified_public_scan",
+          "title": "2009北京题源：新浪原卷样式6页逐页目视，第2页缺失，Gzy转载异文限定",
+          "url": "https://slide.edu.sina.com.cn/slide_11_272_71.html?img=708"
+        },
+        {
+          "type": "adjudication",
+          "title": "2009完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2009.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "①四个读把墓冢、祠院、神道和小桥大路视为一部可阅读的历史文化之书。视角借雄鹰从高处俯瞰，把圆、方、直、弧等分散形态联结为完整布局；读既是看见外在形状，也是理解其中负载的司马迁的人格、苦难与精神追求。连续使用读形成排比和节奏，使由景入情、由形入神的过程逐层展开，并引出问号的整体意象。\n②这个问号使我想到：一个记录历史、坚持其志的人，为何会遭受摧残，又为何能在屈辱中创造长久的精神价值？文中宫刑与不能入祖茔的说法，让人反思权力和礼法对人的伤害；神道、塑像与墓柏所表达的尊崇，则表明后人可以按思想、人格和贡献重新衡量一个人。与求长生的帝王相比，史圣的精神反而能够穿越古今。因此问号既包含对不公命运的追问，也促使读者思考应以什么尺度评价生命和历史。这里是一种结合原文的开放理解，不把天问强定为唯一具体问题。",
+          "selectedOptions": [],
+          "inputSha256": "70f3f18e96c525295fac7389e0a66f6a94a383c9bd3d638404722bb18ca1bc42",
+          "inputContextSha256": "2eefc7aff5ff6d3bc3d398b860de5c4b0005b403fdde58f9894e8256bfccee2b",
+          "inputPresentationSha256": "a9c9b4d23d1bff17737003829d30005998805efdbe55fc87f7fbea0ed5f9ba75",
+          "generatedAt": "2026-10-03T12:47:36.533060+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2009-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2009-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2009.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "①四个“读”字的含义：\n一是用拟人手法，借雄鹰从高空俯瞰的视角，把墓冢、祠院、神道、小桥大路依次连缀起来，既回扣全文游踪，又把圆、方、直、弧组合成一个“问号”，构思新奇。\n二是“读”不同于“看”，是解读和品味：司马祠是一部凝结史圣生平与精神的大书，需要用心体悟。\n三是雄鹰的“读”其实是作者和后人的“读”，表达对司马迁的景仰与追思，也暗示对史圣精神的解读世代不息。\n\n②“问号”触发的思考（示例）：\n这个问号首先是司马迁的“天问”。他秉笔直书、为李陵仗义执言却惨遭宫刑，死后还因“有辱祖先”不得入祖茔，墓顶古柏“傲指苍穹”，像是在质问皇权的专横和命运的不公。\n它也是留给后人的追问。汉武帝求灵芝而终不能长生，受辱的太史令却以“史家之绝唱”光照后世，让人思考什么才是真正的不朽：人生的价值不在权势和寿命，而在忍辱负重、坚守信念所创造的精神财富。\n它还提醒我们，面对历史应像司马迁那样有“究天人之际，通古今之变”的探索精神和扬善弃恶的良知。",
+          "inputSha256": "70f3f18e96c525295fac7389e0a66f6a94a383c9bd3d638404722bb18ca1bc42",
+          "inputContextSha256": "2eefc7aff5ff6d3bc3d398b860de5c4b0005b403fdde58f9894e8256bfccee2b",
+          "inputPresentationSha256": "a9c9b4d23d1bff17737003829d30005998805efdbe55fc87f7fbea0ed5f9ba75",
+          "generatedAt": "2026-10-03T12:49:27.258825+00:00",
+          "uncertainties": [
+            "第②问为开放性题目，以上只是一种言之成理的作答。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2009-reading-result.json",
+            "inputPromptSha256": "f9bf65e96b8675516bda33bb90ab8d9bfb057a5d385804db05b66bf940910146",
+            "responseStreamSha256": "404700d114b3d1fdc4abafbfb80b0cf94e377bba77b4c964b7624c0a1ec203c6",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "70f3f18e96c525295fac7389e0a66f6a94a383c9bd3d638404722bb18ca1bc42",
+      "inputContextSha256": "2eefc7aff5ff6d3bc3d398b860de5c4b0005b403fdde58f9894e8256bfccee2b",
+      "inputPresentationSha256": "a9c9b4d23d1bff17737003829d30005998805efdbe55fc87f7fbea0ed5f9ba75",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两者完整回答两问，四读对象按新题面为墓冢/祠院/神道/小桥大路；不是旧误本的山川路径。Claude宫刑后不得入祖茔的确定叙法超过原文传说口气；根版保留说法和开放思考，问号不设唯一解释。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:54:17.016Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2009-yuyanjichu:1",
+      "sources": [
+        {
+          "type": "qualified_public_scan",
+          "title": "2009北京题源：新浪原卷样式6页逐页目视，第2页缺失，Gzy转载异文限定",
+          "url": "https://slide.edu.sina.com.cn/slide_11_272_71.html?img=708"
+        },
+        {
+          "type": "adjudication",
+          "title": "2009完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2009.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选C。平添、励精图治的字形正确，缜密的缜读zhěn，鹬蚌相争的鹬读yù。A应为出奇制胜，人才荟萃的荟读huì，不读kuài。B莅临的莅读lì，不读wèi；其余如鸢读yuān无误。D囹圄的圄读yǔ，不读wú；揣度中度读duó，不能因这个多音字读法正确便忽略末项。题目需要整组字形及注音全部正确。",
+          "selectedOptions": [
+            "C"
+          ],
+          "inputSha256": "3c7184c3e85ce4764b6271f58fc234c655bf7818de18bf141e18137757a48deb",
+          "inputContextSha256": "842f704dcb602b9f6ffb58b8c7cf47172c8f779a5c79f888cf1d8ced9fbeb974",
+          "inputPresentationSha256": "1c36c4e7bf7df650937f0c72597c634b4040e90cd96ca81a09103689dd8c66dc",
+          "generatedAt": "2026-10-03T12:47:36.533060+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2009-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2009-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2009.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。A项“出其制胜”应为“出奇制胜”，“荟”应读huì。B项字形无误，但“莅临”的“莅”应读lì。C项“平添”“励精图治”字形正确，“缜”读zhěn、“鹬”读yù，全部正确。D项字形无误，但“囹圄”的“圄”应读yǔ。",
+          "inputSha256": "3c7184c3e85ce4764b6271f58fc234c655bf7818de18bf141e18137757a48deb",
+          "inputContextSha256": "842f704dcb602b9f6ffb58b8c7cf47172c8f779a5c79f888cf1d8ced9fbeb974",
+          "inputPresentationSha256": "1c36c4e7bf7df650937f0c72597c634b4040e90cd96ca81a09103689dd8c66dc",
+          "generatedAt": "2026-10-03T12:49:27.258825+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2009-reading-result.json",
+            "inputPromptSha256": "f9bf65e96b8675516bda33bb90ab8d9bfb057a5d385804db05b66bf940910146",
+            "responseStreamSha256": "404700d114b3d1fdc4abafbfb80b0cf94e377bba77b4c964b7624c0a1ec203c6",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "3c7184c3e85ce4764b6271f58fc234c655bf7818de18bf141e18137757a48deb",
+      "inputContextSha256": "842f704dcb602b9f6ffb58b8c7cf47172c8f779a5c79f888cf1d8ced9fbeb974",
+      "inputPresentationSha256": "1c36c4e7bf7df650937f0c72597c634b4040e90cd96ca81a09103689dd8c66dc",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "两者C，出奇制胜、荟huì、莅读lì、圄yǔ辨析完整；不改题内故意错误字音。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:54:17.016Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2009-yuyanjichu:2",
+      "sources": [
+        {
+          "type": "qualified_public_scan",
+          "title": "2009北京题源：新浪原卷样式6页逐页目视，第2页缺失，Gzy转载异文限定",
+          "url": "https://slide.edu.sina.com.cn/slide_11_272_71.html?img=708"
+        },
+        {
+          "type": "adjudication",
+          "title": "2009完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2009.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选B：遏制、秩序、擅长。遏制侧重控制、抑制发展势头，与环境恶化搭配；遏止更强调使之停止。公共场所用栏杆维持的是秩序，即有条理而不混乱的状态；次序强调先后顺序。擅长突出在某方面有专长，后接画山水自然贴切；善于也可表长于，但结合三空比较，B整体最恰当。不能仅凭第三空近义而忽略前两空的语境。",
+          "selectedOptions": [
+            "B"
+          ],
+          "inputSha256": "274d624920688beb418ca7f7a3f2b15938af79c4ebf1308d4f24d28880923896",
+          "inputContextSha256": "4b9437c8335436df9708d7487a3033e63e1c4deadfdf1253b66f7af99c3f43f7",
+          "inputPresentationSha256": "31ff1e8ede30d1f78b86bd5ab1036d39861b48ec6ac310def20fa8a4469279c3",
+          "generatedAt": "2026-10-03T12:47:36.533060+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2009-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2009-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2009.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。①“遏制”指控制、抑制，“遏止”指用力使之完全停止；环境恶化只能逐步控制，用“遏制”。②“秩序”指有条理、不混乱的状况，“次序”指先后排列的顺序；“维持秩序”是固定搭配。③“擅长”指在某方面有专长，程度比“善于”重，且前面说“无一不精”，后面用“尤其擅长”才构成递进。",
+          "inputSha256": "274d624920688beb418ca7f7a3f2b15938af79c4ebf1308d4f24d28880923896",
+          "inputContextSha256": "4b9437c8335436df9708d7487a3033e63e1c4deadfdf1253b66f7af99c3f43f7",
+          "inputPresentationSha256": "31ff1e8ede30d1f78b86bd5ab1036d39861b48ec6ac310def20fa8a4469279c3",
+          "generatedAt": "2026-10-03T12:49:27.258825+00:00",
+          "uncertainties": [
+            "题干选项中词语间的空格有缺损，我按“遏制／秩序／擅长”三词分读。"
+          ],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2009-reading-result.json",
+            "inputPromptSha256": "f9bf65e96b8675516bda33bb90ab8d9bfb057a5d385804db05b66bf940910146",
+            "responseStreamSha256": "404700d114b3d1fdc4abafbfb80b0cf94e377bba77b4c964b7624c0a1ec203c6",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "274d624920688beb418ca7f7a3f2b15938af79c4ebf1308d4f24d28880923896",
+      "inputContextSha256": "4b9437c8335436df9708d7487a3033e63e1c4deadfdf1253b66f7af99c3f43f7",
+      "inputPresentationSha256": "31ff1e8ede30d1f78b86bd5ab1036d39861b48ec6ac310def20fa8a4469279c3",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "两者B。根版按搭配和全组语境；Claude环境恶化只能逐步控制、擅长才构成递进等说法过于绝对，词语辨析不支持普遍环境命题或唯一语法定律。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:54:17.016Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2009-yuyanjichu:3",
+      "sources": [
+        {
+          "type": "qualified_public_scan",
+          "title": "2009北京题源：新浪原卷样式6页逐页目视，第2页缺失，Gzy转载异文限定",
+          "url": "https://slide.edu.sina.com.cn/slide_11_272_71.html?img=708"
+        },
+        {
+          "type": "adjudication",
+          "title": "2009完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2009.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D。一夫当关，万夫莫开形容地势险要而易守难攻，须有可守的关隘、通路；句中却说深谷无路可通，无法直接以守关作结，成语与具体情境不符。A耄耋之年形容年事已高，和高龄仍登台的叙述相应；B杳无踪迹说书店找不到这部书，语义可通；C明说给选择、实则迫使离职，符合表面一种做法而暗中达到另一目的的比喻。以上仅判断成语在题句中的适用性，不额外认证人物年龄、版权或企业事件的史实。",
+          "selectedOptions": [
+            "D"
+          ],
+          "inputSha256": "3bd21fe9ecc1158d175d2ae65e7316df4678dad0a6de10c4e55345efb91899ac",
+          "inputContextSha256": "7b9e5ca163f7c358ede800c97ac335235ab22f1c9e3d4dc92b00841aa79e50ed",
+          "inputPresentationSha256": "0347bcaeaad37aa8930aaa447fc99994802b3bf6f35ba55572b90fbaa57b57e8",
+          "generatedAt": "2026-10-03T12:47:36.533060+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2009-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2009-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2009.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。A项“耄耋之年”指八九十岁的高龄，马金凤有81年舞台生涯，使用恰当。B项“杳无踪迹”指一点踪影也没有，形容书在书店里找不到，可以成立。C项“明修栈道，暗度陈仓”比喻用表面行动掩盖真实意图，公司表面给“选择”、实则逼人辞职，使用恰当。D项“一夫当关，万夫莫开”形容关隘地势险要、易守难攻，句中写的是无路可通的深谷，既无关口也不涉及防守，使用不当。",
+          "inputSha256": "3bd21fe9ecc1158d175d2ae65e7316df4678dad0a6de10c4e55345efb91899ac",
+          "inputContextSha256": "7b9e5ca163f7c358ede800c97ac335235ab22f1c9e3d4dc92b00841aa79e50ed",
+          "inputPresentationSha256": "0347bcaeaad37aa8930aaa447fc99994802b3bf6f35ba55572b90fbaa57b57e8",
+          "generatedAt": "2026-10-03T12:49:27.258825+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2009-reading-result.json",
+            "inputPromptSha256": "f9bf65e96b8675516bda33bb90ab8d9bfb057a5d385804db05b66bf940910146",
+            "responseStreamSha256": "404700d114b3d1fdc4abafbfb80b0cf94e377bba77b4c964b7624c0a1ec203c6",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "3bd21fe9ecc1158d175d2ae65e7316df4678dad0a6de10c4e55345efb91899ac",
+      "inputContextSha256": "7b9e5ca163f7c358ede800c97ac335235ab22f1c9e3d4dc92b00841aa79e50ed",
+      "inputPresentationSha256": "0347bcaeaad37aa8930aaa447fc99994802b3bf6f35ba55572b90fbaa57b57e8",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "两者D。无路可通的深谷与守关成语语境不合；Claude把81年舞台经历当作年龄证据不充分，需分清从艺年限与实际年龄。题句不据此认证具体传记。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:54:17.016Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2009-yuyanjichu:4",
+      "sources": [
+        {
+          "type": "qualified_public_scan",
+          "title": "2009北京题源：新浪原卷样式6页逐页目视，第2页缺失，Gzy转载异文限定",
+          "url": "https://slide.edu.sina.com.cn/slide_11_272_71.html?img=708"
+        },
+        {
+          "type": "adjudication",
+          "title": "2009完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2009.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "现有题文不足以确定唯一无语病项，应待原第2页核实，不能据网传答案强选A。A的经人工雕塑用于石材不够妥帖，常见动词应是雕凿，但这里不能先猜改题文再判其正确；长达40米修饰三块石头的范围也需按原句理解。B有利息职高、在资金重复等明显转录损坏，同时资金大都是外界筹措缺少合适的被动或介词结构；然而的转折关系也不合上下文的因果承接。C一场指向整个人类的战斗把本意应当为了人类的研究写成以人类为对象的战斗，语意不当。D谁也不能发生矛盾本身不合情理，结尾将各执己见、争吵等行为称作见解也搭配不当。可以指出这些现存问题，但无法据此复原本应唯一正确的选项。",
+          "selectedOptions": [],
+          "inputSha256": "ca0bc92bdb2535ddcf701851bf3e1a6bb573174f0c1650e7e9df5443d5ae7a2e",
+          "inputContextSha256": "744173d2a8fe47e2d3b6fc2fe23fa214eda9dc6f85c69ec66d5a352ff721cab6",
+          "inputPresentationSha256": "be762399a1cdbe3fcbd31176bf6832c93c50652098da61bdcec8cab91bcb5764",
+          "generatedAt": "2026-10-03T12:47:36.533060+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2009-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2009-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2009.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\n选A。A项结构完整，表意明确，没有语病。B项“然而”转折不当，前后是因果或顺承关系，且“在资金”重复。C项“指向整个人类的战斗”表意不当，成了与人类为敌，应为“属于全人类的战斗”之类；“而且……而是”关联也不顺。D项“谁也不能发生矛盾”不合逻辑，应为“谁也难免发生矛盾”；“争吵不休，互不通融”是做法，与“见解”搭配不当。",
+          "inputSha256": "ca0bc92bdb2535ddcf701851bf3e1a6bb573174f0c1650e7e9df5443d5ae7a2e",
+          "inputContextSha256": "744173d2a8fe47e2d3b6fc2fe23fa214eda9dc6f85c69ec66d5a352ff721cab6",
+          "inputPresentationSha256": "be762399a1cdbe3fcbd31176bf6832c93c50652098da61bdcec8cab91bcb5764",
+          "generatedAt": "2026-10-03T12:49:27.258825+00:00",
+          "uncertainties": [
+            "B项“利息职高”“在资金在资金”有明显转录错误；A项“雕塑”或可商榷为“雕凿”，但相比其余三项仍是最佳选项。"
+          ],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": false
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2009-reading-result.json",
+            "inputPromptSha256": "f9bf65e96b8675516bda33bb90ab8d9bfb057a5d385804db05b66bf940910146",
+            "responseStreamSha256": "404700d114b3d1fdc4abafbfb80b0cf94e377bba77b4c964b7624c0a1ec203c6",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "ca0bc92bdb2535ddcf701851bf3e1a6bb573174f0c1650e7e9df5443d5ae7a2e",
+      "inputContextSha256": "744173d2a8fe47e2d3b6fc2fe23fa214eda9dc6f85c69ec66d5a352ff721cab6",
+      "inputPresentationSha256": "be762399a1cdbe3fcbd31176bf6832c93c50652098da61bdcec8cab91bcb5764",
+      "status": "disputed",
+      "kind": "single_choice",
+      "correctOptions": [],
+      "explanation": "disputed，无唯一评分键。本人拒定单选，Claude选A同时承认雕塑可商榷。新浪参考图4为A只能说明提供方答案，不能修复缺失原第2页的雕塑/雕凿及B/D多处损文。最佳比较不等于没有语病，保留全部原答，禁止用猜补后句子自动判分。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:54:17.016Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2009-yuyanjichu:5",
+      "sources": [
+        {
+          "type": "qualified_public_scan",
+          "title": "2009北京题源：新浪原卷样式6页逐页目视，第2页缺失，Gzy转载异文限定",
+          "url": "https://slide.edu.sina.com.cn/slide_11_272_71.html?img=708"
+        },
+        {
+          "type": "adjudication",
+          "title": "2009完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2009.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "按可辨认的文学知识，拟选D。《巴黎圣母院》的作者是雨果，不是左拉，D的作者与作品对应关系错误。A对《子夜》和吴荪甫的概括成立；B所涉巴尔扎克及《人间喜剧》、C所涉托尔斯泰及《战争与和平》是常见对应关系。但是当前题文把茅盾写成矛盾，B还有19实世纪等转录损坏，原第2页尚未取得。因此D是有明确知识依据的条件性判断，不能把当前全部文字都认作原卷，也不能在来源核清前建立正式唯一评分键。",
+          "selectedOptions": [
+            "D"
+          ],
+          "inputSha256": "2a183c4b0d227bd0f910c8c51846298158ae3b5143fa347b647faef98b4a9dfb",
+          "inputContextSha256": "058ffa5655ddb77cafc8469d32fd75c6360be756e52d39f4cfbee0c1a9f8a030",
+          "inputPresentationSha256": "8400871f33575b2d7715afdfb9cc0e7250f0345dae5e1edc464bd79a8c8cefeb",
+          "generatedAt": "2026-10-03T12:47:36.533060+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2009-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2009-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2009.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。《巴黎圣母院》的作者是雨果，不是左拉；左拉是自然主义代表作家，代表作有《萌芽》《娜娜》《小酒店》等（《卢贡—马卡尔家族》系列）。A项：《子夜》以民族资本家吴荪甫的悲剧揭示了20世纪30年代中国社会的重大问题，正确。B项：巴尔扎克是19世纪法国作家，《人间喜剧》的说法可以成立。C项：列夫·托尔斯泰及《战争与和平》的表述正确。",
+          "inputSha256": "2a183c4b0d227bd0f910c8c51846298158ae3b5143fa347b647faef98b4a9dfb",
+          "inputContextSha256": "058ffa5655ddb77cafc8469d32fd75c6360be756e52d39f4cfbee0c1a9f8a030",
+          "inputPresentationSha256": "8400871f33575b2d7715afdfb9cc0e7250f0345dae5e1edc464bd79a8c8cefeb",
+          "generatedAt": "2026-10-03T12:49:27.258825+00:00",
+          "uncertainties": [
+            "题干“矛盾”应为“茅盾”，“19实世纪”应为“19世纪”，属转录错误，不影响判断。"
+          ],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2009-reading-result.json",
+            "inputPromptSha256": "f9bf65e96b8675516bda33bb90ab8d9bfb057a5d385804db05b66bf940910146",
+            "responseStreamSha256": "404700d114b3d1fdc4abafbfb80b0cf94e377bba77b4c964b7624c0a1ec203c6",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "2a183c4b0d227bd0f910c8c51846298158ae3b5143fa347b647faef98b4a9dfb",
+      "inputContextSha256": "058ffa5655ddb77cafc8469d32fd75c6360be756e52d39f4cfbee0c1a9f8a030",
+      "inputPresentationSha256": "8400871f33575b2d7715afdfb9cc0e7250f0345dae5e1edc464bd79a8c8cefeb",
+      "status": "disputed",
+      "kind": "single_choice",
+      "correctOptions": [],
+      "explanation": "disputed，无正式评分键。两者条件D，Paris Musées官方页面明确雨果及其1831小说巴黎圣母院，核心对应错误可确认；但缺第2页及矛盾/19实世纪等原题损字未核，不能借此认证整个选项集合。额外左拉作品举例非本题必要，原响应完整保存。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:54:17.016Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2009-dazuowen:1",
+      "sources": [
+        {
+          "type": "qualified_public_scan",
+          "title": "2009北京题源：新浪原卷样式6页逐页目视，第2页缺失，Gzy转载异文限定",
+          "url": "https://slide.edu.sina.com.cn/slide_11_272_71.html?img=708"
+        },
+        {
+          "type": "adjudication",
+          "title": "2009完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2009.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "我有一双隐形的翅膀\n\n我有一双隐形的翅膀。它并不让我离开地面，也不能替我避开所有风雨；它更像一种在受挫时仍愿意学习、在困惑时仍愿意追问的力量，使我不把眼前的处境认作人生唯一的可能。若要给这双翅膀一个名字，我愿称它为想象与行动。\n\n想象让人看见尚未发生的生活。面对一道没有解出的题，我们可以只看见空白的答案，也可以想到自己终有一天能够理解它的可能；面对一种不方便的安排，我们可以认为历来如此，也可以试着想象更周全的做法。这样的想象不是逃避眼前的困难，而是不让困难独占我们的视野。一个人只有相信事情还有改变的余地，才会愿意继续寻找方法。\n\n不过，仅有想象还不足以飞翔。把愿望说得再响亮，也不能代替一页认真读过的书、一次实际做过的尝试。另一片翅膀必须是行动。行动使我们知道自己究竟会什么，又在哪里理解得不够。它有时很小，小到只是重新查清一个词的意思，承认一道题的思路走错，或者向同伴请教一个此前不好意思问的问题。这些动作看似不起眼，却让人一点点获得真实的力量。\n\n不妨设想，一个班级准备办一份供同学阅读的小报。最初，大家想象它会有漂亮的版面、生动的文章，甚至希望每个读者都能喜欢。然而真正开始后，来稿不足，文章长短不一，图片说明也常常漏掉。此时，愿望不能替他们完成编辑，但仍能提醒他们为何要做这件事：让同学的观察和思考有一个彼此相遇的地方。于是，他们重新分配任务，认真访谈，核对材料，把每篇稿件改得更清楚。小报最终也许并不华丽，却因这些具体工作而拥有了值得阅读的内容。\n\n这个设想使我懂得，两片翅膀需要相互配合。想象若脱离行动，容易变成自我感动；行动若失去想象，也可能沦为机械重复。编报的人既要记住交流思想的初衷，也要接受真实反馈。如果同学读不懂某篇文章，就继续修改；如果某个栏目无人关心，就重新了解读者需要。承认最初设想不够好，并不等于放弃目标，反而是在为目标寻找更合适的方向。\n\n隐形的翅膀，也不是一个人凭空长出的。书中不同的人生，让我知道自己的经验还很有限；老师和朋友的一句提醒，可能使我发现被忽视的角度；他人耐心做事的样子，则让我看见坚持并非只有激昂的姿态，也可以安静而具体。接受这些帮助并不削弱自己的力量。能够倾听、能够合作，本身就是成长的一部分。人不必证明自己永远不需要别人，才有资格谈独立。\n\n当然，有翅膀不意味着时时都要飞得很高。疲惫时可以休息，判断错误时可以停下来调整，暂时做不到的事也可以承认。若把成长理解为不许失败、不许迟疑，所谓翅膀反而会变成沉重的要求。真正支持我的力量，应当使我能诚实面对局限，又不因局限否定整个自己。今天尚不能完成的事，可以从更小的一步开始；过去没有做好的事，也可以成为重新学习的起点。\n\n我愿意把这双翅膀放在平常的日子里检验。遇到不懂的问题，先认真弄清它；产生一个想法，试着把它变成可完成的行动；受到挫折，分辨哪些条件需要改变，哪些努力值得继续。远方不必立即抵达，但每一次诚实的尝试都能使方向更清楚。希望也不必靠夸大的承诺维持，它可以来自我确实学会了一点、确实帮助了一个人、确实修正了一处错误。\n\n我有一双隐形的翅膀，一边使我看向可能的未来，一边使我承担眼前的行动。它们相互牵引，让我既不困守原地，也不轻视脚下的路。无论将来飞得多远，我愿保留这份想象的勇气与做事的耐心，在真实的生活中，一次次学习如何出发。",
+          "selectedOptions": [],
+          "inputSha256": "9b8f4bc9a9cd407949ece7ff433d9c30b1ff6efc07739341e10caec758371000",
+          "inputContextSha256": "6c1154d437d92f20da123ab4a8f9a8a6d4f2b267c9fd2248d2a53a3f3d8d02f4",
+          "inputPresentationSha256": "801414e7a816b995970e7fcff178749a269c69eb0232c992fca235e362abecdf",
+          "generatedAt": "2026-10-03T12:47:36.533060+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2009-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2009-writing-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2009.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【立意说明】“隐形的翅膀”是比喻，指看不见却能托举人超越现实困境、飞向远方的内在力量。本文把它落实为“阅读以及阅读带来的信念”，写成记叙文，以“大山”象征局限，以“飞”象征精神成长。以下为个人原创示例，并非官方范文。\n\n我有一双隐形的翅膀\n\n我出生在一个被群山围住的小镇。小时候站在屋顶上望，四面都是青灰色的山脊，像一只倒扣的碗，把天空扣得只剩圆圆的一块。我问祖父，山那边是什么。祖父磕了磕烟斗，说：“还是山。”\n\n那时我以为，人这一辈子，大概就是在碗底走来走去。\n\n小学三年级，镇上来了一位支教的林老师。她的行李里衣服很少，书却装了两大箱。她在教室后面钉了一排木板，把书摆上去，说：“谁想看，自己拿，看完放回来。”我拿的第一本是《鲁滨孙漂流记》，封面已经卷了边。那天傍晚，我坐在灶膛前就着火光读，读到鲁滨孙在沙滩上发现一个脚印时，柴火烧尽了都没有察觉。母亲喊我添柴，我抬起头，忽然觉得眼前的灶屋变小了，心里却有什么东西悄悄张开。\n\n后来我才明白，那张开的，是一双翅膀。\n\n它没有羽毛，别人看不见，却真的带我飞了起来。我跟着三毛走过撒哈拉的风沙，跟着沈从文坐船溯沅水而上，跟着苏轼在赤壁的月色里听江流有声。山还是那些山，可它们再也扣不住我了。放牛的时候，我躺在坡上看云，会想起书里的海；挑水的时候，我数着石阶，嘴里念的是“长风破浪会有时”。\n\n林老师只待了一年。临走时，她把两箱书都留了下来，又在我的笔记本扉页上写了一句话：“山挡得住路，挡不住读书的人。”\n\n翅膀并不总是轻盈的。初三那年，父亲在工地上摔伤了腿，家里的日子一下子紧了。我每天放学先去镇上的小饭馆洗碗，回到家已是深夜，成绩从年级前列一路滑下去。有一晚，我对着一张不及格的数学卷子，头一回动了念头：不读了，出去打工吧。\n\n我把课本一本本塞进纸箱，塞到最底下时，翻出了那本卷了边的《鲁滨孙漂流记》。随手翻开，正是他流落荒岛后把处境分成两栏的那一页：一边记下不幸，一边记下幸运。一个孤零零困在岛上的人，尚且能替自己找出活下去的理由。\n\n我坐在地上，也拿出一张纸，学着他的样子写。左边写：父亲受伤，时间不够，成绩下滑。右边写：父亲的腿能好，我还年轻，我还有书可读。写到最后一条，眼泪啪嗒一声落在纸上。\n\n我把课本又一本本搬回桌上。从那以后，我在饭馆后厨的墙上贴单词，在洗碗池哗哗的水声里背古文，在回家的夜路上借着手电筒的光默想几何题。手泡得发白起皱，心却一天比一天踏实。我知道，那双翅膀没有折断，它只是在风雨里收拢了一阵，等着我重新把它张开。\n\n第二年夏天，我考上了县里最好的高中。离家那天，汽车沿着盘山公路一圈一圈往上爬，爬到垭口时，我回头望去，小镇缩成了碗底的一粒米，而前方，平野开阔，一条铁路笔直地伸向天边。\n\n祖父说得没错，山那边确实还是山。可他没有告诉我，翻过最后一道山，就是辽阔的平原；他也不知道，有一种翅膀不必长在背上。\n\n如今我常想，所谓隐形的翅膀，其实是一个人心里那点不肯认命的光亮。于我，它是书页间吹来的风，是扉页上那行字，是深夜纸上“我还有书可读”的那一栏。它不能替我省去一步山路，却让我在每一步山路上都看得见远方。\n\n我有一双隐形的翅膀。它带我飞过了群山，还将带我飞向更远的地方。",
+          "inputSha256": "9b8f4bc9a9cd407949ece7ff433d9c30b1ff6efc07739341e10caec758371000",
+          "inputContextSha256": "6c1154d437d92f20da123ab4a8f9a8a6d4f2b267c9fd2248d2a53a3f3d8d02f4",
+          "inputPresentationSha256": "801414e7a816b995970e7fcff178749a269c69eb0232c992fca235e362abecdf",
+          "generatedAt": "2026-10-03T12:50:22.650326+00:00",
+          "uncertainties": [
+            "作文题没有唯一答案，以上为个人原创示例；正文约一千一百字，满足不少于800字的要求。",
+            "题目未给出评分细则，文体选择（记叙文）和立意（阅读与信念）是我自己的判断。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2009-writing-result.json",
+            "inputPromptSha256": "74c390e21431dddf4fda8736f9a1f0965e2520ba1f09994206f365db0096cccb",
+            "responseStreamSha256": "0bb83df1e948b07dcaa4010cf13654cbdec0fa734d601bf790a2a1d61f30dc9d",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "9b8f4bc9a9cd407949ece7ff433d9c30b1ff6efc07739341e10caec758371000",
+      "inputContextSha256": "6c1154d437d92f20da123ab4a8f9a8a6d4f2b267c9fd2248d2a53a3f3d8d02f4",
+      "inputPresentationSha256": "801414e7a816b995970e7fcff178749a269c69eb0232c992fca235e362abecdf",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两篇均完整且扣除标题/说明后≥800汉字。根版想象与行动论说，班级小报明确设想；Claude山区家庭、支教林老师、伤腿父亲、打工和升学全部虚构叙事，不能作用户或模型真实亲历。鲁滨孙善恶两栏情节已对照小说公版原文；其他三毛/沈从文/苏轼为文学阅读联想，未认证特定行程或引文出处。原完整范文与说明保留，默认根版。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:54:17.016Z",
+      "currentVersion": "gpt_6_astra"
     }
   ],
   "releaseBlockers": [
@@ -39233,7 +40690,15 @@
         "2009-yuyanjichu",
         "2009-dazuowen"
       ],
-      "detail": "新浪2009-06-09图集，标注北京新干线学校提供；7页原卷样式仅第1、3—7页取得并逐页目视，第2页404。公开扫描不等于考试机构出版链认证。 教育在线旧正文首图为404占位图，新东方旧链接跳转大学课程首页，两者不是试题证据。 原第2页缺失：语言4/5及完整叔孙通正文无法直接对照。旧库与Gzy转载有相同错字；雕塑/雕凿、职/之、资金重复、不能/不能保证不、茅盾/矛盾、19实世纪等保留待核，不从语义猜原错误选项。古文百馀人后断口、徙长沙、旗志/旗帜、大行设九宾胪传、史记篇名和正文标记均未认证，本次不据全史记补入可能原卷删去的话。 已获得第6页纠正司马祠长短版本和四读对象，全部旧文保留。文中古道建造、帝王/卦象、梦碑、柳倩娘、苏武李陵等为作者叙述/传说/想象，答题应分清文本解释与独立历史认证。 五个漏题单元：老子断句1、昆曲3、原22语言解说1，全部独立保存，尚未并入旧612或跨站映射。原21两句改写已在2009-honglou:1，不重复补录。新总补录16，先前11双模型，此5仅来源。 本轮所有2009阅读和作文均保守标记参考暴露；本人尚无新答案，提供商调用0。必须本人24阅读（19旧+5补录）及1作文完整冻结再新PLAN26；原22解说词不少于100字，主作文不少于800字。 所有旧ID/qIndex/score/AI不改。古文语言null与3分、主作文null与60分、合并20两小题与旧21两小题的分项、历史记录与消费者映射仍待；不得重算旧成绩或学生写入。原卷/缺页/全量/早期v3/六站和8消费者/发布/真实验收/status门禁保留。 昆曲材料的1934年观演描述不是现代扩音舞台条件的普遍判断；阅兵解说是2009题设中的市民建议，不证明现实编成。补录断句无认证机械评分键。"
+      "detail": "新浪2009-06-09图集，标注北京新干线学校提供；7页原卷样式仅第1、3—7页取得并逐页目视，第2页404。公开扫描不等于考试机构出版链认证。 教育在线旧正文首图为404占位图，新东方旧链接跳转大学课程首页，两者不是试题证据。 原第2页缺失：语言4/5及完整叔孙通正文无法直接对照。旧库与Gzy转载有相同错字；雕塑/雕凿、职/之、资金重复、不能/不能保证不、茅盾/矛盾、19实世纪等保留待核，不从语义猜原错误选项。古文百馀人后断口、徙长沙、旗志/旗帜、大行设九宾胪传、史记篇名和正文标记均未认证，本次不据全史记补入可能原卷删去的话。 已获得第6页纠正司马祠长短版本和四读对象，全部旧文保留。文中古道建造、帝王/卦象、梦碑、柳倩娘、苏武李陵等为作者叙述/传说/想象，答题应分清文本解释与独立历史认证。 五个漏题单元：老子断句1、昆曲3、原22语言解说1，全部独立保存，尚未并入旧612或跨站映射。原21两句改写已在2009-honglou:1，不重复补录。新总补录16，先前11双模型，此5仅来源。 本轮所有2009阅读和作文均保守标记参考暴露；本人尚无新答案，提供商调用0。必须本人24阅读（19旧+5补录）及1作文完整冻结再新PLAN26；原22解说词不少于100字，主作文不少于800字。 所有旧ID/qIndex/score/AI不改。古文语言null与3分、主作文null与60分、合并20两小题与旧21两小题的分项、历史记录与消费者映射仍待；不得重算旧成绩或学生写入。原卷/缺页/全量/早期v3/六站和8消费者/发布/真实验收/status门禁保留。 昆曲材料的1934年观演描述不是现代扩音舞台条件的普遍判断；阅兵解说是2009题设中的市民建议，不证明现实编成。补录断句无认证机械评分键。 All25root fullbodies frozen before sequential PLAN26;both complete exited0 actualopus5.5/high,total0.4438192USD. All25read individually. PoemD/B, damagedlanguage4/5 remaindisputed with no scoringkey;rootpoeminitialretained. Separate5supplements:4reviewed1punctuationdisputed,notintegrated. Root/Claudecommentary168/175Han;essay1223/1039Han. Actualparadehistory,fictionalfirstperson,SimaQianlegendsand1934acousticclaimsqualified. Alloriginalpaper/page2/publisherchain,scorehistory,consumer,publisher/acceptance/statusgatesremainopen.",
+      "detailHistory": [
+        {
+          "at": "2026-10-03T12:54:17.016Z",
+          "detail": "新浪2009-06-09图集，标注北京新干线学校提供；7页原卷样式仅第1、3—7页取得并逐页目视，第2页404。公开扫描不等于考试机构出版链认证。 教育在线旧正文首图为404占位图，新东方旧链接跳转大学课程首页，两者不是试题证据。 原第2页缺失：语言4/5及完整叔孙通正文无法直接对照。旧库与Gzy转载有相同错字；雕塑/雕凿、职/之、资金重复、不能/不能保证不、茅盾/矛盾、19实世纪等保留待核，不从语义猜原错误选项。古文百馀人后断口、徙长沙、旗志/旗帜、大行设九宾胪传、史记篇名和正文标记均未认证，本次不据全史记补入可能原卷删去的话。 已获得第6页纠正司马祠长短版本和四读对象，全部旧文保留。文中古道建造、帝王/卦象、梦碑、柳倩娘、苏武李陵等为作者叙述/传说/想象，答题应分清文本解释与独立历史认证。 五个漏题单元：老子断句1、昆曲3、原22语言解说1，全部独立保存，尚未并入旧612或跨站映射。原21两句改写已在2009-honglou:1，不重复补录。新总补录16，先前11双模型，此5仅来源。 本轮所有2009阅读和作文均保守标记参考暴露；本人尚无新答案，提供商调用0。必须本人24阅读（19旧+5补录）及1作文完整冻结再新PLAN26；原22解说词不少于100字，主作文不少于800字。 所有旧ID/qIndex/score/AI不改。古文语言null与3分、主作文null与60分、合并20两小题与旧21两小题的分项、历史记录与消费者映射仍待；不得重算旧成绩或学生写入。原卷/缺页/全量/早期v3/六站和8消费者/发布/真实验收/status门禁保留。 昆曲材料的1934年观演描述不是现代扩音舞台条件的普遍判断；阅兵解说是2009题设中的市民建议，不证明现实编成。补录断句无认证机械评分键。",
+          "evidence": "answers-six-sites-20261002/REVIEW-2009-SOURCE.md"
+        }
+      ],
+      "evidence": "answers-six-sites-20261002/REVIEW-2009.md"
     }
   ]
 }
