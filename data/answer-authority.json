@@ -20383,6 +20383,14 @@
         "2020-yuyanjichu"
       ],
       "detail": "2020 corrections/marks are checked against public re-typeset gaokao.com/EOL copies, with EOL Word XML as additional marking evidence. Original scan not yet obtained. Preserve quoted27-day statement and unverified190C notation rather than silently changing scientific content. See source-corrections-2020.json."
+    },
+    {
+      "id": "2019-composite-score",
+      "status": "open",
+      "recordIds": [
+        "2019-feilian"
+      ],
+      "detail": "Unit2019-feilian:5 combines originalq5choice(3points) andq6openresponse(7points),legacy score3 preserved. Both parts must be answered; treat as composite/open until compatible explicit subquestion grading is implemented. Never grade the whole unit as a single choice or silently rescale prior records."
     }
   ]
 }

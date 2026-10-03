@@ -1,3 +1,9 @@
+## 2026-10-02 — 2019 source preparation checkpoint, candidate only
+
+Coverage remains 222/612 (218 reviewed, four disputed); 164 current reviews have dual-model v3 presentation evidence, with 58 marking-evidence gaps. All ten 2019 question pages were inspected as original exam-page scans from public reposts. Twenty-nine evidenced text corrections across five records and exact dot/underline repairs are complete. All 201 records, 612 question identities and legacy score/answer fields are preserved. All 222 prior authority records and 618 prior model text/date entries are exactly unchanged.
+
+Twenty reading and five writing inputs are frozen, but no new 2019 answers or Claude calls have started. The 2019-feilian:5 composite unit contains original questions worth 3+7 points while its legacy score remains 3; compatible subquestion grading is an open release blocker. Fifteen authority tests and data validation (201 records, 612 questions, 468 annotations, zero errors) pass. Evidence: /Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/verification-2019-source.json. No push, upload, production write, authenticated acceptance or status publication. Serial continuation is required after the owner's second compaction.
+
 ## 2026-10-02 — 2020 qualified source and answer checkpoint, candidate only
 
 Coverage is 222/612 units: 218 reviewed, four disputed, 390 uncovered plus specialist-only. This phase adds 26 units and one corrected-source re-review. Current dual-model v3 presentation proof covers 164 units; 58 prior units still lack marking evidence. Public re-typeset source corrections and exact marking repairs are preserved with preimages; the original scan remains unverified. Nine root answers were exposed to the reference key while reading question page 10 and are explicitly labelled reference-exposed, not independent blind answers. The other 18 root answers preceded Claude/reference inspection. All 27 Claude results are terminal.
