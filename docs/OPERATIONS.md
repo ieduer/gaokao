@@ -1,5 +1,7 @@
 ## 2026-10-02 — 2022 source and answer review, candidate only
 
+Latest evidence checkpoint:110of170current reviews have explicit empty-rendered-emphasis v2-to-v3equivalence receipts, without changing original model text/date or requiring another provider call.60current reviews still need semantic marking evidence. No source-accuracy blocker is cleared by this derivation. See empty-emphasis-proof.json and empty-emphasis-verification.json in the task report.
+
 Coverage170/612,166 reviewed/four disputed/442 remaining plus specialist-only. All170 carry current v2context evidence for both actual models; this excludes rendered annotations and is not final marking qualification. The new rendered-emphasis-integrity blocker requires corpus-wide semantic marking verification and stronger evidence binding without falsely relabeling old input hashes.2022 source repairs preserve original records and two existing reviews in history, and fix actual dot/underline ranges (474annotations now validate). Frozen one-attempt Claude jobs and root independent answers are retained with detailed content/length qualifications; default root examples meet the specified bounds. See `/Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/REVIEW-2022.md` and source-corrections-2022.json. No production or learner write; global source blockers still prevent formal output materialization.
 
 ## Earlier 2026-10-02 — Complete-context evidence reconciled, candidate only

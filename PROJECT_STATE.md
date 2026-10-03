@@ -1,5 +1,7 @@
 ## 2026-10-02 — 2022 review checkpoint, not deployed
 
+After the gate repair,110of170v2reviews now also have explicit empty-emphasis equivalence proof;220original model texts/dates are preserved,303rejection assertions pass. The remaining60current contexts need marking/source evidence;442units remain uncovered. This derivation did not add answers or establish original-paper accuracy. rendered-emphasis-integrity remains open.
+
 170/612 selectable units now have both actual-model v2context answers:166 reviewed/four disputed/442 uncovered.2022 adds25 previously uncovered units and two corrected-source reviews with old contexts retained. Four source records received evidenced quote/character/underline repairs. Writing review flags one Claude micro example above the150-character operational limit and unsupported details; the compliant Astra examples remain current. The discovered rendering gap is now closed in the formal gate: v3inputPresentationSha256 binds current per-question mark ranges for both models and current answer, and marking-only history remains separate. Existing170records have not been backfilled; open rendered-emphasis-integrity requires actual semantic evidence and remaining consumer acceptance. See `/Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/REVIEW-2022.md` and EMPHASIS-GATE.md. All source blockers and release/authenticated acceptance work remain pending.
 
 ## Earlier 2026-10-02 — Context proof checkpoint, not deployed
