@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261003-source2011-qualified-pending",
+  "revision": "20261003-reviewed-415-qualified-2011",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -3121,12 +3121,14 @@
     {
       "id": "2011-guwen:2",
       "inputSha256": "d8a3273e54d929d56c6c5a2c31c8119df805de1d1db00dd53de41eb3cb545880",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "single_choice",
-      "correctOptions": [],
-      "explanation": "2011题源和标记校勘后待完整重审；旧题面和全部完整模型均保存在history。",
-      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:03:23.208Z",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "同C，两使均假设；而的转折/并列承接、为的介词/动词、臣的意动/名词区别均成立。正文错误附点已移除，选项的明确词语才是本题对象。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T11:24:24.001Z",
       "sources": [
         {
           "type": "source_material",
@@ -3135,10 +3137,67 @@
         {
           "type": "dictionary_revision",
           "title": "文言站2026-09-16-r3词典校订，保留争议"
+        },
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2011北京题源：北京高考在线重排PDF与Gzywtk，作者文本局部校勘，原卷未认证",
+          "url": "https://gaokao.eol.cn/huodong/2011gkst/201106/t20110608_787585.shtml"
+        },
+        {
+          "type": "adjudication",
+          "title": "2011完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2011.json"
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {},
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选C。两处使都引出假设，解释为假使、如果：假使曹子不考虑以后，假使管仲早早捐躯而死。A前一而表转折，能做却不能说；后一而连接独见与留意，表示进一步关注，可按承接理解。B为鲁将兵的为是介词，替鲁国；为破军擒将的为是动词，成为或是。D弗臣的臣是名词用作动词，以之为臣；论其臣的臣是名词，臣子。应根据整句结构辨虚词，不能因正文其他位置也有同字而误作考查对象。",
+          "selectedOptions": [
+            "C"
+          ],
+          "inputSha256": "d8a3273e54d929d56c6c5a2c31c8119df805de1d1db00dd53de41eb3cb545880",
+          "inputContextSha256": "a706549b484809939c1816ac62940065d01200600d110df1de826cd19b9e06dd",
+          "inputPresentationSha256": "c24f20e9a63601fbe731c52fe25c8f222de495dae5fb53e254dd6de85a935020",
+          "generatedAt": "2026-10-03T11:18:50.398547+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2011-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2011-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2011.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。A项前一个“而”表转折（可以做却不可以说），后一个“而”表并列或承接（独自看到并且留意），不同。B项前一个“为”是介词，替、给；后一个“为”是动词，成为、是，不同。C项两个“使”都是连词，表假设，意为“假使”，意义和用法相同。D项前一个“臣”是名词的意动用法，以之为臣；后一个“臣”是名词，臣子，不同。",
+          "inputSha256": "d8a3273e54d929d56c6c5a2c31c8119df805de1d1db00dd53de41eb3cb545880",
+          "inputContextSha256": "a706549b484809939c1816ac62940065d01200600d110df1de826cd19b9e06dd",
+          "inputPresentationSha256": "c24f20e9a63601fbe731c52fe25c8f222de495dae5fb53e254dd6de85a935020",
+          "generatedAt": "2026-10-03T11:20:20.519671+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2011-reading-result.json",
+            "inputPromptSha256": "bee00f28382da6da033da64b5ac6917724793f2c3bea87f404b026ce69ae7025",
+            "responseStreamSha256": "51e3b6c600663effc4cf87aa12e9e6fe6c5228883cef8e87a26855151f4d660c",
+            "stage": "independent"
+          }
+        }
+      },
       "inputContextSha256": "a706549b484809939c1816ac62940065d01200600d110df1de826cd19b9e06dd",
       "history": [
         {
@@ -11203,20 +11262,76 @@
     {
       "id": "2011-moxie:1",
       "inputSha256": "7eb3de79931ff0ae6a479dcad98e0a9130bedf1430be131323e56d8fdb60b347",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "open",
       "correctOptions": [],
-      "explanation": "2011题源和标记校勘后待完整重审；旧题面和全部完整模型均保存在history。",
-      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "explanation": "六组补句一致且完整，正式限选四的要求均明示。Claude关于第五题跨联的疑虑不影响原诗与所给空格；其抟/搏异文没有提供本题版本证据，不引入为本卷可互换评分规则。保留抟和全部旧成绩，分值迁移另行验收。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T11:24:24.001Z",
       "sources": [
         {
           "type": "source_material",
           "title": "站内2011北京卷原题及完整材料"
+        },
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2011北京题源：北京高考在线重排PDF与Gzywtk，作者文本局部校勘，原卷未认证",
+          "url": "https://gaokao.eol.cn/huodong/2011gkst/201106/t20110608_787585.shtml"
+        },
+        {
+          "type": "adjudication",
+          "title": "2011完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2011.json"
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {},
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "正式答卷限选四题，可选①②③④：\n①春服既成；浴乎沂。\n②水击三千里；抟扶摇而上者九万里。\n③庶竭驽钝；攘除奸凶。\n④浩浩汤汤；朝晖夕阴。\n另两题为全题核查而附，不表示考场需要超额作答：\n⑤铁马秋风大散关；塞上长城空自许。\n⑥青山遮不住；江晚正愁余。\n注意沂、抟、庶、驽、攘、晖等字；浩浩汤汤不应按日常语义擅改，原题题干“莫春者”也保留古文用字。",
+          "selectedOptions": [],
+          "inputSha256": "7eb3de79931ff0ae6a479dcad98e0a9130bedf1430be131323e56d8fdb60b347",
+          "inputContextSha256": "c0cecba77f482d48b68771952aba7dec13b60c26331dba027c683c6397e523d6",
+          "inputPresentationSha256": "fae00677d58134c7f22cd6d7c7c876df923d5d45e751c162eff312c1d498eddc",
+          "generatedAt": "2026-10-03T11:18:50.398547+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2011-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2011-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2011.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "六小题全部写出，考试时任选四道作答即可：①春服既成；浴乎沂。②水击三千里；抟扶摇而上者九万里。③庶竭驽钝；攘除奸凶。④浩浩汤汤；朝晖夕阴。⑤铁马秋风大散关；塞上长城空自许。⑥青山遮不住；江晚正愁余。",
+          "inputSha256": "7eb3de79931ff0ae6a479dcad98e0a9130bedf1430be131323e56d8fdb60b347",
+          "inputContextSha256": "c0cecba77f482d48b68771952aba7dec13b60c26331dba027c683c6397e523d6",
+          "inputPresentationSha256": "fae00677d58134c7f22cd6d7c7c876df923d5d45e751c162eff312c1d498eddc",
+          "generatedAt": "2026-10-03T11:20:20.519671+00:00",
+          "uncertainties": [
+            "第⑤题第二空也可依原诗顺序理解为跨联填写，此处按“铁马秋风大散关，塞上长城空自许”填出。",
+            "第②题“抟”有版本作“搏”。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2011-reading-result.json",
+            "inputPromptSha256": "bee00f28382da6da033da64b5ac6917724793f2c3bea87f404b026ce69ae7025",
+            "responseStreamSha256": "51e3b6c600663effc4cf87aa12e9e6fe6c5228883cef8e87a26855151f4d660c",
+            "stage": "independent"
+          }
+        }
+      },
       "inputContextSha256": "c0cecba77f482d48b68771952aba7dec13b60c26331dba027c683c6397e523d6",
       "inputPresentationSha256": "fae00677d58134c7f22cd6d7c7c876df923d5d45e751c162eff312c1d498eddc",
       "history": [
@@ -36066,6 +36181,1140 @@
       "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
       "reviewedAt": "2026-10-03T10:46:29.762Z",
       "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2011-feilian:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2011北京题源：北京高考在线重排PDF与Gzywtk，作者文本局部校勘，原卷未认证",
+          "url": "https://gaokao.eol.cn/huodong/2011gkst/201106/t20110608_787585.shtml"
+        },
+        {
+          "type": "adjudication",
+          "title": "2011完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2011.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选C。文中说以汽爆代替酸解，减少分离过程中大量废水带来的环保问题，又说汽爆燃料可用秸秆废渣，基本不含硫，因此该项目工艺有利于环保。A混淆技术作用与燃烧方式：焦油滤清器处理焦油堵管和二次污染，不能据此推断它减少了柴草直接燃烧的灰分。B扩大了突破的范围：文中明确举例的是直燃发电，不能连带断言气化发电规模发展也已突破。D把尚待构建、仍需综合考虑的问题说成已取得重要成果。这里按给定文章判断；材料的历史项目数字与比较不等于今日所有生物质工艺的性能保证。",
+          "selectedOptions": [
+            "C"
+          ],
+          "inputSha256": "a4d05f60f1843557ae28382dccc00a2e285fd84480c19b9b5a76b4558209020e",
+          "inputContextSha256": "bbbff247257cd143604d937895116275201803f05a1accf890665e85aece3e35",
+          "inputPresentationSha256": "947d36be781bf2fae557909cb988493c8ca5886b66a2dd81d1d5e628e5c3d97e",
+          "generatedAt": "2026-10-03T11:18:50.398547+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2011-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2011-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2011.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。A项错：灰分少是户用秸秆气化炉气化燃烧的结果，不是柴草“直接燃烧”，也不是焦油滤清器的功劳，滤清器解决的是焦油堵塞管道和二次污染问题。B项错：文中只说直燃发电示范项目实现了规模化发展“零的突破”，气化发电只说技术比较成熟，没有说在规模上取得突破。C项对：该项目用汽爆工艺代替会产生大量废水的酸解工艺，汽爆燃料用秸秆废渣，基本不含硫，利于环保。D项错：文末说体系的构建“需要综合考虑的问题还很多”，只是前景广阔，并未说已取得重要成果，“县市”也于文无据。",
+          "inputSha256": "a4d05f60f1843557ae28382dccc00a2e285fd84480c19b9b5a76b4558209020e",
+          "inputContextSha256": "bbbff247257cd143604d937895116275201803f05a1accf890665e85aece3e35",
+          "inputPresentationSha256": "947d36be781bf2fae557909cb988493c8ca5886b66a2dd81d1d5e628e5c3d97e",
+          "generatedAt": "2026-10-03T11:20:20.519671+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2011-reading-result.json",
+            "inputPromptSha256": "bee00f28382da6da033da64b5ac6917724793f2c3bea87f404b026ce69ae7025",
+            "responseStreamSha256": "51e3b6c600663effc4cf87aa12e9e6fe6c5228883cef8e87a26855151f4d660c",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "a4d05f60f1843557ae28382dccc00a2e285fd84480c19b9b5a76b4558209020e",
+      "inputContextSha256": "bbbff247257cd143604d937895116275201803f05a1accf890665e85aece3e35",
+      "inputPresentationSha256": "947d36be781bf2fae557909cb988493c8ca5886b66a2dd81d1d5e628e5c3d97e",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "两模型同C，各选项均已逐项核读。Claude将低灰分直接归因为气化燃烧超出文章明确因果；裁定只认可原文对滤清器功能和所报灰分的区分。默认根版限定历史技术陈述，不能推成今日普遍性能。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T11:24:24.001Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2011-feilian:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2011北京题源：北京高考在线重排PDF与Gzywtk，作者文本局部校勘，原卷未认证",
+          "url": "https://gaokao.eol.cn/huodong/2011gkst/201106/t20110608_787585.shtml"
+        },
+        {
+          "type": "adjudication",
+          "title": "2011完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2011.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "关键技术有：①用汽爆工艺替代酸解，分离秸秆中的纤维素、半纤维素和木质素，减少大量废水造成的环保问题；②自行研制纤维素酶，使纤维素酶解为葡萄糖；③加入酵母使糖发酵成工业乙醇，再提纯、脱水制得燃料乙醇；④以秸秆废渣作为汽爆燃料，利用其可替代原煤、基本不含硫的特点，实现残渣利用并降低污染。各点依次覆盖预处理、酶解、发酵与精制、残渣供能，都是根据材料归纳的技术环节，不能把乙醇成品直接称为全流程零污染。",
+          "selectedOptions": [],
+          "inputSha256": "7d718f1205901aa4f141ffb2f78da72af6f5504446c3181ae35da718774778f5",
+          "inputContextSha256": "9fb90eec7bede34b070957d585c9bc616b1cf82ba98cf00c268a9189fcc367b1",
+          "inputPresentationSha256": "fcc42ebdda392195ab94287e5e21e66456f34e7ddb453ba39696f3a2676c94cf",
+          "generatedAt": "2026-10-03T11:18:50.398547+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2011-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2011-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2011.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "根据文意，关键技术有以下几项：①汽爆技术：用汽爆工艺代替酸解工艺，把秸秆中的纤维素、半纤维素和木质素分离开，避免产生大量废水。②纤维素酶的研制及酶解技术：用自行研制的纤维素酶把纤维素酶解为葡萄糖。③发酵技术：加入酵母，把葡萄糖转化为工业乙醇。④提纯、脱水技术：把工业乙醇制成燃料乙醇。⑤秸秆废渣的燃料化利用技术：用废渣作汽爆所用燃料，清洁且节约原煤。",
+          "inputSha256": "7d718f1205901aa4f141ffb2f78da72af6f5504446c3181ae35da718774778f5",
+          "inputContextSha256": "9fb90eec7bede34b070957d585c9bc616b1cf82ba98cf00c268a9189fcc367b1",
+          "inputPresentationSha256": "fcc42ebdda392195ab94287e5e21e66456f34e7ddb453ba39696f3a2676c94cf",
+          "generatedAt": "2026-10-03T11:20:20.519671+00:00",
+          "uncertainties": [
+            "文中没有逐一列明“几个关键技术”，以上是据生产流程归纳的；第⑤点是否算作关键技术有弹性。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2011-reading-result.json",
+            "inputPromptSha256": "bee00f28382da6da033da64b5ac6917724793f2c3bea87f404b026ce69ae7025",
+            "responseStreamSha256": "51e3b6c600663effc4cf87aa12e9e6fe6c5228883cef8e87a26855151f4d660c",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "7d718f1205901aa4f141ffb2f78da72af6f5504446c3181ae35da718774778f5",
+      "inputContextSha256": "9fb90eec7bede34b070957d585c9bc616b1cf82ba98cf00c268a9189fcc367b1",
+      "inputPresentationSha256": "fcc42ebdda392195ab94287e5e21e66456f34e7ddb453ba39696f3a2676c94cf",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "双方覆盖汽爆、酶解、发酵/精制和残渣燃料利用；合并成四点或拆成五点不构成内容分歧。原文没有标定唯一关键技术清单，不以固定条数排他判分。Claude“避免产生大量废水”按替代酸解的相对作用理解，不能推成整个工艺无废水或零污染。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T11:24:24.001Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2011-guwen:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2011北京题源：北京高考在线重排PDF与Gzywtk，作者文本局部校勘，原卷未认证",
+          "url": "https://gaokao.eol.cn/huodong/2011gkst/201106/t20110608_787585.shtml"
+        },
+        {
+          "type": "adjudication",
+          "title": "2011完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2011.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D。“总其略行”承接“不计其大功”，指忽略其主要行为、整体表现而只求小善；略在这里是大略、主要方面，不能解释成简略。A难成而易败是难以成就而容易毁坏，败释毁坏可通；B拿丘冢与黄河边整体平地比较，易是平坦；C三战所亡一朝而反，是收回失地，反通返，返回引申为收回。题中简略是待判的错误释义，不能在题源整理时替它改成正确释义。",
+          "selectedOptions": [
+            "D"
+          ],
+          "inputSha256": "bff74af1d9743e0e3d61312fffe769665fe3856869425aa6669827fd5ba017c8",
+          "inputContextSha256": "5d601dd78390b15692dcc96d71d643321df3b97038a1193c5e283cc83980e91d",
+          "inputPresentationSha256": "89d581bcfb08761e9526f8c35fd93382c7b1bed8d61f1f532ffe60cbefe6f93f",
+          "generatedAt": "2026-10-03T11:18:50.398547+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2011-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2011-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2011.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。A项“败”解释为毁坏，与“成”相对，正确。B项“易”解释为平坦，与下文“犹之为平”对应，正确。C项“反”同“返”，指把三战丢失的土地收回，正确。D项错：“总其略行”的“略”不是“简略”，而是“大略、大的方面”，“略行”指大的品行，与下文“小善”相对，全句意为不考虑臣子的大功劳、不总括他大的品行，却去苛求小的优点。",
+          "inputSha256": "bff74af1d9743e0e3d61312fffe769665fe3856869425aa6669827fd5ba017c8",
+          "inputContextSha256": "5d601dd78390b15692dcc96d71d643321df3b97038a1193c5e283cc83980e91d",
+          "inputPresentationSha256": "89d581bcfb08761e9526f8c35fd93382c7b1bed8d61f1f532ffe60cbefe6f93f",
+          "generatedAt": "2026-10-03T11:20:20.519671+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2011-reading-result.json",
+            "inputPromptSha256": "bee00f28382da6da033da64b5ac6917724793f2c3bea87f404b026ce69ae7025",
+            "responseStreamSha256": "51e3b6c600663effc4cf87aa12e9e6fe6c5228883cef8e87a26855151f4d660c",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "bff74af1d9743e0e3d61312fffe769665fe3856869425aa6669827fd5ba017c8",
+      "inputContextSha256": "5d601dd78390b15692dcc96d71d643321df3b97038a1193c5e283cc83980e91d",
+      "inputPresentationSha256": "89d581bcfb08761e9526f8c35fd93382c7b1bed8d61f1f532ffe60cbefe6f93f",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "同D，略指主要方面而非简略；其余释义与语境相合。总其略行所在句的省略解释应服从整体/小善对照，不将“总”词义扩展成独立考点。保留源校勘与原印刷限定。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T11:24:24.001Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2011-guwen:3",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2011北京题源：北京高考在线重排PDF与Gzywtk，作者文本局部校勘，原卷未认证",
+          "url": "https://gaokao.eol.cn/huodong/2011gkst/201106/t20110608_787585.shtml"
+        },
+        {
+          "type": "adjudication",
+          "title": "2011完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2011.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D。遁逃奔走与不死其难是相承的行为说明：逃走而没有为公子纠之难赴死，接着得出不可谓勇。插入表转折的然而，会把原来承接的关系改掉。A可理解为眼有小疵不影响视力，因此不必灼治；B补苟，明确不妨碍呼吸这一条件；C虽有寻常的高下差别，仍把河面整体看作平，补而可显出转折。此答案按明示校勘后的不死其难理解；转载误作不使，原卷用字尚须认证。",
+          "selectedOptions": [
+            "D"
+          ],
+          "inputSha256": "104a469e0106d8827b7d16da11dad008555f633da415cfafc28d168ee3158c14",
+          "inputContextSha256": "36b67ac6aeb4314ec9089f3d04b7e234fc80bc5f77c82c815a457acff8165a08",
+          "inputPresentationSha256": "da9c3ddbae69324b53b49fe6f28847945a3b603ef852e9895986115d85989af6",
+          "generatedAt": "2026-10-03T11:18:50.398547+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2011-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2011-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2011.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。A项补“则”表顺承：眼中有小毛病，不妨碍看东西，就不可用火去灼，合文意。B项补“苟”表假设：喉中有病，如果不妨碍呼吸，就不可去凿，合文意。C项补“而”表转折：水波高低相差一尺到一丈，却仍然称它为平，合文意。D项不合文意：“遁逃奔走”与“不死其难”是并列、顺承的关系（逃跑奔走，没有为公子纠殉难），补转折连词“然”后语意不通。",
+          "inputSha256": "104a469e0106d8827b7d16da11dad008555f633da415cfafc28d168ee3158c14",
+          "inputContextSha256": "36b67ac6aeb4314ec9089f3d04b7e234fc80bc5f77c82c815a457acff8165a08",
+          "inputPresentationSha256": "da9c3ddbae69324b53b49fe6f28847945a3b603ef852e9895986115d85989af6",
+          "generatedAt": "2026-10-03T11:20:20.519671+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2011-reading-result.json",
+            "inputPromptSha256": "bee00f28382da6da033da64b5ac6917724793f2c3bea87f404b026ce69ae7025",
+            "responseStreamSha256": "51e3b6c600663effc4cf87aa12e9e6fe6c5228883cef8e87a26855151f4d660c",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "104a469e0106d8827b7d16da11dad008555f633da415cfafc28d168ee3158c14",
+      "inputContextSha256": "36b67ac6aeb4314ec9089f3d04b7e234fc80bc5f77c82c815a457acff8165a08",
+      "inputPresentationSha256": "da9c3ddbae69324b53b49fe6f28847945a3b603ef852e9895986115d85989af6",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "同D，然的转折不合遁逃与未赴难的关系。Claude额外说寻常为“一尺到一丈”错误；教育部辞典为八尺曰寻、倍寻曰常，不能保留为教学事实。原完整回答不覆盖，默认无该错误的根版；题源不使/不死明示校勘仍限定。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T11:24:24.001Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2011-guwen:4",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2011北京题源：北京高考在线重排PDF与Gzywtk，作者文本局部校勘，原卷未认证",
+          "url": "https://gaokao.eol.cn/huodong/2011gkst/201106/t20110608_787585.shtml"
+        },
+        {
+          "type": "adjudication",
+          "title": "2011完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2011.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选B。材料用周公、齐桓和曹子的事例说明，评价人物不能因局部过失抹去整体功业，更不能因一时失败否认将来的贡献，并没有提出代价与成功总成正比的规律。A对应篇首四类复杂情形及圣人留意；C与先列管仲不智、不勇、不贞，再写九合诸侯、一匡天下的转折相合，其中“不智”等是局部行为评价，不是作者对其一生的全盘否定；D概括全文重整体、重长远、不苛求小节的主张。",
+          "selectedOptions": [
+            "B"
+          ],
+          "inputSha256": "ffdd60fef3e2942343ab262cf610e5b0cd71cb98878d130a538db489063b1d29",
+          "inputContextSha256": "a3183a12d9b64ca478ecf71dd1bc420abec8d3d5ff07b30e1b29a37ff994e376",
+          "inputPresentationSha256": "226bce4dd5226f3f1b1fca636a47fadc97d8c9b599b92aee2e0fcfc670c9b0d0",
+          "generatedAt": "2026-10-03T11:18:50.398547+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2011-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2011-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2011.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。A项符合首段，“此四策者，圣人之所独见而留意也”。B项不符：文中举周公、齐桓、曹子，是说明有小过或一时失败的人仍可成就大功，不能以小过掩大美，并没有“代价与成功总是成正比”的意思，“总是”也过于绝对。C项符合：管仲“不可谓智”“不可谓勇”“不可谓贞”，却能“九合诸侯，一匡天下”。D项符合末段，“人有厚德，无问其小节；而有大誉，无疵其小故”。",
+          "inputSha256": "ffdd60fef3e2942343ab262cf610e5b0cd71cb98878d130a538db489063b1d29",
+          "inputContextSha256": "a3183a12d9b64ca478ecf71dd1bc420abec8d3d5ff07b30e1b29a37ff994e376",
+          "inputPresentationSha256": "226bce4dd5226f3f1b1fca636a47fadc97d8c9b599b92aee2e0fcfc670c9b0d0",
+          "generatedAt": "2026-10-03T11:20:20.519671+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2011-reading-result.json",
+            "inputPromptSha256": "bee00f28382da6da033da64b5ac6917724793f2c3bea87f404b026ce69ae7025",
+            "responseStreamSha256": "51e3b6c600663effc4cf87aa12e9e6fe6c5228883cef8e87a26855151f4d660c",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "ffdd60fef3e2942343ab262cf610e5b0cd71cb98878d130a538db489063b1d29",
+      "inputContextSha256": "a3183a12d9b64ca478ecf71dd1bc420abec8d3d5ff07b30e1b29a37ff994e376",
+      "inputPresentationSha256": "226bce4dd5226f3f1b1fca636a47fadc97d8c9b599b92aee2e0fcfc670c9b0d0",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "同B，材料反对小过遮蔽大功，没有成功与代价总成正比的论断。C的智勇贞是局部行为评价，不能从选项推出作者全盘贬低管仲。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T11:24:24.001Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2011-sanwen:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2011北京题源：北京高考在线重排PDF与Gzywtk，作者文本局部校勘，原卷未认证",
+          "url": "https://gaokao.eol.cn/huodong/2011gkst/201106/t20110608_787585.shtml"
+        },
+        {
+          "type": "adjudication",
+          "title": "2011完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2011.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选B、C。B误解压低、涂饰：与丰富祁连山连读，它们写神话和历史为自然景观增加文化层次，并不是祁连山被迫承担不能摆脱的负担。C偷换形容不同的原因：过客或比作将军、或比作神祗，作者却视作恋人、挚友，差异来自观察者的感受和心境，不是云雾使客观真相无法辨认。A有大量神话和商品粮基地、江南秀色的对应；D符合作者亲近自然并体验历史的态度；E概括自然景观与历史感交织的写法，均可成立。",
+          "selectedOptions": [
+            "B",
+            "C"
+          ],
+          "inputSha256": "6e7da8778ef7726c2a8715cabdaffb78e150b25b096186e59ee168d8fc44160f",
+          "inputContextSha256": "5ad7e234e92b228157be6f5da289cb1406d8da79c8dbd4d339edb2064497dc35",
+          "inputPresentationSha256": "65be272026fa503eeaebc089730066e80249690aa8423a5c872f041a26ed1ca8",
+          "generatedAt": "2026-10-03T11:18:50.398547+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2011-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2011-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2011.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B、C。\n不正确的两项是B和C。A项基本正确：文中引用古诗、《穆天子传》《淮南子》和林则徐的诗，写到如今的商品粮基地，并用“江南秀色”形容武威、张掖。B项错：“压低”“涂饰”与“丰富”连用，是说神话和历史赋予祁连山厚重的文化内涵，作者明说祁连山“沾了神话和历史的光”，并非“无法摆脱的沉重负担”。C项错：过客们的形容各不相同，是因为各人的主观情感和感受不同，是“造化与心源合一”的结果，不是因为空濛笼罩、真相难辨。D项正确：作者视祁连雪岭如恋人、挚友，并从中谛听自然、社会、历史的倾诉。E项正确：第三段写空间中的雪岭美景，第四至六段传达源远流长的历史感和“沉甸甸的时间感”。",
+          "inputSha256": "6e7da8778ef7726c2a8715cabdaffb78e150b25b096186e59ee168d8fc44160f",
+          "inputContextSha256": "5ad7e234e92b228157be6f5da289cb1406d8da79c8dbd4d339edb2064497dc35",
+          "inputPresentationSha256": "65be272026fa503eeaebc089730066e80249690aa8423a5c872f041a26ed1ca8",
+          "generatedAt": "2026-10-03T11:20:20.519671+00:00",
+          "uncertainties": [
+            "A项“大量引用神话传说”的说法略嫌夸大，但相比之下B、C两项的错误更明确。"
+          ],
+          "selectedOptions": [
+            "B",
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2011-reading-result.json",
+            "inputPromptSha256": "bee00f28382da6da033da64b5ac6917724793f2c3bea87f404b026ce69ae7025",
+            "responseStreamSha256": "51e3b6c600663effc4cf87aa12e9e6fe6c5228883cef8e87a26855151f4d660c",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "6e7da8778ef7726c2a8715cabdaffb78e150b25b096186e59ee168d8fc44160f",
+      "inputContextSha256": "5ad7e234e92b228157be6f5da289cb1406d8da79c8dbd4d339edb2064497dc35",
+      "inputPresentationSha256": "65be272026fa503eeaebc089730066e80249690aa8423a5c872f041a26ed1ca8",
+      "status": "reviewed",
+      "kind": "multiple_choice",
+      "correctOptions": [
+        "B",
+        "C"
+      ],
+      "explanation": "同BC；B误将文化丰富说成历史负担，C误将主观感受差异归于云雾。Claude觉得A“大量”稍夸大已保留，但正文列举与选择题最明确错误位置不支持改选；不删其疑虑。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T11:24:24.001Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2011-sanwen:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2011北京题源：北京高考在线重排PDF与Gzywtk，作者文本局部校勘，原卷未认证",
+          "url": "https://gaokao.eol.cn/huodong/2011gkst/201106/t20110608_787585.shtml"
+        },
+        {
+          "type": "adjudication",
+          "title": "2011完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2011.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "开头引古人写黄沙皓雪的诗，交代作者赴河西之前形成荒凉印象的缘由；这一旧印象与实地所见的富庶、江南秀色构成对照，使行文自然转向追问绿色生命从何而来，继而引出祁连雪的养育作用。结尾引林则徐与山灵相对而笑的诗，把山雪与人的白发、旅途与情怀联系起来，借前人的亲切感受呼应作者对祁连雪如恋人挚友般的依恋，也把自然景观与历史人物的心境贯通，收束并深化全文。末尾另有作者自己的诗，不应把这两句也算作题干所说的古人诗句。",
+          "selectedOptions": [],
+          "inputSha256": "6c64a3c280c005ac14d9c91c2b04b2601d04ba3de6da2776579ad2b48958027b",
+          "inputContextSha256": "0b0c9167c9881dcf3e5952d69a9053741a485d2a76701f85098c817c293cb51c",
+          "inputPresentationSha256": "f658337a99a8487608a36eee011f6c79203f61ab7a004fc97794836a4b192faa",
+          "generatedAt": "2026-10-03T11:18:50.398547+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2011-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2011-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2011.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "开头引用“千山空皓雪，万里尽黄沙”：①说明自己在亲临之前受古诗影响，以为河西走廊黄尘弥漫、阒寂荒凉；②与实地所见的富庶和“江南秀色”形成反差，是欲扬先抑，突出河西走廊今日的真实面貌；③诗中有“雪”，自然引出下文对祁连雪的描写，并使文章一开头就带上历史文化意味。\n结尾引用林则徐的诗：①借“我与山灵相对笑”印证上文自己把祁连雪岭视为恋人、挚友的感受，说明古今之人与祁连雪有相通相契的情感；②由古人的诗引出自己的诗句“依依只有祁连雪，千里相随照眼明”，抒发对祁连雪的依恋与赞美，深化主旨；③与开头引诗相呼应，使结构完整，并加重全文的历史感和文化韵味。",
+          "inputSha256": "6c64a3c280c005ac14d9c91c2b04b2601d04ba3de6da2776579ad2b48958027b",
+          "inputContextSha256": "0b0c9167c9881dcf3e5952d69a9053741a485d2a76701f85098c817c293cb51c",
+          "inputPresentationSha256": "f658337a99a8487608a36eee011f6c79203f61ab7a004fc97794836a4b192faa",
+          "generatedAt": "2026-10-03T11:20:20.519671+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2011-reading-result.json",
+            "inputPromptSha256": "bee00f28382da6da033da64b5ac6917724793f2c3bea87f404b026ce69ae7025",
+            "responseStreamSha256": "51e3b6c600663effc4cf87aa12e9e6fe6c5228883cef8e87a26855151f4d660c",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "6c64a3c280c005ac14d9c91c2b04b2601d04ba3de6da2776579ad2b48958027b",
+      "inputContextSha256": "0b0c9167c9881dcf3e5952d69a9053741a485d2a76701f85098c817c293cb51c",
+      "inputPresentationSha256": "f658337a99a8487608a36eee011f6c79203f61ab7a004fc97794836a4b192faa",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "双方完整解释开头旧印象/实见对比及结尾古今亲切情感呼应。根版另区分林则徐的古人诗与作者自作诗，避免误把所有结尾诗句都叫古诗；用意不限定为单一术语。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T11:24:24.001Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2011-sanwen:3",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2011北京题源：北京高考在线重排PDF与Gzywtk，作者文本局部校勘，原卷未认证",
+          "url": "https://gaokao.eol.cn/huodong/2011gkst/201106/t20110608_787585.shtml"
+        },
+        {
+          "type": "adjudication",
+          "title": "2011完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2011.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "雪的作用包括：①在现实层面，冰川雪水汇成河流，滋养农田、牧场和居民，使河西走廊保持绿色生命；②在审美层面，雪岭的脊线、高洁色泽和雄奇景观，使人感到宁静、明朗、净化；③在文化与情感层面，雪岭承载神话、历史记忆和作者的联想，使自然景物与人的生命情感相互交融，成为表达历史感悟和亲切依恋的具体意象；④在结构层面，雪贯通富庶河西、雪岭景色、神话历史、旅人感受与结尾诗句，形成贯穿全文的线索。正因雪兼有这些功能，它能集中体现文章的景、情与意。题名按已校勘输入为《祁连雪》，转载《祁连山》的异文仍留在来源记录。",
+          "selectedOptions": [],
+          "inputSha256": "06032efdf32374c7e88b92ef0c519b67d05257bf6dedd46e882792e65162c5b8",
+          "inputContextSha256": "b868ecf012be9a5ba4614c95b3ba55561e0ce3064d07f0e99c115ff12be9d7ee",
+          "inputPresentationSha256": "a01313be6277a6e443690f9773f65d23bc6bc158927653210dfdfb3f0b7f8c68",
+          "generatedAt": "2026-10-03T11:18:50.398547+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2011-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2011-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2011.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "“雪”的重要作用表现在四个方面：\n①内容上，雪是河西走廊的生命之源。祁连山的冰川雪水汇成几十条河流，灌溉农田、牧场、果园、林带，哺育一代代河西子孙，使这里成为富庶的商品粮基地。\n②写景上，雪构成祁连山特有的美。雪岭素洁的脊线、“雪擎穹宇”的丽景，使人“凉生襟腋，情愫高洁”，内心趋于宁静、明朗、净化。\n③情感上，雪是作者寄情的对象和情感的象征。雪岭与神话、历史相叠合，唤起历史感和时间感；作者视它如恋人、挚友，林则徐“满头晴雪共难消”和作者“依依只有祁连雪”都借雪抒怀，物我交融。\n④结构上，雪是贯穿全文的线索。标题点雪，开头引诗有雪，中间写雪水、雪岭、雪景，结尾以咏雪的诗句收束，把现实、自然、神话、历史和个人情感串联为一体，使文章形散神聚。",
+          "inputSha256": "06032efdf32374c7e88b92ef0c519b67d05257bf6dedd46e882792e65162c5b8",
+          "inputContextSha256": "b868ecf012be9a5ba4614c95b3ba55561e0ce3064d07f0e99c115ff12be9d7ee",
+          "inputPresentationSha256": "a01313be6277a6e443690f9773f65d23bc6bc158927653210dfdfb3f0b7f8c68",
+          "generatedAt": "2026-10-03T11:20:20.519671+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2011-reading-result.json",
+            "inputPromptSha256": "bee00f28382da6da033da64b5ac6917724793f2c3bea87f404b026ce69ae7025",
+            "responseStreamSha256": "51e3b6c600663effc4cf87aa12e9e6fe6c5228883cef8e87a26855151f4d660c",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "06032efdf32374c7e88b92ef0c519b67d05257bf6dedd46e882792e65162c5b8",
+      "inputContextSha256": "b868ecf012be9a5ba4614c95b3ba55561e0ce3064d07f0e99c115ff12be9d7ee",
+      "inputPresentationSha256": "a01313be6277a6e443690f9773f65d23bc6bc158927653210dfdfb3f0b7f8c68",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "双方覆盖雪水养育、景观与心境、历史情感、结构线索；均有材料依据。雪的象征义须立足意象与主观感情，不把神话当实史。题名仍属明示校勘，非原卷认证。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T11:24:24.001Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2011-sanwen:4",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2011北京题源：北京高考在线重排PDF与Gzywtk，作者文本局部校勘，原卷未认证",
+          "url": "https://gaokao.eol.cn/huodong/2011gkst/201106/t20110608_787585.shtml"
+        },
+        {
+          "type": "adjudication",
+          "title": "2011完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2011.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "作者说“观山如读史”，是因为他看到的祁连山并不只是眼前的山石积雪。雪水滋养河西，使自然景观与世代生活于此的人发生联系；《穆天子传》《淮南子》中的传说、前人的诗句以及沿途所见，又使山川带上了历史文化的层次。观看时，记忆与联想被唤起，作者仿佛听到自然、社会、历史的无声倾诉，产生了深沉的时间感。读这篇文章，我得到的启示是：欣赏风景既要认真看眼前，也要了解它与人的关系。比如面对一座古桥，可以观察桥的形态和河道，也可以阅读地方记载，想一想它怎样连接村镇、便利往来，再看今日人们如何使用和保护它。这样，观看才有可能从留影走向理解。但联想也应有所分寸，传说能反映人们的愿望和想象，不能直接等同于实有史事。文中作者后来知道《穆天子传》有夸诞之处，却仍欣赏其文化意义，正提醒我们把审美感受与史料判断结合起来，在亲近山川时保有求真的态度。",
+          "selectedOptions": [],
+          "inputSha256": "657ea94ac08aacc2ee07ef64869940403b420e07a2a899adb0c71b0b8c3627d5",
+          "inputContextSha256": "a01ddac42cbacf67c450872038a4146819618ccc1b1ddeee0642434bc98fe221",
+          "inputPresentationSha256": "e4330f37508a4a11bb0de4b676aee2d1996d79d81123a5e25fc9202bd32d9701",
+          "generatedAt": "2026-10-03T11:18:50.398547+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2011-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2011-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2011.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "作者这样说的原因：①祁连山承载着难以计数的神话传闻和层层叠叠的历史积淀，周穆王会西王母、后羿求不死之药、匈奴呼“天”为“祁连”、林则徐充军西行，都与这座山相连，山本身就像一部厚重的史书；②作者习惯把记忆中的故事与眼前的景观相叠合，眺望雪岭时仿佛听到自然、社会、历史的无声倾诉，生出历史的激动和沉甸甸的时间感；③山长存而世事远逝、过客匆匆，观山使人像读史一样体悟时间与人生。\n启示（示例）：“观山如读史”告诉我，看风景不能只用眼睛，还要带着积累和思考去看。去年暑假我登泰山，起初只顾埋头赶路，觉得不过是石阶连着石阶。后来在经石峪看到刻在溪床上的大字，在岱顶读到历代的摩崖题刻，想起孔子“登泰山而小天下”和杜甫“会当凌绝顶”的诗句，脚下的山一下子有了温度。原来两千多年里，无数人曾在同一条路上喘息、眺望、感慨，我只是其中一个后来者。那一刻我明白，山水因为人的足迹和文字而有了生命，人也因为读懂了山水背后的历史而变得谦逊和开阔。此后无论出游还是读书，我都愿意多问一句“这里曾经发生过什么”，先做些功课再出发。有了这份用心，寻常的景物也能读出深意，自己的眼界和心胸也随之打开。",
+          "inputSha256": "657ea94ac08aacc2ee07ef64869940403b420e07a2a899adb0c71b0b8c3627d5",
+          "inputContextSha256": "a01ddac42cbacf67c450872038a4146819618ccc1b1ddeee0642434bc98fe221",
+          "inputPresentationSha256": "e4330f37508a4a11bb0de4b676aee2d1996d79d81123a5e25fc9202bd32d9701",
+          "generatedAt": "2026-10-03T11:20:20.519671+00:00",
+          "uncertainties": [
+            "启示部分为开放性作答，所写为原创示例，其中登泰山的经历系示例性叙述，考生应换成自己的真实经历。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2011-reading-result.json",
+            "inputPromptSha256": "bee00f28382da6da033da64b5ac6917724793f2c3bea87f404b026ce69ae7025",
+            "responseStreamSha256": "51e3b6c600663effc4cf87aa12e9e6fe6c5228883cef8e87a26855151f4d660c",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "657ea94ac08aacc2ee07ef64869940403b420e07a2a899adb0c71b0b8c3627d5",
+      "inputContextSha256": "a01ddac42cbacf67c450872038a4146819618ccc1b1ddeee0642434bc98fe221",
+      "inputPresentationSha256": "e4330f37508a4a11bb0de4b676aee2d1996d79d81123a5e25fc9202bd32d9701",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "双方完整回应缘由和启示，字数按正文、并对Claude单独启示实测。Claude泰山经历在uncertainties明确为示例，不能当作用户经历；保留该说明，默认根版一般古桥情境，并明确神话与史料边界。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T11:24:24.001Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2011-yuyanjichu:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2011北京题源：北京高考在线重排PDF与Gzywtk，作者文本局部校勘，原卷未认证",
+          "url": "https://gaokao.eol.cn/huodong/2011gkst/201106/t20110608_787585.shtml"
+        },
+        {
+          "type": "adjudication",
+          "title": "2011完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2011.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选A。活性炭、韬光养晦字形正确，冗长读rǒng，恪尽职守读kè。B应写协奏曲，怙恶不悛的悛读quān，怆读chuàng无误；C应写瑕不掩瑜、唾手可得，唾读tuò，攫读jué无误；D应写笑眯眯，谬读miù，璞读pú无误。该题要求字形与读音同时正确，故不能只查注音字。",
+          "selectedOptions": [
+            "A"
+          ],
+          "inputSha256": "87ee43a0f601097870f256863dec7e60cff91273c757a510140756bfd0a278cd",
+          "inputContextSha256": "ece3e50ee326aba13a457b9e6cb05087d57ee4ecbf5edcbbb97cc1dd8982dad5",
+          "inputPresentationSha256": "1c5fbe3b54a8b6c852d6cfa4c77dcf4967805a475628ae8a175c13c5179758f2",
+          "generatedAt": "2026-10-03T11:18:50.398547+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2011-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2011-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2011.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\n选A。A项字形、读音全对。B项“谐奏曲”应为“协奏曲”，“悛”应读quān。C项“暇不掩瑜”应为“瑕不掩瑜”，“唾”应读tuò。D项“笑咪咪”应为“笑眯眯”，“谬”应读miù。",
+          "inputSha256": "87ee43a0f601097870f256863dec7e60cff91273c757a510140756bfd0a278cd",
+          "inputContextSha256": "ece3e50ee326aba13a457b9e6cb05087d57ee4ecbf5edcbbb97cc1dd8982dad5",
+          "inputPresentationSha256": "1c5fbe3b54a8b6c852d6cfa4c77dcf4967805a475628ae8a175c13c5179758f2",
+          "generatedAt": "2026-10-03T11:20:20.519671+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2011-reading-result.json",
+            "inputPromptSha256": "bee00f28382da6da033da64b5ac6917724793f2c3bea87f404b026ce69ae7025",
+            "responseStreamSha256": "51e3b6c600663effc4cf87aa12e9e6fe6c5228883cef8e87a26855151f4d660c",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "87ee43a0f601097870f256863dec7e60cff91273c757a510140756bfd0a278cd",
+      "inputContextSha256": "ece3e50ee326aba13a457b9e6cb05087d57ee4ecbf5edcbbb97cc1dd8982dad5",
+      "inputPresentationSha256": "1c5fbe3b54a8b6c852d6cfa4c77dcf4967805a475628ae8a175c13c5179758f2",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "同A；协奏曲、瑕不掩瑜、笑眯眯及悛quān/唾tuò/谬miù均核对。原错字错音是命题选项，不反向修成正确。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T11:24:24.001Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2011-yuyanjichu:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2011北京题源：北京高考在线重排PDF与Gzywtk，作者文本局部校勘，原卷未认证",
+          "url": "https://gaokao.eol.cn/huodong/2011gkst/201106/t20110608_787585.shtml"
+        },
+        {
+          "type": "adjudication",
+          "title": "2011完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2011.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选A。不足为训是不能作为典范、法则，醉酒驾车违法行为不能成为仿效对象，用在这里合适；不能把训误解成教训，从而把全语解释为不值得教训。B不期而遇指没有约定却意外相遇，用来描述一场春雨不合此处对象；C江河日下比喻情况一天天坏下去，不能当作江上落日的写景词；D兵不血刃指未经战斗就轻易取胜，与经过90分钟激战矛盾。画线范围依题源注释是上述四语；旧score90是另待迁移的资料问题，不代表本题应计90分。",
+          "selectedOptions": [
+            "A"
+          ],
+          "inputSha256": "3bc86e4ca177c30e9b119a260e747f72b1381e5fca1b1696547417ef447e88f9",
+          "inputContextSha256": "46c7c5710c2d8b4618098f51c9ae5a880dbf0ae038625591beda40aa8a5ade9f",
+          "inputPresentationSha256": "762e0a5c2119eebb0e0b2d37ec7accee5906b36dceb07ffc7a90477186ad581c",
+          "generatedAt": "2026-10-03T11:18:50.398547+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2011-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2011-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2011.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\n选A。A项“不足为训”指不值得作为效法的准则或典范，用来说明星醉酒驾车的行为不能效仿，正确。B项“不期而遇”指人没有约定而意外相遇，不能用于春雨降临，可改为“不期而至”。C项“江河日下”比喻情况一天天坏下去，不能用来描写江水景色，属望文生义。D项“兵不血刃”指未经交锋就取得胜利，与“经过90分钟激战”矛盾。",
+          "inputSha256": "3bc86e4ca177c30e9b119a260e747f72b1381e5fca1b1696547417ef447e88f9",
+          "inputContextSha256": "46c7c5710c2d8b4618098f51c9ae5a880dbf0ae038625591beda40aa8a5ade9f",
+          "inputPresentationSha256": "762e0a5c2119eebb0e0b2d37ec7accee5906b36dceb07ffc7a90477186ad581c",
+          "generatedAt": "2026-10-03T11:20:20.519671+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2011-reading-result.json",
+            "inputPromptSha256": "bee00f28382da6da033da64b5ac6917724793f2c3bea87f404b026ce69ae7025",
+            "responseStreamSha256": "51e3b6c600663effc4cf87aa12e9e6fe6c5228883cef8e87a26855151f4d660c",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "3bc86e4ca177c30e9b119a260e747f72b1381e5fca1b1696547417ef447e88f9",
+      "inputContextSha256": "46c7c5710c2d8b4618098f51c9ae5a880dbf0ae038625591beda40aa8a5ade9f",
+      "inputPresentationSha256": "762e0a5c2119eebb0e0b2d37ec7accee5906b36dceb07ffc7a90477186ad581c",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "同A，不足为训解为不能作典范，其余三项错位均说明。画线范围在冻结注释中给明，实际下划线显示缺口继续阻断发布；原score90没有随本答案更改。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T11:24:24.001Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2011-yuyanjichu:3",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2011北京题源：北京高考在线重排PDF与Gzywtk，作者文本局部校勘，原卷未认证",
+          "url": "https://gaokao.eol.cn/huodong/2011gkst/201106/t20110608_787585.shtml"
+        },
+        {
+          "type": "adjudication",
+          "title": "2011完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2011.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后修订",
+          "text": "选B。句子以中国民间文艺家协会为主语，把抢救民间木版年画这项工作列入文化遗产抢救工程，结构与搭配成立。A把主要原因是……与由……造成的杂糅，应删造成的或改写前半句。C主要是最初的位置不妥：本意是最早在崇安被发现，却把最初放在因……而得名之前，容易变成修饰得名；可改为因五十年前最初在崇安发现而得名。不能笼统断言时间与地点同处原因结构就必然有语病。D改善营养缺乏缺少与改善相配的宾语中心语，应说改善营养缺乏的状况等；富有也以富含更贴合成分陈述。Claude虽同选B，但对B、C的判定保留疑虑，反映病句边界仍有讨论空间；这里采用上述明确的语序解释，不虚构为绝无争议。食醋美容的因果说法不因句法修改而成为健康建议。",
+          "selectedOptions": [
+            "B"
+          ],
+          "inputSha256": "3f30cee48e653673e30c7553d65944322d70ac7c23cd92fdf1d84d88077364ca",
+          "inputContextSha256": "a7e6213913ee6773556cd4b82f117069ac549f8672ddaca2efb01910fa788b83",
+          "inputPresentationSha256": "8f7953b593104692a81f946ef519103dab2c7dda55c2f87fbf716f0766d27a5a",
+          "generatedAt": "2026-10-03T11:24:24.001Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2011-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2011-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2011.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh",
+            "refinementEvidence": "answers-six-sites-20261002/root-2011-refinements.json",
+            "refinementReason": "将初稿过宽的时间/地点不能共同构成因果，改为最初修饰位置的明确分析；保留B/C判断边界及Claude疑虑。",
+            "initialVersion": "gpt_6_astra_initial"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。A项句式杂糅，“主要原因是……”与“是由……造成的”两种说法混用，应删去“造成的”或改为“交通事故主要是由……造成的”。B项没有明显语病。C项“最初”位置不当，它修饰的应是“发现”而不是“得名”，应改为“因五十年前最初在崇安发现而得名”。D项“富有”用词不当，应为“富含”；“因此具有美容功效，皮肤吸收之后，可改善……”语序也不够合理。",
+          "inputSha256": "3f30cee48e653673e30c7553d65944322d70ac7c23cd92fdf1d84d88077364ca",
+          "inputContextSha256": "a7e6213913ee6773556cd4b82f117069ac549f8672ddaca2efb01910fa788b83",
+          "inputPresentationSha256": "8f7953b593104692a81f946ef519103dab2c7dda55c2f87fbf716f0766d27a5a",
+          "generatedAt": "2026-10-03T11:20:20.519671+00:00",
+          "uncertainties": [
+            "B、C两项的判定存在一定争议：B项“将抢救民间木版年画列为……工程之一”也有人认为搭配欠妥。我判断C项语序问题更明确，故选B，但把握不是十足。"
+          ],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2011-reading-result.json",
+            "inputPromptSha256": "bee00f28382da6da033da64b5ac6917724793f2c3bea87f404b026ce69ae7025",
+            "responseStreamSha256": "51e3b6c600663effc4cf87aa12e9e6fe6c5228883cef8e87a26855151f4d660c",
+            "stage": "independent"
+          }
+        },
+        "gpt_6_astra_initial": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选B。句子以中国民间文艺家协会为主语，把抢救民间木版年画这项工作列入文化遗产抢救工程，结构与搭配成立。A把主要原因是……与由……造成的杂糅，应删造成的或改写前半句。C说最初因五十年前在崇安发现而得名，因果关系表述混乱：五十年前是时间，不能与发现地点一起构成这一命名缘由；可改为五十年前在崇安首次发现，并因发现地点而得名。D改善营养缺乏缺少与改善相配的宾语中心语，应说改善营养缺乏的状况等。以上只作句法判断，食醋美容的因果说法不能由语病修改变成可靠的健康建议。",
+          "selectedOptions": [
+            "B"
+          ],
+          "inputSha256": "3f30cee48e653673e30c7553d65944322d70ac7c23cd92fdf1d84d88077364ca",
+          "inputContextSha256": "a7e6213913ee6773556cd4b82f117069ac549f8672ddaca2efb01910fa788b83",
+          "inputPresentationSha256": "8f7953b593104692a81f946ef519103dab2c7dda55c2f87fbf716f0766d27a5a",
+          "generatedAt": "2026-10-03T11:18:50.398547+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2011-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2011-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2011.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        }
+      },
+      "inputSha256": "3f30cee48e653673e30c7553d65944322d70ac7c23cd92fdf1d84d88077364ca",
+      "inputContextSha256": "a7e6213913ee6773556cd4b82f117069ac549f8672ddaca2efb01910fa788b83",
+      "inputPresentationSha256": "8f7953b593104692a81f946ef519103dab2c7dda55c2f87fbf716f0766d27a5a",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "同B但Claude保留B/C语病边界疑虑。根初稿把时间/地点共处因果一概视为病句过宽，现完整保存初稿后改为最初修饰发现的语序说明。D除了富有宜富含，还需补改善的宾语中心语；Claude未指出后者，由根版补足。题内美容推断不作医学建议。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T11:24:24.001Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2011-yuyanjichu:4",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2011北京题源：北京高考在线重排PDF与Gzywtk，作者文本局部校勘，原卷未认证",
+          "url": "https://gaokao.eol.cn/huodong/2011gkst/201106/t20110608_787585.shtml"
+        },
+        {
+          "type": "adjudication",
+          "title": "2011完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2011.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选C。巴尔扎克通常归于十九世纪法国现实主义文学，把他称为浪漫主义文学家错误。A《题乌江亭》咏项羽败亡之事；B枫叶、四弦、浔阳等意象对应白居易《琵琶行》；D海明威及所列作品、诺贝尔文学奖的对应成立。判断C的类别错误即可，不能因为题中还出现作品数量便把数量约数误作主要考点。",
+          "selectedOptions": [
+            "C"
+          ],
+          "inputSha256": "56010089e46cfbce2081fe783e4e60ef8ceb5d2e98cf6b0d914ffdf94439ccd4",
+          "inputContextSha256": "4bed3fa6370e759c239d14acb2e082123a2b86546c82f47bf0a7513467157017",
+          "inputPresentationSha256": "17eede4a5f739d0dfc5a4e6c46b2312ab4e56bbfafbf06a5c4c6b2fdf2eb78aa",
+          "generatedAt": "2026-10-03T11:18:50.398547+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2011-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2011-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2011.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。A项正确：所引为杜牧《题乌江亭》，写项羽乌江自刎之事。B项正确：“枫叶”“四弦”“迁谪”“浔阳”均出自或对应白居易《琵琶行》。C项错误：巴尔扎克是19世纪法国批判现实主义作家，不是浪漫主义文学家。D项正确：海明威是美国现代作家，1954年获诺贝尔文学奖，所列三部均为其代表作。",
+          "inputSha256": "56010089e46cfbce2081fe783e4e60ef8ceb5d2e98cf6b0d914ffdf94439ccd4",
+          "inputContextSha256": "4bed3fa6370e759c239d14acb2e082123a2b86546c82f47bf0a7513467157017",
+          "inputPresentationSha256": "17eede4a5f739d0dfc5a4e6c46b2312ab4e56bbfafbf06a5c4c6b2fdf2eb78aa",
+          "generatedAt": "2026-10-03T11:20:20.519671+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2011-reading-result.json",
+            "inputPromptSha256": "bee00f28382da6da033da64b5ac6917724793f2c3bea87f404b026ce69ae7025",
+            "responseStreamSha256": "51e3b6c600663effc4cf87aa12e9e6fe6c5228883cef8e87a26855151f4d660c",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "56010089e46cfbce2081fe783e4e60ef8ceb5d2e98cf6b0d914ffdf94439ccd4",
+      "inputContextSha256": "4bed3fa6370e759c239d14acb2e082123a2b86546c82f47bf0a7513467157017",
+      "inputPresentationSha256": "17eede4a5f739d0dfc5a4e6c46b2312ab4e56bbfafbf06a5c4c6b2fdf2eb78aa",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "同C；博物馆材料支持常见现实主义归类并提醒并非巴尔扎克自用标签，根版通常归于较准确。诺奖官网核对海明威及三部作品；不把分类概括变成对作家艺术的穷尽描述。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T11:24:24.001Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2011-yuyanjichu:5",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2011北京题源：北京高考在线重排PDF与Gzywtk，作者文本局部校勘，原卷未认证",
+          "url": "https://gaokao.eol.cn/huodong/2011gkst/201106/t20110608_787585.shtml"
+        },
+        {
+          "type": "adjudication",
+          "title": "2011完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2011.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D。第一空承前一句的纳西古城，以古城建在岩石上继续保持话题，再接是纳西人的聚居地，语脉连贯。第二空用望见那别具一格的拱形城门，把城门置于末尾，后句上面镌刻……的上面就有明确所指；若用看出城门的别具一格，末尾落在抽象特点上，衔接较弱。两空分别以古城和城门为线索，因此组合为D。",
+          "selectedOptions": [
+            "D"
+          ],
+          "inputSha256": "e9e21ff0aa09101c7684a83616ab883c7871a21bd828317ba1ca32bae79406ef",
+          "inputContextSha256": "4a43a19b503a071f97e055c1dd2770e246f762877c0dbf7d64e83d932d86c777",
+          "inputPresentationSha256": "0b6a271800dbdd3594efb32eb2279d09db821c52a22459f83f573427f1de5f86",
+          "generatedAt": "2026-10-03T11:18:50.398547+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2011-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2011-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2011.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。①处前句话题是“纳西古城”，后句“是纳西人最原始的聚居地”的主语也是古城，所以应以“古城”作主语，填“古城建在一块庞大独立的蘑菇状岩石上”，排除B、C。②处后句“上面镌刻着……五个大字”的“上面”指城门，前一句应以“拱形城门”收尾才能衔接；且远处只能“望见”城门，谈不上“看出”其“别具一格”，所以填“远远地就能望见那别具一格的拱形城门”，排除A。",
+          "inputSha256": "e9e21ff0aa09101c7684a83616ab883c7871a21bd828317ba1ca32bae79406ef",
+          "inputContextSha256": "4a43a19b503a071f97e055c1dd2770e246f762877c0dbf7d64e83d932d86c777",
+          "inputPresentationSha256": "0b6a271800dbdd3594efb32eb2279d09db821c52a22459f83f573427f1de5f86",
+          "generatedAt": "2026-10-03T11:20:20.519671+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2011-reading-result.json",
+            "inputPromptSha256": "bee00f28382da6da033da64b5ac6917724793f2c3bea87f404b026ce69ae7025",
+            "responseStreamSha256": "51e3b6c600663effc4cf87aa12e9e6fe6c5228883cef8e87a26855151f4d660c",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "e9e21ff0aa09101c7684a83616ab883c7871a21bd828317ba1ca32bae79406ef",
+      "inputContextSha256": "4a43a19b503a071f97e055c1dd2770e246f762877c0dbf7d64e83d932d86c777",
+      "inputPresentationSha256": "0b6a271800dbdd3594efb32eb2279d09db821c52a22459f83f573427f1de5f86",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "同D，第一空古城话题连续，第二空城门与上面的所指衔接。Claude“远处只能望见、谈不上看出别具一格”过于绝对，不能据距离宣称看不出建筑特征；裁定依据是话题和指代，采用根版。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T11:24:24.001Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2011-dazuowen:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2011北京题源：北京高考在线重排PDF与Gzywtk，作者文本局部校勘，原卷未认证",
+          "url": "https://gaokao.eol.cn/huodong/2011gkst/201106/t20110608_787585.shtml"
+        },
+        {
+          "type": "adjudication",
+          "title": "2011完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2011.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "让胜利长在公平的土壤里\n\n鹿特丹世乒赛结束后，面对中国队包揽冠军的结果，材料中的几位同学提出了不同看法：有人为实力得到证明而高兴，有人期待外国选手带来更有力的挑战，也有人反对为了分散金牌而故意输球。这些观点并不必然彼此排斥。我们可以珍惜通过努力获得的胜利，也可以希望对手不断成长；能够把两者连接起来的，是公平的竞争。\n\n胜利首先应当获得应有的尊重。竞技场上的冠军，不是一个可以随意挪动的名额，而是长期训练在规则之内受到检验的结果。运动员为完善一个动作反复练习，为克服一次失误重新出发，为在关键时刻保持稳定承受压力。如果只因他们来自同一个国家，就把包揽冠军本身视为错误，便忽略了具体劳动与具体能力。允许优秀者凭实力赢得比赛，是公平的一部分。\n\n但珍惜胜利，并不等于希望别人永远弱小。比赛的吸引力来自双方真实的较量，强劲的对手能揭示自己的不足，也能推动技术和方法继续发展。若一项运动只有少数人能够接近最高水平，其他参与者长期缺乏成长机会，它的活力也会受到影响。因此，期待新的挑战者，是对这项运动长远发展的关心。一个有自信的强者，应当希望自己的胜利经得起更充分的检验。\n\n问题在于，怎样让竞争更加充分。故意让出金牌看似立刻改变了分配，却没有使对手的能力随之提高。它把本应由表现决定的结果，变成了场外预先安排的礼物。对于获胜者而言，无法确认胜利究竟来自自己的发挥还是对方的退让；对于尽力比赛的其他人而言，规则也失去了同样适用的意义。这样的均匀分配或许有好看的表面，却伤害了成绩最重要的依据——真实。\n\n更有建设性的做法，是把帮助放在比赛之外，把公正留在比赛之中。更多的训练交流、更便利的参与条件、更合理的赛事机会，都可能使有潜力的选手获得成长空间。帮助别人进步与在赛场上全力争胜可以同时成立：前者使起跑和成长的条件更充分，后者使每一次较量的结果更可信。我们应当努力增加真正能够争夺冠军的人，而不是提前决定冠军必须归谁。\n\n这个道理也适用于学习生活。设想一次班级讨论，有的同学表达熟练，总能得到更多发言机会，有的同学还需要准备和练习。要使讨论更有价值，并不需要让前者故意说错，也不必把每个人的表现宣布为同样出色。可以提前共享材料，安排充分的准备时间，让不同成员轮流陈述、互相追问，再按观点与论证本身评价。这样，原来沉默的人有机会展示能力，原来领先的人也会遇见新的问题，整个班级的思考才可能一起向前。\n\n当然，公平不只是要求个人拿出好态度，还需要可靠的规则。评价标准应当清楚，机会分配应当能够说明理由，裁判和组织者也须接受必要的监督。否则，一面鼓励弱者追赶，一面把关键资源长期封闭起来，所谓期待挑战就容易成为空话。真正欢迎竞争，需要承认别人成功的可能，并愿意为这种可能提供合理的条件。\n\n也要看到，帮助并不意味着保证每个人获得同样的名次。机会改善之后，个人的投入、能力和临场表现仍然存在差异。尊重这些差异，才能让成绩保有意义；持续检视不合理的障碍，才能避免把资源优势误认成全部个人功劳。公平既要求认真对待结果，也要求认真审视通向结果的过程，两方面都不能省略。\n\n因此，我们可以为中国队的胜利喝彩，也可以为对手的进步鼓掌。一个冠军最可贵的荣誉，不是永远没有人能够接近自己，而是在充分、真实的竞争中仍然全力以赴。把帮助放在成长的道路上，把胜负交给共同的规则，胜利才能获得踏实的分量，竞争也才能成为更多人继续出发的理由。",
+          "selectedOptions": [],
+          "inputSha256": "74b769261817158155ac98968444de8d6de0388bfeea18d63df877c4e93aec5f",
+          "inputContextSha256": "a2bf5b1e5682e0b1b3d57f30ac0d7ad1c09dfff93f9040cd8dccac2bb0f0864c",
+          "inputPresentationSha256": "cf23f8f2d0b1c50f116822f6f77fbb346190cdfbcd5c9a0e4d4854b3fd492c4a",
+          "generatedAt": "2026-10-03T11:18:50.398547+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2011-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2011-writing-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2011.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【审题立意】材料中三位学生的观点各有侧重：甲强调实力说话，乙担心长期垄断不利于项目发展，丙反对故意让球、主张公平竞争。老师的话提示要由乒乓球推及其他社会生活领域。本文立意：强者不必让出金牌，但应帮助对手变强，在公平竞争中共同发展。\n\n【示例作文】\n\n一枝独秀不是春\n\n鹿特丹的领奖台上，五星红旗一次次升起。欢呼之余，有人感叹实至名归，有人忧虑一家独大，也有人提议“让出一两枚金牌”。三种声音看似相左，其实指向同一个问题：强者应当怎样对待自己的强，怎样对待对手的弱？我的回答是：胜要胜得堂堂正正，强要强得有胸怀——不让金牌，但要让出经验、让出机会，与对手共同把这片天地做大。\n\n首先，实力是不必道歉的。包揽金牌的背后，是一代代运动员日复一日的挥拍，是严密的选拔与训练体系，是对每一个旋转、每一个落点的钻研。竞技场上的规则只有一条：谁打得好谁赢。倘若因为赢得太多便心生愧疚，甚至故意输球，那既是对自己汗水的轻慢，也是对对手的侮辱——没有哪一位真正的运动员愿意接过一枚被施舍的金牌。让出来的冠军没有分量，被安排的胜负没有尊严。公平竞争之所以可贵，就在于它让结果值得相信；一旦结果可以“商量”，整项运动的根基也就松动了。\n\n然而，承认实力，并不等于可以对“一枝独秀”的隐忧视而不见。一场没有悬念的比赛，观众会渐渐离席；一个看不到希望的项目，别国的孩子不会再拿起球拍。对手纷纷退场之日，冠军的含金量也随之稀薄。生物学上有个朴素的道理：单一树种的森林最经不起病虫害，草木杂生的山野反倒生机勃勃。体育如此，其他领域亦然。市场上若只剩一家企业，没有了竞争的压力，创新往往停步，最终受损的是消费者，也是这家企业自己；学术上若只容一种声音，思想便会板结，再难长出新的枝芽。战国时百家争鸣，才有了中国思想史上最灿烂的一页。可见，对手不是强者的威胁，而是强者的镜子与磨刀石。\n\n那么，出路何在？不在“让”，而在“帮”。让金牌，是把结果送人，损害的是规则；传技艺，是把能力送人，成全的是事业。中国乒乓球界多年来派教练赴海外执教，邀请外国选手来华训练、参加中国的联赛，正是这样一种思路：把蛋糕做大，而不是把自己的那一块切小。待到外国选手凭真本事击败中国名将的那一天，那场失利不是耻辱，而是这项运动的节日，也将逼迫我们自己再上层楼。真正的强者，不怕对手变强，只怕自己无人可追、无处可进。\n\n这个道理，也可以放进我们的日常。班里成绩最好的同学，考试时自然不必故意答错几题以示谦让；但他可以在课后把解题思路讲给同学听。讲题的过程，是别人的进步，也是自己思路的又一次梳理；当周围的人都追上来，他才会被逼着走向更远的地方。一个班级如此，一个行业、一个国家何尝不是如此？在赛场上寸步不让，在赛场外倾囊相授，这两者并不矛盾，恰恰是同一种自信的两面。\n\n“一花独放不是春，百花齐放春满园。”愿我们都能做这样的强者：凭实力赢得尊重，凭胸怀赢得未来；既敢于独占鳌头，更乐见群峰并起。",
+          "inputSha256": "74b769261817158155ac98968444de8d6de0388bfeea18d63df877c4e93aec5f",
+          "inputContextSha256": "a2bf5b1e5682e0b1b3d57f30ac0d7ad1c09dfff93f9040cd8dccac2bb0f0864c",
+          "inputPresentationSha256": "cf23f8f2d0b1c50f116822f6f77fbb346190cdfbcd5c9a0e4d4854b3fd492c4a",
+          "generatedAt": "2026-10-03T11:21:08.332891+00:00",
+          "uncertainties": [
+            "作文题无唯一答案，以上为原创示例（正文约1100字），立意与评分以实际阅卷标准为准。",
+            "文中关于中国乒乓球界派教练赴海外执教、邀请外国选手来华训练和参加联赛的表述为凭常识的概括，未核对具体事例。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2011-writing-result.json",
+            "inputPromptSha256": "2238c433fb6c0816cdbedd7700cf6db37a764818f4c8aa66ab8f9f6e099f186f",
+            "responseStreamSha256": "587dd815dd7137a7dc00f7da18831247e9c4f1d738dd8aaeb9fc6061597301f2",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "74b769261817158155ac98968444de8d6de0388bfeea18d63df877c4e93aec5f",
+      "inputContextSha256": "a2bf5b1e5682e0b1b3d57f30ac0d7ad1c09dfff93f9040cd8dccac2bb0f0864c",
+      "inputPresentationSha256": "cf23f8f2d0b1c50f116822f6f77fbb346190cdfbcd5c9a0e4d4854b3fd492c4a",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两篇完整作文均论公平竞技与帮助对手成长，正文足800字。根版班级讨论明示设想，未添未核体育事迹。Claude有未核中国乒乓球对外交流概括，单一树种“最经不起”及孩子“不会再拿起”也过度绝对化；保留原文/uncertainties，不能把这些作为已核事实。默认根版，不因立意相近抹去两篇结构和论证差异。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T11:24:24.001Z",
+      "currentVersion": "gpt_6_astra"
     }
   ],
   "releaseBlockers": [
@@ -36348,7 +37597,15 @@
         "2011-yuyanjichu",
         "2011-dazuowen"
       ],
-      "detail": "仅有19页重排PDF（自称原卷8页）和Gzywtk转录，未获得原8页试卷、答题卡或独立出版链；PDF重新合并编号为12题。共同错字不能以两站一致冒称原卷证据。全部8题面页均已目视，原版标点/加点/划线/方格仍待核。 散文局部据作者文本明示校勘，未移入作者全文增删；夐列/层峦叠嶂、原18题名等仍需原卷确认。保留试题现有其他删改、150年前、神祗、银发飘洒等，不把作者全文当作考试版本。非连粉碎适用更正粉碎使用属编辑校勘；原6D故意错误略:简略以及语言错字/病句保留。 缺失原10断句与原12①/12②/13诗歌共4作答单元，另存2来源记录，尚未正式入库和跨站历史映射；不计612分母，不得据612声称原卷全覆盖。断句所以教采用PDF与朱熹文本，不采用Gzywtk所以敬。诗歌C去/去却校为却，属明示校勘。 语言2旧score90来自题内90分钟，原语言各小题3分；古文和其他语言null旧分值均保留。必须先解决历史成绩兼容，禁止直接重算旧成绩或改学生记录。 阅读含补录全部登记参考暴露：搜索/参考解析已出现答案和解释，旧2011-guwen:2也已有审核。主作文仅见题材和要求，未读2011模型成文；不宣称全部盲答。新根答案须20阅读含补录+1作文完整冻结后，才允许下一有限PLAN24，延伸各至少200字、作文至少800字。此步0提供商调用、0新答案。 能源材料的历史数据、食醋美容的错误选项和文学神话不代表已验证的当代技术、医学、历史事实；只用于原文理解，答案裁定需限定。原卷来源、标记、计分、补录、早期v3和六站消费者/发布/真实验收等所有既有门禁继续保留。 原2下划线范围已在注释明示，formatter不支持选项下划线的呈现缺口仍阻断；不能把无标记v3输入冒称原图恢复。"
+      "detail": "仅有19页重排PDF（自称原卷8页）和Gzywtk转录，未获得原8页试卷、答题卡或独立出版链；PDF重新合并编号为12题。共同错字不能以两站一致冒称原卷证据。全部8题面页均已目视，原版标点/加点/划线/方格仍待核。 散文局部据作者文本明示校勘，未移入作者全文增删；夐列/层峦叠嶂、原18题名等仍需原卷确认。保留试题现有其他删改、150年前、神祗、银发飘洒等，不把作者全文当作考试版本。非连粉碎适用更正粉碎使用属编辑校勘；原6D故意错误略:简略以及语言错字/病句保留。 缺失原10断句与原12①/12②/13诗歌共4作答单元，另存2来源记录，尚未正式入库和跨站历史映射；不计612分母，不得据612声称原卷全覆盖。断句所以教采用PDF与朱熹文本，不采用Gzywtk所以敬。诗歌C去/去却校为却，属明示校勘。 语言2旧score90来自题内90分钟，原语言各小题3分；古文和其他语言null旧分值均保留。必须先解决历史成绩兼容，禁止直接重算旧成绩或改学生记录。 阅读含补录全部登记参考暴露：搜索/参考解析已出现答案和解释，旧2011-guwen:2也已有审核。主作文仅见题材和要求，未读2011模型成文；不宣称全部盲答。新根答案须20阅读含补录+1作文完整冻结后，才允许下一有限PLAN24，延伸各至少200字、作文至少800字。此步0提供商调用、0新答案。 能源材料的历史数据、食醋美容的错误选项和文学神话不代表已验证的当代技术、医学、历史事实；只用于原文理解，答案裁定需限定。原卷来源、标记、计分、补录、早期v3和六站消费者/发布/真实验收等所有既有门禁继续保留。 原2下划线范围已在注释明示，formatter不支持选项下划线的呈现缺口仍阻断；不能把无标记v3输入冒称原图恢复。 All21root full bodies frozen before sequential Claude PLAN24. Both batches completed and processes exited;actual opus5.5/high,cost0.3854912USD. All21 full responses individually read/adjudicated. One root syntax explanation refined with complete initial preserved. Claude寻常measurement corrected in adjudication, speculative/generalized claims qualified and fictional examples labelled. Separate4supplement units have3reviewed/1disputed;not integrated into612. Original paper/printing, score90/history, option underline rendering and all earlier consumer/release/real-acceptance gates remain open.",
+      "detailHistory": [
+        {
+          "at": "2026-10-03T11:24:24.001Z",
+          "detail": "仅有19页重排PDF（自称原卷8页）和Gzywtk转录，未获得原8页试卷、答题卡或独立出版链；PDF重新合并编号为12题。共同错字不能以两站一致冒称原卷证据。全部8题面页均已目视，原版标点/加点/划线/方格仍待核。 散文局部据作者文本明示校勘，未移入作者全文增删；夐列/层峦叠嶂、原18题名等仍需原卷确认。保留试题现有其他删改、150年前、神祗、银发飘洒等，不把作者全文当作考试版本。非连粉碎适用更正粉碎使用属编辑校勘；原6D故意错误略:简略以及语言错字/病句保留。 缺失原10断句与原12①/12②/13诗歌共4作答单元，另存2来源记录，尚未正式入库和跨站历史映射；不计612分母，不得据612声称原卷全覆盖。断句所以教采用PDF与朱熹文本，不采用Gzywtk所以敬。诗歌C去/去却校为却，属明示校勘。 语言2旧score90来自题内90分钟，原语言各小题3分；古文和其他语言null旧分值均保留。必须先解决历史成绩兼容，禁止直接重算旧成绩或改学生记录。 阅读含补录全部登记参考暴露：搜索/参考解析已出现答案和解释，旧2011-guwen:2也已有审核。主作文仅见题材和要求，未读2011模型成文；不宣称全部盲答。新根答案须20阅读含补录+1作文完整冻结后，才允许下一有限PLAN24，延伸各至少200字、作文至少800字。此步0提供商调用、0新答案。 能源材料的历史数据、食醋美容的错误选项和文学神话不代表已验证的当代技术、医学、历史事实；只用于原文理解，答案裁定需限定。原卷来源、标记、计分、补录、早期v3和六站消费者/发布/真实验收等所有既有门禁继续保留。 原2下划线范围已在注释明示，formatter不支持选项下划线的呈现缺口仍阻断；不能把无标记v3输入冒称原图恢复。",
+          "evidence": "answers-six-sites-20261002/REVIEW-2011-SOURCE.md"
+        }
+      ],
+      "evidence": "answers-six-sites-20261002/REVIEW-2011.md"
     }
   ]
 }
