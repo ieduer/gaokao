@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261003-reviewed-314-qualified-2016",
+  "revision": "20261003-source2015-qualified-pending",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -2357,13 +2357,11 @@
     },
     {
       "id": "2015-guwen:2",
-      "inputSha256": "3e4943d0793fa56338354bfab4bc077c8a8acd42cae1cd8f8a7781a61b670e33",
-      "status": "reviewed",
+      "inputSha256": "8a344108f2e7ee23449dabc074284666f55228c7bcb6949eb00ad39bff884db4",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "A"
-      ],
-      "explanation": "仅校核本小题，全文缺损和补字需独立原卷核验。",
+      "correctOptions": [],
+      "explanation": "2015转录/完整上下文修复后的待重审输入；旧输入及模型原文留存history。原卷来源与准确标记资格仍阻断。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T03:03:23.208Z",
       "sources": [
@@ -2377,87 +2375,171 @@
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 完整附注复核",
-          "text": "答案：A。‘其谁可而为之’是在询问谁适任，其带征询、商量语气；‘君知其难也’中其回指相应事情，修饰难处。B项之均表修饰关系，C项遂均承接前事而引出结果，D项者均使前面的行为描述指向相应的人。本站材料有大段转录残损，本题四组对比仍可读，但不能据此宣布整篇校对完成。",
-          "inputSha256": "3e4943d0793fa56338354bfab4bc077c8a8acd42cae1cd8f8a7781a61b670e33",
-          "generatedAt": "2026-10-03T03:03:23.208Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review_reaffirmation",
-            "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
-            "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "priorAnswerSha256": "6342c403b33156426c311e75edee5fa710c1beb502343d59ecfeff727e09d137",
-            "annotationEffect": "祁黄羊身份注已纳入。其谁征询与君知其难的指代不同；腹䵍故事大段缺损仍阻止整篇发布。"
+      "modelAnswers": {},
+      "inputContextSha256": "145afc148d3a6d1d1d8ecfc5b6800118b31e9ba5003bdda1663669550d64a6ee",
+      "history": [
+        {
+          "source": {
+            "id": "2015-guwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "天无私覆也，地无私载也，日月无私烛也，四时无私行也。行其德而万物得遂长焉。\n\n尧有子十人，不与其子而授舜；舜有子九人，不与其子而授禹：至．公也。\n\n晋平公问于祁黄羊【1】曰：“南阳无令，其．谁可而为之？”祁黄羊对曰：“解狐可。”平公曰：“解狐非子之仇邪？”对曰：“君问可，非问臣之仇也。”平公曰：“善。”遂用之。国人称善焉。居有间，平公又问祁黄羊曰：“国无尉，其谁可而为之？”对曰：“午可。”平公曰：“午非子之．子邪？”对曰：“君问可，非问臣之子也。”平公曰：“善。”又遂用之。国人称善焉。孔子闻之曰：“善哉！祁黄羊之论也，外举不避仇，内举不避子。”祁黄羊可谓公矣。\n\n墨者有钜子腹，居秦。其子杀人，秦惠王曰：“先生之年长矣，非有他子也，寡人已令吏弗诛矣，先生之以此听寡人也人者死，伤人者．刑。’此所以禁杀伤人也。夫禁杀伤人者，天下之大义也。王虽遂．杀之。子，人之所私也。忍．所私以行大义，巨子可谓公矣。\n\n（取材于《吕氏春秋·去私》）"
+              }
+            ],
+            "topic": "（一）阅读下面的文言文，完成9—14题。（共18分）",
+            "annotation": "注释：【1】祁黄羊：春秋时晋国大夫。",
+            "annotations": [
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 27,
+                "end": 28,
+                "anchor": "其"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 99,
+                "end": 100,
+                "anchor": "之"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 33,
+                "end": 34,
+                "anchor": "遂"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 286,
+                "end": 287,
+                "anchor": "者"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 2,
+                "id": "q2",
+                "text": "10.下列各组句中加点词的意义和用法，不同的一组（2分）\n\nA *其*谁可而为之 \n君知其难也  \nB午非子*之*子邪 \n今者有小人*之*言\nC.而*遂*杀之 \n后*遂*无问津者\n D.伤人*者*刑\n 同予*者*何人",
+                "score": 2
+              }
+            ]
           },
-          "inputContextSha256": "e0f5dc70fa67d58039e341095f24768e15a950a5ad196224f591d37b7b6dad8f"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 来源复核后修订",
-          "text": "答案：A。\n选A（不同的一组）。A项：“其谁可而为之”的“其”是语气副词，加强疑问（揣测）语气；“君知其难也”的“其”是代词，不同。B项：“午非子之子邪”“今者有小人之言”的“之”都是结构助词“的”，相同。C项：“而遂杀之”“后遂无问津者”的“遂”都是副词“于是、就”，相同。D项：“伤人者刑”“同予者何人”的“者”都是代词，“……的人”，相同。",
-          "inputSha256": "3e4943d0793fa56338354bfab4bc077c8a8acd42cae1cd8f8a7781a61b670e33",
-          "inputContextSha256": "e0f5dc70fa67d58039e341095f24768e15a950a5ad196224f591d37b7b6dad8f",
-          "generatedAt": "2026-10-03T03:01:54.821132+00:00",
-          "uncertainties": [
-            "材料第四段文字残缺（腹䵍答语部分缺失），“而遂杀之”所在原句不完整，但不影响对选项的判断。"
-          ],
-          "selectedOptions": [
-            "A"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
-            "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
-            "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
-            "stage": "source_review"
+          "review": {
+            "id": "2015-guwen:2",
+            "inputSha256": "3e4943d0793fa56338354bfab4bc077c8a8acd42cae1cd8f8a7781a61b670e33",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "A"
+            ],
+            "explanation": "仅校核本小题，全文缺损和补字需独立原卷核验。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:03:23.208Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内完整题目及相关材料"
+              },
+              {
+                "type": "dictionary_revision",
+                "title": "文言站2026-09-16-r3词典校订，保留争议"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "答案：A。‘其谁可而为之’是在询问谁适任，其带征询、商量语气；‘君知其难也’中其回指相应事情，修饰难处。B项之均表修饰关系，C项遂均承接前事而引出结果，D项者均使前面的行为描述指向相应的人。本站材料有大段转录残损，本题四组对比仍可读，但不能据此宣布整篇校对完成。",
+                "inputSha256": "3e4943d0793fa56338354bfab4bc077c8a8acd42cae1cd8f8a7781a61b670e33",
+                "generatedAt": "2026-10-03T03:03:23.208Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "6342c403b33156426c311e75edee5fa710c1beb502343d59ecfeff727e09d137",
+                  "annotationEffect": "祁黄羊身份注已纳入。其谁征询与君知其难的指代不同；腹䵍故事大段缺损仍阻止整篇发布。"
+                },
+                "inputContextSha256": "e0f5dc70fa67d58039e341095f24768e15a950a5ad196224f591d37b7b6dad8f"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "答案：A。\n选A（不同的一组）。A项：“其谁可而为之”的“其”是语气副词，加强疑问（揣测）语气；“君知其难也”的“其”是代词，不同。B项：“午非子之子邪”“今者有小人之言”的“之”都是结构助词“的”，相同。C项：“而遂杀之”“后遂无问津者”的“遂”都是副词“于是、就”，相同。D项：“伤人者刑”“同予者何人”的“者”都是代词，“……的人”，相同。",
+                "inputSha256": "3e4943d0793fa56338354bfab4bc077c8a8acd42cae1cd8f8a7781a61b670e33",
+                "inputContextSha256": "e0f5dc70fa67d58039e341095f24768e15a950a5ad196224f591d37b7b6dad8f",
+                "generatedAt": "2026-10-03T03:01:54.821132+00:00",
+                "uncertainties": [
+                  "材料第四段文字残缺（腹䵍答语部分缺失），“而遂杀之”所在原句不完整，但不影响对选项的判断。"
+                ],
+                "selectedOptions": [
+                  "A"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
+                  "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
+                  "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
+                  "stage": "source_review"
+                }
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "答案：A。‘其谁可而为之’是在询问谁适任，其带征询、商量语气；‘君知其难也’中其回指相应事情，修饰难处。B项之均表修饰关系，C项遂均承接前事而引出结果，D项者均使前面的行为描述指向相应的人。本站材料有大段转录残损，本题四组对比仍可读，但不能据此宣布整篇校对完成。",
+                "inputSha256": "3e4943d0793fa56338354bfab4bc077c8a8acd42cae1cd8f8a7781a61b670e33",
+                "generatedAt": "2026-10-03T00:07:56.018Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
+                }
+              },
+              "claude_opus_5_5_initial": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答（修订前存档）",
+                "text": "答案：A。\nA项不同。“其谁可而为之”中，“其”是语气副词，表示商量、推测，可译为“大概”；“君知其难也”中，“其”是代词，指那件事。B项相同。“午非子之子邪”“今者有小人之言”中的“之”都是结构助词“的”。C项基本相同。“（王虽……）而遂杀之”中，“遂”是副词，意为“终于、于是就”，指腹𦟝最终还是杀了儿子；“后遂无问津者”中，“遂”也是副词，意为“于是、就（再也）”。D项相同。“伤人者刑”“同予者何人”中的“者”都是代词，意为“……的人”。故选A。",
+                "inputSha256": "3e4943d0793fa56338354bfab4bc077c8a8acd42cae1cd8f8a7781a61b670e33",
+                "generatedAt": "2026-10-03T00:39:17.649838+00:00",
+                "uncertainties": [
+                  "材料中墨者钜子腹𦟝一段有明显缺字、脱句（如“先生之以此听寡人也人者死”“王虽遂杀之”），C项所在原句不完整。本题依据《吕氏春秋·去私》通行文本理解为“而遂杀之”。"
+                ],
+                "selectedOptions": [
+                  "A"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
+                  "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
+                  "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "5c74ab066d76035471b56b3b0e33b30344b2d6b6928aaaf7a89cb77a8c1e80cb"
+              }
+            },
+            "inputContextSha256": "e0f5dc70fa67d58039e341095f24768e15a950a5ad196224f591d37b7b6dad8f"
           }
-        },
-        "gpt_6_astra_before_context_review": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
-          "text": "答案：A。‘其谁可而为之’是在询问谁适任，其带征询、商量语气；‘君知其难也’中其回指相应事情，修饰难处。B项之均表修饰关系，C项遂均承接前事而引出结果，D项者均使前面的行为描述指向相应的人。本站材料有大段转录残损，本题四组对比仍可读，但不能据此宣布整篇校对完成。",
-          "inputSha256": "3e4943d0793fa56338354bfab4bc077c8a8acd42cae1cd8f8a7781a61b670e33",
-          "generatedAt": "2026-10-03T00:07:56.018Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
-          }
-        },
-        "claude_opus_5_5_initial": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答（修订前存档）",
-          "text": "答案：A。\nA项不同。“其谁可而为之”中，“其”是语气副词，表示商量、推测，可译为“大概”；“君知其难也”中，“其”是代词，指那件事。B项相同。“午非子之子邪”“今者有小人之言”中的“之”都是结构助词“的”。C项基本相同。“（王虽……）而遂杀之”中，“遂”是副词，意为“终于、于是就”，指腹𦟝最终还是杀了儿子；“后遂无问津者”中，“遂”也是副词，意为“于是、就（再也）”。D项相同。“伤人者刑”“同予者何人”中的“者”都是代词，意为“……的人”。故选A。",
-          "inputSha256": "3e4943d0793fa56338354bfab4bc077c8a8acd42cae1cd8f8a7781a61b670e33",
-          "generatedAt": "2026-10-03T00:39:17.649838+00:00",
-          "uncertainties": [
-            "材料中墨者钜子腹𦟝一段有明显缺字、脱句（如“先生之以此听寡人也人者死”“王虽遂杀之”），C项所在原句不完整。本题依据《吕氏春秋·去私》通行文本理解为“而遂杀之”。"
-          ],
-          "selectedOptions": [
-            "A"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
-            "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
-            "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
-            "stage": "independent"
-          },
-          "inputContextSha256": "5c74ab066d76035471b56b3b0e33b30344b2d6b6928aaaf7a89cb77a8c1e80cb"
         }
-      },
-      "inputContextSha256": "e0f5dc70fa67d58039e341095f24768e15a950a5ad196224f591d37b7b6dad8f"
+      ],
+      "inputPresentationSha256": "bafd6d7d46a15e7c9f226c76bd6cbaa1d17e4dd42ee41c048262ca60ef501174"
     },
     {
       "id": "2013-guwen:2",
@@ -9915,11 +9997,11 @@
     },
     {
       "id": "2015-moxie:1",
-      "inputSha256": "96f0b4a733ba51dd5cd763a0cdfb83d86a10a84ab4f589ef08033bf268d45630",
-      "status": "reviewed",
+      "inputSha256": "04cabb1ec28ebfa3cb05a92b1d341ad9b766e23d8b50b23849f05807a149389d",
+      "status": "draft",
       "kind": "open",
       "correctOptions": [],
-      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "explanation": "2015转录/完整上下文修复后的待重审输入；旧输入及模型原文留存history。原卷来源与准确标记资格仍阻断。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T01:38:23.281Z",
       "sources": [
@@ -9929,66 +10011,111 @@
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答",
-          "text": "①登东皋以舒啸，临清流而赋诗。②山水之乐，得之心而寓之酒也。①位于《归去来兮辞》末段；②接《醉翁亭记》“在乎山水之间也”，说明醉与山水之乐相通。“皋”“寓”注意字形。",
-          "inputSha256": "96f0b4a733ba51dd5cd763a0cdfb83d86a10a84ab4f589ef08033bf268d45630",
-          "generatedAt": "2026-10-03T01:38:23.281Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
-            "contextEvidence": {
-              "method": "no_annotation_v1_equivalence",
-              "originalInputSha256": "96f0b4a733ba51dd5cd763a0cdfb83d86a10a84ab4f589ef08033bf268d45630",
-              "originalEvidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
-              "originalAnswerSha256": "a4f262d5dd47414fd50778bee987c59510abc4c2031a6f4f207d0d2aa129c3cd",
-              "contextSha256": "8a1fac0c0b6fd8a5c34f7723ff402b093846b023b15f293188c228e6c40ce23d",
-              "sourceAnnotation": null,
-              "evidence": "answers-six-sites-20261002/no-annotation-context-proof.json"
+      "modelAnswers": {},
+      "inputContextSha256": "d429485bc7a708662f86c97d6b93646845697838ca6737b8f619c7a9e775b563",
+      "inputPresentationSha256": "27e59625f65faefb6662fe943f5bb08a261ad7c209d4d24d660ad92e5ce9b521",
+      "history": [
+        {
+          "source": {
+            "id": "2015-moxie",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "①古代文人常常喜欢“啸咏”，除了本词中的醉翁，陶渊明也曾写到：“________，________。聊乘化以归尽，乐夫天命复奚疑！”\n（《归去来兮辞》）（2分）\n②这首词与欧阳修《醉翁亭记》有密切关联。词中“惟翁醉中知其天”“醉翁啸咏，声和流泉”，呼应了《醉翁亭记》中 “醉翁之意不在酒，在乎山水之间也”“________，________”等寄情山水的名句。（2分）"
+              }
+            ],
+            "topic": "18.在横线处填写作品原句。（4分）",
+            "annotation": null,
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "18.在横线处填写作品原句。（4分）\n①古代文人常常喜欢“啸咏”，除了本词中的醉翁，陶渊明也曾写到：“________，________。聊乘化以归尽，乐夫天命复奚疑！”\n（《归去来兮辞》）（2分）\n②这首词与欧阳修《醉翁亭记》有密切关联。词中“惟翁醉中知其天”“醉翁啸咏，声和流泉”，呼应了《醉翁亭记》中 “醉翁之意不在酒，在乎山水之间也”“________，________”等寄情山水的名句。（2分）",
+                "score": 4
+              }
+            ]
+          },
+          "review": {
+            "id": "2015-moxie:1",
+            "inputSha256": "96f0b4a733ba51dd5cd763a0cdfb83d86a10a84ab4f589ef08033bf268d45630",
+            "status": "reviewed",
+            "kind": "open",
+            "correctOptions": [],
+            "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T01:38:23.281Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2015北京卷原题及完整材料"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答",
+                "text": "①登东皋以舒啸，临清流而赋诗。②山水之乐，得之心而寓之酒也。①位于《归去来兮辞》末段；②接《醉翁亭记》“在乎山水之间也”，说明醉与山水之乐相通。“皋”“寓”注意字形。",
+                "inputSha256": "96f0b4a733ba51dd5cd763a0cdfb83d86a10a84ab4f589ef08033bf268d45630",
+                "generatedAt": "2026-10-03T01:38:23.281Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
+                  "contextEvidence": {
+                    "method": "no_annotation_v1_equivalence",
+                    "originalInputSha256": "96f0b4a733ba51dd5cd763a0cdfb83d86a10a84ab4f589ef08033bf268d45630",
+                    "originalEvidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
+                    "originalAnswerSha256": "a4f262d5dd47414fd50778bee987c59510abc4c2031a6f4f207d0d2aa129c3cd",
+                    "contextSha256": "8a1fac0c0b6fd8a5c34f7723ff402b093846b023b15f293188c228e6c40ce23d",
+                    "sourceAnnotation": null,
+                    "evidence": "answers-six-sites-20261002/no-annotation-context-proof.json"
+                  },
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "8a1fac0c0b6fd8a5c34f7723ff402b093846b023b15f293188c228e6c40ce23d"
+                  }
+                },
+                "inputContextSha256": "8a1fac0c0b6fd8a5c34f7723ff402b093846b023b15f293188c228e6c40ce23d",
+                "inputPresentationSha256": "ba632192f60b376f99bed30bade8ebc42a45ae74a217cc3dc55b6b42b35daff4"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "①登东皋以舒啸，临清流而赋诗。（陶渊明《归去来兮辞》）\n②山水之乐，得之心而寓之酒也。（欧阳修《醉翁亭记》）",
+                "inputSha256": "96f0b4a733ba51dd5cd763a0cdfb83d86a10a84ab4f589ef08033bf268d45630",
+                "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+                "uncertainties": [
+                  "第②题也可填其他寄情山水的句子，如“野芳发而幽香，佳木秀而繁阴”。但紧承“醉翁之意不在酒，在乎山水之间也”的原文是“山水之乐，得之心而寓之酒也”，最为贴切。"
+                ],
+                "selectedOptions": [],
+                "assessment": {
+                  "matchesConclusion": null
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+                  "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+                  "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+                  "stage": "independent",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "8a1fac0c0b6fd8a5c34f7723ff402b093846b023b15f293188c228e6c40ce23d"
+                  }
+                },
+                "inputContextSha256": "8a1fac0c0b6fd8a5c34f7723ff402b093846b023b15f293188c228e6c40ce23d",
+                "inputPresentationSha256": "ba632192f60b376f99bed30bade8ebc42a45ae74a217cc3dc55b6b42b35daff4"
+              }
             },
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "8a1fac0c0b6fd8a5c34f7723ff402b093846b023b15f293188c228e6c40ce23d"
-            }
-          },
-          "inputContextSha256": "8a1fac0c0b6fd8a5c34f7723ff402b093846b023b15f293188c228e6c40ce23d",
-          "inputPresentationSha256": "ba632192f60b376f99bed30bade8ebc42a45ae74a217cc3dc55b6b42b35daff4"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "①登东皋以舒啸，临清流而赋诗。（陶渊明《归去来兮辞》）\n②山水之乐，得之心而寓之酒也。（欧阳修《醉翁亭记》）",
-          "inputSha256": "96f0b4a733ba51dd5cd763a0cdfb83d86a10a84ab4f589ef08033bf268d45630",
-          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
-          "uncertainties": [
-            "第②题也可填其他寄情山水的句子，如“野芳发而幽香，佳木秀而繁阴”。但紧承“醉翁之意不在酒，在乎山水之间也”的原文是“山水之乐，得之心而寓之酒也”，最为贴切。"
-          ],
-          "selectedOptions": [],
-          "assessment": {
-            "matchesConclusion": null
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
-            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
-            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
-            "stage": "independent",
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "8a1fac0c0b6fd8a5c34f7723ff402b093846b023b15f293188c228e6c40ce23d"
-            }
-          },
-          "inputContextSha256": "8a1fac0c0b6fd8a5c34f7723ff402b093846b023b15f293188c228e6c40ce23d",
-          "inputPresentationSha256": "ba632192f60b376f99bed30bade8ebc42a45ae74a217cc3dc55b6b42b35daff4"
+            "inputContextSha256": "8a1fac0c0b6fd8a5c34f7723ff402b093846b023b15f293188c228e6c40ce23d",
+            "inputPresentationSha256": "ba632192f60b376f99bed30bade8ebc42a45ae74a217cc3dc55b6b42b35daff4"
+          }
         }
-      },
-      "inputContextSha256": "8a1fac0c0b6fd8a5c34f7723ff402b093846b023b15f293188c228e6c40ce23d",
-      "inputPresentationSha256": "ba632192f60b376f99bed30bade8ebc42a45ae74a217cc3dc55b6b42b35daff4"
+      ]
     },
     {
       "id": "2014-moxie:1",
@@ -28867,6 +28994,32 @@
         }
       ],
       "evidence": "answers-six-sites-20261002/REVIEW-2016.md"
+    },
+    {
+      "id": "2015-source-preparation-qualifications",
+      "status": "open",
+      "recordIds": [
+        "2015-feilian",
+        "2015-guwen",
+        "2015-shici",
+        "2015-lunyu",
+        "2015-moxie",
+        "2015-sanwen",
+        "2015-dazuowen"
+      ],
+      "detail": "No original exam-agency scan acquired. Sina contemporaneous text, EOL yw/ywda retypeset fragments and public twelve-page PDF show shared errors, inconsistent numbering and missing glyphs. They corroborate specific repairs but do not certify original text/marks or independent provenance. Question9 second A label duplicated B in two reproductions; keep existing A/B/C/D structure. Exact rare name glyph/toned note, punctuation, material1文字vs汉字, storage quantity1万6千兆, material2 author王素宝, first encounter wording第一个有个vs第一次, guwen孔子quotation closure and 琴徽 note need authoritative original/primary checks. Printed-emphasis copy is incomplete; retained observed underlines and removed invented waves/unrelated-dot anchors. Original question emphasis still represented partly by legacy inline dots/asterisks; certify genuine original marking and actual render before release. All21reading units conservatively reference-exposed during source discovery: search/PDF/Sina and ywda images showed keys and explanations. No new root answers or provider calls yet. Five writing options not exposed to sample compositions. EOL yw1-10 are not ordered exam pages; yw2 has shifted prose numbers; source metadata explicitly records this. Do not use filename original in early ywda download names as source authority."
+    },
+    {
+      "id": "2015-composite-scores",
+      "status": "open",
+      "recordIds": [
+        "2015-feilian",
+        "2015-guwen",
+        "2015-shici",
+        "2015-sanwen",
+        "2015-lunyu"
+      ],
+      "detail": "Preserve legacy IDs/qIndex/scores. feilian5 contains originals5/6/7/8=2+3+6+2 with stored2; guwen1 has two selections under original9=2 with storednull; guwen3 original11=3 storednull; guwen5 original13/14=4+3 stored4; shici2 original17=3+2 stored5; sanwen5 original24/25=6+4 stored6; lunyu1 four speakers under1point allocation. Current original-number labels corroborated in Sina text, but some EOL fragments shift them. Compatible per-part grading and official allocations require separate acceptance."
     }
   ]
 }
