@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261003-reviewed-382-qualified-2013",
+  "revision": "20261003-source2012-qualified-pending",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -2873,13 +2873,11 @@
     },
     {
       "id": "2012-guwen:2",
-      "inputSha256": "cda16ce1e07b5c9a679095dc2eb55a99d366ac7763251b4171ecc8d2494040a5",
-      "status": "reviewed",
+      "inputSha256": "9bf4207ac927dc8f6aed93609b114bbd4d6deaec41028118096a92f3d5bd1d15",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "D"
-      ],
-      "explanation": "语境比较重答，结论D。",
+      "correctOptions": [],
+      "explanation": "2012来源及标记更正后待完整重审；旧输入和全部完整模型保存在history。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T03:03:23.208Z",
       "sources": [
@@ -2893,88 +2891,172 @@
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 完整附注复核",
-          "text": "答案：D。何以为报中的以引出用于回报的凭借，何是前置的宾语；妻卧草中以号中的以把卧于草中的状态与号哭连接起来，不引进一个名词性工具。A项舍结合收留遇难者的语境均作收留，不能因现代常用舍弃义误读。B项然均承接转折，C项为均处在被动结构中，后一处与“所”配合，构成“为……所……”格式。",
-          "inputSha256": "cda16ce1e07b5c9a679095dc2eb55a99d366ac7763251b4171ecc8d2494040a5",
-          "generatedAt": "2026-10-03T03:03:23.208Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review_reaffirmation",
-            "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
-            "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "priorAnswerSha256": "32164fe86d64e0b6c8bac8837b942bed7765703c6e721e8ac295f643b347a5aa",
-            "annotationEffect": "执业为捧书受业，汛室为洒扫，不影响两处以的凭借与连接关系。题干何以为报和正文何以报为次序不同仍须源证核对。"
+      "modelAnswers": {},
+      "inputContextSha256": "72ab6845e0e86d29ce6d8fb779a9a1c8f4aaa2b9402b2c7f3363877d6dd1d090",
+      "history": [
+        {
+          "source": {
+            "id": "2012-guwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "李疑者，居通济门外，闾巷子弟执业造其家，得粟以自给。固贫甚，然独好周人急。金华范景淳吏吏部，得疾，无他子弟。人殆之，不肯舍。杖踵疑门，告曰：“我不幸被疾，人莫舍我。闻君义甚高，愿假榻。”疑许诺，延就坐，汛室，具床褥炉灶居之，征医师视脉，躬为煮糜炼药，旦暮执手问所苦。既而疾滋甚，不能起，溲矢污衾席，臭秽不可近。疑日为刮摩浣涤，不少见颜面。景淳流涕曰：“我累君矣。恐不复生，无以报厚德，囊有黄白金四十余两，在故旅邸，原自取之。”疑曰：“患难相恤，人理宜尔，何以报为！”景淳曰：“君脱不取，我死，恐为他人得，何益?”疑遂求其里人偕往，携而归，面发囊，志其数而封识之。数日，景淳竟死，疑出私财，买棺殡于城南聚宝山。举所封囊寄其里人家，往书召其二子至。及二子至，取囊按籍而还之。二子以米馈，却弗受，反赆以货，遣归。\n\n平阳耿子廉械逮至京师，其妻孕将育，众拒门不纳，妻卧草中以号。疑问故，归谓妇曰：“人孰无缓急，安能以室庐自随哉！且人命至重，倘育而为风露所感，则母子俱死，吾宁舍之而受祸，何忍死其母子？”俾妇邀以归，产一男子。疑命妇事之如疑事景淳，踰月，始辞去，不取其报。\n\n人用是多疑名，士大夫咸喜与疑交。见疑者皆曰：“善士，善士！”疑读书为文亦可观，尝以儒举，辞不就，然其行最著。太史氏曰：吾与疑往来，识其为人，非有奇伟壮烈之姿也，而其所为事乃有古义勇风。语曰举世混浊，清士乃见。吾伤流俗之嗜利也，传其事以劝焉。\n\n（取材于宋濂《文宪集·李疑传》）"
+              }
+            ],
+            "topic": "二、本大题共4小题，每小题3分，共12分。\n阅读下面的文言文，完成6-9题。",
+            "annotation": "注：①执业：指捧书求教，犹言受业。②汛室：汛，洒水。汛室，指打扫房间。",
+            "annotations": [
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 60,
+                "end": 61,
+                "anchor": "舍"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 30,
+                "end": 31,
+                "anchor": "然"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 119,
+                "end": 120,
+                "anchor": "为"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 22,
+                "end": 23,
+                "anchor": "以"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 2,
+                "id": "q2",
+                "text": "7．下列各组词语句中。加点的词意义和用法都不相同的一项是（   ）  \nA．人莫*舍*我  吾宁*舍*之而受祸\nB．*然*独好周人急     *然*其行最著\nC．恐*为*他人得       倘育而*为*风露所感  \nD．何*以*为报         妻卧草中*以*号",
+                "score": null
+              }
+            ]
           },
-          "inputContextSha256": "ec984e4bba8f99f09bfa04ed2d328f08a92964780d640998ad43fb6787012752"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 来源复核后修订",
-          "text": "答案：D。\n选D（不相同的一项）。A项：“人莫舍我”“吾宁舍之而受祸”的“舍”都是动词“留宿、给……住”，相同。B项：“然独好周人急”“然其行最著”的“然”都是转折连词“然而”，相同。C项：“恐为他人得”“倘育而为风露所感”的“为”都是介词“被”，相同。D项：“何以报为”的“以”是介词“用、拿”（用回报做什么）；“妻卧草中以号”的“以”是连词，相当于“而”，表修饰或承接，不同。",
-          "inputSha256": "cda16ce1e07b5c9a679095dc2eb55a99d366ac7763251b4171ecc8d2494040a5",
-          "inputContextSha256": "ec984e4bba8f99f09bfa04ed2d328f08a92964780d640998ad43fb6787012752",
-          "generatedAt": "2026-10-03T03:01:54.821132+00:00",
-          "uncertainties": [
-            "选项D写作“何以为报”，材料原文作“何以报为”，两处文字不一致；无论哪种写法，“以”均为介词，与后句连词“以”不同，不影响答案。"
-          ],
-          "selectedOptions": [
-            "D"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
-            "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
-            "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
-            "stage": "source_review"
+          "review": {
+            "id": "2012-guwen:2",
+            "inputSha256": "cda16ce1e07b5c9a679095dc2eb55a99d366ac7763251b4171ecc8d2494040a5",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "D"
+            ],
+            "explanation": "语境比较重答，结论D。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:03:23.208Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内完整题目及相关材料"
+              },
+              {
+                "type": "dictionary_revision",
+                "title": "文言站2026-09-16-r3词典校订，保留争议"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "答案：D。何以为报中的以引出用于回报的凭借，何是前置的宾语；妻卧草中以号中的以把卧于草中的状态与号哭连接起来，不引进一个名词性工具。A项舍结合收留遇难者的语境均作收留，不能因现代常用舍弃义误读。B项然均承接转折，C项为均处在被动结构中，后一处与“所”配合，构成“为……所……”格式。",
+                "inputSha256": "cda16ce1e07b5c9a679095dc2eb55a99d366ac7763251b4171ecc8d2494040a5",
+                "generatedAt": "2026-10-03T03:03:23.208Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "32164fe86d64e0b6c8bac8837b942bed7765703c6e721e8ac295f643b347a5aa",
+                  "annotationEffect": "执业为捧书受业，汛室为洒扫，不影响两处以的凭借与连接关系。题干何以为报和正文何以报为次序不同仍须源证核对。"
+                },
+                "inputContextSha256": "ec984e4bba8f99f09bfa04ed2d328f08a92964780d640998ad43fb6787012752"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "答案：D。\n选D（不相同的一项）。A项：“人莫舍我”“吾宁舍之而受祸”的“舍”都是动词“留宿、给……住”，相同。B项：“然独好周人急”“然其行最著”的“然”都是转折连词“然而”，相同。C项：“恐为他人得”“倘育而为风露所感”的“为”都是介词“被”，相同。D项：“何以报为”的“以”是介词“用、拿”（用回报做什么）；“妻卧草中以号”的“以”是连词，相当于“而”，表修饰或承接，不同。",
+                "inputSha256": "cda16ce1e07b5c9a679095dc2eb55a99d366ac7763251b4171ecc8d2494040a5",
+                "inputContextSha256": "ec984e4bba8f99f09bfa04ed2d328f08a92964780d640998ad43fb6787012752",
+                "generatedAt": "2026-10-03T03:01:54.821132+00:00",
+                "uncertainties": [
+                  "选项D写作“何以为报”，材料原文作“何以报为”，两处文字不一致；无论哪种写法，“以”均为介词，与后句连词“以”不同，不影响答案。"
+                ],
+                "selectedOptions": [
+                  "D"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
+                  "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
+                  "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
+                  "stage": "source_review"
+                }
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "答案：D。何以为报中的以引出用于回报的凭借，何是前置的宾语；妻卧草中以号中的以把卧于草中的状态与号哭连接起来，不引进一个名词性工具。A项舍结合收留遇难者的语境均作收留，不能因现代常用舍弃义误读。B项然均承接转折，C项为均处在被动结构中，后一处与“所”配合，构成“为……所……”格式。",
+                "inputSha256": "cda16ce1e07b5c9a679095dc2eb55a99d366ac7763251b4171ecc8d2494040a5",
+                "generatedAt": "2026-10-03T00:07:56.018Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
+                }
+              },
+              "claude_opus_5_5_initial": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答（修订前存档）",
+                "text": "答案：D。\nA项相同。“人莫舍我”是说没人肯留我住，“吾宁舍之而受祸”是说我宁愿收留她而遭受祸患，两个“舍”都是动词，意为“留宿、收留”。B项相同。“然独好周人急”承接“固贫甚”，“然其行最著”承接“辞不就”，两个“然”都是转折连词“然而、但是”。C项相同。“恐为他人得”“倘育而为风露所感”中的“为”都是介词，表被动，意为“被”。D项不同。“何以为报”（材料作“何以报为”）中，“以”是介词“用、拿”，意为“拿什么作为报答、何必报答”；“妻卧草中以号”中，“以”是连词，连接“卧草中”和“号”，相当于“而”。两者意义、用法都不同。故选D。",
+                "inputSha256": "cda16ce1e07b5c9a679095dc2eb55a99d366ac7763251b4171ecc8d2494040a5",
+                "generatedAt": "2026-10-03T00:39:17.649838+00:00",
+                "uncertainties": [
+                  "题干D项作“何以为报”，材料原文作“何以报为”，两处文字不一致。但两种写法中的“以”都是介词，不影响判断。",
+                  "题干称“加点的词意义和用法都不相同的一项”，以四项比较看，只有D项不同，按此作答。"
+                ],
+                "selectedOptions": [
+                  "D"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
+                  "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
+                  "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "c5b2311c81d2c11a99699770f1117d3c92897000f2471a6df44ea80780f69a6a"
+              }
+            },
+            "inputContextSha256": "ec984e4bba8f99f09bfa04ed2d328f08a92964780d640998ad43fb6787012752"
           }
-        },
-        "gpt_6_astra_before_context_review": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
-          "text": "答案：D。何以为报中的以引出用于回报的凭借，何是前置的宾语；妻卧草中以号中的以把卧于草中的状态与号哭连接起来，不引进一个名词性工具。A项舍结合收留遇难者的语境均作收留，不能因现代常用舍弃义误读。B项然均承接转折，C项为均处在被动结构中，后一处与“所”配合，构成“为……所……”格式。",
-          "inputSha256": "cda16ce1e07b5c9a679095dc2eb55a99d366ac7763251b4171ecc8d2494040a5",
-          "generatedAt": "2026-10-03T00:07:56.018Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
-          }
-        },
-        "claude_opus_5_5_initial": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答（修订前存档）",
-          "text": "答案：D。\nA项相同。“人莫舍我”是说没人肯留我住，“吾宁舍之而受祸”是说我宁愿收留她而遭受祸患，两个“舍”都是动词，意为“留宿、收留”。B项相同。“然独好周人急”承接“固贫甚”，“然其行最著”承接“辞不就”，两个“然”都是转折连词“然而、但是”。C项相同。“恐为他人得”“倘育而为风露所感”中的“为”都是介词，表被动，意为“被”。D项不同。“何以为报”（材料作“何以报为”）中，“以”是介词“用、拿”，意为“拿什么作为报答、何必报答”；“妻卧草中以号”中，“以”是连词，连接“卧草中”和“号”，相当于“而”。两者意义、用法都不同。故选D。",
-          "inputSha256": "cda16ce1e07b5c9a679095dc2eb55a99d366ac7763251b4171ecc8d2494040a5",
-          "generatedAt": "2026-10-03T00:39:17.649838+00:00",
-          "uncertainties": [
-            "题干D项作“何以为报”，材料原文作“何以报为”，两处文字不一致。但两种写法中的“以”都是介词，不影响判断。",
-            "题干称“加点的词意义和用法都不相同的一项”，以四项比较看，只有D项不同，按此作答。"
-          ],
-          "selectedOptions": [
-            "D"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
-            "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
-            "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
-            "stage": "independent"
-          },
-          "inputContextSha256": "c5b2311c81d2c11a99699770f1117d3c92897000f2471a6df44ea80780f69a6a"
         }
-      },
-      "inputContextSha256": "ec984e4bba8f99f09bfa04ed2d328f08a92964780d640998ad43fb6787012752"
+      ],
+      "inputPresentationSha256": "9c2fd52756d405bb0bd05ad1629b60eef607c6eb2b1802fc2765521f663e8fea"
     },
     {
       "id": "2011-guwen:2",
@@ -10774,11 +10856,11 @@
     },
     {
       "id": "2012-moxie:1",
-      "inputSha256": "b894e5bf2befeb29d63b506aeea126222f858f66bd7c7119c449f753cedd3ede",
-      "status": "reviewed",
+      "inputSha256": "513eb778170ae86a3240dbeb8ddf901d3c52be391b2a1fbb44a93dcfabf35be9",
+      "status": "draft",
       "kind": "open",
       "correctOptions": [],
-      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "explanation": "2012来源及标记更正后待完整重审；旧输入和全部完整模型保存在history。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T01:38:23.281Z",
       "sources": [
@@ -10788,64 +10870,109 @@
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答",
-          "text": "①博学而日参省乎己；知明而行无过矣。②风烟望五津；同是宦游人。③随风潜入夜，润物细无声。④斯是陋室，惟吾德馨。⑤同是天涯沦落人，相逢何必曾相识。⑥则游者众；则至者少。按题干已给出的“君子”“则”等连接词续写，不重复填入；“知明”按所学课文原字，不擅自写为“智明”。题目限选四道，以上全部列出便于核对。",
-          "inputSha256": "b894e5bf2befeb29d63b506aeea126222f858f66bd7c7119c449f753cedd3ede",
-          "generatedAt": "2026-10-03T01:38:23.281Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
-            "contextEvidence": {
-              "method": "no_annotation_v1_equivalence",
-              "originalInputSha256": "b894e5bf2befeb29d63b506aeea126222f858f66bd7c7119c449f753cedd3ede",
-              "originalEvidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
-              "originalAnswerSha256": "4c503212c28964220b3e61de6a781e6d4ba37afa7ea7db78234ff56a36a9af99",
-              "contextSha256": "c9062b33aef1559d4d30d75ba1e53072e97da3b7073f44657fe627722d87e980",
-              "sourceAnnotation": null,
-              "evidence": "answers-six-sites-20261002/no-annotation-context-proof.json"
+      "modelAnswers": {},
+      "inputContextSha256": "c0ce6468e9315ee8a28fde65e41494239a97aaff49d4593f2eef621a5e0bfb21",
+      "inputPresentationSha256": "e7aeba1528e329ec88444f7e734150f250e3d49ddc75a3ea487f36b5fe24f5e9",
+      "history": [
+        {
+          "source": {
+            "id": "2012-moxie",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "①故木受绳则直，金就砺则利，君子＿＿＿＿＿＿＿，则＿＿＿＿＿＿。（《荀子．劝学》）\n②城阙辅三秦，＿＿＿＿＿＿＿。与君离别意，＿＿＿＿＿＿＿＿＿。（王勃《送杜少府之任蜀州》）\n③好雨知时节，当春乃发生。＿＿＿＿＿＿＿＿，＿＿＿＿＿＿＿。（杜甫（春夜喜雨））\n④山不在高，有仙则名，水不在深，有龙则灵。＿＿＿＿＿，＿＿＿＿＿＿。（刘禹锡《陋室铭》）\n⑤我闻琵琶已叹息，又闻此语重唧唧。＿＿＿＿＿＿＿，＿＿＿＿＿＿。（白居易《琵琶行》）\n⑥夫夷以近，           ；险以远，         。（王安石《游褒禅山记》）"
+              }
+            ],
+            "topic": "13．在横线处写出诗文原句（限选其中4道题）。（8分）",
+            "annotation": null,
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "13．在横线处写出诗文原句（限选其中4道题）。（8分）\n①故木受绳则直，金就砺则利，君子＿＿＿＿＿＿＿，则＿＿＿＿＿＿。（《荀子．劝学》）\n②城阙辅三秦，＿＿＿＿＿＿＿。与君离别意，＿＿＿＿＿＿＿＿＿。（王勃《送杜少府之任蜀州》）\n③好雨知时节，当春乃发生。＿＿＿＿＿＿＿＿，＿＿＿＿＿＿＿。（杜甫（春夜喜雨））\n④山不在高，有仙则名，水不在深，有龙则灵。＿＿＿＿＿，＿＿＿＿＿＿。（刘禹锡《陋室铭》）\n⑤我闻琵琶已叹息，又闻此语重唧唧。＿＿＿＿＿＿＿，＿＿＿＿＿＿。（白居易《琵琶行》）\n⑥夫夷以近，           ；险以远，         。（王安石《游褒禅山记》）",
+                "score": 8
+              }
+            ]
+          },
+          "review": {
+            "id": "2012-moxie:1",
+            "inputSha256": "b894e5bf2befeb29d63b506aeea126222f858f66bd7c7119c449f753cedd3ede",
+            "status": "reviewed",
+            "kind": "open",
+            "correctOptions": [],
+            "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T01:38:23.281Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2012北京卷原题及完整材料"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答",
+                "text": "①博学而日参省乎己；知明而行无过矣。②风烟望五津；同是宦游人。③随风潜入夜，润物细无声。④斯是陋室，惟吾德馨。⑤同是天涯沦落人，相逢何必曾相识。⑥则游者众；则至者少。按题干已给出的“君子”“则”等连接词续写，不重复填入；“知明”按所学课文原字，不擅自写为“智明”。题目限选四道，以上全部列出便于核对。",
+                "inputSha256": "b894e5bf2befeb29d63b506aeea126222f858f66bd7c7119c449f753cedd3ede",
+                "generatedAt": "2026-10-03T01:38:23.281Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
+                  "contextEvidence": {
+                    "method": "no_annotation_v1_equivalence",
+                    "originalInputSha256": "b894e5bf2befeb29d63b506aeea126222f858f66bd7c7119c449f753cedd3ede",
+                    "originalEvidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
+                    "originalAnswerSha256": "4c503212c28964220b3e61de6a781e6d4ba37afa7ea7db78234ff56a36a9af99",
+                    "contextSha256": "c9062b33aef1559d4d30d75ba1e53072e97da3b7073f44657fe627722d87e980",
+                    "sourceAnnotation": null,
+                    "evidence": "answers-six-sites-20261002/no-annotation-context-proof.json"
+                  },
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "c9062b33aef1559d4d30d75ba1e53072e97da3b7073f44657fe627722d87e980"
+                  }
+                },
+                "inputContextSha256": "c9062b33aef1559d4d30d75ba1e53072e97da3b7073f44657fe627722d87e980",
+                "inputPresentationSha256": "f6657bb6f7eee7419285a1de4d3d9431efa1ef0457386a40016186aef36292ee"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "题目要求限选4题，现全部作答供参考：\n①博学而日参省乎己；知明而行无过矣。（《荀子·劝学》）\n②风烟望五津；同是宦游人。（王勃《送杜少府之任蜀州》）\n③随风潜入夜，润物细无声。（杜甫《春夜喜雨》）\n④斯是陋室，惟吾德馨。（刘禹锡《陋室铭》）\n⑤同是天涯沦落人，相逢何必曾相识。（白居易《琵琶行》）\n⑥则游者众；则至者少。（王安石《游褒禅山记》）",
+                "inputSha256": "b894e5bf2befeb29d63b506aeea126222f858f66bd7c7119c449f753cedd3ede",
+                "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+                "uncertainties": [],
+                "selectedOptions": [],
+                "assessment": {
+                  "matchesConclusion": null
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+                  "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+                  "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+                  "stage": "independent",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "c9062b33aef1559d4d30d75ba1e53072e97da3b7073f44657fe627722d87e980"
+                  }
+                },
+                "inputContextSha256": "c9062b33aef1559d4d30d75ba1e53072e97da3b7073f44657fe627722d87e980",
+                "inputPresentationSha256": "f6657bb6f7eee7419285a1de4d3d9431efa1ef0457386a40016186aef36292ee"
+              }
             },
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "c9062b33aef1559d4d30d75ba1e53072e97da3b7073f44657fe627722d87e980"
-            }
-          },
-          "inputContextSha256": "c9062b33aef1559d4d30d75ba1e53072e97da3b7073f44657fe627722d87e980",
-          "inputPresentationSha256": "f6657bb6f7eee7419285a1de4d3d9431efa1ef0457386a40016186aef36292ee"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "题目要求限选4题，现全部作答供参考：\n①博学而日参省乎己；知明而行无过矣。（《荀子·劝学》）\n②风烟望五津；同是宦游人。（王勃《送杜少府之任蜀州》）\n③随风潜入夜，润物细无声。（杜甫《春夜喜雨》）\n④斯是陋室，惟吾德馨。（刘禹锡《陋室铭》）\n⑤同是天涯沦落人，相逢何必曾相识。（白居易《琵琶行》）\n⑥则游者众；则至者少。（王安石《游褒禅山记》）",
-          "inputSha256": "b894e5bf2befeb29d63b506aeea126222f858f66bd7c7119c449f753cedd3ede",
-          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
-          "uncertainties": [],
-          "selectedOptions": [],
-          "assessment": {
-            "matchesConclusion": null
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
-            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
-            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
-            "stage": "independent",
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "c9062b33aef1559d4d30d75ba1e53072e97da3b7073f44657fe627722d87e980"
-            }
-          },
-          "inputContextSha256": "c9062b33aef1559d4d30d75ba1e53072e97da3b7073f44657fe627722d87e980",
-          "inputPresentationSha256": "f6657bb6f7eee7419285a1de4d3d9431efa1ef0457386a40016186aef36292ee"
+            "inputContextSha256": "c9062b33aef1559d4d30d75ba1e53072e97da3b7073f44657fe627722d87e980",
+            "inputPresentationSha256": "f6657bb6f7eee7419285a1de4d3d9431efa1ef0457386a40016186aef36292ee"
+          }
         }
-      },
-      "inputContextSha256": "c9062b33aef1559d4d30d75ba1e53072e97da3b7073f44657fe627722d87e980",
-      "inputPresentationSha256": "f6657bb6f7eee7419285a1de4d3d9431efa1ef0457386a40016186aef36292ee"
+      ]
     },
     {
       "id": "2011-moxie:1",
@@ -34543,6 +34670,20 @@
         }
       ],
       "evidence": "answers-six-sites-20261002/REVIEW-2013.md"
+    },
+    {
+      "id": "2012-source-coverage-and-marking",
+      "status": "open",
+      "recordIds": [
+        "2012-feilian",
+        "2012-guwen",
+        "2012-shici",
+        "2012-moxie",
+        "2012-sanwen",
+        "2012-yuyanjichu",
+        "2012-dazuowen"
+      ],
+      "detail": "EOL/学科网 five retypeset images declare eight original pages. Image2 ends the first guwen paragraph with ？？？ and omits its last sentences; image3 omits poem author and one multiple-choice option. Gzywtk 校对无误版 contains evident OCR errors. Neither establishes an authenticated original paper, answer card, exact printing or independent publication chain. Source variants remain: guwen paragraph ending 发棺/半 provisionally follows Gzywtk, old 米 and incomplete clause retained in preimage; EOL q7D 何以为报 vs Gzywtk/body 何以报为. No claim that reprint differences resolve original source. Poem author 雍陶 unsupported and removed; EOL blank vs Gzywtk 明·金銮 attribution requires literary/original-source adjudication. Five-option shici2 kept from Gzywtk because EOL drops original D and relabels E. Missing original12断句 recorded separately as 2012-duanju:1, not integrated or counted among612. Both witnesses print 如此知秦国之政也, kept without silently changing 知 to 治. Original numbering and consumer/source/history integration still required. Original q10 total7 consists3+4, but legacy shici1 score7 and shici2 score4 are unchanged to protect old grades. Language and guwen null scores and writing null remain; actual section totals15/12/60. No score reinterpretation or student write. Exact original dots, answer-card geometry and typography unresolved. Old answer-guiding body dots/waves removed; four public-image clause underlines retained as reprint evidence only. Language pronunciation targets visible from phonetic parentheses, dot geometry not certified. All reading and extension-writing inputs conservatively reference-exposed: EOL answer page/search snippets/gzy sample poem extension and old existing AI values were seen. Old main-essay outlines and one short example fragment were also exposed while inspecting existing fields; main writing is therefore reference-exposed too, although no complete new model composition was read. Root must complete20reading including supplement plus1essay before new bounded PLAN22; no provider call or new answers in this source step. Medical, nutrition, gravitational-wave and literary/historical assertions are source statements pending bounded factual checks during answer adjudication. Do not turn dated literary imagery, reported8848m or imagined3000-year events into verified contemporary claims."
     }
   ]
 }
