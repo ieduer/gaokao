@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261002-reviewed-90-disputed-4",
+  "revision": "20261002-reviewed-115-disputed-4",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -5529,6 +5529,1355 @@
           }
         }
       }
+    },
+    {
+      "id": "2024-feilian:1",
+      "inputSha256": "02cbfc34f82b9095c74e4b3cf44b6172e5325aad4e3f834297d18f589e2c5bf4",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:57:16.854056+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2024北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：A。联合团队选的是六盘山北联池的陆地沉积物，不是深海沉积记录。B与定量分析一致；C明确限定北方、五千年、四月至十月暖季，符合材料；D对应研究证实冷抑暖扬。不能把此前全球曲线所用的资料误作本次研究样品。",
+          "inputSha256": "02cbfc34f82b9095c74e4b3cf44b6172e5325aad4e3f834297d18f589e2c5bf4",
+          "generatedAt": "2026-10-03T01:46:03.945Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\nA项不正确。材料一说全球温度曲线重建主要借助冰芯、深海沉积物和树轮，但我国“陆地上的沉积记录才能更好地反映我国历史气候变化”。联合团队选取的是六盘山北联池的沉积物样品，属陆地湖泊沉积，不是深海沉积记录，A项张冠李戴。B项正确，原文说“借助brGDGTs，通过定量分析”。C项正确，原文说“重建了5000年以来我国北方更高分辨率的暖季(4月至10月)温度变化过程”。D项正确，原文说“联合团队的研究也证实了‘冷抑暖扬’这一特点”。",
+          "inputSha256": "02cbfc34f82b9095c74e4b3cf44b6172e5325aad4e3f834297d18f589e2c5bf4",
+          "generatedAt": "2026-10-03T01:45:30.808930+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
+            "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
+            "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2024-feilian:2",
+      "inputSha256": "805ece53ee1e68572fefd5e988d4caef235e158d78c7aa9eb047dfbb26918b9d",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:57:16.854056+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2024北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：B。寒冷时细菌倾向于合成更多甲基，温暖时甲基减少，因而保存下来的分子中甲基较多反映较低温度。A颠倒方向；C、D把甲基数量的温度关系移到环戊烷数量，材料未给出这种依据。",
+          "inputSha256": "805ece53ee1e68572fefd5e988d4caef235e158d78c7aa9eb047dfbb26918b9d",
+          "generatedAt": "2026-10-03T01:46:03.945Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\nB项正确。原文说“寒冷的气候条件下细菌倾向于合成更多的甲基，而温暖的环境下合成的甲基数量则减少”，又说“可以通过brGDGTs结构中的甲基个数推断当时的温度”，所以甲基越多，温度越低。A项把关系说反了。C、D两项：原文只说分子结构中有“0到2个环戊烷”，没有说用环戊烷个数推断温度，二者都无中生有。",
+          "inputSha256": "805ece53ee1e68572fefd5e988d4caef235e158d78c7aa9eb047dfbb26918b9d",
+          "generatedAt": "2026-10-03T01:45:30.808930+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
+            "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
+            "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2024-feilian:3",
+      "inputSha256": "c85a1373932c9425332dcc1fffaeb53b7897edcc3cdc5814adbdbb240db1c807",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:57:16.854056+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2024北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：A。材料把五千年来太阳辐射能量持续下降列为总体冷干趋势的主要原因。B、C仅是后两千年快速冷干的可能影响因素，不能取代全时段的主要解释；D将受气候影响的文明发展误当作该趋势的主要原因。",
+          "inputSha256": "c85a1373932c9425332dcc1fffaeb53b7897edcc3cdc5814adbdbb240db1c807",
+          "generatedAt": "2026-10-03T01:46:03.945Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\nA项正确。原文说北方气候不断变冷、变干，“这主要与太阳辐射变化有关，太阳辐射能量在过去5000年间持续下降”，这是主要原因。B项，太阳活动、局部火山活动是“另外”的因素，且只涉及“过去2000年以来的快速冷干现象”，用的是“可能”，不是总体趋势的主要原因。C项，木本植物减少导致地表反射率上升，原文说“也可能加快了”变冷变干的速度，属加速因素，不是主要原因。D项，原文讲的是气候影响农耕文明，D项因果倒置，于文无据。",
+          "inputSha256": "c85a1373932c9425332dcc1fffaeb53b7897edcc3cdc5814adbdbb240db1c807",
+          "generatedAt": "2026-10-03T01:45:30.808930+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
+            "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
+            "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2024-feilian:4",
+      "inputSha256": "6a3ea2fe5ade5964685cef8d6525137079f4dec3af516c5a196a637f5bf12603",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:57:16.854056+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2024北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：B。材料二着重解释气候通过农业影响社会以及这种影响的复杂性，并没有解释所有历史时期冷暖交替的根本原因。A确为现象与其社会作用根本原因的对应；C说明唐初增温的黄河中原地区与区域能量、输送因素；D说明北宋普遍增温与太阳辐射增强，均符合两材料。",
+          "inputSha256": "6a3ea2fe5ade5964685cef8d6525137079f4dec3af516c5a196a637f5bf12603",
+          "generatedAt": "2026-10-03T01:46:03.945Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\nB项不正确。材料二分析的“根本原因”是“冷抑暖扬”特点形成的根本原因：暖期气候总体有利于农业发展，从而为社会发展提供更优越的物质条件。材料二并没有分析我国历史时期“冷暖交替”这一气候特点的根本原因，B项偷换对象。A项正确，材料一提出“冷抑暖扬”，材料二明确说“这是历史上‘冷抑暖扬’特点形成的根本原因”。C项正确，材料一说唐初温暖湿润，材料二说唐初增温主要在黄河流域、中原腹地，原因是区域尺度上大气净能量增加和有利的热量输送。D项正确，材料一说北宋气候开始好转，材料二说北宋初期全国普遍增温，原因是太阳辐射强度增加。",
+          "inputSha256": "6a3ea2fe5ade5964685cef8d6525137079f4dec3af516c5a196a637f5bf12603",
+          "generatedAt": "2026-10-03T01:45:30.808930+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
+            "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
+            "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2024-feilian:5",
+      "inputSha256": "0b8a9d3606db1e37537824947de2c074389140da5aa49e334c68c3816fccaab4",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:57:16.854056+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2024北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "规律：我国古代农耕社会的发展与气候冷暖变化有同期性，总体冷抑暖扬。温暖湿润通常有利于农业和粮食生产，提供社会繁荣、人口增长的物质基础；寒冷干燥通常抑制农业，增加社会不稳定因素。复杂性：①同一暖期或冷期内部有地域差异，例如北宋北方较湿、江南受旱，不能用全国平均温度代替各地实际。②暖期人口增长也增加资源需求和环境压力，积累的风险可能在转冷、生产力下降时突出，温暖并非只有正面影响。③社会能主动调整生产方式，北宋因地推广水稻、占城稻和稻麦连种，减弱气候制约；明清冷期粮食亩产也不全遵从一般下降规律。故气候是重要条件，不能以冷暖单独决定朝代兴衰。",
+          "inputSha256": "0b8a9d3606db1e37537824947de2c074389140da5aa49e334c68c3816fccaab4",
+          "generatedAt": "2026-10-03T01:46:03.945Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "规律：总体上表现为“冷抑暖扬”。我国古代是农耕社会，农业对气候依赖性强。暖期气候温暖湿润，利于农业生产，经济发达、社会安定、国力强盛、人口增加，如唐朝初期和中期。冷期农业生产力下降，粮食亩产量降低，经济衰退、社会不稳，如唐朝后期、五代十国。百年尺度的冷暖变化与社会经济波动呈现同期性。\n\n复杂性：\n①存在区域差异。无论暖期还是冷期，各地气候都可能不同，对不同区域利弊各异。唐初与北宋初都偏暖，但增温范围和成因不同。北宋暖期华北及北方农牧交错带湿润，江南却受干旱威胁。\n②暖期也会埋下隐患。暖期繁荣带来人口较快增长，资源需求和环境压力随之加大，社会系统风险增加。一旦气候转冷、农业减产，这些压力就会凸显，甚至引发严重社会危机。\n③人类能够能动地应对。气候并非唯一决定因素，人类会在应对中开拓创新、积累经验。北宋在变湿的华北推广水稻，在变干的南方推广占城稻和稻麦连种，减少了粮食生产受气候的制约。明清寒冷期粮食亩产并未下降，也说明规律存在例外。",
+          "inputSha256": "0b8a9d3606db1e37537824947de2c074389140da5aa49e334c68c3816fccaab4",
+          "generatedAt": "2026-10-03T01:45:30.808930+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
+            "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
+            "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2024-guwen:1",
+      "inputSha256": "bd84f28f26ffc9323a6afd94eb7d9287bbce43a16f6256888f8ad34820daa6eb",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:57:16.854056+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2024北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：C。“说百姓之忧”承前句有命说给百姓造成忧患，‘说’应按通‘悦’、以之为悦理解，不是中性的谈论。A指面对持有命论者的言说；B的渝为改变；D的沮为阻止、遏制暴行。",
+          "inputSha256": "bd84f28f26ffc9323a6afd94eb7d9287bbce43a16f6256888f8ad34820daa6eb",
+          "generatedAt": "2026-10-03T01:46:03.945Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\nC项不正确。“说百姓之忧者”中“说”通“悦”，意为喜欢、以……为乐。全句意为：以百姓的忧患为乐的人，就是要灭绝天下的人。解释为“谈论”不合文意，谈论百姓之忧不至于是“灭天下之人”。A项，“当”解释为面对、对于，“对于执有命者的言论，不可不明辨”，正确。B项，“渝”意为改变，“世未易，民未渝”是说时代没有变，百姓没有变，正确。D项，“沮”意为阻止，“劝贤沮暴”即勉励贤良、阻止凶暴，正确。",
+          "inputSha256": "bd84f28f26ffc9323a6afd94eb7d9287bbce43a16f6256888f8ad34820daa6eb",
+          "generatedAt": "2026-10-03T01:45:30.808930+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
+            "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
+            "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2024-guwen:3",
+      "inputSha256": "601dbf43fb82f8a4f6cda973d069b0684998760c50cc72bbfb4480635e1565bc",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:57:16.854056+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2024北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：D。“特”是只是，“所自生”指产生的来源，这里说明执有命论是凶言产生的根源，并非说暴戾言论自然发生。A抓住采用有命说会颠覆道义；B问怎样让文王之地扩及自身；C的宪、令指法令，均合文意。",
+          "inputSha256": "601dbf43fb82f8a4f6cda973d069b0684998760c50cc72bbfb4480635e1565bc",
+          "generatedAt": "2026-10-03T01:46:03.945Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\nD项不正确。“此特凶言之所自生”中，“特”是副词，意为只是、正是；“所自生”是“……产生的由来、根源”。全句意为：这正是凶恶言论产生的根源。译成“这样的话暴戾言论就自然发生了”，把“所自生”误解为“自然发生”，也漏译了“特”。A项，“用”为采用，“覆”为颠覆，理解正确。B项，“奈何”为怎么才能，“及”为到达、扩展到，理解正确。C项，“宪”为法令，“发宪出令”即发布法令、颁布政令，理解正确。",
+          "inputSha256": "601dbf43fb82f8a4f6cda973d069b0684998760c50cc72bbfb4480635e1565bc",
+          "generatedAt": "2026-10-03T01:45:30.808930+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
+            "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
+            "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2024-guwen:4",
+      "inputSha256": "92c4c81f815d3e867b0c273652c97cb7dbe92b1c0682e7dca18b14f81c8e305a",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:57:16.854056+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2024北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：C。文章以桀纣之乱与汤武之治、时代人民未变作比较，证明治乱取决于人的施政而非命定，没有断言桀纣亡国是因为信奉有命说。A概括宿命立场；B对应立仪和三表；D对应否定奖贤惩暴依据会破坏人伦与秩序。",
+          "inputSha256": "92c4c81f815d3e867b0c273652c97cb7dbe92b1c0682e7dca18b14f81c8e305a",
+          "generatedAt": "2026-10-03T01:46:03.945Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\nC项不正确。第三段以“桀之所乱，汤受而治之；纣之所乱，武王受而治之”为例，论证的是：时代和百姓都没有改变，在桀纣手中天下就乱，在汤武手中天下就治，可见治乱在人而不在命。文中没有说桀纣亡天下是因为信奉有命之说，C项强加因果，无中生有。A项，执有命者说“命富则富，命贫则贫……”，即认为世事由命定，正确。B项，墨子主张“必立仪”“言必有三表”，正确。D项，执有命者认为“上之所赏，命固且赏，非贤故赏也”，以此为君则不义，会使赏罚失去劝善止暴的作用，导致社会混乱，推断合理。",
+          "inputSha256": "92c4c81f815d3e867b0c273652c97cb7dbe92b1c0682e7dca18b14f81c8e305a",
+          "generatedAt": "2026-10-03T01:45:30.808930+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
+            "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
+            "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2024-guwen:5",
+      "inputSha256": "ae719518ce03992a89e845063f6e3ae7c5d166db0b74377b3506d43844c41ff2",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:57:16.854056+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2024北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "本之：上溯古代圣王的事迹，以历史经验作为论说依据。原之：考察百姓实际耳闻目睹的事实，检验论说是否有现实根据。用之：把论说用于刑政，看实际效果是否符合国家百姓利益。第三段以同样时代、百姓在桀纣之下乱、汤武之下治的史事，以及先王发布法令、审判定罪的制度说明治乱在人，体现本之；并指出实行有命说会颠覆道义、给百姓带来忧患，从施政后果检验其有害，体现用之。第四段举文王治岐周的史事为本，列近者安政、远者归德、百姓实际的向往和评价为事实之验，体现原之；再以赏罚能劝贤沮暴、形成孝慈守职等效果，与有命说导致不义不忠不慈不孝对照，体现用之。三者配合，使非命不只是抽象主张，而有历史、事实及利益效果的依据。",
+          "inputSha256": "ae719518ce03992a89e845063f6e3ae7c5d166db0b74377b3506d43844c41ff2",
+          "generatedAt": "2026-10-03T01:46:03.945Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "对三表的理解：\n①本之：向上以古代圣王的事迹为根据，用历史经验检验言论是否正确。\n②原之：向下考察百姓耳闻目见的实际情况，以现实经验和事实作为检验依据。\n③用之：把言论用作刑罚政令加以实施，看它是否符合国家和百姓的利益，即以实践效果作为检验标准。\n\n第三段的体现：\n①举桀乱而汤治、纣乱而武王治的史实，指出时代未变、百姓未变，治乱却因君主不同而不同，用圣王之事证明并无“命”，这是“本之”。\n②考察先王之书中的“宪”与“刑”，指出采用有命之说就是颠覆天下之义、造成百姓之忧，这是从“用之”的角度说明有命之说危害百姓利益。\n\n第四段的体现：\n①以文王封于岐周、与百姓兼相爱交相利为例，这是“本之”圣王之事。\n②写近者安其政、远者归其德，百姓听说文王便“皆起而趋之”，盼望文王之地扩展到自己这里，这是“原察百姓耳目之实”。\n③写古代圣王发宪出令、设赏罚以劝贤沮暴，使百姓孝慈悌长、为官不盗、守城不叛，这是“用之”，证明人为的政令确有实效。\n④反过来指出，若依有命之说施政，则为君不义、为臣不忠、为父不慈、为子不孝，是“暴人之道”，从实际效果上否定有命之说。",
+          "inputSha256": "ae719518ce03992a89e845063f6e3ae7c5d166db0b74377b3506d43844c41ff2",
+          "generatedAt": "2026-10-03T01:45:30.808930+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
+            "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
+            "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2024-shici:1",
+      "inputSha256": "fb7c78bf84932aeba22b8a14603e39c0982e8f39160d98d1b601d05834c31969",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:57:16.854056+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2024北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：D。其十三用重金买马却献给并不爱马的楚襄王写所托非人，不能说拜谒明主并实现人生价值。题注明确襄王未闻有好马之癖。A表现骏马外形与奔跑神态；B由塞外清景转入佩金络脑驰骋的愿望；C以项羽解剑、神骓泣风写失主之悲，均合诗意。",
+          "inputSha256": "fb7c78bf84932aeba22b8a14603e39c0982e8f39160d98d1b601d05834c31969",
+          "generatedAt": "2026-10-03T01:46:03.945Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\nD项不正确。据注释，郭隗以千金买千里马（骨）之事劝燕昭王求贤，而王琦说“夫襄王者，未闻有好马之癖”。诗中把重金买来的骏骨送给不爱马的楚襄王，是所托非人，意在讽刺当权者不识人才、不真正求贤，或讽刺投献者徒劳。诗中并非写侠客“拜谒明主，实现人生价值”，D项理解与诗意相反。A项，“龙脊贴连钱”写马脊上有连钱状花纹，“银蹄白踏烟”写白蹄奔驰如踏烟云，正确。B项，“大漠沙如雪，燕山月似钩”写塞外壮景，“何当金络脑，快走踏清秋”想象骏马驰骋，正确。C项，项羽乌江兵败，将乌骓托付亭长渡江后自刎，“神骓泣向风”“君王今解剑”写乌骓临风悲泣、怀念故主，正确。",
+          "inputSha256": "fb7c78bf84932aeba22b8a14603e39c0982e8f39160d98d1b601d05834c31969",
+          "generatedAt": "2026-10-03T01:45:30.808930+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
+            "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
+            "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2024-shici:2",
+      "inputSha256": "bd283f271e1a8c1f09a233e6767a6e0a990f961e6c921ebad10bbecc642e7fc8",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:57:16.854056+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2024北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：B。‘谁为’‘何当’‘何处’‘谁家’等问语强化盼望、悲慨或讥刺。A把侠客所佩的宝玦也算成马具，且并非每首都由列出的物件衬托马；C虽都是五言绝句，却非句句对仗；D没有充分依据认定这些诗用了排比。",
+          "inputSha256": "bd283f271e1a8c1f09a233e6767a6e0a990f961e6c921ebad10bbecc642e7fc8",
+          "generatedAt": "2026-10-03T01:46:03.945Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\nB项正确。“谁为铸金鞭”“何当金络脑”“何处逐英雄”“宝玦谁家子”等，多用疑问词“谁”“何”，或反问，或设问，或感叹，加强了语气，表达了怀才不遇的悲愤、渴望建功的急切、失主无依的哀伤和讥讽之意。A项错误，“宝玦”是佩玉，属人的佩饰，不是马具。C项错误，四首都是五言绝句，但并非句句对仗，其一、其五前两句对仗，后两句和其十、其十三基本不对仗。D项错误，诗中有比喻（“沙如雪”“月似钩”）、拟人（“神骓泣向风”），但没有排比。",
+          "inputSha256": "bd283f271e1a8c1f09a233e6767a6e0a990f961e6c921ebad10bbecc642e7fc8",
+          "generatedAt": "2026-10-03T01:45:30.808930+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
+            "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
+            "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2024-shici:3",
+      "inputSha256": "7abcb3379aaef2d22bbee80a3969eda1335a8fca8054a1c7be6a73bb88e636c5",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:57:16.854056+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2024北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "美：‘龙脊贴连钱，银蹄白踏烟’写骏马矫健俊美；‘快走踏清秋’想象得到赏识后纵横驰骋，借马寄托对才能、英武风姿的赞美和建功愿望。讥：‘堆金买骏骨，将送楚襄王’借重金求马却送给不爱马的人，讥刺表面求贤而不能真正知贤用贤、人才所托非人。悲：‘无人织锦韂，谁为铸金鞭’写良马无人赏识，寄寓怀才不遇；‘君王今解剑，何处逐英雄’写乌骓失去项羽后的无所归依，寄寓英雄陨落、知己难再的悲慨。诗人以马及其处境为题，把才士的理想、失意与对用人者的批评融入咏物咏史。",
+          "inputSha256": "7abcb3379aaef2d22bbee80a3969eda1335a8fca8054a1c7be6a73bb88e636c5",
+          "generatedAt": "2026-10-03T01:46:03.945Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "李贺《马诗》都是借马写人，以马喻才士，以马的境遇寄托自己的情怀。\n\n①美：如其一“龙脊贴连钱，银蹄白踏烟”，写骏马脊背花纹如连钱、白蹄奔驰如踏烟云，赞美骏马神骏非凡。又如其五“大漠沙如雪，燕山月似钩”，以壮阔清冷的边塞景色衬托骏马的用武之地。诗人借赞美骏马，自许才华出众，表达自信。\n\n②讥：如其十三“堆金买骏骨，将送楚襄王”。化用千金买骨求贤的典故，却把骏骨送给素无爱马之好的楚襄王，所托非人，买骨也成徒劳。诗人借此讥讽当权者只重虚名、不真心爱才，也讥讽那些投其所好、求进无门的做法。\n\n③悲：如其一“无人织锦韂，谁为铸金鞭”，骏马虽好，却无人为它配鞍置鞭，悲叹良马不被赏识，暗喻自己怀才不遇。其十“君王今解剑，何处逐英雄”，写乌骓失去项羽这样的英主后无处追随，借马的哀泣抒发贤才失去知遇、无所依托的悲凉。其五“何当金络脑，快走踏清秋”，以急切的反问表达渴望被重用、驰骋建功，愿望难遂的悲慨也隐含其中。\n\n总之，诗人或赞马、或怜马、或借马事讽世，都是托物言志，抒发自己才高不遇、渴望建功的复杂情怀。",
+          "inputSha256": "7abcb3379aaef2d22bbee80a3969eda1335a8fca8054a1c7be6a73bb88e636c5",
+          "generatedAt": "2026-10-03T01:45:30.808930+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
+            "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
+            "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2024-honglou:1",
+      "inputSha256": "03363300de89897418feb5130864078ea2fee1eb54936d68280bb5ab3ba114ed",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:57:16.854056+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2024北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "‘乖’重在机敏、善体察人情，会用长辈喜欢的言语动作赢得欢心。黛玉初到贾府，凤姐夸她标致，又因贾母伤感而及时转悲为喜，照顾长辈情绪；刘姥姥游园时她与鸳鸯安排逗趣，也体现察言观色、善于活跃场面。‘巧’还包括精于筹划、善于办事。协理宁国府丧事时，她辨清管理弊端，分工定责、按时核查，表现组织和执行能力。但乖巧并不全是褒义：弄权铁槛寺时，她利用权势插手婚姻、谋取钱财，显示心机和逐利的一面。应结合情节区分其才干、讨巧与操控，不能把‘乖’只解作老实听话。",
+          "inputSha256": "03363300de89897418feb5130864078ea2fee1eb54936d68280bb5ab3ba114ed",
+          "generatedAt": "2026-10-03T01:46:03.945Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "“乖”指王熙凤嘴乖，会说话，善于察言观色、投人所好，尤其能讨贾母欢心。“巧”指她心思灵巧，机变能干，处事圆滑。这两点既是她得宠的原因，也是她揽权的手段。\n\n①嘴乖、会察言观色。林黛玉进贾府时，她未见其人先闻其声，夸黛玉“天下真有这样标致的人物”，说她“竟是个嫡亲的孙女”，一句话同时讨好了贾母、黛玉和迎春姊妹。见贾母伤感，她又立刻转悲为喜。螃蟹宴上，贾母说起鬓角的“窝儿”，她立刻说“万福万寿盛满了，所以倒凸高出些来了”，逗得众人大笑。本段中，她借做汤之事顺势说“小东道我还孝敬的起”，也是讨好贾母。\n\n②机巧干练。协理宁国府时，她迅速理清头绪、分派职责、赏罚分明，显出出众的管理才能。两宴大观园时，她与鸳鸯合伙捉弄刘姥姥，让贾母开心，显出她善于设计和调度气氛。\n\n③“乖巧”也暗含机心与狠辣。她弄权铁槛寺、毒设相思局、借剑杀尤二姐，都显示其聪明多用于算计。贾母说她“拿着官中的钱你做人”，笑语中也点出她善于借公家之财做自己人情。曹雪芹所谓“机关算尽太聪明”，正是她“乖巧”的另一面。",
+          "inputSha256": "03363300de89897418feb5130864078ea2fee1eb54936d68280bb5ab3ba114ed",
+          "generatedAt": "2026-10-03T01:45:30.808930+00:00",
+          "uncertainties": [
+            "材料中“拿着个中的钱你做人”疑为通行本“拿着官中的钱你做人”的录入讹误，作答按“官中”理解。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
+            "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
+            "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2024-honglou:2",
+      "inputSha256": "2e25ad77ba225b8edad1bbd7c168e4e05ce45b6e7a05fff21d3ebec68105e605",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:57:16.854056+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2024北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "宝钗先承认凤姐巧，再说终究不及老太太，一句话既不冷落凤姐，又把赞美推向贾母，体现善察人情、说话圆融得体、懂得在礼法秩序中照顾长辈。她过生日点贾母爱看的热闹戏、爱吃的软烂食物，也是揣摩长辈喜好的例子。贾母则聪敏有见识，性情爽朗，喜欢机灵会说话的人；她能看出凤姐借公账做人情，又以玩笑表达疼爱，受夸后自信地谈年轻时的能力。刘姥姥游园时她欣赏乡村见闻、乐于热闹，见宝钗房间过于素净又提出布置意见，显示她有自己的审美与生活情趣。并非只因宝钗恭维就能断言她毫无判断地受骗。",
+          "inputSha256": "2e25ad77ba225b8edad1bbd7c168e4e05ce45b6e7a05fff21d3ebec68105e605",
+          "generatedAt": "2026-10-03T01:46:03.945Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "宝钗的性格：表面是夸凤姐“巧”，落脚点却是“再巧不过老太太去”，借评凤姐来恭维贾母，不着痕迹。这体现了宝钗世故圆融、善于揣摩人心、懂得迎合长辈的性格，也显出她城府深、处事周全。\n①第二十二回宝钗过生日，贾母问她爱听何戏、爱吃何物，她深知老年人喜热闹戏文、爱吃甜烂之食，便“总依贾母往日素喜者说了出来”，深得贾母欢心。\n②金钏投井后，她宽慰王夫人说金钏是“失了脚掉下去的”，并拿出自己的衣服给金钏装裹，替王夫人解忧。\n③滴翠亭“金蝉脱壳”，她情急之下嫁祸黛玉，显出机变与自保之心。\n\n贾母的人物特点：\n①爱听奉承、喜欢热闹、乐于享受晚年之福。听了宝钗的话便高兴，接着说自己年轻时“比他还来得呢”，有几分自得。她喜欢嘴乖的人，所以说“凤儿嘴乖，怎么怨得人疼他”。\n②精明老练、阅历深厚、善于识人。她一面谦称“老了”，一面清楚点评凤姐和王夫人的长短，说王夫人“不大说话，和木头似的”，说话直率又有分寸。书中第五十四回她“掰谎记”批评才子佳人书的俗套；抄检大观园前后她察觉家中弊端；第四十回她带刘姥姥游园时品评陈设、讲究器物，都显出她见多识广、精于持家。\n③她身居贾府权力顶端，喜欢凤姐、宝钗这样会说话的人，也从侧面反映出贾府中讨好上意的风气。",
+          "inputSha256": "2e25ad77ba225b8edad1bbd7c168e4e05ce45b6e7a05fff21d3ebec68105e605",
+          "generatedAt": "2026-10-03T01:45:30.808930+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "“城府深”“爱听奉承”等属可讨论的性格解释，不能当作唯一评价；“抄检大观园前后察觉弊端”情节指向过于笼统，作答宜使用明确事例。"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
+            "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
+            "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2024-sanwen:1",
+      "inputSha256": "e7c136f99f7282454b7c2b944037e4c4d96bb4983f8406a269dfc16c4f59c0f4",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:57:16.854056+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2024北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：D。‘披读’是打开书卷阅读，并不含聚精会神批阅、评改之意。A的余裕在这里指富余时间；B借饥饿写渴求书籍；C的掌故指历史人物、制度或事迹等故事，符合语境。",
+          "inputSha256": "e7c136f99f7282454b7c2b944037e4c4d96bb4983f8406a269dfc16c4f59c0f4",
+          "generatedAt": "2026-10-03T01:46:03.945Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\nD项不正确。“披读”的“披”意为翻开、翻阅，“披读”即翻阅、阅读。文中写买书后晚上在灯光下读一遍，发现是平庸之作，并没有“聚精会神地批阅”的意思，“批阅”还带有批注评点之意，解释错误。A项，“余裕”指富余的时间，作者刚上岸急着找住处，没有空闲细看，正确。B项，“饥饿着的心眼”以饥饿比喻多年在穷乡僻市买不到书，对书籍十分渴望，正确。C项，“掌故”指历史上的人物事迹、制度沿革等，正确。",
+          "inputSha256": "e7c136f99f7282454b7c2b944037e4c4d96bb4983f8406a269dfc16c4f59c0f4",
+          "generatedAt": "2026-10-03T01:45:30.808930+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
+            "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
+            "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2024-sanwen:2",
+      "inputSha256": "6a665f48539b59b6ea6ff50975cc0dbca4f0b5a077c69c530bdfb30ebb3e78df",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:57:16.854056+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2024北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：D。天才语言与市场商品的并置揭示精神价值和购买代价两面，并不说明作品雅俗共赏。A拟人写吸引力；B以宁做乡下人反衬买书是都市生活的重要慰藉；C由‘你’引导读者设身处地体验寻书得书的曲折，均正确。",
+          "inputSha256": "6a665f48539b59b6ea6ff50975cc0dbca4f0b5a077c69c530bdfb30ebb3e78df",
+          "generatedAt": "2026-10-03T01:46:03.945Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\nD项不正确。第⑥段说“书籍是一种天才的语言，但同时它又是一种市场的商品”，揭示的是书籍兼具精神价值和商品属性两重性。下文引出：要享受精神之美必须付出代价，花小钱得精美盛宴会额外欢欣。这不是说书籍“雅俗共赏”，D项曲解文意。A项，“像老朋友一样拉住了我”运用拟人和比喻，表现旧书铺对作者的强烈吸引，正确。B项，“宁愿一辈子做乡下人”以假设表明，若没有买书之便，作者宁可放弃都市生活，突出买书的重要，正确。C项，第⑤段多用“你”，拉近与读者的距离，引导读者体验买书的情趣，正确。",
+          "inputSha256": "6a665f48539b59b6ea6ff50975cc0dbca4f0b5a077c69c530bdfb30ebb3e78df",
+          "generatedAt": "2026-10-03T01:45:30.808930+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
+            "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
+            "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2024-sanwen:3",
+      "inputSha256": "826aa9377840ab49b34c54c891208d607971c47a8f87801655d76b45a3fa8d48",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:57:16.854056+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2024北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "轻松的行文体现在口语化叙述、列举和自我调侃：先把整理、晒曝、去蠹虫等琐事一一道来，再以‘没有书的读书人’的矛盾称谓及‘无书一身轻’的反说制造幽默，还引陈简斋诗句，将切身苦恼说得似乎洒脱。厚重的情味则藏在这种轻松背后：担心湿水遗失表现珍惜藏书，战乱使文化财产散失，‘心绞鼻酸’直接写出痛楚，‘苦笑’说明自我宽慰不能真正抹去失书之悲。‘坐拥书城’与一光二净形成反差，个人爱书经历也承受了战争摧毁文化生活的重量。轻笔与深情相互映衬，使悲痛含蓄而有余味。",
+          "inputSha256": "826aa9377840ab49b34c54c891208d607971c47a8f87801655d76b45a3fa8d48",
+          "generatedAt": "2026-10-03T01:46:03.945Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "“轻松之行文”：\n①作者用日常琐事和俏皮语言写书多的累赘。“整理、晒曝、去蠹虫、拂灰尘”的罗列，“要找许多箱囊去装盛，一路又担心着湿水或遗失”，“我从前很怕迁动，大半的原因就在这里”，语气平易、略带自嘲。\n②写书籍散失，用“散失得一光二净”这样的口语，用“真成为一个‘没有书的’读书人了”自我调侃。\n③“我苦笑地说：‘无书一身轻！’”化用俗语自我解嘲，又引陈简斋“误矣载书三十乘”，故作旷达，语调轻松诙谐。\n\n“厚重之情味”：\n①对书的深情。书是作者的“全部文化财产”，想起当年“坐拥书城”，“自然不免心绞鼻酸”，失书之痛刻骨铭心。\n②沉重的时代苦难。“抗战以后，上海、杭州、兰溪、坪石等地先后失陷”，一连串地名浓缩了国土沦丧、颠沛流离的经历，个人失书的背后是国难之痛。\n③引陈与义南渡之际的诗句，以古人的流离之叹与自身遭遇相呼应，“从自身所感到的另一种苦恼去同情他”，使个人之痛有了历史的厚度。\n④“苦笑”“爽然”中又可见作者在苦难中的豁达与坚韧。\n\n可见，作者以轻松自嘲的笔调写沉痛的遭遇，以轻写重、哀而不伤，反而使痛惜之情、家国之感更显深沉厚重。",
+          "inputSha256": "826aa9377840ab49b34c54c891208d607971c47a8f87801655d76b45a3fa8d48",
+          "generatedAt": "2026-10-03T01:45:30.808930+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
+            "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
+            "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2024-sanwen:4",
+      "inputSha256": "1ae9294d18496f5861e84d6917ac0bb4b2e3d3bcc0320bcb48576862bb43cdea",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:57:16.854056+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2024北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 文本复核后修订",
+          "text": "‘魔法’首先指书与买书具有强大的吸引力，能使人甘愿付出时间金钱甚至承担麻烦：幼年节省零钱邮购，成年熟悉书铺，战后仍被书铺拉住，都说明爱书难以割舍。其次指它能带来出乎预料的快乐：买书结识朋友、了解掌故；苦寻已久的稀见之书终于买到；花很少钱获得深刻启发，都有普通消费难比的精神满足。更深一层，它能够改变人的心灵：书籍提供精神盛宴，滋养渴求知识的心眼，帮助人超越卑俗、开阔精神境界。作者明知爱书也带来鲁莽、负担与失散的痛苦仍称其魔法，强调这种吸引力兼有难以抗拒和提升生命的力量。初答‘失而复得’不准确：这里是久寻后买到，并非找回自己遗失的书。",
+          "inputSha256": "1ae9294d18496f5861e84d6917ac0bb4b2e3d3bcc0320bcb48576862bb43cdea",
+          "generatedAt": "2026-10-03T01:57:16.854056+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2024-revisions.json",
+            "stage": "source_review"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "“魔法”比喻买书（爱书）对人具有神奇而强大的力量，与前句“疾病”相对。它的涵义有以下几层：\n\n①使人着迷、难以抗拒的吸引力。旧书铺“像老朋友一样拉住了我”；少年时积攒零钱远寄汕头、上海买书；在大都市中，买书方便是“仅有的欢乐”，没有它“宁愿一辈子做乡下人”。买书让人深陷其中，明知有“妨害和痛苦”仍甘之如饴。\n\n②带来难以想象的快乐。买到寻常版本的国学书“如同购入了至宝”；苦寻《古谣谚》终于失而复得，“永远地留着‘余味’”，还要向朋友炫耀；一角钱买来的《雨果散文集》给予深沉的启发和喜悦；与书铺老板成为朋友，得知杭州掌故和书业秘闻，是“副收获”。连买错书的懊恼、搬书的累赘，回想起来也成了曲折的情趣。\n\n③能“移心换骨”，提升人的精神境界。书是“天才的语言”，能给人“精神的餐宴”，使人超越卑俗、进入高远神异的境界。即使在战乱中失去全部藏书，作者仍能“爽然”说“无书一身轻”，这份豁达正源于书籍的涵养。\n\n“魔法”一词集中表达了作者对买书、读书的痴迷与深爱，也是对全文“买书之乐与苦”的总结与升华。",
+          "inputSha256": "1ae9294d18496f5861e84d6917ac0bb4b2e3d3bcc0320bcb48576862bb43cdea",
+          "generatedAt": "2026-10-03T01:45:30.808930+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "“失而复得”错误：是久寻后买到，并非找回遗失的书；“豁达正源于书籍的涵养”因果断言证据不足。保留原输出，当前答案采用修订后的 Astra 版本。"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
+            "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
+            "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
+            "stage": "independent"
+          }
+        },
+        "gpt_6_astra_initial": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 初次独立作答（复核前）",
+          "text": "‘魔法’首先指书与买书具有强大的吸引力，能使人甘愿付出时间金钱甚至承担麻烦：幼年节省零钱邮购，成年熟悉书铺，战后仍被书铺拉住，都说明爱书难以割舍。其次指它能带来出乎预料的快乐：买书结识朋友、了解掌故；稀见之书失而复得；花很少钱获得深刻启发，都有普通消费难比的精神满足。更深一层，它能够改变人的心灵：书籍提供精神盛宴，滋养渴求知识的心眼，帮助人超越卑俗、开阔精神境界。作者明知爱书也带来鲁莽、负担与失散的痛苦仍称其魔法，强调这种吸引力兼有难以抗拒和提升生命的力量。",
+          "inputSha256": "1ae9294d18496f5861e84d6917ac0bb4b2e3d3bcc0320bcb48576862bb43cdea",
+          "generatedAt": "2026-10-03T01:46:03.945Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+          }
+        }
+      }
+    },
+    {
+      "id": "2024-yuyanjichu:1",
+      "inputSha256": "fef467f71ada2431546d17ef786cb09f617800387526c647ed3181d0cebabee9",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:57:16.854056+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2024北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：A。音乐产生的是精神鼓舞力量，‘堪比千军万马的力量’把比较关系说得明确，搭配通顺。B的‘不失’可直接带热情和诗意，换成‘不失为’后应接名词性判断如‘一种力量’，不能照原句直接续接；C应承前用‘这部作品’，‘本作品’带本方或本文自指意味不合这里介绍他作的语境；D若指‘保卫黄河的英雄气概’与‘投身抗日救亡运动’互换，则会破坏表现气概、激励投身的搭配。当前文本未保留波浪线范围，D按这两个内容短语判断，需随原卷补回格式。",
+          "inputSha256": "fef467f71ada2431546d17ef786cb09f617800387526c647ed3181d0cebabee9",
+          "generatedAt": "2026-10-03T01:46:03.945Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\nA项正确。“能产生堪比千军万马的力量”，加上“堪比”只是使比较关系更明确，语意通顺，搭配无误。B项错误，“不失”后接“热情和诗意”，意为没有失去热情和诗意；“不失为”意为还可以算是，后面应接判断对象。换成“不失为热情和诗意”，搭配不当，语意不通。C项错误，“本”指说话人自己方面的，如本人、本单位，第③句是对《黄河大合唱》的客观介绍，用“本作品”不当，应改为“这部作品”或“该作品”。D项错误，第④句两处先“表现”英雄气概，后“激励”中华儿女投身抗日救亡，有先后和因果顺序（因表现英雄气概而产生激励作用），互换后逻辑不顺。",
+          "inputSha256": "fef467f71ada2431546d17ef786cb09f617800387526c647ed3181d0cebabee9",
+          "generatedAt": "2026-10-03T01:45:30.808930+00:00",
+          "uncertainties": [
+            "题干所指第④句“画波浪线的两处”在材料中未显示标记，按“表现了……英雄气概”与“激励了……抗日救亡运动”两个分句理解；即便另有所指，D项仍不影响A为正确选项的判断。"
+          ],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "note": "A项选择与本次核对一致；D项波浪线在源数据中缺失，不能证实模型假设的两处分句。D项理由须待原卷格式确认，不能作为已核实内容。"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
+            "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
+            "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2024-yuyanjichu:2",
+      "inputSha256": "73c674291f4e43abf244c972e02c368f6e241d467b62393ac2ff29996123d631",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:57:16.854056+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2024北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "吹响着民族救亡的号角。填入后与‘协奏着民族复兴的乐章’对应，都是动词加‘着’再加名词短语，使用音乐意象作比喻，前说抗战救亡，后说和平复兴，文意连贯。填入部分十个汉字，未超过十五字。",
+          "inputSha256": "73c674291f4e43abf244c972e02c368f6e241d467b62393ac2ff29996123d631",
+          "generatedAt": "2026-10-03T01:46:03.945Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：吹响着抗日救亡的号角（共10字）\n\n说明：与下文“协奏着民族复兴的乐章”结构一致，都是“动词+着+定语+的+名词”。以“号角”比喻《黄河大合唱》在战争年代鼓舞军民奋起抗战的作用，运用比喻，与音乐主题相契合。“抗日救亡”与上文第④句呼应，“号角”与“乐章”同属音乐意象，上下文语意连贯。\n\n可替换答案：擂响着民族解放的战鼓。",
+          "inputSha256": "73c674291f4e43abf244c972e02c368f6e241d467b62393ac2ff29996123d631",
+          "generatedAt": "2026-10-03T01:45:30.808930+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
+            "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
+            "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2024-weixiezuo:1",
+      "inputSha256": "29f8ef4b13b6c30dd7d4f38be58be687204e3208dd64f020026e49c10a75668a",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:57:16.854056+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2024北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "点赞可以传递善意，却不宜成为衡量自我价值的尺子。随手赞许朋友的进步，能让对方感到被看见；若只盯着数量，便容易为迎合他人而展示生活。与其追逐更多点赞，不如认真表达一次欣赏，也给无人围观的努力一份肯定。",
+          "inputSha256": "29f8ef4b13b6c30dd7d4f38be58be687204e3208dd64f020026e49c10a75668a",
+          "generatedAt": "2026-10-03T01:48:32.443Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2024-writing-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【审题】要对“点赞”现象表明态度，观点明确，理由充分，不超过150字。\n【示例】\n点赞应是真诚的认可，而非数字的游戏。我认为，点赞本身无可厚非，它是朋友间低成本的关心与鼓励。但若过分关注点赞数量，便会把自我价值交给他人评判，陷入焦虑；若随手乱点、不看内容，赞也就失去了温度。所以，点赞要发自内心，看到值得欣赏的才点；对赞的多少要看淡，因为生活的意义不在屏幕上的数字里。\n（约140字。先肯定点赞的积极意义，再分别从“关注数量”和“热衷点赞”两个角度指出弊端，最后提出主张。）",
+          "inputSha256": "29f8ef4b13b6c30dd7d4f38be58be687204e3208dd64f020026e49c10a75668a",
+          "generatedAt": "2026-10-03T01:50:03.605107+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。",
+            "bodyChineseCharacters": 127,
+            "bodyNonWhitespaceCharacters": 143
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2024-writing-result.json",
+            "inputPromptSha256": "bbcffbf6a1ca8094c66a51f61ed6d89e4a19539dba905f5e1f49250376c4cba8",
+            "responseStreamSha256": "702112ede61f44792fb2d3088184a2ab7f1246459706266def1a07dedc2ebdab",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2024-weixiezuo:2",
+      "inputSha256": "4029527ce079bf9a592accd372d55ee73093002f4eb60cfe38624fab65162cf4",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:57:16.854056+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2024北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "我建议去鲁迅故乡浙江绍兴。第一天走访百草园、三味书屋，对照《从百草园到三味书屋》观察实景如何进入文字；第二天探访水乡街巷，了解当地风俗，再讨论《社戏》中的乡土记忆。两天围绕“故乡与文学”展开，让阅读与观察相互印证。",
+          "inputSha256": "4029527ce079bf9a592accd372d55ee73093002f4eb60cfe38624fab65162cf4",
+          "generatedAt": "2026-10-03T01:48:32.443Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2024-writing-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【审题】须写明名人及其故乡，重点陈述理由，并兼顾“研学两天”的实际安排，不超过150字。\n【示例】\n我建议去浙江绍兴——鲁迅先生的故乡。理由有三：其一，我们学过《从百草园到三味书屋》《孔乙己》等课文，走进鲁迅故居、百草园、三味书屋、咸亨酒店，能把书中文字与真实场景对照，加深对作品的理解；其二，绍兴还有沈园、兰亭等文化遗迹，两天行程内容充实；其三，景点相对集中，交通便捷，便于组织，也比较安全。\n（约140字。理由兼顾课内学习关联、研学内容和活动可行性。）",
+          "inputSha256": "4029527ce079bf9a592accd372d55ee73093002f4eb60cfe38624fab65162cf4",
+          "generatedAt": "2026-10-03T01:50:03.605107+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。",
+            "bodyChineseCharacters": 122,
+            "bodyNonWhitespaceCharacters": 147
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2024-writing-result.json",
+            "inputPromptSha256": "bbcffbf6a1ca8094c66a51f61ed6d89e4a19539dba905f5e1f49250376c4cba8",
+            "responseStreamSha256": "702112ede61f44792fb2d3088184a2ab7f1246459706266def1a07dedc2ebdab",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2024-weixiezuo:3",
+      "inputSha256": "d63d20c4397e1957cebdffc87d22cab245d70ae71d565d17c85169d53028dc14",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:57:16.854056+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2024北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "月的独白\n我把圆缺藏进日历，\n把清光留在你的窗前。\n你赶路时，我随河水走；\n你想家时，我在碗沿停一停。\n不必替我的残缺难过，\n那不是被夜色咬碎的伤口。\n我只是慢慢转身，\n把另一面的光，\n送给尚未睡去的人。",
+          "inputSha256": "d63d20c4397e1957cebdffc87d22cab245d70ae71d565d17c85169d53028dc14",
+          "generatedAt": "2026-10-03T01:48:32.443Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2024-writing-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【审题】以月亮的口吻抒情，用第一人称，可融入古诗文中的月亮意象，体现“照亮”“陪伴”“圆缺”等特点，不超过150字。\n【示例】\n月的独白\n我不发光，\n只是把太阳借给我的暖，\n悄悄折成清辉，\n铺在归人的路上。\n李白举杯时，我在；\n苏轼怀人时，我在；\n你在窗前想家时，\n我也在。\n我圆了又缺，缺了又圆，\n从不抱怨——\n因为我知道，\n再深的夜，\n也需要一盏不熄的灯。\n（约100字。借“借光”写谦逊，借古人望月写千年陪伴，借圆缺写豁达，结尾点出照亮黑夜的使命。）",
+          "inputSha256": "d63d20c4397e1957cebdffc87d22cab245d70ae71d565d17c85169d53028dc14",
+          "generatedAt": "2026-10-03T01:50:03.605107+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。",
+            "bodyChineseCharacters": 86,
+            "bodyNonWhitespaceCharacters": 103
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2024-writing-result.json",
+            "inputPromptSha256": "bbcffbf6a1ca8094c66a51f61ed6d89e4a19539dba905f5e1f49250376c4cba8",
+            "responseStreamSha256": "702112ede61f44792fb2d3088184a2ab7f1246459706266def1a07dedc2ebdab",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2024-dazuowen:1",
+      "inputSha256": "777550db303d7ce355b6d55fb396defc06afa577b45debbc2809003e671ebb5e",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:57:16.854056+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2024北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "历久弥新\n\n一部写成多年的作品，为什么还会让今天的读者停下脚步？一种经历漫长岁月的思想，为什么仍能启发新的行动？时间常使事物陈旧，却也能使其中的价值愈加清晰。我认为，历久弥新并非旧事物自动获得的荣耀，而是有生命力的内核在一代代人的理解、检验与创造中不断焕发新的意义。\n\n能够历久，首先因为它触及了人类共同而持久的问题。技术改变了交流的速度，却没有消除人与人之间理解的困难；物质生活日益丰富，也没有替每个人回答应当怎样选择。孔子说‘己所不欲，勿施于人’，提醒人把自己的感受作为体察他人的起点。这句话既可以用于邻里相处，也可以照见网络空间的言语伤害。当我们准备转发未经核实的消息、随意议论陌生人的生活时，设身处地的一问仍能使轻率的手指停下来。古老思想的新价值，正在它与新问题的相遇中显现。\n\n但价值的延续不等于字面的重复。时代已经改变，今天的阅读者必须辨明古人经验的适用条件。读《论语》，可以学习求知时的谦逊与自省，却不必把古代全部礼制原样搬回现代生活；欣赏传统文学，可以理解其中细腻的人情，也应辨识某些观念背后的时代局限。尊重经典，恰恰意味着认真与它对话，而不是用一句‘古人说过’结束讨论。经过辨析的继承，才使传统成为思想资源；拒绝检验的复述，只会把活的文字封进玻璃柜。\n\n历久弥新还需要创造性的实践。我们熟悉的古典诗词，从口头吟诵到书页阅读，再到今天多样的呈现方式，进入生活的路径不断变化。形式的更新能吸引新的读者，但只有把握作品的语言、情感与处境，新的呈现才有根。若只是给古诗配上热闹画面，却改写其原意，把任何句子都解释成励志口号，看似流行，实际上损耗了作品的丰富性。好的创新应当搭一座通向原作的桥，让人愿意进一步阅读，而不是用浮面的新奇替代理解。\n\n这种实践也存在于日常之中。一次节庆活动，若只有拍照与消费，传统很容易变成可替换的背景；若让年轻人听老人讲述旧日生活，亲手学习一种手艺，再讨论它如何适应今天的需要，传统便有了新的承载者。传承不是把所有旧形式永久固定，而是弄清什么值得保留、什么可以改变，让过去积累的经验继续回应现实生活。\n\n因此，‘久’与‘新’不是彼此排斥的两端。没有时间积累，新可能只是转瞬即逝的喧闹；没有新的理解，久也可能成为未经审视的惯性。时间能够筛选，却不能代替我们的判断；经典能够启发，却仍需要我们把启发落实为行动。\n\n历久弥新的事物，不只是被后人不断称颂的遗产，更是不断参与当下生活的力量。当我们既珍惜它的来处，又愿意提出今天的问题，在理解中辨析，在实践中创造，那些穿过漫长岁月的文字、思想与精神，便会继续照亮尚未走过的道路。",
+          "inputSha256": "777550db303d7ce355b6d55fb396defc06afa577b45debbc2809003e671ebb5e",
+          "generatedAt": "2026-10-03T01:48:32.443Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2024-writing-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【审题立意】“历久弥新”指经历的时间越久越显新鲜、越有价值。议论文要回答两个问题：哪些事物能历久弥新，以及为什么能。本文中心论点是：真正有价值的事物之所以历久弥新，是因为它的内核契合人心、关乎根本，又在一代代人的传承与创造中不断获得新生。结构为“经典—精神—创新”三层递进，加反面对照，最后落到青少年的行动。\n【示例作文】\n历久弥新\n\n有人说，时间是最无情的筛子，大多数事物都会在它的摇晃中沦为尘埃。然而也有一些事物，非但没有被时间磨损，反而在岁月的淬炼中愈加鲜亮。它们之所以历久弥新，是因为其内核契合人心、关乎根本，又能在一代代人的传承与创造中不断获得新的生命。\n\n经典之所以历久弥新，在于它触及了人类共通的情感与追问。两千多年前，孔子说“己所不欲，勿施于人”。今天，无论处理人际关系，还是思考国与国的相处之道，这句话依然振聋发聩。杜甫“安得广厦千万间，大庇天下寒士俱欢颜”的呼喊穿越千年，仍能让每一个关注民生的人心头一热。经典不因年代久远而失色，因为它回答的是每个时代的人都会遇到的问题：如何为人，如何处世，如何面对苦难与理想。只要人心相通，经典就常读常新。\n\n精神之所以历久弥新，在于它被一代代人用行动重新点亮。长征途中，红军战士爬雪山、过草地，凭着坚定信念走完两万五千里；新中国成立后，“两弹一星”元勋们隐姓埋名，在戈壁荒滩上铸就国之重器；今天，航天人接续奋斗，让中国空间站在太空中稳稳运行。时代不同，任务不同，但那种不畏艰难、自力更生、为国担当的精神一脉相承。精神不是陈列在博物馆里的展品，而是活在每一次选择和奋斗中的力量。只要有人践行，它便永远年轻。\n\n然而，历久弥新并不意味着固守原样、一成不变。“苟日新，日日新，又日新”，古人早已懂得，真正的生命力来自不断更新。北宋王希孟的《千里江山图》静静珍藏于故宫，舞蹈诗剧《只此青绿》却让这幅青绿山水“活”了起来，让无数年轻人为之着迷；敦煌壁画在风沙中日渐斑驳，数字化技术却让它以高清影像走向世界。传统要焕发新意，离不开创造性转化、创新性发展。只有既守住根脉，又敢于开拓，古老的事物才能在新时代找到新的表达。\n\n反观那些转瞬即逝的东西，或只追求一时的热闹，或空有外表而缺乏内涵，或拒绝变化而与时代脱节，终究经不起时间的检验。可见，“久”需要深厚的内核作支撑，“新”需要不懈的创造来推动，二者缺一不可。\n\n作为青少年，我们是传承者，也是创造者。读经典，不止于背诵，更要从中汲取做人做事的智慧；学精神，不止于感动，更要化为脚踏实地的行动；面对传统，既要怀有敬意，也要敢于用新的方式去讲述。如此，那些珍贵的事物才会在我们手中继续历久弥新，而我们自己，也将在与它们的对话中不断成长。\n（全文约1100字。论点明确；论据涵盖古代经典、革命与时代精神、文化创新三类；运用举例、引用、对比论证；结尾联系自身，落到行动。）",
+          "inputSha256": "777550db303d7ce355b6d55fb396defc06afa577b45debbc2809003e671ebb5e",
+          "generatedAt": "2026-10-03T01:50:03.605107+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "正文符合不少于700字要求；文末“约1100字”估算不准确，实际汉字与含标点长度另列。作文为原创参考示例。",
+            "bodyChineseCharacters": 829,
+            "bodyNonWhitespaceCharacters": 941
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2024-writing-result.json",
+            "inputPromptSha256": "bbcffbf6a1ca8094c66a51f61ed6d89e4a19539dba905f5e1f49250376c4cba8",
+            "responseStreamSha256": "702112ede61f44792fb2d3088184a2ab7f1246459706266def1a07dedc2ebdab",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2024-dazuowen:2",
+      "inputSha256": "b086243c4f9d5e0afdf7e7c82661fbd3cf3e3fee0d7fffa80ed82b9381b644d0",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:57:16.854056+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2024北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "打开\n\n我们家的阳台有一只旧木箱。箱盖上压着花盆，雨水沿盆底流下，留下深浅不一的圆圈。我一直以为，里面只是父亲不肯丢掉的杂物。\n\n那个周日下午，我在做一座纸桥。学校的活动要求桥面能够承受一定重量，我把两张硬纸叠起来，跨在书本之间。放上第一本练习册，纸桥便弯了；再加一本，它干脆塌下去，把胶水瓶也带倒了。\n\n父亲路过，看见桌上的纸片，说：‘桥面下面，也许能折几道……’\n\n‘我知道。’我没有抬头。屏幕里的教程已经开了三个，我不想再听他慢慢解释。他站了一会儿，拿抹布擦去桌角的胶水，走开了。\n\n傍晚，母亲让我搬动阳台花盆，说木箱有些受潮。我挪开最重的一盆，手指摸到箱盖边缘一枚生锈的搭扣。它卡得很紧，我使劲一拨，盖子忽然弹起，一股纸张与木头混合的气味迎面而来。\n\n里面没有我想象中的废旧电线。最上面是一叠图纸，边角发黄，折痕处起了毛。图纸下面躺着半座小木桥，细木条交叉撑起桥面，有一侧的栏杆还没装好。我把它捧出来，桥底密密的三角形像一排张开的翅膀。\n\n‘那个还没做完。’父亲不知什么时候站到了身后。\n\n我这才发现，图纸右下角写着他的名字，笔画细而认真。他告诉我，年轻时喜欢做模型，后来搬了几次家，零件散了，便一直搁着。我问为什么从没见他拿出来，他笑了笑：‘你小时候拿它当车开，怕扎手，就收了。再后来，也总觉得没时间。’\n\n我低头看桥。父亲的手伸过来，轻轻拨正一根歪斜的撑杆。那双平时拎菜、修水龙头的手，此刻格外稳。\n\n‘你刚才说，桥下面怎么折？’我终于问。\n\n他没有马上回答，回屋取了一张废纸，先平铺在两本书上，再把它折成一条条起伏的棱。‘先试，再看哪里不够。’他说。我们把练习册一本本放上去。纸桥仍然有点弯，却没有立刻坍塌。\n\n我去拿胶带，父亲找尺子。窗外天色暗下来，阳台上的花影挪到了桌脚。我提出在侧面加支撑，他看了看，说可以试试。第二次，第三次，我们把太长的纸条裁短，把松动的接头重新粘好。桌面越来越乱，两个人说的话却越来越多。\n\n后来那座纸桥没有获得最高的承重成绩。可我记得更清楚的，是回家后父亲从木箱里翻出剩下的零件，问我愿不愿意一起把旧桥做完。\n\n如今，花盆移到了窗边，木箱放在桌下，搭扣也不再紧紧锁住。有时我打开它取一把小锉刀，父亲便搬来另一张椅子。我们之间曾经有许多被‘我知道’关上的话，那天随着一声轻响，终于有了继续说下去的地方。",
+          "inputSha256": "b086243c4f9d5e0afdf7e7c82661fbd3cf3e3fee0d7fffa80ed82b9381b644d0",
+          "generatedAt": "2026-10-03T01:48:32.443Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2024-writing-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【审题立意】“打开”可以是打开视野、心扉或思路，要写成有情节、有细节的记叙文，并体现“打开”带来的变化。本文选择“打开心扉”：以爷爷打开一格常年上锁的抽屉为线索，写“我”从封闭到敞开的转变，表现隔代亲情与沟通的可贵。实物之“锁”与心灵之“锁”双线并行，结尾点题。\n【示例作文】\n打开\n\n爷爷书桌最下面那格抽屉，常年挂着一把小铜锁。锁身已经生了绿锈，钥匙被他拴在腰间的钥匙串上，走起路来叮当作响。\n\n上初中后，我和爷爷的话越来越少。他总爱在饭桌上问东问西：“今天考得怎样？”“跟同学处得好不好？”我扒着饭，只回一个“嗯”。吃完便钻进房间，“咔哒”一声把门反锁。门外有时会传来他踱步的声音，停一会儿，又慢慢走远。我觉得他不懂我，他那一套早就过时了。\n\n那个周末，我参加的绘画比赛落选了。我把画揉成一团，丢进客厅的纸篓，回房反锁上门，躺在床上盯着天花板，心里像塞满了湿棉花。傍晚，门外响起三下敲门声：“出来，给你看样东西。”我本想装睡，可那三下敲得出奇地轻，像怕惊着什么。我犹豫了一会儿，还是拉开了门。\n\n爷爷已经蹲在书桌前。他从腰间解下钥匙串，眯着眼，一把一把地挑，最后捏住一把最小的。钥匙插进锁孔，他手腕一拧，锁“嗒”地弹开了。抽屉拉开的一瞬间，一股旧纸张的味道扑面而来。\n\n里面整整齐齐码着一沓画。最上面是一个歪歪扭扭的太阳，长着八条腿，旁边用铅笔注着：“三岁，说太阳在走路。”往下翻，是蓝色的大象、会飞的鱼、一家人手拉手站在房子前……每一张背后都写着日期和一句话。有一张画着一个人坐在小板凳上，背驼着，下面写着：“孙女画的我，像。”\n\n我愣住了。那些我早已忘记的涂鸦，他竟一张张收着，收了十年。\n\n“今天这张，没选上？”爷爷没看我，只是用粗糙的指腹一下一下抚着画的折角，“我从纸篓里捡回来了，压平了，也放这儿。”那团被我揉皱的画，此刻正平展地躺在最上面，皱痕还在，却被压得服服帖帖。\n\n我的鼻子一下子酸了。原来门外那些停顿的脚步，不是唠叨前的酝酿，而是一个不善言辞的老人在门口徘徊，想进来，又怕打扰。原来我锁上房门的同时，也锁住了他递过来的手。\n\n那天晚上，我第一次主动跟爷爷聊起比赛：评委说我的画技法不错，但“缺了点自己的东西”。爷爷听完，敲敲那沓画：“你小时候画的太阳会走路，那就是你自己的东西。”我扑哧一声笑了，他也笑了，眼角的皱纹挤成一团。\n\n从那以后，我房间的门不再反锁。放学回家，我会把学校里的趣事讲给爷爷听；他听不懂网络流行语，我就一个个解释给他。书桌下那格抽屉里的画，也一张张多了起来。\n\n那把小铜锁，爷爷后来干脆没再锁上。他说，锁着的东西，总得有人打开，才算有了用处。\n\n我想，人心也是这样。打开一把锁，只需轻轻一拧；打开一扇心门，却需要有人先迈出那一步。所幸那天，我拉开了门，看见了门外一直在等我的爱。\n（全文约1100字。以“锁—开锁—不再上锁”为线索；有动作细节（挑钥匙、拧锁、抚平折角）、语言细节和心理描写；结尾由物及人，点明“打开”的意义。）",
+          "inputSha256": "b086243c4f9d5e0afdf7e7c82661fbd3cf3e3fee0d7fffa80ed82b9381b644d0",
+          "generatedAt": "2026-10-03T01:50:03.605107+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "正文符合不少于700字要求；文末“约1100字”估算不准确，实际汉字与含标点长度另列。作文为原创参考示例。",
+            "bodyChineseCharacters": 856,
+            "bodyNonWhitespaceCharacters": 999
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2024-writing-result.json",
+            "inputPromptSha256": "bbcffbf6a1ca8094c66a51f61ed6d89e4a19539dba905f5e1f49250376c4cba8",
+            "responseStreamSha256": "702112ede61f44792fb2d3088184a2ab7f1246459706266def1a07dedc2ebdab",
+            "stage": "independent"
+          }
+        }
+      }
     }
   ],
   "releaseBlockers": [
@@ -5546,6 +6895,11 @@
       "id": "historical-moxie-transcription",
       "status": "open",
       "detail": "2014 and 2003 question identity/blank coverage; 2008 missing blank; 2009 title typo; 2010/2011 transcription; 2016 points/blank count. See root memorization reviews; retain source evidence before correcting."
+    },
+    {
+      "id": "2024-transcription",
+      "status": "open",
+      "detail": "Poetry note ③ placement; Honglou 个中/官中 and 风/凤; language wavy underline missing. See REVIEW-2024.md. Preserve old prompt hashes before source corrections."
     }
   ]
 }
