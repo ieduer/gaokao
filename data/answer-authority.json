@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261002-reviewed-222-qualified-2020",
+  "revision": "20261002-reviewed-247-qualified-2019",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -20297,6 +20297,1876 @@
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T05:12:02.684Z",
       "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2019-feilian:1",
+      "inputSha256": "c45a0bf50f8882f4f3d02be5ccacc4e00b13f137a83ff10d73105b59c0deb00d",
+      "inputContextSha256": "dafb75ce7d65ee30e7a18523d35d55d258def270e2158e6a5b33da1419120c4d",
+      "inputPresentationSha256": "31edd5bbd778478c61dea123bea599a28a8300481a3da354da52dfe4a5c99f00",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "完整材料、注释与准确标记下独立作答，逐题核读两模型全文，并与公开转载的参考扫描页对照；开放题允许合理不同表述。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:57:01.450Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2019北京卷原题及完整材料"
+        },
+        {
+          "type": "reference_scan",
+          "title": "2019北京语文参考答案公开转载扫描第11—12页；原发布机关链未核实",
+          "url": "https://cdn.zizzs.com/zixunzhan/202310/29ce91f8-0d5e-474f-8271-3e404cca029a.pdf"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "选 D。材料一明确把物种以非正常速度消失、大量动植物濒临灭绝、物种分布大范围变化列为生物多样性危机的表现。动植物与人类共同生活本身并不等于危机；它是部分动植物在栖息地萎缩后进入城市的生活状态。",
+          "inputSha256": "c45a0bf50f8882f4f3d02be5ccacc4e00b13f137a83ff10d73105b59c0deb00d",
+          "inputContextSha256": "dafb75ce7d65ee30e7a18523d35d55d258def270e2158e6a5b33da1419120c4d",
+          "inputPresentationSha256": "31edd5bbd778478c61dea123bea599a28a8300481a3da354da52dfe4a5c99f00",
+          "generatedAt": "2026-10-03T05:50:28.680Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/root-2019-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2019-reading-job.json"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "完整材料、注释与准确标记下独立作答，逐题核读两模型全文，并与公开转载的参考扫描页对照；开放题允许合理不同表述。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。材料一第一段说“生物种类正以相当于正常水平1000倍的速度消失，全球已有约3.4万种植物和5200多种动物濒临灭绝，物种分布发生了大范围的变化，这些形成了全球性的生物多样性危机”。A、B、C三项正对应其中三种表现。D项“动植物和人类共同生活”出自第二段，是城市无序开发、栖息地萎缩造成的一种结果，原文说的是“一部分动植物不得不”与人类共处，并未把它列为危机的表现，且选项漏掉了“一部分”“不得不”等限定。",
+          "inputSha256": "c45a0bf50f8882f4f3d02be5ccacc4e00b13f137a83ff10d73105b59c0deb00d",
+          "inputContextSha256": "dafb75ce7d65ee30e7a18523d35d55d258def270e2158e6a5b33da1419120c4d",
+          "inputPresentationSha256": "31edd5bbd778478c61dea123bea599a28a8300481a3da354da52dfe4a5c99f00",
+          "generatedAt": "2026-10-03T05:52:23.350425+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "完整材料、注释与准确标记下独立作答，逐题核读两模型全文，并与公开转载的参考扫描页对照；开放题允许合理不同表述。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2019-reading-result.json",
+            "inputPromptSha256": "cb0c9aa45373044c01110312d6c4c57b093476582524a4dbe36ef6dc8fba42a8",
+            "responseStreamSha256": "b3983021dca357b319809e84bd20ad59ff017a309ffd516749fcd9113de5120b",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2019-feilian:2",
+      "inputSha256": "b4dda746a7f279b0574f034072cadb4f587ae25a532007f087904439bc9c27f4",
+      "inputContextSha256": "b6f9a67869ff6891b1b6d29db6b419358d344a0a5e4aad3693fce6d883dc769c",
+      "inputPresentationSha256": "c71b65e2e2e1857e32b61325151bef54ef00f8bcd2901457da3d5d3481475c4e",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "完整材料、注释与准确标记下独立作答，逐题核读两模型全文，并与公开转载的参考扫描页对照；开放题允许合理不同表述。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:57:01.450Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2019北京卷原题及完整材料"
+        },
+        {
+          "type": "reference_scan",
+          "title": "2019北京语文参考答案公开转载扫描第11—12页；原发布机关链未核实",
+          "url": "https://cdn.zizzs.com/zixunzhan/202310/29ce91f8-0d5e-474f-8271-3e404cca029a.pdf"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "选 B。第一段用消失速度为正常水平的1000倍以及濒危动植物种数，突出危机的严重程度。A把受人类影响的生态系统直接说成有利于缓解危机，无此依据；C把关注城市化对生物多样性的影响改成只关注人类损失；D的提出应对策略不见于材料。",
+          "inputSha256": "b4dda746a7f279b0574f034072cadb4f587ae25a532007f087904439bc9c27f4",
+          "inputContextSha256": "b6f9a67869ff6891b1b6d29db6b419358d344a0a5e4aad3693fce6d883dc769c",
+          "inputPresentationSha256": "c71b65e2e2e1857e32b61325151bef54ef00f8bcd2901457da3d5d3481475c4e",
+          "generatedAt": "2026-10-03T05:50:28.680Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/root-2019-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2019-reading-job.json"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "完整材料、注释与准确标记下独立作答，逐题核读两模型全文，并与公开转载的参考扫描页对照；开放题允许合理不同表述。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。A项错：材料说人类缔造的“深受人类影响的全球生态系统”带来栖息地丧失、环境污染等问题，是危机的成因，而非利于缓解危机。B项对：第一段用“1000倍”“约3.4万种植物”“5200多种动物”等数据，突出了危机的严重程度。C项错：末段说生态学研究者关注的焦点是“城市化对生物多样性的影响”，不是危机给人类带来的损失。D项错：材料只表达了担忧，分析了城市化这一成因，没有提出应对策略。",
+          "inputSha256": "b4dda746a7f279b0574f034072cadb4f587ae25a532007f087904439bc9c27f4",
+          "inputContextSha256": "b6f9a67869ff6891b1b6d29db6b419358d344a0a5e4aad3693fce6d883dc769c",
+          "inputPresentationSha256": "c71b65e2e2e1857e32b61325151bef54ef00f8bcd2901457da3d5d3481475c4e",
+          "generatedAt": "2026-10-03T05:52:23.350425+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "完整材料、注释与准确标记下独立作答，逐题核读两模型全文，并与公开转载的参考扫描页对照；开放题允许合理不同表述。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2019-reading-result.json",
+            "inputPromptSha256": "cb0c9aa45373044c01110312d6c4c57b093476582524a4dbe36ef6dc8fba42a8",
+            "responseStreamSha256": "b3983021dca357b319809e84bd20ad59ff017a309ffd516749fcd9113de5120b",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2019-feilian:3",
+      "inputSha256": "a0d7b1d51a4b45f840eab0ab0c3a79e56fe2464f556a49b34bb0248a2c815c43",
+      "inputContextSha256": "89d650995f9597d617e738b37e41302eac94d78ff0102d3e60c38a64e3a7f446",
+      "inputPresentationSha256": "df07b36d74a25e6c359fb29aeddc8ee2267084f5565e5ec440f405a7d36b4d8a",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "完整材料、注释与准确标记下独立作答，逐题核读两模型全文，并与公开转载的参考扫描页对照；开放题允许合理不同表述。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:57:01.450Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2019北京卷原题及完整材料"
+        },
+        {
+          "type": "reference_scan",
+          "title": "2019北京语文参考答案公开转载扫描第11—12页；原发布机关链未核实",
+          "url": "https://cdn.zizzs.com/zixunzhan/202310/29ce91f8-0d5e-474f-8271-3e404cca029a.pdf"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "选 B。材料说城市提供多样生境、全年可得的水和食物、较温暖的冬季，对应A、C、D。精心维护的是部分花园，不能据此扩大成城市中的生物普遍得到精心保护。",
+          "inputSha256": "a0d7b1d51a4b45f840eab0ab0c3a79e56fe2464f556a49b34bb0248a2c815c43",
+          "inputContextSha256": "89d650995f9597d617e738b37e41302eac94d78ff0102d3e60c38a64e3a7f446",
+          "inputPresentationSha256": "df07b36d74a25e6c359fb29aeddc8ee2267084f5565e5ec440f405a7d36b4d8a",
+          "generatedAt": "2026-10-03T05:50:28.680Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/root-2019-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2019-reading-job.json"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "完整材料、注释与准确标记下独立作答，逐题核读两模型全文，并与公开转载的参考扫描页对照；开放题允许合理不同表述。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。A项对应“城市为物种提供了多样化的生境”。C项对应“它们可以全年获取水资源及食物，而在野外，水资源和食物的获得具有季节性”。D项对应“热岛效应也成为城市生境的一大优势，城市冬季不再严寒”。B项错：原文只说动植物可“栖居于精心维护、富有情调的花园中”，被精心维护的是花园，不是生物本身；动植物同时还生活在墙缝、荒地、墓地、水沟等处，并非得到了人的精心保护。",
+          "inputSha256": "a0d7b1d51a4b45f840eab0ab0c3a79e56fe2464f556a49b34bb0248a2c815c43",
+          "inputContextSha256": "89d650995f9597d617e738b37e41302eac94d78ff0102d3e60c38a64e3a7f446",
+          "inputPresentationSha256": "df07b36d74a25e6c359fb29aeddc8ee2267084f5565e5ec440f405a7d36b4d8a",
+          "generatedAt": "2026-10-03T05:52:23.350425+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "完整材料、注释与准确标记下独立作答，逐题核读两模型全文，并与公开转载的参考扫描页对照；开放题允许合理不同表述。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2019-reading-result.json",
+            "inputPromptSha256": "cb0c9aa45373044c01110312d6c4c57b093476582524a4dbe36ef6dc8fba42a8",
+            "responseStreamSha256": "b3983021dca357b319809e84bd20ad59ff017a309ffd516749fcd9113de5120b",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2019-feilian:4",
+      "inputSha256": "e5c6b09716bb065105e73aa26b7d04b11090c7d8b2bb613a7214cfc3accbc8e2",
+      "inputContextSha256": "edaa99f90ebe7aee550089d65062b3b484f13980648a6c0377abd9b15df8cb63",
+      "inputPresentationSha256": "dd9df7ad1ec8d917dddce5f21a817b9d1bc565f12a4749f89a33012da51c07e1",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "C为概括性一致，不能把城市与城市化两词的差别制造为新的错误选项；两材料讨论热岛作用的侧重不同。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:57:01.450Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2019北京卷原题及完整材料"
+        },
+        {
+          "type": "reference_scan",
+          "title": "2019北京语文参考答案公开转载扫描第11—12页；原发布机关链未核实",
+          "url": "https://cdn.zizzs.com/zixunzhan/202310/29ce91f8-0d5e-474f-8271-3e404cca029a.pdf"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "选 C。材料一把城市化水平视为现代文明的重要指标，材料二明确说城市是人类文明的产物，两者相容。A添加减缓城市化的主张；B把对适应力与进化速度的惊叹改成忧虑；D错误，材料一强调热岛效应的干扰，材料二强调其在冬季提供温暖生境的有利一面。",
+          "inputSha256": "e5c6b09716bb065105e73aa26b7d04b11090c7d8b2bb613a7214cfc3accbc8e2",
+          "inputContextSha256": "edaa99f90ebe7aee550089d65062b3b484f13980648a6c0377abd9b15df8cb63",
+          "inputPresentationSha256": "dd9df7ad1ec8d917dddce5f21a817b9d1bc565f12a4749f89a33012da51c07e1",
+          "generatedAt": "2026-10-03T05:50:28.680Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/root-2019-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2019-reading-job.json"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "C为概括性一致，不能把城市与城市化两词的差别制造为新的错误选项；两材料讨论热岛作用的侧重不同。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。A项错：材料一分析了城市环境对生物的不利影响，但同时指出城市化是“必然出现”的历史过程，并未主张减缓城市化步伐。B项错：材料二引用科学家的话，表达的是对物种适应能力和进化速度的“惊叹”“不可思议”，不是忧虑。C项对：材料一说“城市化水平是现代文明的重要指标”，是伴随工业化和现代化的历史过程；材料二说“城市作为人类文明的产物”，两者都把城市（化）看作人类文明发展的产物。D项错：材料一认为热岛效应是生物生存的“一大干扰因素”，材料二认为它是“城市生境的一大优势”，看法相反。",
+          "inputSha256": "e5c6b09716bb065105e73aa26b7d04b11090c7d8b2bb613a7214cfc3accbc8e2",
+          "inputContextSha256": "edaa99f90ebe7aee550089d65062b3b484f13980648a6c0377abd9b15df8cb63",
+          "inputPresentationSha256": "dd9df7ad1ec8d917dddce5f21a817b9d1bc565f12a4749f89a33012da51c07e1",
+          "generatedAt": "2026-10-03T05:52:23.350425+00:00",
+          "uncertainties": [
+            "C项原文措辞并不完全对应：材料一说的是“城市化”是现代文明的指标，材料二说的是“城市”是人类文明的产物。C属于概括性表述，但其余三项错误明显，故选C。"
+          ],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "C为概括性一致，不能把城市与城市化两词的差别制造为新的错误选项；两材料讨论热岛作用的侧重不同。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2019-reading-result.json",
+            "inputPromptSha256": "cb0c9aa45373044c01110312d6c4c57b093476582524a4dbe36ef6dc8fba42a8",
+            "responseStreamSha256": "b3983021dca357b319809e84bd20ad59ff017a309ffd516749fcd9113de5120b",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2019-feilian:5",
+      "inputSha256": "c9875b95f69b29d26813df231e6a0f718660d21cdf8751f1570372a28a768c90",
+      "inputContextSha256": "2f2ecb5b3fe48ab276d894f7c8caa15543ad1c486f7152eb624d1e4b3d25d5ac",
+      "inputPresentationSha256": "62d140cc185a4bcb3b2e87ee0fb2365951918928ad75d9735b29860b78065bd2",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "原第5题A与第6题三观点及启发均完整回答。整体保持open/answer=[]，旧score=3不变；原3+7分的兼容子题评分仍为发布阻断。物种进化案例依题材作答，不把考试摘编当作当前科学综述。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:57:01.450Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2019北京卷原题及完整材料"
+        },
+        {
+          "type": "reference_scan",
+          "title": "2019北京语文参考答案公开转载扫描第11—12页；原发布机关链未核实",
+          "url": "https://cdn.zizzs.com/zixunzhan/202310/29ce91f8-0d5e-474f-8271-3e404cca029a.pdf"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "第5题：选 A。白车轴草并非为了抵御积雪覆盖而舍弃释放氰化物的能力。积雪本可保护植物；市中心高温使积雪消融，植物更易受到夜间冰冻，所以它牺牲化学防御来增强抗寒性。B、C、D均保留了材料的因果关系或可能性限制。\n第6题：材料一强调城市化尤其无序开发造成栖息地缩减、硬化地表、人流车流和热岛干扰，是威胁生物多样性的重要因素。材料二强调部分物种能迅速适应城市，多样生境、较稳定的食物和水源以及温暖冬季，使城市相对遭高度集约化农业破坏的乡村可能保存更多物种，成为保护多样性的新生态系统。材料三指出快速适应并非没有代价：许多物种或个体会消失，适应可能伴随其他生存能力或繁殖能力下降，进化也难以操控和预测。启发：不能简单判定城市化必然破坏或必然增加多样性，要区分城市管理方式、比较对象、具体物种和时间尺度；既减少无序开发与人为干扰、保护栖息地，也利用城市生态潜力，以长期观察检验效果，不能把少数物种的适应成功当作所有物种获益。",
+          "inputSha256": "c9875b95f69b29d26813df231e6a0f718660d21cdf8751f1570372a28a768c90",
+          "inputContextSha256": "2f2ecb5b3fe48ab276d894f7c8caa15543ad1c486f7152eb624d1e4b3d25d5ac",
+          "inputPresentationSha256": "62d140cc185a4bcb3b2e87ee0fb2365951918928ad75d9735b29860b78065bd2",
+          "generatedAt": "2026-10-03T05:50:28.680Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/root-2019-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2019-reading-job.json"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "原第5题A与第6题三观点及启发均完整回答。整体保持open/answer=[]，旧score=3不变；原3+7分的兼容子题评分仍为发布阻断。物种进化案例依题材作答，不把考试摘编当作当前科学综述。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【第5题】选A。\nA项不符合文意：原文说白车轴草“为提高抗寒性而舍弃了释放氰化物的能力”，原因是城市高温使积雪极易消融，“没有了积雪的覆盖，植物就难以抵御夜间冰冻”。积雪覆盖本是对植物的保护，植物要抵御的是夜间冰冻，而不是“抵御积雪的覆盖”，选项曲解了因果。\nB项符合：人类活动促使哺乳动物夜行性增强，夜行性增强带来习性改变、繁殖能力降低等负面影响。\nC项符合：城市白足鼠涉及脂肪酸消化的基因过度表达，“极有可能”与吃到人类丢弃的比萨饼、芝士汉堡等有关，选项用“可能”，表述恰当。\nD项符合：路灯吸引并聚集大型昆虫，咬合力强的蝙蝠更具优势，家蝠颅骨体积增大“或许”受此影响，选项用“或”，表述恰当。\n\n【第6题】\n三则材料的观点：\n材料一认为，城市化是造成生物多样性危机的重要因素之一。无序蔓延的城市开发使栖息地萎缩，地表硬化、人流车流密集、热岛效应等都不利于生物生存，城市化对生物多样性构成威胁。\n材料二认为，城市化是地球生物最重大的进化动力之一。部分物种对城市环境有惊人的适应力，甚至出现新型城市物种；与遭集约化农业破坏的乡村相比，城市提供了多样的生境、全年的水和食物以及较暖的冬季，因而城市可以成为全新的生态系统，有利于保护生物多样性。\n材料三认为，城市化引发的生物快速进化往往要付出代价：一个物种适应城市的同时有多个物种在当地消失，适应者也要牺牲众多个体或原有的能力；生物进化难以操控、可预见性低，城市化对生物多样性的影响是复杂而不确定的。\n\n启发：\n一是要辩证、全面地看待这一关系。城市化既可能威胁生物多样性，也可能成为进化的动力并提供新的生境，不能简单地下“有害”或“有利”的结论，同一因素（如热岛效应）在不同角度下利弊也不同。\n二是认识是不断发展深化的。从只看到威胁，到发现物种的适应和进化，再到看到进化背后的代价，说明科学认识需要多角度的证据，要以开放、审慎的态度对待尚不清楚的问题。\n三是城市化不可避免，人类应在发展中承担责任。应避免无序开发，在城市规划建设中为生物保留和营造多样的生境，减少人类活动对生物的干扰，谋求城市发展与生物多样性保护的协调，实现人与自然和谐共生。",
+          "inputSha256": "c9875b95f69b29d26813df231e6a0f718660d21cdf8751f1570372a28a768c90",
+          "inputContextSha256": "2f2ecb5b3fe48ab276d894f7c8caa15543ad1c486f7152eb624d1e4b3d25d5ac",
+          "inputPresentationSha256": "62d140cc185a4bcb3b2e87ee0fb2365951918928ad75d9735b29860b78065bd2",
+          "generatedAt": "2026-10-03T05:52:23.350425+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "原第5题A与第6题三观点及启发均完整回答。整体保持open/answer=[]，旧score=3不变；原3+7分的兼容子题评分仍为发布阻断。物种进化案例依题材作答，不把考试摘编当作当前科学综述。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2019-reading-result.json",
+            "inputPromptSha256": "cb0c9aa45373044c01110312d6c4c57b093476582524a4dbe36ef6dc8fba42a8",
+            "responseStreamSha256": "b3983021dca357b319809e84bd20ad59ff017a309ffd516749fcd9113de5120b",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2019-guwen:1",
+      "inputSha256": "65a9cab9d8047bc1c8d2ef03a2553dfdb2d289dd815eed10a44e9c0319cd64d9",
+      "inputContextSha256": "509211ea499127b8e5c46ef1c36c208b711fb45198221b2a6b36462d997977ca",
+      "inputPresentationSha256": "028ca5e3aee44f5a7579e2630fdc533f99410cfa5a00f17d826e1be91998683a",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "A。教育部重编国语辞典既条支持已经这一副词义，抑条支持表选择的还是。概依上下文为合乎而非大略；其字源推导不设为必答点。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:57:01.450Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2019北京卷原题及完整材料"
+        },
+        {
+          "type": "reference_scan",
+          "title": "2019北京语文参考答案公开转载扫描第11—12页；原发布机关链未核实",
+          "url": "https://cdn.zizzs.com/zixunzhan/202310/29ce91f8-0d5e-474f-8271-3e404cca029a.pdf"
+        },
+        {
+          "type": "dictionary",
+          "title": "教育部重编国语辞典：既",
+          "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=5430&word=%3D%E6%97%A2"
+        },
+        {
+          "type": "dictionary",
+          "title": "教育部重编国语辞典：抑",
+          "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=10626&la=0&powerMode=0"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "选 A。①概是衡量、符合之意，句子说其中的议论不合圣人之道，不是大略。⑦既是已经，指我已在前面陈述，并非表示假设前提的既然。其余所列解释符合语境：由为沿着，特为只是，恶乎为于何、怎么会，糜为使熟烂，抑为还是，术为途径、原因。",
+          "inputSha256": "65a9cab9d8047bc1c8d2ef03a2553dfdb2d289dd815eed10a44e9c0319cd64d9",
+          "inputContextSha256": "509211ea499127b8e5c46ef1c36c208b711fb45198221b2a6b36462d997977ca",
+          "inputPresentationSha256": "028ca5e3aee44f5a7579e2630fdc533f99410cfa5a00f17d826e1be91998683a",
+          "generatedAt": "2026-10-03T05:50:28.680Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/root-2019-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2019-reading-job.json"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "A。教育部重编国语辞典既条支持已经这一副词义，抑条支持表选择的还是。概依上下文为合乎而非大略；其字源推导不设为必答点。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\n选A（①⑦解释不正确）。\n①“不概于圣”的“概”本指量谷物时刮平斗斛的器具，引申为“合乎、符合”，句意是“不合于圣人之道”，解作“大略”不通。\n②“由”解作“沿着、经由”，正确，句意是“不能经由中庸之道进入尧舜之道”。\n③“特”解作“只是、不过”，正确。\n④“恶乎”解作“于何、怎么会”，正确，句意是“这怎么会是和我们商量过的呢”。\n⑤“糜”是使动用法，“使……熟烂”，正确。\n⑥“抑”是表选择的连词，“还是”，正确。\n⑦“吾既陈于前矣”的“既”是“已经”，句意是“我在前面已经陈述过了”，解作“既然”错误。\n⑧“术”解作“途径、原因”，正确，句意是“因缺乏财用而招致灭亡，不是还有别的原因吗”。",
+          "inputSha256": "65a9cab9d8047bc1c8d2ef03a2553dfdb2d289dd815eed10a44e9c0319cd64d9",
+          "inputContextSha256": "509211ea499127b8e5c46ef1c36c208b711fb45198221b2a6b36462d997977ca",
+          "inputPresentationSha256": "028ca5e3aee44f5a7579e2630fdc533f99410cfa5a00f17d826e1be91998683a",
+          "generatedAt": "2026-10-03T05:52:23.350425+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "A。教育部重编国语辞典既条支持已经这一副词义，抑条支持表选择的还是。概依上下文为合乎而非大略；其字源推导不设为必答点。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2019-reading-result.json",
+            "inputPromptSha256": "cb0c9aa45373044c01110312d6c4c57b093476582524a4dbe36ef6dc8fba42a8",
+            "responseStreamSha256": "b3983021dca357b319809e84bd20ad59ff017a309ffd516749fcd9113de5120b",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2019-guwen:2",
+      "inputSha256": "c4791d319d5b79fa944fec6909c8b9f9f3bb5882a2eacc2031a2b6809d7dbc61",
+      "inputContextSha256": "a43018d6d2d7c194d4c621e401779666a355173619554036b2fc2931661d0069",
+      "inputPresentationSha256": "bee6264c18ca2fac8eec5a0ffe86ee48f191b3cf589fc4204d4cf2bf7cd82274",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "完整材料、注释与准确标记下独立作答，逐题核读两模型全文，并与公开转载的参考扫描页对照；开放题允许合理不同表述。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:57:01.450Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2019北京卷原题及完整材料"
+        },
+        {
+          "type": "reference_scan",
+          "title": "2019北京语文参考答案公开转载扫描第11—12页；原发布机关链未核实",
+          "url": "https://cdn.zizzs.com/zixunzhan/202310/29ce91f8-0d5e-474f-8271-3e404cca029a.pdf"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "选 B。诬淫指虚妄、不合正道或过分失实，评价的是《国语》某些说法的可靠性，不是说它们在诬陷他人或处于混乱。A深闳杰异、C自然事物自有逼引作用、D天地无边的解释均合文意。",
+          "inputSha256": "c4791d319d5b79fa944fec6909c8b9f9f3bb5882a2eacc2031a2b6809d7dbc61",
+          "inputContextSha256": "a43018d6d2d7c194d4c621e401779666a355173619554036b2fc2931661d0069",
+          "inputPresentationSha256": "bee6264c18ca2fac8eec5a0ffe86ee48f191b3cf589fc4204d4cf2bf7cd82274",
+          "generatedAt": "2026-10-03T05:50:28.680Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/root-2019-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2019-reading-job.json"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "完整材料、注释与准确标记下独立作答，逐题核读两模型全文，并与公开转载的参考扫描页对照；开放题允许合理不同表述。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。“诬淫”中“诬”指虚妄不实，“淫”指过分、荒诞不经，“其说多诬淫”意为“它的说法大多虚妄荒诞”，下文“不概于圣”也印证这是批评其内容不合圣人之道，译成“诬陷和混乱”属望文生义。A项“深闳杰异”译为“深刻宏阔、杰出特异”，正确。C项“彼固有所逼引”指山川阴阳这些自然物本来就有相互逼迫、牵引的作用，译为“本来自有其相互作用的条件”，正确。D项“无倪”即没有边际，译为“又何况天地广阔无边”，正确。",
+          "inputSha256": "c4791d319d5b79fa944fec6909c8b9f9f3bb5882a2eacc2031a2b6809d7dbc61",
+          "inputContextSha256": "a43018d6d2d7c194d4c621e401779666a355173619554036b2fc2931661d0069",
+          "inputPresentationSha256": "bee6264c18ca2fac8eec5a0ffe86ee48f191b3cf589fc4204d4cf2bf7cd82274",
+          "generatedAt": "2026-10-03T05:52:23.350425+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "完整材料、注释与准确标记下独立作答，逐题核读两模型全文，并与公开转载的参考扫描页对照；开放题允许合理不同表述。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2019-reading-result.json",
+            "inputPromptSha256": "cb0c9aa45373044c01110312d6c4c57b093476582524a4dbe36ef6dc8fba42a8",
+            "responseStreamSha256": "b3983021dca357b319809e84bd20ad59ff017a309ffd516749fcd9113de5120b",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2019-guwen:3",
+      "inputSha256": "b93e208f6f410025ad28c4fd04dd507ef8f860ee0fd828f2a2a0bf26dcd96e12",
+      "inputContextSha256": "9d2eaea8bf134a68e2dc60ebaa497da8ab2cdf66a79642602694a2b60b7685b8",
+      "inputPresentationSha256": "5045c5105efa2edaae5bd23b84e6aebdbdb3efc4c380afdb1d3e0be142a27a21",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "C。类比服务于反对把自然变化附会成人事征兆；其孰能知之不能读作明确宣称机理可被认识。A把作者担忧概括为现象，措辞略强但不另立争议答案。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:57:01.450Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2019北京卷原题及完整材料"
+        },
+        {
+          "type": "reference_scan",
+          "title": "2019北京语文参考答案公开转载扫描第11—12页；原发布机关链未核实",
+          "url": "https://cdn.zizzs.com/zixunzhan/202310/29ce91f8-0d5e-474f-8271-3e404cca029a.pdf"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "选 C。烹调和灌园的例子用以说明微小的作用尚能使物发生变化，何况广阔天地间阴阳之气的复杂运动；自然变化有其自身的原因，并非专为人事设置。作者继而说其孰能知之，不能把类比的目的概括成自然界自动自休的机理可以被认识。A对应写作缘由，B对应把天变与政治兴亡相系的推断，D符合全文批评天人感应的立场。",
+          "inputSha256": "b93e208f6f410025ad28c4fd04dd507ef8f860ee0fd828f2a2a0bf26dcd96e12",
+          "inputContextSha256": "9d2eaea8bf134a68e2dc60ebaa497da8ab2cdf66a79642602694a2b60b7685b8",
+          "inputPresentationSha256": "5045c5105efa2edaae5bd23b84e6aebdbdb3efc4c380afdb1d3e0be142a27a21",
+          "generatedAt": "2026-10-03T05:50:28.680Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/root-2019-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2019-reading-job.json"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "C。类比服务于反对把自然变化附会成人事征兆；其孰能知之不能读作明确宣称机理可被认识。A把作者担忧概括为现象，措辞略强但不另立争议答案。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。柳宗元以老妇烧火做饭、老圃汲水浇园作类比，是说这些小事尚且能使物体涌溢、冲荡，何况无边的天地、无穷的阴阳，其会离吸吹“如轮如机，其孰能知之”。他强调的是自然变化有其自身原因，而且极其复杂、难以尽知，以此否定伯阳父凭地震推断国运的说法，并不是说明自然机理“可以被认识”。\nA项符合首段“余惧世之学者溺其文采而沦于是非”“作《非国语》”的写作缘由。\nB项正确：伯阳父把地震、川源阻塞与国家灭亡、“天之所弃”联系起来，正是把自然现象与人事相比附的天人感应观念。\nD项正确：柳宗元认为山川阴阳“自动自休，自峙自流”，与人事无关，体现了天人相分、反对迷信的朴素唯物主义思想。",
+          "inputSha256": "b93e208f6f410025ad28c4fd04dd507ef8f860ee0fd828f2a2a0bf26dcd96e12",
+          "inputContextSha256": "9d2eaea8bf134a68e2dc60ebaa497da8ab2cdf66a79642602694a2b60b7685b8",
+          "inputPresentationSha256": "5045c5105efa2edaae5bd23b84e6aebdbdb3efc4c380afdb1d3e0be142a27a21",
+          "generatedAt": "2026-10-03T05:52:23.350425+00:00",
+          "uncertainties": [
+            "A项“世人……模糊了是非”在原文中是柳宗元的担忧（“余惧”），选项说成既成事实，略有出入；但C项与原文明显相悖，故选C。"
+          ],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "C。类比服务于反对把自然变化附会成人事征兆；其孰能知之不能读作明确宣称机理可被认识。A把作者担忧概括为现象，措辞略强但不另立争议答案。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2019-reading-result.json",
+            "inputPromptSha256": "cb0c9aa45373044c01110312d6c4c57b093476582524a4dbe36ef6dc8fba42a8",
+            "responseStreamSha256": "b3983021dca357b319809e84bd20ad59ff017a309ffd516749fcd9113de5120b",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2019-guwen:4",
+      "inputSha256": "f900ac200de4280b50940e3180d8a801b65d46c3bd3dda183579786ffeb94a53",
+      "inputContextSha256": "e5ae4f13cf36b3eae6f56bb9fbd08f821dc049ab01f8af2bc966ac3ce9f9e675",
+      "inputPresentationSha256": "2698d2b69bc74a60c12edacfe95cc5571eb2d9c1bf7bfce42da08896acd4e570",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "译文接受我不赞同上述说法。尔可作第二人称或指示代词，字典收录两义；原Astra排除如此的附加说明过强，已保留初答并修订，不把代词细分设为唯一得分点。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:57:01.450Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2019北京卷原题及完整材料"
+        },
+        {
+          "type": "reference_scan",
+          "title": "2019北京语文参考答案公开转载扫描第11—12页；原发布机关链未核实",
+          "url": "https://cdn.zizzs.com/zixunzhan/202310/29ce91f8-0d5e-474f-8271-3e404cca029a.pdf"
+        },
+        {
+          "type": "dictionary",
+          "title": "教育部重编国语辞典：尔",
+          "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=10494&la=0&powerMode=0"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 译词复核修订",
+          "text": "①认同伯阳父上述说法、把自然变化附会为人事征兆的人，不是孤陋寡闻、闭塞不通，就是糊涂迷惑。不……则……表示不是……就是……。\n②我对上述说法没有什么可取的，不赞同这些说法。无取为不赞同、不采纳，乎相当于于；尔可依上下文指上述说法，或作对伯阳父的称指，不必把这一细分作为排他评分条件。",
+          "inputSha256": "f900ac200de4280b50940e3180d8a801b65d46c3bd3dda183579786ffeb94a53",
+          "inputContextSha256": "e5ae4f13cf36b3eae6f56bb9fbd08f821dc049ab01f8af2bc966ac3ce9f9e675",
+          "inputPresentationSha256": "2698d2b69bc74a60c12edacfe95cc5571eb2d9c1bf7bfce42da08896acd4e570",
+          "generatedAt": "2026-10-03T05:57:01.451Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/adjudicate_2019.mjs",
+            "inputEvidence": "answers-six-sites-20261002/claude-2019-reading-job.json",
+            "stage": "adjudicated_revision"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "译文接受我不赞同上述说法。尔可作第二人称或指示代词，字典收录两义；原Astra排除如此的附加说明过强，已保留初答并修订，不把代词细分设为唯一得分点。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "①认之者不塞则惑：把这些（自然现象）认作（与人事相关、为人而设）的人，不是闭塞无知，就是糊涂迷惑。\n（要点：“认之者”指持上述看法的人；“不……则……”译为“不是……就是……”；“塞”是闭塞、不明事理；“惑”是糊涂、迷惑。）\n\n②吾无取乎尔也：我认为（伯阳父的）这种说法没有什么可取之处。也可译为“我对这种说法是不赞同的”。\n（要点：“无取”是没有可取之处、不采纳；“乎”相当于“于”；“尔”是代词，指“这”，即伯阳父的说法。）",
+          "inputSha256": "f900ac200de4280b50940e3180d8a801b65d46c3bd3dda183579786ffeb94a53",
+          "inputContextSha256": "e5ae4f13cf36b3eae6f56bb9fbd08f821dc049ab01f8af2bc966ac3ce9f9e675",
+          "inputPresentationSha256": "2698d2b69bc74a60c12edacfe95cc5571eb2d9c1bf7bfce42da08896acd4e570",
+          "generatedAt": "2026-10-03T05:52:23.350425+00:00",
+          "uncertainties": [
+            "“认之者”的“之”所指内容原文省略，补出的“与人事相关、为人而设”是据上文“恶乎与我谋”“恶乎为我设”推出的。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "译文接受我不赞同上述说法。尔可作第二人称或指示代词，字典收录两义；原Astra排除如此的附加说明过强，已保留初答并修订，不把代词细分设为唯一得分点。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2019-reading-result.json",
+            "inputPromptSha256": "cb0c9aa45373044c01110312d6c4c57b093476582524a4dbe36ef6dc8fba42a8",
+            "responseStreamSha256": "b3983021dca357b319809e84bd20ad59ff017a309ffd516749fcd9113de5120b",
+            "stage": "independent"
+          }
+        },
+        "gpt_6_astra_initial": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立初答（译词复核前存档）",
+          "text": "①把这些自然变化认作与人事相应、加以附会的人，不是见识闭塞，就是糊涂迷惑。认之要联系前文天象为人而设的说法理解；不……则……表示不是……就是……。\n②我不赞同（不采纳）你的这些说法。无取是没有可取、不取其说；乎相当于于；尔在语境中指伯阳父及其上述议论，不是表示如此。",
+          "inputSha256": "f900ac200de4280b50940e3180d8a801b65d46c3bd3dda183579786ffeb94a53",
+          "inputContextSha256": "e5ae4f13cf36b3eae6f56bb9fbd08f821dc049ab01f8af2bc966ac3ce9f9e675",
+          "inputPresentationSha256": "2698d2b69bc74a60c12edacfe95cc5571eb2d9c1bf7bfce42da08896acd4e570",
+          "generatedAt": "2026-10-03T05:50:28.680Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/root-2019-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2019-reading-job.json"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "译文接受我不赞同上述说法。尔可作第二人称或指示代词，字典收录两义；原Astra排除如此的附加说明过强，已保留初答并修订，不把代词细分设为唯一得分点。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          }
+        }
+      }
+    },
+    {
+      "id": "2019-guwen:5",
+      "inputSha256": "c563f2403ea3a5c0919310a636846663f0b39584793f7d899fad74ad6eead051",
+      "inputContextSha256": "4f7cf8902539e668a0d957a130b3631e70f15bf738a2d3a8d5ec658375fabfe2",
+      "inputPresentationSha256": "46caad33e67cdc08cc17c6a88b4dc55fc7040c4fcd2cdf9cfa15debf5d7b8724",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "完整材料、注释与准确标记下独立作答，逐题核读两模型全文，并与公开转载的参考扫描页对照；开放题允许合理不同表述。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:57:01.450Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2019北京卷原题及完整材料"
+        },
+        {
+          "type": "reference_scan",
+          "title": "2019北京语文参考答案公开转载扫描第11—12页；原发布机关链未核实",
+          "url": "https://cdn.zizzs.com/zixunzhan/202310/29ce91f8-0d5e-474f-8271-3e404cca029a.pdf"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "第一层，先从自然现象本身反驳天象有意干预人事的前提：山川是天地之物，阴阳是运行其间的气，它们自起自止、自高自流、自相冲突毁损，何曾同人商议、为人安排。随后以老妇烹食和老圃灌田都能改变物体作类比，推到天地阴阳复杂无穷的作用，说明地震等自有自然条件，人不能任意附会。\n第二层，抓住源塞、财用不足、国亡这条因果链设问：究竟是天事还是人事？若归于天事，前述自然原理已作反驳；若归于人事，因财用匮乏而亡国也另有人为原因，不能专归罪于河川。这从天与人两方面排除了对方的归因。\n第三层，再引天之所弃、不过其纪，指出把亡国说成上天遗弃、甚至限定十年，更加荒谬；以吾无取乎尔也鲜明作结。论证由根本前提到具体因果，再到天命与期限推断，逐层推进。",
+          "inputSha256": "c563f2403ea3a5c0919310a636846663f0b39584793f7d899fad74ad6eead051",
+          "inputContextSha256": "4f7cf8902539e668a0d957a130b3631e70f15bf738a2d3a8d5ec658375fabfe2",
+          "inputPresentationSha256": "46caad33e67cdc08cc17c6a88b4dc55fc7040c4fcd2cdf9cfa15debf5d7b8724",
+          "generatedAt": "2026-10-03T05:50:28.680Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/root-2019-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2019-reading-job.json"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "完整材料、注释与准确标记下独立作答，逐题核读两模型全文，并与公开转载的参考扫描页对照；开放题允许合理不同表述。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "第三段针对伯阳父的三个说法，分三层逐一批驳，层层深入。\n\n第一层，批驳“地震是天地之气失序、预示周将亡”。作者先立论：山川只是天地间的自然物，阴阳只是游动其间的气，它们“自动自休，自峙自流”“自斗自竭，自崩自缺”，都出于自身的原因，既不与人商量，也不是为人而设；把它们与人事牵连的人“不塞则惑”。接着用老妇烧火做饭、老圃汲水浇园作类比：这样的小事尚能使水涌溢、冲坏土石，何况无边无际的天地阴阳，其变化复杂如轮如机，谁能知晓。由此说明地震自有其自然原因，不能据以推断人事。\n\n第二层，批驳“源塞，国必亡。人乏财用，不亡何待”。作者用两难式的追问：这说的是天事还是人事？如果是天事，前面已经驳倒；如果是人事，那么因缺乏财用而导致灭亡，还有别的原因，怎能只归罪于河川。无论从哪一面说，对方都不能成立。\n\n第三层，批驳“天之所弃，不过其纪”。作者指出，把国家灭亡的期限说成上天抛弃不超过十年的定数，比前面的说法更加荒谬，以“愈甚乎哉”直接否定，最后用“吾无取乎尔也”总结全段，表明全盘不取的态度。\n\n全段先立后破，先驳其立论的根本（天人相关），再驳其推论，最后驳其结论。",
+          "inputSha256": "c563f2403ea3a5c0919310a636846663f0b39584793f7d899fad74ad6eead051",
+          "inputContextSha256": "4f7cf8902539e668a0d957a130b3631e70f15bf738a2d3a8d5ec658375fabfe2",
+          "inputPresentationSha256": "46caad33e67cdc08cc17c6a88b4dc55fc7040c4fcd2cdf9cfa15debf5d7b8724",
+          "generatedAt": "2026-10-03T05:52:23.350425+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "完整材料、注释与准确标记下独立作答，逐题核读两模型全文，并与公开转载的参考扫描页对照；开放题允许合理不同表述。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2019-reading-result.json",
+            "inputPromptSha256": "cb0c9aa45373044c01110312d6c4c57b093476582524a4dbe36ef6dc8fba42a8",
+            "responseStreamSha256": "b3983021dca357b319809e84bd20ad59ff017a309ffd516749fcd9113de5120b",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2019-shici:1",
+      "inputSha256": "85a92af73df192f2e7243fa6eaab52f8b5e7c114a5623bb85c75c5cfa8fb2819",
+      "inputContextSha256": "94fe0d485e372a1233a37a04dba4211b1d6196848a7243ee13877bfb7588d28c",
+      "inputPresentationSha256": "74f81235928dfe6666e16fb6de8f03917ddde1ae45c31dff894fac02582ecfa6",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "C。诗歌出现桃李不能推出图中实绘桃李；Claude所谓画中只有梅花措辞过于绝对，本题只否定题干要求的图像推断，不据此断言全幅无其他物象。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:57:01.450Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2019北京卷原题及完整材料"
+        },
+        {
+          "type": "reference_scan",
+          "title": "2019北京语文参考答案公开转载扫描第11—12页；原发布机关链未核实",
+          "url": "https://cdn.zizzs.com/zixunzhan/202310/29ce91f8-0d5e-474f-8271-3e404cca029a.pdf"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "选 C。桃李在第一首中作为衬托梅花风韵的比较对象出现，并不能推出画面还画了桃花和李花。含章殿与九方皋同样是诗中用典而非实绘物象。A、B概括了诗人对墨梅表现力和画技的赞赏，D符合用典方式。",
+          "inputSha256": "85a92af73df192f2e7243fa6eaab52f8b5e7c114a5623bb85c75c5cfa8fb2819",
+          "inputContextSha256": "94fe0d485e372a1233a37a04dba4211b1d6196848a7243ee13877bfb7588d28c",
+          "inputPresentationSha256": "74f81235928dfe6666e16fb6de8f03917ddde1ae45c31dff894fac02582ecfa6",
+          "generatedAt": "2026-10-03T05:50:28.680Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/root-2019-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2019-reading-job.json"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "C。诗歌出现桃李不能推出图中实绘桃李；Claude所谓画中只有梅花措辞过于绝对，本题只否定题干要求的图像推断，不据此断言全幅无其他物象。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。两首诗题咏的是同一幅水墨梅花图，画中只有梅花。第一首“桃李依然是仆奴”是诗人的议论：即使梅花被画成黑色，桃李与之相比仍只配做奴仆，桃李是用来衬托的对象，并非画中所绘。\nA项正确：“巧画无盐丑不除，此花风韵更清姝”，用怎样巧画也改不了无盐之丑，反衬墨梅虽不施色彩却更显清丽。\nB项正确：“含章檐下春风面”以寿阳公主的容颜比画中梅花之美，“造化功成秋兔毫”赞画笔有堪比造化的功力。\nD项正确：含章殿、九方皋都是用典，前者写梅花之美，后者赞画家重神轻形，都不是画面内容。",
+          "inputSha256": "85a92af73df192f2e7243fa6eaab52f8b5e7c114a5623bb85c75c5cfa8fb2819",
+          "inputContextSha256": "94fe0d485e372a1233a37a04dba4211b1d6196848a7243ee13877bfb7588d28c",
+          "inputPresentationSha256": "74f81235928dfe6666e16fb6de8f03917ddde1ae45c31dff894fac02582ecfa6",
+          "generatedAt": "2026-10-03T05:52:23.350425+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "C。诗歌出现桃李不能推出图中实绘桃李；Claude所谓画中只有梅花措辞过于绝对，本题只否定题干要求的图像推断，不据此断言全幅无其他物象。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2019-reading-result.json",
+            "inputPromptSha256": "cb0c9aa45373044c01110312d6c4c57b093476582524a4dbe36ef6dc8fba42a8",
+            "responseStreamSha256": "b3983021dca357b319809e84bd20ad59ff017a309ffd516749fcd9113de5120b",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2019-shici:2",
+      "inputSha256": "adb9cb35fd9ff1693e935975c2fcb94393c2bc77c5195750641ab29a5e6f7b56",
+      "inputContextSha256": "e7057374f80efbabfa56320c0b9f37f1cd4b0b3bef487babb23aeb6fb6de5f8a",
+      "inputPresentationSha256": "200ac08b62fc33d58cc589af41a310a2062ffda187c2d56562234c9f27243ac2",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "完整材料、注释与准确标记下独立作答，逐题核读两模型全文，并与公开转载的参考扫描页对照；开放题允许合理不同表述。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:57:01.451Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2019北京卷原题及完整材料"
+        },
+        {
+          "type": "reference_scan",
+          "title": "2019北京语文参考答案公开转载扫描第11—12页；原发布机关链未核实",
+          "url": "https://cdn.zizzs.com/zixunzhan/202310/29ce91f8-0d5e-474f-8271-3e404cca029a.pdf"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "选 A。诗人说梅花清姝，即使画成黑色，其风韵仍使桃李居于下位，表现出推重清雅风神而不以浓艳颜色为美的审美趣味。B附加政治讽刺，C把清美误作富贵，D把取神不拘形色的艺术观改成艺术来源于生活，均偏离诗旨。",
+          "inputSha256": "adb9cb35fd9ff1693e935975c2fcb94393c2bc77c5195750641ab29a5e6f7b56",
+          "inputContextSha256": "e7057374f80efbabfa56320c0b9f37f1cd4b0b3bef487babb23aeb6fb6de5f8a",
+          "inputPresentationSha256": "200ac08b62fc33d58cc589af41a310a2062ffda187c2d56562234c9f27243ac2",
+          "generatedAt": "2026-10-03T05:50:28.680Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/root-2019-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2019-reading-job.json"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "完整材料、注释与准确标记下独立作答，逐题核读两模型全文，并与公开转载的参考扫描页对照；开放题允许合理不同表述。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\n选A。第一首赞墨梅“风韵更清姝”，并说即使变白为黑，艳丽的桃李仍只是梅的奴仆，流露出诗人崇尚清雅、不喜浓艳的审美追求，A项正确。\nB项错：“变白能为黑”说的是用水墨把白梅画成黑色，“仆奴”是说桃李不及梅花，与讽刺现实中颠倒黑白、奴颜婢膝之人无关，属牵强附会。\nC项错：用寿阳公主梅花妆的典故，是以美人容颜比画中梅花的美丽动人，不是表现梅花的富贵气质，墨梅的格调恰是清雅。\nD项错：以九方皋相马比画家画梅，是说二者都不拘外在形色而重内在神韵，说明的是艺术贵在神似，不是艺术来源于生活。",
+          "inputSha256": "adb9cb35fd9ff1693e935975c2fcb94393c2bc77c5195750641ab29a5e6f7b56",
+          "inputContextSha256": "e7057374f80efbabfa56320c0b9f37f1cd4b0b3bef487babb23aeb6fb6de5f8a",
+          "inputPresentationSha256": "200ac08b62fc33d58cc589af41a310a2062ffda187c2d56562234c9f27243ac2",
+          "generatedAt": "2026-10-03T05:52:23.350425+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "完整材料、注释与准确标记下独立作答，逐题核读两模型全文，并与公开转载的参考扫描页对照；开放题允许合理不同表述。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2019-reading-result.json",
+            "inputPromptSha256": "cb0c9aa45373044c01110312d6c4c57b093476582524a4dbe36ef6dc8fba42a8",
+            "responseStreamSha256": "b3983021dca357b319809e84bd20ad59ff017a309ffd516749fcd9113de5120b",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2019-shici:3",
+      "inputSha256": "bae905e8d2cfb754998ff5c50ca91dd15a601706baa0c7d2e2b9a812578aafec",
+      "inputContextSha256": "7e9688a59b8fa0786dac9897647449fb035c7911d9dd8af3cc4b5cb6205fb6a5",
+      "inputPresentationSha256": "0f4a001897187c2509e20f1336e0f5ce8496d69d9ae2cf2f6bbdccd72ab4bd9d",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "完整材料、注释与准确标记下独立作答，逐题核读两模型全文，并与公开转载的参考扫描页对照；开放题允许合理不同表述。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:57:01.451Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2019北京卷原题及完整材料"
+        },
+        {
+          "type": "reference_scan",
+          "title": "2019北京语文参考答案公开转载扫描第11—12页；原发布机关链未核实",
+          "url": "https://cdn.zizzs.com/zixunzhan/202310/29ce91f8-0d5e-474f-8271-3e404cca029a.pdf"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "特点：墨梅不机械照搬真梅的颜色，以水墨表现白梅，虽然形色不同，却能传达梅花清姝高洁的风韵；其价值在于传神，意足比颜色似更重要，画家能以笔墨创造出如自然化育般的生动美感。\n侧重点：第一首从梅花自身的风韵和画面效果着眼，用无盐之丑与桃李之艳作衬托，突出墨梅即使由白变黑仍清美出众，重在赞美梅的品格与魅力。第四首从画家的创造和艺术方法着眼，以含章梅妆赞画面，以九方皋相马比喻不拘外在形色而把握内在精神，重在赞赏画技并阐明重神似的艺术观。",
+          "inputSha256": "bae905e8d2cfb754998ff5c50ca91dd15a601706baa0c7d2e2b9a812578aafec",
+          "inputContextSha256": "7e9688a59b8fa0786dac9897647449fb035c7911d9dd8af3cc4b5cb6205fb6a5",
+          "inputPresentationSha256": "0f4a001897187c2509e20f1336e0f5ce8496d69d9ae2cf2f6bbdccd72ab4bd9d",
+          "generatedAt": "2026-10-03T05:50:28.680Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/root-2019-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2019-reading-job.json"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "完整材料、注释与准确标记下独立作答，逐题核读两模型全文，并与公开转载的参考扫描页对照；开放题允许合理不同表述。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "对墨梅画特点的认识：\n陈与义认为墨梅画不求形似（颜色不似）而追求神似。它用水墨“变白为黑”，颜色与真梅不同，却能传达出梅花清丽脱俗的风韵和精神，即“意足不求颜色似”；这种遗貌取神的画法见出画家高超的技艺，笔墨之功可与造化媲美。\n\n两首诗题咏侧重点的不同：\n第一首侧重写画中之梅，赞美墨梅的风韵品格。先以巧画无盐而丑不能除作反衬，突出墨梅“风韵更清姝”；再以桃李作对比，说梅花即使被画成黑色，其清雅高洁也远在艳丽的桃李之上。重点在梅花本身的神韵之美。\n第二首侧重写画梅之人，赞美画家的技艺和艺术追求。先用含章殿梅花妆的典故写画中梅花之美，随即归结为“造化功成秋兔毫”，称赞画笔巧夺天工；再用九方皋相马不辨毛色牝牡而得千里马的典故，赞画家重神轻形、得其精神。重点在画家的创作手法和艺术境界。",
+          "inputSha256": "bae905e8d2cfb754998ff5c50ca91dd15a601706baa0c7d2e2b9a812578aafec",
+          "inputContextSha256": "7e9688a59b8fa0786dac9897647449fb035c7911d9dd8af3cc4b5cb6205fb6a5",
+          "inputPresentationSha256": "0f4a001897187c2509e20f1336e0f5ce8496d69d9ae2cf2f6bbdccd72ab4bd9d",
+          "generatedAt": "2026-10-03T05:52:23.350425+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "完整材料、注释与准确标记下独立作答，逐题核读两模型全文，并与公开转载的参考扫描页对照；开放题允许合理不同表述。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2019-reading-result.json",
+            "inputPromptSha256": "cb0c9aa45373044c01110312d6c4c57b093476582524a4dbe36ef6dc8fba42a8",
+            "responseStreamSha256": "b3983021dca357b319809e84bd20ad59ff017a309ffd516749fcd9113de5120b",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2019-lunyu:1",
+      "inputSha256": "f903ee6cdbf01a76a2b4ac6b78f0bac523f5bcfde5d8be4bb849accfd0487804",
+      "inputContextSha256": "9d28a8b8a6c6c4b4f9cdff38dd7785f651def07cbbc0494d3febe9922391bdb1",
+      "inputPresentationSha256": "71f091ad9815bf9d8fbb44cc4f52b83373d7d16fff63793a883e8676434d283b",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "完整材料、注释与准确标记下独立作答，逐题核读两模型全文，并与公开转载的参考扫描页对照；开放题允许合理不同表述。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:57:01.451Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2019北京卷原题及完整材料"
+        },
+        {
+          "type": "reference_scan",
+          "title": "2019北京语文参考答案公开转载扫描第11—12页；原发布机关链未核实",
+          "url": "https://cdn.zizzs.com/zixunzhan/202310/29ce91f8-0d5e-474f-8271-3e404cca029a.pdf"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "其道指符合仁义、合乎道德原则的正当途径。孔子承认人通常追求富贵、厌恶贫贱，却要求君子把仁作为取舍的准则：不以不正当手段谋取富贵，也不为摆脱贫贱而违仁；无论安稳日常、仓促急迫还是颠沛困顿，都须始终践行仁，不可片刻离开。",
+          "inputSha256": "f903ee6cdbf01a76a2b4ac6b78f0bac523f5bcfde5d8be4bb849accfd0487804",
+          "inputContextSha256": "9d28a8b8a6c6c4b4f9cdff38dd7785f651def07cbbc0494d3febe9922391bdb1",
+          "inputPresentationSha256": "71f091ad9815bf9d8fbb44cc4f52b83373d7d16fff63793a883e8676434d283b",
+          "generatedAt": "2026-10-03T05:50:28.680Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/root-2019-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2019-reading-job.json"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "完整材料、注释与准确标记下独立作答，逐题核读两模型全文，并与公开转载的参考扫描页对照；开放题允许合理不同表述。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "“其道”指获得富贵的正当途径和方法，也就是合乎仁（道义）的方式。\n\n全段表达的思想：追求富贵、厌恶贫贱是人之常情，孔子并不否定，但认为取舍必须以“仁”为准则——不合仁道得来的富贵不接受，不合仁道的方式不能用来摆脱贫贱。仁是君子之所以成为君子的根本，君子离开了仁就不能成就君子之名；因此君子任何时候都不能违背仁，哪怕一顿饭的工夫也不行，仓促匆忙时如此，颠沛流离时也如此。这体现了孔子以仁为本、重义轻利、始终坚守仁德的思想。",
+          "inputSha256": "f903ee6cdbf01a76a2b4ac6b78f0bac523f5bcfde5d8be4bb849accfd0487804",
+          "inputContextSha256": "9d28a8b8a6c6c4b4f9cdff38dd7785f651def07cbbc0494d3febe9922391bdb1",
+          "inputPresentationSha256": "71f091ad9815bf9d8fbb44cc4f52b83373d7d16fff63793a883e8676434d283b",
+          "generatedAt": "2026-10-03T05:52:23.350425+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "完整材料、注释与准确标记下独立作答，逐题核读两模型全文，并与公开转载的参考扫描页对照；开放题允许合理不同表述。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2019-reading-result.json",
+            "inputPromptSha256": "cb0c9aa45373044c01110312d6c4c57b093476582524a4dbe36ef6dc8fba42a8",
+            "responseStreamSha256": "b3983021dca357b319809e84bd20ad59ff017a309ffd516749fcd9113de5120b",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2019-lunyu:2",
+      "inputSha256": "841e7f58fd7a15c1a782c9922aeeb8fee3b815382f25ef45a05565a1cd8c3925",
+      "inputContextSha256": "26abbd9ac989eb6290a01004f7a46a86ff7667ffc86357dcdf6ceb5f3d5c9e8e",
+      "inputPresentationSha256": "4c3e2d5b044a3910cdf72ebce54756edb1d45d3f0d609329e6bc9fd21005caa1",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "分别按两种题设改字解释，不改原题。改得为去重在不用不义方式脱贫贱；删不重在因行仁道而陷贫贱也不背道。公开参考与两模型要点一致。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:57:01.451Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2019北京卷原题及完整材料"
+        },
+        {
+          "type": "reference_scan",
+          "title": "2019北京语文参考答案公开转载扫描第11—12页；原发布机关链未核实",
+          "url": "https://cdn.zizzs.com/zixunzhan/202310/29ce91f8-0d5e-474f-8271-3e404cca029a.pdf"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "按杨伯峻改得之为去之：贫穷与低微虽是人们厌恶的处境，但如果不能以正当途径摆脱它们，便不摆脱，不能为脱贫贱而违背仁义。\n按另一说删去不字：如果是因为遵循正道而得到、陷入贫穷低微的处境，就不离开这种处境，即宁可安于因守道而来的贫贱，也不背弃正道。这两种解释须分别立足各自改动后的句子，不能混为同一句直译。",
+          "inputSha256": "841e7f58fd7a15c1a782c9922aeeb8fee3b815382f25ef45a05565a1cd8c3925",
+          "inputContextSha256": "26abbd9ac989eb6290a01004f7a46a86ff7667ffc86357dcdf6ceb5f3d5c9e8e",
+          "inputPresentationSha256": "4c3e2d5b044a3910cdf72ebce54756edb1d45d3f0d609329e6bc9fd21005caa1",
+          "generatedAt": "2026-10-03T05:50:28.680Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/root-2019-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2019-reading-job.json"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "分别按两种题设改字解释，不改原题。改得为去重在不用不义方式脱贫贱；删不重在因行仁道而陷贫贱也不背道。公开参考与两模型要点一致。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "按第一种解读（“得之”改为“去之”，即“不以其道去之，不去也”）：贫穷和低贱是人人都厌恶的，但如果不用正当的方法去摆脱它，君子就不摆脱。意思是宁可安于贫贱，也不用不合仁道的手段去改变处境。\n\n按第二种解读（删去“不”字，即“以其道得之，不去也”）：贫穷和低贱是人人都厌恶的，但如果是因为遵循正道、坚守仁义而落到贫贱的境地，君子就不逃避、不离弃它。意思是因行道而得贫贱，君子坦然承受，不为摆脱贫贱而放弃道。\n\n两种解读文字处理不同，但都指向同一精神：君子对贫贱的去留以是否合乎仁道为标准，体现安贫守道。",
+          "inputSha256": "841e7f58fd7a15c1a782c9922aeeb8fee3b815382f25ef45a05565a1cd8c3925",
+          "inputContextSha256": "26abbd9ac989eb6290a01004f7a46a86ff7667ffc86357dcdf6ceb5f3d5c9e8e",
+          "inputPresentationSha256": "4c3e2d5b044a3910cdf72ebce54756edb1d45d3f0d609329e6bc9fd21005caa1",
+          "generatedAt": "2026-10-03T05:52:23.350425+00:00",
+          "uncertainties": [
+            "第二种解读中“以其道得之”的具体所指，学界表述不尽一致，此处按“因守道行仁而陷于贫贱”理解。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "分别按两种题设改字解释，不改原题。改得为去重在不用不义方式脱贫贱；删不重在因行仁道而陷贫贱也不背道。公开参考与两模型要点一致。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2019-reading-result.json",
+            "inputPromptSha256": "cb0c9aa45373044c01110312d6c4c57b093476582524a4dbe36ef6dc8fba42a8",
+            "responseStreamSha256": "b3983021dca357b319809e84bd20ad59ff017a309ffd516749fcd9113de5120b",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2019-sanwen:1",
+      "inputSha256": "4e7759008d1dbe02a42f44f67412e45c4030db30df8d0d596750bb6039524011",
+      "inputContextSha256": "c0564eba345a98dc0811d4cf230e1392733d5f0dbe34cd60d74192f169d91197",
+      "inputPresentationSha256": "eb93b0f2dcbbe27a7b7b79a5c72d635902fec5b7e8be4745904cc7277740664f",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "B。教育部重编国语辞典形胜条支持地理形势优越险要、山川壮阔优美；本文帝都语境侧重地理形势，不能只说外形优美。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:57:01.451Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2019北京卷原题及完整材料"
+        },
+        {
+          "type": "reference_scan",
+          "title": "2019北京语文参考答案公开转载扫描第11—12页；原发布机关链未核实",
+          "url": "https://cdn.zizzs.com/zixunzhan/202310/29ce91f8-0d5e-474f-8271-3e404cca029a.pdf"
+        },
+        {
+          "type": "dictionary",
+          "title": "教育部重编国语辞典：形胜",
+          "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=110681&la=0&powerMode=0"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "选 B。形胜说的是地理形势优越、险要或壮美，结合帝都及山势语境，不能仅解释成外形优美。后进是资历较浅的后辈，慷慨悲歌指激昂悲壮、有英雄气概，幽闲是清静闲适，均合语境。",
+          "inputSha256": "4e7759008d1dbe02a42f44f67412e45c4030db30df8d0d596750bb6039524011",
+          "inputContextSha256": "c0564eba345a98dc0811d4cf230e1392733d5f0dbe34cd60d74192f169d91197",
+          "inputPresentationSha256": "eb93b0f2dcbbe27a7b7b79a5c72d635902fec5b7e8be4745904cc7277740664f",
+          "generatedAt": "2026-10-03T05:50:28.680Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/root-2019-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2019-reading-job.json"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "B。教育部重编国语辞典形胜条支持地理形势优越险要、山川壮阔优美；本文帝都语境侧重地理形势，不能只说外形优美。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。“形胜”指地理位置优越、地势险要，下文引龚自珍诗写京畿一带“千山互长雄”“太行一臂怒趋东”的山川形势，正是此意，解作“外形优美”是望文生义。\nA项正确：“后进”指学识或资历较浅的后辈，文中说北京学界富于包容、能接纳后来者。\nC项正确：“慷慨悲歌”形容情绪激昂、悲壮高歌，有英雄气概，文中用来说明北京并非一味宁静。\nD项正确：“幽闲”在郁达夫句中指清静闲适，下文“士大夫的‘有闲’”可印证。",
+          "inputSha256": "4e7759008d1dbe02a42f44f67412e45c4030db30df8d0d596750bb6039524011",
+          "inputContextSha256": "c0564eba345a98dc0811d4cf230e1392733d5f0dbe34cd60d74192f169d91197",
+          "inputPresentationSha256": "eb93b0f2dcbbe27a7b7b79a5c72d635902fec5b7e8be4745904cc7277740664f",
+          "generatedAt": "2026-10-03T05:52:23.350425+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "B。教育部重编国语辞典形胜条支持地理形势优越险要、山川壮阔优美；本文帝都语境侧重地理形势，不能只说外形优美。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2019-reading-result.json",
+            "inputPromptSha256": "cb0c9aa45373044c01110312d6c4c57b093476582524a4dbe36ef6dc8fba42a8",
+            "responseStreamSha256": "b3983021dca357b319809e84bd20ad59ff017a309ffd516749fcd9113de5120b",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2019-sanwen:2",
+      "inputSha256": "9d1e80838b947ebe84eeeeaadc77fc32fdb766d0b7d4755fae8f95dfc5a9c804",
+      "inputContextSha256": "e2f6fc706bffc8adcd0fddcb983dfa7dcec36373a42d848a3a2ff707c645fdb9",
+      "inputPresentationSha256": "a721cc016d5cb1daa0f9f6fecb13e8efb57e8130044264dfef96038d48544708",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "完整材料、注释与准确标记下独立作答，逐题核读两模型全文，并与公开转载的参考扫描页对照；开放题允许合理不同表述。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:57:01.451Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2019北京卷原题及完整材料"
+        },
+        {
+          "type": "reference_scan",
+          "title": "2019北京语文参考答案公开转载扫描第11—12页；原发布机关链未核实",
+          "url": "https://cdn.zizzs.com/zixunzhan/202310/29ce91f8-0d5e-474f-8271-3e404cca029a.pdf"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "选 C。引用《四世同堂》侧重呈现胡同家庭关系中的宽容、体谅与和合，是说明北京文化的深；引用《北平的四季》展示旧时文人的审美情调，并与当代北京的活力形成对照，不能把两处都概括为说明北京之大。A、B、D均有相应的语句或写法依据。",
+          "inputSha256": "9d1e80838b947ebe84eeeeaadc77fc32fdb766d0b7d4755fae8f95dfc5a9c804",
+          "inputContextSha256": "e2f6fc706bffc8adcd0fddcb983dfa7dcec36373a42d848a3a2ff707c645fdb9",
+          "inputPresentationSha256": "a721cc016d5cb1daa0f9f6fecb13e8efb57e8130044264dfef96038d48544708",
+          "generatedAt": "2026-10-03T05:50:28.680Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/root-2019-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2019-reading-job.json"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "完整材料、注释与准确标记下独立作答，逐题核读两模型全文，并与公开转载的参考扫描页对照；开放题允许合理不同表述。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。引用《四世同堂》是在写“深”的部分，用来说明胡同、四合院中家庭与邻里的关系结构和“和合”文化，体现北京文化的历史纵深；引用《北平的四季》是在后文谈不同时代的人对北京季节情调的不同偏爱，带出今人更爱生气勃勃的北京之春。两处都不是为了说明北京之“大”。\nA项正确：作者强调北京与时俱进、有“犹在的活力”，并期待“明天”，可见其情感不止于怀旧。\nB项正确：“呼吸”把城市写成生命体，“重浊”见历史的厚重，“有力”见生命的活力。\nD项正确：“你会觉得”“你还未走进胡同”“你漫步于北京街头”等第二人称，拉近了与读者的距离，像在引导读者一路走、一路看，便于进入历史现场和生活情境。",
+          "inputSha256": "9d1e80838b947ebe84eeeeaadc77fc32fdb766d0b7d4755fae8f95dfc5a9c804",
+          "inputContextSha256": "e2f6fc706bffc8adcd0fddcb983dfa7dcec36373a42d848a3a2ff707c645fdb9",
+          "inputPresentationSha256": "a721cc016d5cb1daa0f9f6fecb13e8efb57e8130044264dfef96038d48544708",
+          "generatedAt": "2026-10-03T05:52:23.350425+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "完整材料、注释与准确标记下独立作答，逐题核读两模型全文，并与公开转载的参考扫描页对照；开放题允许合理不同表述。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2019-reading-result.json",
+            "inputPromptSha256": "cb0c9aa45373044c01110312d6c4c57b093476582524a4dbe36ef6dc8fba42a8",
+            "responseStreamSha256": "b3983021dca357b319809e84bd20ad59ff017a309ffd516749fcd9113de5120b",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2019-sanwen:3",
+      "inputSha256": "00d910236e7798571470e6987f1374eb541a6fde2b72083477fd3243ced18eec",
+      "inputContextSha256": "b7cb2b3b962f3542cbb9361560df2e4d3d76d6e86e42ff604ace1c0aba152ba9",
+      "inputPresentationSha256": "9e282cc4792b1dc19045407f2c6ddbee4ee5fe7d425a47d4bf6f571a3f69cf5b",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "B把深段的地理及历史纵深归入大。C养成比原文和谐的因果语气强，属整体语境的概括，不另增冲突答案。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:57:01.451Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2019北京卷原题及完整材料"
+        },
+        {
+          "type": "reference_scan",
+          "title": "2019北京语文参考答案公开转载扫描第11—12页；原发布机关链未核实",
+          "url": "https://cdn.zizzs.com/zixunzhan/202310/29ce91f8-0d5e-474f-8271-3e404cca029a.pdf"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "选 B。描写京畿山势、京城气象的森严，位于论深的段落，着眼于地理景观引发的历史沧桑感和文化纵深，并不是文章对大这一层面的具体阐述。A为空间尺度，C为人与城市协调的气度，D为学术包容，均在大这一部分展开。",
+          "inputSha256": "00d910236e7798571470e6987f1374eb541a6fde2b72083477fd3243ced18eec",
+          "inputContextSha256": "b7cb2b3b962f3542cbb9361560df2e4d3d76d6e86e42ff604ace1c0aba152ba9",
+          "inputPresentationSha256": "9e282cc4792b1dc19045407f2c6ddbee4ee5fe7d425a47d4bf6f571a3f69cf5b",
+          "generatedAt": "2026-10-03T05:50:28.680Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/root-2019-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2019-reading-job.json"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "B把深段的地理及历史纵深归入大。C养成比原文和谐的因果语气强，属整体语境的概括，不另增冲突答案。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。京畿一带的地理形势、西山给京城气象平添的“森严”，出现在“至于其‘深’”一段，是作者用来说明北京之“深”，即由山川形胜引发的世事沧桑之感和历史纵深，不属于“大”的层面。\nA项正确：前两段从出站后“呼吸顺畅”、马路广场“无不大”的空间印象写城市格局的阔大。\nC项正确：第三段写久住后感到的“内在”的大，提笼老人自得其乐的“安详宁静”与北京的“大”相和谐，可理解为这种“大”涵养了人的神情风度。\nD项正确：第四段写“大，即能包容”，北京学界、北大的大在于学术气度广大和文化精神的包容。",
+          "inputSha256": "00d910236e7798571470e6987f1374eb541a6fde2b72083477fd3243ced18eec",
+          "inputContextSha256": "b7cb2b3b962f3542cbb9361560df2e4d3d76d6e86e42ff604ace1c0aba152ba9",
+          "inputPresentationSha256": "9e282cc4792b1dc19045407f2c6ddbee4ee5fe7d425a47d4bf6f571a3f69cf5b",
+          "generatedAt": "2026-10-03T05:52:23.350425+00:00",
+          "uncertainties": [
+            "C项“养成”一词在原文中的对应表述是“与北京的‘大’和谐”，因果关系说得比原文更直接，但B项把“深”的内容归入“大”，错误更明确，故选B。"
+          ],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "B把深段的地理及历史纵深归入大。C养成比原文和谐的因果语气强，属整体语境的概括，不另增冲突答案。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2019-reading-result.json",
+            "inputPromptSha256": "cb0c9aa45373044c01110312d6c4c57b093476582524a4dbe36ef6dc8fba42a8",
+            "responseStreamSha256": "b3983021dca357b319809e84bd20ad59ff017a309ffd516749fcd9113de5120b",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2019-sanwen:4",
+      "inputSha256": "8dc3f4c85b61d13110d46adf01b36d207bdde12d83400371caf0b13d80176592",
+      "inputContextSha256": "6e15f10267adcf121c5765b605d97da9cdc670acb1a6cd3dd6e0dd2cbb18ef0d",
+      "inputPresentationSha256": "554d213e60b80958cad6aa77065681a5b229ebfe69aa85eea6b458e381fd5d02",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "核心为普通民居承载文化、家庭和合及其社会关系、走入日常生活感受活力。Claude价值不亚于故宫是评论性强化，不设成原文的量化比较或必答点。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:57:01.451Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2019北京卷原题及完整材料"
+        },
+        {
+          "type": "reference_scan",
+          "title": "2019北京语文参考答案公开转载扫描第11—12页；原发布机关链未核实",
+          "url": "https://cdn.zizzs.com/zixunzhan/202310/29ce91f8-0d5e-474f-8271-3e404cca029a.pdf"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "胡同人家是北京文化的保存者，理解北京不能只看皇城建筑和宏观山川，还要进入普通人的生活。四合院以具体空间呈现市民安分平和、有限依存而有节制呼应的人生境界；四世同堂中不同世代既保有自身文化又相互宽容体谅，这种和合还扩展为街坊邻里的秩序。普通民居如同故宫、天安门一样，保存凝结在砖石中的历史，是理解中国历史的实物材料。走进胡同、倾听市声人语，才能亲身体会融和的人情与古城仍在的活力。因此只有理解这些日常关系、历史积淀和现实生命，才称得上对北京文化有深入认识。",
+          "inputSha256": "8dc3f4c85b61d13110d46adf01b36d207bdde12d83400371caf0b13d80176592",
+          "inputContextSha256": "6e15f10267adcf121c5765b605d97da9cdc670acb1a6cd3dd6e0dd2cbb18ef0d",
+          "inputPresentationSha256": "554d213e60b80958cad6aa77065681a5b229ebfe69aa85eea6b458e381fd5d02",
+          "generatedAt": "2026-10-03T05:50:28.680Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/root-2019-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2019-reading-job.json"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "核心为普通民居承载文化、家庭和合及其社会关系、走入日常生活感受活力。Claude价值不亚于故宫是评论性强化，不设成原文的量化比较或必答点。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "原因可从以下几方面说明：\n\n一、胡同人家是北京文化的保存者。上文写到的皇城气象、宽阔的马路广场、西山形势、飞檐雕梁的楼宇，多是从外部得到的观感，只让人“想到”历史纵深；北京文化的内里，保存在胡同里普通市民的日常生活和感情之中，不走进去就只停留在表层。\n\n二、四合院是“有形呈现的人生境界”。它生动地展示着北京市民安分、平和的性情，以及彼此间“有限依存和有节制的呼应”的相处方式，这是北京人生活态度和精神气质的直接体现。\n\n三、胡同里蕴含着“和合”的文化秩序。如《四世同堂》所写，一家人各忠于自己的时代又不激烈拒绝别人的时代，各有各的文化又彼此宽容体谅；这种关系结构由家庭推广到街坊邻里，构成胡同秩序。这种包容并蓄的伦理，正是北京文化深层的东西。\n\n四、普通民居是“实物历史”。厚积于胡同、四合院中的文化是理解和描述中国历史的重要材料，每一座保存下来的民居都是“凝结于砖石的历史文化”，其价值不亚于故宫、天安门。\n\n因此，这句话既总结了上文对北京之“深”的论述，强调“深”是须细心体会的内在境界，要从市民生活中领略；也呼应了开头鹤见祐辅所说的应去“凝视那生息于此的几百万北京人的生活与感情”，并引出下文在胡同深处听市声、感受人情而有“如归”之感的内容。",
+          "inputSha256": "8dc3f4c85b61d13110d46adf01b36d207bdde12d83400371caf0b13d80176592",
+          "inputContextSha256": "6e15f10267adcf121c5765b605d97da9cdc670acb1a6cd3dd6e0dd2cbb18ef0d",
+          "inputPresentationSha256": "554d213e60b80958cad6aa77065681a5b229ebfe69aa85eea6b458e381fd5d02",
+          "generatedAt": "2026-10-03T05:52:23.350425+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "核心为普通民居承载文化、家庭和合及其社会关系、走入日常生活感受活力。Claude价值不亚于故宫是评论性强化，不设成原文的量化比较或必答点。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2019-reading-result.json",
+            "inputPromptSha256": "cb0c9aa45373044c01110312d6c4c57b093476582524a4dbe36ef6dc8fba42a8",
+            "responseStreamSha256": "b3983021dca357b319809e84bd20ad59ff017a309ffd516749fcd9113de5120b",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2019-sanwen:5",
+      "inputSha256": "ba0b6287004e5606c4873fbeea9a1cc58cebebf23a80e0196ab3c18a9b3881b9",
+      "inputContextSha256": "9db7f548587a7ff3a1c9fd70ee13bd3b483c8d77c7bac65b009a5068fb31b004",
+      "inputPresentationSha256": "b97fe47a40520ee7c4814e5e32964f7fb2f57ad01e4448cebe87a6148f5647ba",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两份均为虚构教学示例，完成由细节到文化精神的认识。Claude称不写在公约里的秩序比公约更牢靠，是绝对化的个人判断，不能泛化为公共治理事实；默认Astra兼顾人情与边界的版本。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:57:01.451Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2019北京卷原题及完整材料"
+        },
+        {
+          "type": "reference_scan",
+          "title": "2019北京语文参考答案公开转载扫描第11—12页；原发布机关链未核实",
+          "url": "https://cdn.zizzs.com/zixunzhan/202310/29ce91f8-0d5e-474f-8271-3e404cca029a.pdf"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "示例：傍晚，社区修鞋的小摊收工，老人把摊前的长凳留在原处，等散步的人歇脚；下雨时，附近店主又会把凳子搬进檐下。我起初只把它当作方便休息的物件，后来才发现，小小的凳子记录着人与人之间不必明说的信任：有人愿意提供便利，也有人懂得珍惜、接续这份照顾。社区的温暖因此不仅来自整洁的道路和新刷的墙面，还来自这种有分寸的相互关照。当然，亲切不能替代规则，凳子仍应留出通行空间。由一张凳子看进去，我理解了好的公共生活既需要人情，也需要对他人边界的尊重。",
+          "inputSha256": "ba0b6287004e5606c4873fbeea9a1cc58cebebf23a80e0196ab3c18a9b3881b9",
+          "inputContextSha256": "9db7f548587a7ff3a1c9fd70ee13bd3b483c8d77c7bac65b009a5068fb31b004",
+          "inputPresentationSha256": "b97fe47a40520ee7c4814e5e32964f7fb2f57ad01e4448cebe87a6148f5647ba",
+          "generatedAt": "2026-10-03T05:50:28.680Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/root-2019-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2019-reading-job.json"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "两份均为虚构教学示例，完成由细节到文化精神的认识。Claude称不写在公约里的秩序比公约更牢靠，是绝对化的个人判断，不能泛化为公共治理事实；默认Astra兼顾人情与边界的版本。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "示例：\n\n我住的老小区门口，有一个修车摊。摊主是位六十多岁的师傅，一只旧木箱，一个打气筒，一块写着“打气免费”的硬纸板，一摆就是许多年。清晨上学的孩子车胎瘪了，他三两下补好，常常摆摆手说“下回再给”；傍晚收了摊，木箱就成了棋桌，邻居们围着看棋、拌嘴，谁家老人几天没露面，这里总有人最先问起。\n\n从这个小摊看过去，我渐渐读懂了我们这个社区。它楼旧路窄，没有气派的大门和整齐的绿化，却有一种靠信任和人情维系的秩序：钱可以先欠着，钥匙可以托邻居保管，谁家有事喊一声就有人应。这种秩序不写在任何公约里，却比公约更牢靠。\n\n如今小区正在改造，外墙刷新了，快递柜和充电桩也装上了，生活确实方便了许多。可我想，一个社区真正的质量，不只在硬件的新旧，更在人与人之间是否还留有这样的温度。改造应当更新的是设施，留住的是修车摊旁的那份熟络和守望。那块“打气免费”的纸板，在我看来就是这个社区最朴素的精神标识。",
+          "inputSha256": "ba0b6287004e5606c4873fbeea9a1cc58cebebf23a80e0196ab3c18a9b3881b9",
+          "inputContextSha256": "9db7f548587a7ff3a1c9fd70ee13bd3b483c8d77c7bac65b009a5068fb31b004",
+          "inputPresentationSha256": "b97fe47a40520ee7c4814e5e32964f7fb2f57ad01e4448cebe87a6148f5647ba",
+          "generatedAt": "2026-10-03T05:52:23.350425+00:00",
+          "uncertainties": [
+            "原题未明确字数要求，此示例按该分值微写作的常见篇幅（约350字）写成；示例内容为原创虚构情境，未涉及任何学校信息。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "两份均为虚构教学示例，完成由细节到文化精神的认识。Claude称不写在公约里的秩序比公约更牢靠，是绝对化的个人判断，不能泛化为公共治理事实；默认Astra兼顾人情与边界的版本。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2019-reading-result.json",
+            "inputPromptSha256": "cb0c9aa45373044c01110312d6c4c57b093476582524a4dbe36ef6dc8fba42a8",
+            "responseStreamSha256": "b3983021dca357b319809e84bd20ad59ff017a309ffd516749fcd9113de5120b",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2019-weixiezuo:1",
+      "inputSha256": "a7540cb731d48d3ee6aabdc7a69d164f689c4da639d53fd2c0c950b38dc007e1",
+      "inputContextSha256": "a048975f25fe9060613fa293dd249dad8234d8c921de302848445fa0bf6ad44f",
+      "inputPresentationSha256": "decacdd29698dddd4f48e849421fe82b89bf02e29e9df61a3edb7090d877d8ad",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "题限为150字左右，非不超过150。Astra正文153非空白字符，Claude173；Claude偏长应压缩，但不伪称违反硬性上限。《故乡》结尾人物、船行及路的意象已对公开原著；模型转述不作逐字引语。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:57:01.451Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2019北京卷原题及完整材料"
+        },
+        {
+          "type": "reference_scan",
+          "title": "2019北京语文参考答案公开转载扫描第11—12页；原发布机关链未核实",
+          "url": "https://cdn.zizzs.com/zixunzhan/202310/29ce91f8-0d5e-474f-8271-3e404cca029a.pdf"
+        },
+        {
+          "type": "source_text",
+          "title": "鲁迅故乡公开原著文本",
+          "url": "https://zh.wikisource.org/zh-hans/%E6%95%85%E4%B9%A1"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "《故乡》的结尾令我难忘。离乡的船上，我想到宏儿与水生，希望他们不再重复上一代隔膜的生活，眼前又浮现海边沙地与金黄圆月。道路本来没有，走的人多了便有了。这个结尾没有许诺未来必然光明，却把希望交给人的行动。它启发我：面对人与人的隔阂，不能只怀念过去或等待改变；愿意理解他人，并迈出一步，才可能为后来者开出新路。",
+          "inputSha256": "a7540cb731d48d3ee6aabdc7a69d164f689c4da639d53fd2c0c950b38dc007e1",
+          "inputContextSha256": "a048975f25fe9060613fa293dd249dad8234d8c921de302848445fa0bf6ad44f",
+          "inputPresentationSha256": "decacdd29698dddd4f48e849421fe82b89bf02e29e9df61a3edb7090d877d8ad",
+          "generatedAt": "2026-10-03T05:50:28.786Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/root-2019-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2019-writing-job.json"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "题限为150字左右，非不超过150。Astra正文153非空白字符，Claude173；Claude偏长应压缩，但不伪称违反硬性上限。《故乡》结尾人物、船行及路的意象已对公开原著；模型转述不作逐字引语。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【示例】《故乡》的结尾令我难忘。“我”乘船离开故乡，朦胧中眼前展开一片海边碧绿的沙地，天上挂着一轮金黄的圆月，由此想到：希望本无所谓有，无所谓无，正如地上的路，本没有路，走的人多了，也便成了路。此前闰土的麻木、人与人之间的“厚障壁”令人压抑，结尾却在悲凉中透出亮色。它启迪我：希望不靠空等，也不靠偶像，要靠一代代人脚踏实地去走；路是走出来的，新生活也是。\n\n【说明】本题须点明篇目、复述结尾内容、说明印象深刻并受启迪的理由，三者齐备，150字左右。",
+          "inputSha256": "a7540cb731d48d3ee6aabdc7a69d164f689c4da639d53fd2c0c950b38dc007e1",
+          "inputContextSha256": "a048975f25fe9060613fa293dd249dad8234d8c921de302848445fa0bf6ad44f",
+          "inputPresentationSha256": "decacdd29698dddd4f48e849421fe82b89bf02e29e9df61a3edb7090d877d8ad",
+          "generatedAt": "2026-10-03T05:54:12.558833+00:00",
+          "uncertainties": [
+            "开放性题目，答案不唯一，也可选《药》《孔乙己》《阿Q正传》等篇的结尾；结尾语句为凭记忆转述，非逐字引用。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "题限为150字左右，非不超过150。Astra正文153非空白字符，Claude173；Claude偏长应压缩，但不伪称违反硬性上限。《故乡》结尾人物、船行及路的意象已对公开原著；模型转述不作逐字引语。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2019-writing-result.json",
+            "inputPromptSha256": "86b92df9e2e07281dcf187b05601515240aa4ff212f590e84cc149459dbfdde4",
+            "responseStreamSha256": "e54899fc4cc30562c2b561ca1d0e2f4b5226727f0e0ee213cb01b018f2f4bd48",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2019-weixiezuo:2",
+      "inputSha256": "cb496afd70104d4dc4a63c2c73b9abb94ecd1e893bc7bce2cbd10ed2a74f6d56",
+      "inputContextSha256": "ea4e37cb35e213c4a2fc6576b117309ae940d76dd2130de8b5c37b66c743239d",
+      "inputPresentationSha256": "bd563753e5a92aa197f304724633662cc77a1e3894ec74a8555a7b188559ce44",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "题限150字左右。Astra155非空白字符，Claude167；默认较紧凑Astra。Claude精确天数及逐件武器为原始独立输出，未逐条用原版核实，不能把这份模型文本当作原著逐字证据。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:57:01.451Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2019北京卷原题及完整材料"
+        },
+        {
+          "type": "reference_scan",
+          "title": "2019北京语文参考答案公开转载扫描第11—12页；原发布机关链未核实",
+          "url": "https://cdn.zizzs.com/zixunzhan/202310/29ce91f8-0d5e-474f-8271-3e404cca029a.pdf"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "《老人与海》中的圣地亚哥内心强大。长期没有收获，他仍独自出海；大马林鱼拖着小船前行，他忍受伤痛，与饥饿和疲惫抗争；归航时鲨鱼不断来袭，他接连用鱼叉、刀和船桨抵抗，直至猎物只剩骨架。他会疲倦，也懂得遗憾，却不因此放弃尊严。内心强大不是保证胜利，而是在承认自身有限之后，仍认真选择、尽力行动，不把挫折变成自我否定。",
+          "inputSha256": "cb496afd70104d4dc4a63c2c73b9abb94ecd1e893bc7bce2cbd10ed2a74f6d56",
+          "inputContextSha256": "ea4e37cb35e213c4a2fc6576b117309ae940d76dd2130de8b5c37b66c743239d",
+          "inputPresentationSha256": "bd563753e5a92aa197f304724633662cc77a1e3894ec74a8555a7b188559ce44",
+          "generatedAt": "2026-10-03T05:50:28.786Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/root-2019-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2019-writing-job.json"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "题限150字左右。Astra155非空白字符，Claude167；默认较紧凑Astra。Claude精确天数及逐件武器为原始独立输出，未逐条用原版核实，不能把这份模型文本当作原著逐字证据。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【示例】圣地亚哥（《老人与海》）。他连续八十四天没捕到鱼，被人看作倒了霉运，却毫不气馁，第八十五天独自驶向远海。与大马林鱼周旋两天两夜，手被钓索勒得血肉模糊，左手抽筋，他仍咬牙不松手；归途鲨鱼一再袭来，他用鱼叉、绑着刀的船桨、短棍、舵把搏斗到底。最后只拖回一副鱼骨，他却安然睡去，梦见狮子。“人可以被毁灭，但不能被打败”，这就是他内心的强大。\n\n【说明】本题须写出人物姓名，并用具体情节呈现“内心强大”的表现，150字左右。",
+          "inputSha256": "cb496afd70104d4dc4a63c2c73b9abb94ecd1e893bc7bce2cbd10ed2a74f6d56",
+          "inputContextSha256": "ea4e37cb35e213c4a2fc6576b117309ae940d76dd2130de8b5c37b66c743239d",
+          "inputPresentationSha256": "bd563753e5a92aa197f304724633662cc77a1e3894ec74a8555a7b188559ce44",
+          "generatedAt": "2026-10-03T05:54:12.558833+00:00",
+          "uncertainties": [
+            "开放性题目，也可选江姐、许云峰（《红岩》）或孙少平、孙少安（《平凡的世界》）等人物。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "题限150字左右。Astra155非空白字符，Claude167；默认较紧凑Astra。Claude精确天数及逐件武器为原始独立输出，未逐条用原版核实，不能把这份模型文本当作原著逐字证据。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2019-writing-result.json",
+            "inputPromptSha256": "86b92df9e2e07281dcf187b05601515240aa4ff212f590e84cc149459dbfdde4",
+            "responseStreamSha256": "e54899fc4cc30562c2b561ca1d0e2f4b5226727f0e0ee213cb01b018f2f4bd48",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2019-weixiezuo:3",
+      "inputSha256": "a559af96408f897b617f9b0c9729e10886d89e60fb12951e778ab6150122c318",
+      "inputContextSha256": "237e19b53544af9e07bf5ae2087a1bad82c913604c969cf1ab6ababd521a011f",
+      "inputPresentationSha256": "cfc275ec009cf0eb29dca25766f34d54d7f8bcb42c823e1c013f0d951f58195a",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "含标题正文Astra111、Claude141非空白字符，均不超过150。翠翠不懂愁苦仅宜指早期天真状态，不能笼统覆盖经历离别后的全书人物；赞美与虚构抒情不作传记事实。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:57:01.451Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2019北京卷原题及完整材料"
+        },
+        {
+          "type": "reference_scan",
+          "title": "2019北京语文参考答案公开转载扫描第11—12页；原发布机关链未核实",
+          "url": "https://cdn.zizzs.com/zixunzhan/202310/29ce91f8-0d5e-474f-8271-3e404cca029a.pdf"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "翠翠，你把心放在清溪里洗过。渡船来去，你守着爷爷，也守着不肯轻易说出的爱。黄昏的风吹动竹林，你听见远处的歌，眼里便有了明亮的等待。生活把离别留给你，你没有让怨恨搅浑那一汪水。山城的月照着渡口，也照着你善良、羞涩而执着的心。",
+          "inputSha256": "a559af96408f897b617f9b0c9729e10886d89e60fb12951e778ab6150122c318",
+          "inputContextSha256": "237e19b53544af9e07bf5ae2087a1bad82c913604c969cf1ab6ababd521a011f",
+          "inputPresentationSha256": "cfc275ec009cf0eb29dca25766f34d54d7f8bcb42c823e1c013f0d951f58195a",
+          "generatedAt": "2026-10-03T05:50:28.786Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/root-2019-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2019-writing-job.json"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "含标题正文Astra111、Claude141非空白字符，均不超过150。翠翠不懂愁苦仅宜指早期天真状态，不能笼统覆盖经历离别后的全书人物；赞美与虚构抒情不作传记事实。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【示例】\n赞翠翠\n茶峒的溪水养大了你，\n风日里一双眸子清明如水晶。\n你像山头的小黄麂，\n见了生人便举步欲逃，\n不懂愁苦，更不懂算计。\n渡船来去，你守着祖父，也守着过渡人；\n祖父去了，你不怨谁，\n只守着白塔与渡口，\n等那个在梦里把你歌声浮起的人——\n也许明天回来。\n翠翠，你的心是一湾清溪，\n照得见青山，也照得见人心。\n\n【说明】赞美对象为《边城》中的翠翠，特点是天真纯净、善良无机心、对爱情执着守候。采用诗歌形式，约140字，不超过150字。",
+          "inputSha256": "a559af96408f897b617f9b0c9729e10886d89e60fb12951e778ab6150122c318",
+          "inputContextSha256": "237e19b53544af9e07bf5ae2087a1bad82c913604c969cf1ab6ababd521a011f",
+          "inputPresentationSha256": "cfc275ec009cf0eb29dca25766f34d54d7f8bcb42c823e1c013f0d951f58195a",
+          "generatedAt": "2026-10-03T05:54:12.558833+00:00",
+          "uncertainties": [
+            "开放性题目，也可选《红楼梦》中的林黛玉、香菱、晴雯等人物，言之成理即可。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "含标题正文Astra111、Claude141非空白字符，均不超过150。翠翠不懂愁苦仅宜指早期天真状态，不能笼统覆盖经历离别后的全书人物；赞美与虚构抒情不作传记事实。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2019-writing-result.json",
+            "inputPromptSha256": "86b92df9e2e07281dcf187b05601515240aa4ff212f590e84cc149459dbfdde4",
+            "responseStreamSha256": "e54899fc4cc30562c2b561ca1d0e2f4b5226727f0e0ee213cb01b018f2f4bd48",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2019-dazuowen:1",
+      "inputSha256": "bdea87c9a576d7b1ff657adc898baa0e43449decf07f82cab1c233e86c09ca2b",
+      "inputContextSha256": "116182464ed7a513ee20958d5486a1d9a664f8ceb15f5ba0a0e464e1cdc7b67f",
+      "inputPresentationSha256": "c81cdae20a7ed04908a889486bb976a0201411886216283b852d6080c738ab36",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两篇正文分别895与824汉字，均超过700。校史资料支持抗战迁徙艰苦办学的一般事实；Claude把佛教催生宋明理学作单因果、将三千余里泛指全部联大师生、把民族性格称为本能均过度概括，楚辞与微积分同场景也未核实。保留原文附评，不采这些细节为史实；默认Astra更审慎的论证。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:57:01.451Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2019北京卷原题及完整材料"
+        },
+        {
+          "type": "reference_scan",
+          "title": "2019北京语文参考答案公开转载扫描第11—12页；原发布机关链未核实",
+          "url": "https://cdn.zizzs.com/zixunzhan/202310/29ce91f8-0d5e-474f-8271-3e404cca029a.pdf"
+        },
+        {
+          "type": "source_text",
+          "title": "清华大学校史馆：西南联大抗战办学",
+          "url": "https://xsg.tsinghua.edu.cn/info/1003/1284.htm"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "文明的韧性\n\n一根枝条经风而不折，靠的不是绝不弯曲，而是在弯曲之后仍能向光生长。文明的韧性也是如此：它既意味着保存足以辨认自身的精神联系，也意味着在新的处境中调整表达、吸收经验、修正不足。只有坚守而不能更新，容易僵化；只有变动而失去记忆，又会漂流。中华文明绵延至今的力量，正在这两者不断对话之中。\n\n语言文字让这种韧性变得可见。从古代典籍到今天的日常书写，汉字把相隔久远的人连接起来。我们读一首古诗，能够与陌生时代的人共享对故乡、亲情或生命的感受；而文字又没有停在过去。白话文的发展，使更广泛的人能够用较接近日常生活的语言表达思想，新的科学概念和社会经验也不断进入汉语。表达方式变了，理解世界、交流情感的能力却因此获得生长。可见，承续传统不等于把传统封存在一种固定形式里，更新也不必以割断来路为代价。\n\n文明的韧性还表现为面对异质经验时的消化能力。历史上的佛教传入中国，经历翻译、阐释以及与本土思想生活的长期互动，并非原样搬来便告完成。新的艺术形态、思想讨论由此产生，也与原有传统发生复杂的磨合。这说明文明的生命力不能只靠拒绝外来事物来证明。能够辨别、能够吸收，并在自身生活中重新创造，才使交流转化为内在力量。当然，开放也不等于照单全收；对于任何观念，都应以事实、理性和人的实际处境加以检验。\n\n真正考验韧性的，往往是危机。战争可能打断日常生活，毁坏学校和书籍，却未必能截断求知与育人的努力。抗战时期，师生辗转迁徙，在艰苦条件下继续办学，西南联合大学便是其中令人铭记的一例。值得珍视的不是苦难本身，而是人们在苦难中仍守护课堂、研究和人格的选择。若只赞叹承受力，却不追问如何减少灾难、改善制度和保护普通人，就把韧性误解成了无限忍耐。文明之所以能续接，既靠承担，也靠从损失中学习。\n\n今天谈民族复兴，更应把这种能力落实在具体生活中。保护古老街区，需要保存历史记忆，也需要改善居民生活；传承传统工艺，需要尊重技艺，也需要让新的使用者理解其价值；发展科学教育，需要学习世界，也需要立足现实问题独立探索。这些事情没有一劳永逸的答案，却共同要求我们既不因困难而放弃，也不以守旧代替坚守。\n\n文明不是一件完成后便可陈列的器物，而是无数人接续进行的生活。它的韧性，存在于一代代人保存记忆、辨别得失、创造新路的行动里。风雨仍会到来，我们所能做的，是让根扎得更深，让枝条伸得更开，并努力使后来者站在比我们更好的土地上。",
+          "inputSha256": "bdea87c9a576d7b1ff657adc898baa0e43449decf07f82cab1c233e86c09ca2b",
+          "inputContextSha256": "116182464ed7a513ee20958d5486a1d9a664f8ceb15f5ba0a0e464e1cdc7b67f",
+          "inputPresentationSha256": "c81cdae20a7ed04908a889486bb976a0201411886216283b852d6080c738ab36",
+          "generatedAt": "2026-10-03T05:50:28.786Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/root-2019-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2019-writing-job.json"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "两篇正文分别895与824汉字，均超过700。校史资料支持抗战迁徙艰苦办学的一般事实；Claude把佛教催生宋明理学作单因果、将三千余里泛指全部联大师生、把民族性格称为本能均过度概括，楚辞与微积分同场景也未核实。保留原文附评，不采这些细节为史实；默认Astra更审慎的论证。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "文明的韧性\n\n竹子在狂风里弯到贴地，风过之后，又一寸一寸直起身来。它不似玻璃那样坚硬易碎，也不似泥土那样随方就圆——柔而不弱，坚而不脆，这便是韧。回望五千年，中华文明走的正是一条竹子的路：屡经风雨而不折，历尽劫波而常新。\n\n文明的韧性，首先在于根扎得深。汉字是这条根上最粗壮的一支。从甲骨上的刻痕到青铜上的铭文，从竹简、绢帛到今天的屏幕，书写的材料换了又换，字的血脉却从未中断。秦始皇“书同文”，使天南地北口音各异的人能读同一卷书；永嘉南渡、靖康之变，政权可以倾覆，衣冠可以南迁，而只要方块字还在，《诗经》里的“岂曰无衣”就仍能被两千多年后的少年读懂。根在，纵使枝叶尽折，春来依旧发芽。\n\n文明的韧性，还在于能弯而不断，善于吸纳。韧不是僵硬地拒绝变化。佛教东来，没有冲垮本土思想，反而化出了禅宗，催生了宋明理学；胡服骑射、胡琴胡旋，一一融入中原的日常；北魏孝文帝改汉姓、习汉礼，清代的君主捧读四书五经。外来的风雨在这里不是被简单挡回去，而是被消化成养分。正因为有这份“海纳百川”的柔软，才有了“多元一体”的坚实。\n\n文明的韧性，更在于危难关头人的挺立。一种文明终究活在人身上。司马迁受辱而成《史记》，文天祥身陷囹圄而歌《正气》；抗战烽火中，西南联大的师生跋涉三千余里，在铁皮屋顶下、在警报声的间隙里讲授《楚辞》与微积分，“刚毅坚卓”四字，写尽了弦歌不辍的骨气。近代百年，文明几乎被逼到悬崖边上，可五四的青年喊出了“外争主权，内除国贼”，一代代人在废墟上重新立起了国家。“天行健，君子以自强不息”，这不是纸上的格言，而是刻进民族性格里的本能。\n\n有人或许会问：韧，会不会只是忍，只是守旧？不然。忍是被动的承受，韧则是蓄力之后的回弹；守旧是不肯弯，韧却是弯下之后还能向上生长。今天我们简化了汉字，用上了拼音和输入法，汉字反而在信息时代焕发新生，便是明证。\n\n如今，民族复兴行至中途，前路仍有激流险滩：技术的封锁，观念的碰撞，发展的难题。越是此时，越需要激发文明的韧性——既守住文化的根，又保有开放的胸怀；既耐得住长久的寂寞，又敢在关键处奋力一跃。作为青年，我们不必说大话，把眼前的书读透，把手中的事做实，在挫折面前多撑一会儿，便是在为这根长竹添上新的一节。\n\n风还会来，竹仍会弯。但只要根在、节在、向上之心在，它终将直起身来，指向更高的天空。\n\n【说明】议论文，约1000字。中心论点：中华文明柔而不弱、坚而不脆，其韧性体现在根基深厚（语言文字）、善于吸纳（思想文化）、人在危难时的挺立（历史与品格）三方面，复兴之路更需激发这种韧性。",
+          "inputSha256": "bdea87c9a576d7b1ff657adc898baa0e43449decf07f82cab1c233e86c09ca2b",
+          "inputContextSha256": "116182464ed7a513ee20958d5486a1d9a664f8ceb15f5ba0a0e464e1cdc7b67f",
+          "inputPresentationSha256": "c81cdae20a7ed04908a889486bb976a0201411886216283b852d6080c738ab36",
+          "generatedAt": "2026-10-03T05:54:12.558833+00:00",
+          "uncertainties": [
+            "作文为原创示例，立意与选材不唯一；原题为二选一，此处按要求两题均作答。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "两篇正文分别895与824汉字，均超过700。校史资料支持抗战迁徙艰苦办学的一般事实；Claude把佛教催生宋明理学作单因果、将三千余里泛指全部联大师生、把民族性格称为本能均过度概括，楚辞与微积分同场景也未核实。保留原文附评，不采这些细节为史实；默认Astra更审慎的论证。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2019-writing-result.json",
+            "inputPromptSha256": "86b92df9e2e07281dcf187b05601515240aa4ff212f590e84cc149459dbfdde4",
+            "responseStreamSha256": "e54899fc4cc30562c2b561ca1d0e2f4b5226727f0e0ee213cb01b018f2f4bd48",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2019-dazuowen:2",
+      "inputSha256": "d0df05f027dba8399d841a8d8d8a9f5068cf16c4e0e75d52c77f67c3f0bac39a",
+      "inputContextSha256": "302ac519859803ee50b4637aeffa4129a17a9461685515bb9be4df7f0e449657",
+      "inputPresentationSha256": "46a7a4e846d0a374540e53b92090401069edd846eec15044f7e762dbf325b3fe",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两篇正文分别899与848汉字，均超过700。均为题设虚构记叙文，真实第一人称经历不适用。两篇均将十月庆祝置于未来，没有以高考前视角冒称亲历国庆庆典。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:57:01.451Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2019北京卷原题及完整材料"
+        },
+        {
+          "type": "reference_scan",
+          "title": "2019北京语文参考答案公开转载扫描第11—12页；原发布机关链未核实",
+          "url": "https://cdn.zizzs.com/zixunzhan/202310/29ce91f8-0d5e-474f-8271-3e404cca029a.pdf"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "2019的色彩\n\n我想把2019年涂成蓝色。不是一笔抹匀的蓝，而是一张旧图纸边缘泛白、新墨迹仍在延伸的蓝。\n\n五月的一个周末，我陪外公整理书柜。纸箱底下压着一卷图纸，橡皮筋已经发脆，刚碰到便断成两截。外公把它慢慢铺在餐桌上，用茶杯压住翘起的四角。蓝底上的白线层层叠叠，像一座尚未醒来的城市。我只认出右下角那几个已经褪色的字：设计修改。\n\n“这也是你画的？”我问。外公点头，把手指停在一道折痕旁。他年轻时在工厂做技术工作，这张图是他当年留作纪念的副本。“后来还改过好几次。这里，装配时才发现不方便。”他笑了一下，“纸上画得通，不算真的通。”\n\n窗外的风掀起图纸一角，我急忙按住。外公的手背布满细纹，指尖却准确地沿着线条移动，仿佛又回到了某个灯光下的工作台。那一瞬间，我忽然觉得，课本里的国家建设并不只是远处的宏大叙述，也藏在一张普通图纸反复擦改的痕迹里。\n\n那时，学校正在准备纪念五四运动一百周年的活动。我们小组要做一块展板，我原先想把一百年来的重要年份写满，再配几句响亮的话。看着图纸，我改变了主意：能不能让参观的人看到，青年怎样把自己的问题交给现实回答？\n\n我向外公借图纸拍照。他却先问：“你自己的那一块呢？”我有些发窘。桌上堆着复习资料，书包里还放着我们做了一半的小装置：用简单材料演示雨水如何被收集。它上次展示时漏水了，我一直想换个角度拍照，把裂缝遮过去。\n\n我把装置拿出来。外公没有替我修，只递来一个盆。水慢慢灌进去，从接缝处渗出，落在蓝色塑料板上。我们蹲在桌边，看着那几滴水。我忽然笑了：外公当年需要修改的地方，和我今天想藏住的裂缝，原来都在提醒同一件事——事情做得怎样，要让实际结果说话。\n\n后来，我和同学重新调整接口，在展板上保留了失败的照片。展板的底色是蓝的，一边是外公的旧图纸，一边是我们画的新草图。有人经过，指着漏水照片问为什么不删掉。我回答：“因为下一张，就是从这里开始的。”说完这句话，我才觉得，那些关于探索与进步的词有了可以握住的分量。\n\n临近高考，我常在傍晚抬头看窗外。天空由浅蓝渐渐沉下去，楼里的灯一盏盏亮起。共和国七十周年的庆祝还在前方，我也即将走出熟悉的校园。我不知道自己以后会画出什么样的图纸，但愿意从眼前这道尚未解好的题、这处需要承认和修补的裂缝开始。\n\n2019年的蓝色，便这样留在我的记忆里。它有旧纸的温度，也有未完成的辽阔。那天收好图纸时，我在它旁边放了一张空白的蓝色卡纸。外公问我准备画什么，我说：“还没想好。”他笑了，替我把桌上的灯又拧亮了一点。",
+          "inputSha256": "d0df05f027dba8399d841a8d8d8a9f5068cf16c4e0e75d52c77f67c3f0bac39a",
+          "inputContextSha256": "302ac519859803ee50b4637aeffa4129a17a9461685515bb9be4df7f0e449657",
+          "inputPresentationSha256": "46a7a4e846d0a374540e53b92090401069edd846eec15044f7e762dbf325b3fe",
+          "generatedAt": "2026-10-03T05:50:28.786Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/root-2019-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2019-writing-job.json"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "两篇正文分别899与848汉字，均超过700。均为题设虚构记叙文，真实第一人称经历不适用。两篇均将十月庆祝置于未来，没有以高考前视角冒称亲历国庆庆典。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "2019的色彩\n\n如果要给2019年涂上一种颜色，我会毫不犹豫地蘸满红色。\n\n这一年的红，最先是试卷上的红。一月，测验卷发下来，数学卷上的红叉像一片扎眼的荆棘。我把卷子揉进书包，回家时闷着头不说话。爷爷正蹲在院子里刷那扇老木门，小刷子一下一下，朱红的漆在冬日的阳光里亮得晃眼。\n\n“又刷？去年不是才刷过吗？”我没好气地问。\n\n“今年不一样。”爷爷头也不抬，“今年我七十，国家也七十，门得鲜亮点儿。”\n\n爷爷叫建国，生在1949年的秋天。他当了一辈子油漆工，年轻时跟着师傅修缮过古建，常说自己“给老城楼的柱子上过色”。他的指甲缝里永远留着洗不净的红。我小时候嫌那双手脏，不肯让他牵。\n\n那天他看见我书包里露出的卷子角，抽出来抹平，眯着眼看了半天，说：“红的多，好啊。底子上哪儿不平，一道红就给你标出来了。我们刷漆，最怕的不是有疤，是看不见疤。”他把刷子递给我，“来，刷两下。”\n\n我接过刷子。漆很稠，带着一股冲鼻的气味，刷上去却出奇地顺滑。木门上旧的裂纹先被腻子填平，再覆上一层新红，一层压着一层。爷爷说，这门刷过十几遍了，每一层红底下都有上一层。我忽然觉得，那些红叉好像没那么刺眼了。\n\n五月四日，学校在操场上举行纪念五四运动一百周年的成人仪式。清晨有些凉，团旗和国旗在风里哗啦啦地响，红得像是要烧起来。校长念起一百年前的那些名字，说他们走上街头时，许多人也不过二十上下。我们举起右拳宣誓，我听见自己的声音混在几百个声音里，有点抖，却很响。身旁的同桌眼眶红了，我的脸也烫着。那一刻我才明白，红色原来不只是挂在墙上的颜色，它会从胸口里涌上来。\n\n晚上回家，我把错题本摊开，用红笔一道一道重新订正。爷爷戴着老花镜在旁边看报，时不时瞄我一眼，什么也不说，只把一杯泡了红枣的水推到我手边。\n\n六月的考场外，校门口挤满了送考的人。我一眼就看见了爷爷——他穿了件大红的T恤，是妈妈给他买的，胸口印着“旗开得胜”，在他瘦削的身上晃晃荡荡，有点滑稽。他不好意思地扯了扯衣角，朝我伸出手。那只手粗糙，温热，指甲缝里还是那抹洗不掉的红。这一回，我紧紧握住了它。\n\n“去吧，”他说，“等十月，咱爷俩一块儿看阅兵。”\n\n我走进考场，回头望去，人群里那一点红格外醒目，像院里新刷的门，像操场上的旗，也像一百年前那群年轻人胸膛里的火。\n\n2019的色彩，是红。它是一位老人七十年的本色，是一个国家七十年的底色，也是我十八岁这一年，刚刚涂上去的、还带着潮气的第一层新漆。\n\n【说明】记叙文，约1000字。以“红”为线索，串起试卷的红叉、爷爷刷门的红漆、五四成人仪式的旗帜、送考的红T恤，把个人成长与五四百年、共和国七十华诞相联系，综合运用记叙、描写、抒情。",
+          "inputSha256": "d0df05f027dba8399d841a8d8d8a9f5068cf16c4e0e75d52c77f67c3f0bac39a",
+          "inputContextSha256": "302ac519859803ee50b4637aeffa4129a17a9461685515bb9be4df7f0e449657",
+          "inputPresentationSha256": "46a7a4e846d0a374540e53b92090401069edd846eec15044f7e762dbf325b3fe",
+          "generatedAt": "2026-10-03T05:54:12.558833+00:00",
+          "uncertainties": [
+            "作文为原创虚构示例，色彩与立意的选择不唯一；原题为二选一，此处按要求两题均作答。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "两篇正文分别899与848汉字，均超过700。均为题设虚构记叙文，真实第一人称经历不适用。两篇均将十月庆祝置于未来，没有以高考前视角冒称亲历国庆庆典。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2019.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2019-writing-result.json",
+            "inputPromptSha256": "86b92df9e2e07281dcf187b05601515240aa4ff212f590e84cc149459dbfdde4",
+            "responseStreamSha256": "e54899fc4cc30562c2b561ca1d0e2f4b5226727f0e0ee213cb01b018f2f4bd48",
+            "stage": "independent"
+          }
+        }
+      }
     }
   ],
   "releaseBlockers": [
