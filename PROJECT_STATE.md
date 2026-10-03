@@ -1,4 +1,8 @@
-## 2026-10-02 — Current answer candidate checkpoint, not deployed
+## 2026-10-02 — Context proof checkpoint, not deployed
+
+Current145 selectable units all carry complete-context evidence for Astra and Claude.40 annotation-null derivations preserve original dates/text;64 root source reviews and51 Claude source reviews preserve old versions. Frozen-job prompt hash verification now precedes CLI import. Coverage remains141 reviewed/four disputed/467 uncovered. Historical source damage and2026 emphasis/layout remain explicit blockers. Report: `/Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/CONTEXT-RECONCILIATION.md`. No production or learner-data write.
+
+## Earlier 2026-10-02 — Answer candidate checkpoint, not deployed
 
 145/612 selectable units have both actual-model outputs: 141 reviewed, four disputed. The remaining 467 and specialist-only exercises still need review. The 26 newly reviewed 2023 units include five writing alternatives; both models received complete current context. The 2023 table layout, language underlines and certain transcriptions were corrected before answering, while remaining OCR defects explicitly block release. Formal release requires full-context evidence including annotations, no open source blockers, and the registered publication transaction. Older input hashes and complete source-review snapshots are retained; changed-context answers cannot qualify as current simply by relabeling a hash. Current source-correction and provider state is in `/Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/HANDOFF.md`. Local tests are not candidate or production acceptance. All learner history and accepted production remain unchanged.
 
