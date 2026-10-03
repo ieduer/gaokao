@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261002-reviewed-196-original-emphasis-2021",
+  "revision": "20261002-reviewed-222-qualified-2020",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -1294,9 +1294,9 @@
       "correctOptions": [
         "B"
       ],
-      "explanation": "保留认为与因由两种分析口径；本题明确只判释义用不成立。",
+      "explanation": "四个以的准确词位已冻结，B起句以为因为；A凭借、C把将、D依据，均以语境与汉典义项交叉核对，不把可以的以当作题目标记。旧source/models/dates在history。 本题root在正式答案保存前看到了EOL第10页参考答案，标记为参考暴露后复核，不能声称两方均为盲答。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:03:23.208Z",
+      "reviewedAt": "2026-10-03T05:12:02.683Z",
       "sources": [
         {
           "type": "source_material",
@@ -1305,86 +1305,232 @@
         {
           "type": "dictionary_revision",
           "title": "文言站2026-09-16-r3词典校订，保留争议"
+        },
+        {
+          "type": "public_retypeset_exam",
+          "title": "2020北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/202102/W020220527566843533730.doc"
+        },
+        {
+          "type": "dictionary",
+          "title": "汉典以：已读义项与当前语境对照",
+          "url": "https://zdic.net/hans/%E4%BB%A5"
         }
       ],
       "currentVersion": "gpt_6_astra",
       "modelAnswers": {
         "gpt_6_astra": {
           "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 完整附注复核",
-          "text": "答案：B。句中所说的是想到或判断汾水可以用来淹灌安邑，不能将句首以再解释为使用汾水的工具用法；它后面接的是汾水可以灌安邑这一判断，而非仅接汾水。A项凭借前述理由出兵，C项把臣所说的话告诉二人，D项何以即以何、凭什么，题面释义均可成立。即使对B句首以采用认为或表示原因的不同分析，也都不能支持题面给出的用义。",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选B。B所问是以汾水可以灌魏之安邑开头的以，承接韩、魏二人相互示警的动作，交代其原因，意为因为，并非句中可以的以。A欲以伐四卿的以是凭借，承接向齐、鲁求援，凭借他们的力量讨伐四卿。C主何以臣之言告二子也的以引进告知的内容，译为把、将。D子何以知之中的何以即以何，询问凭什么、根据什么得知；释为依据可通。四处须对应各自词位，不能都标到开头中行地以为邑的以上。",
           "inputSha256": "8cf348a4059a8406f69705907bb3ee9f5360d1d86d28fed93bb22afd9e12226f",
-          "generatedAt": "2026-10-03T03:03:23.208Z",
+          "inputContextSha256": "a9f8ca4be8dc82a922c8b97f5700996afc61919cc8898b62e8ba0c37fad99c91",
+          "inputPresentationSha256": "30083e5f139db45396057b2fac89669f5a18262ee24166e8aafe54f0ce80ef65",
+          "generatedAt": "2026-10-03T05:04:46.614Z",
           "provenance": {
             "kind": "codex_turn",
-            "stage": "source_review_reaffirmation",
-            "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
-            "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "priorAnswerSha256": "afb258cef51ecbcbd0ffc332e71899c038f12e9bb82a32093ffe70573f3c69ff",
-            "annotationEffect": "赵韩魏身份与三版危城注补足三国共同恐惧背景；以汾水可以灌魏之安邑的以仍不是用。注释堿墙字形待源证。"
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/2020-answer-exposure.json",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2020-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2020-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
           },
-          "inputContextSha256": "9824b325b846fa75a52fde9bd3daa84ba4e9341e96494c12b2612509a7dcb401"
+          "assessment": {
+            "review": "reviewed",
+            "note": "四个以的准确词位已冻结，B起句以为因为；A凭借、C把将、D依据，均以语境与汉典义项交叉核对，不把可以的以当作题目标记。旧source/models/dates在history。 本题root在正式答案保存前看到了EOL第10页参考答案，标记为参考暴露后复核，不能声称两方均为盲答。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          }
         },
         "claude_opus_5_5": {
           "modelId": "claude-opus-5-5",
           "label": "Claude Opus 5.5 来源复核后修订",
-          "text": "答案：B。\n选B（解释不正确的一项）。A项：“欲以伐四卿”即“欲以（之）伐四卿”，想凭借齐、鲁的力量讨伐四卿，“以”解释为“凭借”正确。B项：“以汾水可以灌魏之安邑，绛水可以灌韩之平阳也”是解释桓子、康子互相示意的原因，“以”是“因为”，解释为“用”错误。C项：“主何以臣之言告二子也”，“以”是“把、将”，正确。D项：“子何以知之”即“你凭什么知道”，“以”是“凭、依据”，正确。",
+          "text": "答案：B。\n选B。B项错：“以汾水可以灌魏之安邑”的“以”是连词“因为”，说明桓子、康子互相用肘、脚示意的原因（因为汾水可以灌安邑，绛水可以灌平阳），不是“用”。A项“欲以伐四卿”是想凭借（齐、鲁的力量）讨伐四卿，“以”后省略宾语，解作“凭借”可通。C项“以臣之言告二子”是“把我的话告诉二子”，正确。D项“何以知之”是“依据什么知道”，正确。",
           "inputSha256": "8cf348a4059a8406f69705907bb3ee9f5360d1d86d28fed93bb22afd9e12226f",
-          "inputContextSha256": "9824b325b846fa75a52fde9bd3daa84ba4e9341e96494c12b2612509a7dcb401",
-          "generatedAt": "2026-10-03T03:01:54.821132+00:00",
+          "inputContextSha256": "a9f8ca4be8dc82a922c8b97f5700996afc61919cc8898b62e8ba0c37fad99c91",
+          "inputPresentationSha256": "30083e5f139db45396057b2fac89669f5a18262ee24166e8aafe54f0ce80ef65",
+          "generatedAt": "2026-10-03T05:06:34.804088+00:00",
           "uncertainties": [],
           "selectedOptions": [
             "B"
           ],
           "assessment": {
-            "matchesConclusion": true
+            "matchesConclusion": true,
+            "review": "reviewed",
+            "note": "四个以的准确词位已冻结，B起句以为因为；A凭借、C把将、D依据，均以语境与汉典义项交叉核对，不把可以的以当作题目标记。旧source/models/dates在history。 本题root在正式答案保存前看到了EOL第10页参考答案，标记为参考暴露后复核，不能声称两方均为盲答。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
           },
           "provenance": {
             "kind": "cli_response",
             "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
-            "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
-            "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
+            "evidence": "answers-six-sites-20261002/claude-2020-reading-result.json",
+            "inputPromptSha256": "1a30fbf3a2fd31fc5a6db9c6026244ce01ffae449bc65231af72accab882a209",
+            "responseStreamSha256": "8a27473208614d5b54f2127a9182e701c130403cc2e91b79760f0526ab0518b3",
             "stage": "source_review"
           }
-        },
-        "gpt_6_astra_before_context_review": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
-          "text": "答案：B。句中所说的是想到或判断汾水可以用来淹灌安邑，不能将句首以再解释为使用汾水的工具用法；它后面接的是汾水可以灌安邑这一判断，而非仅接汾水。A项凭借前述理由出兵，C项把臣所说的话告诉二人，D项何以即以何、凭什么，题面释义均可成立。即使对B句首以采用认为或表示原因的不同分析，也都不能支持题面给出的用义。",
-          "inputSha256": "8cf348a4059a8406f69705907bb3ee9f5360d1d86d28fed93bb22afd9e12226f",
-          "generatedAt": "2026-10-03T00:07:56.018Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
-          }
-        },
-        "claude_opus_5_5_initial": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答（修订前存档）",
-          "text": "答案：B。\nA项正确。“欲以伐四卿”是说出公想凭借齐、鲁的力量讨伐四卿，“以”后省略“之”（指齐、鲁），解释为“凭借”说得通。B项不正确。“以汾水可以灌魏之安邑，绛水可以灌韩之平阳也”是在说明桓子、康子用肘碰、用脚踩暗示对方的原因：智伯说“水可以亡人国”，让他们联想到汾水可灌安邑、绛水可灌平阳。这里的“以”是连词，应解释为“因为”，不是“用”。C项正确。“主何以臣之言告二子也”意为“您为什么把我的话告诉韩、魏二人”，“以”是介词“把”。D项正确。“子何以知之”意为“您根据什么知道这件事”，后文答“以人事知之”，“以”解释为“依据、凭借”正确。故选B。",
-          "inputSha256": "8cf348a4059a8406f69705907bb3ee9f5360d1d86d28fed93bb22afd9e12226f",
-          "generatedAt": "2026-10-03T00:39:17.649838+00:00",
-          "uncertainties": [],
-          "selectedOptions": [
-            "B"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
-            "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
-            "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
-            "stage": "independent"
-          },
-          "inputContextSha256": "1301c24522f9fb5a373a3b4cd741632c37a4aa8a1bfc4a7e67d427c89b5ceeeb"
         }
       },
-      "inputContextSha256": "9824b325b846fa75a52fde9bd3daa84ba4e9341e96494c12b2612509a7dcb401"
+      "inputContextSha256": "a9f8ca4be8dc82a922c8b97f5700996afc61919cc8898b62e8ba0c37fad99c91",
+      "history": [
+        {
+          "source": {
+            "id": "2020-guwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "晋出公十七年，智伯与赵、韩、魏共分范、中行地以为邑。出公怒，告齐、鲁，欲以伐四卿。四卿恐，遂反攻出公。出公奔齐，道死。故智伯乃立昭公曾孙骄为晋君，是为哀公。当是时，晋国政皆决智伯。\n\n智伯益骄，请地韩、魏，韩、魏与之。请地赵，赵不与。智伯怒，遂率韩、魏攻赵。赵襄子【1】惧，乃奔保晋阳。\n\n三家以国人围晋阳，岁余，引汾水灌其城，城不浸者三版【2】；城中悬釜而炊，易子而食，民无叛意。智伯行水，魏桓子御，韩康子参乘。智伯曰：“吾乃今知水可以亡人国也。”桓子肘康子，康子履桓子之跗，以汾水可以灌魏之安邑，绛水可以灌韩之平阳也。絺疵谓智伯曰：“韩、魏必反矣。”智伯曰：“子何以知之？” 絺疵曰：“以人事知之。夫从韩、魏之兵以攻赵，赵亡，难必及韩、魏矣。今约胜赵而三分其地，城不没者三版，城降有日，而二子无喜志，有忧色，是非反而何？”\n\n明日，智伯以絺疵之言告二子，二子曰：“此夫谗人，欲为赵氏游说，使主疑于二家而懈于攻赵氏也。不然，夫二家岂不利朝夕分赵氏之田，而欲为危难不可成之事乎！”二子出，絺疵入曰：“主何以臣之言告二子也？”智伯曰：“子何以知之？”对曰：“臣见其视臣而趋疾，知臣得其情故也。”智伯不悛。絺疵请使于齐。\n\n赵襄子使张孟谈潜出见二子，曰：“臣闻唇亡则齿寒。今智伯率韩、魏以攻赵，赵亡则韩、魏为之次矣。”二子曰：“我心知其然也，恐事未遂而谋泄，则祸立至矣。”张孟谈曰：“谋出二主之口，入臣之耳，何伤也！”二子乃潜与张孟谈约，为之期日而遣之。\n\n襄子夜使人杀守堤之吏，而决水灌智伯军。智伯军救水而乱，韩、魏翼而击之，襄子将卒犯其前，大败智伯之众，遂杀智伯，尽灭智氏之族。三家分智氏之田。\n\n晋烈公十九年，周威烈王赐赵、韩、魏，皆命为诸侯。晋静公二年，魏武侯、韩哀侯、赵敬侯灭晋后而三分其地。静公迁为家人，晋绝不祀。\n\n（取材于《史记》《资治通鉴》）"
+              }
+            ],
+            "topic": "（一）阅读下面文言文，完成6-11题。(共18分)",
+            "annotation": "注释：[1]赵襄子：晋国臣子，赵地之主。后文的魏桓子、韩康子分别为魏地之主和韩地之主。[2]城不浸者三版：版，筑土墙用的夹板。堿墙未被水浸泡的部分只剩下三块夹板的高度。",
+            "annotations": [
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 22,
+                "end": 23,
+                "anchor": "以"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 22,
+                "end": 23,
+                "anchor": "以"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 22,
+                "end": 23,
+                "anchor": "以"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 22,
+                "end": 23,
+                "anchor": "以"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 2,
+                "id": "q2",
+                "text": "7.下列对句中“以”字的解释，不正确的一项是(3分)\nA.欲以伐四卿 以：凭借\nB.以汾水可以灌魏之安邑 以：用\nC.主何以臣之言告二子也 以：把、将\nD.子何以知之 以：依据",
+                "score": 3
+              }
+            ]
+          },
+          "review": {
+            "id": "2020-guwen:2",
+            "inputSha256": "8cf348a4059a8406f69705907bb3ee9f5360d1d86d28fed93bb22afd9e12226f",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "B"
+            ],
+            "explanation": "保留认为与因由两种分析口径；本题明确只判释义用不成立。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:03:23.208Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内完整题目及相关材料"
+              },
+              {
+                "type": "dictionary_revision",
+                "title": "文言站2026-09-16-r3词典校订，保留争议"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "答案：B。句中所说的是想到或判断汾水可以用来淹灌安邑，不能将句首以再解释为使用汾水的工具用法；它后面接的是汾水可以灌安邑这一判断，而非仅接汾水。A项凭借前述理由出兵，C项把臣所说的话告诉二人，D项何以即以何、凭什么，题面释义均可成立。即使对B句首以采用认为或表示原因的不同分析，也都不能支持题面给出的用义。",
+                "inputSha256": "8cf348a4059a8406f69705907bb3ee9f5360d1d86d28fed93bb22afd9e12226f",
+                "generatedAt": "2026-10-03T03:03:23.208Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "afb258cef51ecbcbd0ffc332e71899c038f12e9bb82a32093ffe70573f3c69ff",
+                  "annotationEffect": "赵韩魏身份与三版危城注补足三国共同恐惧背景；以汾水可以灌魏之安邑的以仍不是用。注释堿墙字形待源证。"
+                },
+                "inputContextSha256": "9824b325b846fa75a52fde9bd3daa84ba4e9341e96494c12b2612509a7dcb401"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "答案：B。\n选B（解释不正确的一项）。A项：“欲以伐四卿”即“欲以（之）伐四卿”，想凭借齐、鲁的力量讨伐四卿，“以”解释为“凭借”正确。B项：“以汾水可以灌魏之安邑，绛水可以灌韩之平阳也”是解释桓子、康子互相示意的原因，“以”是“因为”，解释为“用”错误。C项：“主何以臣之言告二子也”，“以”是“把、将”，正确。D项：“子何以知之”即“你凭什么知道”，“以”是“凭、依据”，正确。",
+                "inputSha256": "8cf348a4059a8406f69705907bb3ee9f5360d1d86d28fed93bb22afd9e12226f",
+                "inputContextSha256": "9824b325b846fa75a52fde9bd3daa84ba4e9341e96494c12b2612509a7dcb401",
+                "generatedAt": "2026-10-03T03:01:54.821132+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "B"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
+                  "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
+                  "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
+                  "stage": "source_review"
+                }
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "答案：B。句中所说的是想到或判断汾水可以用来淹灌安邑，不能将句首以再解释为使用汾水的工具用法；它后面接的是汾水可以灌安邑这一判断，而非仅接汾水。A项凭借前述理由出兵，C项把臣所说的话告诉二人，D项何以即以何、凭什么，题面释义均可成立。即使对B句首以采用认为或表示原因的不同分析，也都不能支持题面给出的用义。",
+                "inputSha256": "8cf348a4059a8406f69705907bb3ee9f5360d1d86d28fed93bb22afd9e12226f",
+                "generatedAt": "2026-10-03T00:07:56.018Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
+                }
+              },
+              "claude_opus_5_5_initial": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答（修订前存档）",
+                "text": "答案：B。\nA项正确。“欲以伐四卿”是说出公想凭借齐、鲁的力量讨伐四卿，“以”后省略“之”（指齐、鲁），解释为“凭借”说得通。B项不正确。“以汾水可以灌魏之安邑，绛水可以灌韩之平阳也”是在说明桓子、康子用肘碰、用脚踩暗示对方的原因：智伯说“水可以亡人国”，让他们联想到汾水可灌安邑、绛水可灌平阳。这里的“以”是连词，应解释为“因为”，不是“用”。C项正确。“主何以臣之言告二子也”意为“您为什么把我的话告诉韩、魏二人”，“以”是介词“把”。D项正确。“子何以知之”意为“您根据什么知道这件事”，后文答“以人事知之”，“以”解释为“依据、凭借”正确。故选B。",
+                "inputSha256": "8cf348a4059a8406f69705907bb3ee9f5360d1d86d28fed93bb22afd9e12226f",
+                "generatedAt": "2026-10-03T00:39:17.649838+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "B"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
+                  "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
+                  "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "1301c24522f9fb5a373a3b4cd741632c37a4aa8a1bfc4a7e67d427c89b5ceeeb"
+              }
+            },
+            "inputContextSha256": "9824b325b846fa75a52fde9bd3daa84ba4e9341e96494c12b2612509a7dcb401"
+          }
+        }
+      ],
+      "inputPresentationSha256": "30083e5f139db45396057b2fac89669f5a18262ee24166e8aafe54f0ce80ef65"
     },
     {
       "id": "2018-guwen:2",
@@ -18201,6 +18347,1956 @@
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T04:39:19.875Z",
       "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2020-feilian:1",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2020北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/202102/W020220527566843533730.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选A。A：此前登月活动均在月球正面，嫦娥四号首次实现月背软着陆，且着陆地点是艾特肯盆地，因此正确。B：有利于天文观测的原因是月球屏蔽地球辐射干扰，不能把它归因于月背更接近原始面貌。C：前苏联和美国已经完成月背成像，并非一无所知。D：L2点在地球至月球连线的延长线上，不在地球与月球之间。",
+          "inputSha256": "04926e213c52969e426ae18db0814a14665d5d860f1cb8f9a8e8810a90afbe8e",
+          "inputContextSha256": "76f58a1502229362298905a918f30ae2f802a42ded1a87306f1e0a0bd88ea239",
+          "inputPresentationSha256": "b2382bb64f85de7f364fb22f33385e2a76559c8720698927f3304997b33dfa92",
+          "generatedAt": "2026-10-03T05:04:46.614Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/2020-answer-exposure.json",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2020-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2020-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。 本题root在正式答案保存前看到了EOL第10页参考答案，标记为参考暴露后复核，不能声称两方均为盲答。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\n选A。A项正确：材料一说嫦娥四号“成功实现人类首次月球背面软着陆”，此前所有登月活动都在月球正面完成，而艾特肯盆地位于月背，所以它是首个在该盆地着陆的探测器。B项强加因果：月背有利于天文观测，是因为月球自身挡住了来自地球的辐射干扰，与“更接近原始面貌”无关。C项“一无所知”错：前苏联与美国此前已完成月背成像工作。D项位置错：L2点在“地球至月球连线的延长线上”，不在地月之间，且只是与地月位置“相对固定”。",
+          "inputSha256": "04926e213c52969e426ae18db0814a14665d5d860f1cb8f9a8e8810a90afbe8e",
+          "inputContextSha256": "76f58a1502229362298905a918f30ae2f802a42ded1a87306f1e0a0bd88ea239",
+          "inputPresentationSha256": "b2382bb64f85de7f364fb22f33385e2a76559c8720698927f3304997b33dfa92",
+          "generatedAt": "2026-10-03T05:06:34.804088+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed",
+            "note": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。 本题root在正式答案保存前看到了EOL第10页参考答案，标记为参考暴露后复核，不能声称两方均为盲答。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2020-reading-result.json",
+            "inputPromptSha256": "1a30fbf3a2fd31fc5a6db9c6026244ce01ffae449bc65231af72accab882a209",
+            "responseStreamSha256": "8a27473208614d5b54f2127a9182e701c130403cc2e91b79760f0526ab0518b3",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "04926e213c52969e426ae18db0814a14665d5d860f1cb8f9a8e8810a90afbe8e",
+      "inputContextSha256": "76f58a1502229362298905a918f30ae2f802a42ded1a87306f1e0a0bd88ea239",
+      "inputPresentationSha256": "b2382bb64f85de7f364fb22f33385e2a76559c8720698927f3304997b33dfa92",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。 本题root在正式答案保存前看到了EOL第10页参考答案，标记为参考暴露后复核，不能声称两方均为盲答。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:12:02.683Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2020-feilian:2",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2020北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/202102/W020220527566843533730.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选C。材料说鹊桥沿环绕L2点的Halo轨道飞行，不能说它发射后静止在平动点上。A对应连接地球与月背的通信基站；B对应世界首颗地球轨道外专用中继卫星；D对应完成在轨精度和指向测试后具备中继能力，均有原文依据。",
+          "inputSha256": "8b856db891e357f5173bd0a09c0aa93d35d44531953071bff7ce0fc68f6480c5",
+          "inputContextSha256": "c41dcac254a25e44deb3ff08fcfb4b5b3cda0d7370723a36540867784790bb89",
+          "inputPresentationSha256": "f8a73ddd118b6e8bf241e2f1453b7021abdb00bb5510730ed9837cc693e62a36",
+          "generatedAt": "2026-10-03T05:04:46.614Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/2020-answer-exposure.json",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2020-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2020-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。 本题root在正式答案保存前看到了EOL第10页参考答案，标记为参考暴露后复核，不能声称两方均为盲答。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。C项错：“鹊桥”是在环绕地月拉格朗日L2点的Halo轨道上飞行，并非“静止在”平动点上。A项正确：原文说要建立连接地球和月背的通信基站，于是放置“鹊桥”中继星。B项正确：原文称其为“我国也是世界首颗地球轨道外的专用中继卫星”。D项正确：它经地面控制完成轨道捕获，并完成在轨精度和指向测试后，具备了数据中继能力。",
+          "inputSha256": "8b856db891e357f5173bd0a09c0aa93d35d44531953071bff7ce0fc68f6480c5",
+          "inputContextSha256": "c41dcac254a25e44deb3ff08fcfb4b5b3cda0d7370723a36540867784790bb89",
+          "inputPresentationSha256": "f8a73ddd118b6e8bf241e2f1453b7021abdb00bb5510730ed9837cc693e62a36",
+          "generatedAt": "2026-10-03T05:06:34.804088+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed",
+            "note": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。 本题root在正式答案保存前看到了EOL第10页参考答案，标记为参考暴露后复核，不能声称两方均为盲答。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2020-reading-result.json",
+            "inputPromptSha256": "1a30fbf3a2fd31fc5a6db9c6026244ce01ffae449bc65231af72accab882a209",
+            "responseStreamSha256": "8a27473208614d5b54f2127a9182e701c130403cc2e91b79760f0526ab0518b3",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "8b856db891e357f5173bd0a09c0aa93d35d44531953071bff7ce0fc68f6480c5",
+      "inputContextSha256": "c41dcac254a25e44deb3ff08fcfb4b5b3cda0d7370723a36540867784790bb89",
+      "inputPresentationSha256": "f8a73ddd118b6e8bf241e2f1453b7021abdb00bb5510730ed9837cc693e62a36",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。 本题root在正式答案保存前看到了EOL第10页参考答案，标记为参考暴露后复核，不能声称两方均为盲答。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:12:02.683Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2020-feilian:3",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2020北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/202102/W020220527566843533730.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D。材料中的昼夜转换以月球上的昼夜为背景，不是每个地球日各休息、工作半日。A是感知阶段成像并判断地形；B是规划阶段选定安全路线；C是执行阶段经中继接收控制指令并据此移动，均符合材料。材料所引月球一天约27个地球日应作为原题引文保留，不能据此把现实天文学中不同周期混为一谈；本题判断所需只是月球昼夜不等于一个地球日。",
+          "inputSha256": "33f91d0292096e1503c7397386fc11ea0fd42439e33f32f71d425e2a2764b852",
+          "inputContextSha256": "312be51175238b1e04380fa3868e32c730a468181f0ced2475fa873e5c6e4ee0",
+          "inputPresentationSha256": "0c90557795347396fa51ad803f2d895929c708d0a62b125936cc4a75b6737bad",
+          "generatedAt": "2026-10-03T05:04:46.614Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/2020-answer-exposure.json",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2020-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2020-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "答案D。原题公开重排本写27个地球日，当前材料保留该引文；其科学周期问题未据原卷澄清。Claude直接复述这一数字，不能视为额外科学事实核验，题目只需辨明月昼月夜不等于每地球日半天。 本题root在正式答案保存前看到了EOL第10页参考答案，标记为参考暴露后复核，不能声称两方均为盲答。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。D项错：月球的一天约为27个地球日，月昼、月夜各占一半，玉兔二号是在月夜（约十几个地球日）休眠、月昼工作，不是“每个地球日休息半日、工作半日”。A项符合“感知”：导航相机拍照，地面人员还原数字影像图并判断地形。B项符合“规划”：依据影像图、探测目标点和越障爬坡能力规划安全路径。C项符合“执行”：指令经地面测控站、中继星转发，月球车接到后按指令完成移动。",
+          "inputSha256": "33f91d0292096e1503c7397386fc11ea0fd42439e33f32f71d425e2a2764b852",
+          "inputContextSha256": "312be51175238b1e04380fa3868e32c730a468181f0ced2475fa873e5c6e4ee0",
+          "inputPresentationSha256": "0c90557795347396fa51ad803f2d895929c708d0a62b125936cc4a75b6737bad",
+          "generatedAt": "2026-10-03T05:06:34.804088+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed",
+            "note": "答案D。原题公开重排本写27个地球日，当前材料保留该引文；其科学周期问题未据原卷澄清。Claude直接复述这一数字，不能视为额外科学事实核验，题目只需辨明月昼月夜不等于每地球日半天。 本题root在正式答案保存前看到了EOL第10页参考答案，标记为参考暴露后复核，不能声称两方均为盲答。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2020-reading-result.json",
+            "inputPromptSha256": "1a30fbf3a2fd31fc5a6db9c6026244ce01ffae449bc65231af72accab882a209",
+            "responseStreamSha256": "8a27473208614d5b54f2127a9182e701c130403cc2e91b79760f0526ab0518b3",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "33f91d0292096e1503c7397386fc11ea0fd42439e33f32f71d425e2a2764b852",
+      "inputContextSha256": "312be51175238b1e04380fa3868e32c730a468181f0ced2475fa873e5c6e4ee0",
+      "inputPresentationSha256": "0c90557795347396fa51ad803f2d895929c708d0a62b125936cc4a75b6737bad",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "答案D。原题公开重排本写27个地球日，当前材料保留该引文；其科学周期问题未据原卷澄清。Claude直接复述这一数字，不能视为额外科学事实核验，题目只需辨明月昼月夜不等于每地球日半天。 本题root在正式答案保存前看到了EOL第10页参考答案，标记为参考暴露后复核，不能声称两方均为盲答。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:12:02.683Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2020-feilian:4",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2020北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/202102/W020220527566843533730.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选B。太阳升起以后，还要等太阳帆板发电功率达到一定值、月球车向中继星发出信号，并由地面发送唤醒指令，才能开始工作，并非立即探测。A：玉兔号随2013年发射的嫦娥三号登月，鹊桥到2018年才发射，前者没有借助后者。C：月夜低温会损害设备，保护设备的休眠措施适用于两辆月球车。D：材料明确说月背受月球屏蔽而免于来自地球的辐射干扰。",
+          "inputSha256": "ac70db34df1c113cc3066d15a71b911ef627f96c88d038827bbce7aa94f9c16f",
+          "inputContextSha256": "703c7cc77483be9ef5311d00f16cd928b0dce005ed331f4fd1e401cb28be221b",
+          "inputPresentationSha256": "89cef4bac2a4e1ab431c021d0ce73d7697575e291c07104682eb4ed181d9438c",
+          "generatedAt": "2026-10-03T05:04:46.614Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/2020-answer-exposure.json",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2020-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2020-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。 本题root在正式答案保存前看到了EOL第10页参考答案，标记为参考暴露后复核，不能声称两方均为盲答。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。B项错：太阳升起后，要等太阳帆板发电功率达到一定值，月球车向中继星发出信号，地面收到后发送唤醒指令，它才开始工作，并非“立即”。A项推断合理：玉兔号2013年着陆于月球正面，可与地球直接通信，而“鹊桥”2018年才发射。C项推断合理：月夜温度降至约-190℃，会损害月球车及设备，两辆月球车都处在这种环境中。D项推断合理：月球自身为月背挡住了来自地球的辐射干扰，玉兔二号在月背，玉兔号在正面。",
+          "inputSha256": "ac70db34df1c113cc3066d15a71b911ef627f96c88d038827bbce7aa94f9c16f",
+          "inputContextSha256": "703c7cc77483be9ef5311d00f16cd928b0dce005ed331f4fd1e401cb28be221b",
+          "inputPresentationSha256": "89cef4bac2a4e1ab431c021d0ce73d7697575e291c07104682eb4ed181d9438c",
+          "generatedAt": "2026-10-03T05:06:34.804088+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed",
+            "note": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。 本题root在正式答案保存前看到了EOL第10页参考答案，标记为参考暴露后复核，不能声称两方均为盲答。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2020-reading-result.json",
+            "inputPromptSha256": "1a30fbf3a2fd31fc5a6db9c6026244ce01ffae449bc65231af72accab882a209",
+            "responseStreamSha256": "8a27473208614d5b54f2127a9182e701c130403cc2e91b79760f0526ab0518b3",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "ac70db34df1c113cc3066d15a71b911ef627f96c88d038827bbce7aa94f9c16f",
+      "inputContextSha256": "703c7cc77483be9ef5311d00f16cd928b0dce005ed331f4fd1e401cb28be221b",
+      "inputPresentationSha256": "89cef4bac2a4e1ab431c021d0ce73d7697575e291c07104682eb4ed181d9438c",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。 本题root在正式答案保存前看到了EOL第10页参考答案，标记为参考暴露后复核，不能声称两方均为盲答。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:12:02.683Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2020-feilian:5",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2020北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/202102/W020220527566843533730.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "第一项：2013年12月2日，搭载玉兔号的嫦娥三号成功发射，随后实现我国探测器首次地外天体软着陆，并开展月面就位和机器人巡视探测，为玉兔二号积累了技术与经验；玉兔号后来行走受阻，也促成了对玉兔二号的针对性改进。须区分该日期是发射日期，不能写成当天软着陆。第二项：2018年5月21日，鹊桥中继星发射，经过轨道控制及测试建立地面测控站与月背之间的数据中继联系，使对玉兔二号的月背测控和遥操作成为可能。",
+          "inputSha256": "2354100452a5c03d4147424992cac00cb214d7a7546c3b399448fc1c8de47f44",
+          "inputContextSha256": "c940248fd5500f92658a520b181823fc823753e8a814df700492151e597fe3c5",
+          "inputPresentationSha256": "97d0227a11df1aaec46a8f07a96e21b0b022eb870ca38b5357f54bd814db330e",
+          "generatedAt": "2026-10-03T05:04:46.614Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/2020-answer-exposure.json",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2020-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2020-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "日期应区分发射与随后着陆。公开参考把12月2日与实现软着陆紧连，可能造成当天着陆的误读；root明确发射日期，Claude也标注12月2日发射。两项核心成就与作用均覆盖。 本题root在正式答案保存前看到了EOL第10页参考答案，标记为参考暴露后复核，不能声称两方均为盲答。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "第一项：2013年12月（12月2日发射），嫦娥三号搭载玉兔号月球车成功发射并着陆，这是我国探测器首次在地外天体软着陆，开创了月面就位探测和机器人巡视探测的新模式。作用：为玉兔二号的月面巡视探测积累了技术和经验；玉兔号因与月面石块磕绊而失去行走能力，科研人员据此对玉兔二号作了有针对性的改进，提高了它的行走可靠性。\n第二项：2018年5月21日，“鹊桥”中继星发射成功，并实现沿环绕地月拉格朗日L2点的Halo轨道飞行，具备了地面测控站与月背之间的数据中继能力。作用：解决了月球阻挡造成的地球与月背无法通信的难题，使月背软着陆成为现实；地面的遥操作指令和玉兔二号的唤醒信号等都靠它中转，保证了对玉兔二号的测控。",
+          "inputSha256": "2354100452a5c03d4147424992cac00cb214d7a7546c3b399448fc1c8de47f44",
+          "inputContextSha256": "c940248fd5500f92658a520b181823fc823753e8a814df700492151e597fe3c5",
+          "inputPresentationSha256": "97d0227a11df1aaec46a8f07a96e21b0b022eb870ca38b5357f54bd814db330e",
+          "generatedAt": "2026-10-03T05:06:34.804088+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed",
+            "note": "日期应区分发射与随后着陆。公开参考把12月2日与实现软着陆紧连，可能造成当天着陆的误读；root明确发射日期，Claude也标注12月2日发射。两项核心成就与作用均覆盖。 本题root在正式答案保存前看到了EOL第10页参考答案，标记为参考暴露后复核，不能声称两方均为盲答。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2020-reading-result.json",
+            "inputPromptSha256": "1a30fbf3a2fd31fc5a6db9c6026244ce01ffae449bc65231af72accab882a209",
+            "responseStreamSha256": "8a27473208614d5b54f2127a9182e701c130403cc2e91b79760f0526ab0518b3",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "2354100452a5c03d4147424992cac00cb214d7a7546c3b399448fc1c8de47f44",
+      "inputContextSha256": "c940248fd5500f92658a520b181823fc823753e8a814df700492151e597fe3c5",
+      "inputPresentationSha256": "97d0227a11df1aaec46a8f07a96e21b0b022eb870ca38b5357f54bd814db330e",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "日期应区分发射与随后着陆。公开参考把12月2日与实现软着陆紧连，可能造成当天着陆的误读；root明确发射日期，Claude也标注12月2日发射。两项核心成就与作用均覆盖。 本题root在正式答案保存前看到了EOL第10页参考答案，标记为参考暴露后复核，不能声称两方均为盲答。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:12:02.683Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2020-guwen:1",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2020北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/202102/W020220527566843533730.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选A。难是灾难、祸患，读nàn，是名词；难必及韩魏矣意为祸患一定会延及韩、魏，不能释成难免。B的志指心意、心思，二子没有喜悦之意。C的悛指悔改，智伯未改变轻信二子而不信絺疵的态度。D的绝指晋国灭亡、国祚断绝，合乎晋绝不祀的语境。",
+          "inputSha256": "f5fda0f5d3663c748b2559ef5de23241e2143412253ba9f41ed4d08f666d2938",
+          "inputContextSha256": "fe4ca3b8b33bd412eeec77746a682158d889f636b7af17faf04da48d3373ad79",
+          "inputPresentationSha256": "7ad923f67c60e1cb3710df0698c25eb8ca1289c6efad63515fba7b529df92c8b",
+          "generatedAt": "2026-10-03T05:04:46.614Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/2020-answer-exposure.json",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2020-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2020-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。 本题root在正式答案保存前看到了EOL第10页参考答案，标记为参考暴露后复核，不能声称两方均为盲答。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\n选A。A项错：“难必及韩、魏矣”的“难”是名词，指灾难、祸患，句意是“灾祸必然会落到韩、魏头上”，不是“难免”。B项“志”解作心思、神情中流露的心意，正确。C项“悛”是悔改，“智伯不悛”即智伯不肯悔改。D项“绝”指断绝、灭亡，“晋绝不祀”即晋国灭亡，祭祀断绝。",
+          "inputSha256": "f5fda0f5d3663c748b2559ef5de23241e2143412253ba9f41ed4d08f666d2938",
+          "inputContextSha256": "fe4ca3b8b33bd412eeec77746a682158d889f636b7af17faf04da48d3373ad79",
+          "inputPresentationSha256": "7ad923f67c60e1cb3710df0698c25eb8ca1289c6efad63515fba7b529df92c8b",
+          "generatedAt": "2026-10-03T05:06:34.804088+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed",
+            "note": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。 本题root在正式答案保存前看到了EOL第10页参考答案，标记为参考暴露后复核，不能声称两方均为盲答。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2020-reading-result.json",
+            "inputPromptSha256": "1a30fbf3a2fd31fc5a6db9c6026244ce01ffae449bc65231af72accab882a209",
+            "responseStreamSha256": "8a27473208614d5b54f2127a9182e701c130403cc2e91b79760f0526ab0518b3",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "f5fda0f5d3663c748b2559ef5de23241e2143412253ba9f41ed4d08f666d2938",
+      "inputContextSha256": "fe4ca3b8b33bd412eeec77746a682158d889f636b7af17faf04da48d3373ad79",
+      "inputPresentationSha256": "7ad923f67c60e1cb3710df0698c25eb8ca1289c6efad63515fba7b529df92c8b",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。 本题root在正式答案保存前看到了EOL第10页参考答案，标记为参考暴露后复核，不能声称两方均为盲答。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:12:02.683Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2020-guwen:3",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2020北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/202102/W020220527566843533730.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D。襄子将卒犯其前：将是率领，卒是士兵，犯是进攻，译为赵襄子率领士兵进攻智伯军的正面。将卒不能读成将要、最后。A是反问：这不是反叛又是什么？B说絺疵见韩、魏二子看见自己便迅速离去，译意可通。C为之期日是约定具体行动日期，遣之是送走张孟谈，译意正确。",
+          "inputSha256": "763fd8674299cc2e65224f3a7cc9097611ea49abbb7426e94ae0443aba21e256",
+          "inputContextSha256": "12484748ba64155f661b03c5e1322ebe74a1aac999f353368a66f2dbe8043521",
+          "inputPresentationSha256": "a042756139dad6d7240fd80e5fae626cfbe337f0826568a50e0b1f22039f4dbf",
+          "generatedAt": "2026-10-03T05:04:46.614Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/2020-answer-exposure.json",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2020-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2020-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。 本题root在正式答案保存前看到了EOL第10页参考答案，标记为参考暴露后复核，不能声称两方均为盲答。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。D项错：“将”是动词“率领”，“卒”是士兵，“犯”是进攻，全句意为“赵襄子率领士兵从正面攻击智伯的军队”，不能解作“将最后”。A项正确：“是非反而何”即“这不是要造反又是什么”。B项基本正确：他们看了我一眼（见到我）就快步走开。C项大体可通：“期日”是约定日期，“遣之”是送走张孟谈；“为之”也可理解为“替他、和他”，但不影响判断。",
+          "inputSha256": "763fd8674299cc2e65224f3a7cc9097611ea49abbb7426e94ae0443aba21e256",
+          "inputContextSha256": "12484748ba64155f661b03c5e1322ebe74a1aac999f353368a66f2dbe8043521",
+          "inputPresentationSha256": "a042756139dad6d7240fd80e5fae626cfbe337f0826568a50e0b1f22039f4dbf",
+          "generatedAt": "2026-10-03T05:06:34.804088+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed",
+            "note": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。 本题root在正式答案保存前看到了EOL第10页参考答案，标记为参考暴露后复核，不能声称两方均为盲答。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2020-reading-result.json",
+            "inputPromptSha256": "1a30fbf3a2fd31fc5a6db9c6026244ce01ffae449bc65231af72accab882a209",
+            "responseStreamSha256": "8a27473208614d5b54f2127a9182e701c130403cc2e91b79760f0526ab0518b3",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "763fd8674299cc2e65224f3a7cc9097611ea49abbb7426e94ae0443aba21e256",
+      "inputContextSha256": "12484748ba64155f661b03c5e1322ebe74a1aac999f353368a66f2dbe8043521",
+      "inputPresentationSha256": "a042756139dad6d7240fd80e5fae626cfbe337f0826568a50e0b1f22039f4dbf",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。 本题root在正式答案保存前看到了EOL第10页参考答案，标记为参考暴露后复核，不能声称两方均为盲答。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:12:02.683Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2020-guwen:4",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2020北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/202102/W020220527566843533730.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选B。絺疵请使于齐是请求出使齐国；原文没有说他向齐国求救。A对应晋国政皆决智伯及接连向韩、魏、赵索地。C对应张孟谈说以唇亡齿寒、二子暗约合攻，随后智氏被灭。D对应周天子命韩、赵、魏为诸侯及三家最终分晋。",
+          "inputSha256": "f3307be43262c74b82309433cebae7caec872002a02e986631f41065c81bf66b",
+          "inputContextSha256": "600094caa2947a210749e671be8c9b276f3c192cb004c2e30a35c4b64484c665",
+          "inputPresentationSha256": "ed5d2b75a7f95fad82562cf4e1af15b7cd8b4e6035702beade15a0ef7d637ae2",
+          "generatedAt": "2026-10-03T05:04:46.614Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/2020-answer-exposure.json",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2020-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2020-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "B明确错在求救，原文是请使于齐。Claude另称反被怀疑不准确及意在避祸，属进一步推断，不当作第二个必要评分点。 本题root在正式答案保存前看到了EOL第10页参考答案，标记为参考暴露后复核，不能声称两方均为盲答。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。B项错在两处：其一，“絺疵请使于齐”是请求出使齐国，意在离开以避祸，并非“求救于齐国”；其二，智伯是不相信、不采纳他的话，还把话告诉了韩、魏二子，说“反被怀疑”也不准确。A项符合文意：智伯立哀公，“晋国政皆决智伯”，又向韩、魏、赵索地。C项符合文意：张孟谈以唇亡齿寒说动二子，三家合击，智氏被灭族。D项符合文意：周威烈王命三家为诸侯，后三家灭晋而三分其地。",
+          "inputSha256": "f3307be43262c74b82309433cebae7caec872002a02e986631f41065c81bf66b",
+          "inputContextSha256": "600094caa2947a210749e671be8c9b276f3c192cb004c2e30a35c4b64484c665",
+          "inputPresentationSha256": "ed5d2b75a7f95fad82562cf4e1af15b7cd8b4e6035702beade15a0ef7d637ae2",
+          "generatedAt": "2026-10-03T05:06:34.804088+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed",
+            "note": "B明确错在求救，原文是请使于齐。Claude另称反被怀疑不准确及意在避祸，属进一步推断，不当作第二个必要评分点。 本题root在正式答案保存前看到了EOL第10页参考答案，标记为参考暴露后复核，不能声称两方均为盲答。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2020-reading-result.json",
+            "inputPromptSha256": "1a30fbf3a2fd31fc5a6db9c6026244ce01ffae449bc65231af72accab882a209",
+            "responseStreamSha256": "8a27473208614d5b54f2127a9182e701c130403cc2e91b79760f0526ab0518b3",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "f3307be43262c74b82309433cebae7caec872002a02e986631f41065c81bf66b",
+      "inputContextSha256": "600094caa2947a210749e671be8c9b276f3c192cb004c2e30a35c4b64484c665",
+      "inputPresentationSha256": "ed5d2b75a7f95fad82562cf4e1af15b7cd8b4e6035702beade15a0ef7d637ae2",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "B明确错在求救，原文是请使于齐。Claude另称反被怀疑不准确及意在避祸，属进一步推断，不当作第二个必要评分点。 本题root在正式答案保存前看到了EOL第10页参考答案，标记为参考暴露后复核，不能声称两方均为盲答。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:12:02.683Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2020-guwen:5",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2020北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/202102/W020220527566843533730.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "原题第10问：我们两家难道不想尽快瓜分赵氏的土地，从中获利吗？岂不表反问；利在此含以某事为利、希望得到利益之意；朝夕写时间很近，可译早晚、很快，不必机械理解成早上和晚上两次分地。原题第11问：桓子肘康子，康子履桓子之跗。魏桓子用肘碰韩康子，韩康子踩魏桓子的脚背，二人互相示意，说明早在智伯说水可以灭人之国时，就已想到自身国家也可能遭殃。此单元实际包含原题2分与4分两问，答题必须保留两部分；历史score=2不能代表原题合计分值。",
+          "inputSha256": "b2286e99c74f62a7fbc9f200710616cb30c2165776f1693a7ad00fef930b293d",
+          "inputContextSha256": "0c0e2e18a300901f26bfdbf62b8f09b2e86124f06006f47f7076d538dea97332",
+          "inputPresentationSha256": "6b5f10c3f11f5e769f39c7cee7a973b1d237dad6a8ef985401c8d1ce3ceb221f",
+          "generatedAt": "2026-10-03T05:04:46.614Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/gpt-astra-2020-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2020-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "必须答原题10翻译及11动作描写。直接动作证据为桓子肘康子、康子履桓子之跗两部分，不能漏一。Claude补充视臣而趋疾，可作二人心态的间接佐证，不把它另设必答得分点。原题2+4分与legacy score2的冲突仍是发布阻断项。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "第10题译文：我们两家难道不认为很快（早晚之间）就能瓜分赵氏的田地是有利的吗？（“利”是意动用法，意为“以……为利”，也可译作“贪图”；“朝夕”指时间很短、很快；“岂不”是反问。）\n第11题：可以佐证的动作描写语句有两处。\n①“桓子肘康子，康子履桓子之跗”。智伯说“水可以亡人国”，魏桓子用肘碰韩康子，韩康子踩魏桓子的脚背，二人暗中示意，说明他们早已意识到智伯也会用水攻灭掉自己，赵亡之后就轮到韩、魏。\n②“（其）视臣而趋疾”。二子看见絺疵就快步走开，说明他们被絺疵看穿了心思而心虚，可见确有反意，早已明白唇亡齿寒的道理。",
+          "inputSha256": "b2286e99c74f62a7fbc9f200710616cb30c2165776f1693a7ad00fef930b293d",
+          "inputContextSha256": "0c0e2e18a300901f26bfdbf62b8f09b2e86124f06006f47f7076d538dea97332",
+          "inputPresentationSha256": "6b5f10c3f11f5e769f39c7cee7a973b1d237dad6a8ef985401c8d1ce3ceb221f",
+          "generatedAt": "2026-10-03T05:06:34.804088+00:00",
+          "uncertainties": [
+            "本条id下的题文同时包含第10题和第11题，score只标2分，这里两题一并作答。",
+            "“二子无喜志，有忧色”也能佐证，但属神态描写而非动作描写，故未列入。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed",
+            "note": "必须答原题10翻译及11动作描写。直接动作证据为桓子肘康子、康子履桓子之跗两部分，不能漏一。Claude补充视臣而趋疾，可作二人心态的间接佐证，不把它另设必答得分点。原题2+4分与legacy score2的冲突仍是发布阻断项。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2020-reading-result.json",
+            "inputPromptSha256": "1a30fbf3a2fd31fc5a6db9c6026244ce01ffae449bc65231af72accab882a209",
+            "responseStreamSha256": "8a27473208614d5b54f2127a9182e701c130403cc2e91b79760f0526ab0518b3",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "b2286e99c74f62a7fbc9f200710616cb30c2165776f1693a7ad00fef930b293d",
+      "inputContextSha256": "0c0e2e18a300901f26bfdbf62b8f09b2e86124f06006f47f7076d538dea97332",
+      "inputPresentationSha256": "6b5f10c3f11f5e769f39c7cee7a973b1d237dad6a8ef985401c8d1ce3ceb221f",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "必须答原题10翻译及11动作描写。直接动作证据为桓子肘康子、康子履桓子之跗两部分，不能漏一。Claude补充视臣而趋疾，可作二人心态的间接佐证，不把它另设必答得分点。原题2+4分与legacy score2的冲突仍是发布阻断项。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:12:02.683Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2020-shici:1",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2020北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/202102/W020220527566843533730.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "选B。女儿折花倚桃、儿女同行树下，是远在金陵的李白想象东鲁家中的情景，不是追忆自己与儿女昔日春游。折花不见我，泪下如流泉承接娇女平阳，写想象中的女儿见不到父亲而流泪，也不能直接当作诗人当时泪如泉涌。A由吴地春景引到东鲁家田与春事已不及，理解可通。C语言明白质朴，叙事自然。D以家常口吻写父子亲情，与梦游诗的奇幻壮阔有别。",
+          "inputSha256": "7ae1a409b72ebdec24900a4bc5558a4f955eba95d7c0f729909f4ec31fa5763f",
+          "inputContextSha256": "dab1bf1c16924f60ca6c2f6e743139b40b92de945639e5cd1da73b37e6de115d",
+          "inputPresentationSha256": "a410793ab2d985f465518fae0218cb995cdbbdd0bd0f385d493889c14b4b9962",
+          "generatedAt": "2026-10-03T05:04:46.614Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/gpt-astra-2020-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2020-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。B项错：诗中“娇女字平阳，折花倚桃边”“双行桃树下”等，是诗人想象儿女此刻在家中桃树下的情景，不是“追忆昔日春游漫步”；“泪下如流泉”写的是想象中女儿折花不见父亲而流泪，不是诗人自己落泪。A项正确：由吴地桑绿蚕眠想到“谁种龟阴田”，又说“江行复茫然”。C项正确：全诗如话家常，语言平易自然。D项正确：此诗写亲情，细腻柔婉，与《梦游天姥吟留别》的雄奇豪放不同。",
+          "inputSha256": "7ae1a409b72ebdec24900a4bc5558a4f955eba95d7c0f729909f4ec31fa5763f",
+          "inputContextSha256": "dab1bf1c16924f60ca6c2f6e743139b40b92de945639e5cd1da73b37e6de115d",
+          "inputPresentationSha256": "a410793ab2d985f465518fae0218cb995cdbbdd0bd0f385d493889c14b4b9962",
+          "generatedAt": "2026-10-03T05:06:34.804088+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed",
+            "note": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2020-reading-result.json",
+            "inputPromptSha256": "1a30fbf3a2fd31fc5a6db9c6026244ce01ffae449bc65231af72accab882a209",
+            "responseStreamSha256": "8a27473208614d5b54f2127a9182e701c130403cc2e91b79760f0526ab0518b3",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "7ae1a409b72ebdec24900a4bc5558a4f955eba95d7c0f729909f4ec31fa5763f",
+      "inputContextSha256": "dab1bf1c16924f60ca6c2f6e743139b40b92de945639e5cd1da73b37e6de115d",
+      "inputPresentationSha256": "a410793ab2d985f465518fae0218cb995cdbbdd0bd0f385d493889c14b4b9962",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:12:02.683Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2020-shici:2",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2020北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/202102/W020220527566843533730.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "选D。念此承接儿女无人抚慰的情景，失次第写心绪纷乱，忧煎写内心焦虑，表现父亲的牵挂。A把时令、久别之感误解成青春不再；主旨是思家念子。B把田地无人耕种和寄信鲁地误说成归隐志向。C酒楼前是归心想象所到的东鲁家园，不能说由金陵酒楼引发回忆；诗人身在金陵与心归东鲁的空间关系被倒置了。",
+          "inputSha256": "3bc90907e3d157d6a6d9d26f4719bc5d5207d02ad4cee7c8baf07b1595ff1f98",
+          "inputContextSha256": "2ee16c72f3acb4a68fae75796defcf0704076676e5cf8d6a3460e561fda56d70",
+          "inputPresentationSha256": "84f9246f0967d2412e540be43801840e450986e3d62766d1f93a55bdfeebb14e",
+          "generatedAt": "2026-10-03T05:04:46.614Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/gpt-astra-2020-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2020-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。D项正确：“此”指上文儿女在桃树下无人抚背怜爱的情景，“失次第”是心绪纷乱失去常态，“肝肠日忧煎”是内心天天忧愁煎熬。A项错：“吴蚕已三眠”点明时令并引出对家中农事的牵挂，“别来向三年”说离家之久，都不是抒发青春不再的痛苦。B项错：“谁种龟阴田”是挂念家中田地无人耕种，“因之汶阳川”是说把书信寄往东鲁家中，与归隐田园的志向无关。C项错：诗中的酒楼是东鲁家门前的酒楼，是诗人的“归心”被南风吹落之处，不是由金陵的酒楼引发思念。",
+          "inputSha256": "3bc90907e3d157d6a6d9d26f4719bc5d5207d02ad4cee7c8baf07b1595ff1f98",
+          "inputContextSha256": "2ee16c72f3acb4a68fae75796defcf0704076676e5cf8d6a3460e561fda56d70",
+          "inputPresentationSha256": "84f9246f0967d2412e540be43801840e450986e3d62766d1f93a55bdfeebb14e",
+          "generatedAt": "2026-10-03T05:06:34.804088+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed",
+            "note": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2020-reading-result.json",
+            "inputPromptSha256": "1a30fbf3a2fd31fc5a6db9c6026244ce01ffae449bc65231af72accab882a209",
+            "responseStreamSha256": "8a27473208614d5b54f2127a9182e701c130403cc2e91b79760f0526ab0518b3",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "3bc90907e3d157d6a6d9d26f4719bc5d5207d02ad4cee7c8baf07b1595ff1f98",
+      "inputContextSha256": "2ee16c72f3acb4a68fae75796defcf0704076676e5cf8d6a3460e561fda56d70",
+      "inputPresentationSha256": "84f9246f0967d2412e540be43801840e450986e3d62766d1f93a55bdfeebb14e",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:12:02.683Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2020-shici:3",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2020北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/202102/W020220527566843533730.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "①桃树由诗人亲手栽种，是他与东鲁家园相连的具体事物，寄托故园之思。②别时栽种的树如今已与楼齐，树的长高把将近三年的离别具体化，也衬出诗人迟迟未归的愧疚和牵挂。③他想象女儿折花、两个孩子并行树下，桃树成为儿女活动的背景，把思乡落到思念孩子、担忧无人照料的深挚父爱上。④结构上，归心飞到酒楼，引出楼东桃树，再由树转写儿女，最后写愁思与寄信；桃树承上启下，使写景、叙事与抒情连为一体。",
+          "inputSha256": "d6709e7290cc29ce22c12e5bcd9915724ad33abe6da72039225bd72d2bd469a0",
+          "inputContextSha256": "7e23afdf13e0a0e85b0f8e3c678228d531c8d0a705413cc8d4764c0a45c561e0",
+          "inputPresentationSha256": "2e8d9dcebdbaed7095ed132fe31f3fe6ca761e2e402da4e42c30de20fdc7b3e4",
+          "generatedAt": "2026-10-03T05:04:46.614Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/gpt-astra-2020-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2020-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "桃树联系家园、时间和儿女，串联想象情景与亲情。Claude父亲化身、繁茂反衬孤单等属于可讨论的阐释，缺少排他文本依据，不设为必答术语。root以亲手栽种、长高、儿女树下活动与结构作用作答。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "意义：\n①桃树是诗人亲手种在东鲁家中楼东的树，是家的标志，寄托着他对家园的眷恋。\n②桃树的生长标示着离家的长久。“别来向三年”“桃今与楼齐”，树已长到与楼一般高，而“我行尚未旋”，含有久别不归的感慨与愧疚。\n③桃树是父亲的化身，是亲情的纽带。儿女“折花倚桃边”“双行桃树下”，倚树如同倚父，却“折花不见我”“抚背复谁怜”，写出儿女思父、诗人怜子的深情。\n作用：\n①结构上，桃树是贯穿全诗主体的线索。由“归心”飞落酒楼前引出桃树，再由桃树引出女儿、儿子，层层展开，使想象的画面集中而连贯。\n②手法上，借桃树化虚为实。诗人把抽象的思念落到具体可感的树和树下的儿女身上，以桃树的繁茂反衬儿女的孤单，以树的长高暗示儿女的成长（“与姊亦齐肩”），情景交融，真切动人。",
+          "inputSha256": "d6709e7290cc29ce22c12e5bcd9915724ad33abe6da72039225bd72d2bd469a0",
+          "inputContextSha256": "7e23afdf13e0a0e85b0f8e3c678228d531c8d0a705413cc8d4764c0a45c561e0",
+          "inputPresentationSha256": "2e8d9dcebdbaed7095ed132fe31f3fe6ca761e2e402da4e42c30de20fdc7b3e4",
+          "generatedAt": "2026-10-03T05:06:34.804088+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed",
+            "note": "桃树联系家园、时间和儿女，串联想象情景与亲情。Claude父亲化身、繁茂反衬孤单等属于可讨论的阐释，缺少排他文本依据，不设为必答术语。root以亲手栽种、长高、儿女树下活动与结构作用作答。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2020-reading-result.json",
+            "inputPromptSha256": "1a30fbf3a2fd31fc5a6db9c6026244ce01ffae449bc65231af72accab882a209",
+            "responseStreamSha256": "8a27473208614d5b54f2127a9182e701c130403cc2e91b79760f0526ab0518b3",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "d6709e7290cc29ce22c12e5bcd9915724ad33abe6da72039225bd72d2bd469a0",
+      "inputContextSha256": "7e23afdf13e0a0e85b0f8e3c678228d531c8d0a705413cc8d4764c0a45c561e0",
+      "inputPresentationSha256": "2e8d9dcebdbaed7095ed132fe31f3fe6ca761e2e402da4e42c30de20fdc7b3e4",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "桃树联系家园、时间和儿女，串联想象情景与亲情。Claude父亲化身、繁茂反衬孤单等属于可讨论的阐释，缺少排他文本依据，不设为必答术语。root以亲手栽种、长高、儿女树下活动与结构作用作答。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:12:02.683Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2020-lunyu:1",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2020北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/202102/W020220527566843533730.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "生而知之者：生来便具有知识、懂得道理的人。不知而作之者：自己还不懂、没有弄明白便妄加行动或创作的人。孔子在两处都否认自己属于这类人，强调知识有学习根据、行动有理解前提；不能把后一语释成一边不知道一边努力学习的人。",
+          "inputSha256": "0bb11553aa1dc2f483446f10c13871668789fe8865c008f0a333059719fb92d4",
+          "inputContextSha256": "274c2e1f9a860ab79acfcc9546360391df9b016e32f9815e1b2ca5a87ed5c5af",
+          "inputPresentationSha256": "e935a5c4eba8100ba6b5773e9213d5abc7cb8d22d3c1ec32f9d5579ad6b4d9d2",
+          "generatedAt": "2026-10-03T05:04:46.614Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/gpt-astra-2020-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2020-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "生而知之指生来有知，不要求扩大为对一切事情无所不知；不知而作重在不懂而妄作，不等于未知时探索学习。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "“生而知之者”：生来就有知识、懂得道理的人，即不必经过后天学习就什么都知道的人；孔子否认自己是这样的人。\n“不知而作之者”：自己并不真正懂得，却凭空造作（妄自创作、妄下论断、贸然行事）的人；孔子说自己没有这种毛病。",
+          "inputSha256": "0bb11553aa1dc2f483446f10c13871668789fe8865c008f0a333059719fb92d4",
+          "inputContextSha256": "274c2e1f9a860ab79acfcc9546360391df9b016e32f9815e1b2ca5a87ed5c5af",
+          "inputPresentationSha256": "e935a5c4eba8100ba6b5773e9213d5abc7cb8d22d3c1ec32f9d5579ad6b4d9d2",
+          "generatedAt": "2026-10-03T05:06:34.804088+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed",
+            "note": "生而知之指生来有知，不要求扩大为对一切事情无所不知；不知而作重在不懂而妄作，不等于未知时探索学习。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2020-reading-result.json",
+            "inputPromptSha256": "1a30fbf3a2fd31fc5a6db9c6026244ce01ffae449bc65231af72accab882a209",
+            "responseStreamSha256": "8a27473208614d5b54f2127a9182e701c130403cc2e91b79760f0526ab0518b3",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "0bb11553aa1dc2f483446f10c13871668789fe8865c008f0a333059719fb92d4",
+      "inputContextSha256": "274c2e1f9a860ab79acfcc9546360391df9b016e32f9815e1b2ca5a87ed5c5af",
+      "inputPresentationSha256": "e935a5c4eba8100ba6b5773e9213d5abc7cb8d22d3c1ec32f9d5579ad6b4d9d2",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "生而知之指生来有知，不要求扩大为对一切事情无所不知；不知而作重在不懂而妄作，不等于未知时探索学习。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:12:02.683Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2020-lunyu:2",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2020北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/202102/W020220527566843533730.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "途径：一是爱好古代文化并勤勉求索，向前代典籍和经验学习；二是广泛听闻，分辨并择善而从；三是多观察、多见识，把所见记住；四是在实际生活中学习，少年时地位低微，接触多种劳作而掌握技艺。启示：多闻还须择善，学习不能停在搜集说法。遇到不同观点，我应先比较理由与证据，再吸收可靠、合宜的部分，并在实践中验证，而不因说的人多就照单全收。",
+          "inputSha256": "ecf492fcc71d29b69467277a50d0a8930d3f22ea976496a95b520da8c8f0fcf7",
+          "inputContextSha256": "e170b35f90eab1aa33105c3e086b7641cc21b83ba9d049b9ee6bc443dd1bd146",
+          "inputPresentationSha256": "4fc07921c2ec3565f152c52291be0a90dadb34bea7f7e8bbe3125c1def4c8729",
+          "generatedAt": "2026-10-03T05:04:46.614Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/gpt-astra-2020-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2020-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "孔子获取知识的途径：\n①向古代文化学习，勤奋敏捷地求索（“好古，敏以求之”）。\n②多听，选择其中好的加以接受、遵从（“多闻，择其善者而从之”）。\n③多看，并把所见牢记在心（“多见而识之”）。\n④在生活实践中学习：年少时贫贱，在劳作中学会了许多技艺（“吾少也贱，故多能鄙事”）。\n启示（以“多闻，择其善者而从之”为例）：今天获取信息的渠道很多，各种说法良莠不齐，我应当广泛听取老师、同学和书本的意见，但不能盲目照单全收，而要加以辨别，选取正确、有益的部分去学习和践行，这样才能既开阔眼界，又不被错误信息带偏。",
+          "inputSha256": "ecf492fcc71d29b69467277a50d0a8930d3f22ea976496a95b520da8c8f0fcf7",
+          "inputContextSha256": "e170b35f90eab1aa33105c3e086b7641cc21b83ba9d049b9ee6bc443dd1bd146",
+          "inputPresentationSha256": "4fc07921c2ec3565f152c52291be0a90dadb34bea7f7e8bbe3125c1def4c8729",
+          "generatedAt": "2026-10-03T05:06:34.804088+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed",
+            "note": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2020-reading-result.json",
+            "inputPromptSha256": "1a30fbf3a2fd31fc5a6db9c6026244ce01ffae449bc65231af72accab882a209",
+            "responseStreamSha256": "8a27473208614d5b54f2127a9182e701c130403cc2e91b79760f0526ab0518b3",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "ecf492fcc71d29b69467277a50d0a8930d3f22ea976496a95b520da8c8f0fcf7",
+      "inputContextSha256": "e170b35f90eab1aa33105c3e086b7641cc21b83ba9d049b9ee6bc443dd1bd146",
+      "inputPresentationSha256": "4fc07921c2ec3565f152c52291be0a90dadb34bea7f7e8bbe3125c1def4c8729",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:12:02.683Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2020-honglou:1",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2020北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/202102/W020220527566843533730.doc"
+        },
+        {
+          "type": "literary_text",
+          "title": "红楼梦第052回公开文本",
+          "url": "https://zh.wikisource.org/wiki/%E7%B4%85%E6%A8%93%E5%A4%A2/%E7%AC%AC052%E5%9B%9E"
+        },
+        {
+          "type": "literary_text",
+          "title": "红楼梦第074回公开文本",
+          "url": "https://zh.wikisource.org/wiki/%E7%B4%85%E6%A8%93%E5%A4%A2/%E7%AC%AC074%E5%9B%9E"
+        },
+        {
+          "type": "literary_text",
+          "title": "红楼梦第077回公开文本",
+          "url": "https://zh.wikisource.org/wiki/%E7%B4%85%E6%A8%93%E5%A4%A2/%E7%AC%AC077%E5%9B%9E"
+        },
+        {
+          "type": "literary_text",
+          "title": "红楼梦第078回公开文本",
+          "url": "https://zh.wikisource.org/wiki/%E7%B4%85%E6%A8%93%E5%A4%A2/%E7%AC%AC078%E5%9B%9E"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "我选以下三处。①灵巧：宝玉的雀金裘烧破，外面的工匠不会修补；晴雯虽在病中，仍辨认织纹、穿针引线，连夜补好，体现针线技艺精巧。②毁谤生：王善保家的在王夫人面前诋毁晴雯，王夫人又凭偏见把她当作勾引宝玉的轻狂丫鬟，在其重病时逐出贾府；她蒙冤含恨而死，印证谗毁造成悲剧。③多情公子空牵念：晴雯死后，宝玉悲痛，撰写并祭诵《芙蓉女儿诔》，追念她的品格、申诉她的冤屈；悼念再深也不能挽回她的生命。以上情节均在小说前八十回内，不借后续改编补写。",
+          "inputSha256": "9e2bf95ca192292b11c38623a68a497650cee87830eb4c028a50eef4dabe85aa",
+          "inputContextSha256": "4f42adc9f09639c836abeeebd060935017912827ab8b8a07650cf13a2f373eda",
+          "inputPresentationSha256": "10c47feecae9aa04bf178da69a3b3320a24f14dee104280b04f2057b56efc44f",
+          "generatedAt": "2026-10-03T05:04:46.614Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/gpt-astra-2020-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2020-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "四处可选三处，root选灵巧/毁谤生/多情公子空牵念。Claude的第四处是备选，不要求四处全写。病补雀金裘的52回、受谗及逐出的74/77回、78回祭诔已回看公开原著文本。个别引语版本与次要回数仍不作逐字评分点；选择一事充分印证即可。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "选“心比天高”“灵巧”“毁谤生”三处作答，另附第四处备选。\n①“心比天高”：晴雯虽是丫鬟，却不肯低眉顺眼。第三十一回她失手跌折扇骨，被宝玉责备，她当面顶撞宝玉，又讥讽前来劝解的袭人“连个姑娘还没挣上去”，不肯自认低人一等；后来宝玉让她撕扇取乐，她也毫不拘束。她还看不起小红攀高枝、秋纹因得太太赏的旧衣而得意。这些都见出她心气高傲，追求人格平等。\n②“灵巧”：第五十二回，宝玉把贾母给的雀金裘烧了一个洞，外面的能工巧匠都不敢揽这活。晴雯重病在身，仍挣扎着用孔雀金线以“界线”之法连夜织补，补得几乎看不出痕迹，可见她手艺极巧。\n③“毁谤生”：第七十四回，王善保家的在王夫人面前说晴雯仗着模样标致、能说会道，整日打扮得像个西施，妖妖调调。王夫人听信谗言，认定她是勾引宝玉的“狐狸精”。第七十七回，晴雯在重病中被从炕上拉下来撵出大观园，不久含冤病死。\n（备选）“多情公子空牵念”：第七十七回，宝玉偷偷到晴雯兄嫂家探望，为她倒茶，二人交换贴身小袄，晴雯赠以指甲；第七十八回晴雯死后，宝玉听说她做了芙蓉花神，便写下《芙蓉女儿诔》在芙蓉花前祭奠，却已无力挽回。",
+          "inputSha256": "9e2bf95ca192292b11c38623a68a497650cee87830eb4c028a50eef4dabe85aa",
+          "inputContextSha256": "4f42adc9f09639c836abeeebd060935017912827ab8b8a07650cf13a2f373eda",
+          "inputPresentationSha256": "10c47feecae9aa04bf178da69a3b3320a24f14dee104280b04f2057b56efc44f",
+          "generatedAt": "2026-10-03T05:06:34.804088+00:00",
+          "uncertainties": [
+            "回目和细节凭记忆写出，个别回数及引语字句可能与通行本略有出入。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed",
+            "note": "四处可选三处，root选灵巧/毁谤生/多情公子空牵念。Claude的第四处是备选，不要求四处全写。病补雀金裘的52回、受谗及逐出的74/77回、78回祭诔已回看公开原著文本。个别引语版本与次要回数仍不作逐字评分点；选择一事充分印证即可。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2020-reading-result.json",
+            "inputPromptSha256": "1a30fbf3a2fd31fc5a6db9c6026244ce01ffae449bc65231af72accab882a209",
+            "responseStreamSha256": "8a27473208614d5b54f2127a9182e701c130403cc2e91b79760f0526ab0518b3",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "9e2bf95ca192292b11c38623a68a497650cee87830eb4c028a50eef4dabe85aa",
+      "inputContextSha256": "4f42adc9f09639c836abeeebd060935017912827ab8b8a07650cf13a2f373eda",
+      "inputPresentationSha256": "10c47feecae9aa04bf178da69a3b3320a24f14dee104280b04f2057b56efc44f",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "四处可选三处，root选灵巧/毁谤生/多情公子空牵念。Claude的第四处是备选，不要求四处全写。病补雀金裘的52回、受谗及逐出的74/77回、78回祭诔已回看公开原著文本。个别引语版本与次要回数仍不作逐字评分点；选择一事充分印证即可。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:12:02.684Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2020-sanwen:1",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2020北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/202102/W020220527566843533730.doc"
+        },
+        {
+          "type": "dictionary",
+          "title": "汉典即：已读义项与当前语境对照",
+          "url": "https://zdic.net/hans/%E5%8D%B3"
+        },
+        {
+          "type": "dictionary",
+          "title": "汉典龃龉：已读义项与当前语境对照",
+          "url": "https://zdic.net/hans/%E9%BE%83%E9%BE%89"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "选D。龃龉本指牙齿上下不相合，引申为意见不合、争执或不和，这里指日常生活中的小摩擦，并非轻声细语。A即完全密切吻合的即可释就。B即勉强求适应的即表示让步，可释即使。C从乐曲节度中条理出人的本性，是从中分析、梳理出人的本性，解释可通。",
+          "inputSha256": "804031a84032e86bb773414f9b832f056b2689434da1fffabf524c518d5d0a1e",
+          "inputContextSha256": "24045120278d3ef1d008e4d24d1f32d68d7c39087283245f0b553cfb61af57ba",
+          "inputPresentationSha256": "00e9c937eae4bcd35bdd7dacefaaaa372e4011521141636fee2f3452fc1f6f55",
+          "generatedAt": "2026-10-03T05:04:46.614Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/gpt-astra-2020-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2020-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "两个即分别指即完全密切吻合与即勉强求适应，现已修复错误重复锚点。汉典支持就/即使两义；龃龉为意见不合或摩擦，非轻声细语。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。D项错：“龃龉”本指上下牙齿对不齐，比喻意见不合、小的争执摩擦；文中“家常絮语”与“小小龃龉”并举，后者指小口角，不是“轻声细语”。A项正确：“即完全密切吻合”的“即”是“就”。B项正确：“即勉强求适应，终见得顽固呆钝”是让步关系，“即”是“即使”。C项正确：“条理”在此用作动词，指梳理、分析整理出来。",
+          "inputSha256": "804031a84032e86bb773414f9b832f056b2689434da1fffabf524c518d5d0a1e",
+          "inputContextSha256": "24045120278d3ef1d008e4d24d1f32d68d7c39087283245f0b553cfb61af57ba",
+          "inputPresentationSha256": "00e9c937eae4bcd35bdd7dacefaaaa372e4011521141636fee2f3452fc1f6f55",
+          "generatedAt": "2026-10-03T05:06:34.804088+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed",
+            "note": "两个即分别指即完全密切吻合与即勉强求适应，现已修复错误重复锚点。汉典支持就/即使两义；龃龉为意见不合或摩擦，非轻声细语。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2020-reading-result.json",
+            "inputPromptSha256": "1a30fbf3a2fd31fc5a6db9c6026244ce01ffae449bc65231af72accab882a209",
+            "responseStreamSha256": "8a27473208614d5b54f2127a9182e701c130403cc2e91b79760f0526ab0518b3",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "804031a84032e86bb773414f9b832f056b2689434da1fffabf524c518d5d0a1e",
+      "inputContextSha256": "24045120278d3ef1d008e4d24d1f32d68d7c39087283245f0b553cfb61af57ba",
+      "inputPresentationSha256": "00e9c937eae4bcd35bdd7dacefaaaa372e4011521141636fee2f3452fc1f6f55",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "两个即分别指即完全密切吻合与即勉强求适应，现已修复错误重复锚点。汉典支持就/即使两义；龃龉为意见不合或摩擦，非轻声细语。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:12:02.684Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2020-sanwen:2",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2020北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/202102/W020220527566843533730.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "选B。小银匠一边流泪一边敲花纹，小木匠、小媳妇的情绪或紧贴或游离，说明艺术创作与劳动者的情感、生活和社会关系相互依存，并未要求制作时必须全神贯注。A对应童年声音对成熟生命的影响；C对应流亡转徙和自然人生共同教育出的独特审美；D对应声音、色彩、形体和劳作细节的生动再现。",
+          "inputSha256": "a85d3e780fb84fd31a3b3a280c85909ca3acc79bf434fd89d605322fd0dcd30a",
+          "inputContextSha256": "015cefce8226c6063ed1241f48c7d155aa69cd97e0c2cd90c11b7d301a6e8619",
+          "inputPresentationSha256": "dbccac7ef189924fa0c491d3ee39a30f937ff5e6febd1073163fb6c7e4b81865",
+          "generatedAt": "2026-10-03T05:04:46.614Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/gpt-astra-2020-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2020-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。B项错：文中写小银匠“一面因事流泪，一面用小钢模敲击花纹”，写小木匠和小媳妇做手艺时“情绪或紧贴，或游离”，意在说明作者从中看到了工作成果之外制作者的情绪和生活，明白艺术品制作背后还有多方面的相互依存关系，并不是说制作者需要全神贯注。A项符合第二段末句。C项符合“十年流亡转徙生活教育”“爱好与理解，自然和普通人已经大不相同”。D项符合全文特点：作者调动听觉、视觉，用鼓角、鸟鸣、结窠、捶制银锁等细节再现平凡生活之美。",
+          "inputSha256": "a85d3e780fb84fd31a3b3a280c85909ca3acc79bf434fd89d605322fd0dcd30a",
+          "inputContextSha256": "015cefce8226c6063ed1241f48c7d155aa69cd97e0c2cd90c11b7d301a6e8619",
+          "inputPresentationSha256": "dbccac7ef189924fa0c491d3ee39a30f937ff5e6febd1073163fb6c7e4b81865",
+          "generatedAt": "2026-10-03T05:06:34.804088+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed",
+            "note": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2020-reading-result.json",
+            "inputPromptSha256": "1a30fbf3a2fd31fc5a6db9c6026244ce01ffae449bc65231af72accab882a209",
+            "responseStreamSha256": "8a27473208614d5b54f2127a9182e701c130403cc2e91b79760f0526ab0518b3",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "a85d3e780fb84fd31a3b3a280c85909ca3acc79bf434fd89d605322fd0dcd30a",
+      "inputContextSha256": "015cefce8226c6063ed1241f48c7d155aa69cd97e0c2cd90c11b7d301a6e8619",
+      "inputPresentationSha256": "dbccac7ef189924fa0c491d3ee39a30f937ff5e6febd1073163fb6c7e4b81865",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:12:02.684Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2020-sanwen:3",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2020北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/202102/W020220527566843533730.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "音乐既包含通常意义上的乐曲、鼓角、唢呐和民间仪式音乐，也包含鸟鸣、风声、水声等自然声音，以及人的絮语、争执等日常生活声音；凡能触动生命、给予力量和信心的有情感、有启发的声音，都进入作者的音乐世界。美术既包含可供观赏的作品和民间工艺品，也包含蜂虫筑窠、鸟雀育雏、花草生长等自然生命的形态与创造；作者还把目光投向制作过程、劳动者的情绪与处境，以及作品中融入的愿望、智慧、理想和素朴人心。",
+          "inputSha256": "72edcdadda9c74b55ba3e87d91eea9f1604bff829980a4cdf0a42e55e93a34de",
+          "inputContextSha256": "cf922708216e6ad16cbc4f0a9b8baa1f02dacdda19a9a4fa92b1169e6f6de016",
+          "inputPresentationSha256": "5231798c7d52235f2b39c80d5dae3bb372cb50eee5c83d5f7bbe13c023e878bd",
+          "generatedAt": "2026-10-03T05:04:46.614Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/gpt-astra-2020-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2020-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "答案可按自然/日常/乐曲及自然生命/民间/都市工艺概括；对作品背后的心与生活关系的阐述也有全文依据。不把参考分类标题设置为排他命中项。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "作者理解的音乐包含：\n①自然中的声音，如鸟鸣、风声、水声、秧鸡田鸡的叫声等。\n②人生中有情感的声音，如戍卒的鼓角、水车声、杀猪声、婚丧乐曲、求神乐舞、唢呐独奏，以及他人的家常絮语和小小争吵。\n③有生命、有性格的乐章，即伟大作曲者创作的优美乐曲，以及从乐曲节度中体会出的“人的本性”和对生命欢欣、死亡的理解。\n作者理解的美术包含：\n①自然界微小生命的营造与生长，如黄蜂、蟢子结窠，鸟雀作窠伏雏，花草的长成和新陈代谢。\n②民间手艺人的制作过程及其产品，即小银匠、小木匠、小媳妇等小市民层生产的工艺美术，包括它的色泽、形体、原料和目的。\n③作品背后制作者的心，即他们的情绪、勤劳、愿望、热情、理想，以及生活挣扎的形式和心智，也就是那颗真正“人”的素朴的、创造的心。",
+          "inputSha256": "72edcdadda9c74b55ba3e87d91eea9f1604bff829980a4cdf0a42e55e93a34de",
+          "inputContextSha256": "cf922708216e6ad16cbc4f0a9b8baa1f02dacdda19a9a4fa92b1169e6f6de016",
+          "inputPresentationSha256": "5231798c7d52235f2b39c80d5dae3bb372cb50eee5c83d5f7bbe13c023e878bd",
+          "generatedAt": "2026-10-03T05:06:34.804088+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed",
+            "note": "答案可按自然/日常/乐曲及自然生命/民间/都市工艺概括；对作品背后的心与生活关系的阐述也有全文依据。不把参考分类标题设置为排他命中项。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2020-reading-result.json",
+            "inputPromptSha256": "1a30fbf3a2fd31fc5a6db9c6026244ce01ffae449bc65231af72accab882a209",
+            "responseStreamSha256": "8a27473208614d5b54f2127a9182e701c130403cc2e91b79760f0526ab0518b3",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "72edcdadda9c74b55ba3e87d91eea9f1604bff829980a4cdf0a42e55e93a34de",
+      "inputContextSha256": "cf922708216e6ad16cbc4f0a9b8baa1f02dacdda19a9a4fa92b1169e6f6de016",
+      "inputPresentationSha256": "5231798c7d52235f2b39c80d5dae3bb372cb50eee5c83d5f7bbe13c023e878bd",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "答案可按自然/日常/乐曲及自然生命/民间/都市工艺概括；对作品背后的心与生活关系的阐述也有全文依据。不把参考分类标题设置为排他命中项。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:12:02.684Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2020-sanwen:4",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2020北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/202102/W020220527566843533730.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "①童年声音与自然、民间工艺逐渐浸入生命，养成直觉感受力，使作者更能理解音乐和美术，并在岁月与生活阅历中形成独特审美。②音乐安抚、驯柔都市生活中矛盾不安的心，使他认识自己和人的本性，找到生命方向，生发悲悯与善意。③音乐让他从平凡人生的微小哀乐中获得力量与信心，克服挫折、持续写作，愿意为普通人的生命服务。④美术帮助他认识其他生命：理解微小生命的巧智、完整自足与生死，也体察手艺人的辛劳、挣扎、情感和愿望。⑤他由作品进一步认识创造者素朴的心、崇高理想与创造精神，并从中看见民族品德的优美伟大，扩大眼界、深化对生命价值的理解。",
+          "inputSha256": "c80cd6e19e1e03794e5b4e65ccf54f61cd470f98f6497a522d382ba9011846be",
+          "inputContextSha256": "0b05176ec23e6e61e003461501f2d457017f7c4fb13e2b93613bf32cff2803af",
+          "inputPresentationSha256": "5eb9325f72e77a7506ac482aa1a8c188db8fd5c2377143ec6d3c8fb58cb5e12a",
+          "generatedAt": "2026-10-03T05:04:46.614Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/gpt-astra-2020-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2020-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "对成长的作用：\n①音乐和美术从四五岁起就与作者的生命发展密切吻合，各种声音和形色“镶嵌”“浸入”成长的生命，娱乐他、教育他，培养了他敏锐的感受力和独特的审美眼光。\n②音乐能征服、驯柔他。在与都市生活格格不入、内心混乱争持时，音乐使他的生命有了定向，充满悲哀与善良的情感。\n③音乐给他力量和信心，鼓励、激发他二十多年不顾挫折坚持写作，乐意把全部生命用来为平凡人生的卑微哀乐服务。\n④工艺美术扩大了他的眼界，使他对作品和制作者的理解更细更深。\n对认识生命的作用：\n①音乐使他认识自己的生命。他从乐曲中体会“人的本性”，理解生命的欢欣、死亡的肯定和生命皈依的庄肃，从而认识当前、确定自己生命的方向。\n②美术使他认识其他生命。他从动植物身上体会到微小生命的忠诚、巧智和完整自足，体会到生与死的美丽和严肃；从手艺人的制作中认识到劳动者素朴的心、作品中洋溢的生命，以及由此体现的民族品德的优美伟大。",
+          "inputSha256": "c80cd6e19e1e03794e5b4e65ccf54f61cd470f98f6497a522d382ba9011846be",
+          "inputContextSha256": "0b05176ec23e6e61e003461501f2d457017f7c4fb13e2b93613bf32cff2803af",
+          "inputPresentationSha256": "5eb9325f72e77a7506ac482aa1a8c188db8fd5c2377143ec6d3c8fb58cb5e12a",
+          "generatedAt": "2026-10-03T05:06:34.804088+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed",
+            "note": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2020-reading-result.json",
+            "inputPromptSha256": "1a30fbf3a2fd31fc5a6db9c6026244ce01ffae449bc65231af72accab882a209",
+            "responseStreamSha256": "8a27473208614d5b54f2127a9182e701c130403cc2e91b79760f0526ab0518b3",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "c80cd6e19e1e03794e5b4e65ccf54f61cd470f98f6497a522d382ba9011846be",
+      "inputContextSha256": "0b05176ec23e6e61e003461501f2d457017f7c4fb13e2b93613bf32cff2803af",
+      "inputPresentationSha256": "5eb9325f72e77a7506ac482aa1a8c188db8fd5c2377143ec6d3c8fb58cb5e12a",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "完整题面与准确标记下逐题核读，两模型结论已交叉比较，公开参考仅作对照。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:12:02.684Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2020-yuyanjichu:1",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2020北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/202102/W020220527566843533730.doc"
+        },
+        {
+          "type": "dictionary",
+          "title": "汉典等：已读义项与当前语境对照",
+          "url": "https://zdic.net/hans/%E7%AD%89"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 复核修订",
+          "text": "选C。⑥通过全力奋战着重经历奋战过程，可以说经过全力奋战；③贷款发放和④产业扶贫表示手段、途径，换为经过不合原来语意和句法。A：①首次引入中阳县，没有前文先行词，不能直接换成该县；②在前文已有指称时可以换。B：②列出的做法未覆盖所说的四种模式，等表示列举未尽；⑤已经列出整合资源、盘活资产、服务企业、购买服务四项，等用来列举后收束，两者不同。D：⑥总结成效，放在办法和措施之后衔接顺畅，移到①②之间反而打断先交代责任、再叙述做法、最后总结的顺序。",
+          "inputSha256": "61a5e053ef1013ad874332e2c5b530dcd6ffccea27391e065af9756e34bccf60",
+          "inputContextSha256": "9e58954b0b12628a6828ade4b96850a367c88931ea7ff0f47184208ec3f65a9c",
+          "inputPresentationSha256": "9f43ce5ba868039d10d4191c00d267b6be6ca139c38504dcf33894ad5ae3a725",
+          "generatedAt": "2026-10-03T05:12:02.684Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "adjudicated_revision",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/adjudicate_2020.mjs",
+            "inputEvidence": "answers-six-sites-20261002/claude-2020-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "C正确。两个等一为列举未尽、一为煞尾，汉典有据。加入合作社或龙头企业究竟算一个模式的两个去向还是两种，题面不足以另定，关键是②未列满四种。root初稿列两项作解释，复核改为不依赖具体计数的表述，原文保留。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。C项正确：“经过”强调经历某个过程，“通过”强调以某种方式为手段。③“通过贷款发放”、④“通过产业扶贫”都表示手段，不能换；只有⑥“通过全力奋战”可以换成“经过全力奋战”。A项错：①句是文段首句，“中阳县”首次出现，前面没有可指代的对象，不能改为“该县”（②句的可以改）。B项错：②句只列出一种模式，“等”表示列举未尽；⑤句四种措施已全部列出，“等”表示列举后煞尾，用法不同。D项错：⑥是对全段工作成效的总结，放在段末最合适，移到①②之间反而打乱“责任—举措—成效”的顺序。",
+          "inputSha256": "61a5e053ef1013ad874332e2c5b530dcd6ffccea27391e065af9756e34bccf60",
+          "inputContextSha256": "9e58954b0b12628a6828ade4b96850a367c88931ea7ff0f47184208ec3f65a9c",
+          "inputPresentationSha256": "9f43ce5ba868039d10d4191c00d267b6be6ca139c38504dcf33894ad5ae3a725",
+          "generatedAt": "2026-10-03T05:06:34.804088+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed",
+            "note": "C正确。两个等一为列举未尽、一为煞尾，汉典有据。加入合作社或龙头企业究竟算一个模式的两个去向还是两种，题面不足以另定，关键是②未列满四种。root初稿列两项作解释，复核改为不依赖具体计数的表述，原文保留。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2020-reading-result.json",
+            "inputPromptSha256": "1a30fbf3a2fd31fc5a6db9c6026244ce01ffae449bc65231af72accab882a209",
+            "responseStreamSha256": "8a27473208614d5b54f2127a9182e701c130403cc2e91b79760f0526ab0518b3",
+            "stage": "independent"
+          }
+        },
+        "gpt_6_astra_initial": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 初答（措辞复核前存档）",
+          "text": "选C。⑥通过全力奋战着重经历奋战过程，可以说经过全力奋战；③贷款发放和④产业扶贫表示手段、途径，换为经过不合原来语意和句法。A：①首次引入中阳县，没有前文先行词，不能直接换成该县；②在前文已有指称时可以换。B：②列合作社、龙头企业两项后说等四种，是列举未尽；⑤已经列出整合资源、盘活资产、服务企业、购买服务四项，等用来列举后收束，两者不同。D：⑥总结成效，放在办法和措施之后衔接顺畅，移到①②之间反而打断先交代责任、再叙述做法、最后总结的顺序。",
+          "inputSha256": "61a5e053ef1013ad874332e2c5b530dcd6ffccea27391e065af9756e34bccf60",
+          "inputContextSha256": "9e58954b0b12628a6828ade4b96850a367c88931ea7ff0f47184208ec3f65a9c",
+          "inputPresentationSha256": "9f43ce5ba868039d10d4191c00d267b6be6ca139c38504dcf33894ad5ae3a725",
+          "generatedAt": "2026-10-03T05:04:46.614Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/gpt-astra-2020-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2020-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "C正确。两个等一为列举未尽、一为煞尾，汉典有据。加入合作社或龙头企业究竟算一个模式的两个去向还是两种，题面不足以另定，关键是②未列满四种。root初稿列两项作解释，复核改为不依赖具体计数的表述，原文保留。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          }
+        }
+      },
+      "inputSha256": "61a5e053ef1013ad874332e2c5b530dcd6ffccea27391e065af9756e34bccf60",
+      "inputContextSha256": "9e58954b0b12628a6828ade4b96850a367c88931ea7ff0f47184208ec3f65a9c",
+      "inputPresentationSha256": "9f43ce5ba868039d10d4191c00d267b6be6ca139c38504dcf33894ad5ae3a725",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "C正确。两个等一为列举未尽、一为煞尾，汉典有据。加入合作社或龙头企业究竟算一个模式的两个去向还是两种，题面不足以另定，关键是②未列满四种。root初稿列两项作解释，复核改为不依赖具体计数的表述，原文保留。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:12:02.684Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2020-yuyanjichu:2",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2020北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/202102/W020220527566843533730.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "③通过贷款发放，使贫困户获得用于创收的生产资金。添加使后，两句都可承前省略中阳县这一实施主体，以通过……说明手段，再接使贫困户获得……或保障贫困户……的述谓结构。原句③的贫困户直接作主语，与④承前省略主体的结构不同。",
+          "inputSha256": "0808425af63f23f116956bb2ffb22bff2b483cf81cc1406fb29909ba435653f2",
+          "inputContextSha256": "d18d33fae58cabe97ce09dd0030e43033155e7eb3775f7342fb10cad9801ddc8",
+          "inputPresentationSha256": "0a611b5979cc28f9dde6ddf6068423a2013c9394937c99e52783b9f62f696cc9",
+          "generatedAt": "2026-10-03T05:04:46.614Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/gpt-astra-2020-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2020-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "添加使或让等可保持原意并与④承前省略主语的结构一致。Claude称④没有主语应理解为省略承前主体，不能误教为病句缺主语。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "修改后的句子：通过贷款发放，使贫困户获得用于创收的生产资金。\n说明：④句是“通过……，保障……”，介词短语后直接接动宾结构，没有主语。③句原有主语“贫困户”，在它前面加“使”（或“让”），后半句就变成“使+贫困户+获得……”的动宾（兼语）结构，与④句一致，原意不变。",
+          "inputSha256": "0808425af63f23f116956bb2ffb22bff2b483cf81cc1406fb29909ba435653f2",
+          "inputContextSha256": "d18d33fae58cabe97ce09dd0030e43033155e7eb3775f7342fb10cad9801ddc8",
+          "inputPresentationSha256": "0a611b5979cc28f9dde6ddf6068423a2013c9394937c99e52783b9f62f696cc9",
+          "generatedAt": "2026-10-03T05:06:34.804088+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed",
+            "note": "添加使或让等可保持原意并与④承前省略主语的结构一致。Claude称④没有主语应理解为省略承前主体，不能误教为病句缺主语。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2020-reading-result.json",
+            "inputPromptSha256": "1a30fbf3a2fd31fc5a6db9c6026244ce01ffae449bc65231af72accab882a209",
+            "responseStreamSha256": "8a27473208614d5b54f2127a9182e701c130403cc2e91b79760f0526ab0518b3",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "0808425af63f23f116956bb2ffb22bff2b483cf81cc1406fb29909ba435653f2",
+      "inputContextSha256": "d18d33fae58cabe97ce09dd0030e43033155e7eb3775f7342fb10cad9801ddc8",
+      "inputPresentationSha256": "0a611b5979cc28f9dde6ddf6068423a2013c9394937c99e52783b9f62f696cc9",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "添加使或让等可保持原意并与④承前省略主语的结构一致。Claude称④没有主语应理解为省略承前主体，不能误教为病句缺主语。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:12:02.684Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2020-weixiezuo:1",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2020北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/202102/W020220527566843533730.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "我主张有计划地读原著。缩写本能介绍情节，连环画能帮助入门，却难以保留语言的韵味、人物心思的曲折和细节之间的照应。《红楼梦》中一次闲谈、一顿饭，都可能写出身份与性格；只记故事梗概，便错过了这些意味。读大部头确实费时，可以每天读一回、随手记疑问，让理解逐渐加深。省时应靠安排阅读，不能只靠删掉作品的丰富。",
+          "inputSha256": "10dbd0c4b935f9b7e25632c4563421a08bb760b25bebb0301705c69f994b169f",
+          "inputContextSha256": "c69560a145221576fe1d1ab46f4d4505eb6d4bcf264f49d0529438f474c88e03",
+          "inputPresentationSha256": "84ffa93e0772f973532d88486692feaa6d5655ccaf05978e620722618eb6af17",
+          "generatedAt": "2026-10-03T05:04:46.614Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/gpt-astra-2020-writing-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2020-writing-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "root正文150非空白字符。Claude自报约170字需以实测为准，正文偏长；孙少平工棚灯下特定场景尚未逐处核实，缩写使细节荡然无存也过于绝对。保留原稿并标注，默认root示例；不把模型自报字数当验收证据。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【示例】\n我不赞同用缩写本、连环画代替原著。缩写本留下的只是情节骨架，名著的血肉却在细节与语言里。《红楼梦》中黛玉进贾府，“步步留心，时时在意”，一段行止便写尽寄人篱下的敏感；《平凡的世界》里孙少平在工棚灯下读书时的大段心理描写，正是最打动人心之处。这些内容一经缩写便荡然无存。读“大部头”固然费时，但沉浸其中所得的审美体验与思考耐力，是速食阅读无法给予的。缩写本可作入门向导，却不能替代原著。\n\n【说明】开头亮明观点，再以两部名著的具体内容为据，最后辩证地肯定缩写本的入门作用，全文约170字。",
+          "inputSha256": "10dbd0c4b935f9b7e25632c4563421a08bb760b25bebb0301705c69f994b169f",
+          "inputContextSha256": "c69560a145221576fe1d1ab46f4d4505eb6d4bcf264f49d0529438f474c88e03",
+          "inputPresentationSha256": "84ffa93e0772f973532d88486692feaa6d5655ccaf05978e620722618eb6af17",
+          "generatedAt": "2026-10-03T05:09:23.939966+00:00",
+          "uncertainties": [
+            "本题为三选一的开放性微写作，无唯一答案，以上为原创示例。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed",
+            "note": "root正文150非空白字符。Claude自报约170字需以实测为准，正文偏长；孙少平工棚灯下特定场景尚未逐处核实，缩写使细节荡然无存也过于绝对。保留原稿并标注，默认root示例；不把模型自报字数当验收证据。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2020-writing-result.json",
+            "inputPromptSha256": "515d18a5a9a8eaf9d6f0eea149aecac48e923b19b315ea7e1ea0967604bafa15",
+            "responseStreamSha256": "9f4cd2d3a2d33e2f9f6295c5ff9b76282aea85662a2f33ed4d3ec7269906ddc9",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "10dbd0c4b935f9b7e25632c4563421a08bb760b25bebb0301705c69f994b169f",
+      "inputContextSha256": "c69560a145221576fe1d1ab46f4d4505eb6d4bcf264f49d0529438f474c88e03",
+      "inputPresentationSha256": "84ffa93e0772f973532d88486692feaa6d5655ccaf05978e620722618eb6af17",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "root正文150非空白字符。Claude自报约170字需以实测为准，正文偏长；孙少平工棚灯下特定场景尚未逐处核实，缩写使细节荡然无存也过于绝对。保留原稿并标注，默认root示例；不把模型自报字数当验收证据。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:12:02.684Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2020-weixiezuo:2",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2020北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/202102/W020220527566843533730.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "我擅长缝脱落的纽扣。先选颜色相近的线，穿针后在线尾打结；把纽扣放回原位，从衣料背面进针，依次穿过扣眼，往返缝四五次。每次拉线松紧适中，留出扣合衣料的余地。接着把线绕在纽扣与布料间的线束上两三圈，再从背面打结剪线。最后轻拉检查是否牢固，把针收回针线盒。一颗纽扣缝稳了，旧衣也能穿得整齐。",
+          "inputSha256": "db40832b8825d11e875f38835a74cf719b9ef613dd247d794576b065502188ba",
+          "inputContextSha256": "dec843afdc897e13a8feb754f00997746012ed055d958c466623b581bfc4c55a",
+          "inputPresentationSha256": "2976a842eca4d52ab77b4adcc8b2204949d1691c986278c71f668e286625c105",
+          "generatedAt": "2026-10-03T05:04:46.614Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/gpt-astra-2020-writing-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2020-writing-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "root正文142非空白字符，步骤清楚。Claude正文较长，自报字数不作为验收；固定煮面三分钟受面条粗细与火力影响，示例不能作为保证熟度的普适规则。默认root缝纽扣示例。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【示例】\n我擅长的生活技能是做西红柿鸡蛋手擀面。第一步和面：五百克面粉加一小勺盐，分次倒入约两百克凉水，揉成光滑偏硬的面团，盖上湿布醒二十分钟。第二步擀切：案板撒薄粉，把面团擀成约两毫米厚的大片，折成扇形，切成细条后抖散。第三步做卤：鸡蛋炒散盛出，西红柿切块炒出红汁，加水烧开，倒回鸡蛋，加盐调味。最后把面条下入沸水煮三分钟，捞出浇卤即可。诀窍是面要硬、醒要足，面条才筋道爽滑。\n\n【说明】按“和面—擀切—做卤—煮面”的顺序分步介绍，末尾点出诀窍，全文约170字。",
+          "inputSha256": "db40832b8825d11e875f38835a74cf719b9ef613dd247d794576b065502188ba",
+          "inputContextSha256": "dec843afdc897e13a8feb754f00997746012ed055d958c466623b581bfc4c55a",
+          "inputPresentationSha256": "2976a842eca4d52ab77b4adcc8b2204949d1691c986278c71f668e286625c105",
+          "generatedAt": "2026-10-03T05:09:23.939966+00:00",
+          "uncertainties": [
+            "本题为三选一的开放性微写作，无唯一答案，以上为原创示例。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed",
+            "note": "root正文142非空白字符，步骤清楚。Claude正文较长，自报字数不作为验收；固定煮面三分钟受面条粗细与火力影响，示例不能作为保证熟度的普适规则。默认root缝纽扣示例。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2020-writing-result.json",
+            "inputPromptSha256": "515d18a5a9a8eaf9d6f0eea149aecac48e923b19b315ea7e1ea0967604bafa15",
+            "responseStreamSha256": "9f4cd2d3a2d33e2f9f6295c5ff9b76282aea85662a2f33ed4d3ec7269906ddc9",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "db40832b8825d11e875f38835a74cf719b9ef613dd247d794576b065502188ba",
+      "inputContextSha256": "dec843afdc897e13a8feb754f00997746012ed055d958c466623b581bfc4c55a",
+      "inputPresentationSha256": "2976a842eca4d52ab77b4adcc8b2204949d1691c986278c71f668e286625c105",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "root正文142非空白字符，步骤清楚。Claude正文较长，自报字数不作为验收；固定煮面三分钟受面条粗细与火力影响，示例不能作为保证熟度的普适规则。默认root缝纽扣示例。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:12:02.684Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2020-weixiezuo:3",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2020北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/202102/W020220527566843533730.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "门铃轻响，\n你退到楼梯转角，\n把一袋蔬菜、一盒药，\n留在春天尚未进门的地方。\n口罩遮住你的笑，\n额上的汗却亮着。\n一声谢谢隔着几级台阶，\n你点点头，又走向下一扇门。\n街道暂时安静，\n车轮替许多人奔忙。\n愿你送完最后一件包裹，\n也有一盏灯，\n把归途照暖。",
+          "inputSha256": "cc6d1f6ec9e21e4f969cf70508de50c0538be6e360f436b2af368e592eed1553",
+          "inputContextSha256": "541e940edcfc6754eddda9e5cd3b5e1b754b3aabf3add1aed8972f7ba83a50d2",
+          "inputPresentationSha256": "7cbed609e0c6d7b250c3ecac3ae9e54df2d38d0a37f7b9180f6169019daf9c3f",
+          "generatedAt": "2026-10-03T05:04:46.614Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/gpt-astra-2020-writing-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2020-writing-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "两篇选择小诗分支，须按诗歌正文含标题标点核算不超过150字；原始Claude说明独立保留，提交正文不包括说明。文学示例不冒充模型真实经历。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【示例（小诗）】\n《逆行的光》\n城市按下了暂停键，\n长街空得只剩下风。\n你却拧动车把，\n像一粒火种，驶进清晨的寒冷。\n\n口罩勒红了脸颊，\n车后那只鼓鼓的箱子，\n装着蔬菜、药品，\n和千家万户的安宁。\n\n小区门口，你放下包裹，\n退后两步，挥了挥手，\n没有留下姓名。\n\n可我记得——\n那个冬天，\n是你把一座城的心跳，\n一单一单，送到了黎明。\n\n【说明】以“火种”“鼓鼓的箱子”“退后两步挥手”等形象写快递小哥在疫情中的坚守，结尾抒发感念之情；连标题、标点在内约140字，不超过150字。",
+          "inputSha256": "cc6d1f6ec9e21e4f969cf70508de50c0538be6e360f436b2af368e592eed1553",
+          "inputContextSha256": "541e940edcfc6754eddda9e5cd3b5e1b754b3aabf3add1aed8972f7ba83a50d2",
+          "inputPresentationSha256": "7cbed609e0c6d7b250c3ecac3ae9e54df2d38d0a37f7b9180f6169019daf9c3f",
+          "generatedAt": "2026-10-03T05:09:23.939966+00:00",
+          "uncertainties": [
+            "本题为三选一的开放性微写作，无唯一答案，以上为原创示例。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed",
+            "note": "两篇选择小诗分支，须按诗歌正文含标题标点核算不超过150字；原始Claude说明独立保留，提交正文不包括说明。文学示例不冒充模型真实经历。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2020-writing-result.json",
+            "inputPromptSha256": "515d18a5a9a8eaf9d6f0eea149aecac48e923b19b315ea7e1ea0967604bafa15",
+            "responseStreamSha256": "9f4cd2d3a2d33e2f9f6295c5ff9b76282aea85662a2f33ed4d3ec7269906ddc9",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "cc6d1f6ec9e21e4f969cf70508de50c0538be6e360f436b2af368e592eed1553",
+      "inputContextSha256": "541e940edcfc6754eddda9e5cd3b5e1b754b3aabf3add1aed8972f7ba83a50d2",
+      "inputPresentationSha256": "7cbed609e0c6d7b250c3ecac3ae9e54df2d38d0a37f7b9180f6169019daf9c3f",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两篇选择小诗分支，须按诗歌正文含标题标点核算不超过150字；原始Claude说明独立保留，提交正文不包括说明。文学示例不冒充模型真实经历。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:12:02.684Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2020-dazuowen:1",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2020北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/202102/W020220527566843533730.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "各尽其用，共成辽阔\n\n仰望星空，明亮的星容易吸引目光，较暗的星却也有自己的位置。题目中的北斗卫星各有功用，共同组成服务人们的系统，使我想到：衡量一个人的价值，不能只看他是否站在最显眼的地方，还要看他能否发展自己的能力，承担应负的责任，并在与他人的协作中产生实际作用。各尽其用，才能共成辽阔。\n\n各有功用，首先要求我们承认能力和工作的多样。校园艺术节的舞台上，独唱者最容易得到掌声，但演出顺利还需要灯光、音响、场务和许多次耐心排练。会唱歌与会调试设备，是不同的本领；站在台前与守在幕后，是不同的位置。若把所有人都推向同一盏追光灯，再用同一把尺衡量成败，舞台可能挤满了人，演出却无法开始。看见差异并给予适合的位置，既是对个人的尊重，也是集体有效运转的前提。\n\n承认差异，并不意味着把人固定在某种位置上。卫星的功能由设计确定，人的能力却能在学习中成长。如果一位同学目前不善于表达，我们可以让他先在资料整理中发挥长处，也应给他尝试发言、练习沟通的机会，不能以“你只适合幕后”为由关上别的门。所谓找到自己的功用，应当包含主动探索和持续改变，而不是被贴上一个永不更换的标签。尊重每个人的价值，也就包括尊重尚未显露的可能。\n\n其次，有价值的位置需要扎实的行动来充实。说每个人都有用，不能成为随意应付的安慰。在小组实验里，负责记录的人若漏记条件，负责测量的人若忽略误差，最终报告再漂亮也难以可信。看似平常的任务，只有做到准确、认真、及时，才真正发挥作用。我们不必等到承担惊天动地的事业，才开始追问自己的价值；把眼前一件事做好，让同伴能够信赖自己，就是价值逐渐形成的过程。\n\n再者，个人作用还需要在协作中相互连接。一个小组即使人人能干，若各写各的报告、互不说明所用标准，成果也可能拼不到一起。协作要求人既能坚持专业判断，又愿意听懂别人；既完成自己的部分，也向共同目标核对方向。个人的出色并不会自动变成集体的成功，只有沟通清楚、责任衔接、相互补位，分散的能力才能形成可靠的整体。\n\n因此，学校和社会评价人的时候，应把目光从少数耀眼的位置扩展到具体的贡献，给不同才能以成长的空间，也给平凡劳动以应有的尊重。个人则要避免只凭位置高低判断自身意义：既不因暂时不被看见而自轻，也不因得到掌声而忘记别人的付出。在尽责的基础上主动学习，在合作的过程中保持自我，才是各尽其用的完整含义。\n\n星空之所以辽阔，不只因为某一颗星格外明亮。我们各有可以锻炼的本领，各有可以承担的责任；当这些本领被认真运用，这些责任被可靠履行，不同的人便能相互成就，织出比个人视野更广阔的天地。",
+          "inputSha256": "62a015ab31898149a47ee5291a978713082d612bf60a0a2dc98a1d59a031c3f3",
+          "inputContextSha256": "73ce8e3ebc3eec79f41696bfd5307a118fa1c9064b02ae7d5524ca090dde4c0d",
+          "inputPresentationSha256": "de25a5bef4fb84ac68d3f86c4d21a6d45410e005577b569a5e5d680741de030b",
+          "generatedAt": "2026-10-03T05:04:46.614Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/gpt-astra-2020-writing-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2020-writing-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "两篇完整议论文均达不少于700汉字。Claude北斗55颗卫星的轨道分工、轨道误差以纳秒计、定位至少四颗的绝对说法、零件零次品和团队统计等没有逐项事实核实；尤其轨道误差和计时误差不能混称。保留为未经核实的论据细节，默认采用避免精确技术数据且讨论成长空间的root版本。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【立意】由“每一颗都有自己的功用”联想到个体与整体的关系：每个位置都不可轻视，个体要找准定位、尽其所能，并在协同中成就整体。\n\n【示例作文】\n各尽其用，方成“天网”\n\n北斗三号最后一颗卫星升空，五十五颗卫星在苍穹之上各就各位：有的定于地球静止轨道，有的行于倾斜同步轨道，有的绕于中圆轨道；有的专司导航定位，有的兼顾短报文通信。它们高度不同、职能各异，却没有一颗是多余的。正因“每一颗都有自己的功用”，才织就了那张服务全球的“天网”。由此我想到：个体各尽其用，整体方能成其大；而个体的价值，也恰恰在整体之中得以实现。\n\n每一颗都有功用，首先意味着每个位置都不可轻视。一张网的强度，取决于每一个结点；少了一颗星，信号便可能出现盲区。社会亦然。新冠肺炎疫情期间，人们记住了钟南山、李兰娟这样的院士，可支撑起一座城市运转的，还有连夜赶工的火神山建设者、挨家挨户登记测温的社区工作者、风雨无阻的快递小哥和清晨扫街的环卫工人。他们并不耀眼，却如同轨道上沉默的卫星，在各自的坐标上发出稳定的信号。倘若人人都只想做最亮的那一颗，而无人甘居平凡的位置，“天网”便无从谈起。岗位有分工之别，价值却无高下之分。\n\n每一颗都有功用，还意味着要找准自己的轨道，把功用发挥到极致。卫星不会羡慕别人的轨道，它只在自己的轨道上精确运行，误差以纳秒计。人也应当如此。“杂交水稻之父”袁隆平一辈子扎在稻田里，把一粒种子做到了极致；大国工匠胡双钱数十年打磨飞机零件，经手的数十万个零件无一次品。他们没有四处张望，而是认清了自己之所长，在一条轨道上深耕不辍。反观现实，有的年轻人盲目追逐热门，今天羡慕主播，明天向往金融，唯独不肯问一句“我适合什么”，结果在别人的轨道上迷失了自己。可见，天生我材必有用，但“用”不会自动显现，须以清醒的自我认识去定位，以长久的专注去兑现。\n\n每一颗都有功用，更意味着个体要在协同中成就整体。单独一颗卫星无法完成定位，至少要有四颗同时“看见”你，才能算出你的位置。个人的功用再突出，若游离于整体之外，也难成大事。北斗工程本身就是明证：四百多家单位、三十余万科技人员接力攻关，有人研制原子钟，有人攻克星间链路，有人守在发射场的寒夜里。没有谁能独揽全功，但人人都与有荣焉。所谓“一花独放不是春”，把个人的光汇入集体的光，功用才会被成倍放大。\n\n当然，强调各尽其用，并非要人做一颗没有个性的螺丝钉。恰恰相反，五十五颗卫星正因各不相同，才彼此不可替代。尊重差异，发挥所长，整体才有活力。\n\n作为即将走向社会的青年，我们不必为自己不是最亮的那颗星而焦虑。认清自己的轨道，恪守自己的职责，并与他人同频共振——当千千万万个“我”各尽其用，这个时代便会拥有一张更加辽阔而坚韧的“天网”。\n\n【说明】全文约1000字，满足不少于700字的要求。结构为：引材料提出中心论点，三个分论点层层递进（位置不可轻视、找准轨道尽其用、协同成就整体），再作辩证补充，最后联系青年自身收束。",
+          "inputSha256": "62a015ab31898149a47ee5291a978713082d612bf60a0a2dc98a1d59a031c3f3",
+          "inputContextSha256": "73ce8e3ebc3eec79f41696bfd5307a118fa1c9064b02ae7d5524ca090dde4c0d",
+          "inputPresentationSha256": "de25a5bef4fb84ac68d3f86c4d21a6d45410e005577b569a5e5d680741de030b",
+          "generatedAt": "2026-10-03T05:09:23.939966+00:00",
+          "uncertainties": [
+            "本题为二选一的开放性作文，立意角度不唯一，以上为原创示例。",
+            "文中北斗工程参研单位与人员数量、胡双钱经手零件数量等数据凭记忆引用，为约数，使用时宜核对。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed",
+            "note": "两篇完整议论文均达不少于700汉字。Claude北斗55颗卫星的轨道分工、轨道误差以纳秒计、定位至少四颗的绝对说法、零件零次品和团队统计等没有逐项事实核实；尤其轨道误差和计时误差不能混称。保留为未经核实的论据细节，默认采用避免精确技术数据且讨论成长空间的root版本。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2020-writing-result.json",
+            "inputPromptSha256": "515d18a5a9a8eaf9d6f0eea149aecac48e923b19b315ea7e1ea0967604bafa15",
+            "responseStreamSha256": "9f4cd2d3a2d33e2f9f6295c5ff9b76282aea85662a2f33ed4d3ec7269906ddc9",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "62a015ab31898149a47ee5291a978713082d612bf60a0a2dc98a1d59a031c3f3",
+      "inputContextSha256": "73ce8e3ebc3eec79f41696bfd5307a118fa1c9064b02ae7d5524ca090dde4c0d",
+      "inputPresentationSha256": "de25a5bef4fb84ac68d3f86c4d21a6d45410e005577b569a5e5d680741de030b",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两篇完整议论文均达不少于700汉字。Claude北斗55颗卫星的轨道分工、轨道误差以纳秒计、定位至少四颗的绝对说法、零件零次品和团队统计等没有逐项事实核实；尤其轨道误差和计时误差不能混称。保留为未经核实的论据细节，默认采用避免精确技术数据且讨论成长空间的root版本。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:12:02.684Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2020-dazuowen:2",
+      "sources": [
+        {
+          "type": "public_retypeset_exam",
+          "title": "2020北京语文公开重排题本，文字与标记核对，原始扫描件待核",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/202102/W020220527566843533730.doc"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "一条信息\n\n“旧书整理，周日下午两点，图书角见。”\n\n班级群里弹出这条信息时，我正对着一道几何题发愁。消息下面很快出现几句“收到”，又被新的聊天顶了上去。我扫了一眼，心想不过是把书放回架子，晚些去也没什么，便关掉手机，没有回复。\n\n星期日下午，我磨蹭到两点四十分才出门。路上风很大，行道树把碎影甩在脚边。我一边走一边想，等我到了，大家大概已经收拾完，正好还能赶上聊一会儿天。\n\n推开图书角的门，却只有小宁蹲在地上。靠墙的几箱旧书摊开了，地面放着写有“文学”“历史”“科普”的纸条。她左手捧着一本卷了角的书，右手一点点揭去书脊上的旧胶带。听见响动，她抬头看我：“你来了，帮我把这箱先分开吧。”\n\n我问其他人怎么还没到。她停了停，说有两个人临时有事，另一个记错了时间。“没关系，我们先做。”她说完便低下头，把揭到一半的胶带继续往外拉。胶带已经发黄，一用力就断，她只得从断口重新找起。\n\n我有些窘，赶紧搬过纸箱。开始时我分得很快，看见封面上有动物就扔进科普，有人物画像就放进历史。小宁检查时从历史那堆取出一本小说，没有责怪，只翻开扉页给我看。我这才发现，整理旧书不是给封面排队，每一本都得稍稍读懂。\n\n我们把破损页摊平，给松散的书套上护封，又将重复的书另放一处。一张浅蓝色的小纸片从书页里滑下来，上面写着：“这一段读不懂，等长大一点再看。”字歪歪的，旁边画着一枚问号。我忍不住笑了，小宁却轻轻把纸片夹回原处：“也许下一个读的人，会想起自己也有这样的问号。”\n\n窗外的光渐渐移到书架另一侧。我才留意到，小宁手边的水瓶一直没有打开，指甲缝里沾着细灰。她已经独自等了很久，又做了很久。我想说一句抱歉，话到了嘴边，却先问她：“这些都要今天弄完吗？”\n\n“明天低年级就来借书了。”她把最后一张分类纸贴正，“如果没分清，他们找起来会着急。”\n\n这句话很轻，我却忽然明白了那条消息里没有写出的东西。两点不是一个可以随手划过的数字，图书角也不是一个模糊的地点；它们连着一个等候的人，连着一箱箱要整理的书，还连着明天来这里寻找故事的孩子。我以为自己的迟到只占了四十分钟，实际上却把原本可以共同承担的事情，留给了别人。\n\n我放下手中的书，对小宁说：“今天是我没把约好的事放在心上，对不起。剩下这架我来，你先喝点水。”她看了我一眼，把水瓶拧开。我没有急着等她说原谅，只从最下层开始，一本本核对书脊与标签。\n\n天色暗下来时，最后一箱终于空了。离开前，我拿出手机，找到那条几乎沉底的信息，认真读了一遍，又在下面补了一句：“书已整理好。以后临时有变化，我会提前说明。”\n\n屏幕上的字仍然很普通。我却第一次看清，一条信息的另一端，并不只是一个等着点亮的小红点，而是一个有时间、有辛劳，也值得被认真回应的人。",
+          "inputSha256": "0e51943e2b332df48cdf8b95c2a7a6f6ff13cf082c6a889c97978cdecfdc3608",
+          "inputContextSha256": "1d83cdac80e550a9a325ff1db51d026d0bc260ce7bfa774678a2d0668427645a",
+          "inputPresentationSha256": "97ae79c8a84729ffad16224f51b07d4913022edfeec06294bafdbfdd583c29ea",
+          "generatedAt": "2026-10-03T05:04:46.614Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/gpt-astra-2020-writing-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2020-writing-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "两篇均为符合命题的原创虚构记叙文。Claude以2020疫情为背景，14天只量体温后的放心是人物心理描写，不构成排除感染的医学判断；药盒早已过期与叙述时间的关系未交代，不作2020当年事实资料。默认root图书角版本无上述事实依赖。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【立意】通过疫情期间随手转发一条未经核实的信息、致使奶奶冒雪排队抢药的经历，写出愧疚与成长：面对信息要学会辨别真伪，对信任自己的人负责。\n\n【示例作文】\n一条信息\n\n那是2020年1月的最后一个夜晚。窗外没有鞭炮声，整座小城静得能听见暖气管里的水响。我窝在沙发上刷手机，班级群里突然跳出一条信息：“最新消息！双黄连口服液可抑制新型冠状病毒，各大药店即将断货，速转家人！”后面跟着三个鲜红的感叹号。\n\n我的心猛地一跳。那些天，确诊数字每天都在往上蹿，恐慌像潮气一样渗进每个人的屋子。我几乎没有思考，拇指一按，就把它转进了“相亲相爱一家人”群里，还特意加了一句：“奶奶，您快备点儿！”\n\n发完，我便心安理得地睡了。\n\n第二天一早，妈妈的声音把我惊醒：“妈，您这是去哪儿了？”我趿着拖鞋跑出卧室，看见奶奶站在门口，棉帽上落了一层细雪，口罩的边缘被哈气洇湿了一圈，鼻尖冻得通红。她从怀里掏出一个塑料袋，像捧着宝贝似的递过来，里面是两盒双黄连口服液。\n\n“药店门口排了老长的队，人挤人。”奶奶搓着僵硬的手指，笑出了一脸皱纹，“我五点就去了，总算抢着两盒。咱妞妞发的信息，准没错。”\n\n“人挤人”三个字像针一样扎了我一下。爸爸皱着眉把手机递到我面前，屏幕上是一家权威媒体刚刚发布的提醒：抑制并不等于预防和治疗，请勿抢购、自行服用；扎堆排队，反而增加交叉感染的风险。\n\n我愣在那里，脸上火辣辣的。我看着奶奶冻得发紫的手背，看着她脚上那双被雪水浸湿的棉鞋，喉咙里像堵了一团棉花。七十岁的老人，在零下十度的寒风里站了两个钟头，挤在一群同样慌张的人中间，只因为她的孙女随手转了一条没头没尾的信息。而我，甚至没有点开看一眼它的出处。\n\n“奶奶，对不起……”我的声音小得像蚊子叫。\n\n奶奶没听明白，还把药往我手里塞。我接过来，那药盒冰凉冰凉的，沉得我几乎拿不住。\n\n接下来的十四天，我每天早晚给奶奶量两次体温，在本子上记下一个个数字。每写下一个“36.5”，心里的石头才落下一点儿。直到第十四天晚上，我才敢长长地舒一口气。\n\n那天夜里，我重新翻出那条信息，一个字一个字地读。没有署名，没有来源，没有时间，只有三个感叹号在屏幕上张牙舞爪。我忽然明白，信息本身没有重量，是转发它的人给了它重量；我轻轻一按，压在奶奶肩头的，却是一个清晨的风雪。\n\n从那以后，我养成了一个习惯：看到“速转”“紧急”之类的字眼，先停三秒，查一查出处，看一看权威媒体怎么说；拿不准的，宁可让它烂在手机里。后来，我还成了家族群里的“辟谣员”，奶奶每收到一条养生秘方，都会先举着手机来问我：“妞妞，这个是真的不？”\n\n那两盒双黄连，至今还放在我的书桌抽屉里，早已过了保质期，我却舍不得扔。它提醒我：在这个信息如潮水般涌来的时代，指尖要慢一点，心要明一点——因为屏幕的另一端，站着信任你的人。\n\n【说明】全文约1000字，满足不少于700字的要求。以“一条信息”为线索，按“收到并转发—奶奶冒雪买药—得知真相而愧疚—学会辨别”展开，有肖像、动作、语言和心理等细节描写，结尾点明感悟。",
+          "inputSha256": "0e51943e2b332df48cdf8b95c2a7a6f6ff13cf082c6a889c97978cdecfdc3608",
+          "inputContextSha256": "1d83cdac80e550a9a325ff1db51d026d0bc260ce7bfa774678a2d0668427645a",
+          "inputPresentationSha256": "97ae79c8a84729ffad16224f51b07d4913022edfeec06294bafdbfdd583c29ea",
+          "generatedAt": "2026-10-03T05:09:23.939966+00:00",
+          "uncertainties": [
+            "本题为二选一的开放性作文，选材与立意不唯一，以上为原创示例；文中人物与情节为依托2020年初真实社会背景的文学性创作。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed",
+            "note": "两篇均为符合命题的原创虚构记叙文。Claude以2020疫情为背景，14天只量体温后的放心是人物心理描写，不构成排除感染的医学判断；药盒早已过期与叙述时间的关系未交代，不作2020当年事实资料。默认root图书角版本无上述事实依赖。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2020.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2020-writing-result.json",
+            "inputPromptSha256": "515d18a5a9a8eaf9d6f0eea149aecac48e923b19b315ea7e1ea0967604bafa15",
+            "responseStreamSha256": "9f4cd2d3a2d33e2f9f6295c5ff9b76282aea85662a2f33ed4d3ec7269906ddc9",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "0e51943e2b332df48cdf8b95c2a7a6f6ff13cf082c6a889c97978cdecfdc3608",
+      "inputContextSha256": "1d83cdac80e550a9a325ff1db51d026d0bc260ce7bfa774678a2d0668427645a",
+      "inputPresentationSha256": "97ae79c8a84729ffad16224f51b07d4913022edfeec06294bafdbfdd583c29ea",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两篇均为符合命题的原创虚构记叙文。Claude以2020疫情为背景，14天只量体温后的放心是人物心理描写，不构成排除感染的医学判断；药盒早已过期与叙述时间的关系未交代，不作2020当年事实资料。默认root图书角版本无上述事实依赖。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T05:12:02.684Z",
+      "currentVersion": "gpt_6_astra"
     }
   ],
   "releaseBlockers": [
@@ -18267,6 +20363,26 @@
       "status": "open",
       "reason": "Current v2 inputContextSha256 binds materials/topic/annotation/question, but excludes plural annotations (rendered emphasis ranges).2022 source review found pre-existing wrong repeated-character anchors, missing language underlines and over-broad prose underline, corrected with source evidence. Before final release audit all rendered question emphasis and bind semantic marking evidence to current model inputs without backfilling unsupported hashes.",
       "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
+    },
+    {
+      "id": "2020-composite-score",
+      "status": "open",
+      "recordIds": [
+        "2020-guwen"
+      ],
+      "detail": "Unit2020-guwen:5 combines originalq10translation(2points) andq11evidence(4points); existing score=2 is preserved for historical compatibility. Need explicit composite scoring and learner-history-compatible acceptance; never drop either part or silently rescale old scores."
+    },
+    {
+      "id": "2020-source-scan",
+      "status": "open",
+      "recordIds": [
+        "2020-feilian",
+        "2020-guwen",
+        "2020-honglou",
+        "2020-sanwen",
+        "2020-yuyanjichu"
+      ],
+      "detail": "2020 corrections/marks are checked against public re-typeset gaokao.com/EOL copies, with EOL Word XML as additional marking evidence. Original scan not yet obtained. Preserve quoted27-day statement and unverified190C notation rather than silently changing scientific content. See source-corrections-2020.json."
     }
   ]
 }
