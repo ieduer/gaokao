@@ -230,6 +230,6 @@ Candidate only; existing accepted production remains unchanged. Explicit learnin
 Depends on the accepted User Center learning journal/recorder before this leaf may publish. Record-only operations do not alter grading or reading credit. Source corpus and score rules are unchanged. Release through the existing registered publisher, then verify actual authenticated source-to-central reload and failure recovery; local tests/build alone do not establish deployment. Rollback code only while preserving central records and local pending originals. Evidence is tracked under the workspace learning-records-validity-20260925 task.
 ## 2026-10-02 本地答案權威候選（未發布）
 
-`data/answer-authority.json`逐題綁定完整材料、題幹及原有身份的SHA-256；draft不改現行答案，reviewed保存完整選項集合，disputed不得帶確定判分鍵。`scripts/lib/answer-authority.mjs`校驗後才可投影，保留全部歷史模型版本。Claude結果必須有實際回傳模型證據；目前六個GPT-6 Astra草稿、零Claude新結果。
+`data/answer-authority.json`逐題綁定完整材料、題幹及原有身份的SHA-256；draft不改現行答案，reviewed保存完整選項集合，disputed不得帶確定判分鍵。`scripts/lib/answer-authority.mjs`校驗後才可投影，保留全部歷史模型版本。Claude結果必須有實際回傳模型證據；目前20個GPT-6 Astra草稿、零Claude新答案；登入已恢復，本機CLI已更新至2.1.288，最新模型真實請求待驗。
 
 新增`npm run test:answer-authority`與`npm run check:answer-authority`。`npm run check:answer-completion`要求全部612題完成且各有實證雙模型結果，目前預期阻擋，不能將普通構建通過當成全量重答完成。`assets/js/answer-versions.js`需列入正式allowlist；介面按每題資料顯示模型、日期及当前版本，整卷不再硬編為GPT-5.5。資料投影與其他站發布流程仍在實作，現網未變。

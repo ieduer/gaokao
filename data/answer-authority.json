@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261002-initial-conflict-review-draft",
+  "revision": "20261002-xuci-review-draft",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -217,6 +217,508 @@
           "provenance": {
             "kind": "codex_turn",
             "evidence": "answers-six-sites-20261002/gpt-astra-initial-reviews"
+          }
+        }
+      }
+    },
+    {
+      "id": "2026-guwen:2",
+      "inputSha256": "7ad4bb12561bfaea85f1162a841229f44db6393749c80fc26e5fd11398f4af27",
+      "status": "draft",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "依据高考站已校订2026题文重答；字词细分争议不影响C。未将专门站旧转录用作本次题文权威。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:07:56.018Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内完整题目及相关材料"
+        },
+        {
+          "type": "dictionary_revision",
+          "title": "文言站2026-09-16-r3词典校订，保留争议"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：C。‘始灭大贼，而更被黜’说刚立大功却遭贬斥；‘断人左手而右手不应’设想损伤一部分却得不到另一部分反应，都是转折。A项前‘为’属于为……所……的被动格式，后‘为’属于以为美谈，表示当作。B项前‘以’引出返回郡中等待的目的，后‘以’引出被任命的人。D项前‘与’联结互为姻亲的两人，后‘与’表示致信或给予书信所指向的对象；后一句‘书’读作写信还是书信，可以影响‘与’的词类标签，不能据此改判C。",
+          "inputSha256": "7ad4bb12561bfaea85f1162a841229f44db6393749c80fc26e5fd11398f4af27",
+          "generatedAt": "2026-10-03T00:07:56.018Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
+          }
+        }
+      }
+    },
+    {
+      "id": "2025-guwen:2",
+      "inputSha256": "6659d911c8674642df02adc2cd4c07d953fee8f179c030c227650201675f9ed4",
+      "status": "draft",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "与既有语境校订一致，理由重新按完整选项组织。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:07:56.018Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内完整题目及相关材料"
+        },
+        {
+          "type": "dictionary_revision",
+          "title": "文言站2026-09-16-r3词典校订，保留争议"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：B。‘难动以物’是不能用外物使其动摇，‘送之以目’是用目光送客，两处以都引进动作的凭借，且介宾结构都在动词之后。A项一处表示跟某人一起安定世道，一处是给予城邑。C项分别是向人说话和认为某种情况。D项分别是称王与替兄长请求。比较时应看以物、以目在句中承担的功能，不能把被外物影响这一现代译法直接当成以的被动义。",
+          "inputSha256": "6659d911c8674642df02adc2cd4c07d953fee8f179c030c227650201675f9ed4",
+          "generatedAt": "2026-10-03T00:07:56.018Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
+          }
+        }
+      }
+    },
+    {
+      "id": "2024-guwen:2",
+      "inputSha256": "5af8b4034eaf2a3cef2b504797a2659343b99da6cd6d2f5865f43f8625195415",
+      "status": "draft",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "结论D；不采用简单对调、删字或仅看现代译词的判法。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:07:56.018Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内完整题目及相关材料"
+        },
+        {
+          "type": "dictionary_revision",
+          "title": "文言站2026-09-16-r3词典校订，保留争议"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：D。第一处而把统治者的奖赏与百姓的赞誉并列，第二处把希望天下安定与厌恶混乱并列；后者虽有正反两种态度，指向却一致，并非逻辑转折。A项百姓之从事内含百姓从事的主谓关系，天下之人则是修饰关系。B项前者指坚持有命论的人，后者用于提出坚持这种主张的事情并引出说明，不能都按某类人处理。C项分别处于以命为有的判断结构和所以听狱制罪的凭借结构。",
+          "inputSha256": "5af8b4034eaf2a3cef2b504797a2659343b99da6cd6d2f5865f43f8625195415",
+          "generatedAt": "2026-10-03T00:07:56.018Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
+          }
+        }
+      }
+    },
+    {
+      "id": "2020-guwen:2",
+      "inputSha256": "8cf348a4059a8406f69705907bb3ee9f5360d1d86d28fed93bb22afd9e12226f",
+      "status": "draft",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "保留认为与因由两种分析口径；本题明确只判释义用不成立。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:07:56.018Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内完整题目及相关材料"
+        },
+        {
+          "type": "dictionary_revision",
+          "title": "文言站2026-09-16-r3词典校订，保留争议"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：B。句中所说的是想到或判断汾水可以用来淹灌安邑，不能将句首以再解释为使用汾水的工具用法；它后面接的是汾水可以灌安邑这一判断，而非仅接汾水。A项凭借前述理由出兵，C项把臣所说的话告诉二人，D项何以即以何、凭什么，题面释义均可成立。即使对B句首以采用认为或表示原因的不同分析，也都不能支持题面给出的用义。",
+          "inputSha256": "8cf348a4059a8406f69705907bb3ee9f5360d1d86d28fed93bb22afd9e12226f",
+          "generatedAt": "2026-10-03T00:07:56.018Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
+          }
+        }
+      }
+    },
+    {
+      "id": "2018-guwen:2",
+      "inputSha256": "6b7b3e399444cad52c3b8d5f8f44679fe021d32e5eb1297c854e4675968fab0e",
+      "status": "draft",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "本题细分词类有历史分歧；C的结构差异明确。胜和其的精细标签仍不作独立排他词性练习。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:07:56.018Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内完整题目及相关材料"
+        },
+        {
+          "type": "dictionary_revision",
+          "title": "文言站2026-09-16-r3词典校订，保留争议"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案取C。‘此之谓’把宾语此前置，之是这一结构的标志；‘白垩之与黑漆’把白与黑构成对举整体，之没有标记前置宾语。A项日均指日常时日，B项胜均表示尽、穷尽。D项两个其都回指语境中的对象、限定后面的名词：前一处指前文比作秋毫的微小征兆，后一处指被救的人。将其秋毫机械拆成领属、再与其人判异，容易忽略指代对象及本题比较粒度。",
+          "inputSha256": "6b7b3e399444cad52c3b8d5f8f44679fe021d32e5eb1297c854e4675968fab0e",
+          "generatedAt": "2026-10-03T00:07:56.018Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
+          }
+        }
+      }
+    },
+    {
+      "id": "2016-guwen:2",
+      "inputSha256": "ff0ddb83e57ff78dbc381be4f072fe2ec8828b62dafbc7a0bad11b727227c8d4",
+      "status": "draft",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "题面中的群害等转录应另行核原卷，不在答案更新中猜补。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:07:56.018Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内完整题目及相关材料"
+        },
+        {
+          "type": "dictionary_revision",
+          "title": "文言站2026-09-16-r3词典校订，保留争议"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：D。齐以重宝购买生鹿，以引进所用财物；楚以生鹿藏钱五倍，以说明因售鹿而积钱的原因。不能将后者解释成把活鹿当作藏钱的工具。A项之均为到、往，B项之均连接修饰语与中心语，C项果均表示事情果然如此。本题要选不同，故以两种语境功能的差别作答。",
+          "inputSha256": "ff0ddb83e57ff78dbc381be4f072fe2ec8828b62dafbc7a0bad11b727227c8d4",
+          "generatedAt": "2026-10-03T00:07:56.018Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
+          }
+        }
+      }
+    },
+    {
+      "id": "2015-guwen:2",
+      "inputSha256": "3e4943d0793fa56338354bfab4bc077c8a8acd42cae1cd8f8a7781a61b670e33",
+      "status": "draft",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "仅校核本小题，全文缺损和补字需独立原卷核验。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:07:56.018Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内完整题目及相关材料"
+        },
+        {
+          "type": "dictionary_revision",
+          "title": "文言站2026-09-16-r3词典校订，保留争议"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：A。‘其谁可而为之’是在询问谁适任，其带征询、商量语气；‘君知其难也’中其回指相应事情，修饰难处。B项之均表修饰关系，C项遂均承接前事而引出结果，D项者均使前面的行为描述指向相应的人。本站材料有大段转录残损，本题四组对比仍可读，但不能据此宣布整篇校对完成。",
+          "inputSha256": "3e4943d0793fa56338354bfab4bc077c8a8acd42cae1cd8f8a7781a61b670e33",
+          "generatedAt": "2026-10-03T00:07:56.018Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
+          }
+        }
+      }
+    },
+    {
+      "id": "2013-guwen:2",
+      "inputSha256": "c1d2a9028fcd835873e271ce849049f85f8c10b3207c7fd63c591902e68c4897",
+      "status": "draft",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "保留A项的判准粒度说明；当前独立答案D，未把旧题的概括口径提升为普遍语法规则。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:07:56.018Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内完整题目及相关材料"
+        },
+        {
+          "type": "dictionary_revision",
+          "title": "文言站2026-09-16-r3词典校订，保留争议"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案取D。‘彬之总师也’叙述曹彬统率军队时的情形，之位于主谓性结构之间；‘上临哭之恸’中的之则直接指曹彬，作哭的对象。B项所与后面的动词共同指所拿取、所接受的东西；C项何都询问相应的缘故或功劳。A项在本题通常按用、拿这一宽泛凭借意义比较，分别引出陈列物品和乘坐的船；现代译文用把或乘，不能仅据译词不同便推翻D。不过两处以的精细句法差别应保留说明，不用于证明所有以的工具、处置用法完全相同。",
+          "inputSha256": "c1d2a9028fcd835873e271ce849049f85f8c10b3207c7fd63c591902e68c4897",
+          "generatedAt": "2026-10-03T00:07:56.018Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
+          }
+        }
+      }
+    },
+    {
+      "id": "2012-guwen:2",
+      "inputSha256": "cda16ce1e07b5c9a679095dc2eb55a99d366ac7763251b4171ecc8d2494040a5",
+      "status": "draft",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "语境比较重答，结论D。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:07:56.018Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内完整题目及相关材料"
+        },
+        {
+          "type": "dictionary_revision",
+          "title": "文言站2026-09-16-r3词典校订，保留争议"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：D。何以为报中的以引出用于回报的凭借，何是前置的宾语；妻卧草中以号中的以把卧于草中的状态与号哭连接起来，不引进一个名词性工具。A项舍结合收留遇难者的语境均作收留，不能因现代常用舍弃义误读。B项然均承接转折，C项为均处在被动结构中，后一处另有所以形成显式为……所……格式。",
+          "inputSha256": "cda16ce1e07b5c9a679095dc2eb55a99d366ac7763251b4171ecc8d2494040a5",
+          "generatedAt": "2026-10-03T00:07:56.018Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
+          }
+        }
+      }
+    },
+    {
+      "id": "2011-guwen:2",
+      "inputSha256": "d74f2198438a871b6ea7a938c1c74825095d865524923ed791b3475364e08ddb",
+      "status": "draft",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "使在此不表示命令他人行动；不与常用使令义混同。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:07:56.018Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内完整题目及相关材料"
+        },
+        {
+          "type": "dictionary_revision",
+          "title": "文言站2026-09-16-r3词典校订，保留争议"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：C。两处使都提出假设，分别设想曹子不顾后来、管仲赴死，后文据此推演；均可理解为假使。A项可行而不可言是转折，独见而留意则连接相承相合的认识与态度。B项前为表示替鲁国领兵，后为说明最终成为何种人。D项前臣是把某人当臣属看待的动词性用法，后臣是被评论的臣子。",
+          "inputSha256": "d74f2198438a871b6ea7a938c1c74825095d865524923ed791b3475364e08ddb",
+          "generatedAt": "2026-10-03T00:07:56.018Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
+          }
+        }
+      }
+    },
+    {
+      "id": "2010-guwen:2",
+      "inputSha256": "b505082ac10295924361b13ae58ab3aee9c0f1fa5aa19f324249cc1c1c9f4d31",
+      "status": "draft",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "结论D。清优主之的指代依上下文是卖药来者，不是药材。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:07:56.018Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内完整题目及相关材料"
+        },
+        {
+          "type": "dictionary_revision",
+          "title": "文言站2026-09-16-r3词典校订，保留争议"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：D。应益广与益厚报清中的益都修饰程度，表示更加。A项前之指受到优厚接待的来者，后之用于清富这一主谓性结构。B项前以引出市人发笑的原因，后以引出待人的态度。C项前其与欤配合表示推测，后其限定所坚持的道。应按前文人物、动作和句末语气定位，不能把两个其都机械译为他的。",
+          "inputSha256": "b505082ac10295924361b13ae58ab3aee9c0f1fa5aa19f324249cc1c1c9f4d31",
+          "generatedAt": "2026-10-03T00:07:56.018Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
+          }
+        }
+      }
+    },
+    {
+      "id": "2004-guwen:2",
+      "inputSha256": "065cc4d4c75baa3d65c1b9896e6934bc296ccd8809e9c917e040aa8dcec181d4",
+      "status": "draft",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "保持经源校订的若入前为寿，不把入误读为人。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:07:56.018Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内完整题目及相关材料"
+        },
+        {
+          "type": "dictionary_revision",
+          "title": "文言站2026-09-16-r3词典校订，保留争议"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：A。两处为都表达被动：前句有为……所……格式，后句说被天下人耻笑。B项前若是假设，后若是项羽命项庄进前祝寿时对他的称呼，即你。C项前因承接事情发展，后因引出借助宾客致歉的中介。D项前乎配合岂形成反问，后乎配合其表达推测或期望。两者都在句末，不能只凭位置认定相同。",
+          "inputSha256": "065cc4d4c75baa3d65c1b9896e6934bc296ccd8809e9c917e040aa8dcec181d4",
+          "generatedAt": "2026-10-03T00:07:56.018Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
+          }
+        }
+      }
+    },
+    {
+      "id": "2003-guwen:3",
+      "inputSha256": "e9353a59ec03a48c410ffe0c78e287f468c0462a5a1a7755dd247f166354cdcf",
+      "status": "draft",
+      "kind": "single_choice",
+      "correctOptions": [],
+      "explanation": "独立审读倾向C具有直接句法依据，同时不能排除A的伴随解释；维持review_required，选项集合留空。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:07:56.018Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内完整题目及相关材料"
+        },
+        {
+          "type": "dictionary_revision",
+          "title": "文言站2026-09-16-r3词典校订，保留争议"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "本题暂不认定唯一答案，停止确定判分。按所见题面，C中海之深、郦元之简均可分析为主谓性结构进入知、叹的宾语位置，不能只将前者译成大海的深度便排除这种分析。A中经过书舍旁而哭，可读为先后发生，也可读为经过时哭泣；拱而立则明确是伴随状态。单凭两处而的出现，无法强证A唯一。B中其分别在不孤这一小句内指人、在强前作限定；D中以分别引进书信这一凭借与合宜时令。旧库A可作历史记录，但还需可核查原卷、当年答案与语法论证来裁决，不以模型投票取代证据。",
+          "inputSha256": "e9353a59ec03a48c410ffe0c78e287f468c0462a5a1a7755dd247f166354cdcf",
+          "generatedAt": "2026-10-03T00:07:56.018Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
+          }
+        }
+      }
+    },
+    {
+      "id": "2002-guwen:3",
+      "inputSha256": "bccf2397266d1679212fc3f9d01de17ade781ce9cc8cc964ac4d90876adee16e",
+      "status": "draft",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "结论B，按完整语句重答。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T00:07:56.018Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内完整题目及相关材料"
+        },
+        {
+          "type": "dictionary_revision",
+          "title": "文言站2026-09-16-r3词典校订，保留争议"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：B。两处因都承接此前发生的事情，引出随后采取的行动，分别是于是前往吴国、于是扣留怀王。A项于分别引进经过的地域与比较对象。C项前之用于有道者与所以异乎俗这一结构之间，后之是何罪之有的宾语前置标记。D项前以处在以……为……结构，后以连接割地与趋于灭亡的结果。不能因都可弱译为不译而忽略结构功能。",
+          "inputSha256": "bccf2397266d1679212fc3f9d01de17ade781ce9cc8cc964ac4d90876adee16e",
+          "generatedAt": "2026-10-03T00:07:56.018Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
           }
         }
       }
