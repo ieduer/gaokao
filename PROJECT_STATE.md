@@ -1,3 +1,9 @@
+## 2026-10-02 — 2017 原卷与答案覆核，本地候选
+
+覆盖292/612：288项已核、原有4项争议、320项未覆盖，另有专站题目；当前双模型标记证明236项，旧证明缺口56项。十页公开转载原卷已逐页查看，修复缺失微写作、题干及标记。23份个人初答先于Claude阅读；仅非连续文本末单元记录参考暴露。补回海昏侯国的国字后，保留五项旧输入与旧答，并完成一次新的来源复核。全部718条前存模型文本和日期保留，ID/qIndex/原分值不变。
+
+三个合并题保留全部子题作答，旧score2/3/6不变；兼容计分仍阻断。固定Node24.18.0通过15项authority测试与201记录/612题/473标记/0错误数据校验。错误网传答案、字数及文学解释限制见 /Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/REVIEW-2017.md。未推送、上传、发布或写入学生数据，认证验收与status记录待后续发布。继续2016题面先行覆核。
+
 ## 2026-10-02 — 2018 qualified review and first-compaction checkpoint
 
 Coverage270/612:266reviewed,four existing disputes,342uncovered plus specialist-only;213current dual-model v3proofs and57gaps. Added23units and re-reviewed2018-guwen:2 after exact marking repairs. All669prior model texts/dates remain current or archived;246prior authority records unchanged. All IDs/qIndex/scores/legacyfields preserved. 19root reading responses explicitly record reference exposure;fivewritingresponses precededClaude. Both finite providerjobs complete and rawoutputs retained.

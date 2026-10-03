@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261002-reviewed-270-qualified-2018",
+  "revision": "20261002-reviewed-292-qualified-2017",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -587,15 +587,15 @@
     },
     {
       "id": "2017-guwen:2",
-      "inputSha256": "d1f55d7e0b9fb48cfe339097b5e2e7da45c912672ea3256f12b69143eb023b4f",
+      "inputSha256": "2f269fcc79e02d0ae7dc37800826b717f7ba546959b70f48922fe374b7724ff2",
       "status": "reviewed",
       "kind": "single_choice",
       "correctOptions": [
         "C"
       ],
-      "explanation": "独立作答与文言站校订相合，保留原题选‘不同’的方向；本轮未新取得官方答案原件。",
+      "explanation": "C。第一而转折，第二而承接/因果顺承，汉典支持两类义。两以依上下文均可解释为因为，教育部辞典收原因义；不能把原因与目的混为同一意义来证明相同。两之用于主谓性结构整体化，两者指具有前述行为的人或情形，不强制唯一词类名。新浪2017逐题解析给A并把两而都说成转折，理由不能成立；EOL刊学而思解析给C，与本次两模型结论相合。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:03:23.208Z",
+      "reviewedAt": "2026-10-03T06:50:26.137Z",
       "sources": [
         {
           "type": "source_material",
@@ -604,86 +604,243 @@
         {
           "type": "dictionary_revision",
           "title": "文言站2026-09-16-r3语境校订"
+        },
+        {
+          "type": "public_exam_scan",
+          "title": "2017北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523465.shtml"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL刊学而思高考研究中心参考，非官方发布链",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523795.shtml"
+        },
+        {
+          "type": "dictionary",
+          "title": "汉典而：承接与转折",
+          "url": "https://zdic.net/hans/%E8%80%8C"
+        },
+        {
+          "type": "dictionary",
+          "title": "教育部重编国语辞典以：原因义",
+          "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=10723&la=0&powerMode=0"
         }
       ],
       "currentVersion": "gpt_6_astra",
       "modelAnswers": {
         "gpt_6_astra": {
           "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 完整附注复核",
-          "text": "答案：C。本题要求选意义和用法不同的一项。前一‘而’说分郡邑本来合乎时势，学士大夫却多加非议，是转折；后一‘而’说柳宗元的论说出现，其他论说随之被驳倒，是顺承或结果。A项两处都说明争乱的原因，分别是侯王割据与利益驱动，不能将‘争必以利’译成‘用利益去争’。B项均用于主谓性结构之间，使整体进入更大的句法结构。D项都将前面的行为与相应的人联系起来。旧GPT选A并把两处‘而’都说成转折，未结合第二句的因果推进。",
-          "inputSha256": "d1f55d7e0b9fb48cfe339097b5e2e7da45c912672ea3256f12b69143eb023b4f",
-          "generatedAt": "2026-10-03T03:03:23.208Z",
+          "label": "GPT-6 Astra 来源复核",
+          "text": "选C。而学士大夫多非之的而表示转折：时势本应如此，却多有指责。而诸子之论废矣的而承接前句、表示随之出现的结果。A两个以都引出原因，因为有侯王、因为利益。B两个之均使主谓性结构成为整体，分别为三代兴起、诸侯制度不能恢复，后者作知的宾语。D两个者均用于指称具有前述行为的人。",
+          "inputSha256": "2f269fcc79e02d0ae7dc37800826b717f7ba546959b70f48922fe374b7724ff2",
+          "inputContextSha256": "8e5e8a31653175cff73d9e961bb5a17e9ed1ef0f1f6073cbe070d290a080255a",
+          "inputPresentationSha256": "02abf0ac9902e89f1fd87702d730c24d6c696d932d4f3a2672e5d770d22833a6",
+          "generatedAt": "2026-10-03T06:42:34.549Z",
           "provenance": {
             "kind": "codex_turn",
-            "stage": "source_review_reaffirmation",
-            "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
-            "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "priorAnswerSha256": "a3a2963f5d159397dfae0453c894d2ba447fc26482ddb0538563c817153bf3c7",
-            "annotationEffect": "书契注限定历史叙述起点，不改变而的前转折后承接。"
+            "stage": "source_review",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2017-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2017-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
           },
-          "inputContextSha256": "7ed3a56019f979c831e06316a4136ea747160e7964ea06e24da90053cc02d3e8"
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "C。第一而转折，第二而承接/因果顺承，汉典支持两类义。两以依上下文均可解释为因为，教育部辞典收原因义；不能把原因与目的混为同一意义来证明相同。两之用于主谓性结构整体化，两者指具有前述行为的人或情形，不强制唯一词类名。新浪2017逐题解析给A并把两而都说成转折，理由不能成立；EOL刊学而思解析给C，与本次两模型结论相合。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          }
         },
         "claude_opus_5_5": {
           "modelId": "claude-opus-5-5",
           "label": "Claude Opus 5.5 来源复核后修订",
-          "text": "答案：C。\n选C（不同的一项）。A项：“以有侯王”“争必以利”的“以”都是介词“因为”，相同。B项：“三代之兴”“知诸侯之不可复”的“之”都用在主谓之间，取消句子独立性，相同。C项：“而学士大夫多非之”的“而”表转折，“但是”；“宗元之论出，而诸子之论废矣”的“而”表顺承，“于是、就”，不同。D项：“袭封而争位者”“君臣父子相贼虐者”的“者”都是代词，指“……的人（情况）”，相同。",
-          "inputSha256": "d1f55d7e0b9fb48cfe339097b5e2e7da45c912672ea3256f12b69143eb023b4f",
-          "inputContextSha256": "7ed3a56019f979c831e06316a4136ea747160e7964ea06e24da90053cc02d3e8",
-          "generatedAt": "2026-10-03T03:01:54.821132+00:00",
-          "uncertainties": [],
+          "text": "答案：C。\n选C。A项相同：“以有侯王”“争必以利”的“以”都是介词，表原因，译为“因为”。B项相同：“三代之兴”“知诸侯之不可复”的“之”都是助词，用在主谓之间，取消句子独立性。C项不同：“而学士大夫多非之”的“而”表转折，译为“但是、却”；“宗元之论出，而诸子之论废矣”的“而”表顺承，译为“于是、就”。D项相同：“袭封而争位者”“君臣父子相贼虐者”的“者”都是代词，译为“……的人（情况）”。",
+          "inputSha256": "2f269fcc79e02d0ae7dc37800826b717f7ba546959b70f48922fe374b7724ff2",
+          "inputContextSha256": "8e5e8a31653175cff73d9e961bb5a17e9ed1ef0f1f6073cbe070d290a080255a",
+          "inputPresentationSha256": "02abf0ac9902e89f1fd87702d730c24d6c696d932d4f3a2672e5d770d22833a6",
+          "generatedAt": "2026-10-03T06:44:07.068523+00:00",
+          "uncertainties": [
+            "A项“争必以利”的“以”也有人理解为“为了”，但与“以有侯王”同属介词表原因或目的一类，不影响选C。"
+          ],
           "selectedOptions": [
             "C"
           ],
           "assessment": {
-            "matchesConclusion": true
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "C。第一而转折，第二而承接/因果顺承，汉典支持两类义。两以依上下文均可解释为因为，教育部辞典收原因义；不能把原因与目的混为同一意义来证明相同。两之用于主谓性结构整体化，两者指具有前述行为的人或情形，不强制唯一词类名。新浪2017逐题解析给A并把两而都说成转折，理由不能成立；EOL刊学而思解析给C，与本次两模型结论相合。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
           },
           "provenance": {
             "kind": "cli_response",
             "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
-            "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
-            "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
+            "evidence": "answers-six-sites-20261002/claude-2017-reading-result.json",
+            "inputPromptSha256": "84cd6cd8aaf57be90b1f0e4b66fb65573620117b5b9d2a986eca99b127230325",
+            "responseStreamSha256": "06e84750bdfcb158c604304cd44ad013dac46f9351abaf12ef80f03408dad96d",
             "stage": "source_review"
           }
-        },
-        "gpt_6_astra_before_context_review": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
-          "text": "答案：C。本题要求选意义和用法不同的一项。前一‘而’说分郡邑本来合乎时势，学士大夫却多加非议，是转折；后一‘而’说柳宗元的论说出现，其他论说随之被驳倒，是顺承或结果。A项两处都说明争乱的原因，分别是侯王割据与利益驱动，不能将‘争必以利’译成‘用利益去争’。B项均用于主谓性结构之间，使整体进入更大的句法结构。D项都将前面的行为与相应的人联系起来。旧GPT选A并把两处‘而’都说成转折，未结合第二句的因果推进。",
-          "inputSha256": "d1f55d7e0b9fb48cfe339097b5e2e7da45c912672ea3256f12b69143eb023b4f",
-          "generatedAt": "2026-10-02T23:52:23.736Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-initial-reviews"
-          }
-        },
-        "claude_opus_5_5_initial": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答（修订前存档）",
-          "text": "答案：C。\n逐项辨析：\nA项，“以有侯王”中“以”是介词，意为“因为”：天下人苦于战斗不休，是因为有侯王。“争必以利”中“以”也是介词，意为“因为”：争斗一定是因为利益。两处相同。\nB项，“三代之兴”与“知诸侯之不可复”中的“之”都是结构助词，用在主谓之间，取消句子独立性。两处相同。\nC项，“而学士大夫多非之”中“而”是连词，表转折，意为“然而、可是”：秦设郡县本合时宜，可是学士大夫多加非议。“宗元之论出，而诸子之论废矣”中“而”是连词，表顺承，意为“就、便”：柳宗元的言论一出，诸家之论便被废弃。两处不同。\nD项，“有不出于袭封而争位者乎”与“君臣父子相贼虐者”中的“者”都是代词，与前面的词语构成“者”字结构，意为“……的人（情况）”。两处相同。\n故选C。",
-          "inputSha256": "d1f55d7e0b9fb48cfe339097b5e2e7da45c912672ea3256f12b69143eb023b4f",
-          "generatedAt": "2026-10-03T00:26:53.718784+00:00",
-          "uncertainties": [],
-          "selectedOptions": [
-            "C"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-conflicts-02-result.json",
-            "inputPromptSha256": "f8a1148da76a7e0ba7a825233e4191475da51a3746bf2ecbe91c978112f2a893",
-            "responseStreamSha256": "b7c1ba7dfc88c87ef0eabb89ea42b15aa7a79dc87804ff168601cf364c8071d0",
-            "stage": "independent"
-          },
-          "inputContextSha256": "f738b89bb3b0dbc20894ce6a5752a3119d9697fbd53964d7004f41dd30fc97e0"
         }
       },
-      "inputContextSha256": "7ed3a56019f979c831e06316a4136ea747160e7964ea06e24da90053cc02d3e8"
+      "inputContextSha256": "8e5e8a31653175cff73d9e961bb5a17e9ed1ef0f1f6073cbe070d290a080255a",
+      "history": [
+        {
+          "source": {
+            "id": "2017-guwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "秦废封建\n\n秦初并天下，丞相绾等言：“燕、齐、荆地远，不置王无以镇之，请立诸子。” 始皇下其议，群臣皆以为便。廷尉斯曰：“周文、武所封子弟同姓甚众，然后属疏远，相攻击如仇雠，诸侯更相诛伐，天子不能禁止。今海内赖陛下神灵一统，皆为郡县。诸子功臣以公赋税重赏赐之，甚易制。天下无异意，则安宁之术也。置诸侯不便。”始皇曰：“天下共苦战斗不休，以有侯王。赖宗庙天下初定，又复立国，是树兵也，而求其宁息，岂不难哉!廷尉议是。”分天下为三十六郡，郡置守、尉、监。\n\n苏子曰：圣人不能为时，亦不失时。时非圣人之所能为也，能不失时而已。三代之兴，诸侯无罪不可夺削，因而君之虽欲罢侯置守，可得乎？此所谓不能为时者也。周衰，诸侯相并，齐、晋、秦、楚皆千馀里，其势足以建侯树屏。至于七国皆称王，行天子之事，然终不封诸侯。久矣，世之畏诸侯之祸也，非独李斯、始皇知之。\n\n始皇既并天下，分郡邑，置守宰，理固当然，如冬裘夏葛，时之所宜，非人之私智独见也，所谓不失时者，而学士大夫多非之。汉高帝欲立六国后，张子房以为不可，李斯之论与子房无异。高帝闻子房之言，知诸侯之不可复，明矣。然卒王韩信、彭越、英布、卢绾，岂独高帝所为，子房亦与焉。故柳宗元曰：“封建非圣人意也，势也。”\n\n昔之论封建者甚众，宗元之论出，而诸子之论废矣，虽圣人复起，不能易也。故吾取其而附益之，曰：凡有血气必争，争必以利，利莫大于封建。封建者，争之端而乱之始也。自书契【1】以来，臣弑其君，子弑其父，父子兄弟相贼杀，有不出于袭封而争位者乎？自三代圣人以礼乐教化天下，至刑措不用，然终不能已篡弑之祸。至汉以来，君臣父子相贼虐者，皆诸侯王子孙，其馀卿大夫不世袭者，盖未尝有也。近世无复封建，则此祸几绝。仁人君子，忍复开之欤？故吾以为李斯、始皇之言，柳宗元之论，当为万世法也。\n\n（取材于宋·苏轼《东坡志林》）"
+              }
+            ],
+            "topic": "二、本大题共6小题，共24分。\n阅读下面文言文完成9—14题。",
+            "annotation": "注释：【1】书契：指有文字记载。",
+            "annotations": [
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "highlight",
+                "start": 31,
+                "end": 32,
+                "anchor": "以"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "highlight",
+                "start": 33,
+                "end": 34,
+                "anchor": "之"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "highlight",
+                "start": 191,
+                "end": 192,
+                "anchor": "而"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "highlight",
+                "start": 296,
+                "end": 297,
+                "anchor": "者"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 2,
+                "id": "q2",
+                "text": "10．下列各组语句中加点词的意义和用法，不同的一项是（3分）\n\nA． *以*有侯王\n 争必*以*利\n B． 三代*之*兴\n 知诸侯*之*不可复\nC． *而*学士大夫多非之 \n*而*诸子之论废矣\n D． 袭封而争位*者*\n 君臣父子相贼虐*者*",
+                "score": 3
+              }
+            ]
+          },
+          "review": {
+            "id": "2017-guwen:2",
+            "inputSha256": "d1f55d7e0b9fb48cfe339097b5e2e7da45c912672ea3256f12b69143eb023b4f",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "C"
+            ],
+            "explanation": "独立作答与文言站校订相合，保留原题选‘不同’的方向；本轮未新取得官方答案原件。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:03:23.208Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2017北京卷《秦废封建》全文及原题"
+              },
+              {
+                "type": "dictionary_revision",
+                "title": "文言站2026-09-16-r3语境校订"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "答案：C。本题要求选意义和用法不同的一项。前一‘而’说分郡邑本来合乎时势，学士大夫却多加非议，是转折；后一‘而’说柳宗元的论说出现，其他论说随之被驳倒，是顺承或结果。A项两处都说明争乱的原因，分别是侯王割据与利益驱动，不能将‘争必以利’译成‘用利益去争’。B项均用于主谓性结构之间，使整体进入更大的句法结构。D项都将前面的行为与相应的人联系起来。旧GPT选A并把两处‘而’都说成转折，未结合第二句的因果推进。",
+                "inputSha256": "d1f55d7e0b9fb48cfe339097b5e2e7da45c912672ea3256f12b69143eb023b4f",
+                "generatedAt": "2026-10-03T03:03:23.208Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "a3a2963f5d159397dfae0453c894d2ba447fc26482ddb0538563c817153bf3c7",
+                  "annotationEffect": "书契注限定历史叙述起点，不改变而的前转折后承接。"
+                },
+                "inputContextSha256": "7ed3a56019f979c831e06316a4136ea747160e7964ea06e24da90053cc02d3e8"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "答案：C。\n选C（不同的一项）。A项：“以有侯王”“争必以利”的“以”都是介词“因为”，相同。B项：“三代之兴”“知诸侯之不可复”的“之”都用在主谓之间，取消句子独立性，相同。C项：“而学士大夫多非之”的“而”表转折，“但是”；“宗元之论出，而诸子之论废矣”的“而”表顺承，“于是、就”，不同。D项：“袭封而争位者”“君臣父子相贼虐者”的“者”都是代词，指“……的人（情况）”，相同。",
+                "inputSha256": "d1f55d7e0b9fb48cfe339097b5e2e7da45c912672ea3256f12b69143eb023b4f",
+                "inputContextSha256": "7ed3a56019f979c831e06316a4136ea747160e7964ea06e24da90053cc02d3e8",
+                "generatedAt": "2026-10-03T03:01:54.821132+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "C"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
+                  "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
+                  "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
+                  "stage": "source_review"
+                }
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "答案：C。本题要求选意义和用法不同的一项。前一‘而’说分郡邑本来合乎时势，学士大夫却多加非议，是转折；后一‘而’说柳宗元的论说出现，其他论说随之被驳倒，是顺承或结果。A项两处都说明争乱的原因，分别是侯王割据与利益驱动，不能将‘争必以利’译成‘用利益去争’。B项均用于主谓性结构之间，使整体进入更大的句法结构。D项都将前面的行为与相应的人联系起来。旧GPT选A并把两处‘而’都说成转折，未结合第二句的因果推进。",
+                "inputSha256": "d1f55d7e0b9fb48cfe339097b5e2e7da45c912672ea3256f12b69143eb023b4f",
+                "generatedAt": "2026-10-02T23:52:23.736Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-initial-reviews"
+                }
+              },
+              "claude_opus_5_5_initial": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答（修订前存档）",
+                "text": "答案：C。\n逐项辨析：\nA项，“以有侯王”中“以”是介词，意为“因为”：天下人苦于战斗不休，是因为有侯王。“争必以利”中“以”也是介词，意为“因为”：争斗一定是因为利益。两处相同。\nB项，“三代之兴”与“知诸侯之不可复”中的“之”都是结构助词，用在主谓之间，取消句子独立性。两处相同。\nC项，“而学士大夫多非之”中“而”是连词，表转折，意为“然而、可是”：秦设郡县本合时宜，可是学士大夫多加非议。“宗元之论出，而诸子之论废矣”中“而”是连词，表顺承，意为“就、便”：柳宗元的言论一出，诸家之论便被废弃。两处不同。\nD项，“有不出于袭封而争位者乎”与“君臣父子相贼虐者”中的“者”都是代词，与前面的词语构成“者”字结构，意为“……的人（情况）”。两处相同。\n故选C。",
+                "inputSha256": "d1f55d7e0b9fb48cfe339097b5e2e7da45c912672ea3256f12b69143eb023b4f",
+                "generatedAt": "2026-10-03T00:26:53.718784+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "C"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-conflicts-02-result.json",
+                  "inputPromptSha256": "f8a1148da76a7e0ba7a825233e4191475da51a3746bf2ecbe91c978112f2a893",
+                  "responseStreamSha256": "b7c1ba7dfc88c87ef0eabb89ea42b15aa7a79dc87804ff168601cf364c8071d0",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "f738b89bb3b0dbc20894ce6a5752a3119d9697fbd53964d7004f41dd30fc97e0"
+              }
+            },
+            "inputContextSha256": "7ed3a56019f979c831e06316a4136ea747160e7964ea06e24da90053cc02d3e8"
+          }
+        }
+      ],
+      "inputPresentationSha256": "02abf0ac9902e89f1fd87702d730c24d6c696d932d4f3a2672e5d770d22833a6"
     },
     {
       "id": "2005-guwen:2",
@@ -24201,6 +24358,2230 @@
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T06:25:49.468Z",
       "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2017-feilian:1",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2017北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523465.shtml"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL刊学而思高考研究中心参考，非官方发布链",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523795.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 来源补字后复核",
+          "text": "选A。材料只说文物曾少人问津，没有将原因归为精品数量少。B对应合理利用、发掘内涵和发挥作用，C对应经济发展后的文化消费需求，D对应失蜡法启发奥斯汀的材料叙述。",
+          "inputSha256": "17b8fbadf914625818d2d89086ebf5b3c798da99e70c538405cd8c69d188d745",
+          "inputContextSha256": "e14f6e73a2934bed05e8bf3de8581739d5e5119345c23a00fe6b930ce582ef04",
+          "inputPresentationSha256": "34c9bee0ba01dd29af40bb9f0209a45e828e7d26746a25a87e0d35fe982a826e",
+          "generatedAt": "2026-10-03T06:46:09.911Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "source_review",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2017-feilian-source-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2017-feilian-source-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "A。精品少不是原文给出的原因；参考解析推论公众主观意识增强也不能替代原文明确证据。海昏侯国的漏字已修复，并对五个受影响单元重新获得完整来源复核，原始输入及答卷留存。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 来源复核后修订",
+          "text": "答案：A。\n选A。A项不正确：材料一只说文物曾“乏人问津”，只为少数专家学者所识，并没有说原因是“精品不多”，属于强加因果、无中生有。B项正确：原文有“要合理利用文物，充分发掘其文化内涵……发挥它们在公众知史爱国、鉴物审美，以及技艺传承、文化养心等方面的作用”。C项正确：原文有“让我们看到了经济快速发展后现代人对‘精品文化’消费的需求”。D项正确：原文有“美国人奥斯汀在云南保山见到用失蜡法铸成的青铜器，大受启发”。",
+          "inputSha256": "17b8fbadf914625818d2d89086ebf5b3c798da99e70c538405cd8c69d188d745",
+          "inputContextSha256": "e14f6e73a2934bed05e8bf3de8581739d5e5119345c23a00fe6b930ce582ef04",
+          "inputPresentationSha256": "34c9bee0ba01dd29af40bb9f0209a45e828e7d26746a25a87e0d35fe982a826e",
+          "generatedAt": "2026-10-03T06:47:01.986200+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "A。精品少不是原文给出的原因；参考解析推论公众主观意识增强也不能替代原文明确证据。海昏侯国的漏字已修复，并对五个受影响单元重新获得完整来源复核，原始输入及答卷留存。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2017-feilian-source-result.json",
+            "inputPromptSha256": "d1b269cee7a1344c8b756d6bf7a628a9d382a72669db73f063e1e0230baf1b3b",
+            "responseStreamSha256": "efc519cf592c296fb2b1cc44349fdf1a226d1bc4c644d263801de2eb47945021",
+            "stage": "source_review"
+          }
+        }
+      },
+      "inputSha256": "17b8fbadf914625818d2d89086ebf5b3c798da99e70c538405cd8c69d188d745",
+      "inputContextSha256": "e14f6e73a2934bed05e8bf3de8581739d5e5119345c23a00fe6b930ce582ef04",
+      "inputPresentationSha256": "34c9bee0ba01dd29af40bb9f0209a45e828e7d26746a25a87e0d35fe982a826e",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "A。精品少不是原文给出的原因；参考解析推论公众主观意识增强也不能替代原文明确证据。海昏侯国的漏字已修复，并对五个受影响单元重新获得完整来源复核，原始输入及答卷留存。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:50:26.136Z",
+      "currentVersion": "gpt_6_astra",
+      "history": [
+        {
+          "source": {
+            "id": "2017-feilian",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "材料一\n\n首都博物馆正在举办两个精品展，一个是南昌汉代海昏侯考古成果展，一个是纪念殷墟妇好墓考古发掘四十周年特展。展览甫一开始，便引来热切关注，预约名额很快告罄。文物曾“乏人问津”，只为少数专家学者所识，如今竟备受大众青睐。这反映了大众对文物价值的渴求，也提醒我们，要合理利用文物，充分发掘其文化内涵，让沉睡的古老文物“活”起来，发挥它们在公众知史爱国、鉴物审美，以及技艺传承、文化养心等方面的作用。\n\n文物是人类触摸历史的“活化石”，每一件文物都是历史故事的讲述者。一件件出土文物，一个个考古故事，足以让每个观展者沉浸在千年历史之中——无论是拿着放大镜对着一枚玉器细细观察的老人，还是那些被罕见金饼“亮瞎眼”的年轻人。很难想象，三千多年前的工匠，如何将一块玉石切割成型，又琢磨成高8.1厘米，厚只有0.3厘米、憨态可掬的对尾鹦鹉。那一套套大气而不失华丽的西汉编钟，虽静默无声，却仿佛让我们听到了古老的宫商角徵羽……那些走向博物馆的热切步伐，让我们看到了经济快速发展后现代人对“精品文化”消费的需求，更看到了现代人对自己从哪里来、到哪里去的历史追问。\n\n精美的文物凝聚着工匠们的心血和智慧，不仅代表了当时高超的技艺水平，而且有助于现代技术发展。古代不少青铜器都是用失蜡法制造的。20世纪初，德国人曾用失蜡法铸造工业用齿轮；1929年，又对失蜡法进行改造，以硅酸乙酯为耐火涂料，用熔点达1500℃的铬钨钴合金制成假牙。第二次世界大战期间，美国人奥斯汀在云南保山见到用失蜡法铸成的青铜器，大受启发，铸成了喷气发动机叶片和涡轮盘。之后，失蜡法技艺发展成为现代精密铸造技术。\n\n（取材于杨雪梅、黄洋的相关文章）"
+              },
+              {
+                "key": "material2",
+                "label": "材料2",
+                "text": "材料二\n\n文物与大众亲密接触才能实现其价值，可是与海量文物库藏相比，目前展出的文物只是九牛一毛。由于展出空间有限、担心损毁等原因，很多文物都“藏在深闺人未识”。感谢数字技术，打破了层层壁垒，盘活了很多被“雪藏”的文物，使之在线上“活”起来。大众足不出户，便可欣赏到以前难得一见的珍贵文物。在尊重历史文化遗产的基础上，数字技术不断将今人的创造融入传统文物，使之获得了新生。文物不再仅仅是摆在展柜里的静态展品，而以更加丰富多彩、生动活泼的方式走近大众，真正“活”了起来。\n\n动漫技术在文物的文化创意中越来越受重视。三星堆博物馆与四川省文物考古研究院合作推出了数字动漫《神树的传说》，以新近发掘的海昏侯墓为素材的动画作品《海昏魔镜》也在紧锣密鼓地筹备着。借助动漫，专业的学术介绍变成了幽默的旁白和“萌萌哒”的漫画，“高冷”的文物也一下子变得活泼起来，实现了学术性、趣味性和艺术性的统一。其实，早在1981年，我国已有让文物“活”起来的动画作品——上海美术电影制片厂根据敦煌壁画《鹿王本生》的故事创作了《九色鹿》。无数人通过这部动画片知道了莫高窟，看到了敦煌壁画。\n\n移动应用程序（APP）以新鲜时尚的方式提供给观众审美与求知、娱乐与鉴赏的多元文化体验。过去，由于保存和展出的特殊要求，五代的《韩熙载夜宴图》能够呈现在观众面前的机会十分有限。故宫博物院推出的《韩熙载夜宴图》APP弥补了这一缺憾，让观众随时随地可以欣赏这幅传世经典的精妙之处，在鲜活的文化体验中感受中国古代绘画作品的非凡魅力。此APP独创了三层立体赏析模式——总览层、鉴赏层和体验层，使这幅“数字画卷”可远观、可近赏，全方位向观众解读画作中的每个细节。点开APP，琵琶声起，拨动江南寂静的月色，观众仿佛随着画家顾闳中一起，走进韩府。画卷中的墨痕笔意、人物的衣纹表情都纤毫毕现。轻轻触动屏幕，指尖所至之处，似有烛光追随；移动“烛光”，人物、用品的名称、典故一一呈现，如同“秉烛夜读”，在静夜里与千古佳作“对话”……忽然之间，画中人“活”了起来，乐伎轻扫琵琶，舞伎翩翩起舞，画与真实的界限瞬间模糊起来，观众沉浸在画卷创造的艺术氛围之中。\n\n虚拟现实技术（VR）借助计算机图形系统、传感器技术等生成三维环境，创造出一种崭新的人机交互状态，通过调动用户的多种感官，带来沉浸感觉。以前，游客只能在兵马俑坑外观看，有了VR技术，戴上特制的眼镜，你会发现自己置身坑内，变身成了一个兵马俑，低头就能看到自己的身体——残破却依然威严。抬起头来，你会发现博物馆的穹顶慢慢向两边散开，建筑逐渐退去，转化成荒野，风沙弥漫，你的身体同时下沉，身处地表起伏的俑坑之中，周围是千军万马……\n\n（取材于胡克非、张英等的相关文章）\n\n材料三\n\n有的博物馆认为保护好文物不出事情是头等大事，将文物封闭在库房，秘不示人，觉得这样才可以确保万无一失。其实不然，“流水不腐，户枢不蠹”，有些文物同样如此。2010年浙江省博物馆利用馆藏的“彩凤鸣岐”和“来凰”，举办了唐代雷琴演奏会。古琴属于漆器，很难保存。这两把古琴之所以能历经千年保存下来还能使用，是因为历朝历代都有人使用它。古琴在安装上琴弦以后，才能保持力学上的平衡，不至于散架。\n\n数字技术使文物在线上“活”起来，更是对文物的一种保护。敦煌石窟集珍贵性、脆弱性于一身，历经千年的莫高窟艺术品，每一件都像岌岌可危的病人，游客的参观成为莫高窟最大的隐患。2003年，莫高窟全年游客接待量为30多万人次，2014年已增长到81万人次。根据测算，莫高窟一天的游客接待量极限在3000人次左右，而黄金周的日接待量曾超过2万人次，莫高窟不堪重负。实验监测数据显示，40个人进入洞窟参观半小时，洞窟内空气中的二氧化碳含量升高5倍，空气相对湿度上升10%，空气温度升高4℃，这都有可能侵蚀壁画，加速其老化。在自然和人为因素的双重作用下，彩塑和壁画正在缓慢退化，千百年后人们何以领略莫高窟的神韵？\n\n面对日益增多的游客，如何化解保护和利用的矛盾？敦煌数字化工程，犹如一缕明媚的科技之光，照进古老的莫高窟。有了数字化展示中心，游览模式发生了变化，艺术体验搬到洞窟外面，游客先通过数字化体验艺术“做足功课”，再进个别洞窟实际体验。这种模式既能满足游客看真品的需求，同时又减少了在洞窟内的停留时间，减少了对莫高窟的破坏。中心建成后，游客停留时间由2小时缩短至70分钟左右，莫高窟最高日接待游客量因此可提高到6000人次。\n\n（取材于黄洋、祝越、周龙等的相关文章）"
+              }
+            ],
+            "topic": "一、本大题共8个小题，共24分。\n阅读下面的材料，完成1—8题。",
+            "annotation": null,
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "1．下列对材料一的理解，不正确的一项是（3分）\nA．以前因为精品不多，所以文物展览观者寥寥\nB．要合理利用文物，发掘其内涵，发挥其作用\nC．文物热反映大众对“精品文化”消费的需求\nD．奥斯汀从失蜡法铸造的青铜器中得到了启发",
+                "score": 3
+              }
+            ]
+          },
+          "review": {
+            "id": "2017-feilian:1",
+            "sources": [
+              {
+                "type": "public_exam_scan",
+                "title": "2017北京语文十页原题扫描公开转载，逐页核对",
+                "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523465.shtml"
+              }
+            ],
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答",
+                "text": "选A。材料只说文物曾少人问津，没有将原因归为精品数量少。B对应合理利用、发掘内涵和发挥作用，C对应经济发展后的文化消费需求，D对应失蜡法启发奥斯汀的材料叙述。",
+                "inputSha256": "97e486bf92820e92e7e463e0b2cc1318adffc6781a79dcf2c689aa964ed12147",
+                "inputContextSha256": "efa9d104e43e17d17f70ab5d0318710d9f0c5c474906962b07b626d884c2ea57",
+                "inputPresentationSha256": "044e817db9efe05c88864963bce9aa95b98378e2da22ac66becd98f093d87efb",
+                "generatedAt": "2026-10-03T06:42:34.549Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "independent",
+                  "referenceExposed": false,
+                  "evidence": "answers-six-sites-20261002/root-2017-reading-drafts.json",
+                  "inputEvidence": "answers-six-sites-20261002/claude-2017-reading-job.json",
+                  "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+                  "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+                }
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "答案：A。\n选A。A项错误：材料一说文物曾“乏人问津”，只为少数专家学者所识，并未说原因是“精品不多”，属于强加因果。B项正确：对应首段“要合理利用文物，充分发掘其文化内涵……发挥它们……的作用”。C项正确：对应第二段“让我们看到了经济快速发展后现代人对‘精品文化’消费的需求”。D项正确：对应第三段奥斯汀在云南保山见到失蜡法铸成的青铜器，“大受启发”。",
+                "inputSha256": "97e486bf92820e92e7e463e0b2cc1318adffc6781a79dcf2c689aa964ed12147",
+                "inputContextSha256": "efa9d104e43e17d17f70ab5d0318710d9f0c5c474906962b07b626d884c2ea57",
+                "inputPresentationSha256": "044e817db9efe05c88864963bce9aa95b98378e2da22ac66becd98f093d87efb",
+                "generatedAt": "2026-10-03T06:44:07.068523+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "A"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2017-reading-result.json",
+                  "inputPromptSha256": "84cd6cd8aaf57be90b1f0e4b66fb65573620117b5b9d2a986eca99b127230325",
+                  "responseStreamSha256": "06e84750bdfcb158c604304cd44ad013dac46f9351abaf12ef80f03408dad96d",
+                  "stage": "independent"
+                }
+              }
+            },
+            "inputSha256": "97e486bf92820e92e7e463e0b2cc1318adffc6781a79dcf2c689aa964ed12147",
+            "inputContextSha256": "efa9d104e43e17d17f70ab5d0318710d9f0c5c474906962b07b626d884c2ea57",
+            "inputPresentationSha256": "044e817db9efe05c88864963bce9aa95b98378e2da22ac66becd98f093d87efb",
+            "status": "draft",
+            "kind": "single_choice",
+            "correctOptions": [
+              "A"
+            ],
+            "explanation": "完整题面下作答，等待交叉覆核；参考暴露情况逐条标注。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T06:42:34.549Z",
+            "currentVersion": "gpt_6_astra"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2017-feilian:2",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2017北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523465.shtml"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL刊学而思高考研究中心参考，非官方发布链",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523795.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 来源补字后复核",
+          "text": "选B。罄读qìng，意为尽。甫应读fǔ；津本指渡口，问津引申为探问、关注，不释为路；掬本为两手捧，憨态可掬形容憨态仿佛可以捧取，不能把掬单字直接释为令人喜爱。",
+          "inputSha256": "6bea251b5688d37a63d11e78ecb055dc09745d31c20d56e0e448ecfe449dd253",
+          "inputContextSha256": "a27a7fcd8fe76803b15ef622ef02b0230d2a3cec361133f1d0e458df74a3954e",
+          "inputPresentationSha256": "b750dc1b6aceba98c7fb22417caa2dd26d7882b4132dd866b9f4d6fba7609a49",
+          "generatedAt": "2026-10-03T06:46:09.911Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "source_review",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2017-feilian-source-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2017-feilian-source-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "完整原卷题面与准确标记下逐题核读两模型答案，选择结论相符，开放题允许合理不同表述；公开参考只作辅助，并逐项检查其可靠性。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 来源复核后修订",
+          "text": "答案：B。\n选B。A项错误：“甫”应读fǔ，不读pǔ；解释为“刚刚”是对的。B项正确：“罄”读qìng，本义为器中空，引申为“尽、完”，“告罄”指（名额、财物等）用完。C项错误：“津”读jīn正确，但意思是“渡口”，不是“路”；“问津”即询问渡口，比喻探问、尝试。D项错误：“掬”读jū正确，但意思是“用双手捧取”；“憨态可掬”形容天真憨厚的神态仿佛可以用手捧起来，“令人喜爱”不是“掬”的字义。",
+          "inputSha256": "6bea251b5688d37a63d11e78ecb055dc09745d31c20d56e0e448ecfe449dd253",
+          "inputContextSha256": "a27a7fcd8fe76803b15ef622ef02b0230d2a3cec361133f1d0e458df74a3954e",
+          "inputPresentationSha256": "b750dc1b6aceba98c7fb22417caa2dd26d7882b4132dd866b9f4d6fba7609a49",
+          "generatedAt": "2026-10-03T06:47:01.986200+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "完整原卷题面与准确标记下逐题核读两模型答案，选择结论相符，开放题允许合理不同表述；公开参考只作辅助，并逐项检查其可靠性。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2017-feilian-source-result.json",
+            "inputPromptSha256": "d1b269cee7a1344c8b756d6bf7a628a9d382a72669db73f063e1e0230baf1b3b",
+            "responseStreamSha256": "efc519cf592c296fb2b1cc44349fdf1a226d1bc4c644d263801de2eb47945021",
+            "stage": "source_review"
+          }
+        }
+      },
+      "inputSha256": "6bea251b5688d37a63d11e78ecb055dc09745d31c20d56e0e448ecfe449dd253",
+      "inputContextSha256": "a27a7fcd8fe76803b15ef622ef02b0230d2a3cec361133f1d0e458df74a3954e",
+      "inputPresentationSha256": "b750dc1b6aceba98c7fb22417caa2dd26d7882b4132dd866b9f4d6fba7609a49",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "完整原卷题面与准确标记下逐题核读两模型答案，选择结论相符，开放题允许合理不同表述；公开参考只作辅助，并逐项检查其可靠性。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:50:26.137Z",
+      "currentVersion": "gpt_6_astra",
+      "history": [
+        {
+          "source": {
+            "id": "2017-feilian",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "材料一\n\n首都博物馆正在举办两个精品展，一个是南昌汉代海昏侯考古成果展，一个是纪念殷墟妇好墓考古发掘四十周年特展。展览甫一开始，便引来热切关注，预约名额很快告罄。文物曾“乏人问津”，只为少数专家学者所识，如今竟备受大众青睐。这反映了大众对文物价值的渴求，也提醒我们，要合理利用文物，充分发掘其文化内涵，让沉睡的古老文物“活”起来，发挥它们在公众知史爱国、鉴物审美，以及技艺传承、文化养心等方面的作用。\n\n文物是人类触摸历史的“活化石”，每一件文物都是历史故事的讲述者。一件件出土文物，一个个考古故事，足以让每个观展者沉浸在千年历史之中——无论是拿着放大镜对着一枚玉器细细观察的老人，还是那些被罕见金饼“亮瞎眼”的年轻人。很难想象，三千多年前的工匠，如何将一块玉石切割成型，又琢磨成高8.1厘米，厚只有0.3厘米、憨态可掬的对尾鹦鹉。那一套套大气而不失华丽的西汉编钟，虽静默无声，却仿佛让我们听到了古老的宫商角徵羽……那些走向博物馆的热切步伐，让我们看到了经济快速发展后现代人对“精品文化”消费的需求，更看到了现代人对自己从哪里来、到哪里去的历史追问。\n\n精美的文物凝聚着工匠们的心血和智慧，不仅代表了当时高超的技艺水平，而且有助于现代技术发展。古代不少青铜器都是用失蜡法制造的。20世纪初，德国人曾用失蜡法铸造工业用齿轮；1929年，又对失蜡法进行改造，以硅酸乙酯为耐火涂料，用熔点达1500℃的铬钨钴合金制成假牙。第二次世界大战期间，美国人奥斯汀在云南保山见到用失蜡法铸成的青铜器，大受启发，铸成了喷气发动机叶片和涡轮盘。之后，失蜡法技艺发展成为现代精密铸造技术。\n\n（取材于杨雪梅、黄洋的相关文章）"
+              },
+              {
+                "key": "material2",
+                "label": "材料2",
+                "text": "材料二\n\n文物与大众亲密接触才能实现其价值，可是与海量文物库藏相比，目前展出的文物只是九牛一毛。由于展出空间有限、担心损毁等原因，很多文物都“藏在深闺人未识”。感谢数字技术，打破了层层壁垒，盘活了很多被“雪藏”的文物，使之在线上“活”起来。大众足不出户，便可欣赏到以前难得一见的珍贵文物。在尊重历史文化遗产的基础上，数字技术不断将今人的创造融入传统文物，使之获得了新生。文物不再仅仅是摆在展柜里的静态展品，而以更加丰富多彩、生动活泼的方式走近大众，真正“活”了起来。\n\n动漫技术在文物的文化创意中越来越受重视。三星堆博物馆与四川省文物考古研究院合作推出了数字动漫《神树的传说》，以新近发掘的海昏侯墓为素材的动画作品《海昏魔镜》也在紧锣密鼓地筹备着。借助动漫，专业的学术介绍变成了幽默的旁白和“萌萌哒”的漫画，“高冷”的文物也一下子变得活泼起来，实现了学术性、趣味性和艺术性的统一。其实，早在1981年，我国已有让文物“活”起来的动画作品——上海美术电影制片厂根据敦煌壁画《鹿王本生》的故事创作了《九色鹿》。无数人通过这部动画片知道了莫高窟，看到了敦煌壁画。\n\n移动应用程序（APP）以新鲜时尚的方式提供给观众审美与求知、娱乐与鉴赏的多元文化体验。过去，由于保存和展出的特殊要求，五代的《韩熙载夜宴图》能够呈现在观众面前的机会十分有限。故宫博物院推出的《韩熙载夜宴图》APP弥补了这一缺憾，让观众随时随地可以欣赏这幅传世经典的精妙之处，在鲜活的文化体验中感受中国古代绘画作品的非凡魅力。此APP独创了三层立体赏析模式——总览层、鉴赏层和体验层，使这幅“数字画卷”可远观、可近赏，全方位向观众解读画作中的每个细节。点开APP，琵琶声起，拨动江南寂静的月色，观众仿佛随着画家顾闳中一起，走进韩府。画卷中的墨痕笔意、人物的衣纹表情都纤毫毕现。轻轻触动屏幕，指尖所至之处，似有烛光追随；移动“烛光”，人物、用品的名称、典故一一呈现，如同“秉烛夜读”，在静夜里与千古佳作“对话”……忽然之间，画中人“活”了起来，乐伎轻扫琵琶，舞伎翩翩起舞，画与真实的界限瞬间模糊起来，观众沉浸在画卷创造的艺术氛围之中。\n\n虚拟现实技术（VR）借助计算机图形系统、传感器技术等生成三维环境，创造出一种崭新的人机交互状态，通过调动用户的多种感官，带来沉浸感觉。以前，游客只能在兵马俑坑外观看，有了VR技术，戴上特制的眼镜，你会发现自己置身坑内，变身成了一个兵马俑，低头就能看到自己的身体——残破却依然威严。抬起头来，你会发现博物馆的穹顶慢慢向两边散开，建筑逐渐退去，转化成荒野，风沙弥漫，你的身体同时下沉，身处地表起伏的俑坑之中，周围是千军万马……\n\n（取材于胡克非、张英等的相关文章）\n\n材料三\n\n有的博物馆认为保护好文物不出事情是头等大事，将文物封闭在库房，秘不示人，觉得这样才可以确保万无一失。其实不然，“流水不腐，户枢不蠹”，有些文物同样如此。2010年浙江省博物馆利用馆藏的“彩凤鸣岐”和“来凰”，举办了唐代雷琴演奏会。古琴属于漆器，很难保存。这两把古琴之所以能历经千年保存下来还能使用，是因为历朝历代都有人使用它。古琴在安装上琴弦以后，才能保持力学上的平衡，不至于散架。\n\n数字技术使文物在线上“活”起来，更是对文物的一种保护。敦煌石窟集珍贵性、脆弱性于一身，历经千年的莫高窟艺术品，每一件都像岌岌可危的病人，游客的参观成为莫高窟最大的隐患。2003年，莫高窟全年游客接待量为30多万人次，2014年已增长到81万人次。根据测算，莫高窟一天的游客接待量极限在3000人次左右，而黄金周的日接待量曾超过2万人次，莫高窟不堪重负。实验监测数据显示，40个人进入洞窟参观半小时，洞窟内空气中的二氧化碳含量升高5倍，空气相对湿度上升10%，空气温度升高4℃，这都有可能侵蚀壁画，加速其老化。在自然和人为因素的双重作用下，彩塑和壁画正在缓慢退化，千百年后人们何以领略莫高窟的神韵？\n\n面对日益增多的游客，如何化解保护和利用的矛盾？敦煌数字化工程，犹如一缕明媚的科技之光，照进古老的莫高窟。有了数字化展示中心，游览模式发生了变化，艺术体验搬到洞窟外面，游客先通过数字化体验艺术“做足功课”，再进个别洞窟实际体验。这种模式既能满足游客看真品的需求，同时又减少了在洞窟内的停留时间，减少了对莫高窟的破坏。中心建成后，游客停留时间由2小时缩短至70分钟左右，莫高窟最高日接待游客量因此可提高到6000人次。\n\n（取材于黄洋、祝越、周龙等的相关文章）"
+              }
+            ],
+            "topic": "一、本大题共8个小题，共24分。\n阅读下面的材料，完成1—8题。",
+            "annotation": null,
+            "annotations": [
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 59,
+                "end": 60,
+                "anchor": "甫"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 79,
+                "end": 80,
+                "anchor": "罄"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 88,
+                "end": 89,
+                "anchor": "津"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 359,
+                "end": 360,
+                "anchor": "掬"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 2,
+                "id": "q2",
+                "text": "2．下列加点字词的读音和解释，全都正确的一项是（3分）\nA．甫一开始：“甫”读作pǔ 意思是“刚刚”\nB．告罄：“罄”读作qìng 意思是“尽”\nC．乏人问津：“津”读作jīn 意思是“路”\nD．憨态可掬：“掬”读作jū 意思是“令人喜爱”",
+                "score": 3
+              }
+            ]
+          },
+          "review": {
+            "id": "2017-feilian:2",
+            "sources": [
+              {
+                "type": "public_exam_scan",
+                "title": "2017北京语文十页原题扫描公开转载，逐页核对",
+                "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523465.shtml"
+              }
+            ],
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答",
+                "text": "选B。罄读qìng，意为尽。甫应读fǔ；津本指渡口，问津引申为探问、关注，不释为路；掬本为两手捧，憨态可掬形容憨态仿佛可以捧取，不能把掬单字直接释为令人喜爱。",
+                "inputSha256": "f491841db5f7fb64d7008ddf30b6244845b976387a943839b71fe7e078fc4c59",
+                "inputContextSha256": "86758f5356ecdb76674bba3f4d855b22528fabc627024370960440d2d32d0908",
+                "inputPresentationSha256": "6be435f26b5a1da6831c7e8ea1c8ef50fa65a9711eaea4f9425795d9cdc8d0e3",
+                "generatedAt": "2026-10-03T06:42:34.549Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "independent",
+                  "referenceExposed": false,
+                  "evidence": "answers-six-sites-20261002/root-2017-reading-drafts.json",
+                  "inputEvidence": "answers-six-sites-20261002/claude-2017-reading-job.json",
+                  "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+                  "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+                }
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "答案：B。\n选B。A项错误：“甫”应读fǔ，不读pǔ，释义“刚刚”是对的。B项正确：“罄”读qìng，意思是“尽、完”，“告罄”即用完。C项错误：“津”读jīn无误，但意思是“渡口”，不是“路”。D项错误：“掬”读jū无误，但意思是“用两手捧”，“憨态可掬”形容憨态仿佛可以用手捧起，“令人喜爱”不是“掬”的字义。",
+                "inputSha256": "f491841db5f7fb64d7008ddf30b6244845b976387a943839b71fe7e078fc4c59",
+                "inputContextSha256": "86758f5356ecdb76674bba3f4d855b22528fabc627024370960440d2d32d0908",
+                "inputPresentationSha256": "6be435f26b5a1da6831c7e8ea1c8ef50fa65a9711eaea4f9425795d9cdc8d0e3",
+                "generatedAt": "2026-10-03T06:44:07.068523+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "B"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2017-reading-result.json",
+                  "inputPromptSha256": "84cd6cd8aaf57be90b1f0e4b66fb65573620117b5b9d2a986eca99b127230325",
+                  "responseStreamSha256": "06e84750bdfcb158c604304cd44ad013dac46f9351abaf12ef80f03408dad96d",
+                  "stage": "independent"
+                }
+              }
+            },
+            "inputSha256": "f491841db5f7fb64d7008ddf30b6244845b976387a943839b71fe7e078fc4c59",
+            "inputContextSha256": "86758f5356ecdb76674bba3f4d855b22528fabc627024370960440d2d32d0908",
+            "inputPresentationSha256": "6be435f26b5a1da6831c7e8ea1c8ef50fa65a9711eaea4f9425795d9cdc8d0e3",
+            "status": "draft",
+            "kind": "single_choice",
+            "correctOptions": [
+              "B"
+            ],
+            "explanation": "完整题面下作答，等待交叉覆核；参考暴露情况逐条标注。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T06:42:34.549Z",
+            "currentVersion": "gpt_6_astra"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2017-feilian:3",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2017北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523465.shtml"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL刊学而思高考研究中心参考，非官方发布链",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523795.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 来源补字后复核",
+          "text": "选B。数字技术扩大接触文物的机会，提供生动有趣、便于理解的展示方式；材料所说学术性、趣味性、艺术性统一，不等于数字技术增加了文物本身的学术价值。A、C、D都有直接依据。",
+          "inputSha256": "f4be2ba925b4131dc4a3bbab087c477f70960c304d8a76eab9752915e1c18a95",
+          "inputContextSha256": "6fc87957fc9b806901593197877d6613558c8a437ffb7516a8e5e82869c4e6db",
+          "inputPresentationSha256": "9099c2e88d678414845c28c58c30008cf43195bcf6bca79d0b805d33e8eae2a0",
+          "generatedAt": "2026-10-03T06:46:09.911Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "source_review",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2017-feilian-source-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2017-feilian-source-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "完整原卷题面与准确标记下逐题核读两模型答案，选择结论相符，开放题允许合理不同表述；公开参考只作辅助，并逐项检查其可靠性。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 来源复核后修订",
+          "text": "答案：B。\n选B。A项正确：数字技术“盘活了很多被‘雪藏’的文物”，大众足不出户便可欣赏到以前难得一见的珍贵文物。B项不正确：材料只说借助动漫“实现了学术性、趣味性和艺术性的统一”，是把专业的学术介绍变得通俗有趣，并没有说数字技术增强了文物本身的学术价值。C项正确：专业介绍变成“幽默的旁白和‘萌萌哒’的漫画”，“高冷”的文物变得活泼。D项正确：《韩熙载夜宴图》APP“全方位向观众解读画作中的每个细节”，人物、用品的名称和典故一一呈现，帮助大众理解文物。",
+          "inputSha256": "f4be2ba925b4131dc4a3bbab087c477f70960c304d8a76eab9752915e1c18a95",
+          "inputContextSha256": "6fc87957fc9b806901593197877d6613558c8a437ffb7516a8e5e82869c4e6db",
+          "inputPresentationSha256": "9099c2e88d678414845c28c58c30008cf43195bcf6bca79d0b805d33e8eae2a0",
+          "generatedAt": "2026-10-03T06:47:01.986200+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "完整原卷题面与准确标记下逐题核读两模型答案，选择结论相符，开放题允许合理不同表述；公开参考只作辅助，并逐项检查其可靠性。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2017-feilian-source-result.json",
+            "inputPromptSha256": "d1b269cee7a1344c8b756d6bf7a628a9d382a72669db73f063e1e0230baf1b3b",
+            "responseStreamSha256": "efc519cf592c296fb2b1cc44349fdf1a226d1bc4c644d263801de2eb47945021",
+            "stage": "source_review"
+          }
+        }
+      },
+      "inputSha256": "f4be2ba925b4131dc4a3bbab087c477f70960c304d8a76eab9752915e1c18a95",
+      "inputContextSha256": "6fc87957fc9b806901593197877d6613558c8a437ffb7516a8e5e82869c4e6db",
+      "inputPresentationSha256": "9099c2e88d678414845c28c58c30008cf43195bcf6bca79d0b805d33e8eae2a0",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "完整原卷题面与准确标记下逐题核读两模型答案，选择结论相符，开放题允许合理不同表述；公开参考只作辅助，并逐项检查其可靠性。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:50:26.137Z",
+      "currentVersion": "gpt_6_astra",
+      "history": [
+        {
+          "source": {
+            "id": "2017-feilian",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "材料一\n\n首都博物馆正在举办两个精品展，一个是南昌汉代海昏侯考古成果展，一个是纪念殷墟妇好墓考古发掘四十周年特展。展览甫一开始，便引来热切关注，预约名额很快告罄。文物曾“乏人问津”，只为少数专家学者所识，如今竟备受大众青睐。这反映了大众对文物价值的渴求，也提醒我们，要合理利用文物，充分发掘其文化内涵，让沉睡的古老文物“活”起来，发挥它们在公众知史爱国、鉴物审美，以及技艺传承、文化养心等方面的作用。\n\n文物是人类触摸历史的“活化石”，每一件文物都是历史故事的讲述者。一件件出土文物，一个个考古故事，足以让每个观展者沉浸在千年历史之中——无论是拿着放大镜对着一枚玉器细细观察的老人，还是那些被罕见金饼“亮瞎眼”的年轻人。很难想象，三千多年前的工匠，如何将一块玉石切割成型，又琢磨成高8.1厘米，厚只有0.3厘米、憨态可掬的对尾鹦鹉。那一套套大气而不失华丽的西汉编钟，虽静默无声，却仿佛让我们听到了古老的宫商角徵羽……那些走向博物馆的热切步伐，让我们看到了经济快速发展后现代人对“精品文化”消费的需求，更看到了现代人对自己从哪里来、到哪里去的历史追问。\n\n精美的文物凝聚着工匠们的心血和智慧，不仅代表了当时高超的技艺水平，而且有助于现代技术发展。古代不少青铜器都是用失蜡法制造的。20世纪初，德国人曾用失蜡法铸造工业用齿轮；1929年，又对失蜡法进行改造，以硅酸乙酯为耐火涂料，用熔点达1500℃的铬钨钴合金制成假牙。第二次世界大战期间，美国人奥斯汀在云南保山见到用失蜡法铸成的青铜器，大受启发，铸成了喷气发动机叶片和涡轮盘。之后，失蜡法技艺发展成为现代精密铸造技术。\n\n（取材于杨雪梅、黄洋的相关文章）"
+              },
+              {
+                "key": "material2",
+                "label": "材料2",
+                "text": "材料二\n\n文物与大众亲密接触才能实现其价值，可是与海量文物库藏相比，目前展出的文物只是九牛一毛。由于展出空间有限、担心损毁等原因，很多文物都“藏在深闺人未识”。感谢数字技术，打破了层层壁垒，盘活了很多被“雪藏”的文物，使之在线上“活”起来。大众足不出户，便可欣赏到以前难得一见的珍贵文物。在尊重历史文化遗产的基础上，数字技术不断将今人的创造融入传统文物，使之获得了新生。文物不再仅仅是摆在展柜里的静态展品，而以更加丰富多彩、生动活泼的方式走近大众，真正“活”了起来。\n\n动漫技术在文物的文化创意中越来越受重视。三星堆博物馆与四川省文物考古研究院合作推出了数字动漫《神树的传说》，以新近发掘的海昏侯墓为素材的动画作品《海昏魔镜》也在紧锣密鼓地筹备着。借助动漫，专业的学术介绍变成了幽默的旁白和“萌萌哒”的漫画，“高冷”的文物也一下子变得活泼起来，实现了学术性、趣味性和艺术性的统一。其实，早在1981年，我国已有让文物“活”起来的动画作品——上海美术电影制片厂根据敦煌壁画《鹿王本生》的故事创作了《九色鹿》。无数人通过这部动画片知道了莫高窟，看到了敦煌壁画。\n\n移动应用程序（APP）以新鲜时尚的方式提供给观众审美与求知、娱乐与鉴赏的多元文化体验。过去，由于保存和展出的特殊要求，五代的《韩熙载夜宴图》能够呈现在观众面前的机会十分有限。故宫博物院推出的《韩熙载夜宴图》APP弥补了这一缺憾，让观众随时随地可以欣赏这幅传世经典的精妙之处，在鲜活的文化体验中感受中国古代绘画作品的非凡魅力。此APP独创了三层立体赏析模式——总览层、鉴赏层和体验层，使这幅“数字画卷”可远观、可近赏，全方位向观众解读画作中的每个细节。点开APP，琵琶声起，拨动江南寂静的月色，观众仿佛随着画家顾闳中一起，走进韩府。画卷中的墨痕笔意、人物的衣纹表情都纤毫毕现。轻轻触动屏幕，指尖所至之处，似有烛光追随；移动“烛光”，人物、用品的名称、典故一一呈现，如同“秉烛夜读”，在静夜里与千古佳作“对话”……忽然之间，画中人“活”了起来，乐伎轻扫琵琶，舞伎翩翩起舞，画与真实的界限瞬间模糊起来，观众沉浸在画卷创造的艺术氛围之中。\n\n虚拟现实技术（VR）借助计算机图形系统、传感器技术等生成三维环境，创造出一种崭新的人机交互状态，通过调动用户的多种感官，带来沉浸感觉。以前，游客只能在兵马俑坑外观看，有了VR技术，戴上特制的眼镜，你会发现自己置身坑内，变身成了一个兵马俑，低头就能看到自己的身体——残破却依然威严。抬起头来，你会发现博物馆的穹顶慢慢向两边散开，建筑逐渐退去，转化成荒野，风沙弥漫，你的身体同时下沉，身处地表起伏的俑坑之中，周围是千军万马……\n\n（取材于胡克非、张英等的相关文章）\n\n材料三\n\n有的博物馆认为保护好文物不出事情是头等大事，将文物封闭在库房，秘不示人，觉得这样才可以确保万无一失。其实不然，“流水不腐，户枢不蠹”，有些文物同样如此。2010年浙江省博物馆利用馆藏的“彩凤鸣岐”和“来凰”，举办了唐代雷琴演奏会。古琴属于漆器，很难保存。这两把古琴之所以能历经千年保存下来还能使用，是因为历朝历代都有人使用它。古琴在安装上琴弦以后，才能保持力学上的平衡，不至于散架。\n\n数字技术使文物在线上“活”起来，更是对文物的一种保护。敦煌石窟集珍贵性、脆弱性于一身，历经千年的莫高窟艺术品，每一件都像岌岌可危的病人，游客的参观成为莫高窟最大的隐患。2003年，莫高窟全年游客接待量为30多万人次，2014年已增长到81万人次。根据测算，莫高窟一天的游客接待量极限在3000人次左右，而黄金周的日接待量曾超过2万人次，莫高窟不堪重负。实验监测数据显示，40个人进入洞窟参观半小时，洞窟内空气中的二氧化碳含量升高5倍，空气相对湿度上升10%，空气温度升高4℃，这都有可能侵蚀壁画，加速其老化。在自然和人为因素的双重作用下，彩塑和壁画正在缓慢退化，千百年后人们何以领略莫高窟的神韵？\n\n面对日益增多的游客，如何化解保护和利用的矛盾？敦煌数字化工程，犹如一缕明媚的科技之光，照进古老的莫高窟。有了数字化展示中心，游览模式发生了变化，艺术体验搬到洞窟外面，游客先通过数字化体验艺术“做足功课”，再进个别洞窟实际体验。这种模式既能满足游客看真品的需求，同时又减少了在洞窟内的停留时间，减少了对莫高窟的破坏。中心建成后，游客停留时间由2小时缩短至70分钟左右，莫高窟最高日接待游客量因此可提高到6000人次。\n\n（取材于黄洋、祝越、周龙等的相关文章）"
+              }
+            ],
+            "topic": "一、本大题共8个小题，共24分。\n阅读下面的材料，完成1—8题。",
+            "annotation": null,
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 3,
+                "id": "q3",
+                "text": "3. 根据材料二，下列对数字技术作用的理解，不正确的一项是（3分）\nA. 让大众了解到更多文物 B. 增强了文物的学术性价值\nC. 增强文物欣赏的趣味性 D. 帮助大众更好地理解文物",
+                "score": 3
+              }
+            ]
+          },
+          "review": {
+            "id": "2017-feilian:3",
+            "sources": [
+              {
+                "type": "public_exam_scan",
+                "title": "2017北京语文十页原题扫描公开转载，逐页核对",
+                "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523465.shtml"
+              }
+            ],
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答",
+                "text": "选B。数字技术扩大接触文物的机会，提供生动有趣、便于理解的展示方式；材料所说学术性、趣味性、艺术性统一，不等于数字技术增加了文物本身的学术价值。A、C、D都有直接依据。",
+                "inputSha256": "7302316520d58d36857f67278331ba3f049fa8f4de7c348dd64db5a779811794",
+                "inputContextSha256": "02d2d53fe3ae159c79dfd0c9ae37214905f61f0940e8108f1fdcc56562e837a2",
+                "inputPresentationSha256": "00fc59db87576aa2d79043312f68ca626e59e4360699c3fde444e2d47df7cada",
+                "generatedAt": "2026-10-03T06:42:34.549Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "independent",
+                  "referenceExposed": false,
+                  "evidence": "answers-six-sites-20261002/root-2017-reading-drafts.json",
+                  "inputEvidence": "answers-six-sites-20261002/claude-2017-reading-job.json",
+                  "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+                  "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+                }
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "答案：B。\n选B。A项正确：数字技术盘活了被“雪藏”的文物，大众足不出户即可欣赏难得一见的文物。B项错误：材料只说借助动漫“实现了学术性、趣味性和艺术性的统一”，是把专业的学术介绍变得通俗有趣，并没有说数字技术增强了文物本身的学术价值。C项正确：幽默的旁白、“萌萌哒”的漫画让“高冷”的文物变得活泼。D项正确：APP的三层赏析模式全方位解读画作细节，名称、典故一一呈现，帮助大众理解文物。",
+                "inputSha256": "7302316520d58d36857f67278331ba3f049fa8f4de7c348dd64db5a779811794",
+                "inputContextSha256": "02d2d53fe3ae159c79dfd0c9ae37214905f61f0940e8108f1fdcc56562e837a2",
+                "inputPresentationSha256": "00fc59db87576aa2d79043312f68ca626e59e4360699c3fde444e2d47df7cada",
+                "generatedAt": "2026-10-03T06:44:07.068523+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "B"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2017-reading-result.json",
+                  "inputPromptSha256": "84cd6cd8aaf57be90b1f0e4b66fb65573620117b5b9d2a986eca99b127230325",
+                  "responseStreamSha256": "06e84750bdfcb158c604304cd44ad013dac46f9351abaf12ef80f03408dad96d",
+                  "stage": "independent"
+                }
+              }
+            },
+            "inputSha256": "7302316520d58d36857f67278331ba3f049fa8f4de7c348dd64db5a779811794",
+            "inputContextSha256": "02d2d53fe3ae159c79dfd0c9ae37214905f61f0940e8108f1fdcc56562e837a2",
+            "inputPresentationSha256": "00fc59db87576aa2d79043312f68ca626e59e4360699c3fde444e2d47df7cada",
+            "status": "draft",
+            "kind": "single_choice",
+            "correctOptions": [
+              "B"
+            ],
+            "explanation": "完整题面下作答，等待交叉覆核；参考暴露情况逐条标注。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T06:42:34.549Z",
+            "currentVersion": "gpt_6_astra"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2017-feilian:4",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2017北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523465.shtml"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL刊学而思高考研究中心参考，非官方发布链",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523795.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 来源补字后复核",
+          "text": "选D。VR调动多种感官，使观看者仿佛亲身置于俑坑和古代场景，正是身临其境。身不由己强调受支配，感同身受强调感受相通，设身处地强调换位设想，均不如D准确。",
+          "inputSha256": "19f8b36163e598b2ab92de0e69e2e23ea84f3f7c945094e9b55d0179552934e1",
+          "inputContextSha256": "b5254cbdaaa6719e460950abe1e6847001338a0f4182763d3bb63691e361f357",
+          "inputPresentationSha256": "1c3c80ed5ff169389753a849be6bef8ced503713ffd2ac3529c781db9cd352ed",
+          "generatedAt": "2026-10-03T06:46:09.911Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "source_review",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2017-feilian-source-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2017-feilian-source-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "完整原卷题面与准确标记下逐题核读两模型答案，选择结论相符，开放题允许合理不同表述；公开参考只作辅助，并逐项检查其可靠性。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 来源复核后修订",
+          "text": "答案：D。\n选D。材料二说VR技术“通过调动用户的多种感官，带来沉浸感觉”，戴上眼镜后“发现自己置身坑内”，周围是千军万马，这正是“身临其境”（亲身到了那个境地）的体验。A项“身不由己”指行动不能由自己做主，与文意无关。B项“感同身受”原指感激的心情如同亲身受到恩惠，现多指虽未亲历但感受如同亲历，侧重情感上的体会，不是感官上的沉浸。C项“设身处地”指设想自己处在别人的地位或境遇中，侧重替别人着想，也不合。",
+          "inputSha256": "19f8b36163e598b2ab92de0e69e2e23ea84f3f7c945094e9b55d0179552934e1",
+          "inputContextSha256": "b5254cbdaaa6719e460950abe1e6847001338a0f4182763d3bb63691e361f357",
+          "inputPresentationSha256": "1c3c80ed5ff169389753a849be6bef8ced503713ffd2ac3529c781db9cd352ed",
+          "generatedAt": "2026-10-03T06:47:01.986200+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "完整原卷题面与准确标记下逐题核读两模型答案，选择结论相符，开放题允许合理不同表述；公开参考只作辅助，并逐项检查其可靠性。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2017-feilian-source-result.json",
+            "inputPromptSha256": "d1b269cee7a1344c8b756d6bf7a628a9d382a72669db73f063e1e0230baf1b3b",
+            "responseStreamSha256": "efc519cf592c296fb2b1cc44349fdf1a226d1bc4c644d263801de2eb47945021",
+            "stage": "source_review"
+          }
+        }
+      },
+      "inputSha256": "19f8b36163e598b2ab92de0e69e2e23ea84f3f7c945094e9b55d0179552934e1",
+      "inputContextSha256": "b5254cbdaaa6719e460950abe1e6847001338a0f4182763d3bb63691e361f357",
+      "inputPresentationSha256": "1c3c80ed5ff169389753a849be6bef8ced503713ffd2ac3529c781db9cd352ed",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "完整原卷题面与准确标记下逐题核读两模型答案，选择结论相符，开放题允许合理不同表述；公开参考只作辅助，并逐项检查其可靠性。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:50:26.137Z",
+      "currentVersion": "gpt_6_astra",
+      "history": [
+        {
+          "source": {
+            "id": "2017-feilian",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "材料一\n\n首都博物馆正在举办两个精品展，一个是南昌汉代海昏侯考古成果展，一个是纪念殷墟妇好墓考古发掘四十周年特展。展览甫一开始，便引来热切关注，预约名额很快告罄。文物曾“乏人问津”，只为少数专家学者所识，如今竟备受大众青睐。这反映了大众对文物价值的渴求，也提醒我们，要合理利用文物，充分发掘其文化内涵，让沉睡的古老文物“活”起来，发挥它们在公众知史爱国、鉴物审美，以及技艺传承、文化养心等方面的作用。\n\n文物是人类触摸历史的“活化石”，每一件文物都是历史故事的讲述者。一件件出土文物，一个个考古故事，足以让每个观展者沉浸在千年历史之中——无论是拿着放大镜对着一枚玉器细细观察的老人，还是那些被罕见金饼“亮瞎眼”的年轻人。很难想象，三千多年前的工匠，如何将一块玉石切割成型，又琢磨成高8.1厘米，厚只有0.3厘米、憨态可掬的对尾鹦鹉。那一套套大气而不失华丽的西汉编钟，虽静默无声，却仿佛让我们听到了古老的宫商角徵羽……那些走向博物馆的热切步伐，让我们看到了经济快速发展后现代人对“精品文化”消费的需求，更看到了现代人对自己从哪里来、到哪里去的历史追问。\n\n精美的文物凝聚着工匠们的心血和智慧，不仅代表了当时高超的技艺水平，而且有助于现代技术发展。古代不少青铜器都是用失蜡法制造的。20世纪初，德国人曾用失蜡法铸造工业用齿轮；1929年，又对失蜡法进行改造，以硅酸乙酯为耐火涂料，用熔点达1500℃的铬钨钴合金制成假牙。第二次世界大战期间，美国人奥斯汀在云南保山见到用失蜡法铸成的青铜器，大受启发，铸成了喷气发动机叶片和涡轮盘。之后，失蜡法技艺发展成为现代精密铸造技术。\n\n（取材于杨雪梅、黄洋的相关文章）"
+              },
+              {
+                "key": "material2",
+                "label": "材料2",
+                "text": "材料二\n\n文物与大众亲密接触才能实现其价值，可是与海量文物库藏相比，目前展出的文物只是九牛一毛。由于展出空间有限、担心损毁等原因，很多文物都“藏在深闺人未识”。感谢数字技术，打破了层层壁垒，盘活了很多被“雪藏”的文物，使之在线上“活”起来。大众足不出户，便可欣赏到以前难得一见的珍贵文物。在尊重历史文化遗产的基础上，数字技术不断将今人的创造融入传统文物，使之获得了新生。文物不再仅仅是摆在展柜里的静态展品，而以更加丰富多彩、生动活泼的方式走近大众，真正“活”了起来。\n\n动漫技术在文物的文化创意中越来越受重视。三星堆博物馆与四川省文物考古研究院合作推出了数字动漫《神树的传说》，以新近发掘的海昏侯墓为素材的动画作品《海昏魔镜》也在紧锣密鼓地筹备着。借助动漫，专业的学术介绍变成了幽默的旁白和“萌萌哒”的漫画，“高冷”的文物也一下子变得活泼起来，实现了学术性、趣味性和艺术性的统一。其实，早在1981年，我国已有让文物“活”起来的动画作品——上海美术电影制片厂根据敦煌壁画《鹿王本生》的故事创作了《九色鹿》。无数人通过这部动画片知道了莫高窟，看到了敦煌壁画。\n\n移动应用程序（APP）以新鲜时尚的方式提供给观众审美与求知、娱乐与鉴赏的多元文化体验。过去，由于保存和展出的特殊要求，五代的《韩熙载夜宴图》能够呈现在观众面前的机会十分有限。故宫博物院推出的《韩熙载夜宴图》APP弥补了这一缺憾，让观众随时随地可以欣赏这幅传世经典的精妙之处，在鲜活的文化体验中感受中国古代绘画作品的非凡魅力。此APP独创了三层立体赏析模式——总览层、鉴赏层和体验层，使这幅“数字画卷”可远观、可近赏，全方位向观众解读画作中的每个细节。点开APP，琵琶声起，拨动江南寂静的月色，观众仿佛随着画家顾闳中一起，走进韩府。画卷中的墨痕笔意、人物的衣纹表情都纤毫毕现。轻轻触动屏幕，指尖所至之处，似有烛光追随；移动“烛光”，人物、用品的名称、典故一一呈现，如同“秉烛夜读”，在静夜里与千古佳作“对话”……忽然之间，画中人“活”了起来，乐伎轻扫琵琶，舞伎翩翩起舞，画与真实的界限瞬间模糊起来，观众沉浸在画卷创造的艺术氛围之中。\n\n虚拟现实技术（VR）借助计算机图形系统、传感器技术等生成三维环境，创造出一种崭新的人机交互状态，通过调动用户的多种感官，带来沉浸感觉。以前，游客只能在兵马俑坑外观看，有了VR技术，戴上特制的眼镜，你会发现自己置身坑内，变身成了一个兵马俑，低头就能看到自己的身体——残破却依然威严。抬起头来，你会发现博物馆的穹顶慢慢向两边散开，建筑逐渐退去，转化成荒野，风沙弥漫，你的身体同时下沉，身处地表起伏的俑坑之中，周围是千军万马……\n\n（取材于胡克非、张英等的相关文章）\n\n材料三\n\n有的博物馆认为保护好文物不出事情是头等大事，将文物封闭在库房，秘不示人，觉得这样才可以确保万无一失。其实不然，“流水不腐，户枢不蠹”，有些文物同样如此。2010年浙江省博物馆利用馆藏的“彩凤鸣岐”和“来凰”，举办了唐代雷琴演奏会。古琴属于漆器，很难保存。这两把古琴之所以能历经千年保存下来还能使用，是因为历朝历代都有人使用它。古琴在安装上琴弦以后，才能保持力学上的平衡，不至于散架。\n\n数字技术使文物在线上“活”起来，更是对文物的一种保护。敦煌石窟集珍贵性、脆弱性于一身，历经千年的莫高窟艺术品，每一件都像岌岌可危的病人，游客的参观成为莫高窟最大的隐患。2003年，莫高窟全年游客接待量为30多万人次，2014年已增长到81万人次。根据测算，莫高窟一天的游客接待量极限在3000人次左右，而黄金周的日接待量曾超过2万人次，莫高窟不堪重负。实验监测数据显示，40个人进入洞窟参观半小时，洞窟内空气中的二氧化碳含量升高5倍，空气相对湿度上升10%，空气温度升高4℃，这都有可能侵蚀壁画，加速其老化。在自然和人为因素的双重作用下，彩塑和壁画正在缓慢退化，千百年后人们何以领略莫高窟的神韵？\n\n面对日益增多的游客，如何化解保护和利用的矛盾？敦煌数字化工程，犹如一缕明媚的科技之光，照进古老的莫高窟。有了数字化展示中心，游览模式发生了变化，艺术体验搬到洞窟外面，游客先通过数字化体验艺术“做足功课”，再进个别洞窟实际体验。这种模式既能满足游客看真品的需求，同时又减少了在洞窟内的停留时间，减少了对莫高窟的破坏。中心建成后，游客停留时间由2小时缩短至70分钟左右，莫高窟最高日接待游客量因此可提高到6000人次。\n\n（取材于黄洋、祝越、周龙等的相关文章）"
+              }
+            ],
+            "topic": "一、本大题共8个小题，共24分。\n阅读下面的材料，完成1—8题。",
+            "annotation": null,
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 4,
+                "id": "q4",
+                "text": "4. 根据材料二，下列成语中最能准确表达VR技术带给人的体验的一项是（3分）\nA. 身不由己 B. 感同身受 C. 设身处地 D. 身临其境",
+                "score": 3
+              }
+            ]
+          },
+          "review": {
+            "id": "2017-feilian:4",
+            "sources": [
+              {
+                "type": "public_exam_scan",
+                "title": "2017北京语文十页原题扫描公开转载，逐页核对",
+                "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523465.shtml"
+              }
+            ],
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答",
+                "text": "选D。VR调动多种感官，使观看者仿佛亲身置于俑坑和古代场景，正是身临其境。身不由己强调受支配，感同身受强调感受相通，设身处地强调换位设想，均不如D准确。",
+                "inputSha256": "59ec67ec30bfdeac2a010c758cee38b3c1518d555a1f3b8c18b0993cfb3701a0",
+                "inputContextSha256": "f0ed842a88ae2a58173442e1f00dcce6865333ee49e8d928b61426762c21ac54",
+                "inputPresentationSha256": "8442ad46a23ce94989c3a971876b5d9a3cbd19dbcd3b2e80ef55b4c4344436ca",
+                "generatedAt": "2026-10-03T06:42:34.549Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "independent",
+                  "referenceExposed": false,
+                  "evidence": "answers-six-sites-20261002/root-2017-reading-drafts.json",
+                  "inputEvidence": "answers-six-sites-20261002/claude-2017-reading-job.json",
+                  "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+                  "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+                }
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "答案：D。\n选D。材料说VR技术“调动用户的多种感官，带来沉浸感觉”，让人“发现自己置身坑内”，这正是“身临其境”（亲身到了那个境地）。A“身不由己”指行动不能由自己做主，与文意无关。B“感同身受”指虽未亲身经历却如同亲身感受一样，多用于对他人的遭遇、情感的体会，不指空间上的沉浸感。C“设身处地”指设想自己处在别人的地位或境遇中，侧重替人着想，也不合文意。",
+                "inputSha256": "59ec67ec30bfdeac2a010c758cee38b3c1518d555a1f3b8c18b0993cfb3701a0",
+                "inputContextSha256": "f0ed842a88ae2a58173442e1f00dcce6865333ee49e8d928b61426762c21ac54",
+                "inputPresentationSha256": "8442ad46a23ce94989c3a971876b5d9a3cbd19dbcd3b2e80ef55b4c4344436ca",
+                "generatedAt": "2026-10-03T06:44:07.068523+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "D"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2017-reading-result.json",
+                  "inputPromptSha256": "84cd6cd8aaf57be90b1f0e4b66fb65573620117b5b9d2a986eca99b127230325",
+                  "responseStreamSha256": "06e84750bdfcb158c604304cd44ad013dac46f9351abaf12ef80f03408dad96d",
+                  "stage": "independent"
+                }
+              }
+            },
+            "inputSha256": "59ec67ec30bfdeac2a010c758cee38b3c1518d555a1f3b8c18b0993cfb3701a0",
+            "inputContextSha256": "f0ed842a88ae2a58173442e1f00dcce6865333ee49e8d928b61426762c21ac54",
+            "inputPresentationSha256": "8442ad46a23ce94989c3a971876b5d9a3cbd19dbcd3b2e80ef55b4c4344436ca",
+            "status": "draft",
+            "kind": "single_choice",
+            "correctOptions": [
+              "D"
+            ],
+            "explanation": "完整题面下作答，等待交叉覆核；参考暴露情况逐条标注。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T06:42:34.549Z",
+            "currentVersion": "gpt_6_astra"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2017-feilian:5",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2017北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523465.shtml"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL刊学而思高考研究中心参考，非官方发布链",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523795.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后来源复核",
+          "text": "第5题选D。由少数人专享走向普通公众，对应旧时王谢堂前燕，飞入寻常百姓家的由旧时显贵之家进入百姓家的变化。其余三项分别偏重稀有、成名、声名与知己，不能准确表示共享范围扩大。\n第6题选C。材料说二氧化碳含量升高等变化可能侵蚀壁画，C反说降低。\n第7题选A。数字展示减少游客在洞窟内停留的时间，并提高最高日接待能力，不是减少接待游客量。\n第8题：含义包括使文物走出库房、进入大众生活，也包括以动漫、应用程序和虚拟现实等方式将静态文物及其故事、技艺转化为可感可知的文化体验；某些文物在适当使用中延续功能。作用上，一是扩大接触面，促进知史、审美、文化传承和精神滋养；二是将传统技艺与现代创造联系，丰富文化表达并启发现代技术；三是在尊重文物及其保存条件的前提下协调利用与保护，例如分流体验、减少洞窟停留和损耗，个别器物也可在使用中维持状态。不能把个别古琴经验泛化成所有文物越用越能保存。",
+          "inputSha256": "de8d3e703b606c2e651cb67f09c13ce75704cdc0d36c2b53ff7c6dc2b2a5dde8",
+          "inputContextSha256": "833fbe081a125bda54e0e88590c324df040b15eb07c968beb4cf064aa700cab2",
+          "inputPresentationSha256": "99c1f16d647cfc10e56880bd0d3b6b3a0f21d55a8d8227a35cc888c68437cd22",
+          "generatedAt": "2026-10-03T06:46:09.911Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2017.json",
+            "evidence": "answers-six-sites-20261002/root-2017-feilian-source-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2017-feilian-source-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "原5/6/7分别D/C/A，第8完整答含义与作用。整体open/answer=[]，旧score2保留，原2+2+2+6评分仍阻断。古琴使用经验不能推广至所有文物；数字展示有助协调保护利用，不保证消除损毁风险。材料中的接待量为其叙述时点数据，不当作当前开放政策。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 来源复核后修订",
+          "text": "第5题：选D。“旧时王谢堂前燕，飞入寻常百姓家”写的是原属豪门贵族的事物进入普通人家，正好比喻文物由只为少数专家学者所识变为走近大众。A项说的是乐曲珍稀难得，只表现“难得一见”，没有“走近大众”的意思。B项说的是读书人由默默无闻到一举成名，侧重个人功名的突变。C项是劝慰友人不必担心前路没有知己，与文意不合。\n\n第6题：选C。C项不正确：材料三说的是游客进入后洞窟内二氧化碳含量“升高”5倍，以及湿度、温度上升，可能侵蚀壁画、加速老化，选项说成“降低”，与原文相反。A项正确：把文物封闭在库房以求万无一失，原文评价“其实不然”。B项正确：两把唐代雷琴因历代有人使用、装上琴弦保持力学平衡才得以保存。D项正确：原文有“在自然和人为因素的双重作用下，彩塑和壁画正在缓慢退化”。\n\n第7题：选A。A项不正确：中心建成后，莫高窟最高日接待游客量由约3000人次“提高到6000人次”，接待量是增加而不是减少。B项正确：原文有“游览模式发生了变化”，先看数字化展示再进个别洞窟。C项正确：游客停留时间由2小时缩短至70分钟左右。D项正确：原文有“减少了对莫高窟的破坏”。\n\n第8题（6分）：\n含义：\n①让文物走出库房、走近大众，通过展览等方式与公众亲密接触，不再“藏在深闺”“乏人问津”。\n②合理利用文物，充分发掘其文化内涵，有些文物（如古琴）在使用中才能延续生命。\n③借助动漫、APP、VR等数字技术，把今人的创造融入传统文物，使文物从静态展品变得生动活泼，在线上“活”起来。\n\n作用：\n①让大众了解历史、知史爱国，满足人们对“精品文化”消费的需求和对历史的追问，起到鉴物审美、文化养心的作用。\n②传承古代技艺，并促进现代技术发展，如失蜡法发展成为现代精密铸造技术。\n③实现文物自身的价值，让更多文物以有趣、易懂的方式被大众欣赏和理解。\n④有利于文物保护，化解保护与利用的矛盾，如古琴因使用而得以保存，敦煌数字化减少了游览对洞窟的破坏。",
+          "inputSha256": "de8d3e703b606c2e651cb67f09c13ce75704cdc0d36c2b53ff7c6dc2b2a5dde8",
+          "inputContextSha256": "833fbe081a125bda54e0e88590c324df040b15eb07c968beb4cf064aa700cab2",
+          "inputPresentationSha256": "99c1f16d647cfc10e56880bd0d3b6b3a0f21d55a8d8227a35cc888c68437cd22",
+          "generatedAt": "2026-10-03T06:47:01.986200+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "原5/6/7分别D/C/A，第8完整答含义与作用。整体open/answer=[]，旧score2保留，原2+2+2+6评分仍阻断。古琴使用经验不能推广至所有文物；数字展示有助协调保护利用，不保证消除损毁风险。材料中的接待量为其叙述时点数据，不当作当前开放政策。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2017-feilian-source-result.json",
+            "inputPromptSha256": "d1b269cee7a1344c8b756d6bf7a628a9d382a72669db73f063e1e0230baf1b3b",
+            "responseStreamSha256": "efc519cf592c296fb2b1cc44349fdf1a226d1bc4c644d263801de2eb47945021",
+            "stage": "source_review"
+          }
+        }
+      },
+      "inputSha256": "de8d3e703b606c2e651cb67f09c13ce75704cdc0d36c2b53ff7c6dc2b2a5dde8",
+      "inputContextSha256": "833fbe081a125bda54e0e88590c324df040b15eb07c968beb4cf064aa700cab2",
+      "inputPresentationSha256": "99c1f16d647cfc10e56880bd0d3b6b3a0f21d55a8d8227a35cc888c68437cd22",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "原5/6/7分别D/C/A，第8完整答含义与作用。整体open/answer=[]，旧score2保留，原2+2+2+6评分仍阻断。古琴使用经验不能推广至所有文物；数字展示有助协调保护利用，不保证消除损毁风险。材料中的接待量为其叙述时点数据，不当作当前开放政策。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:50:26.137Z",
+      "currentVersion": "gpt_6_astra",
+      "history": [
+        {
+          "source": {
+            "id": "2017-feilian",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "材料一\n\n首都博物馆正在举办两个精品展，一个是南昌汉代海昏侯考古成果展，一个是纪念殷墟妇好墓考古发掘四十周年特展。展览甫一开始，便引来热切关注，预约名额很快告罄。文物曾“乏人问津”，只为少数专家学者所识，如今竟备受大众青睐。这反映了大众对文物价值的渴求，也提醒我们，要合理利用文物，充分发掘其文化内涵，让沉睡的古老文物“活”起来，发挥它们在公众知史爱国、鉴物审美，以及技艺传承、文化养心等方面的作用。\n\n文物是人类触摸历史的“活化石”，每一件文物都是历史故事的讲述者。一件件出土文物，一个个考古故事，足以让每个观展者沉浸在千年历史之中——无论是拿着放大镜对着一枚玉器细细观察的老人，还是那些被罕见金饼“亮瞎眼”的年轻人。很难想象，三千多年前的工匠，如何将一块玉石切割成型，又琢磨成高8.1厘米，厚只有0.3厘米、憨态可掬的对尾鹦鹉。那一套套大气而不失华丽的西汉编钟，虽静默无声，却仿佛让我们听到了古老的宫商角徵羽……那些走向博物馆的热切步伐，让我们看到了经济快速发展后现代人对“精品文化”消费的需求，更看到了现代人对自己从哪里来、到哪里去的历史追问。\n\n精美的文物凝聚着工匠们的心血和智慧，不仅代表了当时高超的技艺水平，而且有助于现代技术发展。古代不少青铜器都是用失蜡法制造的。20世纪初，德国人曾用失蜡法铸造工业用齿轮；1929年，又对失蜡法进行改造，以硅酸乙酯为耐火涂料，用熔点达1500℃的铬钨钴合金制成假牙。第二次世界大战期间，美国人奥斯汀在云南保山见到用失蜡法铸成的青铜器，大受启发，铸成了喷气发动机叶片和涡轮盘。之后，失蜡法技艺发展成为现代精密铸造技术。\n\n（取材于杨雪梅、黄洋的相关文章）"
+              },
+              {
+                "key": "material2",
+                "label": "材料2",
+                "text": "材料二\n\n文物与大众亲密接触才能实现其价值，可是与海量文物库藏相比，目前展出的文物只是九牛一毛。由于展出空间有限、担心损毁等原因，很多文物都“藏在深闺人未识”。感谢数字技术，打破了层层壁垒，盘活了很多被“雪藏”的文物，使之在线上“活”起来。大众足不出户，便可欣赏到以前难得一见的珍贵文物。在尊重历史文化遗产的基础上，数字技术不断将今人的创造融入传统文物，使之获得了新生。文物不再仅仅是摆在展柜里的静态展品，而以更加丰富多彩、生动活泼的方式走近大众，真正“活”了起来。\n\n动漫技术在文物的文化创意中越来越受重视。三星堆博物馆与四川省文物考古研究院合作推出了数字动漫《神树的传说》，以新近发掘的海昏侯墓为素材的动画作品《海昏魔镜》也在紧锣密鼓地筹备着。借助动漫，专业的学术介绍变成了幽默的旁白和“萌萌哒”的漫画，“高冷”的文物也一下子变得活泼起来，实现了学术性、趣味性和艺术性的统一。其实，早在1981年，我国已有让文物“活”起来的动画作品——上海美术电影制片厂根据敦煌壁画《鹿王本生》的故事创作了《九色鹿》。无数人通过这部动画片知道了莫高窟，看到了敦煌壁画。\n\n移动应用程序（APP）以新鲜时尚的方式提供给观众审美与求知、娱乐与鉴赏的多元文化体验。过去，由于保存和展出的特殊要求，五代的《韩熙载夜宴图》能够呈现在观众面前的机会十分有限。故宫博物院推出的《韩熙载夜宴图》APP弥补了这一缺憾，让观众随时随地可以欣赏这幅传世经典的精妙之处，在鲜活的文化体验中感受中国古代绘画作品的非凡魅力。此APP独创了三层立体赏析模式——总览层、鉴赏层和体验层，使这幅“数字画卷”可远观、可近赏，全方位向观众解读画作中的每个细节。点开APP，琵琶声起，拨动江南寂静的月色，观众仿佛随着画家顾闳中一起，走进韩府。画卷中的墨痕笔意、人物的衣纹表情都纤毫毕现。轻轻触动屏幕，指尖所至之处，似有烛光追随；移动“烛光”，人物、用品的名称、典故一一呈现，如同“秉烛夜读”，在静夜里与千古佳作“对话”……忽然之间，画中人“活”了起来，乐伎轻扫琵琶，舞伎翩翩起舞，画与真实的界限瞬间模糊起来，观众沉浸在画卷创造的艺术氛围之中。\n\n虚拟现实技术（VR）借助计算机图形系统、传感器技术等生成三维环境，创造出一种崭新的人机交互状态，通过调动用户的多种感官，带来沉浸感觉。以前，游客只能在兵马俑坑外观看，有了VR技术，戴上特制的眼镜，你会发现自己置身坑内，变身成了一个兵马俑，低头就能看到自己的身体——残破却依然威严。抬起头来，你会发现博物馆的穹顶慢慢向两边散开，建筑逐渐退去，转化成荒野，风沙弥漫，你的身体同时下沉，身处地表起伏的俑坑之中，周围是千军万马……\n\n（取材于胡克非、张英等的相关文章）\n\n材料三\n\n有的博物馆认为保护好文物不出事情是头等大事，将文物封闭在库房，秘不示人，觉得这样才可以确保万无一失。其实不然，“流水不腐，户枢不蠹”，有些文物同样如此。2010年浙江省博物馆利用馆藏的“彩凤鸣岐”和“来凰”，举办了唐代雷琴演奏会。古琴属于漆器，很难保存。这两把古琴之所以能历经千年保存下来还能使用，是因为历朝历代都有人使用它。古琴在安装上琴弦以后，才能保持力学上的平衡，不至于散架。\n\n数字技术使文物在线上“活”起来，更是对文物的一种保护。敦煌石窟集珍贵性、脆弱性于一身，历经千年的莫高窟艺术品，每一件都像岌岌可危的病人，游客的参观成为莫高窟最大的隐患。2003年，莫高窟全年游客接待量为30多万人次，2014年已增长到81万人次。根据测算，莫高窟一天的游客接待量极限在3000人次左右，而黄金周的日接待量曾超过2万人次，莫高窟不堪重负。实验监测数据显示，40个人进入洞窟参观半小时，洞窟内空气中的二氧化碳含量升高5倍，空气相对湿度上升10%，空气温度升高4℃，这都有可能侵蚀壁画，加速其老化。在自然和人为因素的双重作用下，彩塑和壁画正在缓慢退化，千百年后人们何以领略莫高窟的神韵？\n\n面对日益增多的游客，如何化解保护和利用的矛盾？敦煌数字化工程，犹如一缕明媚的科技之光，照进古老的莫高窟。有了数字化展示中心，游览模式发生了变化，艺术体验搬到洞窟外面，游客先通过数字化体验艺术“做足功课”，再进个别洞窟实际体验。这种模式既能满足游客看真品的需求，同时又减少了在洞窟内的停留时间，减少了对莫高窟的破坏。中心建成后，游客停留时间由2小时缩短至70分钟左右，莫高窟最高日接待游客量因此可提高到6000人次。\n\n（取材于黄洋、祝越、周龙等的相关文章）"
+              }
+            ],
+            "topic": "一、本大题共8个小题，共24分。\n阅读下面的材料，完成1—8题。",
+            "annotation": null,
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 5,
+                "id": "q5",
+                "text": "5. 根据材料一和材料二，文物原来只为少数专家学者所识，现在却走近了大众。如果用诗句来描述这一现象，下列最合适的一项是（2分）\nA. 此曲只应天上有，人间能得几回闻\nB. 十年窗下无人问，一举成名天下知\nC. 莫愁前路无知己，天下谁人不识君\nD. 旧时王谢堂前燕，飞入寻常百姓家\n6.根据材料三，下列关于文物保护的说法，不正确的一项是（2分）\nA.将文物“深藏闺中”不是最好的保护方法\nB.实际上有些文物使用起来反而有利于保存\nC.二氧化碳含量的降低会加速壁画的老化\nD.彩塑和壁画的退化也有自然因素的作用\n7.根据材料三，下列对敦煌“数字化展示中心”作用的理解，不正确的一项是（2分）\nA.减少了莫高窟的游客接待量\nB.改变了洞窟的游览模式\nC.缩短了游客在洞窟内的停留时间\nD.减少了游览对莫高窟的破坏\n8.请结合上述三则材料，简述让文物“活”起来的含义与作用。（6分）",
+                "score": 2
+              }
+            ]
+          },
+          "review": {
+            "id": "2017-feilian:5",
+            "sources": [
+              {
+                "type": "public_exam_scan",
+                "title": "2017北京语文十页原题扫描公开转载，逐页核对",
+                "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523465.shtml"
+              }
+            ],
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 参考暴露后复核",
+                "text": "第5题选D。由少数人专享走向普通公众，对应旧时王谢堂前燕，飞入寻常百姓家的由旧时显贵之家进入百姓家的变化。其余三项分别偏重稀有、成名、声名与知己，不能准确表示共享范围扩大。\n第6题选C。材料说二氧化碳含量升高等变化可能侵蚀壁画，C反说降低。\n第7题选A。数字展示减少游客在洞窟内停留的时间，并提高最高日接待能力，不是减少接待游客量。\n第8题：含义包括使文物走出库房、进入大众生活，也包括以动漫、应用程序和虚拟现实等方式将静态文物及其故事、技艺转化为可感可知的文化体验；某些文物在适当使用中延续功能。作用上，一是扩大接触面，促进知史、审美、文化传承和精神滋养；二是将传统技艺与现代创造联系，丰富文化表达并启发现代技术；三是在尊重文物及其保存条件的前提下协调利用与保护，例如分流体验、减少洞窟停留和损耗，个别器物也可在使用中维持状态。不能把个别古琴经验泛化成所有文物越用越能保存。",
+                "inputSha256": "57f0baea1f62a1b323e3d14a4ff98d048153702e618d6393c0f217bbeb0ec599",
+                "inputContextSha256": "d868b7f3cebf7267aeed85c2b56c67bab0b21080edddcecd2f9ab639b162b640",
+                "inputPresentationSha256": "f6bde2e7d9a0551e0a7bbfbf36c6022387b11cb39dbfe754fd0323721cd824dc",
+                "generatedAt": "2026-10-03T06:42:34.549Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "reference_exposed_source_review",
+                  "referenceExposed": true,
+                  "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2017.json",
+                  "evidence": "answers-six-sites-20261002/root-2017-reading-drafts.json",
+                  "inputEvidence": "answers-six-sites-20261002/claude-2017-reading-job.json",
+                  "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+                  "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+                }
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "【第5题】选D。“旧时王谢堂前燕，飞入寻常百姓家”可借来形容原先只属于少数人的事物走进普通大众，切合文物由“只为少数专家学者所识”到走近大众的变化。A说的是极其罕见难得；B说的是个人由默默无闻到一举成名，侧重名声；C是劝慰友人不必担心没有知己，都不切合。\n\n【第6题】选C。C项错误：材料三说的是洞窟内二氧化碳含量“升高”5倍、湿度上升、温度升高可能侵蚀壁画并加速老化，选项说成“降低”，与原文相反。A项正确：把文物封闭在库房以求万无一失，“其实不然”。B项正确：两把唐代古琴因历代有人使用才得以保存，“流水不腐，户枢不蠹”。D项正确：原文说“在自然和人为因素的双重作用下，彩塑和壁画正在缓慢退化”。\n\n【第7题】选A。A项错误：数字化展示中心建成后，莫高窟最高日接待游客量可提高到6000人次，接待量是增加而不是减少。B项正确：游览模式变为先在洞窟外数字化体验，再进个别洞窟。C项正确：游客停留时间由2小时缩短至70分钟左右。D项正确：减少了在洞窟内的停留时间，减少了对莫高窟的破坏。\n\n【第8题】\n含义：\n①合理利用文物，充分发掘其文化内涵，让文物走出库房，通过展览等方式与大众亲密接触，而不是封存起来秘不示人。\n②借助动漫、APP、VR等数字技术，把今人的创造融入传统文物，使文物在线上以丰富多彩、生动活泼的方式走近大众，获得新生。\n③让一些文物在合理使用中得到延续和保存，如唐代古琴因有人演奏而保存至今。\n\n作用：\n①对大众：满足人们对精品文化的消费需求和对历史的追问，发挥文物在知史爱国、鉴物审美、文化养心等方面的作用；数字技术还增加了欣赏的趣味性，帮助大众了解更多文物、更好地理解文物。\n②对技艺与技术：有利于传统技艺的传承，并能启发和促进现代技术的发展，如失蜡法发展为现代精密铸造技术。\n③对文物本身：使文物的价值得以实现，同时也是一种保护，化解了保护与利用的矛盾，如敦煌数字化展示中心减少了游览对洞窟的破坏。",
+                "inputSha256": "57f0baea1f62a1b323e3d14a4ff98d048153702e618d6393c0f217bbeb0ec599",
+                "inputContextSha256": "d868b7f3cebf7267aeed85c2b56c67bab0b21080edddcecd2f9ab639b162b640",
+                "inputPresentationSha256": "f6bde2e7d9a0551e0a7bbfbf36c6022387b11cb39dbfe754fd0323721cd824dc",
+                "generatedAt": "2026-10-03T06:44:07.068523+00:00",
+                "uncertainties": [],
+                "selectedOptions": [],
+                "assessment": {
+                  "matchesConclusion": null
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2017-reading-result.json",
+                  "inputPromptSha256": "84cd6cd8aaf57be90b1f0e4b66fb65573620117b5b9d2a986eca99b127230325",
+                  "responseStreamSha256": "06e84750bdfcb158c604304cd44ad013dac46f9351abaf12ef80f03408dad96d",
+                  "stage": "independent"
+                }
+              }
+            },
+            "inputSha256": "57f0baea1f62a1b323e3d14a4ff98d048153702e618d6393c0f217bbeb0ec599",
+            "inputContextSha256": "d868b7f3cebf7267aeed85c2b56c67bab0b21080edddcecd2f9ab639b162b640",
+            "inputPresentationSha256": "f6bde2e7d9a0551e0a7bbfbf36c6022387b11cb39dbfe754fd0323721cd824dc",
+            "status": "draft",
+            "kind": "open",
+            "correctOptions": [],
+            "explanation": "完整题面下作答，等待交叉覆核；参考暴露情况逐条标注。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T06:42:34.549Z",
+            "currentVersion": "gpt_6_astra"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2017-guwen:1",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2017北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523465.shtml"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL刊学而思高考研究中心参考，非官方发布链",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523795.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "选D。不能易也是说柳宗元的论断不可更改，易应释为改变，不是交换。属在上下文指亲属关系，疏远是关系渐远；更为交替、轮番；与在子房亦与焉中为参与。",
+          "inputSha256": "bf3c7b1105e59e0fa47d3325b04ca88fdba60167f53497e9cc09c2b432cc852d",
+          "inputContextSha256": "87ca315cc97b11122de5c6358b49e3764c891d7073e95e9232c5b70ed665c2a9",
+          "inputPresentationSha256": "96ae2f0b102fa37573eeb8cc0781912a3334d81bbe705c78ba4b8adf2aee76c3",
+          "generatedAt": "2026-10-03T06:42:34.549Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2017-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2017-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "完整原卷题面与准确标记下逐题核读两模型答案，选择结论相符，开放题允许合理不同表述；公开参考只作辅助，并逐项检查其可靠性。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。D项错误：“虽圣人复起，不能易也”意为即使圣人再出现，也不能改变（柳宗元的论断），“易”应解释为“改变、更改”，不是“交换”。A项正确：“然后属疏远”指后来亲属关系疏远，“属”即亲属。B项正确：“诸侯更相诛伐”指诸侯交替着互相攻伐，“更”即交替、轮番。C项正确：“子房亦与焉”指张良也参与了这件事，“与”即参与。",
+          "inputSha256": "bf3c7b1105e59e0fa47d3325b04ca88fdba60167f53497e9cc09c2b432cc852d",
+          "inputContextSha256": "87ca315cc97b11122de5c6358b49e3764c891d7073e95e9232c5b70ed665c2a9",
+          "inputPresentationSha256": "96ae2f0b102fa37573eeb8cc0781912a3334d81bbe705c78ba4b8adf2aee76c3",
+          "generatedAt": "2026-10-03T06:44:07.068523+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "完整原卷题面与准确标记下逐题核读两模型答案，选择结论相符，开放题允许合理不同表述；公开参考只作辅助，并逐项检查其可靠性。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2017-reading-result.json",
+            "inputPromptSha256": "84cd6cd8aaf57be90b1f0e4b66fb65573620117b5b9d2a986eca99b127230325",
+            "responseStreamSha256": "06e84750bdfcb158c604304cd44ad013dac46f9351abaf12ef80f03408dad96d",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "bf3c7b1105e59e0fa47d3325b04ca88fdba60167f53497e9cc09c2b432cc852d",
+      "inputContextSha256": "87ca315cc97b11122de5c6358b49e3764c891d7073e95e9232c5b70ed665c2a9",
+      "inputPresentationSha256": "96ae2f0b102fa37573eeb8cc0781912a3334d81bbe705c78ba4b8adf2aee76c3",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "完整原卷题面与准确标记下逐题核读两模型答案，选择结论相符，开放题允许合理不同表述；公开参考只作辅助，并逐项检查其可靠性。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:50:26.137Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2017-guwen:3",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2017北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523465.shtml"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL刊学而思高考研究中心参考，非官方发布链",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523795.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "选B。原句是让诸皇子和功臣得到公家赋税的厚赏，没有说皆封侯；李斯正是用经济赏赐替代分封。A、D符合论旨。C应连同上文因而君之理解制度不能任意废止的时势限制；现代译语较简略，不能据此掩盖B凭空增加分封的明确错误。",
+          "inputSha256": "9c099324da8defe2f86eb406ae8dcf583cc95f6feac52f607d1dd85229dcb57b",
+          "inputContextSha256": "3532a15f2694dfa01c58b7a5d988a59e1fdbd8565945c50c8c9b55dd290c6897",
+          "inputPresentationSha256": "2a7dd604e13f81253a35c9919d7bef331ec3ede64ff0988b92b4f9775badc5d0",
+          "generatedAt": "2026-10-03T06:42:34.549Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2017-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2017-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "B明确凭空增添皆封侯。C原题引文保留君之虽欲的字样，须联系因而君之语境；君之为以之为君的用法，选项将上下文压缩成君主即使，译文并非逐字对应，不能用错误断句讲解。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。B项错误：“诸子功臣以公赋税重赏赐之”意思是对皇子和功臣们用国家的赋税重重地赏赐他们。原文没有“皆封侯”的意思，李斯恰恰主张不立诸侯，只用赋税赏赐，选项无中生有。A项正确：“请立诸子”即请求立各位皇子为王。C项正确：“虽”译为“即使”，“罢侯置守”即废除诸侯、设置郡守，“可得乎”即能办得到吗。D项正确：“封建”指分封诸侯的制度，“势”指时势、形势。",
+          "inputSha256": "9c099324da8defe2f86eb406ae8dcf583cc95f6feac52f607d1dd85229dcb57b",
+          "inputContextSha256": "3532a15f2694dfa01c58b7a5d988a59e1fdbd8565945c50c8c9b55dd290c6897",
+          "inputPresentationSha256": "2a7dd604e13f81253a35c9919d7bef331ec3ede64ff0988b92b4f9775badc5d0",
+          "generatedAt": "2026-10-03T06:44:07.068523+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "B明确凭空增添皆封侯。C原题引文保留君之虽欲的字样，须联系因而君之语境；君之为以之为君的用法，选项将上下文压缩成君主即使，译文并非逐字对应，不能用错误断句讲解。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2017-reading-result.json",
+            "inputPromptSha256": "84cd6cd8aaf57be90b1f0e4b66fb65573620117b5b9d2a986eca99b127230325",
+            "responseStreamSha256": "06e84750bdfcb158c604304cd44ad013dac46f9351abaf12ef80f03408dad96d",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "9c099324da8defe2f86eb406ae8dcf583cc95f6feac52f607d1dd85229dcb57b",
+      "inputContextSha256": "3532a15f2694dfa01c58b7a5d988a59e1fdbd8565945c50c8c9b55dd290c6897",
+      "inputPresentationSha256": "2a7dd604e13f81253a35c9919d7bef331ec3ede64ff0988b92b4f9775badc5d0",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "B明确凭空增添皆封侯。C原题引文保留君之虽欲的字样，须联系因而君之语境；君之为以之为君的用法，选项将上下文压缩成君主即使，译文并非逐字对应，不能用错误断句讲解。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:50:26.137Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2017-guwen:4",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2017北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523465.shtml"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL刊学而思高考研究中心参考，非官方发布链",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523795.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "①时势并不是圣人能够创造出来的，圣人能够做到的不过是不失掉、不错过适宜的时势罢了。能为为造成时势，而已为罢了。\n②自从夏、商、周三代圣人用礼乐教化天下，甚至达到将刑罚搁置不用的程度，然而终究不能止息篡夺君位、杀害君主的祸乱。以为用，至为达到，措为搁置，已为停止；不能将刑措不用理解成无人触犯现行刑法的现代法律断言。",
+          "inputSha256": "77f17f326ba91a44a3bdaa0b2af69da3c918d582b6501a9a170f63c866ef80d5",
+          "inputContextSha256": "b800de5c4e023d34542bbf0f2a2fca6c93240965413ea5d5f8e0bec027f2ae33",
+          "inputPresentationSha256": "d1edbdb9d62914e5a211510437c9f9c85d938de3315df8f9210892846918fe51",
+          "generatedAt": "2026-10-03T06:42:34.549Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2017-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2017-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "完整原卷题面与准确标记下逐题核读两模型答案，选择结论相符，开放题允许合理不同表述；公开参考只作辅助，并逐项检查其可靠性。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "①时势不是圣人所能创造的，圣人只是能够不错失时机罢了。\n（要点：“时”译为时势、时机；“为”译为创造、造就；“……也”为判断句；“失时”译为错过时机；“而已”译为罢了。）\n\n②自从夏、商、周三代的圣人用礼乐教化天下，达到了刑罚搁置不用的地步，但是最终还是不能制止篡位弑君的祸患。\n（要点：“三代”指夏商周；“以”译为用；“至”译为以至于、达到；“措”译为搁置、废置；“已”译为停止、制止；“篡弑”译为篡位弑君。）",
+          "inputSha256": "77f17f326ba91a44a3bdaa0b2af69da3c918d582b6501a9a170f63c866ef80d5",
+          "inputContextSha256": "b800de5c4e023d34542bbf0f2a2fca6c93240965413ea5d5f8e0bec027f2ae33",
+          "inputPresentationSha256": "d1edbdb9d62914e5a211510437c9f9c85d938de3315df8f9210892846918fe51",
+          "generatedAt": "2026-10-03T06:44:07.068523+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "完整原卷题面与准确标记下逐题核读两模型答案，选择结论相符，开放题允许合理不同表述；公开参考只作辅助，并逐项检查其可靠性。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2017-reading-result.json",
+            "inputPromptSha256": "84cd6cd8aaf57be90b1f0e4b66fb65573620117b5b9d2a986eca99b127230325",
+            "responseStreamSha256": "06e84750bdfcb158c604304cd44ad013dac46f9351abaf12ef80f03408dad96d",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "77f17f326ba91a44a3bdaa0b2af69da3c918d582b6501a9a170f63c866ef80d5",
+      "inputContextSha256": "b800de5c4e023d34542bbf0f2a2fca6c93240965413ea5d5f8e0bec027f2ae33",
+      "inputPresentationSha256": "d1edbdb9d62914e5a211510437c9f9c85d938de3315df8f9210892846918fe51",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "完整原卷题面与准确标记下逐题核读两模型答案，选择结论相符，开放题允许合理不同表述；公开参考只作辅助，并逐项检查其可靠性。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:50:26.137Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2017-guwen:5",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2017北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523465.shtml"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL刊学而思高考研究中心参考，非官方发布链",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523795.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "第13题选D。苏轼明确赞同废分封、置郡县，集中指出分封引起争夺篡弑，未作两种制度各有优劣的平衡论述。\n第14题：秦统一后设置郡县，符合当时情势，如冬穿皮衣、夏着葛衣，并不只是秦始皇个人的特殊见识。汉高帝听了张良的分析，本已明白不能恢复分封六国后裔，后来却仍封韩信等人为王，张良也参与其中。这说明实行或废止分封受到具体时势制约，连明知其弊的人也未必能够任意选择，因而作者借柳宗元的话强调分封的形成不能只归结为圣人的主观意愿。",
+          "inputSha256": "0421c56954a256e6afe74236e2209c1adcef8b51e1ebf5050887b5e4c9326a3b",
+          "inputContextSha256": "338b8a5655533385ab0f37f68c99fa5b7bb8395b7123de94b82f297452401b40",
+          "inputPresentationSha256": "e211ae2b6db99c38872b48bb27babe60f17a96d9aaee1ad451a3a7c7425b19f5",
+          "generatedAt": "2026-10-03T06:42:34.549Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2017-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2017-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "第13题D；第14题直接依据重在刘邦明知不宜分封却仍封韩信等，且张良亦参与，说明时势制约选择。Astra另举秦置郡县是段落背景，不能取代汉高帝/张良的直接论据。新浪答案偏向三代背景，不采为完整直接依据。旧score3不改，3+5兼容评分阻断。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【第13题】选D。D项错误：苏轼认为“封建者，争之端而乱之始也”，主张李斯、始皇之言和柳宗元之论“当为万世法”，是明确否定分封制、肯定郡县制，并没有说两种制度“各有优劣”。A项正确：“封建”即封邦建国的分封制，秦统一后改行郡县制。B项正确：“始皇下其议，群臣皆以为便”，始皇先把丞相的建议交给群臣讨论，群臣都认为可行。C项正确：李斯以周代分封子弟后互相攻伐、天子不能禁止为鉴，在群臣皆赞成的情况下提出“置诸侯不便”。\n\n【第14题】\n直接依据是第三段所举汉高祖与张良的史实：\n①汉高祖刘邦曾想分封六国的后代，张良认为不可以；刘邦听了张良的话，已经清楚地知道分封诸侯的制度不能再恢复。\n②然而刘邦最终还是封韩信、彭越、英布、卢绾等人为王，而且这不只是刘邦一个人的决定，当初反对分封的张良也参与了这件事。\n③明知分封不可行却仍然分封，说明这不是出于他们的本意，而是当时的形势逼迫他们不得不这样做。所以作者引柳宗元的话下判断：分封不是圣人的本意，而是时势所致。",
+          "inputSha256": "0421c56954a256e6afe74236e2209c1adcef8b51e1ebf5050887b5e4c9326a3b",
+          "inputContextSha256": "338b8a5655533385ab0f37f68c99fa5b7bb8395b7123de94b82f297452401b40",
+          "inputPresentationSha256": "e211ae2b6db99c38872b48bb27babe60f17a96d9aaee1ad451a3a7c7425b19f5",
+          "generatedAt": "2026-10-03T06:44:07.068523+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "第13题D；第14题直接依据重在刘邦明知不宜分封却仍封韩信等，且张良亦参与，说明时势制约选择。Astra另举秦置郡县是段落背景，不能取代汉高帝/张良的直接论据。新浪答案偏向三代背景，不采为完整直接依据。旧score3不改，3+5兼容评分阻断。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2017-reading-result.json",
+            "inputPromptSha256": "84cd6cd8aaf57be90b1f0e4b66fb65573620117b5b9d2a986eca99b127230325",
+            "responseStreamSha256": "06e84750bdfcb158c604304cd44ad013dac46f9351abaf12ef80f03408dad96d",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "0421c56954a256e6afe74236e2209c1adcef8b51e1ebf5050887b5e4c9326a3b",
+      "inputContextSha256": "338b8a5655533385ab0f37f68c99fa5b7bb8395b7123de94b82f297452401b40",
+      "inputPresentationSha256": "e211ae2b6db99c38872b48bb27babe60f17a96d9aaee1ad451a3a7c7425b19f5",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "第13题D；第14题直接依据重在刘邦明知不宜分封却仍封韩信等，且张良亦参与，说明时势制约选择。Astra另举秦置郡县是段落背景，不能取代汉高帝/张良的直接论据。新浪答案偏向三代背景，不采为完整直接依据。旧score3不改，3+5兼容评分阻断。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:50:26.137Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2017-shici:1",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2017北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523465.shtml"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL刊学而思高考研究中心参考，非官方发布链",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523795.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "选C。万井指众多村落、街市或人家，不是万亩良田，更不能由井字推出田亩井然有序。A、B分别对应浣女鸡鸣和舟中市场、树梢山桥，D符合暮春忆京、山水稍解离愁的整体情感。",
+          "inputSha256": "a0deece8b05d5e16b2c7adbacff3a025b24b492519c59b224bd9dcd9da7ae08d",
+          "inputContextSha256": "e5d302bcdd5684b96332327de4d1e35601fb9dbd408f85a5a89e7fbc09bf523d",
+          "inputPresentationSha256": "2f24b80ce989e5d5745e4069c3d93d21900b3ac662abd0d9010583a887f39ac3",
+          "generatedAt": "2026-10-03T06:42:34.549Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2017-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2017-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "C。万井为众多居民、屋舍、村落，不能读为良田，也不采新浪解析千泉万涓的误释。稍解表示得到一定慰藉，并非思乡完全消失。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。C项错误：“万井”指千家万户，古代以“井”指人口聚居的地方，如“市井”“乡井”。“登高万井出”是说登上高处，眼前出现千家万户的房舍，不是“万亩良田，井然有序”。A项正确：对应“晴江一女浣，朝日众鸡鸣”。B项正确：对应“水国舟中市，山桥树杪行”，人们在船上做买卖，山桥高悬，行人如走在树梢上。D项正确：“馀春”即暮春，“赖多山水趣，稍解别离情”说幸有山水之趣稍稍宽解离情。",
+          "inputSha256": "a0deece8b05d5e16b2c7adbacff3a025b24b492519c59b224bd9dcd9da7ae08d",
+          "inputContextSha256": "e5d302bcdd5684b96332327de4d1e35601fb9dbd408f85a5a89e7fbc09bf523d",
+          "inputPresentationSha256": "2f24b80ce989e5d5745e4069c3d93d21900b3ac662abd0d9010583a887f39ac3",
+          "generatedAt": "2026-10-03T06:44:07.068523+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "C。万井为众多居民、屋舍、村落，不能读为良田，也不采新浪解析千泉万涓的误释。稍解表示得到一定慰藉，并非思乡完全消失。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2017-reading-result.json",
+            "inputPromptSha256": "84cd6cd8aaf57be90b1f0e4b66fb65573620117b5b9d2a986eca99b127230325",
+            "responseStreamSha256": "06e84750bdfcb158c604304cd44ad013dac46f9351abaf12ef80f03408dad96d",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "a0deece8b05d5e16b2c7adbacff3a025b24b492519c59b224bd9dcd9da7ae08d",
+      "inputContextSha256": "e5d302bcdd5684b96332327de4d1e35601fb9dbd408f85a5a89e7fbc09bf523d",
+      "inputPresentationSha256": "2f24b80ce989e5d5745e4069c3d93d21900b3ac662abd0d9010583a887f39ac3",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "C。万井为众多居民、屋舍、村落，不能读为良田，也不采新浪解析千泉万涓的误释。稍解表示得到一定慰藉，并非思乡完全消失。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:50:26.137Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2017-shici:2",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2017北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523465.shtml"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL刊学而思高考研究中心参考，非官方发布链",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523795.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "选B。寒天雁鸣、岁晚客程将鸟声与旅途中的思乡相联。A的黄鹂声伴随闺中女子伤怀，侧重怀人；C写春日竹间鸟鸣，D借莺啼惜春，都不如B明确对应羁旅思乡。",
+          "inputSha256": "f8d19f099aa98e1a2cd2ccf407e82277136f3873b24afa577293bb8553e3ba45",
+          "inputContextSha256": "f84e45cf9c9a7905af8fb00149e98fa48433340386f629522d4193c3c5391528",
+          "inputPresentationSha256": "57c4eccbe2d9ff919a664817f59213ca8d9806e9dad21914fa20a0d4caa74771",
+          "generatedAt": "2026-10-03T06:42:34.549Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2017-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2017-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "完整原卷题面与准确标记下逐题核读两模型答案，选择结论相符，开放题允许合理不同表述；公开参考只作辅助，并逐项检查其可靠性。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。原诗以莺声如故乡之声来寄托思乡之情，是借鸟声写乡思。B项“天寒雁声急，岁晚客程遥”，天寒岁暮，旅途遥远，急促的雁声触动游子的羁旅之愁、思乡之情，手法相同。A项黄鹂啭鸣引出的是闺中女子对镜伤怀的闺怨，不是思乡。C项写斑鸠在竹间两两相鸣，是春日景物的感发，不涉乡思。D项写莺啼报告春天将去，抒发的是惜春之情。",
+          "inputSha256": "f8d19f099aa98e1a2cd2ccf407e82277136f3873b24afa577293bb8553e3ba45",
+          "inputContextSha256": "f84e45cf9c9a7905af8fb00149e98fa48433340386f629522d4193c3c5391528",
+          "inputPresentationSha256": "57c4eccbe2d9ff919a664817f59213ca8d9806e9dad21914fa20a0d4caa74771",
+          "generatedAt": "2026-10-03T06:44:07.068523+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "完整原卷题面与准确标记下逐题核读两模型答案，选择结论相符，开放题允许合理不同表述；公开参考只作辅助，并逐项检查其可靠性。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2017-reading-result.json",
+            "inputPromptSha256": "84cd6cd8aaf57be90b1f0e4b66fb65573620117b5b9d2a986eca99b127230325",
+            "responseStreamSha256": "06e84750bdfcb158c604304cd44ad013dac46f9351abaf12ef80f03408dad96d",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "f8d19f099aa98e1a2cd2ccf407e82277136f3873b24afa577293bb8553e3ba45",
+      "inputContextSha256": "f84e45cf9c9a7905af8fb00149e98fa48433340386f629522d4193c3c5391528",
+      "inputPresentationSha256": "57c4eccbe2d9ff919a664817f59213ca8d9806e9dad21914fa20a0d4caa74771",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "完整原卷题面与准确标记下逐题核读两模型答案，选择结论相符，开放题允许合理不同表述；公开参考只作辅助，并逐项检查其可靠性。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:50:26.137Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2017-shici:3",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2017北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523465.shtml"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL刊学而思高考研究中心参考，非官方发布链",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523795.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "《晓行巴峡》取暮春晴江、朝日鸡鸣、浣女、舟市、山桥、清明江流等明丽而富有生活气息的意象，写巴峡自然风光与民情之趣；虽有思乡离情，最终由山水获得一定慰藉，色调较明快、情绪较舒展。\n《水经注》所引歌谣以悠长山峡中的凄厉猿鸣为突出听觉意象，直接写泪沾衣裳，表现行旅中的凄苦悲凉；杜甫两句用秋露、受霜枫林、萧森峡气等寒凉肃杀的意象，营造萧瑟沉郁的氛围。两者都借山峡之景强化哀愁，而王维诗中的景色虽不能完全消除离愁，却能稍作宽解。不能把稍解读作已无思乡之情。",
+          "inputSha256": "fefd08c1dc5cbc477aeb11afff143b77d8dae243647e79c90670892157ffb4af",
+          "inputContextSha256": "f5144fe1a735f474c3daf4181755a912f52d35dfc340f45c60ebf6477a4f51e3",
+          "inputPresentationSha256": "7b613943e829a392872b8b9fa15087143bd433648116814319a15e38c3083310",
+          "generatedAt": "2026-10-03T06:42:34.549Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2017-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2017-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "明丽暮春生活意象与猿鸣、凋伤秋景的悲凉形成对照。杜甫的年老多病及忧国伤时需要全诗与背景支撑，不能仅由题给两句推出全部生平。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "①意象不同。《晓行巴峡》选取的是晴江、浣衣女、朝日、鸡鸣、舟中集市、山桥、万家屋舍、明净的二水、莺声等意象，明丽清新，充满人间烟火和生活情趣，展现的是暮春清晨巴峡生机盎然的山水风俗画。郦道元所引歌谣突出的是“猿鸣”，凄厉哀婉，配以巫峡之“长”，意境凄清悲凉。杜甫诗用“玉露”“凋伤”的枫树林、巫山巫峡的“萧森”之气，写的是深秋景象，色调阴沉，萧瑟肃杀。\n\n②情感不同。《晓行巴峡》虽有“忆帝京”的思乡之念和“别离情”，但诗人为眼前的山水之趣所吸引，离愁得以“稍解”，哀愁是淡淡的，更多的是对山水风物的欣赏，情感平和。郦道元所引歌谣“猿鸣三声泪沾裳”，写行旅之人听猿鸣而落泪，抒发的是旅途艰险、漂泊凄苦的悲伤，情感凄恻。杜甫诗借萧瑟秋景抒发年老多病、漂泊他乡的孤寂以及忧国伤时的深沉悲慨，情感沉郁悲凉。",
+          "inputSha256": "fefd08c1dc5cbc477aeb11afff143b77d8dae243647e79c90670892157ffb4af",
+          "inputContextSha256": "f5144fe1a735f474c3daf4181755a912f52d35dfc340f45c60ebf6477a4f51e3",
+          "inputPresentationSha256": "7b613943e829a392872b8b9fa15087143bd433648116814319a15e38c3083310",
+          "generatedAt": "2026-10-03T06:44:07.068523+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "明丽暮春生活意象与猿鸣、凋伤秋景的悲凉形成对照。杜甫的年老多病及忧国伤时需要全诗与背景支撑，不能仅由题给两句推出全部生平。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2017-reading-result.json",
+            "inputPromptSha256": "84cd6cd8aaf57be90b1f0e4b66fb65573620117b5b9d2a986eca99b127230325",
+            "responseStreamSha256": "06e84750bdfcb158c604304cd44ad013dac46f9351abaf12ef80f03408dad96d",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "fefd08c1dc5cbc477aeb11afff143b77d8dae243647e79c90670892157ffb4af",
+      "inputContextSha256": "f5144fe1a735f474c3daf4181755a912f52d35dfc340f45c60ebf6477a4f51e3",
+      "inputPresentationSha256": "7b613943e829a392872b8b9fa15087143bd433648116814319a15e38c3083310",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "明丽暮春生活意象与猿鸣、凋伤秋景的悲凉形成对照。杜甫的年老多病及忧国伤时需要全诗与背景支撑，不能仅由题给两句推出全部生平。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:50:26.137Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2017-sanwen:1",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2017北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523465.shtml"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL刊学而思高考研究中心参考，非官方发布链",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523795.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "选C。盘算着未来在这里是计划、筹划今后生活，并非精打细算开销。恬然写老人从容安然，袒露写河流坦露在草原，曼妙形容舞姿轻盈优美，均符合语境。",
+          "inputSha256": "018bf86ca18945afd26f1bc3e21a27d84fc9a47e41c5f9d89e04440e43464e7a",
+          "inputContextSha256": "02de43ee112002bc3e8d9d66e142e2c2e26ccd149e47d7c67f34af8937d5889e",
+          "inputPresentationSha256": "8fb9553a211ee07d731bd1604c08154a90a218de30bdb820049f8b36bd78fc8f",
+          "generatedAt": "2026-10-03T06:42:34.549Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2017-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2017-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "完整原卷题面与准确标记下逐题核读两模型答案，选择结论相符，开放题允许合理不同表述；公开参考只作辅助，并逐项检查其可靠性。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。C项错误：文中“盘算着未来”的“盘算”是指心里筹划、打算、计划，表现搬入新居的鄂温克人对未来生活的谋划与憧憬，不是在花钱用度上“精打细算”。A项正确：“恬然生活在她的鹿群之中”，写玛丽亚·索安然沉静、从容自在。B项正确：“袒露在草原上……的河”，指河流毫无遮掩地展现在草原上。D项正确：“曼妙舞者”形容舞姿轻盈柔美。",
+          "inputSha256": "018bf86ca18945afd26f1bc3e21a27d84fc9a47e41c5f9d89e04440e43464e7a",
+          "inputContextSha256": "02de43ee112002bc3e8d9d66e142e2c2e26ccd149e47d7c67f34af8937d5889e",
+          "inputPresentationSha256": "8fb9553a211ee07d731bd1604c08154a90a218de30bdb820049f8b36bd78fc8f",
+          "generatedAt": "2026-10-03T06:44:07.068523+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "完整原卷题面与准确标记下逐题核读两模型答案，选择结论相符，开放题允许合理不同表述；公开参考只作辅助，并逐项检查其可靠性。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2017-reading-result.json",
+            "inputPromptSha256": "84cd6cd8aaf57be90b1f0e4b66fb65573620117b5b9d2a986eca99b127230325",
+            "responseStreamSha256": "06e84750bdfcb158c604304cd44ad013dac46f9351abaf12ef80f03408dad96d",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "018bf86ca18945afd26f1bc3e21a27d84fc9a47e41c5f9d89e04440e43464e7a",
+      "inputContextSha256": "02de43ee112002bc3e8d9d66e142e2c2e26ccd149e47d7c67f34af8937d5889e",
+      "inputPresentationSha256": "8fb9553a211ee07d731bd1604c08154a90a218de30bdb820049f8b36bd78fc8f",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "完整原卷题面与准确标记下逐题核读两模型答案，选择结论相符，开放题允许合理不同表述；公开参考只作辅助，并逐项检查其可靠性。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:50:26.137Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2017-sanwen:2",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2017北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523465.shtml"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL刊学而思高考研究中心参考，非官方发布链",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523795.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "选D。原文说女子的裙子仍然长长的，与玛丽亚·索一样，变化的是城市流行的花色，表现传统形式与新生活相结合。D笼统说穿上城市流行的裙子，把花色变化扩大为整种服饰的替换，遗漏了保留传统的意思。A、B、C均有具体描写支撑。",
+          "inputSha256": "f911a5f634f074c62e1ef6e5bcef56448061b28f2970a66fa493f7025fac0f40",
+          "inputContextSha256": "934d8fa3d7da7280e2c4642d4ba9a1448b1436a6e5003d859778e805aa7b13fd",
+          "inputPresentationSha256": "60d872a64bb0fe1ade0539b33a59441c457386cafaad2d8db24ffced91877438",
+          "generatedAt": "2026-10-03T06:42:34.549Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2017-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2017-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "D遗漏长裙传统仍在、只是花色更新的层次。原卷是更为普通；新浪转录写普遍，本次按已放大核实的原卷保留普通，不盲随转载改字。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。D项错误：原文说搬出山林的女子“裙子仍然长长的，跟老去的玛丽亚·索一样，但却是城市里流行的花色”，即裙子仍保留传统的长款式样，只是花色变成了城市流行的，并不是“穿上了城市里流行的裙子”。选项忽略了她们对传统的保留，表述不准确。A项正确：传统的鄂温克人“跟森林河流贴得最近”，生活起居、狩猎劳动都离不开驯鹿。B项正确：照片中老人佝偻的身子、皱巴巴的手、桦树皮般的皱纹显出沧桑，鹿依偎在袍子下则显出母性的慈祥。C项正确：第六段“那些……那些……那些……还有那些……”构成排比，“昂头沉思的马群”“默默流淌的河”等运用拟人，写出草原之美。",
+          "inputSha256": "f911a5f634f074c62e1ef6e5bcef56448061b28f2970a66fa493f7025fac0f40",
+          "inputContextSha256": "934d8fa3d7da7280e2c4642d4ba9a1448b1436a6e5003d859778e805aa7b13fd",
+          "inputPresentationSha256": "60d872a64bb0fe1ade0539b33a59441c457386cafaad2d8db24ffced91877438",
+          "generatedAt": "2026-10-03T06:44:07.068523+00:00",
+          "uncertainties": [
+            "D项的错误点较细，在于“流行花色的长裙”被说成“流行的裙子”；A、B、C三项均能在原文找到依据，故判定D为不正确项。"
+          ],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed_with_qualifications",
+            "note": "D遗漏长裙传统仍在、只是花色更新的层次。原卷是更为普通；新浪转录写普遍，本次按已放大核实的原卷保留普通，不盲随转载改字。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2017-reading-result.json",
+            "inputPromptSha256": "84cd6cd8aaf57be90b1f0e4b66fb65573620117b5b9d2a986eca99b127230325",
+            "responseStreamSha256": "06e84750bdfcb158c604304cd44ad013dac46f9351abaf12ef80f03408dad96d",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "f911a5f634f074c62e1ef6e5bcef56448061b28f2970a66fa493f7025fac0f40",
+      "inputContextSha256": "934d8fa3d7da7280e2c4642d4ba9a1448b1436a6e5003d859778e805aa7b13fd",
+      "inputPresentationSha256": "60d872a64bb0fe1ade0539b33a59441c457386cafaad2d8db24ffced91877438",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "D遗漏长裙传统仍在、只是花色更新的层次。原卷是更为普通；新浪转录写普遍，本次按已放大核实的原卷保留普通，不盲随转载改字。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:50:26.137Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2017-sanwen:3",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2017北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523465.shtml"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL刊学而思高考研究中心参考，非官方发布链",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523795.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "特点：根河春天破冰奔流，充满强大生命力；河水清澈透明，纯真本色鲜明；它每年由新生走向丰满成熟，以流水滋养两岸万物。\n象征意义：根河像母亲一样哺育生灵，象征鄂温克人的生命源泉与精神家园；它的纯真、坚韧和生生不息，也与人们朴实、坚毅、亲近自然的品格相映照。由河之新生与成长，还可联系民族生活在延续中变化。象征是依全文的文学阐释，不是对整个族群个性的先天定论。",
+          "inputSha256": "43af959c7b39ad828f85688f49a7fd06b437ae76e98c66cfb9e35ea4515f2c94",
+          "inputContextSha256": "935642832f5ee76bb14d37592e39406d44d665d845b0110ccda5ac182f27f991",
+          "inputPresentationSha256": "2965198c7d09b93c04a1167f7688ba8d145dfb7d9c8bec8ed9ecc11c844d049d",
+          "generatedAt": "2026-10-03T06:42:34.549Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2017-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2017-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "母亲河生命力、清澈与滋养的象征须作为本篇文学解读，不推广为族群先天、整齐划一的性格或血缘决定论。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "特点：\n①生命力巨大、旺盛：春天从厚厚的冰层中泛起春潮，推去坚冰。\n②欢快活泼、奔流向前：欢快地伸展腰肢，向远方而去。\n③纯真清冽、清澈透明：破冰时节的河水如水晶一般透明，“葛根高勒”本意就是清澈透明。\n④滋养万物、有母亲般的奉献：将涓涓乳汁流送给两岸的万千生物。\n⑤周而复始、不断更新：每个春天回到童年、回到本真，然后再一次次丰满成熟。\n\n象征意义：\n①象征鄂温克民族顽强旺盛、生生不息的生命力。\n②象征鄂温克人纯真质朴、清澈本真的民族性格。\n③象征哺育鄂温克人的母亲，体现母亲河的博大、慈爱与无私。\n④一次次回归本真又走向成熟，象征这个民族在坚守传统的同时不断更新，走向新的生活。",
+          "inputSha256": "43af959c7b39ad828f85688f49a7fd06b437ae76e98c66cfb9e35ea4515f2c94",
+          "inputContextSha256": "935642832f5ee76bb14d37592e39406d44d665d845b0110ccda5ac182f27f991",
+          "inputPresentationSha256": "2965198c7d09b93c04a1167f7688ba8d145dfb7d9c8bec8ed9ecc11c844d049d",
+          "generatedAt": "2026-10-03T06:44:07.068523+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "母亲河生命力、清澈与滋养的象征须作为本篇文学解读，不推广为族群先天、整齐划一的性格或血缘决定论。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2017-reading-result.json",
+            "inputPromptSha256": "84cd6cd8aaf57be90b1f0e4b66fb65573620117b5b9d2a986eca99b127230325",
+            "responseStreamSha256": "06e84750bdfcb158c604304cd44ad013dac46f9351abaf12ef80f03408dad96d",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "43af959c7b39ad828f85688f49a7fd06b437ae76e98c66cfb9e35ea4515f2c94",
+      "inputContextSha256": "935642832f5ee76bb14d37592e39406d44d665d845b0110ccda5ac182f27f991",
+      "inputPresentationSha256": "2965198c7d09b93c04a1167f7688ba8d145dfb7d9c8bec8ed9ecc11c844d049d",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "母亲河生命力、清澈与滋养的象征须作为本篇文学解读，不推广为族群先天、整齐划一的性格或血缘决定论。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:50:26.137Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2017-sanwen:4",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2017北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523465.shtml"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL刊学而思高考研究中心参考，非官方发布链",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523795.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "这河的深奥不只在自然景观，而在它所积淀的民族历史、人与自然的生活经验以及多种深厚情感：老人终身与森林驯鹿相守，作家返乡寻根，新一代又在改变生活方式中延续文化。\n抵达不了是因为我只是短暂停留的外来访客，可以看见风光、参与舞蹈，却没有这些人代代相连和一生相守的经验，无法在匆匆来去中完全理解根河及其文化。\n其中寄托了对根河与鄂温克人的热爱眷恋、对其精神世界的敬重，也有自知了解有限的谦逊与未能深入的遗憾，表达继续理解而非匆忙占有一种文化的愿望。",
+          "inputSha256": "cb8e0f43cc653999cd62b5c4d1819ca556ebeb4a7c8678d71243118abeb69ba6",
+          "inputContextSha256": "f57e375a2992075c0913afc565bf63b8ca7c934f9e7e0b9e5d7fb6b4ef150875",
+          "inputPresentationSha256": "392d7bd40cc529db4dea40a60ebd291ffe0d1bad8bea16f3af33aa1ac9185eae",
+          "generatedAt": "2026-10-03T06:42:34.549Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2017-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2017-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "深奥关乎文化、历史、人生经验；抵达不了是短暂访问认识有限，不意味着不同族群永远不能理解彼此。血脉措辞依作品象征理解，不作生物性门槛。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "“这河的深奥”的含义：\n不是指河水本身的深浅，而是指根河所孕育和承载的丰厚内涵。它包括鄂温克民族悠久的历史与独特的文化传统，与森林、驯鹿相依相守、人与自然和谐相处的生存智慧，鄂温克人对母亲河血脉相连的深情，以及这个民族在时代变迁中既坚守传统又走向新生活的精神。\n\n“抵达不了”的原因：\n①作者是“山外的人”，只是匆匆来去的过客，停留时间短，了解有限。\n②作者不像玛丽亚·索那样一生与森林、驯鹿相守，也不像乌热尔图那样有“祖先留在他身体里的血脉”，缺少与根河血肉相连的生命体验。\n③根河及其民族文化本身博大丰厚，不是外来者短时间内能够真正领悟的。\n\n寄托的情感：\n①对根河和鄂温克民族及其文化的敬重、赞美。\n②对自己未能深入了解的遗憾与自谦。\n③对根河的人们和这段美好时光的眷恋、向往，以及对这片土地未来的祝福。",
+          "inputSha256": "cb8e0f43cc653999cd62b5c4d1819ca556ebeb4a7c8678d71243118abeb69ba6",
+          "inputContextSha256": "f57e375a2992075c0913afc565bf63b8ca7c934f9e7e0b9e5d7fb6b4ef150875",
+          "inputPresentationSha256": "392d7bd40cc529db4dea40a60ebd291ffe0d1bad8bea16f3af33aa1ac9185eae",
+          "generatedAt": "2026-10-03T06:44:07.068523+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "深奥关乎文化、历史、人生经验；抵达不了是短暂访问认识有限，不意味着不同族群永远不能理解彼此。血脉措辞依作品象征理解，不作生物性门槛。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2017-reading-result.json",
+            "inputPromptSha256": "84cd6cd8aaf57be90b1f0e4b66fb65573620117b5b9d2a986eca99b127230325",
+            "responseStreamSha256": "06e84750bdfcb158c604304cd44ad013dac46f9351abaf12ef80f03408dad96d",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "cb8e0f43cc653999cd62b5c4d1819ca556ebeb4a7c8678d71243118abeb69ba6",
+      "inputContextSha256": "f57e375a2992075c0913afc565bf63b8ca7c934f9e7e0b9e5d7fb6b4ef150875",
+      "inputPresentationSha256": "392d7bd40cc529db4dea40a60ebd291ffe0d1bad8bea16f3af33aa1ac9185eae",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "深奥关乎文化、历史、人生经验；抵达不了是短暂访问认识有限，不意味着不同族群永远不能理解彼此。血脉措辞依作品象征理解，不作生物性门槛。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:50:26.137Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2017-sanwen:5",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2017北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523465.shtml"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL刊学而思高考研究中心参考，非官方发布链",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523795.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "第23题：玛丽亚·索不愿离开森林与驯鹿，以一生的相守延续传统生活，体现依恋与守护；乌热尔图离开官职返回故乡，通过文学和摄影寻根、记录并回报母族，体现自觉的文化追寻；走出山林的人们虽依依不舍，仍为生态和未来学习新的职业、经营新的生活，又保留长裙、民族名字等文化联系，体现变化中的传承。\n构思上，三类人物由留守到回归再到迁居，经历不同，却都系于根河这一共同精神家园；其对照使根河之恋有多个层次，兼顾个体故事与群体命运、传统与现代，避免把热爱故土简化为唯一生活方式。人物与母亲河相映，具体展现河流的文化深度。\n第24题选A。贾宝玉进入大观园之前已经表现出对功名仕途的疏离与叛逆，不能把性格的形成归因为大观园这一场所。大观园可承载、凸显人物的理想生活，却不是其叛逆性格的单一始因；其余三项环境与人物的关系概括基本成立。",
+          "inputSha256": "028b8272bb242acfb03ccf523a5a13db13f9e14a7aeea95eb5eefefa19751e20",
+          "inputContextSha256": "1ffdeae3d272e012a038e7a52ceb99353af35111a8e5c0b969e8fe16e1ef90d8",
+          "inputPresentationSha256": "b10f9896c0fa21287bf514fc58e48c96daefaab0e9babecbe3040d61b1bb4467",
+          "generatedAt": "2026-10-03T06:42:34.549Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2017-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2017-reading-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "第23完整答三类人物及构思，第24A。宝玉入住大观园前已有叛逆，场所不是性格单因果起源。其他作品环境作用依文学整体判断，Claude阿Q只能自我安慰过度概括，不能排除其复杂行动。旧score6保留，6+3兼容评分阻断。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【第23题】\n各自“根河之恋”的表现：\n①玛丽亚·索：坚守。她一生与森林、驯鹿相守，94岁仍一步也不愿离开她的驯鹿，恬然生活在鹿群之中，守护着民族传统的生活方式。\n②乌热尔图：回归与报答。他用小说让世人认识了鄂温克民族，后来辞去京官重返故乡，用《呼伦贝尔笔记》等著作和摄影作品进行数十年的文化寻根，表达对母亲河的眷念。\n③走出山林的人们：告别与新生。他们恋恋不舍地离开山林，把空间留给草木和动物；在以“根河”命名的新家园里仍穿长裙、给孩子取鄂温克名字，保留民族印记；伐木工变成看林人，学习新技能，快乐地开创新生活。\n\n构思的匠心：\n①选材典型，角度多样。三类人物分别代表坚守传统、文化寻根、走向新生活三种方式，由个体到群体，由老一辈到新一代，多层次地表现了鄂温克人对根河的眷恋，紧扣题目“根河之恋”。\n②由传统写到现代，展现了民族生活的变迁，使“恋”的内涵由依恋故土扩展到传承文化、保护自然，丰富并深化了主旨。\n③以根河为线索把不同的人和事串联起来，形散神聚；再加上作者本人作为外来者的眷恋，层层推进，突出了根河作为母亲河的凝聚力和人与自然和谐相处的主题。\n\n【第24题】选A。A项错误：贾宝玉的叛逆性格并非大观园“造就”，他在入住大观园之前就已厌恶仕途经济、不喜读“正经书”。这种性格的形成与他的天性、贾府的特殊环境、贾母的溺爱以及所接触的人与书等多种因素有关。大观园也不是真正的“世外桃源”，它始终受贾府和外部世俗力量的制约，最终走向衰败。B项正确：《边城》以茶峒明净的山水映衬人物心灵的纯净和人性之美。C项正确：《红岩》以监狱的黑暗、敌人的凶残反衬革命者的坚定信念和坚强意志。D项正确：未庄赵太爷、假洋鬼子等人的压迫欺凌使阿Q无力反抗，只能以“精神胜利法”自我安慰，这是其形成的重要社会原因。",
+          "inputSha256": "028b8272bb242acfb03ccf523a5a13db13f9e14a7aeea95eb5eefefa19751e20",
+          "inputContextSha256": "1ffdeae3d272e012a038e7a52ceb99353af35111a8e5c0b969e8fe16e1ef90d8",
+          "inputPresentationSha256": "b10f9896c0fa21287bf514fc58e48c96daefaab0e9babecbe3040d61b1bb4467",
+          "generatedAt": "2026-10-03T06:44:07.068523+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "第23完整答三类人物及构思，第24A。宝玉入住大观园前已有叛逆，场所不是性格单因果起源。其他作品环境作用依文学整体判断，Claude阿Q只能自我安慰过度概括，不能排除其复杂行动。旧score6保留，6+3兼容评分阻断。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2017-reading-result.json",
+            "inputPromptSha256": "84cd6cd8aaf57be90b1f0e4b66fb65573620117b5b9d2a986eca99b127230325",
+            "responseStreamSha256": "06e84750bdfcb158c604304cd44ad013dac46f9351abaf12ef80f03408dad96d",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "028b8272bb242acfb03ccf523a5a13db13f9e14a7aeea95eb5eefefa19751e20",
+      "inputContextSha256": "1ffdeae3d272e012a038e7a52ceb99353af35111a8e5c0b969e8fe16e1ef90d8",
+      "inputPresentationSha256": "b10f9896c0fa21287bf514fc58e48c96daefaab0e9babecbe3040d61b1bb4467",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "第23完整答三类人物及构思，第24A。宝玉入住大观园前已有叛逆，场所不是性格单因果起源。其他作品环境作用依文学整体判断，Claude阿Q只能自我安慰过度概括，不能排除其复杂行动。旧score6保留，6+3兼容评分阻断。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:50:26.137Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2017-weixiezuo:1",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2017北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523465.shtml"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL刊学而思高考研究中心参考，非官方发布链",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523795.shtml"
+        },
+        {
+          "type": "literary_research",
+          "title": "作家网：平凡的世界乡村青年叙事与办学",
+          "url": "https://www.chinawriter.com.cn/n1/2023/0131/c448914-32615175.html"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "《平凡的世界》中，孙少安没有停留在原有的种地生活里，而是办起砖厂，尝试靠新的经营方式改变家庭和乡村的处境。他曾因经营受挫陷入困境，却没有放弃，在帮助与努力中重新站起来。后来生活改善了，他仍关心乡亲和村里的教育。他的经历说明，走向新生活既需要敢于尝试，也需要承受失败、学习经营；物质条件改变之后，仍不忘与乡土的联系，个人奋斗才有了更宽厚的意义。",
+          "inputSha256": "b90189566e93ad48b536a14b77f1b85e741ed605fb084dc71571d62bbde6877b",
+          "inputContextSha256": "8c43af03c913b450bd25840a4b9acdefb4f8dea810e08c83d7900c3719c02822",
+          "inputPresentationSha256": "0ad600bae467461f2a9e29c0e0ea542e21cc56bf2179323559fcedd5687a69ec",
+          "generatedAt": "2026-10-03T06:42:34.549Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2017-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2017-writing-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "题限180字左右，Astra171、Claude199非空白字符；二者为不同人物示例。作家网研究对孙少安办窑、受挫发展、惠及村人与办学有支持；未用逐页原版核对，不能称逐字引文。Claude烛光读书等细节未核实，不作必须事实；默认Astra较紧凑稿。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【示例】孙少平高中毕业后回双水村当民办教师，村里初中班撤销后，他只能回家务农。他不甘心一辈子困在土地上，毅然只身前往黄原城揽工，背石头、扛水泥，脊背磨得溃烂，夜里仍在工棚中借着烛光读书；后来他又通过招工去了大牙湾煤矿，成为一名井下矿工。点评：少平走出乡村，并非嫌弃农民身份，而是渴望更广阔的精神世界。与鄂温克人一样，告别旧生活伴随着艰辛与阵痛，但这种主动选择体现了人对自身命运的把握，苦难中的尊严最为动人。\n\n【作答思路】先叙述情节（原来的生活、转变的经过、新的生活），再点评，并扣住与《根河之恋》的“类似”之处。也可选孙少安办砖厂的例子。",
+          "inputSha256": "b90189566e93ad48b536a14b77f1b85e741ed605fb084dc71571d62bbde6877b",
+          "inputContextSha256": "8c43af03c913b450bd25840a4b9acdefb4f8dea810e08c83d7900c3719c02822",
+          "inputPresentationSha256": "0ad600bae467461f2a9e29c0e0ea542e21cc56bf2179323559fcedd5687a69ec",
+          "generatedAt": "2026-10-03T06:46:00.675916+00:00",
+          "uncertainties": [
+            "原题为三题任选一题，此处按id要求各题均给出示例；本示例为原创，不是标准答案。",
+            "情节凭对原著的记忆概述，个别细节（如“烛光读书”）未核对原文。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "题限180字左右，Astra171、Claude199非空白字符；二者为不同人物示例。作家网研究对孙少安办窑、受挫发展、惠及村人与办学有支持；未用逐页原版核对，不能称逐字引文。Claude烛光读书等细节未核实，不作必须事实；默认Astra较紧凑稿。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2017-writing-result.json",
+            "inputPromptSha256": "a1dd31cbfd93e9c309458760585db8f03baeebabe30da78d33cc69f8a243b207",
+            "responseStreamSha256": "5a7a27f205f40893c3d198a8442ac4cf8eae707e91cfa6dfdd686319e323bd06",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "b90189566e93ad48b536a14b77f1b85e741ed605fb084dc71571d62bbde6877b",
+      "inputContextSha256": "8c43af03c913b450bd25840a4b9acdefb4f8dea810e08c83d7900c3719c02822",
+      "inputPresentationSha256": "0ad600bae467461f2a9e29c0e0ea542e21cc56bf2179323559fcedd5687a69ec",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "题限180字左右，Astra171、Claude199非空白字符；二者为不同人物示例。作家网研究对孙少安办窑、受挫发展、惠及村人与办学有支持；未用逐页原版核对，不能称逐字引文。Claude烛光读书等细节未核实，不作必须事实；默认Astra较紧凑稿。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:50:26.137Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2017-weixiezuo:2",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2017北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523465.shtml"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL刊学而思高考研究中心参考，非官方发布链",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523795.shtml"
+        },
+        {
+          "type": "source_text",
+          "title": "红楼梦第63回花名签原文",
+          "url": "https://zh.wikisource.org/zh-hans/%E7%B4%85%E6%A8%93%E5%A4%A2/%E7%AC%AC063%E5%9B%9E"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "我愿以芙蓉比喻林黛玉。群芳夜宴时，她抽得芙蓉花签，原著已有这一联系。芙蓉清丽而不张扬，像她出众的容貌和诗才；花在风露中显得柔弱，又像她多病、敏感、寄人篱下的处境。她写诗咏絮，也葬花惜花，把对青春与命运的忧思寄托于花木。然而，她并非只有柔弱：对功名利禄的疏离，对知己与真情的坚持，使这朵花保有自己的品格。花喻既应写出她的清美与忧伤，也应看见她不愿随俗的精神。",
+          "inputSha256": "6ce38d9de9722a1d2d9d30470b41cd2d6f8ce6e78f1c1544527f71274b0dae85",
+          "inputContextSha256": "e04338386bcede919da03560d658b4b029fe27f71c2b260d90ab9b08dd64995c",
+          "inputPresentationSha256": "07d6beb5bdc67880cec1c3fac425b80215f7cc2e9b1cbf52e490c8c6cbd2dfde",
+          "generatedAt": "2026-10-03T06:42:34.549Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2017-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2017-writing-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "Astra178、Claude204非空白字符，题限180字左右，Claude偏长而非违反明文硬上限。红楼梦第63回直接证实黛玉芙蓉与湘云海棠花签；花性与人物的联系为阐释。湘云云散高唐来自命运伏笔，不能伪称为前80回已叙结局。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【示例】我用海棠比喻史湘云。其一，原著中已有此喻：群芳夜宴上，湘云抽到的正是海棠花签，题着“香梦沉酣”，诗云“只恐夜深花睡去”，恰好照应她醉眠芍药裀的娇憨之态。其二，海棠明艳而不妖冶，开得烂漫热烈，正如湘云心直口快、豪爽洒脱，雪天烤鹿肉、联诗抢句，全无扭捏之气。其三，海棠诗社初起时她后到，却连作两首白海棠诗，才思敏捷。然而海棠花期短暂，也暗合她自幼父母双亡、终究“云散高唐”的命运，明媚之中自有一分令人怜惜的哀愁。\n\n【作答思路】选定人物和花，再从性格、才情、命运等方面找出花与人的相似点，每一点都用原著情节支撑。也可选黛玉配芙蓉、宝钗配牡丹、香菱配荷花或菱花。",
+          "inputSha256": "6ce38d9de9722a1d2d9d30470b41cd2d6f8ce6e78f1c1544527f71274b0dae85",
+          "inputContextSha256": "e04338386bcede919da03560d658b4b029fe27f71c2b260d90ab9b08dd64995c",
+          "inputPresentationSha256": "07d6beb5bdc67880cec1c3fac425b80215f7cc2e9b1cbf52e490c8c6cbd2dfde",
+          "generatedAt": "2026-10-03T06:46:00.675916+00:00",
+          "uncertainties": [
+            "原题为三题任选一题，此处按id要求各题均给出示例；本题答案开放，言之成理、依据原著即可。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "Astra178、Claude204非空白字符，题限180字左右，Claude偏长而非违反明文硬上限。红楼梦第63回直接证实黛玉芙蓉与湘云海棠花签；花性与人物的联系为阐释。湘云云散高唐来自命运伏笔，不能伪称为前80回已叙结局。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2017-writing-result.json",
+            "inputPromptSha256": "a1dd31cbfd93e9c309458760585db8f03baeebabe30da78d33cc69f8a243b207",
+            "responseStreamSha256": "5a7a27f205f40893c3d198a8442ac4cf8eae707e91cfa6dfdd686319e323bd06",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "6ce38d9de9722a1d2d9d30470b41cd2d6f8ce6e78f1c1544527f71274b0dae85",
+      "inputContextSha256": "e04338386bcede919da03560d658b4b029fe27f71c2b260d90ab9b08dd64995c",
+      "inputPresentationSha256": "07d6beb5bdc67880cec1c3fac425b80215f7cc2e9b1cbf52e490c8c6cbd2dfde",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "Astra178、Claude204非空白字符，题限180字左右，Claude偏长而非违反明文硬上限。红楼梦第63回直接证实黛玉芙蓉与湘云海棠花签；花性与人物的联系为阐释。湘云云散高唐来自命运伏笔，不能伪称为前80回已叙结局。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:50:26.137Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2017-weixiezuo:3",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2017北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523465.shtml"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL刊学而思高考研究中心参考，非官方发布链",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523795.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "我为《老人与海》的桑提亚哥设计一尊铜像：老人斜坐在窄小的船舱里，上身前倾，赤脚抵住船板，双手紧握伸向海面的钓索。手背刻出绷紧的筋与伤口，瘦削的脸被海风吹皱，眼睛却直望钓索沉入水中的地方。雕像取他与大鱼相持的情境，用身体的疲惫和目光的坚定形成对照，表现他承受痛苦、坚持搏斗的意志。船外只留低低的波纹，使观者看见人的渺小，也看见渺小之中仍不放弃的尊严。",
+          "inputSha256": "011638f0c1819ee2a0aaa1dc3f0bc508dfd0a15d711ae33675fdc3e8766d1200",
+          "inputContextSha256": "0efd8d40db45f4834f095160ecba080825f624bf8dd9a2a45b2cbcf0026613d1",
+          "inputPresentationSha256": "47889b5c17c4f6b3a9b0133cc7bbfc09c5b5f23140e3a7b18515b3cbea9abec5",
+          "generatedAt": "2026-10-03T06:42:34.549Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2017-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2017-writing-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "Astra174、Claude215非空白字符，Claude明显偏离约180的篇幅期待，建议采用Astra。均为雕塑设计，可合理组织姿态；老人与海数日相持的具体姿势与伤疤不当作某版原著逐字描述。设计意图完整，不能仅用口号替代体态外貌神情。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【示例】我为桑提亚哥设计一尊青铜像，取他在海上与大马林鱼相持的情境。体态：老人坐在小船船头，身体后仰，双脚抵住船板，钓索绕过肩背，被双手死死攥住，绷成一条直线。外貌：身形瘦削，后颈布满深深的皱纹，面颊有褐斑，手掌上刻着钓索勒出的旧疤。神情：嘴唇紧抿，双眼望向钓索的尽头，明亮而毫不沮丧。意图：原著中老人八十四天没有捕到鱼，仍独自出海，与大鱼周旋了两昼夜。那根绷紧的钓索就是他与命运的角力，我想以此凝固人可以被毁灭、却不能被打败的硬汉精神。\n\n【作答思路】先点明人物和特定情境，再依次写体态、外貌、神情，最后依据原著说明设计意图。",
+          "inputSha256": "011638f0c1819ee2a0aaa1dc3f0bc508dfd0a15d711ae33675fdc3e8766d1200",
+          "inputContextSha256": "0efd8d40db45f4834f095160ecba080825f624bf8dd9a2a45b2cbcf0026613d1",
+          "inputPresentationSha256": "47889b5c17c4f6b3a9b0133cc7bbfc09c5b5f23140e3a7b18515b3cbea9abec5",
+          "generatedAt": "2026-10-03T06:46:00.675916+00:00",
+          "uncertainties": [
+            "原题为三题任选一题，此处按id要求各题均给出示例；设计方案开放，符合原著人物形象即可。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "Astra174、Claude215非空白字符，Claude明显偏离约180的篇幅期待，建议采用Astra。均为雕塑设计，可合理组织姿态；老人与海数日相持的具体姿势与伤疤不当作某版原著逐字描述。设计意图完整，不能仅用口号替代体态外貌神情。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2017-writing-result.json",
+            "inputPromptSha256": "a1dd31cbfd93e9c309458760585db8f03baeebabe30da78d33cc69f8a243b207",
+            "responseStreamSha256": "5a7a27f205f40893c3d198a8442ac4cf8eae707e91cfa6dfdd686319e323bd06",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "011638f0c1819ee2a0aaa1dc3f0bc508dfd0a15d711ae33675fdc3e8766d1200",
+      "inputContextSha256": "0efd8d40db45f4834f095160ecba080825f624bf8dd9a2a45b2cbcf0026613d1",
+      "inputPresentationSha256": "47889b5c17c4f6b3a9b0133cc7bbfc09c5b5f23140e3a7b18515b3cbea9abec5",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "Astra174、Claude215非空白字符，Claude明显偏离约180的篇幅期待，建议采用Astra。均为雕塑设计，可合理组织姿态；老人与海数日相持的具体姿势与伤疤不当作某版原著逐字描述。设计意图完整，不能仅用口号替代体态外貌神情。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:50:26.137Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2017-dazuowen:1",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2017北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523465.shtml"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL刊学而思高考研究中心参考，非官方发布链",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523795.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "说纽带\n\n一座桥把河的两岸连起来，一封信把相隔的人连起来，一条共同遵守的规则把陌生人的行动连起来。纽带可以是一件有形的物品，也可以是一种无形的信任。它的价值不仅在于使彼此相接，更在于使人们能够理解、合作，在差异之中共同生活。\n\n人为什么需要纽带？因为我们并非可以独自完成一切的孤岛。个人的成长依赖家庭、学校和社会的支持，公共事务也需要许多人的分工。若各自只看到眼前利益，彼此之间没有可信的联系，再多的力量也可能相互抵消。纽带使一个人的行动能够被另一个人理解，使今天的付出能够接续昨天的努力，于是分散的力量才有机会汇聚。\n\n文化是连接过去与现在的重要纽带。面对博物馆中的一件器物，我们看到的不只是材料与造型，还可以由它想见先人的劳动、审美和生活。文字、礼俗、技艺也让未曾谋面的人共享某些记忆。然而，文化的连接不能只靠把东西封存起来。一个孩子如果只知道文物的名称，却不知道它与人的生活有什么关系，这条纽带仍然脆弱。让文物得到恰当说明，让传统技艺能够被学习、讨论和创造性地使用，过去才会进入今天的经验。传承由此成为理解的延续，而不只是形式的重复。\n\n规则与信任则是连接不同人的纽带。一次班级合作中，兴趣各异的同学可以因共同目标聚在一起，但仅凭热情往往不能走到最后。谁负责搜集材料，怎样确认来源，出现分歧由谁协调，都需要说清楚。规则使期待可预见，守约使信任逐渐积累；信任反过来又让大家愿意承担更多工作。这些看似细小的安排，说明纽带并不总是温情的话语，也可能是认真履行的一份约定。\n\n当然，纽带并非越紧越好。以亲情为名替一个人决定全部道路，以集体为名要求所有声音完全一致，都可能把联系变成束缚。真正可靠的纽带应当容纳距离和差异：人可以有不同志趣，仍相互关心；不同文化可以保持自身特点，仍平等交流。正如桥连接两岸，却不要求两岸变成同一片土地。能够尊重对方的独立，联系才出于理解与选择，而非恐惧与依附。\n\n今天，人与人的接触越来越方便，形成深厚联系却未必因此更容易。屏幕上的一句回应很快，一次耐心倾听仍然需要时间；信息可以瞬间传到远方，消除误解却要认真说明和反复核实。技术可以提供通道，纽带的质量仍取决于我们如何使用通道。愿意倾听真实的需要，承认自身了解的有限，对已经作出的承诺负责，才是在日常中修建连接彼此的桥。\n\n因此，谈纽带，既要珍惜已有的联系，也要主动维护它的正当与坚实。让文化可理解，让合作有规则，让亲近有尊重，我们便能在不抹去差异的前提下凝聚人心。纽带连接的不是抽象的两端，而是一个个有记忆、有愿望、值得被认真对待的人。",
+          "inputSha256": "2d460ab91e5e42453cc1fb090b95f4ba9cbc99fff7c2866519accd8ac612f229",
+          "inputContextSha256": "841d0e2f525390d17bd79df5ce21e8d954abe4a1b4661a2e275ca64068eae9e5",
+          "inputPresentationSha256": "9f532553790252975126e6f5a265704b89afd21184e0367128f9ceab91ce2ab3",
+          "generatedAt": "2026-10-03T06:42:34.549Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2017-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2017-writing-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "Astra952、Claude781汉字，均超过700。Claude以绳使溪汇江的混合比喻欠严谨；丝路论据压缩了多个历史阶段，不能理解为张骞本人同时带来所列一切；纽带越多理解越深也非无条件规律。默认Astra强调规则、尊重和差异的论述。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "说纽带\n\n一根绳，系住两端，便成了纽带。它看似纤细，却能让散落的珠子成串，让各自奔流的溪水汇成江河。在我看来，纽带的价值不在于捆绑，而在于联结：它让人心相通，让力量相聚，是一个时代得以向前的隐秘筋骨。\n\n纽带，联结的是过去与现在。一个民族何以历经数千年而不散？靠的是文化这根纽带。方块汉字自甲骨而来，写法几经演变，却让今天的中学生仍能读懂《诗经》里的“昔我往矣，杨柳依依”；端午的粽叶、中秋的月饼、除夕的一桌团圆饭，把天南海北的游子牵回同一个屋檐下。倘若没有这些代代相传的文字与习俗，历史不过是博物馆里沉默的陈列，我们也将不知自己从何处来。传承，正是纽带在时间里的延伸。\n\n纽带，联结的是此地与彼方。两千多年前，张骞凿空西域，驼铃声里，丝绸与瓷器西去，葡萄与胡乐东来，一条丝绸之路成为东西方文明的纽带。今天，中欧班列在亚欧大陆上往来穿梭，“一带一路”把不同肤色、不同语言的人们连在一起。经济全球化的时代，没有哪个国家能关起门来独自繁荣。纽带越多、越牢，彼此的理解就越深，共同的道路也越宽。\n\n纽带，联结的更是人与人。社会的安宁，离不开法律与道德这两根纽带，它们让陌生人之间有了可以托付的信任；校园的和谐，离不开师生之间的尊重与同学之间的友爱。记得运动会上的拔河比赛，一根粗绳把全班几十双手连在一起，喊着同一个号子，向着同一个方向用力。那一刻我明白了，纽带的意义不只是把人拴在一处，而是让每一份微小的力量都不被浪费。\n\n然而，纽带并非天然牢固。它要以真诚为芯，以平等为线。以利益强行捆绑的，利尽则散；以强权勉强维系的，终会绷断。真正的纽带，是彼此心甘情愿的握手，是求同存异的包容。它也需要时时呵护：文化若无人传习便会断流，信任若屡遭辜负便会磨损，友谊若久不走动便会生疏。\n\n身处一个联系空前紧密、分歧也时有发生的时代，我们每个人都不该只做被纽带牵系的人，更应做编织纽带的人：读一本古书，是为历史续线；说一句公道话，是为社会结绳；向同窗伸出一只手，是为校园添一分暖意。千丝万缕，汇于一处，人心便有了凝聚的方向，力量便有了汇聚的河床。\n\n说纽带，说到底是说人心。心与心相连，世界才不是一座座孤岛。\n\n【写作说明】中心论点是“纽带的价值在于联结而非捆绑”。正文从时间（历史传承）、空间（文明与经济交流）、人际（社会与校园）三个层面论证，再转入“纽带需要真诚、平等与呵护”，最后落到个人“做编织纽带的人”。",
+          "inputSha256": "2d460ab91e5e42453cc1fb090b95f4ba9cbc99fff7c2866519accd8ac612f229",
+          "inputContextSha256": "841d0e2f525390d17bd79df5ce21e8d954abe4a1b4661a2e275ca64068eae9e5",
+          "inputPresentationSha256": "9f532553790252975126e6f5a265704b89afd21184e0367128f9ceab91ce2ab3",
+          "generatedAt": "2026-10-03T06:46:00.675916+00:00",
+          "uncertainties": [
+            "原题为两题任选一题，此处按id要求两题均给出示例；本文为原创示例，全文约九百字，满足不少于700字的要求。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "Astra952、Claude781汉字，均超过700。Claude以绳使溪汇江的混合比喻欠严谨；丝路论据压缩了多个历史阶段，不能理解为张骞本人同时带来所列一切；纽带越多理解越深也非无条件规律。默认Astra强调规则、尊重和差异的论述。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2017-writing-result.json",
+            "inputPromptSha256": "a1dd31cbfd93e9c309458760585db8f03baeebabe30da78d33cc69f8a243b207",
+            "responseStreamSha256": "5a7a27f205f40893c3d198a8442ac4cf8eae707e91cfa6dfdd686319e323bd06",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "2d460ab91e5e42453cc1fb090b95f4ba9cbc99fff7c2866519accd8ac612f229",
+      "inputContextSha256": "841d0e2f525390d17bd79df5ce21e8d954abe4a1b4661a2e275ca64068eae9e5",
+      "inputPresentationSha256": "9f532553790252975126e6f5a265704b89afd21184e0367128f9ceab91ce2ab3",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "Astra952、Claude781汉字，均超过700。Claude以绳使溪汇江的混合比喻欠严谨；丝路论据压缩了多个历史阶段，不能理解为张骞本人同时带来所列一切；纽带越多理解越深也非无条件规律。默认Astra强调规则、尊重和差异的论述。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:50:26.137Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2017-dazuowen:2",
+      "sources": [
+        {
+          "type": "public_exam_scan",
+          "title": "2017北京语文十页原题扫描公开转载，逐页核对",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523465.shtml"
+        },
+        {
+          "type": "public_reference",
+          "title": "EOL刊学而思高考研究中心参考，非官方发布链",
+          "url": "https://gaokao.eol.cn/bei_jing/dongtai/201706/t20170607_1523795.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "共和国，我为你拍照\n\n二〇四九年十月的清晨，我带着相机回到老家。母亲已是白发老人，却坚持到巷口接我。她抬头看看镜头，笑着说：“拍什么大场面？先跟我走一段路。”\n\n我们沿着小时候上学的方向慢慢走。旧校门还在，门前那段高高的石阶不见了，换成一条平缓的坡道。一个坐轮椅的孩子正和伙伴一起进门，书包挂在椅背上，有人替他扶了一下门，却没有谁停下来围观。他们争论着昨天读过的故事，声音一高一低，很快消失在晨光里。\n\n我举起相机。母亲问：“照着脸了吗？”我摇头，只把坡道、敞开的门和并肩前行的背影留在画面中。照片不需要夺目的建筑，它记下的是：走向知识的路，能够让更多人一同经过。\n\n再往前，是以前常常堵车的十字路口。街角多了一小片树荫，几张长椅围着雨水花园。母亲指给我看，她和邻居参与讨论过这里的改造：“原来想多种几棵树，后来大家提醒，推车转弯的地方也得留够。”她说得认真，像介绍一件自己亲手做好的东西。我发现，长椅一侧果然留着宽敞的空位，树下有人读报，也有人安静地休息。\n\n我拍下第二幅照片。画面的主角不是树，而是母亲指向空位的手。她曾觉得城市的样子由别人决定，如今却能够说出自己的需要，也听见别人的需要。街角的一点变化，让她知道自己的声音在这里有位置。\n\n午后，我们来到河边。小时候，这条河常有难闻的气味，我的记忆里总隔着一排围栏。现在沿岸长着深浅不同的草木，有些地方供人散步，有些地方围着低矮的绳栏，给水鸟留下安静的栖息处。一个孩子举着食物跑过去，被同伴拉住。他读了读木牌，把手收回来，两个人蹲在远处，屏息看鸟从水面掠起。\n\n我没有急着按快门。等他们都安静下来，河面才显出细小的波纹，远处的芦苇也进入了视野。我拍下第三幅：人只占画角的一小块，水与草木留有充足的空间。这份愿意退让的安静，比热闹的合影更能说明我们怎样与自然相处。\n\n傍晚回家，我把照片投到墙上。母亲看了许久，说：“怎么都是小地方？”我告诉她，这些小地方共同回答了一个问题：发展究竟怎样进入普通人的生活。它进入孩子上学的路，进入老人能参与的讨论，也进入一条河终于可以容纳鸟鸣的黄昏。\n\n窗外，庆祝的灯光渐次亮起。我又拍了一张：母亲坐在窗边，墙上是今天的三幅照片，脸上有温和而安定的笑容。她没有看镜头，只看着那个推着轮椅走进校门的背影。\n\n我给这组照片写下名字：共和国，我为你拍照。没有一张能装下辽阔的山河，可每一张都试着说明，同一片土地上的人，怎样在更从容、更有尊严的日子里，看见彼此，也看见未来。",
+          "inputSha256": "02069b5be9c3ecaa51c50ff1aaa6eac55189ead81178e94e1a5d7ffc439ee5aa",
+          "inputContextSha256": "20ecd4f0f66550a191c22fe2418769541158e10c6572fa15d940a3bad9fcc8fb",
+          "inputPresentationSha256": "1bc12ea0478a973001c3c7b48ff14406491ab290e33f39f500adaf776b0a344b",
+          "generatedAt": "2026-10-03T06:42:34.549Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2017-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2017-writing-job.json",
+            "reviewerThread": "01a1004a-5b9e-7b50-8c93-a098bdd72620",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed_with_qualifications",
+            "note": "Astra891、Claude827汉字，均超过700。两篇均为2049虚构未来记叙文；人物、设施、庆典安排、月球科研设想均不当成已实现事实。Claude1999出生到2049五十岁的内部时间一致，老相机连接两次纪念日属于可允许想象。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "共和国，我为你拍照\n\n2049年10月1日，凌晨四点，我背着相机出了门。\n\n这台相机是父亲留下的。1999年我出生那年，他用它拍下了国庆五十周年夜里的烟花，照片有些模糊，却在家里的墙上挂了许多年。如今我也五十岁了，报社问我：共和国百年，你想拍什么？我说，让我回一趟老家。\n\n第一张照片，我留给了山梁上的日出。\n\n老家在黄土高原的褶皱里。小时候，我记忆中的山是黄的，风一起，天也是黄的，母亲总要把晾在院里的衣裳重洗一遍。此刻我站在梁顶，晨雾正从沟底慢慢升起，一层一层的梯田里，苹果红得发亮，远处的山坡上松柏连成了片，墨绿一直铺到天边。太阳跳出来的一瞬，一列高速列车从山腰的桥上轻快地掠过，像一道银白色的光。我按下快门。取景框里，绿的山，红的果，银的车，金的霞，这是我小时候怎么也画不出的家乡。\n\n第二张照片，我拍的是一双手。\n\n下山时，我遇见了正在果园里忙碌的三叔。他今年八十二了，腰板还硬朗，只是不必再像从前那样一担一担地往坡上挑水：细细的管子埋在树下，要浇多少水，巡园的机器自己知道。三叔摘下一只苹果，在衣襟上擦了擦，硬塞到我手里：“尝尝，甜得很！”我没有拍那些新奇的机器，而是把镜头对准了他的手。指节粗大，掌纹里嵌着洗不掉的泥土色，托着一只鲜红的苹果。这双手挑过水，修过梯田，栽下过满山的树苗。山是怎样绿起来的，日子是怎样甜起来的，这双手里都写着。\n\n第三张照片，是在村小学的操场上拍的。\n\n上午十点，孩子们聚在操场上，通过大屏幕收看北京的庆典。国歌响起时，几十个孩子齐刷刷站起来，小手举过头顶。前排有个扎羊角辫的小姑娘，唱得格外用力，脸涨得通红，眼睛里亮晶晶的。她身后，是崭新的教学楼和一面迎风展开的红旗。我蹲下身，从低处仰拍，让她的脸和那面红旗同在一片湛蓝的天空下。\n\n快门声落下，我忽然鼻子一酸。几十年前，我也在这个操场上唱过国歌，那时教室的窗户还漏风，我最大的愿望是坐一回火车，去看看山外面的世界。而眼前这个孩子，她的愿望会是什么呢？我问她。她歪着头想了想，说：“我想去月球上的科研站，种一棵咱们这儿的苹果树。”\n\n我笑了，周围的孩子也笑了，可没有一个人觉得那是空话。\n\n傍晚，我把三张照片发回报社，在说明里只写了一行字：青山，双手，孩子。共和国，这是你一百岁的模样。\n\n窗外，烟花正在山梁上空一朵一朵地绽开。我举起父亲的老相机，又拍了一张。\n\n【写作说明】全文以小见大，用三张照片分别表现生态之变（黄土变青山）、民生之变（劳动者的手与甜起来的日子）、未来之望（孩子的梦想），并以父亲的老相机首尾呼应，串起五十周年与一百周年。",
+          "inputSha256": "02069b5be9c3ecaa51c50ff1aaa6eac55189ead81178e94e1a5d7ffc439ee5aa",
+          "inputContextSha256": "20ecd4f0f66550a191c22fe2418769541158e10c6572fa15d940a3bad9fcc8fb",
+          "inputPresentationSha256": "1bc12ea0478a973001c3c7b48ff14406491ab290e33f39f500adaf776b0a344b",
+          "generatedAt": "2026-10-03T06:46:00.675916+00:00",
+          "uncertainties": [
+            "原题为两题任选一题，此处按id要求两题均给出示例；本文为原创想象类记叙文，全文约一千字，满足不少于700字的要求。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed_with_qualifications",
+            "note": "Astra891、Claude827汉字，均超过700。两篇均为2049虚构未来记叙文；人物、设施、庆典安排、月球科研设想均不当成已实现事实。Claude1999出生到2049五十岁的内部时间一致，老相机连接两次纪念日属于可允许想象。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2017.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2017-writing-result.json",
+            "inputPromptSha256": "a1dd31cbfd93e9c309458760585db8f03baeebabe30da78d33cc69f8a243b207",
+            "responseStreamSha256": "5a7a27f205f40893c3d198a8442ac4cf8eae707e91cfa6dfdd686319e323bd06",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "02069b5be9c3ecaa51c50ff1aaa6eac55189ead81178e94e1a5d7ffc439ee5aa",
+      "inputContextSha256": "20ecd4f0f66550a191c22fe2418769541158e10c6572fa15d940a3bad9fcc8fb",
+      "inputPresentationSha256": "1bc12ea0478a973001c3c7b48ff14406491ab290e33f39f500adaf776b0a344b",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "Astra891、Claude827汉字，均超过700。两篇均为2049虚构未来记叙文；人物、设施、庆典安排、月球科研设想均不当成已实现事实。Claude1999出生到2049五十岁的内部时间一致，老相机连接两次纪念日属于可允许想象。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T06:50:26.137Z",
+      "currentVersion": "gpt_6_astra"
     }
   ],
   "releaseBlockers": [
@@ -24318,6 +26699,16 @@
         "2018-feilian"
       ],
       "detail": "2018-feilian:5 bundles original question5choice3points, question6choice3points and question7open5points; preserve legacy score3 and all IDs/history. Require compatible subquestion grading, not a single-choice aggregate."
+    },
+    {
+      "id": "2017-composite-scores",
+      "status": "open",
+      "recordIds": [
+        "2017-feilian",
+        "2017-guwen",
+        "2017-sanwen"
+      ],
+      "detail": "Composite feilian5 contains originals5/6/7/8(2+2+2+6) but legacy score2; guwen5 contains13/14(3+5) but legacy3; sanwen5 contains23/24(6+3) but legacy6. Preserve IDs/history/scores, require compatible subquestion grading and full open responses."
     }
   ]
 }
