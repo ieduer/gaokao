@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261003-reviewed-363-qualified-2014",
+  "revision": "20261003-source2013-qualified-pending",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -2594,13 +2594,11 @@
     },
     {
       "id": "2013-guwen:2",
-      "inputSha256": "c1d2a9028fcd835873e271ce849049f85f8c10b3207c7fd63c591902e68c4897",
-      "status": "reviewed",
+      "inputSha256": "30d555b4d579723f11746d1b2e37e798899ff30cb8dc56a34374051db5fba611",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "D"
-      ],
-      "explanation": "保留A项的判准粒度说明；当前独立答案D，未把旧题的概括口径提升为普遍语法规则。",
+      "correctOptions": [],
+      "explanation": "2013题源及标记更正后待重审；旧输入及全部模型正文保存在history。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T03:03:23.208Z",
       "sources": [
@@ -2614,87 +2612,171 @@
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 完整附注复核",
-          "text": "答案取D。‘彬之总师也’叙述曹彬统率军队时的情形，之位于主谓性结构之间；‘上临哭之恸’中的之则直接指曹彬，作哭的对象。B项所与后面的动词共同指所拿取、所接受的东西；C项何都询问相应的缘故或功劳。A项在本题通常按用、拿这一宽泛凭借意义比较，分别引出陈列物品和乘坐的船；现代译文用把或乘，不能仅据译词不同便推翻D。不过两处以的精细句法差别应保留说明，不用于证明所有以的工具、处置用法完全相同。",
-          "inputSha256": "c1d2a9028fcd835873e271ce849049f85f8c10b3207c7fd63c591902e68c4897",
-          "generatedAt": "2026-10-03T03:03:23.208Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review_reaffirmation",
-            "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
-            "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "priorAnswerSha256": "907c910d628e812bce85ef9e44a67969ee9f2a9b99632eedece5250d41f8a762",
-            "annotationEffect": "觌是相见，支持私下馈礼场景。两处之的主谓间助词与代词仍有别。材料非风湿、胃曰、趣驾临文等显著残损不能随结论通过。"
+      "modelAnswers": {},
+      "inputContextSha256": "0dd653a4bd09ad81cd2ac09e4fb89464f4d63c115ddb8e831e89feb7bc08ae05",
+      "history": [
+        {
+          "source": {
+            "id": "2013-guwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "曹彬，字国华，彬始生周岁，父母以百玩之具罗于席，观其所取。彬左手持干戈，右手持俎豆，斯须取一印，他无所视，人皆异之。\n\n五年，使吴越，致命讫即还。私觌之礼，一无所受。吴越人以轻舟追遗之，至于数四，彬犹不受。既而曰：“吴终拒之，是近名夜。”遂受而籍之衣柜，悉上送官。\n\n初，太祖典禁旅，彬中立不倚，非风湿未尝造门，群居燕会，亦所罕预，由是器重焉，建隆二年，自平阳召归，胃曰：“我畸昔常欲新汝，汝何故疏我?”彬顿首谢曰：“臣为周室亲，复忝内职，靖恭守位，犹恐获过，安敢妄有结交?”\n\n七年，将伐江南。长围中，彬每缓师，冀煜归服。城垂克，彬忽称疾不视事，诸将皆来问疾。彬曰：“余之疾非药石所能愈，惟须诸公诚心自誓，以克城之日，不妄杀一人，则自愈矣。”诸将许诺。明日，稍愈。又明日，城陷。煜与百余人诣军门请罪，彬慰安之，待以宾礼，请煜入宫治装，彬以数骑待宫门外，左右密谓彬曰：“煜入或不测，奈何?“彬笑曰：” 煜素懦无断，必不能自引决。“煜之君臣，卒赖保全。\n\n初，彬之总师也，太祖谓曰：“俟克李煜，当以卿为使相。”副帅潘美预以为贺。彬曰：“不然，夫是行也，仗天威，遵庙谟，乃能成事，吾何功哉，况使相极品乎!”美曰：“何谓也?”彬曰：“太原未平尔。”及还，献俘。上谓曰：“本授卿使相，然刘继元未下，姑少待之。”既闻此语，美窃视彬微笑。上觉，遽诘所以，美不敢隐，遂以实对。上亦大笑，乃赐彬钱二十万。彬退曰：“人生何必使相，好官亦不过多得钱尔。”\n\n咸平二年，被疾。上趣驾临文，手为和药，仍赐白金万两。六月薨，年六十九。上临哭之恸。\n\n(取材于《宋史·曹彬列传》)"
+              }
+            ],
+            "topic": "二、本大题共5小题，共16分。阅读下面的文言文，完成6~10题。",
+            "annotation": "①觌(dí)：相见",
+            "annotations": [
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 15,
+                "end": 16,
+                "anchor": "以"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 26,
+                "end": 27,
+                "anchor": "所"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 196,
+                "end": 197,
+                "anchor": "何"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 18,
+                "end": 19,
+                "anchor": "之"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 2,
+                "id": "q2",
+                "text": "7.下列各组语句中，加点的词意义和用法不相同的一项是(3分)\nA．*以*百玩之具罗于席       吴越人*以*轻舟追遗之\nB．观其*所*取  一无*所*受\nC．汝*何*故疏我   吾*何*功哉\nD．彬*之*总师也  上临哭*之*恸",
+                "score": 3
+              }
+            ]
           },
-          "inputContextSha256": "829304e814db3deecf7639e90282f08184dce3c3e62f9a68e9880c26a4c8689b"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 来源复核后修订",
-          "text": "答案：D。\n选D（不相同的一项）。A项：“以百玩之具罗于席”“以轻舟追遗之”的“以”都是介词“用、拿”，相同。B项：“观其所取”“一无所受”的“所”都是助词，与动词组成所字结构，相同。C项：“汝何故疏我”“吾何功哉”的“何”都是疑问代词“什么”，相同。D项：“彬之总师也”的“之”用在主谓之间，取消句子独立性；“上临哭之恸”的“之”是代词，指曹彬，不同。",
-          "inputSha256": "c1d2a9028fcd835873e271ce849049f85f8c10b3207c7fd63c591902e68c4897",
-          "inputContextSha256": "829304e814db3deecf7639e90282f08184dce3c3e62f9a68e9880c26a4c8689b",
-          "generatedAt": "2026-10-03T03:01:54.821132+00:00",
-          "uncertainties": [
-            "材料有多处录入讹误（如“吴终拒之，是近名夜”“非风湿未尝造门”等），不影响本题判断。"
-          ],
-          "selectedOptions": [
-            "D"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
-            "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
-            "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
-            "stage": "source_review"
+          "review": {
+            "id": "2013-guwen:2",
+            "inputSha256": "c1d2a9028fcd835873e271ce849049f85f8c10b3207c7fd63c591902e68c4897",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "D"
+            ],
+            "explanation": "保留A项的判准粒度说明；当前独立答案D，未把旧题的概括口径提升为普遍语法规则。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:03:23.208Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内完整题目及相关材料"
+              },
+              {
+                "type": "dictionary_revision",
+                "title": "文言站2026-09-16-r3词典校订，保留争议"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "答案取D。‘彬之总师也’叙述曹彬统率军队时的情形，之位于主谓性结构之间；‘上临哭之恸’中的之则直接指曹彬，作哭的对象。B项所与后面的动词共同指所拿取、所接受的东西；C项何都询问相应的缘故或功劳。A项在本题通常按用、拿这一宽泛凭借意义比较，分别引出陈列物品和乘坐的船；现代译文用把或乘，不能仅据译词不同便推翻D。不过两处以的精细句法差别应保留说明，不用于证明所有以的工具、处置用法完全相同。",
+                "inputSha256": "c1d2a9028fcd835873e271ce849049f85f8c10b3207c7fd63c591902e68c4897",
+                "generatedAt": "2026-10-03T03:03:23.208Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "907c910d628e812bce85ef9e44a67969ee9f2a9b99632eedece5250d41f8a762",
+                  "annotationEffect": "觌是相见，支持私下馈礼场景。两处之的主谓间助词与代词仍有别。材料非风湿、胃曰、趣驾临文等显著残损不能随结论通过。"
+                },
+                "inputContextSha256": "829304e814db3deecf7639e90282f08184dce3c3e62f9a68e9880c26a4c8689b"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "答案：D。\n选D（不相同的一项）。A项：“以百玩之具罗于席”“以轻舟追遗之”的“以”都是介词“用、拿”，相同。B项：“观其所取”“一无所受”的“所”都是助词，与动词组成所字结构，相同。C项：“汝何故疏我”“吾何功哉”的“何”都是疑问代词“什么”，相同。D项：“彬之总师也”的“之”用在主谓之间，取消句子独立性；“上临哭之恸”的“之”是代词，指曹彬，不同。",
+                "inputSha256": "c1d2a9028fcd835873e271ce849049f85f8c10b3207c7fd63c591902e68c4897",
+                "inputContextSha256": "829304e814db3deecf7639e90282f08184dce3c3e62f9a68e9880c26a4c8689b",
+                "generatedAt": "2026-10-03T03:01:54.821132+00:00",
+                "uncertainties": [
+                  "材料有多处录入讹误（如“吴终拒之，是近名夜”“非风湿未尝造门”等），不影响本题判断。"
+                ],
+                "selectedOptions": [
+                  "D"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
+                  "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
+                  "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
+                  "stage": "source_review"
+                }
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "答案取D。‘彬之总师也’叙述曹彬统率军队时的情形，之位于主谓性结构之间；‘上临哭之恸’中的之则直接指曹彬，作哭的对象。B项所与后面的动词共同指所拿取、所接受的东西；C项何都询问相应的缘故或功劳。A项在本题通常按用、拿这一宽泛凭借意义比较，分别引出陈列物品和乘坐的船；现代译文用把或乘，不能仅据译词不同便推翻D。不过两处以的精细句法差别应保留说明，不用于证明所有以的工具、处置用法完全相同。",
+                "inputSha256": "c1d2a9028fcd835873e271ce849049f85f8c10b3207c7fd63c591902e68c4897",
+                "generatedAt": "2026-10-03T00:07:56.018Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
+                }
+              },
+              "claude_opus_5_5_initial": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答（修订前存档）",
+                "text": "答案：D。\nA项基本相同。“以百玩之具罗于席”意为“拿各种玩具陈列在席上”；“吴越人以轻舟追遗之”意为“吴越人用轻舟追来赠送他”。两个“以”都是介词，引出所拿、所用之物，可译为“用、拿”。B项相同。“观其所取”“一无所受”中的“所”都是助词，与后面的动词组成名词性结构，意为“……的东西”。C项相同。“汝何故疏我”“吾何功哉”中的“何”都是疑问代词“什么”。D项不同。“彬之总师也”中，“之”用在主谓之间，取消句子独立性；“上临哭之恸”中，“之”是代词，指曹彬。故选D。",
+                "inputSha256": "c1d2a9028fcd835873e271ce849049f85f8c10b3207c7fd63c591902e68c4897",
+                "generatedAt": "2026-10-03T00:39:17.649838+00:00",
+                "uncertainties": [
+                  "材料文字有讹误（如“是近名夜”应为“是近名也”，“非风湿未尝造门”应为“非公事未尝造门”，“胃曰”应为“谓曰”，“新汝”应为“亲汝”）。这些讹误不影响本题判断。"
+                ],
+                "selectedOptions": [
+                  "D"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
+                  "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
+                  "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "c6bc32ef988f6a280537686c1508818bf19f0fcaa080afeae7b1174fc00cf5e2"
+              }
+            },
+            "inputContextSha256": "829304e814db3deecf7639e90282f08184dce3c3e62f9a68e9880c26a4c8689b"
           }
-        },
-        "gpt_6_astra_before_context_review": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
-          "text": "答案取D。‘彬之总师也’叙述曹彬统率军队时的情形，之位于主谓性结构之间；‘上临哭之恸’中的之则直接指曹彬，作哭的对象。B项所与后面的动词共同指所拿取、所接受的东西；C项何都询问相应的缘故或功劳。A项在本题通常按用、拿这一宽泛凭借意义比较，分别引出陈列物品和乘坐的船；现代译文用把或乘，不能仅据译词不同便推翻D。不过两处以的精细句法差别应保留说明，不用于证明所有以的工具、处置用法完全相同。",
-          "inputSha256": "c1d2a9028fcd835873e271ce849049f85f8c10b3207c7fd63c591902e68c4897",
-          "generatedAt": "2026-10-03T00:07:56.018Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
-          }
-        },
-        "claude_opus_5_5_initial": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答（修订前存档）",
-          "text": "答案：D。\nA项基本相同。“以百玩之具罗于席”意为“拿各种玩具陈列在席上”；“吴越人以轻舟追遗之”意为“吴越人用轻舟追来赠送他”。两个“以”都是介词，引出所拿、所用之物，可译为“用、拿”。B项相同。“观其所取”“一无所受”中的“所”都是助词，与后面的动词组成名词性结构，意为“……的东西”。C项相同。“汝何故疏我”“吾何功哉”中的“何”都是疑问代词“什么”。D项不同。“彬之总师也”中，“之”用在主谓之间，取消句子独立性；“上临哭之恸”中，“之”是代词，指曹彬。故选D。",
-          "inputSha256": "c1d2a9028fcd835873e271ce849049f85f8c10b3207c7fd63c591902e68c4897",
-          "generatedAt": "2026-10-03T00:39:17.649838+00:00",
-          "uncertainties": [
-            "材料文字有讹误（如“是近名夜”应为“是近名也”，“非风湿未尝造门”应为“非公事未尝造门”，“胃曰”应为“谓曰”，“新汝”应为“亲汝”）。这些讹误不影响本题判断。"
-          ],
-          "selectedOptions": [
-            "D"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
-            "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
-            "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
-            "stage": "independent"
-          },
-          "inputContextSha256": "c6bc32ef988f6a280537686c1508818bf19f0fcaa080afeae7b1174fc00cf5e2"
         }
-      },
-      "inputContextSha256": "829304e814db3deecf7639e90282f08184dce3c3e62f9a68e9880c26a4c8689b"
+      ],
+      "inputPresentationSha256": "4a3dc065beb528e8e0512c2cad642bc1bf55370078aacce8281a0794d39fcebb"
     },
     {
       "id": "2012-guwen:2",
@@ -10399,11 +10481,11 @@
     },
     {
       "id": "2013-moxie:1",
-      "inputSha256": "e7a99d4352c7e6958ad9c74150ece23afbb9445a1b04715fe753264832be35a3",
-      "status": "reviewed",
+      "inputSha256": "63deeeeb1daca30d42c5e2868dd5a536dddf71d9e7c6b1b2dc4c81228f732938",
+      "status": "draft",
       "kind": "open",
       "correctOptions": [],
-      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "explanation": "2013题源及标记更正后待重审；旧输入及全部模型正文保存在history。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T01:38:23.281Z",
       "sources": [
@@ -10413,64 +10495,109 @@
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答",
-          "text": "①氓之蚩蚩，抱布贸丝。②奈何取之尽锱铢，用之如泥沙。③小学而大遗，吾未见其明也。④知不可乎骤得，托遗响于悲风。⑤这次第，怎一个愁字了得。题目限选四道；这里列全供核对。“蚩蚩”“锱铢”“骤”不可写成形近字。",
-          "inputSha256": "e7a99d4352c7e6958ad9c74150ece23afbb9445a1b04715fe753264832be35a3",
-          "generatedAt": "2026-10-03T01:38:23.281Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
-            "contextEvidence": {
-              "method": "no_annotation_v1_equivalence",
-              "originalInputSha256": "e7a99d4352c7e6958ad9c74150ece23afbb9445a1b04715fe753264832be35a3",
-              "originalEvidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
-              "originalAnswerSha256": "6c2b5093d6ad5eab886a46e17f46b1c12dbb0e18c91e10ee484cc8e0a694711b",
-              "contextSha256": "bb3f1f1a20d0993493a20b70b8d31ce0dbf53c20b44ff48dbfb8f47b2e193b9f",
-              "sourceAnnotation": null,
-              "evidence": "answers-six-sites-20261002/no-annotation-context-proof.json"
+      "modelAnswers": {},
+      "inputContextSha256": "50b66a902ce1b6d95b444ae8c21f73146e52e42c8531a16f25817c95e15ffec6",
+      "inputPresentationSha256": "00bdf7e0b4f242c689ae6e77fe9b9e976974249139c974011ebfef3cebd0279f",
+      "history": [
+        {
+          "source": {
+            "id": "2013-moxie",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "①._______,________，匪来贸丝，来即我谋。(《诗经·氓》)\n②.秦爱纷奢，人亦念其家，_______,________。(杜牧《阿房宫赋》)\n③.句读之不知，惑之不解，或师焉，或不焉______,_______。(韩愈《师说》)\n④.挟飞仙以遨游，抱明月而长终，_________,___________。(苏轼《前赤壁赋》)\n⑤.梧桐更兼细雨，到黄昏，点点滴滴。_________,__________。(李清照《声声慢》)"
+              }
+            ],
+            "topic": "13.在横线处写出诗文原句(限选其中4道题)",
+            "annotation": null,
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "13.在横线处写出诗文原句(限选其中4道题)\n①._______,________，匪来贸丝，来即我谋。(《诗经·氓》)\n②.秦爱纷奢，人亦念其家，_______,________。(杜牧《阿房宫赋》)\n③.句读之不知，惑之不解，或师焉，或不焉______,_______。(韩愈《师说》)\n④.挟飞仙以遨游，抱明月而长终，_________,___________。(苏轼《前赤壁赋》)\n⑤.梧桐更兼细雨，到黄昏，点点滴滴。_________,__________。(李清照《声声慢》)",
+                "score": null
+              }
+            ]
+          },
+          "review": {
+            "id": "2013-moxie:1",
+            "inputSha256": "e7a99d4352c7e6958ad9c74150ece23afbb9445a1b04715fe753264832be35a3",
+            "status": "reviewed",
+            "kind": "open",
+            "correctOptions": [],
+            "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T01:38:23.281Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2013北京卷原题及完整材料"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答",
+                "text": "①氓之蚩蚩，抱布贸丝。②奈何取之尽锱铢，用之如泥沙。③小学而大遗，吾未见其明也。④知不可乎骤得，托遗响于悲风。⑤这次第，怎一个愁字了得。题目限选四道；这里列全供核对。“蚩蚩”“锱铢”“骤”不可写成形近字。",
+                "inputSha256": "e7a99d4352c7e6958ad9c74150ece23afbb9445a1b04715fe753264832be35a3",
+                "generatedAt": "2026-10-03T01:38:23.281Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
+                  "contextEvidence": {
+                    "method": "no_annotation_v1_equivalence",
+                    "originalInputSha256": "e7a99d4352c7e6958ad9c74150ece23afbb9445a1b04715fe753264832be35a3",
+                    "originalEvidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
+                    "originalAnswerSha256": "6c2b5093d6ad5eab886a46e17f46b1c12dbb0e18c91e10ee484cc8e0a694711b",
+                    "contextSha256": "bb3f1f1a20d0993493a20b70b8d31ce0dbf53c20b44ff48dbfb8f47b2e193b9f",
+                    "sourceAnnotation": null,
+                    "evidence": "answers-six-sites-20261002/no-annotation-context-proof.json"
+                  },
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "bb3f1f1a20d0993493a20b70b8d31ce0dbf53c20b44ff48dbfb8f47b2e193b9f"
+                  }
+                },
+                "inputContextSha256": "bb3f1f1a20d0993493a20b70b8d31ce0dbf53c20b44ff48dbfb8f47b2e193b9f",
+                "inputPresentationSha256": "f87e4909814cafcbd30ffb885fce357f0d9d277fe1e38a786b60f2e7a5741e2f"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "题目要求限选4题，现全部作答供参考：\n①氓之蚩蚩，抱布贸丝。（《诗经·氓》）\n②奈何取之尽锱铢，用之如泥沙。（杜牧《阿房宫赋》）\n③小学而大遗，吾未见其明也。（韩愈《师说》）\n④知不可乎骤得，托遗响于悲风。（苏轼《赤壁赋》）\n⑤这次第，怎一个愁字了得！（李清照《声声慢》）",
+                "inputSha256": "e7a99d4352c7e6958ad9c74150ece23afbb9445a1b04715fe753264832be35a3",
+                "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+                "uncertainties": [],
+                "selectedOptions": [],
+                "assessment": {
+                  "matchesConclusion": null
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+                  "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+                  "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+                  "stage": "independent",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "bb3f1f1a20d0993493a20b70b8d31ce0dbf53c20b44ff48dbfb8f47b2e193b9f"
+                  }
+                },
+                "inputContextSha256": "bb3f1f1a20d0993493a20b70b8d31ce0dbf53c20b44ff48dbfb8f47b2e193b9f",
+                "inputPresentationSha256": "f87e4909814cafcbd30ffb885fce357f0d9d277fe1e38a786b60f2e7a5741e2f"
+              }
             },
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "bb3f1f1a20d0993493a20b70b8d31ce0dbf53c20b44ff48dbfb8f47b2e193b9f"
-            }
-          },
-          "inputContextSha256": "bb3f1f1a20d0993493a20b70b8d31ce0dbf53c20b44ff48dbfb8f47b2e193b9f",
-          "inputPresentationSha256": "f87e4909814cafcbd30ffb885fce357f0d9d277fe1e38a786b60f2e7a5741e2f"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "题目要求限选4题，现全部作答供参考：\n①氓之蚩蚩，抱布贸丝。（《诗经·氓》）\n②奈何取之尽锱铢，用之如泥沙。（杜牧《阿房宫赋》）\n③小学而大遗，吾未见其明也。（韩愈《师说》）\n④知不可乎骤得，托遗响于悲风。（苏轼《赤壁赋》）\n⑤这次第，怎一个愁字了得！（李清照《声声慢》）",
-          "inputSha256": "e7a99d4352c7e6958ad9c74150ece23afbb9445a1b04715fe753264832be35a3",
-          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
-          "uncertainties": [],
-          "selectedOptions": [],
-          "assessment": {
-            "matchesConclusion": null
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
-            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
-            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
-            "stage": "independent",
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "bb3f1f1a20d0993493a20b70b8d31ce0dbf53c20b44ff48dbfb8f47b2e193b9f"
-            }
-          },
-          "inputContextSha256": "bb3f1f1a20d0993493a20b70b8d31ce0dbf53c20b44ff48dbfb8f47b2e193b9f",
-          "inputPresentationSha256": "f87e4909814cafcbd30ffb885fce357f0d9d277fe1e38a786b60f2e7a5741e2f"
+            "inputContextSha256": "bb3f1f1a20d0993493a20b70b8d31ce0dbf53c20b44ff48dbfb8f47b2e193b9f",
+            "inputPresentationSha256": "f87e4909814cafcbd30ffb885fce357f0d9d277fe1e38a786b60f2e7a5741e2f"
+          }
         }
-      },
-      "inputContextSha256": "bb3f1f1a20d0993493a20b70b8d31ce0dbf53c20b44ff48dbfb8f47b2e193b9f",
-      "inputPresentationSha256": "f87e4909814cafcbd30ffb885fce357f0d9d277fe1e38a786b60f2e7a5741e2f"
+      ]
     },
     {
       "id": "2012-moxie:1",
@@ -32675,6 +32802,20 @@
         }
       ],
       "evidence": "answers-six-sites-20261002/REVIEW-2014.md"
+    },
+    {
+      "id": "2013-source-coverage-and-marking",
+      "status": "open",
+      "recordIds": [
+        "2013-feilian",
+        "2013-guwen",
+        "2013-shici",
+        "2013-moxie",
+        "2013-sanwen",
+        "2013-yuyanjichu",
+        "2013-dazuowen"
+      ],
+      "detail": "Seven EOL/学科网 pages retype an exam declared to have eight pages and interleave teacher commentary and highlighted answers; Gzywtk has numerous shared OCR mistakes. Neither is authenticated original paper or answer card. A People clear-version URL failed502 via web and another People curl failed TLS60; do not disable TLS. Reprint/PDF search results also have corrupt text. Publication chain and exact print remain open. Original question11断句 is absent from all legacy2013 records. EOL image3 includes 其时也夫施吉报凶谓之命施凶报吉谓之幸; Gzywtk omits that entire segment. Both variants must be preserved and reviewed conditionally. Supplemental proposed2013-duanju:1 remains outside data/all.json and the612 denominator until source adjudication, formal insertion, consumer mapping and history/score compatibility. Question5 requires dotted-word identity. Small public EOL image and Gzywtk plain transcription do not certify those dots; existing unmarked question retained, interpretations must be explicitly conditional. Q1 pinyin targets and guwen6/7 option targets are explicit but original rendering remains unverified. Original-body marks replaced only by observed quotation underlines; old fabricated pedagogical marks removed with snapshots. Variants include guwen持/取俎豆, 冀煜/冀李煜, Q7都; language2在于/由于; insect便风中舞动/便在风中舞动, 可比/堪比; prose给于/给予. Current repaired source follows the documented public EOL witness where legible, not a certificate of original print. Deliberately wrong options remain wrong. Historical null scores in language1-5, moxie and main writing remain unchanged; public section values are15,8,60. Scoring compatibility must use exact stable IDs and not reinterpret prior learner scores. Original numbered1-21 maps to21 current selectable units only because poetry12 has two units and question11 is missing; counts alone do not establish full paper coverage. Exam claims about insect wingbeat rates, bird/bat lift, wing evolution and electromagnetic radiation are source statements, not verified contemporary science. Read-comprehension answers must distinguish textual inference from external fact; bounded fact checks pending. All reading inputs conservatively reference-exposed by EOL commentary/highlights, web snippets and Gzywtk search matches including Q6/Q10/Q11. No composition model/example read. Root must answer full corrected inputs before a new finite independent Claude batch; no2013provider call has occurred."
     }
   ]
 }
