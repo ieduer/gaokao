@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261003-reviewed-338-qualified-2015",
+  "revision": "20261003-source2014-qualified-pending",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -10227,11 +10227,11 @@
     },
     {
       "id": "2014-moxie:1",
-      "inputSha256": "d493296c772107454e72cb9b2b16ebad7414b299973c87cb4c405b62f9959b90",
-      "status": "disputed",
+      "inputSha256": "6d2447114c41501ca51079eb025d1cdd706c7a3dbb9e41692c6e5dc08474e688",
+      "status": "draft",
       "kind": "open",
       "correctOptions": [],
-      "explanation": "原题转录缺损或身份存疑，当前已给文本的双模型答案仅供核对，暂停确定判分；必须核原卷后恢复。",
+      "explanation": "2014来源资格/历史误归属更正后待重审；全部旧输入及模型保存于history。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T01:38:23.281Z",
       "sources": [
@@ -10241,66 +10241,111 @@
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答",
-          "text": "依据当前显示题面：（1）落霞与孤鹜齐飞，秋水共长天一色。（2）感时花溅泪，恨别鸟惊心。（3）长风破浪会有时，直挂云帆济沧海。说明：当前记录标八分，却只显示三组、六个空，题面或有缺损；以上只回答已提供的空，不猜补未展示题目。",
-          "inputSha256": "d493296c772107454e72cb9b2b16ebad7414b299973c87cb4c405b62f9959b90",
-          "generatedAt": "2026-10-03T01:38:23.281Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
-            "contextEvidence": {
-              "method": "no_annotation_v1_equivalence",
-              "originalInputSha256": "d493296c772107454e72cb9b2b16ebad7414b299973c87cb4c405b62f9959b90",
-              "originalEvidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
-              "originalAnswerSha256": "1ad779cb0d2b5bbf897e37b79fe5184924cc7a3f48c5d91c45f70b44084c2dc7",
-              "contextSha256": "e6a25c7fc98dc824b3ee160e01cb2e77db6b91cf9e99c08951926000d41ac9f6",
-              "sourceAnnotation": null,
-              "evidence": "answers-six-sites-20261002/no-annotation-context-proof.json"
+      "modelAnswers": {},
+      "inputContextSha256": "fd9c163a4980196d87dee222cc909105775f28b3c1caee652a8b986ef162a577",
+      "inputPresentationSha256": "b5e03d97c29500b2531eb2ff13057d0d560e70103fd11b0918350725e9c006d5",
+      "history": [
+        {
+          "source": {
+            "id": "2014-moxie",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "（1）《滕王阁序》中描绘落霞与孤鹜齐飞、秋水共长天一色的诗句是“ ， ”。\n（2）杜甫《春望》中，借鸟儿、花儿表达伤感之情的诗句是“ ， ”。\n（3）人们常用李白《行路难》（其一）中的诗句“ ， ”来表达对理想的执着追求。"
+              }
+            ],
+            "topic": "三、本大题共1小题，共11分。\n14．在横线处填写作品原句。（共8分）",
+            "annotation": null,
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "三、本大题共1小题，共11分。\n14．在横线处填写作品原句。（共8分）\n（1）《滕王阁序》中描绘落霞与孤鹜齐飞、秋水共长天一色的诗句是“ ， ”。\n（2）杜甫《春望》中，借鸟儿、花儿表达伤感之情的诗句是“ ， ”。\n（3）人们常用李白《行路难》（其一）中的诗句“ ， ”来表达对理想的执着追求。",
+                "score": 11
+              }
+            ]
+          },
+          "review": {
+            "id": "2014-moxie:1",
+            "inputSha256": "d493296c772107454e72cb9b2b16ebad7414b299973c87cb4c405b62f9959b90",
+            "status": "disputed",
+            "kind": "open",
+            "correctOptions": [],
+            "explanation": "原题转录缺损或身份存疑，当前已给文本的双模型答案仅供核对，暂停确定判分；必须核原卷后恢复。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T01:38:23.281Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2014北京卷原题及完整材料"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答",
+                "text": "依据当前显示题面：（1）落霞与孤鹜齐飞，秋水共长天一色。（2）感时花溅泪，恨别鸟惊心。（3）长风破浪会有时，直挂云帆济沧海。说明：当前记录标八分，却只显示三组、六个空，题面或有缺损；以上只回答已提供的空，不猜补未展示题目。",
+                "inputSha256": "d493296c772107454e72cb9b2b16ebad7414b299973c87cb4c405b62f9959b90",
+                "generatedAt": "2026-10-03T01:38:23.281Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
+                  "contextEvidence": {
+                    "method": "no_annotation_v1_equivalence",
+                    "originalInputSha256": "d493296c772107454e72cb9b2b16ebad7414b299973c87cb4c405b62f9959b90",
+                    "originalEvidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
+                    "originalAnswerSha256": "1ad779cb0d2b5bbf897e37b79fe5184924cc7a3f48c5d91c45f70b44084c2dc7",
+                    "contextSha256": "e6a25c7fc98dc824b3ee160e01cb2e77db6b91cf9e99c08951926000d41ac9f6",
+                    "sourceAnnotation": null,
+                    "evidence": "answers-six-sites-20261002/no-annotation-context-proof.json"
+                  },
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "e6a25c7fc98dc824b3ee160e01cb2e77db6b91cf9e99c08951926000d41ac9f6"
+                  }
+                },
+                "inputContextSha256": "e6a25c7fc98dc824b3ee160e01cb2e77db6b91cf9e99c08951926000d41ac9f6",
+                "inputPresentationSha256": "8fe74bda213cb91cc5b55ff23f625670606342fa8ecd536a949790f48a99ee5d"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "（1）落霞与孤鹜齐飞，秋水共长天一色。（王勃《滕王阁序》）\n（2）感时花溅泪，恨别鸟惊心。（杜甫《春望》）\n（3）长风破浪会有时，直挂云帆济沧海。（李白《行路难》其一）",
+                "inputSha256": "d493296c772107454e72cb9b2b16ebad7414b299973c87cb4c405b62f9959b90",
+                "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+                "uncertainties": [
+                  "题干标“共8分”，大题标“共11分”，材料只有3小题，可能有部分小题缺失。第（1）题题干本身已含所填诗句的意思，按原句作答。"
+                ],
+                "selectedOptions": [],
+                "assessment": {
+                  "matchesConclusion": null
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+                  "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+                  "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+                  "stage": "independent",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "e6a25c7fc98dc824b3ee160e01cb2e77db6b91cf9e99c08951926000d41ac9f6"
+                  }
+                },
+                "inputContextSha256": "e6a25c7fc98dc824b3ee160e01cb2e77db6b91cf9e99c08951926000d41ac9f6",
+                "inputPresentationSha256": "8fe74bda213cb91cc5b55ff23f625670606342fa8ecd536a949790f48a99ee5d"
+              }
             },
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "e6a25c7fc98dc824b3ee160e01cb2e77db6b91cf9e99c08951926000d41ac9f6"
-            }
-          },
-          "inputContextSha256": "e6a25c7fc98dc824b3ee160e01cb2e77db6b91cf9e99c08951926000d41ac9f6",
-          "inputPresentationSha256": "8fe74bda213cb91cc5b55ff23f625670606342fa8ecd536a949790f48a99ee5d"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "（1）落霞与孤鹜齐飞，秋水共长天一色。（王勃《滕王阁序》）\n（2）感时花溅泪，恨别鸟惊心。（杜甫《春望》）\n（3）长风破浪会有时，直挂云帆济沧海。（李白《行路难》其一）",
-          "inputSha256": "d493296c772107454e72cb9b2b16ebad7414b299973c87cb4c405b62f9959b90",
-          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
-          "uncertainties": [
-            "题干标“共8分”，大题标“共11分”，材料只有3小题，可能有部分小题缺失。第（1）题题干本身已含所填诗句的意思，按原句作答。"
-          ],
-          "selectedOptions": [],
-          "assessment": {
-            "matchesConclusion": null
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
-            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
-            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
-            "stage": "independent",
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "e6a25c7fc98dc824b3ee160e01cb2e77db6b91cf9e99c08951926000d41ac9f6"
-            }
-          },
-          "inputContextSha256": "e6a25c7fc98dc824b3ee160e01cb2e77db6b91cf9e99c08951926000d41ac9f6",
-          "inputPresentationSha256": "8fe74bda213cb91cc5b55ff23f625670606342fa8ecd536a949790f48a99ee5d"
+            "inputContextSha256": "e6a25c7fc98dc824b3ee160e01cb2e77db6b91cf9e99c08951926000d41ac9f6",
+            "inputPresentationSha256": "8fe74bda213cb91cc5b55ff23f625670606342fa8ecd536a949790f48a99ee5d"
+          }
         }
-      },
-      "inputContextSha256": "e6a25c7fc98dc824b3ee160e01cb2e77db6b91cf9e99c08951926000d41ac9f6",
-      "inputPresentationSha256": "8fe74bda213cb91cc5b55ff23f625670606342fa8ecd536a949790f48a99ee5d"
+      ]
     },
     {
       "id": "2013-moxie:1",
@@ -30817,6 +30862,22 @@
         "2015-lunyu"
       ],
       "detail": "Preserve legacy IDs/qIndex/scores. feilian5 contains originals5/6/7/8=2+3+6+2 with stored2; guwen1 has two selections under original9=2 with storednull; guwen3 original11=3 storednull; guwen5 original13/14=4+3 stored4; shici2 original17=3+2 stored5; sanwen5 original24/25=6+4 stored6; lunyu1 four speakers under1point allocation. Current original-number labels corroborated in Sina text, but some EOL fragments shift them. Compatible per-part grading and official allocations require separate acceptance."
+    },
+    {
+      "id": "2014-source-coverage-and-compatibility",
+      "status": "open",
+      "recordIds": [
+        "2014-feilian",
+        "2014-guwen",
+        "2014-shici",
+        "2014-moxie",
+        "2014-honglou",
+        "2014-sanwen",
+        "2014-yuyanjichu",
+        "2014-weixiezuo",
+        "2014-dazuowen"
+      ],
+      "detail": "EOL nine public retypeset images are not an authenticated eight-page original scan: images1/7/8 have clipped right edges, image5 explicitly omits all three poetry questions. Sina manually typed transcription has different poetry options and other mistakes. Gzywtk transcription also has errors. Original scan, answer-card square layout, publication chain and precise print marks remain open. 2014-feilian duplicates language questions1-4, while entire original photovoltaic reading15-17 is missing from GK and FLX. Preserve all old identities. Separate supplemental source inputs capture missing questions for independent review; insertion, consumer mappings, counts and scoring compatibility are a required later atomic change before any full-paper completion or release claim. 2014-moxie is unsupported historical supplemental exercise, not original question14; attribution now explicit, historical score8 preserved. Real question12 is combined with13 in guwen5; original answer-card square layout is still unavailable. Composite scores: guwen5 stores3 but bundles3+12; yuyanjichu4 stores2 but bundles original4/5/6i/6ii/7i/7ii worth2+3+2+2+3+2. Original7iii appears separately in honglou1 worth2. Preserve IDs and old scores; no one-letter or flat multiple-choice grading of composites. Poetry quotation variants 尚家家/尚豪家, 莫夸/莫嗟, 独擅/留擅; E author and dynasty vary 王象巽/王象春 and清/明. Current question retains reported清 with corrected name from Sina, but authenticated print attribution and source historical fact need separate check. Source wording B知何处 and note禁消受 corrected; original print not certified. All reading units conservatively reference-exposed through web search snippets and reading legacy FLX mapping with its first4 answers. Writing examples not exposed. No model outputs may be presented as original-paper authority."
     }
   ]
 }

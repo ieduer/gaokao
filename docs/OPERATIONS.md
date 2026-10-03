@@ -313,3 +313,9 @@ Depends on the accepted User Center learning journal/recorder before this leaf m
 正式完成門檻要求Astra、Claude及當前答案都同時具有匹配的v2和v3證據，review本身亦須匹配；只在review補雜湊不能通過。未清除的releaseBlockers仍會阻止產物輸出。模型匯入必須先核凍結prompt與原始stream；只有原job明含annotations且与當前源範圍一致時才可建立v3。新root草稿匯入須另提供含annotations的凍結job。舊job不得事後補欄位；無標記或明確語義等價若需推導，必須另立可重現證據，不會自動豁免。此變更只在GK及已接線GKSW候選落實，其餘六個消費者的投影與實際顯示仍待同步資格核查。詳見EMPHASIS-GATE.md；頁面真實驗收仍待完整候選。
 
 `npm run check:answer-completion`要求全部612單元完成且各有實證雙模型結果；正式build-pages也在寫出任何檔案之前強制同一門檻，直接投影權威答案到產物data/all.json，release.json記錄實際revision及覆核數，禁止混合預覽冒充完成版。`scripts/project-answers.mjs`正式輸出要求完整覆蓋；部分預覽只可輸出到專案外。候選data/all.json的受控題面修正均有preimage和勘誤收據，舊模型答案與身份不變。動態模型介面已加入allowlist；逐題顯示模型、日期、來源、分歧與歷史版本。15項答案權威測試通過，包括標記變更、缺證據和建置拒絕時不寫出檔案。本候選未部署、未瀏覽器或真實登入驗收。續作權威：/Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/HANDOFF.md。
+
+## 2026-10-03 — 2014 限定来源准备，本地候选
+
+六记录题源/上下文修复并保留全部ID/qIndex/旧score/旧模型。历史2014默写三题未获原卷支持，保留身份但明确标为补充练习；旧审核及原输入已归档。2014非连记录重复语言题，原卷光伏发电15—17整组缺失，完整新增来源输入已另存待独立覆核和正式收录，不以612旧单元数声称全卷完整。
+
+EOL九图、Sina三页及Gzywtk均为有缺陷的转载重排，未获原卷/答题卡；原标记、诗词异文与合并题计分继续阻断。332 reviewed、5 disputed、1 draft、274未覆盖；337当前上下文证明、283标记证明。878个前存完整模型对象与337其他审核保全。15authority测试、201记录/612单元/465标记/0数据错误及diffcheck通过。详细证据为 /Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/REVIEW-2014-SOURCE.md 与 verification-2014-source.json。未推送、上传、发布、认证验收或学生写入；当前接管owner codex-01a1011e-gpt-6-astra，实际gpt-6-astra/xhigh。
