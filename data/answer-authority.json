@@ -1984,13 +1984,11 @@
     },
     {
       "id": "2016-guwen:2",
-      "inputSha256": "ff0ddb83e57ff78dbc381be4f072fe2ec8828b62dafbc7a0bad11b727227c8d4",
-      "status": "reviewed",
+      "inputSha256": "2a062a5d53834b4079503f1c31c8abfe0759746136eab86b3a067a437858d0de",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "D"
-      ],
-      "explanation": "题面中的群害等转录应另行核原卷，不在答案更新中猜补。",
+      "correctOptions": [],
+      "explanation": "2016原卷题面与标记修复后的待重审输入；旧输入及模型原文保存在history，未为新输入伪造证明。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T03:03:23.208Z",
       "sources": [
@@ -2004,83 +2002,167 @@
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 完整附注复核",
-          "text": "答案：D。齐以重宝购买生鹿，以引进所用财物；楚以生鹿藏钱五倍，以说明因售鹿而积钱的原因。不能将后者解释成把活鹿当作藏钱的工具。A项之均为到、往，B项之均连接修饰语与中心语，C项果均表示事情果然如此。本题要选不同，故以两种语境功能的差别作答。",
-          "inputSha256": "ff0ddb83e57ff78dbc381be4f072fe2ec8828b62dafbc7a0bad11b727227c8d4",
-          "generatedAt": "2026-10-03T03:03:23.208Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review_reaffirmation",
-            "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
-            "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "priorAnswerSha256": "0818f8c8ea47751ffac3eaaffb132a3b0871b2a72498647c66095bf6c29aba9c",
-            "annotationEffect": "三个人名地名国名注不改变以的工具与因由差别。材料干斤、千赵等可疑转录另列源证阻挡。"
+      "modelAnswers": {},
+      "inputContextSha256": "1f2b6f6ea1a3429c1049dd2b4867050c0b55acfbea14f36de78a7df518811c86",
+      "history": [
+        {
+          "source": {
+            "id": "2016-guwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "桓公问于管子曰：“楚者，山东之强国也，其人民习战斗之道。举兵伐之，恐力不能过。兵弊于楚，功不成于周，为之奈何？”管子对曰：“即以战斗之道与之矣。”公曰：“何谓也？”管子对曰：“公贵买其鹿。”\n\n桓公即使人之楚买生鹿。楚生鹿当一而八万。管子即令桓公与民通轻重，藏谷十之六。令左司马伯公将白徒而铸钱于庄山，令中大夫王邑载钱二千万，求生鹿于楚。楚王闻之，告其相曰：“彼金钱，人之所重也，国之所以存，明王之所以赏有功。禽兽者群害也，明王之所弃逐也。今齐以其重宝贵买吾群害，则是楚之福也，天且以齐私楚也。子告吾民急求生鹿，以尽齐之宝。”楚民即释其耕农而田鹿。管子告楚之贾人曰：“子为我致生鹿二十，赐子金百斤。什至而金干斤也。”则是楚不赋于民而财用足也。\n\n楚之男女皆居外求鹿。隰朋【1】教民藏谷五倍，楚以生鹿藏钱五倍。管子曰：“楚可下矣。”公曰：“奈何？”管子对曰：“楚钱五倍，其君且自得而修谷。”桓公曰：“诺。”因令人闭关，不与楚通使。楚王果自得而求谷，谷不可三月而得也，楚籴石四百，齐因令人载粟处芊【2】之南，楚人降齐者十分之四。三年而楚服。\n\n桓公问于管子曰：“吾欲制衡山【3】之术，为之奈何？”管子对曰：“公其令人贵买衡山之械器而卖之。燕、代必从公而买之，秦、赵闻之，必与公争之。衡山之械器必倍其价，天下争之，衡山械器必什倍以上。”公曰：“诺。”因令人之衡山求买械器，不敢辩其价。齐修械器于衡山十月，燕、代闻之，果令人之衡山求买械器，燕、代修三月，秦国闻之，果令人之衡山求买械器。衡山之君告其相曰，“天下争吾械器，令其买再什以上。”衡山之民释其本，修械器之巧。齐即令隰朋漕粟千赵。赵籴十五，隰朋取之石五十。天下闻之，载粟而之齐。齐修械器十七月，修粜五月，即闭关不与衡山通使。燕、代、秦、赵即引其使而归。衡山械器尽，鲁削衡山之南，齐削衡山之北。内自量无械器以应二敌，即奉国而归齐矣。"
+              }
+            ],
+            "topic": "二、本大题共6小题，共24分。\n阅读下面文言文完成9--14题",
+            "annotation": "注释：【1】隰朋：齐桓公的大臣。【2】芊：地名。【3】衡山：春秋时鲁国的附属国。",
+            "annotations": [
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 14,
+                "end": 15,
+                "anchor": "之"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 14,
+                "end": 15,
+                "anchor": "之"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 416,
+                "end": 417,
+                "anchor": "果"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 63,
+                "end": 64,
+                "anchor": "以"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 2,
+                "id": "q2",
+                "text": "10．下列各组语句中加点词的意义和用法，不同的一项是（3分）\nA．使人*之*楚买生鹿\n载粟而*之*齐\nB．其人民习战斗*之*道\n公其令人贵买衡山*之*械器\nC．楚王*果*自得而求谷\n*果*令人之衡山求买械器\nD．今齐*以*其重宝贵买吾群害\n楚*以*生鹿藏钱五倍",
+                "score": 3
+              }
+            ]
           },
-          "inputContextSha256": "6a15e80247a589a265b98e29eef7bcd95ab227ab6908e0c71324c63ca1e3030a"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 来源复核后修订",
-          "text": "答案：D。\n选D（不同的一项）。A项：“使人之楚买生鹿”“载粟而之齐”的“之”都是动词“到……去”，相同。B项：“战斗之道”“衡山之械器”的“之”都是结构助词“的”，相同。C项：“楚王果自得而求谷”“果令人之衡山求买械器”的“果”都是副词“果然”，相同。D项：“今齐以其重宝贵买吾群害”的“以”是介词“用、拿”；“楚以生鹿藏钱五倍”的“以”是介词“凭借、因为”（楚国靠卖生鹿使存钱增加五倍），不同。",
-          "inputSha256": "ff0ddb83e57ff78dbc381be4f072fe2ec8828b62dafbc7a0bad11b727227c8d4",
-          "inputContextSha256": "6a15e80247a589a265b98e29eef7bcd95ab227ab6908e0c71324c63ca1e3030a",
-          "generatedAt": "2026-10-03T03:01:54.821132+00:00",
-          "uncertainties": [],
-          "selectedOptions": [
-            "D"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
-            "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
-            "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
-            "stage": "source_review"
+          "review": {
+            "id": "2016-guwen:2",
+            "inputSha256": "ff0ddb83e57ff78dbc381be4f072fe2ec8828b62dafbc7a0bad11b727227c8d4",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "D"
+            ],
+            "explanation": "题面中的群害等转录应另行核原卷，不在答案更新中猜补。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:03:23.208Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内完整题目及相关材料"
+              },
+              {
+                "type": "dictionary_revision",
+                "title": "文言站2026-09-16-r3词典校订，保留争议"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "答案：D。齐以重宝购买生鹿，以引进所用财物；楚以生鹿藏钱五倍，以说明因售鹿而积钱的原因。不能将后者解释成把活鹿当作藏钱的工具。A项之均为到、往，B项之均连接修饰语与中心语，C项果均表示事情果然如此。本题要选不同，故以两种语境功能的差别作答。",
+                "inputSha256": "ff0ddb83e57ff78dbc381be4f072fe2ec8828b62dafbc7a0bad11b727227c8d4",
+                "generatedAt": "2026-10-03T03:03:23.208Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "0818f8c8ea47751ffac3eaaffb132a3b0871b2a72498647c66095bf6c29aba9c",
+                  "annotationEffect": "三个人名地名国名注不改变以的工具与因由差别。材料干斤、千赵等可疑转录另列源证阻挡。"
+                },
+                "inputContextSha256": "6a15e80247a589a265b98e29eef7bcd95ab227ab6908e0c71324c63ca1e3030a"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "答案：D。\n选D（不同的一项）。A项：“使人之楚买生鹿”“载粟而之齐”的“之”都是动词“到……去”，相同。B项：“战斗之道”“衡山之械器”的“之”都是结构助词“的”，相同。C项：“楚王果自得而求谷”“果令人之衡山求买械器”的“果”都是副词“果然”，相同。D项：“今齐以其重宝贵买吾群害”的“以”是介词“用、拿”；“楚以生鹿藏钱五倍”的“以”是介词“凭借、因为”（楚国靠卖生鹿使存钱增加五倍），不同。",
+                "inputSha256": "ff0ddb83e57ff78dbc381be4f072fe2ec8828b62dafbc7a0bad11b727227c8d4",
+                "inputContextSha256": "6a15e80247a589a265b98e29eef7bcd95ab227ab6908e0c71324c63ca1e3030a",
+                "generatedAt": "2026-10-03T03:01:54.821132+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "D"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
+                  "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
+                  "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
+                  "stage": "source_review"
+                }
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "答案：D。齐以重宝购买生鹿，以引进所用财物；楚以生鹿藏钱五倍，以说明因售鹿而积钱的原因。不能将后者解释成把活鹿当作藏钱的工具。A项之均为到、往，B项之均连接修饰语与中心语，C项果均表示事情果然如此。本题要选不同，故以两种语境功能的差别作答。",
+                "inputSha256": "ff0ddb83e57ff78dbc381be4f072fe2ec8828b62dafbc7a0bad11b727227c8d4",
+                "generatedAt": "2026-10-03T00:07:56.018Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
+                }
+              },
+              "claude_opus_5_5_initial": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答（修订前存档）",
+                "text": "答案：D。\nA项相同。“使人之楚”“载粟而之齐”中的“之”都是动词，意为“到、往”。B项相同。“战斗之道”“衡山之械器”中的“之”都是结构助词“的”。C项相同。“楚王果自得而求谷”“果令人之衡山求买械器”中的“果”都是副词“果然”，表示事态如管子所料。D项不同。“今齐以其重宝贵买吾群害”中，“以”是介词“用、拿”；“楚以生鹿藏钱五倍”意为楚国因为（凭借）卖生鹿而藏钱增加五倍，“以”是介词“因为、凭借”。两者意义不同。故选D。",
+                "inputSha256": "ff0ddb83e57ff78dbc381be4f072fe2ec8828b62dafbc7a0bad11b727227c8d4",
+                "generatedAt": "2026-10-03T00:39:17.649838+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "D"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
+                  "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
+                  "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "08fd2aaba3d1b1fc0c66c74424e5fcf323788fce1d6c81143f952714b66d3d72"
+              }
+            },
+            "inputContextSha256": "6a15e80247a589a265b98e29eef7bcd95ab227ab6908e0c71324c63ca1e3030a"
           }
-        },
-        "gpt_6_astra_before_context_review": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
-          "text": "答案：D。齐以重宝购买生鹿，以引进所用财物；楚以生鹿藏钱五倍，以说明因售鹿而积钱的原因。不能将后者解释成把活鹿当作藏钱的工具。A项之均为到、往，B项之均连接修饰语与中心语，C项果均表示事情果然如此。本题要选不同，故以两种语境功能的差别作答。",
-          "inputSha256": "ff0ddb83e57ff78dbc381be4f072fe2ec8828b62dafbc7a0bad11b727227c8d4",
-          "generatedAt": "2026-10-03T00:07:56.018Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
-          }
-        },
-        "claude_opus_5_5_initial": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答（修订前存档）",
-          "text": "答案：D。\nA项相同。“使人之楚”“载粟而之齐”中的“之”都是动词，意为“到、往”。B项相同。“战斗之道”“衡山之械器”中的“之”都是结构助词“的”。C项相同。“楚王果自得而求谷”“果令人之衡山求买械器”中的“果”都是副词“果然”，表示事态如管子所料。D项不同。“今齐以其重宝贵买吾群害”中，“以”是介词“用、拿”；“楚以生鹿藏钱五倍”意为楚国因为（凭借）卖生鹿而藏钱增加五倍，“以”是介词“因为、凭借”。两者意义不同。故选D。",
-          "inputSha256": "ff0ddb83e57ff78dbc381be4f072fe2ec8828b62dafbc7a0bad11b727227c8d4",
-          "generatedAt": "2026-10-03T00:39:17.649838+00:00",
-          "uncertainties": [],
-          "selectedOptions": [
-            "D"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
-            "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
-            "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
-            "stage": "independent"
-          },
-          "inputContextSha256": "08fd2aaba3d1b1fc0c66c74424e5fcf323788fce1d6c81143f952714b66d3d72"
         }
-      },
-      "inputContextSha256": "6a15e80247a589a265b98e29eef7bcd95ab227ab6908e0c71324c63ca1e3030a"
+      ],
+      "inputPresentationSha256": "868f1a3e794803f38e7de83c14d89071def26cc64d66642664f3d38317d4b9dc"
     },
     {
       "id": "2015-guwen:2",
@@ -9457,11 +9539,11 @@
     },
     {
       "id": "2016-moxie:1",
-      "inputSha256": "078eaa1aa88dfb9ac414dd97494bfd11b18d90f8ba4909130b99520a3599003c",
-      "status": "reviewed",
+      "inputSha256": "2ce442359d13949b480133b586c0e93f8db4d4d2b39a6bbcdb746cccd5884419",
+      "status": "draft",
       "kind": "open",
       "correctOptions": [],
-      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "explanation": "2016原卷题面与标记修复后的待重审输入；旧输入及模型原文保存在history，未为新输入伪造证明。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T01:38:23.281Z",
       "sources": [
@@ -9471,66 +9553,111 @@
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答",
-          "text": "①土地平旷，屋舍俨然；阡陌交通，鸡犬相闻。②楼船夜雪瓜洲渡，铁马秋风大散关。③可写：无边落木萧萧下，不尽长江滚滚来。也可写：万里悲秋常作客，百年多病独登台。第三问只需其中一联；第一问当前录文显示四个空，连同另两问共有八个空，与标示六分不完全对应，应核原卷计分设置，不据此重算历史分数。",
-          "inputSha256": "078eaa1aa88dfb9ac414dd97494bfd11b18d90f8ba4909130b99520a3599003c",
-          "generatedAt": "2026-10-03T01:38:23.281Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
-            "contextEvidence": {
-              "method": "no_annotation_v1_equivalence",
-              "originalInputSha256": "078eaa1aa88dfb9ac414dd97494bfd11b18d90f8ba4909130b99520a3599003c",
-              "originalEvidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
-              "originalAnswerSha256": "4dce6b06ebc24fa79745a523a124c0a41c3737afa86a38f8df746bb047dd46e4",
-              "contextSha256": "b1d7c621b5bf729545346696cbc6cfa75c8af550300b0e6ec3e6efba3522d3f2",
-              "sourceAnnotation": null,
-              "evidence": "answers-six-sites-20261002/no-annotation-context-proof.json"
+      "modelAnswers": {},
+      "inputContextSha256": "fc99fe6ed5d2c51341bc060e9e4b9a6bd5c3597b79367707c522030a53e89005",
+      "inputPresentationSha256": "0245502407382675e9c2c022db5e28628db8e58cecee010e0590c57bc36e90f9",
+      "history": [
+        {
+          "source": {
+            "id": "2016-moxie",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "①陆游在诗中称西村为“小桃源”，使人联想到《桃花源记》，其中有： ， ，有良田美池桑竹之属： ， 。\n\n②追忆往事，是陆游诗歌中常有的内容，如《书愤》一诗中“ ， ”一联，就是对抗金历史的回忆。\n\n③ 《西村》是一首律诗，中间两联是对仗的。杜甫《登高》中也有两联是对仗的，请写出其中一联。\n， 。"
+              }
+            ],
+            "topic": "18．在横线上填写作品原句。（6分）",
+            "annotation": null,
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "18．在横线上填写作品原句。（6分）\n①陆游在诗中称西村为“小桃源”，使人联想到《桃花源记》，其中有： ， ，有良田美池桑竹之属： ， 。\n\n②追忆往事，是陆游诗歌中常有的内容，如《书愤》一诗中“ ， ”一联，就是对抗金历史的回忆。\n\n③ 《西村》是一首律诗，中间两联是对仗的。杜甫《登高》中也有两联是对仗的，请写出其中一联。\n， 。",
+                "score": 6
+              }
+            ]
+          },
+          "review": {
+            "id": "2016-moxie:1",
+            "inputSha256": "078eaa1aa88dfb9ac414dd97494bfd11b18d90f8ba4909130b99520a3599003c",
+            "status": "reviewed",
+            "kind": "open",
+            "correctOptions": [],
+            "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T01:38:23.281Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2016北京卷原题及完整材料"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答",
+                "text": "①土地平旷，屋舍俨然；阡陌交通，鸡犬相闻。②楼船夜雪瓜洲渡，铁马秋风大散关。③可写：无边落木萧萧下，不尽长江滚滚来。也可写：万里悲秋常作客，百年多病独登台。第三问只需其中一联；第一问当前录文显示四个空，连同另两问共有八个空，与标示六分不完全对应，应核原卷计分设置，不据此重算历史分数。",
+                "inputSha256": "078eaa1aa88dfb9ac414dd97494bfd11b18d90f8ba4909130b99520a3599003c",
+                "generatedAt": "2026-10-03T01:38:23.281Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
+                  "contextEvidence": {
+                    "method": "no_annotation_v1_equivalence",
+                    "originalInputSha256": "078eaa1aa88dfb9ac414dd97494bfd11b18d90f8ba4909130b99520a3599003c",
+                    "originalEvidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
+                    "originalAnswerSha256": "4dce6b06ebc24fa79745a523a124c0a41c3737afa86a38f8df746bb047dd46e4",
+                    "contextSha256": "b1d7c621b5bf729545346696cbc6cfa75c8af550300b0e6ec3e6efba3522d3f2",
+                    "sourceAnnotation": null,
+                    "evidence": "answers-six-sites-20261002/no-annotation-context-proof.json"
+                  },
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "b1d7c621b5bf729545346696cbc6cfa75c8af550300b0e6ec3e6efba3522d3f2"
+                  }
+                },
+                "inputContextSha256": "b1d7c621b5bf729545346696cbc6cfa75c8af550300b0e6ec3e6efba3522d3f2",
+                "inputPresentationSha256": "38f8f65cbc983c3fa00b3f574d946b991dbab6ff4049b46d42d77127ad088e8d"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "①土地平旷，屋舍俨然；阡陌交通，鸡犬相闻。（陶渊明《桃花源记》）\n②楼船夜雪瓜洲渡，铁马秋风大散关。（陆游《书愤》）\n③无边落木萧萧下，不尽长江滚滚来。（杜甫《登高》）\n也可写“万里悲秋常作客，百年多病独登台”。",
+                "inputSha256": "078eaa1aa88dfb9ac414dd97494bfd11b18d90f8ba4909130b99520a3599003c",
+                "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+                "uncertainties": [
+                  "《登高》实际四联皆对仗，第③题写其中任一联均符合题意，此处以颔联为例。"
+                ],
+                "selectedOptions": [],
+                "assessment": {
+                  "note": "虽《登高》可讨论全篇对仗，题干限定中间两联，建议按颔联或颈联作答；不保证任一联都符合本题评分。"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+                  "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+                  "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+                  "stage": "independent",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "b1d7c621b5bf729545346696cbc6cfa75c8af550300b0e6ec3e6efba3522d3f2"
+                  }
+                },
+                "inputContextSha256": "b1d7c621b5bf729545346696cbc6cfa75c8af550300b0e6ec3e6efba3522d3f2",
+                "inputPresentationSha256": "38f8f65cbc983c3fa00b3f574d946b991dbab6ff4049b46d42d77127ad088e8d"
+              }
             },
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "b1d7c621b5bf729545346696cbc6cfa75c8af550300b0e6ec3e6efba3522d3f2"
-            }
-          },
-          "inputContextSha256": "b1d7c621b5bf729545346696cbc6cfa75c8af550300b0e6ec3e6efba3522d3f2",
-          "inputPresentationSha256": "38f8f65cbc983c3fa00b3f574d946b991dbab6ff4049b46d42d77127ad088e8d"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "①土地平旷，屋舍俨然；阡陌交通，鸡犬相闻。（陶渊明《桃花源记》）\n②楼船夜雪瓜洲渡，铁马秋风大散关。（陆游《书愤》）\n③无边落木萧萧下，不尽长江滚滚来。（杜甫《登高》）\n也可写“万里悲秋常作客，百年多病独登台”。",
-          "inputSha256": "078eaa1aa88dfb9ac414dd97494bfd11b18d90f8ba4909130b99520a3599003c",
-          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
-          "uncertainties": [
-            "《登高》实际四联皆对仗，第③题写其中任一联均符合题意，此处以颔联为例。"
-          ],
-          "selectedOptions": [],
-          "assessment": {
-            "note": "虽《登高》可讨论全篇对仗，题干限定中间两联，建议按颔联或颈联作答；不保证任一联都符合本题评分。"
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
-            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
-            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
-            "stage": "independent",
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "b1d7c621b5bf729545346696cbc6cfa75c8af550300b0e6ec3e6efba3522d3f2"
-            }
-          },
-          "inputContextSha256": "b1d7c621b5bf729545346696cbc6cfa75c8af550300b0e6ec3e6efba3522d3f2",
-          "inputPresentationSha256": "38f8f65cbc983c3fa00b3f574d946b991dbab6ff4049b46d42d77127ad088e8d"
+            "inputContextSha256": "b1d7c621b5bf729545346696cbc6cfa75c8af550300b0e6ec3e6efba3522d3f2",
+            "inputPresentationSha256": "38f8f65cbc983c3fa00b3f574d946b991dbab6ff4049b46d42d77127ad088e8d"
+          }
         }
-      },
-      "inputContextSha256": "b1d7c621b5bf729545346696cbc6cfa75c8af550300b0e6ec3e6efba3522d3f2",
-      "inputPresentationSha256": "38f8f65cbc983c3fa00b3f574d946b991dbab6ff4049b46d42d77127ad088e8d"
+      ]
     },
     {
       "id": "2015-moxie:1",
@@ -26709,6 +26836,31 @@
         "2017-sanwen"
       ],
       "detail": "Composite feilian5 contains originals5/6/7/8(2+2+2+6) but legacy score2; guwen5 contains13/14(3+5) but legacy3; sanwen5 contains23/24(6+3) but legacy6. Preserve IDs/history/scores, require compatible subquestion grading and full open responses."
+    },
+    {
+      "id": "2016-source-preparation-qualifications",
+      "status": "open",
+      "recordIds": [
+        "2016-feilian",
+        "2016-guwen",
+        "2016-shici",
+        "2016-moxie",
+        "2016-sanwen",
+        "2016-weixiezuo",
+        "2016-dazuowen"
+      ],
+      "detail": "Scans bear extensive handwritten circles, crosses and underlines; source-annotation exposure, not an authoritative answer key. Original exam-agency publication chain unverified. Printed material2 itself lists India among countries possessing crewed-spaceflight capability; retain exam wording, separately qualify factual accuracy before publication. Question5 first-stroke glyph is washed out. Legacy 乙 retained pending cleaner scan; exact original glyph not certified. Other faint/watermarked type incl. guwen opening reply and note2 place-name needs final cleaner-source readback. Question13/14 score labels appear4/5 and retained; do not infer3/6 from number of people. Confirm faint score glyphs against a cleaner original. Moxie has eight visible blanks but six printed points; scoring allocation unresolved. Preserve stored score6. EOL downloadable DOC repeats many legacy OCR defects and is not independent corroboration. Never override the exam scan with it. Question10 second 果 quotation occurs twice in the passage; its first identical-context occurrence is the mapped anchor. B targets 其, not 之. Predecessor accidentally emitted legacy2016model fields in an overbroad source read before any2016drafts; no new2016root or provider answers generated. Any later blind claim must describe the new answering agent actual exposure."
+    },
+    {
+      "id": "2016-composite-scores",
+      "status": "open",
+      "recordIds": [
+        "2016-feilian",
+        "2016-guwen",
+        "2016-sanwen",
+        "2016-moxie"
+      ],
+      "detail": "Preserve all legacy scores and IDs: feilian5 combines originals5/6/7/8(3+3+2+5) with stored3; guwen5 combines13/14(4+5, faint scan labels pending clean verification) with stored4; sanwen5 combines23/24(5+6) with storednull; sanwen20/21/22 have printed3/4/4 with storednull; moxie8blanks/6points allocation unverified. Compatible subquestion scoring required before release."
     }
   ]
 }
