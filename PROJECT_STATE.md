@@ -1,4 +1,8 @@
-## 2026-10-02 — Context proof checkpoint, not deployed
+## 2026-10-02 — 2022 review checkpoint, not deployed
+
+170/612 selectable units now have both actual-model v2context answers:166 reviewed/four disputed/442 uncovered.2022 adds25 previously uncovered units and two corrected-source reviews with old contexts retained. Four source records received evidenced quote/character/underline repairs. Writing review flags one Claude micro example above the150-character operational limit and unsupported details; the compliant Astra examples remain current. A newly discovered gate gap excludes rendered annotations from v2context digests; the open rendered-emphasis-integrity blocker requires verified semantic marking evidence before final qualification. See `/Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/REVIEW-2022.md`. All source blockers and release/authenticated acceptance work remain pending.
+
+## Earlier 2026-10-02 — Context proof checkpoint, not deployed
 
 Current145 selectable units all carry complete-context evidence for Astra and Claude.40 annotation-null derivations preserve original dates/text;64 root source reviews and51 Claude source reviews preserve old versions. Frozen-job prompt hash verification now precedes CLI import. Coverage remains141 reviewed/four disputed/467 uncovered. Historical source damage and2026 emphasis/layout remain explicit blockers. Report: `/Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/CONTEXT-RECONCILIATION.md`. No production or learner-data write.
 
