@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261002-reviewed-170-empty-emphasis-proof",
+  "revision": "20261002-reviewed-196-original-emphasis-2021",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -322,15 +322,15 @@
     },
     {
       "id": "2021-guwen:2",
-      "inputSha256": "74245d4b010af8fdacfd4299703d704d99e7e486547c997c840e0d535988dff4",
+      "inputSha256": "5f11774a0f65a1fc0cc56b5eff19b9e9d0cc16cf9044f7b4461d673cddd4be99",
       "status": "reviewed",
       "kind": "single_choice",
       "correctOptions": [
         "B"
       ],
-      "explanation": "独立作答与文言站结论相合；尚未取得本轮可核验的考试主管部门答案。‘以……为……’结构的内部词类口径不作排他判分依据。",
+      "explanation": "B经上下文与汉典以的动词认为义核对。者的指人结构与判断句提顿功能不同；为善可依语境解释为行善、趋善，不为上用表被动。转载解析把后一为称副词，不直接沿用其词类名称。Claude提到把义的结构分析与者/所以原因关系，只作语法体系补充，不生成另一个排他评分标准。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:03:23.208Z",
+      "reviewedAt": "2026-10-03T04:39:19.875Z",
       "sources": [
         {
           "type": "source_material",
@@ -339,90 +339,251 @@
         {
           "type": "dictionary_revision",
           "title": "文言站2026-09-16-r3语境校订"
+        },
+        {
+          "type": "public_exam_images",
+          "title": "2021北京语文原卷十页影像，全文及加点画线核对",
+          "url": "https://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/ohr/2021/09/05/151605_61346eb566495.docx"
+        },
+        {
+          "type": "dictionary",
+          "title": "汉典以：词义及句法功能；具体句法由本次语境裁定",
+          "url": "https://zdic.net/hans/%E4%BB%A5"
+        },
+        {
+          "type": "dictionary",
+          "title": "汉典者：词义及句法功能；具体句法由本次语境裁定",
+          "url": "https://zdic.net/hans/%E8%80%85"
+        },
+        {
+          "type": "dictionary",
+          "title": "汉典而：词义及句法功能；具体句法由本次语境裁定",
+          "url": "https://zdic.net/hans/%E8%80%8C"
+        },
+        {
+          "type": "dictionary",
+          "title": "汉典为：词义及句法功能；具体句法由本次语境裁定",
+          "url": "https://zdic.net/hans/%E4%B8%BA"
         }
       ],
       "currentVersion": "gpt_6_astra",
       "modelAnswers": {
         "gpt_6_astra": {
           "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 完整附注复核",
-          "text": "答案：B。两处都引出判断：认为旧礼没有补益，认为狂谲、华士使齐国民众离心懈怠。应按整句的判断意义比较，不把后一处牵强解释成‘凭借这两个人’。A项前一‘而’承接上下混乱造成的后果，后一‘而’连接表面无益和实际为有益者所依靠的反转。C项前一‘者’把以礼义为事业的人名词化；后一‘者’接在国家所以存在的依据之后，提顿以引出‘礼义也’，不指一类人，更不是定语后置标志。D项分别是做与表示被动。旧模型以‘都是代词’概括C项不成立。",
-          "inputSha256": "74245d4b010af8fdacfd4299703d704d99e7e486547c997c840e0d535988dff4",
-          "generatedAt": "2026-10-03T03:03:23.208Z",
+          "label": "GPT-6 Astra 来源复核",
+          "text": "答案：B。以旧礼为无补而去之中的以为是认为旧礼无益；以此二子解沮齐众中的以同样领起判断，意为认为这两人会瓦解、涣散齐国民众。A：上下乱而阴阳谬中的而连接相承或并列的失序状态；故事或无益，而益者须之中的而表转折，意为事情有的看似无益，然而有益者依赖它。C：此礼义为业者也中的者与前文组成指人的名词性结构，指以礼义为业的人；国之所以存者中的者提顿话题，后面礼义也作判断说明。D：人民为善的为是做；不为上用的为表被动。虚词细分类可能因语法体系有名称差别，不据此改变B这一选项判断。",
+          "inputSha256": "5f11774a0f65a1fc0cc56b5eff19b9e9d0cc16cf9044f7b4461d673cddd4be99",
+          "inputContextSha256": "3ffd27605051bad56cc0c53765cdf2b2d9c438992e4e119c2b699ec213a5f100",
+          "inputPresentationSha256": "2490cbc6171f97f5e9bf96961ed6cfbea233ff187f9ad3b1285ad4720c71238d",
+          "generatedAt": "2026-10-03T04:32:40.789Z",
           "provenance": {
             "kind": "codex_turn",
-            "stage": "source_review_reaffirmation",
-            "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
-            "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "priorAnswerSha256": "b1566be60193766d5512bd757c6d22822205454fd11c10ea640776f4a7b855e7",
-            "annotationEffect": "须是依靠、解沮是瓦解涣散，使前后论旨更明确；以此二子解沮齐众仍是认为二人使民众离心。保留B。"
+            "stage": "source_review",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2021-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2021-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
           },
-          "inputContextSha256": "2b2fcd1647419873dc954a9bf188e92f4c7454d431c3147efe6ab87585292f89"
+          "assessment": {
+            "review": "reviewed",
+            "note": "B经上下文与汉典以的动词认为义核对。者的指人结构与判断句提顿功能不同；为善可依语境解释为行善、趋善，不为上用表被动。转载解析把后一为称副词，不直接沿用其词类名称。Claude提到把义的结构分析与者/所以原因关系，只作语法体系补充，不生成另一个排他评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          }
         },
         "claude_opus_5_5": {
           "modelId": "claude-opus-5-5",
           "label": "Claude Opus 5.5 来源复核后修订",
-          "text": "答案：B。\n选B。A项：“上下乱而阴阳谬”的“而”表并列（或递进）；“故事或无益，而益者须之”的“而”表转折，不同。B项：“以旧礼为无补而去之”与“以此二子解沮齐众”的“以”都是动词“认为”（认为旧礼没有益处；认为这两人涣散齐国民众），相同。C项：“此礼义为业者也”的“者”是代词，“……的人”；“国之所以存者”的“者”用在“所以”结构后表提顿，指“……的原因”，不同。D项：“人民为善”的“为”是动词“做”；“开不为上用之路”的“为”是介词“被”，不同。",
-          "inputSha256": "74245d4b010af8fdacfd4299703d704d99e7e486547c997c840e0d535988dff4",
-          "inputContextSha256": "2b2fcd1647419873dc954a9bf188e92f4c7454d431c3147efe6ab87585292f89",
-          "generatedAt": "2026-10-03T03:01:54.821132+00:00",
+          "text": "答案：B。\n选B。A项不同：“上下乱而阴阳谬”的“而”表并列或顺承；“而益者须之”的“而”表转折，相当于“但是”。B项相同：“以旧礼为无补”是认为旧礼没有补益，“以此二子解沮齐众”是认为这两个人会瓦解齐国民众，两个“以”都是动词“认为”。C项不同：“礼义为业者”的“者”是代词，指“……的人”；“国之所以存者”的“者”与“所以”配合，指“……的原因”，并表提顿。D项不同：“人民为善”的“为”是动词“做”；“不为上用”的“为”是介词，表被动。",
+          "inputSha256": "5f11774a0f65a1fc0cc56b5eff19b9e9d0cc16cf9044f7b4461d673cddd4be99",
+          "inputContextSha256": "3ffd27605051bad56cc0c53765cdf2b2d9c438992e4e119c2b699ec213a5f100",
+          "inputPresentationSha256": "2490cbc6171f97f5e9bf96961ed6cfbea233ff187f9ad3b1285ad4720c71238d",
+          "generatedAt": "2026-10-03T04:34:18.973546+00:00",
           "uncertainties": [
-            "B项前一个“以”也可看作“以……为”结构中的“把”，但从“认为”义理解两句一致，且其余三项明显不同。"
+            "B项第一句处在“以……为……”结构中，有人把这个“以”解作“把”；但两句都表示主观认定，四组中只有B可视为相同。"
           ],
           "selectedOptions": [
             "B"
           ],
           "assessment": {
-            "matchesConclusion": true
+            "matchesConclusion": true,
+            "review": "reviewed",
+            "note": "B经上下文与汉典以的动词认为义核对。者的指人结构与判断句提顿功能不同；为善可依语境解释为行善、趋善，不为上用表被动。转载解析把后一为称副词，不直接沿用其词类名称。Claude提到把义的结构分析与者/所以原因关系，只作语法体系补充，不生成另一个排他评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
           },
           "provenance": {
             "kind": "cli_response",
             "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
-            "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
-            "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
+            "evidence": "answers-six-sites-20261002/claude-2021-reading-result.json",
+            "inputPromptSha256": "82b84ae95bfec0f845f92ef3dbe229142f96d5a9c7165adda25f0f518720444f",
+            "responseStreamSha256": "70974c1136294f7a57548bdda3ded352cc5058aa9514ac0f7d32db1a73ec8b23",
             "stage": "source_review"
           }
-        },
-        "gpt_6_astra_before_context_review": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
-          "text": "答案：B。两处都引出判断：认为旧礼没有补益，认为狂谲、华士使齐国民众离心懈怠。应按整句的判断意义比较，不把后一处牵强解释成‘凭借这两个人’。A项前一‘而’承接上下混乱造成的后果，后一‘而’连接表面无益和实际为有益者所依靠的反转。C项前一‘者’把以礼义为事业的人名词化；后一‘者’接在国家所以存在的依据之后，提顿以引出‘礼义也’，不指一类人，更不是定语后置标志。D项分别是做与表示被动。旧模型以‘都是代词’概括C项不成立。",
-          "inputSha256": "74245d4b010af8fdacfd4299703d704d99e7e486547c997c840e0d535988dff4",
-          "generatedAt": "2026-10-02T23:52:23.736Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-initial-reviews"
-          }
-        },
-        "claude_opus_5_5_initial": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答（修订前存档）",
-          "text": "答案：B。\nA项：“上下乱而阴阳谬”中，“而”是连词，表并列或顺承，上下秩序混乱，阴阳也随之错乱。“故事或无益，而益者须之”中，“而”是连词，表转折，意为“但是、然而”，指事情有的看似无益，但有益之事要依赖它。两者不同。\nB项：“以旧礼为无补而去之”中，“以……为……”意为“认为……是……”，指认为旧礼没有补益就废弃它。“以此二子解沮齐众”中，“以”也是动词，意为“认为”，指太公认为这两个人会涣散、败坏齐国民众（使民众开启不为君上所用的风气），所以诛杀了他们。两者都作动词“认为”，意义和用法相同。\nC项：“此礼义为业者也”中，“者”是代词，与前面词语组成“者”字结构，意为“……的人”，指“以礼义为业的人”。“国之所以存者”中，“者”与“所以”构成“……的原因”的结构，用于判断句主语之后表停顿，引出判断（“礼义也”）。两者不同。\nD项：“人民为善”中，“为”是动词，意为“做、行”。“开不为上用之路”中，“为”是介词，表被动，意为“被”，指开启不被君上任用的风气。两者不同。\n故选B。",
-          "inputSha256": "74245d4b010af8fdacfd4299703d704d99e7e486547c997c840e0d535988dff4",
-          "generatedAt": "2026-10-03T00:24:27.957037+00:00",
-          "uncertainties": [
-            "B项“以此二子解沮齐众”中的“以”，有人可能理解为“因为”（介词）。但结合语境与“以旧礼为无补”对照，理解为“认为”更为通顺；即便按“因为”理解，其余三项的差异仍然更为明显，B仍是最优选项。"
-          ],
-          "selectedOptions": [
-            "B"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-conflicts-01-result.json",
-            "inputPromptSha256": "2e12fd9b807bfe72958a969f6da9549adb07a12724f37771cb37153b9f29a421",
-            "responseStreamSha256": "6fbd4bfcc76892489ad3a925112b29d3746116e1ff5cc018cb71264378f90369",
-            "stage": "independent"
-          },
-          "inputContextSha256": "90ec546aa33ae83bb3a04a49216d0da2f5dccbce985adb652da28fd9994b114f"
         }
       },
-      "inputContextSha256": "2b2fcd1647419873dc954a9bf188e92f4c7454d431c3147efe6ab87585292f89"
+      "inputContextSha256": "3ffd27605051bad56cc0c53765cdf2b2d9c438992e4e119c2b699ec213a5f100",
+      "history": [
+        {
+          "source": {
+            "id": "2021-guwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "夫儒生，礼义也；耕战，饮食也。贵耕战而贱儒生，是弃礼义求饮食也。使礼义废，纲纪败，上下乱而阴阳谬，水旱失时，五谷不登，万民饥死，农不得耕，士不得战也。故以旧防为无益而去之，必有水灾；以旧礼为无补而去之，必有乱患。儒者之在世，礼义之旧防也，有之无益，无之有损。夫礼义，无成效于人，然成效者须[1]礼义而成。犹足蹈路而行，所路之路须不蹈者；身须手足而动，动者待不动者。故事或无益，而益者须之；或无效，而效者待之。儒生，耕战所须待也，弃而不存，如何？\n\n韩子非儒，谓之无益有损，盖谓俗儒无行操，举措不重礼，以儒名而俗行，以实学而伪说，贪官尊荣，故不足贵。夫志洁行显，不徇爵禄，去卿相之位若脱躧者，居位治职，功虽不立，此礼义为业者也。国之所以存者，礼义也。民无礼义，倾国危主。今儒者之操，重礼爱义，率无礼义士，激无义之人。人民为善，爱其主上，此亦有益也。闻伯夷风者，贪夫廉，懦夫有立志；闻柳下惠风者，薄夫敦，鄙夫宽。此上化也，非人所见。\n\n段干木【2】阖门不出，魏文【3】敬之，表式其闾，秦军闻之，卒不攻魏。使魏无干木，秦兵入境，境土危亡。秦，强国也，兵无不胜，兵加于魏，魏国必破，三军兵顿，流血千里。今魏文式阖门之士，却强秦之兵，全魏国之境，济三军之众，功莫大焉，赏莫先焉。\n\n齐有高节之士，曰狂谲、华士，二人昆弟也，义不降志，不仕非其主。太公封于齐，以此二子解沮【4】齐众，开不为上用之路，同时诛之。韩子善之，以为二子无益而有损也。\n\n夫狂谲、华士，段干木之类也，太公诛之，无所却到；魏文侯式之，却强秦而全魏，功孰大者？狂谲、华士之操，干木之节也，使韩子善干木阖门之节、高魏文之式是也，则善太公之诛非也。使韩子非干木之行，下魏文之式，则干木以此行而有益，魏文用式之道为有功；是韩子不赏功、尊有益也。\n\n（取材于王充《论衡·非韩》）"
+              }
+            ],
+            "topic": "二、本大题共6小题，共24分。\n阅读下面文言文，完成下面小题。",
+            "annotation": "注释：【1】须：等待，这里是依靠的意思。【2】段干木：战国时魏国隐士。【3】魏文：魏文候，战国初魏国君主。【4】解沮：瓦解、涣散。",
+            "annotations": [
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 18,
+                "end": 19,
+                "anchor": "而"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 76,
+                "end": 77,
+                "anchor": "以"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 107,
+                "end": 108,
+                "anchor": "者"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 79,
+                "end": 80,
+                "anchor": "为"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 2,
+                "id": "q2",
+                "text": "7. 下列各组语句中，加点词的意义和用法都相同的一组是（   ）\nA. 上下乱*而*阴阳谬           故事或无益，*而*益者须之\nB. *以*旧礼为无补而去之       *以*此二子解沮齐众\nC. 此礼义为业*者*也           国之所以存*者*\nD. 人民*为*善                 开不*为*上用之路",
+                "score": null
+              }
+            ]
+          },
+          "review": {
+            "id": "2021-guwen:2",
+            "inputSha256": "74245d4b010af8fdacfd4299703d704d99e7e486547c997c840e0d535988dff4",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "B"
+            ],
+            "explanation": "独立作答与文言站结论相合；尚未取得本轮可核验的考试主管部门答案。‘以……为……’结构的内部词类口径不作排他判分依据。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:03:23.208Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2021北京卷《论衡·非韩》全文及原题"
+              },
+              {
+                "type": "dictionary_revision",
+                "title": "文言站2026-09-16-r3语境校订"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "答案：B。两处都引出判断：认为旧礼没有补益，认为狂谲、华士使齐国民众离心懈怠。应按整句的判断意义比较，不把后一处牵强解释成‘凭借这两个人’。A项前一‘而’承接上下混乱造成的后果，后一‘而’连接表面无益和实际为有益者所依靠的反转。C项前一‘者’把以礼义为事业的人名词化；后一‘者’接在国家所以存在的依据之后，提顿以引出‘礼义也’，不指一类人，更不是定语后置标志。D项分别是做与表示被动。旧模型以‘都是代词’概括C项不成立。",
+                "inputSha256": "74245d4b010af8fdacfd4299703d704d99e7e486547c997c840e0d535988dff4",
+                "generatedAt": "2026-10-03T03:03:23.208Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "b1566be60193766d5512bd757c6d22822205454fd11c10ea640776f4a7b855e7",
+                  "annotationEffect": "须是依靠、解沮是瓦解涣散，使前后论旨更明确；以此二子解沮齐众仍是认为二人使民众离心。保留B。"
+                },
+                "inputContextSha256": "2b2fcd1647419873dc954a9bf188e92f4c7454d431c3147efe6ab87585292f89"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "答案：B。\n选B。A项：“上下乱而阴阳谬”的“而”表并列（或递进）；“故事或无益，而益者须之”的“而”表转折，不同。B项：“以旧礼为无补而去之”与“以此二子解沮齐众”的“以”都是动词“认为”（认为旧礼没有益处；认为这两人涣散齐国民众），相同。C项：“此礼义为业者也”的“者”是代词，“……的人”；“国之所以存者”的“者”用在“所以”结构后表提顿，指“……的原因”，不同。D项：“人民为善”的“为”是动词“做”；“开不为上用之路”的“为”是介词“被”，不同。",
+                "inputSha256": "74245d4b010af8fdacfd4299703d704d99e7e486547c997c840e0d535988dff4",
+                "inputContextSha256": "2b2fcd1647419873dc954a9bf188e92f4c7454d431c3147efe6ab87585292f89",
+                "generatedAt": "2026-10-03T03:01:54.821132+00:00",
+                "uncertainties": [
+                  "B项前一个“以”也可看作“以……为”结构中的“把”，但从“认为”义理解两句一致，且其余三项明显不同。"
+                ],
+                "selectedOptions": [
+                  "B"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
+                  "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
+                  "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
+                  "stage": "source_review"
+                }
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "答案：B。两处都引出判断：认为旧礼没有补益，认为狂谲、华士使齐国民众离心懈怠。应按整句的判断意义比较，不把后一处牵强解释成‘凭借这两个人’。A项前一‘而’承接上下混乱造成的后果，后一‘而’连接表面无益和实际为有益者所依靠的反转。C项前一‘者’把以礼义为事业的人名词化；后一‘者’接在国家所以存在的依据之后，提顿以引出‘礼义也’，不指一类人，更不是定语后置标志。D项分别是做与表示被动。旧模型以‘都是代词’概括C项不成立。",
+                "inputSha256": "74245d4b010af8fdacfd4299703d704d99e7e486547c997c840e0d535988dff4",
+                "generatedAt": "2026-10-02T23:52:23.736Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-initial-reviews"
+                }
+              },
+              "claude_opus_5_5_initial": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答（修订前存档）",
+                "text": "答案：B。\nA项：“上下乱而阴阳谬”中，“而”是连词，表并列或顺承，上下秩序混乱，阴阳也随之错乱。“故事或无益，而益者须之”中，“而”是连词，表转折，意为“但是、然而”，指事情有的看似无益，但有益之事要依赖它。两者不同。\nB项：“以旧礼为无补而去之”中，“以……为……”意为“认为……是……”，指认为旧礼没有补益就废弃它。“以此二子解沮齐众”中，“以”也是动词，意为“认为”，指太公认为这两个人会涣散、败坏齐国民众（使民众开启不为君上所用的风气），所以诛杀了他们。两者都作动词“认为”，意义和用法相同。\nC项：“此礼义为业者也”中，“者”是代词，与前面词语组成“者”字结构，意为“……的人”，指“以礼义为业的人”。“国之所以存者”中，“者”与“所以”构成“……的原因”的结构，用于判断句主语之后表停顿，引出判断（“礼义也”）。两者不同。\nD项：“人民为善”中，“为”是动词，意为“做、行”。“开不为上用之路”中，“为”是介词，表被动，意为“被”，指开启不被君上任用的风气。两者不同。\n故选B。",
+                "inputSha256": "74245d4b010af8fdacfd4299703d704d99e7e486547c997c840e0d535988dff4",
+                "generatedAt": "2026-10-03T00:24:27.957037+00:00",
+                "uncertainties": [
+                  "B项“以此二子解沮齐众”中的“以”，有人可能理解为“因为”（介词）。但结合语境与“以旧礼为无补”对照，理解为“认为”更为通顺；即便按“因为”理解，其余三项的差异仍然更为明显，B仍是最优选项。"
+                ],
+                "selectedOptions": [
+                  "B"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-conflicts-01-result.json",
+                  "inputPromptSha256": "2e12fd9b807bfe72958a969f6da9549adb07a12724f37771cb37153b9f29a421",
+                  "responseStreamSha256": "6fbd4bfcc76892489ad3a925112b29d3746116e1ff5cc018cb71264378f90369",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "90ec546aa33ae83bb3a04a49216d0da2f5dccbce985adb652da28fd9994b114f"
+              }
+            },
+            "inputContextSha256": "2b2fcd1647419873dc954a9bf188e92f4c7454d431c3147efe6ab87585292f89"
+          }
+        }
+      ],
+      "inputPresentationSha256": "2490cbc6171f97f5e9bf96961ed6cfbea233ff187f9ad3b1285ad4720c71238d"
     },
     {
       "id": "2017-guwen:2",
@@ -16158,6 +16319,1888 @@
       "reviewedAt": "2026-10-03T03:43:43.250477+00:00",
       "currentVersion": "gpt_6_astra",
       "inputPresentationSha256": "3927685e989ef935e9c036a76c9bb696117484833c6f767171c0a5d2c390069b"
+    },
+    {
+      "id": "2021-feilian:1",
+      "sources": [
+        {
+          "type": "public_exam_images",
+          "title": "2021北京语文原卷十页影像，全文及加点画线核对",
+          "url": "https://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/ohr/2021/09/05/151605_61346eb566495.docx"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：B。A把中间环节当作最终目的：机器学习通过获取规律、预测未知数据来帮助人们完成应用任务。B正确，最后构建并用于预测的函数体现从数据中获得的规律。C遗漏了构建预测函数的步骤。D相反，浅层学习中的特征提取准则一般由人设计。",
+          "inputSha256": "d4803904367c026e23733bc8cd08fd003e8e6fc70004780b7ecb2dc426738078",
+          "inputContextSha256": "db92d8c6fb8700a28df0cb6a53577abe11a3e42d0db373166bf14f35a2d1a8dc",
+          "inputPresentationSha256": "76905082c1fc5058de435f336d85a22e31949a02d7ed83054be3517ca4b12523",
+          "generatedAt": "2026-10-03T04:32:40.789Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2021-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2021-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。A项错：材料一说机器学习获取规律后还要“对未知数据进行预测，从而帮助人们完成应用任务”，找到规律不是最终目的。B项对：机器学习最后一步是“构建函数并利用它进行预测”，学到的规律正是以预测函数来表示。C项错：特征提取与转换之后，还须构建函数才能预测。D项错：浅层学习的特征是“通过人为地设计一些准则”获得的，需要人工干预。",
+          "inputSha256": "d4803904367c026e23733bc8cd08fd003e8e6fc70004780b7ecb2dc426738078",
+          "inputContextSha256": "db92d8c6fb8700a28df0cb6a53577abe11a3e42d0db373166bf14f35a2d1a8dc",
+          "inputPresentationSha256": "76905082c1fc5058de435f336d85a22e31949a02d7ed83054be3517ca4b12523",
+          "generatedAt": "2026-10-03T04:34:18.973546+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed",
+            "note": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2021-reading-result.json",
+            "inputPromptSha256": "82b84ae95bfec0f845f92ef3dbe229142f96d5a9c7165adda25f0f518720444f",
+            "responseStreamSha256": "70974c1136294f7a57548bdda3ded352cc5058aa9514ac0f7d32db1a73ec8b23",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "d4803904367c026e23733bc8cd08fd003e8e6fc70004780b7ecb2dc426738078",
+      "inputContextSha256": "db92d8c6fb8700a28df0cb6a53577abe11a3e42d0db373166bf14f35a2d1a8dc",
+      "inputPresentationSha256": "76905082c1fc5058de435f336d85a22e31949a02d7ed83054be3517ca4b12523",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T04:39:19.874Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2021-feilian:2",
+      "sources": [
+        {
+          "type": "public_exam_images",
+          "title": "2021北京语文原卷十页影像，全文及加点画线核对",
+          "url": "https://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/ohr/2021/09/05/151605_61346eb566495.docx"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：C。深度学习中各组件对结果贡献多少，正是至关重要而又难以解决的贡献度分配问题，不能说影响最大的组件不难确定。A对应自动学习有效特征以提高预测准确率；B对应深度与组件数量密切相关；D对应文末所述代表性及广泛应用。",
+          "inputSha256": "d56e253fe7b323df2b909dbb538dfd9cd5a4b5035e914411792df3bfc49ddfc4",
+          "inputContextSha256": "0345e62549b4ef2c72bf415cd889badfda78e5a641162e3cbd69f7546f047ab9",
+          "inputPresentationSha256": "4f8fb39e05696961e756b18c030d5a2240071a8ec070a4b818598c65e5008ae2",
+          "generatedAt": "2026-10-03T04:32:40.789Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2021-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2021-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。A项对：深度学习让机器自动学习有效特征，提升预测准确率。B项对：“深度”与数据处理过程的组件数量密切相关。C项错：得到输出结果时“并不清楚每个组件的贡献是多少”，贡献度分配问题“解决起来也非常困难”，所以影响最大的组件并非不难确定。D项对：文中称“以深度学习为代表的人工智能技术”，且它已广泛应用于模式识别、自然语言处理等领域。",
+          "inputSha256": "d56e253fe7b323df2b909dbb538dfd9cd5a4b5035e914411792df3bfc49ddfc4",
+          "inputContextSha256": "0345e62549b4ef2c72bf415cd889badfda78e5a641162e3cbd69f7546f047ab9",
+          "inputPresentationSha256": "4f8fb39e05696961e756b18c030d5a2240071a8ec070a4b818598c65e5008ae2",
+          "generatedAt": "2026-10-03T04:34:18.973546+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed",
+            "note": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2021-reading-result.json",
+            "inputPromptSha256": "82b84ae95bfec0f845f92ef3dbe229142f96d5a9c7165adda25f0f518720444f",
+            "responseStreamSha256": "70974c1136294f7a57548bdda3ded352cc5058aa9514ac0f7d32db1a73ec8b23",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "d56e253fe7b323df2b909dbb538dfd9cd5a4b5035e914411792df3bfc49ddfc4",
+      "inputContextSha256": "0345e62549b4ef2c72bf415cd889badfda78e5a641162e3cbd69f7546f047ab9",
+      "inputPresentationSha256": "4f8fb39e05696961e756b18c030d5a2240071a8ec070a4b818598c65e5008ae2",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T04:39:19.875Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2021-feilian:3",
+      "sources": [
+        {
+          "type": "public_exam_images",
+          "title": "2021北京语文原卷十页影像，全文及加点画线核对",
+          "url": "https://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/ohr/2021/09/05/151605_61346eb566495.docx"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：B。接收到信号并不等于立即兴奋，还要综合信号量与突触强度，信号量总和超过阈值才会兴奋。A正确，状态受到其他神经元信号及突触的影响；C对应材料对组网重要性的强调；D对应受人脑启发而构建人工神经网络。",
+          "inputSha256": "efff9b3e116f3d025095814f099fe8feda9c7c96ff7aafd4bf0cbeebf1193742",
+          "inputContextSha256": "f5bc72b4ccd4d172fb8cc5f2575c6006bfec0ef34a32d46c4f9a87da03e24d69",
+          "inputPresentationSha256": "38869c83dc1e90a8e4aaae84c13566af2570b2b1c032025b6c26a294d1d5cb71",
+          "generatedAt": "2026-10-03T04:32:40.789Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2021-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2021-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。A项对：神经元的状态取决于从其他神经元接收到的信号量以及突触的强度，不全由自身决定。B项错：只有接收到的信号量总和超过某个阈值，细胞体才会兴奋，并非一接收到电脉冲就兴奋。C项对：文中说神经元本身固然重要，但更重要的是神经元如何组成网络。D项对：人工神经网络受人脑启发而构建，是深度学习主要采用的模型。",
+          "inputSha256": "efff9b3e116f3d025095814f099fe8feda9c7c96ff7aafd4bf0cbeebf1193742",
+          "inputContextSha256": "f5bc72b4ccd4d172fb8cc5f2575c6006bfec0ef34a32d46c4f9a87da03e24d69",
+          "inputPresentationSha256": "38869c83dc1e90a8e4aaae84c13566af2570b2b1c032025b6c26a294d1d5cb71",
+          "generatedAt": "2026-10-03T04:34:18.973546+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed",
+            "note": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2021-reading-result.json",
+            "inputPromptSha256": "82b84ae95bfec0f845f92ef3dbe229142f96d5a9c7165adda25f0f518720444f",
+            "responseStreamSha256": "70974c1136294f7a57548bdda3ded352cc5058aa9514ac0f7d32db1a73ec8b23",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "efff9b3e116f3d025095814f099fe8feda9c7c96ff7aafd4bf0cbeebf1193742",
+      "inputContextSha256": "f5bc72b4ccd4d172fb8cc5f2575c6006bfec0ef34a32d46c4f9a87da03e24d69",
+      "inputPresentationSha256": "38869c83dc1e90a8e4aaae84c13566af2570b2b1c032025b6c26a294d1d5cb71",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T04:39:19.875Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2021-feilian:4",
+      "sources": [
+        {
+          "type": "public_exam_images",
+          "title": "2021北京语文原卷十页影像，全文及加点画线核对",
+          "url": "https://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/ohr/2021/09/05/151605_61346eb566495.docx"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：A。材料只说深度学习在相关领域取得重大突破、人工神经网络是其主要模型，并未说这种模型无可替代；材料二还明确提到其他模型。B对应模型层次增加带来特征处理能力和预测准确率提升，但不能扩大为层数越多必然越好。C对应突触强度可因学习或训练改变。D正确：神经网络既有多个层次以满足深度需求，又能借助算法较好地解决贡献度分配问题。",
+          "inputSha256": "f1e58d0c8bf779dc973245462a1c65a73b36e6f66405ffb1fa26a188604c2844",
+          "inputContextSha256": "02045d22ce4d134eebd4aa80fc60d11d29703973e237b41278b72bac95549a5e",
+          "inputPresentationSha256": "a42c62885cda3b0130ce615c437ac218d82429c46953ebe7c11952831f2ec5de",
+          "generatedAt": "2026-10-03T04:32:40.789Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2021-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2021-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\n选A。A项错：材料只说深度学习“大多采用”人工神经网络，同时指出也可以采用“深度信念网络”等其他模型，“无可替代”说法绝对，于文无据。B项对：模型从五至十层增加到数百层，特征提取与转换能力提高，预测准确率随之上升。C项对：突触强度可以通过学习或训练不断改变，具有可塑性。D项对：神经网络既因多层次而满足“深度”需求，又能借助相关算法较好地解决贡献度分配问题，原因不止一个。",
+          "inputSha256": "f1e58d0c8bf779dc973245462a1c65a73b36e6f66405ffb1fa26a188604c2844",
+          "inputContextSha256": "02045d22ce4d134eebd4aa80fc60d11d29703973e237b41278b72bac95549a5e",
+          "inputPresentationSha256": "a42c62885cda3b0130ce615c437ac218d82429c46953ebe7c11952831f2ec5de",
+          "generatedAt": "2026-10-03T04:34:18.973546+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed",
+            "note": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2021-reading-result.json",
+            "inputPromptSha256": "82b84ae95bfec0f845f92ef3dbe229142f96d5a9c7165adda25f0f518720444f",
+            "responseStreamSha256": "70974c1136294f7a57548bdda3ded352cc5058aa9514ac0f7d32db1a73ec8b23",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "f1e58d0c8bf779dc973245462a1c65a73b36e6f66405ffb1fa26a188604c2844",
+      "inputContextSha256": "02045d22ce4d134eebd4aa80fc60d11d29703973e237b41278b72bac95549a5e",
+      "inputPresentationSha256": "a42c62885cda3b0130ce615c437ac218d82429c46953ebe7c11952831f2ec5de",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T04:39:19.875Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2021-feilian:5",
+      "sources": [
+        {
+          "type": "public_exam_images",
+          "title": "2021北京语文原卷十页影像，全文及加点画线核对",
+          "url": "https://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/ohr/2021/09/05/151605_61346eb566495.docx"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "传统机器学习的特征提取主要依赖人为设计的准则，这种浅层学习有时难以获得有助于提高预测准确率的有效特征，因而产生了让机器自动学习有效特征的深度学习需求。人工神经网络以多层节点及连接构成模型，能满足深度要求，逐层处理数据，提高特征提取与转换能力，从而帮助构建预测更准确的函数；同时，它能借助相关算法较好地解决各组件对最终结果贡献多少的分配问题，因此成为深度学习主要采用的模型。",
+          "inputSha256": "0f9d5da0bf8755a9e3765470d004793255b9aee5682c1dc073b9936a40643336",
+          "inputContextSha256": "f730e8dbf9b1ce342e48609dd7410f6182fcdfd1390cc03c2b003ff1041cacf0",
+          "inputPresentationSha256": "06b685a5bb66356fd45cbcf5e6b3851e779077086ef367b1f43869e60981a1fa",
+          "generatedAt": "2026-10-03T04:32:40.789Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2021-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2021-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "一、深度学习“应运而生”的原因：传统机器学习（浅层学习）主要关注预测函数的构建，特征靠人为设计的准则从数据中获得，有时不能很好地得到有助于提升预测准确率的特征。因此需要一种能让机器自动从观测数据中学习有效特征、提高预测准确率的技术，深度学习由此产生。\n二、人工神经网络在深度学习中的作用：\n1. 它内部包含多个层次，正好满足深度学习对模型“深度”的需求，是实现深度学习的主要模型。\n2. 利用它构建模型（层数不断增加），能更好地进行特征提取与特征转换，从而得到预测准确率更高的函数。\n3. 它能借助相关算法较好地解决深度学习中至关重要而又很难解决的“贡献度分配”问题。",
+          "inputSha256": "0f9d5da0bf8755a9e3765470d004793255b9aee5682c1dc073b9936a40643336",
+          "inputContextSha256": "f730e8dbf9b1ce342e48609dd7410f6182fcdfd1390cc03c2b003ff1041cacf0",
+          "inputPresentationSha256": "06b685a5bb66356fd45cbcf5e6b3851e779077086ef367b1f43869e60981a1fa",
+          "generatedAt": "2026-10-03T04:34:18.973546+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed",
+            "note": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2021-reading-result.json",
+            "inputPromptSha256": "82b84ae95bfec0f845f92ef3dbe229142f96d5a9c7165adda25f0f518720444f",
+            "responseStreamSha256": "70974c1136294f7a57548bdda3ded352cc5058aa9514ac0f7d32db1a73ec8b23",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "0f9d5da0bf8755a9e3765470d004793255b9aee5682c1dc073b9936a40643336",
+      "inputContextSha256": "f730e8dbf9b1ce342e48609dd7410f6182fcdfd1390cc03c2b003ff1041cacf0",
+      "inputPresentationSha256": "06b685a5bb66356fd45cbcf5e6b3851e779077086ef367b1f43869e60981a1fa",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T04:39:19.875Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2021-guwen:1",
+      "sources": [
+        {
+          "type": "public_exam_images",
+          "title": "2021北京语文原卷十页影像，全文及加点画线核对",
+          "url": "https://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/ohr/2021/09/05/151605_61346eb566495.docx"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：C。防在旧防、水灾的语境中指堤防、堤坝，不是抽象的防备。贱为轻视、认为低贱；使表假设，可译假如；敦指敦厚，均与所在语境相合。旧堤防平时似无收益，撤去便有水灾，这一比喻用来说明礼义的隐性作用。",
+          "inputSha256": "0bfa05c920f6e603dcef5dbb43f32750599af95416f30d0df7533e8bbdd5bedf",
+          "inputContextSha256": "f878beada7102067fa37976096fdd2fa5b2c331652913fb655fd1851e08fafec",
+          "inputPresentationSha256": "cfbe04446ea19f33ce50f2f6966aa7a97ca6e454c89d390b47ee8567582df530",
+          "generatedAt": "2026-10-03T04:32:40.789Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2021-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2021-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。A项对：“贱”与“贵”相对，意动用法，意为轻视。B项对：“使”是假设连词，意为假如。C项错：“旧防”与下文“必有水灾”相应，“防”是名词，指堤防、堤坝，不是“防备”。D项对：“薄夫敦”指刻薄的人变得敦厚，“敦”即敦厚。",
+          "inputSha256": "0bfa05c920f6e603dcef5dbb43f32750599af95416f30d0df7533e8bbdd5bedf",
+          "inputContextSha256": "f878beada7102067fa37976096fdd2fa5b2c331652913fb655fd1851e08fafec",
+          "inputPresentationSha256": "cfbe04446ea19f33ce50f2f6966aa7a97ca6e454c89d390b47ee8567582df530",
+          "generatedAt": "2026-10-03T04:34:18.973546+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed",
+            "note": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2021-reading-result.json",
+            "inputPromptSha256": "82b84ae95bfec0f845f92ef3dbe229142f96d5a9c7165adda25f0f518720444f",
+            "responseStreamSha256": "70974c1136294f7a57548bdda3ded352cc5058aa9514ac0f7d32db1a73ec8b23",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "0bfa05c920f6e603dcef5dbb43f32750599af95416f30d0df7533e8bbdd5bedf",
+      "inputContextSha256": "f878beada7102067fa37976096fdd2fa5b2c331652913fb655fd1851e08fafec",
+      "inputPresentationSha256": "cfbe04446ea19f33ce50f2f6966aa7a97ca6e454c89d390b47ee8567582df530",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T04:39:19.875Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2021-guwen:3",
+      "sources": [
+        {
+          "type": "public_exam_images",
+          "title": "2021北京语文原卷十页影像，全文及加点画线核对",
+          "url": "https://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/ohr/2021/09/05/151605_61346eb566495.docx"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：B。不徇爵禄联系志洁行显、去卿相之位若脱躧，意为不追逐、贪求爵位俸禄，不因利禄而改变操守，并不是特指不为它们牺牲生命。A以儒者之名而行世俗之行，与文意相合；C此上化也指通过高洁人格潜移默化感召人的上等教化；D非和下分别为指责、贬低，式在这里指扶轼致敬。",
+          "inputSha256": "a8fbed55a15b18fa1340678d5895def12680b13dc3af4023959fe88375974285",
+          "inputContextSha256": "326ea4c3d2537849b7029165331f2dab24d7990b2471765073bf5b3c1686eb08",
+          "inputPresentationSha256": "df54d523981066dd950c0f0466652cf131bc1f0dbd785c4a12c99fd87bb6eb08",
+          "generatedAt": "2026-10-03T04:32:40.789Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2021-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2021-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。A项大体正确：指挂着儒者的名号，行为却庸俗如世俗之人。B项错：“徇”是曲从、谋求之意，“不徇爵禄”指不贪求、不屈从于爵位俸禄，与下文“去卿相之位若脱躧”相应，并无“牺牲生命”的意思。C项对：“上化”即最高的教化，“非人所见”指一般人看不到。D项对：“非”是指责、否定，“下”是贬低，“式”通“轼”，指扶轼致敬。",
+          "inputSha256": "a8fbed55a15b18fa1340678d5895def12680b13dc3af4023959fe88375974285",
+          "inputContextSha256": "326ea4c3d2537849b7029165331f2dab24d7990b2471765073bf5b3c1686eb08",
+          "inputPresentationSha256": "df54d523981066dd950c0f0466652cf131bc1f0dbd785c4a12c99fd87bb6eb08",
+          "generatedAt": "2026-10-03T04:34:18.973546+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed",
+            "note": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2021-reading-result.json",
+            "inputPromptSha256": "82b84ae95bfec0f845f92ef3dbe229142f96d5a9c7165adda25f0f518720444f",
+            "responseStreamSha256": "70974c1136294f7a57548bdda3ded352cc5058aa9514ac0f7d32db1a73ec8b23",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "a8fbed55a15b18fa1340678d5895def12680b13dc3af4023959fe88375974285",
+      "inputContextSha256": "326ea4c3d2537849b7029165331f2dab24d7990b2471765073bf5b3c1686eb08",
+      "inputPresentationSha256": "df54d523981066dd950c0f0466652cf131bc1f0dbd785c4a12c99fd87bb6eb08",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T04:39:19.875Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2021-guwen:4",
+      "sources": [
+        {
+          "type": "public_exam_images",
+          "title": "2021北京语文原卷十页影像，全文及加点画线核对",
+          "url": "https://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/ohr/2021/09/05/151605_61346eb566495.docx"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：D。作者正以狂谲、华士与段干木属于同类来质疑韩非赞同杀前两人的立场：尊重段干木使秦军退却、魏国保全，不能断言这类高节之士对国家毫无用处。A符合全篇维护儒生及礼义作用的主张；B对应功莫大焉、赏莫先焉；C对应韩子善之及以为二子无益而有损的叙述。",
+          "inputSha256": "adcf9829ab08d693cd15575991c418a481bc85515222b78a0bf1ce24e570cc33",
+          "inputContextSha256": "c0c9b66007f7a0165e9aa38e01b5f2ddafeb9901a063383c3232ebbc29b2c158",
+          "inputPresentationSha256": "c1daff250a340907aa17951ce38a88054a88cdad3837b43356f4dcf7405fe08e",
+          "generatedAt": "2026-10-03T04:32:40.789Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2021-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2021-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。A项对：韩非“谓之无益有损”，本文则认为“儒生，耕战所须待也”，不可弃。B项对：文中说魏文侯扶轼致敬，却秦兵、全魏境、济三军，“功莫大焉，赏莫先焉”。C项对：“韩子善之，以为二子无益而有损也”。D项错：本文确认为狂谲、华士与段干木同类，但目的是说明这类高节之士对保全国家大有益处（段干木使秦军不攻魏），太公杀二人才是“无所却，无所全”，选项后半句与文意相反。",
+          "inputSha256": "adcf9829ab08d693cd15575991c418a481bc85515222b78a0bf1ce24e570cc33",
+          "inputContextSha256": "c0c9b66007f7a0165e9aa38e01b5f2ddafeb9901a063383c3232ebbc29b2c158",
+          "inputPresentationSha256": "c1daff250a340907aa17951ce38a88054a88cdad3837b43356f4dcf7405fe08e",
+          "generatedAt": "2026-10-03T04:34:18.973546+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed",
+            "note": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2021-reading-result.json",
+            "inputPromptSha256": "82b84ae95bfec0f845f92ef3dbe229142f96d5a9c7165adda25f0f518720444f",
+            "responseStreamSha256": "70974c1136294f7a57548bdda3ded352cc5058aa9514ac0f7d32db1a73ec8b23",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "adcf9829ab08d693cd15575991c418a481bc85515222b78a0bf1ce24e570cc33",
+      "inputContextSha256": "c0c9b66007f7a0165e9aa38e01b5f2ddafeb9901a063383c3232ebbc29b2c158",
+      "inputPresentationSha256": "c1daff250a340907aa17951ce38a88054a88cdad3837b43356f4dcf7405fe08e",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T04:39:19.875Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2021-guwen:5",
+      "sources": [
+        {
+          "type": "public_exam_images",
+          "title": "2021北京语文原卷十页影像，全文及加点画线核对",
+          "url": "https://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/ohr/2021/09/05/151605_61346eb566495.docx"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "作者先提出看似对立的礼义与饮食、儒生与耕战，说明礼义虽不像耕战那样直接产生可见成果，却是耕战正常进行的依托；若礼义废弛、纲纪败坏，农耕和作战也会失去条件。随后用旧堤防作比：堤防平时似乎没有收益，拆去却会导致水灾，如同撤去礼义会引发乱患。又以走路和身体活动作比：脚所踩踏的路离不开周围未踩踏的部分，活动的手足也依托相对不动的躯体。最后归纳出看似无益、无效的事物可能是有效、有益事物的必要条件，说明不能仅凭直接成效而抛弃儒生和礼义。",
+          "inputSha256": "0f7b23f0b7aef4e69cbccc8c8119dff006f15fcddd2b2f41da58c0153d8659cb",
+          "inputContextSha256": "a363c4fcf3ffdc0bf84a0137e34d5f66fd87afd8d773593be57dd15e6138bd53",
+          "inputPresentationSha256": "d05fff22c9c298ff080d6ebdc05fe15b96a835ca3b11a990624c68c5e50bf500",
+          "generatedAt": "2026-10-03T04:32:40.789Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2021-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2021-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "作者从儒生（礼义）与耕战的关系入手，说明看似“无益”的东西恰是“有益”者赖以成立的条件。\n1. 从反面假设说理：重耕战而轻儒生，看似两者对立，但“使礼义废，纲纪败”，就会上下混乱、五谷不收，结果“农不得耕，士不得战”。可见耕战要依赖礼义才能进行。\n2. 用堤防类比：旧堤防平时看不出用处，拆掉就必有水灾；旧礼看似无补，废掉就必有祸乱。儒生是礼义的“旧防”，“有之无益，无之有损”。\n3. 用行路和身体作比：脚踩着路走，被踩的路又要靠没被踩到的地方来支撑；身体的活动也是这样，动的部分要依靠不动的部分。说明“动”与“不动”、“用”与“不用”相互依存。\n4. 归纳出一般道理：“事或无益，而益者须之；或无效，而效者待之。”礼义本身不直接产生功效，但有功效的事要靠它才能成功。\n由此得出结论：儒生看似无用，与耕战相对，实为耕战所依赖，二者相反相成，不可抛弃。",
+          "inputSha256": "0f7b23f0b7aef4e69cbccc8c8119dff006f15fcddd2b2f41da58c0153d8659cb",
+          "inputContextSha256": "a363c4fcf3ffdc0bf84a0137e34d5f66fd87afd8d773593be57dd15e6138bd53",
+          "inputPresentationSha256": "d05fff22c9c298ff080d6ebdc05fe15b96a835ca3b11a990624c68c5e50bf500",
+          "generatedAt": "2026-10-03T04:34:18.973546+00:00",
+          "uncertainties": [
+            "“身须手足而动，动者待不动者”一句的具体所指有不同理解，这里取“活动的部分依靠不动的部分”这一大意。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed",
+            "note": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2021-reading-result.json",
+            "inputPromptSha256": "82b84ae95bfec0f845f92ef3dbe229142f96d5a9c7165adda25f0f518720444f",
+            "responseStreamSha256": "70974c1136294f7a57548bdda3ded352cc5058aa9514ac0f7d32db1a73ec8b23",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "0f7b23f0b7aef4e69cbccc8c8119dff006f15fcddd2b2f41da58c0153d8659cb",
+      "inputContextSha256": "a363c4fcf3ffdc0bf84a0137e34d5f66fd87afd8d773593be57dd15e6138bd53",
+      "inputPresentationSha256": "d05fff22c9c298ff080d6ebdc05fe15b96a835ca3b11a990624c68c5e50bf500",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T04:39:19.875Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2021-shici:1",
+      "sources": [
+        {
+          "type": "public_exam_images",
+          "title": "2021北京语文原卷十页影像，全文及加点画线核对",
+          "url": "https://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/ohr/2021/09/05/151605_61346eb566495.docx"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：A。开篇写环绕惠州的水与海边苍山，并以无尽风景寄托有限生命，呈现对山水的欣赏与自我安顿，不能概括为幽僻苍凉；环州多白水也不是说群山环绕惠州。B用孔丘、颜渊称邻人，结合交易不欺、耕作不争，突出民风淳朴。C设想曾相对立的周公与管蔡也会希望在此安居。D写一饭、薇蕨即可满足，表现贫困中的知足。",
+          "inputSha256": "b5d98605a5a4e4aa39fd216fb319a580c2f025590de3749dd29fe0ca33801976",
+          "inputContextSha256": "b320178687de6ea2c2fd5f6baefb29ecc910d5f287164f2cc3558e214107cde6",
+          "inputPresentationSha256": "031d092e7bc2b390779acdb2cf18ee4a8a9654fecc818f9ee5050eead8d03151",
+          "generatedAt": "2026-10-03T04:32:40.789Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2021-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2021-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\n选A。A项错：前四句写惠州白水环绕、苍山连海，景色无尽，诗人愿以有限之年寄身于此，流露的是喜爱与安适，并无“幽僻而苍凉”之感；且只说群山环绕，也漏了“白水”。B项对：邻里如孔丘、颜渊，市上不二价，农人不争田，写民风淳厚。C项对：周公与管叔、蔡叔本是对立双方，诗人设想他们也恨不得在此结三间茅屋而居，极言此地之好。D项对：一饭即饱，以薇蕨佐食，生活清苦而自足。",
+          "inputSha256": "b5d98605a5a4e4aa39fd216fb319a580c2f025590de3749dd29fe0ca33801976",
+          "inputContextSha256": "b320178687de6ea2c2fd5f6baefb29ecc910d5f287164f2cc3558e214107cde6",
+          "inputPresentationSha256": "031d092e7bc2b390779acdb2cf18ee4a8a9654fecc818f9ee5050eead8d03151",
+          "generatedAt": "2026-10-03T04:34:18.973546+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed",
+            "note": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2021-reading-result.json",
+            "inputPromptSha256": "82b84ae95bfec0f845f92ef3dbe229142f96d5a9c7165adda25f0f518720444f",
+            "responseStreamSha256": "70974c1136294f7a57548bdda3ded352cc5058aa9514ac0f7d32db1a73ec8b23",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "b5d98605a5a4e4aa39fd216fb319a580c2f025590de3749dd29fe0ca33801976",
+      "inputContextSha256": "b320178687de6ea2c2fd5f6baefb29ecc910d5f287164f2cc3558e214107cde6",
+      "inputPresentationSha256": "031d092e7bc2b390779acdb2cf18ee4a8a9654fecc818f9ee5050eead8d03151",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T04:39:19.875Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2021-shici:2",
+      "sources": [
+        {
+          "type": "public_exam_images",
+          "title": "2021北京语文原卷十页影像，全文及加点画线核对",
+          "url": "https://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/ohr/2021/09/05/151605_61346eb566495.docx"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：D。诗中日常生活的质朴语言包含安贫自适、民风淳厚及典故哲理，符合质而实绮。A忽略苏轼是被贬惠州而非像陶渊明一样主动归隐。B诗中没有具体表达自己躬耕劳作的热爱，不可因和陶诗而移入陶诗内容。C不论陶诗还是这首和诗，都不能说除末句外通篇对仗。",
+          "inputSha256": "4905f533789a8f17580293bbb81c8eabfbc8a078b01054e0c9018d5e1b89e614",
+          "inputContextSha256": "965fb8fbfc75fa09fc50768081b2b6ae5e9492e16f6c4f442ed5e2295a147b23",
+          "inputPresentationSha256": "0e0617b349be02100ec30e0fb7de1be08d4b75c5428d4e9bb2170ca99587bccf",
+          "generatedAt": "2026-10-03T04:32:40.789Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2021-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2021-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "D正确。否定通篇对仗即可；Claude对少无适俗韵、性本爱丘山这一个联语的绝对断言不作为评分依据，对仗宽严另需辨析。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。A项错：陶渊明是主动辞官归隐，苏轼则是被贬惠州，并非归隐田园。B项错：诗中写的是当地风物人情和自己随遇而安的生活，没有写劳作，也谈不上对劳作的热爱。C项错：陶诗原作并非除末句外通篇对仗（如开头“少无适俗韵，性本爱丘山”即不对仗），苏轼这首也有不少散句。D项对：全诗语言平易如话，却包含对人生、物我关系的思考，合乎苏轼评陶诗的“质而实绮”。",
+          "inputSha256": "4905f533789a8f17580293bbb81c8eabfbc8a078b01054e0c9018d5e1b89e614",
+          "inputContextSha256": "965fb8fbfc75fa09fc50768081b2b6ae5e9492e16f6c4f442ed5e2295a147b23",
+          "inputPresentationSha256": "0e0617b349be02100ec30e0fb7de1be08d4b75c5428d4e9bb2170ca99587bccf",
+          "generatedAt": "2026-10-03T04:34:18.973546+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed",
+            "note": "D正确。否定通篇对仗即可；Claude对少无适俗韵、性本爱丘山这一个联语的绝对断言不作为评分依据，对仗宽严另需辨析。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2021-reading-result.json",
+            "inputPromptSha256": "82b84ae95bfec0f845f92ef3dbe229142f96d5a9c7165adda25f0f518720444f",
+            "responseStreamSha256": "70974c1136294f7a57548bdda3ded352cc5058aa9514ac0f7d32db1a73ec8b23",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "4905f533789a8f17580293bbb81c8eabfbc8a078b01054e0c9018d5e1b89e614",
+      "inputContextSha256": "965fb8fbfc75fa09fc50768081b2b6ae5e9492e16f6c4f442ed5e2295a147b23",
+      "inputPresentationSha256": "0e0617b349be02100ec30e0fb7de1be08d4b75c5428d4e9bb2170ca99587bccf",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "D正确。否定通篇对仗即可；Claude对少无适俗韵、性本爱丘山这一个联语的绝对断言不作为评分依据，对仗宽严另需辨析。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T04:39:19.875Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2021-shici:3",
+      "sources": [
+        {
+          "type": "public_exam_images",
+          "title": "2021北京语文原卷十页影像，全文及加点画线核对",
+          "url": "https://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/ohr/2021/09/05/151605_61346eb566495.docx"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 复核修订",
+          "text": "前两句由“我适”写到“物自闲”：禽鱼并不懂人的处世之道，是诗人内心安适，因而感受到万物的闲适，表现心境与观物感受相通、人与自然相融相亲的道理。后两句以“未必尔”承认自己所感与外界未必完全一致，而仍“乐我所然”，说明不必强求外在人事、境遇尽合心意，可以保持超然、自适的心境而自得其乐。联系被贬惠州、生活清苦的处境，体现了随遇而安、知足自得的态度。\n“悠悠”的具体所指有不同释读，初答的众人说和公开解析的外物说都不应被设置为排他的字词评分点；以上按全诗及四句共同支持的哲理作答。",
+          "inputSha256": "1ed5746eb30f9314bd33a98eafac6013e90d4d2a01d3322ef589528e9299270e",
+          "inputContextSha256": "5c95801b2b1452aaa726cbf3183703b1e62c8731efaea30f86aabac00d6376f7",
+          "inputPresentationSha256": "6bb8aef3a2584a963a8882f25032e48ab71eb5c3ea69f5a7ea371f436ca01908",
+          "generatedAt": "2026-10-03T04:39:19.875Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "adjudicated_revision",
+            "evidence": "answers-six-sites-20261002/adjudicate_2021.mjs",
+            "inputEvidence": "answers-six-sites-20261002/claude-2021-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "两模型初答均将悠悠直接释为众人；公开解析另取外物说。未找到足以排他裁定的权威注本，因此当前root修订为有诗句依据的共同核心：心境安适、物我相亲、不苛求外境而自得。众人/外物/未来的具体训释保留为不同解释，不作唯一命中点；Claude原有不确定性及root原文保留。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "最后四句的意思是：禽鸟游鱼哪里懂得什么道理，只是我自己心中安适，眼里的万物也就显得悠闲自在；世上众人未必都这样看、这样活，我姑且以自己认为对的方式自得其乐。\n其中的道理有两层：\n1. 外物是否闲适，取决于人的心境。禽鱼本无知，是“我适”才有“物自闲”。只要内心安适旷达，即使身处贬所、生活困顿，眼中的世界也是美好的。\n2. 人生的快乐在于自适，不必求同于世俗，也不必在意他人的眼光。别人“未必尔”，我仍“乐我所然”，体现了随遇而安、坚守自我的人生态度。",
+          "inputSha256": "1ed5746eb30f9314bd33a98eafac6013e90d4d2a01d3322ef589528e9299270e",
+          "inputContextSha256": "5c95801b2b1452aaa726cbf3183703b1e62c8731efaea30f86aabac00d6376f7",
+          "inputPresentationSha256": "6bb8aef3a2584a963a8882f25032e48ab71eb5c3ea69f5a7ea371f436ca01908",
+          "generatedAt": "2026-10-03T04:34:18.973546+00:00",
+          "uncertainties": [
+            "“悠悠未必尔”的“悠悠”这里取“世上众人”之意；也有解作“悠远之事、未来未必如此”的，但都落脚于姑且自乐、随遇而安。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed",
+            "note": "两模型初答均将悠悠直接释为众人；公开解析另取外物说。未找到足以排他裁定的权威注本，因此当前root修订为有诗句依据的共同核心：心境安适、物我相亲、不苛求外境而自得。众人/外物/未来的具体训释保留为不同解释，不作唯一命中点；Claude原有不确定性及root原文保留。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2021-reading-result.json",
+            "inputPromptSha256": "82b84ae95bfec0f845f92ef3dbe229142f96d5a9c7165adda25f0f518720444f",
+            "responseStreamSha256": "70974c1136294f7a57548bdda3ded352cc5058aa9514ac0f7d32db1a73ec8b23",
+            "stage": "independent"
+          }
+        },
+        "gpt_6_astra_initial": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 初答（释读复核前存档）",
+          "text": "禽鱼并不知道人的处世之道，是诗人自身心境安适，才觉得周围万物也悠闲自在，说明人对外物的感受与自己的心境相通。悠悠未必尔承认旁人未必都这样想，聊乐我所然则表示仍愿意享受自己认可、适合自己的生活。联系被贬而安于一饭、山水和淳朴人情的处境，可见生活之乐不全由外在境遇或他人评价决定；保持适性、知足、自得的态度，也能在困顿中获得精神安顿。",
+          "inputSha256": "1ed5746eb30f9314bd33a98eafac6013e90d4d2a01d3322ef589528e9299270e",
+          "inputContextSha256": "5c95801b2b1452aaa726cbf3183703b1e62c8731efaea30f86aabac00d6376f7",
+          "inputPresentationSha256": "6bb8aef3a2584a963a8882f25032e48ab71eb5c3ea69f5a7ea371f436ca01908",
+          "generatedAt": "2026-10-03T04:32:40.789Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2021-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2021-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "两模型初答均将悠悠直接释为众人；公开解析另取外物说。未找到足以排他裁定的权威注本，因此当前root修订为有诗句依据的共同核心：心境安适、物我相亲、不苛求外境而自得。众人/外物/未来的具体训释保留为不同解释，不作唯一命中点；Claude原有不确定性及root原文保留。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          }
+        }
+      },
+      "inputSha256": "1ed5746eb30f9314bd33a98eafac6013e90d4d2a01d3322ef589528e9299270e",
+      "inputContextSha256": "5c95801b2b1452aaa726cbf3183703b1e62c8731efaea30f86aabac00d6376f7",
+      "inputPresentationSha256": "6bb8aef3a2584a963a8882f25032e48ab71eb5c3ea69f5a7ea371f436ca01908",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型初答均将悠悠直接释为众人；公开解析另取外物说。未找到足以排他裁定的权威注本，因此当前root修订为有诗句依据的共同核心：心境安适、物我相亲、不苛求外境而自得。众人/外物/未来的具体训释保留为不同解释，不作唯一命中点；Claude原有不确定性及root原文保留。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T04:39:19.875Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2021-lunyu:1",
+      "sources": [
+        {
+          "type": "public_exam_images",
+          "title": "2021北京语文原卷十页影像，全文及加点画线核对",
+          "url": "https://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/ohr/2021/09/05/151605_61346eb566495.docx"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "道德品质要通过学习获得知识、明辨是非并懂得恰当的践行方式；只凭好心或性情而不好学，原本的美德可能走向偏失。例如好仁不好学，虽愿意关爱别人，却缺乏判断，可能不分善恶、轻信或姑息，流于愚昧，反而帮倒忙。好勇不好学，虽敢作敢为，却不懂礼义和行动的分寸，容易逞强生事、扰乱秩序。学习使仁爱和勇敢有正确方向和尺度，因此与道德修养不可分。",
+          "inputSha256": "228958c19d0711bcf798466e559221d29074f52a88daf3cf3c33343aad3db392",
+          "inputContextSha256": "b505ef17f63786bfe5077500f5e2434bdd3d55d64530f20a9ac80cdc68a25397",
+          "inputPresentationSha256": "a49c55b1d286ed7ff3a6d9272ef22534e694ecbb1d4f5e406714013693f4b6df",
+          "generatedAt": "2026-10-03T04:32:40.789Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2021-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2021-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "题目要求任选两个；root明确选仁与勇，Claude在完成两例后另附直的备选，属于讲解，不要求实际答卷多写第三例。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "一、为什么把学习与道德修养联系在一起：孔子认为仁、知、信、直、勇、刚本身都是美德，但若只是爱好它们而不学习，就不能明白事理、懂得礼的节制，也把握不好分寸，美德会走向偏颇，产生弊病。学习是道德修养的基础和保证，只有通过学习，德行才能恰当适度，真正成为美德。\n二、任选两个解释：\n1. “好仁不好学，其蔽也愚”：只爱好仁德而不爱学习，就分不清是非善恶，容易对谁都一味讲仁爱，结果被人愚弄，显得愚蠢。\n2. “好勇不好学，其蔽也乱”：只崇尚勇敢而不爱学习，就不懂得勇要合乎礼义，容易逞强蛮干，闯祸作乱。\n（另如“好直不好学，其蔽也绞”：只爱直率而不学习，说话就会尖刻伤人，不近人情。）",
+          "inputSha256": "228958c19d0711bcf798466e559221d29074f52a88daf3cf3c33343aad3db392",
+          "inputContextSha256": "b505ef17f63786bfe5077500f5e2434bdd3d55d64530f20a9ac80cdc68a25397",
+          "inputPresentationSha256": "a49c55b1d286ed7ff3a6d9272ef22534e694ecbb1d4f5e406714013693f4b6df",
+          "generatedAt": "2026-10-03T04:34:18.973546+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed",
+            "note": "题目要求任选两个；root明确选仁与勇，Claude在完成两例后另附直的备选，属于讲解，不要求实际答卷多写第三例。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2021-reading-result.json",
+            "inputPromptSha256": "82b84ae95bfec0f845f92ef3dbe229142f96d5a9c7165adda25f0f518720444f",
+            "responseStreamSha256": "70974c1136294f7a57548bdda3ded352cc5058aa9514ac0f7d32db1a73ec8b23",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "228958c19d0711bcf798466e559221d29074f52a88daf3cf3c33343aad3db392",
+      "inputContextSha256": "b505ef17f63786bfe5077500f5e2434bdd3d55d64530f20a9ac80cdc68a25397",
+      "inputPresentationSha256": "a49c55b1d286ed7ff3a6d9272ef22534e694ecbb1d4f5e406714013693f4b6df",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "题目要求任选两个；root明确选仁与勇，Claude在完成两例后另附直的备选，属于讲解，不要求实际答卷多写第三例。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T04:39:19.875Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2021-honglou:1",
+      "sources": [
+        {
+          "type": "public_exam_images",
+          "title": "2021北京语文原卷十页影像，全文及加点画线核对",
+          "url": "https://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/ohr/2021/09/05/151605_61346eb566495.docx"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "指贾元春进封贤德妃。元春获封及后来的省亲使贾府声势显赫、繁华达到高峰；不能把建造大观园或普通家宴当作此处非常喜事本身。",
+          "inputSha256": "44fa040ce5363ac5de89e1af7dc1aa0e02b37c946b105d3442b0cf837c93f84b",
+          "inputContextSha256": "b6e8077611be8a2618cb35e7b65e5a1659c2abddf5888fb3143e6c6db0f7f66f",
+          "inputPresentationSha256": "a758535cae1981c8680f424a079826d16938a06cac08089da8a5fdf89d2f8613",
+          "generatedAt": "2026-10-03T04:32:40.789Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2021-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2021-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "“非常喜事”指贾元春才选凤藻宫，加封贤德妃，随后贾府修建大观园迎接元妃省亲，这是贾府盛极一时的顶点。",
+          "inputSha256": "44fa040ce5363ac5de89e1af7dc1aa0e02b37c946b105d3442b0cf837c93f84b",
+          "inputContextSha256": "b6e8077611be8a2618cb35e7b65e5a1659c2abddf5888fb3143e6c6db0f7f66f",
+          "inputPresentationSha256": "a758535cae1981c8680f424a079826d16938a06cac08089da8a5fdf89d2f8613",
+          "generatedAt": "2026-10-03T04:34:18.973546+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed",
+            "note": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2021-reading-result.json",
+            "inputPromptSha256": "82b84ae95bfec0f845f92ef3dbe229142f96d5a9c7165adda25f0f518720444f",
+            "responseStreamSha256": "70974c1136294f7a57548bdda3ded352cc5058aa9514ac0f7d32db1a73ec8b23",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "44fa040ce5363ac5de89e1af7dc1aa0e02b37c946b105d3442b0cf837c93f84b",
+      "inputContextSha256": "b6e8077611be8a2618cb35e7b65e5a1659c2abddf5888fb3143e6c6db0f7f66f",
+      "inputPresentationSha256": "a758535cae1981c8680f424a079826d16938a06cac08089da8a5fdf89d2f8613",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T04:39:19.875Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2021-honglou:2",
+      "sources": [
+        {
+          "type": "public_exam_images",
+          "title": "2021北京语文原卷十页影像，全文及加点画线核对",
+          "url": "https://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/ohr/2021/09/05/151605_61346eb566495.docx"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "画线部分用盛筵必散、诸芳尽、各寻各门预示贾府繁盛不能长久，家族将衰败，园中人物也将凋零离散，为后文命运发展埋下伏笔。元春省亲的极盛与后来家道衰落构成照应；迎春出嫁后受虐、探春远嫁、惜春出家等情节分别呈现众芳离散。若以通行一百二十回本说明，后四十回中的贾府抄家、黛玉去世及宝玉出家，也与盛筵必散、各寻各门相呼应。三春可以讨论时间或人物的多重暗示，不必把某一种拆字解说设为唯一答案。",
+          "inputSha256": "0fd2ae75abae99e76105a830b7e4eaa06d8fa24e51a3bd9d03c85ddcc8088330",
+          "inputContextSha256": "73fc8b5afe20b3fb92a66bb29bba5bee7d537c89806ef1973faf90aeedb4c756",
+          "inputPresentationSha256": "3aa68e5271281cde2eb02dd5d5533b276386b1f74e6ef4ccc271b4c8017d10fa",
+          "generatedAt": "2026-10-03T04:32:40.789Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2021-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2021-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "完整画线远长于原站末两句，应兼及盛极而衰和群芳离散。通行120回本后40回结局须标明版本；三春的具体拆解存在争议，不能排他评分。Claude的元春薨逝、抄家因果链可作通行本情节背景，不将每项举例设为必答。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "画线部分是对后续情节的预示（伏笔、谶语），暗示贾府的繁华只是一时，终将由盛转衰，众女子也将风流云散、各寻归宿。\n举例说明：\n1. “瞬息的繁华”“盛筵必散”：元春封妃、省亲使贾府达到“烈火烹油、鲜花着锦”的极盛，但修建大观园耗费巨大，此后内囊渐空；后来元春薨逝，贾府失去靠山，终被抄家，落得“树倒猢狲散”。\n2. “三春去后诸芳尽，各自须寻各自门”：“三春”可指元春、迎春、探春，元春早逝，迎春嫁给孙绍祖被折磨而死，探春远嫁；此后惜春出家为尼，黛玉泪尽而逝，宝钗独守空闺，湘云等人也各自飘零，大观园的女儿们死的死、散的散。\n秦可卿的托梦既预告了家族的败落，也预告了群芳的悲剧命运，与后文一一照应。",
+          "inputSha256": "0fd2ae75abae99e76105a830b7e4eaa06d8fa24e51a3bd9d03c85ddcc8088330",
+          "inputContextSha256": "73fc8b5afe20b3fb92a66bb29bba5bee7d537c89806ef1973faf90aeedb4c756",
+          "inputPresentationSha256": "3aa68e5271281cde2eb02dd5d5533b276386b1f74e6ef4ccc271b4c8017d10fa",
+          "generatedAt": "2026-10-03T04:34:18.973546+00:00",
+          "uncertainties": [
+            "“三春”的具体所指历来有不同说法（或指元、迎、探三人，或指三个春天），这里按常见理解作答；所举结局部分依据通行本后四十回。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed",
+            "note": "完整画线远长于原站末两句，应兼及盛极而衰和群芳离散。通行120回本后40回结局须标明版本；三春的具体拆解存在争议，不能排他评分。Claude的元春薨逝、抄家因果链可作通行本情节背景，不将每项举例设为必答。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2021-reading-result.json",
+            "inputPromptSha256": "82b84ae95bfec0f845f92ef3dbe229142f96d5a9c7165adda25f0f518720444f",
+            "responseStreamSha256": "70974c1136294f7a57548bdda3ded352cc5058aa9514ac0f7d32db1a73ec8b23",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "0fd2ae75abae99e76105a830b7e4eaa06d8fa24e51a3bd9d03c85ddcc8088330",
+      "inputContextSha256": "73fc8b5afe20b3fb92a66bb29bba5bee7d537c89806ef1973faf90aeedb4c756",
+      "inputPresentationSha256": "3aa68e5271281cde2eb02dd5d5533b276386b1f74e6ef4ccc271b4c8017d10fa",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "完整画线远长于原站末两句，应兼及盛极而衰和群芳离散。通行120回本后40回结局须标明版本；三春的具体拆解存在争议，不能排他评分。Claude的元春薨逝、抄家因果链可作通行本情节背景，不将每项举例设为必答。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T04:39:19.875Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2021-sanwen:1",
+      "sources": [
+        {
+          "type": "public_exam_images",
+          "title": "2021北京语文原卷十页影像，全文及加点画线核对",
+          "url": "https://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/ohr/2021/09/05/151605_61346eb566495.docx"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：C。峻拔在管声如飞鸟冲向高峰的语境中形容声音高亢、挺拔而有力度，不是尖而细。A深奥指父亲体腔及其中流出的音乐所带来的深邃神秘感；B吐诉是内心情感的吐露倾诉；D融和指原先杂乱的环境和声音在演奏中形成和谐。",
+          "inputSha256": "bcfbba144f6360cec96196ec13d90a9cc63a8f4cc73a32985e7ab72dd0b64477",
+          "inputContextSha256": "948b56d6fee4d3af4b9d80616fa6aaa90143118fb1150267fffc34a951f1d185",
+          "inputPresentationSha256": "abf7ba6b66b725b25bd3098db02087e5de7407a18144f13c3b7defeb4c6c5612",
+          "generatedAt": "2026-10-03T04:32:40.789Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2021-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2021-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。A项对：箫声仿佛从父亲体腔深处流出，下文又说“箫声是很神秘的”，“深奥”有深邃神秘之意。B项对：“吐诉”即吐露、倾诉内心情感。C项错：文中管子的声音与笙的“浑圆”相对，像飞鸟向“高高的顶峰飞跃”“高入云霄”，“峻拔”应指高亢、挺拔有力，不是“尖而细”。D项对：演奏起来后混乱的场面变得协调一致，“融和”即和谐。",
+          "inputSha256": "bcfbba144f6360cec96196ec13d90a9cc63a8f4cc73a32985e7ab72dd0b64477",
+          "inputContextSha256": "948b56d6fee4d3af4b9d80616fa6aaa90143118fb1150267fffc34a951f1d185",
+          "inputPresentationSha256": "abf7ba6b66b725b25bd3098db02087e5de7407a18144f13c3b7defeb4c6c5612",
+          "generatedAt": "2026-10-03T04:34:18.973546+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed",
+            "note": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2021-reading-result.json",
+            "inputPromptSha256": "82b84ae95bfec0f845f92ef3dbe229142f96d5a9c7165adda25f0f518720444f",
+            "responseStreamSha256": "70974c1136294f7a57548bdda3ded352cc5058aa9514ac0f7d32db1a73ec8b23",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "bcfbba144f6360cec96196ec13d90a9cc63a8f4cc73a32985e7ab72dd0b64477",
+      "inputContextSha256": "948b56d6fee4d3af4b9d80616fa6aaa90143118fb1150267fffc34a951f1d185",
+      "inputPresentationSha256": "abf7ba6b66b725b25bd3098db02087e5de7407a18144f13c3b7defeb4c6c5612",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T04:39:19.875Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2021-sanwen:2",
+      "sources": [
+        {
+          "type": "public_exam_images",
+          "title": "2021北京语文原卷十页影像，全文及加点画线核对",
+          "url": "https://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/ohr/2021/09/05/151605_61346eb566495.docx"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：B。原文先介绍管子的材质、重量，随后写演奏的力度、技巧和音节控制，并未说因为硬木沉重才难以控制音高强弱，这一因果关系是强加的。A对应乐器与父亲生命形成整体；C符合多处黄昏音乐记忆及全文的苍凉情调；D对应合奏让饱受苦难的人们在精神上越过寒冬与苦难的比喻。",
+          "inputSha256": "fc032e8921d6b4dac8abb27a5cab2f158bf5f74dae95360cee603ee27acaad67",
+          "inputContextSha256": "69084a8940a8cdc951a2451f0d82f626fa5e9a4dd79eeb1d46ca2a618d39ed0f",
+          "inputPresentationSha256": "6de5df7f6529cf2a61ff9d3ab3e5f7c3f502dc9bdf944ddc3b6b9b76df671d20",
+          "generatedAt": "2026-10-03T04:32:40.789Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2021-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2021-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。A项对：父亲强调要“摸透每个笙管的个性”，他吹笙时“笙跟他的生命就形成了一个活生生的整体”。B项错：文中说管子硬木制作、握着沉重，又说吹奏时高低强弱很难控制，二者并无因果关系；难控制是因为吹奏要聚气上冲，稍一松懈就会失误，选项强加因果。C项对：父亲吹箫、“自乐班”演奏、“我”学吹笙都在黄昏，烘托出苍凉的氛围。D项对：“他们的心像雁群一般飞越过寒冷的冬天，飞越过苦难的人生”，以比喻写出音乐超越苦难的力量。",
+          "inputSha256": "fc032e8921d6b4dac8abb27a5cab2f158bf5f74dae95360cee603ee27acaad67",
+          "inputContextSha256": "69084a8940a8cdc951a2451f0d82f626fa5e9a4dd79eeb1d46ca2a618d39ed0f",
+          "inputPresentationSha256": "6de5df7f6529cf2a61ff9d3ab3e5f7c3f502dc9bdf944ddc3b6b9b76df671d20",
+          "generatedAt": "2026-10-03T04:34:18.973546+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed",
+            "note": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2021-reading-result.json",
+            "inputPromptSha256": "82b84ae95bfec0f845f92ef3dbe229142f96d5a9c7165adda25f0f518720444f",
+            "responseStreamSha256": "70974c1136294f7a57548bdda3ded352cc5058aa9514ac0f7d32db1a73ec8b23",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "fc032e8921d6b4dac8abb27a5cab2f158bf5f74dae95360cee603ee27acaad67",
+      "inputContextSha256": "69084a8940a8cdc951a2451f0d82f626fa5e9a4dd79eeb1d46ca2a618d39ed0f",
+      "inputPresentationSha256": "6de5df7f6529cf2a61ff9d3ab3e5f7c3f502dc9bdf944ddc3b6b9b76df671d20",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T04:39:19.875Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2021-sanwen:3",
+      "sources": [
+        {
+          "type": "public_exam_images",
+          "title": "2021北京语文原卷十页影像，全文及加点画线核对",
+          "url": "https://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/ohr/2021/09/05/151605_61346eb566495.docx"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "童年最初，作者受到乡土响器和歌声真实、沉重而苍凉的感染，美好的声音如种子扎根心中。听父亲独自吹箫时，他进一步感到音乐能显露人的内心，连接心灵与遥远世界。跟父亲学吹笙后，他从亲身演奏中懂得音调与呼吸须自然协调，节奏能调动、凝聚感情，每个音节都是整体的一部分，也懂得对艺术要虔诚、用心。观察吹管及乡村自乐班合奏，又认识到曲谱之外，演奏者的心境情绪和周围环境不可分，音乐能安慰心灵、使人超越苦难。最后回忆深夜驼铃，将音乐理解为生命跋涉的坚毅节奏，并认识到童年的乡土音乐塑造了自己终身的情感气质和诗歌。",
+          "inputSha256": "3f5573adad96caebe7fae7534dabfc6e2e31d705cdf97d935d6857f2ba4a5bbe",
+          "inputContextSha256": "9159e23201b7b8dedb443446f1d41ad2029fdcc4b176a7e909451bed5873570b",
+          "inputPresentationSha256": "e67107050a350cab8b54e6f6873f87df2897bc68534c03aaf4a286fcb48bd4ce",
+          "generatedAt": "2026-10-03T04:32:40.789Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2021-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2021-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "作者对音乐的理解由感性到理性、由浅入深，大致经历了以下过程：\n1. 听父亲吹箫，初步感受音乐。近十岁时在房顶听父亲吹箫，他不是“听见”而是“感觉到”箫声，体会到父亲的孤独哀伤，觉得音乐神秘，是接通心灵与遥远世界的通道。\n2. 跟父亲学吹笙，理解节奏并体会到音乐的庄重。父亲教他音调要像呼吸那样自然，要摸透每个笙管的个性；他由此懂得心灵的吐诉需要节奏，每个音节都不可或缺。吹奏前净手净脸、端坐对吹，又让他明白音乐需要虔诚的心境，演奏者与乐器应融为一体。\n3. 看父亲吹管子，认识到音乐需要全身心投入。管子声音峻拔，稍一松懈乐曲就会“粉身碎骨”，演奏是倾尽生命力量的事。\n4. 听“自乐班”合奏，认识到音乐与人的心境、情绪和环境不可分。受够了苦的人们在苍凉的曲调中忘掉一切，音乐能融和杂乱，帮助人飞越苦难的人生。\n5. 回想驼铃声，把音乐理解为“生命的音乐”。那沉缓而坚毅的节奏，就是长途跋涉的生命本身的节奏。\n6. 最后上升到对乡土音乐的整体认识：童年的音乐熏陶使他迷恋乡土音乐，形成深入骨髓的乡土气，并影响了他诗歌的气质。",
+          "inputSha256": "3f5573adad96caebe7fae7534dabfc6e2e31d705cdf97d935d6857f2ba4a5bbe",
+          "inputContextSha256": "9159e23201b7b8dedb443446f1d41ad2029fdcc4b176a7e909451bed5873570b",
+          "inputPresentationSha256": "e67107050a350cab8b54e6f6873f87df2897bc68534c03aaf4a286fcb48bd4ce",
+          "generatedAt": "2026-10-03T04:34:18.973546+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed",
+            "note": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2021-reading-result.json",
+            "inputPromptSha256": "82b84ae95bfec0f845f92ef3dbe229142f96d5a9c7165adda25f0f518720444f",
+            "responseStreamSha256": "70974c1136294f7a57548bdda3ded352cc5058aa9514ac0f7d32db1a73ec8b23",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "3f5573adad96caebe7fae7534dabfc6e2e31d705cdf97d935d6857f2ba4a5bbe",
+      "inputContextSha256": "9159e23201b7b8dedb443446f1d41ad2029fdcc4b176a7e909451bed5873570b",
+      "inputPresentationSha256": "e67107050a350cab8b54e6f6873f87df2897bc68534c03aaf4a286fcb48bd4ce",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "原卷全文及精确呈现下，两模型独立答案经逐题内容核对；与公开转载解析交叉比较，不将模型或转载解析称为官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T04:39:19.875Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2021-sanwen:4",
+      "sources": [
+        {
+          "type": "public_exam_images",
+          "title": "2021北京语文原卷十页影像，全文及加点画线核对",
+          "url": "https://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/ohr/2021/09/05/151605_61346eb566495.docx"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "一是演奏层面，吹奏要像呼吸一样自然，呼吸跟随曲调的命脉，使人与乐器融为整体。二是情感层面，音乐仿佛心灵的气管，借声音与节奏把内心的孤独、哀伤、振奋等感受吐露出来，沟通人的心灵与外部世界。三是精神层面，父子郑重演奏、乡人合奏都使人进入精神境界，获得慰藉和暂时超越苦难的力量，如同生命获得呼吸。四是创作层面，乡土音乐植入作者生命，影响了诗的气质；写诗也像寻找一管能接通遥远世界的箫，是让心灵表达和舒展的方式。",
+          "inputSha256": "b6b3ac92389ae03a7ca63630a1f1d2f517930aaf2b83bee1ddeaed5cdf231bc9",
+          "inputContextSha256": "5f462a8ba940580c5940ed3a09da0420e883489666a2c704cbde15a7f4cf226b",
+          "inputPresentationSha256": "240668bfab0385631818d3612015b8066ab7052fc37e3e2c2d8d1e36e5f58929",
+          "generatedAt": "2026-10-03T04:32:40.789Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2021-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2021-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "以吹奏气息、音乐节奏、内心吐露及沟通世界为直接依据；精神慰藉与诗歌创作为全文可支持的延伸，不因参考答案未列出就否定。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "“心灵的呼吸”包含以下几层涵义：\n1. 指吹奏本身。箫、笙、管子都靠气息吹奏，父亲教导“音调要像呼吸那么自然才好”，音乐的节奏就是呼吸的节奏。\n2. 指音乐是心灵的吐诉和情感的抒发。父亲吹箫流泻出内心的孤独哀伤；“自乐班”的人借苍凉的曲调解闷，让心飞越苦难。音乐是心灵得以舒展的方式。\n3. 指音乐沟通心灵与外部世界、提升精神境界。箫是“接通心灵与遥远世界的通道”，吹笙仿佛是去“一处远远的精神境界”，音乐让心灵透气，获得自由。\n4. 指音乐与生命相依为命、不可或缺。美好的声音“渗透了你的生命”，在心上生了根；笙与父亲的生命融为一体，驼铃是“生命的音乐”。音乐之于心灵，如同呼吸之于生命。\n5. 也指向作者的诗歌创作与乡土情结。他写诗就是想找“让心灵能呼吸的气管”，乡土音乐的熏陶塑造了他的诗的气质，诗和音乐一样是他心灵的呼吸。",
+          "inputSha256": "b6b3ac92389ae03a7ca63630a1f1d2f517930aaf2b83bee1ddeaed5cdf231bc9",
+          "inputContextSha256": "5f462a8ba940580c5940ed3a09da0420e883489666a2c704cbde15a7f4cf226b",
+          "inputPresentationSha256": "240668bfab0385631818d3612015b8066ab7052fc37e3e2c2d8d1e36e5f58929",
+          "generatedAt": "2026-10-03T04:34:18.973546+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed",
+            "note": "以吹奏气息、音乐节奏、内心吐露及沟通世界为直接依据；精神慰藉与诗歌创作为全文可支持的延伸，不因参考答案未列出就否定。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2021-reading-result.json",
+            "inputPromptSha256": "82b84ae95bfec0f845f92ef3dbe229142f96d5a9c7165adda25f0f518720444f",
+            "responseStreamSha256": "70974c1136294f7a57548bdda3ded352cc5058aa9514ac0f7d32db1a73ec8b23",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "b6b3ac92389ae03a7ca63630a1f1d2f517930aaf2b83bee1ddeaed5cdf231bc9",
+      "inputContextSha256": "5f462a8ba940580c5940ed3a09da0420e883489666a2c704cbde15a7f4cf226b",
+      "inputPresentationSha256": "240668bfab0385631818d3612015b8066ab7052fc37e3e2c2d8d1e36e5f58929",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "以吹奏气息、音乐节奏、内心吐露及沟通世界为直接依据；精神慰藉与诗歌创作为全文可支持的延伸，不因参考答案未列出就否定。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T04:39:19.875Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2021-yuyanjichu:1",
+      "sources": [
+        {
+          "type": "public_exam_images",
+          "title": "2021北京语文原卷十页影像，全文及加点画线核对",
+          "url": "https://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/ohr/2021/09/05/151605_61346eb566495.docx"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：D。群众对此反应强烈指人们对乱象表现出强烈的态度和反响，反应使用正确，不能改成表示反映情况、提出意见的反映。A中的百花齐放用来形容互联网应用繁荣多样，兴风作浪用来形容水军、黑公关制造事端，均得当。B所指是第④句与第⑤句后半的两处波浪线，二者均因介词结构使用不当导致相关分句缺少主语：可分别删去随着、删去对……而言的框架。C中的顺序由对更广大群众网络需求的概括，推进到具体乱象、群众反响及治理期待，前后衔接明确。",
+          "inputSha256": "86349c6209e56accae82e0fd9778bce5265e8a7aebc4bcc24dfa9cbaff7996fa",
+          "inputContextSha256": "6ebf04b80eedf901fb367c9cb087e165965104d1a4efc7d6d0af08fa55d7a72e",
+          "inputPresentationSha256": "1e6a8f1d1f6593a963b39d934492c2dcdec3bbf5b50de1842b6085f2144c5eaa",
+          "generatedAt": "2026-10-03T04:32:40.789Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2021-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2021-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "原卷波浪线在第④句和第⑤句后半，不在第②句。D为错误选项；B共同病因是介词结构造成主语残缺。当前呈现范围及冻结输入均已改正。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。A项对：“百花齐放”形容互联网应用种类繁多、蓬勃发展，“兴风作浪”形容水军、黑公关等挑起事端、制造混乱，均使用得当。B项对：第④句“随着……，还带来了……”因滥用介词而缺主语；第⑤句“对广大人民群众而言，也渴求……”同样因介词结构淹没主语，“渴求”缺主语。二者都是成分残缺（主语残缺）。C项对：第⑤句由未成年人扩展到广大群众，承上启下，第⑥句再具体说明群众面对的网络乱象和期待，顺序不能互换。D项错：“群众对此反应强烈”指群众对网络乱象产生强烈的态度和回应，“反应”使用正确，不必改为“反映”。",
+          "inputSha256": "86349c6209e56accae82e0fd9778bce5265e8a7aebc4bcc24dfa9cbaff7996fa",
+          "inputContextSha256": "6ebf04b80eedf901fb367c9cb087e165965104d1a4efc7d6d0af08fa55d7a72e",
+          "inputPresentationSha256": "1e6a8f1d1f6593a963b39d934492c2dcdec3bbf5b50de1842b6085f2144c5eaa",
+          "generatedAt": "2026-10-03T04:34:18.973546+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true,
+            "review": "reviewed",
+            "note": "原卷波浪线在第④句和第⑤句后半，不在第②句。D为错误选项；B共同病因是介词结构造成主语残缺。当前呈现范围及冻结输入均已改正。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2021-reading-result.json",
+            "inputPromptSha256": "82b84ae95bfec0f845f92ef3dbe229142f96d5a9c7165adda25f0f518720444f",
+            "responseStreamSha256": "70974c1136294f7a57548bdda3ded352cc5058aa9514ac0f7d32db1a73ec8b23",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "86349c6209e56accae82e0fd9778bce5265e8a7aebc4bcc24dfa9cbaff7996fa",
+      "inputContextSha256": "6ebf04b80eedf901fb367c9cb087e165965104d1a4efc7d6d0af08fa55d7a72e",
+      "inputPresentationSha256": "1e6a8f1d1f6593a963b39d934492c2dcdec3bbf5b50de1842b6085f2144c5eaa",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "原卷波浪线在第④句和第⑤句后半，不在第②句。D为错误选项；B共同病因是介词结构造成主语残缺。当前呈现范围及冻结输入均已改正。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T04:39:19.875Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2021-yuyanjichu:2",
+      "sources": [
+        {
+          "type": "public_exam_images",
+          "title": "2021北京语文原卷十页影像，全文及加点画线核对",
+          "url": "https://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/ohr/2021/09/05/151605_61346eb566495.docx"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "网络的发展在使人们生活更加便捷的同时，给管网治网带来了许多新的挑战。\n将网络的发展便捷了人们的生活与与此同时整合成网络的发展在使人们生活更加便捷的同时，保留便利生活与产生治理挑战并存的原意。",
+          "inputSha256": "90ce9c32f4d7bb1d3ad9313fdec8c73b41eacb2d7a307768de645674ee9203ce",
+          "inputContextSha256": "cb8caf59ed40ebabd4528b82745096ada5574486d013faf84451ae48647d7af3",
+          "inputPresentationSha256": "782d4016d77d58f9a69b884aaca45185c913f792bdefa76228812342a3958ce2",
+          "generatedAt": "2026-10-03T04:32:40.789Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2021-reading-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2021-reading-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "只需提交整合后的片段或含该片段的全句。root用使生活更加便捷表达原意，Claude用便捷作动词；合理措辞不以字面差异判错。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "整合后的片段：网络的发展在便捷人们生活的同时\n全句为：网络的发展在便捷人们生活的同时，（也）给管网治网带来了许多新的挑战。",
+          "inputSha256": "90ce9c32f4d7bb1d3ad9313fdec8c73b41eacb2d7a307768de645674ee9203ce",
+          "inputContextSha256": "cb8caf59ed40ebabd4528b82745096ada5574486d013faf84451ae48647d7af3",
+          "inputPresentationSha256": "782d4016d77d58f9a69b884aaca45185c913f792bdefa76228812342a3958ce2",
+          "generatedAt": "2026-10-03T04:34:18.973546+00:00",
+          "uncertainties": [
+            "表述不唯一，如“网络的发展便捷人们生活的同时”等，只要整合为一个片段且不改变原意即可。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed",
+            "note": "只需提交整合后的片段或含该片段的全句。root用使生活更加便捷表达原意，Claude用便捷作动词；合理措辞不以字面差异判错。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2021-reading-result.json",
+            "inputPromptSha256": "82b84ae95bfec0f845f92ef3dbe229142f96d5a9c7165adda25f0f518720444f",
+            "responseStreamSha256": "70974c1136294f7a57548bdda3ded352cc5058aa9514ac0f7d32db1a73ec8b23",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "90ce9c32f4d7bb1d3ad9313fdec8c73b41eacb2d7a307768de645674ee9203ce",
+      "inputContextSha256": "cb8caf59ed40ebabd4528b82745096ada5574486d013faf84451ae48647d7af3",
+      "inputPresentationSha256": "782d4016d77d58f9a69b884aaca45185c913f792bdefa76228812342a3958ce2",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "只需提交整合后的片段或含该片段的全句。root用使生活更加便捷表达原意，Claude用便捷作动词；合理措辞不以字面差异判错。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T04:39:19.875Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2021-weixiezuo:1",
+      "sources": [
+        {
+          "type": "public_exam_images",
+          "title": "2021北京语文原卷十页影像，全文及加点画线核对",
+          "url": "https://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/ohr/2021/09/05/151605_61346eb566495.docx"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "《呐喊》中的孔乙己令我遗憾。他识字，却被功名观念困住，以长衫维系体面，最终在贫困、暴力和众人的哄笑中消失。我既惋惜他不能挣脱旧观念，也痛惜周围人的冷漠。这启示我：读书应帮助人理解生活，而非划分贵贱；面对困顿者，应先看见他的处境与尊严。",
+          "inputSha256": "df3c07d0a7f535d0af6c2ecf63e9688e21f021d0b3abde6c38c8fb54860c522d",
+          "inputContextSha256": "20bf2b9e4a2351497f63d2f867b335106943bd4c73bbab70253ba878d78d8581",
+          "inputPresentationSha256": "4f888e4d242689940255ec00fe5080b9e2aee82280ae33c8bd8e96582a6fe15c",
+          "generatedAt": "2026-10-03T04:32:40.789Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2021-writing-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2021-writing-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "Claude示例把孔乙己被打折腿与众人哄笑压在同一场景，容易误导：打折腿与此后在酒店被嘲笑须分清。其尊严应靠自食其力的单一归因也弱化社会暴力与冷漠，作为一种议论保留但不作唯一启示。默认root示例较准确。须区分示例正文与后附说明的字数。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【示例】\n《呐喊》中的孔乙己令我遗憾。他写得一手好字，肯教伙计识字、分茴香豆给孩子，却被科举迷梦困住，不肯脱下长衫，也不会营生，最终在哄笑中被打折了腿。遗憾在于他本可凭双手活得有尊严。他启发我：人的尊严不靠一件长衫支撑，而靠直面现实、自食其力；学问应当成为立身的本领，而不是束缚自己的架子。\n\n【说明】写明了作品（《呐喊》）和人物（孔乙己）；先说“遗憾”（有才而善良，却困于科举和虚荣，结局悲惨），再说“启发”（直面现实、自食其力、学以致用）；约140字，不超过150字。",
+          "inputSha256": "df3c07d0a7f535d0af6c2ecf63e9688e21f021d0b3abde6c38c8fb54860c522d",
+          "inputContextSha256": "20bf2b9e4a2351497f63d2f867b335106943bd4c73bbab70253ba878d78d8581",
+          "inputPresentationSha256": "4f888e4d242689940255ec00fe5080b9e2aee82280ae33c8bd8e96582a6fe15c",
+          "generatedAt": "2026-10-03T04:36:20.452486+00:00",
+          "uncertainties": [
+            "本题为三选一的开放性微写作，无唯一答案，以上为原创示例。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed",
+            "note": "Claude示例把孔乙己被打折腿与众人哄笑压在同一场景，容易误导：打折腿与此后在酒店被嘲笑须分清。其尊严应靠自食其力的单一归因也弱化社会暴力与冷漠，作为一种议论保留但不作唯一启示。默认root示例较准确。须区分示例正文与后附说明的字数。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2021-writing-result.json",
+            "inputPromptSha256": "6f4fda3b0036617458c013933ed90e203dbd6524f8cc90a69d69f93b6adc33e8",
+            "responseStreamSha256": "8c7878a17db62ef317dbe6e84dca61397502f0d3d297a348076accc430fa8b97",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "df3c07d0a7f535d0af6c2ecf63e9688e21f021d0b3abde6c38c8fb54860c522d",
+      "inputContextSha256": "20bf2b9e4a2351497f63d2f867b335106943bd4c73bbab70253ba878d78d8581",
+      "inputPresentationSha256": "4f888e4d242689940255ec00fe5080b9e2aee82280ae33c8bd8e96582a6fe15c",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "Claude示例把孔乙己被打折腿与众人哄笑压在同一场景，容易误导：打折腿与此后在酒店被嘲笑须分清。其尊严应靠自食其力的单一归因也弱化社会暴力与冷漠，作为一种议论保留但不作唯一启示。默认root示例较准确。须区分示例正文与后附说明的字数。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T04:39:19.875Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2021-weixiezuo:2",
+      "sources": [
+        {
+          "type": "public_exam_images",
+          "title": "2021北京语文原卷十页影像，全文及加点画线核对",
+          "url": "https://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/ohr/2021/09/05/151605_61346eb566495.docx"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "我设计“家书接力”环节：同学朗读核实过出处的革命先辈家书，再各写一封回应信，说明自己愿为集体承担的一件具体小事。家书能让先辈从抽象名字变成有亲情、有选择的人；回应信则把感动落实为行动，使缅怀与青春责任相连。",
+          "inputSha256": "ecd5955e3759552c9a61f3861f53a378b328cafa789d0da6d8acd24c4a1b6cf7",
+          "inputContextSha256": "f305f6cccda77a0aa909fc9690cafb749b7780e8a7bc147f0752a843f6bc015a",
+          "inputPresentationSha256": "5e291f41b2d814e81d03ab84f482e16c6a53b93386d14b4ded3ef996e2d0b39b",
+          "generatedAt": "2026-10-03T04:32:40.789Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2021-writing-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2021-writing-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "核心环节、内容及理由齐全；人物家书需选实际核实出处的材料，活动示例不构成任何真实发送授权。须区分示例正文与后附说明的字数。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【示例】\n我设计的核心环节是“跨越百年的回信”：先由同学朗读赵一曼、江竹筠等先辈的家书，再请每人当场写下并宣读一封给先辈的回信。理由有三：家书真实细腻，比口号更能让人走近先辈的血肉与抉择；回信把“听”变成“说”，人人参与，避免走过场；在对话中把先辈的理想与自己的志向相连，缅怀才能落到青春的行动上。\n\n【说明】环节内容只用一句话交代，重点放在三条理由上：读家书对应“缅怀革命先辈”，写回信、谈志向对应“点燃青春激情”；约145字，不超过150字。",
+          "inputSha256": "ecd5955e3759552c9a61f3861f53a378b328cafa789d0da6d8acd24c4a1b6cf7",
+          "inputContextSha256": "f305f6cccda77a0aa909fc9690cafb749b7780e8a7bc147f0752a843f6bc015a",
+          "inputPresentationSha256": "5e291f41b2d814e81d03ab84f482e16c6a53b93386d14b4ded3ef996e2d0b39b",
+          "generatedAt": "2026-10-03T04:36:20.452486+00:00",
+          "uncertainties": [
+            "本题为三选一的开放性微写作，无唯一答案，以上为原创示例。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed",
+            "note": "核心环节、内容及理由齐全；人物家书需选实际核实出处的材料，活动示例不构成任何真实发送授权。须区分示例正文与后附说明的字数。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2021-writing-result.json",
+            "inputPromptSha256": "6f4fda3b0036617458c013933ed90e203dbd6524f8cc90a69d69f93b6adc33e8",
+            "responseStreamSha256": "8c7878a17db62ef317dbe6e84dca61397502f0d3d297a348076accc430fa8b97",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "ecd5955e3759552c9a61f3861f53a378b328cafa789d0da6d8acd24c4a1b6cf7",
+      "inputContextSha256": "f305f6cccda77a0aa909fc9690cafb749b7780e8a7bc147f0752a843f6bc015a",
+      "inputPresentationSha256": "5e291f41b2d814e81d03ab84f482e16c6a53b93386d14b4ded3ef996e2d0b39b",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "核心环节、内容及理由齐全；人物家书需选实际核实出处的材料，活动示例不构成任何真实发送授权。须区分示例正文与后附说明的字数。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T04:39:19.875Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2021-weixiezuo:3",
+      "sources": [
+        {
+          "type": "public_exam_images",
+          "title": "2021北京语文原卷十页影像，全文及加点画线核对",
+          "url": "https://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/ohr/2021/09/05/151605_61346eb566495.docx"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "醒来的瞬间\n\n窗帘漏进一线晨光，\n把昨夜揉皱的梦慢慢展开。\n厨房里，碗沿轻轻一碰，\n母亲没有叫我，\n清粥的香却走过了走廊。\n我忽然听见，\n平常日子也在低声说爱。\n于是把被角叠好，\n推开门，\n让一声早安\n先于太阳落在她肩上。",
+          "inputSha256": "5028d24b55fdfa11dc3af0c7eda465a95363d98331b755b6600560e115a0f75c",
+          "inputContextSha256": "1844ffb2371246ff455b59edd5fd6f1d4fa880180d46f92d2907d4ad706e6ff1",
+          "inputPresentationSha256": "c5571262da9e37f5f706d9cf00fc93383a5f7d3e6faf87122ac1081de62d1b34",
+          "generatedAt": "2026-10-03T04:32:40.789Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2021-writing-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2021-writing-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "两篇均为完整小诗，选择150字以内这一分支；文学虚构不冒充真实个人经历。Claude原始答复还含说明，提交时只取诗歌正文。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【示例（小诗）】\n醒来的瞬间\n\n窗帘缝里漏进一线光，\n像谁把夜的信封轻轻拆开。\n梦还挂在睫毛上，\n没来得及落下。\n厨房传来碗碟的轻响，\n粥的热气爬上玻璃，\n母亲的脚步放得很轻很轻。\n我忽然懂得——\n所谓安稳，\n就是每一次睁眼，\n都有人先我一步\n把清晨点亮。\n\n【说明】抓住“醒来”那一刻的光、声、气息来写，用比喻和细节带出对母亲的感念和对平凡日子的珍惜；约110字，不超过150字。",
+          "inputSha256": "5028d24b55fdfa11dc3af0c7eda465a95363d98331b755b6600560e115a0f75c",
+          "inputContextSha256": "1844ffb2371246ff455b59edd5fd6f1d4fa880180d46f92d2907d4ad706e6ff1",
+          "inputPresentationSha256": "c5571262da9e37f5f706d9cf00fc93383a5f7d3e6faf87122ac1081de62d1b34",
+          "generatedAt": "2026-10-03T04:36:20.452486+00:00",
+          "uncertainties": [
+            "本题为三选一的开放性微写作，无唯一答案，以上为原创示例。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed",
+            "note": "两篇均为完整小诗，选择150字以内这一分支；文学虚构不冒充真实个人经历。Claude原始答复还含说明，提交时只取诗歌正文。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2021-writing-result.json",
+            "inputPromptSha256": "6f4fda3b0036617458c013933ed90e203dbd6524f8cc90a69d69f93b6adc33e8",
+            "responseStreamSha256": "8c7878a17db62ef317dbe6e84dca61397502f0d3d297a348076accc430fa8b97",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "5028d24b55fdfa11dc3af0c7eda465a95363d98331b755b6600560e115a0f75c",
+      "inputContextSha256": "1844ffb2371246ff455b59edd5fd6f1d4fa880180d46f92d2907d4ad706e6ff1",
+      "inputPresentationSha256": "c5571262da9e37f5f706d9cf00fc93383a5f7d3e6faf87122ac1081de62d1b34",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两篇均为完整小诗，选择150字以内这一分支；文学虚构不冒充真实个人经历。Claude原始答复还含说明，提交时只取诗歌正文。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T04:39:19.875Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2021-dazuowen:1",
+      "sources": [
+        {
+          "type": "public_exam_images",
+          "title": "2021北京语文原卷十页影像，全文及加点画线核对",
+          "url": "https://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/ohr/2021/09/05/151605_61346eb566495.docx"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "论生逢其时\n\n同样面对一个时代，有人只看见道路上的阻碍，有人习惯等候现成的安排，也有人认定这是自己可以有所作为的时刻。所谓生逢其时，固然包含时代给予的机会，却更包含一个人的主动回应：看清时代的问题，发展承担问题的能力，并把自己的选择落实为行动。它不只是对幸运的感叹，也是对责任的确认。\n\n生逢其时，首先要看见时代确实提供了什么。我们今天求学，可以接触丰富的书籍，可以借助网络越过地域阻隔，可以在不同学科之间寻找兴趣。这些条件并非天然存在，而是无数前人劳动、探索的结果。若对它们习以为常，只因一次受挫就断言自己生不逢时，便容易把个人的一时困难误作整个时代的全部面貌。懂得珍惜已有条件，是认识自己所处时代的起点。\n\n然而，承认机会，并不意味着把时代描绘成一张没有褶皱的纸。教育资源仍有差异，人与人之间仍有隔膜，新的技术也会带来新的难题。若所谓生逢其时只是看见便利、享受成果，一旦遭逢艰难就转为怨叹，那不过是把时代当作应当不断馈赠自己的主人。真正的认同，应当容纳对问题的清醒认识：正因为世界尚不完满，个人的知识、劳动和判断才有用武之地。\n\n历史中的许多选择可以帮助我们理解这一点。鲁迅面对的并不是一个适合安稳写作的时代，他却从现实的沉重中辨认出自己的道路，以文学触及人的精神处境。先辈所获得的机会，常常并非一份现成的优待，而是一项亟须有人承担的任务。今天看见前人的成就时，我们容易羡慕那个成就属于他们；更应当看到，是他们首先选择回应时代，才使个人生命与时代发生了深刻联系。\n\n当然，回应时代不能只靠热情。有人把时不我待理解为凡事求快，不愿扎实读一本书，不肯耐心核实一个事实，却急于让世界看见自己。这样的急切，很可能使本可把握的机会变成浮泛的口号。时代的问题往往复杂，越想有所贡献，越需要基础知识、专业能力和与他人合作的本领。今日认真完成的一次实验、一次调查，也许尚不足以改变什么，却能为明日可靠的行动奠定基础。\n\n生逢其时也不应成为对他人处境的轻率裁判。每个人所拥有的资源并不相同，有人面对的障碍远比我们想象的沉重。不能因为自己遇到机会，便断言所有人的困难都源于不够努力。相反，自己受益于时代，就更有理由思考怎样让机会被更多人分享。在力所能及处帮助同伴、维护公平、尊重不同的劳动，都是把个人幸运转化为公共价值的方式。\n\n对于尚在求学的我们，担当不必等待一个轰轰烈烈的场面。把求知的兴趣养成持续的学习能力，把对现实的不满转化为认真调查，把想被肯定的愿望转化为愿意负责的行动，时代与个人的联系便在这些小事中逐渐具体。我们无法选择出生的年代，却能够选择以怎样的姿态进入它。\n\n因此，生逢其时并非坐等一个完全适合自己的时代到来，而是在已有条件中辨认机会，在真实困难中寻找责任。既不因局限而放弃，也不因便利而自满；既有时不我待的紧迫，也有久久为功的耐心。这样的人，才能在时代的长卷中写下属于自己、也有益于他人的一笔。",
+          "inputSha256": "0200be6429e7287393bd0a79b845710990b17c3f4b27b3484fc483216fd1e93c",
+          "inputContextSha256": "899e5cff628b3fdf88d11abe223ed351734180b29fb7f81fb862a121830832c8",
+          "inputPresentationSha256": "3cf6ef8e8de8c8a4eb8ad753522a5293adcfd7a8df7e9c6b8f1a49d8aabcb2cf",
+          "generatedAt": "2026-10-03T04:32:40.789Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2021-writing-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2021-writing-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "两篇议论文完整且篇幅达标。Claude一批航天人平均三十岁上下的精确群体统计没有给出可核对象，保留为未核实细节，不设为可直接引用的事实论据；对失意者的概括亦偏绝对。默认root同时讨论资源差异，论证更审慎。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【立意】“生逢其时”不只是时代给的幸运，更是人对时代的主动认领；“时”是条件，“人”是变量，所以生逢其时必然连着“时不我待”。\n\n【示例作文】\n论生逢其时\n\n同处一个时代，有人慨叹生不逢时，有人只愿安分随时，也有人深感生逢其时、时不我待。在我看来，“生逢其时”从来不只是时代单方面赐予的幸运，更是人对时代的主动认领：看清时代之所需，交出自己之所能，人与时相遇相成，方可谓生逢其时。\n\n生逢其时，首先要看得见时代的馈赠。今天的青年，生长在山河无恙、国力日盛的年代：教育的大门向更多人敞开，科技的更新一日千里，从深空探测到乡村振兴，从实验室到田间地头，处处都有施展才干的舞台。前人“为中华之崛起而读书”时所盼望的，正是我们习以为常的日常。身在其中而不自知，把馈赠当作理所当然，便容易只盯着竞争的激烈与生活的压力，生出“生不逢时”的怨叹。懂得珍惜，是生逢其时的起点。\n\n然而，时代的顺逆并不能单独决定一个人是否“逢时”。司马迁身遭大辱，却在困厄中写就“史家之绝唱”；西南联大的师生在炮火与茅屋之间弦歌不辍，为民族保存了学术的火种。论处境，他们何尝称得上幸运？但他们把自己的生命嵌进了时代最需要的地方，于是那个艰难的时代反而成全了他们。反过来，太平岁月里也从不缺少蹉跎光阴、终无所成的人。可见，“时”只是条件，“人”才是变量；所谓逢时，是人以作为回应了时代。\n\n由此再看另外两种态度。慨叹生不逢时者，眼里只有时代的缺口，把自己的停滞归咎于外物；安分随时者不怨不争，看似通达，却把人生交给了惯性，时代于他只是布景。二者的共同之处，是把时代当成与己无关的身外之物。而深感生逢其时的人，把自己看作时代的一部分：时代的难题，就是他的课题；时代的机遇，就是他的责任。黄文秀硕士毕业后回到百色的大山，在脱贫攻坚的战场上找到了自己的位置；一批平均年龄三十岁上下的航天人，把青春写进了探月探火的轨道。他们没有等待一个“更好的时代”，而是让自己成为时代之所以好的原因。\n\n也正因如此，“生逢其时”总是连着“时不我待”。机遇有它的窗口，青春有它的期限，时代不会为任何人的犹豫停留。对于我们而言，生逢其时不应是一句自得的感慨，而应是一份紧迫的自觉：趁年少练就真本领，在个人所长与国家所需的交汇处立下志向，再用一天天扎实的努力去兑现它。\n\n时代是出卷人，每一代人都是答卷人。与其问“我是否生逢其时”，不如问“我能否不负此时”。当我们以奋斗回应时代，时代自会回答：你，来得正是时候。\n\n【说明】全文约950字，满足不少于700字的要求。结构为：提出论点，看见时代馈赠，论“时”与“人”的关系（正反例证），辨析三种态度，落到“时不我待”，结尾收束。",
+          "inputSha256": "0200be6429e7287393bd0a79b845710990b17c3f4b27b3484fc483216fd1e93c",
+          "inputContextSha256": "899e5cff628b3fdf88d11abe223ed351734180b29fb7f81fb862a121830832c8",
+          "inputPresentationSha256": "3cf6ef8e8de8c8a4eb8ad753522a5293adcfd7a8df7e9c6b8f1a49d8aabcb2cf",
+          "generatedAt": "2026-10-03T04:36:20.452486+00:00",
+          "uncertainties": [
+            "本题为二选一的作文题，无唯一答案，以上为原创示例；字数为估算，约950字。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed",
+            "note": "两篇议论文完整且篇幅达标。Claude一批航天人平均三十岁上下的精确群体统计没有给出可核对象，保留为未核实细节，不设为可直接引用的事实论据；对失意者的概括亦偏绝对。默认root同时讨论资源差异，论证更审慎。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2021-writing-result.json",
+            "inputPromptSha256": "6f4fda3b0036617458c013933ed90e203dbd6524f8cc90a69d69f93b6adc33e8",
+            "responseStreamSha256": "8c7878a17db62ef317dbe6e84dca61397502f0d3d297a348076accc430fa8b97",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "0200be6429e7287393bd0a79b845710990b17c3f4b27b3484fc483216fd1e93c",
+      "inputContextSha256": "899e5cff628b3fdf88d11abe223ed351734180b29fb7f81fb862a121830832c8",
+      "inputPresentationSha256": "3cf6ef8e8de8c8a4eb8ad753522a5293adcfd7a8df7e9c6b8f1a49d8aabcb2cf",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两篇议论文完整且篇幅达标。Claude一批航天人平均三十岁上下的精确群体统计没有给出可核对象，保留为未核实细节，不设为可直接引用的事实论据；对失意者的概括亦偏绝对。默认root同时讨论资源差异，论证更审慎。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T04:39:19.875Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2021-dazuowen:2",
+      "sources": [
+        {
+          "type": "public_exam_images",
+          "title": "2021北京语文原卷十页影像，全文及加点画线核对",
+          "url": "https://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/ohr/2021/09/05/151605_61346eb566495.docx"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "这，才是成熟的模样\n\n彩排结束时，礼堂里只剩下几排没有收好的椅子。我站在舞台中央，把最后一句台词又说了一遍。空荡荡的大厅送回一声微弱的回响，我却仍舍不得走。明天就是演出了，节目单上，我的名字第一次印在主演那一栏。\n\n小林抱着道具箱经过台口。我随手把挡路的椅子往旁边一推，催他：“快一点，锁门的老师要来了。”话音未落，箱底一松，木制的门牌、画框和几本旧书散了一地。他弯腰去捡，额角全是汗。我没有帮忙，只指着一块磕掉漆的门牌说：“这个明天要用，别再弄坏了。”\n\n他抬头看了我一眼，没说话。那时我只觉得自己是负责。主演要记台词、走位置，还得保证每个人不出差错，当然有资格严厉一点。我一直盼着别人不再把我当孩子，也一直以为，成熟就是能够发号施令。\n\n第二天下午，我提前到礼堂，准备再走一遍全场。侧门却开着，小林坐在台阶上，用细刷子给门牌补漆。旁边摊着一张手写清单，从第一幕的椅子到最后一幕的信封，每样东西都标了出场时间。我的台词本只有自己的名字和对白，他的纸上，却密密麻麻写着我们所有人。\n\n“你昨晚没修完？”我问。\n\n“漆要干透才能收。”他把刷子搁下，轻轻晃了晃手腕，“今天再补一层。你先去排吧。”\n\n我这才看见他的指尖沾着几种颜色，衬衫袖口也擦上了一道白痕。我低头捡起那张清单，原本想找一个地方提醒他，却发现自己连第二幕的道具从哪侧上场都不清楚。昨天说得那么响亮的那句话，忽然像一块石子，硌在心里。\n\n“昨天，是我态度不好。”我把清单放回原处，“箱子散了，我应该帮你。”这句话说得很慢，没有舞台上练过的抑扬顿挫。小林愣了一下，笑着递给我一卷胶带：“那先把箱底粘牢吧。”\n\n我蹲下来，从底面到侧边一圈圈缠好胶带，又照着清单把道具摆齐。直到这时，我才发现那只箱子比看上去沉得多。平日它总会准时出现在后台，仿佛本来就应该在那里；我从没有想过，是谁把这些零碎的东西一件件检查、收好、搬来。\n\n演出前十分钟，负责灯光的同学赶来，说家里临时有事，必须提前离开。他已经设好了大部分灯光，但最后一幕的追光还要有人操作。几个人望着控制台，谁也不敢上手。我也犹豫。最后一幕本是我谢幕前最期待的一段，我排练了那么久，怎么舍得让别人代演？\n\n小林翻开台词本，说他可以试试我的位置。我看着他，他又指指控制台：“你上次帮老师调过，比我们熟。”我握着台词本，想起那张写着所有人名字的清单，终于把本子递过去：“我陪你再走一遍。”\n\n最后一幕，灯光从我手下缓缓亮起。小林有一句台词说得有点急，却稳稳地接住了同伴的回应。我坐在暗处，跟着他们的动作移动光圈。掌声响起时，我没有站在舞台中央，却第一次听清，那掌声属于一整群互相托住的人。\n\n散场后，我和小林一起搬箱子。走到台阶前，他提醒我小心，我答应一声，把重量又往自己这边移了移。玻璃门上映着我们并排的身影，谁也没有比谁高大多少。\n\n我忽然觉得，成熟也许就是这样：能够承认自己欠下的一句道歉，能够看见别人不被灯光照亮的辛劳，也能够在集体需要时，认真守好一处不显眼的位置。",
+          "inputSha256": "b962ba60a727276755bb7e16131cae6cbb6aca96a343d554e9450339988376ed",
+          "inputContextSha256": "75ab393ffe1319a8b278c9c09ba5ec6dfb2e0c53c4ee05752a0759d6376b5369",
+          "inputPresentationSha256": "63f88836ccfa5483c8cf86ea68cbb5be1c74a6c0c05730e678dcb94a3f4127c8",
+          "generatedAt": "2026-10-03T04:32:40.789Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2021-writing-reviews.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2021-writing-job.json",
+            "reviewerThread": "01a0fff8-fe75-74b2-8433-2dd8130922cc",
+            "actualModelEvidence": "Current thread turn_context.model=gpt-6-astra; effort=xhigh"
+          },
+          "assessment": {
+            "review": "reviewed",
+            "note": "两篇均符合命题记叙文和共同不少于700字要求，有情节、细节与成长。均为原创虚构示例，不是模型经历或真实学生记录；Claude正文之外的立意/说明不得并入考场正文。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【立意】成熟不是身体长成，而是在家人需要时学会承担、体谅和克制。题目中的“这”要落在具体的细节和场景上。\n\n【示例作文】\n这，才是成熟的模样\n\n十七岁之前，我以为成熟是看得见的：是身高超过父亲的肩膀，是嗓音变粗，是敢在饭桌上理直气壮地反驳大人。直到去年深秋的那一个星期，我才知道自己想错了。\n\n那天晚自习下课，班主任把我叫到走廊，说母亲急性阑尾炎，已经送进了医院。父亲在千里之外的工地上，最快也要三天后才能赶回。我攥着书包带跑进病房时，母亲刚做完手术，脸色像床单一样白，却还冲我笑：“没事，小手术。你妹妹在邻居家，你把她接回去，别耽误上课。”\n\n那一晚，家里安静得让人心慌。六岁的妹妹抱着布兔子问我：“哥，妈妈什么时候回来？”我本想说“我怎么知道”，话到嘴边却变成了：“很快。明天哥给你做早饭。”\n\n第二天五点半，闹钟一响我就爬了起来。淘米，加水，开火——这些看母亲做过千百遍的事，轮到自己却处处是坑。我只顾着去给妹妹找袜子，回来时粥已经溢了一灶台，锅底糊了黑黑的一层。我把上面还能吃的舀出来，撒了一点糖，妹妹皱着鼻子喝完，说：“有点苦，不过是甜的。”给她扎辫子更是一场灾难，皮筋绕了三次都松松垮垮，她顶着一高一低的两个小揪，居然很满意地照了照镜子。\n\n送完妹妹，我赶去学校；中午啃着面包往医院跑，给母亲打热水、扶她下床慢慢走；傍晚接妹妹、检查她的拼音作业；夜里等她睡着，才摊开自己的卷子。就在那几天，月考成绩发了下来，我的数学掉了二十多分。放在从前，我一定会把卷子往桌上一摔，冲着母亲嚷：“都怪家里太吵！”可那天，我站在病房门口，把卷子折好塞进书包最里层，深吸一口气才推门进去。母亲问：“考得怎么样？”我一边拧毛巾一边说：“有几道题没弄懂，我已经找老师约了周末补。您先把伤口养好。”\n\n母亲没有再问，只是看了我很久。她伸手替我理了理翻起的衣领，手指碰到我的下巴，轻声说：“长胡茬了。”我低头去倒水，发现她的眼眶红了。\n\n第三天深夜，父亲风尘仆仆地推开家门。灶上温着一锅粥——这一回没有糊；妹妹的校服叠在沙发上，红领巾压在最上面；冰箱门上贴着我写的便条：周四交伙食费，周五带彩笔。父亲站在便条前看了好一会儿，回过头，重重地在我肩上拍了一下，什么也没说。\n\n那一掌拍得我肩膀发酸，心里却忽然亮堂起来。原来成熟不是个子蹿得多高，也不是嗓门有多大；它是粥糊了之后再煮一锅，是把委屈折好放进书包，是在家人需要的时候，安安静静地把担子接过来。\n\n窗外的梧桐落了一地叶子。我想，这，才是成熟的模样。\n\n【说明】全文约1000字，满足不少于700字的要求。文章以“我以为的成熟”与“真正的成熟”对照成篇，用糊粥、扎辫子、折卷子、理衣领、冰箱便条等细节支撑，结尾点题。",
+          "inputSha256": "b962ba60a727276755bb7e16131cae6cbb6aca96a343d554e9450339988376ed",
+          "inputContextSha256": "75ab393ffe1319a8b278c9c09ba5ec6dfb2e0c53c4ee05752a0759d6376b5369",
+          "inputPresentationSha256": "63f88836ccfa5483c8cf86ea68cbb5be1c74a6c0c05730e678dcb94a3f4127c8",
+          "generatedAt": "2026-10-03T04:36:20.452486+00:00",
+          "uncertainties": [
+            "本题为二选一的作文题，无唯一答案，以上为原创示例；字数为估算，约1000字。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null,
+            "review": "reviewed",
+            "note": "两篇均符合命题记叙文和共同不少于700字要求，有情节、细节与成长。均为原创虚构示例，不是模型经历或真实学生记录；Claude正文之外的立意/说明不得并入考场正文。",
+            "evidence": "answers-six-sites-20261002/REVIEW-2021.md"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2021-writing-result.json",
+            "inputPromptSha256": "6f4fda3b0036617458c013933ed90e203dbd6524f8cc90a69d69f93b6adc33e8",
+            "responseStreamSha256": "8c7878a17db62ef317dbe6e84dca61397502f0d3d297a348076accc430fa8b97",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "b962ba60a727276755bb7e16131cae6cbb6aca96a343d554e9450339988376ed",
+      "inputContextSha256": "75ab393ffe1319a8b278c9c09ba5ec6dfb2e0c53c4ee05752a0759d6376b5369",
+      "inputPresentationSha256": "63f88836ccfa5483c8cf86ea68cbb5be1c74a6c0c05730e678dcb94a3f4127c8",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两篇均符合命题记叙文和共同不少于700字要求，有情节、细节与成长。均为原创虚构示例，不是模型经历或真实学生记录；Claude正文之外的立意/说明不得并入考场正文。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T04:39:19.875Z",
+      "currentVersion": "gpt_6_astra"
     }
   ],
   "releaseBlockers": [

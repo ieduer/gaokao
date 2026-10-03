@@ -1,3 +1,7 @@
+## 2026-10-02 — 2021 original-image review checkpoint, candidate only
+
+Coverage196/612:192reviewed,fourdisputed,416uncovered plus specialist-only. New2021phase adds26units and one corrected-source re-review.137current units now have matching v3presentation evidence;59prior reviews still need marking evidence. Source/marking blockers remain open. The ten-page exam-image source corrected documented OCR,missing common composition requirements and wrong emphasis ranges. All201recordIDs,612questionIDs/scores,legacyfields and508preexisting model text/date records remain preserved. Claude returned27responses in two finite one-attempt jobs; all terminal. Source,writing qualifications,tests and full evidence: /Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/REVIEW-2021.md. No candidate upload,production write,authenticated acceptance or status publication.
+
 ## 2026-10-02 — 2022 review checkpoint, not deployed
 
 After the gate repair,110of170v2reviews now also have explicit empty-emphasis equivalence proof;220original model texts/dates are preserved,303rejection assertions pass. The remaining60current contexts need marking/source evidence;442units remain uncovered. This derivation did not add answers or establish original-paper accuracy. rendered-emphasis-integrity remains open.
