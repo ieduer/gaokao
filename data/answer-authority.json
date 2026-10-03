@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261003-source2013-qualified-pending",
+  "revision": "20261003-reviewed-382-qualified-2013",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -2595,12 +2595,14 @@
     {
       "id": "2013-guwen:2",
       "inputSha256": "30d555b4d579723f11746d1b2e37e798899ff30cb8dc56a34374051db5fba611",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "single_choice",
-      "correctOptions": [],
-      "explanation": "2013题源及标记更正后待重审；旧输入及全部模型正文保存在history。",
-      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:03:23.208Z",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "双方D；何故/何功中何均限定名词。root对A原作两者均用过窄，修订为第一可译把/用、第二用/乘，但均为介词，并不意义与用法都不同；完整初稿保留。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:15:23.503Z",
       "sources": [
         {
           "type": "source_material",
@@ -2609,10 +2611,101 @@
         {
           "type": "dictionary_revision",
           "title": "文言站2026-09-16-r3词典校订，保留争议"
+        },
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2013北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/201306/t20130608_957719.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "宋史卷258曹彬原文",
+          "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2/%E5%8D%B7258",
+          "qualification": "Primary-text transcription confirms source lexical repairs. 中立不倚/少宴会 supports B summary; nonappointment alone does not establish D suspicion. Not original-exam proof."
+        },
+        {
+          "type": "checked_reference",
+          "title": "公开2013参考",
+          "url": "https://www.gzywtk.com/sjbrow/735-3.html",
+          "qualification": "Root冻结后读取1-21参考，9为D、19含闹市清静脱俗；促进纠正root旧B和补全散文。参考自身将融化按常温液体、处置指物处治指人均过简，且16说鹏绝不能急转无材料充分支持，不采这些断言。"
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {},
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后修订",
+          "text": "选D。“彬之总师也”的之用于主谓之间，使“曹彬统率军队”这个结构成为背景性时间成分；“上临哭之恸”的之是代词，指曹彬，作哭的对象，二者意义、用法均不同。A两个以均为介词，第一处引出陈列的百玩之具，可译把或用，第二处引出交通工具轻舟，可译用或乘；细分含义可有不同，但不属于意义、用法都不同；B两个所都与后面的动词组成所字结构，指所取、所受的东西；C两个何都是疑问限定成分，相当于什么，分别修饰故和功。何故在全句中问原因，不等于何字本身就与何功的何用法不同。",
+          "selectedOptions": [
+            "D"
+          ],
+          "inputSha256": "30d555b4d579723f11746d1b2e37e798899ff30cb8dc56a34374051db5fba611",
+          "inputContextSha256": "0dd653a4bd09ad81cd2ac09e4fb89464f4d63c115ddb8e831e89feb7bc08ae05",
+          "inputPresentationSha256": "4a3dc065beb528e8e0512c2cad642bc1bf55370078aacce8281a0794d39fcebb",
+          "generatedAt": "2026-10-03T10:15:23.503Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2013-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2013-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2013.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh",
+            "refinementEvidence": "answers-six-sites-20261002/root-2013-refinements.json",
+            "refinementReason": "细分两个以的介词语义，避免把同类用法写成唯一同义。",
+            "initialVersion": "gpt_6_astra_initial"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。D项“彬之总师也”的“之”是助词，用在主谓之间取消句子独立性；“上临哭之恸”的“之”是代词，指曹彬。两者意义和用法都不同。A项两个“以”都是介词，表示凭借或处置的对象，可译为“把、用”，用法相同。B项两个“所”都是助词，与动词组成名词性的“所”字结构（所取的东西、所接受的东西）。C项两个“何”都是疑问代词作定语，译为“什么”（什么缘故、什么功劳）。",
+          "inputSha256": "30d555b4d579723f11746d1b2e37e798899ff30cb8dc56a34374051db5fba611",
+          "inputContextSha256": "0dd653a4bd09ad81cd2ac09e4fb89464f4d63c115ddb8e831e89feb7bc08ae05",
+          "inputPresentationSha256": "4a3dc065beb528e8e0512c2cad642bc1bf55370078aacce8281a0794d39fcebb",
+          "generatedAt": "2026-10-03T10:10:52.835961+00:00",
+          "uncertainties": [
+            "题面未显示着重号，这里按星号标出的“以、所、何、之”作为加点词判断。"
+          ],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2013-reading-result.json",
+            "inputPromptSha256": "cdc49e1372efee30265558cdf0aa666eb1f1d533073fb5c2220ce1bb29c31110",
+            "responseStreamSha256": "93eb9516d1a9856efb2a4a1b2ec0078519d77a69ecac1b51a62801ee311aa8cd",
+            "stage": "independent"
+          }
+        },
+        "gpt_6_astra_initial": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D。“彬之总师也”的之用于主谓之间，使“曹彬统率军队”这个结构成为背景性时间成分；“上临哭之恸”的之是代词，指曹彬，作哭的对象，二者意义、用法均不同。A两个以都是介词，以、用，分别引出百玩之具和轻舟；B两个所都与后面的动词组成所字结构，指所取、所受的东西；C两个何都是疑问限定成分，相当于什么，分别修饰故和功。何故在全句中问原因，不等于何字本身就与何功的何用法不同。",
+          "selectedOptions": [
+            "D"
+          ],
+          "inputSha256": "30d555b4d579723f11746d1b2e37e798899ff30cb8dc56a34374051db5fba611",
+          "inputContextSha256": "0dd653a4bd09ad81cd2ac09e4fb89464f4d63c115ddb8e831e89feb7bc08ae05",
+          "inputPresentationSha256": "4a3dc065beb528e8e0512c2cad642bc1bf55370078aacce8281a0794d39fcebb",
+          "generatedAt": "2026-10-03T10:08:59.921527+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2013-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2013-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2013.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        }
+      },
       "inputContextSha256": "0dd653a4bd09ad81cd2ac09e4fb89464f4d63c115ddb8e831e89feb7bc08ae05",
       "history": [
         {
@@ -10482,20 +10575,100 @@
     {
       "id": "2013-moxie:1",
       "inputSha256": "63deeeeb1daca30d42c5e2868dd5a536dddf71d9e7c6b1b2dc4c81228f732938",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "open",
       "correctOptions": [],
-      "explanation": "2013题源及标记更正后待重审；旧输入及全部模型正文保存在history。",
-      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "explanation": "五项十空与原作转录核对，双方一致；保留五选四要求。毛诗检索页未校且未逐字看影印，此限度明确，不称全部原作扫描双核。旧null及计分历史不改。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:15:23.503Z",
       "sources": [
         {
           "type": "source_material",
           "title": "站内2013北京卷原题及完整材料"
+        },
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2013北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/201306/t20130608_957719.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "师说原文",
+          "url": "https://zh.wikisource.org/zh-hant/%E5%B8%AB%E8%AA%AA",
+          "qualification": "小学而大遗，吾未见其明也；原作可校，原考卷计分未证。"
+        },
+        {
+          "type": "checked_reference",
+          "title": "毛诗四部丛刊文本页面",
+          "url": "https://zh.wikisource.org/zh-hans/Page%3ASibu_Congkan0005-%E6%AF%9B%E4%BA%A8-%E6%AF%9B%E8%A9%A9-4-1.djvu/106",
+          "qualification": "检索文本见氓之蚩蚩、抱布贸丝。页面标未校对，本次未逐字读底本图片，不能称图文双核。"
+        },
+        {
+          "type": "checked_reference",
+          "title": "阿房宫赋原文",
+          "url": "https://zh.wikisource.org/wiki/%E9%98%BF%E6%88%BF%E5%AE%AE%E8%B3%A6",
+          "qualification": "奈何取之尽锱铢，用之如泥沙。"
+        },
+        {
+          "type": "checked_reference",
+          "title": "前赤壁赋原文",
+          "url": "https://zh.wikisource.org/zh/%E5%89%8D%E8%B5%A4%E5%A3%81%E8%B3%A6",
+          "qualification": "知不可乎骤得，托遗响于悲风；用课内简体字形，不换成影印稿古体。"
+        },
+        {
+          "type": "checked_reference",
+          "title": "声声慢原文",
+          "url": "https://zh.wikisource.org/wiki/%E8%81%B2%E8%81%B2%E6%85%A2_%28%E6%9D%8E%E6%B8%85%E7%85%A7%29",
+          "qualification": "这次第，怎一个愁字了得；词上阕异文与本空无关。"
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {},
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "①氓之蚩蚩，抱布贸丝。②奈何取之尽锱铢，用之如泥沙。③小学而大遗，吾未见其明也。④知不可乎骤得，托遗响于悲风。⑤这次第，怎一个愁字了得。原题限选五项中的四项，本核对为完整性列出五项；实际作答须按限选要求，不能把五项都写的展示方式直接当作原卷计分规则。旧score为null，8分来自题面，不据此追改历史分数。",
+          "selectedOptions": [],
+          "inputSha256": "63deeeeb1daca30d42c5e2868dd5a536dddf71d9e7c6b1b2dc4c81228f732938",
+          "inputContextSha256": "50b66a902ce1b6d95b444ae8c21f73146e52e42c8531a16f25817c95e15ffec6",
+          "inputPresentationSha256": "00bdf7e0b4f242c689ae6e77fe9b9e976974249139c974011ebfef3cebd0279f",
+          "generatedAt": "2026-10-03T10:08:59.921527+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2013-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2013-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2013.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "题目要求五选四，这里五题全部给出，按记忆默写：\n① 氓之蚩蚩，抱布贸丝\n② 奈何取之尽锱铢，用之如泥沙\n③ 小学而大遗，吾未见其明也\n④ 知不可乎骤得，托遗响于悲风\n⑤ 这次第，怎一个愁字了得\n易错字：蚩、锱铢、遗、骤、托。",
+          "inputSha256": "63deeeeb1daca30d42c5e2868dd5a536dddf71d9e7c6b1b2dc4c81228f732938",
+          "inputContextSha256": "50b66a902ce1b6d95b444ae8c21f73146e52e42c8531a16f25817c95e15ffec6",
+          "inputPresentationSha256": "00bdf7e0b4f242c689ae6e77fe9b9e976974249139c974011ebfef3cebd0279f",
+          "generatedAt": "2026-10-03T10:10:52.835961+00:00",
+          "uncertainties": [
+            "第③题“或不焉”的“不”通“否”，为题干原文，不影响填空。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2013-reading-result.json",
+            "inputPromptSha256": "cdc49e1372efee30265558cdf0aa666eb1f1d533073fb5c2220ce1bb29c31110",
+            "responseStreamSha256": "93eb9516d1a9856efb2a4a1b2ec0078519d77a69ecac1b51a62801ee311aa8cd",
+            "stage": "independent"
+          }
+        }
+      },
       "inputContextSha256": "50b66a902ce1b6d95b444ae8c21f73146e52e42c8531a16f25817c95e15ffec6",
       "inputPresentationSha256": "00bdf7e0b4f242c689ae6e77fe9b9e976974249139c974011ebfef3cebd0279f",
       "history": [
@@ -32576,6 +32749,1552 @@
       "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
       "reviewedAt": "2026-10-03T09:52:20.429Z",
       "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2013-feilian:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2013北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/201306/t20130608_957719.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "Muijres等2008 Science蝙蝠原始实验",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18309085/",
+          "qualification": "DOI10.1126/science.1153019：实验见蝙蝠使用前缘涡流提高升力。不能把这种机制仅限昆虫；该摘要本身并非鸟蝙蝠上下行程均正升力的完整证据。"
+        },
+        {
+          "type": "checked_reference",
+          "title": "Warrick等2005 Nature蜂鸟原始实验",
+          "url": "https://sites.science.oregonstate.edu/~warrickd/humm05.pdf",
+          "qualification": "DOI10.1038/nature03647：悬停棕煌蜂鸟75%重量支持来自下拍、25%来自上拍，是鸟类无法上拍产升力的反例；不能外推所有鸟或所有飞行条件。"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选C。按题内“就连碳纤维复合材料都无法与之相比”，几丁质的柔软坚韧不是与碳纤维仅仅相当，C的“可比”弱化、改变了这里的比较关系，不能作为题设所称奇迹的准确支撑。A极薄而能飞，B不依赖骨骼肌肉支撑，D翅脉使其有足够刚性，都对应第三段。这里只判断材料内部的论证，不据此断言真实几丁质材料在所有性能上均胜过全部碳纤维材料。可比若只按“可以拿来比较”的字面读，辨错力度会减弱，通常选项在此取性能相当义。",
+          "selectedOptions": [
+            "C"
+          ],
+          "inputSha256": "1d6533632ac0617636952ecf20fb6a34347d1dc41a911a4256323192d49d4991",
+          "inputContextSha256": "9c1595aa6a6619a05b7ae83b1dff18d123dc1a3b83461f95d19602f5aedb123e",
+          "inputPresentationSha256": "bcc978374d495820b7927d2485dfc4dfba62d93d7b0a2a58e53ff0fd706aabea",
+          "generatedAt": "2026-10-03T10:08:59.921527+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2013-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2013-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2013.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。原文说几丁质“柔软而坚韧，就连碳纤维复合材料都无法与之相比”，即碳纤维复合材料比不上几丁质；C项说成“柔韧性可比碳纤维的复合材料”，把“远胜”说成“相当”，与原文不符，不能作为依据。A项“一片几丁质的薄层”是原文对翅的构成的说明，可以支持。B项“没有任何骨骼和肌肉的支撑”正是其奇妙之处，可以支持。D项翅脉作为液压管道让翅膀有足够刚性应对应力，可以支持。",
+          "inputSha256": "1d6533632ac0617636952ecf20fb6a34347d1dc41a911a4256323192d49d4991",
+          "inputContextSha256": "9c1595aa6a6619a05b7ae83b1dff18d123dc1a3b83461f95d19602f5aedb123e",
+          "inputPresentationSha256": "bcc978374d495820b7927d2485dfc4dfba62d93d7b0a2a58e53ff0fd706aabea",
+          "generatedAt": "2026-10-03T10:10:52.835961+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2013-reading-result.json",
+            "inputPromptSha256": "cdc49e1372efee30265558cdf0aa666eb1f1d533073fb5c2220ce1bb29c31110",
+            "responseStreamSha256": "93eb9516d1a9856efb2a4a1b2ec0078519d77a69ecac1b51a62801ee311aa8cd",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "1d6533632ac0617636952ecf20fb6a34347d1dc41a911a4256323192d49d4991",
+      "inputContextSha256": "9c1595aa6a6619a05b7ae83b1dff18d123dc1a3b83461f95d19602f5aedb123e",
+      "inputPresentationSha256": "bcc978374d495820b7927d2485dfc4dfba62d93d7b0a2a58e53ff0fd706aabea",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "双方C，按文中比较语义支持；不能将比碳纤维强的试题措辞扩为所有工程性能的科学结论。可比取性能相当义，字面可比较义另有限定。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:15:23.503Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2013-feilian:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2013北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/201306/t20130608_957719.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "Muijres等2008 Science蝙蝠原始实验",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18309085/",
+          "qualification": "DOI10.1126/science.1153019：实验见蝙蝠使用前缘涡流提高升力。不能把这种机制仅限昆虫；该摘要本身并非鸟蝙蝠上下行程均正升力的完整证据。"
+        },
+        {
+          "type": "checked_reference",
+          "title": "Warrick等2005 Nature蜂鸟原始实验",
+          "url": "https://sites.science.oregonstate.edu/~warrickd/humm05.pdf",
+          "qualification": "DOI10.1038/nature03647：悬停棕煌蜂鸟75%重量支持来自下拍、25%来自上拍，是鸟类无法上拍产升力的反例；不能外推所有鸟或所有飞行条件。"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选B、D。B把有翅后暂不飞、先在水面滑行的阶段省掉，误说“即升空”；D把碳水化合物与脂肪一起说成提高经济性的原因，原文恰以果蝇用碳水化合物不太划算与很多昆虫用脂肪形成对比。A对应文中从水面滑行向飞行演化的说法，但应保留其“多数昆虫学家认为”的推测层级；C对应翅膀剖面及空气流过产生升力的说明；E的族群规模有直接依据，长途迁徙由末段例证作概括，不过只举一种蝶并不足单凭本文严格证明“很多种”，不能把这一概括转为已验证生物学事实。按该题通常的文意判断，B、D的错位最明确。",
+          "selectedOptions": [
+            "B",
+            "D"
+          ],
+          "inputSha256": "b8870f8416e1c00aa94c005f3b67f7501890e02bb571575cba7d87ba53e51f48",
+          "inputContextSha256": "e6cf72fc7bd707734b3e63f62e8aec97204b9ded775108a887f2972f4b2bd8aa",
+          "inputPresentationSha256": "29349ac7069048d2918033b7e6a6d45457d7e454691fba9848252115b44bdf2f",
+          "generatedAt": "2026-10-03T10:08:59.921527+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2013-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2013-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2013.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B、D。\n选B、D。A项恰当：第二段说最早的昆虫“是从水面滑行演化到飞行的，最早的翅应该是‘风帆’”。B项不恰当：原文说蜉蝣成为有翅成虫后“并不急于飞行”，多数时候先在水面滑行，时机成熟才飞起婚配，“有翅后即升空飞行”与原文不符。C项恰当：与第三段末句一致。D项不恰当：原文说果蝇用碳水化合物“不太划算”，是其他很多昆虫直接用脂肪才让“经济性”大为改观；该项把两种燃料并列为提高经济性的原因，且泛化为所有昆虫。E项大体恰当：“规模最大的飞行者家族”有原文依据；“很多昆虫都具有长途迁徙的能力”原文只举了黑脉金斑蝶一例，略有扩大，但错误程度明显轻于B、D。",
+          "inputSha256": "b8870f8416e1c00aa94c005f3b67f7501890e02bb571575cba7d87ba53e51f48",
+          "inputContextSha256": "e6cf72fc7bd707734b3e63f62e8aec97204b9ded775108a887f2972f4b2bd8aa",
+          "inputPresentationSha256": "29349ac7069048d2918033b7e6a6d45457d7e454691fba9848252115b44bdf2f",
+          "generatedAt": "2026-10-03T10:10:52.835961+00:00",
+          "uncertainties": [
+            "E项“很多昆虫都具有长途迁徙的能力”原文仅举一例，存在轻度扩大之嫌；在须选两项的前提下，B、D错误更明确。"
+          ],
+          "selectedOptions": [
+            "B",
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2013-reading-result.json",
+            "inputPromptSha256": "cdc49e1372efee30265558cdf0aa666eb1f1d533073fb5c2220ce1bb29c31110",
+            "responseStreamSha256": "93eb9516d1a9856efb2a4a1b2ec0078519d77a69ecac1b51a62801ee311aa8cd",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "b8870f8416e1c00aa94c005f3b67f7501890e02bb571575cba7d87ba53e51f48",
+      "inputContextSha256": "e6cf72fc7bd707734b3e63f62e8aec97204b9ded775108a887f2972f4b2bd8aa",
+      "inputPresentationSha256": "29349ac7069048d2918033b7e6a6d45457d7e454691fba9848252115b44bdf2f",
+      "status": "reviewed",
+      "kind": "multiple_choice",
+      "correctOptions": [
+        "B",
+        "D"
+      ],
+      "explanation": "双方BD；有翅后即飞及燃料并列的错位明确。双方均指出E从一种蝶到很多昆虫证据不足，保留限定；Claude额外说D泛化所有昆虫过强，原项并无所有二字。A须保留原文假说层级。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:15:23.503Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2013-feilian:3",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2013北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/201306/t20130608_957719.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "Muijres等2008 Science蝙蝠原始实验",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18309085/",
+          "qualification": "DOI10.1126/science.1153019：实验见蝙蝠使用前缘涡流提高升力。不能把这种机制仅限昆虫；该摘要本身并非鸟蝙蝠上下行程均正升力的完整证据。"
+        },
+        {
+          "type": "checked_reference",
+          "title": "Warrick等2005 Nature蜂鸟原始实验",
+          "url": "https://sites.science.oregonstate.edu/~warrickd/humm05.pdf",
+          "qualification": "DOI10.1038/nature03647：悬停棕煌蜂鸟75%重量支持来自下拍、25%来自上拍，是鸟类无法上拍产升力的反例；不能外推所有鸟或所有飞行条件。"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "苍蝇依靠自身快速扑翼飞行，翅膀不仅上下拍动，还作八字形运动，在空气中制造、控制涡流，上下拍动都能产生升力，并可迅速急转。题给鹏鸟则张展翅膀，以近似固定机翼的形态借助外界上升气流翱翔。两者的主要区别是活动扑翼与展开固定翼、自造可控涡流获得升力与利用上升气流；前者还突出主动调节涡流形成灵活转向。此比较限于试题的两个模型，不把神话鹏鸟当作已观察的动物，也不把鸟或蝙蝠绝不可能利用涡流当作科学结论。",
+          "selectedOptions": [],
+          "inputSha256": "f529635b8f09eb8593ef54814bec28f7f14412867f1483325cfe8355ebbcfbd6",
+          "inputContextSha256": "8c7725c3dc1b9c1ff73f0f2c57b059adcae1544440d262b12af8ed50057ca432",
+          "inputPresentationSha256": "74e057155a04eb38883d940f272e9a5cad8eb46d335eec685a35f824d05bef42",
+          "generatedAt": "2026-10-03T10:08:59.921527+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2013-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2013-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2013.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "不同点如下：\n1. 翅膀的状态不同。苍蝇靠扑翼飞行，翅膀以极高的频率扇动，从侧面看是在画“八”字形，并非简单的上下运动；鹏鸟翱翔时翅膀基本不扇动，像固定的机翼。\n2. 升力的来源不同。苍蝇靠翅膀在空气中主动制造可控的涡流，向下、向上拍动时都能产生升力；鹏鸟要借助外界的上升气流，靠固定展开的翼面获得升力。\n3. 飞行的效果不同。苍蝇能获得数倍于体重的升力和推力，因而机动灵活，能在空中做出匪夷所思的急转弯；鹏鸟是凭借气流平稳地高空翱翔、远距离飞行（“绝云气，负青天，然后图南”），不以灵活转向见长。\n4. 耗能不同（推论）。苍蝇高频扑翼，飞行十分费力、消耗大；鹏鸟借力于气流，相对省力。",
+          "inputSha256": "f529635b8f09eb8593ef54814bec28f7f14412867f1483325cfe8355ebbcfbd6",
+          "inputContextSha256": "8c7725c3dc1b9c1ff73f0f2c57b059adcae1544440d262b12af8ed50057ca432",
+          "inputPresentationSha256": "74e057155a04eb38883d940f272e9a5cad8eb46d335eec685a35f824d05bef42",
+          "generatedAt": "2026-10-03T10:10:52.835961+00:00",
+          "uncertainties": [
+            "第4点“鹏鸟相对省力”是依据“借助上升气流、翼如固定机翼”所作的合理推论，材料未明说。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2013-reading-result.json",
+            "inputPromptSha256": "cdc49e1372efee30265558cdf0aa666eb1f1d533073fb5c2220ce1bb29c31110",
+            "responseStreamSha256": "93eb9516d1a9856efb2a4a1b2ec0078519d77a69ecac1b51a62801ee311aa8cd",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "f529635b8f09eb8593ef54814bec28f7f14412867f1483325cfe8355ebbcfbd6",
+      "inputContextSha256": "8c7725c3dc1b9c1ff73f0f2c57b059adcae1544440d262b12af8ed50057ca432",
+      "inputPresentationSha256": "74e057155a04eb38883d940f272e9a5cad8eb46d335eec685a35f824d05bef42",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "核心扑翼/固定翼和自造涡流/上升气流一致。Claude把蜜蜂的数倍升力推力移到苍蝇缺乏本文依据，鹏更省力只是推论，不能写成既定采分点；公开参考鹏绝不能急转也超出材料。原始研究限定鸟蝙蝠绝对论断，默认较克制的root。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:15:23.503Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2013-guwen:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2013北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/201306/t20130608_957719.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "宋史卷258曹彬原文",
+          "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2/%E5%8D%B7258",
+          "qualification": "Primary-text transcription confirms source lexical repairs. 中立不倚/少宴会 supports B summary; nonappointment alone does not establish D suspicion. Not original-exam proof."
+        },
+        {
+          "type": "checked_reference",
+          "title": "公开2013参考",
+          "url": "https://www.gzywtk.com/sjbrow/735-3.html",
+          "qualification": "Root冻结后读取1-21参考，9为D、19含闹市清静脱俗；促进纠正root旧B和补全散文。参考自身将融化按常温液体、处置指物处治指人均过简，且16说鹏绝不能急转无材料充分支持，不采这些断言。"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选C。潘美是在曹彬完成灭南唐并实际获授使相以前便祝贺，“预”应解为预先、事先，不是参与加入。A“籍”是登记造册，承接收礼后全部上交；B“典”是主管、掌管禁军；D“仍”是又、并且，在皇帝探视、和药后又赐白银。不能把前文“亦所罕预”的参与义移到“预以为贺”。",
+          "selectedOptions": [
+            "C"
+          ],
+          "inputSha256": "83b1b0c23f6272a5d80c97e57a3f5712918960287b93afefdcbef8cf5dfb5d7a",
+          "inputContextSha256": "137cbac4a942d306e6fedfba0d3ae28375005928caace97dd37ebf30bd823248",
+          "inputPresentationSha256": "2754fb589235b88e310ed0e4fca58e3c0480d63eefc4247dc215685394105b46",
+          "generatedAt": "2026-10-03T10:08:59.921527+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2013-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2013-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2013.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。“副帅潘美预以为贺”的“预”是“预先、事先”，指潘美提前向曹彬道贺，不是“参与，加入”（文中“亦所罕预”的“预”才是参与）。A项“籍”，登记造册，正确。B项“典”，主管、掌管，正确。D项“仍”，于是、又，正确，古汉语中“仍”常作“因而、接着”讲。",
+          "inputSha256": "83b1b0c23f6272a5d80c97e57a3f5712918960287b93afefdcbef8cf5dfb5d7a",
+          "inputContextSha256": "137cbac4a942d306e6fedfba0d3ae28375005928caace97dd37ebf30bd823248",
+          "inputPresentationSha256": "2754fb589235b88e310ed0e4fca58e3c0480d63eefc4247dc215685394105b46",
+          "generatedAt": "2026-10-03T10:10:52.835961+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2013-reading-result.json",
+            "inputPromptSha256": "cdc49e1372efee30265558cdf0aa666eb1f1d533073fb5c2220ce1bb29c31110",
+            "responseStreamSha256": "93eb9516d1a9856efb2a4a1b2ec0078519d77a69ecac1b51a62801ee311aa8cd",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "83b1b0c23f6272a5d80c97e57a3f5712918960287b93afefdcbef8cf5dfb5d7a",
+      "inputContextSha256": "137cbac4a942d306e6fedfba0d3ae28375005928caace97dd37ebf30bd823248",
+      "inputPresentationSha256": "2754fb589235b88e310ed0e4fca58e3c0480d63eefc4247dc215685394105b46",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "双方C，区分预先道贺与前文罕预的参与。仍在当前语境为又/接着，勿把Claude泛称常作因而当所有语境通义。原错位点已归档。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:15:23.503Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2013-guwen:3",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2013北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/201306/t20130608_957719.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "宋史卷258曹彬原文",
+          "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2/%E5%8D%B7258",
+          "qualification": "Primary-text transcription confirms source lexical repairs. 中立不倚/少宴会 supports B summary; nonappointment alone does not establish D suspicion. Not original-exam proof."
+        },
+        {
+          "type": "checked_reference",
+          "title": "公开2013参考",
+          "url": "https://www.gzywtk.com/sjbrow/735-3.html",
+          "qualification": "Root冻结后读取1-21参考，9为D、19含闹市清静脱俗；促进纠正root旧B和补全散文。参考自身将融化按常温液体、处置指物处治指人均过简，且16说鹏绝不能急转无材料充分支持，不采这些断言。"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选B。“近名”在这里是近于求取名声、好名；曹彬担心一直拒绝反倒显得刻意求名，因而接受后登记上交。B说成因此会得到好名声，抹去了对求名嫌疑的警惕。A使是出使、致命是传达使命、讫是完毕；C治装是收拾行装；D遽诘所以是急忙询问事情的缘故，三项与语境相合。",
+          "selectedOptions": [
+            "B"
+          ],
+          "inputSha256": "0f9d50659aab8efeb364cf46ef8d5587aa1ca2b2c12e191085108b7578e329b6",
+          "inputContextSha256": "0324f3f892cbf5ca151df67b8cd62e5d39d042bf5ba1234f454ba3ec516d9d5e",
+          "inputPresentationSha256": "38ee32e0f14fb80b312147a42036fee3e9e3aa42c59496b149eab04b4950e62c",
+          "generatedAt": "2026-10-03T10:08:59.921527+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2013-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2013-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2013.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。“吾终拒之，是近名也”意为“我如果始终拒绝，这就近于求取名声（有沽名钓誉之嫌）了”。“近名”是追求名声，带贬义，是曹彬要避免的事，所以他才改为收下并登记上交；B项译成“就会得到好的名声”，曲解了原意。A项“致命”即传达使命、旨意，“讫”为完毕，解释正确。C项“治装”即整理行装，正确。D项“遽”为急忙、立即，“诘”为追问，“所以”为缘故，正确。",
+          "inputSha256": "0f9d50659aab8efeb364cf46ef8d5587aa1ca2b2c12e191085108b7578e329b6",
+          "inputContextSha256": "0324f3f892cbf5ca151df67b8cd62e5d39d042bf5ba1234f454ba3ec516d9d5e",
+          "inputPresentationSha256": "38ee32e0f14fb80b312147a42036fee3e9e3aa42c59496b149eab04b4950e62c",
+          "generatedAt": "2026-10-03T10:10:52.835961+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2013-reading-result.json",
+            "inputPromptSha256": "cdc49e1372efee30265558cdf0aa666eb1f1d533073fb5c2220ce1bb29c31110",
+            "responseStreamSha256": "93eb9516d1a9856efb2a4a1b2ec0078519d77a69ecac1b51a62801ee311aa8cd",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "0f9d50659aab8efeb364cf46ef8d5587aa1ca2b2c12e191085108b7578e329b6",
+      "inputContextSha256": "0324f3f892cbf5ca151df67b8cd62e5d39d042bf5ba1234f454ba3ec516d9d5e",
+      "inputPresentationSha256": "38ee32e0f14fb80b312147a42036fee3e9e3aa42c59496b149eab04b4950e62c",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "双方B，近名为求名嫌疑而非单纯获美名，原作及收后上交情节支持。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:15:23.503Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2013-guwen:4",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2013北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/201306/t20130608_957719.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "宋史卷258曹彬原文",
+          "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2/%E5%8D%B7258",
+          "qualification": "Primary-text transcription confirms source lexical repairs. 中立不倚/少宴会 supports B summary; nonappointment alone does not establish D suspicion. Not original-exam proof."
+        },
+        {
+          "type": "checked_reference",
+          "title": "公开2013参考",
+          "url": "https://www.gzywtk.com/sjbrow/735-3.html",
+          "qualification": "Root冻结后读取1-21参考，9为D、19含闹市清静脱俗；促进纠正root旧B和补全散文。参考自身将融化按常温液体、处置指物处治指人均过简，且16说鹏绝不能急转无材料充分支持，不采这些断言。"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后修订",
+          "text": "选D。文中太祖器重曹彬，曾主动表示想亲近他；后来以太原未平为由暂缓授使相，并不能单凭此事推出他对曹彬心存戒备、加以防范。猜中未授官的理由与遭皇帝猜忌不是同一判断。A收礼登记上交、C称病促成不滥杀及宾礼待降者都有直接情节；B有“中立不倚，非公事未尝造门，群居燕会，亦所罕预，由是器重焉”支持，可概括为谨守本分而不巴结结党。初稿忽略“中立不倚”的支持作用，过度苛责B而放宽对D的推断，现据上下文更正，完整初判B另存。",
+          "selectedOptions": [
+            "D"
+          ],
+          "inputSha256": "f7c36675fb9a283c01b992edd5f2d5871901b6cae0dd8badcaf83b9e99c1bc1a",
+          "inputContextSha256": "cff3dfab8431750cad1eb9c309124cc6d57cc1f08e3c4c8c6b8fa7b64acbf46e",
+          "inputPresentationSha256": "6486094f4896697c6b44799e8ef04772af169072dfd9e00e978eb87fb2bef36c",
+          "generatedAt": "2026-10-03T10:15:23.503Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2013-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2013-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2013.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh",
+            "refinementEvidence": "answers-six-sites-20261002/root-2013-refinements.json",
+            "refinementReason": "重读原作上下文并对照独立Claude及公开参考后，纠正初判B为D。",
+            "initialVersion": "gpt_6_astra_initial"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。文中只写太祖器重曹彬、想亲近他（“我畴昔常欲亲汝”），暂缓授使相的理由是“刘继元未下”，得知实情后“大笑”并赐钱二十万，没有“心存戒备，并有所防范”的内容，D项于文无据。A项符合：私礼一无所受，又因怕“近名”而收下，登记后全部上交官府。B项符合：“中立不倚，非公事未尝造门，群居燕会，亦所罕预，由是器重焉”。C项符合：称病是为了让诸将立誓“不妄杀一人”，李煜请罪时“慰安之，待以宾礼”。",
+          "inputSha256": "f7c36675fb9a283c01b992edd5f2d5871901b6cae0dd8badcaf83b9e99c1bc1a",
+          "inputContextSha256": "cff3dfab8431750cad1eb9c309124cc6d57cc1f08e3c4c8c6b8fa7b64acbf46e",
+          "inputPresentationSha256": "6486094f4896697c6b44799e8ef04772af169072dfd9e00e978eb87fb2bef36c",
+          "generatedAt": "2026-10-03T10:10:52.835961+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": false,
+            "matchesRevisedRootConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2013-reading-result.json",
+            "inputPromptSha256": "cdc49e1372efee30265558cdf0aa666eb1f1d533073fb5c2220ce1bb29c31110",
+            "responseStreamSha256": "93eb9516d1a9856efb2a4a1b2ec0078519d77a69ecac1b51a62801ee311aa8cd",
+            "stage": "independent"
+          }
+        },
+        "gpt_6_astra_initial": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选B，关键在概括超出材料。文中叙述曹彬作为周室近亲、身居内职而谨守本分，在非公务时不拜访掌禁军的赵匡胤，也少参加群聚宴会；不能直接把这些细节扩大成他对所有同僚都“不结党营私”的明确事实。“为官清正”也没有准确说明该段谨守当时君臣职责的具体处境。A收礼登记上交，表现不取私利又知变通；C诈病求将士承诺不滥杀、以宾礼待李煜，均有直接情节；D从预见不授使相及太祖以太原未平延后承诺，可作谨慎的政治关系解读。此题不是说曹彬不清正或确曾结党，而是拒绝把文本没有落实的泛化当成事实。",
+          "selectedOptions": [
+            "B"
+          ],
+          "inputSha256": "f7c36675fb9a283c01b992edd5f2d5871901b6cae0dd8badcaf83b9e99c1bc1a",
+          "inputContextSha256": "cff3dfab8431750cad1eb9c309124cc6d57cc1f08e3c4c8c6b8fa7b64acbf46e",
+          "inputPresentationSha256": "6486094f4896697c6b44799e8ef04772af169072dfd9e00e978eb87fb2bef36c",
+          "generatedAt": "2026-10-03T10:08:59.921527+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2013-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2013-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2013.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        }
+      },
+      "inputSha256": "f7c36675fb9a283c01b992edd5f2d5871901b6cae0dd8badcaf83b9e99c1bc1a",
+      "inputContextSha256": "cff3dfab8431750cad1eb9c309124cc6d57cc1f08e3c4c8c6b8fa7b64acbf46e",
+      "inputPresentationSha256": "6486094f4896697c6b44799e8ef04772af169072dfd9e00e978eb87fb2bef36c",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "root最初B错误，Claude及参考D；重读中立不倚/罕赴宴支持B，暂缓授官仅说明太原未平，不能推定戒备防范。root改D，完整初稿和选项B存于独立版本及冻结草稿，不冒充初始一致。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:15:23.503Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2013-guwen:5",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2013北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/201306/t20130608_957719.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "宋史卷258曹彬原文",
+          "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2/%E5%8D%B7258",
+          "qualification": "Primary-text transcription confirms source lexical repairs. 中立不倚/少宴会 supports B summary; nonappointment alone does not establish D suspicion. Not original-exam proof."
+        },
+        {
+          "type": "checked_reference",
+          "title": "公开2013参考",
+          "url": "https://www.gzywtk.com/sjbrow/735-3.html",
+          "qualification": "Root冻结后读取1-21参考，9为D、19含闹市清静脱俗；促进纠正root旧B和补全散文。参考自身将融化按常温液体、处置指物处治指人均过简，且16说鹏绝不能急转无材料充分支持，不采这些断言。"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "潘美微笑，是因为皇帝果然没有立即授曹彬使相，并且给出的理由正是曹彬先前预料的太原未平；潘美惊叹、佩服曹彬看得透，因而看着他会心而笑。太祖大笑，是听到潘美说明经过，发现自己的决定和说辞早被曹彬料中，笑中可见被看穿后的自嘲与对曹彬见识的赏识。不能据此断言他最初许诺时就已决定欺骗，文本只足以说明当下的决定被预见。",
+          "selectedOptions": [],
+          "inputSha256": "664179ab4bf51949a7cc9056e4041321c6226b75cd854215c153f463aa5a1407",
+          "inputContextSha256": "b0013ae2ee8813d9bf4332fd804252ffb0f04744d7635d1ffc7b523f3d5db73b",
+          "inputPresentationSha256": "80120fb7f0e3750126e26560c77ae1a9f27cd19d4da39667a43465ca65791036",
+          "generatedAt": "2026-10-03T10:08:59.921527+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2013-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2013-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2013.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "1. 潘美“微笑”的缘由：出征前太祖许诺攻克李煜后授曹彬使相，潘美提前道贺，曹彬却断言因“太原未平”此事不会兑现。凯旋后太祖果然以“刘继元未下”为由暂不授官，与曹彬的预言完全吻合。潘美想起当初的对话，佩服曹彬料事如神，所以偷偷看着他会心而笑。\n2. 太祖“大笑”的缘由：听潘美说出实情后，太祖知道自己的心思早被曹彬猜中，自己的许诺也确实没有兑现，不免有些尴尬和自嘲；同时又欣赏曹彬的识见、不居功和豁达，于是大笑，并赐钱二十万作为补偿。",
+          "inputSha256": "664179ab4bf51949a7cc9056e4041321c6226b75cd854215c153f463aa5a1407",
+          "inputContextSha256": "b0013ae2ee8813d9bf4332fd804252ffb0f04744d7635d1ffc7b523f3d5db73b",
+          "inputPresentationSha256": "80120fb7f0e3750126e26560c77ae1a9f27cd19d4da39667a43465ca65791036",
+          "generatedAt": "2026-10-03T10:10:52.835961+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2013-reading-result.json",
+            "inputPromptSha256": "cdc49e1372efee30265558cdf0aa666eb1f1d533073fb5c2220ce1bb29c31110",
+            "responseStreamSha256": "93eb9516d1a9856efb2a4a1b2ec0078519d77a69ecac1b51a62801ee311aa8cd",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "664179ab4bf51949a7cc9056e4041321c6226b75cd854215c153f463aa5a1407",
+      "inputContextSha256": "b0013ae2ee8813d9bf4332fd804252ffb0f04744d7635d1ffc7b523f3d5db73b",
+      "inputPresentationSha256": "80120fb7f0e3750126e26560c77ae1a9f27cd19d4da39667a43465ca65791036",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "双方解释预言应验与被识破后的自嘲赏识。曹彬不居功豁达可综合理解，但Claude赐钱作为补偿、皇帝最初心态等属于解读，不能以笑证明猜忌或预谋欺骗。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:15:23.503Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2013-shici:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2013北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/201306/t20130608_957719.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "古风齐有倜傥生原文",
+          "url": "https://zh.wikisource.org/zh-hant/%E5%8F%A4%E9%A2%A8_%28%E9%BD%8A%E6%9C%89%E5%80%9C%E5%84%BB%E7%94%9F%29",
+          "qualification": "诗本身支持赠、吾和不慕重赏/济世功业解读；不以其版本认证原试卷。"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后修订",
+          "text": "选B。“后世仰末照”说鲁仲连的光辉余泽仍为后人景仰，不是太阳将落、功绩将被遗忘。A“明月出海底”以海中出现、光彩照人的形象比喻杰出人才，所引曹植句以海中明珠喻人才，均为赞誉；本题不必以明月究竟按月亮或明月珠作唯一训诂来决定选项；C末二句以自己的澹荡与鲁连的倜傥相呼应；D“同调”直接表达对鲁仲连人格与志趣的认同，均能由诗句支持。",
+          "selectedOptions": [
+            "B"
+          ],
+          "inputSha256": "9eccf2a65847a9e02fd691b2c23817e887c646a4cf388f195201ae480c356b07",
+          "inputContextSha256": "5e440504c7a8f7549648001646865ee8b36c1ec024320094d2cfa6b23db8c569",
+          "inputPresentationSha256": "df6376a37d9564428e94c22db758bc2cc0c6d81c382d5ee08647e14784e2592f",
+          "generatedAt": "2026-10-03T10:15:23.503Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2013-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2013-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2013.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh",
+            "refinementEvidence": "answers-six-sites-20261002/root-2013-refinements.json",
+            "refinementReason": "未取得原注本，撤回把明月本体认定为月亮的非必要单一解释。",
+            "initialVersion": "gpt_6_astra_initial"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。“后世仰末照”是说鲁仲连的光辉照耀后世，后人仰望他的余辉，“末照”即余光，是赞颂他的功绩和风范流传久远，不是感叹他如落日般被渐渐遗忘，B项曲解诗意。A项正确：“明月出海底，一朝开光曜”以明月珠出海、光芒四射比喻鲁仲连才德出众，与曹植诗句同为以比喻表达赞誉。C项正确：末两句以“澹荡人”呼应“倜傥生”，表明诗人与鲁仲连志趣相同。D项正确：全诗盛赞鲁仲连却秦立功而轻视千金之赏的高风亮节，并引为“同调”，内容明白，感情深挚。",
+          "inputSha256": "9eccf2a65847a9e02fd691b2c23817e887c646a4cf388f195201ae480c356b07",
+          "inputContextSha256": "5e440504c7a8f7549648001646865ee8b36c1ec024320094d2cfa6b23db8c569",
+          "inputPresentationSha256": "df6376a37d9564428e94c22db758bc2cc0c6d81c382d5ee08647e14784e2592f",
+          "generatedAt": "2026-10-03T10:10:52.835961+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2013-reading-result.json",
+            "inputPromptSha256": "cdc49e1372efee30265558cdf0aa666eb1f1d533073fb5c2220ce1bb29c31110",
+            "responseStreamSha256": "93eb9516d1a9856efb2a4a1b2ec0078519d77a69ecac1b51a62801ee311aa8cd",
+            "stage": "independent"
+          }
+        },
+        "gpt_6_astra_initial": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选B。“后世仰末照”说鲁仲连的光辉余泽仍为后人景仰，不是太阳将落、功绩将被遗忘。A“明月出海底”把杰出人物的出现比作海底明月升起，所引曹植句以海中明珠喻人才，均为赞誉；C末二句以自己的澹荡与鲁连的倜傥相呼应；D“同调”直接表达对鲁仲连人格与志趣的认同，均能由诗句支持。",
+          "selectedOptions": [
+            "B"
+          ],
+          "inputSha256": "9eccf2a65847a9e02fd691b2c23817e887c646a4cf388f195201ae480c356b07",
+          "inputContextSha256": "5e440504c7a8f7549648001646865ee8b36c1ec024320094d2cfa6b23db8c569",
+          "inputPresentationSha256": "df6376a37d9564428e94c22db758bc2cc0c6d81c382d5ee08647e14784e2592f",
+          "generatedAt": "2026-10-03T10:08:59.921527+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2013-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2013-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2013.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        }
+      },
+      "inputSha256": "9eccf2a65847a9e02fd691b2c23817e887c646a4cf388f195201ae480c356b07",
+      "inputContextSha256": "5e440504c7a8f7549648001646865ee8b36c1ec024320094d2cfa6b23db8c569",
+      "inputPresentationSha256": "df6376a37d9564428e94c22db758bc2cc0c6d81c382d5ee08647e14784e2592f",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "双方B，末照为余辉而非将被遗忘。root原将明月直读月亮、Claude断明月珠，当前未获注本确证；root改中性海中光明形象比喻，不把未核本体作为答案依据。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:15:23.503Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2013-shici:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2013北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/201306/t20130608_957719.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "古风齐有倜傥生原文",
+          "url": "https://zh.wikisource.org/zh-hant/%E5%8F%A4%E9%A2%A8_%28%E9%BD%8A%E6%9C%89%E5%80%9C%E5%84%BB%E7%94%9F%29",
+          "qualification": "诗本身支持赠、吾和不慕重赏/济世功业解读；不以其版本认证原试卷。"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "李白希望像鲁仲连那样以才智救时济世、建立功业；“却秦振英声”写其退秦扬名，寄托诗人有所作为的抱负。同时，他向往不为富贵所羁的高洁人格，“意轻千金赠，顾向平原笑”赞美轻视重赏，“拂衣可同调”表明功成后洒脱退身、保持独立自由的志趣。末句不是否定一切社会担当，而是把济世与不恋名利结合起来。",
+          "selectedOptions": [],
+          "inputSha256": "b0da9c6c73fedf1cfb90536784f0fef72e84e9e65ddb1b337f63f8e5196ceded",
+          "inputContextSha256": "58c08e4db56add39f0935a8c77b2310347e38ce1bfe2dde15ebb9eb5c21dd3b2",
+          "inputPresentationSha256": "7a2da2c4919b25d8998b98081116c8e456ed50eccda5c379858431cd51a528d4",
+          "generatedAt": "2026-10-03T10:08:59.921527+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2013-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2013-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2013.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "李白借鲁仲连表达了“建功立业而后功成不居”的人生理想。\n1. 渴望施展才能，建立不朽功业。诗中以“明月出海底，一朝开光曜”赞鲁仲连才华一朝显露、光照天下，以“却秦振英声，后世仰末照”赞他退秦解难、名垂后世，寄托了诗人自己希望为国排难解纷、一鸣惊人的抱负。\n2. 轻视富贵，功成身退，保持独立高洁的人格。“意轻千金赠，顾向平原笑”写鲁仲连立功后笑辞千金之赏，诗人对此极为倾慕。\n3. 末两句“吾亦澹荡人，拂衣可同调”直接自比，表明自己也是淡泊洒脱、不慕荣利的人，愿像鲁仲连那样济世立功之后拂衣而去、不受爵赏。",
+          "inputSha256": "b0da9c6c73fedf1cfb90536784f0fef72e84e9e65ddb1b337f63f8e5196ceded",
+          "inputContextSha256": "58c08e4db56add39f0935a8c77b2310347e38ce1bfe2dde15ebb9eb5c21dd3b2",
+          "inputPresentationSha256": "7a2da2c4919b25d8998b98081116c8e456ed50eccda5c379858431cd51a528d4",
+          "generatedAt": "2026-10-03T10:10:52.835961+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2013-reading-result.json",
+            "inputPromptSha256": "cdc49e1372efee30265558cdf0aa666eb1f1d533073fb5c2220ce1bb29c31110",
+            "responseStreamSha256": "93eb9516d1a9856efb2a4a1b2ec0078519d77a69ecac1b51a62801ee311aa8cd",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "b0da9c6c73fedf1cfb90536784f0fef72e84e9e65ddb1b337f63f8e5196ceded",
+      "inputContextSha256": "58c08e4db56add39f0935a8c77b2310347e38ce1bfe2dde15ebb9eb5c21dd3b2",
+      "inputPresentationSha256": "7a2da2c4919b25d8998b98081116c8e456ed50eccda5c379858431cd51a528d4",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "双方包括济世立功、不慕厚赏和功成退身；原诗赠/拂衣支持，未把李白愿望当已实现生平事实。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:15:23.503Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2013-sanwen:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2013北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/201306/t20130608_957719.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选A、D。A把饮食记忆和感受在文中的重要性全部归因于无法追怀童年，属于因果附会；那些吃食还承载重游时对乡土生活、人情和传统的喜爱。D把水说成全文结构展开叙述的核心线索不准确：文章沿童年追忆、重访绍兴和杭州的经历与感兴推进，还写了山、店铺、鲁迅及人情，水是重要意象而非贯串所有段落的唯一组织线索。B概括追忆游历与性格体悟；C确有插叙1981年游杭；E综合了自然与人文，均切合文章。",
+          "selectedOptions": [
+            "A",
+            "D"
+          ],
+          "inputSha256": "e1c25b9a7b6281049f24ad7fec67a0ac70cb4520cb220cc5017e2502fe9e0eb1",
+          "inputContextSha256": "20b8c04615a838c98b6f49fe20668b90615bf738213ce0f641d3c1a05ccafe95",
+          "inputPresentationSha256": "d628dcab65b45e4ca9495977afc4563563b35531bdcc9a791772d013d43fba6d",
+          "generatedAt": "2026-10-03T10:08:59.921527+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2013-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2013-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2013.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A、D。\n选A、D。A项不正确：文中写到馄饨、加饭酒、油豆腐、咸肉，但饮食只是感受乡土的细节之一，谈不上“占有重要地位”；而且作者对童年并非完全“无法追怀”，只是记忆零碎模糊，把饮食的地位归因于此属强加因果。B项正确：文章由童年追忆写到绍兴、杭州之行，借景物抒感，最后落到“水使它灵秀，山给予它骨气”的浙江性格。C项正确：文中插叙1981年初到杭州时逛布鞋店、咸肉店的经过，表现了杭州日常生活中从容、洁净、守旧礼的传统风貌。D项不正确：“水是浙江灵秀所在”有原文依据，但全文是以作者的游踪和感兴（童年回忆—绍兴—杭州—西湖山水）来组织的，“水”不是结构线索，结尾还特别强调了“山”的一面。E项正确：文中有西湖山水、绍兴民居与人情、鲁迅文学和南宋遗风，构成一幅综合的江南图景。",
+          "inputSha256": "e1c25b9a7b6281049f24ad7fec67a0ac70cb4520cb220cc5017e2502fe9e0eb1",
+          "inputContextSha256": "20b8c04615a838c98b6f49fe20668b90615bf738213ce0f641d3c1a05ccafe95",
+          "inputPresentationSha256": "d628dcab65b45e4ca9495977afc4563563b35531bdcc9a791772d013d43fba6d",
+          "generatedAt": "2026-10-03T10:10:52.835961+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A",
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2013-reading-result.json",
+            "inputPromptSha256": "cdc49e1372efee30265558cdf0aa666eb1f1d533073fb5c2220ce1bb29c31110",
+            "responseStreamSha256": "93eb9516d1a9856efb2a4a1b2ec0078519d77a69ecac1b51a62801ee311aa8cd",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "e1c25b9a7b6281049f24ad7fec67a0ac70cb4520cb220cc5017e2502fe9e0eb1",
+      "inputContextSha256": "20b8c04615a838c98b6f49fe20668b90615bf738213ce0f641d3c1a05ccafe95",
+      "inputPresentationSha256": "d628dcab65b45e4ca9495977afc4563563b35531bdcc9a791772d013d43fba6d",
+      "status": "reviewed",
+      "kind": "multiple_choice",
+      "correctOptions": [
+        "A",
+        "D"
+      ],
+      "explanation": "双方AD。A错在强加因果及把零碎记忆等于无法追怀；Claude说饮食谈不上重要过强，应许其为重要乡土细节但非该因果。D主线为经历和感兴，不能仅因写山便否定水意象的重要性。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:15:23.503Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2013-sanwen:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2013北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/201306/t20130608_957719.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "①故乡环境以黑白为主，严谨素净；空间宽大，器物厚实可靠，体现朴质、踏实的生活；严厉戒方与顽童乐园并置，流水穿行，又有温厚人情与灵动气息。②作者由此更理解鲁迅艺术与家乡气质的联系：文字经济、勾画准确，像故乡建筑的严谨质朴；写实处境中又含抒情温度，严格与温情相融，朴素叙述有余音和感染力。闰土、乌篷船以及忧郁、愤怒、向往能进入几代读者的情感记忆。这里是王佐良对作品与乡土的体悟，不能硬说鲁迅所有性格和创作都由地理环境决定。",
+          "selectedOptions": [],
+          "inputSha256": "6267973cd1deb06a3edfa2e3745f98cb02ca0927e18b92ddb24101ba30b7db7a",
+          "inputContextSha256": "b4b0b88e20977e715955ff8c1ef738e43bb66ebdd010f0f1ff114bd10f3b9134",
+          "inputPresentationSha256": "286a52a7c7f5f7cca3242c97791164cfa7ed809b63af1c0e5e52dafa7c1a6de0",
+          "generatedAt": "2026-10-03T10:08:59.921527+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2013-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2013-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2013.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "① 作者从鲁迅故乡环境中看出的特色：\n- 色泽以黑与白为主（黑瓦、白墙、发白的石板路、黑木柱），严谨、素净。\n- 空间庞大，物件厚实可靠，生活朴质。\n- 朴质的生活里有温厚的人情，如三味书屋既有老师的戒方，又有学童的小乐园。\n- 石板路下流水潺潺，水给这里带来灵秀、音乐感和想象力。\n\n② 作者对鲁迅多出的了解：\n- 鲁迅作品的风格与故乡环境一脉相通：他的艺术素描里也有“黑泥、白石和绿水”的配合，朴质而弥漫着温情，可见水土对他的滋养。\n- 他用笔极其经济，短短几句就勾画出实实在在的人生处境，这与故乡的严谨、素净、厚实相应。\n- 他又总把这种处境放在抒情的气氛之中，这与故乡的温厚人情和流水的灵秀相应。\n- 他“最严格”又“最温情”，所以最平常的叙述也带有余音、富有感染力：闰土、乌篷船以及他的忧郁、愤怒和向往，成为几代读者共同的记忆和情感。",
+          "inputSha256": "6267973cd1deb06a3edfa2e3745f98cb02ca0927e18b92ddb24101ba30b7db7a",
+          "inputContextSha256": "b4b0b88e20977e715955ff8c1ef738e43bb66ebdd010f0f1ff114bd10f3b9134",
+          "inputPresentationSha256": "286a52a7c7f5f7cca3242c97791164cfa7ed809b63af1c0e5e52dafa7c1a6de0",
+          "generatedAt": "2026-10-03T10:10:52.835961+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2013-reading-result.json",
+            "inputPromptSha256": "cdc49e1372efee30265558cdf0aa666eb1f1d533073fb5c2220ce1bb29c31110",
+            "responseStreamSha256": "93eb9516d1a9856efb2a4a1b2ec0078519d77a69ecac1b51a62801ee311aa8cd",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "6267973cd1deb06a3edfa2e3745f98cb02ca0927e18b92ddb24101ba30b7db7a",
+      "inputContextSha256": "b4b0b88e20977e715955ff8c1ef738e43bb66ebdd010f0f1ff114bd10f3b9134",
+      "inputPresentationSha256": "286a52a7c7f5f7cca3242c97791164cfa7ed809b63af1c0e5e52dafa7c1a6de0",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "双方已完整覆盖环境和鲁迅风格/情感两问；水土影响属于作者艺术体悟，不是全部人格因果定律。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:15:23.503Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2013-sanwen:3",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2013北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/201306/t20130608_957719.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后修订",
+          "text": "西湖把市区与郊外的界限模糊了：虽近闹市，湖光山色却能洗涤红尘，使人清爽，呈现清静脱俗的气质。阳光下明媚，更多时候清幽，朝夕薄雾、暮色和夜灯使它面容多变；整体素净天然，不以浓艳人工取胜。水使它灵秀，环湖群山又给它厚度、重量和骨气，显出柔中有刚、不轻飘的性格。",
+          "selectedOptions": [],
+          "inputSha256": "fc0fb7453f240bf82d190451ed5bbf51cc0ca038be5e6895c00f58dd7fa835a6",
+          "inputContextSha256": "fc78d8e8e3899713b7293d2fd1d5f314d18459d772671d9abdcb3cb73610a3b2",
+          "inputPresentationSha256": "817528cddb72f4695294be58d91b76fb88e195f91ef10f6e16bdf7284e37ba5b",
+          "generatedAt": "2026-10-03T10:15:23.503Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2013-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2013-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2013.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh",
+            "refinementEvidence": "answers-six-sites-20261002/root-2013-refinements.json",
+            "refinementReason": "补足身处闹市而清静脱俗的前段依据，完整初答保留。",
+            "initialVersion": "gpt_6_astra_initial"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "作者感受到的西湖特点有：\n1. 清幽、明净。阳光下明媚，但更多时候显得清幽；湖光山色能洗涤红尘，让风尘仆仆的远来人顿感清爽。\n2. 姿态多变。清晨薄雾、黄昏夕照、沉沉夜色下，湖的“表情”各不相同，千变万化。\n3. 素淡天然。没有太浓太艳的时候，素面淡妆，以天然而不以人工取胜。\n4. 有厚度、有性格。环湖群山虽只是淡淡几抹青色，却引人遐想，给西湖以厚度和重量，使它不轻飘，在灵秀之外还有骨气。",
+          "inputSha256": "fc0fb7453f240bf82d190451ed5bbf51cc0ca038be5e6895c00f58dd7fa835a6",
+          "inputContextSha256": "fc78d8e8e3899713b7293d2fd1d5f314d18459d772671d9abdcb3cb73610a3b2",
+          "inputPresentationSha256": "817528cddb72f4695294be58d91b76fb88e195f91ef10f6e16bdf7284e37ba5b",
+          "generatedAt": "2026-10-03T10:10:52.835961+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2013-reading-result.json",
+            "inputPromptSha256": "cdc49e1372efee30265558cdf0aa666eb1f1d533073fb5c2220ce1bb29c31110",
+            "responseStreamSha256": "93eb9516d1a9856efb2a4a1b2ec0078519d77a69ecac1b51a62801ee311aa8cd",
+            "stage": "independent"
+          }
+        },
+        "gpt_6_astra_initial": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "西湖在阳光下明媚，更多时候清幽，朝夕雾色、暮色和夜灯使它面容多变；整体清淡素净，天然质朴而不浓艳人工。湖水使人清爽并富于灵秀，环湖群山又给湖以厚度、重量和骨气，显出并非轻飘柔弱而是柔中有刚的性格。",
+          "selectedOptions": [],
+          "inputSha256": "fc0fb7453f240bf82d190451ed5bbf51cc0ca038be5e6895c00f58dd7fa835a6",
+          "inputContextSha256": "fc78d8e8e3899713b7293d2fd1d5f314d18459d772671d9abdcb3cb73610a3b2",
+          "inputPresentationSha256": "817528cddb72f4695294be58d91b76fb88e195f91ef10f6e16bdf7284e37ba5b",
+          "generatedAt": "2026-10-03T10:08:59.921527+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2013-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2013-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2013.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        }
+      },
+      "inputSha256": "fc0fb7453f240bf82d190451ed5bbf51cc0ca038be5e6895c00f58dd7fa835a6",
+      "inputContextSha256": "fc78d8e8e3899713b7293d2fd1d5f314d18459d772671d9abdcb3cb73610a3b2",
+      "inputPresentationSha256": "817528cddb72f4695294be58d91b76fb88e195f91ef10f6e16bdf7284e37ba5b",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "双方主体合文意；root补入处闹市而清静脱俗、人文市区与自然相接的维度，保存原短答，形成更完整作答。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:15:23.503Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2013-sanwen:4",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2013北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/201306/t20130608_957719.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "教育局景情教学资料",
+          "url": "https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/resources/secondary-edu/lang/20240613_PDF2.pdf",
+          "qualification": "教育部门资料引王国维昔人论诗词及一切景语皆情语，属于归属旁证；本次未校原版人间词话章节。"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "“一切景语皆情语”在这里是说，作者笔下的景物经过情感与眼光的选择，描写风景也就在传达自己对乡土的理解，并不意味着任何客观景物都只能对应一种固定感情。文章开头写记忆中庙里的电影、江潮和馄饨，片段虽模糊，滋味却难忘，流露出追怀童年、重新亲近故乡的愿望。绍兴的黑瓦、白墙和洗得发白的石路，显出严谨素净；宽大的空间、厚实的器物与潺潺流水，又让作者体会到朴质生活中的温情和灵秀，进而理解鲁迅文字中严格与温暖的相融。写杭州老店，着意描绘洁净柜台、从容选肉和传统待客礼貌，所赞赏的是城市保存的人情。写西湖，则用清晨薄雾、黄昏夕照、夜色灯火构成素面淡妆的自然美，“洗涤”红尘的感受透露出欣悦与清爽。结尾群山给西湖厚度、重量和骨气，更把外在山水提升为对浙江人格气质的体认。全文的景、事、人互相照应，使乡土之爱有具体形象，也有逐层深入的认识。",
+          "selectedOptions": [],
+          "inputSha256": "f0844e5d81e784b95e4d55e0e0c2bb16b452329bba2787195b3d54f93977cfc6",
+          "inputContextSha256": "fdd05535d7d20f7cb08b44773155aa07f211653353e3cec80217b4b695baf730",
+          "inputPresentationSha256": "ff708288d064139ec0a927037813b6340e7508d4dbf4e1aec26743e5bd933d51",
+          "generatedAt": "2026-10-03T10:08:59.921527+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2013-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2013-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2013.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "示例作答（约380字）：\n\n“一切景语皆情语”出自王国维《人间词话》，意思是作品中的写景文字从来不是纯客观的描摹，景物经过作者情感的选择和浸染，写景就是在抒情，情与景交融为一体。\n\n本文正是如此。写绍兴，作者只取黑的瓦顶、白的粉墙、发白的石板路、大大的腌菜缸和石板路下潺潺的流水，这些景物色泽素净、质地厚实，字面上是写水乡风貌，实际上流露的是作者对故乡朴质生活和温厚人情的亲近与眷恋，也含着对从这片水土走出来的鲁迅的理解和敬意。写杭州旧铺，洗得白白的木柜台、干干净净的咸肉、醇厚的咸肉香，景中透出的是对从容有礼的传统生活的珍惜与怀念。写西湖，薄雾、夕照、夜色中的灯火，“素面淡妆，以天然而不是人工胜”，寄托了作者崇尚自然、喜爱淡雅的审美情趣；写环湖群山“淡淡的几抹青色”给西湖以厚度和重量，则把对浙江“灵秀而有骨气”的性格的赞美融进了山水。\n\n作者开头自问是否“配称浙江人”，全文没有直接抒情的句子，却让一处处景物替他作了回答。景因情而有了生命，情借景而显得含蓄深厚，这就是“一切景语皆情语”带给读者的艺术感受。",
+          "inputSha256": "f0844e5d81e784b95e4d55e0e0c2bb16b452329bba2787195b3d54f93977cfc6",
+          "inputContextSha256": "fdd05535d7d20f7cb08b44773155aa07f211653353e3cec80217b4b695baf730",
+          "inputPresentationSha256": "ff708288d064139ec0a927037813b6340e7508d4dbf4e1aec26743e5bd933d51",
+          "generatedAt": "2026-10-03T10:10:52.835961+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2013-reading-result.json",
+            "inputPromptSha256": "cdc49e1372efee30265558cdf0aa666eb1f1d533073fb5c2220ce1bb29c31110",
+            "responseStreamSha256": "93eb9516d1a9856efb2a4a1b2ec0078519d77a69ecac1b51a62801ee311aa8cd",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "f0844e5d81e784b95e4d55e0e0c2bb16b452329bba2787195b3d54f93977cfc6",
+      "inputContextSha256": "fdd05535d7d20f7cb08b44773155aa07f211653353e3cec80217b4b695baf730",
+      "inputPresentationSha256": "ff708288d064139ec0a927037813b6340e7508d4dbf4e1aec26743e5bd933d51",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两篇均超200汉字。Claude景情分析主体可用，但末段全文没有直接抒情句明显错误，原文我是喜欢这乡土的即反例；其作者只取等排他措辞亦不成立。保留原模型并显示裁定，默认root完整限定版。王国维归属获教育局资料旁证，未逐字校原版章节。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:15:23.503Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2013-yuyanjichu:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2013北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/201306/t20130608_957719.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "独闢蹊徑词条",
+          "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=47305&la=0&powerMode=0",
+          "qualification": "MOE gives xī; do not invent qī error in optionA."
+        },
+        {
+          "type": "checked_reference",
+          "title": "卷帙词条",
+          "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=97628&q=1&word=%E5%B8%99",
+          "qualification": "MOE gives zhì, supporting rejection of dié."
+        },
+        {
+          "type": "checked_reference",
+          "title": "湮没：大陆与台湾读音需分开",
+          "url": "https://www.zdic.net/hans/%E6%B9%AE%E6%B2%A1",
+          "qualification": "Han Dian entry gives yān mò. Distinguish Taiwan MOE variant dictionary ID24388, which accepts yīn for burial sense; root absolute wording must be region-qualified. D仍有鸭/鸦字形错误，不因地区读音差异改成正确。"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后修订",
+          "text": "选B。醉醺醺、席不暇暖字形正确；淖读nào，隅读yú。A与日剧增应为与日俱增；本题所列便笺jiān、独辟蹊径xī均可，不能为了凑两个错再改成qī。C滥摊子应为烂摊子，卷帙的帙读zhì，不读dié。D信笔涂鸭应为信笔涂鸦；按此北京试题采用的大陆普通话用法，湮没的湮读yān；台湾教育部辞典在埋没义下也收yīn，不能把本题判断推广为所有华语地区均不读yīn；蠹读dù。故意设置的错字音作为题目内容保留。",
+          "selectedOptions": [
+            "B"
+          ],
+          "inputSha256": "8798c3c922f7e2eb4afd4181bfa01e091922410f97a6cc980b31c8b05cae0a2f",
+          "inputContextSha256": "d2ad8c961cb2b65084a844de8e7ca322f9f7798024f86eecb7235fb147651d2d",
+          "inputPresentationSha256": "2d66e7b92cdf6023e76ff200286dd3eac91b35289e365fce2c0065525b93afa9",
+          "generatedAt": "2026-10-03T10:15:23.503Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2013-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2013-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2013.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh",
+            "refinementEvidence": "answers-six-sites-20261002/root-2013-refinements.json",
+            "refinementReason": "核到地区读音规范差异，限定原先绝对断言，不改变B或D独立字形错误。",
+            "initialVersion": "gpt_6_astra_initial"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。A项“与日剧增”应为“与日俱增”，字形有误（“便笺”读jiān、“蹊径”读xī均正确）。B项“醉醺醺”“席不暇暖”字形正确，“泥淖”读nào、“向隅而泣”读yú，全部正确。C项“滥摊子”应为“烂摊子”，“卷帙”的“帙”应读zhì，不读dié。D项“信笔涂鸭”应为“信笔涂鸦”，“湮没无闻”的“湮”应读yān，不读yīn。",
+          "inputSha256": "8798c3c922f7e2eb4afd4181bfa01e091922410f97a6cc980b31c8b05cae0a2f",
+          "inputContextSha256": "d2ad8c961cb2b65084a844de8e7ca322f9f7798024f86eecb7235fb147651d2d",
+          "inputPresentationSha256": "2d66e7b92cdf6023e76ff200286dd3eac91b35289e365fce2c0065525b93afa9",
+          "generatedAt": "2026-10-03T10:10:52.835961+00:00",
+          "uncertainties": [
+            "题面未显示着重号，这里按括号注音所对应的字判断。"
+          ],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2013-reading-result.json",
+            "inputPromptSha256": "cdc49e1372efee30265558cdf0aa666eb1f1d533073fb5c2220ce1bb29c31110",
+            "responseStreamSha256": "93eb9516d1a9856efb2a4a1b2ec0078519d77a69ecac1b51a62801ee311aa8cd",
+            "stage": "independent"
+          }
+        },
+        "gpt_6_astra_initial": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选B。醉醺醺、席不暇暖字形正确；淖读nào，隅读yú。A与日剧增应为与日俱增；本题所列便笺jiān、独辟蹊径xī均可，不能为了凑两个错再改成qī。C滥摊子应为烂摊子，卷帙的帙读zhì，不读dié。D信笔涂鸭应为信笔涂鸦；湮没的湮读yān，不读yīn；蠹读dù。故意设置的错字音作为题目内容保留。",
+          "selectedOptions": [
+            "B"
+          ],
+          "inputSha256": "8798c3c922f7e2eb4afd4181bfa01e091922410f97a6cc980b31c8b05cae0a2f",
+          "inputContextSha256": "d2ad8c961cb2b65084a844de8e7ca322f9f7798024f86eecb7235fb147651d2d",
+          "inputPresentationSha256": "2d66e7b92cdf6023e76ff200286dd3eac91b35289e365fce2c0065525b93afa9",
+          "generatedAt": "2026-10-03T10:08:59.921527+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2013-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2013-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2013.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        }
+      },
+      "inputSha256": "8798c3c922f7e2eb4afd4181bfa01e091922410f97a6cc980b31c8b05cae0a2f",
+      "inputContextSha256": "d2ad8c961cb2b65084a844de8e7ca322f9f7798024f86eecb7235fb147651d2d",
+      "inputPresentationSha256": "2d66e7b92cdf6023e76ff200286dd3eac91b35289e365fce2c0065525b93afa9",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "双方B，蹊xī及帙zhì经教育部字典核。湮没大陆yān与台湾yīn存在地区规范差异，root修订地域限定并保留原答；D鸭/鸦字误独立成立，不因此改变选项。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:15:23.503Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2013-yuyanjichu:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2013北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/201306/t20130608_957719.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选A。句子以食品药品安全问题被接连曝光，说明分段监管模式受到质疑，结构完整。B“对于513公顷的园博园”成为介词结构，后面的专门开设缺少合适主语；可去掉对于，使园博园作主语。C“原因主要在于……”与“是……所致”两种结构混用，应去所致，或改成需求高涨主要是……所致。D“加大”与“查处”搭配缺少力度等中心成分，可改为加大查处力度。",
+          "selectedOptions": [
+            "A"
+          ],
+          "inputSha256": "063957745c20b3876340e3dc65e5aeec7d84db29993ed8ea3ff23f305cbf13fc",
+          "inputContextSha256": "a5c5afc0467b7397b7e8ce0e7df19626e9ffa005c17c7508050250e979496f12",
+          "inputPresentationSha256": "55a8dbbfa0d16c229d2d875dfe080fa3053c378ea50d56fd4d06c270f3d4911c",
+          "generatedAt": "2026-10-03T10:08:59.921527+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2013-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2013-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2013.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\n选A。A项结构完整，搭配得当，没有语病。B项成分残缺：“对于513公顷的园博园”介词结构之后，“专门开设了电瓶车专线”缺主语，且“对于……”与后文不衔接。C项句式杂糅：“原因主要在于……”与“……所致”混用，应删去“所致”或改为“主要是由……所致”。D项成分残缺：“加大”缺宾语中心语，应为“加大对交通违法行为的查处力度”。",
+          "inputSha256": "063957745c20b3876340e3dc65e5aeec7d84db29993ed8ea3ff23f305cbf13fc",
+          "inputContextSha256": "a5c5afc0467b7397b7e8ce0e7df19626e9ffa005c17c7508050250e979496f12",
+          "inputPresentationSha256": "55a8dbbfa0d16c229d2d875dfe080fa3053c378ea50d56fd4d06c270f3d4911c",
+          "generatedAt": "2026-10-03T10:10:52.835961+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2013-reading-result.json",
+            "inputPromptSha256": "cdc49e1372efee30265558cdf0aa666eb1f1d533073fb5c2220ce1bb29c31110",
+            "responseStreamSha256": "93eb9516d1a9856efb2a4a1b2ec0078519d77a69ecac1b51a62801ee311aa8cd",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "063957745c20b3876340e3dc65e5aeec7d84db29993ed8ea3ff23f305cbf13fc",
+      "inputContextSha256": "a5c5afc0467b7397b7e8ce0e7df19626e9ffa005c17c7508050250e979496f12",
+      "inputPresentationSha256": "55a8dbbfa0d16c229d2d875dfe080fa3053c378ea50d56fd4d06c270f3d4911c",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "双方A，B缺主语、C句式混合、D缺力度。按当前图版在于作答，由于异文保留来源问题，不偷换题面。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:15:23.503Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2013-yuyanjichu:3",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2013北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/201306/t20130608_957719.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选C。原型指文学艺术形象所依据的现实人物，原形侧重原来的形状或本来面目；交通消防应急处置事故，处治偏向处分或惩治；保险丝受热由固态变为液态，用熔化，融化通常用于冰雪等消融，也有抽象融合义。因此原型、处置、熔化依次对应三个空格。",
+          "selectedOptions": [
+            "C"
+          ],
+          "inputSha256": "26895791fb3422bb0bcf38011e9e6e5074d852b81c94642c8e6ab9731c5b88da",
+          "inputContextSha256": "1a4cf4976b63ff4e8a1cd3c607b279f4fd9029432ffc721334b37d8c246a8a94",
+          "inputPresentationSha256": "23712152b6052d7eb8166ae106f11d576589f0581cd7f8ce031207099e33c0ac",
+          "generatedAt": "2026-10-03T10:08:59.921527+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2013-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2013-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2013.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。①“原型”指文艺作品中塑造人物形象所依据的现实生活中的人，这里应用“原型”；“原形”指本来的形状或面目，多含贬义。②“处置”指处理、安排，用于事故现场的应急处理；“处治”指处分、惩治，对象是人或过错，这里不合适。③保险丝是金属，受热变为液态用“熔化”；“融化”指冰雪等化成水。三处依次为“原型、处置、熔化”。",
+          "inputSha256": "26895791fb3422bb0bcf38011e9e6e5074d852b81c94642c8e6ab9731c5b88da",
+          "inputContextSha256": "1a4cf4976b63ff4e8a1cd3c607b279f4fd9029432ffc721334b37d8c246a8a94",
+          "inputPresentationSha256": "23712152b6052d7eb8166ae106f11d576589f0581cd7f8ce031207099e33c0ac",
+          "generatedAt": "2026-10-03T10:10:52.835961+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2013-reading-result.json",
+            "inputPromptSha256": "cdc49e1372efee30265558cdf0aa666eb1f1d533073fb5c2220ce1bb29c31110",
+            "responseStreamSha256": "93eb9516d1a9856efb2a4a1b2ec0078519d77a69ecac1b51a62801ee311aa8cd",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "26895791fb3422bb0bcf38011e9e6e5074d852b81c94642c8e6ab9731c5b88da",
+      "inputContextSha256": "1a4cf4976b63ff4e8a1cd3c607b279f4fd9029432ffc721334b37d8c246a8a94",
+      "inputPresentationSha256": "23712152b6052d7eb8166ae106f11d576589f0581cd7f8ce031207099e33c0ac",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "双方C；融化/熔化和应急处置按本句搭配说明。Claude原形多含贬义非必要断言，公开参考处置只物处治只人及常温液体判据过简，均不采作普遍规则。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:15:23.503Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2013-yuyanjichu:4",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2013北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/201306/t20130608_957719.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "WHO电磁场问答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/radiation-electromagnetic-fields",
+          "qualification": "低水平暴露与题中笼统健康断言不可直接画等号，需频率强度条件与证据。只作阅读材料科学限定，不推为绝对无风险或个体医学建议。"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D，顺序②④③①。②先提出强电磁波干扰，④的这种强电磁波承接并补说长时暴露的后果；③用即使把论述转向较弱的环境，①再用因为解释这一级影响。答案依据指代、递进和因果衔接，不意味着材料中关于各强度电磁场与健康的笼统断言已经通过医学或物理学核验。",
+          "selectedOptions": [
+            "D"
+          ],
+          "inputSha256": "3f4a027bddae310b06e3767e34086a9f3281b3d70d29fc88ef19246686aa399c",
+          "inputContextSha256": "288a3dca7a0f69e2dc57d841d3a1f0bf2fc05117a744b7d5431dfaaf565a01dc",
+          "inputPresentationSha256": "a7809cf52b22c81d31f9c92dffcbacd52b7ee379684f3f2eeaa1cd2dfa439a28",
+          "generatedAt": "2026-10-03T10:08:59.921527+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2013-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2013-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2013.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D，顺序为②④③①。②先总说人脑和神经会产生微弱电磁波，强电磁波会造成严重干扰，是话题的起点。④中的“这种强电磁波的环境”承接②，进一步说明长期处于其中的危害。③用“即使在不太强的电磁波环境中”转入较弱的情形，形成递进。①用“因为较弱的电磁辐射”解释③的原因，放在最后。A、C两项以④开头，“这种”无所指；B项把③①放在④之前，割裂了②④之间的指代承接。",
+          "inputSha256": "3f4a027bddae310b06e3767e34086a9f3281b3d70d29fc88ef19246686aa399c",
+          "inputContextSha256": "288a3dca7a0f69e2dc57d841d3a1f0bf2fc05117a744b7d5431dfaaf565a01dc",
+          "inputPresentationSha256": "a7809cf52b22c81d31f9c92dffcbacd52b7ee379684f3f2eeaa1cd2dfa439a28",
+          "generatedAt": "2026-10-03T10:10:52.835961+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2013-reading-result.json",
+            "inputPromptSha256": "cdc49e1372efee30265558cdf0aa666eb1f1d533073fb5c2220ce1bb29c31110",
+            "responseStreamSha256": "93eb9516d1a9856efb2a4a1b2ec0078519d77a69ecac1b51a62801ee311aa8cd",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "3f4a027bddae310b06e3767e34086a9f3281b3d70d29fc88ef19246686aa399c",
+      "inputContextSha256": "288a3dca7a0f69e2dc57d841d3a1f0bf2fc05117a744b7d5431dfaaf565a01dc",
+      "inputPresentationSha256": "a7809cf52b22c81d31f9c92dffcbacd52b7ee379684f3f2eeaa1cd2dfa439a28",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "双方D，排序依据指代与递进因果；WHO文献限定题中的弱电磁场健康断言，不能以排序对错向用户提供健康结论。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:15:23.503Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2013-yuyanjichu:5",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2013北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/201306/t20130608_957719.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "若原加点分别为各句后半的飘、酿、吹、关，倾向选A。A的歌声与花香均可用飘来描写随风传来，两处并未形成从具体动作对象临时转向不相容对象的突出移用。B由酿蜂蜜移到酿美好生活，C由吹落黄叶移到吹去惆怅，D由关柴门移到关春色，后半词都承前拈来而用于新的对象，形成拈连意味。不能仅因A同时写听觉和嗅觉就把它断为通感；通感还须有感官特征的转移。当前输入没有可靠的原加点位置，这只是条件答案，不应生成确定评分键。",
+          "selectedOptions": [
+            "A"
+          ],
+          "inputSha256": "a075d71ae0f0727f8d4f19219ed6720a256070cf43ba27b61441bcc71029e538",
+          "inputContextSha256": "41acfce1ac5a233f1dfdc4fa27e580987ecd2b724d6d13a2a0c99f8e6d24322d",
+          "inputPresentationSha256": "96569da76ce8a235203bdf82f3bbe35376e910bb816a8023f78caac3bba63865",
+          "generatedAt": "2026-10-03T10:08:59.921527+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2013-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2013-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2013.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\n选A。B、C、D三句都是把用于具体事物的动词顺势用到抽象事物上（拈连）：B项“酿蜂蜜”是实，“酿出美好的生活”是虚；C项“吹落黄叶”是实，“吹不去惆怅”是虚；D项“关闭柴门”是实，“关不住春色”是虚。A项“飘来歌声”与“飘来花香”，歌声和花香都是可感知的实物，“飘”两次都是本来的用法，没有由实到虚的转移，所以与其他三句不同。",
+          "inputSha256": "a075d71ae0f0727f8d4f19219ed6720a256070cf43ba27b61441bcc71029e538",
+          "inputContextSha256": "41acfce1ac5a233f1dfdc4fa27e580987ecd2b724d6d13a2a0c99f8e6d24322d",
+          "inputPresentationSha256": "96569da76ce8a235203bdf82f3bbe35376e910bb816a8023f78caac3bba63865",
+          "generatedAt": "2026-10-03T10:10:52.835961+00:00",
+          "uncertainties": [
+            "题面未显示加点词，这里推定各句加点词为“飘”“酿”“吹”“关”。"
+          ],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2013-reading-result.json",
+            "inputPromptSha256": "cdc49e1372efee30265558cdf0aa666eb1f1d533073fb5c2220ce1bb29c31110",
+            "responseStreamSha256": "93eb9516d1a9856efb2a4a1b2ec0078519d77a69ecac1b51a62801ee311aa8cd",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "a075d71ae0f0727f8d4f19219ed6720a256070cf43ba27b61441bcc71029e538",
+      "inputContextSha256": "41acfce1ac5a233f1dfdc4fa27e580987ecd2b724d6d13a2a0c99f8e6d24322d",
+      "inputPresentationSha256": "96569da76ce8a235203bdf82f3bbe35376e910bb816a8023f78caac3bba63865",
+      "status": "disputed",
+      "kind": "single_choice",
+      "correctOptions": [],
+      "explanation": "双方条件A，但真实加点位置未证，status保持disputed、无判分键。Claude把声音花香称可感知实物不精确，春色也不简单等于抽象事物；重点是词义适配和承前移用，默认root限定解释。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:15:23.503Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2013-dazuowen:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2013北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/201306/t20130608_957719.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "NPS爱迪生灯丝历史手册",
+          "url": "https://www.nps.gov/parkhistory/online_books/hh/edis/edisc2.htm",
+          "qualification": "史料描述多种材料反复试验及实验室人员工作；不把范文一个人上千次的压缩叙述当精确实验账目。"
+        },
+        {
+          "type": "checked_reference",
+          "title": "Rutgers爱迪生文献项目",
+          "url": "https://edison.rutgers.edu/life-of-edison/biographical-essays/lighting/the-carbon-filament-lamp",
+          "qualification": "10月27日Batchelor碳化20种材料的清单支持团队及材料多样性，本文不由这一张清单推算总数。"
+        },
+        {
+          "type": "checked_reference",
+          "title": "荀子修身篇原文转录",
+          "url": "https://zh.wikisource.org/wiki/%E8%8D%80%E5%AD%90/%E4%BF%AE%E8%BA%AB%E7%AF%87",
+          "qualification": "已读修身篇原文连续上下文：志意修则骄富贵，道义重则轻王公，内省而外物轻；接着以传曰引君子役物小人役于物。支持古人引语及先秦来源，不把古语直接当当代产品设计因果定律。"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "让工具抵达人心\n\n假如爱迪生走进今天的街头，一部手机也许就足以使他停下脚步。他能在小小屏幕里看见远方的人，查找陌生的知识，完成许多过去需要不同器具才能完成的事。可是，如果身边同行的人一直低头，而没有人抬头同他说话，他是否又会感到另一种陌生？科学家看见功能的扩展，文学家追问人的变化。这两种目光，应当共同陪伴技术进入生活。\n\n工具的进步首先值得珍惜。设想一位离家读书的青年，可以把刚遇到的难题拍给老师，也能让远方父母看见自己住处的窗台。许多原本受距离限制的帮助和关心，因此有了传递的机会。手机不只是更精巧的机器，也扩大了普通人学习、表达和参与生活的可能。若仅因它带来烦恼，就把便利一概看成浮躁，未免辜负了技术改善处境的意义。\n\n但能够联系，并不自然等于已经理解。屏幕让一句话顷刻送达，也可能让人误以为，一个表情就足以回应所有难过。便利的搜索给出许多结果，却不能代替判断；不断跳出的消息令人忙碌，也未必使人与眼前的生活更亲近。问题往往不在某项功能本身，而在于我们把功能误当成了目的：把发出的次数当作关心的深浅，把看到的数量当作知识的多少，把一直在线当作随时相伴。\n\n因此，面对手机，我们需要的不只是会用的技巧，还要有决定如何使用的能力。想象一次家庭聚餐，久未相见的人都在场，有人却急于把每道菜拍下来给不在场的人看。照片未必应当禁止，但如果展示挤走了交谈，工具就偏离了相聚的目的。不妨先听长辈把故事说完，再一起留张照片；也可以用手机请远方亲人加入谈话，让技术服务于共同的时刻。同一块屏幕，既可能隔开人，也可能帮助人相遇，区别在于我们的安排和用心。\n\n这种判断也不能全压在个人身上。设计者若只追求让人停留得更久，就容易把打扰做成习惯，把选择藏得难以找到。更好的产品，应让提醒可以清楚关闭，让必要的事情容易完成，也让暂时离开成为轻松的选择。学校教学生使用工具时，也可以带他们讨论消息的可靠性、表达的分寸与他人的边界。技术越贴近生活，创造它、使用它的人就越需要理解生活的复杂。\n\n科学家的眼光使我们问：这部机器还能做到什么？文学家的眼光则提醒我们问：做到之后，人的处境是否更好？前者推动可能性的边界，后者使可能性有了值得追求的方向。两者并非互相妨碍。认真理解人的需要，反而能提出更有意义的发明；愿意学习新的工具，也能让关切抵达过去难以抵达的人。\n\n若爱迪生真能停留一个星期，我希望他带走的印象，不只是掌中机器功能繁多，还有人们借它扶助彼此，也懂得适时把它放下。衡量一种技术的成就，既要看它连接了多远的地方，也要看它是否帮助我们善待身边的人。让工具抵达人心，才是功能不断增加之后，仍值得认真完成的功课。",
+          "selectedOptions": [],
+          "inputSha256": "e8cbf913f3b116e11000839591d6c6c8cca1e78f3a9bb8ddb27fae674708dbdf",
+          "inputContextSha256": "10c5e07f14020ac1cee4752892222aae212257994e162846d5a81edba7ed98d2",
+          "inputPresentationSha256": "afaade46bf214dd877ff691d29f0a0f9528591d71eea7aedcd91f3b96c5a0e3d",
+          "generatedAt": "2026-10-03T10:08:59.921527+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "independent",
+            "referenceExposed": false,
+            "evidence": "answers-six-sites-20261002/root-2013-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2013-writing-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2013.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【立意说明】材料中科学家着眼于手机的技术功能（“掌中电脑”），文学家着眼于手机对人的交往方式、思想情感和观念意识的影响。本文把两者看作同一件事的两面：既肯定科技进步，也思考人应如何做工具的主人。文体为议论性散文。\n\n【示例作文】\n\n掌中有世界，心中须有灯\n\n假如爱迪生真的来到今天，住上一个星期，他大概会先被一块发光的玻璃吸引。那个曾为一根灯丝试验了上千种材料的人，会看见人们把电灯、电话、留声机、电影放映机统统装进了口袋。科学家说，他会为功能之丰富而新奇；文学家说，他意想不到的，是这小小器物对人心的改变。我想，两位说的其实是同一件事的两面：手机照亮了世界，却未必照亮了人。\n\n第一天，爱迪生一定是兴奋的。他会像孩子一样拆开手机，惊叹芯片上数以亿计的晶体管，惊叹千里之外的声音与面容瞬间抵达眼前。他一生追求的，无非是让人类摆脱黑暗与距离的限制。而今天，一个山村的孩子可以用手机听名校的课，一位远行的游子可以在屏幕上看见母亲的白发，一场灾难发生后，求助的信息能在几分钟内传遍四方。技术把“天涯”变成了“比邻”，这是科学的荣光，值得我们由衷地敬重。\n\n可是到了第三天、第四天，他或许会沉默下来。他会看见地铁里一排排低垂的头颅，看见餐桌上一家人各自对着屏幕微笑，却彼此无话；看见年轻人收藏了上千篇文章，却没有耐心读完一本书；看见人们在节日里群发着同样的祝福，文字华美，却找不到一句是只为对方而写的。从前书信很慢，一句“见字如面”要走半个月，读信的人却会反复摩挲；如今消息一秒即达，我们反倒常常“已读不回”。距离缩短了，心与心之间的路却未必更近。\n\n这并不是手机的过错。电灯发明之后，有人用它彻夜读书，也有人用它彻夜赌博，灯从不替人选择。手机同样如此：它是工具，放大的是使用者自身。心中有方向的人，用它查资料、学语言、记录生活、联络亲友，于是世界在掌中展开；心中空荡的人，被一条条推送牵着走，在无尽的滑动中交出时间与注意力，于是自己成了掌中之物。古人说“君子役物，小人役于物”，两千多年前的话，放在今天竟分毫不差。\n\n所以，真正的问题不是要不要手机，而是我们以怎样的姿态拿起它。我曾试过在周末把手机锁进抽屉半天。起初坐立不安，总觉得错过了什么；后来翻开一本搁置已久的小说，陪祖父在阳台上修剪了花枝，听他讲年轻时写信求亲的旧事。那个下午并没有什么消息非我不可，我却得到了许久未有的安宁。再拿起手机时，我给远方的朋友认认真真写了一段长长的话，而不是随手点一个表情。原来，技术可以传递情感，却不能代替我们生产情感；它能提供信息，却不能替我们思考。\n\n倘若一周结束，爱迪生要离开，我猜他会留下一句话：发明是为了让人更像人，而不是让人更像机器。科学家负责把灯造得更亮，文学家提醒我们别忘了为何点灯，而我们每一个普通的使用者，则要在自己心里守住那盏灯——它叫专注，叫真诚，叫独立思考。\n\n掌中有世界，是时代的馈赠；心中有灯，是自己的修行。愿我们抬起头时，看得见眼前的人；低下头时，也看得清自己的心。",
+          "inputSha256": "e8cbf913f3b116e11000839591d6c6c8cca1e78f3a9bb8ddb27fae674708dbdf",
+          "inputContextSha256": "10c5e07f14020ac1cee4752892222aae212257994e162846d5a81edba7ed98d2",
+          "inputPresentationSha256": "afaade46bf214dd877ff691d29f0a0f9528591d71eea7aedcd91f3b96c5a0e3d",
+          "generatedAt": "2026-10-03T10:12:43.264377+00:00",
+          "uncertainties": [
+            "作文题为开放性题目，无唯一答案；本文为个人原创示例，立意与文体仅为多种可行选择之一。",
+            "正文字数约一千字，系估算而非逐字统计，但明显超过800字的要求。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2013-writing-result.json",
+            "inputPromptSha256": "c1e195753d89dbd858a3ba43e1b58505d9b7010a130490c320782196d0c51ea9",
+            "responseStreamSha256": "cbbede490a655f9ad83852d2b7cdc907fe78bb41a087f5f8533edeeca27f657d",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "e8cbf913f3b116e11000839591d6c6c8cca1e78f3a9bb8ddb27fae674708dbdf",
+      "inputContextSha256": "10c5e07f14020ac1cee4752892222aae212257994e162846d5a81edba7ed98d2",
+      "inputPresentationSha256": "afaade46bf214dd877ff691d29f0a0f9528591d71eea7aedcd91f3b96c5a0e3d",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "双方完整作文满足800汉字；root全部情境明确假设。Claude祖父/周末第一人称为虚构范文，不是用户经历；爱迪生最后话语为想象不是名言。灯丝大量试验有史料，但应承认团队；心中空荡与只因使用者的二分归责忽视设计因素，默认root。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:15:23.503Z",
+      "currentVersion": "gpt_6_astra"
     }
   ],
   "releaseBlockers": [
@@ -32815,7 +34534,15 @@
         "2013-yuyanjichu",
         "2013-dazuowen"
       ],
-      "detail": "Seven EOL/学科网 pages retype an exam declared to have eight pages and interleave teacher commentary and highlighted answers; Gzywtk has numerous shared OCR mistakes. Neither is authenticated original paper or answer card. A People clear-version URL failed502 via web and another People curl failed TLS60; do not disable TLS. Reprint/PDF search results also have corrupt text. Publication chain and exact print remain open. Original question11断句 is absent from all legacy2013 records. EOL image3 includes 其时也夫施吉报凶谓之命施凶报吉谓之幸; Gzywtk omits that entire segment. Both variants must be preserved and reviewed conditionally. Supplemental proposed2013-duanju:1 remains outside data/all.json and the612 denominator until source adjudication, formal insertion, consumer mapping and history/score compatibility. Question5 requires dotted-word identity. Small public EOL image and Gzywtk plain transcription do not certify those dots; existing unmarked question retained, interpretations must be explicitly conditional. Q1 pinyin targets and guwen6/7 option targets are explicit but original rendering remains unverified. Original-body marks replaced only by observed quotation underlines; old fabricated pedagogical marks removed with snapshots. Variants include guwen持/取俎豆, 冀煜/冀李煜, Q7都; language2在于/由于; insect便风中舞动/便在风中舞动, 可比/堪比; prose给于/给予. Current repaired source follows the documented public EOL witness where legible, not a certificate of original print. Deliberately wrong options remain wrong. Historical null scores in language1-5, moxie and main writing remain unchanged; public section values are15,8,60. Scoring compatibility must use exact stable IDs and not reinterpret prior learner scores. Original numbered1-21 maps to21 current selectable units only because poetry12 has two units and question11 is missing; counts alone do not establish full paper coverage. Exam claims about insect wingbeat rates, bird/bat lift, wing evolution and electromagnetic radiation are source statements, not verified contemporary science. Read-comprehension answers must distinguish textual inference from external fact; bounded fact checks pending. All reading inputs conservatively reference-exposed by EOL commentary/highlights, web snippets and Gzywtk search matches including Q6/Q10/Q11. No composition model/example read. Root must answer full corrected inputs before a new finite independent Claude batch; no2013provider call has occurred."
+      "detail": "Seven EOL/学科网 pages retype an exam declared to have eight pages and interleave teacher commentary and highlighted answers; Gzywtk has numerous shared OCR mistakes. Neither is authenticated original paper or answer card. A People clear-version URL failed502 via web and another People curl failed TLS60; do not disable TLS. Reprint/PDF search results also have corrupt text. Publication chain and exact print remain open. Original question11断句 is absent from all legacy2013 records. EOL image3 includes 其时也夫施吉报凶谓之命施凶报吉谓之幸; Gzywtk omits that entire segment. Both variants must be preserved and reviewed conditionally. Supplemental proposed2013-duanju:1 remains outside data/all.json and the612 denominator until source adjudication, formal insertion, consumer mapping and history/score compatibility. Question5 requires dotted-word identity. Small public EOL image and Gzywtk plain transcription do not certify those dots; existing unmarked question retained, interpretations must be explicitly conditional. Q1 pinyin targets and guwen6/7 option targets are explicit but original rendering remains unverified. Original-body marks replaced only by observed quotation underlines; old fabricated pedagogical marks removed with snapshots. Variants include guwen持/取俎豆, 冀煜/冀李煜, Q7都; language2在于/由于; insect便风中舞动/便在风中舞动, 可比/堪比; prose给于/给予. Current repaired source follows the documented public EOL witness where legible, not a certificate of original print. Deliberately wrong options remain wrong. Historical null scores in language1-5, moxie and main writing remain unchanged; public section values are15,8,60. Scoring compatibility must use exact stable IDs and not reinterpret prior learner scores. Original numbered1-21 maps to21 current selectable units only because poetry12 has two units and question11 is missing; counts alone do not establish full paper coverage. Exam claims about insect wingbeat rates, bird/bat lift, wing evolution and electromagnetic radiation are source statements, not verified contemporary science. Read-comprehension answers must distinguish textual inference from external fact; bounded fact checks pending. All reading inputs conservatively reference-exposed by EOL commentary/highlights, web snippets and Gzywtk search matches including Q6/Q10/Q11. No composition model/example read. Root must answer full corrected inputs before a new finite independent Claude batch; no2013provider call has occurred. Completed22 full root answers followed by two terminal finite Claude batches and full-body adjudication. Root guwen9 initialB corrected toD with full initial version retained; four other precision/completeness refinements also preserve initial bodies. Language5 remains source-mark-disputed with no grading key; supplemental original11 remains source-version-disputed and unintegrated. Claude prose claim of no direct emotional statement, transferring bee force to fly, broad semantic claims and writing fiction explicitly qualified. All original-source/print/null-score/consumer integration gates remain open.",
+      "detailHistory": [
+        {
+          "at": "2026-10-03T10:15:23.503Z",
+          "detail": "Seven EOL/学科网 pages retype an exam declared to have eight pages and interleave teacher commentary and highlighted answers; Gzywtk has numerous shared OCR mistakes. Neither is authenticated original paper or answer card. A People clear-version URL failed502 via web and another People curl failed TLS60; do not disable TLS. Reprint/PDF search results also have corrupt text. Publication chain and exact print remain open. Original question11断句 is absent from all legacy2013 records. EOL image3 includes 其时也夫施吉报凶谓之命施凶报吉谓之幸; Gzywtk omits that entire segment. Both variants must be preserved and reviewed conditionally. Supplemental proposed2013-duanju:1 remains outside data/all.json and the612 denominator until source adjudication, formal insertion, consumer mapping and history/score compatibility. Question5 requires dotted-word identity. Small public EOL image and Gzywtk plain transcription do not certify those dots; existing unmarked question retained, interpretations must be explicitly conditional. Q1 pinyin targets and guwen6/7 option targets are explicit but original rendering remains unverified. Original-body marks replaced only by observed quotation underlines; old fabricated pedagogical marks removed with snapshots. Variants include guwen持/取俎豆, 冀煜/冀李煜, Q7都; language2在于/由于; insect便风中舞动/便在风中舞动, 可比/堪比; prose给于/给予. Current repaired source follows the documented public EOL witness where legible, not a certificate of original print. Deliberately wrong options remain wrong. Historical null scores in language1-5, moxie and main writing remain unchanged; public section values are15,8,60. Scoring compatibility must use exact stable IDs and not reinterpret prior learner scores. Original numbered1-21 maps to21 current selectable units only because poetry12 has two units and question11 is missing; counts alone do not establish full paper coverage. Exam claims about insect wingbeat rates, bird/bat lift, wing evolution and electromagnetic radiation are source statements, not verified contemporary science. Read-comprehension answers must distinguish textual inference from external fact; bounded fact checks pending. All reading inputs conservatively reference-exposed by EOL commentary/highlights, web snippets and Gzywtk search matches including Q6/Q10/Q11. No composition model/example read. Root must answer full corrected inputs before a new finite independent Claude batch; no2013provider call has occurred.",
+          "evidence": "answers-six-sites-20261002/REVIEW-2013-SOURCE.md"
+        }
+      ],
+      "evidence": "answers-six-sites-20261002/REVIEW-2013.md"
     }
   ]
 }
