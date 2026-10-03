@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261003-source2012-qualified-pending",
+  "revision": "20261003-reviewed-400-qualified-2012",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -2874,12 +2874,14 @@
     {
       "id": "2012-guwen:2",
       "inputSha256": "9bf4207ac927dc8f6aed93609b114bbd4d6deaec41028118096a92f3d5bd1d15",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "single_choice",
-      "correctOptions": [],
-      "explanation": "2012来源及标记更正后待完整重审；旧输入和全部完整模型保存在history。",
-      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:03:23.208Z",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "采D。以介词用与连词而有别，A舍收留、B然转折、C为被动相同。Claude的用、要不宜列为两个同等字义，何以报为是整体反问；修饰/伴随最贴切，不以承接强加明确先后。原图何以为报异文仍在源阻断中。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:46:29.762Z",
       "sources": [
         {
           "type": "source_material",
@@ -2888,10 +2890,68 @@
         {
           "type": "dictionary_revision",
           "title": "文言站2026-09-16-r3词典校订，保留争议"
+        },
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2012北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/huodong/2012gkst/201206/t20120608_787585.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "宋学士文集李疑传",
+          "url": "https://www.shidianguji.com/zh/book/SBCK258/chapter/SBCK258_957",
+          "qualification": "原文电子转录明确发棺、何以报为、以米馈。仅证明古籍版本，不证明试卷转载以半馈的字形。寄里人家与发棺衔接不可自行补故事。"
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {},
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D。“何以报为”的以是介词，用，何作前置宾语，整句反问何必用财物来报答；“妻卧草中以号”的以连接卧草与号哭，可理解为而，表示修饰或伴随。A的两个舍都是动词收留，B的两个然都是转折连词然而，C的两个为都在被动结构中引出施事，一为他人，一为风露。转载图中何以为报与正文何以报为次序不一致，此处按冻结题面何以报为分析；两个版本都不应把以误解为连接号哭的同一用法。",
+          "selectedOptions": [
+            "D"
+          ],
+          "inputSha256": "9bf4207ac927dc8f6aed93609b114bbd4d6deaec41028118096a92f3d5bd1d15",
+          "inputContextSha256": "72ab6845e0e86d29ce6d8fb779a9a1c8f4aaa2b9402b2c7f3363877d6dd1d090",
+          "inputPresentationSha256": "9c2fd52756d405bb0bd05ad1629b60eef607c6eb2b1802fc2765521f663e8fea",
+          "generatedAt": "2026-10-03T10:36:04.949385+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2012-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2012.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。A项两个“舍”都是动词，意为“留宿、收留”，相同。B项两个“然”都是转折连词，意为“然而、但是”，相同。C项两个“为”都是介词，表被动（“为他人得”“为风露所感”），相同。D项“何以报为”的“以”是介词，意为“用、要”，属于“何以……为”的固定反问句式（要回报做什么呢）；“卧草中以号”的“以”是连词，相当于“而”，表修饰或承接。二者意义和用法都不同。",
+          "inputSha256": "9bf4207ac927dc8f6aed93609b114bbd4d6deaec41028118096a92f3d5bd1d15",
+          "inputContextSha256": "72ab6845e0e86d29ce6d8fb779a9a1c8f4aaa2b9402b2c7f3363877d6dd1d090",
+          "inputPresentationSha256": "9c2fd52756d405bb0bd05ad1629b60eef607c6eb2b1802fc2765521f663e8fea",
+          "generatedAt": "2026-10-03T10:40:02.659644+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-result.json",
+            "inputPromptSha256": "3442c15d178e313304286b5c2b4a8d05a19d382baed3d29551de589657a86d3a",
+            "responseStreamSha256": "d28e1d574065d8367207b00e7ad4cc21185cc3065320942e03771761a420bb08",
+            "stage": "independent"
+          }
+        }
+      },
       "inputContextSha256": "72ab6845e0e86d29ce6d8fb779a9a1c8f4aaa2b9402b2c7f3363877d6dd1d090",
       "history": [
         {
@@ -10857,20 +10917,104 @@
     {
       "id": "2012-moxie:1",
       "inputSha256": "513eb778170ae86a3240dbeb8ddf901d3c52be391b2a1fbb44a93dcfabf35be9",
-      "status": "draft",
+      "status": "reviewed",
       "kind": "open",
       "correctOptions": [],
-      "explanation": "2012来源及标记更正后待完整重审；旧输入和全部完整模型保存在history。",
-      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "explanation": "六组原句逐项核对一致，正式限选四组，补全六组仅供核查。荀子电子传本见智/知差异，当前教材式作知，不能把不同古籍正字版本一概称错；本示例照课文通行知字。保留所有历史身份/分值。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:46:29.762Z",
       "sources": [
         {
           "type": "source_material",
           "title": "站内2012北京卷原题及完整材料"
+        },
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2012北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/huodong/2012gkst/201206/t20120608_787585.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "荀子劝学节选",
+          "url": "https://www.gushiwen.cn/shiwenv_9b5ed8061abe.aspx",
+          "qualification": "课文式电子转录为博学而日参省乎己、知明而行无过矣；CTP传本作智。保留题目要求的通行课文知字，不拿智版本证明知错误。"
+        },
+        {
+          "type": "checked_reference",
+          "title": "香港教育局王勃原诗",
+          "url": "https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/KS3_09.pdf",
+          "qualification": "王勃送杜少府：风烟望五津、同是宦游人。"
+        },
+        {
+          "type": "checked_reference",
+          "title": "杜甫春夜喜雨原句",
+          "url": "https://www.gushiwen.cn/mingju/juv.aspx?id=0c958e53c61c",
+          "qualification": "随风潜入夜、润物细无声。"
+        },
+        {
+          "type": "checked_reference",
+          "title": "刘禹锡陋室铭原文",
+          "url": "https://m.gushiwen.cn/shiwenv_6c1ea9b7dd44.aspx",
+          "qualification": "斯是陋室、惟吾德馨。"
+        },
+        {
+          "type": "checked_reference",
+          "title": "白居易琵琶行原文",
+          "url": "https://www.gushiwen.cn/shiwenv.aspx?id=0581b0ba8bb4",
+          "qualification": "同是天涯沦落人、相逢何必曾相识。"
+        },
+        {
+          "type": "checked_reference",
+          "title": "王安石游褒禅山记原文",
+          "url": "https://www.gushiwen.cn/shiwenv_3807bdb3ebd6.aspx",
+          "qualification": "夫夷以近则游者众，险以远则至者少。"
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {},
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "正式答卷限选四题，可选①②③④作答：\n①博学而日参省乎己；知明而行无过矣。\n②风烟望五津；同是宦游人。\n③随风潜入夜；润物细无声。\n④斯是陋室；惟吾德馨。\n为完整核查，另外两题补充如下，不表示考场应超额作答：\n⑤同是天涯沦落人；相逢何必曾相识。\n⑥则游者众；则至者少。\n注意知明的知、宦游的宦、惟吾德馨的惟和馨，不以近音字代替。",
+          "selectedOptions": [],
+          "inputSha256": "513eb778170ae86a3240dbeb8ddf901d3c52be391b2a1fbb44a93dcfabf35be9",
+          "inputContextSha256": "c0ce6468e9315ee8a28fde65e41494239a97aaff49d4593f2eef621a5e0bfb21",
+          "inputPresentationSha256": "e7aeba1528e329ec88444f7e734150f250e3d49ddc75a3ea487f36b5fe24f5e9",
+          "generatedAt": "2026-10-03T10:36:04.949385+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2012-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2012.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "题目限选4道，这里六道全部给出，可任选其四：\n①博学而日参省乎己　知明而行无过矣\n②风烟望五津　同是宦游人\n③随风潜入夜　润物细无声\n④斯是陋室　惟吾德馨\n⑤同是天涯沦落人　相逢何必曾相识\n⑥则游者众　则至者少",
+          "inputSha256": "513eb778170ae86a3240dbeb8ddf901d3c52be391b2a1fbb44a93dcfabf35be9",
+          "inputContextSha256": "c0ce6468e9315ee8a28fde65e41494239a97aaff49d4593f2eef621a5e0bfb21",
+          "inputPresentationSha256": "e7aeba1528e329ec88444f7e734150f250e3d49ddc75a3ea487f36b5fe24f5e9",
+          "generatedAt": "2026-10-03T10:40:02.659644+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-result.json",
+            "inputPromptSha256": "3442c15d178e313304286b5c2b4a8d05a19d382baed3d29551de589657a86d3a",
+            "responseStreamSha256": "d28e1d574065d8367207b00e7ad4cc21185cc3065320942e03771761a420bb08",
+            "stage": "independent"
+          }
+        }
+      },
       "inputContextSha256": "c0ce6468e9315ee8a28fde65e41494239a97aaff49d4593f2eef621a5e0bfb21",
       "inputPresentationSha256": "e7aeba1528e329ec88444f7e734150f250e3d49ddc75a3ea487f36b5fe24f5e9",
       "history": [
@@ -34422,6 +34566,1379 @@
       "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
       "reviewedAt": "2026-10-03T10:15:23.503Z",
       "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2012-feilian:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2012北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/huodong/2012gkst/201206/t20120608_787585.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D。第三部分明确说，观察气象、物候可以总结自然变化的规律，观察活体外在的生理病理现象可以认识生命活动规律。A把原文不可能分离的形神说成可以各自独立，前提即与原文不合；B将环境因素的影响夸大为全部生理病理表现都取决于环境，遗漏人体自身及整体与局部的关系；C颠倒题内阳化气、阴成形的对应，而且原文把此消彼长视为动态平衡的过程，并不主张阻止这种变化。本题只核对文章对《内经》理论的表述，不将其直接视作现代医学诊断或治疗建议。",
+          "selectedOptions": [
+            "D"
+          ],
+          "inputSha256": "32db39425f4922352d440a6191aaafee2252a3aeac6a96491f7794e7b6e43e17",
+          "inputContextSha256": "572223129f85ee09145e672872aca727c14913bb691034989a48f2d19d0ebf0c",
+          "inputPresentationSha256": "ee321ef17f27ad360536beb6175616f37cb000c365073328a0d6df9f7b6227c6",
+          "generatedAt": "2026-10-03T10:36:04.949385+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2012-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2012.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。A项错：原文说“神不能脱离形体单独存在”，选项假设“神”可以脱离“形”独立存在，前提与原文相悖；原文只说“形神失调是疾病的标志”。B项错：原文只是要求医生“联系自然社会环境因素对人体的影响”，并未说生理病理现象“取决于”这些因素，选项夸大为决定关系。C项错：原文是“阳化气，阴成形”，并没有“有形为阳、无形为阴”的说法；而且阴阳此消彼长、此盛彼衰正是维持动态平衡的正常运动，需要防止的是“阴阳失和”。D项对：与第三部分“可以通过气象、物候的观察，总结大自然变化的规律”“通过观察活体表现在外的生理病理现象，来把握生命活动的规律”一致。",
+          "inputSha256": "32db39425f4922352d440a6191aaafee2252a3aeac6a96491f7794e7b6e43e17",
+          "inputContextSha256": "572223129f85ee09145e672872aca727c14913bb691034989a48f2d19d0ebf0c",
+          "inputPresentationSha256": "ee321ef17f27ad360536beb6175616f37cb000c365073328a0d6df9f7b6227c6",
+          "generatedAt": "2026-10-03T10:40:02.659644+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-result.json",
+            "inputPromptSha256": "3442c15d178e313304286b5c2b4a8d05a19d382baed3d29551de589657a86d3a",
+            "responseStreamSha256": "d28e1d574065d8367207b00e7ad4cc21185cc3065320942e03771761a420bb08",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "32db39425f4922352d440a6191aaafee2252a3aeac6a96491f7794e7b6e43e17",
+      "inputContextSha256": "572223129f85ee09145e672872aca727c14913bb691034989a48f2d19d0ebf0c",
+      "inputPresentationSha256": "ee321ef17f27ad360536beb6175616f37cb000c365073328a0d6df9f7b6227c6",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "采D。两模型逐项与原文相合；形神不能分离、环境影响不等于决定、阴阳动态平衡三处是排错依据。仅为题内理论说明，不认证现代医疗功效。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:46:29.762Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2012-feilian:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2012北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/huodong/2012gkst/201206/t20120608_787585.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后修订",
+          "text": "一、从整体认识人体；二、以阴阳辩证分析生命；三、由外在征象认识规律。第一标题涵盖脏腑系统、形神统一及人与环境的联系；第二标题概括阴阳对立统一、消长变化与动态平衡；第三标题概括由候察道、由外部表现认识内部活动的认识路径。三个标题分别为7、9、9个汉字，均不超过15字。",
+          "selectedOptions": [],
+          "inputSha256": "5e31e714cf22a953470be44bc08798d6f212695cd30ca8b533ce0feebf504e4c",
+          "inputContextSha256": "435a37d82ea7e03c9b3afb694fa6636e1f14e040e428fb684748cdc65919235e",
+          "inputPresentationSha256": "c98443302cda6068bee3d61cf4f3fe42177d072148a773a74e64f905723af842",
+          "generatedAt": "2026-10-03T10:46:29.762Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2012-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2012.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh",
+            "refinementEvidence": "answers-six-sites-20261002/root-2012-refinements.json",
+            "refinementReason": "人工字数说明误计，标题正文不变；实际逐字计数7/9/9。保留完整首次正文。",
+            "initialVersion": "gpt_6_astra_initial"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "一、从整体的角度认识人体生命活动（或：把人看作有机整体的整体观）。\n二、用辩证的观点看待人体生命活动（或：以阴阳对立统一解释生命活动）。\n三、通过外在现象把握生命活动规律（或：由“候”求“道”，据现象总结规律）。\n说明：三段的首句或末句分别点出“整体”“辩证（阴阳对立统一）”“由外在表现总结规律”三个核心，小标题据此概括，且每个都不超过15字。",
+          "inputSha256": "5e31e714cf22a953470be44bc08798d6f212695cd30ca8b533ce0feebf504e4c",
+          "inputContextSha256": "435a37d82ea7e03c9b3afb694fa6636e1f14e040e428fb684748cdc65919235e",
+          "inputPresentationSha256": "c98443302cda6068bee3d61cf4f3fe42177d072148a773a74e64f905723af842",
+          "generatedAt": "2026-10-03T10:40:02.659644+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-result.json",
+            "inputPromptSha256": "3442c15d178e313304286b5c2b4a8d05a19d382baed3d29551de589657a86d3a",
+            "responseStreamSha256": "d28e1d574065d8367207b00e7ad4cc21185cc3065320942e03771761a420bb08",
+            "stage": "independent"
+          }
+        },
+        "gpt_6_astra_initial": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "一、从整体认识人体；二、以阴阳辩证分析生命；三、由外在征象认识规律。第一标题涵盖脏腑系统、形神统一及人与环境的联系；第二标题概括阴阳对立统一、消长变化与动态平衡；第三标题概括由候察道、由外部表现认识内部活动的认识路径。三个标题分别为8、10、10个汉字，均不超过15字。",
+          "selectedOptions": [],
+          "inputSha256": "5e31e714cf22a953470be44bc08798d6f212695cd30ca8b533ce0feebf504e4c",
+          "inputContextSha256": "435a37d82ea7e03c9b3afb694fa6636e1f14e040e428fb684748cdc65919235e",
+          "inputPresentationSha256": "c98443302cda6068bee3d61cf4f3fe42177d072148a773a74e64f905723af842",
+          "generatedAt": "2026-10-03T10:36:04.949385+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2012-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2012.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        }
+      },
+      "inputSha256": "5e31e714cf22a953470be44bc08798d6f212695cd30ca8b533ce0feebf504e4c",
+      "inputContextSha256": "435a37d82ea7e03c9b3afb694fa6636e1f14e040e428fb684748cdc65919235e",
+      "inputPresentationSha256": "c98443302cda6068bee3d61cf4f3fe42177d072148a773a74e64f905723af842",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "三段为整体观、阴阳辩证、由候求道。两模型标题均涵盖段意且不超15汉字。本人首稿标题未错，但附带字数误报8/10/10，实测7/9/9；完整首稿保存为initial后修正说明。Claude首组主标题逐项实测均14字。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:46:29.762Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2012-guwen:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2012北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/huodong/2012gkst/201206/t20120608_787585.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "宋学士文集李疑传",
+          "url": "https://www.shidianguji.com/zh/book/SBCK258/chapter/SBCK258_957",
+          "qualification": "原文电子转录明确发棺、何以报为、以米馈。仅证明古籍版本，不证明试卷转载以半馈的字形。寄里人家与发棺衔接不可自行补故事。"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选B。“景淳竟死”承接病情日益严重、不能起身，应解释为终于死去，竟不是居然。A假榻即借用床铺；C赆是赠给远行者财物，反赆以货是反而拿钱物资助他们归去；D多疑名是赞许李疑的声名，多在此为称赞、推重。",
+          "selectedOptions": [
+            "B"
+          ],
+          "inputSha256": "8c8aa25b2be97b382cece07cbe9640fc8ade13db7dcf61ba7e1092b4dee07daf",
+          "inputContextSha256": "37674bb89889f2b9fa1caccacd95ab76b84d8b1fdef6410f80e2d8484d63d1fe",
+          "inputPresentationSha256": "15151d7a19ed3aa9a9b567b0bc8aa8fb91a1536c6b1d501e18c36f8502b58c88",
+          "generatedAt": "2026-10-03T10:36:04.949385+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2012-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2012.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。A项“假”解释为“借用”正确，“愿假榻”即希望借一张床铺安身。B项错：“景淳竟死”的“竟”是“最终、终于”的意思；前文已写病情加重、景淳自知“恐不复生”，他的死并不出人意料，不能解释为“居然”。C项“赆”本指送给远行人的财物，这里作动词“赠送”，正确。D项“多”是“称赞、赞美”，“人用是多疑名”即人们因此称赞李疑的名声，正确。",
+          "inputSha256": "8c8aa25b2be97b382cece07cbe9640fc8ade13db7dcf61ba7e1092b4dee07daf",
+          "inputContextSha256": "37674bb89889f2b9fa1caccacd95ab76b84d8b1fdef6410f80e2d8484d63d1fe",
+          "inputPresentationSha256": "15151d7a19ed3aa9a9b567b0bc8aa8fb91a1536c6b1d501e18c36f8502b58c88",
+          "generatedAt": "2026-10-03T10:40:02.659644+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-result.json",
+            "inputPromptSha256": "3442c15d178e313304286b5c2b4a8d05a19d382baed3d29551de589657a86d3a",
+            "responseStreamSha256": "d28e1d574065d8367207b00e7ad4cc21185cc3065320942e03771761a420bb08",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "8c8aa25b2be97b382cece07cbe9640fc8ade13db7dcf61ba7e1092b4dee07daf",
+      "inputContextSha256": "37674bb89889f2b9fa1caccacd95ab76b84d8b1fdef6410f80e2d8484d63d1fe",
+      "inputPresentationSha256": "15151d7a19ed3aa9a9b567b0bc8aa8fb91a1536c6b1d501e18c36f8502b58c88",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "采B。竟为终于；假借用、赆资助远行、多称赞均据语境。两模型完整理由可接受；不把现代竟然义套入死亡结局。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:46:29.762Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2012-guwen:3",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2012北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/huodong/2012gkst/201206/t20120608_787585.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "宋学士文集李疑传",
+          "url": "https://www.shidianguji.com/zh/book/SBCK258/chapter/SBCK258_957",
+          "qualification": "原文电子转录明确发棺、何以报为、以米馈。仅证明古籍版本，不证明试卷转载以半馈的字形。寄里人家与发棺衔接不可自行补故事。"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D。“其里人”指范景淳的同乡，前文李疑已经请此人一同去旅店取财；“寄”是寄存、托存。此句说李疑把封好的钱袋寄存在景淳的同乡家中，并非寄送到景淳自己家中。A杖用作动词，拄着手杖，踵为走到；B不少见颜面指不曾稍露难色；C志数、封识分别为记下数目、封存并加以标记，均符合语境。正文发棺与钱袋寄存之间的叙事衔接仍有版本问题，不能据这一疑点改写里人的明确所指。",
+          "selectedOptions": [
+            "D"
+          ],
+          "inputSha256": "b78ca71029a2a106017f2f0cb90641dc353d1ac2cf102c9992dea31172718bc6",
+          "inputContextSha256": "86632aca55928c03264987e4cb6f59c7429d2eb0958c993168c459ca2dde2fc1",
+          "inputPresentationSha256": "8fd9416b0e0e5a28498ff570bcf1880b13c5f7f463f6c9d30c07fe44af4ef65d",
+          "generatedAt": "2026-10-03T10:36:04.949385+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2012-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2012.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。A项“杖踵疑门”即拄着拐杖走到李疑家门口，解释正确。B项“少”通“稍”，“见”通“现”，意思是没有稍微露出一点厌烦、不情愿的脸色，正确。C项“志”是记录，“封识”是封存并做标记，正确。D项错：“寄”是“寄存、寄放”，“其里人家”指范景淳同乡的家，全句意为把封好的钱袋寄存在景淳同乡家里，不是“寄送给景淳家”；下文“往书召其二子”也说明景淳的儿子此时不在京城。",
+          "inputSha256": "b78ca71029a2a106017f2f0cb90641dc353d1ac2cf102c9992dea31172718bc6",
+          "inputContextSha256": "86632aca55928c03264987e4cb6f59c7429d2eb0958c993168c459ca2dde2fc1",
+          "inputPresentationSha256": "8fd9416b0e0e5a28498ff570bcf1880b13c5f7f463f6c9d30c07fe44af4ef65d",
+          "generatedAt": "2026-10-03T10:40:02.659644+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-result.json",
+            "inputPromptSha256": "3442c15d178e313304286b5c2b4a8d05a19d382baed3d29551de589657a86d3a",
+            "responseStreamSha256": "d28e1d574065d8367207b00e7ad4cc21185cc3065320942e03771761a420bb08",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "b78ca71029a2a106017f2f0cb90641dc353d1ac2cf102c9992dea31172718bc6",
+      "inputContextSha256": "86632aca55928c03264987e4cb6f59c7429d2eb0958c993168c459ca2dde2fc1",
+      "inputPresentationSha256": "8fd9416b0e0e5a28498ff570bcf1880b13c5f7f463f6c9d30c07fe44af4ef65d",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "采D。其里人是景淳同乡，寄为寄存，非寄送其本人家。少/稍、见/现可按古字词义解释，不强制所有教学答案都贴通假标签。古籍电子转录支持发棺却作米，试卷转载作半；寄存与发棺的衔接不可自行补叙，当前题面不据古籍静默替换。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:46:29.762Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2012-guwen:4",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2012北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/huodong/2012gkst/201206/t20120608_787585.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "宋学士文集李疑传",
+          "url": "https://www.shidianguji.com/zh/book/SBCK258/chapter/SBCK258_957",
+          "qualification": "原文电子转录明确发棺、何以报为、以米馈。仅证明古籍版本，不证明试卷转载以半馈的字形。寄里人家与发棺衔接不可自行补故事。"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选C。李疑宁可冒受牵连的风险也收留孕妇，确有“不顾自己可能受祸”的依据；但妇人离去时“不取其报”的主语是李疑，意思是他不接受报答，不能推出对方不知感恩。A有教书自给、清贫而周急的情节；B有景淳流泪、愿以钱财相酬且担心钱财落入他人手中的言语；D与篇末“伤流俗之嗜利”“传其事以劝”直接对应。景淳的报恩愿望与李疑最终代保财物、归还其子的实际处理须分别理解。",
+          "selectedOptions": [
+            "C"
+          ],
+          "inputSha256": "f3d3ef81317310d4bbcd6abf60fecd2675ba2548a3f8b22a018fead9a3d86b3a",
+          "inputContextSha256": "62592ac754cfd5774222caac357a73962946729cf09cf1199bf7410db46ef8ff",
+          "inputPresentationSha256": "b212ef35180b35ec65b4f4357abde37d7d249691f4c35429999b673218357018",
+          "generatedAt": "2026-10-03T10:36:04.949385+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2012-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2012.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。A项符合文意：乡里子弟到他家受业，他“得粟以自给”，“固贫甚，然独好周人急”，帮助两家都不取回报。B项符合文意：景淳流泪说“无以报厚德”，李疑推辞后他仍以“君脱不取，我死，恐为他人得”相劝，坚持要李疑取用。C项错：原文是“踰月，始辞去，不取其报”，是李疑不接受对方的报答，说明对方有心回报，“此人却不知感恩”于文无据。D项符合文意：文末“吾伤流俗之嗜利也，传其事以劝焉”。",
+          "inputSha256": "f3d3ef81317310d4bbcd6abf60fecd2675ba2548a3f8b22a018fead9a3d86b3a",
+          "inputContextSha256": "62592ac754cfd5774222caac357a73962946729cf09cf1199bf7410db46ef8ff",
+          "inputPresentationSha256": "b212ef35180b35ec65b4f4357abde37d7d249691f4c35429999b673218357018",
+          "generatedAt": "2026-10-03T10:40:02.659644+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-result.json",
+            "inputPromptSha256": "3442c15d178e313304286b5c2b4a8d05a19d382baed3d29551de589657a86d3a",
+            "responseStreamSha256": "d28e1d574065d8367207b00e7ad4cc21185cc3065320942e03771761a420bb08",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "f3d3ef81317310d4bbcd6abf60fecd2675ba2548a3f8b22a018fead9a3d86b3a",
+      "inputContextSha256": "62592ac754cfd5774222caac357a73962946729cf09cf1199bf7410db46ef8ff",
+      "inputPresentationSha256": "b212ef35180b35ec65b4f4357abde37d7d249691f4c35429999b673218357018",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "采C。不取其报主语为李疑，不能推成孕妇不感恩。Claude进一步称说明对方有心回报是合理语境推断，不能冒称原文记了具体赠物。B愿以财酬谢与李疑代保财产返还儿子不矛盾。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:46:29.762Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2012-shici:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2012北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/huodong/2012gkst/201206/t20120608_787585.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "古今图书集成草木典265柳堤",
+          "url": "https://zh.wikisource.org/wiki/欽定古今圖書集成/博物彙編/草木典/第265卷",
+          "qualification": "电子转录柳堤署金鑾，八句与冻结诗文相合。原扫描Page29链接未成功读取，故只认电子转录旁证，不称已核扫描/原卷。"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选C。三四句以笼、锁写柳荫绵延与枝条繁茂，五六句写飞燕、落花和春雨暖风，可以说兼写静景与动景；但后两句直接呈现动态，不能据此前静后动就断定为以静写动、借静衬动。晴雨景象也不必是某一瞬间的天气实录。A春江暗点堤岸、密树扣柳，B十里承江堤之长、千条承柳枝之密，都有诗句依据；D莺啼燕飞、暖风落花构成暮春景色。",
+          "selectedOptions": [
+            "C"
+          ],
+          "inputSha256": "69e3ae6ca0de34e74b1031639419b34b3c5f5560efb2a24e54a699470d47a90a",
+          "inputContextSha256": "0a46392ad96876542b499e6be672fee3e0e2c62b6765f4c4e738007f817109fd",
+          "inputPresentationSha256": "9532111b6529f827b71b9577924704a388a0a276f0fa5d7c418d570548d9e15c",
+          "generatedAt": "2026-10-03T10:36:04.949385+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2012-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2012.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。A项正确：首联写春江水平、密树莺啼，暗含堤与柳，照应题目。B项正确：“十里”写堤之长，“千条”写柳条之繁茂，分别承接“春江”“密树”。C项错：三、四句写晴日柳色笼苑锁营，偏于静态；五、六句写雨中燕飞、风中花落，偏于动态。两联是一静一动、动静相映，各自从不同侧面写柳堤春景，并不是“以静写动，借静衬动”。D项正确：莺啼、燕飞、暖风、落花都是暮春的典型景物。",
+          "inputSha256": "69e3ae6ca0de34e74b1031639419b34b3c5f5560efb2a24e54a699470d47a90a",
+          "inputContextSha256": "0a46392ad96876542b499e6be672fee3e0e2c62b6765f4c4e738007f817109fd",
+          "inputPresentationSha256": "9532111b6529f827b71b9577924704a388a0a276f0fa5d7c418d570548d9e15c",
+          "generatedAt": "2026-10-03T10:40:02.659644+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-result.json",
+            "inputPromptSha256": "3442c15d178e313304286b5c2b4a8d05a19d382baed3d29551de589657a86d3a",
+            "responseStreamSha256": "d28e1d574065d8367207b00e7ad4cc21185cc3065320942e03771761a420bb08",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "69e3ae6ca0de34e74b1031639419b34b3c5f5560efb2a24e54a699470d47a90a",
+      "inputContextSha256": "0a46392ad96876542b499e6be672fee3e0e2c62b6765f4c4e738007f817109fd",
+      "inputPresentationSha256": "9532111b6529f827b71b9577924704a388a0a276f0fa5d7c418d570548d9e15c",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "采C。静景/动景并写不等于以静写动、借静衬动。A扣题、B承接、D暮春景物有诗句支持。古今图书集成电子转录署金鑾且八句相合，未目验扫描，未改变冻结题面无作者状态；可作学术旁证，不能关闭原卷认证门禁。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:46:29.762Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2012-shici:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2012北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/huodong/2012gkst/201206/t20120608_787585.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "古今图书集成草木典265柳堤",
+          "url": "https://zh.wikisource.org/wiki/欽定古今圖書集成/博物彙編/草木典/第265卷",
+          "qualification": "电子转录柳堤署金鑾，八句与冻结诗文相合。原扫描Page29链接未成功读取，故只认电子转录旁证，不称已核扫描/原卷。"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D、E。题干以通感为判断条件：D春雨香、E香雨均把嗅觉感受移用于雨，与雨香相近。A花经宿雨，香属于花；B菡萏香指荷花香；C香犹在说海棠花的香气仍存，这三项都有实际的花香对象，并非相同的感官转移。现实中雨可带来植物、土壤的气味，但本题要求比较诗句的修辞组织，不能用这一生活事实抹去题设的比较标准。",
+          "selectedOptions": [
+            "D",
+            "E"
+          ],
+          "inputSha256": "eb8ac0a4052e00486c5c1587a05efd3a61b78b4879dca7b3c64cf3293346c9ad",
+          "inputContextSha256": "8d30741da1b4204d2bcd4329519883ea90fb17d45695beffb795d193a2a8120f",
+          "inputPresentationSha256": "58efd58e0f4cb7a770256016e93563992e6b1aaebc0bf11f9ccc8599bd8d111f",
+          "generatedAt": "2026-10-03T10:36:04.949385+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2012-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2012.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D、E。\n选D、E。本诗“雨香”是把香味直接赋予本无香味的雨，属于通感（移觉）。A项“香难拾”的“香”指被夜雨打落的花的香气（代指落花），是花香。B项“菡萏香中”是荷花的香气，是花香。C项“香犹在”指海棠经雨后花香仍在，是花香。D项“春雨香”直接说春雨是香的，与“雨香”用法相同。E项“香雨润如膏”直接以“香”修饰雨，也与本诗相同。",
+          "inputSha256": "eb8ac0a4052e00486c5c1587a05efd3a61b78b4879dca7b3c64cf3293346c9ad",
+          "inputContextSha256": "8d30741da1b4204d2bcd4329519883ea90fb17d45695beffb795d193a2a8120f",
+          "inputPresentationSha256": "58efd58e0f4cb7a770256016e93563992e6b1aaebc0bf11f9ccc8599bd8d111f",
+          "generatedAt": "2026-10-03T10:40:02.659644+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D",
+            "E"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-result.json",
+            "inputPromptSha256": "3442c15d178e313304286b5c2b4a8d05a19d382baed3d29551de589657a86d3a",
+            "responseStreamSha256": "d28e1d574065d8367207b00e7ad4cc21185cc3065320942e03771761a420bb08",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "eb8ac0a4052e00486c5c1587a05efd3a61b78b4879dca7b3c64cf3293346c9ad",
+      "inputContextSha256": "8d30741da1b4204d2bcd4329519883ea90fb17d45695beffb795d193a2a8120f",
+      "inputPresentationSha256": "58efd58e0f4cb7a770256016e93563992e6b1aaebc0bf11f9ccc8599bd8d111f",
+      "status": "reviewed",
+      "kind": "multiple_choice",
+      "correctOptions": [
+        "D",
+        "E"
+      ],
+      "explanation": "采完整集合DE。按题给通感标准，D/E以香写雨，A/B/C各有花香对象。Claude称雨本无香仅是沿用修辞题前提，不用作关于现实雨中气味的普遍物理判断。EOL漏D的来源问题继续保留。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:46:29.762Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2012-shici:3",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2012北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/huodong/2012gkst/201206/t20120608_787585.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "古今图书集成草木典265柳堤",
+          "url": "https://zh.wikisource.org/wiki/欽定古今圖書集成/博物彙編/草木典/第265卷",
+          "qualification": "电子转录柳堤署金鑾，八句与冻结诗文相合。原扫描Page29链接未成功读取，故只认电子转录旁证，不称已核扫描/原卷。"
+        },
+        {
+          "type": "checked_reference",
+          "title": "题西林壁原诗",
+          "url": "https://www.gushiwen.cn/shiwenv_f2f5469a6044.aspx/",
+          "qualification": "核四句原诗。由位置限制到整体认识是根植诗句的分析，不是把任何物体观察都必须身在外当科学规律。"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "我选苏轼的《题西林壁》。诗的前两句写庐山的景：横着看，山岭绵延；侧面看，山峰耸立；从远处、近处、高处、低处观看，山的形态又各不相同。后两句由眼前景象转入道理：观看者身在山中，受自身位置和视野限制，难以认识庐山的整体面貌。这并不是说山没有真实形态，而是提醒人们，局部所见不能轻易代替整体认识。景与理之间有具体的因果联系，正因为不同位置造成不同观察结果，诗人才进一步反思认识为何受到限制。这个道理从游山经验中自然生发，使抽象的认识问题有了可感的山形作依托；反过来，末句的思考又让开头的写景超出单纯的风景描摹，使读者想到判断人和事时也应转换角度、综合观察。",
+          "selectedOptions": [],
+          "inputSha256": "7c758951fc25f8a68e01215422584dfa392c9128282996674560b941cc70998d",
+          "inputContextSha256": "6972f3bf629fb20febc446d0856d0f0c1645f90a75bfd064de132ad7cecb732c",
+          "inputPresentationSha256": "03a2e5a56e93a270d11f3c4680bad8c8ed7f89a062fd17863e98bbaf866a8d08",
+          "generatedAt": "2026-10-03T10:36:04.949385+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2012-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2012.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "示例（选王之涣《登鹳雀楼》）：\n这首诗前两句写景，后两句说理。景的内容是：诗人登楼远望，一轮落日傍着连绵的群山缓缓沉没，黄河奔腾咆哮，向着大海滚滚流去。十个字把上下、远近、东西的景物全部收进笔底，境界阔大，气势雄浑。理的内容是：“欲穷千里目，更上一层楼”，要想看得更远，就必须站得更高，由此揭示出只有不断进取、不断提升自己，才能拥有更开阔的视野和更高的人生境界。\n景与理的关系是：景是理的基础和触发点，眼前景色壮阔却仍未穷尽，自然引出“更上一层楼”的愿望；理是景的升华，它使诗歌由单纯的登临写景上升为对人生的普遍感悟。景中寓理，理由景生，二者水乳交融，说理不离开“楼”和“目”的具体形象，所以毫不枯燥。这与《柳堤》由柳色春景引出“年年还自生”的生命之理，写法是一致的。",
+          "inputSha256": "7c758951fc25f8a68e01215422584dfa392c9128282996674560b941cc70998d",
+          "inputContextSha256": "6972f3bf629fb20febc446d0856d0f0c1645f90a75bfd064de132ad7cecb732c",
+          "inputPresentationSha256": "03a2e5a56e93a270d11f3c4680bad8c8ed7f89a062fd17863e98bbaf866a8d08",
+          "generatedAt": "2026-10-03T10:40:02.659644+00:00",
+          "uncertainties": [
+            "本题为开放性鉴赏题，可选篇目和表述不唯一，以上为自拟示例。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-result.json",
+            "inputPromptSha256": "3442c15d178e313304286b5c2b4a8d05a19d382baed3d29551de589657a86d3a",
+            "responseStreamSha256": "d28e1d574065d8367207b00e7ad4cc21185cc3065320942e03771761a420bb08",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "7c758951fc25f8a68e01215422584dfa392c9128282996674560b941cc70998d",
+      "inputContextSha256": "6972f3bf629fb20febc446d0856d0f0c1645f90a75bfd064de132ad7cecb732c",
+      "inputPresentationSha256": "03a2e5a56e93a270d11f3c4680bad8c8ed7f89a062fd17863e98bbaf866a8d08",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "本人题西林壁与Claude登鹳雀楼都是完整达标示例；分别交代具体景物、认识限制/提升视野的道理与由景生理关系。登楼示例的黄河入海含空间想象，不应据其描述声称从楼上实见海口或十字穷尽所有方位；不断提升是审美阐释而非现实必然律。两个原诗核对后保留全文。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:46:29.762Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2012-sanwen:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2012北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/huodong/2012gkst/201206/t20120608_787585.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "2020中尼珠峰雪面高程发布",
+          "url": "https://www.mfa.gov.cn/zyxw/202012/t20201208_348872.shtml",
+          "qualification": "2020公布8848.86m为雪面高程；历史2012题面8848保持原貌，3000年复生和峰顶站点为小说前言的文学设想。"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选A、E。A把“有限的数字和高度”与“无限的探索精神”对立关系误解为人类终将无峰可攀，违背首段及全文主旨。E把前言写作谈说成具体交代小说主人公生平，文中只写人物获得登山背景和作者的创作心路，没有交代他们的完整生平。B环境的寒冷黑暗衬出精神之火，随后火被冰雪覆盖暗示遇难；C勇士在3000年复生是想象和愿望，文中用也许作提示；D欲接近又欲避开的矛盾表现作者关切人物命运，均可成立。文中8848米是历史题面表达，复生和峰顶站点是文学设想，均不作为现实科学事实。",
+          "selectedOptions": [
+            "A",
+            "E"
+          ],
+          "inputSha256": "0dc5dd390798665402d250b29745b9bd809ac1701a6a39510b924f3585890ac4",
+          "inputContextSha256": "11319ef8c8855080e141b25d9c94f12c1e9b87f2e53ee837b19c92fd67b0ddda",
+          "inputPresentationSha256": "768d1cd53d1c9f2269f8ed93476d2bc234ec3f241ed7df758ed377319d0d409f",
+          "generatedAt": "2026-10-03T10:36:04.949385+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2012-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2012.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A、E。\n选A、E（题目要求选不正确的两项）。A项错：作者坚信的是到下个千年攀登雪山的一些艰险“也许就不存在了”，并紧接着指出“8848米将是有限的数字和高度，而人类的探索精神是无限的”，文末又说“我们的攀登也是如此（永远不会完结）”，并没有“人类将无高峰可攀”的意思。B项正确：黯淡的天光、无边黑夜、不见星光、没有篝火，反衬出“心灵的篝火”不灭；“最后那火也覆盖在冰雪中”委婉地写出勇士遇难。C项正确：第五段是作者的想象，寄托了对勇士重生、精神不灭的美好愿望。D项正确：末段“有时急于接近”“有时又小心翼翼地避开”，怕主人公遭遇不测，背后是对笔下人物的珍爱。E项错：本文是《绝顶》的前言，谈的是创作缘起和作者的心路历程，只提到一个主人公是“梅里雪山的攀登者”，并没有交代主人公的生平背景。",
+          "inputSha256": "0dc5dd390798665402d250b29745b9bd809ac1701a6a39510b924f3585890ac4",
+          "inputContextSha256": "11319ef8c8855080e141b25d9c94f12c1e9b87f2e53ee837b19c92fd67b0ddda",
+          "inputPresentationSha256": "768d1cd53d1c9f2269f8ed93476d2bc234ec3f241ed7df758ed377319d0d409f",
+          "generatedAt": "2026-10-03T10:40:02.659644+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A",
+            "E"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-result.json",
+            "inputPromptSha256": "3442c15d178e313304286b5c2b4a8d05a19d382baed3d29551de589657a86d3a",
+            "responseStreamSha256": "d28e1d574065d8367207b00e7ad4cc21185cc3065320942e03771761a420bb08",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "0dc5dd390798665402d250b29745b9bd809ac1701a6a39510b924f3585890ac4",
+      "inputContextSha256": "11319ef8c8855080e141b25d9c94f12c1e9b87f2e53ee837b19c92fd67b0ddda",
+      "inputPresentationSha256": "768d1cd53d1c9f2269f8ed93476d2bc234ec3f241ed7df758ed377319d0d409f",
+      "status": "reviewed",
+      "kind": "multiple_choice",
+      "correctOptions": [
+        "A",
+        "E"
+      ],
+      "explanation": "采完整集合AE。有限高程不能推出探索终止，前言未交代主人公生平；B环境烘托、C文学想象、D关爱人物成立。3000年复生/峰顶站点为想象，历史8848m不改为现代测量数字；2020官方雪面8848.86m作为读者辨识旁证。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:46:29.762Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2012-sanwen:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2012北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/huodong/2012gkst/201206/t20120608_787585.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "第一，梅里雪山为创作找到具体的情境和方向：作者此前受无形束缚，人物只能在不知名的空旷地带徘徊；看到雪山并查阅资料后，人物成为梅里雪山的攀登者，想象有了依托。第二，它提供具有冲突性的叙事条件：复杂的地形、积雪、岩石和多变气候使攀登面临生死考验，为人物活动提供艰险环境。第三，它推动主题的形成和深化：未被登顶的高峰及登山者遇难的经历，使作者思考身体、生命的有限与探索精神的无限，并将实际登山与自己艰难的精神创作相联系，形成不断攀登、追求超越的主题。",
+          "selectedOptions": [],
+          "inputSha256": "b5aaaf77d07b9cbf863c132c007e571b93b6fc3a152b4c1711f922fdbea54d8b",
+          "inputContextSha256": "2d23a86252d59f9c72ace17ddf36af0e66c0ada9d630b41226ade840925433d7",
+          "inputPresentationSha256": "47f2c25c4b545e3a904dcbbcecece1fb7d981021a082ccbde552bd3384065d72",
+          "generatedAt": "2026-10-03T10:36:04.949385+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2012-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2012.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "梅里雪山的作用主要有以下几方面：\n①激发创作灵感，打破创作困境。作者动笔前一直被“无形的束缚”困扰，等待多年，直到“看见了梅里雪山”才被深深迷住，想象得以展开，心灵获得解放。\n②为小说人物和故事提供了具体的背景与归宿。此前主人公一直“在一个不知名的空旷地带徘徊”，有了梅里雪山，他才成为“梅里雪山的攀登者”，形象变得清晰鲜活（“回头对我笑了”）。\n③为小说提供了素材和主题的载体。卡瓦格博地势险恶、至今无人登顶，是“神秘的向往”“难以超越的存在”，1991年中日登山队十七勇士遇难的惨剧也发生在这里；它引发了作者对攀登意义的思考，成为人类超越极限、无限探索精神的象征。\n④与作者自身的写作和人生形成对应。攀登雪山的艰险映照出作者带病创作的“精神攀登”，支撑她完成这部作品。",
+          "inputSha256": "b5aaaf77d07b9cbf863c132c007e571b93b6fc3a152b4c1711f922fdbea54d8b",
+          "inputContextSha256": "2d23a86252d59f9c72ace17ddf36af0e66c0ada9d630b41226ade840925433d7",
+          "inputPresentationSha256": "47f2c25c4b545e3a904dcbbcecece1fb7d981021a082ccbde552bd3384065d72",
+          "generatedAt": "2026-10-03T10:40:02.659644+00:00",
+          "uncertainties": [
+            "本题为主观概括题，要点划分方式不唯一，以上为自拟答案。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-result.json",
+            "inputPromptSha256": "3442c15d178e313304286b5c2b4a8d05a19d382baed3d29551de589657a86d3a",
+            "responseStreamSha256": "d28e1d574065d8367207b00e7ad4cc21185cc3065320942e03771761a420bb08",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "b5aaaf77d07b9cbf863c132c007e571b93b6fc3a152b4c1711f922fdbea54d8b",
+      "inputContextSha256": "2d23a86252d59f9c72ace17ddf36af0e66c0ada9d630b41226ade840925433d7",
+      "inputPresentationSha256": "47f2c25c4b545e3a904dcbbcecece1fb7d981021a082ccbde552bd3384065d72",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型均覆盖突破想象束缚、赋予人物情境、艰险素材/主题及写作攀登映照，划分数量不必固定。Claude的至今未登顶只认作历史材料的表述，不视作实时登山记录。无需把精神支撑解释为已经证明的创作因果实验。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:46:29.762Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2012-sanwen:3",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2012北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/huodong/2012gkst/201206/t20120608_787585.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "“绝顶”首先指自然界的山岳顶峰，尤其是小说人物向往而难以抵达的梅里雪山主峰。其次，它指人面对现实限制而追求的生命与能力的极限：登山者以身体对抗险境，作者在病痛中写作，都是向自己难以到达的高度努力。更深一层，它是精神世界不断追求的高处，是理想、探索和超越的象征；具体山峰的高度有限，一个目标达到后仍有新的目标，因此精神攀登没有永远封闭的终点。题名既保留高峰的实在意义，也指向无法一次穷尽的精神高度，并非宣称某个人能够占有最终、绝对的成就。",
+          "selectedOptions": [],
+          "inputSha256": "aac4bf28943132b150d9981cf1483ccaa04e9689ace64d31814640e5bd308ca5",
+          "inputContextSha256": "b2d60f5d91d79776ae0b923ff1fefa01814b38137fae74a469312afc87f596a4",
+          "inputPresentationSha256": "b4de89c2df6bee65350b53509d0801d9d807f5d3a44b2c52ac9a88dfa7d218ba",
+          "generatedAt": "2026-10-03T10:36:04.949385+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2012-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2012.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "“绝顶”包含以下几层内涵：\n①自然意义上的高峰：指梅里雪山主峰卡瓦格博、珠穆朗玛峰这类难以登临的雪山之巅，是登山者要征服的实际目标。\n②人类精神的高峰：指人类不断挑战极限、超越障碍、永无止境地探索的精神追求。物质的高度有限，而“人类的探索精神是无限的”。\n③文学创作的高峰：作者说“我写这部长篇也是一种攀登”，一次次冲击又一次次撤退，“绝顶”是她在艺术上力求达到的高度。\n④个人生命的高峰：作者身患重病四十年，在肉体疼痛和精神抑郁中坚持写作，“绝顶”也是她战胜病痛、超越自我的生命境界。\n总之，“绝顶”既是实有的山峰，更是永远在前方、需要不断攀登的精神目标，所以“生命永远不会完结，我们的攀登也是如此”。",
+          "inputSha256": "aac4bf28943132b150d9981cf1483ccaa04e9689ace64d31814640e5bd308ca5",
+          "inputContextSha256": "b2d60f5d91d79776ae0b923ff1fefa01814b38137fae74a469312afc87f596a4",
+          "inputPresentationSha256": "b4de89c2df6bee65350b53509d0801d9d807f5d3a44b2c52ac9a88dfa7d218ba",
+          "generatedAt": "2026-10-03T10:40:02.659644+00:00",
+          "uncertainties": [
+            "本题为主观概括题，层次划分不唯一，以上为自拟答案。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-result.json",
+            "inputPromptSha256": "3442c15d178e313304286b5c2b4a8d05a19d382baed3d29551de589657a86d3a",
+            "responseStreamSha256": "d28e1d574065d8367207b00e7ad4cc21185cc3065320942e03771761a420bb08",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "aac4bf28943132b150d9981cf1483ccaa04e9689ace64d31814640e5bd308ca5",
+      "inputContextSha256": "b2d60f5d91d79776ae0b923ff1fefa01814b38137fae74a469312afc87f596a4",
+      "inputPresentationSha256": "b4de89c2df6bee65350b53509d0801d9d807f5d3a44b2c52ac9a88dfa7d218ba",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "绝顶实指山巅，亦指超越生命和创作局限的精神追求。三层/四层分法均可，但创作高峰、生命高峰可归在精神层，不凭点数机械评分。永无止境是作品主旨，不表示个体肉体永生。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:46:29.762Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2012-sanwen:4",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2012北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/huodong/2012gkst/201206/t20120608_787585.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "我赞同把文中的登山者理解为悲剧英雄，但英雄之名来自探索的担当，不能仅以死亡作证明。夸父追逐太阳而未能实现愿望，登山者也未能登顶便殉难，他们都以有限的生命追求难以抵达的目标，结局令人惋惜。文中黑夜、积雪与没有熄灭的心灵篝火相对照，突出了人在险境中仍不放弃向往的精神；夸父的手杖化成树林，则使个体的终结留下惠及后来者的可能。现实中的科研和野外探索也常常面对未知，有人付出多年努力仍未成功，但他们留下的观测、经验乃至失败教训，可以帮助后来者走得更远。与此同时，珍惜生命也是对探索精神的尊重。风险评估、团队协作和必要时撤退，都是负责任的行动，不能因赞颂英雄就把无准备的冒险当作勇敢。我们纪念这些登山者，应当继承的是认真求索、努力超越的意志，并以更充分的知识和更周全的保护继续前行，而不是复制悲剧。",
+          "selectedOptions": [],
+          "inputSha256": "3c92736e1ddbc00ad8502d40ae620d421dea8f4a7b5edd091f7dcc4327643b28",
+          "inputContextSha256": "32975d562e71bd2fa5620f5f526f75db640f0315b2ba0b0207cfa5ae58a69c56",
+          "inputPresentationSha256": "e679c76a7e226e32fbc9391c5833c8f18f7a53d0018e452bc623aa392636089d",
+          "generatedAt": "2026-10-03T10:36:04.949385+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2012-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2012.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "示例：\n我赞同把殉难的登山者看作当代的“夸父”，但我认为他们身上“英雄”的分量远远重于“悲剧”。\n说是悲剧，是因为结局令人痛惜：1991年十七位勇士在梅里雪山无一生还，“心灵的篝火”最终被冰雪覆盖，正如夸父“道渴而死”，目标未达而生命已逝。但悲剧不等于失败。夸父弃杖化为邓林，给后来者留下荫凉；登山者倒下了，作者却说这“丝毫无损他们千年之前攀登高峰的意义”，因为物质的高度有限，精神的开拓无穷，他们用生命证明了人类不甘受限、敢于向未知进发的勇气，这正是文中所说“人类永生永世的寄托”。\n联系现实，航天员冒着风险飞向太空，科考队员在南极冰原上越冬，科学家在实验室里经历成百上千次失败，都是同一种“追日”。张海迪本人高位截瘫仍坚持写完长篇，也是一位攀登者。社会的进步恰恰是由这些明知艰险仍然前行的人推动的。当然，尊重他们的精神，并不意味着鼓励盲目冒险；敬畏自然、科学准备，才是对这种精神更好的继承。",
+          "inputSha256": "3c92736e1ddbc00ad8502d40ae620d421dea8f4a7b5edd091f7dcc4327643b28",
+          "inputContextSha256": "32975d562e71bd2fa5620f5f526f75db640f0315b2ba0b0207cfa5ae58a69c56",
+          "inputPresentationSha256": "e679c76a7e226e32fbc9391c5833c8f18f7a53d0018e452bc623aa392636089d",
+          "generatedAt": "2026-10-03T10:40:02.659644+00:00",
+          "uncertainties": [
+            "本题为开放性探究题，观点不唯一，以上为自拟示例。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-result.json",
+            "inputPromptSha256": "3442c15d178e313304286b5c2b4a8d05a19d382baed3d29551de589657a86d3a",
+            "responseStreamSha256": "d28e1d574065d8367207b00e7ad4cc21185cc3065320942e03771761a420bb08",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "3c92736e1ddbc00ad8502d40ae620d421dea8f4a7b5edd091f7dcc4327643b28",
+      "inputContextSha256": "32975d562e71bd2fa5620f5f526f75db640f0315b2ba0b0207cfa5ae58a69c56",
+      "inputPresentationSha256": "e679c76a7e226e32fbc9391c5833c8f18f7a53d0018e452bc623aa392636089d",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两篇都完整联系夸父、原文及现实，达到200字，区分死亡悲剧与探索价值且反对盲目冒险。Claude的科学家经历成百上千失败是一般议论例证，未给具体人物，不当精确统计；英雄分量重于悲剧属开放观点，不独占标准答案。本人强调风险评估、撤退和珍惜生命，保持为默认示例。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:46:29.762Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2012-yuyanjichu:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2012北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/huodong/2012gkst/201206/t20120608_787585.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "教育部小字典蹙",
+          "url": "https://dict.mini.moe.edu.tw/SearchIndex/word_detail?breadcrumbs=Search_%E8%B9%99_one&dictSearchField=%E8%B9%99&wordID=D0000414",
+          "qualification": "蹙读cu四声，蹙额为皱缩。"
+        },
+        {
+          "type": "checked_reference",
+          "title": "教育部舸标准字",
+          "url": "https://stroke-order.learningweb.moe.edu.tw/dictMean.jsp?ID=33336",
+          "qualification": "舸读ge三声。"
+        },
+        {
+          "type": "checked_reference",
+          "title": "教育部乳臭未干",
+          "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=136549",
+          "qualification": "乳臭未干的臭读xiu四声。"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选A。辍笔、谈笑风生、间或、李代桃僵字形正确，间或读jiàn，僵读jiāng。B应为仗义执言，蹙额的蹙读cù；C应为再接再厉，百舸的舸读gě，檄读xí无误；D应为绿草如茵，乳臭未干的臭读xiù，游说的说读shuì无误。应逐项同时核字形和读音，不能只查加注拼音的字。",
+          "selectedOptions": [
+            "A"
+          ],
+          "inputSha256": "288fc9351c887ad1d3d2424f24e1deee287ecbe0fbafe0c9dcf5abaeb95bc7bd",
+          "inputContextSha256": "637ecb494bc8328b3c82796a775c670a9f4ce94e4dec61ee9f83d714891089ae",
+          "inputPresentationSha256": "72789050e2617c70b24a103c2f0265930ea0a1e79d356a8d2000874456be7641",
+          "generatedAt": "2026-10-03T10:36:04.949385+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2012-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2012.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A。\n选A。A项字形、读音全部正确：辍笔、谈笑风生、间（jiàn）或、李代桃僵（jiāng）。B项“仗义直言”应为“仗义执言”，“蹙”应读cù。C项“再接再励”应为“再接再厉”，“舸”应读gě。D项“绿草如荫”应为“绿草如茵”，“乳臭未干”的“臭”应读xiù。",
+          "inputSha256": "288fc9351c887ad1d3d2424f24e1deee287ecbe0fbafe0c9dcf5abaeb95bc7bd",
+          "inputContextSha256": "637ecb494bc8328b3c82796a775c670a9f4ce94e4dec61ee9f83d714891089ae",
+          "inputPresentationSha256": "72789050e2617c70b24a103c2f0265930ea0a1e79d356a8d2000874456be7641",
+          "generatedAt": "2026-10-03T10:40:02.659644+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-result.json",
+            "inputPromptSha256": "3442c15d178e313304286b5c2b4a8d05a19d382baed3d29551de589657a86d3a",
+            "responseStreamSha256": "d28e1d574065d8367207b00e7ad4cc21185cc3065320942e03771761a420bb08",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "288fc9351c887ad1d3d2424f24e1deee287ecbe0fbafe0c9dcf5abaeb95bc7bd",
+      "inputContextSha256": "637ecb494bc8328b3c82796a775c670a9f4ce94e4dec61ee9f83d714891089ae",
+      "inputPresentationSha256": "72789050e2617c70b24a103c2f0265930ea0a1e79d356a8d2000874456be7641",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "采A。字形仗义执言/再接再厉/绿草如茵，蹙cu4、舸ge3、乳臭xiu4均核词典，完整排错；仅按当前可见拼音与字词判断，不宣称原卷加点几何已认证。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:46:29.762Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2012-yuyanjichu:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2012北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/huodong/2012gkst/201206/t20120608_787585.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选C。句子以四合院为主语，受等级约束与形制格局趋同之间语意连贯，谓语和修饰关系完整。A高雅、时尚等属于特点，不能统称为功能和作用，搭配不当；B依据……与……结果显示两种句式杂糅，可删依据，或改成依据……结果，……；D营造后缺少与之搭配的宾语中心语，应为营造……的情景，或改为呈现……的场景。此处只判断语言组织，不将有关银行测试的旧数据当作当前经济信息。",
+          "selectedOptions": [
+            "C"
+          ],
+          "inputSha256": "357ac510ba9b33b5adaa72ad6c0fb8248f6613066aa9855de1e3c5270849e4b3",
+          "inputContextSha256": "babdd78c5d95c2861bea1126c841fbb0625de152691c568fddeea965ff0a7be2",
+          "inputPresentationSha256": "907843815ca672dc92ad4aa615bf68ddffb50fe1852b8801642a068be13aa838",
+          "generatedAt": "2026-10-03T10:36:04.949385+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2012-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2012.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。A项搭配不当：“高雅、时尚、方便、环保”是特点，不能说是“功能和作用”，应改为“具有……的特点”。B项句式杂糅：“依据……结果”与“……结果显示”两种说法混用，造成主语残缺，应删去“依据”或删去“显示”。C项没有语病。D项成分残缺：“营造”缺少宾语中心语，应在句末加上“的情景（场景）”一类词语。",
+          "inputSha256": "357ac510ba9b33b5adaa72ad6c0fb8248f6613066aa9855de1e3c5270849e4b3",
+          "inputContextSha256": "babdd78c5d95c2861bea1126c841fbb0625de152691c568fddeea965ff0a7be2",
+          "inputPresentationSha256": "907843815ca672dc92ad4aa615bf68ddffb50fe1852b8801642a068be13aa838",
+          "generatedAt": "2026-10-03T10:40:02.659644+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-result.json",
+            "inputPromptSha256": "3442c15d178e313304286b5c2b4a8d05a19d382baed3d29551de589657a86d3a",
+            "responseStreamSha256": "d28e1d574065d8367207b00e7ad4cc21185cc3065320942e03771761a420bb08",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "357ac510ba9b33b5adaa72ad6c0fb8248f6613066aa9855de1e3c5270849e4b3",
+      "inputContextSha256": "babdd78c5d95c2861bea1126c841fbb0625de152691c568fddeea965ff0a7be2",
+      "inputPresentationSha256": "907843815ca672dc92ad4aa615bf68ddffb50fe1852b8801642a068be13aa838",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "采C。A特点与功能搭配错，B依据/显示杂糅，D营造缺情景中心语；不重述旧银行数据为现时事实。两模型改法只为解释病因，不将其中任一改法作为唯一标准。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:46:29.762Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2012-yuyanjichu:3",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2012北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/huodong/2012gkst/201206/t20120608_787585.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "NIH脂肪酸资料",
+          "url": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
+          "qualification": "亚油酸与alpha亚麻酸为需从膳食获得的必需脂肪酸；题干三种及花生烯酸表述不能据选D一并认证，也不提供菜籽油治疗建议。"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后修订",
+          "text": "选D。第一空修饰脂肪酸，表示不可缺少的物质，应用必需；必须主要表示事理或行动上的必要，通常作状语。第二空说对吸收过程起约束作用，应用抑制；抑止偏重压住、制止而不使发生。第三空与发生搭配，应用防止，防治兼有预防和治疗义，不宜说防治发生。以上只裁定题内搭配。另据NIH资料，通常所说需从膳食获得的两种必需脂肪酸是亚油酸和α-亚麻酸。题干将三种脂肪酸并列为人体必需，且使用花生烯酸的名称，不能因语言题选D就一并认定科学准确；菜籽油功效表述也不作为营养处方或治疗结论。",
+          "selectedOptions": [
+            "D"
+          ],
+          "inputSha256": "6b9d50cd96107e5f8ec257ee7b481051ccbe595daaf3aa0dacc6d06c068b94ed",
+          "inputContextSha256": "8582e02adc5611d244c61fe1e2b6db992789548be4e650ea0d3b266f931c3ec8",
+          "inputPresentationSha256": "39b0b6dcf9b73749181903efd5d2dea1cdafc112b51bc40026d0fb1ea1fcf613",
+          "generatedAt": "2026-10-03T10:46:29.762Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2012-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2012.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh",
+            "refinementEvidence": "answers-six-sites-20261002/root-2012-refinements.json",
+            "refinementReason": "NIH脂肪酸资料核查后补明确限定，D选项不变，保留原始正文。",
+            "initialVersion": "gpt_6_astra_initial"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。第一空：“必需”是“一定要有、不可缺少”，可作定语修饰名词；“必须”是副词，只能修饰动词。“人体____的脂肪酸”应填“必需”，排除A、B。第二空：“抑制”指压下去、加以控制，可用于生理过程；“抑止”强调使完全停止。菜籽油只是减少胆固醇的吸收，应填“抑制”。第三空：“防止”是预先设法制止，与“发生”搭配；“防治”是预防和治疗，对象是疾病本身，“防治……的发生”搭配不当，应填“防止”。",
+          "inputSha256": "6b9d50cd96107e5f8ec257ee7b481051ccbe595daaf3aa0dacc6d06c068b94ed",
+          "inputContextSha256": "8582e02adc5611d244c61fe1e2b6db992789548be4e650ea0d3b266f931c3ec8",
+          "inputPresentationSha256": "39b0b6dcf9b73749181903efd5d2dea1cdafc112b51bc40026d0fb1ea1fcf613",
+          "generatedAt": "2026-10-03T10:40:02.659644+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-result.json",
+            "inputPromptSha256": "3442c15d178e313304286b5c2b4a8d05a19d382baed3d29551de589657a86d3a",
+            "responseStreamSha256": "d28e1d574065d8367207b00e7ad4cc21185cc3065320942e03771761a420bb08",
+            "stage": "independent"
+          }
+        },
+        "gpt_6_astra_initial": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D。第一空修饰脂肪酸，表示不可缺少的物质，应用必需；必须主要表示事理或行动上的必要，通常作状语。第二空说对吸收过程起约束作用，应用抑制；抑止偏重压住、制止而不使发生。第三空与发生搭配，应用防止，防治兼有预防和治疗义，不宜说防治发生。以上只裁定题内搭配。题面列举必需脂肪酸和菜籽油作用的科学表述需另作核查，不作为营养处方或确定的治疗结论。",
+          "selectedOptions": [
+            "D"
+          ],
+          "inputSha256": "6b9d50cd96107e5f8ec257ee7b481051ccbe595daaf3aa0dacc6d06c068b94ed",
+          "inputContextSha256": "8582e02adc5611d244c61fe1e2b6db992789548be4e650ea0d3b266f931c3ec8",
+          "inputPresentationSha256": "39b0b6dcf9b73749181903efd5d2dea1cdafc112b51bc40026d0fb1ea1fcf613",
+          "generatedAt": "2026-10-03T10:36:04.949385+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2012-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2012.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        }
+      },
+      "inputSha256": "6b9d50cd96107e5f8ec257ee7b481051ccbe595daaf3aa0dacc6d06c068b94ed",
+      "inputContextSha256": "8582e02adc5611d244c61fe1e2b6db992789548be4e650ea0d3b266f931c3ec8",
+      "inputPresentationSha256": "39b0b6dcf9b73749181903efd5d2dea1cdafc112b51bc40026d0fb1ea1fcf613",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "采D。必需修饰名词、抑制生理过程、防止发生，三搭配相符。Claude说必须只能修饰动词过强，必须也可作用于形容词性谓语；抑止强调完全停止也不宜当无例外定义。本人复核补NIH明确的两种必需脂肪酸，保留原稿，选项不变。不认可题干三种/花生烯酸与未经核验的功效断言。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:46:29.762Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2012-yuyanjichu:4",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2012北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/huodong/2012gkst/201206/t20120608_787585.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "LIGO引力波声音转换",
+          "url": "https://www.ligo.caltech.edu/video/ligo20160211v2",
+          "qualification": "LIGO将引力波信号转换为声波供播放，不是录到宇宙中传来的空气声或人耳直接感知。"
+        },
+        {
+          "type": "checked_reference",
+          "title": "LIGO真空与声波",
+          "url": "https://www.ligo.caltech.edu/LA/page/faq",
+          "qualification": "声波不能在真空中传播；只核原题排序逻辑，不认可全部近地黑洞听觉设想。"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选B，顺序②④①③。第一空承接黑洞撞向地球的假设，用②引出听到声音；第二空用④说明所说的不是通常的声波；后两空形成尽管……但正常情况下……的转折，先说引力波影响着我们，再说通常听不到。②④①③使声音、传播条件、特殊情形和正常情形之间的衔接完整。题面把引力波对听觉器官的设想写成通俗说明，不能据此宣称引力波就是声波，或人耳能在日常条件下直接探测引力波。",
+          "selectedOptions": [
+            "B"
+          ],
+          "inputSha256": "74520770ce30c4dbe6a457ac68fbb07267a78e081fab164c637afa52ae83fa94",
+          "inputContextSha256": "804f3727e58d8daa670bdcc4c963184a5d0ee353db58fa256c435efee8f3d9c4",
+          "inputPresentationSha256": "ffb89f0457408f158ff5f2f74215232af3211220837ffcc63f521dd1e33d18d0",
+          "generatedAt": "2026-10-03T10:36:04.949385+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2012-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2012.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B（②④①③）。第一空承接“如果有黑洞撞向地球，那么”，应填结果②“你会听到它悄然逼近的声音”，排除C、D。第二空解释“听到的不是声波而是引力波”的原因，应填④“声波在真空中无法传播”，排除A。第三、四空由“尽管……但……”构成转折：尽管①“引力波每时每刻都在影响着我们”，但正常情况下③“引力波是听不到的”，语意连贯。",
+          "inputSha256": "74520770ce30c4dbe6a457ac68fbb07267a78e081fab164c637afa52ae83fa94",
+          "inputContextSha256": "804f3727e58d8daa670bdcc4c963184a5d0ee353db58fa256c435efee8f3d9c4",
+          "inputPresentationSha256": "ffb89f0457408f158ff5f2f74215232af3211220837ffcc63f521dd1e33d18d0",
+          "generatedAt": "2026-10-03T10:40:02.659644+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-result.json",
+            "inputPromptSha256": "3442c15d178e313304286b5c2b4a8d05a19d382baed3d29551de589657a86d3a",
+            "responseStreamSha256": "d28e1d574065d8367207b00e7ad4cc21185cc3065320942e03771761a420bb08",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "74520770ce30c4dbe6a457ac68fbb07267a78e081fab164c637afa52ae83fa94",
+      "inputContextSha256": "804f3727e58d8daa670bdcc4c963184a5d0ee353db58fa256c435efee8f3d9c4",
+      "inputPresentationSha256": "ffb89f0457408f158ff5f2f74215232af3211220837ffcc63f521dd1e33d18d0",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "采B即②④①③。先回应声音，再解释非声波，后转折一般与特殊情形。LIGO说明听到的是把引力波数据转换为声波，真空不传普通声波；本题排序正确不等于近地黑洞听觉设想全部科学正确。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:46:29.762Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2012-yuyanjichu:5",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2012北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/huodong/2012gkst/201206/t20120608_787585.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选C。《诗经》《楚辞》、唐宋诗词及明清诗文的体裁、句式并不一致，不能把多用对偶、骈散相间、错落有致一概列为所有这些作品的共同特点；格律诗等尤其不能统称为骈散相间。A两部作品分别属莎士比亚戏剧与关汉卿杂剧，均是戏剧艺术；B两首咏史作品分别借诸葛亮、周瑜寄托作者的志向与感慨；D《聊斋志异》常把超现实的情节与具体可信的生活细节结合起来，概括可成立。",
+          "selectedOptions": [
+            "C"
+          ],
+          "inputSha256": "ad5330f689a1976b99df79b40f03cfef086241bbdf8de135fa1e122f9332e09a",
+          "inputContextSha256": "e97d58a72a1b338e6141e657a092708d7f37b57180f16e8e5ca29cd21773c739",
+          "inputPresentationSha256": "2651a2b3049f7c534d90346e40df1bec800a6bc1ac38386bdf36de1370965026",
+          "generatedAt": "2026-10-03T10:36:04.949385+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2012-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2012.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\n选C。A项正确：莎士比亚是英国文艺复兴时期的剧作家，关汉卿是元代杂剧作家，两部作品都是戏剧。B项正确：《蜀相》借咏诸葛亮抒发壮志难酬之慨，《念奴娇·赤壁怀古》借周瑜抒发功业未就之情。C项错：“多用对偶，骈散相间，错落有致”不是这些作品的共同特点；《诗经》以四言为主，多用重章叠句，唐代近体诗句式整齐，而“骈散相间”一般是形容赋和散文的句式，不能笼统概括从《诗经》《楚辞》到明清诗文的全部作品。D项正确：《聊斋志异》多写鬼狐怪异，情节超现实，而细节描写真实细腻。",
+          "inputSha256": "ad5330f689a1976b99df79b40f03cfef086241bbdf8de135fa1e122f9332e09a",
+          "inputContextSha256": "e97d58a72a1b338e6141e657a092708d7f37b57180f16e8e5ca29cd21773c739",
+          "inputPresentationSha256": "2651a2b3049f7c534d90346e40df1bec800a6bc1ac38386bdf36de1370965026",
+          "generatedAt": "2026-10-03T10:40:02.659644+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-result.json",
+            "inputPromptSha256": "3442c15d178e313304286b5c2b4a8d05a19d382baed3d29551de589657a86d3a",
+            "responseStreamSha256": "d28e1d574065d8367207b00e7ad4cc21185cc3065320942e03771761a420bb08",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "ad5330f689a1976b99df79b40f03cfef086241bbdf8de135fa1e122f9332e09a",
+      "inputContextSha256": "e97d58a72a1b338e6141e657a092708d7f37b57180f16e8e5ca29cd21773c739",
+      "inputPresentationSha256": "2651a2b3049f7c534d90346e40df1bec800a6bc1ac38386bdf36de1370965026",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "采C。不能以骈散相间等统括跨朝代全部体裁。莎士比亚/关汉卿戏剧、杜甫苏轼借古抒怀及聊斋细节写实均为可成立概括；Claude对两首咏史的壮志难酬是作品解释，非唯一感情词。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:46:29.762Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2012-dazuowen:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2012北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/huodong/2012gkst/201206/t20120608_787585.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "让敬意有回声\n\n大山深处，一位巡道工沿着铁轨独自行走。他检查落石，留意滑坡和倒树，每天走过二十多公里。列车驶来时，他庄重地举手敬礼；列车驶过，汽笛在山间久久回响。材料没有写他们交谈，但这一来一往已像一次完整的应答：有人认真守护平安，也有人让守护者知道，他的劳动被看见了。\n\n老计的可敬，首先在于那些列车尚未到来的时刻。敬礼只需要短短几秒，巡道却是漫长、重复的工作。山路走了一遍，还要再走；昨天没有危险，今天仍须仔细查看。旅客坐在车厢里，或许正看窗外风景，未必知道一块石头曾被移开、一处隐患曾被发现。许多平安正以这样的方式到来：它没有轰动的情节，甚至让人觉得什么也没有发生，而背后有人一直在做不能省略的事情。\n\n这种劳动容易被忽略，因为人们通常记得解决突发事件的人，却不容易看见让事件没有发生的人。可是，责任的价值不该由掌声的大小决定。老计每日的脚步，把抽象的行车安全落实到一段段铁轨、一处处山坡。重复没有使他的工作失去意义，恰恰是持续而细致的重复，使陌生人的远行有了可靠的保障。我们对认真负责的理解，应当容得下这样的平常。\n\n老计又为什么要敬礼？材料没有替他说明心声，我们也不必为他编造一个唯一的理由。但那个庄重的动作使人想到：他所面对的不只是一列钢铁车辆，还有车上的生命、自己的职责以及与他人相连的工作。一个人身处山中，并不等于他与社会无关。列车将他的劳动与许多人的生活连接起来，敬礼则把这种联系变成可见的姿态。\n\n汽笛的回应因此尤其动人。如果劳动者始终只能单方面付出，再坚强的人也可能感到孤独。一声鸣笛未必能消除山路的艰辛，却使这段关系不再只有付出：列车接到了敬意，也送回了敬意。尊重不必总用宏大的词语表达，有时只需要对方听得见的一次回应。它告诉一个人，你站在这里所做的事情，我们知道。\n\n这样的回应也可以出现在日常生活里。清晨教室整洁，走廊干净，我们可以看见保洁人员的劳动；雨天收到包裹，可以对赶路的人说一句真诚的谢谢；一场活动顺利结束，致谢时也应记得布置、检查和收拾现场的人。这些表达不能代替应有的报酬与保障，却能纠正一种习惯：只享受便利，把提供便利的人看作理所当然的背景。\n\n进一步说，敬意若要有分量，还应落实为行动。赞美巡道工的坚守，也应关心他是否有合适的工具、必要的休息和可靠的防护；感谢他人的服务，也应尊重合理的工作边界。不能一面歌颂奉献，一面把本可减轻的辛苦继续推给奉献者。真正的尊重既珍惜责任感，也珍惜承担责任的具体的人，让他们有条件把工作做好，而不必靠过度消耗自己来维持我们的便利。\n\n深山里的汽笛终会散去，但它留下了一种值得延续的相处方式。有人把职责认真完成，有人及时回应这份认真；回应又提醒更多人，平凡劳动中藏着值得郑重对待的价值。愿我们既能在无人注目的时候走好自己的路，也能在经过他人的岗位时停下轻慢的目光。让举起的手得到回应，让踏实的脚步获得支持，敬意才会越过一时的感动，在生活中久久回响。",
+          "selectedOptions": [],
+          "inputSha256": "00a4b6e16f29a821e6779b17203ce948ee6d19cf41a0aa6b8344dbeb7fdc8d04",
+          "inputContextSha256": "e6f3b07d91ffde80ad2f597aec44654f0952a69dec172cd08005130ac0da9940",
+          "inputPresentationSha256": "6f684d53c2a043119f83726d8035adcdd3a385325f6a9b37f8c085008ce7ad52",
+          "generatedAt": "2026-10-03T10:36:04.949385+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2012-writing-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2012-writing-authenticated-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2012.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【审题立意】材料有三个场景：独自巡视写的是平凡岗位上的坚守与责任；庄重敬礼写的是对职业、对他人生命的敬畏；汽笛回响写的是他人对坚守者的回应与尊重。可从“坚守与责任”“敬业与尊严”“平凡中的伟大”“尊重是相互的”等角度立意。以下示例文取“敬业自重，方得回响”的角度，写成议论文。\n\n【示例作文】\n\n深山里的回响\n\n大山深处，一个人，一条铁路，每天二十多公里。没有观众，没有掌声，只有落石、滑坡和倒树这些沉默的对手。然而每当列车驶过，老计总要站定，举手，庄重地敬一个礼；列车也拉响汽笛，让声音在山谷间久久回荡。这一礼一鸣不过数秒，却让我读出了平凡岗位上最动人的东西：对职责的敬畏，以及人与人之间的相互致敬。\n\n老计的敬礼，首先是敬给自己这份工作的。巡线这件事，说来再简单不过：走路，察看，清理，日复一日。它不产生惊天动地的成果，它的全部成绩就是“什么也没有发生”。列车平安驶过，乘客在车厢里说笑、打盹，谁也不知道几个小时前有人搬开过一块滚落的石头。正因为无人知晓，才最考验一个人的内心。少走一公里，没有人看见；漏查一处边坡，也未必当天出事。可是老计没有这样做。他那个庄重的敬礼告诉我们，他从不把这份工作看作可以敷衍的苦差，而是看作值得郑重对待的使命。一个人怎样对待无人监督的时刻，就怎样定义了自己。\n\n这个敬礼，也是敬给生命的。疾驰而过的车厢里，是成百上千个素不相识的人，是他们身后成百上千个等待团圆的家庭。老计举起手，是在向这些托付于他的生命致意：这一段路，我看过了，请放心通过。责任这个词，平日里说得太多，容易显得空洞；而在深山的铁轨旁，它具体到每一颗道钉、每一块危石、每一步脚印。所谓敬业，不过是把别人的平安当作自己的分内之事，并且天天如此。\n\n而最让我动容的，是那一声汽笛。它说明坚守并不是孤独的独白。司机或许不知道老计的名字，却懂得那个身影意味着什么，于是用汽笛回一个礼。一个在路边，一个在车上，素昧平生，却彼此懂得、彼此成全。我们的社会正是靠这样无数看不见的环节相互托举着运转：清晨扫净街道的环卫工，深夜守在变电站的值班员，海岛上日日升旗的守岛人，边防线上巡逻的哨兵。他们各守一段“铁路”，也都值得一声“汽笛”。尊重平凡的劳动者，不是施舍式的同情，而是明白自己的安稳从何而来。\n\n有人或许会问：在大山里走一辈子，值得吗？在一个崇尚速成、渴望被看见的时代，这样的疑问并不奇怪。但价值从来不以热闹与否来衡量。老计的生活固然清苦寂寞，可他的内心并不贫瘠。他清楚自己每一步的意义，这份笃定比许多喧嚣中的茫然更接近幸福。能够郑重地向自己的工作敬礼的人，本身就拥有了尊严；这尊严不靠别人赐予，而是他一步一步走出来的。\n\n反观我们自己，面对的不过是一张书桌、一摞习题，却常常抱怨枯燥，盼望捷径，没人督促便松懈下来。老计让我明白：把简单的事日复一日做好，就是不简单；在没人看见的地方依然认真，就是了不起。今天认真对待每一道题、每一次值日，明天才担得起别人托付的那一段“铁路”。\n\n列车远去，汽笛声还在山间回荡。那回响是对一位巡线工的答谢，也是对所有坚守者的礼赞。愿我们都能在各自的岗位上站直身子，向自己的职责敬一个庄重的礼，并且相信：认真走过的路，大山会记得，时间会给出回响。",
+          "inputSha256": "00a4b6e16f29a821e6779b17203ce948ee6d19cf41a0aa6b8344dbeb7fdc8d04",
+          "inputContextSha256": "e6f3b07d91ffde80ad2f597aec44654f0952a69dec172cd08005130ac0da9940",
+          "inputPresentationSha256": "6f684d53c2a043119f83726d8035adcdd3a385325f6a9b37f8c085008ce7ad52",
+          "generatedAt": "2026-10-03T10:42:05.052940+00:00",
+          "uncertainties": [
+            "作文题为开放性题目，没有唯一答案；以上为原创示例，立意和文体仅是多种可行写法之一。",
+            "示例正文约1100字，为估算值，未经逐字清点，但已超过不少于800字的要求。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2012-writing-authenticated-result.json",
+            "inputPromptSha256": "b7366c372fb5f934c7fab6253a5037bd60e823dacc73e6f0d2ae904f730dd68e",
+            "responseStreamSha256": "e8be4de87dfe993f97f9c10c8960efa83ebf70966df99d8d5eb6f19d43d7430b",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "00a4b6e16f29a821e6779b17203ce948ee6d19cf41a0aa6b8344dbeb7fdc8d04",
+      "inputContextSha256": "e6f3b07d91ffde80ad2f597aec44654f0952a69dec172cd08005130ac0da9940",
+      "inputPresentationSha256": "6f684d53c2a043119f83726d8035adcdd3a385325f6a9b37f8c085008ce7ad52",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两篇均为完整原创议论文，扣巡视、敬礼与鸣笛回应，正文实测达800字。Claude敬业自重方得回响和尊严靠劳动走出应视为立意修辞；人的基本尊严不以工作表现为前提，尽责也不保证必获认可。其搬石、人数、司机心意和老计生活清苦幸福等为示例想象或推断，不是材料新增事实；本人正文明确区分敬礼解释与材料事实，并写出保障、休息、报酬，作为默认版本。保留Claude全正文和字数估算不确定性，另存实测字数。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:46:29.762Z",
+      "currentVersion": "gpt_6_astra"
     }
   ],
   "releaseBlockers": [
@@ -34683,7 +36200,15 @@
         "2012-yuyanjichu",
         "2012-dazuowen"
       ],
-      "detail": "EOL/学科网 five retypeset images declare eight original pages. Image2 ends the first guwen paragraph with ？？？ and omits its last sentences; image3 omits poem author and one multiple-choice option. Gzywtk 校对无误版 contains evident OCR errors. Neither establishes an authenticated original paper, answer card, exact printing or independent publication chain. Source variants remain: guwen paragraph ending 发棺/半 provisionally follows Gzywtk, old 米 and incomplete clause retained in preimage; EOL q7D 何以为报 vs Gzywtk/body 何以报为. No claim that reprint differences resolve original source. Poem author 雍陶 unsupported and removed; EOL blank vs Gzywtk 明·金銮 attribution requires literary/original-source adjudication. Five-option shici2 kept from Gzywtk because EOL drops original D and relabels E. Missing original12断句 recorded separately as 2012-duanju:1, not integrated or counted among612. Both witnesses print 如此知秦国之政也, kept without silently changing 知 to 治. Original numbering and consumer/source/history integration still required. Original q10 total7 consists3+4, but legacy shici1 score7 and shici2 score4 are unchanged to protect old grades. Language and guwen null scores and writing null remain; actual section totals15/12/60. No score reinterpretation or student write. Exact original dots, answer-card geometry and typography unresolved. Old answer-guiding body dots/waves removed; four public-image clause underlines retained as reprint evidence only. Language pronunciation targets visible from phonetic parentheses, dot geometry not certified. All reading and extension-writing inputs conservatively reference-exposed: EOL answer page/search snippets/gzy sample poem extension and old existing AI values were seen. Old main-essay outlines and one short example fragment were also exposed while inspecting existing fields; main writing is therefore reference-exposed too, although no complete new model composition was read. Root must complete20reading including supplement plus1essay before new bounded PLAN22; no provider call or new answers in this source step. Medical, nutrition, gravitational-wave and literary/historical assertions are source statements pending bounded factual checks during answer adjudication. Do not turn dated literary imagery, reported8848m or imagined3000-year events into verified contemporary claims."
+      "detail": "EOL/学科网 five retypeset images declare eight original pages. Image2 ends the first guwen paragraph with ？？？ and omits its last sentences; image3 omits poem author and one multiple-choice option. Gzywtk 校对无误版 contains evident OCR errors. Neither establishes an authenticated original paper, answer card, exact printing or independent publication chain. Source variants remain: guwen paragraph ending 发棺/半 provisionally follows Gzywtk, old 米 and incomplete clause retained in preimage; EOL q7D 何以为报 vs Gzywtk/body 何以报为. No claim that reprint differences resolve original source. Poem author 雍陶 unsupported and removed; EOL blank vs Gzywtk 明·金銮 attribution requires literary/original-source adjudication. Five-option shici2 kept from Gzywtk because EOL drops original D and relabels E. Missing original12断句 recorded separately as 2012-duanju:1, not integrated or counted among612. Both witnesses print 如此知秦国之政也, kept without silently changing 知 to 治. Original numbering and consumer/source/history integration still required. Original q10 total7 consists3+4, but legacy shici1 score7 and shici2 score4 are unchanged to protect old grades. Language and guwen null scores and writing null remain; actual section totals15/12/60. No score reinterpretation or student write. Exact original dots, answer-card geometry and typography unresolved. Old answer-guiding body dots/waves removed; four public-image clause underlines retained as reprint evidence only. Language pronunciation targets visible from phonetic parentheses, dot geometry not certified. All reading and extension-writing inputs conservatively reference-exposed: EOL answer page/search snippets/gzy sample poem extension and old existing AI values were seen. Old main-essay outlines and one short example fragment were also exposed while inspecting existing fields; main writing is therefore reference-exposed too, although no complete new model composition was read. Root must complete20reading including supplement plus1essay before new bounded PLAN22; no provider call or new answers in this source step. Medical, nutrition, gravitational-wave and literary/historical assertions are source statements pending bounded factual checks during answer adjudication. Do not turn dated literary imagery, reported8848m or imagined3000-year events into verified contemporary claims. All21 complete root bodies frozen reference-exposed before Claude. PLAN22 sandbox attempt terminal not-logged-in/no-model/cost0; PLAN23 freshly verified existing authenticated environment then two finite completed calls. All full responses read and adjudicated; two root refinements preserve complete initial bodies. Song Lian electronic text supports发棺/何以报为 but reads米; do not overwrite provisional exam半. Anthology transcription supports金鑾, scan/original paper not verified. 知 has掌管 sense,如此/使此 remain qualified. Supplemental original12 staysdisputed/unintegrated with no grading key. Source bytes and old scores unchanged. Scientific and dictionary qualifications recorded, not silently corrected in exam source. All original-printing, score-history, integration and publication gates remain open.",
+      "detailHistory": [
+        {
+          "at": "2026-10-03T10:46:29.762Z",
+          "detail": "EOL/学科网 five retypeset images declare eight original pages. Image2 ends the first guwen paragraph with ？？？ and omits its last sentences; image3 omits poem author and one multiple-choice option. Gzywtk 校对无误版 contains evident OCR errors. Neither establishes an authenticated original paper, answer card, exact printing or independent publication chain. Source variants remain: guwen paragraph ending 发棺/半 provisionally follows Gzywtk, old 米 and incomplete clause retained in preimage; EOL q7D 何以为报 vs Gzywtk/body 何以报为. No claim that reprint differences resolve original source. Poem author 雍陶 unsupported and removed; EOL blank vs Gzywtk 明·金銮 attribution requires literary/original-source adjudication. Five-option shici2 kept from Gzywtk because EOL drops original D and relabels E. Missing original12断句 recorded separately as 2012-duanju:1, not integrated or counted among612. Both witnesses print 如此知秦国之政也, kept without silently changing 知 to 治. Original numbering and consumer/source/history integration still required. Original q10 total7 consists3+4, but legacy shici1 score7 and shici2 score4 are unchanged to protect old grades. Language and guwen null scores and writing null remain; actual section totals15/12/60. No score reinterpretation or student write. Exact original dots, answer-card geometry and typography unresolved. Old answer-guiding body dots/waves removed; four public-image clause underlines retained as reprint evidence only. Language pronunciation targets visible from phonetic parentheses, dot geometry not certified. All reading and extension-writing inputs conservatively reference-exposed: EOL answer page/search snippets/gzy sample poem extension and old existing AI values were seen. Old main-essay outlines and one short example fragment were also exposed while inspecting existing fields; main writing is therefore reference-exposed too, although no complete new model composition was read. Root must complete20reading including supplement plus1essay before new bounded PLAN22; no provider call or new answers in this source step. Medical, nutrition, gravitational-wave and literary/historical assertions are source statements pending bounded factual checks during answer adjudication. Do not turn dated literary imagery, reported8848m or imagined3000-year events into verified contemporary claims.",
+          "evidence": "answers-six-sites-20261002/REVIEW-2012-SOURCE.md"
+        }
+      ],
+      "evidence": "answers-six-sites-20261002/REVIEW-2012.md"
     }
   ]
 }

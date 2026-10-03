@@ -252,3 +252,11 @@ Depends on the accepted User Center learning journal/recorder before this leaf m
 在已接受來源0b3258ff上建立codex/answers-20261002；新增題文雜湊綁定的答案校訂契約、動態模型介面和整卷版本保留。45個單元完成GPT-6 Astra及實際Claude Opus5.5雙模型覆核，含2026全部26單元、其餘18道虛詞與2009散文多選；4個Claude版本另有明示來源覆核修訂。未改寫現行data/all.json。Node24.18.0下25項針對性測試通過；全量門檻如期拒絕45/612，尚餘567單元及專題獨有題。本候選尚未部署或真實登入驗收。續作權威：/Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/HANDOFF.md。
 
 全量612題、其他站專有題、來源題面差異、跨站投影、多選判分修復、完整測試、預覽／正式部署及status公開記錄仍待完成。中央接受來源、現網與歷史學習資料均未改動。完整核查與方案：/Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/DESIGN.md。
+
+## 2026-10-03 — 2012完整答案覆核，本地候选
+
+当前400/612：393reviewed、7disputed、0draft、212未覆盖；400当前上下文、348标记证明，52早期v3缺口。本人21份完整文字先冻结，后Claude实际opus5.5/high两批全部完成并全文裁定。两延伸与作文双方实测达标，完整首稿/修订/日期/来源均保留。新增原12断句仍disputed、未正式入库，累计5补录单元不计612。
+
+PLAN22受限环境作答前登录读取失败、无模型/费用0；host只读auth确认既有登录后另立PLAN23，串行两批费用标价等价0.3700352USD。源字节自b698037不变，977前存完整模型、380其他审核和全部身份/分值/旧AI保持不变。15authority测试、201/612/441/0数据、输入/hash/完整原始证据/历史/字数验证通过。宋濂原文米与题面半、原卷标记/分值相容及全部发布门禁继续保留。
+
+证据 /Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/REVIEW-2012.md 和verification-2012.json。当前唯一串行owner codex-01a1014f-gpt-6-astra，实际gpt-6-astra/xhigh。未push、上传、正式build、生产/学生写入、认证验收、status或通知；下一步2011来源准备。
