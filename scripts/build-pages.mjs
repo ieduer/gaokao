@@ -2,6 +2,13 @@ import { mkdir, copyFile, readdir, readFile, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
+import { validateAuthority, projectAuthority } from './lib/answer-authority.mjs';
+
+// Reject incomplete reviews before touching an existing release directory.
+const records=JSON.parse(await readFile('data/all.json','utf8'));
+const authority=JSON.parse(await readFile('data/answer-authority.json','utf8'));
+const coverage=validateAuthority(records,authority,{requireComplete:true});
+const projected=projectAuthority(records,authority);
 
 // Pages must never publish the repository root or source/data backups.
 const output = resolve(process.argv[2] || '.pages-output');
@@ -18,9 +25,10 @@ try {
 for (const file of files) {
   const dest = resolve(output, file);
   await mkdir(resolve(dest, '..'), {recursive:true});
-  await copyFile(file, dest);
+  if(file==='data/all.json')await writeFile(dest,JSON.stringify(projected,null,2)+'\n');
+  else await copyFile(file, dest);
 }
 const sha = execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim();
 const rows = await Promise.all(files.map(async path => ({path, sha256:createHash('sha256').update(await readFile(resolve(output,path))).digest('hex')})));
-await writeFile(resolve(output,'release.json'), JSON.stringify({schemaVersion:1,project:'gaokao',release:'20260920-chinese-three-source-fix',sourceCommit:sha,files:rows},null,2)+'\n');
+await writeFile(resolve(output,'release.json'), JSON.stringify({schemaVersion:1,project:'gaokao',release:authority.revision,answerCoverage:coverage,sourceCommit:sha,files:rows},null,2)+'\n');
 console.log(JSON.stringify({output, files}));

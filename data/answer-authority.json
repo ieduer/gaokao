@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261002-reviewed-45",
+  "revision": "20261002-reviewed-90-disputed-4",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -2602,6 +2602,2950 @@
           }
         }
       }
+    },
+    {
+      "id": "2025-feilian:1",
+      "inputSha256": "6125097e56dd548cc31094148cd7c1537d554a23b3c4ab3c7415d4f0cf3850db",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "依据完整题文逐项核对两模型的独立作答；具体差错与初答保留于模型历史。非官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:34:44.977633+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2025北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：C。材料一说语言功能随年龄增长越来越偏侧化于左半球，C误写成右半球。A对应定义中的特定阶段；B对应关键期内较易习得、错过后效率降低；D对应第五段相互不同的研究结论。",
+          "inputSha256": "6125097e56dd548cc31094148cd7c1537d554a23b3c4ab3c7415d4f0cf3850db",
+          "generatedAt": "2026-10-03T01:23:10.055Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-reading-reviews.json"
+          },
+          "assessment": {
+            "matchesConclusion": true,
+            "note": "当前覆核采用；原始版本留存。"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\nA项正确。第(1)段说关键期是语言学习过程中存在的“一个特定阶段”，即一个特定时间段。B项正确。第(2)段说“错过了关键期，语言学习的效率会大大降低”，可见关键期影响学习效率。C项不正确。第(3)段说“随着年龄增长，大脑的语言功能越来越偏侧化于左半球，左半球成为语言的优势半球”，不是右半球。D项正确。第(5)段既列举了支持第二语言关键期的研究，也列举了“不支持第二语言学习有关键期”的研究，有学者认为“第二语言学习不存在关键年龄或阶段”，可见尚存争议。故选C。",
+          "inputSha256": "6125097e56dd548cc31094148cd7c1537d554a23b3c4ab3c7415d4f0cf3850db",
+          "generatedAt": "2026-10-03T01:22:41.872589+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-01-result.json",
+            "inputPromptSha256": "7e37d138d7f3c3c8620416ec65802e26750dccd8ce63071a1270c5934b773330",
+            "responseStreamSha256": "b22af1527a94bc9be0140178b2da63b3e21ac9b10e6942dc8e221cb1f1194b7a",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2025-feilian:2",
+      "inputSha256": "5b1a73b149bf2325de5b6fffac43114fe13c5fde3e0e040d07ad0f21feadfcae",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "依据完整题文逐项核对两模型的独立作答；具体差错与初答保留于模型历史。非官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:34:44.977633+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2025北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：B。五十岁开始学习仍能较快流利交流，支持晚学者也可以成功，不能作为关键期优势的支持证据。A表现儿童失语后恢复优势；C表现幼儿在自然语言环境中的习得优势；D表现错过关键期后语言能力发展受限。注意B只是本题中不支持该假说的事例，不能凭这一例直接证明关键期不存在。",
+          "inputSha256": "5b1a73b149bf2325de5b6fffac43114fe13c5fde3e0e040d07ad0f21feadfcae",
+          "generatedAt": "2026-10-03T01:23:10.055Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-reading-reviews.json"
+          },
+          "assessment": {
+            "matchesConclusion": true,
+            "note": "当前覆核采用；原始版本留存。"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\nA项支持。第(3)段说儿童失语者比成人失语者恢复得更快、更好，父亲比6岁的儿子恢复更晚，与此相符。B项不支持。王先生50岁才开始学外语，早已远离关键期，一年后却能流利对话，说明过了关键期仍能高效学会语言，与“错过关键期，语言学习效率大大降低”相反，属于反例。C项支持。3岁正处于1—5岁最关键阶段，在自然语言环境中两年就说得和本地儿童一样地道，印证了关键期内儿童会“自然学会语言”。D项支持。第(4)段正是以“狼孩”青春期后才学语言、无法达到正常母语者水平作为证据。故选B。",
+          "inputSha256": "5b1a73b149bf2325de5b6fffac43114fe13c5fde3e0e040d07ad0f21feadfcae",
+          "generatedAt": "2026-10-03T01:22:41.872589+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-01-result.json",
+            "inputPromptSha256": "7e37d138d7f3c3c8620416ec65802e26750dccd8ce63071a1270c5934b773330",
+            "responseStreamSha256": "b22af1527a94bc9be0140178b2da63b3e21ac9b10e6942dc8e221cb1f1194b7a",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2025-feilian:3",
+      "inputSha256": "768a26a8268c03c6c071c69e229e0767b323bffb6cfa86243902c7632f101893",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "依据完整题文逐项核对两模型的独立作答；具体差错与初答保留于模型历史。非官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:34:44.977633+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2025北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：D。材料二明确把短时记忆容量与语言加工联系起来：容量较小只能提取少量信息，反而有利于学习；成人同时加工大量信息则未必有利。A对应外界刺激促进神经功能与语言能力发展；B对应普遍语法作用时间；C对应儿童与成人认知成熟程度的差异。",
+          "inputSha256": "768a26a8268c03c6c071c69e229e0767b323bffb6cfa86243902c7632f101893",
+          "generatedAt": "2026-10-03T01:23:10.055Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-reading-reviews.json"
+          },
+          "assessment": {
+            "matchesConclusion": true,
+            "note": "当前覆核采用；原始版本留存。"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\nA项正确。第(7)段说神经组织“接受到了外界适宜的语言输入刺激，其功能就会得到充分发展，完备的语言能力也得以发展起来”。B项正确。第(8)段原文是“语言学习关键期与普遍语法发生作用的时间相契合”。C项正确。第(9)段说“认知能力的不成熟性有利于语言学习”，可见认知能力成熟与否影响语言学习。D项不正确。第(9)段说儿童短时记忆容量有限，“加工语言时仅能抽取少量信息进行加工”，成人容量较大，“能够同时抽取更多的信息进行加工”。可见短时记忆容量直接决定一次能加工的信息量，二者密切相关。故选D。",
+          "inputSha256": "768a26a8268c03c6c071c69e229e0767b323bffb6cfa86243902c7632f101893",
+          "generatedAt": "2026-10-03T01:22:41.872589+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-01-result.json",
+            "inputPromptSha256": "7e37d138d7f3c3c8620416ec65802e26750dccd8ce63071a1270c5934b773330",
+            "responseStreamSha256": "b22af1527a94bc9be0140178b2da63b3e21ac9b10e6942dc8e221cb1f1194b7a",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2025-feilian:4",
+      "inputSha256": "c35fff7f60f0dd1c441f28b1288d79b5193fb1a7df5a11c0f00c7657fb317437",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "依据完整题文逐项核对两模型的独立作答；具体差错与初答保留于模型历史。非官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:34:44.977633+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2025北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：C。材料二第九段直接说明短时记忆容量影响加工方式及语言学习。A与第七段相反；B把没有在适当时期激活先天能力误说成根本不存在普遍语法；D排除了社会等非生物因素，与材料一第五段不符。",
+          "inputSha256": "c35fff7f60f0dd1c441f28b1288d79b5193fb1a7df5a11c0f00c7657fb317437",
+          "generatedAt": "2026-10-03T01:23:10.055Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-reading-reviews.json"
+          },
+          "assessment": {
+            "matchesConclusion": true,
+            "note": "当前覆核采用；原始版本留存。"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：C。\nA项错误。第(7)段说青春期后学习能力降低“可能与负责语言学习的神经组织的功能降低有关，因而学习效率会受到影响”，二者有关。B项错误。第(8)段认为普遍语法是人脑“先天能力”，关键期结束只是意味着其作用“可能丧失”。“狼孩”大脑没有损伤，只是错过了普遍语法起作用的时期，不能推出其大脑中“不存在”普遍语法，属无中生有、绝对化。C项正确。第(9)段说儿童短时记忆容量小、只加工少量信息，有利于语言学习；计算机模拟也发现“较小的记忆容量有利于语言学习”。可见学习效果受短时记忆容量影响。D项错误。第(5)段指出年龄对第二语言学习的作用“也会受到语言输入、社会等非生物因素影响”，材料二也说机遇窗口可能永不完全关闭。说“机遇窗口”不受非生物因素影响，没有依据，且与材料一相悖。故选C。",
+          "inputSha256": "c35fff7f60f0dd1c441f28b1288d79b5193fb1a7df5a11c0f00c7657fb317437",
+          "generatedAt": "2026-10-03T01:22:41.872589+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-01-result.json",
+            "inputPromptSha256": "7e37d138d7f3c3c8620416ec65802e26750dccd8ce63071a1270c5934b773330",
+            "responseStreamSha256": "b22af1527a94bc9be0140178b2da63b3e21ac9b10e6942dc8e221cb1f1194b7a",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2025-feilian:5",
+      "inputSha256": "f44efecdb084c7da4ce4d9c540abdbfcd5c75831b5af79229861ac0b38070a90",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "依据完整题文逐项核对两模型的独立作答；具体差错与初答保留于模型历史。非官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:34:44.977633+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2025北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "①母语学习应重视儿童早期，尤其一至五岁的语言环境，通过自然交流提供适宜输入，避免剥夺儿童接触语言的机会。依据：关键期内大脑语言功能可塑性较强；适宜刺激促进语言神经组织发展；儿童能借助普遍语法从输入中归纳规则。失语恢复及语言环境被剥夺的例子说明错过早期阶段后补偿可能困难。②第二语言可以尽早接触，利用幼儿在交际情景中自然习得的优势；但不能把某个年龄当作绝对截止线，应持续提供输入与交流，按年龄采用适合的方法，年长者可以发挥认知和课堂学习优势。依据：关键期是否适用于第二语言仍有争议，语言输入、社会环境等非生物因素也影响结果；机遇窗口理论允许较长的学习时段，部分研究认为窗口不会完全关闭，尤其词汇可终身学习。",
+          "inputSha256": "f44efecdb084c7da4ce4d9c540abdbfcd5c75831b5af79229861ac0b38070a90",
+          "generatedAt": "2026-10-03T01:23:10.055Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-reading-reviews.json"
+          },
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "当前覆核采用；原始版本留存。"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "一、对母语学习的启示：\n1. 应抓住出生到青春期前、尤其是1—5岁这一关键期，尽早为儿童提供丰富、适宜的自然语言环境。\n2. 应让儿童多与人交流互动，不能剥夺或忽视其语言输入。\n理论依据：\n①脑神经研究认为，负责语言学习的神经组织只有在一定时期内得到适宜的语言输入刺激，功能才能充分发展，否则会萎缩甚至消失。\n②普遍语法理论认为，儿童在关键期内借助先天的普遍语法分析语言输入、概括规则；关键期结束，普遍语法的作用可能丧失。\n③儿童认知不成熟、短时记忆容量小，反而有利于语言学习。\n此外，“狼孩”错过关键期后语言发展受到不可逆转的影响，儿童失语者比成人更易康复，大脑语言功能在青春期后基本完成左半球偏侧化，这些事实都可作为佐证。\n\n二、对第二语言学习的启示：\n1. 有条件的可尽早开始学习，最好在8岁前，至少在27.5岁“机遇窗口”关闭前开始，以争取接近母语者的水平，尤其是发音。\n2. 错过最佳年龄也不必放弃，学习可以贯穿一生，词汇学习更是如此。\n3. 年长者应扬长避短，发挥认知能力强的优势，多利用课堂学习和认知策略。\n4. 要重视语言输入和社会环境等非生物因素，增加语言输入量，营造真实的交际环境。\n理论依据：\n①8岁前学习成绩最好；6岁前到美国的古巴移民发音接近美国人的占71%，13岁后到美国的仅占17%。\n②“机遇窗口”说认为，27.5岁前开始学习就有可能接近母语者水平，之后成功可能性随年龄增长而降低，但窗口可能永远不会完全关闭。\n③不支持第二语言关键期的研究认为，语言输入、社会等非生物因素甚至是造成最终水平差异的主要因素，晚学者同样能接近母语者水平，各年龄段学习者各有优势：幼儿善于在交际情景中直觉习得，年长者善于借助认知和课堂学习。",
+          "inputSha256": "f44efecdb084c7da4ce4d9c540abdbfcd5c75831b5af79229861ac0b38070a90",
+          "generatedAt": "2026-10-03T01:22:41.872589+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "note": "其“至少在27.5岁前”措辞偏硬，应以研究假说而非统一截止年龄理解；当前答案保留不同研究立场。"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-01-result.json",
+            "inputPromptSha256": "7e37d138d7f3c3c8620416ec65802e26750dccd8ce63071a1270c5934b773330",
+            "responseStreamSha256": "b22af1527a94bc9be0140178b2da63b3e21ac9b10e6942dc8e221cb1f1194b7a",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2025-guwen:1",
+      "inputSha256": "9c731d5ef8c67810348d8332dc56ccdd3cde6c477c3c572375867d6a1c7dd752",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "C"
+      ],
+      "explanation": "依据完整题文逐项核对两模型的独立作答；具体差错与初答保留于模型历史。非官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:34:44.977633+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2025北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：C。这里的“谋方”指谋略、谋划的方法，不能按现代空间意义解释为方向。A的“处义”是在患难中坚守道义；B的“就”是接近、趋就；D的“矜”是夸耀，三项均合语境。",
+          "inputSha256": "9c731d5ef8c67810348d8332dc56ccdd3cde6c477c3c572375867d6a1c7dd752",
+          "generatedAt": "2026-10-03T01:23:10.055Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-reading-reviews.json"
+          },
+          "assessment": {
+            "matchesConclusion": true,
+            "note": "当前覆核采用；原始版本留存。"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 来源复核后修订",
+          "text": "答案：C。\nA项正确。“临患涉难而处义不越”，面临祸患、经历危难，却坚守道义而不逾越，“处”释为“坚守、持守”合乎语境。\nB项正确。“富贵弗就而贫贱弗弃”，不趋就富贵，也不厌弃贫贱，“就”为接近、趋就。\nC项不正确。“众无谋方，乞谨视见，多故不良”，意为众人没有谋事的方法、方略，只求谨小慎微地看眼前所见，因而多生事端、结果不好。“方”应释为“方法、方略”，释为“方向”不合文意。\nD项正确。“非徼而矜其名也”，（古人禅让给贤人）不是为了求取并夸耀自己的名声，“矜”为夸耀。\n故选C。",
+          "inputSha256": "9c731d5ef8c67810348d8332dc56ccdd3cde6c477c3c572375867d6a1c7dd752",
+          "generatedAt": "2026-10-03T01:31:31.789126+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-source-review-result.json",
+            "inputPromptSha256": "192d845cccd6ff32f2550edc1feb2076234cba906cb7f8d6876a28b63523bd50",
+            "responseStreamSha256": "5248ebc25a3a7bd0c39eb0b6a135483c0a1cf9a4986a99c9f7b57ad98d13feb5",
+            "stage": "source_review"
+          }
+        },
+        "claude_opus_5_5_initial": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 初次独立作答（复核前）",
+          "text": "答案：C。\nA项正确。“临患涉难而处义不越”意为面临祸患、经历危难时，坚守道义而不逾越，“处”释为坚守，讲得通。B项正确。“富贵弗就而贫贱弗弃”意为不趋附富贵，也不嫌弃贫贱，“就”即接近、趋就。C项不正确。“众无谋方，乞谨视见，多故不良”中的“方”应指方略、道术、办法，意为众人没有谋略办法，只知拘谨地看眼前所见，因而多生事故、不得善果。释为“方向”不合文意。D项正确。“非徼而矜其名也”意为不是为了求取美名而夸耀，“矜”释为夸耀。故选C。",
+          "inputSha256": "9c731d5ef8c67810348d8332dc56ccdd3cde6c477c3c572375867d6a1c7dd752",
+          "generatedAt": "2026-10-03T01:22:41.872589+00:00",
+          "uncertainties": [
+            "题干以星号标示加点词，按星号所示词语理解；本组缺第7题，未予作答。"
+          ],
+          "selectedOptions": [
+            "C"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-01-result.json",
+            "inputPromptSha256": "7e37d138d7f3c3c8620416ec65802e26750dccd8ce63071a1270c5934b773330",
+            "responseStreamSha256": "b22af1527a94bc9be0140178b2da63b3e21ac9b10e6942dc8e221cb1f1194b7a",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2025-guwen:3",
+      "inputSha256": "9db50735c6f4096d9bd7dd59021a0fb4c6e3952d609be5f2c538d8cca9ef25d3",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "A"
+      ],
+      "explanation": "依据完整题文逐项核对两模型的独立作答；具体差错与初答保留于模型历史。非官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:34:44.977633+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2025北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：A。“君民”的“君”应作动词，指治理百姓，不是“君与民”两个并列主体；句意是治理民众而有使海外归服的志向，节操高尚，不计较细小利益。B抓住客人与贤士内外表现的对立；C概括朴实谨慎、不自满；D对应自以为是引来愚陋者附和。",
+          "inputSha256": "9db50735c6f4096d9bd7dd59021a0fb4c6e3952d609be5f2c538d8cca9ef25d3",
+          "generatedAt": "2026-10-03T01:23:10.055Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-reading-reviews.json"
+          },
+          "assessment": {
+            "matchesConclusion": true,
+            "note": "当前覆核采用；原始版本留存。"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 来源复核后修订",
+          "text": "答案：A。\nA项不正确。“今君民而欲服海外”中，“君”是名词用作动词，意为“统治、做……的君主”，“君民”即统治人民；“今”在此处带有假设意味，可理解为“如果、假如”。全句意为：（贤士）如果统治百姓并想要使海外归服，就会节操很高而不依赖小利。译文将“君民”理解为并列的“君与民”，把主语误作君主和百姓，错误。\nB项正确。“掩敛”指掩藏收敛，“述施”指陈述施展，译为“客人掩藏收敛的，正是贤士陈述施展的”，符合田骈“客殆乎非士”的判断。\nC项基本正确。“淳淳乎”形容淳朴，“慎谨畏化”指谨慎、敬畏教化，“不肯自足”即不自满。译文“不敢骄傲自满”与“不肯”略有出入，但不影响大意。\nD项正确。“自用”即自以为是、独断专行，“憨陋之人”指愚昧浅陋的人，“从而贺之”指跟着称颂他。\n故选A。",
+          "inputSha256": "9db50735c6f4096d9bd7dd59021a0fb4c6e3952d609be5f2c538d8cca9ef25d3",
+          "generatedAt": "2026-10-03T01:31:31.789126+00:00",
+          "uncertainties": [
+            "D项将“憨陋”译为“憨直无知”，与“愚昧浅陋”略有偏差；C项“肯”译为“敢”也不完全对应。但两者都属于小的表述差异，A项的结构性误译最明显，答案取A。"
+          ],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-source-review-result.json",
+            "inputPromptSha256": "192d845cccd6ff32f2550edc1feb2076234cba906cb7f8d6876a28b63523bd50",
+            "responseStreamSha256": "5248ebc25a3a7bd0c39eb0b6a135483c0a1cf9a4986a99c9f7b57ad98d13feb5",
+            "stage": "source_review"
+          }
+        },
+        "claude_opus_5_5_initial": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 初次独立作答（复核前）",
+          "text": "答案：A。\nA项不正确。“今”在此作假设连词，相当于“如果、假如”；“君民”是动宾结构，意为统治百姓、做百姓的君主，不是“君与民”并列。整句意思是：（国士）如果统治百姓而想要使海外归服，就会节操极其高尚，而不依赖细小的利益。译文“现在君与民欲收服海外”误解了“今”和“君民”，“行事高瞻远瞩”也不贴合“节物甚高”。B项正确。“掩敛”与“述施”相对，客人掩藏收敛的，正是贤士陈述施行的。C项正确。“淳淳乎”形容朴实敦厚，“慎谨畏化”即谨慎而敬畏教化，“不肯自足”即不骄傲自满。D项正确。“自用”即自以为是、刚愎自用，“憨陋之人”指愚蠢浅陋的人，“从而贺之”即跟着去祝贺他、奉承他，译文大体正确。故选A。",
+          "inputSha256": "9db50735c6f4096d9bd7dd59021a0fb4c6e3952d609be5f2c538d8cca9ef25d3",
+          "generatedAt": "2026-10-03T01:22:41.872589+00:00",
+          "uncertainties": [
+            "D项将“憨陋”译为“憨直无知”，与“愚笨浅陋”略有出入，但本题不正确的一项以A最为明显。"
+          ],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-01-result.json",
+            "inputPromptSha256": "7e37d138d7f3c3c8620416ec65802e26750dccd8ce63071a1270c5934b773330",
+            "responseStreamSha256": "b22af1527a94bc9be0140178b2da63b3e21ac9b10e6942dc8e221cb1f1194b7a",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2025-guwen:4",
+      "inputSha256": "e86a03b483ee95b44feb99ad6985a8b180e2d6f817585d8cc8c546f40014ca1e",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "依据完整题文逐项核对两模型的独立作答；具体差错与初答保留于模型历史。非官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:34:44.977633+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2025北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：B。良狗的志向在獐鹿大兽，遭束缚后才去捕鼠，寓言承接贤士志向远大，着重说明内在志气可由神态表现、可不言而喻；不能将束缚良狗概括成作者倡导的灵活用人方法。A有首段及第三段品行描写为据；C确有钟山玉、陵上木的譬喻；D对应不计细利、志属大事的贯穿性要求。",
+          "inputSha256": "e86a03b483ee95b44feb99ad6985a8b180e2d6f817585d8cc8c546f40014ca1e",
+          "generatedAt": "2026-10-03T01:23:10.055Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-reading-reviews.json"
+          },
+          "assessment": {
+            "matchesConclusion": true,
+            "note": "当前覆核采用；原始版本留存。"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 来源复核后修订",
+          "text": "答案：B。\nA项正确。第一段集中列举国士的品行，如“不偏不党”“柔而坚，虚而实”“临患涉难而处义不越”“富贵弗就而贫贱弗弃”“德行尊理而羞用巧诈”；第三段又写君子“慎谨畏化”“心甚素朴”。\nB项不正确。良狗的寓言说明，良狗志在獐麇豕鹿，不在捕鼠，用以比喻贤士“傲小物而志属于大”；接着又由“骥骜之气，鸿鹄之志”引出“诚有之则神应乎人”“不言之言”，强调内在的真诚志向自然能为人所感知。寓言意在揭示贤士的志向与本质，而非说明“用人应该灵活”。何况桎其后足才使其捕鼠，本身就是对良才的屈抑，不能理解为提倡灵活用人。\nC项正确。“纯乎其若钟山之玉，桔乎其若陵上之木”，以美玉的纯粹、山陵上树木的挺拔作比，赞美君子仪范。\nD项可以成立。第一段写“傲小物而志属于大”“细利弗赖”，第二段良狗志在大兽，第四段唐尚“羞为史”而能说惠王解邯郸之围，都在推重贤士轻视小物、志向远大的品质。\n故选B。",
+          "inputSha256": "e86a03b483ee95b44feb99ad6985a8b180e2d6f817585d8cc8c546f40014ca1e",
+          "generatedAt": "2026-10-03T01:31:31.789126+00:00",
+          "uncertainties": [
+            "D项的“着重”一词概括全文主旨略显偏窄（文章还论及识士、愚者自用等），但从各段材料看可以成立，错误程度远不及B项。"
+          ],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-source-review-result.json",
+            "inputPromptSha256": "192d845cccd6ff32f2550edc1feb2076234cba906cb7f8d6876a28b63523bd50",
+            "responseStreamSha256": "5248ebc25a3a7bd0c39eb0b6a135483c0a1cf9a4986a99c9f7b57ad98d13feb5",
+            "stage": "source_review"
+          }
+        },
+        "claude_opus_5_5_initial": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 初次独立作答（复核前）",
+          "text": "答案：B。\nA项正确。第一段列举了“柔而坚，虚而实”“临患涉难而处义不越”“富贵弗就而贫贱弗弃”“德行尊理而羞用巧诈”等种种贤士品行。B项不正确。良狗取鼠的寓言中，良狗“志在獐麇豕鹿，不在鼠”，作者由此引出“骥骜之气，鸿鹄之志，有谕乎人心者，诚也……此谓不言之言也”。其用意是说明贤士志向远大、不屑小事，其内在真诚之志自会显露于外，无需言语。寓言并非论说“用人应该灵活”。C项正确。第三段用“纯乎其若钟山之玉，桔乎其若陵上之木”等比喻赞美君子的仪容风范。D项正确。第一段说“傲小物而志属于大”，第二段良狗寓言、第四段唐尚“羞为史”而能说魏解邯郸之围，都着重体现贤士不屑小事而志向远大的品质。故选B。",
+          "inputSha256": "e86a03b483ee95b44feb99ad6985a8b180e2d6f817585d8cc8c546f40014ca1e",
+          "generatedAt": "2026-10-03T01:22:41.872589+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-01-result.json",
+            "inputPromptSha256": "7e37d138d7f3c3c8620416ec65802e26750dccd8ce63071a1270c5934b773330",
+            "responseStreamSha256": "b22af1527a94bc9be0140178b2da63b3e21ac9b10e6942dc8e221cb1f1194b7a",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2025-guwen:5",
+      "inputSha256": "6a764053f7a5cc57792ceddf307444c620a8eed6db4c566b295fe893aa390c6d",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "依据完整题文逐项核对两模型的独立作答；具体差错与初答保留于模型历史。非官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:34:44.977633+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2025北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "①识士不能只看衣着、仪态、进退辞令等外在表现，应辨别其内在志向、品德是否真正高远、质朴。田骈没有被来客的合礼外表迷惑，指出客人显露和隐藏的东西与贤士正相反。②应看人能否朴实谨慎、不断自省，不以局部之长自满，也不能只关注自己的利益。文中用钟山之玉、陵上之木说明君子的淳厚与正直。③须根据实际行为判断人的能力与话语是否可信，不能时而无端怀疑、时而盲目相信。唐尚解邯郸之围证明其才，故人先不信他耻任小吏，后来却相信他能安排自己的兄长做卫君，暴露识人愚昧。④识人者尤其统治者要避免刚愎自用，警惕愚陋者附和，重实而任贤；不能因亲疏、虚名而作判断。",
+          "inputSha256": "6a764053f7a5cc57792ceddf307444c620a8eed6db4c566b295fe893aa390c6d",
+          "generatedAt": "2026-10-03T01:23:10.055Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-reading-reviews.json"
+          },
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "当前覆核采用；原始版本留存。"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 来源复核后修订",
+          "text": "作者关于识士的见解主要有以下几层：\n①识士不能只看外在仪表言辞，要看内在德行与志向。第三段中，来客“被服中法，进退中度，趋翔闲雅，辞令逊敏”，外表无可挑剔，田骈却判断他“殆乎非士”。原因是“客所掩敛，士所述施也；士所掩敛，客所述施也”：真正的士所着力表现的是道义志向，所收敛的是修饰与机巧；一味讲究仪表辞令，恰恰说明其内在不足。因此识士要像田骈那样透过外表看本质，看其是否心志公正、质朴，所谓“纯乎其若钟山之玉”“心甚素朴”。\n②识士要摆脱自己的成见和私心，不可自以为是。第四段中，唐尚的故人以常人之心揣度唐尚，以为他想做史官；唐尚说“羞而不为”，故人却不信，直到唐尚解邯郸之围、受赐伯阳邑，才肯相信。后来唐尚说“卫君死，吾将以汝兄代之”，明显是荒诞的戏言，故人却再拜而信。作者由此指出，“可信而不信，不可信而信，此愚者之患也”，根源在于“知人情而不能自遗”“必自用”，即囿于一己之见、以己度人，自以为是。\n③识士关系国家存亡，应当依据实际考察贤者。作者认为“败莫大于愚”，君主若自用，就会被浅陋之人簇拥，“有国若此，不若无有”。古人之所以禅让给贤人，并非厌恶子孙，也不是为了沽名，而是“反其实”，即回到对人才实际德才的考察上来。\n综上，作者主张识士要重内在、去成见、据实际，不可被外表迷惑，也不可凭一己之见妄断。",
+          "inputSha256": "6a764053f7a5cc57792ceddf307444c620a8eed6db4c566b295fe893aa390c6d",
+          "generatedAt": "2026-10-03T01:31:31.789126+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-source-review-result.json",
+            "inputPromptSha256": "192d845cccd6ff32f2550edc1feb2076234cba906cb7f8d6876a28b63523bd50",
+            "responseStreamSha256": "5248ebc25a3a7bd0c39eb0b6a135483c0a1cf9a4986a99c9f7b57ad98d13feb5",
+            "stage": "source_review"
+          }
+        },
+        "claude_opus_5_5_initial": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 初次独立作答（复核前）",
+          "text": "作者关于识士的见解主要有以下几点：\n\n①识士不能只看外在仪容辞令，要透过表象看内在实质。第三段中，来客“被服中法，进退中度，趋翔闲雅，辞令逊敏”，外表无可挑剔，田骈却断定他“殆乎非士”，理由是“客所掩敛，士所述施；士所掩敛，客所述施”。徒有其表、刻意修饰的人往往内无实德，真正的士则外表朴拙而内蕴充实。作者又以“火烛一隅，则室偏无光”“骨节早成……身必不长”作比，说明偏于一端、过早修饰外表的人难成大器。\n\n②真正的士（君子）应当质朴纯粹、谨慎谦逊、自强不息。所谓“纯乎其若钟山之玉，桔乎其若陵上之木”，“慎谨畏化而不肯自足”，“乾乾乎取舍不悦而心甚素朴”，这正是识士的标准。\n\n③识士要依据事实和实际作为判断，不能凭主观臆断、轻信或偏见。第四段中，唐尚的故人起初不相信唐尚“羞为史”，直到唐尚说魏解邯郸之围、受赵封邑后才相信；后来唐尚随口许诺让其兄代卫君，故人反而深信不疑。作者批评这种“可信而不信，不可信而信”的态度是“愚者之患”。\n\n④识士者自身要去愚、不自用，才能识贤用贤。作者认为“败莫大于愚，愚之患，在必自用”，刚愎自用则阿谀浅陋之人聚集，国家就会危亡，“有国若此，不若无有”。所以古代圣王才把君位让给贤人，这是从实际出发，而不是为了求取美名。\n\n总之，作者认为识士要重内不重外、重实不重名、凭事实不凭臆断，而且识士关乎国家的兴衰存亡。",
+          "inputSha256": "6a764053f7a5cc57792ceddf307444c620a8eed6db4c566b295fe893aa390c6d",
+          "generatedAt": "2026-10-03T01:22:41.872589+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-01-result.json",
+            "inputPromptSha256": "7e37d138d7f3c3c8620416ec65802e26750dccd8ce63071a1270c5934b773330",
+            "responseStreamSha256": "b22af1527a94bc9be0140178b2da63b3e21ac9b10e6942dc8e221cb1f1194b7a",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2025-shici:1",
+      "inputSha256": "3d1888d684c31cc3efa2499befd08bd8a49579697ec93715c175c1f2fbe577b4",
+      "status": "disputed",
+      "kind": "single_choice",
+      "correctOptions": [],
+      "explanation": "转载参考答案为D，本次保留C的直接描写对象问题，暂不进行唯一选项自动判分。D中“一言”依杨颙题注指他对诸葛亮的谏言，不能全说成诸葛亮的言论；“片语”和“忠言”则属于对诸葛亮言辞及历史价值的赞颂。C所引两句可以连读为诸葛亮的片语使孙权豪气勃发，其中孙权是受劝说后的直接表现对象；全诗通过此效果侧面赞扬诸葛亮的说服力。若将“形容”宽解成这种侧面表现，C可以成立；若限定直接描写，C措辞不精确。A的借代与隐居身份、B的纳谏遗风与贤人，均有依据。应区别文本句法与参考答案意图，而非将歧义抹掉。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:34:44.977633+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2025北京卷原题及完整材料"
+        },
+        {
+          "type": "reprinted_reference",
+          "title": "2025北京卷转载及参考解析（非官方认证）",
+          "url": "https://cdn.xschu.com/zixunzhan/17549675696162025%E5%8C%97%E4%BA%AC%E9%AB%98%E8%80%83%E7%9C%9F%E9%A2%98%E8%AF%AD%E6%96%87%EF%BC%88%E6%9C%89%E7%AD%94%E6%A1%88%EF%BC%89.pdf"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 来源复核后修订",
+          "text": "转载参考答案为D，本次保留C的直接描写对象问题，暂不进行唯一选项自动判分。D中“一言”依杨颙题注指他对诸葛亮的谏言，不能全说成诸葛亮的言论；“片语”和“忠言”则属于对诸葛亮言辞及历史价值的赞颂。C所引两句可以连读为诸葛亮的片语使孙权豪气勃发，其中孙权是受劝说后的直接表现对象；全诗通过此效果侧面赞扬诸葛亮的说服力。若将“形容”宽解成这种侧面表现，C可以成立；若限定直接描写，C措辞不精确。A的借代与隐居身份、B的纳谏遗风与贤人，均有依据。应区别文本句法与参考答案意图，而非将歧义抹掉。",
+          "inputSha256": "3d1888d684c31cc3efa2499befd08bd8a49579697ec93715c175c1f2fbe577b4",
+          "generatedAt": "2026-10-03T01:34:44.977633+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "source_review",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-revisions.json"
+          },
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "当前覆核采用；原始版本留存。"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 来源复核后修订",
+          "text": "答案：D。\nA项正确。“山屐”是登山用的木屐，以所穿之物借代游后溪的诗人本人；“只合终身作卧龙”中的“卧龙”指出山以前隐居躬耕南阳的诸葛亮，意为诸葛亮不如终身隐居。\nB项正确。“余风”指诸葛亮为杨颙一言而恸哭所体现的虚心纳谏、礼贤下士的遗风；“不是虚心岂得贤”中的“贤”指杨颙这类贤人。\nC项：“片语能令孙仲谋，气如山涌剑横秋”是兼语结构。从句法看，“气如山涌剑横秋”直接描写的是孙权被诸葛亮片言说动后，豪气如山涌起、拔剑决意抗曹的情态，并非直接描写诸葛亮本人。但全诗的赞颂对象是诸葛亮，孙权的反应从侧面烘托出诸葛亮言辞的力量、才略与气魄。因此，若理解为“侧面表现诸葛亮的才华与气魄”，C项可以成立；若严格要求“形容”指直接描写对象，C项表述不够准确。\nD项不正确，且错误明确。第二首“恸哭杨颙为一言”中的“一言”指杨颙向诸葛亮所进的谏言，不是诸葛亮的言论。“片语”指诸葛亮游说孙权之言，“忠言”指诸葛亮的忠诚之言（如《出师表》之类），这两处属于诸葛亮。\n综合判断，D项存在确定的事实性错误，C项至多是表述角度的问题，故选D。",
+          "inputSha256": "3d1888d684c31cc3efa2499befd08bd8a49579697ec93715c175c1f2fbe577b4",
+          "generatedAt": "2026-10-03T01:31:31.789126+00:00",
+          "uncertainties": [
+            "C项存在真正的解读歧义：“气如山涌剑横秋”的直接描写对象是孙权（兼语“孙仲谋”之后的情态），而诗的赞颂对象是诸葛亮。按“侧面烘托”的理解C可成立；若严格区分直接描写对象，C的“形容诸葛亮”表述不精确。本答案因D错误更确定而取D，但C的表述并非无可指摘。"
+          ],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-source-review-result.json",
+            "inputPromptSha256": "192d845cccd6ff32f2550edc1feb2076234cba906cb7f8d6876a28b63523bd50",
+            "responseStreamSha256": "5248ebc25a3a7bd0c39eb0b6a135483c0a1cf9a4986a99c9f7b57ad98d13feb5",
+            "stage": "source_review"
+          }
+        },
+        "claude_opus_5_5_initial": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 初次独立作答（复核前）",
+          "text": "答案：D。\nA项正确。“山屐”是游山所穿的木屐，借代游山的诗人自己；“卧龙”指隐居躬耕南阳、尚未出山的诸葛亮。B项正确。诸葛亮曾因杨颙谏他不必亲自校簿书，后杨颙去世，诸葛亮恸哭。“余风”指诸葛亮虚心纳谏、礼贤下士的风范，“贤”指杨颙这类贤人。C项正确。“气如山涌剑横秋”写诸葛亮赤壁之战前游说孙权时的气势与才略，气魄如山涌起、如秋日横剑般凛然。D项不正确。第二首“恸哭杨颙为一言”中的“一言”指杨颙的谏言，即诸葛亮为杨颙的一番进谏之言而恸哭，并非诸葛亮的言论。第三首的“片语”“忠言”才是指诸葛亮的言论。故选D。",
+          "inputSha256": "3d1888d684c31cc3efa2499befd08bd8a49579697ec93715c175c1f2fbe577b4",
+          "generatedAt": "2026-10-03T01:22:41.872589+00:00",
+          "uncertainties": [
+            "题中注释①②③的具体内容缺失，依据一般史实理解。"
+          ],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-01-result.json",
+            "inputPromptSha256": "7e37d138d7f3c3c8620416ec65802e26750dccd8ce63071a1270c5934b773330",
+            "responseStreamSha256": "b22af1527a94bc9be0140178b2da63b3e21ac9b10e6942dc8e221cb1f1194b7a",
+            "stage": "independent"
+          }
+        },
+        "gpt_6_astra_initial": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 初次独立作答（复核前）",
+          "text": "暂不确定唯一选项。D明显有误：“恸哭杨颙为一言”中的“一言”承注释，指杨颙对诸葛亮的谏言，不能说全是诸葛亮的言论。“片语”“忠言”则关涉诸葛亮劝说孙权。现有C也需核查：“片语能令孙仲谋，气如山涌剑横秋”中，被片言激发出气势、抗敌决心的人应是孙权；把这一句直接解释成诸葛亮的才华与气魄并不妥当。A以山屐借代游者，卧龙联系未出山的诸葛亮；B以余风指虚心纳谏的风范，贤包括杨颙，基本成立。题干要求单一错误项，但当前录文可能造成C、D并错，核原卷前不作确定判分。",
+          "inputSha256": "3d1888d684c31cc3efa2499befd08bd8a49579697ec93715c175c1f2fbe577b4",
+          "generatedAt": "2026-10-03T01:23:10.055Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-reading-reviews.json"
+          }
+        }
+      },
+      "referenceOptions": [
+        "D"
+      ]
+    },
+    {
+      "id": "2025-shici:2",
+      "inputSha256": "00190e39b8e199c0d8f550438c54d93825cea9fb97f8971eb5f46c7bf392a27b",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "依据完整题文逐项核对两模型的独立作答；具体差错与初答保留于模型历史。非官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:34:44.977633+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2025北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：B。第二首从诸葛亮为杨颙之死恸哭这一具体小事切入，揭示其虚心纳谏、得贤支撑事业的品质，构思以小见大。A将夕阳春景说成暮春并限定凄凉感，依据不足；C并非两诗都兼有比喻和拟人；D也不能把人物评价诗都归为托物言志。首诗“隔溪遥见夕阳春”等录文存在待校处，当前题的B仍有清楚的文本依据。",
+          "inputSha256": "00190e39b8e199c0d8f550438c54d93825cea9fb97f8971eb5f46c7bf392a27b",
+          "generatedAt": "2026-10-03T01:23:10.055Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-reading-reviews.json"
+          },
+          "assessment": {
+            "matchesConclusion": true,
+            "note": "当前覆核采用；原始版本留存。"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 来源复核后修订",
+          "text": "答案：B。\nA项错误。第一首前两句写诗人游后溪，隔溪遥望夕阳下的春景，景致明丽，后两句转入对诸葛亮的议论（认为他出山未成大事，不如终身隐居），全诗并无“凄凉之感”，也不是借景抒情、情景交融的写法；“夕阳春”也不能直接坐实为“暮春”。\nB项正确。第二首从诸葛亮为杨颙一言而恸哭这一具体事件入手，评说诸葛亮虚心纳谏的品格，进而推论蜀汉以“区区庸蜀”抗衡吴魏，靠的正是虚心得贤，由小事见大局；又以“余风今日更谁传”感慨今世，属于品人论史，构思新颖巧妙。\nC项错误。前两首都以叙述和议论为主，第一首写游踪景物，第二首叙事论史，均没有明显运用比喻、拟人手法。\nD项错误。第二首“余风今日更谁传”或含对当世的感慨，第三首结合胡安国献策保国的背景或有借古寓今之意，但两首都没有借助具体物象寄托志向，“托物言志”不成立。\n故选B。",
+          "inputSha256": "00190e39b8e199c0d8f550438c54d93825cea9fb97f8971eb5f46c7bf392a27b",
+          "generatedAt": "2026-10-03T01:31:31.789126+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-source-review-result.json",
+            "inputPromptSha256": "192d845cccd6ff32f2550edc1feb2076234cba906cb7f8d6876a28b63523bd50",
+            "responseStreamSha256": "5248ebc25a3a7bd0c39eb0b6a135483c0a1cf9a4986a99c9f7b57ad98d13feb5",
+            "stage": "source_review"
+          }
+        },
+        "claude_opus_5_5_initial": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 初次独立作答（复核前）",
+          "text": "答案：B。\nA项错误。第一首前两句写游后溪所见夕阳春景，后两句议论诸葛亮出山“成何事”，表达对其功业的否定和对隐逸的推崇。诗中并无“暮春之景”与“凄凉之感”的融合，主体是即景生发议论，不是借景抒凄凉之情。B项正确。第二首从诸葛亮“恸哭杨颙”这一具体事件入手，评说其虚心纳谏的品格，又进而论及他凭借“区区庸蜀”支撑对抗吴魏，正是因为虚心才能得贤。由一件小事见出其成就大业的根本，以小见大，构思新巧。C项错误。前两首基本以叙述、议论为主，没有使用比喻和拟人。“气如山涌剑横秋”的比喻出自第三首。D项错误。后两首主要是咏史评人：第二首感叹“余风今日更谁传”，或可说含讽今之意；但两首都没有托物言志，第三首也重在为诸葛亮辩护、赞其忠言。故选B。",
+          "inputSha256": "00190e39b8e199c0d8f550438c54d93825cea9fb97f8971eb5f46c7bf392a27b",
+          "generatedAt": "2026-10-03T01:22:41.872589+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-01-result.json",
+            "inputPromptSha256": "7e37d138d7f3c3c8620416ec65802e26750dccd8ce63071a1270c5934b773330",
+            "responseStreamSha256": "b22af1527a94bc9be0140178b2da63b3e21ac9b10e6942dc8e221cb1f1194b7a",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2025-shici:3",
+      "inputSha256": "005baabfb06ea7227b7e6d8e5092cd20ec7423da069f72f515c63f6274c993fa",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "依据完整题文逐项核对两模型的独立作答；具体差错与初答保留于模型历史。非官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:34:44.977633+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2025北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "第一首认为诸葛亮出山后没有实现其理想功业，惋惜甚至否定他出仕的选择，觉得不如终身保持卧龙隐居身份；这是从最终成败评价人物。第二首肯定诸葛亮虚心纳谏、尊重贤才的风范，认为蜀地力量有限而能支撑与吴魏并立，离不开纳谏得贤。第三首肯定诸葛亮劝说孙权联刘抗曹的胆识、忠诚和历史价值，用“莫言”回应第一首，主张不能只因功业未竟而抹杀他的贡献，称其忠言为万古第一流。第二、三首分别重人格政治风范与抗敌贡献。",
+          "inputSha256": "005baabfb06ea7227b7e6d8e5092cd20ec7423da069f72f515c63f6274c993fa",
+          "generatedAt": "2026-10-03T01:23:10.055Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-reading-reviews.json"
+          },
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "当前覆核采用；原始版本留存。"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 来源复核后修订",
+          "text": "①薛能《游嘉州后溪》：持否定、贬抑的态度。“当时诸葛成何事”以反问否定诸葛亮出山后的功业，认为他鞠躬尽瘁却终究未能兴复汉室、统一天下；“只合终身作卧龙”更认为他不如终身隐居南阳，语带惋惜乃至讥讽。\n②王安石《诸葛武侯》：赞扬诸葛亮虚心纳谏、礼贤下士。诗人抓住诸葛亮为杨颙一言而恸哭之事，肯定他能虚心听取谏言、珍视贤才；指出蜀汉以“区区庸蜀”之地抗衡吴魏，正得益于他的虚心得贤。“余风今日更谁传”又感叹这种风范后继无人，在推崇中寄寓对当世的感慨。\n③胡安国《赤壁》：高度肯定诸葛亮的才略与忠诚。前两句赞他赤壁之战前凭片言只语激起孙权抗曹的豪气，显示出卓越的谋略和外交才能；后两句“莫言诸葛成何事”直接反驳薛能“成何事”的论调，以“万古忠言第一流”推崇他的忠言忠心冠绝古今。结合注释，胡安国本人曾向宋高宗献保国方略，诗中对诸葛亮的推崇也寄寓了自己的报国之志。",
+          "inputSha256": "005baabfb06ea7227b7e6d8e5092cd20ec7423da069f72f515c63f6274c993fa",
+          "generatedAt": "2026-10-03T01:31:31.789126+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-source-review-result.json",
+            "inputPromptSha256": "192d845cccd6ff32f2550edc1feb2076234cba906cb7f8d6876a28b63523bd50",
+            "responseStreamSha256": "5248ebc25a3a7bd0c39eb0b6a135483c0a1cf9a4986a99c9f7b57ad98d13feb5",
+            "stage": "source_review"
+          }
+        },
+        "claude_opus_5_5_initial": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 初次独立作答（复核前）",
+          "text": "①薛能《游嘉州后溪》：对诸葛亮持否定、贬抑的态度。诗人认为诸葛亮出山辅佐刘备，最终并未成就统一大业，“成何事”带有质疑和轻视；“只合终身作卧龙”认为他不如终身隐居南阳，做一个高卧的隐士。\n\n②王安石《诸葛武侯》：高度赞扬诸葛亮虚心纳谏、礼贤下士的品格。诗人从诸葛亮为杨颙一句谏言而恸哭写起，认为诸葛亮能以“区区庸蜀”与吴魏抗衡，根本原因在于他虚心才能得到贤才。同时感叹这种风范今天无人传承，含有对时人的惋惜和讽喻。\n\n③胡安国《赤壁》：直接反驳薛能的看法，充分肯定诸葛亮的才智、气魄与忠诚。诗人认为诸葛亮在赤壁之战前凭片言只语就说动孙权联刘抗曹，气势如山涌、如剑横秋；“莫言诸葛成何事”针对薛能的“成何事”，盛赞其忠言（如《出师表》等对蜀汉的忠诚进谏）为“万古第一流”。即使不以成败论，诸葛亮的忠诚也足以千古垂范。",
+          "inputSha256": "005baabfb06ea7227b7e6d8e5092cd20ec7423da069f72f515c63f6274c993fa",
+          "generatedAt": "2026-10-03T01:22:41.872589+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-01-result.json",
+            "inputPromptSha256": "7e37d138d7f3c3c8620416ec65802e26750dccd8ce63071a1270c5934b773330",
+            "responseStreamSha256": "b22af1527a94bc9be0140178b2da63b3e21ac9b10e6942dc8e221cb1f1194b7a",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2025-moxie:1",
+      "inputSha256": "9a3f0a97b890b8c1d8fbe52d799f540bc355b4726700b62ebbe399dbde3026e1",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "依据完整题文逐项核对两模型的独立作答；具体差错与初答保留于模型历史。非官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:34:44.977633+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2025北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 来源复核后修订",
+          "text": "（1）质胜文则野，文胜质则史。（2）驽马十驾；余音袅袅。（3）周公吐哺，天下归心。（4）素月分辉，明河共影。初答将《劝学》的另一句误填入此处，现已更正：原文是“驽马十驾，功在不舍”；“锲而不舍”接“金石可镂”，不能混接。",
+          "inputSha256": "9a3f0a97b890b8c1d8fbe52d799f540bc355b4726700b62ebbe399dbde3026e1",
+          "generatedAt": "2026-10-03T01:34:44.977633+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "source_review",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-revisions.json"
+          },
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "当前覆核采用；原始版本留存。"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "(1)质胜文则野，文胜质则史\n(2)驽马十驾；余音袅袅\n(3)周公吐哺，天下归心\n(4)素月分辉，明河共影",
+          "inputSha256": "9a3f0a97b890b8c1d8fbe52d799f540bc355b4726700b62ebbe399dbde3026e1",
+          "generatedAt": "2026-10-03T01:22:41.872589+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-01-result.json",
+            "inputPromptSha256": "7e37d138d7f3c3c8620416ec65802e26750dccd8ce63071a1270c5934b773330",
+            "responseStreamSha256": "b22af1527a94bc9be0140178b2da63b3e21ac9b10e6942dc8e221cb1f1194b7a",
+            "stage": "independent"
+          }
+        },
+        "gpt_6_astra_initial": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 初次独立作答（复核前）",
+          "text": "（1）质胜文则野，文胜质则史。（2）锲而不舍；余音袅袅。（3）周公吐哺，天下归心。（4）素月分辉，明河共影。注意“锲”“袅”“哺”的字形；“明河”不要改成“银河”。",
+          "inputSha256": "9a3f0a97b890b8c1d8fbe52d799f540bc355b4726700b62ebbe399dbde3026e1",
+          "generatedAt": "2026-10-03T01:23:10.055Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-reading-reviews.json"
+          }
+        }
+      }
+    },
+    {
+      "id": "2025-honglou:1",
+      "inputSha256": "db0dcfde0fb1826a6bcbf65e0795f8f1dc1de1061087d24e9dd438cc4a80e585",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "依据完整题文逐项核对两模型的独立作答；具体差错与初答保留于模型历史。非官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:34:44.977633+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2025北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "①博学而有诗歌鉴赏力。宝钗随口举杜甫诗句，从悲慨和明丽两种不同风格反驳宝玉，指出同一诗人的作品并非只有一种声调。②反应敏捷，言辞有理有据。她以反问和具体例子回应宝玉按风格断定作者的判断。③稳重自持，讲求端庄平和，对伤春悲悼的情绪有所节制。宝玉说她不会容许宝琴写这样的伤悼之句，从侧面表现她对自身和家人言行的要求。",
+          "inputSha256": "db0dcfde0fb1826a6bcbf65e0795f8f1dc1de1061087d24e9dd438cc4a80e585",
+          "generatedAt": "2026-10-03T01:23:10.055Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-reading-reviews.json"
+          },
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "当前覆核采用；原始版本留存。"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "①学识渊博，诗学修养深厚，见解通达。宝钗随口引用杜甫“丛菊两开他日泪”“红绽雨肥梅”“水荇牵风翠带长”等诗句，指出一位诗人的风格可以多样，不能凭一时声调口气判断作者，可见她熟读诗书、论诗有识见。\n\n②机敏善辩，随和圆融，善于配合众人。她顺着宝琴的玩笑替其圆说，用“所以你不通”轻松反驳宝玉，言谈从容含笑，既活跃了气氛，又不着痕迹地参与了大家的游戏。\n\n③端庄稳重，恪守礼教，持家严谨。宝玉说“姐姐断不许妹妹有此伤悼语句”，从侧面写出宝钗平日讲求温柔敦厚、不喜哀伤悲音，对宝琴管束严格，体现了她以礼自持、处处讲究分寸的性格。",
+          "inputSha256": "db0dcfde0fb1826a6bcbf65e0795f8f1dc1de1061087d24e9dd438cc4a80e585",
+          "generatedAt": "2026-10-03T01:22:41.872589+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-01-result.json",
+            "inputPromptSha256": "7e37d138d7f3c3c8620416ec65802e26750dccd8ce63071a1270c5934b773330",
+            "responseStreamSha256": "b22af1527a94bc9be0140178b2da63b3e21ac9b10e6942dc8e221cb1f1194b7a",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2025-honglou:2",
+      "inputSha256": "819f44114a22697b6743c1e2322f3b1be4264c2952750bb43148083df8d68469",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "依据完整题文逐项核对两模型的独立作答；具体差错与初答保留于模型历史。非官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:34:44.977633+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2025北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "“曾经离丧”指黛玉幼年丧母，离开父亲到贾府生活，后来父亲也去世，成为失去双亲、寄居外祖母家的孤女。①敏感自尊而多疑，担忧受轻视或被疏远。初进贾府时“步步留心，时时在意”，不肯轻易多说一句话、多行一步路；对宝玉与其他女子的亲近格外敏感。②多愁善感，容易由眼前衰落之物联想到自身命运。葬花时怜花自伤，以花的飘零寄寓自己的孤苦和归宿之忧。③渴望真诚理解与稳定感情。她格外珍视宝玉对自己的知心，又因寄人篱下而惧怕这份依靠失落。这些表现与孤女身世有关，不能把其全部性格简单归结为身世。",
+          "inputSha256": "819f44114a22697b6743c1e2322f3b1be4264c2952750bb43148083df8d68469",
+          "generatedAt": "2026-10-03T01:23:10.055Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-reading-reviews.json"
+          },
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "当前覆核采用；原始版本留存。"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "“曾经离丧”指黛玉的身世：她自幼体弱多病，年幼时母亲贾敏病逝，被外祖母接进贾府；后来父亲林如海又病故，她成了父母双亡的孤女，长期寄居荣国府，寄人篱下、孤苦无依。\n\n与此身世有关的性格特点：\n①敏感多疑，自尊心极强。初进贾府时她“步步留心，时时在意，不肯轻易多说一句话，多行一步路，惟恐被人耻笑了他去”；周瑞家的送宫花时，她冷笑说“我就知道，别人不挑剩下的也不给我”。这都源于孤女寄居的不安全感。\n\n②多愁善感，悲观伤怀。她葬花时吟出“一年三百六十日，风刀霜剑严相逼”，秋夜作《秋窗风雨夕》，又作《桃花行》寄托身世飘零之悲。身世之痛使她常常感时伤物，诗词多“哀音”。\n\n③孤高自许，率真而言语尖刻。正因无依无靠，她以才情和清高维护尊严，不肯随俗迎合，常以尖刻言语讥讽他人（如讥讽宝玉“又是那里来的”）。这是她自我保护的外壳。\n\n④渴望真情，把全部感情寄托于宝玉。失去父母之爱后，宝玉成为她唯一的知己。她与宝玉之间屡屡试探、口角，正出自内心的不安与执着。",
+          "inputSha256": "819f44114a22697b6743c1e2322f3b1be4264c2952750bb43148083df8d68469",
+          "generatedAt": "2026-10-03T01:22:41.872589+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-01-result.json",
+            "inputPromptSha256": "7e37d138d7f3c3c8620416ec65802e26750dccd8ce63071a1270c5934b773330",
+            "responseStreamSha256": "b22af1527a94bc9be0140178b2da63b3e21ac9b10e6942dc8e221cb1f1194b7a",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2025-sanwen:1",
+      "inputSha256": "e857f0ef26b29d7ff7cf6587b0d216fcb6675c4a6a6b6a7ae67c0d8dac545688",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "依据完整题文逐项核对两模型的独立作答；具体差错与初答保留于模型历史。非官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:34:44.977633+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2025北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：D。“迟钝”在这里指作者对故乡价值的发现较晚、感受不够敏锐，不是说自己智力愚笨。A在语境中指守住故乡不外迁；B形容历史人物性格光彩夺目、引人注目；C指林觉民面对国事家事矛盾所积郁的情绪。",
+          "inputSha256": "e857f0ef26b29d7ff7cf6587b0d216fcb6675c4a6a6b6a7ae67c0d8dac545688",
+          "generatedAt": "2026-10-03T01:23:10.055Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-reading-reviews.json"
+          },
+          "assessment": {
+            "matchesConclusion": true,
+            "note": "当前覆核采用；原始版本留存。"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\nA项正确。“踞守”即盘踞守在一处，“未曾承诺踞守故乡”即没有承诺一直守在故乡，与“说走就走”相对。B项正确。“耀眼”原指光线强烈、刺眼，这里指故乡人物的性格光彩夺目、引人注目。C项正确。“块垒”原指胸中郁结之物，比喻郁积在心中的不平或愁闷，这里指林觉民国事与家事矛盾交织的郁积情绪。D项不正确。“迟钝”在文中指感觉、反应不灵敏，即作者对故乡的价值，如闽江这一最显眼的地理印记，觉察得晚、领悟得慢，并非指“愚笨”。故选D。",
+          "inputSha256": "e857f0ef26b29d7ff7cf6587b0d216fcb6675c4a6a6b6a7ae67c0d8dac545688",
+          "generatedAt": "2026-10-03T01:22:41.872589+00:00",
+          "uncertainties": [
+            "加点符号在题文中未显示，根据选项判断加点词分别为“踞守”“耀眼”“块垒”“迟钝”。"
+          ],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-01-result.json",
+            "inputPromptSha256": "7e37d138d7f3c3c8620416ec65802e26750dccd8ce63071a1270c5934b773330",
+            "responseStreamSha256": "b22af1527a94bc9be0140178b2da63b3e21ac9b10e6942dc8e221cb1f1194b7a",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2025-sanwen:2",
+      "inputSha256": "12c4819728881cfd5bd9675432c22429b831b8ce9a47a9c1b0d4e52decb42c21",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "依据完整题文逐项核对两模型的独立作答；具体差错与初答保留于模型历史。非官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:34:44.977633+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2025北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "答案：D。结尾说“凡事皆有时机”“不必着急，耐心的等待必有所获”，与“应该尽早唤醒”的强制性主张不同。A对应林则徐、严复的事迹；B准确概括并列句展示人物的革命豪情与夫妻深情；C对应江边生活画面连续呈现及长短节奏变化。",
+          "inputSha256": "12c4819728881cfd5bd9675432c22429b831b8ce9a47a9c1b0d4e52decb42c21",
+          "generatedAt": "2026-10-03T01:23:10.055Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-reading-reviews.json"
+          },
+          "assessment": {
+            "matchesConclusion": true,
+            "note": "当前覆核采用；原始版本留存。"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\nA项正确。第(4)段说林则徐讲不好官话却能“一声令下，虎门销烟”，严复从福州船政学堂出发留学英伦，成为翻译家，以此说明“持一口福州方言，仍然可以闯荡四海，放眼世界”。B项正确。第(6)段用“既单纯又复杂”“既慷慨激昂，又儿女情长”“既是一个叱咤风云的革命家，又是一个缠绵悱恻的丈夫”，突出林觉民形象的丰富与复杂。C项正确。第(7)段“江流，潮汐，滩涂，白鹭，码头，江风”是短促的名词并列，如镜头逐一推移；随后“雕像一般的钓鱼者”“沿着江岸跑步、跳舞与放风筝的人”句式加长，节奏由短而长，变化有致。D项不正确。第(8)段作者说“我不想过多责怪自己的迟钝。凡事皆有时机，故乡总会找到各种机会恰当地展示自己……那就不必着急，耐心的等待必有所获”。作者主张顺其自然、耐心等待，而非“应该尽早唤醒故乡意识”，与原文相悖。故选D。",
+          "inputSha256": "12c4819728881cfd5bd9675432c22429b831b8ce9a47a9c1b0d4e52decb42c21",
+          "generatedAt": "2026-10-03T01:22:41.872589+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-01-result.json",
+            "inputPromptSha256": "7e37d138d7f3c3c8620416ec65802e26750dccd8ce63071a1270c5934b773330",
+            "responseStreamSha256": "b22af1527a94bc9be0140178b2da63b3e21ac9b10e6942dc8e221cb1f1194b7a",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2025-sanwen:3",
+      "inputSha256": "7a8908ea5b15b3a32c0bd8156851eca509828de460ae7480aa40b3966175e7ad",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "依据完整题文逐项核对两模型的独立作答；具体差错与初答保留于模型历史。非官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:34:44.977633+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2025北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "甲处借水的分子式设问：水不因地域改变，附加“故乡”何以有特殊意义？它写出作者起初重万物普遍性、轻地域特征的认识，呈现故乡意识薄弱的原因；也提出全文要回应的问题，为后来发现方言、人物、山水的独特意义形成反差。乙处先问自己为何迟迟才看见闽江，再反问江水本来就是故乡鲜明的地理标记，表现对自己过去迟钝的自省与如今发现故乡的惊喜。它承接江边生活及写作唤起的家庭记忆，说明故乡从身外的地理环境进入情感和记忆，并引出末段关于理解故乡有其时机、故乡终将成为心灵栖居地的思考。",
+          "inputSha256": "7a8908ea5b15b3a32c0bd8156851eca509828de460ae7480aa40b3966175e7ad",
+          "generatedAt": "2026-10-03T01:23:10.055Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-reading-reviews.json"
+          },
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "当前覆核采用；原始版本留存。"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【甲】处（“我倾心于万物的普遍意义……记住水的分子式是H₂O即可，加上一个‘故乡’的定语又会增添哪些意义？”）\n内涵：这是一个反问句，表达作者早年的看法。作者看重事物的普遍意义，认为像水只需记住H₂O一样，给事物冠以“故乡”的地域定语并不能增添什么意义，地域文化甚至可能成为放眼四方的局限。这写出了作者当时故乡意识的淡薄。\n作用：①在结构上开篇设问，引出全文对“故乡”意义的思考；②采用先抑后扬的写法，为后文写作者通过方言、三坊七巷人物、闽江逐步发现故乡的丰富意义作铺垫，前后形成鲜明对照，突出作者认识的转变；③引发读者思考，增强文章的思辨色彩。\n\n【乙】处（“我的视野之中，为什么这一条大江姗姗来迟？这一派汹涌的大水难道不是故乡地理最为显眼的印记？”）\n内涵：这是作者写作《与大江为邻》时的自问。闽江穿城而过，又与自己少年游泳、母亲外婆逃难、父母相识等家族记忆紧密相连，是故乡地理最显眼的印记，可自己直到移居江边、动笔写作时才真正“看见”它。问句中既有对自身迟钝的反省与惊讶，也有终于发现故乡的欣喜，表明故乡已经深深融入作者的生命与情感。\n作用：①承上启下，上承闽江景象与家族记忆，下启第(8)段“我不想过多责怪自己的迟钝”“凡事皆有时机”的感悟；②与第(2)段“惊醒似的问自己”等前文的自问相呼应，构成作者对故乡认识层层深入的线索；③深化主旨，表明故乡的意义需要在时间和生活中慢慢发现，由“符号”走向“建构情感与记忆”。",
+          "inputSha256": "7a8908ea5b15b3a32c0bd8156851eca509828de460ae7480aa40b3966175e7ad",
+          "generatedAt": "2026-10-03T01:22:41.872589+00:00",
+          "uncertainties": [
+            "题文未显示画线范围，【甲】【乙】标记的具体覆盖句子不明；此处按标记后紧接的问句理解。【甲】若指标记前的“地域文化会不会成为放眼四方的局限？”，内涵同样是作者早期对故乡意义的怀疑，作用相同。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-01-result.json",
+            "inputPromptSha256": "7e37d138d7f3c3c8620416ec65802e26750dccd8ce63071a1270c5934b773330",
+            "responseStreamSha256": "b22af1527a94bc9be0140178b2da63b3e21ac9b10e6942dc8e221cb1f1194b7a",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2025-sanwen:4",
+      "inputSha256": "ef5b429be12d35dd7835e5d5b8ca573275f8ec568d831279240b19d9dd79e74d",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "依据完整题文逐项核对两模型的独立作答；具体差错与初答保留于模型历史。非官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:34:44.977633+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2025北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "①地理与日常生活的纹理：福州四周山脉、三坊七巷、石板路及闽江的流向、江岸生活，构成可感的空间景象。②历史文化的脉络：方言保留古汉语遗迹，古宅街巷收藏城市过往，移民与先贤的经历形成代代相续的文化记忆。③故乡人物的精神纹理：林则徐、严复的担当和开阔眼光，林觉民兼具革命豪情与儿女深情，赋予故乡鲜明性格。④作者生命与心灵的纹理：游泳记忆、父母外婆的经历及写作中的重新发现，使故乡从身份符号逐渐成为情感、记忆与想象的依托。“纹路”把空间、历史、人物和个人经验联结起来，写出故乡被逐层发现的丰富内涵。",
+          "inputSha256": "ef5b429be12d35dd7835e5d5b8ca573275f8ec568d831279240b19d9dd79e74d",
+          "generatedAt": "2026-10-03T01:23:10.055Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-reading-reviews.json"
+          },
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "当前覆核采用；原始版本留存。"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "①指故乡可见可感的地理与景物纹路：钢蓝色的起伏山脉，三坊七巷光滑如洗的石板条路面、厚木门与雪白的风火墙，穿城而过的闽江及其潮汐、滩涂、古炮台、古塔等。这些构成了故乡具体的面貌肌理。\n\n②指故乡的文化纹路：福州方言保存着大量古汉语遗迹，见证了中原移民南迁带来的“语言潮汐”，是文化脉络的见证。\n\n③指故乡的历史与人物纹路：寂静的街巷收藏、沉淀历史碎片，形成“故乡历史的另一种纹路”。林则徐、严复、林觉民、沈葆桢、林旭、林徽因等人物“神气活现、大开大合”的人生姿态，是故乡深处闪亮的性格。\n\n④指故乡与个人生命交织的情感与记忆纹路：少年在闽江游泳，母亲与外婆逃难山城，父母相识于江畔、迁往上游村落等家族记忆，使故乡刻进了作者的生命。\n\n⑤指作者认识故乡的心路纹路：从早年认为故乡只是标识身份的“符号”，到发现方言、人物、闽江的意义，使故乡成为“意识的一瓣”，再到期待它成为“心灵的栖居之地”。认识由浅入深、层层展开，如同纹路逐渐清晰。\n\n此外，标题还是全文的行文线索，“纹路”一词形象生动，暗示故乡的意义需要像辨识纹理那样细细体察、慢慢发现。",
+          "inputSha256": "ef5b429be12d35dd7835e5d5b8ca573275f8ec568d831279240b19d9dd79e74d",
+          "generatedAt": "2026-10-03T01:22:41.872589+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-01-result.json",
+            "inputPromptSha256": "7e37d138d7f3c3c8620416ec65802e26750dccd8ce63071a1270c5934b773330",
+            "responseStreamSha256": "b22af1527a94bc9be0140178b2da63b3e21ac9b10e6942dc8e221cb1f1194b7a",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2025-yuyanjichu:1",
+      "inputSha256": "03a3e2b4cec29137e8107b95484c3c4e8a92203d599bd7b9c4bfbbc2d9d357a9",
+      "status": "disputed",
+      "kind": "single_choice",
+      "correctOptions": [],
+      "explanation": "转载参考答案为D；本次保留A项比较范围的争议，暂不以唯一选项自动判分。D说第④句有语病，但“这些古道”可以持续作“成为……目的地”的主语，不能断言发生主语偷换。B调整顺序能使古道介绍紧接古道现状，也使古代人类活动到千年交通史的时间顺序更清晰。C中“遗迹”涵盖文明留存的各种痕迹，“遗址”偏重留存地点，替换会收窄范围；我初答因想到东胡林有考古遗址，就认定二词能完全互换，忽略了原句的表述范围。A删去“在”和逗号后，北京由比较范围状语变为地点定语；依上下文可以保留原比较范围，但孤立地严格分析，范围确实不再明示。“句意不变”的绝对措辞因此有讨论空间。学习时可了解D的参考结论，同时辨清A的语境条件。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:34:44.977633+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2025北京卷原题及完整材料"
+        },
+        {
+          "type": "reprinted_reference",
+          "title": "2025北京卷转载及参考解析（非官方认证）",
+          "url": "https://www.gzywtk.com/sjbrow/2839-6.html"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 来源复核后修订",
+          "text": "转载参考答案为D；本次保留A项比较范围的争议，暂不以唯一选项自动判分。D说第④句有语病，但“这些古道”可以持续作“成为……目的地”的主语，不能断言发生主语偷换。B调整顺序能使古道介绍紧接古道现状，也使古代人类活动到千年交通史的时间顺序更清晰。C中“遗迹”涵盖文明留存的各种痕迹，“遗址”偏重留存地点，替换会收窄范围；我初答因想到东胡林有考古遗址，就认定二词能完全互换，忽略了原句的表述范围。A删去“在”和逗号后，北京由比较范围状语变为地点定语；依上下文可以保留原比较范围，但孤立地严格分析，范围确实不再明示。“句意不变”的绝对措辞因此有讨论空间。学习时可了解D的参考结论，同时辨清A的语境条件。",
+          "inputSha256": "03a3e2b4cec29137e8107b95484c3c4e8a92203d599bd7b9c4bfbbc2d9d357a9",
+          "generatedAt": "2026-10-03T01:34:44.977633+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "source_review",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-revisions.json"
+          },
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "当前覆核采用；原始版本留存。"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 来源复核后修订",
+          "text": "答案：D。\nA项：原句“在北京，门头沟是乡土文化资源最密集、极具代表性的地区”，“在北京”作状语，明确限定了“最密集”的比较范围是北京各区。去掉“在”和逗号后成为“北京门头沟是……最密集、极具代表性的地区”，“北京”变成表示所属的定语，只说明门头沟的位置，“最密集”的比较范围不再被明确限定（可能被理解为在更大范围内比较）。严格说来，句意有所变化，A项“句意不变”的说法存在问题，详见不确定性说明。\nB项正确。第④句开头“如今，这些古道……”承接的是“京西古道”的话题，应紧跟介绍古道的第②句；第③句讲旧石器、新石器时代遗迹，宜放在第①句总说之后。合理顺序为①③②④，故②③应互换。\nC项正确。“遗迹”指古代或旧时的事物遗留下来的痕迹，范围较广，可以包括遗址、遗物等各类留存；“遗址”着重指人类活动留下的某一处所。“留下了新石器时代农耕文明的遗迹”泛指农耕文明留下的种种痕迹，用范围较广的“遗迹”更恰当，换成“遗址”会把范围收窄为特定地点，因此不宜替换。这是两词的范围区别，不是说“遗址”只能指建筑。\nD项不正确。第④句“如今，这些古道依然有许多保存完好的地方，成为中外游客骑行、漫步、寻古的目的地”，“成为”的主语可以理解为承前的“这些古道”（古道成为游客的目的地），也可以理解为“保存完好的地方”，两种理解在语义和语法上都通顺，不构成暗换主语，搭配、成分也没有残缺或赘余，此句没有语病。说它“有语病”不正确。\n综合判断：D项的错误是确定的，A项的问题属于对比较范围的细微辨析，故选D。",
+          "inputSha256": "03a3e2b4cec29137e8107b95484c3c4e8a92203d599bd7b9c4bfbbc2d9d357a9",
+          "generatedAt": "2026-10-03T01:31:31.789126+00:00",
+          "uncertainties": [
+            "A项存在争议：去掉“在”和逗号后，“在北京”由限定比较范围的状语变为表示所属的定语，“最密集”的比较范围不再明确，严格看句意并非完全不变，因此A也可被视为不正确的说法。本答案判断D的错误更确定、更符合单选要求而选D，但不排除A也有问题，命题存在一定瑕疵。"
+          ],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": false
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-source-review-result.json",
+            "inputPromptSha256": "192d845cccd6ff32f2550edc1feb2076234cba906cb7f8d6876a28b63523bd50",
+            "responseStreamSha256": "5248ebc25a3a7bd0c39eb0b6a135483c0a1cf9a4986a99c9f7b57ad98d13feb5",
+            "stage": "source_review"
+          }
+        },
+        "claude_opus_5_5_initial": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 初次独立作答（复核前）",
+          "text": "答案：A。\nA项不正确。原句“在北京，门头沟是乡土文化资源最密集、极具代表性的地区”中，“在北京”限定了比较范围，即在北京各区中门头沟最密集。去掉“在”和逗号后变成“北京门头沟是……最密集……的地区”，“北京”成了门头沟的定语，“最密集”失去了比较范围，句意发生了改变。B项正确。第④句的“这些古道”承接第②句的“京西古道”，第③句讲旧石器、新石器时代的人类遗迹，夹在②④之间，造成指代脱节。②③互换后，语序为①③②④，先讲远古人类活动，再讲古道及其现状，衔接顺畅。C项正确。“遗迹”指古代或旧时事物遗留下来的痕迹，范围较广，与“农耕文明”搭配恰当；“遗址”专指毁坏的古建筑等所在的地方，是具体处所，“留下了……农耕文明的遗址”搭配不当，所以不宜替换。D项说第④句有语病，可以成立。“这些古道依然有许多保存完好的地方，成为中外游客……的目的地”中，后一分句的主语不明，从“这些古道”暗中换成了“保存完好的地方（路段）”，属于暗换主语；可改为“这些古道依然有许多保存完好的路段，它们成为……”。故选A。",
+          "inputSha256": "03a3e2b4cec29137e8107b95484c3c4e8a92203d599bd7b9c4bfbbc2d9d357a9",
+          "generatedAt": "2026-10-03T01:22:41.872589+00:00",
+          "uncertainties": [
+            "D项第④句是否判为语病存在一定弹性，若命题者认为第④句无语病，则D也可能被视为不正确项；综合判断，A项改变句意最为明确。"
+          ],
+          "selectedOptions": [
+            "A"
+          ],
+          "assessment": {
+            "matchesConclusion": false
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-01-result.json",
+            "inputPromptSha256": "7e37d138d7f3c3c8620416ec65802e26750dccd8ce63071a1270c5934b773330",
+            "responseStreamSha256": "b22af1527a94bc9be0140178b2da63b3e21ac9b10e6942dc8e221cb1f1194b7a",
+            "stage": "independent"
+          }
+        },
+        "gpt_6_astra_initial": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 初次独立作答（复核前）",
+          "text": "答案：C。东胡林村留下的新石器时代农耕文明遗存可以称为遗址，不能断言“遗迹”不能换成“遗址”。A去掉介词和逗号后，“北京门头沟”仍指同一地区；B先说史前人类活动、再说千年古道，顺序更连贯，也使古道与后句衔接；D正确指出语病，原句主语中心为“地方”，应调整为“这些古道许多地方依然保存完好，成为……目的地”等结构，使“成为”与古道衔接。",
+          "inputSha256": "03a3e2b4cec29137e8107b95484c3c4e8a92203d599bd7b9c4bfbbc2d9d357a9",
+          "generatedAt": "2026-10-03T01:23:10.055Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-reading-reviews.json"
+          }
+        }
+      },
+      "referenceOptions": [
+        "D"
+      ]
+    },
+    {
+      "id": "2025-yuyanjichu:2",
+      "inputSha256": "4cbe814cb42ff6ba8442ff9bc00ff11918629580741d9856c4e3af8d3f6c61c3",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "依据完整题文逐项核对两模型的独立作答；具体差错与初答保留于模型历史。非官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:34:44.977633+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2025北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 来源复核后修订",
+          "text": "这片古老而美丽的土地带到世界面前。补全后为“日益频繁的中外交流，把这片古老而美丽的土地带到世界面前”。承接文化资源及国际大会让世界了解门头沟，使用完整的“把”字句；填入部分十六个汉字，未超过十八字。",
+          "inputSha256": "4cbe814cb42ff6ba8442ff9bc00ff11918629580741d9856c4e3af8d3f6c61c3",
+          "generatedAt": "2026-10-03T01:34:44.977633+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "source_review",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-revisions.json"
+          },
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "当前覆核采用；原始版本留存。"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "示例：门头沟的乡土文化推向了世界\n（13字。前句“正如国际月季大会让世界了解门头沟一样”是类比，后句承接“把……”的句式，写中外交流使门头沟的乡土文化走向世界，与全段介绍门头沟乡土文化资源的话题一致，语意连贯。）",
+          "inputSha256": "4cbe814cb42ff6ba8442ff9bc00ff11918629580741d9856c4e3af8d3f6c61c3",
+          "generatedAt": "2026-10-03T01:22:41.872589+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-01-result.json",
+            "inputPromptSha256": "7e37d138d7f3c3c8620416ec65802e26750dccd8ce63071a1270c5934b773330",
+            "responseStreamSha256": "b22af1527a94bc9be0140178b2da63b3e21ac9b10e6942dc8e221cb1f1194b7a",
+            "stage": "independent"
+          }
+        },
+        "gpt_6_astra_initial": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 初次独立作答（复核前）",
+          "text": "这片古老而美丽的土地带到世界面前。补全后为“日益频繁的中外交流，把这片古老而美丽的土地带到世界面前”。承接文化资源及国际大会让世界了解门头沟，使用完整的“把”字句；填入部分十七个汉字，未超过十八字。",
+          "inputSha256": "4cbe814cb42ff6ba8442ff9bc00ff11918629580741d9856c4e3af8d3f6c61c3",
+          "generatedAt": "2026-10-03T01:23:10.055Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-reading-reviews.json"
+          }
+        }
+      }
+    },
+    {
+      "id": "2025-weixiezuo:1",
+      "inputSha256": "c545ed9750e352359aac096d0dfb8acfe443f50102dc8632a0bb85e86a5056a7",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "依据完整题文逐项核对两模型的独立作答；具体差错与初答保留于模型历史。非官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:34:44.977633+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2025北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "面对诱惑，怎样守住本心？遭遇挫折，如何安顿自己？古人的修身智慧，或许能照亮今天的困惑。国学社将邀请学者带来“古人的修身观”讲座，从经典走进日常，与我们探讨慎独、自省与笃行。带上你的问题，一起来听古人的回声，也寻找自己的答案。",
+          "inputSha256": "c545ed9750e352359aac096d0dfb8acfe443f50102dc8632a0bb85e86a5056a7",
+          "generatedAt": "2026-10-03T01:25:09.448Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-writing-reviews.json"
+          },
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "当前覆核采用；原始版本留存。"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 来源复核后修订",
+          "text": "【示例宣传语】\n修身，是古人立身处世的第一课。“吾日三省吾身”，是曾子的自律；“穷则独善其身”，是孟子的坚守；“君子慎其独”，是《礼记》的叮咛。千年修身智慧，能否照亮今天的我们？国学社特邀学者开讲“古人的修身观”，与你一同走近先贤。听一场讲座，正一份心性——我们在讲堂等你！\n\n（约125字。题目未给出讲座时间、地点和学者姓名，示例不虚构具体安排；正式发布时可补入实际信息。）",
+          "inputSha256": "c545ed9750e352359aac096d0dfb8acfe443f50102dc8632a0bb85e86a5056a7",
+          "generatedAt": "2026-10-03T01:31:31.789126+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-source-review-result.json",
+            "inputPromptSha256": "192d845cccd6ff32f2550edc1feb2076234cba906cb7f8d6876a28b63523bd50",
+            "responseStreamSha256": "5248ebc25a3a7bd0c39eb0b6a135483c0a1cf9a4986a99c9f7b57ad98d13feb5",
+            "stage": "source_review"
+          }
+        },
+        "claude_opus_5_5_initial": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 初次独立作答（复核前）",
+          "text": "【宣传语示例】\n“修身齐家治国平天下”，为何修身居首？“吾日三省吾身”，今人又当如何自省？本周五下午，国学社特邀学者开讲“古人的修身观”。从孔子的“克己”到诸葛亮的“静以修身”，再到王阳明的“事上磨练”，带你领略先贤安顿身心、砥砺品格的智慧。诚邀你来，与先贤对话，遇见更好的自己！\n\n（约130字。开头用两个问句引发兴趣；中间点明讲座主题，并列举三位古人的修身主张，显示讲座内容丰富；结尾发出邀请。语气面向同学，亲切得体。）",
+          "inputSha256": "c545ed9750e352359aac096d0dfb8acfe443f50102dc8632a0bb85e86a5056a7",
+          "generatedAt": "2026-10-03T01:25:23.105050+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-02-result.json",
+            "inputPromptSha256": "bbf9cc1151530f7cce3c4bc8f6c3133bf058cc406d456badbc88fe75bbf0ea46",
+            "responseStreamSha256": "af9fc6fc0e9522f09ddecb5046f194dec6195d2fb2b53b3faa63d8ad9a8e98bd",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2025-weixiezuo:2",
+      "inputSha256": "7e6146d653fb7543e77ccab9e989d4d93292e340830123f375b858bb77ad43d3",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "依据完整题文逐项核对两模型的独立作答；具体差错与初答保留于模型历史。非官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:34:44.977633+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2025北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "我想设立“把问号留给我奖”。老师讲到关键处，总会停下来，让我们追问，也耐心听完不成熟的想法。遇到不同答案，他不急着宣布对错，而是陪我们找证据。这个奖感谢老师保护我们的好奇心，让课堂里的问号长成独立思考的力量。",
+          "inputSha256": "7e6146d653fb7543e77ccab9e989d4d93292e340830123f375b858bb77ad43d3",
+          "generatedAt": "2026-10-03T01:25:09.448Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-writing-reviews.json"
+          },
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "当前覆核采用；原始版本留存。"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【奖项设计示例】\n我想设计“红笔温度奖”。理由如下：其一，作业本上的红笔批注是老师与我们最日常的对话，一个“妙”字、一句“再想想”，都凝结着老师在灯下的耐心。其二，这些批注常被我们匆匆翻过，设立此奖，是提醒我们珍视老师看不见的付出。其三，可以请同学们评选“最难忘的一句批语”，让感谢落到具体处，不流于空泛。\n\n（约140字。先写出奖项名称，再分三点说明理由：奖项有什么含义，设立它有什么意义，评选怎样操作。三点层层递进，条理清楚。）",
+          "inputSha256": "7e6146d653fb7543e77ccab9e989d4d93292e340830123f375b858bb77ad43d3",
+          "generatedAt": "2026-10-03T01:25:23.105050+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-02-result.json",
+            "inputPromptSha256": "bbf9cc1151530f7cce3c4bc8f6c3133bf058cc406d456badbc88fe75bbf0ea46",
+            "responseStreamSha256": "af9fc6fc0e9522f09ddecb5046f194dec6195d2fb2b53b3faa63d8ad9a8e98bd",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2025-weixiezuo:3",
+      "inputSha256": "abeb471eed3cb6c18c067241003f8ea290ae63126e9c0215d7af7a261e84a409",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "依据完整题文逐项核对两模型的独立作答；具体差错与初答保留于模型历史。非官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:34:44.977633+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2025北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "轻\n晚自习后，雨忽然停了。\n母亲把伞向我这边倾来，\n仿佛还要接住檐角最后一滴水。\n我伸手握住伞柄，\n让它慢慢回到两个人中间。\n她没有说话，\n只把脚步放轻。\n一盏路灯落在伞面，\n夜色也有了柔软的重量。",
+          "inputSha256": "abeb471eed3cb6c18c067241003f8ea290ae63126e9c0215d7af7a261e84a409",
+          "generatedAt": "2026-10-03T01:25:09.448Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-writing-reviews.json"
+          },
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "当前覆核采用；原始版本留存。"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "【小诗示例】\n轻\n\n是春雨落在瓦檐的那一声，\n轻得像怕惊醒熟睡的巷子；\n是母亲替我掖被角的手，\n轻得像一片羽毛落进梦里。\n\n后来我才懂——\n最重的爱，往往\n走得最轻：\n那盏为我留到深夜的灯，\n从不说话，\n只把影子拉得很长很长。\n\n（约100字。前一节用春雨、母亲的手两个意象写“轻”的温柔；后一节由轻转到重，写出最深的爱往往无声。以留灯的细节收尾，情感含蓄。）",
+          "inputSha256": "abeb471eed3cb6c18c067241003f8ea290ae63126e9c0215d7af7a261e84a409",
+          "generatedAt": "2026-10-03T01:25:23.105050+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-02-result.json",
+            "inputPromptSha256": "bbf9cc1151530f7cce3c4bc8f6c3133bf058cc406d456badbc88fe75bbf0ea46",
+            "responseStreamSha256": "af9fc6fc0e9522f09ddecb5046f194dec6195d2fb2b53b3faa63d8ad9a8e98bd",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2025-dazuowen:1",
+      "inputSha256": "23953eb713c9fd08fa11ccedb06ac36211ba2f6e08caed568afe8e5eb6c008aa",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "依据完整题文逐项核对两模型的独立作答；具体差错与初答保留于模型历史。非官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:34:44.977633+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2025北京卷原题及完整材料"
+        },
+        {
+          "type": "primary_source",
+          "title": "屠呦呦诺贝尔奖自传：样本191不能推成190次失败",
+          "url": "https://www.nobelprize.org/prizes/medicine/2015/tu/biographical/"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "由‘第二次呼吸’说开去\n\n跑道上的人有时会遇到这样的时刻：呼吸沉重，脚步发僵，终点仿佛比起跑时更远。然而，适当调整节奏、重新集中意志之后，一些人能越过暂时的低谷，让呼吸与步伐再度协调。这种‘第二次呼吸’提示我们：前进遭遇阻力时，既不必立刻把困难判为失败，也不能把坚持理解成毫无变化地硬撑；以清醒的调整延续行动，才可能进入新的阶段。\n\n首先，低谷未必意味着能力已经耗尽。人的感受会受眼前处境支配，一次卡顿容易被放大为‘我永远做不到’。学琴者练到复杂乐句，反复出错；初学编程的人面对报错，看不到程序运行的可能。此时的困顿是真实的，对自身的否定却未必准确。练习正在暴露旧方法的边界，也提示新的能力尚待建立。倘若把这段过渡期当作终局，便可能在变化发生之前离开。坚持的第一层意义，是给尚未完成的成长留下时间。\n\n但留下时间，并不等于重复原来的动作。跑者需要调匀呼吸、改变配速，学习者也需要找到真正的阻点。遇到数学题，可以先缩小问题，检验一个特例；写文章始终松散，可以暂时放下润色，重新辨清观点与材料的关系；团队推进项目受阻，可以把过大的目标拆成可验证的小步。这样的调整不是向困难投降，而是承认现实之后重新获得主动。若方法本身不适合，重复得越用力，疲惫也可能积累得越快。能否迎来新的阶段，常取决于是否愿意审视自己的惯性。\n\n‘第二次呼吸’还需要可持续的支持。一个人不必把所有困难都独自承担。请教老师、与同伴核对思路、适时休息，都可能帮助我们发现盲点、恢复精力。科学研究中的进展，也往往来自不断修订问题、改进实验和同行交流，而非某个孤独天才永不疲倦的冲刺。把求助误认为软弱，把休息误认为懈怠，会让坚持变成自我消耗。真正值得珍惜的斗志，是愿意继续寻找办法，而不是拒绝一切帮助。\n\n当然，跑步的现象不能机械套用到所有处境。并不是每一次苦撑都能换来突破，更不是所有目标都值得不惜代价地追逐。身体发出的危险信号需要认真对待，现实中已被证据否定的方向也应及时修正。判断是否继续，应看目标的意义、方法的效果与承担的代价。承认一条路不通，再选择新的方向，同样需要勇气。我们赞美坚持，是因为它服务于成长与创造，而非因为痛苦本身有价值。\n\n因此，‘第二次呼吸’给予我们的，不是一张保证成功的许诺，而是一种面对低谷的姿态：不急于自我否定，也不沉迷盲目的消耗；在行动中观察，在观察后调整，并为下一步保存力量。人生的长跑未必总有掌声相伴，但当我们学会把意志与判断放在一起，沉重的呼吸之中，便可能重新听见前进的节奏。",
+          "inputSha256": "23953eb713c9fd08fa11ccedb06ac36211ba2f6e08caed568afe8e5eb6c008aa",
+          "generatedAt": "2026-10-03T01:25:09.448Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-writing-reviews.json"
+          },
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "当前覆核采用；原始版本留存。"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 来源复核后修订",
+          "text": "【示例作文】\n\n由“第二次呼吸”说开去\n\n中长跑的赛道上，“极点”几乎是每位运动员都要遭遇的关口：胸口发闷，双腿灌铅，放弃的念头一再涌起。可是，只要调整节奏、激发斗志，越过这一关，呼吸会重新顺畅，步伐会重新轻快，这就是“第二次呼吸”。它不只属于跑道。求学、治学乃至一个民族的前行，都有自己的“极点”，也都在等待那一次“第二次呼吸”。我以为，极点不是终点，而是转折点；越过极点，靠的不是一味蛮干，而是清醒的调整与不灭的斗志。\n\n极点是前进的必然产物，它恰恰说明我们已经走到了深处。站在起点的人不会遇到极点，原地踏步的人更不会。学习到一定程度，成绩忽然停滞不前，这种“高原期”令人沮丧，其实正是旧方法用到尽头、新能力尚未长成的信号。把极点看作“我不行了”的证明，就会在离突破最近的地方转身；把它看作“我走远了”的标志，才可能鼓起余勇，迎来新的阶段。\n\n越过极点，首先要学会调整节奏。运动员在极点处不是拼命加速，而是调匀呼吸、修正步频。科学探索同样如此。屠呦呦团队寻找抗疟药物时，曾对大量药物和提取物进行筛选，青蒿提取物的效果起初并不稳定。她回到古籍，从葛洪《肘后备急方》“青蒿一握，以水二升渍，绞取汁”的记载中得到启发，意识到加热可能破坏有效成分，于是改用乙醚低温提取，最终获得对疟原虫抑制率达到百分之百的提取物。困境中的那次“换气”，不是放弃，而是换一种更对的方式继续向前。\n\n越过极点，还需要斗志的支撑。司马迁遭受宫刑，身心俱创，这是他人生的“极点”。他在《报任安书》中自陈“所以隐忍苟活……恨私心有所不尽，鄙陋没世，而文采不表于后也”。正是这份不甘湮没的志向，使他忍辱发愤，终成“史家之绝唱，无韵之离骚”。苏轼因乌台诗案贬谪黄州，仕途跌入谷底，他却在困顿中写出“一蓑烟雨任平生”的旷达，写出前后《赤壁赋》的澄明。斗志不是咬牙切齿的硬撑，而是在低谷里仍然相信前方有路、仍然愿意把自己交给更高的目标。\n\n“第二次呼吸”之后，奔跑进入新阶段，人生亦然。熬过高原期的学生，收获的不只是分数，更是可以迁移的方法与心力；经历黄州岁月的苏轼，诗文境界由此更为开阔深沉。一个民族也是如此。近代以来，中华民族经历了深重苦难，却在一次次困境中调整道路、凝聚力量，走上复兴之路。极点所压出的，往往正是一个人、一个民族最坚韧的部分。\n\n当然，强调越过极点，并不是鼓吹不顾一切地死扛。跑步时若出现真正的伤痛，及时停下才是理智；做事若方向根本错误，坚持只会南辕北辙。我们需要分辨：眼前的艰难是成长必经的极点，还是提醒我们改变方向的警报？前者需要坚持，后者需要转身。而无论哪一种，清醒地审视自己、调整自己，都是越过困境的前提。\n\n人生是一场长跑，没有人能绕开极点。愿我们在呼吸艰难时，不急于认输，也不盲目蛮干；调匀节奏，点燃斗志，坦然迎接那一次属于自己的“第二次呼吸”。",
+          "inputSha256": "23953eb713c9fd08fa11ccedb06ac36211ba2f6e08caed568afe8e5eb6c008aa",
+          "generatedAt": "2026-10-03T01:31:31.789126+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-source-review-result.json",
+            "inputPromptSha256": "192d845cccd6ff32f2550edc1feb2076234cba906cb7f8d6876a28b63523bd50",
+            "responseStreamSha256": "5248ebc25a3a7bd0c39eb0b6a135483c0a1cf9a4986a99c9f7b57ad98d13feb5",
+            "stage": "source_review"
+          }
+        },
+        "claude_opus_5_5_initial": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 初次独立作答（复核前）",
+          "text": "由“第二次呼吸”说开去\n\n跑过三千米的人大约都有这样的体验：跑到一半，胸口像压了块石头，双腿像灌了铅，脑子里只剩一个念头——停下来。这就是“极点”。可如果咬住牙，放缓步频，调匀呼吸，再坚持一段，那种窒息感会悄然退去，身体重新轻盈起来，这便是“第二次呼吸”。其实，这不只是运动场上的生理现象。求学、治学、做事，乃至一个人的一生，都绕不开自己的“极点”。我以为：极点不是终点，而是通往新境界的门槛；唯有正视它、调整它、越过它，才能迎来属于自己的“第二次呼吸”。\n\n极点之所以出现，恰恰说明人已经逼近了原有能力的边界。运动生理学告诉我们，极点源于身体供氧跟不上消耗。这时旧的平衡已被打破，新的平衡尚未建立，是一个过渡期。做学问、干事业何尝不是如此？屠呦呦团队寻找抗疟药物，筛选了大量中药，青蒿提取物的效果一度很不理想，实验接连失败。正是在最艰难的时刻，屠呦呦重读葛洪《肘后备急方》中“青蒿一握，以水二升渍，绞取汁”的记载。她意识到高温可能破坏有效成分，于是改用低沸点的乙醚提取，终于在第191号样品上取得突破。前面一百九十次的失败，就是那漫长的“极点”；第一百九十一次，便是科学的“第二次呼吸”。没有前者的煎熬，就没有后者的豁然开朗。\n\n越过极点，靠的不是蛮力，而是调整。跑者遭遇极点时，有经验的教练从不让他加速冲刺，而是让他调整步幅、改变呼吸节奏。人生的极点同样需要调整。苏轼因“乌台诗案”贬谪黄州，政治理想受挫，生计窘迫，这是他人生中最大的“极点”。但他没有沉沦，而是放慢脚步，躬耕东坡，与渔樵为伍，在“一蓑烟雨任平生”的旷达中调匀了心灵的呼吸。正是黄州的这段日子，催生了前后《赤壁赋》和《念奴娇·赤壁怀古》，苏轼从此成为“东坡”。可见，调整不是退缩，而是换一种方式继续向前。\n\n越过极点，还需要信念点燃的斗志。极点时刻，身体在叫停，真正让人坚持下去的，是心中那个“为什么出发”。司马迁遭受宫刑，身心俱创，“肠一日而九回”，甚至想过轻生。支撑他的，是父亲的临终嘱托，以及“究天人之际，通古今之变，成一家之言”的志向。他在屈辱中隐忍发愤，终于写成“史家之绝唱”。斗志之于极点，正如火种之于寒夜：它未必能立刻驱散黑暗，却能让人撑到黎明。\n\n把目光放回我们自己。很多同学都经历过学习上的“平台期”：投入了大量时间，成绩却停滞不前，甚至下滑，焦虑与自我怀疑接踵而至。这其实就是学习的“极点”。此时与其埋头题海硬拼、熬夜透支，不如停下来梳理知识漏洞，反思学习方法，同时提醒自己最初的目标。熬过这段日子，往往某一天会突然发现，那些散乱的知识点连成了网——那正是学习中的“第二次呼吸”。\n\n当然，提倡越过极点，并不是鼓吹无视身体信号的逞强。运动员能越过极点，前提是科学训练积累的体能储备；如果身体真的发出危险警报，及时停下才是理性的选择。人生也是这样，“第二次呼吸”属于有准备、会调整的坚持者，而不属于盲目透支的蛮干者。\n\n“行百里者半九十。”人生如长跑，极点终会到来。愿我们在胸口发紧、双腿沉重之时，既不慌乱放弃，也不莽撞硬冲，而是调匀呼吸，点燃斗志，迎来那一次豁然开朗的“第二次呼吸”，跑向更远的地方。\n\n（全文约1400字。中心论点：极点不是终点，而是通往新境界的门槛。分论点依次为：极点意味着逼近能力边界，越过极点要靠调整，越过极点还要靠斗志；再联系学生学习实际，最后辨析“坚持”与“逞强”的区别。论据为屠呦呦、苏轼、司马迁三例，论证有层次。）",
+          "inputSha256": "23953eb713c9fd08fa11ccedb06ac36211ba2f6e08caed568afe8e5eb6c008aa",
+          "generatedAt": "2026-10-03T01:25:23.105050+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-02-result.json",
+            "inputPromptSha256": "bbf9cc1151530f7cce3c4bc8f6c3133bf058cc406d456badbc88fe75bbf0ea46",
+            "responseStreamSha256": "af9fc6fc0e9522f09ddecb5046f194dec6195d2fb2b53b3faa63d8ad9a8e98bd",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2025-dazuowen:2",
+      "inputSha256": "152ace31f1151392a4cd891aa6bf20e4188ed7e7d35ab77c2c67acb4db83c8a1",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "依据完整题文逐项核对两模型的独立作答；具体差错与初答保留于模型历史。非官方评分标准。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:34:44.977633+00:00",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2025北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "当数字闪耀时\n\n那只电子秤的边角裂了一道细缝，父亲用透明胶带粘过，胶带里还夹着一点面粉。每到周末，我都要站在它前面，看绿色的数字跳来跳去。\n\n父亲在市场里卖面点。以前，我最盼的是收摊时计算器上的数字：今天多卖一点，我们回家的路上便能买两串糖葫芦。后来作业多了，我很少再到摊位。那天是因为父亲扭了脚，我才推着小车，陪他出门。\n\n市场刚醒，卷帘门一扇扇抬起来。父亲坐在凳子上，把蒸笼盖揭开，白汽扑得我眼镜发亮。他让我守着秤，自己包饺子。‘看清数字，别着急。’他叮嘱。\n\n第一位客人要半斤馒头。我夹起两个，又夹起一个小的。数字先冲上去，晃了几下，停在二百四十六。我正想再添一点，客人说差不多就行。我看父亲，他低着头，拇指把面皮压出一道整齐的褶。‘添上。’他说。\n\n我又掰下一小块，放在袋口。数字越过二百五十，客人笑了。我也觉得自己做成了一件很像样的事。\n\n渐渐地，人多起来。夹子碰着笼屉，零钱响在铁盒里，我的手有些忙不过来。一个穿旧棉衣的老人来到摊前，掏出几张叠得很细的钱，说要三块钱的花卷。\n\n我算好重量，把花卷放上秤。绿色的数字在薄雾里稳稳亮着。我刚要系袋，父亲递过来一个红豆包：‘这个也放进去。’\n\n数字又跳了一下。\n\n‘超了。’我小声提醒。\n\n‘我看见了。’\n\n老人摆摆手，父亲却已接过袋子，往他手里一塞：‘刚蒸的，趁热。’老人摸了摸袋底，笑着说了声谢，慢慢走远。\n\n我望着那几个数字，有点不服气。等摊前空下来，我问父亲：‘不是说要看清吗？’\n\n他停了停，把沾在手指上的面揉进面团。‘秤要称准，心里也得有数。’\n\n这句话太像父亲平时的那些话，我当时并没有立刻听懂。只是再来的客人，我都多看了一眼：赶去上班的人把袋子攥得很紧，送孩子上学的人催着付款，那个常来买两个馒头的清洁工，袖口沾着水。原来秤上的每一次跳动，都要落到一个人的早晨里。\n\n中午收摊，我把电子秤擦干净。裂缝里的面粉仍擦不出来。父亲说不用使劲，它已经跟着我们好多年了。小车推过路口，糖葫芦的摊子还在，父亲问我吃不吃。我摇头，转过身把车把握稳了一些。\n\n后来我仍会帮父亲看秤。数字亮起时，我知道该添多少、收多少，也渐渐懂得有些东西不必计入价钱。那些绿色的小数字从未照得很远，却足够照见蒸笼边的一双手，和人与人之间一小片温暖的地方。",
+          "inputSha256": "152ace31f1151392a4cd891aa6bf20e4188ed7e7d35ab77c2c67acb4db83c8a1",
+          "generatedAt": "2026-10-03T01:25:09.448Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-2025-writing-reviews.json"
+          },
+          "assessment": {
+            "matchesConclusion": null,
+            "note": "当前覆核采用；原始版本留存。"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "当数字闪耀时\n\n除夕夜，十一点五十九分，电视屏幕右上角，红色的倒计时数字开始跳动。\n\n“六十，五十九……”爸爸把一盘刚出锅的饺子端上桌，热气在灯下袅袅地散开。我盯着那串数字，心里却空了一块：桌边那把椅子，今年又空着。\n\n妈妈是一名护士。往年除夕她也常常值班，可我总盼着今年会不同。腊月里，她答应过我：“今年要是排班顺，就陪你守岁。”可前天，她科里一位同事家中有急事，她二话没说就替了班。电话里她说“对不起”，声音很轻，我却赌气挂断了。\n\n“三十，二十九……”数字一格一格地亮，屏幕里的主持人喜气洋洋，我却越看越委屈。爸爸看出了我的心思，把手机推到我面前：“给你妈打个视频吧，她这会儿应该能歇两分钟。”\n\n视频接通了。屏幕里的妈妈戴着口罩，额前的碎发被汗水贴在额头上，身后是一条白得发亮的走廊。她把口罩往下拉了拉，露出笑来：“守岁呢？饺子吃了没？”\n\n我本想说点什么，话到嘴边又咽了回去。她像是想起了什么，把镜头一转，对准身后病房的玻璃窗：“你看。”\n\n透过玻璃，我看见病床边立着一台监护仪，屏幕上绿色的数字一闪一闪：心率七十八，血氧九十八。“这位老爷爷傍晚刚做完手术，”妈妈压低了声音，“刚送来时心率一百四，血氧掉到八十多，我们几个守了一晚上。你看现在，多稳。”\n\n那几个绿色的数字安安静静地亮着，一下，又一下。我忽然觉得，它们和电视里那串红色的倒计时一样明亮——不，比那更亮。那是一个生命在平稳地呼吸，是另一个家庭明天还能团圆的凭据。\n\n“十，九，八……”电视里的人群开始齐声倒数。妈妈把镜头转回来。我看见她眼睛弯弯的，眼角有几道细细的纹路，以前我竟从没注意过。\n\n“妈，”我轻声说，“新年快乐。”\n\n“三，二，一！”\n\n窗外的烟花轰然炸开，屏幕上跳出“00:00”。妈妈在那头也说了句什么，被烟花声盖住了，我只看清她的口型：新年快乐。爸爸在一旁悄悄抹了一下眼角，夹起一个饺子放进我碗里。\n\n那一夜我很久没睡着。我想起妈妈晚归的许多个夜晚，想起她手机里的计步软件。她曾笑着给我看，说一个夜班走了两万多步，那时我只当它是个数字。如今才明白，每一个数字背后，都是她在病房与走廊之间一趟趟奔走的脚印。\n\n大年初一早上，妈妈下班回家，进门第一件事就是瘫在沙发上。我把热好的饺子端给她，顺手拿过她的手机，看见计步页面上亮着：23006。\n\n我把这个数字截了图，存进相册，起名叫“我的新年礼物”。\n\n生活里闪耀的数字有很多：比分、分数、倒计时……而那一年除夕，我记住了监护仪上平稳的绿色数字，记住了计步页面上的23006。它们不像烟花那样绚烂，却在我心里亮了很久很久。\n\n（全文约1250字。以除夕夜的倒计时、监护仪数字、计步数字三处“数字闪耀”为线索，情感从委屈转为理解，再到感动。文中有动作、语言、神态和环境等细节描写，结尾点题，写出平凡日常中的守护与幸福。）",
+          "inputSha256": "152ace31f1151392a4cd891aa6bf20e4188ed7e7d35ab77c2c67acb4db83c8a1",
+          "generatedAt": "2026-10-03T01:25:23.105050+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2025-02-result.json",
+            "inputPromptSha256": "bbf9cc1151530f7cce3c4bc8f6c3133bf058cc406d456badbc88fe75bbf0ea46",
+            "responseStreamSha256": "af9fc6fc0e9522f09ddecb5046f194dec6195d2fb2b53b3faa63d8ad9a8e98bd",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2024-moxie:1",
+      "inputSha256": "1a143f96993b51aaad35d12e0c4317bec9f7089c9c6399ee361149556f3eff48",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2024北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "（1）花径不曾缘客扫，蓬门今始为君开。（2）佳期如梦，忍顾鹊桥归路。（3）仁者不忧，勇者不惧。（4）好色而不淫；怨诽而不乱。注意第（1）题接《客至》第三、四句，不接后面的盘飧市远；“怨诽”不可写成“怨悱”。",
+          "inputSha256": "1a143f96993b51aaad35d12e0c4317bec9f7089c9c6399ee361149556f3eff48",
+          "generatedAt": "2026-10-03T01:38:23.281Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "（1）花径不曾缘客扫，蓬门今始为君开。（杜甫《客至》）\n（2）佳期如梦，忍顾鹊桥归路。（秦观《鹊桥仙》）\n（3）仁者不忧，勇者不惧。（《论语·子罕》）\n（4）国风好色而不淫；小雅怨诽而不乱。（《史记·屈原贾生列传》）",
+          "inputSha256": "1a143f96993b51aaad35d12e0c4317bec9f7089c9c6399ee361149556f3eff48",
+          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "note": "末问填空只写“好色而不淫”“怨诽而不乱”，模型复述的国风/小雅是标识，不写入空内。"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2023-moxie:1",
+      "inputSha256": "e5d3a5f0d93ac2477ab1409ef24aea8e43db858bb9dc6037bdfe88ad12453fc3",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2023北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "（1）出师未捷身先死，长使英雄泪满襟。（2）小楼一夜听春雨，深巷明朝卖杏花。（3）风乎舞雩，咏而归。（4）奉之弥繁，侵之愈急。注意“捷”“襟”“雩”“弥”的字形；“明朝”指第二天早晨。",
+          "inputSha256": "e5d3a5f0d93ac2477ab1409ef24aea8e43db858bb9dc6037bdfe88ad12453fc3",
+          "generatedAt": "2026-10-03T01:38:23.281Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "（1）出师未捷身先死，长使英雄泪满襟。（杜甫《蜀相》）\n（2）小楼一夜听春雨，深巷明朝卖杏花。（陆游《临安春雨初霁》）\n（3）风乎舞雩，咏而归。（《论语·子路、曾皙、冉有、公西华侍坐》）\n（4）奉之弥繁，侵之愈急。（苏洵《六国论》）",
+          "inputSha256": "e5d3a5f0d93ac2477ab1409ef24aea8e43db858bb9dc6037bdfe88ad12453fc3",
+          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2022-moxie:1",
+      "inputSha256": "b56349cd1c8d0ddca67535f3ab9c12b472f530cb47f72ebdb8f9f76d2739d346",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2022北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "（1）沧海月明珠有泪，蓝田日暖玉生烟。（2）过春风十里，尽荠麦青青。（3）己所不欲，勿施于人。（4）闻道有先后，术业有专攻。第（4）题强调知识与专业各有长处，对应《师说》这两句；“荠麦”不可写成“齐麦”。",
+          "inputSha256": "b56349cd1c8d0ddca67535f3ab9c12b472f530cb47f72ebdb8f9f76d2739d346",
+          "generatedAt": "2026-10-03T01:38:23.281Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "（1）沧海月明珠有泪，蓝田日暖玉生烟。（李商隐《锦瑟》）\n（2）过春风十里，尽荠麦青青。（姜夔《扬州慢》）\n（3）己所不欲，勿施于人。（《论语》）\n（4）闻道有先后，术业有专攻。（韩愈《师说》）",
+          "inputSha256": "b56349cd1c8d0ddca67535f3ab9c12b472f530cb47f72ebdb8f9f76d2739d346",
+          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2021-moxie:1",
+      "inputSha256": "b5c2f2bbc87a6496e8dda76a25dbae021e70e606ecabc2eaaced3796d379d7e1",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2021北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "（1）住近湓江地低湿，黄芦苦竹绕宅生。（2）人知从太守游而乐，而不知太守之乐其乐也。（3）抟扶摇而上者九万里；而后乃今将图南。（4）安能摧眉折腰事权贵，使我不得开心颜。第（3）题按先名与号、后字的顺序填写；“抟”不可误作“搏”，“湓”注意字形。",
+          "inputSha256": "b5c2f2bbc87a6496e8dda76a25dbae021e70e606ecabc2eaaced3796d379d7e1",
+          "generatedAt": "2026-10-03T01:38:23.281Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "（1）住近湓江地低湿，黄芦苦竹绕宅生。（白居易《琵琶行》）\n（2）人知从太守游而乐，而不知太守之乐其乐也。（欧阳修《醉翁亭记》）\n（3）名“抟”与号“扶摇子”出自：抟扶摇而上者九万里；字“图南”出自：而后乃今将图南（完整句为“背负青天而莫之夭阏者，而后乃今将图南”）。（《庄子·逍遥游》）\n（4）安能摧眉折腰事权贵，使我不得开心颜。（李白《梦游天姥吟留别》）",
+          "inputSha256": "b5c2f2bbc87a6496e8dda76a25dbae021e70e606ecabc2eaaced3796d379d7e1",
+          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+          "uncertainties": [
+            "第（3）题第二空可只填“而后乃今将图南”，也可连同上句“背负青天而莫之夭阏者”一并写出，以“图南”二字所在句为核心。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2020-moxie:1",
+      "inputSha256": "354d02c1baca3e2e5e63582f42622e11effaa3879bf8fa40f7c9b9f3489d27a2",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2020北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "（1）怒而飞，其翼若垂天之云。（2）诵明月之诗，歌窈窕之章。（3）夙兴夜寐，靡有朝矣。（4）尽吾志也而不能至者，可以无悔矣。第（4）题取《游褒禅山记》中尽力而仍不能到达、因而可以无悔的判断，符合安慰已竭尽全力的同学的情境。",
+          "inputSha256": "354d02c1baca3e2e5e63582f42622e11effaa3879bf8fa40f7c9b9f3489d27a2",
+          "generatedAt": "2026-10-03T01:38:23.281Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "（1）怒而飞，其翼若垂天之云。（《庄子·逍遥游》）\n（2）诵明月之诗，歌窈窕之章。（苏轼《赤壁赋》）\n（3）夙兴夜寐，靡有朝矣。（《诗经·卫风·氓》）\n（4）尽吾志也而不能至者，可以无悔矣。（王安石《游褒禅山记》）",
+          "inputSha256": "354d02c1baca3e2e5e63582f42622e11effaa3879bf8fa40f7c9b9f3489d27a2",
+          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2019-moxie:1",
+      "inputSha256": "0f6e98e3a84b726755786fcff319ab8e8ee5ba4ec4950bff30a0628ea2ccdf6d",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2019北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "①山盟虽在，锦书难托。②中通外直，不蔓不枝。③倚南窗以寄傲，审容膝之易安。④小学而大遗，吾未见其明也。③“容安”从容膝、易安取意；④“小学”指小的方面学习，并非今天的学校阶段。",
+          "inputSha256": "0f6e98e3a84b726755786fcff319ab8e8ee5ba4ec4950bff30a0628ea2ccdf6d",
+          "generatedAt": "2026-10-03T01:38:23.281Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "①山盟虽在，锦书难托。（陆游《钗头凤》）\n②中通外直，不蔓不枝。（周敦颐《爱莲说》）\n③倚南窗以寄傲，审容膝之易安。（陶渊明《归去来兮辞》）\n④小学而大遗，吾未见其明也。（韩愈《师说》）",
+          "inputSha256": "0f6e98e3a84b726755786fcff319ab8e8ee5ba4ec4950bff30a0628ea2ccdf6d",
+          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+          "uncertainties": [
+            "第②题两空紧接“香远益清”，按原文顺序应为“中通外直，不蔓不枝”。若命题意图侧重“独爱莲”的品格，也可能期望填“出淤泥而不染，濯清涟而不妖”，但后者与横线位置不衔接。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2018-moxie:1",
+      "inputSha256": "efac3c680052ad666d76ba1b2cf58774f6f3486b59da5190569db9a885d94f70",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2018北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "①久在樊笼里，复得返自然。②无以至今日；无以终余年。③醉不成欢惨将别，别时茫茫江浸月。④群贤毕至，少长咸集。④引用《兰亭集序》，以贤才与不同年龄来宾共聚表达欢迎；它是与情境对应的一组恰当原句，不宣称开放题只准这一组。",
+          "inputSha256": "efac3c680052ad666d76ba1b2cf58774f6f3486b59da5190569db9a885d94f70",
+          "generatedAt": "2026-10-03T01:38:23.281Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "①久在樊笼里，复得返自然。（陶渊明《归园田居》其一）\n②无以至今日；无以终余年。（李密《陈情表》）\n③醉不成欢惨将别，别时茫茫江浸月。（白居易《琵琶行》）\n④群贤毕至，少长咸集。（王羲之《兰亭集序》）此句写贤达齐聚、老少同至，切合校友、家长与师生共聚的校庆场合。也可填“有朋自远方来，不亦乐乎”（《论语》），或“我有嘉宾，鼓瑟吹笙”（曹操《短歌行》）。",
+          "inputSha256": "efac3c680052ad666d76ba1b2cf58774f6f3486b59da5190569db9a885d94f70",
+          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+          "uncertainties": [
+            "第④题为开放性引用，答案不唯一，只要语意切合欢迎来宾、群贤聚会即可。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2017-moxie:1",
+      "inputSha256": "4773eae7254952bc1234ba8e91d2cce30b8dfd450c6ef0210647c01578497ce4",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2017北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "①暧暧远人村，依依墟里烟。②山原旷其盈视，川泽纡其骇瞩。③江晚正愁余，山深闻鹧鸪。注意“暧暧”不是“暖暖”；“旷”“纡”“瞩”“鹧鸪”均应写准。",
+          "inputSha256": "4773eae7254952bc1234ba8e91d2cce30b8dfd450c6ef0210647c01578497ce4",
+          "generatedAt": "2026-10-03T01:38:23.281Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "①暧暧远人村，依依墟里烟。（陶渊明《归园田居》其一）\n②山原旷其盈视，川泽纡其骇瞩。（王勃《滕王阁序》）\n③江晚正愁余，山深闻鹧鸪。（辛弃疾《菩萨蛮·书江西造口壁》）",
+          "inputSha256": "4773eae7254952bc1234ba8e91d2cce30b8dfd450c6ef0210647c01578497ce4",
+          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+          "uncertainties": [
+            "题中“本诗”所指的原诗未提供，但不影响默写作答。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2016-moxie:1",
+      "inputSha256": "078eaa1aa88dfb9ac414dd97494bfd11b18d90f8ba4909130b99520a3599003c",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2016北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "①土地平旷，屋舍俨然；阡陌交通，鸡犬相闻。②楼船夜雪瓜洲渡，铁马秋风大散关。③可写：无边落木萧萧下，不尽长江滚滚来。也可写：万里悲秋常作客，百年多病独登台。第三问只需其中一联；第一问当前录文显示四个空，连同另两问共有八个空，与标示六分不完全对应，应核原卷计分设置，不据此重算历史分数。",
+          "inputSha256": "078eaa1aa88dfb9ac414dd97494bfd11b18d90f8ba4909130b99520a3599003c",
+          "generatedAt": "2026-10-03T01:38:23.281Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "①土地平旷，屋舍俨然；阡陌交通，鸡犬相闻。（陶渊明《桃花源记》）\n②楼船夜雪瓜洲渡，铁马秋风大散关。（陆游《书愤》）\n③无边落木萧萧下，不尽长江滚滚来。（杜甫《登高》）\n也可写“万里悲秋常作客，百年多病独登台”。",
+          "inputSha256": "078eaa1aa88dfb9ac414dd97494bfd11b18d90f8ba4909130b99520a3599003c",
+          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+          "uncertainties": [
+            "《登高》实际四联皆对仗，第③题写其中任一联均符合题意，此处以颔联为例。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "note": "虽《登高》可讨论全篇对仗，题干限定中间两联，建议按颔联或颈联作答；不保证任一联都符合本题评分。"
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2015-moxie:1",
+      "inputSha256": "96f0b4a733ba51dd5cd763a0cdfb83d86a10a84ab4f589ef08033bf268d45630",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2015北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "①登东皋以舒啸，临清流而赋诗。②山水之乐，得之心而寓之酒也。①位于《归去来兮辞》末段；②接《醉翁亭记》“在乎山水之间也”，说明醉与山水之乐相通。“皋”“寓”注意字形。",
+          "inputSha256": "96f0b4a733ba51dd5cd763a0cdfb83d86a10a84ab4f589ef08033bf268d45630",
+          "generatedAt": "2026-10-03T01:38:23.281Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "①登东皋以舒啸，临清流而赋诗。（陶渊明《归去来兮辞》）\n②山水之乐，得之心而寓之酒也。（欧阳修《醉翁亭记》）",
+          "inputSha256": "96f0b4a733ba51dd5cd763a0cdfb83d86a10a84ab4f589ef08033bf268d45630",
+          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+          "uncertainties": [
+            "第②题也可填其他寄情山水的句子，如“野芳发而幽香，佳木秀而繁阴”。但紧承“醉翁之意不在酒，在乎山水之间也”的原文是“山水之乐，得之心而寓之酒也”，最为贴切。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2014-moxie:1",
+      "inputSha256": "d493296c772107454e72cb9b2b16ebad7414b299973c87cb4c405b62f9959b90",
+      "status": "disputed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "原题转录缺损或身份存疑，当前已给文本的双模型答案仅供核对，暂停确定判分；必须核原卷后恢复。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2014北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "依据当前显示题面：（1）落霞与孤鹜齐飞，秋水共长天一色。（2）感时花溅泪，恨别鸟惊心。（3）长风破浪会有时，直挂云帆济沧海。说明：当前记录标八分，却只显示三组、六个空，题面或有缺损；以上只回答已提供的空，不猜补未展示题目。",
+          "inputSha256": "d493296c772107454e72cb9b2b16ebad7414b299973c87cb4c405b62f9959b90",
+          "generatedAt": "2026-10-03T01:38:23.281Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "（1）落霞与孤鹜齐飞，秋水共长天一色。（王勃《滕王阁序》）\n（2）感时花溅泪，恨别鸟惊心。（杜甫《春望》）\n（3）长风破浪会有时，直挂云帆济沧海。（李白《行路难》其一）",
+          "inputSha256": "d493296c772107454e72cb9b2b16ebad7414b299973c87cb4c405b62f9959b90",
+          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+          "uncertainties": [
+            "题干标“共8分”，大题标“共11分”，材料只有3小题，可能有部分小题缺失。第（1）题题干本身已含所填诗句的意思，按原句作答。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2013-moxie:1",
+      "inputSha256": "e7a99d4352c7e6958ad9c74150ece23afbb9445a1b04715fe753264832be35a3",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2013北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "①氓之蚩蚩，抱布贸丝。②奈何取之尽锱铢，用之如泥沙。③小学而大遗，吾未见其明也。④知不可乎骤得，托遗响于悲风。⑤这次第，怎一个愁字了得。题目限选四道；这里列全供核对。“蚩蚩”“锱铢”“骤”不可写成形近字。",
+          "inputSha256": "e7a99d4352c7e6958ad9c74150ece23afbb9445a1b04715fe753264832be35a3",
+          "generatedAt": "2026-10-03T01:38:23.281Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "题目要求限选4题，现全部作答供参考：\n①氓之蚩蚩，抱布贸丝。（《诗经·氓》）\n②奈何取之尽锱铢，用之如泥沙。（杜牧《阿房宫赋》）\n③小学而大遗，吾未见其明也。（韩愈《师说》）\n④知不可乎骤得，托遗响于悲风。（苏轼《赤壁赋》）\n⑤这次第，怎一个愁字了得！（李清照《声声慢》）",
+          "inputSha256": "e7a99d4352c7e6958ad9c74150ece23afbb9445a1b04715fe753264832be35a3",
+          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2012-moxie:1",
+      "inputSha256": "b894e5bf2befeb29d63b506aeea126222f858f66bd7c7119c449f753cedd3ede",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2012北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "①博学而日参省乎己；知明而行无过矣。②风烟望五津；同是宦游人。③随风潜入夜，润物细无声。④斯是陋室，惟吾德馨。⑤同是天涯沦落人，相逢何必曾相识。⑥则游者众；则至者少。按题干已给出的“君子”“则”等连接词续写，不重复填入；“知明”按所学课文原字，不擅自写为“智明”。题目限选四道，以上全部列出便于核对。",
+          "inputSha256": "b894e5bf2befeb29d63b506aeea126222f858f66bd7c7119c449f753cedd3ede",
+          "generatedAt": "2026-10-03T01:38:23.281Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "题目要求限选4题，现全部作答供参考：\n①博学而日参省乎己；知明而行无过矣。（《荀子·劝学》）\n②风烟望五津；同是宦游人。（王勃《送杜少府之任蜀州》）\n③随风潜入夜，润物细无声。（杜甫《春夜喜雨》）\n④斯是陋室，惟吾德馨。（刘禹锡《陋室铭》）\n⑤同是天涯沦落人，相逢何必曾相识。（白居易《琵琶行》）\n⑥则游者众；则至者少。（王安石《游褒禅山记》）",
+          "inputSha256": "b894e5bf2befeb29d63b506aeea126222f858f66bd7c7119c449f753cedd3ede",
+          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2011-moxie:1",
+      "inputSha256": "6e8a062d24ff2efb47422edceacbcd1243fa109e4835f37a0e3c7110cf198089",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2011北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "①春服既成；浴乎沂。②水击三千里，抟扶摇而上者九万里。③庶竭驽钝，攘除奸凶。④浩浩汤汤；朝晖夕阴。⑤铁马秋风大散关；塞上长城空自许。⑥青山遮不住；江晚正愁余。当前题文的“曾暂”“徒于南冥”等录字有误，原篇名人物为曾皙，原文为“徙于南冥”；所填各空应按原作。题目限选四道，以上列全供核对。",
+          "inputSha256": "6e8a062d24ff2efb47422edceacbcd1243fa109e4835f37a0e3c7110cf198089",
+          "generatedAt": "2026-10-03T01:38:23.281Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "题目要求限选4题，现全部作答供参考：\n①春服既成；浴乎沂。（《论语·子路、曾皙、冉有、公西华侍坐》）\n②水击三千里，抟扶摇而上者九万里。（《庄子·逍遥游》）\n③庶竭驽钝，攘除奸凶。（诸葛亮《出师表》）\n④浩浩汤汤；朝晖夕阴。（范仲淹《岳阳楼记》）\n⑤铁马秋风大散关，塞上长城空自许。（陆游《书愤》）\n⑥青山遮不住；江晚正愁余。（辛弃疾《菩萨蛮·书江西造口壁》）",
+          "inputSha256": "6e8a062d24ff2efb47422edceacbcd1243fa109e4835f37a0e3c7110cf198089",
+          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+          "uncertainties": [
+            "题中篇名“曾暂”应为“曾皙”，系题文笔误，不影响作答。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2010-moxie:1",
+      "inputSha256": "ce42c1279b5e8efafc3bf9f24dca0f9ae8e7a01c38ad489d439a085313b0f6a4",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2010北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "①虚室有余闲；久在樊笼里。②或因寄所托，放浪形骸之外。③落霞与孤鹜齐飞，秋水共长天一色。④谈笑有鸿儒，往来无白丁。⑤只是朱颜改；恰似一江春水向东流。⑥芳草无情，更在斜阳外。当前题面“户庭无尘染”“云霄雨霁”“彩彻区明”有录入疑点，对应原作通常为“户庭无尘杂”“云销雨霁”“彩彻区明”；不把提供部分的错字带进答案。题目限选四道，以上列全。",
+          "inputSha256": "ce42c1279b5e8efafc3bf9f24dca0f9ae8e7a01c38ad489d439a085313b0f6a4",
+          "generatedAt": "2026-10-03T01:38:23.281Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "题目要求限选4题，现全部作答供参考：\n①虚室有余闲；久在樊笼里。（陶渊明《归园田居》，原文首句为“户庭无尘杂”）\n②或因寄所托，放浪形骸之外。（王羲之《兰亭集序》）\n③落霞与孤鹜齐飞，秋水共长天一色。（王勃《滕王阁序》，原文为“云销雨霁”）\n④谈笑有鸿儒，往来无白丁。（刘禹锡《陋室铭》）\n⑤只是朱颜改；恰似一江春水向东流。（李煜《虞美人》）\n⑥芳草无情，更在斜阳外。（范仲淹《苏幕遮》）",
+          "inputSha256": "ce42c1279b5e8efafc3bf9f24dca0f9ae8e7a01c38ad489d439a085313b0f6a4",
+          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+          "uncertainties": [
+            "题文中“尘染”应为“尘杂”，“云霄雨霁”应为“云销雨霁”，系题文录入错误。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2009-moxie:1",
+      "inputSha256": "02e2742f61518fa5690fb008aed355eeadcad85e239a79a1952dc93456ded886",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2009北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "①聊乘化以归尽，乐夫天命复奚疑。②月涌大江流；名岂文章著。③族秦者秦也，非天下也。④又岂在朝朝暮暮。当前题面将杜甫篇名录作《旅夜书杯》，应核正为《旅夜书怀》；“著”按原作字形填写。",
+          "inputSha256": "02e2742f61518fa5690fb008aed355eeadcad85e239a79a1952dc93456ded886",
+          "generatedAt": "2026-10-03T01:38:23.281Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "①聊乘化以归尽，乐夫天命复奚疑？（陶渊明《归去来兮辞》）\n②月涌大江流；名岂文章著。（杜甫《旅夜书怀》）\n③族秦者秦也，非天下也。（杜牧《阿房宫赋》）\n④又岂在朝朝暮暮！（秦观《鹊桥仙》）",
+          "inputSha256": "02e2742f61518fa5690fb008aed355eeadcad85e239a79a1952dc93456ded886",
+          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+          "uncertainties": [
+            "题中篇名“旅夜书杯”应为“旅夜书怀”，系录入错误。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2008-moxie:1",
+      "inputSha256": "d0af5c1a2134a750a25e7b9d676f558be9fcf1e54007c3ee2454574c9c179845",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2008北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "①渺沧海之一粟；羡长江之无穷。②盈盈一水间，脉脉不得语。③波心荡，冷月无声。④所给上下文应补：只合把清浊分辨。原段为“天地也！只合把清浊分辨，可怎生糊突了盗跖、颜渊？”现有转录没有明确显示第④处横线，须核原卷空位；“苏试”应为苏轼。",
+          "inputSha256": "d0af5c1a2134a750a25e7b9d676f558be9fcf1e54007c3ee2454574c9c179845",
+          "generatedAt": "2026-10-03T01:38:23.281Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "①渺沧海之一粟；羡长江之无穷。（苏轼《赤壁赋》）\n②盈盈一水间，脉脉不得语。（《古诗十九首·迢迢牵牛星》）\n③波心荡，冷月无声。（姜夔《扬州慢》）\n④只合把清浊分辨。（关汉卿《窦娥冤》【滚绣球】）",
+          "inputSha256": "d0af5c1a2134a750a25e7b9d676f558be9fcf1e54007c3ee2454574c9c179845",
+          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+          "uncertainties": [
+            "作者名“苏试”应为“苏轼”，系录入错误。第④题横线位置显示不清（“天地也！，”），依原曲文补“只合把清浊分辨”。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2007-moxie:1",
+      "inputSha256": "5b3e8a5b4a568a8e5934b1647da838a491f49d2c9b64bd186b3b65e508a5fbc7",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2007北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "①客之美我者，欲有求于我也。②晴空一鹤排云上，便引诗情到碧霄。③至今商女；后庭遗曲。④晓来谁染霜林醉，总是离人泪。题目任选三题，这里列全；“排云”“碧霄”“霜林”不要混写。",
+          "inputSha256": "5b3e8a5b4a568a8e5934b1647da838a491f49d2c9b64bd186b3b65e508a5fbc7",
+          "generatedAt": "2026-10-03T01:38:23.281Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "题目要求任选3题，现全部作答供参考：\n①客之美我者，欲有求于我也。（《邹忌讽齐王纳谏》）\n②晴空一鹤排云上，便引诗情到碧霄。（刘禹锡《秋词》）\n③至今商女；后庭遗曲。（王安石《桂枝香·金陵怀古》）\n④晓来谁染霜林醉？总是离人泪。（王实甫《长亭送别》）",
+          "inputSha256": "5b3e8a5b4a568a8e5934b1647da838a491f49d2c9b64bd186b3b65e508a5fbc7",
+          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2006-moxie:1",
+      "inputSha256": "3ddf8c3cc4f8322dd3fe9c553788524831358ab52cc14065a45884bfdcfd5ba2",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2006北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "①锲而不舍，金石可镂。②山不厌高，海不厌深。③后人哀之而不鉴之，亦使后人而复哀后人也。④今宵酒醒何处，杨柳岸晓风残月。题目任选三题，此处列全；注意“镂”“鉴”的写法以及第三题两个层次的“后人”。",
+          "inputSha256": "3ddf8c3cc4f8322dd3fe9c553788524831358ab52cc14065a45884bfdcfd5ba2",
+          "generatedAt": "2026-10-03T01:38:23.281Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "题目要求任选三题，现全部作答供参考：\n①锲而不舍，金石可镂。（《荀子·劝学》）\n②山不厌高，海不厌深。（曹操《短歌行》）\n③后人哀之而不鉴之，亦使后人而复哀后人也。（杜牧《阿房宫赋》）\n④今宵酒醒何处？杨柳岸，晓风残月。（柳永《雨霖铃》）",
+          "inputSha256": "3ddf8c3cc4f8322dd3fe9c553788524831358ab52cc14065a45884bfdcfd5ba2",
+          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2005-moxie:1",
+      "inputSha256": "4e58422b76e44268bced01fa29aaf9733aad2ace3156ebb14f91e573c72cd69f",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2005北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "①胡人不敢南下而牧马，士不敢弯弓而报怨。②君当作磐石；磐石无转移。③江娥啼竹素女愁；昆山玉碎凤凰叫。④废池乔木，犹厌言兵。第一问按课文写“报怨”，不要按现代常用词改成“抱怨”；第二问“磐”与题面“纫”均注意原字。题目限选三题，此处列全。",
+          "inputSha256": "4e58422b76e44268bced01fa29aaf9733aad2ace3156ebb14f91e573c72cd69f",
+          "generatedAt": "2026-10-03T01:38:23.281Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "题目要求限选3题，现全部作答供参考：\n①胡人不敢南下而牧马，士不敢弯弓而报怨。（贾谊《过秦论》）\n②君当作磐石；磐石无转移。（《孔雀东南飞》）\n③江娥啼竹素女愁；昆山玉碎凤凰叫。（李贺《李凭箜篌引》）\n④废池乔木，犹厌言兵。（姜夔《扬州慢》）",
+          "inputSha256": "4e58422b76e44268bced01fa29aaf9733aad2ace3156ebb14f91e573c72cd69f",
+          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+          "uncertainties": [
+            "第①题横线排版断行，看似有三处空，按原文实为两句：“胡人不敢南下而牧马，士不敢弯弓而报怨”。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2004-moxie:1",
+      "inputSha256": "cc81db6e659fb49543b63400b604b400af51c42cbe7186dc68606c55c6884d3d",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2004北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "灭六国者六国也；族秦者秦也；而为秦人积威之所劫；为国者无使为积威之所劫哉。《阿房宫赋》两处均先指明灭亡者自身的责任，《六国论》则以“为……所”被动结构揭示为积威所胁迫并劝诫治国者，勿漏“而”“之”“哉”。",
+          "inputSha256": "cc81db6e659fb49543b63400b604b400af51c42cbe7186dc68606c55c6884d3d",
+          "generatedAt": "2026-10-03T01:38:23.281Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "杜牧《阿房宫赋》：灭六国者六国也；族秦者秦也。\n苏洵《六国论》：而为秦人积威之所劫；为国者无使为积威之所劫哉！",
+          "inputSha256": "cc81db6e659fb49543b63400b604b400af51c42cbe7186dc68606c55c6884d3d",
+          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2003-moxie:1",
+      "inputSha256": "372f6921ab47adfa0052323ea61f23d9fca6c4eb2a12044a30416f621af4d4e1",
+      "status": "disputed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "原题转录缺损或身份存疑，当前已给文本的双模型答案仅供核对，暂停确定判分；必须核原卷后恢复。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2003北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "《琵琶行》紧接两句为：银瓶乍破水浆迸，铁骑突出刀枪鸣。《前赤壁赋》紧接“如泣如诉”的两句为：余音袅袅，不绝如缕。其后另有“舞幽壑之潜蛟，泣孤舟之嫠妇”。当前题面标六分而展示的空位结构不清，不能确认后两句是否也在原卷设空；应回到原卷定位。以上明确区分已给上下文所接原句与后续原文，不能将可能遗漏空位当作已确认。",
+          "inputSha256": "372f6921ab47adfa0052323ea61f23d9fca6c4eb2a12044a30416f621af4d4e1",
+          "generatedAt": "2026-10-03T01:38:23.281Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "白居易《琵琶行》：银瓶乍破水浆迸，铁骑突出刀枪鸣。\n苏轼《赤壁赋》：余音袅袅，不绝如缕；舞幽壑之潜蛟，泣孤舟之嫠妇。",
+          "inputSha256": "372f6921ab47adfa0052323ea61f23d9fca6c4eb2a12044a30416f621af4d4e1",
+          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+          "uncertainties": [
+            "《赤壁赋》部分横线排版断行，空数不易辨认。按原文，“如泣如诉”后依次为“余音袅袅，不绝如缕。舞幽壑之潜蛟，泣孤舟之嫠妇”，现全部写出。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+            "stage": "independent"
+          }
+        }
+      }
+    },
+    {
+      "id": "2002-moxie:1",
+      "inputSha256": "9312867a3590ea76db8e69a44269380e28ebdf2dbfdbf1505b4bd9ef21ca488b",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-03T01:38:23.281Z",
+      "sources": [
+        {
+          "type": "source_material",
+          "title": "站内2002北京卷原题及完整材料"
+        }
+      ],
+      "currentVersion": "gpt_6_astra",
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 独立作答",
+          "text": "材料中的诗句补：风雨不动安如山。①少陵：指杜甫，杜甫自号少陵野老，文中的老杜、子美也都指杜甫。②为难：较为难能可贵、比较难做到。这里比较杜甫愿自己受苦而让他人受益，与白居易希望推己之暖及人，认为杜甫的愿望更难能可贵；不是现代汉语中“使人难办、故意刁难”的意思。当前单独题干只列解释项，故将材料中另见的诗句空位一并注明。",
+          "inputSha256": "9312867a3590ea76db8e69a44269380e28ebdf2dbfdbf1505b4bd9ef21ca488b",
+          "generatedAt": "2026-10-03T01:38:23.281Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "填写诗句：风雨不动安如山！（杜甫《茅屋为秋风所破歌》）\n解释：\n①少陵：指杜甫。杜甫曾居长安城南少陵附近，自号“少陵野老”，后人因称他“杜少陵”。\n②为难：是难能（可贵）的，即更难做到。杜甫宁愿自己受苦也要使天下寒士得庇护，比白居易推己之利以利人更难得。",
+          "inputSha256": "9312867a3590ea76db8e69a44269380e28ebdf2dbfdbf1505b4bd9ef21ca488b",
+          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+          "uncertainties": [
+            "本题的question字段只列出词语解释，填写诗句的要求见于题目标题，故一并作答。原题画线词语无法从文本中看出，按question字段所列“少陵”“为难”解释。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+            "stage": "independent"
+          }
+        }
+      }
+    }
+  ],
+  "releaseBlockers": [
+    {
+      "id": "2025-transcription",
+      "status": "open",
+      "detail": "Review-2025: 夕阳春应为舂；不悦/说应核正为不侻/侻。Correct source with retained input provenance and rerun affected context review."
+    },
+    {
+      "id": "claude-annotations",
+      "status": "open",
+      "detail": "Earlier jobs omitted record-level annotations; audit all original jobs, supplement affected units with full annotations and preserve actual input evidence."
+    },
+    {
+      "id": "historical-moxie-transcription",
+      "status": "open",
+      "detail": "2014 and 2003 question identity/blank coverage; 2008 missing blank; 2009 title typo; 2010/2011 transcription; 2016 points/blank count. See root memorization reviews; retain source evidence before correcting."
     }
   ]
 }

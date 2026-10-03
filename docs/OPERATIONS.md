@@ -232,4 +232,4 @@ Depends on the accepted User Center learning journal/recorder before this leaf m
 
 `data/answer-authority.json`逐題綁定完整材料、題幹及原有身份的SHA-256；draft不改現行答案，reviewed保存完整選項集合，disputed不得帶確定判分鍵。`scripts/lib/answer-authority.mjs`校驗後才可投影，保留全部歷史模型版本。現有45個單元完成GPT-6 Astra重答與實際Claude Opus 5.5覆核；其中4個Claude答案另有來源覆核修訂，原獨立回覆仍保留。612是可選單元數，部分包含多個編號小題；尚餘567個及專題獨有題。
 
-`npm run check:answer-completion`要求全部612單元完成且各有實證雙模型結果，目前如期拒絕45/612，不能將普通構建通過當成全量重答完成。`scripts/project-answers.mjs`正式輸出要求完整覆蓋；部分預覽只可輸出到專案外，現行data/all.json未改。動態模型介面已加入allowlist；逐題顯示模型、日期、來源、分歧與歷史版本。Node24.18.0下25項針對性測試通過。本候選未部署、未瀏覽器或真實登入驗收。續作權威：/Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/HANDOFF.md。
+`npm run check:answer-completion`要求全部612單元完成且各有實證雙模型結果；正式build-pages也在寫出任何檔案之前強制同一門檻，直接投影權威答案到產物data/all.json，release.json記錄實際revision及覆核數，禁止混合預覽冒充完成版。`scripts/project-answers.mjs`正式輸出要求完整覆蓋；部分預覽只可輸出到專案外，現行data/all.json未改。動態模型介面已加入allowlist；逐題顯示模型、日期、來源、分歧與歷史版本。原25項針對性測試通過；續作加入正式建置拒絕未完成答案且不寫出檔案的測試。本候選未部署、未瀏覽器或真實登入驗收。續作權威：/Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/HANDOFF.md。

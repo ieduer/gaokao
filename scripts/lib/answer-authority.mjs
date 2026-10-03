@@ -52,6 +52,7 @@ export function validateAuthority(records, authority, { requireComplete = false 
   }
   if (requireComplete) {
     if (seen.size !== index.size) throw Error(`Incomplete review: ${seen.size}/${index.size}`);
+    if(authority.releaseBlockers?.some(x=>x.status!=='resolved'))throw Error('Unresolved source or evidence blockers');
     for (const review of authority.questions) {
       const models = Object.values(review.modelAnswers || {});
       if (review.status === 'draft' || !models.some(x => x.modelId === 'gpt-6-astra')

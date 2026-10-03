@@ -2,6 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { questionDigest, validateAuthority, projectAuthority } from './lib/answer-authority.mjs';
 import { versionsForQuestion } from '../assets/js/answer-versions.js';
+import { spawnSync } from 'node:child_process';
+import { readFileSync, existsSync } from 'node:fs';
 
 const records = [{id:'2009-sanwen',topic:'阅读',materials:[{key:'m1',text:'完整材料'}],questions:[{qIndex:1,text:'选两项：A甲 B乙 C丙 D丁 E戊'}],
   ai_answers:{1:'旧解析'},ai_answer_current_version:'old',ai_answer_versions:{old:{label:'历史模型',model:'old-model',answers:{1:'旧解析'}}}}];
@@ -40,8 +42,26 @@ test('draft review leaves current answers unchanged; disputed review cannot grad
   a.questions[0].status='disputed';assert.throws(()=>projectAuthority(records,a),/Dispute/);
   a.questions[0].correctOptions=[];assert.match(projectAuthority(records,a)[0].ai_answers[1],/暂停确定判分/);
 });
+test('unresolved source or evidence issue blocks even complete dual-model coverage',()=>{
+  const a=fixture();a.questions[0].modelAnswers.claude={...a.questions[0].modelAnswers.gpt_6_astra,
+    modelId:'claude-opus-5-5',provenance:{kind:'cli_response',evidence:'test fixture',responseModel:'claude-opus-5-5'}};
+  validateAuthority(records,a,{requireComplete:true});
+  a.releaseBlockers=[{id:'source',status:'open'}];
+  assert.throws(()=>validateAuthority(records,a,{requireComplete:true}),/Unresolved source/);
+});
 test('new model names and per-question dates display without a hardcoded list',()=>{
   const out=projectAuthority(records,fixture());const versions=versionsForQuestion(out[0],1);
   assert.equal(versions[0].model,'gpt-6-astra');assert.equal(versions[0].current,true);
   assert.equal(versions[0].generatedAt,'2026-10-02T23:00:00Z');assert.equal(versions[1].text,'旧解析');
+});
+test('release build refuses incomplete reviews before writing output',()=>{
+  const root=new URL('../',import.meta.url).pathname;
+  const candidate=JSON.parse(readFileSync(new URL('../data/answer-authority.json',import.meta.url)));
+  const data=JSON.parse(readFileSync(new URL('../data/all.json',import.meta.url)));
+  if(candidate.questions.length===data.reduce((n,r)=>n+r.questions.length,0))return;
+  const target=`/private/tmp/cf-task-answers-six-sites-20261002/refused-gk-output-${process.pid}`;
+  assert.equal(existsSync(target),false);
+  const result=spawnSync(process.execPath,['scripts/build-pages.mjs',target],{cwd:root,encoding:'utf8'});
+  assert.notEqual(result.status,0);assert.match(result.stderr,/Incomplete review/);
+  assert.equal(existsSync(target),false);
 });
