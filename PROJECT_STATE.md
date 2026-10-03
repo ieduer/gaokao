@@ -1,3 +1,7 @@
+## 2026-10-02 — Current answer candidate checkpoint, not deployed
+
+119/612 selectable units have both actual-model outputs: 115 reviewed, four disputed. The remaining 493 and specialist-only exercises still need review. Formal release requires full-context evidence including annotations, no open source blockers, and the registered publication transaction. Older input hashes and complete source-review snapshots are retained; changed-context answers cannot qualify as current simply by relabeling a hash. Current source-correction and provider state is in `/Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/HANDOFF.md`. Local tests are not candidate or production acceptance. All learner history and accepted production remain unchanged.
+
 ## 2026-09-25 — Learning capture qualified for guarded publication
 
 Serial owner01a0d9ec-8876-72f1-bc40-870add9fde19. Candidate extends the accepted modern Chinese-only source897ca30111e9d96adcaf7bf1aba95c1f2e936a00; current live Pages remainsba438f25-c986-44e3-aefe-f5bd063ec952. Fresh provider/source/public-manifest readback confirms main, registered automatic guard and Functions. Corpus, Functions and pinned publishing policy are unchanged.

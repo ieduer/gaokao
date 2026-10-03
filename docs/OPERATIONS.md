@@ -230,6 +230,8 @@ Candidate only; existing accepted production remains unchanged. Explicit learnin
 Depends on the accepted User Center learning journal/recorder before this leaf may publish. Record-only operations do not alter grading or reading credit. Source corpus and score rules are unchanged. Release through the existing registered publisher, then verify actual authenticated source-to-central reload and failure recovery; local tests/build alone do not establish deployment. Rollback code only while preserving central records and local pending originals. Evidence is tracked under the workspace learning-records-validity-20260925 task.
 ## 2026-10-02 本地答案權威候選（未發布）
 
-`data/answer-authority.json`逐題綁定完整材料、題幹及原有身份的SHA-256；draft不改現行答案，reviewed保存完整選項集合，disputed不得帶確定判分鍵。`scripts/lib/answer-authority.mjs`校驗後才可投影，保留全部歷史模型版本。現有45個單元完成GPT-6 Astra重答與實際Claude Opus 5.5覆核；其中4個Claude答案另有來源覆核修訂，原獨立回覆仍保留。612是可選單元數，部分包含多個編號小題；尚餘567個及專題獨有題。
+`data/answer-authority.json`逐題綁定材料、題幹及原有身份的SHA-256；另以inputContextSha256綁定包括record.annotation的完整輸入。v1雜湊保留供舊證據核對，不可替換成新題面雜湊冒充重答。draft不改現行答案，reviewed保存完整選項集合，disputed不得帶確定判分鍵。題面更正前以snapshotReview保留舊題面和當時全部答案；歷史版本不計入當前雙模型覆核，逐題及整卷介面可展開舊題面。現有119個單元有雙模型輸出，115已核對、4有爭議；完整上下文證據仍在補查。612是可選單元數，部分包含多個編號小題；尚餘493個及專題獨有題。
+
+正式完成門檻要求Astra與Claude的完整上下文證據都匹配當前題面，包含註釋；未清除的releaseBlockers會阻止產物輸出。相同選項、兩模型同意或v1雜湊相同，均不能替代註釋缺漏的補查。新增歷史題面與上下文測試後，答案、進度和學習記錄測試共30項通過；頁面真實驗收仍待後續候選完成。
 
 `npm run check:answer-completion`要求全部612單元完成且各有實證雙模型結果；正式build-pages也在寫出任何檔案之前強制同一門檻，直接投影權威答案到產物data/all.json，release.json記錄實際revision及覆核數，禁止混合預覽冒充完成版。`scripts/project-answers.mjs`正式輸出要求完整覆蓋；部分預覽只可輸出到專案外，現行data/all.json未改。動態模型介面已加入allowlist；逐題顯示模型、日期、來源、分歧與歷史版本。原25項針對性測試通過；續作加入正式建置拒絕未完成答案且不寫出檔案的測試。本候選未部署、未瀏覽器或真實登入驗收。續作權威：/Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/HANDOFF.md。

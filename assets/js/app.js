@@ -698,6 +698,15 @@ function renderAnswerVersions(aiBody, rec, qIndex) {
       section.appendChild(metadata);
     }
     section.appendChild(text);
+    if (version.historicalSource) {
+      const source = version.historicalSource, context = document.createElement('details');
+      const label = document.createElement('summary'), body = document.createElement('div');
+      label.textContent = '查看此版本对应的旧题面';
+      body.className = 'ai-version-text';
+      body.textContent = [source.topic, ...(source.materials || []).map(m => m.text),
+        source.annotation, ...(source.questions || []).map(q => q.text)].filter(Boolean).join('\n\n');
+      context.append(label, body); section.appendChild(context);
+    }
     aiBody.appendChild(section);
   }
   if (review?.sources?.length) {
@@ -1046,6 +1055,7 @@ function buildYearExam(year) {
   const flatAiAnswers = {};
   const flatAnswerVersions = {};
   const flatAnswerReviews = {};
+  const flatAnswerReviewHistory = {};
   const flatCurrentVersions = {};
   let qCounter = 0;
   let totalScore = 0;
@@ -1074,6 +1084,8 @@ function buildYearExam(year) {
       if (ans) flatAiAnswers[String(qCounter)] = ans;
       const review = reviewForQuestion(rec, q.qIndex);
       if (review) flatAnswerReviews[String(qCounter)] = review;
+      if (rec.answer_review_history?.[String(q.qIndex)])
+        flatAnswerReviewHistory[String(qCounter)] = rec.answer_review_history[String(q.qIndex)];
       flatCurrentVersions[String(qCounter)] = review?.currentVersion || rec.ai_answer_current_version;
       for (const spec of answerVersionSpecs(rec)) {
         const versionAnswer = rec.ai_answer_versions?.[spec.key]?.answers?.[String(q.qIndex)];
@@ -1125,6 +1137,7 @@ function buildYearExam(year) {
     ai_answers: flatAiAnswers,
     ai_answer_versions: flatAnswerVersions,
     answer_reviews: flatAnswerReviews,
+    answer_review_history: flatAnswerReviewHistory,
     ai_answer_current_versions: flatCurrentVersions,
     totalScore,
   };

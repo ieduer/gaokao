@@ -18,7 +18,11 @@ export function versionsForQuestion(record, qIndex) {
   const versions = answerVersionSpecs(record).flatMap(spec => {
     const slot = record.ai_answer_versions[spec.key], text = slot.answers?.[key];
     if (!text) return [];
+    const historicalContext = slot.provenance?.[key]?.historicalSourceContext;
+    const historicalSource = historicalContext
+      ? record.answer_review_history?.[key]?.find(entry => entry.contextSha256 === historicalContext)?.source : null;
     return [{ ...spec, label:slot.provenance?.[key]?.label || spec.label,
+      historicalSource: historicalSource || null,
       text, current: spec.key === current, independentlyReviewed: (review?.modelVersions?.includes(spec.key) && slot.provenance?.[key]?.stage !== 'source_review') || false,
       inReview:review?.modelVersions?.includes(spec.key) || false, assessment:review?.assessments?.[spec.key] || null,
       generatedAt: slot.provenance?.[key]?.generatedAt || slot.generated_at || null }];

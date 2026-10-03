@@ -98,12 +98,15 @@ test('whole-paper view preserves dynamic model identity and per-question current
   const f=fixture();
   f.run(`const r=state.data.find(r=>r.id==='2026-guwen');
     r.ai_answer_versions.gpt_6_astra={model:'gpt-6-astra',label:'GPT-6 Astra',answers:{1:'synthetic new answer'},provenance:{1:{generatedAt:'2026-10-02T23:00:00Z'}}};
+    r.ai_answer_versions.history_fixture={model:'gpt-6-astra',label:'旧题面',answers:{1:'old context answer'},provenance:{1:{historicalSourceContext:'fixture-context'}}};
+    r.answer_review_history={1:[{contextSha256:'fixture-context',source:{materials:[{text:'原题面材料'}]}}]};
     r.answer_reviews={1:{status:'reviewed',currentVersion:'gpt_6_astra',modelVersions:['gpt_6_astra'],correctOptions:['D']}};`);
   const exam=f.run('buildYearExam(2026)'),q=exam.questions.find(q=>q.origRecId==='2026-guwen'&&q.origQIndex===1);
   const versions=versionsForQuestion(exam,q.qIndex);
   assert.equal(versions[0].model,'gpt-6-astra');assert.equal(versions[0].current,true);
   assert.equal(versions[0].generatedAt,'2026-10-02T23:00:00Z');
   assert.equal(exam.answer_reviews[q.qIndex].correctOptions[0],'D');
+  assert.equal(versions.find(v=>v.key==='history_fixture').historicalSource.materials[0].text,'原题面材料');
   const untouched=exam.questions.find(q=>q.origRecId==='2026-feilian');
   assert.equal(versionsForQuestion(exam,untouched.qIndex)[0].key,'claude_opus_5');
 });

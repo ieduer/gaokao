@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { questionDigest, validateAuthority, projectAuthority } from './lib/answer-authority.mjs';
+import { questionDigest, questionContextDigest, snapshotReview, validateAuthority, projectAuthority } from './lib/answer-authority.mjs';
 import { versionsForQuestion } from '../assets/js/answer-versions.js';
 import { spawnSync } from 'node:child_process';
 import { readFileSync, existsSync } from 'node:fs';
@@ -9,10 +9,11 @@ const records = [{id:'2009-sanwen',topic:'阅读',materials:[{key:'m1',text:'完
   ai_answers:{1:'旧解析'},ai_answer_current_version:'old',ai_answer_versions:{old:{label:'历史模型',model:'old-model',answers:{1:'旧解析'}}}}];
 function fixture() {
   const inputSha256=questionDigest(records[0],records[0].questions[0]);
-  return {schemaVersion:1,revision:'test',questions:[{id:'2009-sanwen:1',inputSha256,status:'reviewed',kind:'multiple_choice',
+  const inputContextSha256=questionContextDigest(records[0],records[0].questions[0]);
+  return {schemaVersion:1,revision:'test',questions:[{id:'2009-sanwen:1',inputSha256,inputContextSha256,status:'reviewed',kind:'multiple_choice',
     correctOptions:['B','E'],explanation:'逐项比较',reviewedBy:'test-reviewer',reviewedAt:'2026-10-02T23:00:00Z',sources:[{type:'test_fixture'}],
     currentVersion:'gpt_6_astra',modelAnswers:{gpt_6_astra:{modelId:'gpt-6-astra',label:'GPT-6 Astra',text:'答案：B、E',
-      inputSha256,generatedAt:'2026-10-02T23:00:00Z',provenance:{kind:'codex_turn',evidence:'test fixture'}}}}]};
+      inputSha256,inputContextSha256,generatedAt:'2026-10-02T23:00:00Z',provenance:{kind:'codex_turn',evidence:'test fixture'}}}}]};
 }
 test('retains old answers and IDs while projecting complete multiple-choice key',()=>{
   const original=structuredClone(records),out=projectAuthority(records,fixture());
@@ -53,6 +54,38 @@ test('new model names and per-question dates display without a hardcoded list',(
   const out=projectAuthority(records,fixture());const versions=versionsForQuestion(out[0],1);
   assert.equal(versions[0].model,'gpt-6-astra');assert.equal(versions[0].current,true);
   assert.equal(versions[0].generatedAt,'2026-10-02T23:00:00Z');assert.equal(versions[1].text,'旧解析');
+});
+test('annotation-only source change cannot reuse full-context approval',()=>{
+  const changed=structuredClone(records);changed[0].annotation='说明选项含义的新注释';
+  assert.equal(questionDigest(changed[0],changed[0].questions[0]),fixture().questions[0].inputSha256);
+  assert.throws(()=>validateAuthority(changed,fixture()),/Question context changed/);
+});
+test('omitted notes do not qualify as complete dual-model context',()=>{
+  const a=fixture(),review=a.questions[0];
+  review.modelAnswers.claude={...review.modelAnswers.gpt_6_astra,modelId:'claude-opus-5-5',
+    provenance:{kind:'cli_response',evidence:'test fixture',responseModel:'claude-opus-5-5'}};
+  delete review.modelAnswers.claude.inputContextSha256;
+  assert.throws(()=>validateAuthority(records,a,{requireComplete:true}),/Incomplete full-context evidence/);
+});
+test('changed source retains exact old inputs and model results outside current approval',()=>{
+  const changed=structuredClone(records),a=fixture(),review=a.questions[0];
+  const history=snapshotReview(records[0],records[0].questions[0],review);
+  changed[0].materials[0].text='改正后的完整材料';
+  review.history=[history];review.inputSha256=questionDigest(changed[0],changed[0].questions[0]);
+  review.inputContextSha256=questionContextDigest(changed[0],changed[0].questions[0]);
+  review.modelAnswers.gpt_6_astra={...review.modelAnswers.gpt_6_astra,inputSha256:review.inputSha256,
+    inputContextSha256:review.inputContextSha256,text:'新题面重新核对后的答案'};
+  const out=projectAuthority(changed,a),oldSlot=Object.entries(out[0].ai_answer_versions).find(([k])=>k.includes('_source_'));
+  assert.equal(oldSlot[1].answers[1],'答案：B、E');
+  assert.equal(oldSlot[1].provenance[1].inputSha256,history.review.inputSha256);
+  assert.equal(out[0].answer_review_history[1][0].source.materials[0].text,'完整材料');
+  assert.ok(!out[0].answer_reviews[1].modelVersions.includes(oldSlot[0]));
+  const version=versionsForQuestion(out[0],1).find(v=>v.key===oldSlot[0]);
+  assert.equal(version.historicalSource.materials[0].text,'完整材料');
+  assert.equal(version.inReview,false);
+  assert.deepEqual(projectAuthority(out,a),out);
+  a.questions[0].history[0].source.materials[0].text='偷换旧输入';
+  assert.throws(()=>projectAuthority(changed,a),/Question changed/);
 });
 test('release build refuses incomplete reviews before writing output',()=>{
   const root=new URL('../',import.meta.url).pathname;
