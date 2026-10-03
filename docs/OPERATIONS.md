@@ -230,7 +230,7 @@ Candidate only; existing accepted production remains unchanged. Explicit learnin
 Depends on the accepted User Center learning journal/recorder before this leaf may publish. Record-only operations do not alter grading or reading credit. Source corpus and score rules are unchanged. Release through the existing registered publisher, then verify actual authenticated source-to-central reload and failure recovery; local tests/build alone do not establish deployment. Rollback code only while preserving central records and local pending originals. Evidence is tracked under the workspace learning-records-validity-20260925 task.
 ## 2026-10-02 本地答案權威候選（未發布）
 
-`data/answer-authority.json`逐題綁定材料、題幹及原有身份的SHA-256；另以inputContextSha256綁定包括record.annotation的完整輸入。v1雜湊保留供舊證據核對，不可替換成新題面雜湊冒充重答。draft不改現行答案，reviewed保存完整選項集合，disputed不得帶確定判分鍵。題面更正前以snapshotReview保留舊題面和當時全部答案；歷史版本不計入當前雙模型覆核，逐題及整卷介面可展開舊題面。現有119個單元有雙模型輸出，115已核對、4有爭議；完整上下文證據仍在補查。612是可選單元數，部分包含多個編號小題；尚餘493個及專題獨有題。
+`data/answer-authority.json`逐題綁定材料、題幹及原有身份的SHA-256；另以inputContextSha256綁定包括record.annotation的完整輸入。v1雜湊保留供舊證據核對，不可替換成新題面雜湊冒充重答。draft不改現行答案，reviewed保存完整選項集合，disputed不得帶確定判分鍵。題面更正前以snapshotReview保留舊題面和當時全部答案；歷史版本不計入當前雙模型覆核，逐題及整卷介面可展開舊題面。現有145個單元有雙模型輸出，141已核對、4有爭議；完整上下文證據仍在補查。612是可選單元數，部分包含多個編號小題；尚餘467個及專題獨有題。2023新增26個單元已按完整題面雙模型作答；字數核查與解析限界見REVIEW-2023.md。2023餘留OCR問題仍是發布阻擋項。
 
 正式完成門檻要求Astra與Claude的完整上下文證據都匹配當前題面，包含註釋；未清除的releaseBlockers會阻止產物輸出。相同選項、兩模型同意或v1雜湊相同，均不能替代註釋缺漏的補查。新增歷史題面與上下文測試後，答案、進度和學習記錄測試共30項通過；頁面真實驗收仍待後續候選完成。
 
