@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261003-reviewed-415-qualified-2011",
+  "revision": "20261003-source2010-qualified-pending",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -3361,13 +3361,11 @@
     },
     {
       "id": "2010-guwen:2",
-      "inputSha256": "b505082ac10295924361b13ae58ab3aee9c0f1fa5aa19f324249cc1c1c9f4d31",
-      "status": "reviewed",
+      "inputSha256": "b266a33e0c0a41034e581e6841c57fac96668e1ffdfe3c2bd0858c8885ffd68b",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "D"
-      ],
-      "explanation": "结论D。清优主之的指代依上下文是卖药来者，不是药材。",
+      "correctOptions": [],
+      "explanation": "2010题面与标记校勘后待完整重审，原输入及全部完整模型存history。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T03:03:23.208Z",
       "sources": [
@@ -3381,87 +3379,171 @@
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 完整附注复核",
-          "text": "答案：D。应益广与益厚报清中的益都修饰程度，表示更加。A项前之指受到优厚接待的来者，后之用于清富这一主谓性结构。B项前以引出市人发笑的原因，后以引出待人的态度。C项前其与欤配合表示推测，后其限定所坚持的道。应按前文人物、动作和句末语气定位，不能把两个其都机械译为他的。",
-          "inputSha256": "b505082ac10295924361b13ae58ab3aee9c0f1fa5aa19f324249cc1c1c9f4d31",
-          "generatedAt": "2026-10-03T03:03:23.208Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review_reaffirmation",
-            "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
-            "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "priorAnswerSha256": "24a9bf26c463d8bafc00636101b2045e9bc1a522a18c2f6c981e4a5a9b765b57",
-            "annotationEffect": "市、雠、直、蚩四注已读，两个益均为程度加深。正文雠和蚩注号与注释不一致，列为源证阻挡。"
+      "modelAnswers": {},
+      "inputContextSha256": "4dfc4a1c3950abad91407e998cc5be9319fd6ad5da4556db7d32ed85947634fa",
+      "history": [
+        {
+          "source": {
+            "id": "2010-guwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "宋清，长安西部药市①人也，居善药。有自山泽来，必归宋清氏，清优主之。长安医工得清药辅其方，辄易雠①，咸誉清。疾病庀疡者，亦毕乐就清求药，冀速已。清皆 乐然响应，虽不持钱者，皆与善药，积券如山，未尝诣取直③。或不识遥与券，清不为辞。岁终，度不能报，辄焚券，终不复言。市人以其异，皆笑之曰：“清，蚩②妄人也。”或曰：“清其有道者欤？”清闻之曰：“清逐利以活妻子耳，非有道也。然谓我蚩妄者也亦谬。”\n\n清居药四十年，所焚券者百数十人，或至大官，或连数州，受俸博，其馈遗清者，相属于户。虽不能立报，而以赊死者千百，不害清之为富也。清之取利远，远故大。岂若小市 人哉？一不得直，则怫然怒，再则骂而仇耳。彼之为利不亦翦翦乎？吾见蚩之有在也。清诚以是得大利，又不为妄，执其道不废，卒以富。求者益众，其应益广。或斥弃沉废，亲与交；视之落然者，清不以怠遇其人，必与善药如故。一旦复柄用，益厚报清。其远取利皆类此。\n\n吾观今之交乎人者，炎而附，寒而弃，鲜有能类清之为者。呜呼！清，市人也，今之交有能望报如清之远者乎？幸而庶几，则天下之穷困废辱得不死亡者众矣。柳先生曰：“清居市不为市之道，然而居朝廷、居官府、居庠塾乡党以士大夫自名者，反争为之不已，悲夫！然则清非独异于市人也。” \n\n（取材于柳宗元《宋清传》）"
+              }
+            ],
+            "topic": "二、本大题共4小题，每小题3分，共12分。阅读下面的文言文，完成6—9题。",
+            "annotation": "注：①市：买卖场所，后文也指经商、交易。 ②雠：这里指售出、成交。③直：价值、价钱 ④蚩：同“痴”。",
+            "annotations": [
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 32,
+                "end": 33,
+                "anchor": "之"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 134,
+                "end": 135,
+                "anchor": "以"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 42,
+                "end": 43,
+                "anchor": "其"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 339,
+                "end": 340,
+                "anchor": "益"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 2,
+                "id": "q2",
+                "text": "7. 下列各组语句中，加点的词的意义和用法都相同的一组是\n\nA. 清优主*之*    不害清*之*富也\nB. 市人*以*其异，皆笑之       清不*以*怠遇其人\nC. 清*其*有道者欤      执*其*道不废\nD. 求者益众，其应*益*广       一旦复柄用，*益*厚报清",
+                "score": null
+              }
+            ]
           },
-          "inputContextSha256": "2bde03e6e78ca3b6991375e674e679e5e5f784b812f8a3c130d8ce0915848e55"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 来源复核后修订",
-          "text": "答案：D。\n选D。A项：“清优主之”的“之”是代词，指卖药材的人；“不害清之为富也”的“之”用在主谓之间，取消句子独立性，不同。B项：“市人以其异”的“以”是介词“因为”；“清不以怠遇其人”的“以”是介词“用”（用怠慢的态度），不同。C项：“清其有道者欤”的“其”是语气副词，表揣测，“大概”；“执其道不废”的“其”是代词“他的”，不同。D项：“其应益广”“益厚报清”的“益”都是副词“更加”，相同。",
-          "inputSha256": "b505082ac10295924361b13ae58ab3aee9c0f1fa5aa19f324249cc1c1c9f4d31",
-          "inputContextSha256": "2bde03e6e78ca3b6991375e674e679e5e5f784b812f8a3c130d8ce0915848e55",
-          "generatedAt": "2026-10-03T03:01:54.821132+00:00",
-          "uncertainties": [
-            "A项选项写作“不害清之富也”，材料原文为“不害清之为富也”，略有出入，不影响判断。"
-          ],
-          "selectedOptions": [
-            "D"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
-            "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
-            "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
-            "stage": "source_review"
+          "review": {
+            "id": "2010-guwen:2",
+            "inputSha256": "b505082ac10295924361b13ae58ab3aee9c0f1fa5aa19f324249cc1c1c9f4d31",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "D"
+            ],
+            "explanation": "结论D。清优主之的指代依上下文是卖药来者，不是药材。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:03:23.208Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内完整题目及相关材料"
+              },
+              {
+                "type": "dictionary_revision",
+                "title": "文言站2026-09-16-r3词典校订，保留争议"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "答案：D。应益广与益厚报清中的益都修饰程度，表示更加。A项前之指受到优厚接待的来者，后之用于清富这一主谓性结构。B项前以引出市人发笑的原因，后以引出待人的态度。C项前其与欤配合表示推测，后其限定所坚持的道。应按前文人物、动作和句末语气定位，不能把两个其都机械译为他的。",
+                "inputSha256": "b505082ac10295924361b13ae58ab3aee9c0f1fa5aa19f324249cc1c1c9f4d31",
+                "generatedAt": "2026-10-03T03:03:23.208Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "24a9bf26c463d8bafc00636101b2045e9bc1a522a18c2f6c981e4a5a9b765b57",
+                  "annotationEffect": "市、雠、直、蚩四注已读，两个益均为程度加深。正文雠和蚩注号与注释不一致，列为源证阻挡。"
+                },
+                "inputContextSha256": "2bde03e6e78ca3b6991375e674e679e5e5f784b812f8a3c130d8ce0915848e55"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "答案：D。\n选D。A项：“清优主之”的“之”是代词，指卖药材的人；“不害清之为富也”的“之”用在主谓之间，取消句子独立性，不同。B项：“市人以其异”的“以”是介词“因为”；“清不以怠遇其人”的“以”是介词“用”（用怠慢的态度），不同。C项：“清其有道者欤”的“其”是语气副词，表揣测，“大概”；“执其道不废”的“其”是代词“他的”，不同。D项：“其应益广”“益厚报清”的“益”都是副词“更加”，相同。",
+                "inputSha256": "b505082ac10295924361b13ae58ab3aee9c0f1fa5aa19f324249cc1c1c9f4d31",
+                "inputContextSha256": "2bde03e6e78ca3b6991375e674e679e5e5f784b812f8a3c130d8ce0915848e55",
+                "generatedAt": "2026-10-03T03:01:54.821132+00:00",
+                "uncertainties": [
+                  "A项选项写作“不害清之富也”，材料原文为“不害清之为富也”，略有出入，不影响判断。"
+                ],
+                "selectedOptions": [
+                  "D"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
+                  "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
+                  "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
+                  "stage": "source_review"
+                }
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "答案：D。应益广与益厚报清中的益都修饰程度，表示更加。A项前之指受到优厚接待的来者，后之用于清富这一主谓性结构。B项前以引出市人发笑的原因，后以引出待人的态度。C项前其与欤配合表示推测，后其限定所坚持的道。应按前文人物、动作和句末语气定位，不能把两个其都机械译为他的。",
+                "inputSha256": "b505082ac10295924361b13ae58ab3aee9c0f1fa5aa19f324249cc1c1c9f4d31",
+                "generatedAt": "2026-10-03T00:07:56.018Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
+                }
+              },
+              "claude_opus_5_5_initial": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答（修订前存档）",
+                "text": "答案：D。\nA项不同。“清优主之”中，“之”是代词，指从山泽来卖药的人；“不害清之为富也”中，“之”用在主谓之间，取消句子独立性（题干中“为”字疑脱漏）。B项不同。“市人以其异”中，“以”是介词“因为”；“清不以怠遇其人”中，“以”是介词“用、拿”，指不用怠慢的态度对待那人。C项不同。“清其有道者欤”中，“其”是语气副词，表推测，意为“大概”；“执其道不废”中，“其”是代词“他的”。D项相同。“其应益广”“益厚报清”中的“益”都是副词“更加”。故选D。",
+                "inputSha256": "b505082ac10295924361b13ae58ab3aee9c0f1fa5aa19f324249cc1c1c9f4d31",
+                "generatedAt": "2026-10-03T00:39:17.649838+00:00",
+                "uncertainties": [
+                  "A项题干作“不害清之富也”，材料原句为“不害清之为富也”，疑题干脱“为”字，不影响判断。"
+                ],
+                "selectedOptions": [
+                  "D"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
+                  "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
+                  "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "667c5ad1ee8b518de161eb6c300c0dc2780263a6161489c7524fd9bc870a3b38"
+              }
+            },
+            "inputContextSha256": "2bde03e6e78ca3b6991375e674e679e5e5f784b812f8a3c130d8ce0915848e55"
           }
-        },
-        "gpt_6_astra_before_context_review": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
-          "text": "答案：D。应益广与益厚报清中的益都修饰程度，表示更加。A项前之指受到优厚接待的来者，后之用于清富这一主谓性结构。B项前以引出市人发笑的原因，后以引出待人的态度。C项前其与欤配合表示推测，后其限定所坚持的道。应按前文人物、动作和句末语气定位，不能把两个其都机械译为他的。",
-          "inputSha256": "b505082ac10295924361b13ae58ab3aee9c0f1fa5aa19f324249cc1c1c9f4d31",
-          "generatedAt": "2026-10-03T00:07:56.018Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
-          }
-        },
-        "claude_opus_5_5_initial": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答（修订前存档）",
-          "text": "答案：D。\nA项不同。“清优主之”中，“之”是代词，指从山泽来卖药的人；“不害清之为富也”中，“之”用在主谓之间，取消句子独立性（题干中“为”字疑脱漏）。B项不同。“市人以其异”中，“以”是介词“因为”；“清不以怠遇其人”中，“以”是介词“用、拿”，指不用怠慢的态度对待那人。C项不同。“清其有道者欤”中，“其”是语气副词，表推测，意为“大概”；“执其道不废”中，“其”是代词“他的”。D项相同。“其应益广”“益厚报清”中的“益”都是副词“更加”。故选D。",
-          "inputSha256": "b505082ac10295924361b13ae58ab3aee9c0f1fa5aa19f324249cc1c1c9f4d31",
-          "generatedAt": "2026-10-03T00:39:17.649838+00:00",
-          "uncertainties": [
-            "A项题干作“不害清之富也”，材料原句为“不害清之为富也”，疑题干脱“为”字，不影响判断。"
-          ],
-          "selectedOptions": [
-            "D"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
-            "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
-            "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
-            "stage": "independent"
-          },
-          "inputContextSha256": "667c5ad1ee8b518de161eb6c300c0dc2780263a6161489c7524fd9bc870a3b38"
         }
-      },
-      "inputContextSha256": "2bde03e6e78ca3b6991375e674e679e5e5f784b812f8a3c130d8ce0915848e55"
+      ],
+      "inputPresentationSha256": "e3bc18772552569aceac1ca47c210bbeb336432a3ae1f8015bdc67bc0781b802"
     },
     {
       "id": "2004-guwen:2",
@@ -11439,11 +11521,11 @@
     },
     {
       "id": "2010-moxie:1",
-      "inputSha256": "ce42c1279b5e8efafc3bf9f24dca0f9ae8e7a01c38ad489d439a085313b0f6a4",
-      "status": "reviewed",
+      "inputSha256": "33826433e74af3e466a3cc6fed56807b89f6ddd30b350ee2855a36bd01f64d4d",
+      "status": "draft",
       "kind": "open",
       "correctOptions": [],
-      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "explanation": "2010题面与标记校勘后待完整重审，原输入及全部完整模型存history。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T01:38:23.281Z",
       "sources": [
@@ -11453,66 +11535,111 @@
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答",
-          "text": "①虚室有余闲；久在樊笼里。②或因寄所托，放浪形骸之外。③落霞与孤鹜齐飞，秋水共长天一色。④谈笑有鸿儒，往来无白丁。⑤只是朱颜改；恰似一江春水向东流。⑥芳草无情，更在斜阳外。当前题面“户庭无尘染”“云霄雨霁”“彩彻区明”有录入疑点，对应原作通常为“户庭无尘杂”“云销雨霁”“彩彻区明”；不把提供部分的错字带进答案。题目限选四道，以上列全。",
-          "inputSha256": "ce42c1279b5e8efafc3bf9f24dca0f9ae8e7a01c38ad489d439a085313b0f6a4",
-          "generatedAt": "2026-10-03T01:38:23.281Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
-            "contextEvidence": {
-              "method": "no_annotation_v1_equivalence",
-              "originalInputSha256": "ce42c1279b5e8efafc3bf9f24dca0f9ae8e7a01c38ad489d439a085313b0f6a4",
-              "originalEvidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
-              "originalAnswerSha256": "4c24c870ea5d338de73d7ce5c77ce50c7592021906c8115af1eb9b27c3ef2940",
-              "contextSha256": "147746ed28c453551979b905783fe787574185a26c1b7345ff7197de3d839b20",
-              "sourceAnnotation": null,
-              "evidence": "answers-six-sites-20261002/no-annotation-context-proof.json"
+      "modelAnswers": {},
+      "inputContextSha256": "63ef1a91d6b18f7eec0403288dd81e6e969141d5166d9dba96302e73c835e144",
+      "inputPresentationSha256": "d63ab3d25c3bf79391c1059177961dbd42b748b554977e90936059959339f5e4",
+      "history": [
+        {
+          "source": {
+            "id": "2010-moxie",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "①户庭无尘染          。            ，复得返自然。（陶渊明《归园田居》）\n②或取诸怀抱，悟言一室之内；               ，               。（王羲之《兰亭集序》）\n③云霄雨霁，彩彻区明。                ，                    。（王勃《滕王阁序》）\n④苔痕上阶绿，草色入帘青。                ，               。（刘禹锡《陋室铭》）\n⑤雕栏玉砌应犹在，               。问君能有几多愁？            。（李煜《虞美人》）\n⑥山映斜阳天接水，               ，                  。（范仲淹《苏幕遮》）"
+              }
+            ],
+            "topic": "12.在横线处写出诗文的原句（限选做其中4道题）。（8分）",
+            "annotation": null,
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "12.在横线处写出诗文的原句（限选做其中4道题）。（8分）\n①户庭无尘染          。            ，复得返自然。（陶渊明《归园田居》）\n②或取诸怀抱，悟言一室之内；               ，               。（王羲之《兰亭集序》）\n③云霄雨霁，彩彻区明。                ，                    。（王勃《滕王阁序》）\n④苔痕上阶绿，草色入帘青。                ，               。（刘禹锡《陋室铭》）\n⑤雕栏玉砌应犹在，               。问君能有几多愁？            。（李煜《虞美人》）\n⑥山映斜阳天接水，               ，                  。（范仲淹《苏幕遮》）",
+                "score": 8
+              }
+            ]
+          },
+          "review": {
+            "id": "2010-moxie:1",
+            "inputSha256": "ce42c1279b5e8efafc3bf9f24dca0f9ae8e7a01c38ad489d439a085313b0f6a4",
+            "status": "reviewed",
+            "kind": "open",
+            "correctOptions": [],
+            "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T01:38:23.281Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2010北京卷原题及完整材料"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答",
+                "text": "①虚室有余闲；久在樊笼里。②或因寄所托，放浪形骸之外。③落霞与孤鹜齐飞，秋水共长天一色。④谈笑有鸿儒，往来无白丁。⑤只是朱颜改；恰似一江春水向东流。⑥芳草无情，更在斜阳外。当前题面“户庭无尘染”“云霄雨霁”“彩彻区明”有录入疑点，对应原作通常为“户庭无尘杂”“云销雨霁”“彩彻区明”；不把提供部分的错字带进答案。题目限选四道，以上列全。",
+                "inputSha256": "ce42c1279b5e8efafc3bf9f24dca0f9ae8e7a01c38ad489d439a085313b0f6a4",
+                "generatedAt": "2026-10-03T01:38:23.281Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
+                  "contextEvidence": {
+                    "method": "no_annotation_v1_equivalence",
+                    "originalInputSha256": "ce42c1279b5e8efafc3bf9f24dca0f9ae8e7a01c38ad489d439a085313b0f6a4",
+                    "originalEvidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
+                    "originalAnswerSha256": "4c24c870ea5d338de73d7ce5c77ce50c7592021906c8115af1eb9b27c3ef2940",
+                    "contextSha256": "147746ed28c453551979b905783fe787574185a26c1b7345ff7197de3d839b20",
+                    "sourceAnnotation": null,
+                    "evidence": "answers-six-sites-20261002/no-annotation-context-proof.json"
+                  },
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "147746ed28c453551979b905783fe787574185a26c1b7345ff7197de3d839b20"
+                  }
+                },
+                "inputContextSha256": "147746ed28c453551979b905783fe787574185a26c1b7345ff7197de3d839b20",
+                "inputPresentationSha256": "7c1336ca5d5310ace28ccaa3ebbe986351a5542a701c79badbce747d0eb6be9f"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "题目要求限选4题，现全部作答供参考：\n①虚室有余闲；久在樊笼里。（陶渊明《归园田居》，原文首句为“户庭无尘杂”）\n②或因寄所托，放浪形骸之外。（王羲之《兰亭集序》）\n③落霞与孤鹜齐飞，秋水共长天一色。（王勃《滕王阁序》，原文为“云销雨霁”）\n④谈笑有鸿儒，往来无白丁。（刘禹锡《陋室铭》）\n⑤只是朱颜改；恰似一江春水向东流。（李煜《虞美人》）\n⑥芳草无情，更在斜阳外。（范仲淹《苏幕遮》）",
+                "inputSha256": "ce42c1279b5e8efafc3bf9f24dca0f9ae8e7a01c38ad489d439a085313b0f6a4",
+                "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+                "uncertainties": [
+                  "题文中“尘染”应为“尘杂”，“云霄雨霁”应为“云销雨霁”，系题文录入错误。"
+                ],
+                "selectedOptions": [],
+                "assessment": {
+                  "matchesConclusion": null
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+                  "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+                  "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+                  "stage": "independent",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "147746ed28c453551979b905783fe787574185a26c1b7345ff7197de3d839b20"
+                  }
+                },
+                "inputContextSha256": "147746ed28c453551979b905783fe787574185a26c1b7345ff7197de3d839b20",
+                "inputPresentationSha256": "7c1336ca5d5310ace28ccaa3ebbe986351a5542a701c79badbce747d0eb6be9f"
+              }
             },
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "147746ed28c453551979b905783fe787574185a26c1b7345ff7197de3d839b20"
-            }
-          },
-          "inputContextSha256": "147746ed28c453551979b905783fe787574185a26c1b7345ff7197de3d839b20",
-          "inputPresentationSha256": "7c1336ca5d5310ace28ccaa3ebbe986351a5542a701c79badbce747d0eb6be9f"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "题目要求限选4题，现全部作答供参考：\n①虚室有余闲；久在樊笼里。（陶渊明《归园田居》，原文首句为“户庭无尘杂”）\n②或因寄所托，放浪形骸之外。（王羲之《兰亭集序》）\n③落霞与孤鹜齐飞，秋水共长天一色。（王勃《滕王阁序》，原文为“云销雨霁”）\n④谈笑有鸿儒，往来无白丁。（刘禹锡《陋室铭》）\n⑤只是朱颜改；恰似一江春水向东流。（李煜《虞美人》）\n⑥芳草无情，更在斜阳外。（范仲淹《苏幕遮》）",
-          "inputSha256": "ce42c1279b5e8efafc3bf9f24dca0f9ae8e7a01c38ad489d439a085313b0f6a4",
-          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
-          "uncertainties": [
-            "题文中“尘染”应为“尘杂”，“云霄雨霁”应为“云销雨霁”，系题文录入错误。"
-          ],
-          "selectedOptions": [],
-          "assessment": {
-            "matchesConclusion": null
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
-            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
-            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
-            "stage": "independent",
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "147746ed28c453551979b905783fe787574185a26c1b7345ff7197de3d839b20"
-            }
-          },
-          "inputContextSha256": "147746ed28c453551979b905783fe787574185a26c1b7345ff7197de3d839b20",
-          "inputPresentationSha256": "7c1336ca5d5310ace28ccaa3ebbe986351a5542a701c79badbce747d0eb6be9f"
+            "inputContextSha256": "147746ed28c453551979b905783fe787574185a26c1b7345ff7197de3d839b20",
+            "inputPresentationSha256": "7c1336ca5d5310ace28ccaa3ebbe986351a5542a701c79badbce747d0eb6be9f"
+          }
         }
-      },
-      "inputContextSha256": "147746ed28c453551979b905783fe787574185a26c1b7345ff7197de3d839b20",
-      "inputPresentationSha256": "7c1336ca5d5310ace28ccaa3ebbe986351a5542a701c79badbce747d0eb6be9f"
+      ]
     },
     {
       "id": "2009-moxie:1",
@@ -37606,6 +37733,20 @@
         }
       ],
       "evidence": "answers-six-sites-20261002/REVIEW-2011.md"
+    },
+    {
+      "id": "2010-source-coverage-and-marking",
+      "status": "open",
+      "recordIds": [
+        "2010-feilian",
+        "2010-guwen",
+        "2010-shici",
+        "2010-moxie",
+        "2010-sanwen",
+        "2010-yuyanjichu",
+        "2010-dazuowen"
+      ],
+      "detail": "仅有自称原7页的18页重排PDF（题面1—8，答案9—18）与Gzywtk四页转载；原7页卷、答题卡、独立出版链与准确原卷印刷仍未取得。八题面页全目视不能据此认证原卷。 宋清传：PDF有世之言徒曰市道交而旧库/Gzy无，求者益广/求者益众其应益广异文，旧附加蚩注非所见原题注，亲与交标点和疾病庀疡等未定；不把单一转载缺句或语义推断静默定稿。语言1朔/溯、诗徂晖/辉和默写悟/晤等异文保留证据。 海棠花旧库/Gzy长版与PDF短版有整段删改和高崖/高屋等差异，保留旧长版，仅局部明示勘误。原18划线依PDF扩大至可是现实…过了六年；正文它们采用旧题19引文，PDF他们异文保留。作者文本转载仅佐证引号及译秦名非误字，未作为考试删改版认证。 漏收原10宋清传延伸（不少于200字，10分）与原11苏轼仁说两划线区域断句（5分），分离保存2来源记录，不入旧612分母。仁说采用于中/不修/不期中，PDF与中及Gzy布修/不其中属异文，参考苏轼原文转录作明示校勘。 全部2010阅读与作文保守登记参考暴露：搜索出现参考解析，PDF9—18页提取的头部有答案与作文片段，本轮又读到历史AI字段。后续不得宣称盲答；仍要求本人20阅读含2补录+1作文完整冻结后才有限Claude。延伸各≥200字，主作文≥800字。本来源步骤0新答案0提供商调用。 全部旧ID/qIndex/score/AI保留。旧古文语言null分值与真实3分、合并题小分、补录历史映射未解决，不改旧成绩或学生记录。原始来源、标记、全题覆盖、早期v3、消费者投影、正式build、注册publisher、真实验收和status等全部既有发布门禁继续保留。 非连中的历史科学概述只作为原文理解，不认证为无条件当代物理结论；语言神仙茶错误病句不能当作健康建议。虚构范文必须明确示例性质。"
     }
   ]
 }
