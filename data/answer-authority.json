@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261003-reviewed-432-qualified-2010",
+  "revision": "20261003-source2009-qualified-pending",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -989,14 +989,11 @@
     },
     {
       "id": "2009-sanwen:1",
-      "inputSha256": "5762506877cc8aa13b6eff96426482e20d5a12ef8f469e7afeb59025e9ea31b0",
-      "status": "reviewed",
+      "inputSha256": "b1d1a61b7927e8388f6bf9c52695b2175893d422da342e09e786bf11032de2a4",
+      "status": "draft",
       "kind": "multiple_choice",
-      "correctOptions": [
-        "B",
-        "E"
-      ],
-      "explanation": "独立作答与原库参考答案、旧Claude结论相合；选择两项的题型和完整集合必须同时修正。 本轮Claude独立作答亦为B、E；完整选项已核定，细分给分规则未在原参考答案中说明，不能冒称已核定官方部分分值。",
+      "correctOptions": [],
+      "explanation": "2009题面及标记修正后待完整重审，旧输入和全部原模型完整存history。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
       "sources": [
@@ -1015,74 +1012,136 @@
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答",
-          "text": "答案：B、E。B项：开篇由司马迁引出韩城，随后写地势、城廓、田园与古道承载的历史，地方景观和史圣精神相互映照，‘人杰地灵’概括了这一联系，并没有说这是文章的全部主旨。E项：游览中穿插历史人物、遗迹传说及对司马迁的敬仰和感怀，增加了历史厚度。A项将汉武帝与司马迁的联系错误归因于灵芝。C项把作者反问的悲哀强加给司马迁，而作者明确认为此地适宜其长眠。D项将一个传说真伪难明的局部，夸大成全篇扑朔迷离的行文风格；文章的游踪、描写和情感总体清晰。原库参考答案也是B、E。专题站还必须把本题从单选改为多选，不能只把截断的D改成DE。",
-          "inputSha256": "5762506877cc8aa13b6eff96426482e20d5a12ef8f469e7afeb59025e9ea31b0",
-          "generatedAt": "2026-10-02T23:52:23.736Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-initial-reviews",
-            "contextEvidence": {
-              "method": "no_annotation_v1_equivalence",
-              "originalInputSha256": "5762506877cc8aa13b6eff96426482e20d5a12ef8f469e7afeb59025e9ea31b0",
-              "originalEvidence": "answers-six-sites-20261002/gpt-astra-initial-reviews",
-              "originalAnswerSha256": "cea8970b08ef018f4ba752aa52931a580e15422f8b9b050cb615a43c745406cc",
-              "contextSha256": "dca300dc2cdcc5371ed2cb3439a844edd1c90a010718d45b4ce0deadd5ff7e52",
-              "sourceAnnotation": null,
-              "evidence": "answers-six-sites-20261002/no-annotation-context-proof.json"
-            },
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "dca300dc2cdcc5371ed2cb3439a844edd1c90a010718d45b4ce0deadd5ff7e52"
-            }
-          },
-          "inputContextSha256": "dca300dc2cdcc5371ed2cb3439a844edd1c90a010718d45b4ce0deadd5ff7e52",
-          "inputPresentationSha256": "f872d6d09b44c8dcd094daaf0562a5f63ccbb43601b12ec0630703bc5f32537c"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "答案：B、E。\n逐项辨析：\nA项错误，属强加因果。原文“与司马迁结缘的汉武帝”只是交代汉武帝与司马迁有渊源。在芝川挖到灵芝的结果，是陶渠水更名为芝水，并不是汉武帝与司马迁结缘的原因。\nB项正确。文章由“地以人传”说起，写韩城地势之高、城郭之阔、田园之丽，芝川盆地的好风水，以及古道上演过的历史活剧。这些人文历史与地理风貌，共同烘托出史圣故里的人杰地灵，最终归结到司马迁及其精神。\nC项错误，曲解作者观点。“不能埋入祖茔”是文中引述的“有种说法”。作者用“这是谁的悲哀呢”加以反问，表示对这种观念的质疑，并说“我宁可认为……是史圣最佳的长眠之处”。作者并不认为这是史圣最大的悲哀。\nD项错误。褚遂良梦碑只是文中介绍的一处碑刻，“是实录还是虚幻，莫衷一是”针对的是梦碑内容。本文以游踪为线索，由小石桥、古道、神道写到祠院、墓冢，层次清晰，并没有“虚虚实实、扑朔迷离”的整体风格。\nE项正确。文章在实地游览中融入对历史的追想（古道上的历代兵马、汉武帝求灵芝、梦碑、塑像、墓冢的传说），又有作者的现实感怀（“这是谁的悲哀呢”“这是天问！我听见史圣在歌唱”），使这篇游记显得厚重，富有文化内涵。\n故选B、E。",
-          "inputSha256": "5762506877cc8aa13b6eff96426482e20d5a12ef8f469e7afeb59025e9ea31b0",
-          "generatedAt": "2026-10-03T00:26:53.718784+00:00",
-          "uncertainties": [
-            "B项“凸显人杰地灵”的说法稍有概括过度之嫌，因为文章重心在司马迁的精神。但与A、C、D的明显错误相比，B、E是最合理的两项。"
-          ],
-          "selectedOptions": [
-            "B",
-            "E"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-conflicts-02-result.json",
-            "inputPromptSha256": "f8a1148da76a7e0ba7a825233e4191475da51a3746bf2ecbe91c978112f2a893",
-            "responseStreamSha256": "b7c1ba7dfc88c87ef0eabb89ea42b15aa7a79dc87804ff168601cf364c8071d0",
-            "stage": "independent",
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "dca300dc2cdcc5371ed2cb3439a844edd1c90a010718d45b4ce0deadd5ff7e52"
-            }
-          },
-          "inputContextSha256": "dca300dc2cdcc5371ed2cb3439a844edd1c90a010718d45b4ce0deadd5ff7e52",
-          "inputPresentationSha256": "f872d6d09b44c8dcd094daaf0562a5f63ccbb43601b12ec0630703bc5f32537c"
-        }
-      },
+      "modelAnswers": {},
       "scoringPolicy": {
         "kind": "exact_set",
         "basis": "practice",
         "note": "本站多选练习要求完整选择且无错项，不声称复现高考官方细分给分；历史结果不重写。"
       },
-      "inputContextSha256": "dca300dc2cdcc5371ed2cb3439a844edd1c90a010718d45b4ce0deadd5ff7e52",
-      "inputPresentationSha256": "f872d6d09b44c8dcd094daaf0562a5f63ccbb43601b12ec0630703bc5f32537c"
+      "inputContextSha256": "3d9551110acc448b0786dae2afe65af329cc7b6fc06e3313404bb528173eb7c6",
+      "inputPresentationSha256": "07d296aa36806eb921641dd3d5f2cf28c1f1f86b27a43477f5b1d842d7ac43ea",
+      "history": [
+        {
+          "source": {
+            "id": "2009-sanwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "司马祠\n\n一说到韩城，自然会想到司马迁。地以人传，由于崇敬司马迁，而对韩城心仪已久。在这次的游览的历程中。韩城的地势之高，城廓之阔，田园之丽，都给我留下深刻的印象。\n\n韩城南边是一个有别于周围山原的盆地，绿树葱茏，良田万顷，疑是到了江南仙境。从这里流入黄河的芝水，使芝川有着天赐的好风水。与司马迁结缘的汉武帝，曾想长生不死，那些方士官宦之流投其所好，竟在这一带挖到了灵芝。汉武帝喜得瑞药，却也没能活到今天，只是由此将原名陶渠水的这条河更名为芝水了。过小石桥，穿木牌坊，踏上石砌的古道，便开始了仰望中的登攀。\n\n脚下的古道是用宽大厚实的石条铺成的，粗砺坚硬，历经数千年而牢固如初。古道始建于春秋时期，韩、赵、魏三家分晋后，继续开凿了这条悬崖上的交通要道。楚汉之争，韩信经这儿运过兵；汉武帝祭祀后土，经这儿往返行宫；隋唐末年，李世民经这儿攻入长安；明末李自成经这儿渡龙门，直捣燕京。这条巨石铺砌的古道，缘于不易更改，万年不朽，是另一部书写在石头上的史记。太史公之前之后，这里上演过的金戈铁马的历史活剧，都被载入了有形无形的史册中。而这座历尽沧桑的司马祠，也正是在有形无形之中负载着史圣无形的精神内涵。\n\n“高山仰止”，是《诗经》里的名句，嵌在这头顶的牌坊上，正好合了拜谒者的心情。这时，你的脚步已踏入了神道，登九十九级台阶，就可以抵达祠顶了。这条险峻的山脊，是后人垫沟筑起的，砖石砌成的九十九级台阶，用意取之于《易经》中的释义，九为数之极，九九则至高无上了。皇上的祖祠称九庙，官衔不算高的太史令却有九十九级的神道，确乎有造祠者藐视皇权之意，更具寓义的是说司马迁经受了多么坎坷曲折的磨难，才登上史圣之巅峰。他“以天地为量，不计小耻”，以“史家之绝唱，无韵之离骚”光照后世。\n\n  攀至最高层的祠院，地势开阔了。殿内有若干碑碣，奇妙的是那一块梦碑，说唐朝褚遂良于同州梦见一女子自称司马迁之侍妾，叫随清娱，迁遇难后忧伤而死，褚遂作此墓志铭。是实录还是虚幻，莫衷一是。造于北宋的司马迁泥塑像，不是宫刑后无胡须的“妇人像”，是据芝川乡间寻访到的太史公壮年线描画像塑造的，相传画像出自司马夫人之手，泥塑像面稍北望，是在想念苏武和李陵吧？传说司马迁去世后，是其夫人柳倩娘和子女，将太史公的骨骸运回故地，掩埋在这高岗上的。有种说法，身体发肤受之父母，得之天地，不能有丝毫损伤，司马迁受了宫刑，有辱祖先，不能埋入祖茔。这是谁的悲哀呢？我宁可认为，此处枕家山，临大河，气宇轩昂，一览众山小，是史圣最佳的长眠之处。寝宫后是司马迁圆形砖砌墓冢，为元世祖敕命建造的蒙古包状八卦墓，“以通神明之德，以类万物之情”，非大智大慧者莫属。墓顶一柏分为五指，人称五子登科，形若颤抖的五指，傲指苍穹。\n\n这是天问！我听见史圣在歌唱。这歌声穿越古今，扬善弃恶，与大河一起歌舞。天空有雄鹰飞过，它读圆的墓冢，读方的祠院，读直的牌坊和山门，再读弧形的古石坡和小桥大路，这竟然是大地上一个巨大的问号。"
+              }
+            ],
+            "topic": "五、本大题共四小题，共18分。阅读下面的作品，完成17—20题。",
+            "annotation": null,
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "17.下列对文章的理解，正确的两项是（4分）\nA.汉武帝之所以与司马迁结缘，是因为在太史公的故乡挖到了投其所好的灵芝草\nB.作者在文章中叙写韩城的人文历史和地理风貌，凸显的是史圣家乡的人杰地灵。\nC.在作者看来，受了宫刑的司马迁死后不能埋入祖茔，这构成了史圣最大的悲哀。\nD.类似于褚遂良的梦，本文的行文也呈现出一种虚虚实实。扑朔迷离的写作风格。\nE.文章融历史想象与现实感怀为一体，为这篇游记增添了几分厚重感与文化内涵。",
+                "score": 4
+              }
+            ]
+          },
+          "review": {
+            "id": "2009-sanwen:1",
+            "inputSha256": "5762506877cc8aa13b6eff96426482e20d5a12ef8f469e7afeb59025e9ea31b0",
+            "status": "reviewed",
+            "kind": "multiple_choice",
+            "correctOptions": [
+              "B",
+              "E"
+            ],
+            "explanation": "独立作答与原库参考答案、旧Claude结论相合；选择两项的题型和完整集合必须同时修正。 本轮Claude独立作答亦为B、E；完整选项已核定，细分给分规则未在原参考答案中说明，不能冒称已核定官方部分分值。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T00:45:24.994751+00:00",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2009北京卷《司马祠》全文与第17题"
+              },
+              {
+                "type": "legacy_reference",
+                "title": "原库参考答案第17题B、E；尚未新取得官方原件"
+              },
+              {
+                "type": "reference_reprint",
+                "title": "2009北京卷参考答案转载：第17题B、E",
+                "url": "https://www.gzywtk.com/sjbrow/128-4.html?deviceType=Desktop"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答",
+                "text": "答案：B、E。B项：开篇由司马迁引出韩城，随后写地势、城廓、田园与古道承载的历史，地方景观和史圣精神相互映照，‘人杰地灵’概括了这一联系，并没有说这是文章的全部主旨。E项：游览中穿插历史人物、遗迹传说及对司马迁的敬仰和感怀，增加了历史厚度。A项将汉武帝与司马迁的联系错误归因于灵芝。C项把作者反问的悲哀强加给司马迁，而作者明确认为此地适宜其长眠。D项将一个传说真伪难明的局部，夸大成全篇扑朔迷离的行文风格；文章的游踪、描写和情感总体清晰。原库参考答案也是B、E。专题站还必须把本题从单选改为多选，不能只把截断的D改成DE。",
+                "inputSha256": "5762506877cc8aa13b6eff96426482e20d5a12ef8f469e7afeb59025e9ea31b0",
+                "generatedAt": "2026-10-02T23:52:23.736Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-initial-reviews",
+                  "contextEvidence": {
+                    "method": "no_annotation_v1_equivalence",
+                    "originalInputSha256": "5762506877cc8aa13b6eff96426482e20d5a12ef8f469e7afeb59025e9ea31b0",
+                    "originalEvidence": "answers-six-sites-20261002/gpt-astra-initial-reviews",
+                    "originalAnswerSha256": "cea8970b08ef018f4ba752aa52931a580e15422f8b9b050cb615a43c745406cc",
+                    "contextSha256": "dca300dc2cdcc5371ed2cb3439a844edd1c90a010718d45b4ce0deadd5ff7e52",
+                    "sourceAnnotation": null,
+                    "evidence": "answers-six-sites-20261002/no-annotation-context-proof.json"
+                  },
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "dca300dc2cdcc5371ed2cb3439a844edd1c90a010718d45b4ce0deadd5ff7e52"
+                  }
+                },
+                "inputContextSha256": "dca300dc2cdcc5371ed2cb3439a844edd1c90a010718d45b4ce0deadd5ff7e52",
+                "inputPresentationSha256": "f872d6d09b44c8dcd094daaf0562a5f63ccbb43601b12ec0630703bc5f32537c"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "答案：B、E。\n逐项辨析：\nA项错误，属强加因果。原文“与司马迁结缘的汉武帝”只是交代汉武帝与司马迁有渊源。在芝川挖到灵芝的结果，是陶渠水更名为芝水，并不是汉武帝与司马迁结缘的原因。\nB项正确。文章由“地以人传”说起，写韩城地势之高、城郭之阔、田园之丽，芝川盆地的好风水，以及古道上演过的历史活剧。这些人文历史与地理风貌，共同烘托出史圣故里的人杰地灵，最终归结到司马迁及其精神。\nC项错误，曲解作者观点。“不能埋入祖茔”是文中引述的“有种说法”。作者用“这是谁的悲哀呢”加以反问，表示对这种观念的质疑，并说“我宁可认为……是史圣最佳的长眠之处”。作者并不认为这是史圣最大的悲哀。\nD项错误。褚遂良梦碑只是文中介绍的一处碑刻，“是实录还是虚幻，莫衷一是”针对的是梦碑内容。本文以游踪为线索，由小石桥、古道、神道写到祠院、墓冢，层次清晰，并没有“虚虚实实、扑朔迷离”的整体风格。\nE项正确。文章在实地游览中融入对历史的追想（古道上的历代兵马、汉武帝求灵芝、梦碑、塑像、墓冢的传说），又有作者的现实感怀（“这是谁的悲哀呢”“这是天问！我听见史圣在歌唱”），使这篇游记显得厚重，富有文化内涵。\n故选B、E。",
+                "inputSha256": "5762506877cc8aa13b6eff96426482e20d5a12ef8f469e7afeb59025e9ea31b0",
+                "generatedAt": "2026-10-03T00:26:53.718784+00:00",
+                "uncertainties": [
+                  "B项“凸显人杰地灵”的说法稍有概括过度之嫌，因为文章重心在司马迁的精神。但与A、C、D的明显错误相比，B、E是最合理的两项。"
+                ],
+                "selectedOptions": [
+                  "B",
+                  "E"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-conflicts-02-result.json",
+                  "inputPromptSha256": "f8a1148da76a7e0ba7a825233e4191475da51a3746bf2ecbe91c978112f2a893",
+                  "responseStreamSha256": "b7c1ba7dfc88c87ef0eabb89ea42b15aa7a79dc87804ff168601cf364c8071d0",
+                  "stage": "independent",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "dca300dc2cdcc5371ed2cb3439a844edd1c90a010718d45b4ce0deadd5ff7e52"
+                  }
+                },
+                "inputContextSha256": "dca300dc2cdcc5371ed2cb3439a844edd1c90a010718d45b4ce0deadd5ff7e52",
+                "inputPresentationSha256": "f872d6d09b44c8dcd094daaf0562a5f63ccbb43601b12ec0630703bc5f32537c"
+              }
+            },
+            "scoringPolicy": {
+              "kind": "exact_set",
+              "basis": "practice",
+              "note": "本站多选练习要求完整选择且无错项，不声称复现高考官方细分给分；历史结果不重写。"
+            },
+            "inputContextSha256": "dca300dc2cdcc5371ed2cb3439a844edd1c90a010718d45b4ce0deadd5ff7e52",
+            "inputPresentationSha256": "f872d6d09b44c8dcd094daaf0562a5f63ccbb43601b12ec0630703bc5f32537c"
+          }
+        }
+      ]
     },
     {
       "id": "2026-guwen:2",
@@ -11755,11 +11814,11 @@
     },
     {
       "id": "2009-moxie:1",
-      "inputSha256": "02e2742f61518fa5690fb008aed355eeadcad85e239a79a1952dc93456ded886",
-      "status": "reviewed",
+      "inputSha256": "628264586662840b802ad73d31a7a5de4694432d7ab5a6cd43af59f39f285a64",
+      "status": "draft",
       "kind": "open",
       "correctOptions": [],
-      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "explanation": "2009题面及标记修正后待完整重审，旧输入和全部原模型完整存history。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T01:38:23.281Z",
       "sources": [
@@ -11769,66 +11828,111 @@
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答",
-          "text": "①聊乘化以归尽，乐夫天命复奚疑。②月涌大江流；名岂文章著。③族秦者秦也，非天下也。④又岂在朝朝暮暮。当前题面将杜甫篇名录作《旅夜书杯》，应核正为《旅夜书怀》；“著”按原作字形填写。",
-          "inputSha256": "02e2742f61518fa5690fb008aed355eeadcad85e239a79a1952dc93456ded886",
-          "generatedAt": "2026-10-03T01:38:23.281Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
-            "contextEvidence": {
-              "method": "no_annotation_v1_equivalence",
-              "originalInputSha256": "02e2742f61518fa5690fb008aed355eeadcad85e239a79a1952dc93456ded886",
-              "originalEvidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
-              "originalAnswerSha256": "dda3fc6fadfb4ec3770d01c9cd3bb0646f6e86cf8406fcaa189b116a1f583b61",
-              "contextSha256": "a6c6529f26d00936f3c5329fa67c73ff6761f54374dbcd1933ceb15f61e42052",
-              "sourceAnnotation": null,
-              "evidence": "answers-six-sites-20261002/no-annotation-context-proof.json"
+      "modelAnswers": {},
+      "inputContextSha256": "dfc5d2fc589bdc079868d35bd71daa864cc7c153a8631d5bb1fa39ac07c10afb",
+      "inputPresentationSha256": "f8dd40fc67e7e6b30203a1aff4303f4cf9b7a8e92902ddeeaac0c9fcfc0287d5",
+      "history": [
+        {
+          "source": {
+            "id": "2009-moxie",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "①登东皋以舒啸,临清流而赋诗。                      ，                   ？\n（陶渊明《归去来兮辞》）\n②星垂平野阔，                 。               ，官应老病休。\n（杜甫《旅夜书杯》）\n ③灭六国者六国也，非秦也；                      ，                    。\n（杜牧《阿房宫赋》）\n④两情若是久长时，                       ！\n（秦观《鹊桥仙》）"
+              }
+            ],
+            "topic": "3.在横线处写出诗文原句。（7分）",
+            "annotation": null,
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "3.在横线处写出诗文原句。（7分）\n①登东皋以舒啸,临清流而赋诗。                      ，                   ？\n（陶渊明《归去来兮辞》）\n②星垂平野阔，                 。               ，官应老病休。\n（杜甫《旅夜书杯》）\n ③灭六国者六国也，非秦也；                      ，                    。\n（杜牧《阿房宫赋》）\n④两情若是久长时，                       ！\n（秦观《鹊桥仙》）",
+                "score": 7
+              }
+            ]
+          },
+          "review": {
+            "id": "2009-moxie:1",
+            "inputSha256": "02e2742f61518fa5690fb008aed355eeadcad85e239a79a1952dc93456ded886",
+            "status": "reviewed",
+            "kind": "open",
+            "correctOptions": [],
+            "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T01:38:23.281Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2009北京卷原题及完整材料"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答",
+                "text": "①聊乘化以归尽，乐夫天命复奚疑。②月涌大江流；名岂文章著。③族秦者秦也，非天下也。④又岂在朝朝暮暮。当前题面将杜甫篇名录作《旅夜书杯》，应核正为《旅夜书怀》；“著”按原作字形填写。",
+                "inputSha256": "02e2742f61518fa5690fb008aed355eeadcad85e239a79a1952dc93456ded886",
+                "generatedAt": "2026-10-03T01:38:23.281Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
+                  "contextEvidence": {
+                    "method": "no_annotation_v1_equivalence",
+                    "originalInputSha256": "02e2742f61518fa5690fb008aed355eeadcad85e239a79a1952dc93456ded886",
+                    "originalEvidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
+                    "originalAnswerSha256": "dda3fc6fadfb4ec3770d01c9cd3bb0646f6e86cf8406fcaa189b116a1f583b61",
+                    "contextSha256": "a6c6529f26d00936f3c5329fa67c73ff6761f54374dbcd1933ceb15f61e42052",
+                    "sourceAnnotation": null,
+                    "evidence": "answers-six-sites-20261002/no-annotation-context-proof.json"
+                  },
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "a6c6529f26d00936f3c5329fa67c73ff6761f54374dbcd1933ceb15f61e42052"
+                  }
+                },
+                "inputContextSha256": "a6c6529f26d00936f3c5329fa67c73ff6761f54374dbcd1933ceb15f61e42052",
+                "inputPresentationSha256": "c3c52230e6f2d3bf1da8ff8c9d5c63afe947186cddbc48e0abba326bcb0359e8"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "①聊乘化以归尽，乐夫天命复奚疑？（陶渊明《归去来兮辞》）\n②月涌大江流；名岂文章著。（杜甫《旅夜书怀》）\n③族秦者秦也，非天下也。（杜牧《阿房宫赋》）\n④又岂在朝朝暮暮！（秦观《鹊桥仙》）",
+                "inputSha256": "02e2742f61518fa5690fb008aed355eeadcad85e239a79a1952dc93456ded886",
+                "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+                "uncertainties": [
+                  "题中篇名“旅夜书杯”应为“旅夜书怀”，系录入错误。"
+                ],
+                "selectedOptions": [],
+                "assessment": {
+                  "matchesConclusion": null
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+                  "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+                  "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+                  "stage": "independent",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "a6c6529f26d00936f3c5329fa67c73ff6761f54374dbcd1933ceb15f61e42052"
+                  }
+                },
+                "inputContextSha256": "a6c6529f26d00936f3c5329fa67c73ff6761f54374dbcd1933ceb15f61e42052",
+                "inputPresentationSha256": "c3c52230e6f2d3bf1da8ff8c9d5c63afe947186cddbc48e0abba326bcb0359e8"
+              }
             },
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "a6c6529f26d00936f3c5329fa67c73ff6761f54374dbcd1933ceb15f61e42052"
-            }
-          },
-          "inputContextSha256": "a6c6529f26d00936f3c5329fa67c73ff6761f54374dbcd1933ceb15f61e42052",
-          "inputPresentationSha256": "c3c52230e6f2d3bf1da8ff8c9d5c63afe947186cddbc48e0abba326bcb0359e8"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "①聊乘化以归尽，乐夫天命复奚疑？（陶渊明《归去来兮辞》）\n②月涌大江流；名岂文章著。（杜甫《旅夜书怀》）\n③族秦者秦也，非天下也。（杜牧《阿房宫赋》）\n④又岂在朝朝暮暮！（秦观《鹊桥仙》）",
-          "inputSha256": "02e2742f61518fa5690fb008aed355eeadcad85e239a79a1952dc93456ded886",
-          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
-          "uncertainties": [
-            "题中篇名“旅夜书杯”应为“旅夜书怀”，系录入错误。"
-          ],
-          "selectedOptions": [],
-          "assessment": {
-            "matchesConclusion": null
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
-            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
-            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
-            "stage": "independent",
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "a6c6529f26d00936f3c5329fa67c73ff6761f54374dbcd1933ceb15f61e42052"
-            }
-          },
-          "inputContextSha256": "a6c6529f26d00936f3c5329fa67c73ff6761f54374dbcd1933ceb15f61e42052",
-          "inputPresentationSha256": "c3c52230e6f2d3bf1da8ff8c9d5c63afe947186cddbc48e0abba326bcb0359e8"
+            "inputContextSha256": "a6c6529f26d00936f3c5329fa67c73ff6761f54374dbcd1933ceb15f61e42052",
+            "inputPresentationSha256": "c3c52230e6f2d3bf1da8ff8c9d5c63afe947186cddbc48e0abba326bcb0359e8"
+          }
         }
-      },
-      "inputContextSha256": "a6c6529f26d00936f3c5329fa67c73ff6761f54374dbcd1933ceb15f61e42052",
-      "inputPresentationSha256": "c3c52230e6f2d3bf1da8ff8c9d5c63afe947186cddbc48e0abba326bcb0359e8"
+      ]
     },
     {
       "id": "2008-moxie:1",
@@ -39116,6 +39220,20 @@
         }
       ],
       "evidence": "answers-six-sites-20261002/REVIEW-2010.md"
+    },
+    {
+      "id": "2009-source-coverage-and-marking",
+      "status": "open",
+      "recordIds": [
+        "2009-guwen",
+        "2009-shici",
+        "2009-moxie",
+        "2009-honglou",
+        "2009-sanwen",
+        "2009-yuyanjichu",
+        "2009-dazuowen"
+      ],
+      "detail": "新浪2009-06-09图集，标注北京新干线学校提供；7页原卷样式仅第1、3—7页取得并逐页目视，第2页404。公开扫描不等于考试机构出版链认证。 教育在线旧正文首图为404占位图，新东方旧链接跳转大学课程首页，两者不是试题证据。 原第2页缺失：语言4/5及完整叔孙通正文无法直接对照。旧库与Gzy转载有相同错字；雕塑/雕凿、职/之、资金重复、不能/不能保证不、茅盾/矛盾、19实世纪等保留待核，不从语义猜原错误选项。古文百馀人后断口、徙长沙、旗志/旗帜、大行设九宾胪传、史记篇名和正文标记均未认证，本次不据全史记补入可能原卷删去的话。 已获得第6页纠正司马祠长短版本和四读对象，全部旧文保留。文中古道建造、帝王/卦象、梦碑、柳倩娘、苏武李陵等为作者叙述/传说/想象，答题应分清文本解释与独立历史认证。 五个漏题单元：老子断句1、昆曲3、原22语言解说1，全部独立保存，尚未并入旧612或跨站映射。原21两句改写已在2009-honglou:1，不重复补录。新总补录16，先前11双模型，此5仅来源。 本轮所有2009阅读和作文均保守标记参考暴露；本人尚无新答案，提供商调用0。必须本人24阅读（19旧+5补录）及1作文完整冻结再新PLAN26；原22解说词不少于100字，主作文不少于800字。 所有旧ID/qIndex/score/AI不改。古文语言null与3分、主作文null与60分、合并20两小题与旧21两小题的分项、历史记录与消费者映射仍待；不得重算旧成绩或学生写入。原卷/缺页/全量/早期v3/六站和8消费者/发布/真实验收/status门禁保留。 昆曲材料的1934年观演描述不是现代扩音舞台条件的普遍判断；阅兵解说是2009题设中的市民建议，不证明现实编成。补录断句无认证机械评分键。"
     }
   ]
 }
