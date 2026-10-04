@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261004-source2004-qualified-pending",
+  "revision": "20261004-source2003-scans-pending",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -4005,13 +4005,11 @@
     },
     {
       "id": "2003-guwen:3",
-      "inputSha256": "e9353a59ec03a48c410ffe0c78e287f468c0462a5a1a7755dd247f166354cdcf",
-      "status": "reviewed",
+      "inputSha256": "d449b6a6a2ba4949497f523f86fb65e943a3c65909534a3b77d37d8d73363352",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "C"
-      ],
-      "explanation": "由暂缓裁决推进为校订参考答案C：新增可核查的试卷参考答案转载，与本轮语法分析及Claude独立答案相合。转载并非考试主管部门的官方认证；旧A保留作历史版本。",
+      "correctOptions": [],
+      "explanation": "2003原题图校勘后待完整重审；旧题面与全部模型答案保存在history。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T03:03:23.208Z",
       "sources": [
@@ -4030,85 +4028,141 @@
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 完整附注复核",
-          "text": "答案：C。‘不知海之深’中的海深、‘叹郦元之简’中的郦元简，均是主谓性结构；‘之’置于其中，使这一结构进入知、叹等动词之后，意义和用法相同。不能只因前一处可以译成‘大海的深度’，就把它机械判为与后一处不同。A项按试题语境，经过书舍旁而哭为动作相承，拱手而立为伴随状态；B项‘其不孤’的其指所羡慕的孩子，在小句中作主语，‘其强’的其限定秦国的强大；D项以分别引入书信这一凭借与合宜时令。本轮已核到的北京卷参考答案转载也标第13题C，因此修正旧模型的A。细分语法时仍应说明判准，不把所有‘而’都按字面作同一种关系。",
-          "inputSha256": "e9353a59ec03a48c410ffe0c78e287f468c0462a5a1a7755dd247f166354cdcf",
-          "generatedAt": "2026-10-03T03:03:23.208Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review_reaffirmation",
-            "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
-            "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "priorAnswerSha256": "c528b8023af7cdbf1b6a2e7c15cf54aee60a210582a7055e2f82b2de4de703af",
-            "annotationEffect": "出处为三国志卷十一注；全文邴原求学对话不改变海之深与郦元之简的主谓结构。题纲10分每题3分与四题不自洽，另记源证。"
+      "modelAnswers": {},
+      "inputContextSha256": "6a700feb3874b07543ee4a7419492623561c6100a304159cc9cbe35aaabca765",
+      "history": [
+        {
+          "source": {
+            "id": "2003-guwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "邴原十一而丧父，家贫，早孤。邻有书舍，原过其旁而泣。师问曰：“童子何悲？”原曰：“孤者易伤，贫者易感。夫书者，必皆具有父兄者，一则羡其不孤，二则羡其得学，心中恻然而为涕零也。”师亦哀原之言而为之泣，曰：“欲书可耳！”答曰：“无钱资。”师曰：“童子苟有志，我徒相教，不求资也。”於是遂就书。一冬之间，诵《孝经》、《论语》。自在童龀之中，嶷然有异。及长，金玉其行。欲远游学，诣安丘孙崧。崧辞曰：“君乡里郑君，君知之乎？”原答曰：“然。”崧曰：“郑君学览古今，博闻强识，钩深致远，诚学者之师模也。君乃舍之，蹑屣千里，所谓以郑为东家丘者也。君似不知而曰然者，何？”原曰：“先生之说，诚可谓苦药良针矣；然犹未达仆之微趣也。人各有志，所规不同。故乃有登山而采玉者，有入海而采珠者，岂可谓登山者不知海之深，入海者不知山之高哉！君谓仆以郑为东家丘，君以仆为西家愚夫邪？”崧辞谢焉。又曰：“兖、豫之士，吾多所识，未有若君者；当以书相分。”原重其意，难辞之，持书而别。原心以为求师启学，志高者通，非若交游待分而成也。书何为哉？乃藏书于家而行。"
+              }
+            ],
+            "topic": "三、（10分，每小题3分）\n阅读下面一段文言文，完成11—14题",
+            "annotation": "（《三国志》卷十一注）",
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 3,
+                "id": "q3",
+                "text": "13.下列各组句子中，加点的词的意义和用法相同的一组是\n A.原过其旁*而*泣\n 子路拱*而*立\n B.一则羡*其*不孤\n 秦贪，负*其*强\n C.岂可谓登山者不知海*之*深，入海者不知山之高哉\n 盖叹郦元*之*简而笑李渤·之陋也\n D.当*以*书相分 斧斤*以*时入山林",
+                "score": null
+              }
+            ]
           },
-          "inputContextSha256": "e42660ef17e5fc413ea8eda42ffa5ba225cd484b581a73824ef5a1139d5d6707"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 来源复核后修订",
-          "text": "答案：C。\n选C。A项：“原过其旁而泣”的“而”表承接；“子路拱而立”的“而”表修饰，不同。B项：“一则羡其不孤”的“其”是代词“他们”，作主谓短语的主语；“秦贪，负其强”的“其”是代词“它的、自己的”，作定语，不同。C项：“不知海之深”“叹郦元之简”的“之”都用在主谓之间，取消句子独立性，相同。D项：“当以书相分”的“以”是介词“用”；“斧斤以时入山林”的“以”是介词“按照”，不同。",
-          "inputSha256": "e9353a59ec03a48c410ffe0c78e287f468c0462a5a1a7755dd247f166354cdcf",
-          "inputContextSha256": "e42660ef17e5fc413ea8eda42ffa5ba225cd484b581a73824ef5a1139d5d6707",
-          "generatedAt": "2026-10-03T03:01:54.821132+00:00",
-          "uncertainties": [],
-          "selectedOptions": [
-            "C"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
-            "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
-            "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
-            "stage": "source_review"
+          "review": {
+            "id": "2003-guwen:3",
+            "inputSha256": "e9353a59ec03a48c410ffe0c78e287f468c0462a5a1a7755dd247f166354cdcf",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "C"
+            ],
+            "explanation": "由暂缓裁决推进为校订参考答案C：新增可核查的试卷参考答案转载，与本轮语法分析及Claude独立答案相合。转载并非考试主管部门的官方认证；旧A保留作历史版本。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:03:23.208Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内完整题目及相关材料"
+              },
+              {
+                "type": "dictionary_revision",
+                "title": "文言站2026-09-16-r3词典校订，保留争议"
+              },
+              {
+                "type": "reference_reprint",
+                "title": "2003年北京卷参考答案转载：第13题C",
+                "url": "https://www.gzywtk.com/sjbrow/44-2.html?deviceType=Desktop"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "答案：C。‘不知海之深’中的海深、‘叹郦元之简’中的郦元简，均是主谓性结构；‘之’置于其中，使这一结构进入知、叹等动词之后，意义和用法相同。不能只因前一处可以译成‘大海的深度’，就把它机械判为与后一处不同。A项按试题语境，经过书舍旁而哭为动作相承，拱手而立为伴随状态；B项‘其不孤’的其指所羡慕的孩子，在小句中作主语，‘其强’的其限定秦国的强大；D项以分别引入书信这一凭借与合宜时令。本轮已核到的北京卷参考答案转载也标第13题C，因此修正旧模型的A。细分语法时仍应说明判准，不把所有‘而’都按字面作同一种关系。",
+                "inputSha256": "e9353a59ec03a48c410ffe0c78e287f468c0462a5a1a7755dd247f166354cdcf",
+                "generatedAt": "2026-10-03T03:03:23.208Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "c528b8023af7cdbf1b6a2e7c15cf54aee60a210582a7055e2f82b2de4de703af",
+                  "annotationEffect": "出处为三国志卷十一注；全文邴原求学对话不改变海之深与郦元之简的主谓结构。题纲10分每题3分与四题不自洽，另记源证。"
+                },
+                "inputContextSha256": "e42660ef17e5fc413ea8eda42ffa5ba225cd484b581a73824ef5a1139d5d6707"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "答案：C。\n选C。A项：“原过其旁而泣”的“而”表承接；“子路拱而立”的“而”表修饰，不同。B项：“一则羡其不孤”的“其”是代词“他们”，作主谓短语的主语；“秦贪，负其强”的“其”是代词“它的、自己的”，作定语，不同。C项：“不知海之深”“叹郦元之简”的“之”都用在主谓之间，取消句子独立性，相同。D项：“当以书相分”的“以”是介词“用”；“斧斤以时入山林”的“以”是介词“按照”，不同。",
+                "inputSha256": "e9353a59ec03a48c410ffe0c78e287f468c0462a5a1a7755dd247f166354cdcf",
+                "inputContextSha256": "e42660ef17e5fc413ea8eda42ffa5ba225cd484b581a73824ef5a1139d5d6707",
+                "generatedAt": "2026-10-03T03:01:54.821132+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "C"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
+                  "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
+                  "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
+                  "stage": "source_review"
+                }
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "答案：C。‘不知海之深’中的海深、‘叹郦元之简’中的郦元简，均是主谓性结构；‘之’置于其中，使这一结构进入知、叹等动词之后，意义和用法相同。不能只因前一处可以译成‘大海的深度’，就把它机械判为与后一处不同。A项按试题语境，经过书舍旁而哭为动作相承，拱手而立为伴随状态；B项‘其不孤’的其指所羡慕的孩子，在小句中作主语，‘其强’的其限定秦国的强大；D项以分别引入书信这一凭借与合宜时令。本轮已核到的北京卷参考答案转载也标第13题C，因此修正旧模型的A。细分语法时仍应说明判准，不把所有‘而’都按字面作同一种关系。",
+                "inputSha256": "e9353a59ec03a48c410ffe0c78e287f468c0462a5a1a7755dd247f166354cdcf",
+                "generatedAt": "2026-10-03T00:43:33.956398+00:00",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-2003-revision.json"
+                }
+              },
+              "claude_opus_5_5_initial": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答（修订前存档）",
+                "text": "答案：C。\nA项不同。“原过其旁而泣”中，“而”连接“过其旁”和“泣”两个动作，表顺承；“子路拱而立”中，“而”表修饰，即拱着手站立。B项不同。“一则羡其不孤”中，“其”是代词，指书舍中读书的孩子（他们），在句中作主谓结构的主语；“秦贪，负其强”中，“其”是代词“它的”，指秦国自身，作定语。C项相同。“海之深”“山之高”“郦元之简”“李渤之陋”中的“之”都用在主谓之间，取消句子独立性。D项不同。“当以书相分”中，“以”是介词“用”；“斧斤以时入山林”中，“以”是介词“按照”。故选C。",
+                "inputSha256": "e9353a59ec03a48c410ffe0c78e287f468c0462a5a1a7755dd247f166354cdcf",
+                "generatedAt": "2026-10-03T00:39:17.649838+00:00",
+                "uncertainties": [
+                  "C项后句“李渤·之陋”中多一个间隔符，属录入问题，据《石钟山记》原句“盖叹郦元之简，而笑李渤之陋也”理解。"
+                ],
+                "selectedOptions": [
+                  "C"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
+                  "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
+                  "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "21a2fa5509aaa8cf4845e1d80914de014dcbc82d6cac99bca772f66bc397fb12"
+              }
+            },
+            "inputContextSha256": "e42660ef17e5fc413ea8eda42ffa5ba225cd484b581a73824ef5a1139d5d6707"
           }
-        },
-        "gpt_6_astra_before_context_review": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
-          "text": "答案：C。‘不知海之深’中的海深、‘叹郦元之简’中的郦元简，均是主谓性结构；‘之’置于其中，使这一结构进入知、叹等动词之后，意义和用法相同。不能只因前一处可以译成‘大海的深度’，就把它机械判为与后一处不同。A项按试题语境，经过书舍旁而哭为动作相承，拱手而立为伴随状态；B项‘其不孤’的其指所羡慕的孩子，在小句中作主语，‘其强’的其限定秦国的强大；D项以分别引入书信这一凭借与合宜时令。本轮已核到的北京卷参考答案转载也标第13题C，因此修正旧模型的A。细分语法时仍应说明判准，不把所有‘而’都按字面作同一种关系。",
-          "inputSha256": "e9353a59ec03a48c410ffe0c78e287f468c0462a5a1a7755dd247f166354cdcf",
-          "generatedAt": "2026-10-03T00:43:33.956398+00:00",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-2003-revision.json"
-          }
-        },
-        "claude_opus_5_5_initial": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答（修订前存档）",
-          "text": "答案：C。\nA项不同。“原过其旁而泣”中，“而”连接“过其旁”和“泣”两个动作，表顺承；“子路拱而立”中，“而”表修饰，即拱着手站立。B项不同。“一则羡其不孤”中，“其”是代词，指书舍中读书的孩子（他们），在句中作主谓结构的主语；“秦贪，负其强”中，“其”是代词“它的”，指秦国自身，作定语。C项相同。“海之深”“山之高”“郦元之简”“李渤之陋”中的“之”都用在主谓之间，取消句子独立性。D项不同。“当以书相分”中，“以”是介词“用”；“斧斤以时入山林”中，“以”是介词“按照”。故选C。",
-          "inputSha256": "e9353a59ec03a48c410ffe0c78e287f468c0462a5a1a7755dd247f166354cdcf",
-          "generatedAt": "2026-10-03T00:39:17.649838+00:00",
-          "uncertainties": [
-            "C项后句“李渤·之陋”中多一个间隔符，属录入问题，据《石钟山记》原句“盖叹郦元之简，而笑李渤之陋也”理解。"
-          ],
-          "selectedOptions": [
-            "C"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
-            "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
-            "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
-            "stage": "independent"
-          },
-          "inputContextSha256": "21a2fa5509aaa8cf4845e1d80914de014dcbc82d6cac99bca772f66bc397fb12"
         }
-      },
-      "inputContextSha256": "e42660ef17e5fc413ea8eda42ffa5ba225cd484b581a73824ef5a1139d5d6707"
+      ],
+      "inputPresentationSha256": "ddb013e7b30191a54c17b8a5b523e070da332c7e1b6a29b49403b36634643299"
     },
     {
       "id": "2002-guwen:3",
@@ -12694,11 +12748,11 @@
     },
     {
       "id": "2003-moxie:1",
-      "inputSha256": "372f6921ab47adfa0052323ea61f23d9fca6c4eb2a12044a30416f621af4d4e1",
-      "status": "disputed",
+      "inputSha256": "bb9bda70603be45809b3acbf869ec9fdfcce15e55530c307d3491bb6132489ac",
+      "status": "draft",
       "kind": "open",
       "correctOptions": [],
-      "explanation": "原题转录缺损或身份存疑，当前已给文本的双模型答案仅供核对，暂停确定判分；必须核原卷后恢复。",
+      "explanation": "2003原题图校勘后待完整重审；旧题面与全部模型答案保存在history。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T01:38:23.281Z",
       "sources": [
@@ -12708,66 +12762,111 @@
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答",
-          "text": "《琵琶行》紧接两句为：银瓶乍破水浆迸，铁骑突出刀枪鸣。《前赤壁赋》紧接“如泣如诉”的两句为：余音袅袅，不绝如缕。其后另有“舞幽壑之潜蛟，泣孤舟之嫠妇”。当前题面标六分而展示的空位结构不清，不能确认后两句是否也在原卷设空；应回到原卷定位。以上明确区分已给上下文所接原句与后续原文，不能将可能遗漏空位当作已确认。",
-          "inputSha256": "372f6921ab47adfa0052323ea61f23d9fca6c4eb2a12044a30416f621af4d4e1",
-          "generatedAt": "2026-10-03T01:38:23.281Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
-            "contextEvidence": {
-              "method": "no_annotation_v1_equivalence",
-              "originalInputSha256": "372f6921ab47adfa0052323ea61f23d9fca6c4eb2a12044a30416f621af4d4e1",
-              "originalEvidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
-              "originalAnswerSha256": "2f63e305cfc2d9fc1e95aeffd360290f872de0c6126cbf5de15ca2b80eed352e",
-              "contextSha256": "60c0ac96463d11bd6d51756e72f23b7740d0ffc071b6d6bc06fa20eacf5ab3cd",
-              "sourceAnnotation": null,
-              "evidence": "answers-six-sites-20261002/no-annotation-context-proof.json"
+      "modelAnswers": {},
+      "inputContextSha256": "0cfc533f9c01af788316985e75e2c500e8495c514f2ddf5fdc5f2ab18adeefd9",
+      "inputPresentationSha256": "c19e1c346ef1e1a39348c4400c3ce5116866f732e764a739199df2955b3d24ce",
+      "history": [
+        {
+          "source": {
+            "id": "2003-moxie",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "白居易《琵琶行》描写琵琶声“别有幽愁暗恨生，此时无声胜有声。 ，\n”。苏轼《前赤壁赋》形容洞箫\n声“ 其 声 呜 呜 然 ，如 怨 如 慕 ，如 泣 如 诉 ，\n， ”。这\n都是通过音乐引起想象，运用一系列比喻描写\n听者的感受。"
+              }
+            ],
+            "topic": "17.在横线上填写所引诗赋的句子。（6分）",
+            "annotation": null,
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "17.在横线上填写所引诗赋的句子。（6分）\n白居易《琵琶行》描写琵琶声“别有幽愁暗恨生，此时无声胜有声。 ，\n”。苏轼《前赤壁赋》形容洞箫\n声“ 其 声 呜 呜 然 ，如 怨 如 慕 ，如 泣 如 诉 ，\n， ”。这\n都是通过音乐引起想象，运用一系列比喻描写\n听者的感受。",
+                "score": 6
+              }
+            ]
+          },
+          "review": {
+            "id": "2003-moxie:1",
+            "inputSha256": "372f6921ab47adfa0052323ea61f23d9fca6c4eb2a12044a30416f621af4d4e1",
+            "status": "disputed",
+            "kind": "open",
+            "correctOptions": [],
+            "explanation": "原题转录缺损或身份存疑，当前已给文本的双模型答案仅供核对，暂停确定判分；必须核原卷后恢复。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T01:38:23.281Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2003北京卷原题及完整材料"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答",
+                "text": "《琵琶行》紧接两句为：银瓶乍破水浆迸，铁骑突出刀枪鸣。《前赤壁赋》紧接“如泣如诉”的两句为：余音袅袅，不绝如缕。其后另有“舞幽壑之潜蛟，泣孤舟之嫠妇”。当前题面标六分而展示的空位结构不清，不能确认后两句是否也在原卷设空；应回到原卷定位。以上明确区分已给上下文所接原句与后续原文，不能将可能遗漏空位当作已确认。",
+                "inputSha256": "372f6921ab47adfa0052323ea61f23d9fca6c4eb2a12044a30416f621af4d4e1",
+                "generatedAt": "2026-10-03T01:38:23.281Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
+                  "contextEvidence": {
+                    "method": "no_annotation_v1_equivalence",
+                    "originalInputSha256": "372f6921ab47adfa0052323ea61f23d9fca6c4eb2a12044a30416f621af4d4e1",
+                    "originalEvidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
+                    "originalAnswerSha256": "2f63e305cfc2d9fc1e95aeffd360290f872de0c6126cbf5de15ca2b80eed352e",
+                    "contextSha256": "60c0ac96463d11bd6d51756e72f23b7740d0ffc071b6d6bc06fa20eacf5ab3cd",
+                    "sourceAnnotation": null,
+                    "evidence": "answers-six-sites-20261002/no-annotation-context-proof.json"
+                  },
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "60c0ac96463d11bd6d51756e72f23b7740d0ffc071b6d6bc06fa20eacf5ab3cd"
+                  }
+                },
+                "inputContextSha256": "60c0ac96463d11bd6d51756e72f23b7740d0ffc071b6d6bc06fa20eacf5ab3cd",
+                "inputPresentationSha256": "328e28d8d3d9ad5726919f3f011424c9ccdcd7ca5df7896d249e73e5ae3a9311"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "白居易《琵琶行》：银瓶乍破水浆迸，铁骑突出刀枪鸣。\n苏轼《赤壁赋》：余音袅袅，不绝如缕；舞幽壑之潜蛟，泣孤舟之嫠妇。",
+                "inputSha256": "372f6921ab47adfa0052323ea61f23d9fca6c4eb2a12044a30416f621af4d4e1",
+                "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+                "uncertainties": [
+                  "《赤壁赋》部分横线排版断行，空数不易辨认。按原文，“如泣如诉”后依次为“余音袅袅，不绝如缕。舞幽壑之潜蛟，泣孤舟之嫠妇”，现全部写出。"
+                ],
+                "selectedOptions": [],
+                "assessment": {
+                  "matchesConclusion": null
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+                  "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+                  "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+                  "stage": "independent",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "60c0ac96463d11bd6d51756e72f23b7740d0ffc071b6d6bc06fa20eacf5ab3cd"
+                  }
+                },
+                "inputContextSha256": "60c0ac96463d11bd6d51756e72f23b7740d0ffc071b6d6bc06fa20eacf5ab3cd",
+                "inputPresentationSha256": "328e28d8d3d9ad5726919f3f011424c9ccdcd7ca5df7896d249e73e5ae3a9311"
+              }
             },
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "60c0ac96463d11bd6d51756e72f23b7740d0ffc071b6d6bc06fa20eacf5ab3cd"
-            }
-          },
-          "inputContextSha256": "60c0ac96463d11bd6d51756e72f23b7740d0ffc071b6d6bc06fa20eacf5ab3cd",
-          "inputPresentationSha256": "328e28d8d3d9ad5726919f3f011424c9ccdcd7ca5df7896d249e73e5ae3a9311"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "白居易《琵琶行》：银瓶乍破水浆迸，铁骑突出刀枪鸣。\n苏轼《赤壁赋》：余音袅袅，不绝如缕；舞幽壑之潜蛟，泣孤舟之嫠妇。",
-          "inputSha256": "372f6921ab47adfa0052323ea61f23d9fca6c4eb2a12044a30416f621af4d4e1",
-          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
-          "uncertainties": [
-            "《赤壁赋》部分横线排版断行，空数不易辨认。按原文，“如泣如诉”后依次为“余音袅袅，不绝如缕。舞幽壑之潜蛟，泣孤舟之嫠妇”，现全部写出。"
-          ],
-          "selectedOptions": [],
-          "assessment": {
-            "matchesConclusion": null
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
-            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
-            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
-            "stage": "independent",
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "60c0ac96463d11bd6d51756e72f23b7740d0ffc071b6d6bc06fa20eacf5ab3cd"
-            }
-          },
-          "inputContextSha256": "60c0ac96463d11bd6d51756e72f23b7740d0ffc071b6d6bc06fa20eacf5ab3cd",
-          "inputPresentationSha256": "328e28d8d3d9ad5726919f3f011424c9ccdcd7ca5df7896d249e73e5ae3a9311"
+            "inputContextSha256": "60c0ac96463d11bd6d51756e72f23b7740d0ffc071b6d6bc06fa20eacf5ab3cd",
+            "inputPresentationSha256": "328e28d8d3d9ad5726919f3f011424c9ccdcd7ca5df7896d249e73e5ae3a9311"
+          }
         }
-      },
-      "inputContextSha256": "60c0ac96463d11bd6d51756e72f23b7740d0ffc071b6d6bc06fa20eacf5ab3cd",
-      "inputPresentationSha256": "328e28d8d3d9ad5726919f3f011424c9ccdcd7ca5df7896d249e73e5ae3a9311"
+      ]
     },
     {
       "id": "2002-moxie:1",
@@ -41050,6 +41149,22 @@
         "2004-shilun"
       ],
       "detail": "2004北京卷来源为Gzy三页公开文字转录及夜雨聆风所示重排DOC前4/8页，四预览均已目视；并非原卷扫描或考试机构出版链认证，重排与文字转录都有损字。第5—8页仅有文字摘要，不能冒充视觉核验。 古文原题号6—10、材料注号、四省略句直线和读音/成语点位按重排及HTML限定恢复；原卷视觉证明、病儿复差/其家无亲属等传写疑点和真实标点仍待。 新增原11五段断句与原13诗论独立补录，累计32补录未入库，不移动旧ID/qIndex/year，不合并或重算旧成绩。 正文科学/文化史概括只作试题内部陈述，原科普海参等疑点不据常识替换试题；原散文第5页及以后没有图像证据。 旧score/null、legacy键及全部旧AI与已存模型保全；真实题分及历史计分兼容仍待。 2005—2008共106本人全文及冻结保持不变；2004全部参考暴露，尚无本人新答或provider计划/调用。Claude必须最后，旧PLAN27终态不得重跑。"
+    },
+    {
+      "id": "2003-source-scans-scoring-compatibility",
+      "status": "open",
+      "recordIds": [
+        "2003-feilian",
+        "2003-guwen",
+        "2003-shici",
+        "2003-moxie",
+        "2003-sanwen",
+        "2003-yuyanjichu",
+        "2003-yuyanjichu-2",
+        "2003-dazuowen",
+        "2003-guwen-translation"
+      ],
+      "detail": "2003北京卷按新浪2003-06-08当时发布的11张题图逐张目视校勘，覆盖原1—26题；首页标称13物理页，未获第12—13页及考试机构出版链，不能称全卷档案认证。Gzy三页转录仅辅助，重排预览有缺项与标记遗漏，不作为原卷依据。 原卷第12—13页未获得；新浪为当时媒体发布而非考试机构原始出版链；题图水印/低清及细标点仍有局限。 全部旧ID/qIndex/year/score/null/AI与历史审核保留。默写原4分而旧score6、合并原5/6、原17拆两单元及三道应用旧分值的历史兼容待落地。 新增原16翻译独立补录，未并入runtime；2005错年道路题仍保留旧身份，2003原25视觉归属已确认，不合并进度或重新计分。 所有材料与参考答案已暴露，不称盲答；本阶段无新答案与provider调用，Claude仍最后。"
     }
   ]
 }
