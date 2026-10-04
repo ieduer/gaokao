@@ -4,6 +4,8 @@ import { questionDigest, questionContextDigest, questionPresentationDigest, snap
 import { versionsForQuestion } from '../assets/js/answer-versions.js';
 import { spawnSync } from 'node:child_process';
 import { readFileSync, existsSync } from 'node:fs';
+import {fileURLToPath} from 'node:url';
+import {sourceAssets} from './lib/source-assets.mjs';
 
 const records = [{id:'2009-sanwen',topic:'阅读',materials:[{key:'m1',text:'完整材料'}],questions:[{qIndex:1,text:'选两项：A甲 B乙 C丙 D丁 E戊'}],
   ai_answers:{1:'旧解析'},ai_answer_current_version:'old',ai_answer_versions:{old:{label:'历史模型',model:'old-model',answers:{1:'旧解析'}}}}];
@@ -105,6 +107,29 @@ function markedFixture() {
     provenance:{kind:'cli_response',evidence:'test fixture',responseModel:'claude-opus-5-5'}};
   return {source,a,review};
 }
+
+test('hashes or a textual picture description cannot substitute for two actual-image proofs',()=>{
+  const {source,a,review}=markedFixture();
+  source[0].materials[0].image={asset:'assets/img/fixture.jpg',sha256:'a'.repeat(64),required:true,mimeType:'image/jpeg'};
+  review.inputSha256=questionDigest(source[0],source[0].questions[0]);review.inputContextSha256=questionContextDigest(source[0],source[0].questions[0]);review.inputPresentationSha256=questionPresentationDigest(source[0],source[0].questions[0]);
+  for(const model of Object.values(review.modelAnswers))Object.assign(model,{inputSha256:review.inputSha256,inputContextSha256:review.inputContextSha256,inputPresentationSha256:review.inputPresentationSha256});
+  assert.throws(()=>validateAuthority(source,a,{requireComplete:true}),/Incomplete actual-image/);
+  const root=review.modelAnswers.gpt_6_astra;
+  root.visualEvidence={observations:['synthetic visible fixture'],limitations:[]};root.provenance.imageInputs=[{material:'m1',sha256:'a'.repeat(64),mode:'pixels',evidence:'synthetic fixture only'}];
+  assert.throws(()=>validateAuthority(source,a,{requireComplete:true}),/Incomplete actual-image/);
+  const claude=review.modelAnswers.claude;claude.visualEvidence=structuredClone(root.visualEvidence);claude.provenance.imageInputs=structuredClone(root.provenance.imageInputs);
+  validateAuthority(source,a,{requireComplete:true});
+  claude.provenance.imageInputs[0].sha256='b'.repeat(64);
+  assert.throws(()=>validateAuthority(source,a,{requireComplete:true}),/Incomplete actual-image/);
+});
+
+test('source assets are local allowlisted files with matching bytes, never a private path or unverified URL',()=>{
+  const data=JSON.parse(readFileSync(new URL('../data/all.json',import.meta.url))),root=fileURLToPath(new URL('../',import.meta.url));
+  assert.deepEqual(sourceAssets(data,root),['assets/img/beijing-2008-q21-clock.jpg']);
+  const image=data.find(r=>r.id==='2008-yuyan-image').materials[0].image;
+  image.sha256='a'.repeat(64);assert.throws(()=>sourceAssets(data,root),/hash mismatch/);
+  image.asset='../../private.jpg';assert.throws(()=>sourceAssets(data,root),/Invalid source image/);
+});
 test('matching text with another marked occurrence cannot reuse current review',()=>{
   const {source,a}=markedFixture();validateAuthority(source,a,{requireComplete:true});
   for(const patch of [{start:3,end:4},{type:'underline'},{start:0,end:2,anchor:'甲之'}]){

@@ -3,6 +3,7 @@ import { resolve } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { validateAuthority, projectAuthority } from './lib/answer-authority.mjs';
+import { sourceAssets } from './lib/source-assets.mjs';
 
 // Reject incomplete reviews before touching an existing release directory.
 const records=JSON.parse(await readFile('data/all.json','utf8'));
@@ -15,6 +16,7 @@ const output = resolve(process.argv[2] || '.pages-output');
 const files = ['index.html', 'assets/js/app.js', 'assets/js/answer-versions.js', 'assets/js/learning-records.js', 'assets/css/style.css',
   'assets/fonts/HuWenMingChaoTi.woff', 'assets/fonts/HuWenMingChaoTi.woff2',
   'assets/img/bg.webp', 'assets/img/gaokao.jpeg', 'data/all.json'];
+files.push(...sourceAssets(records, process.cwd()));
 try {
   for (const file of await readdir(output, {recursive:true, withFileTypes:true})) {
     if (!file.isFile()) continue;

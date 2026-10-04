@@ -178,6 +178,11 @@ function questionSourceNotice(q) {
   return `题目来源：${source.year} 年北京卷第 ${source.originalNumber} 题（原题 ${source.sourceScore} 分；${basis}）。此为旧收录入口，原有学习记录和历史分值保留。`;
 }
 
+function questionRequiresImage(rec, qIndex) {
+  const materials=rec?.isExam ? findExamSectionForQ(rec,qIndex)?.materials : rec?.materials;
+  return (materials || []).some(material=>material.image?.required);
+}
+
 function questionIdentity(rec, qIndex) {
   const displayQuestion = (rec?.questions || []).find((q) => Number(q.qIndex) === Number(qIndex)) || null;
   if (rec?.isExam && displayQuestion?.origRecId) {
@@ -527,6 +532,14 @@ function renderPassageBody(passage, rec, annos) {
         </header>
         <div class="material-text" data-material="${m.key}">${renderMaterialWithAnnotations(m.text, m.key, annos, state.currentQIndex)}</div>
       `;
+      if (m.image?.required && /^assets\/img\/[a-z0-9-]+\.jpg$/.test(m.image.asset || "")) {
+        const figure=document.createElement("figure"), img=document.createElement("img"), caption=document.createElement("figcaption");
+        img.src=`/${m.image.asset}`; img.alt=m.image.alt || m.label || "题目配图";
+        img.style.maxWidth="100%"; img.style.height="auto";
+        img.dataset.sourceImageSha256=m.image.sha256;
+        caption.textContent="本题配图；请结合图片作答。即时 AI 暂不支持识图，请参阅已核查解析。";
+        figure.append(img,caption);block.appendChild(figure);
+      }
       passage.appendChild(block);
     }
   } else {
@@ -1248,7 +1261,8 @@ function rememberLastPosition() {
 /* =========================================================
  * AI 调用
  * ======================================================= */
-async function callAI(prompt, taskType = "chat") {
+async function callAI(prompt, taskType = "chat", { requiresImage = false } = {}) {
+  if(requiresImage)throw new Error("本题需要识图，即时 AI 暂未支持。请保留作答并参阅已核查解析");
   const captureContext=detailedContext();
   const request=detailedCapture('ai.request',{prompt,taskType},{actor:'system',status:'pending',contentOrigin:'request_context'},captureContext);
   if(!request)throw new Error('学习记录服务尚未就绪，请保留页面后重试');
@@ -1312,7 +1326,7 @@ function buildContextPrompt(rec, qIndex, userTurn, mode = "chat") {
   // 整套试卷模式：只把当前小题所在的那个大题的原文带上，避免上下文过长
   if (rec.isExam) {
     const sec = findExamSectionForQ(rec, qIndex);
-    lines.push(`【试卷】${rec.year} 年 北京高考 · 整套试卷（学生正在通做整年试题）`);
+    lines.push(`【试卷】${rec.year} 年 北京高考 · ${rec.collectionComplete ? "整套试卷" : "已收录题目"}`);
     if (sec) {
       lines.push(`【当前大题】${sec.label}${sec.topic ? `——${sec.topic}` : ""}`);
       for (const m of sec.materials || []) {
@@ -1422,7 +1436,7 @@ async function dispatchChat(userTurn) {
   try {
     if(!submissionCapture)throw new Error('学习记录服务尚未就绪，请保留页面后重试');
     await submissionCapture.saved;
-    const answer = await callAI(prompt, "chat");
+    const answer = await callAI(prompt, "chat", {requiresImage:questionRequiresImage(rec,qIndex)});
     thinking.remove();
     messages.push(detailedMessage('assistant',answer,captureScope));
     state.conversations[conversationKey] = messages;
@@ -1478,7 +1492,7 @@ async function gradeUserAnswer() {
   try {
     if(!submissionCapture)throw new Error('学习记录服务尚未就绪，请保留页面后重试');
     await submissionCapture.saved;
-    const answer = await callAI(prompt, "feedback");
+    const answer = await callAI(prompt, "feedback", {requiresImage:questionRequiresImage(rec,qIndex)});
     thinking.remove();
     messages.push(detailedMessage('assistant',answer,captureScope));
     state.conversations[conversationKey] = messages;
@@ -1511,7 +1525,7 @@ async function regenerateAIAnswer() {
   state.isThinking = true;
   setAIControlsBusy(true, "AI 正在生成解析…");
   try {
-    const answer = await callAI(prompt, "feedback");
+    const answer = await callAI(prompt, "feedback", {requiresImage:questionRequiresImage(rec,qIndex)});
     // 写入 in-memory（不落到 data 文件）
     if (!rec.ai_answers) rec.ai_answers = {};
     rec.ai_answers[String(qIndex)] = answer;

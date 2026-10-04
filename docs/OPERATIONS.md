@@ -1,3 +1,13 @@
+## 2026-10-03 PDT — 2008配图资产与实际视觉门槛，本地候选
+
+2008原21配图补录接入：原JPEG逐字节复制为受控静态资产（12641bytes，SHA aba9e83488ef1f61b2eb16eb6eb59645650e8a51f17f48c050d712c3b2958b13），正式产物清单只接受安全路径与匹配字节，公开源不含本机路径。材料实际显示图片及低清来源说明；原225记录、466审核逐字节/对象不变。34已准备补录现均已接入本地源，226记录/646单元，443reviewed/15disputed/8draft仍未全覆盖。
+
+本人实际查看240×200原像素后，针对新的完整材料/注释/资产字段作答34字，保存可见钟面倾斜、瓦砾与不可可靠识别时刻的限定；新冻结reference-exposure-2008-image-v2-before-claude.json，旧图题输入/答案与PLAN27终态原样保留。191待Claude唯一单元不变。正式完整门槛新增双方真实pixels证据及可见事实要求，路径、文字描述或只有hash不能替代；旧图runner的path格式与新asset格式不兼容，最终Claude须另立有限新版适配与精确重放，不修改旧冻结runner/job。
+
+当前即时AI仅有文字传输，新增图题的聊天/批改/重讲三路在provider及ai.request写入前明确拒绝缺图请求，保留作答，页面提示参阅已核查解析；不以URL冒充识图。此为明确能力限制，后续如需开放实时识图须单独完成APIS契约与真图验收。42相关测试、数据226/646/361/0、资产/输入/旧历史/hash验证PASS；DOM测试不等于真实浏览器或认证验收。无provider、正式build、push、部署、学生或通知写入；Claude仍最后。来源/评分/专站/八消费者/注册发布及status门禁继续，整体任务未完成。
+
+owner codex-01a10560-gpt-6-astra；证据 /Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/REVIEW-IMAGE-RUNTIME.md、verification-image-runtime.json。回退只反向e0ecb56以后的本阶段delta；原图、旧冻结和已接受文字补录均保留。
+
 ## 2026-10-03 PDT — 32文字补录整合，本地候选
 
 从既有冻结源逐字整合23记录/32单元，连同教授题已有33补录入库；仅2008时钟配图1单元尚未入库，须另做真实资产/输入绑定。225记录/645单元，既有202记录和450审核逐对象不变；不改旧题ID、分值、AI、历史或学生记录。新增来源沿用独立ID与原qIndex（包括2009应用qIndex2），source_supplement/authority_only源层不伪造旧模型答案。

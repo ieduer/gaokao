@@ -69,6 +69,22 @@ test('legacy reader renders corrected source and retained original stem without 
   assert.match(history.children[1].textContent,/不少于\$\+字/);
   assert.equal(f.run('state.conversationKey'),'2005-yuyanjichu-2#3');
 });
+
+test('image source renders actual asset in both category and year views', () => {
+  const f=fixture();
+  f.run(`
+    const element=()=>({children:[],innerHTML:'',dataset:{},style:{},append(...items){this.children.push(...items);},appendChild(item){this.children.push(item);}});
+    document.createElement=()=>element();const passage=element();
+    state.currentQIndex=1;renderPassageBody(passage,state.byId.get('2008-yuyan-image'),[]);
+  `);
+  const img=f.run('passage.children[0].children[0].children[0]');
+  assert.equal(img.src,'/assets/img/beijing-2008-q21-clock.jpg');
+  assert.equal(img.dataset.sourceImageSha256,'aba9e83488ef1f61b2eb16eb6eb59645650e8a51f17f48c050d712c3b2958b13');
+  assert.equal(f.run("questionRequiresImage(state.byId.get('2008-yuyan-image'),1)"),true);
+  f.run("const imageExam=buildYearExam(2008);const imageQ=imageExam.questions.find(q=>q.origRecId==='2008-yuyan-image');");
+  assert.equal(f.run('questionRequiresImage(imageExam,imageQ.qIndex)'),true);
+  assert.equal(f.run('questionRequiresImage(imageExam,1)'),false);
+});
 test('ambiguous historical category keys do not invent per-record progress', async () => {
   const rec=corpus.find(r=>r.id==='2007-yuyanjichu');
   const f=fixture({legacy:{'yuyanjichu-2007':'done'},items:[{siteKey:'gk',itemKey:`question-${rec.legacy_progress_key}`,state:'done'}]});

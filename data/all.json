@@ -18592,6 +18592,46 @@
     }
   },
   {
+    "id": "2008-yuyan-image",
+    "topic": "21．为图片配写文字。（4分）",
+    "annotation": "配图与题面见公开重排本第7—8页及公开单图。现有图像较小、清晰度有限；尚未取得考试机构原卷出版链。",
+    "materials": [
+      {
+        "key": "material1",
+        "label": "第21题原配图",
+        "text": "观察下图并按要求配写文字。",
+        "image": {
+          "url": "https://www.gzywtk.com/upload/images/2011/c125679d-d428-4cb9-9456-2f3f22d27b61.jpg",
+          "sha256": "aba9e83488ef1f61b2eb16eb6eb59645650e8a51f17f48c050d712c3b2958b13",
+          "mimeType": "image/jpeg",
+          "required": true,
+          "asset": "assets/img/beijing-2008-q21-clock.jpg",
+          "alt": "2008年北京卷第21题配图"
+        }
+      }
+    ],
+    "annotations": [],
+    "questions": [
+      {
+        "qIndex": 1,
+        "id": "q1",
+        "text": "21．公元2008年5月12日，我国四川省汶川一带发生里氏8级强烈地震，举世震惊。全国上下众志成城，抗震救灾。请为下面一幅图片配写几句话，抒写你的真挚感情。\n【要求】紧扣画面，鲜明生动，连贯顺畅，不超过45个字。（4分）",
+        "score": 4
+      }
+    ],
+    "year": 2008,
+    "key": "yuyanjichu",
+    "typeLabel": "语言基础运用",
+    "answer_policy": "authority_only",
+    "source_evidence": {
+      "kind": "source_supplement",
+      "originalNumber": 21,
+      "title": "2008年北京卷配图题，来源限定见注释"
+    },
+    "ai_answers": {},
+    "ai_answer_versions": {}
+  },
+  {
     "year": 2007,
     "key": "dazuowen",
     "topic": "七、本大题共1小题，共60分。\n25．阅读下面文字，按要求作文。（60分）",

@@ -165,6 +165,18 @@ function validateReviews(records, authority, { requireComplete = false } = {}) {
         || !presentedModels.some(x => x.modelId.startsWith('claude-') && x.provenance.kind === 'cli_response')
         || review.modelAnswers[review.currentVersion]?.inputPresentationSha256 !== presentation)
         throw Error(`Incomplete rendered-emphasis evidence: ${review.id}`);
+      const images=(source.record.materials || []).filter(m=>m.image?.required);
+      if(images.length){
+        const viewed=presentedModels.filter(model=>Array.isArray(model.visualEvidence?.observations)
+          && model.visualEvidence.observations.some(x=>typeof x==='string'&&x.trim())
+          && Array.isArray(model.visualEvidence?.limitations)
+          && images.every(material=>model.provenance.imageInputs?.some(i=>i.material===material.key
+            && i.sha256===material.image.sha256 && i.mode==='pixels' && typeof i.evidence==='string' && i.evidence.trim())));
+        if(!viewed.some(m=>m.modelId==='gpt-6-astra'&&m.provenance.kind==='codex_turn')
+          || !viewed.some(m=>m.modelId.startsWith('claude-')&&m.provenance.kind==='cli_response')
+          || !viewed.includes(review.modelAnswers[review.currentVersion]))
+          throw Error(`Incomplete actual-image evidence: ${review.id}`);
+      }
     }
   }
   return { questions: index.size, reviewed: authority.questions.filter(q => q.status === 'reviewed').length,

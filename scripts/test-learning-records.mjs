@@ -5,6 +5,9 @@ import vm from 'node:vm';
 const app=readFileSync(new URL('../assets/js/app.js',import.meta.url),'utf8');
 const callSource=app.slice(app.indexOf('async function callAI('),app.indexOf('function setAIControlsBusy('));
 function fixture(){const records=[];let fetches=0;const c={AbortController,setTimeout,clearTimeout,window:{setTimeout,clearTimeout},AI_URL:'https://example.invalid',detailedContext:()=>({resourceKey:'question:1',captureScope:'a'}),detailedCapture:(action,content,options,context)=>{const operation={operationId:'synthetic-operation-'+records.length,action,content,options,context};records.push(operation);return{operation,saved:Promise.resolve({ok:true})};},fetch:async()=>{fetches++;return Response.json({answer:' synthetic < full\n',model:'reported-only'});}};vm.createContext(c);vm.runInContext(callSource,c);return{c,records,calls:()=>fetches};}
+test('image-required requests stop before capture and text-only provider transport',async()=>{
+ const f=fixture();await assert.rejects(f.c.callAI('synthetic image question','feedback',{requiresImage:true}),/需要识图/);assert.equal(f.calls(),0);assert.equal(f.records.length,0);
+});
 test('provider waits for durable request and original resource/owner context survives late reply',async()=>{
  const f=fixture();let finish;const promise=new Promise(r=>finish=r);const capture=f.c.detailedCapture;
  f.c.detailedCapture=(...args)=>{const r=capture(...args);return args[0]==='ai.request'?{...r,saved:promise}:r;};

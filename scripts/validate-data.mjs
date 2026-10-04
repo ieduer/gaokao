@@ -5,12 +5,14 @@ import { readFileSync } from "node:fs";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { validateSourceAliases } from "./lib/answer-authority.mjs";
+import { sourceAssets } from "./lib/source-assets.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = resolve(__dirname, "..", "data", "all.json");
 
 const data = JSON.parse(readFileSync(DATA_PATH, "utf8"));
 validateSourceAliases(data);
+sourceAssets(data, resolve(__dirname, '..'));
 const errors = [];
 let legacyBackupRecords = 0;
 let legacyBackupKeys = 0;
