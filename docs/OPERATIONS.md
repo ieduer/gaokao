@@ -1,3 +1,9 @@
+## 2026-10-03 PDT — 真实视觉证据的消费者投影保全，本地候选
+
+projectAuthority在ai_answer_versions版本槽新增可选visualEvidence[qIndex]，保留当前及历史模型的实际观察和限制，配合已存在的provenance.imageInputs。此前全源门禁会核查真实视觉，但投影只带像素来源而丢失模型观察，消费者无法独立检查完整读图证据。文本模型不生成此字段，现有未有已审图题的真实投影与546812c3逐对象相同；data/all.json和authority逐字节不变，不补造任何读图记录。
+
+21authority测试通过，包含当前/历史视觉记录、克隆隔离、过时字段清除及原完整门禁；仅合成测试，没有模型调用。真实语料226/646、443reviewed/15disputed/8draft、191待Claude保持，正式build、部署、浏览器/认证验收仍待。证据 `/Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/verification-visual-projection.json`；本地回退锚点546812c3f5742dd9305a50e8acfdc8e9ee14287a。下游图题必须同时保留并检查实际观察/限制和匹配像素来源，不能仅凭hash判合格。
+
 ## 2026-10-03 PDT — 24题练习分项计分兼容，本地候选
 
 在既有审核结论旁增加24题practiceScoring，不改题面、注释、标记、原score或任何模型全文，按当前inputPresentationSha256绑定。修复2011语用第2题把选项90分钟误作满分的显示/新练习反馈：保留源score90，投影后参考满分3。合并题完整列出分项与总分（例如2020古文原10/11=2+4，2019非连原5/6=3+7，2014语用4/5/6①/6②/7①/7②=14），不能整组按一个选项判分。

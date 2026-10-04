@@ -228,6 +228,10 @@ export function projectAuthority(records, authority) {
             inputSha256: model.inputSha256, inputContextSha256: model.inputContextSha256 || null,
             inputPresentationSha256: model.inputPresentationSha256 || null,
             historicalSourceContext: context };
+          if(model.visualEvidence){
+            slot.visualEvidence ||= {};
+            slot.visualEvidence[key] = structuredClone(model.visualEvidence);
+          }
         }
       }
     }
@@ -239,6 +243,10 @@ export function projectAuthority(records, authority) {
       slot.provenance[key] = { ...model.provenance, label:model.label, generatedAt: model.generatedAt,
         inputSha256: model.inputSha256, inputContextSha256: model.inputContextSha256 || null,
         inputPresentationSha256: model.inputPresentationSha256 || null };
+      if(model.visualEvidence){
+        slot.visualEvidence ||= {};
+        slot.visualEvidence[key] = structuredClone(model.visualEvidence);
+      } else if(slot.visualEvidence) delete slot.visualEvidence[key];
     }
     // Original model slots remain intact; only the current per-question view advances.
     record.ai_answers[key] = review.status === 'disputed'

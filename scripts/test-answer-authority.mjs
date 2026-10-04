@@ -49,6 +49,29 @@ test('retains old answers and IDs while projecting complete multiple-choice key'
   assert.deepEqual(out[0].answer_reviews[1].correctOptions,['B','E']);
   assert.equal(out[0].ai_answers[1],'答案：B、E');
 });
+
+test('consumer projection retains current and historical visual observations without sharing references',()=>{
+  const source=structuredClone(records),a=fixture(),review=a.questions[0];
+  const model=review.modelAnswers.gpt_6_astra;
+  model.visualEvidence={observations:['synthetic current observation'],limitations:['synthetic uncertainty']};
+  model.provenance.imageInputs=[{material:'m1',sha256:'a'.repeat(64),mode:'pixels',evidence:'synthetic fixture only'}];
+  const old=snapshotReview(source[0],source[0].questions[0],review);
+  old.review.modelAnswers.gpt_6_astra.visualEvidence.observations=['synthetic earlier observation'];
+  source[0].annotation='新上下文';review.inputContextSha256=questionContextDigest(source[0],source[0].questions[0]);
+  review.inputPresentationSha256=questionPresentationDigest(source[0],source[0].questions[0]);
+  model.inputContextSha256=review.inputContextSha256;model.inputPresentationSha256=review.inputPresentationSha256;
+  review.history=[old];
+  const out=projectAuthority(source,a),slot=out[0].ai_answer_versions.gpt_6_astra;
+  assert.deepEqual(slot.visualEvidence[1],model.visualEvidence);
+  assert.deepEqual(slot.provenance[1].imageInputs,model.provenance.imageInputs);
+  const historical=Object.entries(out[0].ai_answer_versions).find(([id])=>id.startsWith('gpt_6_astra_source_'))[1];
+  assert.deepEqual(historical.visualEvidence[1].observations,['synthetic earlier observation']);
+  slot.visualEvidence[1].observations.push('projection mutation');
+  assert.equal(model.visualEvidence.observations.length,1);
+  const staleSource=structuredClone(source);staleSource[0].ai_answer_versions.gpt_6_astra=structuredClone(slot);
+  delete model.visualEvidence;
+  assert.equal(projectAuthority(staleSource,a)[0].ai_answer_versions.gpt_6_astra.visualEvidence[1],undefined);
+});
 test('fails before projection on changed passage or reordered options',()=>{
   for(const mutate of [x=>x[0].materials[0].text+='异文',x=>x[0].questions[0].text='选两项：A乙 B甲 C丙 D丁 E戊']) {
     const changed=structuredClone(records);mutate(changed);assert.throws(()=>projectAuthority(changed,fixture()),/Question changed/);
