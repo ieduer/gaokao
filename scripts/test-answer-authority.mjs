@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { questionDigest, questionContextDigest, questionPresentationDigest, snapshotReview, validateAuthority, projectAuthority } from './lib/answer-authority.mjs';
+import { questionDigest, questionContextDigest, questionPresentationDigest, snapshotReview, validateAuthority, validateSourceAliases, projectAuthority } from './lib/answer-authority.mjs';
 import { versionsForQuestion } from '../assets/js/answer-versions.js';
 import { spawnSync } from 'node:child_process';
 import { readFileSync, existsSync } from 'node:fs';
@@ -16,6 +16,30 @@ function fixture() {
     currentVersion:'gpt_6_astra',modelAnswers:{gpt_6_astra:{modelId:'gpt-6-astra',label:'GPT-6 Astra',text:'答案：B、E',
       inputSha256,inputContextSha256,inputPresentationSha256,generatedAt:'2026-10-02T23:00:00Z',provenance:{kind:'codex_turn',evidence:'test fixture'}}}}]};
 }
+
+test('legacy source labels bind their own proof and invalid aliases fail closed', () => {
+  const data=JSON.parse(readFileSync(new URL('../data/all.json',import.meta.url)));
+  validateSourceAliases(data);
+  const record=data.find(r=>r.id==='2005-yuyanjichu-2'), question=record.questions[2];
+  const canonical=data.find(r=>r.id==='2003-yuyanjichu-2');
+  assert.equal(question.text,canonical.questions[2].text);
+  assert.notEqual(questionPresentationDigest(record,question),questionPresentationDigest(canonical,canonical.questions[2]));
+  const before=questionPresentationDigest(record,question);
+  question.sourceIdentity.sourceScore=7;
+  assert.notEqual(questionPresentationDigest(record,question),before);
+  question.sourceIdentity.canonicalId='missing:1';
+  assert.throws(()=>validateSourceAliases(data),/Invalid legacy source mapping/);
+  question.sourceIdentity.canonicalId='2005-yuyanjichu-2:3';
+  assert.throws(()=>validateSourceAliases(data),/Invalid legacy source mapping/);
+});
+
+test('a new source supplement cannot inherit a legacy model result or leave the release denominator', () => {
+  const a=fixture(),data=structuredClone(records);
+  data.push({id:'new-source',materials:[],topic:'新补录',questions:[{qIndex:1,text:'新题'}],ai_answers:{},ai_answer_versions:{},answer_policy:'authority_only'});
+  assert.throws(()=>validateAuthority(data,a,{requireComplete:true}),/Incomplete review: 1\/2/);
+  const copied=structuredClone(a.questions[0]);copied.id='new-source:1';a.questions.push(copied);
+  assert.throws(()=>validateAuthority(data,a),/Question changed/);
+});
 test('retains old answers and IDs while projecting complete multiple-choice key',()=>{
   const original=structuredClone(records),out=projectAuthority(records,fixture());
   assert.deepEqual(records,original);assert.deepEqual(out[0].questions,records[0].questions);

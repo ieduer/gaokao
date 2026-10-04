@@ -24,11 +24,50 @@ function fixture({ items = [], authenticated = true, saved = {}, legacy = {}, fa
 const record = corpus.find(r => r.id === '2026-guwen');
 const legacyItem = (state, extra = {}) => ({ siteKey: 'gk', itemKey: `question-${record.legacy_progress_key}`, state, ...extra });
 
-test('all 201 records retain exact legacy aliases and 612 complete prompts', () => {
-  assert.equal(corpus.length, 201);
-  assert.equal(new Set(corpus.map(r => r.legacy_progress_key)).size, 196);
-  assert.equal(corpus.reduce((n, r) => n + r.questions.length, 0), 612);
-  assert.ok(corpus.every(r => r.questions.every(q => r.ai_answers[q.qIndex])));
+test('all 201 historical records and 612 legacy prompts survive source supplements', () => {
+  const historical = corpus.filter(r => r.answer_policy !== 'authority_only');
+  assert.equal(historical.length, 201);
+  assert.equal(new Set(historical.map(r => r.legacy_progress_key)).size, 196);
+  assert.equal(historical.reduce((n, r) => n + r.questions.length, 0), 612);
+  assert.ok(historical.every(r => r.questions.every(q => r.ai_answers[q.qIndex])));
+});
+
+test('new year collections exclude wrong-year aliases while old links keep their own progress identity', () => {
+  const f = fixture({saved:{'2007-yuyanjichu-2':'done','2005-yuyanjichu-2':'in_progress'}});
+  const before = f.storage.get('gk_progress');
+  const y2005 = f.run('buildYearExam(2005)'), y2007 = f.run('buildYearExam(2007)');
+  assert.equal(y2005.questions.filter(q => q.origRecId === '2005-yuyan-professor').length, 1);
+  assert.equal(y2005.questions.filter(q => q.origRecId === '2005-yuyanjichu-2').length, 2);
+  assert.equal(y2007.questions.filter(q => q.origRecId === '2007-yuyanjichu-2').length, 0);
+  assert.equal(f.run('buildYearExam(2003)').questions.filter(q => q.origRecId === '2003-yuyanjichu-2' && q.origQIndex === 3).length, 1);
+  for (const id of ['2007-yuyanjichu-2','2005-yuyanjichu-2']) {
+    const identity = f.run(`questionIdentity(state.byId.get('${id}'),3)`);
+    assert.equal(identity.sourceRecordId,id); assert.equal(identity.sourceQIndex,3);
+  }
+  assert.equal(f.run("state.byId.get('2005-yuyanjichu-2').questions[2].score"),null);
+  assert.equal(f.run("state.byId.get('2007-yuyanjichu-2').questions[2].score"),5);
+  assert.match(f.run("questionSourceNotice(state.byId.get('2005-yuyanjichu-2').questions[2])"),/2003 年北京卷第 25 题/);
+  assert.equal(f.storage.get('gk_progress'),before);
+  assert.equal(y2005.collectionComplete,false);
+  assert.ok(y2007.sections.every(s => s.qStart <= s.qEnd));
+});
+
+test('legacy reader renders corrected source and retained original stem without moving the answer slot', () => {
+  const f=fixture();
+  f.run(`
+    const nodes=new Map();
+    const element=()=>({children:[],innerHTML:'',dataset:{},querySelector(){return element();},append(...items){this.children.push(...items);},appendChild(item){this.children.push(item);}});
+    document.createElement=()=>element();
+    document.querySelector=(key)=>{if(!nodes.has(key))nodes.set(key,element());return nodes.get(key);};
+    renderAnswerVersions=()=>{};renderChatMessages=()=>{};renderDiscussionPanel=()=>{};
+    state.currentRecord=state.byId.get('2005-yuyanjichu-2');state.currentQIndex=3;
+    renderWorkpad();
+  `);
+  const html=f.run("nodes.get('#active-question').innerHTML");
+  assert.match(html,/不少于40字/);assert.match(html,/2003 年北京卷第 25 题/);
+  const history=f.run("nodes.get('#active-question').children[0]");
+  assert.match(history.children[1].textContent,/不少于\$\+字/);
+  assert.equal(f.run('state.conversationKey'),'2005-yuyanjichu-2#3');
 });
 test('ambiguous historical category keys do not invent per-record progress', async () => {
   const rec=corpus.find(r=>r.id==='2007-yuyanjichu');

@@ -4,11 +4,13 @@
 import { readFileSync } from "node:fs";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { validateSourceAliases } from "./lib/answer-authority.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = resolve(__dirname, "..", "data", "all.json");
 
 const data = JSON.parse(readFileSync(DATA_PATH, "utf8"));
+validateSourceAliases(data);
 const errors = [];
 let legacyBackupRecords = 0;
 let legacyBackupKeys = 0;
@@ -52,8 +54,13 @@ for (const rec of data) {
   // OpenAI Codex（GPT-5）版本保留供对照；其余年份仍以 GPT-5.5 pro 为当前版本。
   const opus5 = rec.ai_answer_versions?.claude_opus_5?.answers || {};
   const opus5Keys = answerKeys(opus5);
+  const authorityOnly = rec.answer_policy === "authority_only";
+  if (authorityOnly && (rec.source_evidence?.kind !== "source_supplement"
+    || !Number.isInteger(rec.source_evidence?.originalNumber)
+    || rec.legacy_progress_key || currentKeys.size || Object.keys(rec.ai_answer_versions || {}).length
+    || rec.ai_answer_current_version)) err(`${rec.id}: invalid authority-only supplement`);
   if (
-    (!isCodexBeijing2026 && rec.ai_answer_current_version !== "gpt_5_5_pro")
+    (!authorityOnly && !isCodexBeijing2026 && rec.ai_answer_current_version !== "gpt_5_5_pro")
     || (isCodexBeijing2026 && rec.ai_answer_current_version !== "claude_opus_5")
   ) {
     err(`${rec.id}: current answer version does not match its verified source policy`);
@@ -63,9 +70,9 @@ for (const rec of data) {
     questionCount += 1;
     const key = String(q.qIndex);
     if (!q.text || typeof q.text !== "string") err(`${rec.id}#${key}: empty question text`);
-    if (!currentKeys.has(key)) err(`${rec.id}#${key}: missing current ai_answers entry`);
-    if (!isCodexBeijing2026 && !claudeKeys.has(key)) err(`${rec.id}#${key}: missing Claude Opus 4.8 answer`);
-    if (!isCodexBeijing2026 && !gptKeys.has(key)) err(`${rec.id}#${key}: missing GPT-5.5 pro answer`);
+    if (!authorityOnly && !currentKeys.has(key)) err(`${rec.id}#${key}: missing current ai_answers entry`);
+    if (!authorityOnly && !isCodexBeijing2026 && !claudeKeys.has(key)) err(`${rec.id}#${key}: missing Claude Opus 4.8 answer`);
+    if (!authorityOnly && !isCodexBeijing2026 && !gptKeys.has(key)) err(`${rec.id}#${key}: missing GPT-5.5 pro answer`);
     if (isCodexBeijing2026 && !codexKeys.has(key)) err(`${rec.id}#${key}: missing OpenAI Codex (GPT-5) answer`);
     if (isCodexBeijing2026 && !opus5Keys.has(key)) err(`${rec.id}#${key}: missing Claude Opus 5 verified answer`);
     if (currentKeys.has(key)) currentAnswerCount += 1;

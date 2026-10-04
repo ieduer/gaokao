@@ -36,7 +36,27 @@ export function questionPresentationDigest(record, question) {
   // in the passage is a different input even when the v2 text is identical.
   return createHash('sha256').update(JSON.stringify({ version: 3,
     contextSha256: questionContextDigest(record, question), emphasis: questionEmphasis(record, question),
+    // Only mapped legacy entries have this additional displayed source. Leave
+    // existing, unmapped evidence byte-compatible; never transplant its proof.
+    ...(question.sourceIdentity ? { sourceIdentity: question.sourceIdentity } : {}),
   })).digest('hex');
+}
+
+export function validateSourceAliases(records) {
+  const index = questionIndex(records);
+  for (const [id, {record, question}] of index) {
+    const source = question.sourceIdentity;
+    if (!source) continue;
+    const target = index.get(source.canonicalId);
+    if (!target || source.canonicalId === id || target.question.sourceIdentity
+      || source.year !== target.record.year || !Number.isInteger(source.originalNumber)
+      || source.originalNumber < 1 || !Number.isFinite(source.sourceScore) || source.sourceScore <= 0
+      || !['transcription', 'contemporary_scan'].includes(source.basis))
+      throw Error(`Invalid legacy source mapping: ${id}`);
+    if (!record.source_history?.some(old => old.id === record.id
+      && old.questions?.some(q => q.qIndex === question.qIndex && q.score === question.score)))
+      throw Error(`Missing legacy source history: ${id}`);
+  }
 }
 
 function historicalContextDigest(source, question) {
@@ -66,6 +86,11 @@ export function questionIndex(records) {
 }
 
 export function validateAuthority(records, authority, { requireComplete = false } = {}) {
+  validateSourceAliases(records);
+  return validateReviews(records, authority, { requireComplete });
+}
+
+function validateReviews(records, authority, { requireComplete = false } = {}) {
   if (authority.schemaVersion !== 1 || !authority.revision || !Array.isArray(authority.questions))
     throw Error('Invalid answer authority schema');
   const index = questionIndex(records), seen = new Set();
@@ -89,7 +114,7 @@ export function validateAuthority(records, authority, { requireComplete = false 
       if (archivedContexts.has(oldContext) || oldContext === currentContext)
         throw Error(`Repeated historical context: ${review.id}`);
       archivedContexts.add(oldContext);
-      validateAuthority([archived.source], { schemaVersion: 1, revision: 'historical', questions: [archived.review] });
+      validateReviews([archived.source], { schemaVersion: 1, revision: 'historical', questions: [archived.review] });
     }
     if (!['draft', 'reviewed', 'disputed'].includes(review.status)) throw Error(`Invalid review status: ${review.id}`);
     if (!Array.isArray(review.sources) || !review.sources.length) throw Error(`Missing source: ${review.id}`);

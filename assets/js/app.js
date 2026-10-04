@@ -171,6 +171,13 @@ function questionLabel(rec, qIndex) {
   return `${recordLabel(rec)} · 第 ${qIndex} 题`;
 }
 
+function questionSourceNotice(q) {
+  const source = q?.sourceIdentity;
+  if (!source) return "";
+  const basis = source.basis === "contemporary_scan" ? "已核当时公布题图" : "依据公开文字转录，原卷扫描待核";
+  return `题目来源：${source.year} 年北京卷第 ${source.originalNumber} 题（原题 ${source.sourceScore} 分；${basis}）。此为旧收录入口，原有学习记录和历史分值保留。`;
+}
+
 function questionIdentity(rec, qIndex) {
   const displayQuestion = (rec?.questions || []).find((q) => Number(q.qIndex) === Number(qIndex)) || null;
   if (rec?.isExam && displayQuestion?.origRecId) {
@@ -761,7 +768,18 @@ function renderWorkpad() {
       <span class="active-question-section">${q.sectionLabel ? `${escapeHtml(q.sectionLabel)}${q.score ? ` · ${q.score} 分` : ""}` : (q.score ? `${q.score} 分` : "完整题干")}</span>
     </header>
     <div class="active-question-body">${formatQuestionBody(q.text)}</div>
+    ${q.sourceIdentity ? `<p class="annotation-note">${escapeHtml(questionSourceNotice(q))}</p>` : ""}
   `;
+  const historicalSources = identity.sourceRecord?.source_history || [];
+  for (const source of historicalSources) {
+    const oldQuestion = source.questions?.find(item => Number(item.qIndex) === identity.sourceQIndex);
+    if (!oldQuestion) continue;
+    const detail = document.createElement("details"), summary = document.createElement("summary"), body = document.createElement("div");
+    summary.textContent = "查看修正前的收录题面";
+    body.className = "ai-version-text";
+    body.textContent = [source.topic, ...(source.materials || []).map(m => m.text), source.annotation, oldQuestion.text].filter(Boolean).join("\n\n");
+    detail.append(summary, body); activeBox.appendChild(detail);
+  }
   $("#copy-question-btn").hidden = false;
   $("#copy-question-btn").dataset.qIndex = String(qIndex);
 
@@ -1062,9 +1080,13 @@ function buildYearExam(year) {
 
   for (const rec of records) {
     const sectionStart = qCounter + 1;
-    const subQs = (rec.questions && rec.questions.length)
+    const sourceQs = (rec.questions && rec.questions.length)
       ? rec.questions
       : [{ qIndex: 1, text: rec.topic || rec.material1 || "(详见原文)", score: null }];
+    // Legacy links keep their original storage identity. New year collections
+    // include the canonical source once, never the wrong-year compatibility entry.
+    const subQs = sourceQs.filter(q => !q.sourceIdentity);
+    if (!subQs.length) continue;
 
     // 把每道小题映射到 flat qIndex
     const localQMap = new Map();    // origQIndex → newQIndex
@@ -1121,7 +1143,8 @@ function buildYearExam(year) {
     });
   }
 
-  const collectionComplete = records.length >= 7;
+  // A count of record groups cannot certify a complete original paper.
+  const collectionComplete = records.every(r => r.source_evidence?.paper_complete === true);
   return {
     id: `exam-${numYear}`,
     isExam: true,
@@ -1129,7 +1152,7 @@ function buildYearExam(year) {
     year: numYear,
     key: "_exam",
     typeLabel: `${numYear === 9999 ? "样卷" : numYear + " 年"}${collectionComplete ? "整套试卷" : "已收录题目"}`,
-    topic: `${records.length} 个题型，共 ${flatQuestions.length} 题。`,
+    topic: `${sections.length} 个题组，共 ${flatQuestions.length} 个作答单元。`,
     collectionComplete,
     sections,
     questions: flatQuestions,
