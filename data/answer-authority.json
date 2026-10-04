@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261004-source9999-authored-reading-pending",
+  "revision": "2026-10-03-text-supplements-local",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -40871,6 +40871,1212 @@
       "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
       "reviewedAt": "2026-10-03T12:54:17.016Z",
       "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2009-duanju:1",
+      "sources": [
+        {
+          "type": "qualified_public_scan",
+          "title": "2009北京题源：新浪原卷样式6页逐页目视，第2页缺失，Gzy转载异文限定",
+          "url": "https://slide.edu.sina.com.cn/slide_11_272_71.html?img=708"
+        },
+        {
+          "type": "adjudication",
+          "title": "2009完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2009.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "天之道/其犹张弓与/高者抑之/下者举之/有馀者损之/不足者补之/天之道/损有馀而补不足/人之道则不然/损不足以奉有馀/孰能有馀以奉天下/唯有道者/是以圣人为而不恃/功成而不处。\n这里先以张弓为喻：高的压低，低的抬高，有余的减少，不足的补足；再将天道与人之道对举，末尾问谁能以有余奉天下，并以有道者及圣人的行为作答。高者、下者、有馀者、不足者四组并列，不能割裂者与前面的修饰语；而、以在相应分句内连接动作和目的。所示斜线是一种完整语意划分，天之道后及孰能问句、唯有道者答句等处的考试断点粒度仍应以经认证评分细则为准，本示例不提供机械唯一断点判分。",
+          "selectedOptions": [],
+          "inputSha256": "9866421d8d5896fdc213dbc0346ec6222eda81baf5cae5938f7f14f4f2eb00ee",
+          "inputContextSha256": "f7d59b46cf3ab82ed00e7ace7c9628634389f949d4b500e33e74063b6a2611f8",
+          "inputPresentationSha256": "9190aedb64c3c5fd6e653e36a071187396fb5b2446bbc8522da3a78f2475c657",
+          "generatedAt": "2026-10-03T12:47:36.533060+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2009-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2009-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2009.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "天之道/其犹张弓与/高者抑之/下者举之/有馀者损之/不足者补之/天之道/损有馀而补不足/人之道则不然/损不足以奉有馀/孰能有馀以奉天下/唯有道者/是以圣人为而不恃/功成而不处。\n大意：自然的规律就像拉弓一样，高了就压低，低了就抬高，有余的减少，不足的补充。天道减损有余来补给不足，人道却不是这样，减损不足的去供奉有余的。谁能把有余的拿来供奉天下？只有得道的人。所以圣人有所作为而不自恃，功成而不居功。",
+          "inputSha256": "9866421d8d5896fdc213dbc0346ec6222eda81baf5cae5938f7f14f4f2eb00ee",
+          "inputContextSha256": "f7d59b46cf3ab82ed00e7ace7c9628634389f949d4b500e33e74063b6a2611f8",
+          "inputPresentationSha256": "9190aedb64c3c5fd6e653e36a071187396fb5b2446bbc8522da3a78f2475c657",
+          "generatedAt": "2026-10-03T12:49:27.258825+00:00",
+          "uncertainties": [
+            "“天之道/其犹张弓与”“天之道/损有馀而补不足”两处的主语后停顿可断可不断，评分细则未知。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2009-reading-result.json",
+            "inputPromptSha256": "f9bf65e96b8675516bda33bb90ab8d9bfb057a5d385804db05b66bf940910146",
+            "responseStreamSha256": "404700d114b3d1fdc4abafbfb80b0cf94e377bba77b4c964b7624c0a1ec203c6",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "9866421d8d5896fdc213dbc0346ec6222eda81baf5cae5938f7f14f4f2eb00ee",
+      "inputContextSha256": "f7d59b46cf3ab82ed00e7ace7c9628634389f949d4b500e33e74063b6a2611f8",
+      "inputPresentationSha256": "9190aedb64c3c5fd6e653e36a071187396fb5b2446bbc8522da3a78f2475c657",
+      "status": "disputed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两者完整断法一致，但公开参考图11在两处天之道后没有同样斜线；不是所有语意停顿都必为考试断点。评分细则/颗粒度未认证，继续disputed。完整语段和两模型原文保留，不设机械评分键。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:54:17.016Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2009-feilian:1",
+      "sources": [
+        {
+          "type": "qualified_public_scan",
+          "title": "2009北京题源：新浪原卷样式6页逐页目视，第2页缺失，Gzy转载异文限定",
+          "url": "https://slide.edu.sina.com.cn/slide_11_272_71.html?img=708"
+        },
+        {
+          "type": "adjudication",
+          "title": "2009完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2009.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选B。第三段先说词藻故实并不稀奇，继而以内行家的意见强调好的曲文应亦文亦话，B把这两点联系起来，符合本文语意。A把作品中出现幽期密约、盗劫篡夺等内容等同于教唆淫盗，忽略最终归结到劝善教化的区别。C把文中对唱到何字便有相应动作的描写说成手脚之间的协调，且把这种协调的目的断定为准确表现唱词，超出了原文表述。D把对称归因于布景，原文却说明是使不同方位的观众获得同等观赏。",
+          "selectedOptions": [
+            "B"
+          ],
+          "inputSha256": "7a6339328f3c5cb811ff5d35d358f7dc0a05918cd1cc2221a0a2cb44575d0e8b",
+          "inputContextSha256": "72f996d60faffabddabc9fc9fd9d5a2547fcccb52ff63b5ef3f49ce174330ebc",
+          "inputPresentationSha256": "d92e8ca4162258e43261e84a7e099772540ba50926473fdcb69cc6c18a575f08",
+          "generatedAt": "2026-10-03T12:47:36.533060+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2009-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2009-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2009.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。A项错：原文说戏本子虽有幽期密约、盗劫篡夺的情节，但“总要归结到”教忠教孝、劝贞劝节，并不是有的诲淫诲盗、有的教忠教孝。B项较符合：原文说多用词藻故实“不算稀奇”，要“亦文亦话才是本色”，即好的戏文既有词藻典故，又文言白话兼备。C项错：原文说唱到哪个字，眼、手、脚各有规定，重在“对称”，没有说注重手脚协调，也没有说目的是准确表现唱词。D项错：对称的是动作和姿势而非站位，目的是让台下看客得到同等的观赏，与舞台布景无关。",
+          "inputSha256": "7a6339328f3c5cb811ff5d35d358f7dc0a05918cd1cc2221a0a2cb44575d0e8b",
+          "inputContextSha256": "72f996d60faffabddabc9fc9fd9d5a2547fcccb52ff63b5ef3f49ce174330ebc",
+          "inputPresentationSha256": "d92e8ca4162258e43261e84a7e099772540ba50926473fdcb69cc6c18a575f08",
+          "generatedAt": "2026-10-03T12:49:27.258825+00:00",
+          "uncertainties": [
+            "B项“词藻故实颇丰”与原文“不算稀奇”的语气略有出入，但其余三项错误明显，B为最佳选项。"
+          ],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2009-reading-result.json",
+            "inputPromptSha256": "f9bf65e96b8675516bda33bb90ab8d9bfb057a5d385804db05b66bf940910146",
+            "responseStreamSha256": "404700d114b3d1fdc4abafbfb80b0cf94e377bba77b4c964b7624c0a1ec203c6",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "7a6339328f3c5cb811ff5d35d358f7dc0a05918cd1cc2221a0a2cb44575d0e8b",
+      "inputContextSha256": "72f996d60faffabddabc9fc9fd9d5a2547fcccb52ff63b5ef3f49ce174330ebc",
+      "inputPresentationSha256": "d92e8ca4162258e43261e84a7e099772540ba50926473fdcb69cc6c18a575f08",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "两者B，小说情节与教唆行为、动作对称与布景的区别清楚。B颇丰是概括；原文强调亦文亦话才为本色，两者把握相同，不以不算稀奇否定词藻典故的存在。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:54:17.016Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2009-feilian:2",
+      "sources": [
+        {
+          "type": "qualified_public_scan",
+          "title": "2009北京题源：新浪原卷样式6页逐页目视，第2页缺失，Gzy转载异文限定",
+          "url": "https://slide.edu.sina.com.cn/slide_11_272_71.html?img=708"
+        },
+        {
+          "type": "adjudication",
+          "title": "2009完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2009.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D。末段说表演近似木偶戏的原因是演员不理解动作的所以然，只机械沿袭祖传表演；D却把原因归到注重动作姿势本身，倒置了作者的批评对象。A可由曲社成员的职业、田产和业余活动等信息作概括，但不意味着每位爱好者都富裕；B对应先熟悉曲文及典故词藻才更有味；C对应厅堂里可听清、搬到新式舞台远处则难听清的音响条件判断。C应限于1934年文章所谈的演出条件，不推广为现代昆曲永远不适宜新舞台。",
+          "selectedOptions": [
+            "D"
+          ],
+          "inputSha256": "6d6b9bbbd6c40240f3de4f0fffd4585a784873c5ce12520c64e81a370e4a6be5",
+          "inputContextSha256": "4ece35ac9fb3dc243b75039b719637cf2aa86821a2fad07473657f132fe3e5bf",
+          "inputPresentationSha256": "edccc320697a62362cd09298cebc210c80b06983da6e966f8fd78b27bfa451bf",
+          "generatedAt": "2026-10-03T12:47:36.533060+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2009-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2009-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2009.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。原文说昆曲虽然注重动作姿势，但如果演员不知其所以然、只是死守祖传表演，才会像木偶戏；像木偶戏的原因是演员不能体会，而不是“注重动作姿势”，D项强加因果。A项可由曲社成员（退休官僚、善堂董事、教员、田主）和听曲须通晓曲文典故推出。B项对应“听昆曲先得记熟曲文”。C项对应第二段“演唱昆曲是厅堂里的事情”以及搬上新式舞台“简直没有法子听”。",
+          "inputSha256": "6d6b9bbbd6c40240f3de4f0fffd4585a784873c5ce12520c64e81a370e4a6be5",
+          "inputContextSha256": "4ece35ac9fb3dc243b75039b719637cf2aa86821a2fad07473657f132fe3e5bf",
+          "inputPresentationSha256": "edccc320697a62362cd09298cebc210c80b06983da6e966f8fd78b27bfa451bf",
+          "generatedAt": "2026-10-03T12:49:27.258825+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2009-reading-result.json",
+            "inputPromptSha256": "f9bf65e96b8675516bda33bb90ab8d9bfb057a5d385804db05b66bf940910146",
+            "responseStreamSha256": "404700d114b3d1fdc4abafbfb80b0cf94e377bba77b4c964b7624c0a1ec203c6",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "6d6b9bbbd6c40240f3de4f0fffd4585a784873c5ce12520c64e81a370e4a6be5",
+      "inputContextSha256": "4ece35ac9fb3dc243b75039b719637cf2aa86821a2fad07473657f132fe3e5bf",
+      "inputPresentationSha256": "edccc320697a62362cd09298cebc210c80b06983da6e966f8fd78b27bfa451bf",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "两者D。像木偶的原因是机械传承、不能体会，不是重动作本身。所有舞台听觉判断限定1934语境，爱好者经济状况只为本文一般推断，不能外推全体。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:54:17.016Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2009-feilian:3",
+      "sources": [
+        {
+          "type": "qualified_public_scan",
+          "title": "2009北京题源：新浪原卷样式6页逐页目视，第2页缺失，Gzy转载异文限定",
+          "url": "https://slide.edu.sina.com.cn/slide_11_272_71.html?img=708"
+        },
+        {
+          "type": "adjudication",
+          "title": "2009完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2009.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "长处：曲文有词藻和典故的文学意味，好的曲文讲究亦文亦话；表演歌舞并重，动作姿势丰富，注重对称，使不同位置的观众都能欣赏，演员体会到动作意义时可形成有表现力的艺术。局限：在作者所述的演出条件下，笛声和唱声更适合厅堂，搬上较大的舞台不易让远处观众听清；文词典故及迂缓曲调使不了解曲文者难以即时听懂，欣赏门槛较高；戏本的劝忠孝贞节、神佛观念有思想时代局限；动作世代相传，若只守旧程式而不理解，容易机械僵化。文学丰富性与理解门槛、程式美与机械化风险可以同时存在，不必把一种特征单纯判好或判坏。",
+          "selectedOptions": [],
+          "inputSha256": "faa9bb3935d5ac6752b48ac9b30ebaf0175422e0d63ca3f89aa1d33704611ad0",
+          "inputContextSha256": "27f3f22b0e47f6f1c4972d3ab35ad779f5b1a36960e71632fc122da5a8c18493",
+          "inputPresentationSha256": "4cf817acc06d017922bbfe86639a5300736b62f9ae77906fe4ec200b84c628a6",
+          "generatedAt": "2026-10-03T12:47:36.533060+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2009-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2009-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2009.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "长处：\n①歌舞并重，从头到尾带唱带舞，动作姿势丰富，讲究对称，观赏性强，在这一点上比京剧、汉调高明。\n②文词讲究，有词藻典故，本色的戏文亦文亦话，通晓的人听来尤其有味。\n\n局限：\n①以笛子伴奏，声音不响，只适合厅堂演出，搬上戏台尤其是新式舞台就难以听清。\n②内容陈旧，总是归结到教忠教孝、劝贞劝节、神佛有灵之类。\n③文词多用典故，调子迂缓，一字拖十几拍，观众不先记熟曲文就听不懂。\n④动作姿势世代相传，演员若不知所以然而死守程式，就会呆板如木偶戏。",
+          "inputSha256": "faa9bb3935d5ac6752b48ac9b30ebaf0175422e0d63ca3f89aa1d33704611ad0",
+          "inputContextSha256": "27f3f22b0e47f6f1c4972d3ab35ad779f5b1a36960e71632fc122da5a8c18493",
+          "inputPresentationSha256": "4cf817acc06d017922bbfe86639a5300736b62f9ae77906fe4ec200b84c628a6",
+          "generatedAt": "2026-10-03T12:49:27.258825+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2009-reading-result.json",
+            "inputPromptSha256": "f9bf65e96b8675516bda33bb90ab8d9bfb057a5d385804db05b66bf940910146",
+            "responseStreamSha256": "404700d114b3d1fdc4abafbfb80b0cf94e377bba77b4c964b7624c0a1ec203c6",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "faa9bb3935d5ac6752b48ac9b30ebaf0175422e0d63ca3f89aa1d33704611ad0",
+      "inputContextSha256": "27f3f22b0e47f6f1c4972d3ab35ad779f5b1a36960e71632fc122da5a8c18493",
+      "inputPresentationSha256": "4cf817acc06d017922bbfe86639a5300736b62f9ae77906fe4ec200b84c628a6",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两者全面给出长处及局限。Claude只适合厅堂、比其他戏高明等绝对化，应限定为文章所谈条件和歌舞表现维度，不能成为跨时代艺术排名。根版明确限制；公开参考图重文化内涵、表演及舞台/守旧两局限，附加文本要点不冒充强制评分细则。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:54:17.016Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2009-yuyan-application:2",
+      "sources": [
+        {
+          "type": "qualified_public_scan",
+          "title": "2009北京题源：新浪原卷样式6页逐页目视，第2页缺失，Gzy转载异文限定",
+          "url": "https://slide.edu.sina.com.cn/slide_11_272_71.html?img=708"
+        },
+        {
+          "type": "adjudication",
+          "title": "2009完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2009.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "现在向我们走来的是城市外来务工者队伍。他们来自不同家乡，在共同生活的城市里挥洒汗水。建筑工地上有他们忙碌的身影，街巷清晨有他们辛勤的脚步，便利的日常生活也凝聚着他们的劳动。他们以双手建设新的家园，以诚实和勤勉赢得尊重。整齐的步伐展示劳动者的自信，明亮的笑容传递对美好生活的期待。让我们向每一位平凡而可敬的建设者致意，让辛勤付出得到珍视，让共同生活的城市更加温暖！",
+          "selectedOptions": [],
+          "inputSha256": "721eee1f0c71a9530f83c28a21274c2878f74d0404ba7fb74b58eb44f335dd22",
+          "inputContextSha256": "d3f087151c567847a7d65c0736522bcef0dc2d9211786aac825877fb29b101b3",
+          "inputPresentationSha256": "c622d91e3b228ee9187f3e5c887229dee3f3a3e66a9c9df704bb5089551f10af",
+          "generatedAt": "2026-10-03T12:47:36.533060+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2009-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2009-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2009.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "选择“志愿者队伍”，解说词示例：\n现在向我们走来的是志愿者队伍。他们身着蓝白相间的服装，步伐轻快，笑容灿烂，挥动的双手传递着真诚与热情。在汶川抗震救灾的废墟旁，在北京奥运会的赛场内外，在城市的街头巷尾和偏远的山村学校，到处都有他们忙碌的身影。他们不计报酬，不问回报，用无私的奉献诠释着“奉献、友爱、互助、进步”的志愿精神。一张张微笑的脸，是这个时代最美的名片；一颗颗火热的心，汇成了温暖中国的力量。让我们把最热烈的掌声献给他们！\n（约190字，写出了队伍的外在风貌和无偿奉献的特征，语言符合现场解说的口吻。）",
+          "inputSha256": "721eee1f0c71a9530f83c28a21274c2878f74d0404ba7fb74b58eb44f335dd22",
+          "inputContextSha256": "d3f087151c567847a7d65c0736522bcef0dc2d9211786aac825877fb29b101b3",
+          "inputPresentationSha256": "c622d91e3b228ee9187f3e5c887229dee3f3a3e66a9c9df704bb5089551f10af",
+          "generatedAt": "2026-10-03T12:49:27.258825+00:00",
+          "uncertainties": [
+            "开放性写作题，以上为原创示例；文中“奉献、友爱、互助、进步”为通行的志愿精神表述。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2009-reading-result.json",
+            "inputPromptSha256": "f9bf65e96b8675516bda33bb90ab8d9bfb057a5d385804db05b66bf940910146",
+            "responseStreamSha256": "404700d114b3d1fdc4abafbfb80b0cf94e377bba77b4c964b7624c0a1ec203c6",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "721eee1f0c71a9530f83c28a21274c2878f74d0404ba7fb74b58eb44f335dd22",
+      "inputContextSha256": "d3f087151c567847a7d65c0736522bcef0dc2d9211786aac825877fb29b101b3",
+      "inputPresentationSha256": "c622d91e3b228ee9187f3e5c887229dee3f3a3e66a9c9df704bb5089551f10af",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两篇均为≥100汉字完整现场解说且选不同队伍。Claude蓝白服装等是情境想象，不能当作2009实际编组、服装或现场事实；明示示例并保留原答。根版写外来务工者，避免具体未核服饰和事件归属，作默认版本。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:54:17.016Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2010-guwen-extension:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2010北京题源：18页重排PDF与Gzywtk、明确校勘，原7页卷未认证",
+          "url": "https://cdn.gaokzx.com/zixunzhan/202403/d77fabda-ee06-45c5-b24e-19357370805a.pdf"
+        },
+        {
+          "type": "adjudication",
+          "title": "2010完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2010.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "宋清不因赊欠而拒给好药，到了年底还会焚毁他认为无法偿还的欠条。受过帮助的人后来有的做了官、收入增多，便不断来馈赠；即使有人始终无力偿还，也没有妨碍他最终致富。这说明他没有把每一次交易都限制为立即收钱，而是在长期交往中积累信任，使获利的机会和范围扩大。我从中领悟到，谋求长远利益，需要把眼前收入放在更完整的关系中衡量。比如一家店铺如实说明商品的优缺点，认真处理售后问题，短期可能多付出一些成本，却更容易让顾客放心并愿意再次光顾；反之，为了一笔生意夸大功效，即使暂时得利，也会损害此后合作的基础。不过，长远经营并不意味着无限赊账，也不能保证每一次善意都会得到金钱回报。现代经营仍要有清楚的契约和承受风险的能力。宋清可贵的启示，是在守住基本生活和规则的前提下，不因他人暂时困顿便轻慢相待，以可靠的品质和持续的善意建立关系。真正有远见的取利，应当让自身发展与他人的需要能够共同得到照顾。",
+          "selectedOptions": [],
+          "inputSha256": "ff2b850e3d52a45033a16143108c8ff3f2dbef4e6a771eb92ca0448d9e636ca3",
+          "inputContextSha256": "2b74dd34b2436bad6351ea2982790346e522af822f8ed61cd333b5cce090e84a",
+          "inputPresentationSha256": "790b1d0e51eac99fa4d8428c90f899cd4960c2a2783f4904d28ab8fb8459545a",
+          "generatedAt": "2026-10-03T12:01:37.602992+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2010-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2010-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2010.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "举例：文中写有些人被贬斥罢官、沉沦失意，别人都冷眼相待，宋清却“不以怠遇其人，必与善药如故”；这些人一旦重新掌权，就“益厚报清”。又如他对无钱求药的人一律给好药，年终估计对方还不起就烧掉欠条，后来这些人中“或至大官，或连数州”，馈赠他的人“相属于户”。宋清不计较眼前一时的得失，以诚信和宽厚待人，最终赢得的回报远比斤斤计较的小商人丰厚，这就是“取利远，远故大”。\n领悟（示例）：宋清的做法在今天仍有现实意义。当下有些商家只图眼前之利，以次充好、虚假宣传，甚至在食品药品上做手脚，虽然一时赚了钱，却很快失去消费者的信任，最终被市场淘汰。相反，那些坚持质量、诚信经营、肯为顾客让利的企业，起初也许赚得少、走得慢，却靠口碑积累起长久的信誉，路越走越宽。不仅经商如此，做人求学也是一样：只顾应付眼前的考试而不肯打牢基础，只在别人得势时才去亲近，都是“翦翦”的短视之举。眼光放远，肯吃一时之亏，守住诚信与善意，才能收获真正长久而丰厚的回报。（全文约400字）",
+          "inputSha256": "ff2b850e3d52a45033a16143108c8ff3f2dbef4e6a771eb92ca0448d9e636ca3",
+          "inputContextSha256": "2b74dd34b2436bad6351ea2982790346e522af822f8ed61cd333b5cce090e84a",
+          "inputPresentationSha256": "790b1d0e51eac99fa4d8428c90f899cd4960c2a2783f4904d28ab8fb8459545a",
+          "generatedAt": "2026-10-03T12:03:44.982642+00:00",
+          "uncertainties": [
+            "后半部分为开放性作答，所给内容为原创示例，并非唯一答法。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2010-reading-result.json",
+            "inputPromptSha256": "91930b576979c6eacd028d192850c145beb0c77cb2561e817327727493410b3c",
+            "responseStreamSha256": "1e43b99898ca374332efc774f52c7d373484890b070e3a324768bbd60df3cf78",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "ff2b850e3d52a45033a16143108c8ff3f2dbef4e6a771eb92ca0448d9e636ca3",
+      "inputContextSha256": "2b74dd34b2436bad6351ea2982790346e522af822f8ed61cd333b5cce090e84a",
+      "inputPresentationSha256": "790b1d0e51eac99fa4d8428c90f899cd4960c2a2783f4904d28ab8fb8459545a",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两全文均有原文事例及现实领悟，达到200字，独立补录未并入612。根例为店铺经营的一般假设，强调信用与风险边界；Claude商家最终被淘汰、守住善意就能收获丰厚回报是未经证明的必然化结论，只能改理解为信誉影响长期合作的可能性，不能承诺助人必致富。默认根版，完整原输出保留。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:10:22.344Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2010-duanju:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2010北京题源：18页重排PDF与Gzywtk、明确校勘，原7页卷未认证",
+          "url": "https://cdn.gaokzx.com/zixunzhan/202403/d77fabda-ee06-45c5-b24e-19357370805a.pdf"
+        },
+        {
+          "type": "adjudication",
+          "title": "2010完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2010.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "第一处画线部分：吾尝学射矣/始也/心志于中/目存乎鹄/手往从之/十发而九失/其一中者/幸也。\n第二处画线部分：一法不修/一病随之/病尽而法完/则心不期中/目不存鹄/十发十中矣。\n全文先引孟子发而不中、反求诸身的说法，再以学射的经历说明：起初只盯着射中，反而屡屡失手；经善射者指导，转而校正身体各部分的法度，错误消除后才能稳定射中。断句中，矣结束回顾的起句，始也提示最初阶段；心、目、手三句依次并列，十发而九失写结果，其一中者与幸也构成判断。第二处一法与一病相应，病尽而法完是条件，则引出结果；心不期中、目不存鹄和十发十中层层推进。斜线只加在题目明确标出的两个区域。始也之后及其一中者之后是否都计作考试所需断点，须以经认证的原卷评分细则为准，本答案展示一种语意通顺的细分，不设机械唯一判分键。",
+          "selectedOptions": [],
+          "inputSha256": "f5f5819b6eb7cf26eca24ce935bc6f088224fd35868a9d024d8c7bfea3bef497",
+          "inputContextSha256": "562657366b7fae395936afcd4ffdcf7b9dc9701ccc33bd2f971fa15d3a3ca13c",
+          "inputPresentationSha256": "717e148ea31ddad2860d4c0af1bf6b293b842dd251d8e5ba168e90c8f2ae9c64",
+          "generatedAt": "2026-10-03T12:01:37.602992+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2010-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2010-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2010.json",
+            "reviewerThread": "01a10199-7ac7-7d30-b457-4c1e84376c87",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "第一处：吾尝学射矣/始也心志于中/目存乎鹄/手往从之/十发而九失/其一中者/幸也。\n第二处：一法不修/一病随之/病尽而法完/则心不期中/目不存鹄/十发十中矣。\n大意：我曾经学习射箭，起初心里只想着射中，眼睛盯着靶心，手随之而动，结果十发九不中，射中的那一发也只是侥幸。……有一处法度没有练好，就会有一种毛病随之而来；毛病除尽而法度完备，那么即使心里不期求射中、眼睛不盯着靶心，也能十发十中。",
+          "inputSha256": "f5f5819b6eb7cf26eca24ce935bc6f088224fd35868a9d024d8c7bfea3bef497",
+          "inputContextSha256": "562657366b7fae395936afcd4ffdcf7b9dc9701ccc33bd2f971fa15d3a3ca13c",
+          "inputPresentationSha256": "717e148ea31ddad2860d4c0af1bf6b293b842dd251d8e5ba168e90c8f2ae9c64",
+          "generatedAt": "2026-10-03T12:03:44.982642+00:00",
+          "uncertainties": [
+            "“其一中者/幸也”之间也可不断开，合为“其一中者幸也”；按5分计点，此处断与不断一般不影响得分。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2010-reading-result.json",
+            "inputPromptSha256": "91930b576979c6eacd028d192850c145beb0c77cb2561e817327727493410b3c",
+            "responseStreamSha256": "1e43b99898ca374332efc774f52c7d373484890b070e3a324768bbd60df3cf78",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "f5f5819b6eb7cf26eca24ce935bc6f088224fd35868a9d024d8c7bfea3bef497",
+      "inputContextSha256": "562657366b7fae395936afcd4ffdcf7b9dc9701ccc33bd2f971fa15d3a3ca13c",
+      "inputPresentationSha256": "717e148ea31ddad2860d4c0af1bf6b293b842dd251d8e5ba168e90c8f2ae9c64",
+      "status": "disputed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型只断两个画线区域，主体断点相合，根版始也后另断，Claude不另断；其一中者后是否断亦有粒度差异。Claude按5分计点此处断与不断一般不影响得分无认证评分依据，明确不采纳；不能用总分推断评分容错。两答都保留，独立补录维持disputed、无自动唯一评分键；题源校勘及原卷仍待。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T12:10:22.344Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2011-duanju:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2011北京题源：北京高考在线重排PDF与Gzywtk，作者文本局部校勘，原卷未认证",
+          "url": "https://gaokao.eol.cn/huodong/2011gkst/201106/t20110608_787585.shtml"
+        },
+        {
+          "type": "adjudication",
+          "title": "2011完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2011.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "熹窃观古昔圣贤所以教人为学之意/莫非使之讲明义理/以修其身/然后推以及人/非徒欲其务记览/为词章/以钓声名/取利禄而已也/今人之为学者/既反是矣/然圣贤所以教人之法/具存于经/有志之士/固当熟读深思而问辨之。\n前半段解释古人教育的目的，讲明义理、修身、推以及人相承，记览与词章、声名与利禄各自并列；而已也和是矣收束语意。后半段以然转折，从现实偏离转回经典中保存的教法，再劝有志者读思问辨。记览与为词章之间、声名与取利禄之间的细分，以及今人之为学者和主句之间的停顿粒度可有差异，不应把一种斜线示例作为机械唯一键。题面所以教采用已说明的版本，原卷评分界线尚未核定。",
+          "selectedOptions": [],
+          "inputSha256": "1dc95b9d4d8419ff1d9280b0d3e068580af6c3c3d0387e78a3ce68217b9f90cf",
+          "inputContextSha256": "9f5a9ed19f8a11a2c285e4c8c6cd26dd2d4d48cd544a0bb196f9777d83aedcc4",
+          "inputPresentationSha256": "d3884103bc0ee3ef782cb933d217d94ac5c76125060da7cd2c91d21448bdc81e",
+          "generatedAt": "2026-10-03T11:18:50.398547+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2011-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2011-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2011.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "熹窃观古昔圣贤所以教人为学之意/莫非使之讲明义理/以修其身/然后推以及人/非徒欲其务记览/为词章/以钓声名/取利禄而已也/今人之为学者/既反是矣/然圣贤所以教人之法具存于经/有志之士/固当熟读深思而问辨之\n大意：我私下考察古代圣贤教人做学问的用意，无非是让人讲明义理来修养自身，然后推己及人，并不只是要人致力于记诵博览、写作文章，借以沽名钓誉、谋取利禄。现在求学的人已经与此相反了。然而圣贤教人的方法都保存在经书里，有志之士本应熟读、深思并加以问辨。",
+          "inputSha256": "1dc95b9d4d8419ff1d9280b0d3e068580af6c3c3d0387e78a3ce68217b9f90cf",
+          "inputContextSha256": "9f5a9ed19f8a11a2c285e4c8c6cd26dd2d4d48cd544a0bb196f9777d83aedcc4",
+          "inputPresentationSha256": "d3884103bc0ee3ef782cb933d217d94ac5c76125060da7cd2c91d21448bdc81e",
+          "generatedAt": "2026-10-03T11:20:20.519671+00:00",
+          "uncertainties": [
+            "个别停顿可断可不断，如“以修其身”前、“为词章”前、“今人之为学者”后、“有志之士”后，以及“之法”与“具存于经”之间，不影响文意。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2011-reading-result.json",
+            "inputPromptSha256": "bee00f28382da6da033da64b5ac6917724793f2c3bea87f404b026ce69ae7025",
+            "responseStreamSha256": "51e3b6c600663effc4cf87aa12e9e6fe6c5228883cef8e87a26855151f4d660c",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "1dc95b9d4d8419ff1d9280b0d3e068580af6c3c3d0387e78a3ce68217b9f90cf",
+      "inputContextSha256": "9f5a9ed19f8a11a2c285e4c8c6cd26dd2d4d48cd544a0bb196f9777d83aedcc4",
+      "inputPresentationSha256": "d3884103bc0ee3ef782cb933d217d94ac5c76125060da7cd2c91d21448bdc81e",
+      "status": "disputed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两份完整断句主要语义一致；之法/具存于经等细分可合可分。原卷和评分停顿范围未证，补录未入库，保留disputed且无确定评分键；不以机械斜线字符串唯一判分。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T11:24:24.001Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2011-shici:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2011北京题源：北京高考在线重排PDF与Gzywtk，作者文本局部校勘，原卷未认证",
+          "url": "https://gaokao.eol.cn/huodong/2011gkst/201106/t20110608_787585.shtml"
+        },
+        {
+          "type": "adjudication",
+          "title": "2011完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2011.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选B。歌一声写卖饼儿清晨出门沿街呼卖的声音，诗的重心是寒冷中谋生的辛劳与勤勉，并非轻松的童趣；不能把有声音或呼卖有腔调直接推成富于童趣。A小序说明观察对象、时间以及作诗教子的目的；C对应不忧衣单忧饼冷，写卖饼儿宁可自己受冷也忧心饼冷影响售卖；D对应末两句面向孩子的告诫，都有文本依据。",
+          "selectedOptions": [
+            "B"
+          ],
+          "inputSha256": "8bc1b76a8982647bcae99a8af126532d7db66700fd9e981f65399ef445ba5c00",
+          "inputContextSha256": "fb291d05be49a691bda362914c9ce1a5d7f312b46f72b81128abcb69b29986a9",
+          "inputPresentationSha256": "deda93a3e46ce4ded04f50c41905d7a7edc08e1eada8db43a172ee34144ca368",
+          "generatedAt": "2026-10-03T11:18:50.398547+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2011-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2011-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2011.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。A项正确：小序交代了北邻卖饼儿每日五更呼卖的事实，以及“因为作诗，且有所警”的目的，显出内容的真实。B项错误：“歌一声”指卖饼儿出门时的一声吆喝叫卖，在寒夜无人的街市上更显其艰辛与执着，并非“富于童趣”。C项正确：“北风吹衣射我饼，不忧衣单忧饼冷”正是此意。D项正确：末二句“业无高卑志当坚，男儿有求安得闲”是对两个儿子的告诫，点明题旨。",
+          "inputSha256": "8bc1b76a8982647bcae99a8af126532d7db66700fd9e981f65399ef445ba5c00",
+          "inputContextSha256": "fb291d05be49a691bda362914c9ce1a5d7f312b46f72b81128abcb69b29986a9",
+          "inputPresentationSha256": "deda93a3e46ce4ded04f50c41905d7a7edc08e1eada8db43a172ee34144ca368",
+          "generatedAt": "2026-10-03T11:20:20.519671+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2011-reading-result.json",
+            "inputPromptSha256": "bee00f28382da6da033da64b5ac6917724793f2c3bea87f404b026ce69ae7025",
+            "responseStreamSha256": "51e3b6c600663effc4cf87aa12e9e6fe6c5228883cef8e87a26855151f4d660c",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "8bc1b76a8982647bcae99a8af126532d7db66700fd9e981f65399ef445ba5c00",
+      "inputContextSha256": "fb291d05be49a691bda362914c9ce1a5d7f312b46f72b81128abcb69b29986a9",
+      "inputPresentationSha256": "deda93a3e46ce4ded04f50c41905d7a7edc08e1eada8db43a172ee34144ca368",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "同B，呼卖写谋生辛劳与勤勉，童趣不合全诗重心。其余三项对应小序、衣单饼冷及末两句。选项C去/去却至却为已明示校勘，原印刷及正式收录仍待。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T11:24:24.001Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2011-shici:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2011北京题源：北京高考在线重排PDF与Gzywtk，作者文本局部校勘，原卷未认证",
+          "url": "https://gaokao.eol.cn/huodong/2011gkst/201106/t20110608_787585.shtml"
+        },
+        {
+          "type": "adjudication",
+          "title": "2011完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2011.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "诗用平实语言记下清晨卖饼的具体情景，又以细节产生意味。月落、霜如雪、五更声欲绝从视觉和听觉写天将明而寒气深重，市楼东西人未行显出街上空寂，衬出卖饼儿起早谋生。捧盘出户、歌一声把动作与呼卖写得简洁可感；北风吹衣射我饼的射使风寒有了力度。不忧衣单忧饼冷不作空泛赞美，而用两种担忧的对照写出他专注生计、忍寒勤勉的处境。景与事互相映照，末尾志当坚的劝勉因而有了真实生活作支撑。",
+          "selectedOptions": [],
+          "inputSha256": "957e7a711b23fd833c5265f5bd9bbe03536131a0edbb37267bcb30a4152bb346",
+          "inputContextSha256": "aa7bd71c5b653e41bb0bb62733544a77476f765655e4d2065d5c3e2afa3bc773",
+          "inputPresentationSha256": "5a22f28494c2a817aba0870f0e5e42453a9f01bed7dc2b200864b20818a37b38",
+          "generatedAt": "2026-10-03T11:18:50.398547+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2011-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2011-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2011.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "①写景平实而有韵味。“城头月落霜如雪，楼头五更声欲绝”用白描写月落、浓霜、更鼓将尽，都是寻常景物，却点明了五更未明的时间，渲染出寒冷寂静的氛围，为卖饼儿出场作了铺垫，也暗含对他早起辛劳的同情。\n②叙事平实而有韵味。“捧盘出户歌一声，市楼东西人未行”用“捧盘”“出户”“歌”几个简单动作写卖饼儿出门叫卖，再以街市无人反衬他出门之早，一声吆喝划破寂静，以动衬静，意味悠长。“北风吹衣射我饼，不忧衣单忧饼冷”语言近于口语，一个“射”字写出寒风的凌厉，“不忧”与“忧”的对比写出他的心理，一个为生计不畏严寒、恪守本业的少年形象就在朴素的叙述中显现出来。\n③这些平实的写景叙事为末二句的议论蓄势，使训诫有形象、有感情，耐人回味。",
+          "inputSha256": "957e7a711b23fd833c5265f5bd9bbe03536131a0edbb37267bcb30a4152bb346",
+          "inputContextSha256": "aa7bd71c5b653e41bb0bb62733544a77476f765655e4d2065d5c3e2afa3bc773",
+          "inputPresentationSha256": "5a22f28494c2a817aba0870f0e5e42453a9f01bed7dc2b200864b20818a37b38",
+          "generatedAt": "2026-10-03T11:20:20.519671+00:00",
+          "uncertainties": [],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2011-reading-result.json",
+            "inputPromptSha256": "bee00f28382da6da033da64b5ac6917724793f2c3bea87f404b026ce69ae7025",
+            "responseStreamSha256": "51e3b6c600663effc4cf87aa12e9e6fe6c5228883cef8e87a26855151f4d660c",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "957e7a711b23fd833c5265f5bd9bbe03536131a0edbb37267bcb30a4152bb346",
+      "inputContextSha256": "aa7bd71c5b653e41bb0bb62733544a77476f765655e4d2065d5c3e2afa3bc773",
+      "inputPresentationSha256": "5a22f28494c2a817aba0870f0e5e42453a9f01bed7dc2b200864b20818a37b38",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "双方写出早寒寂静、捧盘呼卖、北风射与忧/不忧的细节及对训诫的支撑。Claude概称白描可作为整体朴实笔法，但霜如雪有明显比喻，不能理解成完全没有修辞；原文不只是在夜间，准确时间为五更将晓。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T11:24:24.001Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2011-shici:3",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2011北京题源：北京高考在线重排PDF与Gzywtk，作者文本局部校勘，原卷未认证",
+          "url": "https://gaokao.eol.cn/huodong/2011gkst/201106/t20110608_787585.shtml"
+        },
+        {
+          "type": "adjudication",
+          "title": "2011完整逐题裁定及必要事实核对",
+          "evidence": "answers-six-sites-20261002/fact-checks-2011.json"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "这首诗教给孩子的，首先是看待劳动的态度：职业有分工，却不应凭地位高低轻视劳动者；无论从事什么工作，都应有坚定的志向，并愿意以勤勉行动实现愿望。其次，它让孩子理解谋生的不易，卖饼儿在别人尚未出门时顶风呼卖，忧心饼冷，值得认真对待。诗人的教育方法也很具体。他从邻人的日常生活取材，以寒冷、早起、衣单等细节呈现事实，先使孩子看见和感受，再在结尾直接点明道理，使榜样与劝诫相结合。联系学习生活，我觉得教育不能只有“你要努力”的口号。做一个小组任务时，每个人都可以看见准备材料、反复核查和整理收尾的工作，再反思自己是否只愿意承担显眼的部分。由具体事情理解责任，比空谈勤奋更容易落实。不过，尊重辛劳也包括关心劳动条件，不能把吃苦本身当成唯一价值。我们应学习卖饼儿的认真坚韧，同时让学习和劳动有合理的休息与支持，使志向能够长久地落实。",
+          "selectedOptions": [],
+          "inputSha256": "04fd9c3a77eddbdc1d003c018519660319e6f9c9543301f981a277017cd6f836",
+          "inputContextSha256": "273a38bdb959a5a429191483a68be9e8aaee857406c89b895d0b2c1268a0d129",
+          "inputPresentationSha256": "9a1826ea7f99b27b79ca0c195391b4e8b3f73f8910038c85cea8f6b06cc12eed",
+          "generatedAt": "2026-10-03T11:18:50.398547+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2011-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2011-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2011.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "教育内容：职业没有高低贵贱之分，无论从事什么都要志向坚定；男儿有所追求，就要勤勉刻苦、持之以恒，不能懈怠偷闲。\n教育方法：不空讲道理，而是取身边真实的人和事作榜样，以北邻卖饼儿不畏严寒、日日五更准时呼卖的事例来说理，借事明理，寓教于诗，形象可感，再在篇末点出道理，亲切而有说服力。\n感受（示例）：这首诗让我想到小区门口修车的老师傅。无论寒暑，他总是清晨六点支起摊子，工具摆得整整齐齐，补一个胎只收几块钱，却要把内胎浸在水里一寸寸检查。有一次我赶着上学，催他快些，他头也不抬地说：“活儿不能糊弄，糊弄了你半路还得推着走。”那句话我一直记着。过去我常以为只有做大事才需要志向，学习上也是凭兴趣时紧时松，考得不好就抱怨题目太偏。对照卖饼儿和修车师傅才明白，志向不在于事情大小，而在于日复一日的认真与坚持。父母很少对我长篇训话，却常常让我看看身边这些人，这和张耒的做法一样，比说教更能打动人。现在我给自己定了每天早起半小时读书的规矩，已经坚持了一个学期，我想这就是“志当坚”最朴素的做法。",
+          "inputSha256": "04fd9c3a77eddbdc1d003c018519660319e6f9c9543301f981a277017cd6f836",
+          "inputContextSha256": "273a38bdb959a5a429191483a68be9e8aaee857406c89b895d0b2c1268a0d129",
+          "inputPresentationSha256": "9a1826ea7f99b27b79ca0c195391b4e8b3f73f8910038c85cea8f6b06cc12eed",
+          "generatedAt": "2026-10-03T11:20:20.519671+00:00",
+          "uncertainties": [
+            "感受部分为开放性作答，所写为原创示例，其中修车师傅等事例系示例性叙述，考生应联系自己的实际。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2011-reading-result.json",
+            "inputPromptSha256": "bee00f28382da6da033da64b5ac6917724793f2c3bea87f404b026ce69ae7025",
+            "responseStreamSha256": "51e3b6c600663effc4cf87aa12e9e6fe6c5228883cef8e87a26855151f4d660c",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "04fd9c3a77eddbdc1d003c018519660319e6f9c9543301f981a277017cd6f836",
+      "inputContextSha256": "273a38bdb959a5a429191483a68be9e8aaee857406c89b895d0b2c1268a0d129",
+      "inputPresentationSha256": "9a1826ea7f99b27b79ca0c195391b4e8b3f73f8910038c85cea8f6b06cc12eed",
+      "status": "reviewed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "双方覆盖尊重劳动、坚定志向、勤勉及身边实例教育法；全文和Claude单独感受部分均足200字。Claude修车、父母、坚持一学期等明确标为虚构示例，保留说明；默认根版一般小组任务与合理休息限定，不以辛苦本身评价人的价值。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T11:24:24.001Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2012-duanju:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2012北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/huodong/2012gkst/201206/t20120608_787585.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "战国策秦二扁鹊章",
+          "url": "https://ctext.org/text.pl?if=gb&node=49603&show=parallel",
+          "qualification": "检索索引显示使此知秦国之政也；整页403未获。知有传本支持，如此与使此属版本差异，不改冻结试卷。"
+        },
+        {
+          "type": "checked_reference",
+          "title": "教育部异体字知",
+          "url": "https://dict.variants.moe.edu.tw/dictView.jsp?ID=30183",
+          "qualification": "词义掌管主持支持知秦国之政的理解；不单凭相近意思静默改治。"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "医扁鹊见秦武王/武王示之病/扁鹊请除之/左右曰/君之病在耳之前目之下/除之未必已也/将使耳不聪目不明/君以告扁鹊/扁鹊怒而投其石曰/君与知之者谋之/而与不知者败之/如此知秦国之政也/则君一举而亡国矣。\n断句依据：扁鹊、武王、左右及君轮换作主语；曰后进入直接引语；未必已也和亡国矣分别用语气词收束；与知之者谋之和与不知者败之构成正反对照。耳之前、目之下及耳不聪、目不明内部还可细分停顿；投其石后、曰前也可断开，意思不变，不应把示例斜线的粒度当作唯一正确答案。知秦国之政的知在这里按主持、掌管政事理解。保留冻结题面如此知，不擅改为治；《战国策》传本可见使此知等不同字句，原卷用字与评分界线尚未认证，本题只作限定来源的示例，不形成自动评分键。",
+          "selectedOptions": [],
+          "inputSha256": "e6fc8a509eafd22380c83d49ecc03c84d6145d1a3d928d58f3264cedf2d88fde",
+          "inputContextSha256": "592bfac26e12597c07f904cd6b1784e6ef1bdad2fe5b8c32474fac0db1a26bf3",
+          "inputPresentationSha256": "5de97300ed359cb285d255e0a8dad6c0a09ce3d845ec71e1f4eaae672c4243b0",
+          "generatedAt": "2026-10-03T10:36:04.949385+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2012-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2012.json",
+            "reviewerThread": "01a1014f-2c96-7e13-9990-82919173d3f5",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "医扁鹊见秦武王/武王示之病/扁鹊请除之/左右曰/君之病在耳之前/目之下/除之未必已也/将使耳不聪/目不明/君以告扁鹊/扁鹊怒而投其石/曰/君与知之者谋之/而与不知者败之/如此知秦国之政也/则君一举而亡国矣\n大意：名医扁鹊拜见秦武王，武王把病情给他看，扁鹊请求为他除病。武王身边的人说：“大王的病在耳朵前面、眼睛下面，治了未必能好，还会让耳朵听不清、眼睛看不明。”武王把这话告诉扁鹊，扁鹊发怒扔掉砭石，说：“大王同懂行的人商量，却又同不懂的人一起败坏这件事。照这样来掌管秦国的政事，大王一个举动就会使国家灭亡了。”\n说明：“左右曰”“曰”之后，“君之病在耳之前/目之下”“将使耳不聪/目不明”等并列处，可断可不断的地方有弹性，不影响文意。",
+          "inputSha256": "e6fc8a509eafd22380c83d49ecc03c84d6145d1a3d928d58f3264cedf2d88fde",
+          "inputContextSha256": "592bfac26e12597c07f904cd6b1784e6ef1bdad2fe5b8c32474fac0db1a26bf3",
+          "inputPresentationSha256": "5de97300ed359cb285d255e0a8dad6c0a09ce3d845ec71e1f4eaae672c4243b0",
+          "generatedAt": "2026-10-03T10:40:02.659644+00:00",
+          "uncertainties": [
+            "题注已说明“如此知秦国之政也”一句据公开转载保留，原卷用字待核；我记忆中《战国策》通行本此句作“使此知秦国之政也”，“知”即“主持、掌管”之意。无论哪种文字，断句位置不变。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2012-reading-authenticated-result.json",
+            "inputPromptSha256": "3442c15d178e313304286b5c2b4a8d05a19d382baed3d29551de589657a86d3a",
+            "responseStreamSha256": "d28e1d574065d8367207b00e7ad4cc21185cc3065320942e03771761a420bb08",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "e6fc8a509eafd22380c83d49ecc03c84d6145d1a3d928d58f3264cedf2d88fde",
+      "inputContextSha256": "592bfac26e12597c07f904cd6b1784e6ef1bdad2fe5b8c32474fac0db1a26bf3",
+      "inputPresentationSha256": "5de97300ed359cb285d255e0a8dad6c0a09ce3d845ec71e1f4eaae672c4243b0",
+      "status": "disputed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "两模型保留全部冻结字符，分句主干一致，耳之前/目之下、耳不聪/目不明及投其石/曰粒度可异。知有主持义及古籍传本旁证，不擅改治；如此/使此与原卷/答题卡未认证。作为独立补录保持disputed及空评分键，不能以斜线逐字唯一比对或双模型一致关闭来源门禁。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:46:29.762Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2013-duanju:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2013北京题源：EOL学科网重排图与Gzywtk对照，原卷及标记未认证",
+          "url": "https://gaokao.eol.cn/shiti/zhenti/201306/t20130608_957719.shtml"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "长版可断为：世之治也／行善者获福／为恶者得祸／及其乱也／行善者不获福／为恶者不得祸／变数也／知者不以变数疑常道／故循福之所自来／防祸之所由至也／遇不遇／非我也／其时也／夫施吉报凶谓之命／施凶报吉谓之幸／守其所志而已矣。\n短版可断为：世之治也／行善者获福／为恶者得祸／及其乱也／行善者不获福／为恶者不得祸／变数也／知者不以变数疑常道／故循福之所自来／防祸之所由至也／遇不遇／非我也／守其所志而已矣。\n“治也”与“乱也”引出清明、混乱两种社会情境；行善获福、为恶得祸两组对举，变数也总说反常情况。知者不因变数怀疑常道，因而循福源、避祸源。遇不遇是话题，非我也作判断；长版其时也续说时运，并以施吉报凶、施凶报吉对举解释命与幸。末句劝人守志。遇不遇与非我也也可以按较大的语义单位连读，具体采分断点须原卷评分依据。两转载版本差了整段，当前无法确认哪版是原考题；此处分别完成条件作答，不能把它们合成一个确定原卷评分键。",
+          "selectedOptions": [],
+          "inputSha256": "c51915b4cc4be3644bbb15584fea6d95f72708109b550e1e3f3980b9cca7ed33",
+          "inputContextSha256": "3e84a077c29223b884c288d0697e6b748ee9150e325101645e4b05d486eefff8",
+          "inputPresentationSha256": "61bfda388bc193eb265bb331e8a1bc30300bb56a1a0c377a2d53eb0b8229b18d",
+          "generatedAt": "2026-10-03T10:08:59.921527+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2013-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2013-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2013.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "题目存在两个转录版本，哪一个是原卷尚未确定，这里分别断句。\n\n长版（EOL）：\n世之治也/行善者获福/为恶者得祸/及其乱也/行善者不获福/为恶者不得祸/变数也/知者不以变数疑常道/故循福之所自来/防祸之所由至也/遇不遇/非我也/其时也/夫施吉报凶谓之命/施凶报吉谓之幸/守其所志而已矣\n\n短版（Gzywtk）：\n世之治也/行善者获福/为恶者得祸/及其乱也/行善者不获福/为恶者不得祸/变数也/知者不以变数疑常道/故循福之所自来/防祸之所由至也/遇不遇/非我也/守其所志而已矣\n\n断句依据：“世之治也”“及其乱也”是以“也”表提顿的时间状语，两两相对；“行善者……/为恶者……”两组对偶；“变数也”是判断句，单独成句；“故”领起结论，“循福之所自来/防祸之所由至也”对偶；“遇不遇”是主语，“非我也/其时也”是一反一正的判断；“夫”为句首发语词，“施吉报凶谓之命/施凶报吉谓之幸”对偶；末句“守其所志而已矣”以“而已矣”收束。\n\n大意：世道太平时，行善的人得福，作恶的人遭祸；世道混乱时，行善的不得福，作恶的不遭祸，这是反常的情况。聪明人不因反常情况而怀疑常理，所以依循福的来路，防备祸的来由。能否遇到好时运不取决于自己，而取决于时势。施善却得凶报叫做命，施恶却得吉报叫做侥幸，君子只要坚守自己的志向就可以了。",
+          "inputSha256": "c51915b4cc4be3644bbb15584fea6d95f72708109b550e1e3f3980b9cca7ed33",
+          "inputContextSha256": "3e84a077c29223b884c288d0697e6b748ee9150e325101645e4b05d486eefff8",
+          "inputPresentationSha256": "61bfda388bc193eb265bb331e8a1bc30300bb56a1a0c377a2d53eb0b8229b18d",
+          "generatedAt": "2026-10-03T10:10:52.835961+00:00",
+          "uncertainties": [
+            "两个转录版本文字不同（短版缺“其时也……谓之幸”），原卷文本未经核实，故两版分别断句。",
+            "“遇不遇/非我也”之间可断可不断，“夫施吉报凶/谓之命”“施凶报吉/谓之幸”中间也可再断，这些属于可断可不断之处。"
+          ],
+          "selectedOptions": [],
+          "assessment": {
+            "matchesConclusion": null
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2013-reading-result.json",
+            "inputPromptSha256": "cdc49e1372efee30265558cdf0aa666eb1f1d533073fb5c2220ce1bb29c31110",
+            "responseStreamSha256": "93eb9516d1a9856efb2a4a1b2ec0078519d77a69ecac1b51a62801ee311aa8cd",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "c51915b4cc4be3644bbb15584fea6d95f72708109b550e1e3f3980b9cca7ed33",
+      "inputContextSha256": "3e84a077c29223b884c288d0697e6b748ee9150e325101645e4b05d486eefff8",
+      "inputPresentationSha256": "61bfda388bc193eb265bb331e8a1bc30300bb56a1a0c377a2d53eb0b8229b18d",
+      "status": "disputed",
+      "kind": "open",
+      "correctOptions": [],
+      "explanation": "双方逐字覆盖长短两个版本并认可部分断点可连；不能以双模型一致解决原卷版本冲突。补录独立disputed、无评分键、不增加612分母，后续正式入库/映射仍必需。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T10:15:23.503Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2014-guangfu:1",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "新浪学而思2014答案解析",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1437422992.shtml",
+          "qualification": "仅参考见证。原16参考CD但排A的发达国家/许多国家理由不充分；原20将十九世纪误录二十世纪；原12用俱而当前原作具，不能机械照抄"
+        },
+        {
+          "type": "checked_reference",
+          "title": "美国能源部光伏研究报告",
+          "url": "https://www.energy.gov/sites/prod/files/BasicResearchNeedsforSolarEnergyUtulization.pdf",
+          "qualification": "报告记光伏效应1839、现代硅电池1954及早期空间应用；不可将题文70年代说法概括为全部光伏技术起源；法国1969首站未核实"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选D。前文先谈公众对光伏发电的印象，横线后转而说明光伏效应及其利用，D在发电应用和效应原理之间建立关系，使说明衔接完整。A产业规模与紧接的原理说明脱节；B把应用与原理等同；C只泛说容易理解，不能像D一样交代两概念的关系。",
+          "inputSha256": "5e14cb3cbaaa14c68e987b9f409806f17c4236569e3f799501bc890221a2a69a",
+          "inputContextSha256": "314fe1f247a2d6eb6e2ca10d9e43a5e13c42e0c1f0bf4b756c95d8aa014b3ffa",
+          "inputPresentationSha256": "92a08e7ed2f4786fad19e4d875650cfffbb1cb88e542f147051b3db9c9856832",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2014-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：D。\n选D。横线后紧接“光伏效应就是……”，所以横线处应引出“光伏效应”这一概念，并说明它与光伏发电的关系。A项说的是产业规模，与下文解释光伏效应不衔接，而且“光伏产业”在后面才出现。B项错，光伏效应是物理原理，光伏发电是利用这一原理的技术，两者不是同一事物的不同说法。C项没有引出“光伏效应”，而且“其实”前面并没有说它难以理解，转折不当。D项指出光伏发电是光伏效应的一种应用，既纠正了前面人们的表面印象，又自然引出下文对光伏效应的解释，最恰当。",
+          "inputSha256": "5e14cb3cbaaa14c68e987b9f409806f17c4236569e3f799501bc890221a2a69a",
+          "inputContextSha256": "314fe1f247a2d6eb6e2ca10d9e43a5e13c42e0c1f0bf4b756c95d8aa014b3ffa",
+          "inputPresentationSha256": "92a08e7ed2f4786fad19e4d875650cfffbb1cb88e542f147051b3db9c9856832",
+          "generatedAt": "2026-10-03T09:48:55.259818+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-reading-result.json",
+            "inputPromptSha256": "d517f837786fe562901370a4c4659a961f257f2e1f7636b65cf3a0c187191d8a",
+            "responseStreamSha256": "c55ae1155fe1cab318f9af0baf18bb4e55bb1d327bedc9ffbfe75c1107345838",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "5e14cb3cbaaa14c68e987b9f409806f17c4236569e3f799501bc890221a2a69a",
+      "inputContextSha256": "314fe1f247a2d6eb6e2ca10d9e43a5e13c42e0c1f0bf4b756c95d8aa014b3ffa",
+      "inputPresentationSha256": "92a08e7ed2f4786fad19e4d875650cfffbb1cb88e542f147051b3db9c9856832",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "D"
+      ],
+      "explanation": "D，从发电应用过渡到光伏效应。两模型解释一致但不以此认证材料的科学史说法。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
+      "currentVersion": "gpt_6_astra"
+    },
+    {
+      "id": "2014-guangfu:2",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "新浪学而思2014答案解析",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1437422992.shtml",
+          "qualification": "仅参考见证。原16参考CD但排A的发达国家/许多国家理由不充分；原20将十九世纪误录二十世纪；原12用俱而当前原作具，不能机械照抄"
+        },
+        {
+          "type": "checked_reference",
+          "title": "美国能源部光伏研究报告",
+          "url": "https://www.energy.gov/sites/prod/files/BasicResearchNeedsforSolarEnergyUtulization.pdf",
+          "qualification": "报告记光伏效应1839、现代硅电池1954及早期空间应用；不可将题文70年代说法概括为全部光伏技术起源；法国1969首站未核实"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后修订",
+          "text": "本题不宜在现有题面上设置唯一的自动判分集合。初答倾向A、D，独立Claude也选A、D；同期学而思参考答案则为C、D。D直接符合我国荒漠和太阳能资源的叙述；B把独立供电混为并网发电，E把起步阶段改成十分成熟，均有明确问题。争议集中在A、C。\nA概括新兴能源、优势和多国重视，材料写发达国家重视，不能仅因改述许多国家就判为偷换，因为两者可以相容；但系统属于产业以及煤电水电无法比拟的表述也过于笼统。C列出主要组成和灾害应急能力，按一般性概括可成立；按严格运行条件，则应限制为具独立供电能力的系统。题干没有只由四部件构成，不能替它添上只字再判错；成为救命能源与被称为救命能源也不足以单独构成实质矛盾。\n因此保留AD与CD两种判读及其依据，不把两模型一致当作答案唯一性的证明。正式确定原卷、原评分说明或采用消除歧义的练习改写之前，不给本题确定评分键。",
+          "inputSha256": "4fb730843a2f81061da5c2b6d9d775ef32cd2412b48388e249cef5ce1838f3cd",
+          "inputContextSha256": "4157d457e26a6388c44ee07cd453092fda596f2294f20d9f710da95f0ea799ee",
+          "inputPresentationSha256": "8c39191c844136dbcfc2bdd72d7072ae7f27f5774608721b33209aceb8198ef3",
+          "generatedAt": "2026-10-03T09:52:20.429Z",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2014-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh",
+            "refinementEvidence": "answers-six-sites-20261002/root-2014-refinements.json",
+            "refinementReason": "Both independent answers selectAD but the contemporary reference selectsCD; neither rejectingA for发达/许多 nor rejectingC for无只字的部件陈述/成为与被称 distinction establishes uniqueness. Preserve initial root and rawClaude.",
+            "initialVersion": "gpt_6_astra_initial"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：A、D。\n选A、D。A项正确，光伏发电属于新能源，太阳能永不枯竭，不污染环境，灾害时能迅速恢复供电，适合偏远地区，这些是传统发电难以相比的优势；文中说它在发达国家受到高度重视，链接材料说它受到各国企业组织的青睐。B项错，住宅区、机场、医院照明不依赖城市电网，靠的是独立式发电系统，不是因为并网发电应用广泛，因果关系不当。C项错，链接材料说的是“主要部件”，不等于只由这四者构成；文中说具有抗灾能力的是“光伏独立发电产品”，是在灾害时“成为救命的能源”，并没有说整个系统“被称为救命能源”。D项正确，文中说中国“具备了广泛应用光伏发电技术的地理条件”，荒漠面积108万平方公里，“丰富的太阳能资源，为光伏发电技术的发展提供了可靠的基础能源”。E项错，文中说我国光伏发电技术“正在起步阶段”，并非“十分成熟”，国家扶持也不是因为技术成熟。",
+          "inputSha256": "4fb730843a2f81061da5c2b6d9d775ef32cd2412b48388e249cef5ce1838f3cd",
+          "inputContextSha256": "4157d457e26a6388c44ee07cd453092fda596f2294f20d9f710da95f0ea799ee",
+          "inputPresentationSha256": "8c39191c844136dbcfc2bdd72d7072ae7f27f5774608721b33209aceb8198ef3",
+          "generatedAt": "2026-10-03T09:48:55.259818+00:00",
+          "uncertainties": [
+            "A项“传统的煤电水电系统无法比拟”文中没有原句，是根据全文优势概括推断的；与B、C、E三项的明显错误相比，A项最为合理"
+          ],
+          "selectedOptions": [
+            "A",
+            "D"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-reading-result.json",
+            "inputPromptSha256": "d517f837786fe562901370a4c4659a961f257f2e1f7636b65cf3a0c187191d8a",
+            "responseStreamSha256": "c55ae1155fe1cab318f9af0baf18bb4e55bb1d327bedc9ffbfe75c1107345838",
+            "stage": "independent"
+          }
+        },
+        "gpt_6_astra_initial": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "倾向选A、D。A综合发展较快、受到重视以及独立供电、灾害应对等优势；D对应荒漠广阔、资源丰富和发展条件。B把独立式供电的特点移给并网系统，因果错误；E把起步阶段说成技术十分成熟，且据此解释政策扶持，不合末段。C虽然主要部件与链接一致，但把独立发电产品在传统电网中断时发挥救急作用泛化为整个光伏系统，省略了独立供电这一关键条件。不过，正文也先概说光伏发电的独特优势，C并无所有系统字样，因此排C有范围解释上的争议，不能仅凭此给出无保留的唯一评分键。",
+          "inputSha256": "4fb730843a2f81061da5c2b6d9d775ef32cd2412b48388e249cef5ce1838f3cd",
+          "inputContextSha256": "4157d457e26a6388c44ee07cd453092fda596f2294f20d9f710da95f0ea799ee",
+          "inputPresentationSha256": "8c39191c844136dbcfc2bdd72d7072ae7f27f5774608721b33209aceb8198ef3",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2014-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        }
+      },
+      "inputSha256": "4fb730843a2f81061da5c2b6d9d775ef32cd2412b48388e249cef5ce1838f3cd",
+      "inputContextSha256": "4157d457e26a6388c44ee07cd453092fda596f2294f20d9f710da95f0ea799ee",
+      "inputPresentationSha256": "8c39191c844136dbcfc2bdd72d7072ae7f27f5774608721b33209aceb8198ef3",
+      "status": "disputed",
+      "kind": "multiple_choice",
+      "correctOptions": [],
+      "explanation": "disputed，无评分键。本人和Claude初答AD，新浪学而思CD。发达国家与许多国家可相容，不能仅据二者差异排A；C主要部件不等于只由的反驳是添入原文没有的只字，成为/被称也非充分错误依据。C可作一般概括或严格限定于独立系统，A亦含笼统概括，保留AD/CD及初稿，默认本人修订解释。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
+      "currentVersion": "gpt_6_astra",
+      "candidateOptionSets": [
+        [
+          "A",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ]
+      ]
+    },
+    {
+      "id": "2014-guangfu:3",
+      "sources": [
+        {
+          "type": "qualified_public_retypeset",
+          "title": "2014北京题源：Sina人工转录，与EOL图及Gzywtk对照，非原卷认证",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1441422994.shtml"
+        },
+        {
+          "type": "checked_reference",
+          "title": "新浪学而思2014答案解析",
+          "url": "https://edu.sina.com.cn/gaokao/2014-06-09/1437422992.shtml",
+          "qualification": "仅参考见证。原16参考CD但排A的发达国家/许多国家理由不充分；原20将十九世纪误录二十世纪；原12用俱而当前原作具，不能机械照抄"
+        },
+        {
+          "type": "checked_reference",
+          "title": "美国能源部光伏研究报告",
+          "url": "https://www.energy.gov/sites/prod/files/BasicResearchNeedsforSolarEnergyUtulization.pdf",
+          "qualification": "报告记光伏效应1839、现代硅电池1954及早期空间应用；不可将题文70年代说法概括为全部光伏技术起源；法国1969首站未核实"
+        }
+      ],
+      "modelAnswers": {
+        "gpt_6_astra": {
+          "modelId": "gpt-6-astra",
+          "label": "GPT-6 Astra 参考暴露后复核",
+          "text": "选B，光伏发电纵横谈。全文涉及原理、历史发展、运行方式、使用场景、灾害优势、中国资源与政策，纵横谈能够统摄。A后来居上暗示超过其他能源的比较，全文并未建立；C只写与太阳能关系过窄；D光伏发电在中国不能覆盖前半的原理与世界发展介绍。",
+          "inputSha256": "6f623bbc4ce699cbfcd87b1feaba6b5f9c7f2141e16a07b6a40f2ebce59a8edb",
+          "inputContextSha256": "2bfc729fc5c86c01aa4ed04544417d8985aab417c458ede875c7805ec6d97041",
+          "inputPresentationSha256": "38a020e7e1402be79bea24ac42047d9ca3614870d9efe79c39e3afa407472157",
+          "generatedAt": "2026-10-03T09:46:59.110689+00:00",
+          "provenance": {
+            "kind": "codex_turn",
+            "stage": "reference_exposed_source_review",
+            "referenceExposed": true,
+            "evidence": "answers-six-sites-20261002/root-2014-reading-drafts.json",
+            "inputEvidence": "answers-six-sites-20261002/claude-2014-reading-job.json",
+            "exposureEvidence": "answers-six-sites-20261002/reference-exposure-2014.json",
+            "reviewerThread": "01a1011e-3ba7-7e50-852c-85c7dbcd2c15",
+            "actualModelEvidence": "Current turn_context.model=gpt-6-astra;effort=xhigh"
+          }
+        },
+        "claude_opus_5_5": {
+          "modelId": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 独立作答",
+          "text": "答案：B。\n选B。文章依次介绍了光伏发电的原理、发展历史、在生活中的应用、抗灾优势、在偏远地区的适用性、我国的资源条件和国家政策，既有历史的纵向梳理，又有应用和优势的横向展开，“纵横谈”能概括全文。A项“后来居上”文中没有依据，文中还说该技术正在起步阶段。C项“光伏发电与太阳能”只涉及文中的部分内容，不能涵盖历史、应用、政策等。D项“光伏发电在中国”范围过窄，文中还写了原理和欧美的发展情况。",
+          "inputSha256": "6f623bbc4ce699cbfcd87b1feaba6b5f9c7f2141e16a07b6a40f2ebce59a8edb",
+          "inputContextSha256": "2bfc729fc5c86c01aa4ed04544417d8985aab417c458ede875c7805ec6d97041",
+          "inputPresentationSha256": "38a020e7e1402be79bea24ac42047d9ca3614870d9efe79c39e3afa407472157",
+          "generatedAt": "2026-10-03T09:48:55.259818+00:00",
+          "uncertainties": [],
+          "selectedOptions": [
+            "B"
+          ],
+          "assessment": {
+            "matchesConclusion": true
+          },
+          "provenance": {
+            "kind": "cli_response",
+            "responseModel": "claude-opus-5-5",
+            "evidence": "answers-six-sites-20261002/claude-2014-reading-result.json",
+            "inputPromptSha256": "d517f837786fe562901370a4c4659a961f257f2e1f7636b65cf3a0c187191d8a",
+            "responseStreamSha256": "c55ae1155fe1cab318f9af0baf18bb4e55bb1d327bedc9ffbfe75c1107345838",
+            "stage": "independent"
+          }
+        }
+      },
+      "inputSha256": "6f623bbc4ce699cbfcd87b1feaba6b5f9c7f2141e16a07b6a40f2ebce59a8edb",
+      "inputContextSha256": "2bfc729fc5c86c01aa4ed04544417d8985aab417c458ede875c7805ec6d97041",
+      "inputPresentationSha256": "38a020e7e1402be79bea24ac42047d9ca3614870d9efe79c39e3afa407472157",
+      "status": "reviewed",
+      "kind": "single_choice",
+      "correctOptions": [
+        "B"
+      ],
+      "explanation": "B，原理/历史/应用/政策均在范围内。A暗示超越他者无证，C、D覆盖不足。",
+      "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
+      "reviewedAt": "2026-10-03T09:52:20.429Z",
+      "currentVersion": "gpt_6_astra"
     }
   ],
   "releaseBlockers": [
@@ -41086,7 +42292,8 @@
         "2014-sanwen",
         "2014-yuyanjichu",
         "2014-weixiezuo",
-        "2014-dazuowen"
+        "2014-dazuowen",
+        "2014-guangfu"
       ],
       "detail": "EOL nine public retypeset images are not an authenticated eight-page original scan: images1/7/8 have clipped right edges, image5 explicitly omits all three poetry questions. Sina manually typed transcription has different poetry options and other mistakes. Gzywtk transcription also has errors. Original scan, answer-card square layout, publication chain and precise print marks remain open. 2014-feilian duplicates language questions1-4, while entire original photovoltaic reading15-17 is missing from GK and FLX. Preserve all old identities. Separate supplemental source inputs capture missing questions for independent review; insertion, consumer mappings, counts and scoring compatibility are a required later atomic change before any full-paper completion or release claim. 2014-moxie is unsupported historical supplemental exercise, not original question14; attribution now explicit, historical score8 preserved. Real question12 is combined with13 in guwen5; original answer-card square layout is still unavailable. Composite scores: guwen5 stores3 but bundles3+12; yuyanjichu4 stores2 but bundles original4/5/6i/6ii/7i/7ii worth2+3+2+2+3+2. Original7iii appears separately in honglou1 worth2. Preserve IDs and old scores; no one-letter or flat multiple-choice grading of composites. Poetry quotation variants 尚家家/尚豪家, 莫夸/莫嗟, 独擅/留擅; E author and dynasty vary 王象巽/王象春 and清/明. Current question retains reported清 with corrected name from Sina, but authenticated print attribution and source historical fact need separate check. Source wording B知何处 and note禁消受 corrected; original print not certified. All reading units conservatively reference-exposed through web search snippets and reading legacy FLX mapping with its first4 answers. Writing examples not exposed. No model outputs may be presented as original-paper authority. Completed29 full root answers followed by two finite independent Claude batches; all29 Claude bodies individually read. Legacy26 reviewed with moxie attribution disputed; supplemental3 retained separately with original16AD/CD disputed and no grading key. Wang Xiangchun Ming attribution corroborated by academic source, not by an original-paper scan. Scientific-history claims in photovoltaic material are not certified; DOE records modern silicon PV cells in1954, earlier than its1970s framing. Formal supplemental integration and all original source/mark/scoring gates remain open.",
       "detailHistory": [
@@ -41096,7 +42303,19 @@
           "evidence": "answers-six-sites-20261002/REVIEW-2014-SOURCE.md"
         }
       ],
-      "evidence": "answers-six-sites-20261002/REVIEW-2014.md"
+      "evidence": "answers-six-sites-20261002/REVIEW-2014.md",
+      "localSupplementIntegration": {
+        "at": "2026-10-04T05:49:07.375Z",
+        "sourceFile": "supplement-2014-answer-authority.json",
+        "sourceFileSha256": "eeae8a87981fdf6d095f52030a724b32ed0093555fc616f0521dce64a9eb80aa",
+        "questionIds": [
+          "2014-guangfu:1",
+          "2014-guangfu:2",
+          "2014-guangfu:3"
+        ],
+        "sourceAndReviewIntegrated": true,
+        "remaining": "Original source/print/scoring qualifications and per-consumer rendering/authenticated release acceptance remain open; prior detail retained as history of this blocker."
+      }
     },
     {
       "id": "2013-source-coverage-and-marking",
@@ -41108,7 +42327,8 @@
         "2013-moxie",
         "2013-sanwen",
         "2013-yuyanjichu",
-        "2013-dazuowen"
+        "2013-dazuowen",
+        "2013-duanju"
       ],
       "detail": "Seven EOL/学科网 pages retype an exam declared to have eight pages and interleave teacher commentary and highlighted answers; Gzywtk has numerous shared OCR mistakes. Neither is authenticated original paper or answer card. A People clear-version URL failed502 via web and another People curl failed TLS60; do not disable TLS. Reprint/PDF search results also have corrupt text. Publication chain and exact print remain open. Original question11断句 is absent from all legacy2013 records. EOL image3 includes 其时也夫施吉报凶谓之命施凶报吉谓之幸; Gzywtk omits that entire segment. Both variants must be preserved and reviewed conditionally. Supplemental proposed2013-duanju:1 remains outside data/all.json and the612 denominator until source adjudication, formal insertion, consumer mapping and history/score compatibility. Question5 requires dotted-word identity. Small public EOL image and Gzywtk plain transcription do not certify those dots; existing unmarked question retained, interpretations must be explicitly conditional. Q1 pinyin targets and guwen6/7 option targets are explicit but original rendering remains unverified. Original-body marks replaced only by observed quotation underlines; old fabricated pedagogical marks removed with snapshots. Variants include guwen持/取俎豆, 冀煜/冀李煜, Q7都; language2在于/由于; insect便风中舞动/便在风中舞动, 可比/堪比; prose给于/给予. Current repaired source follows the documented public EOL witness where legible, not a certificate of original print. Deliberately wrong options remain wrong. Historical null scores in language1-5, moxie and main writing remain unchanged; public section values are15,8,60. Scoring compatibility must use exact stable IDs and not reinterpret prior learner scores. Original numbered1-21 maps to21 current selectable units only because poetry12 has two units and question11 is missing; counts alone do not establish full paper coverage. Exam claims about insect wingbeat rates, bird/bat lift, wing evolution and electromagnetic radiation are source statements, not verified contemporary science. Read-comprehension answers must distinguish textual inference from external fact; bounded fact checks pending. All reading inputs conservatively reference-exposed by EOL commentary/highlights, web snippets and Gzywtk search matches including Q6/Q10/Q11. No composition model/example read. Root must answer full corrected inputs before a new finite independent Claude batch; no2013provider call has occurred. Completed22 full root answers followed by two terminal finite Claude batches and full-body adjudication. Root guwen9 initialB corrected toD with full initial version retained; four other precision/completeness refinements also preserve initial bodies. Language5 remains source-mark-disputed with no grading key; supplemental original11 remains source-version-disputed and unintegrated. Claude prose claim of no direct emotional statement, transferring bee force to fly, broad semantic claims and writing fiction explicitly qualified. All original-source/print/null-score/consumer integration gates remain open.",
       "detailHistory": [
@@ -41118,7 +42338,17 @@
           "evidence": "answers-six-sites-20261002/REVIEW-2013-SOURCE.md"
         }
       ],
-      "evidence": "answers-six-sites-20261002/REVIEW-2013.md"
+      "evidence": "answers-six-sites-20261002/REVIEW-2013.md",
+      "localSupplementIntegration": {
+        "at": "2026-10-04T05:49:07.373Z",
+        "sourceFile": "supplement-2013-answer-authority.json",
+        "sourceFileSha256": "2c91b0e2a03799723ec50e2d54aa7481e6ade2cbe9972e47a8169548b0591a2b",
+        "questionIds": [
+          "2013-duanju:1"
+        ],
+        "sourceAndReviewIntegrated": true,
+        "remaining": "Original source/print/scoring qualifications and per-consumer rendering/authenticated release acceptance remain open; prior detail retained as history of this blocker."
+      }
     },
     {
       "id": "2012-source-coverage-and-marking",
@@ -41130,7 +42360,8 @@
         "2012-moxie",
         "2012-sanwen",
         "2012-yuyanjichu",
-        "2012-dazuowen"
+        "2012-dazuowen",
+        "2012-duanju"
       ],
       "detail": "EOL/学科网 five retypeset images declare eight original pages. Image2 ends the first guwen paragraph with ？？？ and omits its last sentences; image3 omits poem author and one multiple-choice option. Gzywtk 校对无误版 contains evident OCR errors. Neither establishes an authenticated original paper, answer card, exact printing or independent publication chain. Source variants remain: guwen paragraph ending 发棺/半 provisionally follows Gzywtk, old 米 and incomplete clause retained in preimage; EOL q7D 何以为报 vs Gzywtk/body 何以报为. No claim that reprint differences resolve original source. Poem author 雍陶 unsupported and removed; EOL blank vs Gzywtk 明·金銮 attribution requires literary/original-source adjudication. Five-option shici2 kept from Gzywtk because EOL drops original D and relabels E. Missing original12断句 recorded separately as 2012-duanju:1, not integrated or counted among612. Both witnesses print 如此知秦国之政也, kept without silently changing 知 to 治. Original numbering and consumer/source/history integration still required. Original q10 total7 consists3+4, but legacy shici1 score7 and shici2 score4 are unchanged to protect old grades. Language and guwen null scores and writing null remain; actual section totals15/12/60. No score reinterpretation or student write. Exact original dots, answer-card geometry and typography unresolved. Old answer-guiding body dots/waves removed; four public-image clause underlines retained as reprint evidence only. Language pronunciation targets visible from phonetic parentheses, dot geometry not certified. All reading and extension-writing inputs conservatively reference-exposed: EOL answer page/search snippets/gzy sample poem extension and old existing AI values were seen. Old main-essay outlines and one short example fragment were also exposed while inspecting existing fields; main writing is therefore reference-exposed too, although no complete new model composition was read. Root must complete20reading including supplement plus1essay before new bounded PLAN22; no provider call or new answers in this source step. Medical, nutrition, gravitational-wave and literary/historical assertions are source statements pending bounded factual checks during answer adjudication. Do not turn dated literary imagery, reported8848m or imagined3000-year events into verified contemporary claims. All21 complete root bodies frozen reference-exposed before Claude. PLAN22 sandbox attempt terminal not-logged-in/no-model/cost0; PLAN23 freshly verified existing authenticated environment then two finite completed calls. All full responses read and adjudicated; two root refinements preserve complete initial bodies. Song Lian electronic text supports发棺/何以报为 but reads米; do not overwrite provisional exam半. Anthology transcription supports金鑾, scan/original paper not verified. 知 has掌管 sense,如此/使此 remain qualified. Supplemental original12 staysdisputed/unintegrated with no grading key. Source bytes and old scores unchanged. Scientific and dictionary qualifications recorded, not silently corrected in exam source. All original-printing, score-history, integration and publication gates remain open.",
       "detailHistory": [
@@ -41140,7 +42371,17 @@
           "evidence": "answers-six-sites-20261002/REVIEW-2012-SOURCE.md"
         }
       ],
-      "evidence": "answers-six-sites-20261002/REVIEW-2012.md"
+      "evidence": "answers-six-sites-20261002/REVIEW-2012.md",
+      "localSupplementIntegration": {
+        "at": "2026-10-04T05:49:07.373Z",
+        "sourceFile": "supplement-2012-answer-authority.json",
+        "sourceFileSha256": "024c11c573f6226a2b72d8ea89f8e8c5512964b6f9f1ead0aa0a89cfeb13d7b3",
+        "questionIds": [
+          "2012-duanju:1"
+        ],
+        "sourceAndReviewIntegrated": true,
+        "remaining": "Original source/print/scoring qualifications and per-consumer rendering/authenticated release acceptance remain open; prior detail retained as history of this blocker."
+      }
     },
     {
       "id": "2011-source-coverage-and-marking",
@@ -41151,7 +42392,9 @@
         "2011-moxie",
         "2011-sanwen",
         "2011-yuyanjichu",
-        "2011-dazuowen"
+        "2011-dazuowen",
+        "2011-duanju",
+        "2011-shici"
       ],
       "detail": "仅有19页重排PDF（自称原卷8页）和Gzywtk转录，未获得原8页试卷、答题卡或独立出版链；PDF重新合并编号为12题。共同错字不能以两站一致冒称原卷证据。全部8题面页均已目视，原版标点/加点/划线/方格仍待核。 散文局部据作者文本明示校勘，未移入作者全文增删；夐列/层峦叠嶂、原18题名等仍需原卷确认。保留试题现有其他删改、150年前、神祗、银发飘洒等，不把作者全文当作考试版本。非连粉碎适用更正粉碎使用属编辑校勘；原6D故意错误略:简略以及语言错字/病句保留。 缺失原10断句与原12①/12②/13诗歌共4作答单元，另存2来源记录，尚未正式入库和跨站历史映射；不计612分母，不得据612声称原卷全覆盖。断句所以教采用PDF与朱熹文本，不采用Gzywtk所以敬。诗歌C去/去却校为却，属明示校勘。 语言2旧score90来自题内90分钟，原语言各小题3分；古文和其他语言null旧分值均保留。必须先解决历史成绩兼容，禁止直接重算旧成绩或改学生记录。 阅读含补录全部登记参考暴露：搜索/参考解析已出现答案和解释，旧2011-guwen:2也已有审核。主作文仅见题材和要求，未读2011模型成文；不宣称全部盲答。新根答案须20阅读含补录+1作文完整冻结后，才允许下一有限PLAN24，延伸各至少200字、作文至少800字。此步0提供商调用、0新答案。 能源材料的历史数据、食醋美容的错误选项和文学神话不代表已验证的当代技术、医学、历史事实；只用于原文理解，答案裁定需限定。原卷来源、标记、计分、补录、早期v3和六站消费者/发布/真实验收等所有既有门禁继续保留。 原2下划线范围已在注释明示，formatter不支持选项下划线的呈现缺口仍阻断；不能把无标记v3输入冒称原图恢复。 All21root full bodies frozen before sequential Claude PLAN24. Both batches completed and processes exited;actual opus5.5/high,cost0.3854912USD. All21 full responses individually read/adjudicated. One root syntax explanation refined with complete initial preserved. Claude寻常measurement corrected in adjudication, speculative/generalized claims qualified and fictional examples labelled. Separate4supplement units have3reviewed/1disputed;not integrated into612. Original paper/printing, score90/history, option underline rendering and all earlier consumer/release/real-acceptance gates remain open.",
       "detailHistory": [
@@ -41161,7 +42404,20 @@
           "evidence": "answers-six-sites-20261002/REVIEW-2011-SOURCE.md"
         }
       ],
-      "evidence": "answers-six-sites-20261002/REVIEW-2011.md"
+      "evidence": "answers-six-sites-20261002/REVIEW-2011.md",
+      "localSupplementIntegration": {
+        "at": "2026-10-04T05:49:07.372Z",
+        "sourceFile": "supplement-2011-answer-authority.json",
+        "sourceFileSha256": "b901db3f1b276671b9ef0e74cbb879391a1b8da2d4e0c20933b8e42d8e7c4778",
+        "questionIds": [
+          "2011-duanju:1",
+          "2011-shici:1",
+          "2011-shici:2",
+          "2011-shici:3"
+        ],
+        "sourceAndReviewIntegrated": true,
+        "remaining": "Original source/print/scoring qualifications and per-consumer rendering/authenticated release acceptance remain open; prior detail retained as history of this blocker."
+      }
     },
     {
       "id": "2010-source-coverage-and-marking",
@@ -41173,7 +42429,9 @@
         "2010-moxie",
         "2010-sanwen",
         "2010-yuyanjichu",
-        "2010-dazuowen"
+        "2010-dazuowen",
+        "2010-guwen-extension",
+        "2010-duanju"
       ],
       "detail": "仅有自称原7页的18页重排PDF（题面1—8，答案9—18）与Gzywtk四页转载；原7页卷、答题卡、独立出版链与准确原卷印刷仍未取得。八题面页全目视不能据此认证原卷。 宋清传：PDF有世之言徒曰市道交而旧库/Gzy无，求者益广/求者益众其应益广异文，旧附加蚩注非所见原题注，亲与交标点和疾病庀疡等未定；不把单一转载缺句或语义推断静默定稿。语言1朔/溯、诗徂晖/辉和默写悟/晤等异文保留证据。 海棠花旧库/Gzy长版与PDF短版有整段删改和高崖/高屋等差异，保留旧长版，仅局部明示勘误。原18划线依PDF扩大至可是现实…过了六年；正文它们采用旧题19引文，PDF他们异文保留。作者文本转载仅佐证引号及译秦名非误字，未作为考试删改版认证。 漏收原10宋清传延伸（不少于200字，10分）与原11苏轼仁说两划线区域断句（5分），分离保存2来源记录，不入旧612分母。仁说采用于中/不修/不期中，PDF与中及Gzy布修/不其中属异文，参考苏轼原文转录作明示校勘。 全部2010阅读与作文保守登记参考暴露：搜索出现参考解析，PDF9—18页提取的头部有答案与作文片段，本轮又读到历史AI字段。后续不得宣称盲答；仍要求本人20阅读含2补录+1作文完整冻结后才有限Claude。延伸各≥200字，主作文≥800字。本来源步骤0新答案0提供商调用。 全部旧ID/qIndex/score/AI保留。旧古文语言null分值与真实3分、合并题小分、补录历史映射未解决，不改旧成绩或学生记录。原始来源、标记、全题覆盖、早期v3、消费者投影、正式build、注册publisher、真实验收和status等全部既有发布门禁继续保留。 非连中的历史科学概述只作为原文理解，不认证为无条件当代物理结论；语言神仙茶错误病句不能当作健康建议。虚构范文必须明确示例性质。 All21root full bodies frozen before sequential PLAN25. Both batches complete, exited0,actualopus5.5/high,total0.3929112USD. All21fullresponses individuallyread/adjudicated; allrootinputreferenceexposure recorded. Claude source inference, scoring assurance and unsupported historical details explicitly qualified, originaloutputs preserved; root default. Extensions root326/358,Claude228/350Han(combined宋清example+reflection);writing1244/947Han. Separate2supplement:1reviewed/1disputed,notintegrated. Originalpaper/printing,long-shortvariants,nullscores/partialscorecompatibility,history,mapping,allconsumer/release/acceptancegates remain open.",
       "detailHistory": [
@@ -41183,7 +42441,18 @@
           "evidence": "answers-six-sites-20261002/REVIEW-2010-SOURCE.md"
         }
       ],
-      "evidence": "answers-six-sites-20261002/REVIEW-2010.md"
+      "evidence": "answers-six-sites-20261002/REVIEW-2010.md",
+      "localSupplementIntegration": {
+        "at": "2026-10-04T05:49:07.370Z",
+        "sourceFile": "supplement-2010-answer-authority.json",
+        "sourceFileSha256": "689698f2cc99fde77f12408b430822c2b36a5a204a80ec458217166859d8dcf6",
+        "questionIds": [
+          "2010-guwen-extension:1",
+          "2010-duanju:1"
+        ],
+        "sourceAndReviewIntegrated": true,
+        "remaining": "Original source/print/scoring qualifications and per-consumer rendering/authenticated release acceptance remain open; prior detail retained as history of this blocker."
+      }
     },
     {
       "id": "2009-source-coverage-and-marking",
@@ -41195,7 +42464,10 @@
         "2009-honglou",
         "2009-sanwen",
         "2009-yuyanjichu",
-        "2009-dazuowen"
+        "2009-dazuowen",
+        "2009-duanju",
+        "2009-feilian",
+        "2009-yuyan-application"
       ],
       "detail": "新浪2009-06-09图集，标注北京新干线学校提供；7页原卷样式仅第1、3—7页取得并逐页目视，第2页404。公开扫描不等于考试机构出版链认证。 教育在线旧正文首图为404占位图，新东方旧链接跳转大学课程首页，两者不是试题证据。 原第2页缺失：语言4/5及完整叔孙通正文无法直接对照。旧库与Gzy转载有相同错字；雕塑/雕凿、职/之、资金重复、不能/不能保证不、茅盾/矛盾、19实世纪等保留待核，不从语义猜原错误选项。古文百馀人后断口、徙长沙、旗志/旗帜、大行设九宾胪传、史记篇名和正文标记均未认证，本次不据全史记补入可能原卷删去的话。 已获得第6页纠正司马祠长短版本和四读对象，全部旧文保留。文中古道建造、帝王/卦象、梦碑、柳倩娘、苏武李陵等为作者叙述/传说/想象，答题应分清文本解释与独立历史认证。 五个漏题单元：老子断句1、昆曲3、原22语言解说1，全部独立保存，尚未并入旧612或跨站映射。原21两句改写已在2009-honglou:1，不重复补录。新总补录16，先前11双模型，此5仅来源。 本轮所有2009阅读和作文均保守标记参考暴露；本人尚无新答案，提供商调用0。必须本人24阅读（19旧+5补录）及1作文完整冻结再新PLAN26；原22解说词不少于100字，主作文不少于800字。 所有旧ID/qIndex/score/AI不改。古文语言null与3分、主作文null与60分、合并20两小题与旧21两小题的分项、历史记录与消费者映射仍待；不得重算旧成绩或学生写入。原卷/缺页/全量/早期v3/六站和8消费者/发布/真实验收/status门禁保留。 昆曲材料的1934年观演描述不是现代扩音舞台条件的普遍判断；阅兵解说是2009题设中的市民建议，不证明现实编成。补录断句无认证机械评分键。 All25root fullbodies frozen before sequential PLAN26;both complete exited0 actualopus5.5/high,total0.4438192USD. All25read individually. PoemD/B, damagedlanguage4/5 remaindisputed with no scoringkey;rootpoeminitialretained. Separate5supplements:4reviewed1punctuationdisputed,notintegrated. Root/Claudecommentary168/175Han;essay1223/1039Han. Actualparadehistory,fictionalfirstperson,SimaQianlegendsand1934acousticclaimsqualified. Alloriginalpaper/page2/publisherchain,scorehistory,consumer,publisher/acceptance/statusgatesremainopen.",
       "detailHistory": [
@@ -41205,7 +42477,21 @@
           "evidence": "answers-six-sites-20261002/REVIEW-2009-SOURCE.md"
         }
       ],
-      "evidence": "answers-six-sites-20261002/REVIEW-2009.md"
+      "evidence": "answers-six-sites-20261002/REVIEW-2009.md",
+      "localSupplementIntegration": {
+        "at": "2026-10-04T05:49:07.368Z",
+        "sourceFile": "supplement-2009-answer-authority.json",
+        "sourceFileSha256": "b721dc1a4871f09683f93640a14df72432b93b905b6d5311d770e575766c07dd",
+        "questionIds": [
+          "2009-duanju:1",
+          "2009-feilian:1",
+          "2009-feilian:2",
+          "2009-feilian:3",
+          "2009-yuyan-application:2"
+        ],
+        "sourceAndReviewIntegrated": true,
+        "remaining": "Original source/print/scoring qualifications and per-consumer rendering/authenticated release acceptance remain open; prior detail retained as history of this blocker."
+      }
     },
     {
       "id": "2008-source-coverage-marking-and-image",
