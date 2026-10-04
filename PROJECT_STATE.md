@@ -1,3 +1,7 @@
+## 2026-10-03 PDT — 图题视觉证据投影保全
+
+本地投影新增可选ai_answer_versions[version].visualEvidence[qIndex]，当前及历史的真实模型观察/限制均保留，文本记录不捏造此字段。21相关测试通过，当前真实投影与546812c3相同，源与authority未改。没有provider/正式build/生产/学生写入；图题双模型、全源与下游真实验收仍未完成。详见docs/OPERATIONS.md和verification-visual-projection.json。
+
 ## 2026-10-03 PDT — 24题练习分项计分兼容，本地候选
 
 在既有审核结论旁增加24题practiceScoring，不改题面、注释、标记、原score或任何模型全文，按当前inputPresentationSha256绑定。修复2011语用第2题把选项90分钟误作满分的显示/新练习反馈：保留源score90，投影后参考满分3。合并题完整列出分项与总分（例如2020古文原10/11=2+4，2019非连原5/6=3+7，2014语用4/5/6①/6②/7①/7②=14），不能整组按一个选项判分。
@@ -488,6 +492,3 @@ PLAN22受限环境作答前登录读取失败、无模型/费用0；host只读au
 四补录单元3已核1争议，未入库；累计9补录单元不计612。源be2bf5c字节未改，1019前存完整模型、398其他审核和全部身份/旧分值/旧AI保全。15authority测试、201/612/434/0数据及原始响应/冻结输入/历史/字数/hash检查通过。详 /Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/REVIEW-2011.md 和 verification-2011.json。
 
 当前owner codex-01a1014f-gpt-6-astra，实际gpt-6-astra/xhigh，本聊天首次压缩检查点已完成，第二次才串行交接。未正式build、push、上传、发布、真实认证/学生写入、status或通知。原卷/编辑校勘、旧90分历史兼容、下划线呈现及全部六站发布门禁保留；下一步2010来源准备。
-## 2026-10-03 PDT — 图题视觉证据投影保全
-
-本地投影新增可选ai_answer_versions[version].visualEvidence[qIndex]，当前及历史的真实模型观察/限制均保留，文本记录不捏造此字段。21相关测试通过，当前真实投影与546812c3相同，源与authority未改。没有provider/正式build/生产/学生写入；图题双模型、全源与下游真实验收仍未完成。详见docs/OPERATIONS.md和verification-visual-projection.json。
