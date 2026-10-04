@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261004-source2006-qualified-pending",
+  "revision": "20261004-source2005-qualified-pending",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -844,13 +844,11 @@
     },
     {
       "id": "2005-guwen:2",
-      "inputSha256": "16bd991c0ba9d012244f6db15098f99fb599b73df4130320357671a1258c9c00",
-      "status": "reviewed",
+      "inputSha256": "aab6d06d8a302bc275730436a89c235c6b9888cca166980305bd4cdab8273738",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "A"
-      ],
-      "explanation": "选择结论与文言站相合。站内全文存在明显OCR残损；本答案仅针对可完整读出的四组选项，不宣称整篇已经校勘。",
+      "correctOptions": [],
+      "explanation": "2005限定题面校勘后待完整重审；旧题面、完整模型与旧审核保存在history。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T03:03:23.208Z",
       "sources": [
@@ -874,118 +872,212 @@
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 完整附注复核",
-          "text": "答案：A。两处‘更’都表示在先前情形的基础上再做一次行动：庄公死后又立景公，为看得更远再登一层。B项前一‘之’指庆封，后一‘之’用于‘何功之有’这一宾语前置结构。C项前一‘以’属于把相关行为当作法度的结构，后一‘以’连接平坦和近两个性质。D项前一‘相’是双方互相帮助，后一‘相’偏指遭遇不平而被帮助的一方。词类名称相近不能掩盖互指与偏指的差别。旧答案一面承认A相同、一面选D，且把‘偏指一方’与‘双方彼此’混说，不能沿用。",
-          "inputSha256": "16bd991c0ba9d012244f6db15098f99fb599b73df4130320357671a1258c9c00",
-          "generatedAt": "2026-10-03T03:03:23.208Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review_reaffirmation",
-            "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
-            "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "priorAnswerSha256": "a6212e79ea996162b6d2ac78aac76f5842069ac7668f3085eb2f4f003a29f244",
-            "annotationEffect": "朱方地名及忮的解释符合结尾批评相残的论旨，不把互相和偏指相助混同。材料扌豕、之于、如昊、孟贵等待源证纠错。"
+      "modelAnswers": {},
+      "inputContextSha256": "2e26ea3de2f3016c7469329b6204194bf9bdb82367816962f2025067e5e98ed6",
+      "history": [
+        {
+          "source": {
+            "id": "2005-guwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "崔杼与庆封谋杀齐庄公。庄公死，更立景公，崔杼相之。\n\n庆封又欲杀崔杼而代之相。于是扌豕崔杼之于，令之争后。崔杼之子相与私哄，崔杼往见庆封而造之。庆封谓崔杼曰：“且留，吾将兴甲以杀之。”因令卢满嫳兴甲以诛之。尽杀崔杼之妻子及支属，烧其室屋，报崔杼曰：“吾已诛之矣。”崔杼归，无归，因而自绞也。\n\n庆封相景公，景公苦之。庆封出猎，景公与陈无宇、公孙灶、公孙趸诛封。封以其属斗，不胜，走如鲁。齐人以为让，又去鲁而如昊。王予之朱方①。荆灵王闻之，率诸侯以攻吴，围朱方，拔之。得庆封，负之斧质，以徇于诸侯军，因令其呼之曰：“毋或如齐庆封。弑其君而弱其孤，以亡其大夫。”乃杀之。\n\n黄帝之贵而死，尧舜之贤而死，孟贵之勇而死，人固皆死。若庆封者，可谓重死矣。身为残，支属不可以见，行忮②之故也。凡乱人之动也，其始相助，后必相恶。为义者则不然，始而相与，久而相信，卒而相亲，后世以为法程。"
+              }
+            ],
+            "topic": "二、本大题共5小题，每小题3分，共15分。阅读下面文言文，完成6—10题。",
+            "annotation": "（取材于《吕氏春秋·慎行》）\n注释：\n①朱方：地名。       ②忮(zhì)：嫉妒、侵害。",
+            "annotations": [
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 15,
+                "end": 16,
+                "anchor": "更"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 23,
+                "end": 24,
+                "anchor": "之"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 87,
+                "end": 88,
+                "anchor": "以"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 22,
+                "end": 23,
+                "anchor": "相"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 2,
+                "id": "q2",
+                "text": "7．下列各组句中加点的词，意义和用法相同的一组是（    ）\n A．庄公死，*更*立景公    欲穷千里目，*更*上一层楼    B．得庆封，负*之*斧质      譬若以肉投馁虎，何功*之*有哉\n  C.后世*以*为法程   夫夷*以*近，则游者众\n D．其始*相*助，后必相恶    路见不平，拔刀*相*助",
+                "score": null
+              }
+            ]
           },
-          "inputContextSha256": "1858a221a9bb953b5354b811c2c7a40fe6089dac3437bfc91a8ef99d6bec68b4"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 来源复核后修订",
-          "text": "答案：D。\n选D。A项：“更立景公”的“更”是“改、另外”；“更上一层楼”的“更”是“再”，不同。B项：“负之斧质”的“之”是代词，指庆封（让他背着刑具）；“何功之有”的“之”是宾语前置的标志，不同。C项：“后世以为法程”的“以”是“把（它）”，“以为”即“把……当作”；“夫夷以近”的“以”是连词，相当于“而”，表并列，不同。D项：“其始相助”与“拔刀相助”的“相”都是副词，用在动词“助”前表示帮助的动作涉及对方，相对最为一致。",
-          "inputSha256": "16bd991c0ba9d012244f6db15098f99fb599b73df4130320357671a1258c9c00",
-          "inputContextSha256": "1858a221a9bb953b5354b811c2c7a40fe6089dac3437bfc91a8ef99d6bec68b4",
-          "generatedAt": "2026-10-03T03:01:54.821132+00:00",
-          "uncertainties": [
-            "严格说“其始相助”的“相”是“互相”，“拔刀相助”的“相”偏指一方，二者有细微差别；但A、B、C三项差异明显，故按排除法选D。",
-            "B项“负之斧质”、题干材料个别字有录入讹误，不影响判断。"
-          ],
-          "selectedOptions": [
-            "D"
-          ],
-          "assessment": {
-            "matchesConclusion": false,
-            "reviewNote": "本次D不采纳：互相与偏指不等同；更应依再次施行动作的语境判定，保留A。",
-            "evidence": "answers-six-sites-20261002/CONTEXT-RECONCILIATION.md",
-            "reviewedAt": "2026-10-03T03:18:36.452154+00:00"
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
-            "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
-            "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
-            "stage": "source_review"
+          "review": {
+            "id": "2005-guwen:2",
+            "inputSha256": "16bd991c0ba9d012244f6db15098f99fb599b73df4130320357671a1258c9c00",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "A"
+            ],
+            "explanation": "选择结论与文言站相合。站内全文存在明显OCR残损；本答案仅针对可完整读出的四组选项，不宣称整篇已经校勘。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:03:23.208Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2005北京卷四组选项及全文"
+              },
+              {
+                "type": "dictionary_revision",
+                "title": "文言站2026-09-16-r3语境校订"
+              },
+              {
+                "type": "dictionary",
+                "title": "教育部重编国语辞典：更",
+                "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=4142&la=0&powerMode=0"
+              },
+              {
+                "type": "dictionary",
+                "title": "汉典：相",
+                "url": "https://zdic.net/hans/%E7%9B%B8"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "答案：A。两处‘更’都表示在先前情形的基础上再做一次行动：庄公死后又立景公，为看得更远再登一层。B项前一‘之’指庆封，后一‘之’用于‘何功之有’这一宾语前置结构。C项前一‘以’属于把相关行为当作法度的结构，后一‘以’连接平坦和近两个性质。D项前一‘相’是双方互相帮助，后一‘相’偏指遭遇不平而被帮助的一方。词类名称相近不能掩盖互指与偏指的差别。旧答案一面承认A相同、一面选D，且把‘偏指一方’与‘双方彼此’混说，不能沿用。",
+                "inputSha256": "16bd991c0ba9d012244f6db15098f99fb599b73df4130320357671a1258c9c00",
+                "generatedAt": "2026-10-03T03:03:23.208Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "a6212e79ea996162b6d2ac78aac76f5842069ac7668f3085eb2f4f003a29f244",
+                  "annotationEffect": "朱方地名及忮的解释符合结尾批评相残的论旨，不把互相和偏指相助混同。材料扌豕、之于、如昊、孟贵等待源证纠错。"
+                },
+                "inputContextSha256": "1858a221a9bb953b5354b811c2c7a40fe6089dac3437bfc91a8ef99d6bec68b4"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "答案：D。\n选D。A项：“更立景公”的“更”是“改、另外”；“更上一层楼”的“更”是“再”，不同。B项：“负之斧质”的“之”是代词，指庆封（让他背着刑具）；“何功之有”的“之”是宾语前置的标志，不同。C项：“后世以为法程”的“以”是“把（它）”，“以为”即“把……当作”；“夫夷以近”的“以”是连词，相当于“而”，表并列，不同。D项：“其始相助”与“拔刀相助”的“相”都是副词，用在动词“助”前表示帮助的动作涉及对方，相对最为一致。",
+                "inputSha256": "16bd991c0ba9d012244f6db15098f99fb599b73df4130320357671a1258c9c00",
+                "inputContextSha256": "1858a221a9bb953b5354b811c2c7a40fe6089dac3437bfc91a8ef99d6bec68b4",
+                "generatedAt": "2026-10-03T03:01:54.821132+00:00",
+                "uncertainties": [
+                  "严格说“其始相助”的“相”是“互相”，“拔刀相助”的“相”偏指一方，二者有细微差别；但A、B、C三项差异明显，故按排除法选D。",
+                  "B项“负之斧质”、题干材料个别字有录入讹误，不影响判断。"
+                ],
+                "selectedOptions": [
+                  "D"
+                ],
+                "assessment": {
+                  "matchesConclusion": false,
+                  "reviewNote": "本次D不采纳：互相与偏指不等同；更应依再次施行动作的语境判定，保留A。",
+                  "evidence": "answers-six-sites-20261002/CONTEXT-RECONCILIATION.md",
+                  "reviewedAt": "2026-10-03T03:18:36.452154+00:00"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
+                  "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
+                  "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
+                  "stage": "source_review"
+                }
+              },
+              "claude_opus_5_5_initial": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 初次独立作答（复核前）",
+                "text": "答案：D。\n逐项辨析：\nA项，“更立景公”中“更”意为“改、另外”，指另立景公；“更上一层楼”中“更”是副词，意为“再”。两处不同。\nB项，“负之斧质”中“之”是代词，指庆封，意为让他背负斧质；“何功之有哉”中“之”是助词，作宾语前置的标志（即“有何功”）。两处不同。\nC项，“后世以为法程”中“以”是介词，意为“把”，后面省略“之”，即“以（之）为法程”，把它当作准则；“夫夷以近”中“以”是连词，相当于“而”。两处不同。\nD项，“其始相助”中“相”是副词，作用于“助”这一动作，意为互相帮助；“拔刀相助”中“相”也是副词，修饰“助”。两处同为副词，用法最接近。\nA、B、C三项差异明确，按题意应选D。",
+                "inputSha256": "16bd991c0ba9d012244f6db15098f99fb599b73df4130320357671a1258c9c00",
+                "generatedAt": "2026-10-03T00:26:53.718784+00:00",
+                "uncertainties": [
+                  "“拔刀相助”中的“相”一般解释为偏指一方（帮助他、帮助受欺者）；“其始相助”中的“相”是“互相”。若严格区分，两处在意义上也有差别。本题按副词用法一致、其余三项明显不同选D，但这一点存在一定歧义。"
+                ],
+                "selectedOptions": [
+                  "D"
+                ],
+                "assessment": {
+                  "matchesConclusion": false,
+                  "note": "初次选择D有误：互指与偏指不能因同属副词而归为意义用法相同；更立可取再立义。来源复核后的Claude修订为A。"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-conflicts-02-result.json",
+                  "inputPromptSha256": "f8a1148da76a7e0ba7a825233e4191475da51a3746bf2ecbe91c978112f2a893",
+                  "responseStreamSha256": "b7c1ba7dfc88c87ef0eabb89ea42b15aa7a79dc87804ff168601cf364c8071d0",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "91c95c76b03dde1430844de93784f758e578d6b778269a20a55e747761fc9f0e"
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "答案：A。两处‘更’都表示在先前情形的基础上再做一次行动：庄公死后又立景公，为看得更远再登一层。B项前一‘之’指庆封，后一‘之’用于‘何功之有’这一宾语前置结构。C项前一‘以’属于把相关行为当作法度的结构，后一‘以’连接平坦和近两个性质。D项前一‘相’是双方互相帮助，后一‘相’偏指遭遇不平而被帮助的一方。词类名称相近不能掩盖互指与偏指的差别。旧答案一面承认A相同、一面选D，且把‘偏指一方’与‘双方彼此’混说，不能沿用。",
+                "inputSha256": "16bd991c0ba9d012244f6db15098f99fb599b73df4130320357671a1258c9c00",
+                "generatedAt": "2026-10-02T23:52:23.736Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-initial-reviews"
+                }
+              },
+              "claude_opus_5_5_revision_2": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订（修订前存档）",
+                "text": "答案：A。\nA项相同。“庄公死，更立景公”是说庄公死后，另外再立景公为君。“更”是副词，修饰动词“立”，表示在前一个国君之后再立一君，有“另、再”的意思。“欲穷千里目，更上一层楼”的“更”也是副词，意为“再”“又”，修饰“上”。两处都作状语，表示动作的再次、另行进行，意义和用法相同。\nB项不同。“得庆封，负之斧质”的“之”是代词，指庆封。这里是处刑示众的语境，意为把庆封押上斧质（腰斩刑具）示众，不宜理解为让庆封背着刑具。“何功之有哉”的“之”是宾语前置的标志，无实义。\nC项不同。“后世以为法程”是“以（之）为法程”的省略，意为“把它当作法度准则”，“以”是介词。“夫夷以近”的“以”是连词，相当于“而”，连接“夷”与“近”。\nD项不同。“其始相助，后必相恶”的“相”是副词，表示互相，即彼此帮助、彼此憎恶。“路见不平，拔刀相助”的“相”是偏指一方，指帮助他（受欺者），具有指代作用。两者虽都放在动词前，意义并不相同。\n综合判断，选A。",
+                "inputSha256": "16bd991c0ba9d012244f6db15098f99fb599b73df4130320357671a1258c9c00",
+                "generatedAt": "2026-10-03T00:43:53.716690+00:00",
+                "uncertainties": [
+                  "A项的“更立景公”也可以理解为“改立”（gēng，更换），这时“更”带有动词“改换”的意味，与“更上一层楼”的副词“再”不完全等同。本答案依据“庄公死后再立一君”的语境，以及B、C、D三项明显不同，判为A。",
+                  "材料存在录入缺损：“于是扌豕崔杼之于”中的“扌豕”是无法识别的字形（原文应是表示挑拨、离间之义的字，此处不臆补），“之于”疑为“之子”；“又去鲁而如昊”的“昊”疑为“吴”。这些缺损不影响本题判断。"
+                ],
+                "selectedOptions": [
+                  "A"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-source-review-01-result.json",
+                  "inputPromptSha256": "ce426208a0a6adc0237edf91f5eb8cfa8574192829abf593db120d4bafa1da7b",
+                  "responseStreamSha256": "c985407509b490ff104f2d3704b52e676630c279e98ccbe6597af4af7b9e7234",
+                  "stage": "source_review"
+                },
+                "inputContextSha256": "91c95c76b03dde1430844de93784f758e578d6b778269a20a55e747761fc9f0e"
+              }
+            },
+            "inputContextSha256": "1858a221a9bb953b5354b811c2c7a40fe6089dac3437bfc91a8ef99d6bec68b4"
           }
-        },
-        "claude_opus_5_5_initial": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 初次独立作答（复核前）",
-          "text": "答案：D。\n逐项辨析：\nA项，“更立景公”中“更”意为“改、另外”，指另立景公；“更上一层楼”中“更”是副词，意为“再”。两处不同。\nB项，“负之斧质”中“之”是代词，指庆封，意为让他背负斧质；“何功之有哉”中“之”是助词，作宾语前置的标志（即“有何功”）。两处不同。\nC项，“后世以为法程”中“以”是介词，意为“把”，后面省略“之”，即“以（之）为法程”，把它当作准则；“夫夷以近”中“以”是连词，相当于“而”。两处不同。\nD项，“其始相助”中“相”是副词，作用于“助”这一动作，意为互相帮助；“拔刀相助”中“相”也是副词，修饰“助”。两处同为副词，用法最接近。\nA、B、C三项差异明确，按题意应选D。",
-          "inputSha256": "16bd991c0ba9d012244f6db15098f99fb599b73df4130320357671a1258c9c00",
-          "generatedAt": "2026-10-03T00:26:53.718784+00:00",
-          "uncertainties": [
-            "“拔刀相助”中的“相”一般解释为偏指一方（帮助他、帮助受欺者）；“其始相助”中的“相”是“互相”。若严格区分，两处在意义上也有差别。本题按副词用法一致、其余三项明显不同选D，但这一点存在一定歧义。"
-          ],
-          "selectedOptions": [
-            "D"
-          ],
-          "assessment": {
-            "matchesConclusion": false,
-            "note": "初次选择D有误：互指与偏指不能因同属副词而归为意义用法相同；更立可取再立义。来源复核后的Claude修订为A。"
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-conflicts-02-result.json",
-            "inputPromptSha256": "f8a1148da76a7e0ba7a825233e4191475da51a3746bf2ecbe91c978112f2a893",
-            "responseStreamSha256": "b7c1ba7dfc88c87ef0eabb89ea42b15aa7a79dc87804ff168601cf364c8071d0",
-            "stage": "independent"
-          },
-          "inputContextSha256": "91c95c76b03dde1430844de93784f758e578d6b778269a20a55e747761fc9f0e"
-        },
-        "gpt_6_astra_before_context_review": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
-          "text": "答案：A。两处‘更’都表示在先前情形的基础上再做一次行动：庄公死后又立景公，为看得更远再登一层。B项前一‘之’指庆封，后一‘之’用于‘何功之有’这一宾语前置结构。C项前一‘以’属于把相关行为当作法度的结构，后一‘以’连接平坦和近两个性质。D项前一‘相’是双方互相帮助，后一‘相’偏指遭遇不平而被帮助的一方。词类名称相近不能掩盖互指与偏指的差别。旧答案一面承认A相同、一面选D，且把‘偏指一方’与‘双方彼此’混说，不能沿用。",
-          "inputSha256": "16bd991c0ba9d012244f6db15098f99fb599b73df4130320357671a1258c9c00",
-          "generatedAt": "2026-10-02T23:52:23.736Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-initial-reviews"
-          }
-        },
-        "claude_opus_5_5_revision_2": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 来源复核后修订（修订前存档）",
-          "text": "答案：A。\nA项相同。“庄公死，更立景公”是说庄公死后，另外再立景公为君。“更”是副词，修饰动词“立”，表示在前一个国君之后再立一君，有“另、再”的意思。“欲穷千里目，更上一层楼”的“更”也是副词，意为“再”“又”，修饰“上”。两处都作状语，表示动作的再次、另行进行，意义和用法相同。\nB项不同。“得庆封，负之斧质”的“之”是代词，指庆封。这里是处刑示众的语境，意为把庆封押上斧质（腰斩刑具）示众，不宜理解为让庆封背着刑具。“何功之有哉”的“之”是宾语前置的标志，无实义。\nC项不同。“后世以为法程”是“以（之）为法程”的省略，意为“把它当作法度准则”，“以”是介词。“夫夷以近”的“以”是连词，相当于“而”，连接“夷”与“近”。\nD项不同。“其始相助，后必相恶”的“相”是副词，表示互相，即彼此帮助、彼此憎恶。“路见不平，拔刀相助”的“相”是偏指一方，指帮助他（受欺者），具有指代作用。两者虽都放在动词前，意义并不相同。\n综合判断，选A。",
-          "inputSha256": "16bd991c0ba9d012244f6db15098f99fb599b73df4130320357671a1258c9c00",
-          "generatedAt": "2026-10-03T00:43:53.716690+00:00",
-          "uncertainties": [
-            "A项的“更立景公”也可以理解为“改立”（gēng，更换），这时“更”带有动词“改换”的意味，与“更上一层楼”的副词“再”不完全等同。本答案依据“庄公死后再立一君”的语境，以及B、C、D三项明显不同，判为A。",
-            "材料存在录入缺损：“于是扌豕崔杼之于”中的“扌豕”是无法识别的字形（原文应是表示挑拨、离间之义的字，此处不臆补），“之于”疑为“之子”；“又去鲁而如昊”的“昊”疑为“吴”。这些缺损不影响本题判断。"
-          ],
-          "selectedOptions": [
-            "A"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-source-review-01-result.json",
-            "inputPromptSha256": "ce426208a0a6adc0237edf91f5eb8cfa8574192829abf593db120d4bafa1da7b",
-            "responseStreamSha256": "c985407509b490ff104f2d3704b52e676630c279e98ccbe6597af4af7b9e7234",
-            "stage": "source_review"
-          },
-          "inputContextSha256": "91c95c76b03dde1430844de93784f758e578d6b778269a20a55e747761fc9f0e"
         }
-      },
-      "inputContextSha256": "1858a221a9bb953b5354b811c2c7a40fe6089dac3437bfc91a8ef99d6bec68b4"
+      ],
+      "inputPresentationSha256": "cb9458aff85cb820f2bc74f44d3bbca6dd2c44d639f305f08df5a6c97ce070c2"
     },
     {
       "id": "2009-sanwen:1",
@@ -40841,6 +40933,24 @@
         "2006-duanju"
       ],
       "detail": "中国教育在线2006北京卷七张题目拼接图覆盖原1—25题，已逐图目视；不是完整14物理页原卷或考试机构出版链认证。 图3诗歌问答及默写下部、图4局部字形褪色；原卷出版链、答题卡、印刷方格和所有字形未完全认证。 《天坛之美》旧“生命旋转”与公开“生命流转”版本不一；图4该段褪色，暂保留旧文本且明确待清晰原卷。不能以同源OCR、搜索摘要或历史建筑常识替代原卷。敝撤/禀及其余未确证古文字形保留；薪橑、乘按低清图并参古籍文本校勘，仍保留来源限定。 原11断句一单元独立补录，未入612旧单元。实际2006输入26单元（25旧+1补录），25阅读及1作文；累计28补录，16已有双模型、12仅来源，全部尚未正式入库/映射。 正文八个古文点及四线按图定位；诗歌四波浪线、非连四下划线、散文两正文点撤除；散文两实际点归题目引文，语言实际点以星号保留。全部消费者真实呈现和题面标记证明仍待。 旧score/null、题目ID/qIndex/year、历史进度及AI字段不改。字形题中班马、针贬等原错项及其他有意语病保留；不为迎合现代正确写法而改题。原分值与合并小题历史计分兼容未解。 2006所有26单元保守登记参考暴露：此前博客检索以及Gzy参考页/古籍文本已见，不能称盲答。本步骤只做来源，无本人答案、无provider。Claude按用户指示最后做；额度已重置也不能提前，旧PLAN27终态不可重跑。 2008本人25全文及2007本人27全文冻结不变，均未获新Claude独立复核；2008时钟图仍需两模型实际视觉作答，CLI像素回显不是模型读取证据。 本聊天第二次压缩，完成本来源原子步骤后fresh_task_required，仅允许一次LOCAL串行接续；不得在本聊天开始2006本人完整作答阶段。六站八消费者、独有题、原卷/来源/标记/旧分值、注册发布/真实验收/status全部原门禁继续。"
+    },
+    {
+      "id": "2005-source-attribution-marking-editorial-qualification",
+      "status": "open",
+      "recordIds": [
+        "2005-feilian",
+        "2005-guwen",
+        "2005-shici",
+        "2005-moxie",
+        "2005-honglou",
+        "2005-sanwen",
+        "2005-yuyanjichu",
+        "2005-yuyanjichu-2",
+        "2005-dazuowen",
+        "2005-duanju",
+        "2005-yuyan-professor"
+      ],
+      "detail": "2005北京卷仅获Gzy公开文字转录三页；未取得原卷扫描、答题卡或考试机构出版链。转录有共同损字，不能作为印刷字形、加点/划线及所有标点的认证。 扌豕/椓、私哄/私闀、戮/僇及其余异文只按已记录的有限校勘处理；没有原卷视觉证明。古文正文八推定点、诗词三推定标记和非连五推定线撤除，不能以空标记认证原卷无点无划线；原1加点、原8下划线与页面排印待真实图像。 原11断句、原24影星教授续写独立补录；旧2005原24身份疑似2003原25，旧2007三应用单元与2005错年重复。仅补来源/警示，不移动ID、year，不合并或重算历史成绩。 红楼入口是非连原15的分类重复，已补相同完整阅读材料；旧身份保留，不能重复计算原卷覆盖或未经设计合并成绩。 旧score/null、ID/qIndex/year、legacy键及全部旧AI和已存模型保全。原卷正式题分与历史计分兼容仍待。 2006—2008共78本人完整答案冻结保留；Claude最后、零新provider job或调用。2005全体参考暴露，Gzy答案/作文构思与古籍已读；尚未生成本人完整答案。"
     }
   ]
 }
