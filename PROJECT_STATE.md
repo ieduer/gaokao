@@ -1,3 +1,11 @@
+## 2026-10-03 PDT — 四错年入口兼容方案与第二次压缩交接
+
+已冻结4组旧入口/正确源题完整输入与v1/v2/v3：2007语用三题对应2005原22/23/24，其中教授题为尚未整合补录；2005道路题对应2003原25。旧身份、年份、qIndex、分数、AI和进度不变。道路题GK旧score=null而YYJC已存基线为6，不能合并或重算历史成绩。四组v3不同，须对最终生效题面分别完成双模型复核，不能复制证明或从612分母删去。
+
+仅准备、尚未应用兼容方案。验证4组精确输入、4份叶站已存快照及123冻结文件通过，187份本人全文不变；题源/authority相对c97b474f0cf31092fcef638ccc8a694100c23835逐字节不变。YYJC不是本次现网回读，2005原卷扫描仍未获；新浪打印链接404保留终态。改2005整记录注释会影响前两题冻结上下文，后继须版本化处理，不覆盖旧冻结。
+
+owner codex-01a10509-gpt-6-astra，本聊天第二次压缩，fresh_task_required。当前原子准备已完成，普通工作停止，唯一LOCAL串行后继先做错年入口兼容及其余独立来源/专站映射，Claude最后。433reviewed/9disputed/8draft、34未整合补录、29open阻断及六站八消费者/评分/发布真实验收门禁不变。无provider、authority导入、build、push、上传、部署、学生或通知写入。证据 /Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/LEGACY-ALIAS-COMPATIBILITY.md、verification-legacy-alias-plan.json 与 HANDOFF.md。
+
 ## 2026-10-03 PDT — 9999本人五题全文冻结
 
 经验时代改编阅读五题已完整作答、逐篇读回并冻结；选择C/B/B/D与开放题驱动力/四特征全文齐全。1项实际修订把“未进行实验”限定为“材料未给出对比实验证据”，初稿/最终稿保留。13文件hash、5精确输入v1/v2/v3与实际模型验证PASS；源/authority相对53467e2548d4d34d506009f8723a6aff48bbb4d4逐字节不变。187本人全文待最后Claude，182旧冻结保持原hash。
