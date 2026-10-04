@@ -1,3 +1,7 @@
+## 2026-10-03 PDT — 最终来源说明与六题全文重新核对
+
+更正2007旧错年语用组和2003应用组两条过时进度说明；六个完整输入重新核对本人全文、正文不改并另版冻结。题面/标记/ID/score/历史与authority不变，147冻结hash和226/646/361/0数据检查通过；191unique仍待最后Claude。最新六题输入以reference-exposure-final-source-notes-v1-before-claude.json为准，其余保留既有最新版本。当前source SHA256 2b8551993732c77f693c0dac9573cb1ac6d3e60feaae4969813e2e5f948d7d3b；verification-final-source-notes.json记载精确增量。没有任何发布或真实用户验收；全局目标未完成。
+
 ## 2026-10-03 PDT — 图题视觉证据投影保全
 
 本地投影新增可选ai_answer_versions[version].visualEvidence[qIndex]，当前及历史的真实模型观察/限制均保留，文本记录不捏造此字段。21相关测试通过，当前真实投影与546812c3相同，源与authority未改。没有provider/正式build/生产/学生写入；图题双模型、全源与下游真实验收仍未完成。详见docs/OPERATIONS.md和verification-visual-projection.json。

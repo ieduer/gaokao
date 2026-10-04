@@ -1,3 +1,9 @@
+## 2026-10-03 PDT — 最终来源进度说明与六题全文重新核对
+
+两条运行annotation中的过时“补录待整合/待兼容映射”改为已经完成的真实本地状态，涉及2007旧错年语用组与2003语用应用组。题面/材料/标记/ID/score/历史不变，其余224记录不变，authority逐字节不变。六个待Claude题目均逐题重读完整来源与本人全文，答案正文不变，另存root-final-source-notes-v1完整输入/绑定/全文；旧冻结从未覆写。新增冻结reference-exposure-final-source-notes-v1-before-claude.json只按六个指定ID取代早前输入，其他单元仍用各自最新冻结。
+
+147冻结hash通过、数据226记录/646单元/361标记/0错误；新闻33字符、教授续写74字符、两道路段落65/72汉字满足原要求。191unique待Claude不变，仍reference-exposed。当前source SHA256为2b8551993732c77f693c0dac9573cb1ac6d3e60feaae4969813e2e5f948d7d3b。既有阶段的整库hash验证收据保留历史，后续消费者实施须绑定当前来源，不能重跑旧阶段脚本误判或覆写证据。见verification-final-source-notes.json；本地回退锚点345dfc1f671d2ab6c57bd17e2c87f5d7bb4208b5。无provider、正式build、push、发布或学生/通知写入，完整来源/所有消费者/最终Claude与真实验收仍待。
+
 ## 2026-10-03 PDT — 真实视觉证据的消费者投影保全，本地候选
 
 projectAuthority在ai_answer_versions版本槽新增可选visualEvidence[qIndex]，保留当前及历史模型的实际观察和限制，配合已存在的provenance.imageInputs。此前全源门禁会核查真实视觉，但投影只带像素来源而丢失模型观察，消费者无法独立检查完整读图证据。文本模型不生成此字段，现有未有已审图题的真实投影与546812c3逐对象相同；data/all.json和authority逐字节不变，不补造任何读图记录。
