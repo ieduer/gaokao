@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261004-2026-source-marks-awaiting-final-claude",
+  "revision": "20261004-2022-source-marks-awaiting-final-claude",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -105,15 +105,13 @@
     },
     {
       "id": "2022-guwen:2",
-      "inputSha256": "db09a6d24e5a50bd76c3485169612f13536063d598a682b12d2552f3733ee8cf",
-      "status": "reviewed",
+      "inputSha256": "e6a98e0fc0ffd8184e1e249892f2a4af60ede946f1da79f6ad4eab67b3fadc2e",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "C"
-      ],
-      "explanation": "选择C与语境和转载卷所附答案一致。字典分别列有而的转折义、之的定中与主谓助词功能、或的不定副词与不定代词用法；具体归类仍是本次句法判断。法之所用的精细分析存在不同体系，不能另做排他性的标签评分。Claude把副词或释成有的，表达易混；宜译有时或可能，与今或言的有人区别。",
+      "correctOptions": [],
+      "explanation": "2022原卷标记及字形重核；旧模型全文与原题面保留于历史，本人完整重答另版冻结，待最后Claude核对后裁定。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:39:54.838Z",
+      "reviewedAt": "2026-10-04T07:40:33.289Z",
       "sources": [
         {
           "type": "source_material",
@@ -145,58 +143,8 @@
           "url": "https://zdic.net/hans/%E6%88%96"
         }
       ],
-      "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 来源复核",
-          "text": "答案：C。两处‘而’均表转折：百姓日益向善远罪，却没有察觉；君主希望百姓向善的愿望相同，然而促使百姓向善的方法可能不同。A前一‘亡’是灭亡，后一‘亡’通‘无’，表示没有。B前一‘之’连接‘法’与名词性结构‘所用’，可按定语与中心语的关系理解；后一‘之’置于‘秦王’和‘欲尊宗庙而安子孙’之间，使该主谓结构成为句子中的成分，功能不同。D前一‘或’表示有时、可能有差异，后一‘或’指有的人。不能因为都不必逐字翻译就认定助词功能相同。",
-          "inputSha256": "db09a6d24e5a50bd76c3485169612f13536063d598a682b12d2552f3733ee8cf",
-          "inputContextSha256": "f5e37b048e22bab74d9ded0c49ca1abaae5e6f87cb239dcda66e26cd924f05cd",
-          "generatedAt": "2026-10-03T03:37:05.702Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review",
-            "evidence": "answers-six-sites-20261002/gpt-astra-2022-reading-reviews.json",
-            "inputEvidence": "answers-six-sites-20261002/claude-2022-reading-job.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f"
-          },
-          "assessment": {
-            "review": "reviewed",
-            "note": "选择C与语境和转载卷所附答案一致。字典分别列有而的转折义、之的定中与主谓助词功能、或的不定副词与不定代词用法；具体归类仍是本次句法判断。法之所用的精细分析存在不同体系，不能另做排他性的标签评分。Claude把副词或释成有的，表达易混；宜译有时或可能，与今或言的有人区别。",
-            "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
-          }
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 来源复核后修订",
-          "text": "答案：C。\n选C。A项不同：前一个“亡”是动词，灭亡；后一个“亡”通“无”，没有。B项不同：“法之所用”的“之”是结构助词，相当于“的”（法的作用）；“秦王之欲尊宗庙”的“之”用在主谓之间，取消句子独立性。C项相同：两个“而”都是表转折的连词，相当于“却、但是”（百姓天天向善远罪却自己不知道；君主希望百姓向善的愿望相同，但使百姓向善的方法却不同）。D项不同：“或异”的“或”是副词，意为“有的、有时”（方法有所不同）；“今或言”的“或”是无定代词，意为“有人”。",
-          "inputSha256": "db09a6d24e5a50bd76c3485169612f13536063d598a682b12d2552f3733ee8cf",
-          "inputContextSha256": "f5e37b048e22bab74d9ded0c49ca1abaae5e6f87cb239dcda66e26cd924f05cd",
-          "generatedAt": "2026-10-03T03:36:09.273126+00:00",
-          "uncertainties": [
-            "B项“法之所用”的“之”也有人理解为主谓之间的助词，但C项两个“而”同为转折连词最为明确，不影响选C。"
-          ],
-          "selectedOptions": [
-            "C"
-          ],
-          "assessment": {
-            "matchesConclusion": true,
-            "review": "reviewed",
-            "note": "选择C与语境和转载卷所附答案一致。字典分别列有而的转折义、之的定中与主谓助词功能、或的不定副词与不定代词用法；具体归类仍是本次句法判断。法之所用的精细分析存在不同体系，不能另做排他性的标签评分。Claude把副词或释成有的，表达易混；宜译有时或可能，与今或言的有人区别。",
-            "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-2022-reading-result.json",
-            "inputPromptSha256": "7ffcfe45ec2475cfd765a410699b932c541cba3a21e9aba7b8faba06c239bacc",
-            "responseStreamSha256": "6b7ea1b37ac271eadba296d1125c1b354b34e27741404436e9d7ac8a6a7dc261",
-            "stage": "source_review"
-          }
-        }
-      },
-      "inputContextSha256": "f5e37b048e22bab74d9ded0c49ca1abaae5e6f87cb239dcda66e26cd924f05cd",
+      "modelAnswers": {},
+      "inputContextSha256": "d8a4534e0fb0bde1970b7b55c71f776206c8ec76d6ccf58e6774727b104558e9",
       "history": [
         {
           "source": {
@@ -317,8 +265,192 @@
             },
             "inputContextSha256": "1a0cf0f76be345bbc7921aee53b156c724f97275a1b12dc6221f25d4659eff85"
           }
+        },
+        {
+          "source": {
+            "id": "2022-guwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "夏为天子，十有余世。殷为天子，二十余世。周为天子，三十余世。秦为天子，二世而亡。\n\n人性不甚相远也，何三代之君有道之长，而秦无道之暴也？其故可知也。古之王者，太子乃生，固举以礼，故自为赤子而教固已行矣，故太子乃生而见正事，闻正言，行正道，左右前后皆正人也。夫与正人居之，不能毋正，犹生长于齐不能不齐言也；与不正人居之，不能毋不正，犹生长于楚之地不能不楚言也。及秦而不然。其俗固非贵辞让也，所上者告讦也；固非贵礼义也，所上者刑罚也。\n\n凡人之智，能见已然，不能见将然。夫礼者禁于将然之前，而法者禁于已然之后，是故法之所用易见，而礼之所为难知也。若夫庆赏以劝善，刑罚以惩恶，先王执此之政，坚如金石；行此之令，信如四时；据此之公，无私如天地耳，岂顾不用哉？然而曰礼云礼云者，贵绝恶于未萌，而起教于微眇，使民日迁善远罪而不自知也。孔子曰：“听讼，吾犹人也，必也使毋讼乎！”为人主计者，莫如先审取舍；取舍之极定于内，而安危之萌应于外矣。安者非一日而安也，危者非一日而危也，皆以积渐然，不可不察也。人主之所积，在其取舍。以礼义治之者，积礼义；以刑罚治之者，积刑罚。刑罚积而民怨背，礼义积而民和亲。\n\n故世主欲民之善同，而所以使民善者或异。或道之以德教，或驱之以法令。道之以德教者，德教洽而民气乐；驱之以法令者，法令极而民风哀。哀乐之感，祸福之应也。秦王之欲尊宗庙而安子孙，与汤武同，然而汤武广大其德行，六七百岁而弗失；秦王治天下，十余岁则大败。此亡它故矣，汤武之定取舍审，而秦王之定取舍不审矣。夫天下，大器也。今人之置器，置诸安处则安，置诸危处则危，天下之情与器亡以异，在天子之所置之。汤武置天下于仁义礼乐，而德泽洽，禽兽草木广裕，德被蛮貊四夷，累子孙数十世，此天下所共闻也。秦王置天下于法令刑罚，德泽亡一有，而怨毒盈于世，下憎恶之如仇雠，祸几及身，子孙诛绝，此天下之所共见也。是非其明效大验邪！人之言曰：“听言之道，必以其事观之，则言者莫敢妄言。”今或言礼义之不如法令，教化之不如刑罚，人主胡不引殷、周、秦事以观之也？\n\n（取材于《汉书·贾谊传》）"
+              }
+            ],
+            "topic": "二、本大题共5小题，共18分。\n阅读下面文言文，完成6-10题。",
+            "annotation": null,
+            "annotations": [
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 38,
+                "end": 39,
+                "anchor": "亡"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 675,
+                "end": 676,
+                "anchor": "亡"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 256,
+                "end": 257,
+                "anchor": "之"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 570,
+                "end": 571,
+                "anchor": "之"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 355,
+                "end": 356,
+                "anchor": "而"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 503,
+                "end": 504,
+                "anchor": "而"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 510,
+                "end": 511,
+                "anchor": "或"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 820,
+                "end": 821,
+                "anchor": "或"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 2,
+                "id": "q2",
+                "text": "7.下列各组语句中，加点词的意义和用法都相同的一组是（3分）\nA.秦为天子，二世而*亡* 天下之情与器*亡*以异\nB.是故法*之*所用易见 秦王*之*欲尊宗庙而安子孙\nC.使民日迁善远罪*而*不自知也 世主欲民之善同，*而*所以使民善者或异\nD.而所以使民善者*或*异 今*或*言礼义之不如法令",
+                "score": 3
+              }
+            ]
+          },
+          "review": {
+            "id": "2022-guwen:2",
+            "inputSha256": "db09a6d24e5a50bd76c3485169612f13536063d598a682b12d2552f3733ee8cf",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "C"
+            ],
+            "explanation": "选择C与语境和转载卷所附答案一致。字典分别列有而的转折义、之的定中与主谓助词功能、或的不定副词与不定代词用法；具体归类仍是本次句法判断。法之所用的精细分析存在不同体系，不能另做排他性的标签评分。Claude把副词或释成有的，表达易混；宜译有时或可能，与今或言的有人区别。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:39:54.838Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2022北京卷原题及全文"
+              },
+              {
+                "type": "reference_reprint",
+                "title": "2022北京卷参考答案转载，第8页",
+                "url": "https://cdn.zgkao.com/zixunzhan/202401/7e28deb2-3b24-4275-8f7d-64a75a17ce26.pdf"
+              },
+              {
+                "type": "public_reprint",
+                "title": "2022北京卷公开题面重印及版面核对（非官方评分认证）",
+                "url": "https://cdn.zgkao.com/zixunzhan/202401/7e28deb2-3b24-4275-8f7d-64a75a17ce26.pdf"
+              },
+              {
+                "type": "dictionary",
+                "title": "汉典而：连词转折义",
+                "url": "https://zdic.net/hans/%E8%80%8C"
+              },
+              {
+                "type": "dictionary",
+                "title": "汉典之：助词句法功能",
+                "url": "https://zdic.net/hans/%E4%B9%8B"
+              },
+              {
+                "type": "dictionary",
+                "title": "汉典或：不定副词及代词",
+                "url": "https://zdic.net/hans/%E6%88%96"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 来源复核",
+                "text": "答案：C。两处‘而’均表转折：百姓日益向善远罪，却没有察觉；君主希望百姓向善的愿望相同，然而促使百姓向善的方法可能不同。A前一‘亡’是灭亡，后一‘亡’通‘无’，表示没有。B前一‘之’连接‘法’与名词性结构‘所用’，可按定语与中心语的关系理解；后一‘之’置于‘秦王’和‘欲尊宗庙而安子孙’之间，使该主谓结构成为句子中的成分，功能不同。D前一‘或’表示有时、可能有差异，后一‘或’指有的人。不能因为都不必逐字翻译就认定助词功能相同。",
+                "inputSha256": "db09a6d24e5a50bd76c3485169612f13536063d598a682b12d2552f3733ee8cf",
+                "inputContextSha256": "f5e37b048e22bab74d9ded0c49ca1abaae5e6f87cb239dcda66e26cd924f05cd",
+                "generatedAt": "2026-10-03T03:37:05.702Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-2022-reading-reviews.json",
+                  "inputEvidence": "answers-six-sites-20261002/claude-2022-reading-job.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f"
+                },
+                "assessment": {
+                  "review": "reviewed",
+                  "note": "选择C与语境和转载卷所附答案一致。字典分别列有而的转折义、之的定中与主谓助词功能、或的不定副词与不定代词用法；具体归类仍是本次句法判断。法之所用的精细分析存在不同体系，不能另做排他性的标签评分。Claude把副词或释成有的，表达易混；宜译有时或可能，与今或言的有人区别。",
+                  "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
+                }
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "答案：C。\n选C。A项不同：前一个“亡”是动词，灭亡；后一个“亡”通“无”，没有。B项不同：“法之所用”的“之”是结构助词，相当于“的”（法的作用）；“秦王之欲尊宗庙”的“之”用在主谓之间，取消句子独立性。C项相同：两个“而”都是表转折的连词，相当于“却、但是”（百姓天天向善远罪却自己不知道；君主希望百姓向善的愿望相同，但使百姓向善的方法却不同）。D项不同：“或异”的“或”是副词，意为“有的、有时”（方法有所不同）；“今或言”的“或”是无定代词，意为“有人”。",
+                "inputSha256": "db09a6d24e5a50bd76c3485169612f13536063d598a682b12d2552f3733ee8cf",
+                "inputContextSha256": "f5e37b048e22bab74d9ded0c49ca1abaae5e6f87cb239dcda66e26cd924f05cd",
+                "generatedAt": "2026-10-03T03:36:09.273126+00:00",
+                "uncertainties": [
+                  "B项“法之所用”的“之”也有人理解为主谓之间的助词，但C项两个“而”同为转折连词最为明确，不影响选C。"
+                ],
+                "selectedOptions": [
+                  "C"
+                ],
+                "assessment": {
+                  "matchesConclusion": true,
+                  "review": "reviewed",
+                  "note": "选择C与语境和转载卷所附答案一致。字典分别列有而的转折义、之的定中与主谓助词功能、或的不定副词与不定代词用法；具体归类仍是本次句法判断。法之所用的精细分析存在不同体系，不能另做排他性的标签评分。Claude把副词或释成有的，表达易混；宜译有时或可能，与今或言的有人区别。",
+                  "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2022-reading-result.json",
+                  "inputPromptSha256": "7ffcfe45ec2475cfd765a410699b932c541cba3a21e9aba7b8faba06c239bacc",
+                  "responseStreamSha256": "6b7ea1b37ac271eadba296d1125c1b354b34e27741404436e9d7ac8a6a7dc261",
+                  "stage": "source_review"
+                }
+              }
+            },
+            "inputContextSha256": "f5e37b048e22bab74d9ded0c49ca1abaae5e6f87cb239dcda66e26cd924f05cd"
+          }
         }
-      ]
+      ],
+      "inputPresentationSha256": "a869ca6a6d79b14ee49cb83339d5a57df1b08eefb7466275b834fac2d6a8bd1a"
     },
     {
       "id": "2021-guwen:2",
@@ -18001,65 +18133,143 @@
           "url": "https://cdn.zgkao.com/zixunzhan/202401/7e28deb2-3b24-4275-8f7d-64a75a17ce26.pdf"
         }
       ],
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答",
-          "text": "答案：D。‘祸几及身’是灾祸几乎殃及秦王本人，‘几’表示接近、几乎，不是‘大多’。‘暴’与前面的‘长’相对，指短促；‘讦’是揭发别人的过错；‘道’通‘导’，是引导。",
-          "inputSha256": "7648863befede360030898eb189fbaf4c717bb76824c312b60d8ee5af2d6f097",
-          "inputContextSha256": "8de4dde0dc9174b0152c833a93c656bc6664702f3ad1f152af69b52645212630",
-          "generatedAt": "2026-10-03T03:37:05.702Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "independent",
-            "evidence": "answers-six-sites-20261002/gpt-astra-2022-reading-reviews.json",
-            "inputEvidence": "answers-six-sites-20261002/claude-2022-reading-job.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f"
-          },
-          "assessment": {
-            "review": "reviewed",
-            "note": "当前作答经来源与交叉复核；保留开放题合理表达差异。",
-            "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
-          }
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "答案：D。\n选D。A项正确，“秦无道之暴”与上句“有道之长”相对，“暴”指国运短促、突然败亡。B项正确，“告讦”即告发、揭发别人的隐私或过失。C项正确，“道”通“导”，意为引导。D项不正确，“祸几及身”的“几”是“几乎、差一点”的意思，全句说灾祸几乎降临到秦王自己身上，不能解释为“大多”。",
-          "inputSha256": "7648863befede360030898eb189fbaf4c717bb76824c312b60d8ee5af2d6f097",
-          "inputContextSha256": "8de4dde0dc9174b0152c833a93c656bc6664702f3ad1f152af69b52645212630",
-          "generatedAt": "2026-10-03T03:36:09.273126+00:00",
-          "uncertainties": [],
-          "selectedOptions": [
-            "D"
-          ],
-          "assessment": {
-            "matchesConclusion": true,
-            "review": "reviewed",
-            "note": "未发现改变结论的错误；主观题按材料依据判断，不要求逐字相同。",
-            "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-2022-reading-result.json",
-            "inputPromptSha256": "7ffcfe45ec2475cfd765a410699b932c541cba3a21e9aba7b8faba06c239bacc",
-            "responseStreamSha256": "6b7ea1b37ac271eadba296d1125c1b354b34e27741404436e9d7ac8a6a7dc261",
-            "stage": "independent"
-          }
-        }
-      },
+      "modelAnswers": {},
       "inputSha256": "7648863befede360030898eb189fbaf4c717bb76824c312b60d8ee5af2d6f097",
       "inputContextSha256": "8de4dde0dc9174b0152c833a93c656bc6664702f3ad1f152af69b52645212630",
-      "status": "reviewed",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "D"
-      ],
-      "explanation": "逐项依据完整当前材料核对，两模型作答结论相容，并与公开转载卷附载参考答案交叉比对；不声称模型回答为官方答案。",
+      "correctOptions": [],
+      "explanation": "2022原卷标记及字形重核；旧模型全文与原题面保留于历史，本人完整重答另版冻结，待最后Claude核对后裁定。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:39:54.838Z",
-      "currentVersion": "gpt_6_astra"
+      "reviewedAt": "2026-10-04T07:40:33.289Z",
+      "history": [
+        {
+          "source": {
+            "id": "2022-guwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "夏为天子，十有余世。殷为天子，二十余世。周为天子，三十余世。秦为天子，二世而亡。\n\n人性不甚相远也，何三代之君有道之长，而秦无道之暴也？其故可知也。古之王者，太子乃生，固举以礼，故自为赤子而教固已行矣，故太子乃生而见正事，闻正言，行正道，左右前后皆正人也。夫与正人居之，不能毋正，犹生长于齐不能不齐言也；与不正人居之，不能毋不正，犹生长于楚之地不能不楚言也。及秦而不然。其俗固非贵辞让也，所上者告讦也；固非贵礼义也，所上者刑罚也。\n\n凡人之智，能见已然，不能见将然。夫礼者禁于将然之前，而法者禁于已然之后，是故法之所用易见，而礼之所为难知也。若夫庆赏以劝善，刑罚以惩恶，先王执此之政，坚如金石；行此之令，信如四时；据此之公，无私如天地耳，岂顾不用哉？然而曰礼云礼云者，贵绝恶于未萌，而起教于微眇，使民日迁善远罪而不自知也。孔子曰：“听讼，吾犹人也，必也使毋讼乎！”为人主计者，莫如先审取舍；取舍之极定于内，而安危之萌应于外矣。安者非一日而安也，危者非一日而危也，皆以积渐然，不可不察也。人主之所积，在其取舍。以礼义治之者，积礼义；以刑罚治之者，积刑罚。刑罚积而民怨背，礼义积而民和亲。\n\n故世主欲民之善同，而所以使民善者或异。或道之以德教，或驱之以法令。道之以德教者，德教洽而民气乐；驱之以法令者，法令极而民风哀。哀乐之感，祸福之应也。秦王之欲尊宗庙而安子孙，与汤武同，然而汤武广大其德行，六七百岁而弗失；秦王治天下，十余岁则大败。此亡它故矣，汤武之定取舍审，而秦王之定取舍不审矣。夫天下，大器也。今人之置器，置诸安处则安，置诸危处则危，天下之情与器亡以异，在天子之所置之。汤武置天下于仁义礼乐，而德泽洽，禽兽草木广裕，德被蛮貊四夷，累子孙数十世，此天下所共闻也。秦王置天下于法令刑罚，德泽亡一有，而怨毒盈于世，下憎恶之如仇雠，祸几及身，子孙诛绝，此天下之所共见也。是非其明效大验邪！人之言曰：“听言之道，必以其事观之，则言者莫敢妄言。”今或言礼义之不如法令，教化之不如刑罚，人主胡不引殷、周、秦事以观之也？\n\n（取材于《汉书·贾谊传》）"
+              }
+            ],
+            "topic": "二、本大题共5小题，共18分。\n阅读下面文言文，完成6-10题。",
+            "annotation": null,
+            "annotations": [
+              {
+                "qIndex": 1,
+                "material": "material1",
+                "type": "dot",
+                "start": 65,
+                "end": 66,
+                "anchor": "暴"
+              },
+              {
+                "qIndex": 1,
+                "material": "material1",
+                "type": "dot",
+                "start": 198,
+                "end": 199,
+                "anchor": "讦"
+              },
+              {
+                "qIndex": 1,
+                "material": "material1",
+                "type": "dot",
+                "start": 514,
+                "end": 515,
+                "anchor": "道"
+              },
+              {
+                "qIndex": 1,
+                "material": "material1",
+                "type": "dot",
+                "start": 765,
+                "end": 766,
+                "anchor": "几"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "6.下列对句中加点词的解释，不正确的一项是（3分）\nA.秦无道之暴也 暴：短促\nB.所上者告讦也 讦：揭发\nC.道之以德教 道：引导\nD.祸几及身 几：大多",
+                "score": 3
+              }
+            ]
+          },
+          "review": {
+            "id": "2022-guwen:1",
+            "sources": [
+              {
+                "type": "public_reprint",
+                "title": "2022北京卷公开题面重印及版面核对（非官方评分认证）",
+                "url": "https://cdn.zgkao.com/zixunzhan/202401/7e28deb2-3b24-4275-8f7d-64a75a17ce26.pdf"
+              }
+            ],
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答",
+                "text": "答案：D。‘祸几及身’是灾祸几乎殃及秦王本人，‘几’表示接近、几乎，不是‘大多’。‘暴’与前面的‘长’相对，指短促；‘讦’是揭发别人的过错；‘道’通‘导’，是引导。",
+                "inputSha256": "7648863befede360030898eb189fbaf4c717bb76824c312b60d8ee5af2d6f097",
+                "inputContextSha256": "8de4dde0dc9174b0152c833a93c656bc6664702f3ad1f152af69b52645212630",
+                "generatedAt": "2026-10-03T03:37:05.702Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "independent",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-2022-reading-reviews.json",
+                  "inputEvidence": "answers-six-sites-20261002/claude-2022-reading-job.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f"
+                },
+                "assessment": {
+                  "review": "reviewed",
+                  "note": "当前作答经来源与交叉复核；保留开放题合理表达差异。",
+                  "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
+                }
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "答案：D。\n选D。A项正确，“秦无道之暴”与上句“有道之长”相对，“暴”指国运短促、突然败亡。B项正确，“告讦”即告发、揭发别人的隐私或过失。C项正确，“道”通“导”，意为引导。D项不正确，“祸几及身”的“几”是“几乎、差一点”的意思，全句说灾祸几乎降临到秦王自己身上，不能解释为“大多”。",
+                "inputSha256": "7648863befede360030898eb189fbaf4c717bb76824c312b60d8ee5af2d6f097",
+                "inputContextSha256": "8de4dde0dc9174b0152c833a93c656bc6664702f3ad1f152af69b52645212630",
+                "generatedAt": "2026-10-03T03:36:09.273126+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "D"
+                ],
+                "assessment": {
+                  "matchesConclusion": true,
+                  "review": "reviewed",
+                  "note": "未发现改变结论的错误；主观题按材料依据判断，不要求逐字相同。",
+                  "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2022-reading-result.json",
+                  "inputPromptSha256": "7ffcfe45ec2475cfd765a410699b932c541cba3a21e9aba7b8faba06c239bacc",
+                  "responseStreamSha256": "6b7ea1b37ac271eadba296d1125c1b354b34e27741404436e9d7ac8a6a7dc261",
+                  "stage": "independent"
+                }
+              }
+            },
+            "inputSha256": "7648863befede360030898eb189fbaf4c717bb76824c312b60d8ee5af2d6f097",
+            "inputContextSha256": "8de4dde0dc9174b0152c833a93c656bc6664702f3ad1f152af69b52645212630",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "D"
+            ],
+            "explanation": "逐项依据完整当前材料核对，两模型作答结论相容，并与公开转载卷附载参考答案交叉比对；不声称模型回答为官方答案。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:39:54.838Z",
+            "currentVersion": "gpt_6_astra"
+          }
+        }
+      ],
+      "inputPresentationSha256": "6d57a653e67319ea5e6e4cb5ea51bd99812fe4074399ac151cc9408c32395e38"
     },
     {
       "id": "2022-guwen:3",
@@ -18070,78 +18280,123 @@
           "url": "https://cdn.zgkao.com/zixunzhan/202401/7e28deb2-3b24-4275-8f7d-64a75a17ce26.pdf"
         }
       ],
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答",
-          "text": "答案：C。‘汤武之定取舍审’中的‘审’是审慎、周详，句意是商汤、周武王确定治国方略时审慎，不能拆成‘审查并制定’两个动作。A的反问、B的日积渐变和D的援引史实验证言论，均与上下文一致。",
-          "inputSha256": "4629f7f8f6e1366844c4e59535cd5dcb2fe41be33ad4213bf369066ffea20594",
-          "inputContextSha256": "f40c240cd1df650c4b2f4e3df06e4468e331f9610db5ce9180f03e1783e89a81",
-          "generatedAt": "2026-10-03T03:37:05.702Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "independent",
-            "evidence": "answers-six-sites-20261002/gpt-astra-2022-reading-reviews.json",
-            "inputEvidence": "answers-six-sites-20261002/claude-2022-reading-job.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "f40c240cd1df650c4b2f4e3df06e4468e331f9610db5ce9180f03e1783e89a81"
-            }
-          },
-          "assessment": {
-            "review": "reviewed",
-            "note": "错误关键是把审慎误作审查并制定；不能据此一并否定按治国语境将取舍解释为治国方略的可能。",
-            "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
-          },
-          "inputPresentationSha256": "3e0c9c3e95bc01160c3c324bbd1923df44b9f62bbc0c6f698920849dd3f1b6a1"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "答案：C。\n选C。A项正确，“顾”是“反而”的意思，句意为先王难道反而不用赏善罚恶吗。B项大体正确，“以”表凭借或原因，“积渐”指逐渐积累，“然”指这样，即安与危都是逐渐积累而成的。C项不正确，“汤武之定取舍审”是主谓结构，“审”是形容词，作谓语，意为审慎、周密，句意为“商汤和周武王确定取舍很审慎”；选项把“审”译成动词“审查”，并与“定”并列，又把“取舍”译为“治国的方略”，不合原意。D项正确，“胡”是“为什么”，“引”是“援引”，“观”是“考察”。",
-          "inputSha256": "4629f7f8f6e1366844c4e59535cd5dcb2fe41be33ad4213bf369066ffea20594",
-          "inputContextSha256": "f40c240cd1df650c4b2f4e3df06e4468e331f9610db5ce9180f03e1783e89a81",
-          "generatedAt": "2026-10-03T03:36:09.273126+00:00",
-          "uncertainties": [],
-          "selectedOptions": [
-            "C"
-          ],
-          "assessment": {
-            "matchesConclusion": true,
-            "review": "reviewed",
-            "note": "错误关键是把审慎误作审查并制定；不能据此一并否定按治国语境将取舍解释为治国方略的可能。",
-            "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-2022-reading-result.json",
-            "inputPromptSha256": "7ffcfe45ec2475cfd765a410699b932c541cba3a21e9aba7b8faba06c239bacc",
-            "responseStreamSha256": "6b7ea1b37ac271eadba296d1125c1b354b34e27741404436e9d7ac8a6a7dc261",
-            "stage": "independent",
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "f40c240cd1df650c4b2f4e3df06e4468e331f9610db5ce9180f03e1783e89a81"
-            }
-          },
-          "inputPresentationSha256": "3e0c9c3e95bc01160c3c324bbd1923df44b9f62bbc0c6f698920849dd3f1b6a1"
-        }
-      },
+      "modelAnswers": {},
       "inputSha256": "4629f7f8f6e1366844c4e59535cd5dcb2fe41be33ad4213bf369066ffea20594",
       "inputContextSha256": "f40c240cd1df650c4b2f4e3df06e4468e331f9610db5ce9180f03e1783e89a81",
-      "status": "reviewed",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "C"
-      ],
-      "explanation": "错误关键是把审慎误作审查并制定；不能据此一并否定按治国语境将取舍解释为治国方略的可能。",
+      "correctOptions": [],
+      "explanation": "2022原卷标记及字形重核；旧模型全文与原题面保留于历史，本人完整重答另版冻结，待最后Claude核对后裁定。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:39:54.838Z",
-      "currentVersion": "gpt_6_astra",
-      "inputPresentationSha256": "3e0c9c3e95bc01160c3c324bbd1923df44b9f62bbc0c6f698920849dd3f1b6a1"
+      "reviewedAt": "2026-10-04T07:40:33.289Z",
+      "inputPresentationSha256": "ad3326b13e6d6f0c26cdd7b7e0e2cf1f375ac7bf08064ed279dd8e1859d71577",
+      "history": [
+        {
+          "source": {
+            "id": "2022-guwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "夏为天子，十有余世。殷为天子，二十余世。周为天子，三十余世。秦为天子，二世而亡。\n\n人性不甚相远也，何三代之君有道之长，而秦无道之暴也？其故可知也。古之王者，太子乃生，固举以礼，故自为赤子而教固已行矣，故太子乃生而见正事，闻正言，行正道，左右前后皆正人也。夫与正人居之，不能毋正，犹生长于齐不能不齐言也；与不正人居之，不能毋不正，犹生长于楚之地不能不楚言也。及秦而不然。其俗固非贵辞让也，所上者告讦也；固非贵礼义也，所上者刑罚也。\n\n凡人之智，能见已然，不能见将然。夫礼者禁于将然之前，而法者禁于已然之后，是故法之所用易见，而礼之所为难知也。若夫庆赏以劝善，刑罚以惩恶，先王执此之政，坚如金石；行此之令，信如四时；据此之公，无私如天地耳，岂顾不用哉？然而曰礼云礼云者，贵绝恶于未萌，而起教于微眇，使民日迁善远罪而不自知也。孔子曰：“听讼，吾犹人也，必也使毋讼乎！”为人主计者，莫如先审取舍；取舍之极定于内，而安危之萌应于外矣。安者非一日而安也，危者非一日而危也，皆以积渐然，不可不察也。人主之所积，在其取舍。以礼义治之者，积礼义；以刑罚治之者，积刑罚。刑罚积而民怨背，礼义积而民和亲。\n\n故世主欲民之善同，而所以使民善者或异。或道之以德教，或驱之以法令。道之以德教者，德教洽而民气乐；驱之以法令者，法令极而民风哀。哀乐之感，祸福之应也。秦王之欲尊宗庙而安子孙，与汤武同，然而汤武广大其德行，六七百岁而弗失；秦王治天下，十余岁则大败。此亡它故矣，汤武之定取舍审，而秦王之定取舍不审矣。夫天下，大器也。今人之置器，置诸安处则安，置诸危处则危，天下之情与器亡以异，在天子之所置之。汤武置天下于仁义礼乐，而德泽洽，禽兽草木广裕，德被蛮貊四夷，累子孙数十世，此天下所共闻也。秦王置天下于法令刑罚，德泽亡一有，而怨毒盈于世，下憎恶之如仇雠，祸几及身，子孙诛绝，此天下之所共见也。是非其明效大验邪！人之言曰：“听言之道，必以其事观之，则言者莫敢妄言。”今或言礼义之不如法令，教化之不如刑罚，人主胡不引殷、周、秦事以观之也？\n\n（取材于《汉书·贾谊传》）"
+              }
+            ],
+            "topic": "二、本大题共5小题，共18分。\n阅读下面文言文，完成6-10题。",
+            "annotation": null,
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 3,
+                "id": "q3",
+                "text": "8.下列对文中语句的理解，不正确的一项是（3分）\nA.岂顾不用哉\n难道反而不用（赏善罚恶）吗\nB.皆以积渐然\n都凭借积累渐变使社会达到这种状态\nC.汤武之定取舍审\n商汤和周武王审查并制定治国的方略\nD.人主胡不引殷、周、秦事以观之也\n人主为什么不引用殷、周、秦的史实来考察上述言论呢",
+                "score": 3
+              }
+            ]
+          },
+          "review": {
+            "id": "2022-guwen:3",
+            "sources": [
+              {
+                "type": "public_reprint",
+                "title": "2022北京卷公开题面重印及版面核对（非官方评分认证）",
+                "url": "https://cdn.zgkao.com/zixunzhan/202401/7e28deb2-3b24-4275-8f7d-64a75a17ce26.pdf"
+              }
+            ],
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答",
+                "text": "答案：C。‘汤武之定取舍审’中的‘审’是审慎、周详，句意是商汤、周武王确定治国方略时审慎，不能拆成‘审查并制定’两个动作。A的反问、B的日积渐变和D的援引史实验证言论，均与上下文一致。",
+                "inputSha256": "4629f7f8f6e1366844c4e59535cd5dcb2fe41be33ad4213bf369066ffea20594",
+                "inputContextSha256": "f40c240cd1df650c4b2f4e3df06e4468e331f9610db5ce9180f03e1783e89a81",
+                "generatedAt": "2026-10-03T03:37:05.702Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "independent",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-2022-reading-reviews.json",
+                  "inputEvidence": "answers-six-sites-20261002/claude-2022-reading-job.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "f40c240cd1df650c4b2f4e3df06e4468e331f9610db5ce9180f03e1783e89a81"
+                  }
+                },
+                "assessment": {
+                  "review": "reviewed",
+                  "note": "错误关键是把审慎误作审查并制定；不能据此一并否定按治国语境将取舍解释为治国方略的可能。",
+                  "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
+                },
+                "inputPresentationSha256": "3e0c9c3e95bc01160c3c324bbd1923df44b9f62bbc0c6f698920849dd3f1b6a1"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "答案：C。\n选C。A项正确，“顾”是“反而”的意思，句意为先王难道反而不用赏善罚恶吗。B项大体正确，“以”表凭借或原因，“积渐”指逐渐积累，“然”指这样，即安与危都是逐渐积累而成的。C项不正确，“汤武之定取舍审”是主谓结构，“审”是形容词，作谓语，意为审慎、周密，句意为“商汤和周武王确定取舍很审慎”；选项把“审”译成动词“审查”，并与“定”并列，又把“取舍”译为“治国的方略”，不合原意。D项正确，“胡”是“为什么”，“引”是“援引”，“观”是“考察”。",
+                "inputSha256": "4629f7f8f6e1366844c4e59535cd5dcb2fe41be33ad4213bf369066ffea20594",
+                "inputContextSha256": "f40c240cd1df650c4b2f4e3df06e4468e331f9610db5ce9180f03e1783e89a81",
+                "generatedAt": "2026-10-03T03:36:09.273126+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "C"
+                ],
+                "assessment": {
+                  "matchesConclusion": true,
+                  "review": "reviewed",
+                  "note": "错误关键是把审慎误作审查并制定；不能据此一并否定按治国语境将取舍解释为治国方略的可能。",
+                  "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2022-reading-result.json",
+                  "inputPromptSha256": "7ffcfe45ec2475cfd765a410699b932c541cba3a21e9aba7b8faba06c239bacc",
+                  "responseStreamSha256": "6b7ea1b37ac271eadba296d1125c1b354b34e27741404436e9d7ac8a6a7dc261",
+                  "stage": "independent",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "f40c240cd1df650c4b2f4e3df06e4468e331f9610db5ce9180f03e1783e89a81"
+                  }
+                },
+                "inputPresentationSha256": "3e0c9c3e95bc01160c3c324bbd1923df44b9f62bbc0c6f698920849dd3f1b6a1"
+              }
+            },
+            "inputSha256": "4629f7f8f6e1366844c4e59535cd5dcb2fe41be33ad4213bf369066ffea20594",
+            "inputContextSha256": "f40c240cd1df650c4b2f4e3df06e4468e331f9610db5ce9180f03e1783e89a81",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "C"
+            ],
+            "explanation": "错误关键是把审慎误作审查并制定；不能据此一并否定按治国语境将取舍解释为治国方略的可能。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:39:54.838Z",
+            "currentVersion": "gpt_6_astra",
+            "inputPresentationSha256": "3e0c9c3e95bc01160c3c324bbd1923df44b9f62bbc0c6f698920849dd3f1b6a1"
+          }
+        }
+      ]
     },
     {
       "id": "2022-guwen:4",
@@ -18312,65 +18567,119 @@
           "url": "https://cdn.zgkao.com/zixunzhan/202401/7e28deb2-3b24-4275-8f7d-64a75a17ce26.pdf"
         }
       ],
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答",
-          "text": "答案：C。‘客从何乡来，伫立久吁怪’写来客面对病柏久立叹怪，承接柏树衰败与凤、鸮处境的反常，不能因有‘何乡’二字就说诗人转写思乡。前六句赞柏的繁茂高大与正直；中段转而惋惜衰败，结尾发出事理难恃的感叹，A、B、D可由诗句支持。",
-          "inputSha256": "ac4217934b4ee00a37de4f2263dba2eb369e585b8e343ff15c881d91db66293d",
-          "inputContextSha256": "d5cc3f84fd839b18571cf8f5e072b54f1e7da5458b8ca7661f1450f86d3eb55d",
-          "generatedAt": "2026-10-03T03:37:05.702Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "independent",
-            "evidence": "answers-six-sites-20261002/gpt-astra-2022-reading-reviews.json",
-            "inputEvidence": "answers-six-sites-20261002/claude-2022-reading-job.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f"
+      "modelAnswers": {},
+      "inputSha256": "be7995a3b0e71077ea1f4fa3ce53653e3a5428062638a5b4d86b2977961499bb",
+      "inputContextSha256": "4f2d654d8c7fbee276bdd51ced792bfb4e1e5f83392c9d9cd9005fce3385e10f",
+      "status": "draft",
+      "kind": "single_choice",
+      "correctOptions": [],
+      "explanation": "2022原卷标记及字形重核；旧模型全文与原题面保留于历史，本人完整重答另版冻结，待最后Claude核对后裁定。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-04T07:40:33.289Z",
+      "history": [
+        {
+          "source": {
+            "id": "2022-shici",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "病柏【1】\n杜甫\n\n有柏生崇冈，童童状车盖。\n偃蹇龙虎姿，主当风云会。\n神明依正直，故老多再拜。\n岂知千年根，中路颜色坏【2】。\n出非不得地【3】，蟠据亦高大。\n岁寒忽无凭，日夜柯叶改。\n丹凤领九雏，哀鸣翔其外。\n鸱鸮志意满【4】，养子穿穴内。\n客从何乡来，伫立久吁怪。\n静求元精理【5】，浩荡难倚赖。"
+              }
+            ],
+            "topic": "三、本大题共5小题，共30分。\n阅读下面诗歌，完成11-13题。（共12分）",
+            "annotation": "注释：【1】此诗作于上元二年（761）秋，杜甫时居成都草堂。【2】中路：中途。【3】出：生长。【4】鸱鸮：猫头鹰。【5】元精理：事物根本的道理。",
+            "annotations": [
+              {
+                "qIndex": 1,
+                "material": "material1",
+                "type": "wave",
+                "start": 123,
+                "end": 135,
+                "anchor": "客从何乡来，伫立久吁怪。"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "11.下列对诗句的分析，不正确的一项是（3分）\nA.前六句写柏树枝繁叶茂、高大轩昂之态，表现出诗人的赞美之情。\nB.“岂知”两句写柏的衰败，“岁寒”两句写凋零，流露出惋惜之情。\nC.“客从何乡来”两句，诗人由病柏而想到故乡，抒发了思乡之情。\nD.这首诗在结尾两句抒发胸臆，表达了世事无常、难以意料的感慨。",
+                "score": 3
+              }
+            ]
           },
-          "assessment": {
-            "review": "reviewed",
-            "note": "当前作答经来源与交叉复核；保留开放题合理表达差异。",
-            "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
-          }
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "答案：C。\n选C。A项正确，前六句写柏树生于高冈，树冠如车盖，有龙虎之姿，神明所依，故老再拜，表现其高大轩昂，含赞美之意。B项正确，“岂知千年根，中路颜色坏”写柏树中途衰败，“岁寒忽无凭，日夜柯叶改”写枝叶凋零，流露惋惜。C项不正确，“客从何乡来，伫立久吁怪”写的是过客（即诗人自己）在病柏前久久伫立，惊怪叹息，是对柏树由盛而衰的惊诧感叹，并没有由病柏想到故乡，也不是抒发思乡之情。D项正确，末两句说静心探求事物的根本道理，却觉得渺茫而难以依凭，是对世事无常、难以预料的感慨。",
-          "inputSha256": "ac4217934b4ee00a37de4f2263dba2eb369e585b8e343ff15c881d91db66293d",
-          "inputContextSha256": "d5cc3f84fd839b18571cf8f5e072b54f1e7da5458b8ca7661f1450f86d3eb55d",
-          "generatedAt": "2026-10-03T03:36:09.273126+00:00",
-          "uncertainties": [],
-          "selectedOptions": [
-            "C"
-          ],
-          "assessment": {
-            "matchesConclusion": true,
-            "review": "reviewed",
-            "note": "未发现改变结论的错误；主观题按材料依据判断，不要求逐字相同。",
-            "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-2022-reading-result.json",
-            "inputPromptSha256": "7ffcfe45ec2475cfd765a410699b932c541cba3a21e9aba7b8faba06c239bacc",
-            "responseStreamSha256": "6b7ea1b37ac271eadba296d1125c1b354b34e27741404436e9d7ac8a6a7dc261",
-            "stage": "independent"
+          "review": {
+            "id": "2022-shici:1",
+            "sources": [
+              {
+                "type": "public_reprint",
+                "title": "2022北京卷公开题面重印及版面核对（非官方评分认证）",
+                "url": "https://cdn.zgkao.com/zixunzhan/202401/7e28deb2-3b24-4275-8f7d-64a75a17ce26.pdf"
+              }
+            ],
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答",
+                "text": "答案：C。‘客从何乡来，伫立久吁怪’写来客面对病柏久立叹怪，承接柏树衰败与凤、鸮处境的反常，不能因有‘何乡’二字就说诗人转写思乡。前六句赞柏的繁茂高大与正直；中段转而惋惜衰败，结尾发出事理难恃的感叹，A、B、D可由诗句支持。",
+                "inputSha256": "ac4217934b4ee00a37de4f2263dba2eb369e585b8e343ff15c881d91db66293d",
+                "inputContextSha256": "d5cc3f84fd839b18571cf8f5e072b54f1e7da5458b8ca7661f1450f86d3eb55d",
+                "generatedAt": "2026-10-03T03:37:05.702Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "independent",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-2022-reading-reviews.json",
+                  "inputEvidence": "answers-six-sites-20261002/claude-2022-reading-job.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f"
+                },
+                "assessment": {
+                  "review": "reviewed",
+                  "note": "当前作答经来源与交叉复核；保留开放题合理表达差异。",
+                  "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
+                }
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "答案：C。\n选C。A项正确，前六句写柏树生于高冈，树冠如车盖，有龙虎之姿，神明所依，故老再拜，表现其高大轩昂，含赞美之意。B项正确，“岂知千年根，中路颜色坏”写柏树中途衰败，“岁寒忽无凭，日夜柯叶改”写枝叶凋零，流露惋惜。C项不正确，“客从何乡来，伫立久吁怪”写的是过客（即诗人自己）在病柏前久久伫立，惊怪叹息，是对柏树由盛而衰的惊诧感叹，并没有由病柏想到故乡，也不是抒发思乡之情。D项正确，末两句说静心探求事物的根本道理，却觉得渺茫而难以依凭，是对世事无常、难以预料的感慨。",
+                "inputSha256": "ac4217934b4ee00a37de4f2263dba2eb369e585b8e343ff15c881d91db66293d",
+                "inputContextSha256": "d5cc3f84fd839b18571cf8f5e072b54f1e7da5458b8ca7661f1450f86d3eb55d",
+                "generatedAt": "2026-10-03T03:36:09.273126+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "C"
+                ],
+                "assessment": {
+                  "matchesConclusion": true,
+                  "review": "reviewed",
+                  "note": "未发现改变结论的错误；主观题按材料依据判断，不要求逐字相同。",
+                  "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2022-reading-result.json",
+                  "inputPromptSha256": "7ffcfe45ec2475cfd765a410699b932c541cba3a21e9aba7b8faba06c239bacc",
+                  "responseStreamSha256": "6b7ea1b37ac271eadba296d1125c1b354b34e27741404436e9d7ac8a6a7dc261",
+                  "stage": "independent"
+                }
+              }
+            },
+            "inputSha256": "ac4217934b4ee00a37de4f2263dba2eb369e585b8e343ff15c881d91db66293d",
+            "inputContextSha256": "d5cc3f84fd839b18571cf8f5e072b54f1e7da5458b8ca7661f1450f86d3eb55d",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "C"
+            ],
+            "explanation": "逐项依据完整当前材料核对，两模型作答结论相容，并与公开转载卷附载参考答案交叉比对；不声称模型回答为官方答案。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:39:54.838Z",
+            "currentVersion": "gpt_6_astra"
           }
         }
-      },
-      "inputSha256": "ac4217934b4ee00a37de4f2263dba2eb369e585b8e343ff15c881d91db66293d",
-      "inputContextSha256": "d5cc3f84fd839b18571cf8f5e072b54f1e7da5458b8ca7661f1450f86d3eb55d",
-      "status": "reviewed",
-      "kind": "single_choice",
-      "correctOptions": [
-        "C"
       ],
-      "explanation": "逐项依据完整当前材料核对，两模型作答结论相容，并与公开转载卷附载参考答案交叉比对；不声称模型回答为官方答案。",
-      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:39:54.838Z",
-      "currentVersion": "gpt_6_astra"
+      "inputPresentationSha256": "6ccd5af50323a212ed980fdd0c7689ff0579a5fbe1a2592c9bf72e3a2da9b50e"
     },
     {
       "id": "2022-shici:2",
@@ -18381,65 +18690,119 @@
           "url": "https://cdn.zgkao.com/zixunzhan/202401/7e28deb2-3b24-4275-8f7d-64a75a17ce26.pdf"
         }
       ],
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答",
-          "text": "答案：B。开头的高大、繁茂、受敬重与‘岂知’后的衰败相反，形成明显转折，整体色调由明朗转为黯淡。A把病柏所寓的衰败与刘禹锡病树诗句的寄托简单等同。C把柏的高大误解为藩镇割据；D所说对未来的希望，在结尾‘难倚赖’等语中缺乏依据。",
-          "inputSha256": "dd12b2d9dea6ea78541e9caee3d06f6bf01ad145cee28fbd6dac781367f87df3",
-          "inputContextSha256": "eb65ad20173f0f6b16c3c8af6c4ff69b36642dfb7b984750987646447c17e777",
-          "generatedAt": "2026-10-03T03:37:05.702Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "independent",
-            "evidence": "answers-six-sites-20261002/gpt-astra-2022-reading-reviews.json",
-            "inputEvidence": "answers-six-sites-20261002/claude-2022-reading-job.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f"
+      "modelAnswers": {},
+      "inputSha256": "a0601fa89208cc85aca15c8065384edeeb59fd8fe025327073fc832ab5676ed3",
+      "inputContextSha256": "e72ece8b3b7239e9fe625f8737f01839e88800d9fea0271b8f0a303e30a63ea1",
+      "status": "draft",
+      "kind": "single_choice",
+      "correctOptions": [],
+      "explanation": "2022原卷标记及字形重核；旧模型全文与原题面保留于历史，本人完整重答另版冻结，待最后Claude核对后裁定。",
+      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+      "reviewedAt": "2026-10-04T07:40:33.289Z",
+      "history": [
+        {
+          "source": {
+            "id": "2022-shici",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "病柏【1】\n杜甫\n\n有柏生崇冈，童童状车盖。\n偃蹇龙虎姿，主当风云会。\n神明依正直，故老多再拜。\n岂知千年根，中路颜色坏【2】。\n出非不得地【3】，蟠据亦高大。\n岁寒忽无凭，日夜柯叶改。\n丹凤领九雏，哀鸣翔其外。\n鸱鸮志意满【4】，养子穿穴内。\n客从何乡来，伫立久吁怪。\n静求元精理【5】，浩荡难倚赖。"
+              }
+            ],
+            "topic": "三、本大题共5小题，共30分。\n阅读下面诗歌，完成11-13题。（共12分）",
+            "annotation": "注释：【1】此诗作于上元二年（761）秋，杜甫时居成都草堂。【2】中路：中途。【3】出：生长。【4】鸱鸮：猫头鹰。【5】元精理：事物根本的道理。",
+            "annotations": [
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "wave",
+                "start": 74,
+                "end": 79,
+                "anchor": "蟠据亦高大"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 2,
+                "id": "q2",
+                "text": "12.下列对这首诗的理解与赏析，正确的一项是（3分）\nA.诗人善用比兴手法，此诗中的病柏与刘禹锡“病树前头万木春”有相同的寄托。\nB.文似看山不喜平，此诗运用转笔形成了诗意的转折，其色调也从明朗转为黯淡。\nC.杜甫借物抒怀，用柏树的“蟠据亦高大”之姿隐喻了当时藩镇的龙盘虎踞之势。\nD.此诗情感复杂而深沉，既有对现实的不满，也有对未来的希望，可谓沉郁顿挫。",
+                "score": 3
+              }
+            ]
           },
-          "assessment": {
-            "review": "reviewed",
-            "note": "当前作答经来源与交叉复核；保留开放题合理表达差异。",
-            "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
-          }
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "答案：B。\n选B。A项错误，刘禹锡“病树前头万木春”以“病树”自比，表达新陈代谢、豁达乐观的态度；本诗的病柏寄托的是对盛极而衰（国运或正直贤才遭遇）的痛惜，两者寄托不同。B项正确，前六句写柏树雄伟、受人敬重，色调明朗；“岂知”一转，写柏树中途衰败、柯叶凋改、丹凤哀鸣、鸱鸮得志，色调转为黯淡，行文有起伏。C项错误，“出非不得地，蟠据亦高大”是说柏树生长得地、根基深厚高大，用来反衬其衰败之出人意料，并非隐喻藩镇割据。D项错误，全诗以“浩荡难倚赖”作结，是无奈与迷茫，看不出“对未来的希望”。",
-          "inputSha256": "dd12b2d9dea6ea78541e9caee3d06f6bf01ad145cee28fbd6dac781367f87df3",
-          "inputContextSha256": "eb65ad20173f0f6b16c3c8af6c4ff69b36642dfb7b984750987646447c17e777",
-          "generatedAt": "2026-10-03T03:36:09.273126+00:00",
-          "uncertainties": [],
-          "selectedOptions": [
-            "B"
-          ],
-          "assessment": {
-            "matchesConclusion": true,
-            "review": "reviewed",
-            "note": "未发现改变结论的错误；主观题按材料依据判断，不要求逐字相同。",
-            "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-2022-reading-result.json",
-            "inputPromptSha256": "7ffcfe45ec2475cfd765a410699b932c541cba3a21e9aba7b8faba06c239bacc",
-            "responseStreamSha256": "6b7ea1b37ac271eadba296d1125c1b354b34e27741404436e9d7ac8a6a7dc261",
-            "stage": "independent"
+          "review": {
+            "id": "2022-shici:2",
+            "sources": [
+              {
+                "type": "public_reprint",
+                "title": "2022北京卷公开题面重印及版面核对（非官方评分认证）",
+                "url": "https://cdn.zgkao.com/zixunzhan/202401/7e28deb2-3b24-4275-8f7d-64a75a17ce26.pdf"
+              }
+            ],
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答",
+                "text": "答案：B。开头的高大、繁茂、受敬重与‘岂知’后的衰败相反，形成明显转折，整体色调由明朗转为黯淡。A把病柏所寓的衰败与刘禹锡病树诗句的寄托简单等同。C把柏的高大误解为藩镇割据；D所说对未来的希望，在结尾‘难倚赖’等语中缺乏依据。",
+                "inputSha256": "dd12b2d9dea6ea78541e9caee3d06f6bf01ad145cee28fbd6dac781367f87df3",
+                "inputContextSha256": "eb65ad20173f0f6b16c3c8af6c4ff69b36642dfb7b984750987646447c17e777",
+                "generatedAt": "2026-10-03T03:37:05.702Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "independent",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-2022-reading-reviews.json",
+                  "inputEvidence": "answers-six-sites-20261002/claude-2022-reading-job.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f"
+                },
+                "assessment": {
+                  "review": "reviewed",
+                  "note": "当前作答经来源与交叉复核；保留开放题合理表达差异。",
+                  "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
+                }
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "答案：B。\n选B。A项错误，刘禹锡“病树前头万木春”以“病树”自比，表达新陈代谢、豁达乐观的态度；本诗的病柏寄托的是对盛极而衰（国运或正直贤才遭遇）的痛惜，两者寄托不同。B项正确，前六句写柏树雄伟、受人敬重，色调明朗；“岂知”一转，写柏树中途衰败、柯叶凋改、丹凤哀鸣、鸱鸮得志，色调转为黯淡，行文有起伏。C项错误，“出非不得地，蟠据亦高大”是说柏树生长得地、根基深厚高大，用来反衬其衰败之出人意料，并非隐喻藩镇割据。D项错误，全诗以“浩荡难倚赖”作结，是无奈与迷茫，看不出“对未来的希望”。",
+                "inputSha256": "dd12b2d9dea6ea78541e9caee3d06f6bf01ad145cee28fbd6dac781367f87df3",
+                "inputContextSha256": "eb65ad20173f0f6b16c3c8af6c4ff69b36642dfb7b984750987646447c17e777",
+                "generatedAt": "2026-10-03T03:36:09.273126+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "B"
+                ],
+                "assessment": {
+                  "matchesConclusion": true,
+                  "review": "reviewed",
+                  "note": "未发现改变结论的错误；主观题按材料依据判断，不要求逐字相同。",
+                  "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2022-reading-result.json",
+                  "inputPromptSha256": "7ffcfe45ec2475cfd765a410699b932c541cba3a21e9aba7b8faba06c239bacc",
+                  "responseStreamSha256": "6b7ea1b37ac271eadba296d1125c1b354b34e27741404436e9d7ac8a6a7dc261",
+                  "stage": "independent"
+                }
+              }
+            },
+            "inputSha256": "dd12b2d9dea6ea78541e9caee3d06f6bf01ad145cee28fbd6dac781367f87df3",
+            "inputContextSha256": "eb65ad20173f0f6b16c3c8af6c4ff69b36642dfb7b984750987646447c17e777",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "B"
+            ],
+            "explanation": "逐项依据完整当前材料核对，两模型作答结论相容，并与公开转载卷附载参考答案交叉比对；不声称模型回答为官方答案。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:39:54.838Z",
+            "currentVersion": "gpt_6_astra"
           }
         }
-      },
-      "inputSha256": "dd12b2d9dea6ea78541e9caee3d06f6bf01ad145cee28fbd6dac781367f87df3",
-      "inputContextSha256": "eb65ad20173f0f6b16c3c8af6c4ff69b36642dfb7b984750987646447c17e777",
-      "status": "reviewed",
-      "kind": "single_choice",
-      "correctOptions": [
-        "B"
       ],
-      "explanation": "逐项依据完整当前材料核对，两模型作答结论相容，并与公开转载卷附载参考答案交叉比对；不声称模型回答为官方答案。",
-      "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:39:54.838Z",
-      "currentVersion": "gpt_6_astra"
+      "inputPresentationSha256": "d500a447453b22997507928c5f3405123b82c96137b1aa0179eaaf41063bd6c7"
     },
     {
       "id": "2022-shici:3",
@@ -18450,63 +18813,133 @@
           "url": "https://cdn.zgkao.com/zixunzhan/202401/7e28deb2-3b24-4275-8f7d-64a75a17ce26.pdf"
         }
       ],
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答",
-          "text": "主要意象是病柏、丹凤和鸱鸮。柏树本来高大繁茂、正直而受人敬重，后来根深位高却不断衰败；结合761年的写作背景，可将它理解为由盛转衰的国家政治局面的象征，寄托诗人的忧虑与惋惜。丹凤带着幼雏在树外哀鸣盘旋，象征高洁贤良者失去安身之所、受到排斥。鸱鸮却在树洞里育子、志得意满，象征奸邪之辈占据位置而得势。凤与鸮的处境对照，写出贤者困顿、小人得志的反常现实，加强忧世之情。这里的政治意蕴是依据诗歌整体及题注作的解释，不把个别意象强行对应某一历史人物。",
-          "inputSha256": "e376987dcbc994d3b85cc133ae7379b1f268214e94812a981081183ef0b5886d",
-          "inputContextSha256": "3be2c3ca54c3cd0e4edc5201212c04ca024120a0feb2594dfaa8252cac0212cc",
-          "generatedAt": "2026-10-03T03:37:05.702Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "independent",
-            "evidence": "answers-six-sites-20261002/gpt-astra-2022-reading-reviews.json",
-            "inputEvidence": "answers-six-sites-20261002/claude-2022-reading-job.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f"
-          },
-          "assessment": {
-            "review": "reviewed",
-            "note": "结合整首及题注，以病柏寓国运衰落、丹凤寓贤者失位、鸱鸮寓奸邪得志最稳妥。病柏另指某位贤士、丹凤直接自况可作讨论，不能作为必须命中的独立评分点。",
-            "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
-          }
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "诗中的主要意象是病柏、丹凤和鸱鸮。\n①病柏：它生于高冈，树冠如盖，有龙虎之姿，正直而为神明所依、故老所拜，却在中途颜色衰败、枝叶凋改。它象征曾经强盛、根基深厚却由盛转衰的唐王朝，也可以理解为正直有才却遭受摧折的贤士，寄托了诗人对国运衰颓的痛惜。\n②丹凤：凤凰是祥瑞高洁之鸟，如今却带着九雏在树外哀鸣飞翔，无处栖身。它象征忧国忧时却被排斥在外、流离失所的贤人君子，其中也有诗人自己漂泊西南的影子，含有同情和自伤。\n③鸱鸮：猫头鹰是恶鸟，却志得意满地在树洞里养育幼子。它象征窃据要位、得志猖狂、蛀蚀国家的奸邪小人，表达了诗人的愤慨。\n丹凤在外而鸱鸮在内，两者形成对比，说明贤人失位、小人得志正是“柏”病的表现和原因，寄寓了诗人对时局的深沉忧虑。",
-          "inputSha256": "e376987dcbc994d3b85cc133ae7379b1f268214e94812a981081183ef0b5886d",
-          "inputContextSha256": "3be2c3ca54c3cd0e4edc5201212c04ca024120a0feb2594dfaa8252cac0212cc",
-          "generatedAt": "2026-10-03T03:36:09.273126+00:00",
-          "uncertainties": [
-            "病柏的象征对象有“唐王朝国运”和“正直贤才”两种理解，作答时已两者兼顾，以国运由盛转衰为主。"
-          ],
-          "selectedOptions": [],
-          "assessment": {
-            "matchesConclusion": null,
-            "review": "reviewed",
-            "note": "结合整首及题注，以病柏寓国运衰落、丹凤寓贤者失位、鸱鸮寓奸邪得志最稳妥。病柏另指某位贤士、丹凤直接自况可作讨论，不能作为必须命中的独立评分点。",
-            "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-2022-reading-result.json",
-            "inputPromptSha256": "7ffcfe45ec2475cfd765a410699b932c541cba3a21e9aba7b8faba06c239bacc",
-            "responseStreamSha256": "6b7ea1b37ac271eadba296d1125c1b354b34e27741404436e9d7ac8a6a7dc261",
-            "stage": "independent"
-          }
-        }
-      },
-      "inputSha256": "e376987dcbc994d3b85cc133ae7379b1f268214e94812a981081183ef0b5886d",
-      "inputContextSha256": "3be2c3ca54c3cd0e4edc5201212c04ca024120a0feb2594dfaa8252cac0212cc",
-      "status": "reviewed",
+      "modelAnswers": {},
+      "inputSha256": "83ca8e29a985f9dc98f10b2d509ca8518f8fdf7fe905faa9eb07f13569b29fd7",
+      "inputContextSha256": "9e853bbe3fb4b97af8cda119e77561dcef9b0d2bdb7a2ad41d05fef0076d9b90",
+      "status": "draft",
       "kind": "open",
       "correctOptions": [],
-      "explanation": "结合整首及题注，以病柏寓国运衰落、丹凤寓贤者失位、鸱鸮寓奸邪得志最稳妥。病柏另指某位贤士、丹凤直接自况可作讨论，不能作为必须命中的独立评分点。",
+      "explanation": "2022原卷标记及字形重核；旧模型全文与原题面保留于历史，本人完整重答另版冻结，待最后Claude核对后裁定。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:39:54.838Z",
-      "currentVersion": "gpt_6_astra"
+      "reviewedAt": "2026-10-04T07:40:33.289Z",
+      "history": [
+        {
+          "source": {
+            "id": "2022-shici",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "病柏【1】\n杜甫\n\n有柏生崇冈，童童状车盖。\n偃蹇龙虎姿，主当风云会。\n神明依正直，故老多再拜。\n岂知千年根，中路颜色坏【2】。\n出非不得地【3】，蟠据亦高大。\n岁寒忽无凭，日夜柯叶改。\n丹凤领九雏，哀鸣翔其外。\n鸱鸮志意满【4】，养子穿穴内。\n客从何乡来，伫立久吁怪。\n静求元精理【5】，浩荡难倚赖。"
+              }
+            ],
+            "topic": "三、本大题共5小题，共30分。\n阅读下面诗歌，完成11-13题。（共12分）",
+            "annotation": "注释：【1】此诗作于上元二年（761）秋，杜甫时居成都草堂。【2】中路：中途。【3】出：生长。【4】鸱鸮：猫头鹰。【5】元精理：事物根本的道理。",
+            "annotations": [
+              {
+                "qIndex": 3,
+                "material": "material1",
+                "type": "highlight",
+                "start": 1,
+                "end": 2,
+                "anchor": "柏"
+              },
+              {
+                "qIndex": 3,
+                "material": "material1",
+                "type": "highlight",
+                "start": 94,
+                "end": 96,
+                "anchor": "丹凤"
+              },
+              {
+                "qIndex": 3,
+                "material": "material1",
+                "type": "highlight",
+                "start": 107,
+                "end": 109,
+                "anchor": "鸱鸮"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 3,
+                "id": "q3",
+                "text": "13.咏物诗注重通过意象表达主题，这首诗中的主要意象有哪些？分别说明这些意象有何意蕴。（6分）",
+                "score": 6
+              }
+            ]
+          },
+          "review": {
+            "id": "2022-shici:3",
+            "sources": [
+              {
+                "type": "public_reprint",
+                "title": "2022北京卷公开题面重印及版面核对（非官方评分认证）",
+                "url": "https://cdn.zgkao.com/zixunzhan/202401/7e28deb2-3b24-4275-8f7d-64a75a17ce26.pdf"
+              }
+            ],
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答",
+                "text": "主要意象是病柏、丹凤和鸱鸮。柏树本来高大繁茂、正直而受人敬重，后来根深位高却不断衰败；结合761年的写作背景，可将它理解为由盛转衰的国家政治局面的象征，寄托诗人的忧虑与惋惜。丹凤带着幼雏在树外哀鸣盘旋，象征高洁贤良者失去安身之所、受到排斥。鸱鸮却在树洞里育子、志得意满，象征奸邪之辈占据位置而得势。凤与鸮的处境对照，写出贤者困顿、小人得志的反常现实，加强忧世之情。这里的政治意蕴是依据诗歌整体及题注作的解释，不把个别意象强行对应某一历史人物。",
+                "inputSha256": "e376987dcbc994d3b85cc133ae7379b1f268214e94812a981081183ef0b5886d",
+                "inputContextSha256": "3be2c3ca54c3cd0e4edc5201212c04ca024120a0feb2594dfaa8252cac0212cc",
+                "generatedAt": "2026-10-03T03:37:05.702Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "independent",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-2022-reading-reviews.json",
+                  "inputEvidence": "answers-six-sites-20261002/claude-2022-reading-job.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f"
+                },
+                "assessment": {
+                  "review": "reviewed",
+                  "note": "结合整首及题注，以病柏寓国运衰落、丹凤寓贤者失位、鸱鸮寓奸邪得志最稳妥。病柏另指某位贤士、丹凤直接自况可作讨论，不能作为必须命中的独立评分点。",
+                  "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
+                }
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "诗中的主要意象是病柏、丹凤和鸱鸮。\n①病柏：它生于高冈，树冠如盖，有龙虎之姿，正直而为神明所依、故老所拜，却在中途颜色衰败、枝叶凋改。它象征曾经强盛、根基深厚却由盛转衰的唐王朝，也可以理解为正直有才却遭受摧折的贤士，寄托了诗人对国运衰颓的痛惜。\n②丹凤：凤凰是祥瑞高洁之鸟，如今却带着九雏在树外哀鸣飞翔，无处栖身。它象征忧国忧时却被排斥在外、流离失所的贤人君子，其中也有诗人自己漂泊西南的影子，含有同情和自伤。\n③鸱鸮：猫头鹰是恶鸟，却志得意满地在树洞里养育幼子。它象征窃据要位、得志猖狂、蛀蚀国家的奸邪小人，表达了诗人的愤慨。\n丹凤在外而鸱鸮在内，两者形成对比，说明贤人失位、小人得志正是“柏”病的表现和原因，寄寓了诗人对时局的深沉忧虑。",
+                "inputSha256": "e376987dcbc994d3b85cc133ae7379b1f268214e94812a981081183ef0b5886d",
+                "inputContextSha256": "3be2c3ca54c3cd0e4edc5201212c04ca024120a0feb2594dfaa8252cac0212cc",
+                "generatedAt": "2026-10-03T03:36:09.273126+00:00",
+                "uncertainties": [
+                  "病柏的象征对象有“唐王朝国运”和“正直贤才”两种理解，作答时已两者兼顾，以国运由盛转衰为主。"
+                ],
+                "selectedOptions": [],
+                "assessment": {
+                  "matchesConclusion": null,
+                  "review": "reviewed",
+                  "note": "结合整首及题注，以病柏寓国运衰落、丹凤寓贤者失位、鸱鸮寓奸邪得志最稳妥。病柏另指某位贤士、丹凤直接自况可作讨论，不能作为必须命中的独立评分点。",
+                  "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2022-reading-result.json",
+                  "inputPromptSha256": "7ffcfe45ec2475cfd765a410699b932c541cba3a21e9aba7b8faba06c239bacc",
+                  "responseStreamSha256": "6b7ea1b37ac271eadba296d1125c1b354b34e27741404436e9d7ac8a6a7dc261",
+                  "stage": "independent"
+                }
+              }
+            },
+            "inputSha256": "e376987dcbc994d3b85cc133ae7379b1f268214e94812a981081183ef0b5886d",
+            "inputContextSha256": "3be2c3ca54c3cd0e4edc5201212c04ca024120a0feb2594dfaa8252cac0212cc",
+            "status": "reviewed",
+            "kind": "open",
+            "correctOptions": [],
+            "explanation": "结合整首及题注，以病柏寓国运衰落、丹凤寓贤者失位、鸱鸮寓奸邪得志最稳妥。病柏另指某位贤士、丹凤直接自况可作讨论，不能作为必须命中的独立评分点。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:39:54.838Z",
+            "currentVersion": "gpt_6_astra"
+          }
+        }
+      ],
+      "inputPresentationSha256": "ee16da442e978d4a94e745e25f369d5b29ae3412d03f3690add54f8d10487a29"
     },
     {
       "id": "2022-honglou:1",
@@ -18517,61 +18950,131 @@
           "url": "https://cdn.zgkao.com/zixunzhan/202401/7e28deb2-3b24-4275-8f7d-64a75a17ce26.pdf"
         }
       ],
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答",
-          "text": "我选择《石头记》《风月宝鉴》《金陵十二钗》。①《石头记》：小说以女娲补天剩下的一块石头进入红尘、记述所历故事为叙事框架；通灵宝玉又与贾宝玉相伴，连起神话与人间家族生活。②《风月宝鉴》：贾瑞照镜的情节直接写到这面镜子，正面美女与反面骷髅形成警示；它也提示读者穿过风月情欲的表象，看见欲望及繁华背后的毁灭与悲剧。③《金陵十二钗》：作品重点描绘黛玉、宝钗、凤姐等众多女子及其命运，太虚幻境册页与判词又集中预示她们的结局，书名突出小说对女性群像的书写与悲悼。",
-          "inputSha256": "c08cbffbafab2781579c88b9786dcb4e02f6e267cb3638020be8d7b037cd0602",
-          "inputContextSha256": "e2872ba02b745219c18d8791e4068a13226c42384aa17422e21f55c0f6079e28",
-          "generatedAt": "2026-10-03T03:37:05.702Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "independent",
-            "evidence": "answers-six-sites-20261002/gpt-astra-2022-reading-reviews.json",
-            "inputEvidence": "answers-six-sites-20261002/claude-2022-reading-job.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f"
-          },
-          "assessment": {
-            "review": "reviewed",
-            "note": "题目要求任选三个，root明确作答三个；Claude列四项作为备选资料，应提醒实际作答只选三项，不把多写视为额外得分。",
-            "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
-          }
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "任选三个作答即可，四个书名的解释如下：\n①《石头记》：小说开篇写女娲补天剩下一块顽石，被弃在青埂峰下，后来由一僧一道携入红尘，随贾宝玉降生（即通灵宝玉），历尽离合悲欢后回到青埂峰，把亲身经历刻在石上。全书就是“石头所记之事”，这个书名点明了故事的来历和叙事视角。\n②《情僧录》：空空道人抄录石上故事，“因空见色，由色生情，传情入色，自色悟空”，改名情僧，所以称“情僧所录”。书名也切合小说“大旨谈情”的内容，并暗合主人公贾宝玉的结局：他一生多情，经历宝黛爱情悲剧和家族败落后看破红尘，出家为僧，本人就是一个“情僧”。\n③《风月宝鉴》：第十二回贾瑞对王熙凤起了邪念，病重时跛足道人送他一面“风月宝鉴”，嘱咐只照背面（骷髅），他偏照正面（凤姐）而丧命。这个书名突出小说戒妄动风月之情的劝诫意味，也暗示读者要看到繁华、情欲表象背后的虚幻与衰亡。\n④《金陵十二钗》：第五回宝玉在太虚幻境薄命司看到“金陵十二钗”正册、副册、又副册，正册写了林黛玉、薛宝钗、元春、探春、湘云、妙玉、迎春、惜春、王熙凤、巧姐、李纨、秦可卿十二位女子的判词。这个书名表明小说以这些才貌出众的女子为中心人物，为闺阁立传，写她们“千红一哭、万艳同悲”的命运。",
-          "inputSha256": "c08cbffbafab2781579c88b9786dcb4e02f6e267cb3638020be8d7b037cd0602",
-          "inputContextSha256": "e2872ba02b745219c18d8791e4068a13226c42384aa17422e21f55c0f6079e28",
-          "generatedAt": "2026-10-03T03:36:09.273126+00:00",
-          "uncertainties": [],
-          "selectedOptions": [],
-          "assessment": {
-            "matchesConclusion": null,
-            "review": "reviewed",
-            "note": "题目要求任选三个，root明确作答三个；Claude列四项作为备选资料，应提醒实际作答只选三项，不把多写视为额外得分。",
-            "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-2022-reading-result.json",
-            "inputPromptSha256": "7ffcfe45ec2475cfd765a410699b932c541cba3a21e9aba7b8faba06c239bacc",
-            "responseStreamSha256": "6b7ea1b37ac271eadba296d1125c1b354b34e27741404436e9d7ac8a6a7dc261",
-            "stage": "independent"
-          }
-        }
-      },
+      "modelAnswers": {},
       "inputSha256": "c08cbffbafab2781579c88b9786dcb4e02f6e267cb3638020be8d7b037cd0602",
       "inputContextSha256": "e2872ba02b745219c18d8791e4068a13226c42384aa17422e21f55c0f6079e28",
-      "status": "reviewed",
+      "status": "draft",
       "kind": "open",
       "correctOptions": [],
-      "explanation": "题目要求任选三个，root明确作答三个；Claude列四项作为备选资料，应提醒实际作答只选三项，不把多写视为额外得分。",
+      "explanation": "2022原卷标记及字形重核；旧模型全文与原题面保留于历史，本人完整重答另版冻结，待最后Claude核对后裁定。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:39:54.838Z",
-      "currentVersion": "gpt_6_astra"
+      "reviewedAt": "2026-10-04T07:40:33.289Z",
+      "history": [
+        {
+          "source": {
+            "id": "2022-honglou",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "《红楼梦》甲戌本第一回开头，作者自道书名说：\n\n（空空道人）因空见色，由色生情，传情入色，自色悟空，遂易名为情僧，改《石头记》为《情僧录》。至吴玉峰题曰《红楼梦》。东鲁孔梅溪则题曰《风月宝鉴》。后因曹雪芹于悼红轩中披阅十载，增删五次，纂成目录，分出章回，则题曰《金陵十二钗》，并题一绝云：“满纸荒唐言，一把辛酸泪。都云作者痴，谁解其中味。”"
+              }
+            ],
+            "topic": "15.根据要求，回答问题。（共10分）",
+            "annotation": null,
+            "annotations": [
+              {
+                "qIndex": 1,
+                "material": "material1",
+                "type": "wave",
+                "start": 57,
+                "end": 69,
+                "anchor": "改《石头记》为《情僧录》"
+              },
+              {
+                "qIndex": 1,
+                "material": "material1",
+                "type": "wave",
+                "start": 82,
+                "end": 96,
+                "anchor": "东鲁孔梅溪则题曰《风月宝鉴》"
+              },
+              {
+                "qIndex": 1,
+                "material": "material1",
+                "type": "wave",
+                "start": 127,
+                "end": 137,
+                "anchor": "则题曰《金陵十二钗》"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "（1）除了《红楼梦》外，这里还提到了小说另外四个书名。请从中任选三个，解释这些书名和作品内容有何关联。（6分）",
+                "score": 6
+              }
+            ]
+          },
+          "review": {
+            "id": "2022-honglou:1",
+            "sources": [
+              {
+                "type": "public_reprint",
+                "title": "2022北京卷公开题面重印及版面核对（非官方评分认证）",
+                "url": "https://cdn.zgkao.com/zixunzhan/202401/7e28deb2-3b24-4275-8f7d-64a75a17ce26.pdf"
+              }
+            ],
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答",
+                "text": "我选择《石头记》《风月宝鉴》《金陵十二钗》。①《石头记》：小说以女娲补天剩下的一块石头进入红尘、记述所历故事为叙事框架；通灵宝玉又与贾宝玉相伴，连起神话与人间家族生活。②《风月宝鉴》：贾瑞照镜的情节直接写到这面镜子，正面美女与反面骷髅形成警示；它也提示读者穿过风月情欲的表象，看见欲望及繁华背后的毁灭与悲剧。③《金陵十二钗》：作品重点描绘黛玉、宝钗、凤姐等众多女子及其命运，太虚幻境册页与判词又集中预示她们的结局，书名突出小说对女性群像的书写与悲悼。",
+                "inputSha256": "c08cbffbafab2781579c88b9786dcb4e02f6e267cb3638020be8d7b037cd0602",
+                "inputContextSha256": "e2872ba02b745219c18d8791e4068a13226c42384aa17422e21f55c0f6079e28",
+                "generatedAt": "2026-10-03T03:37:05.702Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "independent",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-2022-reading-reviews.json",
+                  "inputEvidence": "answers-six-sites-20261002/claude-2022-reading-job.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f"
+                },
+                "assessment": {
+                  "review": "reviewed",
+                  "note": "题目要求任选三个，root明确作答三个；Claude列四项作为备选资料，应提醒实际作答只选三项，不把多写视为额外得分。",
+                  "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
+                }
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "任选三个作答即可，四个书名的解释如下：\n①《石头记》：小说开篇写女娲补天剩下一块顽石，被弃在青埂峰下，后来由一僧一道携入红尘，随贾宝玉降生（即通灵宝玉），历尽离合悲欢后回到青埂峰，把亲身经历刻在石上。全书就是“石头所记之事”，这个书名点明了故事的来历和叙事视角。\n②《情僧录》：空空道人抄录石上故事，“因空见色，由色生情，传情入色，自色悟空”，改名情僧，所以称“情僧所录”。书名也切合小说“大旨谈情”的内容，并暗合主人公贾宝玉的结局：他一生多情，经历宝黛爱情悲剧和家族败落后看破红尘，出家为僧，本人就是一个“情僧”。\n③《风月宝鉴》：第十二回贾瑞对王熙凤起了邪念，病重时跛足道人送他一面“风月宝鉴”，嘱咐只照背面（骷髅），他偏照正面（凤姐）而丧命。这个书名突出小说戒妄动风月之情的劝诫意味，也暗示读者要看到繁华、情欲表象背后的虚幻与衰亡。\n④《金陵十二钗》：第五回宝玉在太虚幻境薄命司看到“金陵十二钗”正册、副册、又副册，正册写了林黛玉、薛宝钗、元春、探春、湘云、妙玉、迎春、惜春、王熙凤、巧姐、李纨、秦可卿十二位女子的判词。这个书名表明小说以这些才貌出众的女子为中心人物，为闺阁立传，写她们“千红一哭、万艳同悲”的命运。",
+                "inputSha256": "c08cbffbafab2781579c88b9786dcb4e02f6e267cb3638020be8d7b037cd0602",
+                "inputContextSha256": "e2872ba02b745219c18d8791e4068a13226c42384aa17422e21f55c0f6079e28",
+                "generatedAt": "2026-10-03T03:36:09.273126+00:00",
+                "uncertainties": [],
+                "selectedOptions": [],
+                "assessment": {
+                  "matchesConclusion": null,
+                  "review": "reviewed",
+                  "note": "题目要求任选三个，root明确作答三个；Claude列四项作为备选资料，应提醒实际作答只选三项，不把多写视为额外得分。",
+                  "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2022-reading-result.json",
+                  "inputPromptSha256": "7ffcfe45ec2475cfd765a410699b932c541cba3a21e9aba7b8faba06c239bacc",
+                  "responseStreamSha256": "6b7ea1b37ac271eadba296d1125c1b354b34e27741404436e9d7ac8a6a7dc261",
+                  "stage": "independent"
+                }
+              }
+            },
+            "inputSha256": "c08cbffbafab2781579c88b9786dcb4e02f6e267cb3638020be8d7b037cd0602",
+            "inputContextSha256": "e2872ba02b745219c18d8791e4068a13226c42384aa17422e21f55c0f6079e28",
+            "status": "reviewed",
+            "kind": "open",
+            "correctOptions": [],
+            "explanation": "题目要求任选三个，root明确作答三个；Claude列四项作为备选资料，应提醒实际作答只选三项，不把多写视为额外得分。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:39:54.838Z",
+            "currentVersion": "gpt_6_astra"
+          }
+        }
+      ],
+      "inputPresentationSha256": "8639fa96843ead9db8b69477f171f2815cef02544f460d93b9ea3ef7e4bc7fc7"
     },
     {
       "id": "2022-honglou:2",
@@ -18582,61 +19085,115 @@
           "url": "https://cdn.zgkao.com/zixunzhan/202401/7e28deb2-3b24-4275-8f7d-64a75a17ce26.pdf"
         }
       ],
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答",
-          "text": "‘红楼’可以指富贵人家的闺阁，与小说以贾府和大观园中众多女子的生活、爱情及命运为重要内容相合。‘梦’既与第五回宝玉梦游太虚幻境、听《红楼梦》曲的具体情节相连，曲文又预示人物命运；同时也概括贾府由盛而衰、爱情理想与青春美好相继破灭，昔日繁华如梦的悲剧意味。这个书名把女子群像、家族兴衰与对人生的感慨统摄起来，不只标举一处情节，也表达作者的追忆与悲悼。",
-          "inputSha256": "44919c469022717e30cd98c76ab57304431372424ce07d3df0c205a5303becf9",
-          "inputContextSha256": "4b16583a9d721bf99a404f30fffe85c70d438c655f700cad10824fd275ba176e",
-          "generatedAt": "2026-10-03T03:37:05.702Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "independent",
-            "evidence": "answers-six-sites-20261002/gpt-astra-2022-reading-reviews.json",
-            "inputEvidence": "answers-six-sites-20261002/claude-2022-reading-job.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f"
-          },
-          "assessment": {
-            "review": "reviewed",
-            "note": "关于书名含义的主体说明可取。具体套曲名称与引子、收尾的计数宜回到第五回，不因随举收尾就推定十二支正曲包含收尾；这不是书名合理性题的必答点。",
-            "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
-          }
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "以《红楼梦》作书名是合理的，理由如下：\n①它概括了小说的内容。“红楼”指富贵人家的华美楼阁和闺阁女子的居所，对应贾府的荣华和大观园里的众女儿；“梦”指这一切终归幻灭。书名正好概括了贾、史、王、薛四大家族由盛而衰，宝黛爱情、宝钗婚姻以及众女子青春与生命毁灭的故事。\n②它与全书总纲相呼应。第五回宝玉梦游太虚幻境，听到《红楼梦》十二支曲（如《终身误》《枉凝眉》《收尾·飞鸟各投林》），这些曲子预示了主要人物的命运和“落了片白茫茫大地真干净”的结局。用它作书名，能统摄全书。\n③它点明了主旨。“梦”贯穿全书（甄士隐之梦、宝玉之梦、秦可卿托梦等），传达出繁华如梦、盛极必衰的人生感悟和深沉的悲剧意识。与只侧重某一方面的其他书名相比，它涵盖更广，意蕴更丰富，也更有诗意。",
-          "inputSha256": "44919c469022717e30cd98c76ab57304431372424ce07d3df0c205a5303becf9",
-          "inputContextSha256": "4b16583a9d721bf99a404f30fffe85c70d438c655f700cad10824fd275ba176e",
-          "generatedAt": "2026-10-03T03:36:09.273126+00:00",
-          "uncertainties": [],
-          "selectedOptions": [],
-          "assessment": {
-            "matchesConclusion": null,
-            "review": "reviewed",
-            "note": "关于书名含义的主体说明可取。具体套曲名称与引子、收尾的计数宜回到第五回，不因随举收尾就推定十二支正曲包含收尾；这不是书名合理性题的必答点。",
-            "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-2022-reading-result.json",
-            "inputPromptSha256": "7ffcfe45ec2475cfd765a410699b932c541cba3a21e9aba7b8faba06c239bacc",
-            "responseStreamSha256": "6b7ea1b37ac271eadba296d1125c1b354b34e27741404436e9d7ac8a6a7dc261",
-            "stage": "independent"
-          }
-        }
-      },
+      "modelAnswers": {},
       "inputSha256": "44919c469022717e30cd98c76ab57304431372424ce07d3df0c205a5303becf9",
       "inputContextSha256": "4b16583a9d721bf99a404f30fffe85c70d438c655f700cad10824fd275ba176e",
-      "status": "reviewed",
+      "status": "draft",
       "kind": "open",
       "correctOptions": [],
-      "explanation": "关于书名含义的主体说明可取。具体套曲名称与引子、收尾的计数宜回到第五回，不因随举收尾就推定十二支正曲包含收尾；这不是书名合理性题的必答点。",
+      "explanation": "2022原卷标记及字形重核；旧模型全文与原题面保留于历史，本人完整重答另版冻结，待最后Claude核对后裁定。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:39:54.838Z",
-      "currentVersion": "gpt_6_astra"
+      "reviewedAt": "2026-10-04T07:40:33.289Z",
+      "history": [
+        {
+          "source": {
+            "id": "2022-honglou",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "《红楼梦》甲戌本第一回开头，作者自道书名说：\n\n（空空道人）因空见色，由色生情，传情入色，自色悟空，遂易名为情僧，改《石头记》为《情僧录》。至吴玉峰题曰《红楼梦》。东鲁孔梅溪则题曰《风月宝鉴》。后因曹雪芹于悼红轩中披阅十载，增删五次，纂成目录，分出章回，则题曰《金陵十二钗》，并题一绝云：“满纸荒唐言，一把辛酸泪。都云作者痴，谁解其中味。”"
+              }
+            ],
+            "topic": "15.根据要求，回答问题。（共10分）",
+            "annotation": null,
+            "annotations": [
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "wave",
+                "start": 70,
+                "end": 81,
+                "anchor": "至吴玉峰题曰《红楼梦》"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 2,
+                "id": "q2",
+                "text": "（2）小说第五回中，贾宝玉神游太虚幻境时听到的仙乐套曲就叫《红楼梦》。今天的通行本也多以《红楼梦》为书名。结合作品内容，谈谈《红楼梦》作为书名的合理性。（4分）",
+                "score": 4
+              }
+            ]
+          },
+          "review": {
+            "id": "2022-honglou:2",
+            "sources": [
+              {
+                "type": "public_reprint",
+                "title": "2022北京卷公开题面重印及版面核对（非官方评分认证）",
+                "url": "https://cdn.zgkao.com/zixunzhan/202401/7e28deb2-3b24-4275-8f7d-64a75a17ce26.pdf"
+              }
+            ],
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答",
+                "text": "‘红楼’可以指富贵人家的闺阁，与小说以贾府和大观园中众多女子的生活、爱情及命运为重要内容相合。‘梦’既与第五回宝玉梦游太虚幻境、听《红楼梦》曲的具体情节相连，曲文又预示人物命运；同时也概括贾府由盛而衰、爱情理想与青春美好相继破灭，昔日繁华如梦的悲剧意味。这个书名把女子群像、家族兴衰与对人生的感慨统摄起来，不只标举一处情节，也表达作者的追忆与悲悼。",
+                "inputSha256": "44919c469022717e30cd98c76ab57304431372424ce07d3df0c205a5303becf9",
+                "inputContextSha256": "4b16583a9d721bf99a404f30fffe85c70d438c655f700cad10824fd275ba176e",
+                "generatedAt": "2026-10-03T03:37:05.702Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "independent",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-2022-reading-reviews.json",
+                  "inputEvidence": "answers-six-sites-20261002/claude-2022-reading-job.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f"
+                },
+                "assessment": {
+                  "review": "reviewed",
+                  "note": "关于书名含义的主体说明可取。具体套曲名称与引子、收尾的计数宜回到第五回，不因随举收尾就推定十二支正曲包含收尾；这不是书名合理性题的必答点。",
+                  "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
+                }
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "以《红楼梦》作书名是合理的，理由如下：\n①它概括了小说的内容。“红楼”指富贵人家的华美楼阁和闺阁女子的居所，对应贾府的荣华和大观园里的众女儿；“梦”指这一切终归幻灭。书名正好概括了贾、史、王、薛四大家族由盛而衰，宝黛爱情、宝钗婚姻以及众女子青春与生命毁灭的故事。\n②它与全书总纲相呼应。第五回宝玉梦游太虚幻境，听到《红楼梦》十二支曲（如《终身误》《枉凝眉》《收尾·飞鸟各投林》），这些曲子预示了主要人物的命运和“落了片白茫茫大地真干净”的结局。用它作书名，能统摄全书。\n③它点明了主旨。“梦”贯穿全书（甄士隐之梦、宝玉之梦、秦可卿托梦等），传达出繁华如梦、盛极必衰的人生感悟和深沉的悲剧意识。与只侧重某一方面的其他书名相比，它涵盖更广，意蕴更丰富，也更有诗意。",
+                "inputSha256": "44919c469022717e30cd98c76ab57304431372424ce07d3df0c205a5303becf9",
+                "inputContextSha256": "4b16583a9d721bf99a404f30fffe85c70d438c655f700cad10824fd275ba176e",
+                "generatedAt": "2026-10-03T03:36:09.273126+00:00",
+                "uncertainties": [],
+                "selectedOptions": [],
+                "assessment": {
+                  "matchesConclusion": null,
+                  "review": "reviewed",
+                  "note": "关于书名含义的主体说明可取。具体套曲名称与引子、收尾的计数宜回到第五回，不因随举收尾就推定十二支正曲包含收尾；这不是书名合理性题的必答点。",
+                  "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2022-reading-result.json",
+                  "inputPromptSha256": "7ffcfe45ec2475cfd765a410699b932c541cba3a21e9aba7b8faba06c239bacc",
+                  "responseStreamSha256": "6b7ea1b37ac271eadba296d1125c1b354b34e27741404436e9d7ac8a6a7dc261",
+                  "stage": "independent"
+                }
+              }
+            },
+            "inputSha256": "44919c469022717e30cd98c76ab57304431372424ce07d3df0c205a5303becf9",
+            "inputContextSha256": "4b16583a9d721bf99a404f30fffe85c70d438c655f700cad10824fd275ba176e",
+            "status": "reviewed",
+            "kind": "open",
+            "correctOptions": [],
+            "explanation": "关于书名含义的主体说明可取。具体套曲名称与引子、收尾的计数宜回到第五回，不因随举收尾就推定十二支正曲包含收尾；这不是书名合理性题的必答点。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:39:54.838Z",
+            "currentVersion": "gpt_6_astra"
+          }
+        }
+      ],
+      "inputPresentationSha256": "7823b10b496c7cfc333f80a23d74d245896aba559babbd6b6d86e1a8142deba8"
     },
     {
       "id": "2022-sanwen:1",
@@ -18647,65 +19204,143 @@
           "url": "https://cdn.zgkao.com/zixunzhan/202401/7e28deb2-3b24-4275-8f7d-64a75a17ce26.pdf"
         }
       ],
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答",
-          "text": "答案：A。‘一例’承接‘一例灰色的胡同’，意为一律、都是同样的，形容古槐无一例外地苍劲，不是表示排列方式的‘一列’。‘绵邈’形容相隔遥远，‘亭午’是中午，‘懵懂’在此指尚未完全领会，B、C、D符合语境。",
-          "inputSha256": "370eb675ac5463548fccc624ca34cedc637912ce7f503fadcf6b077e21d2f336",
-          "inputContextSha256": "7ec192c151ff94e097cf6a70e88f2b939510d14a0b627be5f123b2680b2b44a6",
-          "generatedAt": "2026-10-03T03:37:05.702Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "independent",
-            "evidence": "answers-six-sites-20261002/gpt-astra-2022-reading-reviews.json",
-            "inputEvidence": "answers-six-sites-20261002/claude-2022-reading-job.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f"
-          },
-          "assessment": {
-            "review": "reviewed",
-            "note": "当前作答经来源与交叉复核；保留开放题合理表达差异。",
-            "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
-          }
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "答案：A。\n选A。A项不正确，“一例”是“一律、一概、全都一样”的意思，文中指两旁全是灰色的胡同、胡同里全是苍劲的古槐，强调整齐划一，不是数量词“一列”。B项正确，“绵邈”指久远、遥远，文中指时空相隔遥远。C项正确，“亭午”即正午、中午。D项正确，“懵懂”本指糊涂、不明白，文中说读了半个世纪仍然“似是还非”，即还没有完全读懂、理解。",
-          "inputSha256": "370eb675ac5463548fccc624ca34cedc637912ce7f503fadcf6b077e21d2f336",
-          "inputContextSha256": "7ec192c151ff94e097cf6a70e88f2b939510d14a0b627be5f123b2680b2b44a6",
-          "generatedAt": "2026-10-03T03:36:09.273126+00:00",
-          "uncertainties": [],
-          "selectedOptions": [
-            "A"
-          ],
-          "assessment": {
-            "matchesConclusion": true,
-            "review": "reviewed",
-            "note": "未发现改变结论的错误；主观题按材料依据判断，不要求逐字相同。",
-            "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-2022-reading-result.json",
-            "inputPromptSha256": "7ffcfe45ec2475cfd765a410699b932c541cba3a21e9aba7b8faba06c239bacc",
-            "responseStreamSha256": "6b7ea1b37ac271eadba296d1125c1b354b34e27741404436e9d7ac8a6a7dc261",
-            "stage": "independent"
-          }
-        }
-      },
+      "modelAnswers": {},
       "inputSha256": "370eb675ac5463548fccc624ca34cedc637912ce7f503fadcf6b077e21d2f336",
       "inputContextSha256": "7ec192c151ff94e097cf6a70e88f2b939510d14a0b627be5f123b2680b2b44a6",
-      "status": "reviewed",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "A"
-      ],
-      "explanation": "逐项依据完整当前材料核对，两模型作答结论相容，并与公开转载卷附载参考答案交叉比对；不声称模型回答为官方答案。",
+      "correctOptions": [],
+      "explanation": "2022原卷标记及字形重核；旧模型全文与原题面保留于历史，本人完整重答另版冻结，待最后Claude核对后裁定。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:39:54.838Z",
-      "currentVersion": "gpt_6_astra"
+      "reviewedAt": "2026-10-04T07:40:33.289Z",
+      "history": [
+        {
+          "source": {
+            "id": "2022-sanwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "这城市已融入我的生命\n\n初到北京，我对这座城市非常生疏。那时内城和外城的城楼和城墙都还完好，有轨电车就在几座城门之间穿行。电车的铃声悦耳而浑厚，从西直门高高的城门洞里穿越而过，一路响过西内大街，响过西四和西单——那时牌楼已没有了，只留下这永恒的名字供人凭吊——直抵天桥。城楼高耸，白云蓝天，北方萧瑟的秋风，凝重而庄严。电车进了城，两旁一例灰色的胡同，胡同里一例苍劲的古槐，一切都说明这城市的悠久。\n\n这城市让我这个生长在温暖而潮湿的东南海滨的人感到了一种神秘。我知道它的历史，我只能遥遥地怀着几分敬意望着它，那时的北京对我来说的确是生疏的，我觉得它离我很远，不仅是离我南国的家乡的距离很远，也不仅是它作为辽金以来的故都与我此际所处的时空相隔绵邈，还有一种心灵和情感的阻隔：那是灵动而飘逸的南方与古朴浑重的北方之间存在着的巨大的反差所造成的心理阻隔。那时的北京，对我来说是遥远的。\n\n我对北京从初来乍到的“生分”，到如今的亲切的认同，用了将近半个世纪的时光。北京接受了我，我也接受了北京。这包括它的语言、它的气候，它的居住、它的饮食、它的情调，都和我的生命密不可分。\n\n以饮食为例，在北京住久了，在国内外也跑了不少地方，比来比去，北京的烤鸭和北京的涮羊肉还是最好，不谦虚地说，也还是天下第一。烤鸭的外焦里嫩，裹着吃的那蒸饼和甜面酱都是很有讲究的——我常感外地做的烤鸭总不对味。至于涮羊肉，羊肉的质量，那薄得纸般透明的羊肉片，还有它的作料，芝麻酱、韭菜花，普天下找不到那种地道的感觉，真的是，一出北京城，味道就变了。\n\n老北京有很多食品是我所怀念的。最怀念天桥街边的卤煮火烧。记得是五十年代吧，去天桥看戏，在街边摊上吃卤煮火烧，昏黄的油灯、冒油的墩板，冒着热气的大海碗，使北京严寒的冬夜也变得充满了人间的温情。那气氛、那情调，现在是消失得无影无踪了。让人怀念的当然不只卤煮火烧这一端，还有北京的打卤面、羊杂碎汤，还有三分钱一只的大火烧。这些让人怀想的北京土产，是最本色、最接近平民的廉价食品，现在都找不到了。现今即使在郑重标出“老北京”的哪家食肆里发现它们的痕迹，那多半也是“搽了雪花膏”的，它们早已失去了那种粗放的、不加修饰的平民本色和传统韵味了。\n\n在我的家乡，秀丽的闽江流过我的城市。那江水滋润着两岸的沃野，亚热带的花卉开得茂盛。福建是花乡，又是茶乡，茉莉花、白玉兰花，还有珠兰和含笑，这些都是熏花茶的原料。花多了，就缀满了妇女们的发间和衣襟。记得当年，母亲的发髻最美丽。那时母亲年轻，她每天都要用很多的时间梳理她的头发。梳毕上了头油，她总要用当日买到的新鲜茉莉花串成一个花环，围在她的发髻上。姐姐也是，她不梳发髻，那些花就缀上了她的旗袍的衣襟。这就是南方，南方有它的情调。而北方就不同了，北京带卷舌的儿化音，胡同里悠长的吆喝声，风铃叮当的宫殿下面夏日慵懒的亭午，还有在凛冽的冰雪和漫天的风沙中挺立的松槐和白杨。南方的秀丽和北方的豪放，南方的温情和北方的坚定，南方的委婉和北方的强悍，其间存在着许多难以调和的差异，需要用极大的毅力和恒久的耐心去适应。幸运的是，我适应了并爱上了北京。\n\n北京是一本读不尽的书，我用将近半个世纪的时光阅读它，也只是一种似是还非的懵懂。我生得晚，来不及赶上在北大红楼的教室里找一张书桌，也没能赶上用稚弱的声音参加民主广场上的呐喊。但我认定我是属于它的。百年前，巴黎和会所引发的抗议掀开了中国历史崭新的一页。那一场为维护民族尊严而展开的抗议运动，最终触及了对于文学乃至文化的变革，从而为中国在新世纪的再生写下了壮丽的篇章。这一切气贯长虹的思考和行动，就是生发在我如今处身其中的这座城市的。由此上溯，十九世纪末叶，也是在这座城市里，有了一次要求变革而爆发的维新运动。那是中国近代史上的一次惨痛的流血事件，康梁出走，六君子弃市，这一切，我都未曾亲历，却都是我幼小心灵上的一抹壮烈和绮丽。\n\n后来，我从东南海滨风尘仆仆地赶来，在北大燕园的一角找到一片土，我把细小的根须伸向那片土，我吸取它的养分。我不能选择母亲，我却能选择我的精神家园。在半个世纪不长也不短的时间里，我朝夕呼吸着这座城市的气息。北海波光摇曳的湖面，留下了我的影子；东华门那条覆盖着丁香的御河边的林荫道，留下了我的足迹；居庸关险峻的隘口，天坛美轮美奂的穹顶下，都是我曾经流连的地方。北京以它的博大，以它的沉厚，以它的开阔，以它的悠远铸造了我，不，是再造了我！它在我多汁液的南方的性格中渗进了一份粗放、一份激烈、一份坚定。我曾说过，我只是一粒蒲公英的种子，我从遥远的东南海滨被命运的小女孩吹到了这干涸而寒冷的北方。这里濒临沙漠，然而，这里是无尽的原野，这里给了我一片土，给了我柔韧的枝条和伸往地层深处的长长的根须。\n\n（取材于谢冕的同名散文）"
+              }
+            ],
+            "topic": "四、本大题共4小题，共18分。\n阅读下面作品，完成16-19题。",
+            "annotation": "题面格式说明：结尾画线部分从“这里是无尽的原野”起，至“给了我柔韧的枝条和伸往地层深处的长长的根须”止。依公开转载PDF第6页影像补记，保留正文文字。",
+            "annotations": [
+              {
+                "qIndex": 1,
+                "material": "material1",
+                "type": "dot",
+                "start": 178,
+                "end": 180,
+                "anchor": "一例"
+              },
+              {
+                "qIndex": 1,
+                "material": "material1",
+                "type": "dot",
+                "start": 320,
+                "end": 322,
+                "anchor": "绵邈"
+              },
+              {
+                "qIndex": 1,
+                "material": "material1",
+                "type": "dot",
+                "start": 1180,
+                "end": 1182,
+                "anchor": "亭午"
+              },
+              {
+                "qIndex": 1,
+                "material": "material1",
+                "type": "dot",
+                "start": 1330,
+                "end": 1332,
+                "anchor": "懵懂"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "16.下列对文中加点词语的解说，不正确的一项是（3分）\nA.一例苍劲的古槐 一例：一列\nB.相隔绵邈 绵邈：遥远\nC.夏日慵懒的亭午 亭午：中午，午间\nD.似是还非的懵懂 懵懂：尚未完全理解",
+                "score": 3
+              }
+            ]
+          },
+          "review": {
+            "id": "2022-sanwen:1",
+            "sources": [
+              {
+                "type": "public_reprint",
+                "title": "2022北京卷公开题面重印及版面核对（非官方评分认证）",
+                "url": "https://cdn.zgkao.com/zixunzhan/202401/7e28deb2-3b24-4275-8f7d-64a75a17ce26.pdf"
+              }
+            ],
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答",
+                "text": "答案：A。‘一例’承接‘一例灰色的胡同’，意为一律、都是同样的，形容古槐无一例外地苍劲，不是表示排列方式的‘一列’。‘绵邈’形容相隔遥远，‘亭午’是中午，‘懵懂’在此指尚未完全领会，B、C、D符合语境。",
+                "inputSha256": "370eb675ac5463548fccc624ca34cedc637912ce7f503fadcf6b077e21d2f336",
+                "inputContextSha256": "7ec192c151ff94e097cf6a70e88f2b939510d14a0b627be5f123b2680b2b44a6",
+                "generatedAt": "2026-10-03T03:37:05.702Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "independent",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-2022-reading-reviews.json",
+                  "inputEvidence": "answers-six-sites-20261002/claude-2022-reading-job.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f"
+                },
+                "assessment": {
+                  "review": "reviewed",
+                  "note": "当前作答经来源与交叉复核；保留开放题合理表达差异。",
+                  "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
+                }
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "答案：A。\n选A。A项不正确，“一例”是“一律、一概、全都一样”的意思，文中指两旁全是灰色的胡同、胡同里全是苍劲的古槐，强调整齐划一，不是数量词“一列”。B项正确，“绵邈”指久远、遥远，文中指时空相隔遥远。C项正确，“亭午”即正午、中午。D项正确，“懵懂”本指糊涂、不明白，文中说读了半个世纪仍然“似是还非”，即还没有完全读懂、理解。",
+                "inputSha256": "370eb675ac5463548fccc624ca34cedc637912ce7f503fadcf6b077e21d2f336",
+                "inputContextSha256": "7ec192c151ff94e097cf6a70e88f2b939510d14a0b627be5f123b2680b2b44a6",
+                "generatedAt": "2026-10-03T03:36:09.273126+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "A"
+                ],
+                "assessment": {
+                  "matchesConclusion": true,
+                  "review": "reviewed",
+                  "note": "未发现改变结论的错误；主观题按材料依据判断，不要求逐字相同。",
+                  "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2022-reading-result.json",
+                  "inputPromptSha256": "7ffcfe45ec2475cfd765a410699b932c541cba3a21e9aba7b8faba06c239bacc",
+                  "responseStreamSha256": "6b7ea1b37ac271eadba296d1125c1b354b34e27741404436e9d7ac8a6a7dc261",
+                  "stage": "independent"
+                }
+              }
+            },
+            "inputSha256": "370eb675ac5463548fccc624ca34cedc637912ce7f503fadcf6b077e21d2f336",
+            "inputContextSha256": "7ec192c151ff94e097cf6a70e88f2b939510d14a0b627be5f123b2680b2b44a6",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "A"
+            ],
+            "explanation": "逐项依据完整当前材料核对，两模型作答结论相容，并与公开转载卷附载参考答案交叉比对；不声称模型回答为官方答案。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:39:54.838Z",
+            "currentVersion": "gpt_6_astra"
+          }
+        }
+      ],
+      "inputPresentationSha256": "47113568ed6ec9fe54b9c4822525156a76f2b838993f7ed4f4c05c63d7d4ecf3"
     },
     {
       "id": "2022-sanwen:2",

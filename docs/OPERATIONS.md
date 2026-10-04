@@ -1,3 +1,9 @@
+## 2026-10-04 PDT — 2022原卷标记与11份全文，本地候选
+
+逐页查看既存2022公开转载PDF第2–6页。删除诗歌5处及红楼4处原卷没有的强调；补文言/散文题干16处实点、文言翻译4处下划线；按图改诗文及题干“蟠据”为“蟠踞”，文言原7去除Markdown星号并保留已接受的“天下之情”校正。四源记录原态保存source_history，九个变更题面的旧review整体归档，全部1166模型对象、646题身份/score/旧AI保全；另两题原输入未变，既有review不做同上下文重复归档。
+
+本人11份完整答案另版冻结，全部reference-exposed。207unique待最后Claude，13冻结包均与当前输入一致；160冻结hash、数据226/646/397/errors0及authority校验通过。当前429reviewed/15disputed/22draft，v2=444、v3=411，初始41之外新增文言原8需要重核，余31个当前v3缺口尚未加入pending。29原来源/评分/出版链blocker未放行。证据verification-2022-source-marks-v1.json，唯一选择索引pending-current-input-index-v3.json；源hash 9b26134dbd9b02b823f819500561798800f2ebff25eed98583bdae53a296a715。无新provider、正式build、push、部署、浏览器认证或学生/通知写入。回退仅本阶段相对1b0cf77a的增量，冻结和历史保留。Claude最后。
+
 ## 2026-10-03 PDT — 最终来源进度说明与六题全文重新核对
 
 两条运行annotation中的过时“补录待整合/待兼容映射”改为已经完成的真实本地状态，涉及2007旧错年语用组与2003语用应用组。题面/材料/标记/ID/score/历史不变，其余224记录不变，authority逐字节不变。六个待Claude题目均逐题重读完整来源与本人全文，答案正文不变，另存root-final-source-notes-v1完整输入/绑定/全文；旧冻结从未覆写。新增冻结reference-exposure-final-source-notes-v1-before-claude.json只按六个指定ID取代早前输入，其他单元仍用各自最新冻结。
