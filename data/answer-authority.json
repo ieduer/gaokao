@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261004-source2003-scans-pending",
+  "revision": "20261004-source2002-scans-pending",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -4166,13 +4166,11 @@
     },
     {
       "id": "2002-guwen:3",
-      "inputSha256": "bccf2397266d1679212fc3f9d01de17ade781ce9cc8cc964ac4d90876adee16e",
-      "status": "reviewed",
+      "inputSha256": "3fa766fd5490f7008db4325921448af0d0367444ce8ef95c2dcccd8bc3d5371e",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "B"
-      ],
-      "explanation": "结论B，按完整语句重答。",
+      "correctOptions": [],
+      "explanation": "2002原题图校勘后待完整重审；旧题面与全部模型答案保存在history。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T03:03:23.208Z",
       "sources": [
@@ -4186,87 +4184,171 @@
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 完整附注复核",
-          "text": "答案：B。两处因都承接此前发生的事情，引出随后采取的行动，分别是于是前往吴国、于是扣留怀王。A项于分别引进经过的地域与比较对象。C项前之用于有道者与所以异乎俗这一结构之间，后之是何罪之有的宾语前置标记。D项前以处在以……为……结构，后以连接割地与趋于灭亡的结果。不能因都可弱译为不译而忽略结构功能。",
-          "inputSha256": "bccf2397266d1679212fc3f9d01de17ade781ce9cc8cc964ac4d90876adee16e",
-          "generatedAt": "2026-10-03T03:03:23.208Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review_reaffirmation",
-            "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
-            "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "priorAnswerSha256": "56f087816904ddcf5cd03b38a8c90ea9ada1800e286f653bd38e603cf5a99191",
-            "annotationEffect": "xiǎn征兆注所指原字在越人信后缺失，应源证恢复；问项两处因的承接关系不依赖猜补该字。"
+      "modelAnswers": {},
+      "inputContextSha256": "b207b45eaff80bc9080516c93072260ba1080bd87f294db89d6808454c6b16dd",
+      "history": [
+        {
+          "source": {
+            "id": "2002-guwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "古之人非无宝也，其所宝者异也。\n\n孙叔敖疾，将死，戒其子曰：“王数封我矣，吾不受也。为我死，王则封汝，必无受利地。楚越之间有寝之丘者，此其地不利，而名甚恶。荆人畏鬼，而越人信 。可长有者，其唯此也。”孙叔敖死，王果以美地封其子，而子辞，请寝之丘，故至今不失。孙叔敖之知，知不以利为利矣。知以人之所恶为己之所喜，此有道者之所以异乎俗也。\n\n五员亡，荆急求之，登太行而望郑曰：“盖是国也，地险而民多知；其主，俗主也，不足与举。”去郑而之许，见许公而问所之。许公不应，东南向而唾。五员再拜受赐，曰：“吾知所之矣。”因如吴。过于荆，至江上，欲涉，见一丈人，刺小船，方将渔，从而请焉。丈人度之，绝江。问其名族，则不肯告，解其剑以予丈人，曰：“此千金之剑也，愿献之丈人。”丈人不肯受，曰：“荆国之法，得五员者，爵执圭，禄万檐，金千镒。昔者子胥过，吾犹不取，今我何以子之千金剑为乎？”五员过于吴，使人求之江上，则不能得也。名不可得而闻，身不可得而见。每食必祭之，祝曰：“江上之丈人！”为矣，而无所以为之，其惟江上之丈人乎！\n\n今以百金与抟黍以示儿子，儿子必取抟黍矣；以和氏之璧与百金以示鄙人，鄙人必取百金矣；以和氏之璧、道德之至言以示贤者，贤者必取至言矣。其知弥精，其所取弥精；其知弥粗，其所取弥粗。"
+              }
+            ],
+            "topic": "阅读下面文言文，完成7--11题",
+            "annotation": "注：[1] xiǎn：征兆。",
+            "annotations": [
+              {
+                "qIndex": 3,
+                "material": "material1",
+                "type": "dot",
+                "start": 259,
+                "end": 260,
+                "anchor": "于"
+              },
+              {
+                "qIndex": 3,
+                "material": "material1",
+                "type": "dot",
+                "start": 254,
+                "end": 255,
+                "anchor": "因"
+              },
+              {
+                "qIndex": 3,
+                "material": "material1",
+                "type": "dot",
+                "start": 1,
+                "end": 2,
+                "anchor": "之"
+              },
+              {
+                "qIndex": 3,
+                "material": "material1",
+                "type": "dot",
+                "start": 107,
+                "end": 108,
+                "anchor": "以"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 3,
+                "id": "q3",
+                "text": "9.下列各组句子，加点的词的意义和用法相同的一组是（ ）\nA.过*于*荆，至江上。\n苛政猛*于*虎也。\nB.曰：“吾知所之矣。”*因*如吴。\n秦伏兵绝其后，*因*留怀王以求割地。\nC.此有道者*之*所以异乎俗也。\n宋何罪*之*有？\nD.知不*以*利为利矣。\n为秦人积威之所劫，日削月割，*以*趋于亡。",
+                "score": null
+              }
+            ]
           },
-          "inputContextSha256": "19e5c294d558dba2727626b8580ba3bee0982044bbde8828ec05f4c52fda8e6c"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 来源复核后修订",
-          "text": "答案：B。\n选B。A项：“过于荆”的“于”是介词，引出处所（经过楚国）；“苛政猛于虎”的“于”是介词“比”，不同。B项：“因如吴”“因留怀王以求割地”的“因”都是副词（连词）“于是、就”，相同。C项：“此有道者之所以异乎俗也”的“之”用在主谓之间，取消句子独立性；“宋何罪之有”的“之”是宾语前置的标志，不同。D项：“知不以利为利矣”的“以”是介词“把”；“以趋于亡”的“以”是连词，相当于“而”，表结果，不同。",
-          "inputSha256": "bccf2397266d1679212fc3f9d01de17ade781ce9cc8cc964ac4d90876adee16e",
-          "inputContextSha256": "19e5c294d558dba2727626b8580ba3bee0982044bbde8828ec05f4c52fda8e6c",
-          "generatedAt": "2026-10-03T03:01:54.821132+00:00",
-          "uncertainties": [
-            "“因留怀王”的“因”也有人解作“趁机”，若如此则与前句略有差别；但其余三项差异明确，故选B。"
-          ],
-          "selectedOptions": [
-            "B"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
-            "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
-            "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
-            "stage": "source_review"
+          "review": {
+            "id": "2002-guwen:3",
+            "inputSha256": "bccf2397266d1679212fc3f9d01de17ade781ce9cc8cc964ac4d90876adee16e",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "B"
+            ],
+            "explanation": "结论B，按完整语句重答。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:03:23.208Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内完整题目及相关材料"
+              },
+              {
+                "type": "dictionary_revision",
+                "title": "文言站2026-09-16-r3词典校订，保留争议"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "答案：B。两处因都承接此前发生的事情，引出随后采取的行动，分别是于是前往吴国、于是扣留怀王。A项于分别引进经过的地域与比较对象。C项前之用于有道者与所以异乎俗这一结构之间，后之是何罪之有的宾语前置标记。D项前以处在以……为……结构，后以连接割地与趋于灭亡的结果。不能因都可弱译为不译而忽略结构功能。",
+                "inputSha256": "bccf2397266d1679212fc3f9d01de17ade781ce9cc8cc964ac4d90876adee16e",
+                "generatedAt": "2026-10-03T03:03:23.208Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "56f087816904ddcf5cd03b38a8c90ea9ada1800e286f653bd38e603cf5a99191",
+                  "annotationEffect": "xiǎn征兆注所指原字在越人信后缺失，应源证恢复；问项两处因的承接关系不依赖猜补该字。"
+                },
+                "inputContextSha256": "19e5c294d558dba2727626b8580ba3bee0982044bbde8828ec05f4c52fda8e6c"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "答案：B。\n选B。A项：“过于荆”的“于”是介词，引出处所（经过楚国）；“苛政猛于虎”的“于”是介词“比”，不同。B项：“因如吴”“因留怀王以求割地”的“因”都是副词（连词）“于是、就”，相同。C项：“此有道者之所以异乎俗也”的“之”用在主谓之间，取消句子独立性；“宋何罪之有”的“之”是宾语前置的标志，不同。D项：“知不以利为利矣”的“以”是介词“把”；“以趋于亡”的“以”是连词，相当于“而”，表结果，不同。",
+                "inputSha256": "bccf2397266d1679212fc3f9d01de17ade781ce9cc8cc964ac4d90876adee16e",
+                "inputContextSha256": "19e5c294d558dba2727626b8580ba3bee0982044bbde8828ec05f4c52fda8e6c",
+                "generatedAt": "2026-10-03T03:01:54.821132+00:00",
+                "uncertainties": [
+                  "“因留怀王”的“因”也有人解作“趁机”，若如此则与前句略有差别；但其余三项差异明确，故选B。"
+                ],
+                "selectedOptions": [
+                  "B"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
+                  "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
+                  "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
+                  "stage": "source_review"
+                }
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "答案：B。两处因都承接此前发生的事情，引出随后采取的行动，分别是于是前往吴国、于是扣留怀王。A项于分别引进经过的地域与比较对象。C项前之用于有道者与所以异乎俗这一结构之间，后之是何罪之有的宾语前置标记。D项前以处在以……为……结构，后以连接割地与趋于灭亡的结果。不能因都可弱译为不译而忽略结构功能。",
+                "inputSha256": "bccf2397266d1679212fc3f9d01de17ade781ce9cc8cc964ac4d90876adee16e",
+                "generatedAt": "2026-10-03T00:07:56.018Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
+                }
+              },
+              "claude_opus_5_5_initial": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答（修订前存档）",
+                "text": "答案：B。\nA项不同。“过于荆”中，“于”是介词，引出处所，意为“经过（楚国）”；“苛政猛于虎也”中，“于”是介词，表比较，意为“比”。B项相同。“因如吴”中，“因”是副词“于是、就”；“因留怀王以求割地”中，“因”也是副词“于是、趁势就”。两者用法一致。C项不同。“此有道者之所以异乎俗也”中，“之”用在主谓之间，取消句子独立性；“宋何罪之有”中，“之”是宾语前置的标志。D项不同。“知不以利为利矣”中，“以”是介词“把”，构成“以……为……”；“日削月割，以趋于亡”中，“以”是连词，表结果，意为“以致、而”。故选B。",
+                "inputSha256": "bccf2397266d1679212fc3f9d01de17ade781ce9cc8cc964ac4d90876adee16e",
+                "generatedAt": "2026-10-03T00:39:17.649838+00:00",
+                "uncertainties": [
+                  "材料中“而越人信 ”后有缺字（通行本作“而越人信禨”），与本题无关。"
+                ],
+                "selectedOptions": [
+                  "B"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
+                  "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
+                  "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "56682cb9ea9fea742d10e98f0ef7a6af42b601b6b7712509fc58c0fd04782e17"
+              }
+            },
+            "inputContextSha256": "19e5c294d558dba2727626b8580ba3bee0982044bbde8828ec05f4c52fda8e6c"
           }
-        },
-        "gpt_6_astra_before_context_review": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
-          "text": "答案：B。两处因都承接此前发生的事情，引出随后采取的行动，分别是于是前往吴国、于是扣留怀王。A项于分别引进经过的地域与比较对象。C项前之用于有道者与所以异乎俗这一结构之间，后之是何罪之有的宾语前置标记。D项前以处在以……为……结构，后以连接割地与趋于灭亡的结果。不能因都可弱译为不译而忽略结构功能。",
-          "inputSha256": "bccf2397266d1679212fc3f9d01de17ade781ce9cc8cc964ac4d90876adee16e",
-          "generatedAt": "2026-10-03T00:07:56.018Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
-          }
-        },
-        "claude_opus_5_5_initial": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答（修订前存档）",
-          "text": "答案：B。\nA项不同。“过于荆”中，“于”是介词，引出处所，意为“经过（楚国）”；“苛政猛于虎也”中，“于”是介词，表比较，意为“比”。B项相同。“因如吴”中，“因”是副词“于是、就”；“因留怀王以求割地”中，“因”也是副词“于是、趁势就”。两者用法一致。C项不同。“此有道者之所以异乎俗也”中，“之”用在主谓之间，取消句子独立性；“宋何罪之有”中，“之”是宾语前置的标志。D项不同。“知不以利为利矣”中，“以”是介词“把”，构成“以……为……”；“日削月割，以趋于亡”中，“以”是连词，表结果，意为“以致、而”。故选B。",
-          "inputSha256": "bccf2397266d1679212fc3f9d01de17ade781ce9cc8cc964ac4d90876adee16e",
-          "generatedAt": "2026-10-03T00:39:17.649838+00:00",
-          "uncertainties": [
-            "材料中“而越人信 ”后有缺字（通行本作“而越人信禨”），与本题无关。"
-          ],
-          "selectedOptions": [
-            "B"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
-            "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
-            "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
-            "stage": "independent"
-          },
-          "inputContextSha256": "56682cb9ea9fea742d10e98f0ef7a6af42b601b6b7712509fc58c0fd04782e17"
         }
-      },
-      "inputContextSha256": "19e5c294d558dba2727626b8580ba3bee0982044bbde8828ec05f4c52fda8e6c"
+      ],
+      "inputPresentationSha256": "c64f78bde34c2e1f57d7fc86c9e4ab3c2897c9ced3ce2972744b42367f9d2ac0"
     },
     {
       "id": "2026-feilian:1",
@@ -12870,11 +12952,11 @@
     },
     {
       "id": "2002-moxie:1",
-      "inputSha256": "9312867a3590ea76db8e69a44269380e28ebdf2dbfdbf1505b4bd9ef21ca488b",
-      "status": "reviewed",
+      "inputSha256": "69ceedf0d6525d63b28b964020c75332810fdb531f6440747a89e2a3b50f253e",
+      "status": "draft",
       "kind": "open",
       "correctOptions": [],
-      "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+      "explanation": "2002原题图校勘后待完整重审；旧题面与全部模型答案保存在history。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T01:38:23.281Z",
       "sources": [
@@ -12884,53 +12966,115 @@
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答",
-          "text": "材料中的诗句补：风雨不动安如山。①少陵：指杜甫，杜甫自号少陵野老，文中的老杜、子美也都指杜甫。②为难：较为难能可贵、比较难做到。这里比较杜甫愿自己受苦而让他人受益，与白居易希望推己之暖及人，认为杜甫的愿望更难能可贵；不是现代汉语中“使人难办、故意刁难”的意思。当前单独题干只列解释项，故将材料中另见的诗句空位一并注明。",
-          "inputSha256": "9312867a3590ea76db8e69a44269380e28ebdf2dbfdbf1505b4bd9ef21ca488b",
-          "generatedAt": "2026-10-03T01:38:23.281Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
-            "contextEvidence": {
-              "method": "no_annotation_v1_equivalence",
-              "originalInputSha256": "9312867a3590ea76db8e69a44269380e28ebdf2dbfdbf1505b4bd9ef21ca488b",
-              "originalEvidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
-              "originalAnswerSha256": "144b2efaf5b271854eb80395ed535e90086636da10bb9ee73a0e88f8d5a42ce0",
-              "contextSha256": "6a267a7db1fdf6542bb6fe47c9f90b2adf97220c3d29dc8b77986fa31b2ef0c5",
-              "sourceAnnotation": null,
-              "evidence": "answers-six-sites-20261002/no-annotation-context-proof.json"
-            }
+      "modelAnswers": {},
+      "inputContextSha256": "fbbf6bb6975264f643aa54836d78c6f73b452661f5d31c22057d97edc0e2ada9",
+      "history": [
+        {
+          "source": {
+            "id": "2002-moxie",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "老杜《茅屋为秋风所破歌》云：“安得广厦千万间，大庇天下寒士俱欢颜，     ！”乐天《新制布裘》云：“安得万里裘，盖裹周四垠。稳暖皆如我，天下无寒人。”或谓子美诗意，宁苦身以利人；乐天诗意，推身利以利人。二者较之，少陵为难。"
+              }
+            ],
+            "topic": "18.在横线上填写诗句，并解释画线词语的意思。",
+            "annotation": null,
+            "annotations": [
+              {
+                "qIndex": 1,
+                "material": "material1",
+                "type": "highlight",
+                "start": 107,
+                "end": 109,
+                "anchor": "少陵"
+              },
+              {
+                "qIndex": 1,
+                "material": "material1",
+                "type": "highlight",
+                "start": 109,
+                "end": 111,
+                "anchor": "为难"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "解释：①少陵：     ②为难：______________",
+                "score": null
+              }
+            ]
           },
-          "inputContextSha256": "6a267a7db1fdf6542bb6fe47c9f90b2adf97220c3d29dc8b77986fa31b2ef0c5"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "填写诗句：风雨不动安如山！（杜甫《茅屋为秋风所破歌》）\n解释：\n①少陵：指杜甫。杜甫曾居长安城南少陵附近，自号“少陵野老”，后人因称他“杜少陵”。\n②为难：是难能（可贵）的，即更难做到。杜甫宁愿自己受苦也要使天下寒士得庇护，比白居易推己之利以利人更难得。",
-          "inputSha256": "9312867a3590ea76db8e69a44269380e28ebdf2dbfdbf1505b4bd9ef21ca488b",
-          "generatedAt": "2026-10-03T01:36:48.472084+00:00",
-          "uncertainties": [
-            "本题的question字段只列出词语解释，填写诗句的要求见于题目标题，故一并作答。原题画线词语无法从文本中看出，按question字段所列“少陵”“为难”解释。"
-          ],
-          "selectedOptions": [],
-          "assessment": {
-            "matchesConclusion": null
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
-            "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
-            "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
-            "stage": "independent"
-          },
-          "inputContextSha256": "6a267a7db1fdf6542bb6fe47c9f90b2adf97220c3d29dc8b77986fa31b2ef0c5"
+          "review": {
+            "id": "2002-moxie:1",
+            "inputSha256": "9312867a3590ea76db8e69a44269380e28ebdf2dbfdbf1505b4bd9ef21ca488b",
+            "status": "reviewed",
+            "kind": "open",
+            "correctOptions": [],
+            "explanation": "两模型分别逐空作答后按原篇上下文核对，开放引用题保留多种合题答案；提供部分的录入错字另列待修，不重写历史分数。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T01:38:23.281Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2002北京卷原题及完整材料"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答",
+                "text": "材料中的诗句补：风雨不动安如山。①少陵：指杜甫，杜甫自号少陵野老，文中的老杜、子美也都指杜甫。②为难：较为难能可贵、比较难做到。这里比较杜甫愿自己受苦而让他人受益，与白居易希望推己之暖及人，认为杜甫的愿望更难能可贵；不是现代汉语中“使人难办、故意刁难”的意思。当前单独题干只列解释项，故将材料中另见的诗句空位一并注明。",
+                "inputSha256": "9312867a3590ea76db8e69a44269380e28ebdf2dbfdbf1505b4bd9ef21ca488b",
+                "generatedAt": "2026-10-03T01:38:23.281Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
+                  "contextEvidence": {
+                    "method": "no_annotation_v1_equivalence",
+                    "originalInputSha256": "9312867a3590ea76db8e69a44269380e28ebdf2dbfdbf1505b4bd9ef21ca488b",
+                    "originalEvidence": "answers-six-sites-20261002/gpt-astra-moxie-reviews.json",
+                    "originalAnswerSha256": "144b2efaf5b271854eb80395ed535e90086636da10bb9ee73a0e88f8d5a42ce0",
+                    "contextSha256": "6a267a7db1fdf6542bb6fe47c9f90b2adf97220c3d29dc8b77986fa31b2ef0c5",
+                    "sourceAnnotation": null,
+                    "evidence": "answers-six-sites-20261002/no-annotation-context-proof.json"
+                  }
+                },
+                "inputContextSha256": "6a267a7db1fdf6542bb6fe47c9f90b2adf97220c3d29dc8b77986fa31b2ef0c5"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "填写诗句：风雨不动安如山！（杜甫《茅屋为秋风所破歌》）\n解释：\n①少陵：指杜甫。杜甫曾居长安城南少陵附近，自号“少陵野老”，后人因称他“杜少陵”。\n②为难：是难能（可贵）的，即更难做到。杜甫宁愿自己受苦也要使天下寒士得庇护，比白居易推己之利以利人更难得。",
+                "inputSha256": "9312867a3590ea76db8e69a44269380e28ebdf2dbfdbf1505b4bd9ef21ca488b",
+                "generatedAt": "2026-10-03T01:36:48.472084+00:00",
+                "uncertainties": [
+                  "本题的question字段只列出词语解释，填写诗句的要求见于题目标题，故一并作答。原题画线词语无法从文本中看出，按question字段所列“少陵”“为难”解释。"
+                ],
+                "selectedOptions": [],
+                "assessment": {
+                  "matchesConclusion": null
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-moxie-remaining-result.json",
+                  "inputPromptSha256": "26d47ea5b23afeaedd6b262d3036cf325a1823b0b64128bf0804d4433aa58b53",
+                  "responseStreamSha256": "8dadc316e7f9361c2ab75acfccfc557b398f16f4524be092f79056ea254e2c7f",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "6a267a7db1fdf6542bb6fe47c9f90b2adf97220c3d29dc8b77986fa31b2ef0c5"
+              }
+            },
+            "inputContextSha256": "6a267a7db1fdf6542bb6fe47c9f90b2adf97220c3d29dc8b77986fa31b2ef0c5"
+          }
         }
-      },
-      "inputContextSha256": "6a267a7db1fdf6542bb6fe47c9f90b2adf97220c3d29dc8b77986fa31b2ef0c5"
+      ],
+      "inputPresentationSha256": "c734c21c6b60ba17717cb7162e4bcbf4daa15d014cdcbe0bf1da40e4e8ef7e89"
     },
     {
       "id": "2024-feilian:1",
@@ -41165,6 +41309,21 @@
         "2003-guwen-translation"
       ],
       "detail": "2003北京卷按新浪2003-06-08当时发布的11张题图逐张目视校勘，覆盖原1—26题；首页标称13物理页，未获第12—13页及考试机构出版链，不能称全卷档案认证。Gzy三页转录仅辅助，重排预览有缺项与标记遗漏，不作为原卷依据。 原卷第12—13页未获得；新浪为当时媒体发布而非考试机构原始出版链；题图水印/低清及细标点仍有局限。 全部旧ID/qIndex/year/score/null/AI与历史审核保留。默写原4分而旧score6、合并原5/6、原17拆两单元及三道应用旧分值的历史兼容待落地。 新增原16翻译独立补录，未并入runtime；2005错年道路题仍保留旧身份，2003原25视觉归属已确认，不合并进度或重新计分。 所有材料与参考答案已暴露，不称盲答；本阶段无新答案与provider调用，Claude仍最后。"
+    },
+    {
+      "id": "2002-source-scans-scoring-compatibility",
+      "status": "open",
+      "recordIds": [
+        "2002-feilian",
+        "2002-guwen",
+        "2002-shici",
+        "2002-moxie",
+        "2002-sanwen",
+        "2002-yuyanjichu",
+        "2002-dazuowen",
+        "2002-guwen-translation"
+      ],
+      "detail": "2002北京卷按新浪2002-07-08当时发布的10张题图逐张目视校勘，涵盖原1—26题；首页标称13物理页，第11—13页未取得，亦未取得考试机构原始出版链，不能称全卷档案认证。Gzy42-1/2/3仅作辅助转录，现有参考与旧AI均已暴露。 原卷第11—13页未取得；媒体题图不等于考试机构原始出版证明，低清字形仍有限制。 全部旧ID/qIndex/year/score/null/AI与历史审核保留。原5/6/23/24/25合并单元不得统一选项判分；原16拆两单元、原18漏填空恢复后与null分值的历史兼容待落地。 新增原17独立材料/两处翻译补录未并入runtime；原18两行诗歌填空不可按旧AI的截短输出作标准。 全部参考暴露，不称盲答；此阶段无新完整答案与provider调用，Claude仍最后。"
     }
   ]
 }
