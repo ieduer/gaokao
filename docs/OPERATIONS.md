@@ -599,3 +599,13 @@ PLAN22受限环境作答前登录读取失败、无模型/费用0；host只读au
 406reviewed、7disputed、2draft、197未覆盖；413当前上下文证明、363标记证明，52当前标记缺口含待重审。1054前存完整模型、413其他审核及全部身份/旧score/旧AI保全。15authority测试、201/612/424/0数据、来源hash/冻结输入/历史校验和diff检查通过。详 /Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/REVIEW-2010-SOURCE.md 与 verification-2010-source.json。
 
 本聊天第二次压缩，当前来源原子步骤完成后fresh_task_required，只串行一个新LOCAL聊天续作2010本人20阅读+1作文并冻结，再新PLAN25。全部阅读和作文参考暴露；此步0新答案0提供商调用。未push、正式build、上传、生产/学生写入、认证验收、status或通知，全部六站与历史门禁保留。具体交接以HANDOFF.md为准。
+
+## 2026-10-04 PDT — 五题原扫描标记与题干显示，本地候选
+
+2026古文原6/7/8和散文原16/18补回25处已逐项查看的加点/横线，包含原8四处原文下划线、原16材料及选项的四字加点。原18范围从第一个“只看见”至“弧线”，不包括句号。只改两条记录的annotations，不改既有三来源校正文字、题号、score、旧AI答案或进度身份；不得用GKS旧导入器覆盖2026校正文字。
+
+旧五题20个模型对象及旧题面归入各自history，五题当前状态为draft；本轮本人五份完整重答另版冻结且referenceExposed=true，等待最后Claude。全库仍226记录/646单元，标记386；authority为438 reviewed/15 disputed/13 draft，1166完整模型对象全部保留。待最后Claude的独立输入196份，另有41个尚未纳入该批的当前v3缺口。当前双模型上下文v2证明453、标记v3证明412；不能把历史证明移到新标记。
+
+GK不再按长度把加点自动改成下划线，改用原生逐字着重号；分类和年度视图均在题干应用本题确切标记。40项相关测试及226/646/386/0数据检查通过；GKSW配套10项测试、25标记/10提示构造检查与153冻结hash通过。浏览器CSS实际验收、全源/双模型门禁、正式构建、发布及真实验收均未完成。没有provider或学生写入。
+
+证据：/Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/verification-2026-source-marks.json；reference-exposure-2026-source-marks-v1-before-claude.json；pending-current-input-index-v2.json。源SHA256 99bac7577157afaee3c01c1f7aec74541f069e6aab6e48ad7985ea54b51ecee6，authority SHA256 3f8b2864edeb996a16d5e78fea3039a325b6f6a0bbecfb5d0f4fa9848b4fe11b。此原子步骤回滚基准5716854f9b788021fa7bb9401da1d4a7826a966a，仅作为本地差异参考，不授权恢复旧生产。

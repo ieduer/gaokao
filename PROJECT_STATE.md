@@ -1,3 +1,13 @@
+## 2026-10-04 PDT — 五题原扫描标记与题干显示，本地候选
+
+2026古文原6/7/8和散文原16/18补回25处已逐项查看的加点/横线，包含原8四处原文下划线、原16材料及选项的四字加点。原18范围从第一个“只看见”至“弧线”，不包括句号。只改两条记录的annotations，不改既有三来源校正文字、题号、score、旧AI答案或进度身份；不得用GKS旧导入器覆盖2026校正文字。
+
+旧五题20个模型对象及旧题面归入各自history，五题当前状态为draft；本轮本人五份完整重答另版冻结且referenceExposed=true，等待最后Claude。全库仍226记录/646单元，标记386；authority为438 reviewed/15 disputed/13 draft，1166完整模型对象全部保留。待最后Claude的独立输入196份，另有41个尚未纳入该批的当前v3缺口。当前双模型上下文v2证明453、标记v3证明412；不能把历史证明移到新标记。
+
+GK不再按长度把加点自动改成下划线，改用原生逐字着重号；分类和年度视图均在题干应用本题确切标记。40项相关测试及226/646/386/0数据检查通过；GKSW配套10项测试、25标记/10提示构造检查与153冻结hash通过。浏览器CSS实际验收、全源/双模型门禁、正式构建、发布及真实验收均未完成。没有provider或学生写入。
+
+证据：/Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/verification-2026-source-marks.json；reference-exposure-2026-source-marks-v1-before-claude.json；pending-current-input-index-v2.json。源SHA256 99bac7577157afaee3c01c1f7aec74541f069e6aab6e48ad7985ea54b51ecee6，authority SHA256 3f8b2864edeb996a16d5e78fea3039a325b6f6a0bbecfb5d0f4fa9848b4fe11b。此原子步骤回滚基准5716854f9b788021fa7bb9401da1d4a7826a966a，仅作为本地差异参考，不授权恢复旧生产。
+
 ## 2026-10-03 PDT — 最终来源说明与六题全文重新核对
 
 更正2007旧错年语用组和2003应用组两条过时进度说明；六个完整输入重新核对本人全文、正文不改并另版冻结。题面/标记/ID/score/历史与authority不变，147冻结hash和226/646/361/0数据检查通过；191unique仍待最后Claude。最新六题输入以reference-exposure-final-source-notes-v1-before-claude.json为准，其余保留既有最新版本。当前source SHA256 2b8551993732c77f693c0dac9573cb1ac6d3e60feaae4969813e2e5f948d7d3b；verification-final-source-notes.json记载精确增量。没有任何发布或真实用户验收；全局目标未完成。

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "2026-10-03-practice-scoring-local",
+  "revision": "20261004-2026-source-marks-awaiting-final-claude",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -1300,14 +1300,12 @@
     {
       "id": "2026-guwen:2",
       "inputSha256": "7ad4bb12561bfaea85f1162a841229f44db6393749c80fc26e5fd11398f4af27",
-      "status": "reviewed",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "C"
-      ],
-      "explanation": "依据高考站已校订2026题文重答；字词细分争议不影响C。未将专门站旧转录用作本次题文权威。",
+      "correctOptions": [],
+      "explanation": "原扫描标记已补齐；旧双模型全文及其旧题面保留为历史。本轮本人完整重答已另版冻结，待最后Claude核对后裁定。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:05:38.552Z",
+      "reviewedAt": "2026-10-04T07:17:50.351Z",
       "sources": [
         {
           "type": "source_material",
@@ -1318,88 +1316,140 @@
           "title": "文言站2026-09-16-r3词典校订，保留争议"
         }
       ],
-      "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 完整附注复核",
-          "text": "答案：C。‘始灭大贼，而更被黜’说刚立大功却遭贬斥；‘断人左手而右手不应’设想损伤一部分却得不到另一部分反应，都是转折。A项前‘为’属于为……所……的被动格式，后‘为’属于以为美谈，表示当作。B项前‘以’引出返回郡中等待的目的，后‘以’引出被任命的人。D项前‘与’联结互为姻亲的两人，后‘与’表示致信或给予书信所指向的对象；后一句‘书’读作写信还是书信，可以影响‘与’的词类标签，不能据此改判C。",
-          "inputSha256": "7ad4bb12561bfaea85f1162a841229f44db6393749c80fc26e5fd11398f4af27",
-          "generatedAt": "2026-10-03T03:05:38.552Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review_reaffirmation",
-            "evidence": "answers-six-sites-20261002/root-context-reading-decisions.json",
-            "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "priorAnswerSha256": "2127912262a55b8e1f2b26345c849b09154188e9351b82474e4357a8798e88c1",
-            "annotationEffect": "已完整重读材料、题纲、题问、材料内原注及2026三源核对说明。两处而的转折关系，保留与字词类细分限界；record.annotation仅为来源说明，本次实际纳入复核，未追认成旧作答时已见。"
+      "modelAnswers": {},
+      "inputContextSha256": "f3fc4e7cee6ee5ab33ef8fb822e083e179d745ffc22d6bd2ef4416b1cf00c0bf",
+      "history": [
+        {
+          "source": {
+            "id": "2026-guwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "文言文阅读",
+                "text": "陶侃【1】少孤贫，为郡督邮。长沙太守过庐江，见而异之，命其子结友而去。后察孝廉，至洛阳，人荐之，侃由是知名。既克贼，刘弘【2】谓侃曰：“吾昔为羊公【3】参军，谓吾后当居身处。今观卿，必继老夫矣。”\n\n顺阳太守张光诣荆州讨陈敏，刘弘遣侃等屯夏口。侃与敏同郡，又同岁举吏。扈怀言于弘曰：“侃居大郡，统强兵，脱有异志，则荆州无东门矣！”弘曰：“侃之忠能，吾得之已久，必无是也。”侃闻之，遣子及兄子诣弘以自固。弘引为参军，资而遣之，曰：“贤叔征行，君祖母年高，便可归也。匹夫之交，尚不负心，况大丈夫乎！”\n\n周顗【4】始至州，流民叛迎杜弢【5】，弢别将袭沔阳，顗狼狈失据。征讨都督王敦【6】遣侃等共击弢。周顗屯浮水城，为杜弢所困。侃曰：“弢必步向武昌。”乃自径道还郡以待之，弢果来攻。侃使朱伺逆击，大破之，弢遁归长沙。侃告捷于敦，敦曰：“若无陶侯，便失荆州矣！”乃表侃为荆州刺史。\n\n王敦嬖人钱凤，疾侃之功，屡毁之。侃将还江陵，欲诣敦自陈。朱伺等谏曰：“公入，必不出。”侃不从，既至，敦留侃不遣，左转广州刺史，以其从弟廙为荆州刺史。荆州将吏郑攀等诣敦，上书留侃，敦怒，不许。攀等以侃始灭大贼，而更被黜，众情愤惋。后攀等袭廙，敦意攀承侃风旨，被甲持矛将杀侃，出而复还者数四。侃正色曰：“使君雄断，当裁天下，何此不决乎！”因起如厕。梅陶等言于敦曰：“周访与侃亲姻，如左右手，安有断人左手而右手不应者乎！”敦意解，乃设盛馔以饯之，侃便夜发。\n\n太宁三年五月，以侃为征西大将军、都督荆湘雍梁四州诸军事、荆州刺史，荆州士女相庆。\n\n咸和七年十一月，进侃为大将军，剑履上殿，入朝不趋，侃固辞不受。侃晚年深以满盈自惧，不预朝权，屡欲告老归国，佐吏等苦留之。九年六月，侃疾笃，上表逊位。将归长沙，军资、器仗、牛马、舟船皆有定簿，封印仓库，自加管钥，以付右司马，然后登舟，朝野以为美谈。乙卯，薨于樊溪。侃在军四十一年，自南陵迄于白帝，数千里中，路不拾遗。及薨，梅陶与亲人书曰：“陆抗诸人不能及也。”\n\n（取材于《晋书》《资治通鉴》）\n\n注释：【1】陶侃：晋朝将领。【2】刘弘：晋朝将领，曾是羊祜麾下参军。【3】羊公：羊祜，晋朝将领。【4】周顗：晋朝大臣。【5】杜弢：流民首领。【6】王敦：晋朝大臣，后叛乱。"
+              }
+            ],
+            "topic": "二、本大题共5小题，共18分。阅读下面文言文，完成6—10题。",
+            "annotation": "2026年普通高等学校招生全国统一考试（北京卷）语文；题面经三处独立来源交叉核对（原卷扫描件 + 两个独立转录本）",
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 2,
+                "id": "q2",
+                "text": "7. 下列各组语句中，加点词的意义和用法都相同的一组是\nA. 为杜弢所困 / 朝野以为美谈\nB. 乃自径道还郡以待之 / 以其从弟廙为荆州刺史\nC. 攀等以侃始灭大贼，而更被黜 / 安有断人左手而右手不应者乎\nD. 周访与侃亲姻 / 梅陶与亲人书曰",
+                "score": 3,
+                "sourceQuestionNumber": "7",
+                "sourceType": "single_choice"
+              }
+            ]
           },
-          "inputContextSha256": "f3fc4e7cee6ee5ab33ef8fb822e083e179d745ffc22d6bd2ef4416b1cf00c0bf"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 来源复核后修订",
-          "text": "答案：C。\n选C。A项：前一个“为”是介词，表被动（“为……所”），后一个“为”是动词，“以为”即“把（它）当作”，不同。B项：前一个“以”是连词，表目的，相当于“来”；后一个“以”是动词（介词），“任用、让”，“以……为”即“让……担任”，不同。C项：两个“而”都是连词，表转折，相当于“却”（刚灭大贼却反被贬黜；砍断人左手右手却不反应），意义和用法相同。D项：前一个“与”是连词（介词）“和、同”；后一个“与”是“给”，“与亲人书”即给亲人写信，不同。",
-          "inputSha256": "7ad4bb12561bfaea85f1162a841229f44db6393749c80fc26e5fd11398f4af27",
-          "inputContextSha256": "f3fc4e7cee6ee5ab33ef8fb822e083e179d745ffc22d6bd2ef4416b1cf00c0bf",
-          "generatedAt": "2026-10-03T03:05:14.386459+00:00",
-          "uncertainties": [
-            "原题加点字未显示，按各组共有的“为”“以”“而”“与”判断。"
-          ],
-          "selectedOptions": [
-            "C"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-context-reconcile-reading-result.json",
-            "inputPromptSha256": "c7324b4f5b82b1b4b9c38fb139c47abe9c8b8a58a24471791b2fdb2804fcf246",
-            "responseStreamSha256": "a8b82470e7b57edcc275b4761a4601213fe04bb2903bddf6100a54a5d9dddc78",
-            "stage": "source_review"
+          "review": {
+            "id": "2026-guwen:2",
+            "inputSha256": "7ad4bb12561bfaea85f1162a841229f44db6393749c80fc26e5fd11398f4af27",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "C"
+            ],
+            "explanation": "依据高考站已校订2026题文重答；字词细分争议不影响C。未将专门站旧转录用作本次题文权威。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:05:38.552Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内完整题目及相关材料"
+              },
+              {
+                "type": "dictionary_revision",
+                "title": "文言站2026-09-16-r3词典校订，保留争议"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "答案：C。‘始灭大贼，而更被黜’说刚立大功却遭贬斥；‘断人左手而右手不应’设想损伤一部分却得不到另一部分反应，都是转折。A项前‘为’属于为……所……的被动格式，后‘为’属于以为美谈，表示当作。B项前‘以’引出返回郡中等待的目的，后‘以’引出被任命的人。D项前‘与’联结互为姻亲的两人，后‘与’表示致信或给予书信所指向的对象；后一句‘书’读作写信还是书信，可以影响‘与’的词类标签，不能据此改判C。",
+                "inputSha256": "7ad4bb12561bfaea85f1162a841229f44db6393749c80fc26e5fd11398f4af27",
+                "generatedAt": "2026-10-03T03:05:38.552Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-reading-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "2127912262a55b8e1f2b26345c849b09154188e9351b82474e4357a8798e88c1",
+                  "annotationEffect": "已完整重读材料、题纲、题问、材料内原注及2026三源核对说明。两处而的转折关系，保留与字词类细分限界；record.annotation仅为来源说明，本次实际纳入复核，未追认成旧作答时已见。"
+                },
+                "inputContextSha256": "f3fc4e7cee6ee5ab33ef8fb822e083e179d745ffc22d6bd2ef4416b1cf00c0bf"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "答案：C。\n选C。A项：前一个“为”是介词，表被动（“为……所”），后一个“为”是动词，“以为”即“把（它）当作”，不同。B项：前一个“以”是连词，表目的，相当于“来”；后一个“以”是动词（介词），“任用、让”，“以……为”即“让……担任”，不同。C项：两个“而”都是连词，表转折，相当于“却”（刚灭大贼却反被贬黜；砍断人左手右手却不反应），意义和用法相同。D项：前一个“与”是连词（介词）“和、同”；后一个“与”是“给”，“与亲人书”即给亲人写信，不同。",
+                "inputSha256": "7ad4bb12561bfaea85f1162a841229f44db6393749c80fc26e5fd11398f4af27",
+                "inputContextSha256": "f3fc4e7cee6ee5ab33ef8fb822e083e179d745ffc22d6bd2ef4416b1cf00c0bf",
+                "generatedAt": "2026-10-03T03:05:14.386459+00:00",
+                "uncertainties": [
+                  "原题加点字未显示，按各组共有的“为”“以”“而”“与”判断。"
+                ],
+                "selectedOptions": [
+                  "C"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-context-reconcile-reading-result.json",
+                  "inputPromptSha256": "c7324b4f5b82b1b4b9c38fb139c47abe9c8b8a58a24471791b2fdb2804fcf246",
+                  "responseStreamSha256": "a8b82470e7b57edcc275b4761a4601213fe04bb2903bddf6100a54a5d9dddc78",
+                  "stage": "source_review"
+                }
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "答案：C。‘始灭大贼，而更被黜’说刚立大功却遭贬斥；‘断人左手而右手不应’设想损伤一部分却得不到另一部分反应，都是转折。A项前‘为’属于为……所……的被动格式，后‘为’属于以为美谈，表示当作。B项前‘以’引出返回郡中等待的目的，后‘以’引出被任命的人。D项前‘与’联结互为姻亲的两人，后‘与’表示致信或给予书信所指向的对象；后一句‘书’读作写信还是书信，可以影响‘与’的词类标签，不能据此改判C。",
+                "inputSha256": "7ad4bb12561bfaea85f1162a841229f44db6393749c80fc26e5fd11398f4af27",
+                "generatedAt": "2026-10-03T00:07:56.018Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
+                }
+              },
+              "claude_opus_5_5_initial": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答（修订前存档）",
+                "text": "答案：C。\nA项不同：“为杜弢所困”中“为……所”表被动，“为”是介词，可译为“被”；“朝野以为美谈”中“以为”是“以之为”的省略，“为”是动词，意为“当作、作为”。B项不同：“乃自径道还郡以待之”中“以”是连词，表目的，相当于“来”；“以其从弟廙为荆州刺史”中“以”是介词，意为“用、任用”。C项相同：“攀等以侃始灭大贼，而更被黜”意为陶侃刚消灭大敌，却反被贬斥；“安有断人左手而右手不应者乎”意为哪有砍断人的左手，右手却不反应的呢。两个“而”都是连词，表转折，意为“却”。D项不同：“周访与侃亲姻”中“与”是介词，意为“和、跟”；“梅陶与亲人书”中“与”是介词，意为“给”。故选C。",
+                "inputSha256": "7ad4bb12561bfaea85f1162a841229f44db6393749c80fc26e5fd11398f4af27",
+                "generatedAt": "2026-10-03T00:30:26.676473+00:00",
+                "uncertainties": [
+                  "C项后句“而”也有人理解为表顺承或假设的连接，但联系语境，“砍断左手而右手不响应”含有违反常理的转折意味，判为转折较稳妥。"
+                ],
+                "selectedOptions": [
+                  "C"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
+                  "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
+                  "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "0a70f47f45913e1b4f4217fdd9ecd2e419b0911c8c12751590890985d9445e0b"
+              }
+            },
+            "inputContextSha256": "f3fc4e7cee6ee5ab33ef8fb822e083e179d745ffc22d6bd2ef4416b1cf00c0bf"
           }
-        },
-        "gpt_6_astra_before_context_review": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
-          "text": "答案：C。‘始灭大贼，而更被黜’说刚立大功却遭贬斥；‘断人左手而右手不应’设想损伤一部分却得不到另一部分反应，都是转折。A项前‘为’属于为……所……的被动格式，后‘为’属于以为美谈，表示当作。B项前‘以’引出返回郡中等待的目的，后‘以’引出被任命的人。D项前‘与’联结互为姻亲的两人，后‘与’表示致信或给予书信所指向的对象；后一句‘书’读作写信还是书信，可以影响‘与’的词类标签，不能据此改判C。",
-          "inputSha256": "7ad4bb12561bfaea85f1162a841229f44db6393749c80fc26e5fd11398f4af27",
-          "generatedAt": "2026-10-03T00:07:56.018Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
-          }
-        },
-        "claude_opus_5_5_initial": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答（修订前存档）",
-          "text": "答案：C。\nA项不同：“为杜弢所困”中“为……所”表被动，“为”是介词，可译为“被”；“朝野以为美谈”中“以为”是“以之为”的省略，“为”是动词，意为“当作、作为”。B项不同：“乃自径道还郡以待之”中“以”是连词，表目的，相当于“来”；“以其从弟廙为荆州刺史”中“以”是介词，意为“用、任用”。C项相同：“攀等以侃始灭大贼，而更被黜”意为陶侃刚消灭大敌，却反被贬斥；“安有断人左手而右手不应者乎”意为哪有砍断人的左手，右手却不反应的呢。两个“而”都是连词，表转折，意为“却”。D项不同：“周访与侃亲姻”中“与”是介词，意为“和、跟”；“梅陶与亲人书”中“与”是介词，意为“给”。故选C。",
-          "inputSha256": "7ad4bb12561bfaea85f1162a841229f44db6393749c80fc26e5fd11398f4af27",
-          "generatedAt": "2026-10-03T00:30:26.676473+00:00",
-          "uncertainties": [
-            "C项后句“而”也有人理解为表顺承或假设的连接，但联系语境，“砍断左手而右手不响应”含有违反常理的转折意味，判为转折较稳妥。"
-          ],
-          "selectedOptions": [
-            "C"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
-            "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
-            "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
-            "stage": "independent"
-          },
-          "inputContextSha256": "0a70f47f45913e1b4f4217fdd9ecd2e419b0911c8c12751590890985d9445e0b"
         }
-      },
-      "inputContextSha256": "f3fc4e7cee6ee5ab33ef8fb822e083e179d745ffc22d6bd2ef4416b1cf00c0bf"
+      ],
+      "inputPresentationSha256": "9b8dceae781a3f37435737561fb9c71b885565e1f9ab933e0da7dcd812c08e4b"
     },
     {
       "id": "2025-guwen:2",
@@ -4895,207 +4945,299 @@
     {
       "id": "2026-guwen:1",
       "inputSha256": "236b151da8b8d97a1fb58e76ab66134a2577d3180ea977b71c7008cdc34100b6",
-      "status": "reviewed",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "D"
-      ],
-      "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。",
+      "correctOptions": [],
+      "explanation": "原扫描标记已补齐；旧双模型全文及其旧题面保留为历史。本轮本人完整重答已另版冻结，待最后Claude核对后裁定。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:05:38.552Z",
+      "reviewedAt": "2026-10-04T07:17:50.351Z",
       "sources": [
         {
           "type": "source_material",
           "title": "站内2026北京卷原题及完整材料"
         }
       ],
-      "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 完整附注复核",
-          "text": "答案：D。‘敦意解’承接梅陶等人的劝说，指王敦的杀意、怒意消解，不是‘懂得’。刘弘早知陶侃忠诚能干，‘得’为知晓；‘逆击’为迎击来敌；钱凤嫉妒功劳而多次诋毁，‘疾’为嫉妒，A、B、C均合语境。",
-          "inputSha256": "236b151da8b8d97a1fb58e76ab66134a2577d3180ea977b71c7008cdc34100b6",
-          "generatedAt": "2026-10-03T03:05:38.552Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review_reaffirmation",
-            "evidence": "answers-six-sites-20261002/root-context-reading-decisions.json",
-            "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "priorAnswerSha256": "91325ecfbad92cd95adb0e34e92acefd456e71836ce308e48bd36eff216bd876",
-            "annotationEffect": "已完整重读材料、题纲、题问、材料内原注及2026三源核对说明。敦意解为怒意杀意消解；record.annotation仅为来源说明，本次实际纳入复核，未追认成旧作答时已见。"
+      "modelAnswers": {},
+      "inputContextSha256": "2ca41b4dc0b673040a98fefcfe64eec0ec01767d7419a9c0bb64f20ce1beed72",
+      "history": [
+        {
+          "source": {
+            "id": "2026-guwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "文言文阅读",
+                "text": "陶侃【1】少孤贫，为郡督邮。长沙太守过庐江，见而异之，命其子结友而去。后察孝廉，至洛阳，人荐之，侃由是知名。既克贼，刘弘【2】谓侃曰：“吾昔为羊公【3】参军，谓吾后当居身处。今观卿，必继老夫矣。”\n\n顺阳太守张光诣荆州讨陈敏，刘弘遣侃等屯夏口。侃与敏同郡，又同岁举吏。扈怀言于弘曰：“侃居大郡，统强兵，脱有异志，则荆州无东门矣！”弘曰：“侃之忠能，吾得之已久，必无是也。”侃闻之，遣子及兄子诣弘以自固。弘引为参军，资而遣之，曰：“贤叔征行，君祖母年高，便可归也。匹夫之交，尚不负心，况大丈夫乎！”\n\n周顗【4】始至州，流民叛迎杜弢【5】，弢别将袭沔阳，顗狼狈失据。征讨都督王敦【6】遣侃等共击弢。周顗屯浮水城，为杜弢所困。侃曰：“弢必步向武昌。”乃自径道还郡以待之，弢果来攻。侃使朱伺逆击，大破之，弢遁归长沙。侃告捷于敦，敦曰：“若无陶侯，便失荆州矣！”乃表侃为荆州刺史。\n\n王敦嬖人钱凤，疾侃之功，屡毁之。侃将还江陵，欲诣敦自陈。朱伺等谏曰：“公入，必不出。”侃不从，既至，敦留侃不遣，左转广州刺史，以其从弟廙为荆州刺史。荆州将吏郑攀等诣敦，上书留侃，敦怒，不许。攀等以侃始灭大贼，而更被黜，众情愤惋。后攀等袭廙，敦意攀承侃风旨，被甲持矛将杀侃，出而复还者数四。侃正色曰：“使君雄断，当裁天下，何此不决乎！”因起如厕。梅陶等言于敦曰：“周访与侃亲姻，如左右手，安有断人左手而右手不应者乎！”敦意解，乃设盛馔以饯之，侃便夜发。\n\n太宁三年五月，以侃为征西大将军、都督荆湘雍梁四州诸军事、荆州刺史，荆州士女相庆。\n\n咸和七年十一月，进侃为大将军，剑履上殿，入朝不趋，侃固辞不受。侃晚年深以满盈自惧，不预朝权，屡欲告老归国，佐吏等苦留之。九年六月，侃疾笃，上表逊位。将归长沙，军资、器仗、牛马、舟船皆有定簿，封印仓库，自加管钥，以付右司马，然后登舟，朝野以为美谈。乙卯，薨于樊溪。侃在军四十一年，自南陵迄于白帝，数千里中，路不拾遗。及薨，梅陶与亲人书曰：“陆抗诸人不能及也。”\n\n（取材于《晋书》《资治通鉴》）\n\n注释：【1】陶侃：晋朝将领。【2】刘弘：晋朝将领，曾是羊祜麾下参军。【3】羊公：羊祜，晋朝将领。【4】周顗：晋朝大臣。【5】杜弢：流民首领。【6】王敦：晋朝大臣，后叛乱。"
+              }
+            ],
+            "topic": "二、本大题共5小题，共18分。阅读下面文言文，完成6—10题。",
+            "annotation": "2026年普通高等学校招生全国统一考试（北京卷）语文；题面经三处独立来源交叉核对（原卷扫描件 + 两个独立转录本）",
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "6. 下列对语句中加点词的解释，不正确的一项是\nA. 吾得之已久　得：知晓\nB. 侃使朱伺逆击　逆：迎战\nC. 疾侃之功　疾：嫉妒\nD. 敦意解　解：懂得",
+                "score": 3,
+                "sourceQuestionNumber": "6",
+                "sourceType": "single_choice"
+              }
+            ]
           },
-          "inputContextSha256": "2ca41b4dc0b673040a98fefcfe64eec0ec01767d7419a9c0bb64f20ce1beed72"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 来源复核后修订",
-          "text": "答案：D。\n选D。A项：“侃之忠能，吾得之已久”，意为陶侃的忠诚和才能我早已了解，“得”解作“知晓”正确。B项：“逆击”即迎上去攻击，“逆”解作“迎战（迎）”正确。C项：“疾侃之功”即嫉妒陶侃的功劳，“疾”通“嫉”，正确。D项：“敦意解”指王敦的怒气、杀意消除了，“解”应为“消解、消除”，不是“懂得”，错误。",
-          "inputSha256": "236b151da8b8d97a1fb58e76ab66134a2577d3180ea977b71c7008cdc34100b6",
-          "inputContextSha256": "2ca41b4dc0b673040a98fefcfe64eec0ec01767d7419a9c0bb64f20ce1beed72",
-          "generatedAt": "2026-10-03T03:05:14.386459+00:00",
-          "uncertainties": [],
-          "selectedOptions": [
-            "D"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-context-reconcile-reading-result.json",
-            "inputPromptSha256": "c7324b4f5b82b1b4b9c38fb139c47abe9c8b8a58a24471791b2fdb2804fcf246",
-            "responseStreamSha256": "a8b82470e7b57edcc275b4761a4601213fe04bb2903bddf6100a54a5d9dddc78",
-            "stage": "source_review"
+          "review": {
+            "id": "2026-guwen:1",
+            "inputSha256": "236b151da8b8d97a1fb58e76ab66134a2577d3180ea977b71c7008cdc34100b6",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "D"
+            ],
+            "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:05:38.552Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2026北京卷原题及完整材料"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "答案：D。‘敦意解’承接梅陶等人的劝说，指王敦的杀意、怒意消解，不是‘懂得’。刘弘早知陶侃忠诚能干，‘得’为知晓；‘逆击’为迎击来敌；钱凤嫉妒功劳而多次诋毁，‘疾’为嫉妒，A、B、C均合语境。",
+                "inputSha256": "236b151da8b8d97a1fb58e76ab66134a2577d3180ea977b71c7008cdc34100b6",
+                "generatedAt": "2026-10-03T03:05:38.552Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-reading-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "91325ecfbad92cd95adb0e34e92acefd456e71836ce308e48bd36eff216bd876",
+                  "annotationEffect": "已完整重读材料、题纲、题问、材料内原注及2026三源核对说明。敦意解为怒意杀意消解；record.annotation仅为来源说明，本次实际纳入复核，未追认成旧作答时已见。"
+                },
+                "inputContextSha256": "2ca41b4dc0b673040a98fefcfe64eec0ec01767d7419a9c0bb64f20ce1beed72"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "答案：D。\n选D。A项：“侃之忠能，吾得之已久”，意为陶侃的忠诚和才能我早已了解，“得”解作“知晓”正确。B项：“逆击”即迎上去攻击，“逆”解作“迎战（迎）”正确。C项：“疾侃之功”即嫉妒陶侃的功劳，“疾”通“嫉”，正确。D项：“敦意解”指王敦的怒气、杀意消除了，“解”应为“消解、消除”，不是“懂得”，错误。",
+                "inputSha256": "236b151da8b8d97a1fb58e76ab66134a2577d3180ea977b71c7008cdc34100b6",
+                "inputContextSha256": "2ca41b4dc0b673040a98fefcfe64eec0ec01767d7419a9c0bb64f20ce1beed72",
+                "generatedAt": "2026-10-03T03:05:14.386459+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "D"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-context-reconcile-reading-result.json",
+                  "inputPromptSha256": "c7324b4f5b82b1b4b9c38fb139c47abe9c8b8a58a24471791b2fdb2804fcf246",
+                  "responseStreamSha256": "a8b82470e7b57edcc275b4761a4601213fe04bb2903bddf6100a54a5d9dddc78",
+                  "stage": "source_review"
+                }
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "答案：D。‘敦意解’承接梅陶等人的劝说，指王敦的杀意、怒意消解，不是‘懂得’。刘弘早知陶侃忠诚能干，‘得’为知晓；‘逆击’为迎击来敌；钱凤嫉妒功劳而多次诋毁，‘疾’为嫉妒，A、B、C均合语境。",
+                "inputSha256": "236b151da8b8d97a1fb58e76ab66134a2577d3180ea977b71c7008cdc34100b6",
+                "generatedAt": "2026-10-03T00:23:44.075Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+                }
+              },
+              "claude_opus_5_5_initial": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答（修订前存档）",
+                "text": "答案：D。\nA项正确，“吾得之已久”指刘弘了解、知晓陶侃的忠诚和才能已经很久了，“得”可释为知晓、了解。B项正确，“逆击”即迎击，“逆”指迎、迎战。C项正确，钱凤“疾侃之功”，即嫉妒陶侃的功劳，“疾”通“嫉”。D项错误，“敦意解”指王敦的疑虑、杀意消除了，“解”是消除、消散，不是“懂得”。故选D。",
+                "inputSha256": "236b151da8b8d97a1fb58e76ab66134a2577d3180ea977b71c7008cdc34100b6",
+                "generatedAt": "2026-10-03T00:30:26.676473+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "D"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
+                  "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
+                  "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "1a69464314c3b349543ff945455eea0085d166b097fb7528e7e03393f1f20c19"
+              }
+            },
+            "inputContextSha256": "2ca41b4dc0b673040a98fefcfe64eec0ec01767d7419a9c0bb64f20ce1beed72"
           }
-        },
-        "gpt_6_astra_before_context_review": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
-          "text": "答案：D。‘敦意解’承接梅陶等人的劝说，指王敦的杀意、怒意消解，不是‘懂得’。刘弘早知陶侃忠诚能干，‘得’为知晓；‘逆击’为迎击来敌；钱凤嫉妒功劳而多次诋毁，‘疾’为嫉妒，A、B、C均合语境。",
-          "inputSha256": "236b151da8b8d97a1fb58e76ab66134a2577d3180ea977b71c7008cdc34100b6",
-          "generatedAt": "2026-10-03T00:23:44.075Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
-          }
-        },
-        "claude_opus_5_5_initial": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答（修订前存档）",
-          "text": "答案：D。\nA项正确，“吾得之已久”指刘弘了解、知晓陶侃的忠诚和才能已经很久了，“得”可释为知晓、了解。B项正确，“逆击”即迎击，“逆”指迎、迎战。C项正确，钱凤“疾侃之功”，即嫉妒陶侃的功劳，“疾”通“嫉”。D项错误，“敦意解”指王敦的疑虑、杀意消除了，“解”是消除、消散，不是“懂得”。故选D。",
-          "inputSha256": "236b151da8b8d97a1fb58e76ab66134a2577d3180ea977b71c7008cdc34100b6",
-          "generatedAt": "2026-10-03T00:30:26.676473+00:00",
-          "uncertainties": [],
-          "selectedOptions": [
-            "D"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
-            "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
-            "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
-            "stage": "independent"
-          },
-          "inputContextSha256": "1a69464314c3b349543ff945455eea0085d166b097fb7528e7e03393f1f20c19"
         }
-      },
-      "inputContextSha256": "2ca41b4dc0b673040a98fefcfe64eec0ec01767d7419a9c0bb64f20ce1beed72"
+      ],
+      "inputPresentationSha256": "ae47ae8e537abba0db136a170d83db41b075e76cde3e37e839273bcd937a7705"
     },
     {
       "id": "2026-guwen:3",
       "inputSha256": "978edc6e9ceb4ec491966dd36e80916115216cafbdda808a49988b24a381d9be",
-      "status": "reviewed",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "A"
-      ],
-      "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。",
+      "correctOptions": [],
+      "explanation": "原扫描标记已补齐；旧双模型全文及其旧题面保留为历史。本轮本人完整重答已另版冻结，待最后Claude核对后裁定。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:05:38.552Z",
+      "reviewedAt": "2026-10-04T07:17:50.351Z",
       "sources": [
         {
           "type": "source_material",
           "title": "站内2026北京卷原题及完整材料"
         }
       ],
-      "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 完整附注复核",
-          "text": "答案：A。羊祜所说的是刘弘‘以后’会担任自己当时的职位。‘吾’指刘弘，‘后’是后来，并非‘我的后人’。B的‘脱’为倘若；C的‘意’为猜想，‘风旨’指暗示的意旨；D结合陶侃辞让高位、不参与朝廷权争可成立。",
-          "inputSha256": "978edc6e9ceb4ec491966dd36e80916115216cafbdda808a49988b24a381d9be",
-          "generatedAt": "2026-10-03T03:05:38.552Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review_reaffirmation",
-            "evidence": "answers-six-sites-20261002/root-context-reading-decisions.json",
-            "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "priorAnswerSha256": "68eef727d38ebac1003d8295dab6a0b4ee7ec6e732c0af855174ea59026ca2f2",
-            "annotationEffect": "已完整重读材料、题纲、题问、材料内原注及2026三源核对说明。后是以后，不是后人；record.annotation仅为来源说明，本次实际纳入复核，未追认成旧作答时已见。",
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "bfc6b567b6d80cd40b3f24c94dcf4b941b48010b876d75056b1841f49445be65"
-            }
-          },
-          "inputContextSha256": "bfc6b567b6d80cd40b3f24c94dcf4b941b48010b876d75056b1841f49445be65",
-          "inputPresentationSha256": "008560866b41dc8b374b64a011db63f6a77ee80a70fc39374e5a847528256fb0"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 来源复核后修订",
-          "text": "答案：A。\n选A。A项：“谓吾后当居身处”的主语是羊公，“后”是“以后、将来”，不是“后人”；“身”是羊公自称。句意是“（羊公）说我日后会居于他那样的位置”。下文“今观卿，必继老夫矣”也印证这是说职位的接续。该项理解错误。B项：“脱”是“倘若”，理解正确。C项：“意”是“猜测、怀疑”，“承……风旨”是“秉承……的意图”，理解正确。D项：“满盈”指权位功名达到极盛，“以满盈自惧”即因位高权重而自感恐惧，理解正确。",
-          "inputSha256": "978edc6e9ceb4ec491966dd36e80916115216cafbdda808a49988b24a381d9be",
-          "inputContextSha256": "bfc6b567b6d80cd40b3f24c94dcf4b941b48010b876d75056b1841f49445be65",
-          "generatedAt": "2026-10-03T03:05:14.386459+00:00",
-          "uncertainties": [],
-          "selectedOptions": [
-            "A"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-context-reconcile-reading-result.json",
-            "inputPromptSha256": "c7324b4f5b82b1b4b9c38fb139c47abe9c8b8a58a24471791b2fdb2804fcf246",
-            "responseStreamSha256": "a8b82470e7b57edcc275b4761a4601213fe04bb2903bddf6100a54a5d9dddc78",
-            "stage": "source_review",
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "bfc6b567b6d80cd40b3f24c94dcf4b941b48010b876d75056b1841f49445be65"
-            }
-          },
-          "inputPresentationSha256": "008560866b41dc8b374b64a011db63f6a77ee80a70fc39374e5a847528256fb0"
-        },
-        "gpt_6_astra_before_context_review": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
-          "text": "答案：A。羊祜所说的是刘弘‘以后’会担任自己当时的职位。‘吾’指刘弘，‘后’是后来，并非‘我的后人’。B的‘脱’为倘若；C的‘意’为猜想，‘风旨’指暗示的意旨；D结合陶侃辞让高位、不参与朝廷权争可成立。",
-          "inputSha256": "978edc6e9ceb4ec491966dd36e80916115216cafbdda808a49988b24a381d9be",
-          "generatedAt": "2026-10-03T00:23:44.075Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
-          }
-        },
-        "claude_opus_5_5_initial": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答（修订前存档）",
-          "text": "答案：A。\nA项错误。“谓吾后当居身处”意为羊公认为我以后应当会处在他（羊公）的位置上。“吾后”是“我以后”，不是“我的后人”；“身处”指羊公自身所处的地位。下文“今观卿，必继老夫矣”即刘弘说陶侃将来必定接替自己，与羊公当年预言刘弘相互对应，可以印证。B项正确，“脱”是倘若，“异志”是异心，“荆州无东门”即荆州失去东面的门户。C项正确，“意”是猜测、怀疑，“承侃风旨”是秉承陶侃的意图、暗示。D项正确，“满盈”指位高权重、功名盛满，“深以满盈自惧”即深恐因盈满而招祸，与下文辞让大将军殊礼、“不预朝权”“屡欲告老”相合。故选A。",
-          "inputSha256": "978edc6e9ceb4ec491966dd36e80916115216cafbdda808a49988b24a381d9be",
-          "generatedAt": "2026-10-03T00:30:26.676473+00:00",
-          "uncertainties": [],
-          "selectedOptions": [
-            "A"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
-            "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
-            "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
-            "stage": "independent"
-          },
-          "inputContextSha256": "252d2edaa3a1410315a152e4af6aecf711deaf1d4e89afb7e32b48123b945aa3"
-        }
-      },
+      "modelAnswers": {},
       "inputContextSha256": "bfc6b567b6d80cd40b3f24c94dcf4b941b48010b876d75056b1841f49445be65",
-      "inputPresentationSha256": "008560866b41dc8b374b64a011db63f6a77ee80a70fc39374e5a847528256fb0"
+      "inputPresentationSha256": "ab8e41d4adffc1e6941c6f6f9f2275653748553e78f3998ffbc943b71a487011",
+      "history": [
+        {
+          "source": {
+            "id": "2026-guwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "文言文阅读",
+                "text": "陶侃【1】少孤贫，为郡督邮。长沙太守过庐江，见而异之，命其子结友而去。后察孝廉，至洛阳，人荐之，侃由是知名。既克贼，刘弘【2】谓侃曰：“吾昔为羊公【3】参军，谓吾后当居身处。今观卿，必继老夫矣。”\n\n顺阳太守张光诣荆州讨陈敏，刘弘遣侃等屯夏口。侃与敏同郡，又同岁举吏。扈怀言于弘曰：“侃居大郡，统强兵，脱有异志，则荆州无东门矣！”弘曰：“侃之忠能，吾得之已久，必无是也。”侃闻之，遣子及兄子诣弘以自固。弘引为参军，资而遣之，曰：“贤叔征行，君祖母年高，便可归也。匹夫之交，尚不负心，况大丈夫乎！”\n\n周顗【4】始至州，流民叛迎杜弢【5】，弢别将袭沔阳，顗狼狈失据。征讨都督王敦【6】遣侃等共击弢。周顗屯浮水城，为杜弢所困。侃曰：“弢必步向武昌。”乃自径道还郡以待之，弢果来攻。侃使朱伺逆击，大破之，弢遁归长沙。侃告捷于敦，敦曰：“若无陶侯，便失荆州矣！”乃表侃为荆州刺史。\n\n王敦嬖人钱凤，疾侃之功，屡毁之。侃将还江陵，欲诣敦自陈。朱伺等谏曰：“公入，必不出。”侃不从，既至，敦留侃不遣，左转广州刺史，以其从弟廙为荆州刺史。荆州将吏郑攀等诣敦，上书留侃，敦怒，不许。攀等以侃始灭大贼，而更被黜，众情愤惋。后攀等袭廙，敦意攀承侃风旨，被甲持矛将杀侃，出而复还者数四。侃正色曰：“使君雄断，当裁天下，何此不决乎！”因起如厕。梅陶等言于敦曰：“周访与侃亲姻，如左右手，安有断人左手而右手不应者乎！”敦意解，乃设盛馔以饯之，侃便夜发。\n\n太宁三年五月，以侃为征西大将军、都督荆湘雍梁四州诸军事、荆州刺史，荆州士女相庆。\n\n咸和七年十一月，进侃为大将军，剑履上殿，入朝不趋，侃固辞不受。侃晚年深以满盈自惧，不预朝权，屡欲告老归国，佐吏等苦留之。九年六月，侃疾笃，上表逊位。将归长沙，军资、器仗、牛马、舟船皆有定簿，封印仓库，自加管钥，以付右司马，然后登舟，朝野以为美谈。乙卯，薨于樊溪。侃在军四十一年，自南陵迄于白帝，数千里中，路不拾遗。及薨，梅陶与亲人书曰：“陆抗诸人不能及也。”\n\n（取材于《晋书》《资治通鉴》）\n\n注释：【1】陶侃：晋朝将领。【2】刘弘：晋朝将领，曾是羊祜麾下参军。【3】羊公：羊祜，晋朝将领。【4】周顗：晋朝大臣。【5】杜弢：流民首领。【6】王敦：晋朝大臣，后叛乱。"
+              }
+            ],
+            "topic": "二、本大题共5小题，共18分。阅读下面文言文，完成6—10题。",
+            "annotation": "2026年普通高等学校招生全国统一考试（北京卷）语文；题面经三处独立来源交叉核对（原卷扫描件 + 两个独立转录本）",
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 3,
+                "id": "q3",
+                "text": "8. 下列对文中语句的理解，不正确的一项是\nA. 谓吾后当居身处——认为我的后人一定能够到达羊公的地位\nB. 脱有异志，则荆州无东门矣——倘若陶侃有异心，荆州就失去东大门了\nC. 敦意攀承侃风旨——王敦猜测郑攀接受了陶侃所暗示的意旨\nD. 侃晚年深以满盈自惧——陶侃晚年深恐自己因为位高权重而遭祸",
+                "score": 3,
+                "sourceQuestionNumber": "8",
+                "sourceType": "single_choice"
+              }
+            ]
+          },
+          "review": {
+            "id": "2026-guwen:3",
+            "inputSha256": "978edc6e9ceb4ec491966dd36e80916115216cafbdda808a49988b24a381d9be",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "A"
+            ],
+            "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:05:38.552Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2026北京卷原题及完整材料"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "答案：A。羊祜所说的是刘弘‘以后’会担任自己当时的职位。‘吾’指刘弘，‘后’是后来，并非‘我的后人’。B的‘脱’为倘若；C的‘意’为猜想，‘风旨’指暗示的意旨；D结合陶侃辞让高位、不参与朝廷权争可成立。",
+                "inputSha256": "978edc6e9ceb4ec491966dd36e80916115216cafbdda808a49988b24a381d9be",
+                "generatedAt": "2026-10-03T03:05:38.552Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-reading-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "68eef727d38ebac1003d8295dab6a0b4ee7ec6e732c0af855174ea59026ca2f2",
+                  "annotationEffect": "已完整重读材料、题纲、题问、材料内原注及2026三源核对说明。后是以后，不是后人；record.annotation仅为来源说明，本次实际纳入复核，未追认成旧作答时已见。",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "bfc6b567b6d80cd40b3f24c94dcf4b941b48010b876d75056b1841f49445be65"
+                  }
+                },
+                "inputContextSha256": "bfc6b567b6d80cd40b3f24c94dcf4b941b48010b876d75056b1841f49445be65",
+                "inputPresentationSha256": "008560866b41dc8b374b64a011db63f6a77ee80a70fc39374e5a847528256fb0"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "答案：A。\n选A。A项：“谓吾后当居身处”的主语是羊公，“后”是“以后、将来”，不是“后人”；“身”是羊公自称。句意是“（羊公）说我日后会居于他那样的位置”。下文“今观卿，必继老夫矣”也印证这是说职位的接续。该项理解错误。B项：“脱”是“倘若”，理解正确。C项：“意”是“猜测、怀疑”，“承……风旨”是“秉承……的意图”，理解正确。D项：“满盈”指权位功名达到极盛，“以满盈自惧”即因位高权重而自感恐惧，理解正确。",
+                "inputSha256": "978edc6e9ceb4ec491966dd36e80916115216cafbdda808a49988b24a381d9be",
+                "inputContextSha256": "bfc6b567b6d80cd40b3f24c94dcf4b941b48010b876d75056b1841f49445be65",
+                "generatedAt": "2026-10-03T03:05:14.386459+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "A"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-context-reconcile-reading-result.json",
+                  "inputPromptSha256": "c7324b4f5b82b1b4b9c38fb139c47abe9c8b8a58a24471791b2fdb2804fcf246",
+                  "responseStreamSha256": "a8b82470e7b57edcc275b4761a4601213fe04bb2903bddf6100a54a5d9dddc78",
+                  "stage": "source_review",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "bfc6b567b6d80cd40b3f24c94dcf4b941b48010b876d75056b1841f49445be65"
+                  }
+                },
+                "inputPresentationSha256": "008560866b41dc8b374b64a011db63f6a77ee80a70fc39374e5a847528256fb0"
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "答案：A。羊祜所说的是刘弘‘以后’会担任自己当时的职位。‘吾’指刘弘，‘后’是后来，并非‘我的后人’。B的‘脱’为倘若；C的‘意’为猜想，‘风旨’指暗示的意旨；D结合陶侃辞让高位、不参与朝廷权争可成立。",
+                "inputSha256": "978edc6e9ceb4ec491966dd36e80916115216cafbdda808a49988b24a381d9be",
+                "generatedAt": "2026-10-03T00:23:44.075Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+                }
+              },
+              "claude_opus_5_5_initial": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答（修订前存档）",
+                "text": "答案：A。\nA项错误。“谓吾后当居身处”意为羊公认为我以后应当会处在他（羊公）的位置上。“吾后”是“我以后”，不是“我的后人”；“身处”指羊公自身所处的地位。下文“今观卿，必继老夫矣”即刘弘说陶侃将来必定接替自己，与羊公当年预言刘弘相互对应，可以印证。B项正确，“脱”是倘若，“异志”是异心，“荆州无东门”即荆州失去东面的门户。C项正确，“意”是猜测、怀疑，“承侃风旨”是秉承陶侃的意图、暗示。D项正确，“满盈”指位高权重、功名盛满，“深以满盈自惧”即深恐因盈满而招祸，与下文辞让大将军殊礼、“不预朝权”“屡欲告老”相合。故选A。",
+                "inputSha256": "978edc6e9ceb4ec491966dd36e80916115216cafbdda808a49988b24a381d9be",
+                "generatedAt": "2026-10-03T00:30:26.676473+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "A"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
+                  "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
+                  "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "252d2edaa3a1410315a152e4af6aecf711deaf1d4e89afb7e32b48123b945aa3"
+              }
+            },
+            "inputContextSha256": "bfc6b567b6d80cd40b3f24c94dcf4b941b48010b876d75056b1841f49445be65",
+            "inputPresentationSha256": "008560866b41dc8b374b64a011db63f6a77ee80a70fc39374e5a847528256fb0"
+          }
+        }
+      ]
     },
     {
       "id": "2026-guwen:4",
@@ -5882,98 +6024,144 @@
     {
       "id": "2026-sanwen:1",
       "inputSha256": "2e0d78bedd10ee8aa31c08cfc95f1c0234bc0000d286cddee646366b01a36f0e",
-      "status": "reviewed",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "B"
-      ],
-      "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。",
+      "correctOptions": [],
+      "explanation": "原扫描标记已补齐；旧双模型全文及其旧题面保留为历史。本轮本人完整重答已另版冻结，待最后Claude核对后裁定。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:05:38.552Z",
+      "reviewedAt": "2026-10-04T07:17:50.351Z",
       "sources": [
         {
           "type": "source_material",
           "title": "站内2026北京卷原题及完整材料"
         }
       ],
-      "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 完整附注复核",
-          "text": "答案：B。这里的‘森然’写陡峭岩壁高耸、令人凛然的形态与气势；上下文说岩壁如刀劈、几无坡度，并非形容植被茂密。其他解释均与橹声、开阔视野和低声自语的具体语境相合。",
-          "inputSha256": "2e0d78bedd10ee8aa31c08cfc95f1c0234bc0000d286cddee646366b01a36f0e",
-          "generatedAt": "2026-10-03T03:05:38.552Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review_reaffirmation",
-            "evidence": "answers-six-sites-20261002/root-context-reading-decisions.json",
-            "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "priorAnswerSha256": "b12166dcdc04820dcb3e5a85bdfb037a768f938351247ab5a3f56103c830f820",
-            "annotationEffect": "已完整重读材料、题纲、题问、材料内原注及2026三源核对说明。森然是峭壁形势，不是植被；record.annotation仅为来源说明，本次实际纳入复核，未追认成旧作答时已见。"
+      "modelAnswers": {},
+      "inputContextSha256": "5e479b2135e3f319defd21b1c10e8630fd63c354157432a14e1d949db4449db4",
+      "history": [
+        {
+          "source": {
+            "id": "2026-sanwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "文学类文本阅读",
+                "text": "石魂\n\n说起江南，总是使人先联想到水，纵横交错的河沟织成一张张奇妙的水网。江南的风景自然都和水联系在一起：飘逸的帆，咿呀有韵的橹声，云一般覆盖水面的莲荷、菱花……江南人的性格似乎也和水有关：灵动、柔和。最近去绍兴访问，我对江南和江南人有了新的认识。\n\n绍兴确实是在水的环绕之中，但引起我注意的，竟是绍兴城里的石头。这里到处都是石头——石板路、石墙、石牌坊、石柱、石廊……最丰富多姿的，是石桥。几座大的石拱桥全是用巨大石块垒砌而成，站在高高的拱桥顶上俯瞰桥下流水，感觉仿佛已登岩峰。绍兴不仅是水城，也是石头城。\n\n绍兴城里的石头采自哪座山，怎样被开采出来，对我而言是个谜。到东湖游览的时候，这个谜有了一部分答案。东湖是绍兴城外的一处风景名胜，山不高却奇崛，湖不大却幽深。使我惊奇的是这里的山，环湖的岩壁如刀劈出一般，从湖面垂直向上，没有任何坡度。船到山下，仰头望去，陡峭的山崖像是要迎头倒压下来。仔细观察，上面很明显地留有斧凿痕迹。听友人介绍，这里原是古采石场，从汉代开始，人们便在这里开山采石。这森然的峭壁正是历代石工斧凿的印迹，而山岩下那一片深不可测的水潭是石工们采石掘出的深坑。\n\n多么不可思议！这奇山奇水，竟是江南石工长年累月劳动的结果。我的耳畔仿佛骤然回荡起一片叮叮当当的斧凿之声，眼前仿佛闪现出金属和岩石撞击的火星。采石的工匠们无意造景，后人却在他们流血流汗的劳动场所发现了世所罕见的奇妙胜景。这是一种不自觉的偶然创造，还是大自然对劳动者的酬答？我无法作结论。那一代又一代锲而不舍开山采石的工匠们是了不起的，他们用双手创造了奇迹。在我的印象中，和大山岩石打交道的开山石工应该是一些剽悍的北方大汉，在江南水乡，竟然也有这样的开山石工，他们是一些什么样的人呢？\n\n友人似乎知道我的心思，他建议到柯岩去看看采石的现场。\n\n第二天一早，船停泊在柯岩的一个小码头。穿过几个江南宅院，视野豁然开朗。一片平坦的水田中，兀然崛起一块高达十余丈的柱状巨石，石柱上大下小，上宽下窄，像一把直立的巨锤，像一只倒扣着的长颈瓶，更像一缕从地底下冒出的烟雾凝固在空中。这是真正的奇观，很难想象这样一块形状奇特的怪石是如何形成的。在它面前，许多闻名遐迩的“飞来石”“飞来峰”都将显得平淡无奇。石柱上端刻有两个古朴的大字：云骨。云是飘忽不定、来去无踪的，云中生骨，谁也不会信，然而把这块奇石称为“云骨”，却令人叫绝。假如云真的有骨头，它的形状大概就应该是这样的。\n\n我正感叹自然造化，友人却告诉我，它是采石工匠们的作品。这里原来都是山，石工们开采了许多年，把这里凿成了平地，云骨是石工们采石时留下的。友人介绍得很平静，我却惊愕得说不出一句话。这些江南石工究竟是一些什么样的人啊！用几把锤子和铁凿，居然能整座整座地凿平大山，这需要何等的毅力、勇气和耐心。\n\n一阵奇异的声音不知从什么地方飘过来，我们循声找到了采石场，展现在眼前的景象我将终生难忘。\n\n这是一个数十米见方的深坑，十几个石工正在坑底挥锤凿石。俯瞰坑底，只看见他们汗水淋漓的古铜色脊背，只看见他们灰蒙蒙的头发，只看见油亮的臂膀和黑色的铁锤在青灰色的岩石上不停地画着一道又一道弧线。他们粗犷的呐喊和铿锵的锤声在石坑中回旋着震荡着，犹如从地层深处涌出的喷泉，带着原始生命强有力的呼啸喷上天空，向四面八方扩散……\n\n成块成方地凿下岩石，并不是一件轻而易举的事情。在石坑内壁上，清晰地留着石工们采石的轨迹，这是一道一道非常整齐的横线，每一道横线都记录着石工们对岩石的一场征伐。他们在十几米深的坑底打出无数深深的凿眼，这些排列整齐的凿眼把坑底分割成许多长方形和正方形，然后他们再将被分割的石块整块撬起。这样的工作确实是炸药和机器无能为力的。就是这样的石工，年复一年、日复一日地挥锤弄凿，锲而不舍地将岩石一层一层地揭起，凿成能够砌屋造桥铺路的石板、石块和石条。是他们，在江南水乡创造出奇迹。\n\n“想不到，水乡竟会有这样的石工……”\n\n我的喃喃自语还是被友人听见了。他微微一笑，问道：“你以为江南人都是柔弱不堪的吗？”没等我作答，他又说出一番意味深长的话：“不要忘记，越王勾践也是绍兴人，卧薪尝胆，报仇雪耻，凭的正是岩石一般的性格！”\n\n又经过云骨了。再看这块巨石，心里有了一些新的念头。它不仅是一块巧夺天工的奇石，更是一座举世无双的丰碑，纪念着世世代代的劳动者血汗凝成的“石魂”。\n\n（取材于赵丽宏20世纪90年代发表的同名文章）"
+              }
+            ],
+            "topic": "四、本大题共4小题，共18分。阅读下面文章，完成16—19题。",
+            "annotation": "2026年普通高等学校招生全国统一考试（北京卷）语文；题面经三处独立来源交叉核对（原卷扫描件 + 两个独立转录本）",
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "16. 下列对文中加点词语的解说，不正确的一项是\nA. 咿呀有韵的橹声　有韵：有节奏\nB. 这森然的峭壁　森然：植被茂密\nC. 视野豁然开朗　豁然开朗：忽然变得敞亮\nD. 我的喃喃自语　喃喃自语：自己小声说的话",
+                "score": 3,
+                "sourceQuestionNumber": "16",
+                "sourceType": "single_choice"
+              }
+            ]
           },
-          "inputContextSha256": "5e479b2135e3f319defd21b1c10e8630fd63c354157432a14e1d949db4449db4"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 来源复核后修订",
-          "text": "答案：B。\n选B。A项：“有韵”指橹声有节奏、有韵律，正确。B项：“森然”在文中形容如刀劈般直立的峭壁高耸陡峭、令人生畏，与植被茂密无关，错误。C项：“豁然开朗”指穿过宅院后眼前一下子变得开阔敞亮，正确。D项：“喃喃自语”在句中作“被友人听见”的对象，指自己小声说的话，正确。",
-          "inputSha256": "2e0d78bedd10ee8aa31c08cfc95f1c0234bc0000d286cddee646366b01a36f0e",
-          "inputContextSha256": "5e479b2135e3f319defd21b1c10e8630fd63c354157432a14e1d949db4449db4",
-          "generatedAt": "2026-10-03T03:05:14.386459+00:00",
-          "uncertainties": [],
-          "selectedOptions": [
-            "B"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-context-reconcile-reading-result.json",
-            "inputPromptSha256": "c7324b4f5b82b1b4b9c38fb139c47abe9c8b8a58a24471791b2fdb2804fcf246",
-            "responseStreamSha256": "a8b82470e7b57edcc275b4761a4601213fe04bb2903bddf6100a54a5d9dddc78",
-            "stage": "source_review"
+          "review": {
+            "id": "2026-sanwen:1",
+            "inputSha256": "2e0d78bedd10ee8aa31c08cfc95f1c0234bc0000d286cddee646366b01a36f0e",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "B"
+            ],
+            "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:05:38.552Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2026北京卷原题及完整材料"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "答案：B。这里的‘森然’写陡峭岩壁高耸、令人凛然的形态与气势；上下文说岩壁如刀劈、几无坡度，并非形容植被茂密。其他解释均与橹声、开阔视野和低声自语的具体语境相合。",
+                "inputSha256": "2e0d78bedd10ee8aa31c08cfc95f1c0234bc0000d286cddee646366b01a36f0e",
+                "generatedAt": "2026-10-03T03:05:38.552Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-reading-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "b12166dcdc04820dcb3e5a85bdfb037a768f938351247ab5a3f56103c830f820",
+                  "annotationEffect": "已完整重读材料、题纲、题问、材料内原注及2026三源核对说明。森然是峭壁形势，不是植被；record.annotation仅为来源说明，本次实际纳入复核，未追认成旧作答时已见。"
+                },
+                "inputContextSha256": "5e479b2135e3f319defd21b1c10e8630fd63c354157432a14e1d949db4449db4"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "答案：B。\n选B。A项：“有韵”指橹声有节奏、有韵律，正确。B项：“森然”在文中形容如刀劈般直立的峭壁高耸陡峭、令人生畏，与植被茂密无关，错误。C项：“豁然开朗”指穿过宅院后眼前一下子变得开阔敞亮，正确。D项：“喃喃自语”在句中作“被友人听见”的对象，指自己小声说的话，正确。",
+                "inputSha256": "2e0d78bedd10ee8aa31c08cfc95f1c0234bc0000d286cddee646366b01a36f0e",
+                "inputContextSha256": "5e479b2135e3f319defd21b1c10e8630fd63c354157432a14e1d949db4449db4",
+                "generatedAt": "2026-10-03T03:05:14.386459+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "B"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-context-reconcile-reading-result.json",
+                  "inputPromptSha256": "c7324b4f5b82b1b4b9c38fb139c47abe9c8b8a58a24471791b2fdb2804fcf246",
+                  "responseStreamSha256": "a8b82470e7b57edcc275b4761a4601213fe04bb2903bddf6100a54a5d9dddc78",
+                  "stage": "source_review"
+                }
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "答案：B。这里的‘森然’写陡峭岩壁高耸、令人凛然的形态与气势；上下文说岩壁如刀劈、几无坡度，并非形容植被茂密。其他解释均与橹声、开阔视野和低声自语的具体语境相合。",
+                "inputSha256": "2e0d78bedd10ee8aa31c08cfc95f1c0234bc0000d286cddee646366b01a36f0e",
+                "generatedAt": "2026-10-03T00:23:44.075Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+                }
+              },
+              "claude_opus_5_5_initial": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答（修订前存档）",
+                "text": "答案：B。\nA项基本正确，“咿呀有韵”形容橹声有节奏、有韵律。B项错误，“森然”形容高耸、阴森，令人生畏。文中说“环湖的岩壁如刀劈出一般”“陡峭的山崖像是要迎头倒压下来”，写的是峭壁陡直森严、令人惊畏，不是植被茂密。C项正确，“豁然开朗”指由狭窄幽暗忽然变得开阔明亮，文中指穿过宅院后视野突然开阔。D项正确，“喃喃自语”指自己小声地自言自语。故选B。",
+                "inputSha256": "2e0d78bedd10ee8aa31c08cfc95f1c0234bc0000d286cddee646366b01a36f0e",
+                "generatedAt": "2026-10-03T00:30:26.676473+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "B"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
+                  "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
+                  "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "cc79eba81114e4d7c1d0e9ae32083c1587d78f51a2b29be9ff882dffe5c4bb6f"
+              }
+            },
+            "inputContextSha256": "5e479b2135e3f319defd21b1c10e8630fd63c354157432a14e1d949db4449db4"
           }
-        },
-        "gpt_6_astra_before_context_review": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
-          "text": "答案：B。这里的‘森然’写陡峭岩壁高耸、令人凛然的形态与气势；上下文说岩壁如刀劈、几无坡度，并非形容植被茂密。其他解释均与橹声、开阔视野和低声自语的具体语境相合。",
-          "inputSha256": "2e0d78bedd10ee8aa31c08cfc95f1c0234bc0000d286cddee646366b01a36f0e",
-          "generatedAt": "2026-10-03T00:23:44.075Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
-          }
-        },
-        "claude_opus_5_5_initial": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答（修订前存档）",
-          "text": "答案：B。\nA项基本正确，“咿呀有韵”形容橹声有节奏、有韵律。B项错误，“森然”形容高耸、阴森，令人生畏。文中说“环湖的岩壁如刀劈出一般”“陡峭的山崖像是要迎头倒压下来”，写的是峭壁陡直森严、令人惊畏，不是植被茂密。C项正确，“豁然开朗”指由狭窄幽暗忽然变得开阔明亮，文中指穿过宅院后视野突然开阔。D项正确，“喃喃自语”指自己小声地自言自语。故选B。",
-          "inputSha256": "2e0d78bedd10ee8aa31c08cfc95f1c0234bc0000d286cddee646366b01a36f0e",
-          "generatedAt": "2026-10-03T00:30:26.676473+00:00",
-          "uncertainties": [],
-          "selectedOptions": [
-            "B"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
-            "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
-            "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
-            "stage": "independent"
-          },
-          "inputContextSha256": "cc79eba81114e4d7c1d0e9ae32083c1587d78f51a2b29be9ff882dffe5c4bb6f"
         }
-      },
-      "inputContextSha256": "5e479b2135e3f319defd21b1c10e8630fd63c354157432a14e1d949db4449db4"
+      ],
+      "inputPresentationSha256": "9476a0b13c811590dddfb90865837a2a16f12c3c65b86dd9ff71b1d47fbabe7c"
     },
     {
       "id": "2026-sanwen:2",
@@ -6087,94 +6275,140 @@
     {
       "id": "2026-sanwen:3",
       "inputSha256": "a064024a6d9091b3cf5ab407c425955ec9e5b85a148a60b9868419167fa8e72c",
-      "status": "reviewed",
+      "status": "draft",
       "kind": "open",
       "correctOptions": [],
-      "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。",
+      "explanation": "原扫描标记已补齐；旧双模型全文及其旧题面保留为历史。本轮本人完整重答已另版冻结，待最后Claude核对后裁定。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:05:38.552Z",
+      "reviewedAt": "2026-10-04T07:17:50.351Z",
       "sources": [
         {
           "type": "source_material",
           "title": "站内2026北京卷原题及完整材料"
         }
       ],
-      "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 完整附注复核",
-          "text": "构思上立足俯瞰深坑的视角，以‘脊背—头发—臂膀与铁锤’三个局部连续聚焦，把汗水、尘土、色彩和挥锤动作组织成劳动群像；末一层从身体静态特征转向反复的动作弧线。作用上，反复的‘只看见’突出眼前景象对作者的强烈冲击，长短相接的排比形成节奏，具体展现劳动的艰苦、力量和持续性，表达震撼、敬意，为后文歌咏劳动者的‘石魂’蓄势。这里既有可见的艰辛，也有生命力，不应只答‘句式整齐、增强气势’。",
-          "inputSha256": "a064024a6d9091b3cf5ab407c425955ec9e5b85a148a60b9868419167fa8e72c",
-          "generatedAt": "2026-10-03T03:05:38.552Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review_reaffirmation",
-            "evidence": "answers-six-sites-20261002/root-context-reading-decisions.json",
-            "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "priorAnswerSha256": "9db0cb0606f6f8d542d4e3bc737b85eb9a9d0570bf3f062c5a6a69a6635d5fff",
-            "annotationEffect": "已完整重读材料、题纲、题问、材料内原注及2026三源核对说明。俯瞰视角，三个身体局部与动态，节奏和敬意分析贴合；record.annotation仅为来源说明，本次实际纳入复核，未追认成旧作答时已见。"
+      "modelAnswers": {},
+      "inputContextSha256": "0b7797c31c584844bc4de4955006877e853a02d0d5c9d9bdb15672c6374478dc",
+      "history": [
+        {
+          "source": {
+            "id": "2026-sanwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "文学类文本阅读",
+                "text": "石魂\n\n说起江南，总是使人先联想到水，纵横交错的河沟织成一张张奇妙的水网。江南的风景自然都和水联系在一起：飘逸的帆，咿呀有韵的橹声，云一般覆盖水面的莲荷、菱花……江南人的性格似乎也和水有关：灵动、柔和。最近去绍兴访问，我对江南和江南人有了新的认识。\n\n绍兴确实是在水的环绕之中，但引起我注意的，竟是绍兴城里的石头。这里到处都是石头——石板路、石墙、石牌坊、石柱、石廊……最丰富多姿的，是石桥。几座大的石拱桥全是用巨大石块垒砌而成，站在高高的拱桥顶上俯瞰桥下流水，感觉仿佛已登岩峰。绍兴不仅是水城，也是石头城。\n\n绍兴城里的石头采自哪座山，怎样被开采出来，对我而言是个谜。到东湖游览的时候，这个谜有了一部分答案。东湖是绍兴城外的一处风景名胜，山不高却奇崛，湖不大却幽深。使我惊奇的是这里的山，环湖的岩壁如刀劈出一般，从湖面垂直向上，没有任何坡度。船到山下，仰头望去，陡峭的山崖像是要迎头倒压下来。仔细观察，上面很明显地留有斧凿痕迹。听友人介绍，这里原是古采石场，从汉代开始，人们便在这里开山采石。这森然的峭壁正是历代石工斧凿的印迹，而山岩下那一片深不可测的水潭是石工们采石掘出的深坑。\n\n多么不可思议！这奇山奇水，竟是江南石工长年累月劳动的结果。我的耳畔仿佛骤然回荡起一片叮叮当当的斧凿之声，眼前仿佛闪现出金属和岩石撞击的火星。采石的工匠们无意造景，后人却在他们流血流汗的劳动场所发现了世所罕见的奇妙胜景。这是一种不自觉的偶然创造，还是大自然对劳动者的酬答？我无法作结论。那一代又一代锲而不舍开山采石的工匠们是了不起的，他们用双手创造了奇迹。在我的印象中，和大山岩石打交道的开山石工应该是一些剽悍的北方大汉，在江南水乡，竟然也有这样的开山石工，他们是一些什么样的人呢？\n\n友人似乎知道我的心思，他建议到柯岩去看看采石的现场。\n\n第二天一早，船停泊在柯岩的一个小码头。穿过几个江南宅院，视野豁然开朗。一片平坦的水田中，兀然崛起一块高达十余丈的柱状巨石，石柱上大下小，上宽下窄，像一把直立的巨锤，像一只倒扣着的长颈瓶，更像一缕从地底下冒出的烟雾凝固在空中。这是真正的奇观，很难想象这样一块形状奇特的怪石是如何形成的。在它面前，许多闻名遐迩的“飞来石”“飞来峰”都将显得平淡无奇。石柱上端刻有两个古朴的大字：云骨。云是飘忽不定、来去无踪的，云中生骨，谁也不会信，然而把这块奇石称为“云骨”，却令人叫绝。假如云真的有骨头，它的形状大概就应该是这样的。\n\n我正感叹自然造化，友人却告诉我，它是采石工匠们的作品。这里原来都是山，石工们开采了许多年，把这里凿成了平地，云骨是石工们采石时留下的。友人介绍得很平静，我却惊愕得说不出一句话。这些江南石工究竟是一些什么样的人啊！用几把锤子和铁凿，居然能整座整座地凿平大山，这需要何等的毅力、勇气和耐心。\n\n一阵奇异的声音不知从什么地方飘过来，我们循声找到了采石场，展现在眼前的景象我将终生难忘。\n\n这是一个数十米见方的深坑，十几个石工正在坑底挥锤凿石。俯瞰坑底，只看见他们汗水淋漓的古铜色脊背，只看见他们灰蒙蒙的头发，只看见油亮的臂膀和黑色的铁锤在青灰色的岩石上不停地画着一道又一道弧线。他们粗犷的呐喊和铿锵的锤声在石坑中回旋着震荡着，犹如从地层深处涌出的喷泉，带着原始生命强有力的呼啸喷上天空，向四面八方扩散……\n\n成块成方地凿下岩石，并不是一件轻而易举的事情。在石坑内壁上，清晰地留着石工们采石的轨迹，这是一道一道非常整齐的横线，每一道横线都记录着石工们对岩石的一场征伐。他们在十几米深的坑底打出无数深深的凿眼，这些排列整齐的凿眼把坑底分割成许多长方形和正方形，然后他们再将被分割的石块整块撬起。这样的工作确实是炸药和机器无能为力的。就是这样的石工，年复一年、日复一日地挥锤弄凿，锲而不舍地将岩石一层一层地揭起，凿成能够砌屋造桥铺路的石板、石块和石条。是他们，在江南水乡创造出奇迹。\n\n“想不到，水乡竟会有这样的石工……”\n\n我的喃喃自语还是被友人听见了。他微微一笑，问道：“你以为江南人都是柔弱不堪的吗？”没等我作答，他又说出一番意味深长的话：“不要忘记，越王勾践也是绍兴人，卧薪尝胆，报仇雪耻，凭的正是岩石一般的性格！”\n\n又经过云骨了。再看这块巨石，心里有了一些新的念头。它不仅是一块巧夺天工的奇石，更是一座举世无双的丰碑，纪念着世世代代的劳动者血汗凝成的“石魂”。\n\n（取材于赵丽宏20世纪90年代发表的同名文章）"
+              }
+            ],
+            "topic": "四、本大题共4小题，共18分。阅读下面文章，完成16—19题。",
+            "annotation": "2026年普通高等学校招生全国统一考试（北京卷）语文；题面经三处独立来源交叉核对（原卷扫描件 + 两个独立转录本）",
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 3,
+                "id": "q3",
+                "text": "18. 文章画线部分，作者用“只看见”组织成排比句，请简要分析其构思及作用。",
+                "score": 6,
+                "sourceQuestionNumber": "18",
+                "sourceType": "subjective"
+              }
+            ]
           },
-          "inputContextSha256": "0b7797c31c584844bc4de4955006877e853a02d0d5c9d9bdb15672c6374478dc"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 来源复核后修订",
-          "text": "构思：\n①紧扣“俯瞰坑底”的视角。从高处往下看，看不到石工的面容，只能看到脊背、头发、臂膀和铁锤，“只看见”如实写出了视角受限时的所见，真实可信。\n②选取局部特写，由静到动。先写汗水淋漓的古铜色脊背、灰蒙蒙的头发，再写臂膀和铁锤在岩石上不停画出弧线，从人的形貌写到劳动的动作，层层推进。\n③注重色彩和质感。古铜色、灰蒙蒙、油亮、黑色、青灰色相互映衬，构成一幅有力度的劳动群像。\n\n作用：\n①突出石工的形象：汗水和石粉写出劳作的艰辛，古铜色脊背、油亮臂膀写出体魄的强健，不停挥锤写出专注和执着。\n②三个“只看见”反复排比，节奏如锤声般一下接一下，增强了气势，传达出“我”目睹场面时的震撼和敬佩。\n③不写个人面目，使石工成为世世代代劳动者的群像，回应前文“他们是一些什么样的人”的疑问，也为结尾赞颂“石魂”作铺垫。",
-          "inputSha256": "a064024a6d9091b3cf5ab407c425955ec9e5b85a148a60b9868419167fa8e72c",
-          "inputContextSha256": "0b7797c31c584844bc4de4955006877e853a02d0d5c9d9bdb15672c6374478dc",
-          "generatedAt": "2026-10-03T03:05:14.386459+00:00",
-          "uncertainties": [
-            "题面未标出画线位置，按含“只看见”的句子（“俯瞰坑底，只看见……一道又一道弧线”）作答。"
-          ],
-          "selectedOptions": [],
-          "assessment": {
-            "matchesConclusion": null
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-context-reconcile-reading-result.json",
-            "inputPromptSha256": "c7324b4f5b82b1b4b9c38fb139c47abe9c8b8a58a24471791b2fdb2804fcf246",
-            "responseStreamSha256": "a8b82470e7b57edcc275b4761a4601213fe04bb2903bddf6100a54a5d9dddc78",
-            "stage": "source_review"
+          "review": {
+            "id": "2026-sanwen:3",
+            "inputSha256": "a064024a6d9091b3cf5ab407c425955ec9e5b85a148a60b9868419167fa8e72c",
+            "status": "reviewed",
+            "kind": "open",
+            "correctOptions": [],
+            "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:05:38.552Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2026北京卷原题及完整材料"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "构思上立足俯瞰深坑的视角，以‘脊背—头发—臂膀与铁锤’三个局部连续聚焦，把汗水、尘土、色彩和挥锤动作组织成劳动群像；末一层从身体静态特征转向反复的动作弧线。作用上，反复的‘只看见’突出眼前景象对作者的强烈冲击，长短相接的排比形成节奏，具体展现劳动的艰苦、力量和持续性，表达震撼、敬意，为后文歌咏劳动者的‘石魂’蓄势。这里既有可见的艰辛，也有生命力，不应只答‘句式整齐、增强气势’。",
+                "inputSha256": "a064024a6d9091b3cf5ab407c425955ec9e5b85a148a60b9868419167fa8e72c",
+                "generatedAt": "2026-10-03T03:05:38.552Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-reading-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "9db0cb0606f6f8d542d4e3bc737b85eb9a9d0570bf3f062c5a6a69a6635d5fff",
+                  "annotationEffect": "已完整重读材料、题纲、题问、材料内原注及2026三源核对说明。俯瞰视角，三个身体局部与动态，节奏和敬意分析贴合；record.annotation仅为来源说明，本次实际纳入复核，未追认成旧作答时已见。"
+                },
+                "inputContextSha256": "0b7797c31c584844bc4de4955006877e853a02d0d5c9d9bdb15672c6374478dc"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "构思：\n①紧扣“俯瞰坑底”的视角。从高处往下看，看不到石工的面容，只能看到脊背、头发、臂膀和铁锤，“只看见”如实写出了视角受限时的所见，真实可信。\n②选取局部特写，由静到动。先写汗水淋漓的古铜色脊背、灰蒙蒙的头发，再写臂膀和铁锤在岩石上不停画出弧线，从人的形貌写到劳动的动作，层层推进。\n③注重色彩和质感。古铜色、灰蒙蒙、油亮、黑色、青灰色相互映衬，构成一幅有力度的劳动群像。\n\n作用：\n①突出石工的形象：汗水和石粉写出劳作的艰辛，古铜色脊背、油亮臂膀写出体魄的强健，不停挥锤写出专注和执着。\n②三个“只看见”反复排比，节奏如锤声般一下接一下，增强了气势，传达出“我”目睹场面时的震撼和敬佩。\n③不写个人面目，使石工成为世世代代劳动者的群像，回应前文“他们是一些什么样的人”的疑问，也为结尾赞颂“石魂”作铺垫。",
+                "inputSha256": "a064024a6d9091b3cf5ab407c425955ec9e5b85a148a60b9868419167fa8e72c",
+                "inputContextSha256": "0b7797c31c584844bc4de4955006877e853a02d0d5c9d9bdb15672c6374478dc",
+                "generatedAt": "2026-10-03T03:05:14.386459+00:00",
+                "uncertainties": [
+                  "题面未标出画线位置，按含“只看见”的句子（“俯瞰坑底，只看见……一道又一道弧线”）作答。"
+                ],
+                "selectedOptions": [],
+                "assessment": {
+                  "matchesConclusion": null
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-context-reconcile-reading-result.json",
+                  "inputPromptSha256": "c7324b4f5b82b1b4b9c38fb139c47abe9c8b8a58a24471791b2fdb2804fcf246",
+                  "responseStreamSha256": "a8b82470e7b57edcc275b4761a4601213fe04bb2903bddf6100a54a5d9dddc78",
+                  "stage": "source_review"
+                }
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "构思上立足俯瞰深坑的视角，以‘脊背—头发—臂膀与铁锤’三个局部连续聚焦，把汗水、尘土、色彩和挥锤动作组织成劳动群像；末一层从身体静态特征转向反复的动作弧线。作用上，反复的‘只看见’突出眼前景象对作者的强烈冲击，长短相接的排比形成节奏，具体展现劳动的艰苦、力量和持续性，表达震撼、敬意，为后文歌咏劳动者的‘石魂’蓄势。这里既有可见的艰辛，也有生命力，不应只答‘句式整齐、增强气势’。",
+                "inputSha256": "a064024a6d9091b3cf5ab407c425955ec9e5b85a148a60b9868419167fa8e72c",
+                "generatedAt": "2026-10-03T00:23:44.075Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+                }
+              },
+              "claude_opus_5_5_initial": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答（修订前存档）",
+                "text": "构思：①视角真实。作者站在坑口“俯瞰坑底”，从这个角度看不见石工的面目，只能看到脊背、头发、臂膀和挥动的铁锤，“只看见”既符合实际所见，又限定了视线。②截取特写。三个分句由人体（脊背、头发）写到人与工具一同运动（臂膀和铁锤画出弧线），由静态到动态，层层推进；并用“古铜色”“灰蒙蒙”“油亮”“黑色”“青灰色”等色彩词，画面感强。\n作用：①突出石工劳动的艰辛和体魄的强健。“汗水淋漓”“灰蒙蒙的头发”（沾满石粉）写出劳作的辛苦，“古铜色脊背”“油亮的臂膀”写出常年劳动锻炼出的强健身躯，“不停地画着一道又一道弧线”写出劳动的持续不息。②塑造群像。不写个人面目，石工就成了无名劳动者的群体形象，象征世世代代默默开山采石的江南石工，与结尾“世世代代的劳动者血汗凝成的‘石魂’”呼应。③排比句式加强语势，节奏铿锵，与下文“粗犷的呐喊和铿锵的锤声”相配合，渲染出震撼人心的劳动场面。“只”字也表明作者的目光完全被这一场景吸引，传达出他的惊叹和敬佩，照应前文“展现在眼前的景象我将终生难忘”。",
+                "inputSha256": "a064024a6d9091b3cf5ab407c425955ec9e5b85a148a60b9868419167fa8e72c",
+                "generatedAt": "2026-10-03T00:30:26.676473+00:00",
+                "uncertainties": [],
+                "selectedOptions": [],
+                "assessment": {
+                  "matchesConclusion": null
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
+                  "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
+                  "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "0d778bea1169c43552ede15b78b0cfbcd0d73bbbfbb8dd7c776c07df8b5a8dff"
+              }
+            },
+            "inputContextSha256": "0b7797c31c584844bc4de4955006877e853a02d0d5c9d9bdb15672c6374478dc"
           }
-        },
-        "gpt_6_astra_before_context_review": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
-          "text": "构思上立足俯瞰深坑的视角，以‘脊背—头发—臂膀与铁锤’三个局部连续聚焦，把汗水、尘土、色彩和挥锤动作组织成劳动群像；末一层从身体静态特征转向反复的动作弧线。作用上，反复的‘只看见’突出眼前景象对作者的强烈冲击，长短相接的排比形成节奏，具体展现劳动的艰苦、力量和持续性，表达震撼、敬意，为后文歌咏劳动者的‘石魂’蓄势。这里既有可见的艰辛，也有生命力，不应只答‘句式整齐、增强气势’。",
-          "inputSha256": "a064024a6d9091b3cf5ab407c425955ec9e5b85a148a60b9868419167fa8e72c",
-          "generatedAt": "2026-10-03T00:23:44.075Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
-          }
-        },
-        "claude_opus_5_5_initial": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答（修订前存档）",
-          "text": "构思：①视角真实。作者站在坑口“俯瞰坑底”，从这个角度看不见石工的面目，只能看到脊背、头发、臂膀和挥动的铁锤，“只看见”既符合实际所见，又限定了视线。②截取特写。三个分句由人体（脊背、头发）写到人与工具一同运动（臂膀和铁锤画出弧线），由静态到动态，层层推进；并用“古铜色”“灰蒙蒙”“油亮”“黑色”“青灰色”等色彩词，画面感强。\n作用：①突出石工劳动的艰辛和体魄的强健。“汗水淋漓”“灰蒙蒙的头发”（沾满石粉）写出劳作的辛苦，“古铜色脊背”“油亮的臂膀”写出常年劳动锻炼出的强健身躯，“不停地画着一道又一道弧线”写出劳动的持续不息。②塑造群像。不写个人面目，石工就成了无名劳动者的群体形象，象征世世代代默默开山采石的江南石工，与结尾“世世代代的劳动者血汗凝成的‘石魂’”呼应。③排比句式加强语势，节奏铿锵，与下文“粗犷的呐喊和铿锵的锤声”相配合，渲染出震撼人心的劳动场面。“只”字也表明作者的目光完全被这一场景吸引，传达出他的惊叹和敬佩，照应前文“展现在眼前的景象我将终生难忘”。",
-          "inputSha256": "a064024a6d9091b3cf5ab407c425955ec9e5b85a148a60b9868419167fa8e72c",
-          "generatedAt": "2026-10-03T00:30:26.676473+00:00",
-          "uncertainties": [],
-          "selectedOptions": [],
-          "assessment": {
-            "matchesConclusion": null
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
-            "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
-            "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
-            "stage": "independent"
-          },
-          "inputContextSha256": "0d778bea1169c43552ede15b78b0cfbcd0d73bbbfbb8dd7c776c07df8b5a8dff"
         }
-      },
-      "inputContextSha256": "0b7797c31c584844bc4de4955006877e853a02d0d5c9d9bdb15672c6374478dc"
+      ],
+      "inputPresentationSha256": "48a80ea7321fa04c32ebe83d68cf7ae9aa1786811c146565ddd823ed5bfe3715"
     },
     {
       "id": "2026-sanwen:4",

@@ -478,10 +478,9 @@ function refreshCatalogStatus() {
 /* =========================================================
  * Annotations: 渲染原文（在文中插入 <span class="anno ...">）
  * ======================================================= */
-function effectiveAnnoType(ann, anchorLen) {
-  // AI 偶尔会把整句标成 "dot"（加点字），实际超过 3 字的应该是画线／波浪
-  if (ann.type === "dot" && anchorLen > 3) return "underline";
-  if (ann.type === "highlight" && anchorLen > 12) return "wave";
+function effectiveAnnoType(ann) {
+  // Reviewed source marks retain their explicit type, including four-character
+  // dotted phrases. Text length cannot establish a different printed mark.
   return ann.type;
 }
 
@@ -496,7 +495,7 @@ function renderMaterialWithAnnotations(text, materialKey, allAnnos, qIndex) {
     const before = text.slice(cursor, ann.start);
     const mid = text.slice(ann.start, ann.end);
     out += escapeHtml(before);
-    const eff = effectiveAnnoType(ann, mid.length);
+    const eff = effectiveAnnoType(ann);
     const cls = `anno anno-${eff}`;
     const active = qIndex && Number(ann.qIndex) === Number(qIndex) ? " active" : "";
     out += `<span class="${cls}${active}" data-q-index="${ann.qIndex}" data-anno-type="${eff}" title="${escapeHtml(ann.rationale || "")}">${escapeHtml(mid)}</span>`;
@@ -618,6 +617,13 @@ function formatQuestionBody(text) {
   return escapeHtml(text)
     .replace(/\*([^*\n]{1,10})\*/g, '<em class="qmark">$1</em>')
     .replace(/\n/g, "<br>");
+}
+
+function renderQuestionBody(rec, question) {
+  const key = `question${question.origQIndex || question.qIndex}`;
+  const marks = (rec.annotations || []).filter(mark => Number(mark.qIndex) === Number(question.qIndex) && mark.material === key);
+  return marks.length ? renderMaterialWithAnnotations(question.text, key, marks, question.qIndex).replace(/\n/g, '<br>')
+    : formatQuestionBody(question.text);
 }
 
 function scrollCurrentQuestionIntoView() {
@@ -793,7 +799,7 @@ function renderWorkpad() {
       <span class="active-question-number">第 ${qIndex} 题</span>
       <span class="active-question-section">${q.sectionLabel ? `${escapeHtml(q.sectionLabel)}${displayScore ? ` · ${displayScore} 分` : ""}` : (displayScore ? `${displayScore} 分` : "完整题干")}</span>
     </header>
-    <div class="active-question-body">${formatQuestionBody(q.text)}</div>
+    <div class="active-question-body">${renderQuestionBody(rec,q)}</div>
     ${q.sourceIdentity ? `<p class="annotation-note">${escapeHtml(questionSourceNotice(q))}</p>` : ""}
     ${scoringNotice ? `<p class="annotation-note">${escapeHtml(scoringNotice)}</p>` : ""}
   `;

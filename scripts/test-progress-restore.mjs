@@ -25,6 +25,30 @@ function fixture({ items = [], authenticated = true, saved = {}, legacy = {}, fa
 const record = corpus.find(r => r.id === '2026-guwen');
 const legacyItem = (state, extra = {}) => ({ siteKey: 'gk', itemKey: `question-${record.legacy_progress_key}`, state, ...extra });
 
+test('printed question dots survive category and annual views, including four-character phrases',()=>{
+  const f=fixture();
+  for(const [id,qIndex,count] of [['2026-guwen',1,4],['2026-guwen',2,8],['2026-sanwen',1,4]]){
+    const category=f.run(`renderQuestionBody(state.byId.get('${id}'),state.byId.get('${id}').questions.find(q=>q.qIndex===${qIndex}))`);
+    const annual=f.run(`(()=>{const e=buildYearExam(2026);return renderQuestionBody(e,e.questions.find(q=>q.origRecId==='${id}'&&q.origQIndex===${qIndex}));})()`);
+    for(const html of [category,annual]){
+      assert.equal((html.match(/anno-dot/g)||[]).length,count);
+      assert.doesNotMatch(html,/anno-underline/);
+      if(id==='2026-sanwen')assert.match(html,/data-anno-type="dot"[^>]*>豁然开朗<\/span>/);
+    }
+  }
+  assert.match(f.run("renderQuestionBody({annotations:[]},{qIndex:1,text:'<script>\\n*加点*'})"),/&lt;script&gt;<br><em class="qmark">加点<\/em>/);
+});
+
+test('printed passage underlines keep the exact source boundaries',()=>{
+  const f=fixture();
+  const html=f.run("(()=>{const r=state.byId.get('2026-sanwen');return renderMaterialWithAnnotations(r.materials[0].text,'material1',r.annotations.filter(a=>a.qIndex===3),3);})()");
+  assert.equal((html.match(/anno-underline/g)||[]).length,1);
+  assert.match(html,/俯瞰坑底，<span[^>]*>只看见/);
+  assert.match(html,/一道又一道弧线<\/span>。他们/);
+  assert.doesNotMatch(html,/anno-dot/);
+  assert.equal(f.run("(()=>{const r=state.byId.get('2026-guwen');return r.annotations.filter(a=>a.qIndex===3&&a.type==='underline').length;})()"),4);
+});
+
 test('all 201 historical records and 612 legacy prompts survive source supplements', () => {
   const historical = corpus.filter(r => r.answer_policy !== 'authority_only');
   assert.equal(historical.length, 201);

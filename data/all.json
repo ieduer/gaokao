@@ -185,7 +185,152 @@
         "sourceType": "subjective"
       }
     ],
-    "annotations": [],
+    "annotations": [
+      {
+        "qIndex": 1,
+        "material": "question1",
+        "type": "dot",
+        "start": 28,
+        "end": 29,
+        "anchor": "得",
+        "rationale": "2026北京卷原扫描页可见标记，本轮逐项核对；保留既有三来源校正文字。"
+      },
+      {
+        "qIndex": 1,
+        "material": "question1",
+        "type": "dot",
+        "start": 45,
+        "end": 46,
+        "anchor": "逆",
+        "rationale": "2026北京卷原扫描页可见标记，本轮逐项核对；保留既有三来源校正文字。"
+      },
+      {
+        "qIndex": 1,
+        "material": "question1",
+        "type": "dot",
+        "start": 56,
+        "end": 57,
+        "anchor": "疾",
+        "rationale": "2026北京卷原扫描页可见标记，本轮逐项核对；保留既有三来源校正文字。"
+      },
+      {
+        "qIndex": 1,
+        "material": "question1",
+        "type": "dot",
+        "start": 71,
+        "end": 72,
+        "anchor": "解",
+        "rationale": "2026北京卷原扫描页可见标记，本轮逐项核对；保留既有三来源校正文字。"
+      },
+      {
+        "qIndex": 2,
+        "material": "question2",
+        "type": "dot",
+        "start": 31,
+        "end": 32,
+        "anchor": "为",
+        "rationale": "2026北京卷原扫描页可见标记，本轮逐项核对；保留既有三来源校正文字。"
+      },
+      {
+        "qIndex": 2,
+        "material": "question2",
+        "type": "dot",
+        "start": 42,
+        "end": 43,
+        "anchor": "为",
+        "rationale": "2026北京卷原扫描页可见标记，本轮逐项核对；保留既有三来源校正文字。"
+      },
+      {
+        "qIndex": 2,
+        "material": "question2",
+        "type": "dot",
+        "start": 55,
+        "end": 56,
+        "anchor": "以",
+        "rationale": "2026北京卷原扫描页可见标记，本轮逐项核对；保留既有三来源校正文字。"
+      },
+      {
+        "qIndex": 2,
+        "material": "question2",
+        "type": "dot",
+        "start": 61,
+        "end": 62,
+        "anchor": "以",
+        "rationale": "2026北京卷原扫描页可见标记，本轮逐项核对；保留既有三来源校正文字。"
+      },
+      {
+        "qIndex": 2,
+        "material": "question2",
+        "type": "dot",
+        "start": 84,
+        "end": 85,
+        "anchor": "而",
+        "rationale": "2026北京卷原扫描页可见标记，本轮逐项核对；保留既有三来源校正文字。"
+      },
+      {
+        "qIndex": 2,
+        "material": "question2",
+        "type": "dot",
+        "start": 97,
+        "end": 98,
+        "anchor": "而",
+        "rationale": "2026北京卷原扫描页可见标记，本轮逐项核对；保留既有三来源校正文字。"
+      },
+      {
+        "qIndex": 2,
+        "material": "question2",
+        "type": "dot",
+        "start": 110,
+        "end": 111,
+        "anchor": "与",
+        "rationale": "2026北京卷原扫描页可见标记，本轮逐项核对；保留既有三来源校正文字。"
+      },
+      {
+        "qIndex": 2,
+        "material": "question2",
+        "type": "dot",
+        "start": 119,
+        "end": 120,
+        "anchor": "与",
+        "rationale": "2026北京卷原扫描页可见标记，本轮逐项核对；保留既有三来源校正文字。"
+      },
+      {
+        "qIndex": 3,
+        "material": "material1",
+        "type": "underline",
+        "start": 79,
+        "end": 86,
+        "anchor": "谓吾后当居身处",
+        "rationale": "2026北京卷原扫描页可见标记，本轮逐项核对；保留既有三来源校正文字。"
+      },
+      {
+        "qIndex": 3,
+        "material": "material1",
+        "type": "underline",
+        "start": 151,
+        "end": 163,
+        "anchor": "脱有异志，则荆州无东门矣",
+        "rationale": "2026北京卷原扫描页可见标记，本轮逐项核对；保留既有三来源校正文字。"
+      },
+      {
+        "qIndex": 3,
+        "material": "material1",
+        "type": "underline",
+        "start": 508,
+        "end": 515,
+        "anchor": "敦意攀承侃风旨",
+        "rationale": "2026北京卷原扫描页可见标记，本轮逐项核对；保留既有三来源校正文字。"
+      },
+      {
+        "qIndex": 3,
+        "material": "material1",
+        "type": "underline",
+        "start": 688,
+        "end": 697,
+        "anchor": "侃晚年深以满盈自惧",
+        "rationale": "2026北京卷原扫描页可见标记，本轮逐项核对；保留既有三来源校正文字。"
+      }
+    ],
     "ai_answers": {
       "1": "Claude Opus 5 本会话核查作答\n答案：D\n\n依据：“敦意解”承上文梅陶等人的劝解而来，“解”是（王敦的杀意）消解、缓解，不是“懂得”，D 错。A“侃之忠能，吾得之已久”，“得”即知晓、了解；B“逆击”即迎击、迎战；C“疾侃之功”即嫉妒。\n核验：与两处网传答案（D）一致，采用。",
       "2": "Claude Opus 5 本会话核查作答\n答案：C\n\n依据：C 两处“而”都是连词表转折（“始灭大贼，而更被黜”“断人左手而右手不应”），用法相同。A“为……所困”的“为”是表被动的介词，“以为美谈”的“为”是动词“作为”。B“以待之”的“以”是连词表目的，“以其从弟廙为荆州刺史”的“以”是介词，相当于“让/把”。D“周访与侃亲姻”的“与”是“和”，“梅陶与亲人书”的“与”是“给”。\n核验：与两处网传答案（C）一致，采用。",
@@ -529,7 +674,89 @@
         "sourceType": "subjective"
       }
     ],
-    "annotations": [],
+    "annotations": [
+      {
+        "qIndex": 1,
+        "material": "material1",
+        "type": "dot",
+        "start": 60,
+        "end": 62,
+        "anchor": "有韵",
+        "rationale": "2026北京卷原扫描页可见标记，本轮逐项核对；保留既有三来源校正文字。"
+      },
+      {
+        "qIndex": 1,
+        "material": "question1",
+        "type": "dot",
+        "start": 30,
+        "end": 32,
+        "anchor": "有韵",
+        "rationale": "2026北京卷原扫描页可见标记，本轮逐项核对；保留既有三来源校正文字。"
+      },
+      {
+        "qIndex": 1,
+        "material": "material1",
+        "type": "dot",
+        "start": 448,
+        "end": 450,
+        "anchor": "森然",
+        "rationale": "2026北京卷原扫描页可见标记，本轮逐项核对；保留既有三来源校正文字。"
+      },
+      {
+        "qIndex": 1,
+        "material": "question1",
+        "type": "dot",
+        "start": 47,
+        "end": 49,
+        "anchor": "森然",
+        "rationale": "2026北京卷原扫描页可见标记，本轮逐项核对；保留既有三来源校正文字。"
+      },
+      {
+        "qIndex": 1,
+        "material": "material1",
+        "type": "dot",
+        "start": 793,
+        "end": 797,
+        "anchor": "豁然开朗",
+        "rationale": "2026北京卷原扫描页可见标记，本轮逐项核对；保留既有三来源校正文字。"
+      },
+      {
+        "qIndex": 1,
+        "material": "question1",
+        "type": "dot",
+        "start": 66,
+        "end": 70,
+        "anchor": "豁然开朗",
+        "rationale": "2026北京卷原扫描页可见标记，本轮逐项核对；保留既有三来源校正文字。"
+      },
+      {
+        "qIndex": 1,
+        "material": "material1",
+        "type": "dot",
+        "start": 1631,
+        "end": 1635,
+        "anchor": "喃喃自语",
+        "rationale": "2026北京卷原扫描页可见标记，本轮逐项核对；保留既有三来源校正文字。"
+      },
+      {
+        "qIndex": 1,
+        "material": "question1",
+        "type": "dot",
+        "start": 88,
+        "end": 92,
+        "anchor": "喃喃自语",
+        "rationale": "2026北京卷原扫描页可见标记，本轮逐项核对；保留既有三来源校正文字。"
+      },
+      {
+        "qIndex": 3,
+        "material": "material1",
+        "type": "underline",
+        "start": 1245,
+        "end": 1307,
+        "anchor": "只看见他们汗水淋漓的古铜色脊背，只看见他们灰蒙蒙的头发，只看见油亮的臂膀和黑色的铁锤在青灰色的岩石上不停地画着一道又一道弧线",
+        "rationale": "2026北京卷原扫描页可见标记，本轮逐项核对；保留既有三来源校正文字。"
+      }
+    ],
     "ai_answers": {
       "1": "Claude Opus 5 本会话核查作答\n答案：B\n\n依据：“这森然的峭壁正是历代石工斧凿的印迹”，峭壁由采石凿出，垂直陡立、阴森逼人，“森然”状其高耸阴森、令人生畏，并非“植被茂密”，B 错。A、C、D 的解说均合语境。\n核验：与两处网传答案（B）一致，采用。",
       "2": "Claude Opus 5 本会话核查作答\n答案：A\n\n依据：文章开篇写江南的水与江南人的灵动柔和，是铺垫与对照，作者对水始终是欣赏的，并无贬抑，“先贬后褒”不成立，A 错。B、C、D 分别有“采石的工匠们无意造景，后人却……发现了世所罕见的奇妙胜景”“犹如从地层深处涌出的喷泉”“这样的工作确实是炸药和机器无能为力的”为据。\n核验：与两处网传答案（A）一致，采用。",
