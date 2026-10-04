@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261004-2023-source-marks-awaiting-final-claude",
+  "revision": "20261004-2024-source-marks-awaiting-final-claude",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -1818,15 +1818,13 @@
     },
     {
       "id": "2024-guwen:2",
-      "inputSha256": "5af8b4034eaf2a3cef2b504797a2659343b99da6cd6d2f5865f43f8625195415",
-      "status": "reviewed",
+      "inputSha256": "2c0bee8093cd5a975ca4be4be21f0c68159db08f3576c0bf21ac168ca73dfc8b",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "D"
-      ],
-      "explanation": "结论D；不采用简单对调、删字或仅看现代译词的判法。",
+      "correctOptions": [],
+      "explanation": "2024原卷标记及字形重核；旧模型全文与原题面保留于历史，本人完整重答另版冻结，待最后Claude核对后裁定。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:03:23.208Z",
+      "reviewedAt": "2026-10-04T08:12:35.580Z",
       "sources": [
         {
           "type": "source_material",
@@ -1837,88 +1835,171 @@
           "title": "文言站2026-09-16-r3词典校订，保留争议"
         }
       ],
-      "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 完整附注复核",
-          "text": "答案：D。第一处而把统治者的奖赏与百姓的赞誉并列，第二处把希望天下安定与厌恶混乱并列；后者虽有正反两种态度，指向却一致，并非逻辑转折。A项百姓之从事内含百姓从事的主谓关系，天下之人则是修饰关系。B项前者指坚持有命论的人，后者用于提出坚持这种主张的事情并引出说明，不能都按某类人处理。C项分别处于以命为有的判断结构和所以听狱制罪的凭借结构。",
-          "inputSha256": "5af8b4034eaf2a3cef2b504797a2659343b99da6cd6d2f5865f43f8625195415",
-          "generatedAt": "2026-10-03T03:03:23.208Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review_reaffirmation",
-            "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
-            "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "priorAnswerSha256": "2ff31a495e4bc56cde8144cb7e1d0b511ff5067554020cd008b1c19245456a0a",
-            "annotationEffect": "钧为制陶转轮、中为符合；按全文三表及反命论复核，两个而均并列。末段而强执此者作为话题提顿，不与指人的执有命者等同。"
+      "modelAnswers": {},
+      "inputContextSha256": "de643239ec4b618a20cec785bd7e1983328d290a05435a842bd16fd3e51d2562",
+      "history": [
+        {
+          "source": {
+            "id": "2024-guwen",
+            "materials": [
+              {
+                "key": "material2",
+                "label": "材料2",
+                "text": "子墨子言曰:“古者王公大人,为政国家者，皆欲国家之富,人民之众刑政之治。然而不得富而得贫，不得众而得寡，不得治而得乱,是故何也?执有命者之言曰:‘命富则富,命贫则贫,命众则众,命寡则寡，命治则治，命乱则乱。’以上说王公大人，下以阻百姓之从事，故执有命者不仁。故当执有命者之言,不可不明辨。”\n\n然则明辨此说将奈何哉?子墨子言曰:“必立仪，言而无仪,譬犹运钧①之上而立朝夕者也，是非利害之辨,不可得而明知也。故言必有三表。”何谓三表?子墨子言曰:“有本之者,有原之者,有用之者。于何本之?上本之于古者圣王之事。于何原之?下原察百姓耳目之实。于何用之?发以为刑政,观其中②国家百姓人民之利。此所谓言有三表也。\n\n“然而今天下之士君子,或以命为有。盖尝尚观于圣王之事,古者桀之所乱,汤受而治之;纣之所乱，武王受而治之。此世未易，民未渝，在于桀纣，则天下乱,在于汤武，则天下治，岂可谓有命哉!盖尝尚观于先王之书,所以出于国家、布施百姓者，宪也;所以听狱制罪者,刑也。今用执有命者之言,是覆天下之义。此百姓之忧也。说百姓之忧者,是灭天下之人也。”\n\n然则所谓欲义人在上者,何也?曰:“义人在上，天下必治,万民被其大利。”何以知之?子墨子言曰:“昔者文王封于岐周,与其百姓兼相爱,交相利,是以近者安其政,远者归其德。闻文王者,皆起而趋之，曰:‘奈何乎使文王之地及我,则吾岂不亦犹文王之民也哉!’吾用此知之。古之圣王发宪出令,设以为赏罚以劝贤沮暴,是以入则孝慈于亲戚,出则弟长于乡里。是故使治官府则不盗窃,守城则不崩叛。此上之所赏而百姓之所誉也。执有命者之言曰:‘上之所赏,命固且赏,非贤故赏也。上之所罚,命固且罚，不暴故罚也。’以此为君则不义,为臣则不忠,为父则不慈,为子则不孝,而强执此者,此特凶言之所自生，而暴人之道也。”\n\n是故子墨子言曰:“今天下之士君子,中实欲天下之富而恶其贫,欲天下之治而恶其乱,执有命者之言,不可不非,此天下之大害也。”"
+              }
+            ],
+            "topic": "二、本大题共5小题,共18分。\n阅读下面文言文,完成6-10题。",
+            "annotation": "(取材于《墨子.非命》)\n注释 ①钧:制作陶器所用的转轮。②中:符合。",
+            "annotations": [
+              {
+                "qIndex": 2,
+                "material": "material2",
+                "type": "dot",
+                "start": 24,
+                "end": 25,
+                "anchor": "之"
+              },
+              {
+                "qIndex": 2,
+                "material": "material2",
+                "type": "dot",
+                "start": 8,
+                "end": 9,
+                "anchor": "者"
+              },
+              {
+                "qIndex": 2,
+                "material": "material2",
+                "type": "dot",
+                "start": 104,
+                "end": 105,
+                "anchor": "以"
+              },
+              {
+                "qIndex": 2,
+                "material": "material2",
+                "type": "dot",
+                "start": 37,
+                "end": 38,
+                "anchor": "而"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 2,
+                "id": "q2",
+                "text": "7.下列各组语句中,加点词的意义和用法都相同的一组是(3分)\nA.下以阻百姓*之*从事 / 是灭天下*之*人也\nB.故执有命*者*不仁 / 而强执此*者*\nC.或*以*命为有 / 所*以*听狱制罪者，刑也\nD.此上之所赏*而*百姓之所誉也 / 欲天下之治*而*恶其乱",
+                "score": 3
+              }
+            ]
           },
-          "inputContextSha256": "5ba36805dc586f5d7d3b22bdb2bf6afd298c337c26a73fc49735a90e6d134637"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 来源复核后修订",
-          "text": "答案：D。\n选D。A项：“阻百姓之从事”的“之”用在主谓之间，取消句子独立性；“灭天下之人”的“之”是结构助词“的”，不同。B项：“执有命者不仁”的“者”指“……的人”；“而强执此者，此特凶言之所自生”的“者”用于提顿，指“……这种做法（说法）”，后面用“此”复指，不同。C项：“或以命为有”的“以”是“认为、把”；“所以听狱制罪者”的“以”是介词“用来”（“所以”即用来……的），不同。D项：“此上之所赏而百姓之所誉也”和“欲天下之治而恶其乱”的“而”都是连词，表并列，相同。",
-          "inputSha256": "5af8b4034eaf2a3cef2b504797a2659343b99da6cd6d2f5865f43f8625195415",
-          "inputContextSha256": "5ba36805dc586f5d7d3b22bdb2bf6afd298c337c26a73fc49735a90e6d134637",
-          "generatedAt": "2026-10-03T03:01:54.821132+00:00",
-          "uncertainties": [
-            "B项后句的“者”若理解为“……的人”，则B也可视为相同；但据下文“此特凶言之所自生，而暴人之道也”，指的是这种主张而非人，故判断D最合适。"
-          ],
-          "selectedOptions": [
-            "D"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
-            "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
-            "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
-            "stage": "source_review"
+          "review": {
+            "id": "2024-guwen:2",
+            "inputSha256": "5af8b4034eaf2a3cef2b504797a2659343b99da6cd6d2f5865f43f8625195415",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "D"
+            ],
+            "explanation": "结论D；不采用简单对调、删字或仅看现代译词的判法。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:03:23.208Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内完整题目及相关材料"
+              },
+              {
+                "type": "dictionary_revision",
+                "title": "文言站2026-09-16-r3词典校订，保留争议"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "答案：D。第一处而把统治者的奖赏与百姓的赞誉并列，第二处把希望天下安定与厌恶混乱并列；后者虽有正反两种态度，指向却一致，并非逻辑转折。A项百姓之从事内含百姓从事的主谓关系，天下之人则是修饰关系。B项前者指坚持有命论的人，后者用于提出坚持这种主张的事情并引出说明，不能都按某类人处理。C项分别处于以命为有的判断结构和所以听狱制罪的凭借结构。",
+                "inputSha256": "5af8b4034eaf2a3cef2b504797a2659343b99da6cd6d2f5865f43f8625195415",
+                "generatedAt": "2026-10-03T03:03:23.208Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "2ff31a495e4bc56cde8144cb7e1d0b511ff5067554020cd008b1c19245456a0a",
+                  "annotationEffect": "钧为制陶转轮、中为符合；按全文三表及反命论复核，两个而均并列。末段而强执此者作为话题提顿，不与指人的执有命者等同。"
+                },
+                "inputContextSha256": "5ba36805dc586f5d7d3b22bdb2bf6afd298c337c26a73fc49735a90e6d134637"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "答案：D。\n选D。A项：“阻百姓之从事”的“之”用在主谓之间，取消句子独立性；“灭天下之人”的“之”是结构助词“的”，不同。B项：“执有命者不仁”的“者”指“……的人”；“而强执此者，此特凶言之所自生”的“者”用于提顿，指“……这种做法（说法）”，后面用“此”复指，不同。C项：“或以命为有”的“以”是“认为、把”；“所以听狱制罪者”的“以”是介词“用来”（“所以”即用来……的），不同。D项：“此上之所赏而百姓之所誉也”和“欲天下之治而恶其乱”的“而”都是连词，表并列，相同。",
+                "inputSha256": "5af8b4034eaf2a3cef2b504797a2659343b99da6cd6d2f5865f43f8625195415",
+                "inputContextSha256": "5ba36805dc586f5d7d3b22bdb2bf6afd298c337c26a73fc49735a90e6d134637",
+                "generatedAt": "2026-10-03T03:01:54.821132+00:00",
+                "uncertainties": [
+                  "B项后句的“者”若理解为“……的人”，则B也可视为相同；但据下文“此特凶言之所自生，而暴人之道也”，指的是这种主张而非人，故判断D最合适。"
+                ],
+                "selectedOptions": [
+                  "D"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
+                  "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
+                  "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
+                  "stage": "source_review"
+                }
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "答案：D。第一处而把统治者的奖赏与百姓的赞誉并列，第二处把希望天下安定与厌恶混乱并列；后者虽有正反两种态度，指向却一致，并非逻辑转折。A项百姓之从事内含百姓从事的主谓关系，天下之人则是修饰关系。B项前者指坚持有命论的人，后者用于提出坚持这种主张的事情并引出说明，不能都按某类人处理。C项分别处于以命为有的判断结构和所以听狱制罪的凭借结构。",
+                "inputSha256": "5af8b4034eaf2a3cef2b504797a2659343b99da6cd6d2f5865f43f8625195415",
+                "generatedAt": "2026-10-03T00:07:56.018Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
+                }
+              },
+              "claude_opus_5_5_initial": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答（修订前存档）",
+                "text": "答案：D。\nA项不同。“下以阻百姓之从事”中，“之”用在主谓结构“百姓从事”之间，取消句子独立性；“是灭天下之人也”中，“之”是结构助词，译为“的”。B项不同。“故执有命者不仁”中，“者”是代词，译为“……的人”，即持有命论的人。“而强执此者，此特凶言之所自生，而暴人之道也”中，后文用“此”复指，并判断它是“凶言所自生”“暴人之道”，可见所指是“顽固坚持这种主张”这件事，而不是人，“者”应作提顿助词或指代“……的做法”。两句用法不同。C项不同。“或以命为有”中，“以……为”译为“认为、把……当作”；“所以听狱制罪者”中，“所以”译为“用来……的（手段）”，“以”是介词“用”。D项相同。“此上之所赏而百姓之所誉也”意为“这是君上所奖赏并且是百姓所称誉的”；“欲天下之治而恶其乱”意为“希望天下太平并且厌恶它混乱”。两个“而”都是连词，表并列。故选D。",
+                "inputSha256": "5af8b4034eaf2a3cef2b504797a2659343b99da6cd6d2f5865f43f8625195415",
+                "generatedAt": "2026-10-03T00:39:17.649838+00:00",
+                "uncertainties": [
+                  "B项后一句“者”是指人还是表提顿、指事，理解上有一定争议。本答案依据后文“此……暴人之道也”判断它不指人。"
+                ],
+                "selectedOptions": [
+                  "D"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
+                  "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
+                  "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "921ab5ef1eed02ca688ef1d74ac3ffdc12546ae393e589d6c2389350d742cf87"
+              }
+            },
+            "inputContextSha256": "5ba36805dc586f5d7d3b22bdb2bf6afd298c337c26a73fc49735a90e6d134637"
           }
-        },
-        "gpt_6_astra_before_context_review": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
-          "text": "答案：D。第一处而把统治者的奖赏与百姓的赞誉并列，第二处把希望天下安定与厌恶混乱并列；后者虽有正反两种态度，指向却一致，并非逻辑转折。A项百姓之从事内含百姓从事的主谓关系，天下之人则是修饰关系。B项前者指坚持有命论的人，后者用于提出坚持这种主张的事情并引出说明，不能都按某类人处理。C项分别处于以命为有的判断结构和所以听狱制罪的凭借结构。",
-          "inputSha256": "5af8b4034eaf2a3cef2b504797a2659343b99da6cd6d2f5865f43f8625195415",
-          "generatedAt": "2026-10-03T00:07:56.018Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
-          }
-        },
-        "claude_opus_5_5_initial": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答（修订前存档）",
-          "text": "答案：D。\nA项不同。“下以阻百姓之从事”中，“之”用在主谓结构“百姓从事”之间，取消句子独立性；“是灭天下之人也”中，“之”是结构助词，译为“的”。B项不同。“故执有命者不仁”中，“者”是代词，译为“……的人”，即持有命论的人。“而强执此者，此特凶言之所自生，而暴人之道也”中，后文用“此”复指，并判断它是“凶言所自生”“暴人之道”，可见所指是“顽固坚持这种主张”这件事，而不是人，“者”应作提顿助词或指代“……的做法”。两句用法不同。C项不同。“或以命为有”中，“以……为”译为“认为、把……当作”；“所以听狱制罪者”中，“所以”译为“用来……的（手段）”，“以”是介词“用”。D项相同。“此上之所赏而百姓之所誉也”意为“这是君上所奖赏并且是百姓所称誉的”；“欲天下之治而恶其乱”意为“希望天下太平并且厌恶它混乱”。两个“而”都是连词，表并列。故选D。",
-          "inputSha256": "5af8b4034eaf2a3cef2b504797a2659343b99da6cd6d2f5865f43f8625195415",
-          "generatedAt": "2026-10-03T00:39:17.649838+00:00",
-          "uncertainties": [
-            "B项后一句“者”是指人还是表提顿、指事，理解上有一定争议。本答案依据后文“此……暴人之道也”判断它不指人。"
-          ],
-          "selectedOptions": [
-            "D"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
-            "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
-            "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
-            "stage": "independent"
-          },
-          "inputContextSha256": "921ab5ef1eed02ca688ef1d74ac3ffdc12546ae393e589d6c2389350d742cf87"
         }
-      },
-      "inputContextSha256": "5ba36805dc586f5d7d3b22bdb2bf6afd298c337c26a73fc49735a90e6d134637"
+      ],
+      "inputPresentationSha256": "f60fa27049262611770683b08aa8e77327f65066271d7d89e03531a02566ecf8"
     },
     {
       "id": "2020-guwen:2",
@@ -13555,150 +13636,266 @@
     {
       "id": "2024-feilian:1",
       "inputSha256": "02cbfc34f82b9095c74e4b3cf44b6172e5325aad4e3f834297d18f589e2c5bf4",
-      "status": "reviewed",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "A"
-      ],
-      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "correctOptions": [],
+      "explanation": "2024原卷标记及字形重核；旧模型全文与原题面保留于历史，本人完整重答另版冻结，待最后Claude核对后裁定。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:08:21.667Z",
+      "reviewedAt": "2026-10-04T08:12:35.580Z",
       "sources": [
         {
           "type": "source_material",
           "title": "站内2024北京卷原题及完整材料"
         }
       ],
-      "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 完整附注复核",
-          "text": "答案：A。联合团队选的是六盘山北联池的陆地沉积物，不是深海沉积记录。B与定量分析一致；C明确限定北方、五千年、四月至十月暖季，符合材料；D对应研究证实冷抑暖扬。不能把此前全球曲线所用的资料误作本次研究样品。",
-          "inputSha256": "02cbfc34f82b9095c74e4b3cf44b6172e5325aad4e3f834297d18f589e2c5bf4",
-          "generatedAt": "2026-10-03T03:08:21.667Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review_reaffirmation",
-            "evidence": "answers-six-sites-20261002/root-context-2024-decisions.json",
-            "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "priorAnswerSha256": "2afde1276f8ebc2b8eaf668f76d4fcfa9da483a39e8ecc989a16a0a558368b6a",
-            "annotationEffect": "已完整重读当年材料、题纲、所有相应题问及作者署名/原注。陆地样品并非全球曲线用的深海样品。"
+      "modelAnswers": {},
+      "inputContextSha256": "199d14d5bb5b6463431682edb4bc5ce6e1ef3a22bd873c16a7a88dd88b4d363e",
+      "history": [
+        {
+          "source": {
+            "id": "2024-feilian",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "材料一\n\n气候的波动变化对文明发展产生了重要影响，重建古代气候变化过程具有重要意义。\n\n由于缺乏合适的温度代用指标，我国古温度重建结果分辨率较低,且多以定性记录为主，定量的古温度重建相对较少。全球历史温度变化曲线的重建主要借助冰芯、深海沉积物和树轮的记录，而我国是传统的农耕文明社会，陆地上的沉积记录才能更好地反映我国历史气候变化。随着技术的革新,微生物分子化石的研究蓬勃发展,微生物分子化石中的一类化合物——brGDGTs(支链甘油二烷基甘油四醚酯)——被用于古气候研究。\n\nbrGDGTs是细菌细胞膜的组成部分，其分子结构中有4到6个甲基和0到2个环戊烷。如同人天冷需要加衣、天热需要减衣一样,寒冷的气候条件下细菌倾向于合成更多的甲基,而温暖的环境下合成的甲基数量则减少。微生物活体死亡后,细胞膜中的 brGDGTs等大分子能在地质体中长期保留下来,可以通过brGDGTs结构中的甲基个数推断当时的温度。\n\n六盘山北联池靠近中华文明核心区，由中国科学院、南京大学、兰州大学等单位的研究人员组成的联合团队选取这里的沉积物样品，借助 brGDGTs，通过定量分析，重建了5000年以来我国北方更高分辨率的暖季(4月至10月)温度变化过程。结合山西某地沉积物的孢粉重建的降水记录，联合团队获得了我国北方地区5000年以来完整的气候演变历程。\n\n从重建的温度与降水结果来看，我国北方地区的气候呈现出不断变冷、变干的大趋势。大约前3000 年变化缓慢,之后的 2000年变化加速。这主要与太阳辐射变化有关，太阳辐射能量在过去 5000年间持续下降。另外，过去2000年以来的快速冷干现象还可能与太阳活动、局部火山活动等因素有关。而且这一时期内区域植被中木本植物逐渐减少,导致地表反射率上升,也可能加快了气候变冷变干的速度。\n\n研究人员将气候重建的结果与中国历史朝代相对应，发现不同历史时期的气候呈现出冷暖交替的特点。比如,隋朝末年气候偏于冷干,唐朝初期和中期温暖湿润，后期快速转冷,与之相伴的是干旱化。五代十国时期，北方经历了70余年寒冷干燥的气候,北宋气候开始好转。\n\n之前有研究发现,古代气候变化深刻影响了我国古代农耕社会文明的发展,我国历史上百年尺度的冷暖变化与社会经济波动之间呈现同期性，总体上表现出“冷抑暖扬”的特点,即暖期气候是有利的，历史上经济发达、社会安定、国力强盛、人口增加的时期往往出现在暖期，相反的情况则发生在冷期。联合团队的研究也证实了“冷抑暖扬”这一特点，比如,温暖湿润的气候推动了唐朝初期和中期的农业发展与社会经济繁荣,寒冷干燥的气候使唐朝后期农业发展受到极大不利影响，这是造成当时社会不稳定的重要因素之一。"
+              },
+              {
+                "key": "material2",
+                "label": "材料2",
+                "text": "材料二\n\n我国古代是农耕文明社会,加之古人应对自然灾害能力较差，农业对气候变化有较强的依赖性。暖期的气候总体有利于农业发展,从而为社会发展提供更为优越的物质条件,这是历史上“冷抑暖扬”特点形成的根本原因。气候变化直接影响粮食生产,从全国粮食亩产量和北方麦作亩产量的相对变化指数看，除了明清，秦汉以后气候寒冷时期，我国粮食亩产量均有下降。尽管历史上暖期的影响总体好于冷期,但我国地域广阔,不论在暖期还是冷期,气候都可能有区域性差异，给区域社会经济带来有利或不利影响。唐朝和宋朝两个时期中国平均温度均偏高，但在地域分布上有很大差异。唐朝初期增温主要出现在黄河流域、中原腹地,其原因是区域尺度上大气净能量的增加以及有利的热量输送。而北宋初期，全国普遍增温是太阳辐射强度的增加造成的，是全球或半球尺度上的暖事件在中国的体现。暖期中的北宋时期,我国华北及北方农牧交错带相对湿润，而江南地区则受到干旱的威胁。\n\n暖期气候温暖湿润，会推动社会的繁荣和人口的较快增长。然而众多的人口也加大了社会对资源的需求,增加了环境的压力,导致以农业为基础的社会系统风险增加,这种在暖期尚能承受的压力,可能会因气候变冷导致农业生产力下降而凸显，甚至引发严重的社会危机。\n\n人类社会并未因气候变化的不利影响而停止前进的脚步,而是在应对气候变化的过程中不断开不断开拓创新、积累经验,从而取得更大的繁荣。为适应暖期干湿变化的地域格局,北宋朝廷在变湿的华北地区积极推广水稻种植，在变干的南方则积极推广占城稻和稻麦连种。这一举措使粮食生产受气候制约的影响渐趋减少,是中国粮食生产史上的一次革命。"
+              }
+            ],
+            "topic": "一、本大题共5小题,共18分。\n阅读下面材料,完成1-5题。",
+            "annotation": "(取材于程雅楠、葛全胜等的相关文章)\n(取材于葛全胜、申敏夏、刘嘉慧等的相关文章)",
+            "annotations": [
+              {
+                "qIndex": 1,
+                "material": "material1",
+                "type": "dot",
+                "start": 406,
+                "end": 412,
+                "anchor": "六盘山北联池"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "1.根据材料一,下列理解不正确的一项是(3分)\nA.联合团队重建古代温度变化过程使用的是深海沉积记录。\nB.联合团队重建古代温度变化过程使用的是定量分析方法。\nC.联合团队的研究结果反映的是我国北方5000年来暖季的温度变化。\nD.联合团队的研究结果证实了之前研究得出的“冷抑暖扬”的结论。",
+                "score": 3
+              }
+            ]
           },
-          "inputContextSha256": "199d14d5bb5b6463431682edb4bc5ce6e1ef3a22bd873c16a7a88dd88b4d363e"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "答案：A。\nA项不正确。材料一说全球温度曲线重建主要借助冰芯、深海沉积物和树轮，但我国“陆地上的沉积记录才能更好地反映我国历史气候变化”。联合团队选取的是六盘山北联池的沉积物样品，属陆地湖泊沉积，不是深海沉积记录，A项张冠李戴。B项正确，原文说“借助brGDGTs，通过定量分析”。C项正确，原文说“重建了5000年以来我国北方更高分辨率的暖季(4月至10月)温度变化过程”。D项正确，原文说“联合团队的研究也证实了‘冷抑暖扬’这一特点”。",
-          "inputSha256": "02cbfc34f82b9095c74e4b3cf44b6172e5325aad4e3f834297d18f589e2c5bf4",
-          "generatedAt": "2026-10-03T01:45:30.808930+00:00",
-          "uncertainties": [],
-          "selectedOptions": [
-            "A"
-          ],
-          "assessment": {
-            "matchesConclusion": true,
-            "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
-            "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
-            "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
-            "stage": "independent"
-          },
-          "inputContextSha256": "199d14d5bb5b6463431682edb4bc5ce6e1ef3a22bd873c16a7a88dd88b4d363e"
-        },
-        "gpt_6_astra_before_context_review": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
-          "text": "答案：A。联合团队选的是六盘山北联池的陆地沉积物，不是深海沉积记录。B与定量分析一致；C明确限定北方、五千年、四月至十月暖季，符合材料；D对应研究证实冷抑暖扬。不能把此前全球曲线所用的资料误作本次研究样品。",
-          "inputSha256": "02cbfc34f82b9095c74e4b3cf44b6172e5325aad4e3f834297d18f589e2c5bf4",
-          "generatedAt": "2026-10-03T01:46:03.945Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+          "review": {
+            "id": "2024-feilian:1",
+            "inputSha256": "02cbfc34f82b9095c74e4b3cf44b6172e5325aad4e3f834297d18f589e2c5bf4",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "A"
+            ],
+            "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:08:21.667Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2024北京卷原题及完整材料"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "答案：A。联合团队选的是六盘山北联池的陆地沉积物，不是深海沉积记录。B与定量分析一致；C明确限定北方、五千年、四月至十月暖季，符合材料；D对应研究证实冷抑暖扬。不能把此前全球曲线所用的资料误作本次研究样品。",
+                "inputSha256": "02cbfc34f82b9095c74e4b3cf44b6172e5325aad4e3f834297d18f589e2c5bf4",
+                "generatedAt": "2026-10-03T03:08:21.667Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-2024-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "2afde1276f8ebc2b8eaf668f76d4fcfa9da483a39e8ecc989a16a0a558368b6a",
+                  "annotationEffect": "已完整重读当年材料、题纲、所有相应题问及作者署名/原注。陆地样品并非全球曲线用的深海样品。"
+                },
+                "inputContextSha256": "199d14d5bb5b6463431682edb4bc5ce6e1ef3a22bd873c16a7a88dd88b4d363e"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "答案：A。\nA项不正确。材料一说全球温度曲线重建主要借助冰芯、深海沉积物和树轮，但我国“陆地上的沉积记录才能更好地反映我国历史气候变化”。联合团队选取的是六盘山北联池的沉积物样品，属陆地湖泊沉积，不是深海沉积记录，A项张冠李戴。B项正确，原文说“借助brGDGTs，通过定量分析”。C项正确，原文说“重建了5000年以来我国北方更高分辨率的暖季(4月至10月)温度变化过程”。D项正确，原文说“联合团队的研究也证实了‘冷抑暖扬’这一特点”。",
+                "inputSha256": "02cbfc34f82b9095c74e4b3cf44b6172e5325aad4e3f834297d18f589e2c5bf4",
+                "generatedAt": "2026-10-03T01:45:30.808930+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "A"
+                ],
+                "assessment": {
+                  "matchesConclusion": true,
+                  "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
+                  "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
+                  "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "199d14d5bb5b6463431682edb4bc5ce6e1ef3a22bd873c16a7a88dd88b4d363e"
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "答案：A。联合团队选的是六盘山北联池的陆地沉积物，不是深海沉积记录。B与定量分析一致；C明确限定北方、五千年、四月至十月暖季，符合材料；D对应研究证实冷抑暖扬。不能把此前全球曲线所用的资料误作本次研究样品。",
+                "inputSha256": "02cbfc34f82b9095c74e4b3cf44b6172e5325aad4e3f834297d18f589e2c5bf4",
+                "generatedAt": "2026-10-03T01:46:03.945Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+                }
+              }
+            },
+            "inputContextSha256": "199d14d5bb5b6463431682edb4bc5ce6e1ef3a22bd873c16a7a88dd88b4d363e"
           }
         }
-      },
-      "inputContextSha256": "199d14d5bb5b6463431682edb4bc5ce6e1ef3a22bd873c16a7a88dd88b4d363e"
+      ],
+      "inputPresentationSha256": "31419ecf6758c71140b1b21a847890a70fb83ab60be7fd4e6105be27a2c43aee"
     },
     {
       "id": "2024-feilian:2",
       "inputSha256": "805ece53ee1e68572fefd5e988d4caef235e158d78c7aa9eb047dfbb26918b9d",
-      "status": "reviewed",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "B"
-      ],
-      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "correctOptions": [],
+      "explanation": "2024原卷标记及字形重核；旧模型全文与原题面保留于历史，本人完整重答另版冻结，待最后Claude核对后裁定。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:08:21.667Z",
+      "reviewedAt": "2026-10-04T08:12:35.580Z",
       "sources": [
         {
           "type": "source_material",
           "title": "站内2024北京卷原题及完整材料"
         }
       ],
-      "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 完整附注复核",
-          "text": "答案：B。寒冷时细菌倾向于合成更多甲基，温暖时甲基减少，因而保存下来的分子中甲基较多反映较低温度。A颠倒方向；C、D把甲基数量的温度关系移到环戊烷数量，材料未给出这种依据。",
-          "inputSha256": "805ece53ee1e68572fefd5e988d4caef235e158d78c7aa9eb047dfbb26918b9d",
-          "generatedAt": "2026-10-03T03:08:21.667Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review_reaffirmation",
-            "evidence": "answers-six-sites-20261002/root-context-2024-decisions.json",
-            "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "priorAnswerSha256": "baf5f9722b57e739f39ea544478d582bd33cdd421cac70268a26c8e6eaa6290e",
-            "annotationEffect": "已完整重读当年材料、题纲、所有相应题问及作者署名/原注。甲基数量与温度的反向关系明确。"
+      "modelAnswers": {},
+      "inputContextSha256": "bea8d192712d971b571e8c9010ed08e4f1e1490038611973aa9e152e245d73b8",
+      "history": [
+        {
+          "source": {
+            "id": "2024-feilian",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "材料一\n\n气候的波动变化对文明发展产生了重要影响，重建古代气候变化过程具有重要意义。\n\n由于缺乏合适的温度代用指标，我国古温度重建结果分辨率较低,且多以定性记录为主，定量的古温度重建相对较少。全球历史温度变化曲线的重建主要借助冰芯、深海沉积物和树轮的记录，而我国是传统的农耕文明社会，陆地上的沉积记录才能更好地反映我国历史气候变化。随着技术的革新,微生物分子化石的研究蓬勃发展,微生物分子化石中的一类化合物——brGDGTs(支链甘油二烷基甘油四醚酯)——被用于古气候研究。\n\nbrGDGTs是细菌细胞膜的组成部分，其分子结构中有4到6个甲基和0到2个环戊烷。如同人天冷需要加衣、天热需要减衣一样,寒冷的气候条件下细菌倾向于合成更多的甲基,而温暖的环境下合成的甲基数量则减少。微生物活体死亡后,细胞膜中的 brGDGTs等大分子能在地质体中长期保留下来,可以通过brGDGTs结构中的甲基个数推断当时的温度。\n\n六盘山北联池靠近中华文明核心区，由中国科学院、南京大学、兰州大学等单位的研究人员组成的联合团队选取这里的沉积物样品，借助 brGDGTs，通过定量分析，重建了5000年以来我国北方更高分辨率的暖季(4月至10月)温度变化过程。结合山西某地沉积物的孢粉重建的降水记录，联合团队获得了我国北方地区5000年以来完整的气候演变历程。\n\n从重建的温度与降水结果来看，我国北方地区的气候呈现出不断变冷、变干的大趋势。大约前3000 年变化缓慢,之后的 2000年变化加速。这主要与太阳辐射变化有关，太阳辐射能量在过去 5000年间持续下降。另外，过去2000年以来的快速冷干现象还可能与太阳活动、局部火山活动等因素有关。而且这一时期内区域植被中木本植物逐渐减少,导致地表反射率上升,也可能加快了气候变冷变干的速度。\n\n研究人员将气候重建的结果与中国历史朝代相对应，发现不同历史时期的气候呈现出冷暖交替的特点。比如,隋朝末年气候偏于冷干,唐朝初期和中期温暖湿润，后期快速转冷,与之相伴的是干旱化。五代十国时期，北方经历了70余年寒冷干燥的气候,北宋气候开始好转。\n\n之前有研究发现,古代气候变化深刻影响了我国古代农耕社会文明的发展,我国历史上百年尺度的冷暖变化与社会经济波动之间呈现同期性，总体上表现出“冷抑暖扬”的特点,即暖期气候是有利的，历史上经济发达、社会安定、国力强盛、人口增加的时期往往出现在暖期，相反的情况则发生在冷期。联合团队的研究也证实了“冷抑暖扬”这一特点，比如,温暖湿润的气候推动了唐朝初期和中期的农业发展与社会经济繁荣,寒冷干燥的气候使唐朝后期农业发展受到极大不利影响，这是造成当时社会不稳定的重要因素之一。"
+              },
+              {
+                "key": "material2",
+                "label": "材料2",
+                "text": "材料二\n\n我国古代是农耕文明社会,加之古人应对自然灾害能力较差，农业对气候变化有较强的依赖性。暖期的气候总体有利于农业发展,从而为社会发展提供更为优越的物质条件,这是历史上“冷抑暖扬”特点形成的根本原因。气候变化直接影响粮食生产,从全国粮食亩产量和北方麦作亩产量的相对变化指数看，除了明清，秦汉以后气候寒冷时期，我国粮食亩产量均有下降。尽管历史上暖期的影响总体好于冷期,但我国地域广阔,不论在暖期还是冷期,气候都可能有区域性差异，给区域社会经济带来有利或不利影响。唐朝和宋朝两个时期中国平均温度均偏高，但在地域分布上有很大差异。唐朝初期增温主要出现在黄河流域、中原腹地,其原因是区域尺度上大气净能量的增加以及有利的热量输送。而北宋初期，全国普遍增温是太阳辐射强度的增加造成的，是全球或半球尺度上的暖事件在中国的体现。暖期中的北宋时期,我国华北及北方农牧交错带相对湿润，而江南地区则受到干旱的威胁。\n\n暖期气候温暖湿润，会推动社会的繁荣和人口的较快增长。然而众多的人口也加大了社会对资源的需求,增加了环境的压力,导致以农业为基础的社会系统风险增加,这种在暖期尚能承受的压力,可能会因气候变冷导致农业生产力下降而凸显，甚至引发严重的社会危机。\n\n人类社会并未因气候变化的不利影响而停止前进的脚步,而是在应对气候变化的过程中不断开不断开拓创新、积累经验,从而取得更大的繁荣。为适应暖期干湿变化的地域格局,北宋朝廷在变湿的华北地区积极推广水稻种植，在变干的南方则积极推广占城稻和稻麦连种。这一举措使粮食生产受气候制约的影响渐趋减少,是中国粮食生产史上的一次革命。"
+              }
+            ],
+            "topic": "一、本大题共5小题,共18分。\n阅读下面材料,完成1-5题。",
+            "annotation": "(取材于程雅楠、葛全胜等的相关文章)\n(取材于葛全胜、申敏夏、刘嘉慧等的相关文章)",
+            "annotations": [
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "wave",
+                "start": 299,
+                "end": 319,
+                "anchor": "寒冷的气候条件下细菌倾向于合成更多的甲基"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 2,
+                "id": "q2",
+                "text": "2.根据材料一,brGDGTs被用于我国古温度重建，下列能说明其依据的一项是(3分)\nA.brGDGTs结构中的甲基个数越多,反映当时的温度越高。\nB.brGDGTs结构中的甲基个数越多,反映当时的温度越低。\nC.brGDGTs结构中的环戊烷个数越多,反映当时的温度越高。\nD.brGDGTs结构中的环戊烷个数越多,反映当时的温度越低。",
+                "score": 3
+              }
+            ]
           },
-          "inputContextSha256": "bea8d192712d971b571e8c9010ed08e4f1e1490038611973aa9e152e245d73b8"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "答案：B。\nB项正确。原文说“寒冷的气候条件下细菌倾向于合成更多的甲基，而温暖的环境下合成的甲基数量则减少”，又说“可以通过brGDGTs结构中的甲基个数推断当时的温度”，所以甲基越多，温度越低。A项把关系说反了。C、D两项：原文只说分子结构中有“0到2个环戊烷”，没有说用环戊烷个数推断温度，二者都无中生有。",
-          "inputSha256": "805ece53ee1e68572fefd5e988d4caef235e158d78c7aa9eb047dfbb26918b9d",
-          "generatedAt": "2026-10-03T01:45:30.808930+00:00",
-          "uncertainties": [],
-          "selectedOptions": [
-            "B"
-          ],
-          "assessment": {
-            "matchesConclusion": true,
-            "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
-            "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
-            "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
-            "stage": "independent"
-          },
-          "inputContextSha256": "bea8d192712d971b571e8c9010ed08e4f1e1490038611973aa9e152e245d73b8"
-        },
-        "gpt_6_astra_before_context_review": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
-          "text": "答案：B。寒冷时细菌倾向于合成更多甲基，温暖时甲基减少，因而保存下来的分子中甲基较多反映较低温度。A颠倒方向；C、D把甲基数量的温度关系移到环戊烷数量，材料未给出这种依据。",
-          "inputSha256": "805ece53ee1e68572fefd5e988d4caef235e158d78c7aa9eb047dfbb26918b9d",
-          "generatedAt": "2026-10-03T01:46:03.945Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+          "review": {
+            "id": "2024-feilian:2",
+            "inputSha256": "805ece53ee1e68572fefd5e988d4caef235e158d78c7aa9eb047dfbb26918b9d",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "B"
+            ],
+            "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:08:21.667Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2024北京卷原题及完整材料"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "答案：B。寒冷时细菌倾向于合成更多甲基，温暖时甲基减少，因而保存下来的分子中甲基较多反映较低温度。A颠倒方向；C、D把甲基数量的温度关系移到环戊烷数量，材料未给出这种依据。",
+                "inputSha256": "805ece53ee1e68572fefd5e988d4caef235e158d78c7aa9eb047dfbb26918b9d",
+                "generatedAt": "2026-10-03T03:08:21.667Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-2024-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "baf5f9722b57e739f39ea544478d582bd33cdd421cac70268a26c8e6eaa6290e",
+                  "annotationEffect": "已完整重读当年材料、题纲、所有相应题问及作者署名/原注。甲基数量与温度的反向关系明确。"
+                },
+                "inputContextSha256": "bea8d192712d971b571e8c9010ed08e4f1e1490038611973aa9e152e245d73b8"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "答案：B。\nB项正确。原文说“寒冷的气候条件下细菌倾向于合成更多的甲基，而温暖的环境下合成的甲基数量则减少”，又说“可以通过brGDGTs结构中的甲基个数推断当时的温度”，所以甲基越多，温度越低。A项把关系说反了。C、D两项：原文只说分子结构中有“0到2个环戊烷”，没有说用环戊烷个数推断温度，二者都无中生有。",
+                "inputSha256": "805ece53ee1e68572fefd5e988d4caef235e158d78c7aa9eb047dfbb26918b9d",
+                "generatedAt": "2026-10-03T01:45:30.808930+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "B"
+                ],
+                "assessment": {
+                  "matchesConclusion": true,
+                  "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
+                  "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
+                  "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "bea8d192712d971b571e8c9010ed08e4f1e1490038611973aa9e152e245d73b8"
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "答案：B。寒冷时细菌倾向于合成更多甲基，温暖时甲基减少，因而保存下来的分子中甲基较多反映较低温度。A颠倒方向；C、D把甲基数量的温度关系移到环戊烷数量，材料未给出这种依据。",
+                "inputSha256": "805ece53ee1e68572fefd5e988d4caef235e158d78c7aa9eb047dfbb26918b9d",
+                "generatedAt": "2026-10-03T01:46:03.945Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+                }
+              }
+            },
+            "inputContextSha256": "bea8d192712d971b571e8c9010ed08e4f1e1490038611973aa9e152e245d73b8"
           }
         }
-      },
-      "inputContextSha256": "bea8d192712d971b571e8c9010ed08e4f1e1490038611973aa9e152e245d73b8"
+      ],
+      "inputPresentationSha256": "9355c749f00ac1c997f7ff2a56035293bf27cee4a9dc48c8779b1f3767a74991"
     },
     {
       "id": "2024-feilian:3",
@@ -13790,76 +13987,134 @@
     {
       "id": "2024-feilian:4",
       "inputSha256": "6a3ea2fe5ade5964685cef8d6525137079f4dec3af516c5a196a637f5bf12603",
-      "status": "reviewed",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "B"
-      ],
-      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "correctOptions": [],
+      "explanation": "2024原卷标记及字形重核；旧模型全文与原题面保留于历史，本人完整重答另版冻结，待最后Claude核对后裁定。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:08:21.667Z",
+      "reviewedAt": "2026-10-04T08:12:35.580Z",
       "sources": [
         {
           "type": "source_material",
           "title": "站内2024北京卷原题及完整材料"
         }
       ],
-      "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 完整附注复核",
-          "text": "答案：B。材料二着重解释气候通过农业影响社会以及这种影响的复杂性，并没有解释所有历史时期冷暖交替的根本原因。A确为现象与其社会作用根本原因的对应；C说明唐初增温的黄河中原地区与区域能量、输送因素；D说明北宋普遍增温与太阳辐射增强，均符合两材料。",
-          "inputSha256": "6a3ea2fe5ade5964685cef8d6525137079f4dec3af516c5a196a637f5bf12603",
-          "generatedAt": "2026-10-03T03:08:21.667Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review_reaffirmation",
-            "evidence": "answers-six-sites-20261002/root-context-2024-decisions.json",
-            "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "priorAnswerSha256": "fb46f42e6ac3fa5cb4f8be5c2f2b832376be1ec03629f625de9882eeeff761ef",
-            "annotationEffect": "已完整重读当年材料、题纲、所有相应题问及作者署名/原注。冷抑暖扬的社会作用机制并非冷暖交替本身原因。"
+      "modelAnswers": {},
+      "inputContextSha256": "2d07a21dda7468de8f987d188c2c43c6062d9b603e1ead0ba80a4b8940a0fb18",
+      "history": [
+        {
+          "source": {
+            "id": "2024-feilian",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "材料一\n\n气候的波动变化对文明发展产生了重要影响，重建古代气候变化过程具有重要意义。\n\n由于缺乏合适的温度代用指标，我国古温度重建结果分辨率较低,且多以定性记录为主，定量的古温度重建相对较少。全球历史温度变化曲线的重建主要借助冰芯、深海沉积物和树轮的记录，而我国是传统的农耕文明社会，陆地上的沉积记录才能更好地反映我国历史气候变化。随着技术的革新,微生物分子化石的研究蓬勃发展,微生物分子化石中的一类化合物——brGDGTs(支链甘油二烷基甘油四醚酯)——被用于古气候研究。\n\nbrGDGTs是细菌细胞膜的组成部分，其分子结构中有4到6个甲基和0到2个环戊烷。如同人天冷需要加衣、天热需要减衣一样,寒冷的气候条件下细菌倾向于合成更多的甲基,而温暖的环境下合成的甲基数量则减少。微生物活体死亡后,细胞膜中的 brGDGTs等大分子能在地质体中长期保留下来,可以通过brGDGTs结构中的甲基个数推断当时的温度。\n\n六盘山北联池靠近中华文明核心区，由中国科学院、南京大学、兰州大学等单位的研究人员组成的联合团队选取这里的沉积物样品，借助 brGDGTs，通过定量分析，重建了5000年以来我国北方更高分辨率的暖季(4月至10月)温度变化过程。结合山西某地沉积物的孢粉重建的降水记录，联合团队获得了我国北方地区5000年以来完整的气候演变历程。\n\n从重建的温度与降水结果来看，我国北方地区的气候呈现出不断变冷、变干的大趋势。大约前3000 年变化缓慢,之后的 2000年变化加速。这主要与太阳辐射变化有关，太阳辐射能量在过去 5000年间持续下降。另外，过去2000年以来的快速冷干现象还可能与太阳活动、局部火山活动等因素有关。而且这一时期内区域植被中木本植物逐渐减少,导致地表反射率上升,也可能加快了气候变冷变干的速度。\n\n研究人员将气候重建的结果与中国历史朝代相对应，发现不同历史时期的气候呈现出冷暖交替的特点。比如,隋朝末年气候偏于冷干,唐朝初期和中期温暖湿润，后期快速转冷,与之相伴的是干旱化。五代十国时期，北方经历了70余年寒冷干燥的气候,北宋气候开始好转。\n\n之前有研究发现,古代气候变化深刻影响了我国古代农耕社会文明的发展,我国历史上百年尺度的冷暖变化与社会经济波动之间呈现同期性，总体上表现出“冷抑暖扬”的特点,即暖期气候是有利的，历史上经济发达、社会安定、国力强盛、人口增加的时期往往出现在暖期，相反的情况则发生在冷期。联合团队的研究也证实了“冷抑暖扬”这一特点，比如,温暖湿润的气候推动了唐朝初期和中期的农业发展与社会经济繁荣,寒冷干燥的气候使唐朝后期农业发展受到极大不利影响，这是造成当时社会不稳定的重要因素之一。"
+              },
+              {
+                "key": "material2",
+                "label": "材料2",
+                "text": "材料二\n\n我国古代是农耕文明社会,加之古人应对自然灾害能力较差，农业对气候变化有较强的依赖性。暖期的气候总体有利于农业发展,从而为社会发展提供更为优越的物质条件,这是历史上“冷抑暖扬”特点形成的根本原因。气候变化直接影响粮食生产,从全国粮食亩产量和北方麦作亩产量的相对变化指数看，除了明清，秦汉以后气候寒冷时期，我国粮食亩产量均有下降。尽管历史上暖期的影响总体好于冷期,但我国地域广阔,不论在暖期还是冷期,气候都可能有区域性差异，给区域社会经济带来有利或不利影响。唐朝和宋朝两个时期中国平均温度均偏高，但在地域分布上有很大差异。唐朝初期增温主要出现在黄河流域、中原腹地,其原因是区域尺度上大气净能量的增加以及有利的热量输送。而北宋初期，全国普遍增温是太阳辐射强度的增加造成的，是全球或半球尺度上的暖事件在中国的体现。暖期中的北宋时期,我国华北及北方农牧交错带相对湿润，而江南地区则受到干旱的威胁。\n\n暖期气候温暖湿润，会推动社会的繁荣和人口的较快增长。然而众多的人口也加大了社会对资源的需求,增加了环境的压力,导致以农业为基础的社会系统风险增加,这种在暖期尚能承受的压力,可能会因气候变冷导致农业生产力下降而凸显，甚至引发严重的社会危机。\n\n人类社会并未因气候变化的不利影响而停止前进的脚步,而是在应对气候变化的过程中不断开不断开拓创新、积累经验,从而取得更大的繁荣。为适应暖期干湿变化的地域格局,北宋朝廷在变湿的华北地区积极推广水稻种植，在变干的南方则积极推广占城稻和稻麦连种。这一举措使粮食生产受气候制约的影响渐趋减少,是中国粮食生产史上的一次革命。"
+              }
+            ],
+            "topic": "一、本大题共5小题,共18分。\n阅读下面材料,完成1-5题。",
+            "annotation": "(取材于程雅楠、葛全胜等的相关文章)\n(取材于葛全胜、申敏夏、刘嘉慧等的相关文章)",
+            "annotations": [
+              {
+                "qIndex": 4,
+                "material": "material2",
+                "type": "wave",
+                "start": 47,
+                "end": 101,
+                "anchor": "暖期的气候总体有利于农业发展,从而为社会发展提供更为优越的物质条件,这是历史上“冷抑暖扬”特点形成的根本原因"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 4,
+                "id": "q4",
+                "text": "4.对于材料一和材料二内容的比较分析,下列表述不正确的一项是(3分)\nA.材料一指出了“冷抑暖扬”这一特点，材料二分析了该特点形成的根本原因。\nB.材料一指出我国不同历史时期冷暖交替，材料二分析了这一特点的根本原因。\nC.材料一显示唐朝初期温暖湿润,材料二说明了增温的具体区域以及具体原因。\nD.材料一显示北宋气候开始好转，材料二说明了北宋初期增温的范围及其原因。",
+                "score": 3
+              }
+            ]
           },
-          "inputContextSha256": "2d07a21dda7468de8f987d188c2c43c6062d9b603e1ead0ba80a4b8940a0fb18"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "答案：B。\nB项不正确。材料二分析的“根本原因”是“冷抑暖扬”特点形成的根本原因：暖期气候总体有利于农业发展，从而为社会发展提供更优越的物质条件。材料二并没有分析我国历史时期“冷暖交替”这一气候特点的根本原因，B项偷换对象。A项正确，材料一提出“冷抑暖扬”，材料二明确说“这是历史上‘冷抑暖扬’特点形成的根本原因”。C项正确，材料一说唐初温暖湿润，材料二说唐初增温主要在黄河流域、中原腹地，原因是区域尺度上大气净能量增加和有利的热量输送。D项正确，材料一说北宋气候开始好转，材料二说北宋初期全国普遍增温，原因是太阳辐射强度增加。",
-          "inputSha256": "6a3ea2fe5ade5964685cef8d6525137079f4dec3af516c5a196a637f5bf12603",
-          "generatedAt": "2026-10-03T01:45:30.808930+00:00",
-          "uncertainties": [],
-          "selectedOptions": [
-            "B"
-          ],
-          "assessment": {
-            "matchesConclusion": true,
-            "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
-            "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
-            "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
-            "stage": "independent"
-          },
-          "inputContextSha256": "2d07a21dda7468de8f987d188c2c43c6062d9b603e1ead0ba80a4b8940a0fb18"
-        },
-        "gpt_6_astra_before_context_review": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
-          "text": "答案：B。材料二着重解释气候通过农业影响社会以及这种影响的复杂性，并没有解释所有历史时期冷暖交替的根本原因。A确为现象与其社会作用根本原因的对应；C说明唐初增温的黄河中原地区与区域能量、输送因素；D说明北宋普遍增温与太阳辐射增强，均符合两材料。",
-          "inputSha256": "6a3ea2fe5ade5964685cef8d6525137079f4dec3af516c5a196a637f5bf12603",
-          "generatedAt": "2026-10-03T01:46:03.945Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+          "review": {
+            "id": "2024-feilian:4",
+            "inputSha256": "6a3ea2fe5ade5964685cef8d6525137079f4dec3af516c5a196a637f5bf12603",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "B"
+            ],
+            "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:08:21.667Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2024北京卷原题及完整材料"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "答案：B。材料二着重解释气候通过农业影响社会以及这种影响的复杂性，并没有解释所有历史时期冷暖交替的根本原因。A确为现象与其社会作用根本原因的对应；C说明唐初增温的黄河中原地区与区域能量、输送因素；D说明北宋普遍增温与太阳辐射增强，均符合两材料。",
+                "inputSha256": "6a3ea2fe5ade5964685cef8d6525137079f4dec3af516c5a196a637f5bf12603",
+                "generatedAt": "2026-10-03T03:08:21.667Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-2024-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "fb46f42e6ac3fa5cb4f8be5c2f2b832376be1ec03629f625de9882eeeff761ef",
+                  "annotationEffect": "已完整重读当年材料、题纲、所有相应题问及作者署名/原注。冷抑暖扬的社会作用机制并非冷暖交替本身原因。"
+                },
+                "inputContextSha256": "2d07a21dda7468de8f987d188c2c43c6062d9b603e1ead0ba80a4b8940a0fb18"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "答案：B。\nB项不正确。材料二分析的“根本原因”是“冷抑暖扬”特点形成的根本原因：暖期气候总体有利于农业发展，从而为社会发展提供更优越的物质条件。材料二并没有分析我国历史时期“冷暖交替”这一气候特点的根本原因，B项偷换对象。A项正确，材料一提出“冷抑暖扬”，材料二明确说“这是历史上‘冷抑暖扬’特点形成的根本原因”。C项正确，材料一说唐初温暖湿润，材料二说唐初增温主要在黄河流域、中原腹地，原因是区域尺度上大气净能量增加和有利的热量输送。D项正确，材料一说北宋气候开始好转，材料二说北宋初期全国普遍增温，原因是太阳辐射强度增加。",
+                "inputSha256": "6a3ea2fe5ade5964685cef8d6525137079f4dec3af516c5a196a637f5bf12603",
+                "generatedAt": "2026-10-03T01:45:30.808930+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "B"
+                ],
+                "assessment": {
+                  "matchesConclusion": true,
+                  "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
+                  "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
+                  "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "2d07a21dda7468de8f987d188c2c43c6062d9b603e1ead0ba80a4b8940a0fb18"
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "答案：B。材料二着重解释气候通过农业影响社会以及这种影响的复杂性，并没有解释所有历史时期冷暖交替的根本原因。A确为现象与其社会作用根本原因的对应；C说明唐初增温的黄河中原地区与区域能量、输送因素；D说明北宋普遍增温与太阳辐射增强，均符合两材料。",
+                "inputSha256": "6a3ea2fe5ade5964685cef8d6525137079f4dec3af516c5a196a637f5bf12603",
+                "generatedAt": "2026-10-03T01:46:03.945Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+                }
+              }
+            },
+            "inputContextSha256": "2d07a21dda7468de8f987d188c2c43c6062d9b603e1ead0ba80a4b8940a0fb18"
           }
         }
-      },
-      "inputContextSha256": "2d07a21dda7468de8f987d188c2c43c6062d9b603e1ead0ba80a4b8940a0fb18"
+      ],
+      "inputPresentationSha256": "e300a2f898aa2a3d54cc379165a8d35598cbf5fa264701f488ac07a15e42a0df"
     },
     {
       "id": "2024-feilian:5",
@@ -13946,346 +14201,553 @@
     },
     {
       "id": "2024-guwen:1",
-      "inputSha256": "bd84f28f26ffc9323a6afd94eb7d9287bbce43a16f6256888f8ad34820daa6eb",
-      "status": "reviewed",
+      "inputSha256": "d3b9a938df53dbe8ee9345303aede468550a3a5d36b6ab8a4cceeeeee67226f0",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "C"
-      ],
-      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "correctOptions": [],
+      "explanation": "2024原卷标记及字形重核；旧模型全文与原题面保留于历史，本人完整重答另版冻结，待最后Claude核对后裁定。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:08:21.667Z",
+      "reviewedAt": "2026-10-04T08:12:35.580Z",
       "sources": [
         {
           "type": "source_material",
           "title": "站内2024北京卷原题及完整材料"
         }
       ],
-      "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 完整附注复核",
-          "text": "答案：C。“说百姓之忧”承前句有命说给百姓造成忧患，‘说’应按通‘悦’、以之为悦理解，不是中性的谈论。A指面对持有命论者的言说；B的渝为改变；D的沮为阻止、遏制暴行。",
-          "inputSha256": "bd84f28f26ffc9323a6afd94eb7d9287bbce43a16f6256888f8ad34820daa6eb",
-          "generatedAt": "2026-10-03T03:08:21.667Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review_reaffirmation",
-            "evidence": "answers-six-sites-20261002/root-context-2024-decisions.json",
-            "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "priorAnswerSha256": "a9e5539e688e953a21a74f21741acd2dba73630ac057aefa793946eec0adaeba",
-            "annotationEffect": "已完整重读当年材料、题纲、所有相应题问及作者署名/原注。结合执有命者不仁及上下文，以百姓忧患为悦而非谈论。"
+      "modelAnswers": {},
+      "inputContextSha256": "6d2f0abeba1fda17a438b5028eec829e3231c58a1108530a349d3dfaff27384a",
+      "history": [
+        {
+          "source": {
+            "id": "2024-guwen",
+            "materials": [
+              {
+                "key": "material2",
+                "label": "材料2",
+                "text": "子墨子言曰:“古者王公大人,为政国家者，皆欲国家之富,人民之众刑政之治。然而不得富而得贫，不得众而得寡，不得治而得乱,是故何也?执有命者之言曰:‘命富则富,命贫则贫,命众则众,命寡则寡，命治则治，命乱则乱。’以上说王公大人，下以阻百姓之从事，故执有命者不仁。故当执有命者之言,不可不明辨。”\n\n然则明辨此说将奈何哉?子墨子言曰:“必立仪，言而无仪,譬犹运钧①之上而立朝夕者也，是非利害之辨,不可得而明知也。故言必有三表。”何谓三表?子墨子言曰:“有本之者,有原之者,有用之者。于何本之?上本之于古者圣王之事。于何原之?下原察百姓耳目之实。于何用之?发以为刑政,观其中②国家百姓人民之利。此所谓言有三表也。\n\n“然而今天下之士君子,或以命为有。盖尝尚观于圣王之事,古者桀之所乱,汤受而治之;纣之所乱，武王受而治之。此世未易，民未渝，在于桀纣，则天下乱,在于汤武，则天下治，岂可谓有命哉!盖尝尚观于先王之书,所以出于国家、布施百姓者，宪也;所以听狱制罪者,刑也。今用执有命者之言,是覆天下之义。此百姓之忧也。说百姓之忧者,是灭天下之人也。”\n\n然则所谓欲义人在上者,何也?曰:“义人在上，天下必治,万民被其大利。”何以知之?子墨子言曰:“昔者文王封于岐周,与其百姓兼相爱,交相利,是以近者安其政,远者归其德。闻文王者,皆起而趋之，曰:‘奈何乎使文王之地及我,则吾岂不亦犹文王之民也哉!’吾用此知之。古之圣王发宪出令,设以为赏罚以劝贤沮暴,是以入则孝慈于亲戚,出则弟长于乡里。是故使治官府则不盗窃,守城则不崩叛。此上之所赏而百姓之所誉也。执有命者之言曰:‘上之所赏,命固且赏,非贤故赏也。上之所罚,命固且罚，不暴故罚也。’以此为君则不义,为臣则不忠,为父则不慈,为子则不孝,而强执此者,此特凶言之所自生，而暴人之道也。”\n\n是故子墨子言曰:“今天下之士君子,中实欲天下之富而恶其贫,欲天下之治而恶其乱,执有命者之言,不可不非,此天下之大害也。”"
+              }
+            ],
+            "topic": "二、本大题共5小题,共18分。\n阅读下面文言文,完成6-10题。",
+            "annotation": "(取材于《墨子.非命》)\n注释 ①钧:制作陶器所用的转轮。②中:符合。",
+            "annotations": [
+              {
+                "qIndex": 1,
+                "material": "material2",
+                "type": "dot",
+                "start": 130,
+                "end": 131,
+                "anchor": "当"
+              },
+              {
+                "qIndex": 1,
+                "material": "material2",
+                "type": "dot",
+                "start": 363,
+                "end": 364,
+                "anchor": "渝"
+              },
+              {
+                "qIndex": 1,
+                "material": "material2",
+                "type": "dot",
+                "start": 106,
+                "end": 107,
+                "anchor": "说"
+              },
+              {
+                "qIndex": 1,
+                "material": "material2",
+                "type": "dot",
+                "start": 614,
+                "end": 615,
+                "anchor": "沮"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "6.下列对语句中加点词的解释,不正确的一项是(3分)\nA.故当执有命者之言 当:面对\nB.此世未易,民未渝 渝:改变\nC.说百姓之忧者 说:谈论\nD.设以为赏罚以劝贤沮暴 沮:阻止",
+                "score": 3
+              }
+            ]
           },
-          "inputContextSha256": "475b73c8c27614e1877dd63bda5d70c62af1a58f8cb9b9cb472ee83fbdf578e0"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "答案：C。\nC项不正确。“说百姓之忧者”中“说”通“悦”，意为喜欢、以……为乐。全句意为：以百姓的忧患为乐的人，就是要灭绝天下的人。解释为“谈论”不合文意，谈论百姓之忧不至于是“灭天下之人”。A项，“当”解释为面对、对于，“对于执有命者的言论，不可不明辨”，正确。B项，“渝”意为改变，“世未易，民未渝”是说时代没有变，百姓没有变，正确。D项，“沮”意为阻止，“劝贤沮暴”即勉励贤良、阻止凶暴，正确。",
-          "inputSha256": "bd84f28f26ffc9323a6afd94eb7d9287bbce43a16f6256888f8ad34820daa6eb",
-          "generatedAt": "2026-10-03T01:45:30.808930+00:00",
-          "uncertainties": [],
-          "selectedOptions": [
-            "C"
-          ],
-          "assessment": {
-            "matchesConclusion": true,
-            "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
-            "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
-            "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
-            "stage": "independent"
-          },
-          "inputContextSha256": "475b73c8c27614e1877dd63bda5d70c62af1a58f8cb9b9cb472ee83fbdf578e0"
-        },
-        "gpt_6_astra_before_context_review": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
-          "text": "答案：C。“说百姓之忧”承前句有命说给百姓造成忧患，‘说’应按通‘悦’、以之为悦理解，不是中性的谈论。A指面对持有命论者的言说；B的渝为改变；D的沮为阻止、遏制暴行。",
-          "inputSha256": "bd84f28f26ffc9323a6afd94eb7d9287bbce43a16f6256888f8ad34820daa6eb",
-          "generatedAt": "2026-10-03T01:46:03.945Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+          "review": {
+            "id": "2024-guwen:1",
+            "inputSha256": "bd84f28f26ffc9323a6afd94eb7d9287bbce43a16f6256888f8ad34820daa6eb",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "C"
+            ],
+            "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:08:21.667Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2024北京卷原题及完整材料"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "答案：C。“说百姓之忧”承前句有命说给百姓造成忧患，‘说’应按通‘悦’、以之为悦理解，不是中性的谈论。A指面对持有命论者的言说；B的渝为改变；D的沮为阻止、遏制暴行。",
+                "inputSha256": "bd84f28f26ffc9323a6afd94eb7d9287bbce43a16f6256888f8ad34820daa6eb",
+                "generatedAt": "2026-10-03T03:08:21.667Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-2024-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "a9e5539e688e953a21a74f21741acd2dba73630ac057aefa793946eec0adaeba",
+                  "annotationEffect": "已完整重读当年材料、题纲、所有相应题问及作者署名/原注。结合执有命者不仁及上下文，以百姓忧患为悦而非谈论。"
+                },
+                "inputContextSha256": "475b73c8c27614e1877dd63bda5d70c62af1a58f8cb9b9cb472ee83fbdf578e0"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "答案：C。\nC项不正确。“说百姓之忧者”中“说”通“悦”，意为喜欢、以……为乐。全句意为：以百姓的忧患为乐的人，就是要灭绝天下的人。解释为“谈论”不合文意，谈论百姓之忧不至于是“灭天下之人”。A项，“当”解释为面对、对于，“对于执有命者的言论，不可不明辨”，正确。B项，“渝”意为改变，“世未易，民未渝”是说时代没有变，百姓没有变，正确。D项，“沮”意为阻止，“劝贤沮暴”即勉励贤良、阻止凶暴，正确。",
+                "inputSha256": "bd84f28f26ffc9323a6afd94eb7d9287bbce43a16f6256888f8ad34820daa6eb",
+                "generatedAt": "2026-10-03T01:45:30.808930+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "C"
+                ],
+                "assessment": {
+                  "matchesConclusion": true,
+                  "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
+                  "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
+                  "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "475b73c8c27614e1877dd63bda5d70c62af1a58f8cb9b9cb472ee83fbdf578e0"
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "答案：C。“说百姓之忧”承前句有命说给百姓造成忧患，‘说’应按通‘悦’、以之为悦理解，不是中性的谈论。A指面对持有命论者的言说；B的渝为改变；D的沮为阻止、遏制暴行。",
+                "inputSha256": "bd84f28f26ffc9323a6afd94eb7d9287bbce43a16f6256888f8ad34820daa6eb",
+                "generatedAt": "2026-10-03T01:46:03.945Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+                }
+              }
+            },
+            "inputContextSha256": "475b73c8c27614e1877dd63bda5d70c62af1a58f8cb9b9cb472ee83fbdf578e0"
           }
         }
-      },
-      "inputContextSha256": "475b73c8c27614e1877dd63bda5d70c62af1a58f8cb9b9cb472ee83fbdf578e0"
+      ],
+      "inputPresentationSha256": "6cbb163b202841bb50cb250db90b1fb990fc8e9d2acb45fcb25c3931010ae69b"
     },
     {
       "id": "2024-guwen:3",
-      "inputSha256": "601dbf43fb82f8a4f6cda973d069b0684998760c50cc72bbfb4480635e1565bc",
-      "status": "reviewed",
+      "inputSha256": "f38bfe3648eb462a6f4bae7862d5371ca4804cafc42ca234067cfbc2e2497550",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "D"
-      ],
-      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "correctOptions": [],
+      "explanation": "2024原卷标记及字形重核；旧模型全文与原题面保留于历史，本人完整重答另版冻结，待最后Claude核对后裁定。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:08:21.667Z",
+      "reviewedAt": "2026-10-04T08:12:35.580Z",
       "sources": [
         {
           "type": "source_material",
           "title": "站内2024北京卷原题及完整材料"
         }
       ],
-      "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 完整附注复核",
-          "text": "答案：D。“特”是只是，“所自生”指产生的来源，这里说明执有命论是凶言产生的根源，并非说暴戾言论自然发生。A抓住采用有命说会颠覆道义；B问怎样让文王之地扩及自身；C的宪、令指法令，均合文意。",
-          "inputSha256": "601dbf43fb82f8a4f6cda973d069b0684998760c50cc72bbfb4480635e1565bc",
-          "generatedAt": "2026-10-03T03:08:21.667Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review_reaffirmation",
-            "evidence": "answers-six-sites-20261002/root-context-2024-decisions.json",
-            "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "priorAnswerSha256": "d2ca92dc383e662c6f0a83f2f525c9cee7a38b6d8b8d16cd1dd21bc26bb0ac6d",
-            "annotationEffect": "已完整重读当年材料、题纲、所有相应题问及作者署名/原注。所自生指产生的来源，非自然发生。",
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "f6cdd6f870e3ae308aeaae8c757c41b98bd804043156bb502470784b4bda79d8"
-            }
+      "modelAnswers": {},
+      "inputContextSha256": "83e7d020892b9da78b791609c74c2d44b57afbd801a0b93a81d0ca3295eebca5",
+      "inputPresentationSha256": "c8a1d31110de979096e26b4d0992b2812c3fe1bb2e66f0013e3fad81a928d0e8",
+      "history": [
+        {
+          "source": {
+            "id": "2024-guwen",
+            "materials": [
+              {
+                "key": "material2",
+                "label": "材料2",
+                "text": "子墨子言曰:“古者王公大人,为政国家者，皆欲国家之富,人民之众刑政之治。然而不得富而得贫，不得众而得寡，不得治而得乱,是故何也?执有命者之言曰:‘命富则富,命贫则贫,命众则众,命寡则寡，命治则治，命乱则乱。’以上说王公大人，下以阻百姓之从事，故执有命者不仁。故当执有命者之言,不可不明辨。”\n\n然则明辨此说将奈何哉?子墨子言曰:“必立仪，言而无仪,譬犹运钧①之上而立朝夕者也，是非利害之辨,不可得而明知也。故言必有三表。”何谓三表?子墨子言曰:“有本之者,有原之者,有用之者。于何本之?上本之于古者圣王之事。于何原之?下原察百姓耳目之实。于何用之?发以为刑政,观其中②国家百姓人民之利。此所谓言有三表也。\n\n“然而今天下之士君子,或以命为有。盖尝尚观于圣王之事,古者桀之所乱,汤受而治之;纣之所乱，武王受而治之。此世未易，民未渝，在于桀纣，则天下乱,在于汤武，则天下治，岂可谓有命哉!盖尝尚观于先王之书,所以出于国家、布施百姓者，宪也;所以听狱制罪者,刑也。今用执有命者之言,是覆天下之义。此百姓之忧也。说百姓之忧者,是灭天下之人也。”\n\n然则所谓欲义人在上者,何也?曰:“义人在上，天下必治,万民被其大利。”何以知之?子墨子言曰:“昔者文王封于岐周,与其百姓兼相爱,交相利,是以近者安其政,远者归其德。闻文王者,皆起而趋之，曰:‘奈何乎使文王之地及我,则吾岂不亦犹文王之民也哉!’吾用此知之。古之圣王发宪出令,设以为赏罚以劝贤沮暴,是以入则孝慈于亲戚,出则弟长于乡里。是故使治官府则不盗窃,守城则不崩叛。此上之所赏而百姓之所誉也。执有命者之言曰:‘上之所赏,命固且赏,非贤故赏也。上之所罚,命固且罚，不暴故罚也。’以此为君则不义,为臣则不忠,为父则不慈,为子则不孝,而强执此者,此特凶言之所自生，而暴人之道也。”\n\n是故子墨子言曰:“今天下之士君子,中实欲天下之富而恶其贫,欲天下之治而恶其乱,执有命者之言,不可不非,此天下之大害也。”"
+              }
+            ],
+            "topic": "二、本大题共5小题,共18分。\n阅读下面文言文,完成6-10题。",
+            "annotation": "(取材于《墨子.非命》)\n注释 ①钧:制作陶器所用的转轮。②中:符合。",
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 3,
+                "id": "q3",
+                "text": "8.下列对文中语句的理解,不正确的一项是(3分)\nA.今用执有命者之言,是覆天下之义\n如果在上者采用执有命者之说,这就是颠覆天下大义\nB.奈何乎使文王之地及我\n怎么才能使文王的领土扩展到我们这里呢\nC.古之圣王发宪出令\n古代圣王发布律法颁布政令\nD.此特凶言之所自生\n这样的话暴戾言论就自然发生了",
+                "score": 3
+              }
+            ]
           },
-          "inputContextSha256": "f6cdd6f870e3ae308aeaae8c757c41b98bd804043156bb502470784b4bda79d8",
-          "inputPresentationSha256": "1f4303c508ffda9cf2630b3e80ce9baf8cf7848c197e9086cc048924ac58f792"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "答案：D。\nD项不正确。“此特凶言之所自生”中，“特”是副词，意为只是、正是；“所自生”是“……产生的由来、根源”。全句意为：这正是凶恶言论产生的根源。译成“这样的话暴戾言论就自然发生了”，把“所自生”误解为“自然发生”，也漏译了“特”。A项，“用”为采用，“覆”为颠覆，理解正确。B项，“奈何”为怎么才能，“及”为到达、扩展到，理解正确。C项，“宪”为法令，“发宪出令”即发布法令、颁布政令，理解正确。",
-          "inputSha256": "601dbf43fb82f8a4f6cda973d069b0684998760c50cc72bbfb4480635e1565bc",
-          "generatedAt": "2026-10-03T01:45:30.808930+00:00",
-          "uncertainties": [],
-          "selectedOptions": [
-            "D"
-          ],
-          "assessment": {
-            "matchesConclusion": true,
-            "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
-            "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
-            "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
-            "stage": "independent",
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "f6cdd6f870e3ae308aeaae8c757c41b98bd804043156bb502470784b4bda79d8"
-            }
-          },
-          "inputContextSha256": "f6cdd6f870e3ae308aeaae8c757c41b98bd804043156bb502470784b4bda79d8",
-          "inputPresentationSha256": "1f4303c508ffda9cf2630b3e80ce9baf8cf7848c197e9086cc048924ac58f792"
-        },
-        "gpt_6_astra_before_context_review": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
-          "text": "答案：D。“特”是只是，“所自生”指产生的来源，这里说明执有命论是凶言产生的根源，并非说暴戾言论自然发生。A抓住采用有命说会颠覆道义；B问怎样让文王之地扩及自身；C的宪、令指法令，均合文意。",
-          "inputSha256": "601dbf43fb82f8a4f6cda973d069b0684998760c50cc72bbfb4480635e1565bc",
-          "generatedAt": "2026-10-03T01:46:03.945Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+          "review": {
+            "id": "2024-guwen:3",
+            "inputSha256": "601dbf43fb82f8a4f6cda973d069b0684998760c50cc72bbfb4480635e1565bc",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "D"
+            ],
+            "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:08:21.667Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2024北京卷原题及完整材料"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "答案：D。“特”是只是，“所自生”指产生的来源，这里说明执有命论是凶言产生的根源，并非说暴戾言论自然发生。A抓住采用有命说会颠覆道义；B问怎样让文王之地扩及自身；C的宪、令指法令，均合文意。",
+                "inputSha256": "601dbf43fb82f8a4f6cda973d069b0684998760c50cc72bbfb4480635e1565bc",
+                "generatedAt": "2026-10-03T03:08:21.667Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-2024-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "d2ca92dc383e662c6f0a83f2f525c9cee7a38b6d8b8d16cd1dd21bc26bb0ac6d",
+                  "annotationEffect": "已完整重读当年材料、题纲、所有相应题问及作者署名/原注。所自生指产生的来源，非自然发生。",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "f6cdd6f870e3ae308aeaae8c757c41b98bd804043156bb502470784b4bda79d8"
+                  }
+                },
+                "inputContextSha256": "f6cdd6f870e3ae308aeaae8c757c41b98bd804043156bb502470784b4bda79d8",
+                "inputPresentationSha256": "1f4303c508ffda9cf2630b3e80ce9baf8cf7848c197e9086cc048924ac58f792"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "答案：D。\nD项不正确。“此特凶言之所自生”中，“特”是副词，意为只是、正是；“所自生”是“……产生的由来、根源”。全句意为：这正是凶恶言论产生的根源。译成“这样的话暴戾言论就自然发生了”，把“所自生”误解为“自然发生”，也漏译了“特”。A项，“用”为采用，“覆”为颠覆，理解正确。B项，“奈何”为怎么才能，“及”为到达、扩展到，理解正确。C项，“宪”为法令，“发宪出令”即发布法令、颁布政令，理解正确。",
+                "inputSha256": "601dbf43fb82f8a4f6cda973d069b0684998760c50cc72bbfb4480635e1565bc",
+                "generatedAt": "2026-10-03T01:45:30.808930+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "D"
+                ],
+                "assessment": {
+                  "matchesConclusion": true,
+                  "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
+                  "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
+                  "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
+                  "stage": "independent",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "f6cdd6f870e3ae308aeaae8c757c41b98bd804043156bb502470784b4bda79d8"
+                  }
+                },
+                "inputContextSha256": "f6cdd6f870e3ae308aeaae8c757c41b98bd804043156bb502470784b4bda79d8",
+                "inputPresentationSha256": "1f4303c508ffda9cf2630b3e80ce9baf8cf7848c197e9086cc048924ac58f792"
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "答案：D。“特”是只是，“所自生”指产生的来源，这里说明执有命论是凶言产生的根源，并非说暴戾言论自然发生。A抓住采用有命说会颠覆道义；B问怎样让文王之地扩及自身；C的宪、令指法令，均合文意。",
+                "inputSha256": "601dbf43fb82f8a4f6cda973d069b0684998760c50cc72bbfb4480635e1565bc",
+                "generatedAt": "2026-10-03T01:46:03.945Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+                }
+              }
+            },
+            "inputContextSha256": "f6cdd6f870e3ae308aeaae8c757c41b98bd804043156bb502470784b4bda79d8",
+            "inputPresentationSha256": "1f4303c508ffda9cf2630b3e80ce9baf8cf7848c197e9086cc048924ac58f792"
           }
         }
-      },
-      "inputContextSha256": "f6cdd6f870e3ae308aeaae8c757c41b98bd804043156bb502470784b4bda79d8",
-      "inputPresentationSha256": "1f4303c508ffda9cf2630b3e80ce9baf8cf7848c197e9086cc048924ac58f792"
+      ]
     },
     {
       "id": "2024-guwen:4",
-      "inputSha256": "92c4c81f815d3e867b0c273652c97cb7dbe92b1c0682e7dca18b14f81c8e305a",
-      "status": "reviewed",
+      "inputSha256": "41dc9a6fbd4dfb571ed279a16cd40a4b1aefcd466d69ad687afaf4d213deaa25",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "C"
-      ],
-      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "correctOptions": [],
+      "explanation": "2024原卷标记及字形重核；旧模型全文与原题面保留于历史，本人完整重答另版冻结，待最后Claude核对后裁定。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:08:21.667Z",
+      "reviewedAt": "2026-10-04T08:12:35.580Z",
       "sources": [
         {
           "type": "source_material",
           "title": "站内2024北京卷原题及完整材料"
         }
       ],
-      "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 完整附注复核",
-          "text": "答案：C。文章以桀纣之乱与汤武之治、时代人民未变作比较，证明治乱取决于人的施政而非命定，没有断言桀纣亡国是因为信奉有命说。A概括宿命立场；B对应立仪和三表；D对应否定奖贤惩暴依据会破坏人伦与秩序。",
-          "inputSha256": "92c4c81f815d3e867b0c273652c97cb7dbe92b1c0682e7dca18b14f81c8e305a",
-          "generatedAt": "2026-10-03T03:08:21.667Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review_reaffirmation",
-            "evidence": "answers-six-sites-20261002/root-context-2024-decisions.json",
-            "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "priorAnswerSha256": "ac8b34c6f9017b1228d4a92ee387aa999117ef76e4e1b303a1b43043e65d2961",
-            "annotationEffect": "已完整重读当年材料、题纲、所有相应题问及作者署名/原注。治乱对比不能反推桀纣信命为亡国原因。",
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "698346b3a43d7d8c7d57b66978fad74fd5a5a2b1b80952d31e62f2df26556088"
-            }
+      "modelAnswers": {},
+      "inputContextSha256": "0f5e69d8941596169b6c7697cedb60f4e7241337baa1153ea12b75cc4dc9ec6d",
+      "inputPresentationSha256": "63fb6a5ce065d176662e0b0bcbad2c231d4a3a07a51fcad689ccb84e548d3859",
+      "history": [
+        {
+          "source": {
+            "id": "2024-guwen",
+            "materials": [
+              {
+                "key": "material2",
+                "label": "材料2",
+                "text": "子墨子言曰:“古者王公大人,为政国家者，皆欲国家之富,人民之众刑政之治。然而不得富而得贫，不得众而得寡，不得治而得乱,是故何也?执有命者之言曰:‘命富则富,命贫则贫,命众则众,命寡则寡，命治则治，命乱则乱。’以上说王公大人，下以阻百姓之从事，故执有命者不仁。故当执有命者之言,不可不明辨。”\n\n然则明辨此说将奈何哉?子墨子言曰:“必立仪，言而无仪,譬犹运钧①之上而立朝夕者也，是非利害之辨,不可得而明知也。故言必有三表。”何谓三表?子墨子言曰:“有本之者,有原之者,有用之者。于何本之?上本之于古者圣王之事。于何原之?下原察百姓耳目之实。于何用之?发以为刑政,观其中②国家百姓人民之利。此所谓言有三表也。\n\n“然而今天下之士君子,或以命为有。盖尝尚观于圣王之事,古者桀之所乱,汤受而治之;纣之所乱，武王受而治之。此世未易，民未渝，在于桀纣，则天下乱,在于汤武，则天下治，岂可谓有命哉!盖尝尚观于先王之书,所以出于国家、布施百姓者，宪也;所以听狱制罪者,刑也。今用执有命者之言,是覆天下之义。此百姓之忧也。说百姓之忧者,是灭天下之人也。”\n\n然则所谓欲义人在上者,何也?曰:“义人在上，天下必治,万民被其大利。”何以知之?子墨子言曰:“昔者文王封于岐周,与其百姓兼相爱,交相利,是以近者安其政,远者归其德。闻文王者,皆起而趋之，曰:‘奈何乎使文王之地及我,则吾岂不亦犹文王之民也哉!’吾用此知之。古之圣王发宪出令,设以为赏罚以劝贤沮暴,是以入则孝慈于亲戚,出则弟长于乡里。是故使治官府则不盗窃,守城则不崩叛。此上之所赏而百姓之所誉也。执有命者之言曰:‘上之所赏,命固且赏,非贤故赏也。上之所罚,命固且罚，不暴故罚也。’以此为君则不义,为臣则不忠,为父则不慈,为子则不孝,而强执此者,此特凶言之所自生，而暴人之道也。”\n\n是故子墨子言曰:“今天下之士君子,中实欲天下之富而恶其贫,欲天下之治而恶其乱,执有命者之言,不可不非,此天下之大害也。”"
+              }
+            ],
+            "topic": "二、本大题共5小题,共18分。\n阅读下面文言文,完成6-10题。",
+            "annotation": "(取材于《墨子.非命》)\n注释 ①钧:制作陶器所用的转轮。②中:符合。",
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 4,
+                "id": "q4",
+                "text": "9.根据文意,下列理解与推断,不正确的一项是(3分)\nA.信奉有命之说的人认为世事皆由命定，非人力可改变。\nB.墨子主张,肯定或否定某种学说必须遵从一定的准则。\nC.文章认为,桀纣等暴君亡天下的原因是信奉有命之说。\nD.君主如果信奉有命之说,会导致赏罚不当、社会混乱。",
+                "score": 3
+              }
+            ]
           },
-          "inputContextSha256": "698346b3a43d7d8c7d57b66978fad74fd5a5a2b1b80952d31e62f2df26556088",
-          "inputPresentationSha256": "462a6dd1e22d4aecdcf342da6c84adcb9cc4714b6f72418900df442b8af38643"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "答案：C。\nC项不正确。第三段以“桀之所乱，汤受而治之；纣之所乱，武王受而治之”为例，论证的是：时代和百姓都没有改变，在桀纣手中天下就乱，在汤武手中天下就治，可见治乱在人而不在命。文中没有说桀纣亡天下是因为信奉有命之说，C项强加因果，无中生有。A项，执有命者说“命富则富，命贫则贫……”，即认为世事由命定，正确。B项，墨子主张“必立仪”“言必有三表”，正确。D项，执有命者认为“上之所赏，命固且赏，非贤故赏也”，以此为君则不义，会使赏罚失去劝善止暴的作用，导致社会混乱，推断合理。",
-          "inputSha256": "92c4c81f815d3e867b0c273652c97cb7dbe92b1c0682e7dca18b14f81c8e305a",
-          "generatedAt": "2026-10-03T01:45:30.808930+00:00",
-          "uncertainties": [],
-          "selectedOptions": [
-            "C"
-          ],
-          "assessment": {
-            "matchesConclusion": true,
-            "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
-            "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
-            "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
-            "stage": "independent",
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "698346b3a43d7d8c7d57b66978fad74fd5a5a2b1b80952d31e62f2df26556088"
-            }
-          },
-          "inputContextSha256": "698346b3a43d7d8c7d57b66978fad74fd5a5a2b1b80952d31e62f2df26556088",
-          "inputPresentationSha256": "462a6dd1e22d4aecdcf342da6c84adcb9cc4714b6f72418900df442b8af38643"
-        },
-        "gpt_6_astra_before_context_review": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
-          "text": "答案：C。文章以桀纣之乱与汤武之治、时代人民未变作比较，证明治乱取决于人的施政而非命定，没有断言桀纣亡国是因为信奉有命说。A概括宿命立场；B对应立仪和三表；D对应否定奖贤惩暴依据会破坏人伦与秩序。",
-          "inputSha256": "92c4c81f815d3e867b0c273652c97cb7dbe92b1c0682e7dca18b14f81c8e305a",
-          "generatedAt": "2026-10-03T01:46:03.945Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+          "review": {
+            "id": "2024-guwen:4",
+            "inputSha256": "92c4c81f815d3e867b0c273652c97cb7dbe92b1c0682e7dca18b14f81c8e305a",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "C"
+            ],
+            "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:08:21.667Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2024北京卷原题及完整材料"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "答案：C。文章以桀纣之乱与汤武之治、时代人民未变作比较，证明治乱取决于人的施政而非命定，没有断言桀纣亡国是因为信奉有命说。A概括宿命立场；B对应立仪和三表；D对应否定奖贤惩暴依据会破坏人伦与秩序。",
+                "inputSha256": "92c4c81f815d3e867b0c273652c97cb7dbe92b1c0682e7dca18b14f81c8e305a",
+                "generatedAt": "2026-10-03T03:08:21.667Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-2024-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "ac8b34c6f9017b1228d4a92ee387aa999117ef76e4e1b303a1b43043e65d2961",
+                  "annotationEffect": "已完整重读当年材料、题纲、所有相应题问及作者署名/原注。治乱对比不能反推桀纣信命为亡国原因。",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "698346b3a43d7d8c7d57b66978fad74fd5a5a2b1b80952d31e62f2df26556088"
+                  }
+                },
+                "inputContextSha256": "698346b3a43d7d8c7d57b66978fad74fd5a5a2b1b80952d31e62f2df26556088",
+                "inputPresentationSha256": "462a6dd1e22d4aecdcf342da6c84adcb9cc4714b6f72418900df442b8af38643"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "答案：C。\nC项不正确。第三段以“桀之所乱，汤受而治之；纣之所乱，武王受而治之”为例，论证的是：时代和百姓都没有改变，在桀纣手中天下就乱，在汤武手中天下就治，可见治乱在人而不在命。文中没有说桀纣亡天下是因为信奉有命之说，C项强加因果，无中生有。A项，执有命者说“命富则富，命贫则贫……”，即认为世事由命定，正确。B项，墨子主张“必立仪”“言必有三表”，正确。D项，执有命者认为“上之所赏，命固且赏，非贤故赏也”，以此为君则不义，会使赏罚失去劝善止暴的作用，导致社会混乱，推断合理。",
+                "inputSha256": "92c4c81f815d3e867b0c273652c97cb7dbe92b1c0682e7dca18b14f81c8e305a",
+                "generatedAt": "2026-10-03T01:45:30.808930+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "C"
+                ],
+                "assessment": {
+                  "matchesConclusion": true,
+                  "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
+                  "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
+                  "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
+                  "stage": "independent",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "698346b3a43d7d8c7d57b66978fad74fd5a5a2b1b80952d31e62f2df26556088"
+                  }
+                },
+                "inputContextSha256": "698346b3a43d7d8c7d57b66978fad74fd5a5a2b1b80952d31e62f2df26556088",
+                "inputPresentationSha256": "462a6dd1e22d4aecdcf342da6c84adcb9cc4714b6f72418900df442b8af38643"
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "答案：C。文章以桀纣之乱与汤武之治、时代人民未变作比较，证明治乱取决于人的施政而非命定，没有断言桀纣亡国是因为信奉有命说。A概括宿命立场；B对应立仪和三表；D对应否定奖贤惩暴依据会破坏人伦与秩序。",
+                "inputSha256": "92c4c81f815d3e867b0c273652c97cb7dbe92b1c0682e7dca18b14f81c8e305a",
+                "generatedAt": "2026-10-03T01:46:03.945Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+                }
+              }
+            },
+            "inputContextSha256": "698346b3a43d7d8c7d57b66978fad74fd5a5a2b1b80952d31e62f2df26556088",
+            "inputPresentationSha256": "462a6dd1e22d4aecdcf342da6c84adcb9cc4714b6f72418900df442b8af38643"
           }
         }
-      },
-      "inputContextSha256": "698346b3a43d7d8c7d57b66978fad74fd5a5a2b1b80952d31e62f2df26556088",
-      "inputPresentationSha256": "462a6dd1e22d4aecdcf342da6c84adcb9cc4714b6f72418900df442b8af38643"
+      ]
     },
     {
       "id": "2024-guwen:5",
-      "inputSha256": "ae719518ce03992a89e845063f6e3ae7c5d166db0b74377b3506d43844c41ff2",
-      "status": "reviewed",
+      "inputSha256": "2ed2d2dbe20a884d997e1b33981b048780743d99a72239c9844bad542007a032",
+      "status": "draft",
       "kind": "open",
       "correctOptions": [],
-      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "explanation": "2024原卷标记及字形重核；旧模型全文与原题面保留于历史，本人完整重答另版冻结，待最后Claude核对后裁定。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:08:21.667Z",
+      "reviewedAt": "2026-10-04T08:12:35.580Z",
       "sources": [
         {
           "type": "source_material",
           "title": "站内2024北京卷原题及完整材料"
         }
       ],
-      "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 完整附注复核",
-          "text": "本之：上溯古代圣王的事迹，以历史经验作为论说依据。原之：考察百姓实际耳闻目睹的事实，检验论说是否有现实根据。用之：把论说用于刑政，看实际效果是否符合国家百姓利益。第三段以同样时代、百姓在桀纣之下乱、汤武之下治的史事，以及先王发布法令、审判定罪的制度说明治乱在人，体现本之；并指出实行有命说会颠覆道义、给百姓带来忧患，从施政后果检验其有害，体现用之。第四段举文王治岐周的史事为本，列近者安政、远者归德、百姓实际的向往和评价为事实之验，体现原之；再以赏罚能劝贤沮暴、形成孝慈守职等效果，与有命说导致不义不忠不慈不孝对照，体现用之。三者配合，使非命不只是抽象主张，而有历史、事实及利益效果的依据。",
-          "inputSha256": "ae719518ce03992a89e845063f6e3ae7c5d166db0b74377b3506d43844c41ff2",
-          "generatedAt": "2026-10-03T03:08:21.667Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review_reaffirmation",
-            "evidence": "answers-six-sites-20261002/root-context-2024-decisions.json",
-            "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "priorAnswerSha256": "3920c147088365b314e4e66b1061d741af58e8ec3320933b494251178a395d10",
-            "annotationEffect": "已完整重读当年材料、题纲、所有相应题问及作者署名/原注。历史事例、耳目事实及利益效果三表分别落实于三四段。",
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "3f5f72ee80f9fe18ce74d931491cee3ec59fc00fcac4ead180fc869bafbe9cf3"
-            }
+      "modelAnswers": {},
+      "inputContextSha256": "ba7ec839b4c18e1ab88622c2e5903c80d9f74b61fa254b256e3d6a2acd60c109",
+      "inputPresentationSha256": "55d5b146befb6c492ac573c13a1a2663a8467768d0787a07d2e5edf2b43f48f1",
+      "history": [
+        {
+          "source": {
+            "id": "2024-guwen",
+            "materials": [
+              {
+                "key": "material2",
+                "label": "材料2",
+                "text": "子墨子言曰:“古者王公大人,为政国家者，皆欲国家之富,人民之众刑政之治。然而不得富而得贫，不得众而得寡，不得治而得乱,是故何也?执有命者之言曰:‘命富则富,命贫则贫,命众则众,命寡则寡，命治则治，命乱则乱。’以上说王公大人，下以阻百姓之从事，故执有命者不仁。故当执有命者之言,不可不明辨。”\n\n然则明辨此说将奈何哉?子墨子言曰:“必立仪，言而无仪,譬犹运钧①之上而立朝夕者也，是非利害之辨,不可得而明知也。故言必有三表。”何谓三表?子墨子言曰:“有本之者,有原之者,有用之者。于何本之?上本之于古者圣王之事。于何原之?下原察百姓耳目之实。于何用之?发以为刑政,观其中②国家百姓人民之利。此所谓言有三表也。\n\n“然而今天下之士君子,或以命为有。盖尝尚观于圣王之事,古者桀之所乱,汤受而治之;纣之所乱，武王受而治之。此世未易，民未渝，在于桀纣，则天下乱,在于汤武，则天下治，岂可谓有命哉!盖尝尚观于先王之书,所以出于国家、布施百姓者，宪也;所以听狱制罪者,刑也。今用执有命者之言,是覆天下之义。此百姓之忧也。说百姓之忧者,是灭天下之人也。”\n\n然则所谓欲义人在上者,何也?曰:“义人在上，天下必治,万民被其大利。”何以知之?子墨子言曰:“昔者文王封于岐周,与其百姓兼相爱,交相利,是以近者安其政,远者归其德。闻文王者,皆起而趋之，曰:‘奈何乎使文王之地及我,则吾岂不亦犹文王之民也哉!’吾用此知之。古之圣王发宪出令,设以为赏罚以劝贤沮暴,是以入则孝慈于亲戚,出则弟长于乡里。是故使治官府则不盗窃,守城则不崩叛。此上之所赏而百姓之所誉也。执有命者之言曰:‘上之所赏,命固且赏,非贤故赏也。上之所罚,命固且罚，不暴故罚也。’以此为君则不义,为臣则不忠,为父则不慈,为子则不孝,而强执此者,此特凶言之所自生，而暴人之道也。”\n\n是故子墨子言曰:“今天下之士君子,中实欲天下之富而恶其贫,欲天下之治而恶其乱,执有命者之言,不可不非,此天下之大害也。”"
+              }
+            ],
+            "topic": "二、本大题共5小题,共18分。\n阅读下面文言文,完成6-10题。",
+            "annotation": "(取材于《墨子.非命》)\n注释 ①钧:制作陶器所用的转轮。②中:符合。",
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 5,
+                "id": "q5",
+                "text": "10.墨子论述“非命”时,提出“言必有三表”,“三表”即本之、原之、用之。请分别谈谈你对三表的理解,并概括说明第三段和第四段是怎样体现三表的。(6分)",
+                "score": 6
+              }
+            ]
           },
-          "inputContextSha256": "3f5f72ee80f9fe18ce74d931491cee3ec59fc00fcac4ead180fc869bafbe9cf3",
-          "inputPresentationSha256": "307fea8dbf91c10a51bad876bf854062274f5815a8285b1d75252ce3793ba497"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "对三表的理解：\n①本之：向上以古代圣王的事迹为根据，用历史经验检验言论是否正确。\n②原之：向下考察百姓耳闻目见的实际情况，以现实经验和事实作为检验依据。\n③用之：把言论用作刑罚政令加以实施，看它是否符合国家和百姓的利益，即以实践效果作为检验标准。\n\n第三段的体现：\n①举桀乱而汤治、纣乱而武王治的史实，指出时代未变、百姓未变，治乱却因君主不同而不同，用圣王之事证明并无“命”，这是“本之”。\n②考察先王之书中的“宪”与“刑”，指出采用有命之说就是颠覆天下之义、造成百姓之忧，这是从“用之”的角度说明有命之说危害百姓利益。\n\n第四段的体现：\n①以文王封于岐周、与百姓兼相爱交相利为例，这是“本之”圣王之事。\n②写近者安其政、远者归其德，百姓听说文王便“皆起而趋之”，盼望文王之地扩展到自己这里，这是“原察百姓耳目之实”。\n③写古代圣王发宪出令、设赏罚以劝贤沮暴，使百姓孝慈悌长、为官不盗、守城不叛，这是“用之”，证明人为的政令确有实效。\n④反过来指出，若依有命之说施政，则为君不义、为臣不忠、为父不慈、为子不孝，是“暴人之道”，从实际效果上否定有命之说。",
-          "inputSha256": "ae719518ce03992a89e845063f6e3ae7c5d166db0b74377b3506d43844c41ff2",
-          "generatedAt": "2026-10-03T01:45:30.808930+00:00",
-          "uncertainties": [],
-          "selectedOptions": [],
-          "assessment": {
-            "matchesConclusion": null,
-            "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
-            "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
-            "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
-            "stage": "independent",
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "3f5f72ee80f9fe18ce74d931491cee3ec59fc00fcac4ead180fc869bafbe9cf3"
-            }
-          },
-          "inputContextSha256": "3f5f72ee80f9fe18ce74d931491cee3ec59fc00fcac4ead180fc869bafbe9cf3",
-          "inputPresentationSha256": "307fea8dbf91c10a51bad876bf854062274f5815a8285b1d75252ce3793ba497"
-        },
-        "gpt_6_astra_before_context_review": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
-          "text": "本之：上溯古代圣王的事迹，以历史经验作为论说依据。原之：考察百姓实际耳闻目睹的事实，检验论说是否有现实根据。用之：把论说用于刑政，看实际效果是否符合国家百姓利益。第三段以同样时代、百姓在桀纣之下乱、汤武之下治的史事，以及先王发布法令、审判定罪的制度说明治乱在人，体现本之；并指出实行有命说会颠覆道义、给百姓带来忧患，从施政后果检验其有害，体现用之。第四段举文王治岐周的史事为本，列近者安政、远者归德、百姓实际的向往和评价为事实之验，体现原之；再以赏罚能劝贤沮暴、形成孝慈守职等效果，与有命说导致不义不忠不慈不孝对照，体现用之。三者配合，使非命不只是抽象主张，而有历史、事实及利益效果的依据。",
-          "inputSha256": "ae719518ce03992a89e845063f6e3ae7c5d166db0b74377b3506d43844c41ff2",
-          "generatedAt": "2026-10-03T01:46:03.945Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+          "review": {
+            "id": "2024-guwen:5",
+            "inputSha256": "ae719518ce03992a89e845063f6e3ae7c5d166db0b74377b3506d43844c41ff2",
+            "status": "reviewed",
+            "kind": "open",
+            "correctOptions": [],
+            "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:08:21.667Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2024北京卷原题及完整材料"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "本之：上溯古代圣王的事迹，以历史经验作为论说依据。原之：考察百姓实际耳闻目睹的事实，检验论说是否有现实根据。用之：把论说用于刑政，看实际效果是否符合国家百姓利益。第三段以同样时代、百姓在桀纣之下乱、汤武之下治的史事，以及先王发布法令、审判定罪的制度说明治乱在人，体现本之；并指出实行有命说会颠覆道义、给百姓带来忧患，从施政后果检验其有害，体现用之。第四段举文王治岐周的史事为本，列近者安政、远者归德、百姓实际的向往和评价为事实之验，体现原之；再以赏罚能劝贤沮暴、形成孝慈守职等效果，与有命说导致不义不忠不慈不孝对照，体现用之。三者配合，使非命不只是抽象主张，而有历史、事实及利益效果的依据。",
+                "inputSha256": "ae719518ce03992a89e845063f6e3ae7c5d166db0b74377b3506d43844c41ff2",
+                "generatedAt": "2026-10-03T03:08:21.667Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-2024-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "3920c147088365b314e4e66b1061d741af58e8ec3320933b494251178a395d10",
+                  "annotationEffect": "已完整重读当年材料、题纲、所有相应题问及作者署名/原注。历史事例、耳目事实及利益效果三表分别落实于三四段。",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "3f5f72ee80f9fe18ce74d931491cee3ec59fc00fcac4ead180fc869bafbe9cf3"
+                  }
+                },
+                "inputContextSha256": "3f5f72ee80f9fe18ce74d931491cee3ec59fc00fcac4ead180fc869bafbe9cf3",
+                "inputPresentationSha256": "307fea8dbf91c10a51bad876bf854062274f5815a8285b1d75252ce3793ba497"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "对三表的理解：\n①本之：向上以古代圣王的事迹为根据，用历史经验检验言论是否正确。\n②原之：向下考察百姓耳闻目见的实际情况，以现实经验和事实作为检验依据。\n③用之：把言论用作刑罚政令加以实施，看它是否符合国家和百姓的利益，即以实践效果作为检验标准。\n\n第三段的体现：\n①举桀乱而汤治、纣乱而武王治的史实，指出时代未变、百姓未变，治乱却因君主不同而不同，用圣王之事证明并无“命”，这是“本之”。\n②考察先王之书中的“宪”与“刑”，指出采用有命之说就是颠覆天下之义、造成百姓之忧，这是从“用之”的角度说明有命之说危害百姓利益。\n\n第四段的体现：\n①以文王封于岐周、与百姓兼相爱交相利为例，这是“本之”圣王之事。\n②写近者安其政、远者归其德，百姓听说文王便“皆起而趋之”，盼望文王之地扩展到自己这里，这是“原察百姓耳目之实”。\n③写古代圣王发宪出令、设赏罚以劝贤沮暴，使百姓孝慈悌长、为官不盗、守城不叛，这是“用之”，证明人为的政令确有实效。\n④反过来指出，若依有命之说施政，则为君不义、为臣不忠、为父不慈、为子不孝，是“暴人之道”，从实际效果上否定有命之说。",
+                "inputSha256": "ae719518ce03992a89e845063f6e3ae7c5d166db0b74377b3506d43844c41ff2",
+                "generatedAt": "2026-10-03T01:45:30.808930+00:00",
+                "uncertainties": [],
+                "selectedOptions": [],
+                "assessment": {
+                  "matchesConclusion": null,
+                  "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
+                  "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
+                  "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
+                  "stage": "independent",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "3f5f72ee80f9fe18ce74d931491cee3ec59fc00fcac4ead180fc869bafbe9cf3"
+                  }
+                },
+                "inputContextSha256": "3f5f72ee80f9fe18ce74d931491cee3ec59fc00fcac4ead180fc869bafbe9cf3",
+                "inputPresentationSha256": "307fea8dbf91c10a51bad876bf854062274f5815a8285b1d75252ce3793ba497"
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "本之：上溯古代圣王的事迹，以历史经验作为论说依据。原之：考察百姓实际耳闻目睹的事实，检验论说是否有现实根据。用之：把论说用于刑政，看实际效果是否符合国家百姓利益。第三段以同样时代、百姓在桀纣之下乱、汤武之下治的史事，以及先王发布法令、审判定罪的制度说明治乱在人，体现本之；并指出实行有命说会颠覆道义、给百姓带来忧患，从施政后果检验其有害，体现用之。第四段举文王治岐周的史事为本，列近者安政、远者归德、百姓实际的向往和评价为事实之验，体现原之；再以赏罚能劝贤沮暴、形成孝慈守职等效果，与有命说导致不义不忠不慈不孝对照，体现用之。三者配合，使非命不只是抽象主张，而有历史、事实及利益效果的依据。",
+                "inputSha256": "ae719518ce03992a89e845063f6e3ae7c5d166db0b74377b3506d43844c41ff2",
+                "generatedAt": "2026-10-03T01:46:03.945Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+                }
+              }
+            },
+            "inputContextSha256": "3f5f72ee80f9fe18ce74d931491cee3ec59fc00fcac4ead180fc869bafbe9cf3",
+            "inputPresentationSha256": "307fea8dbf91c10a51bad876bf854062274f5815a8285b1d75252ce3793ba497"
           }
         }
-      },
-      "inputContextSha256": "3f5f72ee80f9fe18ce74d931491cee3ec59fc00fcac4ead180fc869bafbe9cf3",
-      "inputPresentationSha256": "307fea8dbf91c10a51bad876bf854062274f5815a8285b1d75252ce3793ba497"
+      ]
     },
     {
       "id": "2024-shici:1",
       "inputSha256": "986b2b72acbc2cc5a05682ca50ef4db2b7f30579027216684446b80e1ab9e115",
-      "status": "reviewed",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "D"
-      ],
-      "explanation": "已按勘误后的完整题面与注释重新核对；旧题面、旧答案及当时的输入证据保留于历史版本。两模型的不同解释和错误见各自评注，当前采用 Astra 复核答案。",
+      "correctOptions": [],
+      "explanation": "2024原卷标记及字形重核；旧模型全文与原题面保留于历史，本人完整重答另版冻结，待最后Claude核对后裁定。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T02:21:32.717618+00:00",
+      "reviewedAt": "2026-10-04T08:12:35.580Z",
       "sources": [
         {
           "type": "source_material",
@@ -14297,48 +14759,7 @@
           "url": "https://gaokao.eol.cn/shiti/yw/202407/t20240705_2621911_4.shtml"
         }
       ],
-      "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 更正题面后复核",
-          "text": "答案：D。其十三用重金买马却献给并不爱马的楚襄王写所托非人，不能说拜谒明主并实现人生价值。题注明确襄王未闻有好马之癖。A表现骏马外形与奔跑神态；B由塞外清景转入佩金络脑驰骋的愿望；C以项羽解剑、神骓泣风写失主之悲，均合诗意。",
-          "inputSha256": "986b2b72acbc2cc5a05682ca50ef4db2b7f30579027216684446b80e1ab9e115",
-          "inputContextSha256": "95f9dfec58bbc9ad22b6f5f3de520de167e8a2f492fae30a7c81b17b148c009f",
-          "generatedAt": "2026-10-03T02:18:33.615316+00:00",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review",
-            "evidence": "answers-six-sites-20261002/gpt-astra-source-context-2024-2025.json"
-          }
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 来源复核后修订",
-          "text": "答案：D。\nA项正确：“龙脊贴连钱”写骏马脊背上有连钱状的花纹，“银蹄白踏烟”写马蹄洁白，奔驰时像踏着烟云。B项正确：前两句写大漠沙白如雪、燕山月弯如钩的塞外壮景，后两句想象骏马戴上金络头，在清秋原野上飞驰。C项基本正确：诗写乌江边催船渡江，乌骓马迎风悲泣，“君王今解剑，何处逐英雄”写项羽弃剑自刎后，乌骓失去故主、无处追随英雄，表达对故主的怀念。D项不正确：“宝玦谁家子”指佩戴宝玦的贵家子弟；“堆金买骏骨”虽用了燕昭王千金买骨求贤的典故，却说“将送楚襄王”，而据注释，楚襄王并无好马之癖，买来的骏骨送错了对象。诗意在于讥讽，讽刺那些豪门子弟以重金买骏骨、却献给不识马的人，求贤徒有其表、所托非人。诗中并没有“侠客拜谒明主，实现人生价值”的意思。所以选D。",
-          "inputSha256": "986b2b72acbc2cc5a05682ca50ef4db2b7f30579027216684446b80e1ab9e115",
-          "inputContextSha256": "95f9dfec58bbc9ad22b6f5f3de520de167e8a2f492fae30a7c81b17b148c009f",
-          "generatedAt": "2026-10-03T02:19:33.339281+00:00",
-          "uncertainties": [
-            "C项说“项羽自刎之后”，与诗中“今解剑”所写的时间节点略有出入，“解剑”也可理解为项羽将要舍马、弃剑自刎之际；但此项大意不误，D项错误明显，因此选D。"
-          ],
-          "selectedOptions": [
-            "D"
-          ],
-          "assessment": {
-            "matchesConclusion": true,
-            "note": "在更正题面与完整注释下完成来源复核，非初次盲测；已与当前材料逐项比较。"
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-source-context-2024-2025-result.json",
-            "inputPromptSha256": "fed90945dc47fac6289d60ea1d9a036801ca9c2975b3ca70823020be107a9ba5",
-            "responseStreamSha256": "70f3ceb252197e9f6a62513f17508dde801774bcd0ca0778367fd0ebe854c70b",
-            "stage": "source_review"
-          }
-        }
-      },
+      "modelAnswers": {},
       "history": [
         {
           "source": {
@@ -14417,21 +14838,118 @@
               }
             }
           }
+        },
+        {
+          "source": {
+            "id": "2024-shici",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "马诗二十三首(选四)李贺\n\n其一\n龙脊贴连钱,银蹄白踏烟。\n无人织锦韂①,谁为铸金鞭。\n\n其五\n大漠沙如雪,燕山月似钩。\n何当金络脑,快走踏清秋。\n\n其十\n催榜②渡乌江,神骓泣向风。\n君王今解剑,何处逐英雄。\n\n其十三\n宝玦谁家子,长闻侠骨香。\n堆金③买骏骨,将送楚襄王④。"
+              }
+            ],
+            "topic": "三、本大题共5 小题,共30分。\n阅读下面诗歌,完成11-13题。(共12分)",
+            "annotation": "注释 ①韂:披在马腹两侧用来遮挡泥土的一种马具。②榜:船桨。③堆金:《战国策》载郭隗谓燕昭王曰:“臣闻古之君人,有以千金求千里马者。”④楚襄王:清人王琦曰:“夫襄王者,未闻有好马之癖。”",
+            "annotations": [
+              {
+                "qIndex": 1,
+                "material": "material1",
+                "type": "highlight",
+                "start": 110,
+                "end": 112,
+                "anchor": "宝玦"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "11.下列对四首诗的依次解读,不正确的一项是(3分)\nA.其一言骏马脊上有钱形花纹,奔跑起来如踏烟云。\nB.其五描写壮丽的塞外风景，想象骏马驰骋的画面。\nC.其十写项羽自刎之后,乌骓马临风哭泣，怀念故主。\nD.其十三写侠客千金买马,拜谒明主,实现人生价值。",
+                "score": 3
+              }
+            ]
+          },
+          "review": {
+            "id": "2024-shici:1",
+            "inputSha256": "986b2b72acbc2cc5a05682ca50ef4db2b7f30579027216684446b80e1ab9e115",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "D"
+            ],
+            "explanation": "已按勘误后的完整题面与注释重新核对；旧题面、旧答案及当时的输入证据保留于历史版本。两模型的不同解释和错误见各自评注，当前采用 Astra 复核答案。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T02:21:32.717618+00:00",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2024北京卷原题及完整材料"
+              },
+              {
+                "type": "public_reprint",
+                "title": "公开转载题面勘误与格式核对（非官方评分认证）",
+                "url": "https://gaokao.eol.cn/shiti/yw/202407/t20240705_2621911_4.shtml"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 更正题面后复核",
+                "text": "答案：D。其十三用重金买马却献给并不爱马的楚襄王写所托非人，不能说拜谒明主并实现人生价值。题注明确襄王未闻有好马之癖。A表现骏马外形与奔跑神态；B由塞外清景转入佩金络脑驰骋的愿望；C以项羽解剑、神骓泣风写失主之悲，均合诗意。",
+                "inputSha256": "986b2b72acbc2cc5a05682ca50ef4db2b7f30579027216684446b80e1ab9e115",
+                "inputContextSha256": "95f9dfec58bbc9ad22b6f5f3de520de167e8a2f492fae30a7c81b17b148c009f",
+                "generatedAt": "2026-10-03T02:18:33.615316+00:00",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-source-context-2024-2025.json"
+                }
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "答案：D。\nA项正确：“龙脊贴连钱”写骏马脊背上有连钱状的花纹，“银蹄白踏烟”写马蹄洁白，奔驰时像踏着烟云。B项正确：前两句写大漠沙白如雪、燕山月弯如钩的塞外壮景，后两句想象骏马戴上金络头，在清秋原野上飞驰。C项基本正确：诗写乌江边催船渡江，乌骓马迎风悲泣，“君王今解剑，何处逐英雄”写项羽弃剑自刎后，乌骓失去故主、无处追随英雄，表达对故主的怀念。D项不正确：“宝玦谁家子”指佩戴宝玦的贵家子弟；“堆金买骏骨”虽用了燕昭王千金买骨求贤的典故，却说“将送楚襄王”，而据注释，楚襄王并无好马之癖，买来的骏骨送错了对象。诗意在于讥讽，讽刺那些豪门子弟以重金买骏骨、却献给不识马的人，求贤徒有其表、所托非人。诗中并没有“侠客拜谒明主，实现人生价值”的意思。所以选D。",
+                "inputSha256": "986b2b72acbc2cc5a05682ca50ef4db2b7f30579027216684446b80e1ab9e115",
+                "inputContextSha256": "95f9dfec58bbc9ad22b6f5f3de520de167e8a2f492fae30a7c81b17b148c009f",
+                "generatedAt": "2026-10-03T02:19:33.339281+00:00",
+                "uncertainties": [
+                  "C项说“项羽自刎之后”，与诗中“今解剑”所写的时间节点略有出入，“解剑”也可理解为项羽将要舍马、弃剑自刎之际；但此项大意不误，D项错误明显，因此选D。"
+                ],
+                "selectedOptions": [
+                  "D"
+                ],
+                "assessment": {
+                  "matchesConclusion": true,
+                  "note": "在更正题面与完整注释下完成来源复核，非初次盲测；已与当前材料逐项比较。"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-source-context-2024-2025-result.json",
+                  "inputPromptSha256": "fed90945dc47fac6289d60ea1d9a036801ca9c2975b3ca70823020be107a9ba5",
+                  "responseStreamSha256": "70f3ceb252197e9f6a62513f17508dde801774bcd0ca0778367fd0ebe854c70b",
+                  "stage": "source_review"
+                }
+              }
+            },
+            "inputContextSha256": "95f9dfec58bbc9ad22b6f5f3de520de167e8a2f492fae30a7c81b17b148c009f"
+          }
         }
       ],
-      "inputContextSha256": "95f9dfec58bbc9ad22b6f5f3de520de167e8a2f492fae30a7c81b17b148c009f"
+      "inputContextSha256": "95f9dfec58bbc9ad22b6f5f3de520de167e8a2f492fae30a7c81b17b148c009f",
+      "inputPresentationSha256": "3fee7b8f074a018e747580028ba662d0491e19c3d86b8356d8918688ca0ced7c"
     },
     {
       "id": "2024-shici:2",
       "inputSha256": "c26e3a946c707e040cc25ba69621640d2aab71e5d89be6dfb456547749fc23e8",
-      "status": "reviewed",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "B"
-      ],
-      "explanation": "已按勘误后的完整题面与注释重新核对；旧题面、旧答案及当时的输入证据保留于历史版本。两模型的不同解释和错误见各自评注，当前采用 Astra 复核答案。",
+      "correctOptions": [],
+      "explanation": "2024原卷标记及字形重核；旧模型全文与原题面保留于历史，本人完整重答另版冻结，待最后Claude核对后裁定。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T02:21:32.717618+00:00",
+      "reviewedAt": "2026-10-04T08:12:35.580Z",
       "sources": [
         {
           "type": "source_material",
@@ -14443,46 +14961,7 @@
           "url": "https://gaokao.eol.cn/shiti/yw/202407/t20240705_2621911_4.shtml"
         }
       ],
-      "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 更正题面后复核",
-          "text": "答案：B。‘谁为’‘何当’‘何处’‘谁家’等问语强化盼望、悲慨或讥刺。A把侠客所佩的宝玦也算成马具，且并非每首都由列出的物件衬托马；C虽都是五言绝句，却非句句对仗；D没有充分依据认定这些诗用了排比。",
-          "inputSha256": "c26e3a946c707e040cc25ba69621640d2aab71e5d89be6dfb456547749fc23e8",
-          "inputContextSha256": "0e1020f99130b471fa02cd2ae9816c8891b2cd97a3216ed6569f8246a979136b",
-          "generatedAt": "2026-10-03T02:18:33.615316+00:00",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review",
-            "evidence": "answers-six-sites-20261002/gpt-astra-source-context-2024-2025.json"
-          }
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 来源复核后修订",
-          "text": "答案：B。\nA项错误：“金鞭”“金络脑”是马具，“宝玦”是人佩戴的玉器，不是马具；其十也没有写到马具，“四首诗”的说法不成立。B项正确：其一“谁为铸金鞭”、其五“何当金络脑”、其十“何处逐英雄”、其十三“宝玦谁家子”，四首都用了“谁”“何”构成的疑问或反问，加强了语气，强化了渴望、悲慨、讥讽等情感。C项错误：四首确实都是五言绝句，但并非句句对仗，比如其五后两句、其十三后两句都不对仗。D项错误：四首诗中有比喻（如“沙如雪”“月似钩”），也有拟人（如“神骓泣向风”），但没有排比。所以选B。",
-          "inputSha256": "c26e3a946c707e040cc25ba69621640d2aab71e5d89be6dfb456547749fc23e8",
-          "inputContextSha256": "0e1020f99130b471fa02cd2ae9816c8891b2cd97a3216ed6569f8246a979136b",
-          "generatedAt": "2026-10-03T02:19:33.339281+00:00",
-          "uncertainties": [],
-          "selectedOptions": [
-            "B"
-          ],
-          "assessment": {
-            "matchesConclusion": true,
-            "note": "在更正题面与完整注释下完成来源复核，非初次盲测；已与当前材料逐项比较。"
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-source-context-2024-2025-result.json",
-            "inputPromptSha256": "fed90945dc47fac6289d60ea1d9a036801ca9c2975b3ca70823020be107a9ba5",
-            "responseStreamSha256": "70f3ceb252197e9f6a62513f17508dde801774bcd0ca0778367fd0ebe854c70b",
-            "stage": "source_review"
-          }
-        }
-      },
+      "modelAnswers": {},
       "history": [
         {
           "source": {
@@ -14561,9 +15040,106 @@
               }
             }
           }
+        },
+        {
+          "source": {
+            "id": "2024-shici",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "马诗二十三首(选四)李贺\n\n其一\n龙脊贴连钱,银蹄白踏烟。\n无人织锦韂①,谁为铸金鞭。\n\n其五\n大漠沙如雪,燕山月似钩。\n何当金络脑,快走踏清秋。\n\n其十\n催榜②渡乌江,神骓泣向风。\n君王今解剑,何处逐英雄。\n\n其十三\n宝玦谁家子,长闻侠骨香。\n堆金③买骏骨,将送楚襄王④。"
+              }
+            ],
+            "topic": "三、本大题共5 小题,共30分。\n阅读下面诗歌,完成11-13题。(共12分)",
+            "annotation": "注释 ①韂:披在马腹两侧用来遮挡泥土的一种马具。②榜:船桨。③堆金:《战国策》载郭隗谓燕昭王曰:“臣闻古之君人,有以千金求千里马者。”④楚襄王:清人王琦曰:“夫襄王者,未闻有好马之癖。”",
+            "annotations": [
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "highlight",
+                "start": 110,
+                "end": 112,
+                "anchor": "宝玦"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 2,
+                "id": "q2",
+                "text": "12.下列对四首诗的整体分析,正确的一项是(3分)\nA.四首诗借“金鞭”“金络脑”“宝玦”等多种马具，衬托马的形象。\nB.四首诗多处使用“谁”“何”等,加强了语气,增强了情感表达。\nC.四首诗都是五言绝句,句句对仗,典丽精工,将咏物、咏史熔于一炉。\nD.四首诗灵活运用了比喻、拟人、排比等修辞手法，体现“诗鬼”之才。",
+                "score": 3
+              }
+            ]
+          },
+          "review": {
+            "id": "2024-shici:2",
+            "inputSha256": "c26e3a946c707e040cc25ba69621640d2aab71e5d89be6dfb456547749fc23e8",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "B"
+            ],
+            "explanation": "已按勘误后的完整题面与注释重新核对；旧题面、旧答案及当时的输入证据保留于历史版本。两模型的不同解释和错误见各自评注，当前采用 Astra 复核答案。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T02:21:32.717618+00:00",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2024北京卷原题及完整材料"
+              },
+              {
+                "type": "public_reprint",
+                "title": "公开转载题面勘误与格式核对（非官方评分认证）",
+                "url": "https://gaokao.eol.cn/shiti/yw/202407/t20240705_2621911_4.shtml"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 更正题面后复核",
+                "text": "答案：B。‘谁为’‘何当’‘何处’‘谁家’等问语强化盼望、悲慨或讥刺。A把侠客所佩的宝玦也算成马具，且并非每首都由列出的物件衬托马；C虽都是五言绝句，却非句句对仗；D没有充分依据认定这些诗用了排比。",
+                "inputSha256": "c26e3a946c707e040cc25ba69621640d2aab71e5d89be6dfb456547749fc23e8",
+                "inputContextSha256": "0e1020f99130b471fa02cd2ae9816c8891b2cd97a3216ed6569f8246a979136b",
+                "generatedAt": "2026-10-03T02:18:33.615316+00:00",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-source-context-2024-2025.json"
+                }
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "答案：B。\nA项错误：“金鞭”“金络脑”是马具，“宝玦”是人佩戴的玉器，不是马具；其十也没有写到马具，“四首诗”的说法不成立。B项正确：其一“谁为铸金鞭”、其五“何当金络脑”、其十“何处逐英雄”、其十三“宝玦谁家子”，四首都用了“谁”“何”构成的疑问或反问，加强了语气，强化了渴望、悲慨、讥讽等情感。C项错误：四首确实都是五言绝句，但并非句句对仗，比如其五后两句、其十三后两句都不对仗。D项错误：四首诗中有比喻（如“沙如雪”“月似钩”），也有拟人（如“神骓泣向风”），但没有排比。所以选B。",
+                "inputSha256": "c26e3a946c707e040cc25ba69621640d2aab71e5d89be6dfb456547749fc23e8",
+                "inputContextSha256": "0e1020f99130b471fa02cd2ae9816c8891b2cd97a3216ed6569f8246a979136b",
+                "generatedAt": "2026-10-03T02:19:33.339281+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "B"
+                ],
+                "assessment": {
+                  "matchesConclusion": true,
+                  "note": "在更正题面与完整注释下完成来源复核，非初次盲测；已与当前材料逐项比较。"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-source-context-2024-2025-result.json",
+                  "inputPromptSha256": "fed90945dc47fac6289d60ea1d9a036801ca9c2975b3ca70823020be107a9ba5",
+                  "responseStreamSha256": "70f3ceb252197e9f6a62513f17508dde801774bcd0ca0778367fd0ebe854c70b",
+                  "stage": "source_review"
+                }
+              }
+            },
+            "inputContextSha256": "0e1020f99130b471fa02cd2ae9816c8891b2cd97a3216ed6569f8246a979136b"
+          }
         }
       ],
-      "inputContextSha256": "0e1020f99130b471fa02cd2ae9816c8891b2cd97a3216ed6569f8246a979136b"
+      "inputContextSha256": "0e1020f99130b471fa02cd2ae9816c8891b2cd97a3216ed6569f8246a979136b",
+      "inputPresentationSha256": "1a819dbb9785bf8876e6a381022407ced4a58729e8817ccc4c8c109da0b7cfa1"
     },
     {
       "id": "2024-shici:3",
@@ -14717,12 +15293,12 @@
     {
       "id": "2024-honglou:1",
       "inputSha256": "1d2051826ea17ebc5cf28c2143912bc18815950280468e437a5e32d3011bdd7f",
-      "status": "reviewed",
+      "status": "draft",
       "kind": "open",
       "correctOptions": [],
-      "explanation": "已按勘误后的完整题面与注释重新核对；旧题面、旧答案及当时的输入证据保留于历史版本。两模型的不同解释和错误见各自评注，当前采用 Astra 复核答案。",
+      "explanation": "2024原卷标记及字形重核；旧模型全文与原题面保留于历史，本人完整重答另版冻结，待最后Claude核对后裁定。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T02:21:32.717618+00:00",
+      "reviewedAt": "2026-10-04T08:12:35.580Z",
       "sources": [
         {
           "type": "source_material",
@@ -14734,56 +15310,7 @@
           "url": "https://gaokao.eol.cn/shiti/yw/202407/t20240705_2621911_5.shtml"
         }
       ],
-      "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 更正题面后复核",
-          "text": "‘乖’重在机敏、善体察人情，会用长辈喜欢的言语动作赢得欢心。黛玉初到贾府，凤姐夸她标致，又因贾母伤感而及时转悲为喜，照顾长辈情绪；刘姥姥游园时她与鸳鸯安排逗趣，也体现察言观色、善于活跃场面。‘巧’还包括精于筹划、善于办事。协理宁国府丧事时，她辨清管理弊端，分工定责、按时核查，表现组织和执行能力。但乖巧并不全是褒义：弄权铁槛寺时，她利用权势插手婚姻、谋取钱财，显示心机和逐利的一面。应结合情节区分其才干、讨巧与操控，不能把‘乖’只解作老实听话。",
-          "inputSha256": "1d2051826ea17ebc5cf28c2143912bc18815950280468e437a5e32d3011bdd7f",
-          "inputContextSha256": "5accba43c2ebeac93cfb25e2b76bd6fd71a58511afcb4fd55a93cdf39ecda2e6",
-          "generatedAt": "2026-10-03T02:18:33.615316+00:00",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review",
-            "evidence": "answers-six-sites-20261002/gpt-astra-source-context-2024-2025.json",
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "5accba43c2ebeac93cfb25e2b76bd6fd71a58511afcb4fd55a93cdf39ecda2e6"
-            }
-          },
-          "inputPresentationSha256": "b3dcafc82ac042c8baede52c712ebc390311147d0a6d403799ca9349e6d8feef"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 来源复核后修订",
-          "text": "王熙凤的“乖”主要指嘴乖：机灵会说，善于察言观色、讨人欢心。“巧”主要指心思灵巧、手段高明，能干而善于应变，但其中也包含工于心计、圆滑弄权的一面。\n①“乖”的表现：第三回林黛玉进府，凤姐未见其人先闻其声，拉着黛玉夸她标致，说“竟是个嫡亲的孙女”，既奉承了黛玉，又讨好了贾母；又因提到黛玉母亲而拭泪，见贾母不悦便立刻转悲为喜。第三十八回螃蟹宴上，贾母说起鬓角的窝儿，凤姐立刻凑趣，说那是“万福万寿盛满了”，逗得众人大笑。本段中，她借宝玉要吃莲叶羹，顺势请大家都尝，又抢着说“在我的帐上来领银子”，被贾母笑骂“猴儿，把你乖的”。\n②“巧”的表现：协理宁国府时，她迅速找出宁府五大弊端，分派专人专职，赏罚分明，显出出众的治家才干，这是能干之巧。弄权铁槛寺、毒设相思局、借剑杀死尤二姐等情节，则显出她的巧走向机关算尽、狠辣贪婪。\n③理解：凤姐的乖巧是她在大家族中赢得贾母宠爱、站稳脚跟、执掌家政的生存智慧和手段。它既有聪明伶俐、善解人意、精明能干的可爱可佩之处，也有逢迎世故、工于心计的可怕之处，正应了“机关算尽太聪明，反算了卿卿性命”。贾母一句“拿着官中的钱你做人”，既是宠爱，也点破了她的巧。",
-          "inputSha256": "1d2051826ea17ebc5cf28c2143912bc18815950280468e437a5e32d3011bdd7f",
-          "inputContextSha256": "5accba43c2ebeac93cfb25e2b76bd6fd71a58511afcb4fd55a93cdf39ecda2e6",
-          "generatedAt": "2026-10-03T02:19:33.339281+00:00",
-          "uncertainties": [],
-          "selectedOptions": [],
-          "assessment": {
-            "matchesConclusion": null,
-            "note": "在更正题面与完整注释下完成来源复核，非初次盲测；已与当前材料逐项比较。"
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-source-context-2024-2025-result.json",
-            "inputPromptSha256": "fed90945dc47fac6289d60ea1d9a036801ca9c2975b3ca70823020be107a9ba5",
-            "responseStreamSha256": "70f3ceb252197e9f6a62513f17508dde801774bcd0ca0778367fd0ebe854c70b",
-            "stage": "source_review",
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "5accba43c2ebeac93cfb25e2b76bd6fd71a58511afcb4fd55a93cdf39ecda2e6"
-            }
-          },
-          "inputPresentationSha256": "b3dcafc82ac042c8baede52c712ebc390311147d0a6d403799ca9349e6d8feef"
-        }
-      },
+      "modelAnswers": {},
       "history": [
         {
           "source": {
@@ -14860,20 +15387,116 @@
               }
             }
           }
+        },
+        {
+          "source": {
+            "id": "2024-honglou",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "《红楼梦》第三十五回:贾母听了，笑道:“猴儿,把你乖的!拿着官中的钱你做人。”说的大家笑了。凤姐也忙笑道“这不相干。这个小东道我还孝敬的起。”便回头吩咐妇人，“说给厨房里,只管好生添补着做了在我的帐上来领银子。”妇人答应着去了。\n\n宝钗一旁笑道:“我来了这么几年,留神看起来,凤丫头凭他怎么巧,再巧不过老太太去。”贾母听说，便答道:“我如今老了,那里还巧什么。当日我像凤哥儿这么大年纪,比他还来得呢。他如今虽说不如我们，也就算好了,比你姨娘强远了。你姨娘可怜见的，不大说话,和木头似的，在公婆跟前就不大显好。凤儿嘴乖,怎么怨得人疼他。”"
+              }
+            ],
+            "topic": "15.根据要求,回答问题。(共10分)",
+            "annotation": null,
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "(1)贾母和薛宝钗用“乖”“巧”评价王熙凤。请结合书中其他情节,谈谈你对王熙凤“乖”“巧”的理解。(5分)",
+                "score": 5
+              }
+            ]
+          },
+          "review": {
+            "id": "2024-honglou:1",
+            "inputSha256": "1d2051826ea17ebc5cf28c2143912bc18815950280468e437a5e32d3011bdd7f",
+            "status": "reviewed",
+            "kind": "open",
+            "correctOptions": [],
+            "explanation": "已按勘误后的完整题面与注释重新核对；旧题面、旧答案及当时的输入证据保留于历史版本。两模型的不同解释和错误见各自评注，当前采用 Astra 复核答案。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T02:21:32.717618+00:00",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2024北京卷原题及完整材料"
+              },
+              {
+                "type": "public_reprint",
+                "title": "公开转载题面勘误与格式核对（非官方评分认证）",
+                "url": "https://gaokao.eol.cn/shiti/yw/202407/t20240705_2621911_5.shtml"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 更正题面后复核",
+                "text": "‘乖’重在机敏、善体察人情，会用长辈喜欢的言语动作赢得欢心。黛玉初到贾府，凤姐夸她标致，又因贾母伤感而及时转悲为喜，照顾长辈情绪；刘姥姥游园时她与鸳鸯安排逗趣，也体现察言观色、善于活跃场面。‘巧’还包括精于筹划、善于办事。协理宁国府丧事时，她辨清管理弊端，分工定责、按时核查，表现组织和执行能力。但乖巧并不全是褒义：弄权铁槛寺时，她利用权势插手婚姻、谋取钱财，显示心机和逐利的一面。应结合情节区分其才干、讨巧与操控，不能把‘乖’只解作老实听话。",
+                "inputSha256": "1d2051826ea17ebc5cf28c2143912bc18815950280468e437a5e32d3011bdd7f",
+                "inputContextSha256": "5accba43c2ebeac93cfb25e2b76bd6fd71a58511afcb4fd55a93cdf39ecda2e6",
+                "generatedAt": "2026-10-03T02:18:33.615316+00:00",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-source-context-2024-2025.json",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "5accba43c2ebeac93cfb25e2b76bd6fd71a58511afcb4fd55a93cdf39ecda2e6"
+                  }
+                },
+                "inputPresentationSha256": "b3dcafc82ac042c8baede52c712ebc390311147d0a6d403799ca9349e6d8feef"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "王熙凤的“乖”主要指嘴乖：机灵会说，善于察言观色、讨人欢心。“巧”主要指心思灵巧、手段高明，能干而善于应变，但其中也包含工于心计、圆滑弄权的一面。\n①“乖”的表现：第三回林黛玉进府，凤姐未见其人先闻其声，拉着黛玉夸她标致，说“竟是个嫡亲的孙女”，既奉承了黛玉，又讨好了贾母；又因提到黛玉母亲而拭泪，见贾母不悦便立刻转悲为喜。第三十八回螃蟹宴上，贾母说起鬓角的窝儿，凤姐立刻凑趣，说那是“万福万寿盛满了”，逗得众人大笑。本段中，她借宝玉要吃莲叶羹，顺势请大家都尝，又抢着说“在我的帐上来领银子”，被贾母笑骂“猴儿，把你乖的”。\n②“巧”的表现：协理宁国府时，她迅速找出宁府五大弊端，分派专人专职，赏罚分明，显出出众的治家才干，这是能干之巧。弄权铁槛寺、毒设相思局、借剑杀死尤二姐等情节，则显出她的巧走向机关算尽、狠辣贪婪。\n③理解：凤姐的乖巧是她在大家族中赢得贾母宠爱、站稳脚跟、执掌家政的生存智慧和手段。它既有聪明伶俐、善解人意、精明能干的可爱可佩之处，也有逢迎世故、工于心计的可怕之处，正应了“机关算尽太聪明，反算了卿卿性命”。贾母一句“拿着官中的钱你做人”，既是宠爱，也点破了她的巧。",
+                "inputSha256": "1d2051826ea17ebc5cf28c2143912bc18815950280468e437a5e32d3011bdd7f",
+                "inputContextSha256": "5accba43c2ebeac93cfb25e2b76bd6fd71a58511afcb4fd55a93cdf39ecda2e6",
+                "generatedAt": "2026-10-03T02:19:33.339281+00:00",
+                "uncertainties": [],
+                "selectedOptions": [],
+                "assessment": {
+                  "matchesConclusion": null,
+                  "note": "在更正题面与完整注释下完成来源复核，非初次盲测；已与当前材料逐项比较。"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-source-context-2024-2025-result.json",
+                  "inputPromptSha256": "fed90945dc47fac6289d60ea1d9a036801ca9c2975b3ca70823020be107a9ba5",
+                  "responseStreamSha256": "70f3ceb252197e9f6a62513f17508dde801774bcd0ca0778367fd0ebe854c70b",
+                  "stage": "source_review",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "5accba43c2ebeac93cfb25e2b76bd6fd71a58511afcb4fd55a93cdf39ecda2e6"
+                  }
+                },
+                "inputPresentationSha256": "b3dcafc82ac042c8baede52c712ebc390311147d0a6d403799ca9349e6d8feef"
+              }
+            },
+            "inputContextSha256": "5accba43c2ebeac93cfb25e2b76bd6fd71a58511afcb4fd55a93cdf39ecda2e6",
+            "inputPresentationSha256": "b3dcafc82ac042c8baede52c712ebc390311147d0a6d403799ca9349e6d8feef"
+          }
         }
       ],
       "inputContextSha256": "5accba43c2ebeac93cfb25e2b76bd6fd71a58511afcb4fd55a93cdf39ecda2e6",
-      "inputPresentationSha256": "b3dcafc82ac042c8baede52c712ebc390311147d0a6d403799ca9349e6d8feef"
+      "inputPresentationSha256": "a2b841d5c195ab6ee094f2a764d20b6f85f5ad7505ab22c15e4ab9583ebfa3cf"
     },
     {
       "id": "2024-honglou:2",
       "inputSha256": "3106c8d66223f480be22b86f7232f76890d28b97c422aceb28eef86d860faeab",
-      "status": "reviewed",
+      "status": "draft",
       "kind": "open",
       "correctOptions": [],
-      "explanation": "已按勘误后的完整题面与注释重新核对；旧题面、旧答案及当时的输入证据保留于历史版本。两模型的不同解释和错误见各自评注，当前采用 Astra 复核答案。",
+      "explanation": "2024原卷标记及字形重核；旧模型全文与原题面保留于历史，本人完整重答另版冻结，待最后Claude核对后裁定。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T02:21:32.717618+00:00",
+      "reviewedAt": "2026-10-04T08:12:35.580Z",
       "sources": [
         {
           "type": "source_material",
@@ -14885,58 +15508,7 @@
           "url": "https://gaokao.eol.cn/shiti/yw/202407/t20240705_2621911_5.shtml"
         }
       ],
-      "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 更正题面后复核",
-          "text": "宝钗先承认凤姐巧，再说终究不及老太太，一句话既不冷落凤姐，又把赞美推向贾母，体现善察人情、说话圆融得体、懂得在礼法秩序中照顾长辈。她过生日点贾母爱看的热闹戏、爱吃的软烂食物，也是揣摩长辈喜好的例子。贾母则聪敏有见识，性情爽朗，喜欢机灵会说话的人；她能看出凤姐借公账做人情，又以玩笑表达疼爱，受夸后自信地谈年轻时的能力。刘姥姥游园时她欣赏乡村见闻、乐于热闹，见宝钗房间过于素净又提出布置意见，显示她有自己的审美与生活情趣。并非只因宝钗恭维就能断言她毫无判断地受骗。",
-          "inputSha256": "3106c8d66223f480be22b86f7232f76890d28b97c422aceb28eef86d860faeab",
-          "inputContextSha256": "0b5ceb1f07d7f1af572e9eef291f1e1278ba4bc44ea633889b49c87304b97adf",
-          "generatedAt": "2026-10-03T02:18:33.615316+00:00",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review",
-            "evidence": "answers-six-sites-20261002/gpt-astra-source-context-2024-2025.json",
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "0b5ceb1f07d7f1af572e9eef291f1e1278ba4bc44ea633889b49c87304b97adf"
-            }
-          },
-          "inputPresentationSha256": "137b8667fdbd9e97080a16cf254b21db10cdbd734043cf435846e09224cecf00"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 来源复核后修订",
-          "text": "①薛宝钗的性格：圆融世故，善于察言观色，懂得讨长辈欢心。她表面说凤姐巧，落脚点却是“再巧不过老太太去”，借评凤姐来恭维贾母，一语双关，不露痕迹。书中其他情节也可印证。第二十二回宝钗过生日，贾母问她爱听何戏、爱吃何物，她深知老年人喜欢热闹戏文、甜烂之食，便依贾母所好来回答。第三十二回金钏投井后，她先安慰王夫人“不过是个糊涂人，也不为可惜”，又主动拿出自己的衣服给金钏装裹，处处周全妥帖。第二十七回滴翠亭“金蝉脱壳”，可见她机敏善于自保。这些都显示她稳重周到、长于处世，有时也不免世故冷静。\n②贾母的人物特点：一是爱热闹、喜诙谐，喜欢嘴乖伶俐的晚辈，所以说“凤儿嘴乖，怎么怨得人疼他”，平日宠爱凤姐、宝玉也是如此。二是自信而有阅历，“当日我像凤哥儿这么大年纪，比他还来得呢”，可见她年轻时也是精明能干之人，如今仍是贾府的权威。三是精明老练、说话有分寸又颇有锋芒。她当着宝钗的面说薛姨妈“和木头似的，在公婆跟前就不大显好”，看似闲谈，实则对不善言辞者有所轻视，也隐含她的好恶倾向。其他情节如第五十四回“史太君破陈腐旧套”，她一眼看穿才子佳人小说的套路，见识不凡；第四十回见宝钗房中“雪洞一般”，嫌太素净，亲自让人添置摆设，显出她懂得享受生活、审美趣味高雅，对晚辈的言行也有自己的判断。",
-          "inputSha256": "3106c8d66223f480be22b86f7232f76890d28b97c422aceb28eef86d860faeab",
-          "inputContextSha256": "0b5ceb1f07d7f1af572e9eef291f1e1278ba4bc44ea633889b49c87304b97adf",
-          "generatedAt": "2026-10-03T02:19:33.339281+00:00",
-          "uncertainties": [
-            "关于贾母“比你姨娘强远了”一语是否暗含对宝钗及“金玉良缘”的态度，学界解读不一，此处只作有分寸的推断。"
-          ],
-          "selectedOptions": [],
-          "assessment": {
-            "matchesConclusion": null,
-            "note": "本次复核出现新错误：“你姨娘”是对宝钗说，指其姨母王夫人，并非薛姨妈。“一语双关”也不宜代替兼顾两人、圆融得体的具体分析。这些句子不采入当前参考答案；原输出保留以示版本差异。"
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-source-context-2024-2025-result.json",
-            "inputPromptSha256": "fed90945dc47fac6289d60ea1d9a036801ca9c2975b3ca70823020be107a9ba5",
-            "responseStreamSha256": "70f3ceb252197e9f6a62513f17508dde801774bcd0ca0778367fd0ebe854c70b",
-            "stage": "source_review",
-            "presentationEvidence": {
-              "method": "empty_rendered_emphasis_v2_equivalence",
-              "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
-              "originalContextSha256": "0b5ceb1f07d7f1af572e9eef291f1e1278ba4bc44ea633889b49c87304b97adf"
-            }
-          },
-          "inputPresentationSha256": "137b8667fdbd9e97080a16cf254b21db10cdbd734043cf435846e09224cecf00"
-        }
-      },
+      "modelAnswers": {},
       "history": [
         {
           "source": {
@@ -15011,84 +15583,259 @@
               }
             }
           }
+        },
+        {
+          "source": {
+            "id": "2024-honglou",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "《红楼梦》第三十五回:贾母听了，笑道:“猴儿,把你乖的!拿着官中的钱你做人。”说的大家笑了。凤姐也忙笑道“这不相干。这个小东道我还孝敬的起。”便回头吩咐妇人，“说给厨房里,只管好生添补着做了在我的帐上来领银子。”妇人答应着去了。\n\n宝钗一旁笑道:“我来了这么几年,留神看起来,凤丫头凭他怎么巧,再巧不过老太太去。”贾母听说，便答道:“我如今老了,那里还巧什么。当日我像凤哥儿这么大年纪,比他还来得呢。他如今虽说不如我们，也就算好了,比你姨娘强远了。你姨娘可怜见的，不大说话,和木头似的，在公婆跟前就不大显好。凤儿嘴乖,怎么怨得人疼他。”"
+              }
+            ],
+            "topic": "15.根据要求,回答问题。(共10分)",
+            "annotation": null,
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 2,
+                "id": "q2",
+                "text": "(2)薛宝钗的话体现了她怎样的性格,又反映了贾母怎样的人物特点?请结合书中其他情节,分别予以解说。(5分)",
+                "score": 5
+              }
+            ]
+          },
+          "review": {
+            "id": "2024-honglou:2",
+            "inputSha256": "3106c8d66223f480be22b86f7232f76890d28b97c422aceb28eef86d860faeab",
+            "status": "reviewed",
+            "kind": "open",
+            "correctOptions": [],
+            "explanation": "已按勘误后的完整题面与注释重新核对；旧题面、旧答案及当时的输入证据保留于历史版本。两模型的不同解释和错误见各自评注，当前采用 Astra 复核答案。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T02:21:32.717618+00:00",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2024北京卷原题及完整材料"
+              },
+              {
+                "type": "public_reprint",
+                "title": "公开转载题面勘误与格式核对（非官方评分认证）",
+                "url": "https://gaokao.eol.cn/shiti/yw/202407/t20240705_2621911_5.shtml"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 更正题面后复核",
+                "text": "宝钗先承认凤姐巧，再说终究不及老太太，一句话既不冷落凤姐，又把赞美推向贾母，体现善察人情、说话圆融得体、懂得在礼法秩序中照顾长辈。她过生日点贾母爱看的热闹戏、爱吃的软烂食物，也是揣摩长辈喜好的例子。贾母则聪敏有见识，性情爽朗，喜欢机灵会说话的人；她能看出凤姐借公账做人情，又以玩笑表达疼爱，受夸后自信地谈年轻时的能力。刘姥姥游园时她欣赏乡村见闻、乐于热闹，见宝钗房间过于素净又提出布置意见，显示她有自己的审美与生活情趣。并非只因宝钗恭维就能断言她毫无判断地受骗。",
+                "inputSha256": "3106c8d66223f480be22b86f7232f76890d28b97c422aceb28eef86d860faeab",
+                "inputContextSha256": "0b5ceb1f07d7f1af572e9eef291f1e1278ba4bc44ea633889b49c87304b97adf",
+                "generatedAt": "2026-10-03T02:18:33.615316+00:00",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-source-context-2024-2025.json",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "0b5ceb1f07d7f1af572e9eef291f1e1278ba4bc44ea633889b49c87304b97adf"
+                  }
+                },
+                "inputPresentationSha256": "137b8667fdbd9e97080a16cf254b21db10cdbd734043cf435846e09224cecf00"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "①薛宝钗的性格：圆融世故，善于察言观色，懂得讨长辈欢心。她表面说凤姐巧，落脚点却是“再巧不过老太太去”，借评凤姐来恭维贾母，一语双关，不露痕迹。书中其他情节也可印证。第二十二回宝钗过生日，贾母问她爱听何戏、爱吃何物，她深知老年人喜欢热闹戏文、甜烂之食，便依贾母所好来回答。第三十二回金钏投井后，她先安慰王夫人“不过是个糊涂人，也不为可惜”，又主动拿出自己的衣服给金钏装裹，处处周全妥帖。第二十七回滴翠亭“金蝉脱壳”，可见她机敏善于自保。这些都显示她稳重周到、长于处世，有时也不免世故冷静。\n②贾母的人物特点：一是爱热闹、喜诙谐，喜欢嘴乖伶俐的晚辈，所以说“凤儿嘴乖，怎么怨得人疼他”，平日宠爱凤姐、宝玉也是如此。二是自信而有阅历，“当日我像凤哥儿这么大年纪，比他还来得呢”，可见她年轻时也是精明能干之人，如今仍是贾府的权威。三是精明老练、说话有分寸又颇有锋芒。她当着宝钗的面说薛姨妈“和木头似的，在公婆跟前就不大显好”，看似闲谈，实则对不善言辞者有所轻视，也隐含她的好恶倾向。其他情节如第五十四回“史太君破陈腐旧套”，她一眼看穿才子佳人小说的套路，见识不凡；第四十回见宝钗房中“雪洞一般”，嫌太素净，亲自让人添置摆设，显出她懂得享受生活、审美趣味高雅，对晚辈的言行也有自己的判断。",
+                "inputSha256": "3106c8d66223f480be22b86f7232f76890d28b97c422aceb28eef86d860faeab",
+                "inputContextSha256": "0b5ceb1f07d7f1af572e9eef291f1e1278ba4bc44ea633889b49c87304b97adf",
+                "generatedAt": "2026-10-03T02:19:33.339281+00:00",
+                "uncertainties": [
+                  "关于贾母“比你姨娘强远了”一语是否暗含对宝钗及“金玉良缘”的态度，学界解读不一，此处只作有分寸的推断。"
+                ],
+                "selectedOptions": [],
+                "assessment": {
+                  "matchesConclusion": null,
+                  "note": "本次复核出现新错误：“你姨娘”是对宝钗说，指其姨母王夫人，并非薛姨妈。“一语双关”也不宜代替兼顾两人、圆融得体的具体分析。这些句子不采入当前参考答案；原输出保留以示版本差异。"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-source-context-2024-2025-result.json",
+                  "inputPromptSha256": "fed90945dc47fac6289d60ea1d9a036801ca9c2975b3ca70823020be107a9ba5",
+                  "responseStreamSha256": "70f3ceb252197e9f6a62513f17508dde801774bcd0ca0778367fd0ebe854c70b",
+                  "stage": "source_review",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "0b5ceb1f07d7f1af572e9eef291f1e1278ba4bc44ea633889b49c87304b97adf"
+                  }
+                },
+                "inputPresentationSha256": "137b8667fdbd9e97080a16cf254b21db10cdbd734043cf435846e09224cecf00"
+              }
+            },
+            "inputContextSha256": "0b5ceb1f07d7f1af572e9eef291f1e1278ba4bc44ea633889b49c87304b97adf",
+            "inputPresentationSha256": "137b8667fdbd9e97080a16cf254b21db10cdbd734043cf435846e09224cecf00"
+          }
         }
       ],
       "inputContextSha256": "0b5ceb1f07d7f1af572e9eef291f1e1278ba4bc44ea633889b49c87304b97adf",
-      "inputPresentationSha256": "137b8667fdbd9e97080a16cf254b21db10cdbd734043cf435846e09224cecf00"
+      "inputPresentationSha256": "3d0497a407df38ae8288422ac859c667553eb3230083e6c64487393e2c5e305e"
     },
     {
       "id": "2024-sanwen:1",
       "inputSha256": "e7c136f99f7282454b7c2b944037e4c4d96bb4983f8406a269dfc16c4f59c0f4",
-      "status": "reviewed",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "D"
-      ],
-      "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+      "correctOptions": [],
+      "explanation": "2024原卷标记及字形重核；旧模型全文与原题面保留于历史，本人完整重答另版冻结，待最后Claude核对后裁定。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T03:08:21.667Z",
+      "reviewedAt": "2026-10-04T08:12:35.580Z",
       "sources": [
         {
           "type": "source_material",
           "title": "站内2024北京卷原题及完整材料"
         }
       ],
-      "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 完整附注复核",
-          "text": "答案：D。‘披读’是打开书卷阅读，并不含聚精会神批阅、评改之意。A的余裕在这里指富余时间；B借饥饿写渴求书籍；C的掌故指历史人物、制度或事迹等故事，符合语境。",
-          "inputSha256": "e7c136f99f7282454b7c2b944037e4c4d96bb4983f8406a269dfc16c4f59c0f4",
-          "generatedAt": "2026-10-03T03:08:21.667Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review_reaffirmation",
-            "evidence": "answers-six-sites-20261002/root-context-2024-decisions.json",
-            "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "priorAnswerSha256": "3b8dcb5e17167c2dd5080d4937e0463795a314cd3bb5d088b112b7fa56d4eddb",
-            "annotationEffect": "已完整重读当年材料、题纲、所有相应题问及作者署名/原注。披读为打开阅读，非批阅。"
+      "modelAnswers": {},
+      "inputContextSha256": "b15ca23e65af10bd3c16fdbeaa40a4e6ea07b13f146555ae00df7b4eaa5a4104",
+      "history": [
+        {
+          "source": {
+            "id": "2024-sanwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "谈买书\n\n①两个多月前的一个上午,所坐的帆船一靠了长堤,我就跑上岸找寻住宿的地方。走着走着,不觉到了文德路。那些四壁和当中堆积着各色各样书籍的旧书铺子,像老朋友一样拉住了我。尽管我没有余裕跟他们详谈细话,可是,草草打个照面，也就被包围在难以名状的快乐气氛中。因为七八年来,辗转在穷乡僻市,饥饿着的心眼,久矣没有这种吞咽的机会了!\n\n②记得十二三岁的时候，我还是个小市镇里的小学生。在那僻远的地方,没有新旧书铺子,也没有公共图书馆。家里除了父亲看过的《笑林广记》之类,别无所有。但是，我非常渴望那些诗文集和史学的书籍。父亲每天给我的一点零钱,我私下把它积蓄起来,到了有相当数量的时候,就寄到汕头或上海的书店里去。买回来的,大都是一些寻常版本的国学书,却如同购入了至宝一般。\n\n③长大后的许多日子，大抵住在一些大都市里。大都市的生活,在我总觉得是一种压迫，至少,它常常叫我感到“陌生”。要我说出在大都市生活中那仅有的欢乐的话,恐怕就是买书方便这一点了，如果没有它,我是宁愿一辈子做乡下人的。我住在杭州的年月比较长久些,现在一想到那个“天堂”,印象最鲜明的,就是那些旧书铺子了。哪间铺子里有些什么书,哪些书放在什么地方,哪间铺子里的书价钱便宜些,哪位老板有什么特别脾气……我的脑子里是清清楚楚的。现在我还常常记起那位上了年纪的书铺老板。他身材稍矮,头发灰白了,面颊却相当丰满往往还添上了酒红,一支短的旱烟管是很少离口的因为本钱短少,周转不灵活的缘故罢，他的书往往卖得比较便宜,因此我也常到他那里去。后来我们仿佛像好朋友一样。他常常把一些杭州的掌故告诉我，有时候还把他们书业界的隐秘情事吐露了出来。这在我可算是一种从买书上得来的副收获罢。\n\n④买书看来像一件简单不过的事情，实际上也有种种曲折的情趣。\n\n⑤如果我们要的是容易买到的书,那么，你拿到手上虽然也会满意，可是却不怎样强烈。如果找的是一种绝版的或稀有的书,却能够顺利地得到它，那就使你特别高兴了。倘若有些书，既需要急用,又苦于找不到,对于它,你差不多绝望了，可是,忽然它却出现在面前,这种欢喜真是永远地留着“余味”的。我买到杜文澜编纂的《古谣谚》,就是这种经验的一个好例子。早就听到它的名字了,心中热想着它。可是，问来访去，都是徒然。失望使我暂时平静下来,我已经冷淡于追求了--像那些失恋者再鼓不起勇气来一样。不意偶然在一家旧书铺子里却遇到它,我做梦样地急促着呼吸去问店伙价钱，他一开口要24元(在战前，这不是一个便宜的价目),我生怕什么人在旁边抢买样的，马上就会钞了。可这时老板却走出来,说那书卖不得，因为北京一位学者在几年之前就托他寻找了。我用理由、感情去征服他，结果总算得到胜利。它就成了我买书历史上的一个夸耀。许久以后,有些要好的朋友到我的书房里,我还情不自禁地把这胜利品搬出来,硬要他们猜价钱,猜对了固然好,猜错了也一样高兴地谈笑，我的本意只在显示自己的高兴罢了。\n\n⑥书籍是一种天才的语言,但同时它又是一种市场的商品。在现在的社会里,你不付出代价，就没福分去享受那种美妙的语言。有许多书籍，我们出了相当代价并不觉得冤枉,因为它确实把精神的餐宴给予了我们。可是，有些时候,花了极小的代价却得到同样或更精美的盛宴,那就叫我们额外感到欢欣了。我用了一角钱买来的《雨果散文集》一类的书,它所给予我的启发和喜悦是多么深沉啊!\n\n⑦爱买书的人，有时还要受到一些惩罚。你今天看上了某一部书，高兴地把它买了,晚上在灯光下披读一遍，原来是一种很平庸的著作，在金钱的损失外，你还要加上了对于自己鲁莽的嘲笑。有时候所买到的书，在版本上是不完善的，价钱也特别昂贵，你刚刚买过后就发现这些了。这时候，要去买那更好而又便宜的，自然有些不愿意，就此罢休呢,心里却又有些不畅快。\n\n⑧书籍买得太多，就成了生活的一种累赘。在平时你得照顾它，整理、晒曝、去蠹虫、拂灰尘……在走动的时候,就更加麻烦了。要找许多箱囊去装盛，一路又担心着湿水或遗失,我从前很怕迁动，大半的原因就在这里。抗战以后,上海、杭州、兰溪、坪石等地先后失陷，我的全部文化财产也散失得一光二净--真成为一个“没有书的”读书人了。想起当年“坐拥书城”的情景,自然不免心绞鼻酸。可是,又一转念,却又觉得爽然--我苦笑地说:“无书一身轻!”记得陈简斋有句诗:“误矣载书三十乘!”我是要从自身所感到的另一种苦恼去同情他这个慨叹的。\n\n⑨太爱买书是一种疾病,它给我们带来了好些妨害和痛苦。但那也是一种魔法,它给我们许多难以想象的快乐。它甚至于能够移心换骨，使我们超越卑俗,蓦进于高远神异的境界。"
+              }
+            ],
+            "topic": "四、本大题共4小题,共18分。\n阅读下面文章,完成16-19题。",
+            "annotation": "(取材于钟敬文的同名散文)\n注释 ①文章写于 20世纪 40年代。",
+            "annotations": [
+              {
+                "qIndex": 1,
+                "material": "material1",
+                "type": "dot",
+                "start": 92,
+                "end": 94,
+                "anchor": "余裕"
+              },
+              {
+                "qIndex": 1,
+                "material": "material1",
+                "type": "dot",
+                "start": 144,
+                "end": 146,
+                "anchor": "饥饿"
+              },
+              {
+                "qIndex": 1,
+                "material": "material1",
+                "type": "dot",
+                "start": 668,
+                "end": 670,
+                "anchor": "掌故"
+              },
+              {
+                "qIndex": 1,
+                "material": "material1",
+                "type": "dot",
+                "start": 1433,
+                "end": 1435,
+                "anchor": "披读"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "16.下列对文中加点词语的解说,不正确的一项是(3分)\nA.没有余裕跟他们详谈细话  余裕:富余的时间\nB.饥饿着的心眼    饥饿:对书籍十分渴望\nC.一些杭州的掌故    掌故:历史上的人物、事迹等\nD.在灯光下披读一遍    披读:聚精会神地批阅",
+                "score": 3
+              }
+            ]
           },
-          "inputContextSha256": "b15ca23e65af10bd3c16fdbeaa40a4e6ea07b13f146555ae00df7b4eaa5a4104"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答",
-          "text": "答案：D。\nD项不正确。“披读”的“披”意为翻开、翻阅，“披读”即翻阅、阅读。文中写买书后晚上在灯光下读一遍，发现是平庸之作，并没有“聚精会神地批阅”的意思，“批阅”还带有批注评点之意，解释错误。A项，“余裕”指富余的时间，作者刚上岸急着找住处，没有空闲细看，正确。B项，“饥饿着的心眼”以饥饿比喻多年在穷乡僻市买不到书，对书籍十分渴望，正确。C项，“掌故”指历史上的人物事迹、制度沿革等，正确。",
-          "inputSha256": "e7c136f99f7282454b7c2b944037e4c4d96bb4983f8406a269dfc16c4f59c0f4",
-          "generatedAt": "2026-10-03T01:45:30.808930+00:00",
-          "uncertainties": [],
-          "selectedOptions": [
-            "D"
-          ],
-          "assessment": {
-            "matchesConclusion": true,
-            "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
-            "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
-            "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
-            "stage": "independent"
-          },
-          "inputContextSha256": "b15ca23e65af10bd3c16fdbeaa40a4e6ea07b13f146555ae00df7b4eaa5a4104"
-        },
-        "gpt_6_astra_before_context_review": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
-          "text": "答案：D。‘披读’是打开书卷阅读，并不含聚精会神批阅、评改之意。A的余裕在这里指富余时间；B借饥饿写渴求书籍；C的掌故指历史人物、制度或事迹等故事，符合语境。",
-          "inputSha256": "e7c136f99f7282454b7c2b944037e4c4d96bb4983f8406a269dfc16c4f59c0f4",
-          "generatedAt": "2026-10-03T01:46:03.945Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+          "review": {
+            "id": "2024-sanwen:1",
+            "inputSha256": "e7c136f99f7282454b7c2b944037e4c4d96bb4983f8406a269dfc16c4f59c0f4",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "D"
+            ],
+            "explanation": "两模型分别作答后核对材料、选项及题目要求；开放题保留合理的不同表达。具体解析及题面缺损见各模型评注，未处理的源文问题仍阻止发布。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:08:21.667Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2024北京卷原题及完整材料"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "答案：D。‘披读’是打开书卷阅读，并不含聚精会神批阅、评改之意。A的余裕在这里指富余时间；B借饥饿写渴求书籍；C的掌故指历史人物、制度或事迹等故事，符合语境。",
+                "inputSha256": "e7c136f99f7282454b7c2b944037e4c4d96bb4983f8406a269dfc16c4f59c0f4",
+                "generatedAt": "2026-10-03T03:08:21.667Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-2024-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "3b8dcb5e17167c2dd5080d4937e0463795a314cd3bb5d088b112b7fa56d4eddb",
+                  "annotationEffect": "已完整重读当年材料、题纲、所有相应题问及作者署名/原注。披读为打开阅读，非批阅。"
+                },
+                "inputContextSha256": "b15ca23e65af10bd3c16fdbeaa40a4e6ea07b13f146555ae00df7b4eaa5a4104"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "答案：D。\nD项不正确。“披读”的“披”意为翻开、翻阅，“披读”即翻阅、阅读。文中写买书后晚上在灯光下读一遍，发现是平庸之作，并没有“聚精会神地批阅”的意思，“批阅”还带有批注评点之意，解释错误。A项，“余裕”指富余的时间，作者刚上岸急着找住处，没有空闲细看，正确。B项，“饥饿着的心眼”以饥饿比喻多年在穷乡僻市买不到书，对书籍十分渴望，正确。C项，“掌故”指历史上的人物事迹、制度沿革等，正确。",
+                "inputSha256": "e7c136f99f7282454b7c2b944037e4c4d96bb4983f8406a269dfc16c4f59c0f4",
+                "generatedAt": "2026-10-03T01:45:30.808930+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "D"
+                ],
+                "assessment": {
+                  "matchesConclusion": true,
+                  "note": "已核对完整作答与材料；主观题为参考示例，不代表唯一标准或满分。"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2024-reading-result.json",
+                  "inputPromptSha256": "1a57d1c3cda3206d44d49a506a6168b074f4af1d765495f133830fd9bd9d37eb",
+                  "responseStreamSha256": "de45b510fabc7073edf55135c812812545f52a04d98605b3a10134bb9877edfe",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "b15ca23e65af10bd3c16fdbeaa40a4e6ea07b13f146555ae00df7b4eaa5a4104"
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "答案：D。‘披读’是打开书卷阅读，并不含聚精会神批阅、评改之意。A的余裕在这里指富余时间；B借饥饿写渴求书籍；C的掌故指历史人物、制度或事迹等故事，符合语境。",
+                "inputSha256": "e7c136f99f7282454b7c2b944037e4c4d96bb4983f8406a269dfc16c4f59c0f4",
+                "generatedAt": "2026-10-03T01:46:03.945Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-2024-reading-reviews.json"
+                }
+              }
+            },
+            "inputContextSha256": "b15ca23e65af10bd3c16fdbeaa40a4e6ea07b13f146555ae00df7b4eaa5a4104"
           }
         }
-      },
-      "inputContextSha256": "b15ca23e65af10bd3c16fdbeaa40a4e6ea07b13f146555ae00df7b4eaa5a4104"
+      ],
+      "inputPresentationSha256": "7463a28158e60ed869d7c219989ad6964a7d6eb24380c4ae164abf34aab2cc16"
     },
     {
       "id": "2024-sanwen:2",
@@ -15358,14 +16105,12 @@
     {
       "id": "2024-yuyanjichu:1",
       "inputSha256": "fef467f71ada2431546d17ef786cb09f617800387526c647ed3181d0cebabee9",
-      "status": "reviewed",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "A"
-      ],
-      "explanation": "已按勘误后的完整题面与注释重新核对；旧题面、旧答案及当时的输入证据保留于历史版本。两模型的不同解释和错误见各自评注，当前采用 Astra 复核答案。",
+      "correctOptions": [],
+      "explanation": "2024原卷标记及字形重核；旧模型全文与原题面保留于历史，本人完整重答另版冻结，待最后Claude核对后裁定。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T02:21:32.717618+00:00",
+      "reviewedAt": "2026-10-04T08:12:35.580Z",
       "sources": [
         {
           "type": "source_material",
@@ -15377,46 +16122,7 @@
           "url": "https://gaokao.eol.cn/shiti/yw/202407/t20240705_2621911_7.shtml"
         }
       ],
-      "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 更正题面后复核",
-          "text": "答案：A。音乐所产生的是精神鼓舞力量，“堪比千军万马的力量”明确表达比较关系，搭配通顺。B“不失”可直接接“热情和诗意”，改成“不失为”就变为判断，不宜接原有成分。C此处客观介绍《黄河大合唱》，应称“这部作品”或“该作品”，“本作品”的自指用法不妥。D的波浪线现已核实为两个完整述语：“表现了炎黄子孙保卫黄河的英雄气概”和“激励了无数中华儿女投身抗日救亡运动”。原顺序先介绍作品表现的内容，再写作品产生的影响，符合由内容到作用的展开；调换会改变这一叙述顺序，故本题不采用D。不能再按两个宾语短语互换、造成动宾搭配错误来解释；我先前的条件性推测已作废。",
-          "inputSha256": "fef467f71ada2431546d17ef786cb09f617800387526c647ed3181d0cebabee9",
-          "inputContextSha256": "cf679f9661585461543c8e7f7dc879ea6908da795526ea27722c277ee13b2bea",
-          "generatedAt": "2026-10-03T02:18:33.615316+00:00",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review",
-            "evidence": "answers-six-sites-20261002/gpt-astra-source-context-2024-2025.json"
-          }
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 来源复核后修订",
-          "text": "答案：A。\nA项正确：原句“能产生千军万马的力量”，音乐不可能真的产生千军万马，加上“堪比”成为“能产生堪比千军万马的力量”，表意更准确，语法也通顺。B项错误：“不失”意为没有失去，“不失热情和诗意”指仍然具有热情和诗意；“不失为”意为还可以算是，后面通常接表示身份、类别的名词性成分，如“不失为一部佳作”，换成“不失为热情和诗意”搭配不当。C项错误：“本”多用于说话人指称自己一方，如“本人”“本文”，这里是客观介绍《黄河大合唱》，应改为“该作品”或“这部作品”。D项错误：先“表现”英雄气概，再“激励”中华儿女投身抗日救亡运动，前者是作品内容，后者是社会影响，有先因后果的逻辑顺序，不能互换。所以选A。",
-          "inputSha256": "fef467f71ada2431546d17ef786cb09f617800387526c647ed3181d0cebabee9",
-          "inputContextSha256": "cf679f9661585461543c8e7f7dc879ea6908da795526ea27722c277ee13b2bea",
-          "generatedAt": "2026-10-03T02:19:33.339281+00:00",
-          "uncertainties": [],
-          "selectedOptions": [
-            "A"
-          ],
-          "assessment": {
-            "matchesConclusion": true,
-            "note": "在更正题面与完整注释下完成来源复核，非初次盲测；已与当前材料逐项比较。"
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-source-context-2024-2025-result.json",
-            "inputPromptSha256": "fed90945dc47fac6289d60ea1d9a036801ca9c2975b3ca70823020be107a9ba5",
-            "responseStreamSha256": "70f3ceb252197e9f6a62513f17508dde801774bcd0ca0778367fd0ebe854c70b",
-            "stage": "source_review"
-          }
-        }
-      },
+      "modelAnswers": {},
       "history": [
         {
           "source": {
@@ -15497,19 +16203,107 @@
               }
             }
           }
+        },
+        {
+          "source": {
+            "id": "2024-yuyanjichu",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "①振奋人心的音乐能产生千军万马的力量。\n②《黄河大合唱》就是这样一部庄严有力而不失热情和诗意的不朽之作,它诞生于1939年的延安。\n③本作品一经问世,便在烽火连天的抗战岁月里唱遍大江南北。\n④《黄河大合唱》表现了炎黄子孙保卫黄河的英雄气概,激励了无数中华儿女投身抗日救亡运动。\n⑤在战争年代里,《黄河大合唱》_____________;在和平的今天,《黄河大合唱》协奏着民族复兴的乐章。"
+              }
+            ],
+            "topic": "五、本大题共3小题,共66分。\n20.语言基础运用(共6分)",
+            "annotation": "题面格式说明：第④句画波浪线的两处分别是“表现了炎黄子孙保卫黄河的英雄气概”和“激励了无数中华儿女投身抗日救亡运动”；第⑤句画横线的部分是“协奏着民族复兴的乐章”。依公开转载页面影像补记，保留原句文字。",
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "(1)下列说法正确的一项是(3分)\nA.第①句的“千军万马”前可以加上“堪比”。\nB.第②句的“不失”可以换为“不失为”。\nC.第③句的“本”使用无误。\nD.第④句画波浪线的两处可以互换位置。",
+                "score": 3
+              }
+            ]
+          },
+          "review": {
+            "id": "2024-yuyanjichu:1",
+            "inputSha256": "fef467f71ada2431546d17ef786cb09f617800387526c647ed3181d0cebabee9",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "A"
+            ],
+            "explanation": "已按勘误后的完整题面与注释重新核对；旧题面、旧答案及当时的输入证据保留于历史版本。两模型的不同解释和错误见各自评注，当前采用 Astra 复核答案。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T02:21:32.717618+00:00",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2024北京卷原题及完整材料"
+              },
+              {
+                "type": "public_reprint",
+                "title": "公开转载题面勘误与格式核对（非官方评分认证）",
+                "url": "https://gaokao.eol.cn/shiti/yw/202407/t20240705_2621911_7.shtml"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 更正题面后复核",
+                "text": "答案：A。音乐所产生的是精神鼓舞力量，“堪比千军万马的力量”明确表达比较关系，搭配通顺。B“不失”可直接接“热情和诗意”，改成“不失为”就变为判断，不宜接原有成分。C此处客观介绍《黄河大合唱》，应称“这部作品”或“该作品”，“本作品”的自指用法不妥。D的波浪线现已核实为两个完整述语：“表现了炎黄子孙保卫黄河的英雄气概”和“激励了无数中华儿女投身抗日救亡运动”。原顺序先介绍作品表现的内容，再写作品产生的影响，符合由内容到作用的展开；调换会改变这一叙述顺序，故本题不采用D。不能再按两个宾语短语互换、造成动宾搭配错误来解释；我先前的条件性推测已作废。",
+                "inputSha256": "fef467f71ada2431546d17ef786cb09f617800387526c647ed3181d0cebabee9",
+                "inputContextSha256": "cf679f9661585461543c8e7f7dc879ea6908da795526ea27722c277ee13b2bea",
+                "generatedAt": "2026-10-03T02:18:33.615316+00:00",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-source-context-2024-2025.json"
+                }
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "答案：A。\nA项正确：原句“能产生千军万马的力量”，音乐不可能真的产生千军万马，加上“堪比”成为“能产生堪比千军万马的力量”，表意更准确，语法也通顺。B项错误：“不失”意为没有失去，“不失热情和诗意”指仍然具有热情和诗意；“不失为”意为还可以算是，后面通常接表示身份、类别的名词性成分，如“不失为一部佳作”，换成“不失为热情和诗意”搭配不当。C项错误：“本”多用于说话人指称自己一方，如“本人”“本文”，这里是客观介绍《黄河大合唱》，应改为“该作品”或“这部作品”。D项错误：先“表现”英雄气概，再“激励”中华儿女投身抗日救亡运动，前者是作品内容，后者是社会影响，有先因后果的逻辑顺序，不能互换。所以选A。",
+                "inputSha256": "fef467f71ada2431546d17ef786cb09f617800387526c647ed3181d0cebabee9",
+                "inputContextSha256": "cf679f9661585461543c8e7f7dc879ea6908da795526ea27722c277ee13b2bea",
+                "generatedAt": "2026-10-03T02:19:33.339281+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "A"
+                ],
+                "assessment": {
+                  "matchesConclusion": true,
+                  "note": "在更正题面与完整注释下完成来源复核，非初次盲测；已与当前材料逐项比较。"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-source-context-2024-2025-result.json",
+                  "inputPromptSha256": "fed90945dc47fac6289d60ea1d9a036801ca9c2975b3ca70823020be107a9ba5",
+                  "responseStreamSha256": "70f3ceb252197e9f6a62513f17508dde801774bcd0ca0778367fd0ebe854c70b",
+                  "stage": "source_review"
+                }
+              }
+            },
+            "inputContextSha256": "cf679f9661585461543c8e7f7dc879ea6908da795526ea27722c277ee13b2bea"
+          }
         }
       ],
-      "inputContextSha256": "cf679f9661585461543c8e7f7dc879ea6908da795526ea27722c277ee13b2bea"
+      "inputContextSha256": "cf679f9661585461543c8e7f7dc879ea6908da795526ea27722c277ee13b2bea",
+      "inputPresentationSha256": "0db5c37732576020241cfa31fde031c8b850a8b04f765fd28111284d39948bcc"
     },
     {
       "id": "2024-yuyanjichu:2",
       "inputSha256": "73c674291f4e43abf244c972e02c368f6e241d467b62393ac2ff29996123d631",
-      "status": "reviewed",
+      "status": "draft",
       "kind": "open",
       "correctOptions": [],
-      "explanation": "已按勘误后的完整题面与注释重新核对；旧题面、旧答案及当时的输入证据保留于历史版本。两模型的不同解释和错误见各自评注，当前采用 Astra 复核答案。",
+      "explanation": "2024原卷标记及字形重核；旧模型全文与原题面保留于历史，本人完整重答另版冻结，待最后Claude核对后裁定。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
-      "reviewedAt": "2026-10-03T02:21:32.717618+00:00",
+      "reviewedAt": "2026-10-04T08:12:35.580Z",
       "sources": [
         {
           "type": "source_material",
@@ -15521,44 +16315,7 @@
           "url": "https://gaokao.eol.cn/shiti/yw/202407/t20240705_2621911_7.shtml"
         }
       ],
-      "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 更正题面后复核",
-          "text": "吹响着民族救亡的号角。填入后与‘协奏着民族复兴的乐章’对应，都是动词加‘着’再加名词短语，使用音乐意象作比喻，前说抗战救亡，后说和平复兴，文意连贯。填入部分十个汉字，未超过十五字。",
-          "inputSha256": "73c674291f4e43abf244c972e02c368f6e241d467b62393ac2ff29996123d631",
-          "inputContextSha256": "3466e96e0d3174e714f365477619db2894e088d42b80610d085c76136b24d6a0",
-          "generatedAt": "2026-10-03T02:18:33.615316+00:00",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review",
-            "evidence": "answers-six-sites-20261002/gpt-astra-source-context-2024-2025.json"
-          }
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 来源复核后修订",
-          "text": "答案示例：吹响着民族解放的号角\n说明：①语意连贯：与上文“在战争年代里”和第④句“激励了无数中华儿女投身抗日救亡运动”相承，写出作品在战争年代鼓舞人心的作用，并与下文“和平的今天……民族复兴”形成对照。②结构一致：与“协奏着民族复兴的乐章”同为“动词+着+定语+的+名词”结构。③修辞：把《黄河大合唱》比作催人奋进的“号角”，运用比喻。④字数为9字，不超过15字。",
-          "inputSha256": "73c674291f4e43abf244c972e02c368f6e241d467b62393ac2ff29996123d631",
-          "inputContextSha256": "3466e96e0d3174e714f365477619db2894e088d42b80610d085c76136b24d6a0",
-          "generatedAt": "2026-10-03T02:19:33.339281+00:00",
-          "uncertainties": [],
-          "selectedOptions": [],
-          "assessment": {
-            "matchesConclusion": null,
-            "note": "示例“吹响着民族解放的号角”为10个汉字，模型称9字有误；仍符合不超过15字的要求，结构与比喻均合题。"
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-source-context-2024-2025-result.json",
-            "inputPromptSha256": "fed90945dc47fac6289d60ea1d9a036801ca9c2975b3ca70823020be107a9ba5",
-            "responseStreamSha256": "70f3ceb252197e9f6a62513f17508dde801774bcd0ca0778367fd0ebe854c70b",
-            "stage": "source_review"
-          }
-        }
-      },
+      "modelAnswers": {},
       "history": [
         {
           "source": {
@@ -15633,9 +16390,102 @@
               }
             }
           }
+        },
+        {
+          "source": {
+            "id": "2024-yuyanjichu",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "①振奋人心的音乐能产生千军万马的力量。\n②《黄河大合唱》就是这样一部庄严有力而不失热情和诗意的不朽之作,它诞生于1939年的延安。\n③本作品一经问世,便在烽火连天的抗战岁月里唱遍大江南北。\n④《黄河大合唱》表现了炎黄子孙保卫黄河的英雄气概,激励了无数中华儿女投身抗日救亡运动。\n⑤在战争年代里,《黄河大合唱》_____________;在和平的今天,《黄河大合唱》协奏着民族复兴的乐章。"
+              }
+            ],
+            "topic": "五、本大题共3小题,共66分。\n20.语言基础运用(共6分)",
+            "annotation": "题面格式说明：第④句画波浪线的两处分别是“表现了炎黄子孙保卫黄河的英雄气概”和“激励了无数中华儿女投身抗日救亡运动”；第⑤句画横线的部分是“协奏着民族复兴的乐章”。依公开转载页面影像补记，保留原句文字。",
+            "annotations": [
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "wave",
+                "start": 182,
+                "end": 192,
+                "anchor": "协奏着民族复兴的乐章"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 2,
+                "id": "q2",
+                "text": "(2)请在第⑤句横线处将句子补充完整。\n要求:使上下文语意连贯,与下文画横线部分结构一致,运用修辞手法,不超过15字。将答案写在答题卡上。(3分)\n答:",
+                "score": 3
+              }
+            ]
+          },
+          "review": {
+            "id": "2024-yuyanjichu:2",
+            "inputSha256": "73c674291f4e43abf244c972e02c368f6e241d467b62393ac2ff29996123d631",
+            "status": "reviewed",
+            "kind": "open",
+            "correctOptions": [],
+            "explanation": "已按勘误后的完整题面与注释重新核对；旧题面、旧答案及当时的输入证据保留于历史版本。两模型的不同解释和错误见各自评注，当前采用 Astra 复核答案。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T02:21:32.717618+00:00",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2024北京卷原题及完整材料"
+              },
+              {
+                "type": "public_reprint",
+                "title": "公开转载题面勘误与格式核对（非官方评分认证）",
+                "url": "https://gaokao.eol.cn/shiti/yw/202407/t20240705_2621911_7.shtml"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 更正题面后复核",
+                "text": "吹响着民族救亡的号角。填入后与‘协奏着民族复兴的乐章’对应，都是动词加‘着’再加名词短语，使用音乐意象作比喻，前说抗战救亡，后说和平复兴，文意连贯。填入部分十个汉字，未超过十五字。",
+                "inputSha256": "73c674291f4e43abf244c972e02c368f6e241d467b62393ac2ff29996123d631",
+                "inputContextSha256": "3466e96e0d3174e714f365477619db2894e088d42b80610d085c76136b24d6a0",
+                "generatedAt": "2026-10-03T02:18:33.615316+00:00",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-source-context-2024-2025.json"
+                }
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "答案示例：吹响着民族解放的号角\n说明：①语意连贯：与上文“在战争年代里”和第④句“激励了无数中华儿女投身抗日救亡运动”相承，写出作品在战争年代鼓舞人心的作用，并与下文“和平的今天……民族复兴”形成对照。②结构一致：与“协奏着民族复兴的乐章”同为“动词+着+定语+的+名词”结构。③修辞：把《黄河大合唱》比作催人奋进的“号角”，运用比喻。④字数为9字，不超过15字。",
+                "inputSha256": "73c674291f4e43abf244c972e02c368f6e241d467b62393ac2ff29996123d631",
+                "inputContextSha256": "3466e96e0d3174e714f365477619db2894e088d42b80610d085c76136b24d6a0",
+                "generatedAt": "2026-10-03T02:19:33.339281+00:00",
+                "uncertainties": [],
+                "selectedOptions": [],
+                "assessment": {
+                  "matchesConclusion": null,
+                  "note": "示例“吹响着民族解放的号角”为10个汉字，模型称9字有误；仍符合不超过15字的要求，结构与比喻均合题。"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-source-context-2024-2025-result.json",
+                  "inputPromptSha256": "fed90945dc47fac6289d60ea1d9a036801ca9c2975b3ca70823020be107a9ba5",
+                  "responseStreamSha256": "70f3ceb252197e9f6a62513f17508dde801774bcd0ca0778367fd0ebe854c70b",
+                  "stage": "source_review"
+                }
+              }
+            },
+            "inputContextSha256": "3466e96e0d3174e714f365477619db2894e088d42b80610d085c76136b24d6a0"
+          }
         }
       ],
-      "inputContextSha256": "3466e96e0d3174e714f365477619db2894e088d42b80610d085c76136b24d6a0"
+      "inputContextSha256": "3466e96e0d3174e714f365477619db2894e088d42b80610d085c76136b24d6a0",
+      "inputPresentationSha256": "32a3c268c6538286678b12e0b553303f60c0b2e879a830dca82775fc6458c0ed"
     },
     {
       "id": "2024-weixiezuo:1",
