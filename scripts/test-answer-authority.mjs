@@ -130,6 +130,16 @@ test('source assets are local allowlisted files with matching bytes, never a pri
   image.sha256='a'.repeat(64);assert.throws(()=>sourceAssets(data,root),/hash mismatch/);
   image.asset='../../private.jpg';assert.throws(()=>sourceAssets(data,root),/Invalid source image/);
 });
+
+test('practice scoring cannot silently rescale legacy values, omit component points or attach to a different input',()=>{
+  const data=JSON.parse(readFileSync(new URL('../data/all.json',import.meta.url))),a=JSON.parse(readFileSync(new URL('../data/answer-authority.json',import.meta.url)));
+  validateAuthority(data,a);
+  const review=a.questions.find(q=>q.id==='2019-feilian:5'),guide=structuredClone(review.practiceScoring);
+  review.practiceScoring.total=3;assert.throws(()=>validateAuthority(data,a),/Invalid practice scoring guide/);
+  review.practiceScoring=structuredClone(guide);review.practiceScoring.legacyScore=10;assert.throws(()=>validateAuthority(data,a),/Invalid practice scoring guide/);
+  review.practiceScoring=structuredClone(guide);review.practiceScoring.inputPresentationSha256='a'.repeat(64);assert.throws(()=>validateAuthority(data,a),/Invalid practice scoring guide/);
+  review.practiceScoring=structuredClone(guide);review.kind='single_choice';review.correctOptions=['B'];assert.throws(()=>validateAuthority(data,a),/Invalid practice scoring guide/);
+});
 test('matching text with another marked occurrence cannot reuse current review',()=>{
   const {source,a}=markedFixture();validateAuthority(source,a,{requireComplete:true});
   for(const patch of [{start:3,end:4},{type:'underline'},{start:0,end:2,anchor:'甲之'}]){

@@ -3,11 +3,12 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import vm from 'node:vm';
 import {answerVersionSpecs, versionsForQuestion, reviewForQuestion} from '../assets/js/answer-versions.js';
+import {projectAuthority} from './lib/answer-authority.mjs';
 
 const source = readFileSync(new URL('../assets/js/app.js', import.meta.url), 'utf8')
   .replace(/^import \{ answerVersionSpecs, versionsForQuestion, reviewForQuestion \} from '\.\/answer-versions\.js';$/m, '');
 const corpus = JSON.parse(readFileSync(new URL('../data/all.json', import.meta.url)));
-function fixture({ items = [], authenticated = true, saved = {}, legacy = {}, failure = false } = {}) {
+function fixture({ items = [], authenticated = true, saved = {}, legacy = {}, failure = false, data = corpus } = {}) {
   const storage = new Map([['gk_progress', JSON.stringify(saved)], ['gaokao_read_progress', JSON.stringify(legacy)]]);
   const calls = [];
   const context = vm.createContext({
@@ -17,7 +18,7 @@ function fixture({ items = [], authenticated = true, saved = {}, legacy = {}, fa
     localStorage: { getItem: key => storage.get(key) ?? null, setItem: (key, value) => storage.set(key, value) },
   });
   vm.runInContext(source, context);
-  context.records = structuredClone(corpus);
+  context.records = structuredClone(data);
   vm.runInContext(`state.data=records; state.byId=new Map(records.map(r=>[r.id,r])); state.identityAuthenticated=${authenticated}; loadLocalProgress(); refreshCatalogStatus=()=>{};`, context);
   return { run: code => vm.runInContext(code, context), result: () => JSON.parse(storage.get('gk_progress')), storage, calls };
 }
@@ -84,6 +85,24 @@ test('image source renders actual asset in both category and year views', () => 
   f.run("const imageExam=buildYearExam(2008);const imageQ=imageExam.questions.find(q=>q.origRecId==='2008-yuyan-image');");
   assert.equal(f.run('questionRequiresImage(imageExam,imageQ.qIndex)'),true);
   assert.equal(f.run('questionRequiresImage(imageExam,1)'),false);
+});
+
+test('source-bound practice scores fix display and feedback without rewriting historical scores or progress',()=>{
+  const authority=JSON.parse(readFileSync(new URL('../data/answer-authority.json',import.meta.url)));
+  const data=projectAuthority(corpus,authority),f=fixture({data,saved:{'2011-yuyanjichu':'done'}}),before=f.storage.get('gk_progress');
+  assert.equal(f.run("state.byId.get('2011-yuyanjichu').questions[1].score"),90);
+  assert.equal(f.run("questionDisplayScore(state.byId.get('2011-yuyanjichu'),2)"),3);
+  assert.equal(f.run("buildYearExam(2011).questions.find(q=>q.origRecId==='2011-yuyanjichu'&&q.origQIndex===2).score"),3);
+  const prompt=f.run("buildContextPrompt(state.byId.get('2011-yuyanjichu'),2,'','review')");
+  assert.match(prompt,/练习参考满分3分/);assert.doesNotMatch(prompt,/满分90分/);
+  assert.equal(f.run("questionDisplayScore(state.byId.get('2019-feilian'),5)"),10);
+  const composite=f.run("buildContextPrompt(state.byId.get('2019-feilian'),5,'','review')");
+  assert.match(composite,/原5 3分；原6 7分/);assert.match(composite,/不把合并题当成一道选择题/);
+  for(const [id,qIndex] of [['2015-guwen',1],['2015-lunyu',1],['2016-moxie',1],['2014-guwen',5]]){
+    const p=f.run(`buildContextPrompt(state.byId.get('${id}'),${qIndex},'','review')`);
+    assert.match(p,/1\) 只给定性总评/);assert.doesNotMatch(p,/1\) 一行总评与练习估分/);
+  }
+  assert.equal(f.storage.get('gk_progress'),before);
 });
 test('ambiguous historical category keys do not invent per-record progress', async () => {
   const rec=corpus.find(r=>r.id==='2007-yuyanjichu');

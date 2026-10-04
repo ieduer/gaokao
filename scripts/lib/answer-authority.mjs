@@ -128,6 +128,16 @@ function validateReviews(records, authority, { requireComplete = false } = {}) {
     if (review.status === 'disputed' && options.length) throw Error(`Dispute cannot carry a grading key: ${review.id}`);
     if (review.scoringPolicy && (review.kind !== 'multiple_choice' || review.scoringPolicy.kind !== 'exact_set'
       || review.scoringPolicy.basis !== 'practice')) throw Error(`Unsupported scoring policy: ${review.id}`);
+    if(review.practiceScoring){
+      const scoring=review.practiceScoring;
+      if(!['component_feedback','qualitative_only'].includes(scoring.mode) || scoring.basis!=='practice'
+        || scoring.inputPresentationSha256!==presentationDigest || scoring.legacyScore!==source.question.score
+        || !Number.isFinite(scoring.total) || scoring.total<=0 || !Array.isArray(scoring.components)
+        || !scoring.components.length || scoring.components.some(p=>!p.label?.trim()||!Number.isFinite(p.points)||p.points<=0)
+        || scoring.components.reduce((n,p)=>n+p.points,0)!==scoring.total || !scoring.note?.trim()
+        || (scoring.components.length>1&&(review.kind!=='open'||options.length)))
+        throw Error(`Invalid practice scoring guide: ${review.id}`);
+    }
     for (const [version, model] of Object.entries(review.modelAnswers || {})) {
       if (!model.modelId?.trim() || !model.label?.trim() || !model.text?.trim()
         || !Number.isFinite(Date.parse(model.generatedAt)) || model.inputSha256 !== review.inputSha256
@@ -199,6 +209,7 @@ export function projectAuthority(records, authority) {
       inputPresentationSha256: review.inputPresentationSha256 || null,
       assessments: Object.fromEntries(Object.entries(review.modelAnswers || {}).filter(([,m])=>m.assessment).map(([v,m])=>[v,m.assessment])),
       ...(review.scoringPolicy ? {scoringPolicy:review.scoringPolicy} : {}) };
+    if(review.practiceScoring)record.answer_reviews[key].practiceScoring=structuredClone(review.practiceScoring);
     record.ai_answer_versions ||= {};
     if (review.history?.length) {
       record.answer_review_history ||= {};

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "2026-10-03-text-supplements-local",
+  "revision": "2026-10-03-practice-scoring-local",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -11074,7 +11074,21 @@
             "inputPresentationSha256": "38f8f65cbc983c3fa00b3f574d946b991dbab6ff4049b46d42d77127ad088e8d"
           }
         }
-      ]
+      ],
+      "practiceScoring": {
+        "basis": "practice",
+        "mode": "qualitative_only",
+        "total": 6,
+        "components": [
+          {
+            "label": "原18八空合计",
+            "points": 6
+          }
+        ],
+        "legacyScore": 6,
+        "inputPresentationSha256": "0245502407382675e9c2c022db5e28628db8e58cecee010e0590c57bc36e90f9",
+        "note": "八处填空与6分之间的逐项分配尚未确认，只给定性反馈。"
+      }
     },
     {
       "id": "2015-moxie:1",
@@ -11625,7 +11639,21 @@
             "inputPresentationSha256": "f87e4909814cafcbd30ffb885fce357f0d9d277fe1e38a786b60f2e7a5741e2f"
           }
         }
-      ]
+      ],
+      "practiceScoring": {
+        "basis": "practice",
+        "mode": "component_feedback",
+        "total": 8,
+        "components": [
+          {
+            "label": "原13默写",
+            "points": 8
+          }
+        ],
+        "legacyScore": null,
+        "inputPresentationSha256": "00bdf7e0b4f242c689ae6e77fe9b9e976974249139c974011ebfef3cebd0279f",
+        "note": "按分项给练习反馈，估分仅供学习参考；历史成绩不重算。"
+      }
     },
     {
       "id": "2012-moxie:1",
@@ -21836,7 +21864,25 @@
       "explanation": "必须答原题10翻译及11动作描写。直接动作证据为桓子肘康子、康子履桓子之跗两部分，不能漏一。Claude补充视臣而趋疾，可作二人心态的间接佐证，不把它另设必答得分点。原题2+4分与legacy score2的冲突仍是发布阻断项。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T05:12:02.683Z",
-      "currentVersion": "gpt_6_astra"
+      "currentVersion": "gpt_6_astra",
+      "practiceScoring": {
+        "basis": "practice",
+        "mode": "component_feedback",
+        "total": 6,
+        "components": [
+          {
+            "label": "原10翻译",
+            "points": 2
+          },
+          {
+            "label": "原11证据",
+            "points": 4
+          }
+        ],
+        "legacyScore": 2,
+        "inputPresentationSha256": "6b5f10c3f11f5e769f39c7cee7a973b1d237dad6a8ef985401c8d1ce3ceb221f",
+        "note": "按分项给练习反馈，估分仅供学习参考；历史成绩不重算。"
+      }
     },
     {
       "id": "2020-shici:1",
@@ -23485,6 +23531,24 @@
             "stage": "independent"
           }
         }
+      },
+      "practiceScoring": {
+        "basis": "practice",
+        "mode": "component_feedback",
+        "total": 10,
+        "components": [
+          {
+            "label": "原5",
+            "points": 3
+          },
+          {
+            "label": "原6",
+            "points": 7
+          }
+        ],
+        "legacyScore": 3,
+        "inputPresentationSha256": "62d140cc185a4bcb3b2e87ee0fb2365951918928ad75d9735b29860b78065bd2",
+        "note": "按分项给练习反馈，估分仅供学习参考；历史成绩不重算。"
       }
     },
     {
@@ -25383,7 +25447,29 @@
       "explanation": "完整回答原5/6/7三问：A、C及技术概念到社会伦理的认识深化。整体open/answer=[]，旧score3不变；原3+3+5分兼容评分仍阻断。材料组织顺序不是严格历史时间顺序，也不能用这一简化案例代表所有自动驾驶算法。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T06:25:49.467Z",
-      "currentVersion": "gpt_6_astra"
+      "currentVersion": "gpt_6_astra",
+      "practiceScoring": {
+        "basis": "practice",
+        "mode": "component_feedback",
+        "total": 11,
+        "components": [
+          {
+            "label": "原5",
+            "points": 3
+          },
+          {
+            "label": "原6",
+            "points": 3
+          },
+          {
+            "label": "原7",
+            "points": 5
+          }
+        ],
+        "legacyScore": 3,
+        "inputPresentationSha256": "4e853c897b56994ae6e4d3e1fb7e1ba6017bd27d28e7a1fe34ed07a03f59726a",
+        "note": "按分项给练习反馈，估分仅供学习参考；历史成绩不重算。"
+      }
     },
     {
       "id": "2018-guwen:1",
@@ -27748,7 +27834,33 @@
             "currentVersion": "gpt_6_astra"
           }
         }
-      ]
+      ],
+      "practiceScoring": {
+        "basis": "practice",
+        "mode": "component_feedback",
+        "total": 12,
+        "components": [
+          {
+            "label": "原5",
+            "points": 2
+          },
+          {
+            "label": "原6",
+            "points": 2
+          },
+          {
+            "label": "原7",
+            "points": 2
+          },
+          {
+            "label": "原8",
+            "points": 6
+          }
+        ],
+        "legacyScore": 2,
+        "inputPresentationSha256": "99c1f16d647cfc10e56880bd0d3b6b3a0f21d55a8d8227a35cc888c68437cd22",
+        "note": "按分项给练习反馈，估分仅供学习参考；历史成绩不重算。"
+      }
     },
     {
       "id": "2017-guwen:1",
@@ -28056,7 +28168,25 @@
       "explanation": "第13题D；第14题直接依据重在刘邦明知不宜分封却仍封韩信等，且张良亦参与，说明时势制约选择。Astra另举秦置郡县是段落背景，不能取代汉高帝/张良的直接论据。新浪答案偏向三代背景，不采为完整直接依据。旧score3不改，3+5兼容评分阻断。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T06:50:26.137Z",
-      "currentVersion": "gpt_6_astra"
+      "currentVersion": "gpt_6_astra",
+      "practiceScoring": {
+        "basis": "practice",
+        "mode": "component_feedback",
+        "total": 8,
+        "components": [
+          {
+            "label": "原13",
+            "points": 3
+          },
+          {
+            "label": "原14",
+            "points": 5
+          }
+        ],
+        "legacyScore": 3,
+        "inputPresentationSha256": "e211ae2b6db99c38872b48bb27babe60f17a96d9aaee1ad451a3a7c7425b19f5",
+        "note": "按分项给练习反馈，估分仅供学习参考；历史成绩不重算。"
+      }
     },
     {
       "id": "2017-shici:1",
@@ -28674,7 +28804,25 @@
       "explanation": "第23完整答三类人物及构思，第24A。宝玉入住大观园前已有叛逆，场所不是性格单因果起源。其他作品环境作用依文学整体判断，Claude阿Q只能自我安慰过度概括，不能排除其复杂行动。旧score6保留，6+3兼容评分阻断。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T06:50:26.137Z",
-      "currentVersion": "gpt_6_astra"
+      "currentVersion": "gpt_6_astra",
+      "practiceScoring": {
+        "basis": "practice",
+        "mode": "component_feedback",
+        "total": 9,
+        "components": [
+          {
+            "label": "原23",
+            "points": 6
+          },
+          {
+            "label": "原24",
+            "points": 3
+          }
+        ],
+        "legacyScore": 6,
+        "inputPresentationSha256": "b10f9896c0fa21287bf514fc58e48c96daefaab0e9babecbe3040d61b1bb4467",
+        "note": "按分项给练习反馈，估分仅供学习参考；历史成绩不重算。"
+      }
     },
     {
       "id": "2017-weixiezuo:1",
@@ -29476,7 +29624,33 @@
       "explanation": "合并原5/6/7/8：D/B/B及完整概括。首笔按清晰原卷恢复横斜钩字形⺄，不是独体乙；题目所在material2字段也包含材料三。原文锂电子电池照录并另注规范术语锂离子电池。概括从追赶到领先须区分已完成蛟龙试验与彩虹鱼未来计划，不能把科研和作业割裂成先后互斥阶段。整体open无选择判分键，旧score3不变，原3+3+2+5兼容计分仍阻断。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T08:58:35.311Z",
-      "currentVersion": "gpt_6_astra"
+      "currentVersion": "gpt_6_astra",
+      "practiceScoring": {
+        "basis": "practice",
+        "mode": "component_feedback",
+        "total": 13,
+        "components": [
+          {
+            "label": "原5",
+            "points": 3
+          },
+          {
+            "label": "原6",
+            "points": 3
+          },
+          {
+            "label": "原7",
+            "points": 2
+          },
+          {
+            "label": "原8",
+            "points": 5
+          }
+        ],
+        "legacyScore": 3,
+        "inputPresentationSha256": "2cc9f551c03dc989b98edc48166cbe90cb80db0b0ab59ff1d663ec81b96a693c",
+        "note": "按分项给练习反馈，估分仅供学习参考；历史成绩不重算。"
+      }
     },
     {
       "id": "2016-guwen:1",
@@ -29830,7 +30004,25 @@
       "explanation": "原13分别评价桓公/管子/衡山之君并给文据，原14结合两段谈启示。Claude不耻下问无明确身份依据，见利忘义的义与不动刀兵都不如见利忘本、以经济手段削弱对手严谨；原文仍有齐鲁削地压力。不得将春秋寓言式政论当作已核历史事实。原13/14清楚为4/5分，旧合并score4保留，兼容计分阻断。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T08:58:35.311Z",
-      "currentVersion": "gpt_6_astra"
+      "currentVersion": "gpt_6_astra",
+      "practiceScoring": {
+        "basis": "practice",
+        "mode": "component_feedback",
+        "total": 9,
+        "components": [
+          {
+            "label": "原13",
+            "points": 4
+          },
+          {
+            "label": "原14",
+            "points": 5
+          }
+        ],
+        "legacyScore": 4,
+        "inputPresentationSha256": "68ebe753a86dec94cf0f4ef2645736b9862a69f010a0d0b65d2da7d52613ba84",
+        "note": "按分项给练习反馈，估分仅供学习参考；历史成绩不重算。"
+      }
     },
     {
       "id": "2016-shici:1",
@@ -30207,7 +30399,21 @@
       "explanation": "C。朋友与作者同有小说未写老腔的遗憾，作者更希望气韵贯穿作品。A遗漏赵季平的推动作用；B混淆艺术震撼与音量压过，且经常无据；D把也许宋代当作定论、存在当作一直流行。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T08:58:35.311Z",
-      "currentVersion": "gpt_6_astra"
+      "currentVersion": "gpt_6_astra",
+      "practiceScoring": {
+        "basis": "practice",
+        "mode": "component_feedback",
+        "total": 3,
+        "components": [
+          {
+            "label": "原20",
+            "points": 3
+          }
+        ],
+        "legacyScore": null,
+        "inputPresentationSha256": "8f2cf442330a7710167dd7484fe2d6b1d49fd727d4d968bb4022416fc5d55e35",
+        "note": "按分项给练习反馈，估分仅供学习参考；历史成绩不重算。"
+      }
     },
     {
       "id": "2016-sanwen:3",
@@ -30278,7 +30484,21 @@
       "explanation": "答出认识与感受变化并联系演出细节。跨地域观众共鸣有文本支撑，Claude打动所有人超出文据，不作普遍定律。原21旧score为null、印刷4分，计分兼容仍待；原20同为旧null、印刷3分。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T08:58:35.311Z",
-      "currentVersion": "gpt_6_astra"
+      "currentVersion": "gpt_6_astra",
+      "practiceScoring": {
+        "basis": "practice",
+        "mode": "component_feedback",
+        "total": 4,
+        "components": [
+          {
+            "label": "原21",
+            "points": 4
+          }
+        ],
+        "legacyScore": null,
+        "inputPresentationSha256": "7d942f47d066bf50a9658ad2a8aabc81094daa89c5d0aa1a283b9f8bf4821217",
+        "note": "按分项给练习反馈，估分仅供学习参考；历史成绩不重算。"
+      }
     },
     {
       "id": "2016-sanwen:4",
@@ -30351,7 +30571,21 @@
       "explanation": "侧面描写任选两例：赵季平的赞赏与郑重介绍，观众先静后热烈回应，或濮存昕由主持转为参与。逐例说明如何衬托老腔艺术价值，不能只列掌声。原22旧score为null、印刷4分，计分兼容仍待。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T08:58:35.311Z",
-      "currentVersion": "gpt_6_astra"
+      "currentVersion": "gpt_6_astra",
+      "practiceScoring": {
+        "basis": "practice",
+        "mode": "component_feedback",
+        "total": 4,
+        "components": [
+          {
+            "label": "原22",
+            "points": 4
+          }
+        ],
+        "legacyScore": null,
+        "inputPresentationSha256": "6ad1a9e12a88466aeab2c2343147f67a1f5a530fb239978794b955501319c46e",
+        "note": "按分项给练习反馈，估分仅供学习参考；历史成绩不重算。"
+      }
     },
     {
       "id": "2016-sanwen:5",
@@ -30424,7 +30658,25 @@
       "explanation": "原23标题含义与原24写唱腔的手法均完整作答。标题联系小说、话剧、土地与老腔；遐想、比喻、铺陈把声音具体化，主要是声音之间联想，不强判每处通感。麦苗牛马并非关中专有，Claude特有须限为本文组织的地域组合。合并23/24印刷5+6/旧null保留阻断。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T08:58:35.311Z",
-      "currentVersion": "gpt_6_astra"
+      "currentVersion": "gpt_6_astra",
+      "practiceScoring": {
+        "basis": "practice",
+        "mode": "component_feedback",
+        "total": 11,
+        "components": [
+          {
+            "label": "原23",
+            "points": 5
+          },
+          {
+            "label": "原24",
+            "points": 6
+          }
+        ],
+        "legacyScore": null,
+        "inputPresentationSha256": "b2e3c38e2b86b10f8770214c24f57a8cc0196b11ab698ade146bfe4a6c2c7ada",
+        "note": "按分项给练习反馈，估分仅供学习参考；历史成绩不重算。"
+      }
     },
     {
       "id": "2016-weixiezuo:1",
@@ -31180,7 +31432,33 @@
       "explanation": "本单元完整回答原5D、6A、7意义、8D。汉典凹25251凸21251均起竖。Sina第8题标B而解析说D错，不能照抄键。典指典章制度、历来掌故事迹，题中经典释义不当。Claude把参数控制首创与前段欧洲专利并在一句，不能据此断言专利属于后来所述参数方法；外国公司退出等仅按材料历史叙述。其机器字段只填第5题D，原样保存，全文齐全；authority整体open且无选择评分键。原2+3+6+2、旧score2，兼容计分仍阻断。",
       "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
       "reviewedAt": "2026-10-03T09:30:04.042Z",
-      "currentVersion": "gpt_6_astra"
+      "currentVersion": "gpt_6_astra",
+      "practiceScoring": {
+        "basis": "practice",
+        "mode": "component_feedback",
+        "total": 13,
+        "components": [
+          {
+            "label": "原5",
+            "points": 2
+          },
+          {
+            "label": "原6",
+            "points": 3
+          },
+          {
+            "label": "原7",
+            "points": 6
+          },
+          {
+            "label": "原8",
+            "points": 2
+          }
+        ],
+        "legacyScore": 2,
+        "inputPresentationSha256": "f037f27c0365788cc14318c8bad26c65e0f2922abed5934aba783fea5d7a4530",
+        "note": "按分项给练习反馈，估分仅供学习参考；历史成绩不重算。"
+      }
     },
     {
       "id": "2015-guwen:1",
@@ -31254,7 +31532,21 @@
       "explanation": "原9两单选①B②C。所私承前文子，忍解释为对所爱之人狠心更贴切；教育部字典支持狠心义，不能只凭词条替代语境。Claude机器字段multiple_choice/B,C明言是两个子题，原样保存；本单元open，不能当成一次多选评分。旧null及分项计分未变。",
       "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
       "reviewedAt": "2026-10-03T09:30:04.042Z",
-      "currentVersion": "gpt_6_astra"
+      "currentVersion": "gpt_6_astra",
+      "practiceScoring": {
+        "basis": "practice",
+        "mode": "qualitative_only",
+        "total": 2,
+        "components": [
+          {
+            "label": "原9两次选择合计",
+            "points": 2
+          }
+        ],
+        "legacyScore": null,
+        "inputPresentationSha256": "206e67ce6db1ec32165d733f44f8d14ddadcf0f5bb5b3f6cd0aa892d244c3a73",
+        "note": "两次选择的逐项分配尚未确认，只给定性反馈，不猜测部分得分。"
+      }
     },
     {
       "id": "2015-guwen:3",
@@ -31321,7 +31613,21 @@
       "explanation": "B。君问可是君问谁能胜任，非评价发问恰当；A/C/D依完整文意可通。原题3分与旧null的兼容评分未解决。",
       "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
       "reviewedAt": "2026-10-03T09:30:04.042Z",
-      "currentVersion": "gpt_6_astra"
+      "currentVersion": "gpt_6_astra",
+      "practiceScoring": {
+        "basis": "practice",
+        "mode": "component_feedback",
+        "total": 3,
+        "components": [
+          {
+            "label": "原11",
+            "points": 3
+          }
+        ],
+        "legacyScore": null,
+        "inputPresentationSha256": "7c6eefb2e6d1aefce3ba7067fd39bc5fc5a1df5df2b756e7702c49f014c3a49a",
+        "note": "按分项给练习反馈，估分仅供学习参考；历史成绩不重算。"
+      }
     },
     {
       "id": "2015-guwen:4",
@@ -31471,7 +31777,25 @@
       "explanation": "原13任选两人每人两个贴切熟语；14区分平公肯定举荐意见、国人赞任用得当、孔子赞公正举贤原则。没有官员上任政绩证据，不增写政绩。腹䵍之事是古文伦理叙述。原4+3与旧score4，两个子题均保留。",
       "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
       "reviewedAt": "2026-10-03T09:30:04.042Z",
-      "currentVersion": "gpt_6_astra"
+      "currentVersion": "gpt_6_astra",
+      "practiceScoring": {
+        "basis": "practice",
+        "mode": "component_feedback",
+        "total": 7,
+        "components": [
+          {
+            "label": "原13",
+            "points": 4
+          },
+          {
+            "label": "原14",
+            "points": 3
+          }
+        ],
+        "legacyScore": 4,
+        "inputPresentationSha256": "2b60af364b4e1ff838f9a8e4d0bd35af395637c48261e8806aea45af5eb4c569",
+        "note": "按分项给练习反馈，估分仅供学习参考；历史成绩不重算。"
+      }
     },
     {
       "id": "2015-shici:1",
@@ -31615,7 +31939,25 @@
       "explanation": "原17①B；②嘈嘈切切错杂弹，大珠小珠落玉盘。词声与环境写景不能都算以声写声。Claude机器字段仅B，但analysis包含完整默写，原样保存；本单元open无选择评分键，保留原3+2总5及分项兼容门禁。",
       "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
       "reviewedAt": "2026-10-03T09:30:04.042Z",
-      "currentVersion": "gpt_6_astra"
+      "currentVersion": "gpt_6_astra",
+      "practiceScoring": {
+        "basis": "practice",
+        "mode": "component_feedback",
+        "total": 5,
+        "components": [
+          {
+            "label": "原17①",
+            "points": 3
+          },
+          {
+            "label": "原17②",
+            "points": 2
+          }
+        ],
+        "legacyScore": 5,
+        "inputPresentationSha256": "4899585c160b7d3f50f398cfa7a30e9d8fd40fffacf386ea4d1aefa3e855a58c",
+        "note": "按分项给练习反馈，估分仅供学习参考；历史成绩不重算。"
+      }
     },
     {
       "id": "2015-shici:5",
@@ -31741,7 +32083,21 @@
       "explanation": "四括号依次曾皙、孔子、曾皙、孔子；完整保留，原1分如何拆分仍待核。",
       "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
       "reviewedAt": "2026-10-03T09:30:04.042Z",
-      "currentVersion": "gpt_6_astra"
+      "currentVersion": "gpt_6_astra",
+      "practiceScoring": {
+        "basis": "practice",
+        "mode": "qualitative_only",
+        "total": 1,
+        "components": [
+          {
+            "label": "四位说话人合计",
+            "points": 1
+          }
+        ],
+        "legacyScore": 1,
+        "inputPresentationSha256": "424404fc7c17c141134a589801f97eee56f94064a38df3a7540ec0950419dd39",
+        "note": "四位说话人与1分之间的逐项分配尚未确认，只给定性反馈。"
+      }
     },
     {
       "id": "2015-lunyu:2",
@@ -32140,7 +32496,25 @@
       "explanation": "原24四情境及相应凌寒坚韧、幽香清逸格调；25区分书香文化积累与诗心审美人格。文化解释应保留日本人段的共鸣，不把结论化成外国人永远无法理解梅。完整两题6+4与旧score6，计分仍阻断。",
       "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，逐题来源与分歧裁定",
       "reviewedAt": "2026-10-03T09:30:04.042Z",
-      "currentVersion": "gpt_6_astra"
+      "currentVersion": "gpt_6_astra",
+      "practiceScoring": {
+        "basis": "practice",
+        "mode": "component_feedback",
+        "total": 10,
+        "components": [
+          {
+            "label": "原24",
+            "points": 6
+          },
+          {
+            "label": "原25",
+            "points": 4
+          }
+        ],
+        "legacyScore": 6,
+        "inputPresentationSha256": "58cd139aa3d9d4b2e241dc6e30cbc6d13c90ab0fd7ff2e2fa072dccd6f461fb5",
+        "note": "按分项给练习反馈，估分仅供学习参考；历史成绩不重算。"
+      }
     },
     {
       "id": "2015-weixiezuo:1",
@@ -33036,7 +33410,41 @@
       "explanation": "原4D、5C、6①C、6②D、7①B、7②A，双方全文已答六题。Claude机器字段仅D且自报范围，原样保留；整体authority为open且无选项评分键。足下的书面交际不合午宴语境；俗语关注准备与行动关系，不采用仅能用于后勤的绝对词义。旧score2不当作全部14分。",
       "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
       "reviewedAt": "2026-10-03T09:52:20.429Z",
-      "currentVersion": "gpt_6_astra"
+      "currentVersion": "gpt_6_astra",
+      "practiceScoring": {
+        "basis": "practice",
+        "mode": "component_feedback",
+        "total": 14,
+        "components": [
+          {
+            "label": "原4",
+            "points": 2
+          },
+          {
+            "label": "原5",
+            "points": 3
+          },
+          {
+            "label": "原6①",
+            "points": 2
+          },
+          {
+            "label": "原6②",
+            "points": 2
+          },
+          {
+            "label": "原7①",
+            "points": 3
+          },
+          {
+            "label": "原7②",
+            "points": 2
+          }
+        ],
+        "legacyScore": 2,
+        "inputPresentationSha256": "7d48492c1e57def398f4aab56e43b8ca4c4ff4cc01ecc8e20501d9d124a9e0fe",
+        "note": "按分项给练习反馈，估分仅供学习参考；历史成绩不重算。"
+      }
     },
     {
       "id": "2014-guwen:1",
@@ -33428,7 +33836,25 @@
       "explanation": "第12相关原作谪守巴陵郡/越明年/政通人和/百废具兴可核，但答题方格起止没有证据。Claude假设只容八字不是实际方格，不据此给分；新浪俱兴与原作具兴不同，不机械复制。第13两份完整感悟均联系为民、失意不废责任、长久实事，默认本人约200字版本。整体open，旧3与原3+12兼容计分仍阻断。",
       "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
       "reviewedAt": "2026-10-03T09:52:20.429Z",
-      "currentVersion": "gpt_6_astra"
+      "currentVersion": "gpt_6_astra",
+      "practiceScoring": {
+        "basis": "practice",
+        "mode": "qualitative_only",
+        "total": 15,
+        "components": [
+          {
+            "label": "原12",
+            "points": 3
+          },
+          {
+            "label": "原13",
+            "points": 12
+          }
+        ],
+        "legacyScore": 3,
+        "inputPresentationSha256": "d9c4f7dcebc7cd5ef4bdffc3d030eb139a63178f2c64875e205236a8a88a2f81",
+        "note": "原12答题卡方格范围尚未取得，只给定性反馈，不据假设长度判分。"
+      }
     },
     {
       "id": "2014-shici:1",
@@ -37955,7 +38381,21 @@
       "explanation": "同A，不足为训解为不能作典范，其余三项错位均说明。画线范围在冻结注释中给明，实际下划线显示缺口继续阻断发布；原score90没有随本答案更改。",
       "reviewedBy": "GPT-6 Astra + Claude Opus 5.5，全文及来源限定裁定",
       "reviewedAt": "2026-10-03T11:24:24.001Z",
-      "currentVersion": "gpt_6_astra"
+      "currentVersion": "gpt_6_astra",
+      "practiceScoring": {
+        "basis": "practice",
+        "mode": "component_feedback",
+        "total": 3,
+        "components": [
+          {
+            "label": "原2",
+            "points": 3
+          }
+        ],
+        "legacyScore": 90,
+        "inputPresentationSha256": "762e0a5c2119eebb0e0b2d37ec7accee5906b36dceb07ffc7a90477186ad581c",
+        "note": "按分项给练习反馈，估分仅供学习参考；历史成绩不重算。"
+      }
     },
     {
       "id": "2011-yuyanjichu:3",

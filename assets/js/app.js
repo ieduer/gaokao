@@ -183,6 +183,18 @@ function questionRequiresImage(rec, qIndex) {
   return (materials || []).some(material=>material.image?.required);
 }
 
+function questionDisplayScore(rec, qIndex) {
+  const q=rec?.questions?.find(q=>Number(q.qIndex)===Number(qIndex));
+  const points=reviewForQuestion(rec,qIndex)?.practiceScoring?.total ?? q?.sourceIdentity?.sourceScore ?? q?.score;
+  return Number.isFinite(points)&&points>0 ? points : null;
+}
+
+function questionScoringNotice(rec, qIndex) {
+  const guide=reviewForQuestion(rec,qIndex)?.practiceScoring;
+  if(!guide)return "";
+  return `练习参考：${guide.components.map(p=>`${p.label} ${p.points}分`).join("；")}。${guide.note}`;
+}
+
 function questionIdentity(rec, qIndex) {
   const displayQuestion = (rec?.questions || []).find((q) => Number(q.qIndex) === Number(qIndex)) || null;
   if (rec?.isExam && displayQuestion?.origRecId) {
@@ -772,16 +784,18 @@ function renderWorkpad() {
   const identity = questionIdentity(rec, qIndex);
 
   $("#workpad-title").textContent = questionLabel(rec, qIndex);
+  const displayScore=questionDisplayScore(rec,qIndex),scoringNotice=questionScoringNotice(rec,qIndex);
 
   const activeBox = $("#active-question");
   activeBox.hidden = false;
   activeBox.innerHTML = `
     <header class="active-question-header">
       <span class="active-question-number">第 ${qIndex} 题</span>
-      <span class="active-question-section">${q.sectionLabel ? `${escapeHtml(q.sectionLabel)}${q.score ? ` · ${q.score} 分` : ""}` : (q.score ? `${q.score} 分` : "完整题干")}</span>
+      <span class="active-question-section">${q.sectionLabel ? `${escapeHtml(q.sectionLabel)}${displayScore ? ` · ${displayScore} 分` : ""}` : (displayScore ? `${displayScore} 分` : "完整题干")}</span>
     </header>
     <div class="active-question-body">${formatQuestionBody(q.text)}</div>
     ${q.sourceIdentity ? `<p class="annotation-note">${escapeHtml(questionSourceNotice(q))}</p>` : ""}
+    ${scoringNotice ? `<p class="annotation-note">${escapeHtml(scoringNotice)}</p>` : ""}
   `;
   const historicalSources = identity.sourceRecord?.source_history || [];
   for (const source of historicalSources) {
@@ -1109,7 +1123,7 @@ function buildYearExam(year) {
       flatQuestions.push({
         qIndex: qCounter,
         text: q.text,
-        score: q.score || null,
+        score: questionDisplayScore(rec,q.qIndex),
         origRecId: rec.id,
         origQIndex: q.qIndex,
         sectionLabel: rec.typeLabel || rec.key,
@@ -1133,7 +1147,7 @@ function buildYearExam(year) {
           else if (original.generated_at) slot.provenance[String(qCounter)] = { generatedAt: original.generated_at };
         }
       }
-      if (q.score) totalScore += q.score;
+      totalScore += questionDisplayScore(rec,q.qIndex) || 0;
     }
 
     // 注释 qIndex 也要按 map 重写
@@ -1348,9 +1362,12 @@ function buildContextPrompt(rec, qIndex, userTurn, mode = "chat") {
   }
 
   const activeQ = (rec.questions || []).find((q) => Number(q.qIndex) === Number(qIndex));
+  const displayScore=questionDisplayScore(rec,qIndex),review=reviewForQuestion(rec,qIndex),guide=review?.practiceScoring;
+  const canEstimate=review?.status!=='disputed'&&displayScore!==null&&guide?.mode!=='qualitative_only';
   if (activeQ) {
-    lines.push(`【当前小题】第 ${qIndex} 题${activeQ.score ? `（${activeQ.score} 分）` : ""}：`);
+    lines.push(`【当前小题】第 ${qIndex} 题${displayScore ? `（练习参考满分${displayScore}分）` : ""}：`);
     lines.push(activeQ.text);
+    if(guide)lines.push(`【练习计分说明】${questionScoringNotice(rec,qIndex)}`);
   } else if (rec.topic) {
     lines.push(`【当前题目】${rec.topic}`);
   }
@@ -1392,7 +1409,7 @@ function buildContextPrompt(rec, qIndex, userTurn, mode = "chat") {
   lines.push("");
   if (mode === "review") {
     lines.push("【任务】请对学生当前的答案做批改，给出：");
-    lines.push("1) 一行总评 + 推测得分（注明本题满分）；");
+    lines.push(canEstimate ? "1) 一行总评与练习估分；有分项时逐项反馈后相加，不把合并题当成一道选择题，不声称官方评分；" : "1) 只给定性总评，不猜测满分、分项分配或得分；本题分值或评分依据尚不充分；");
     lines.push("2) 答得好的地方（一两条）；");
     lines.push("3) 失分点（具体到要点）；");
     lines.push("4) 标准答案要点 / 答题区间，结合原文哪一句；");
