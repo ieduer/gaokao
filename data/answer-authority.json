@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "20261004-source2005-qualified-pending",
+  "revision": "20261004-source2004-qualified-pending",
   "questions": [
     {
       "id": "2023-guwen:2",
@@ -3819,13 +3819,11 @@
     },
     {
       "id": "2004-guwen:2",
-      "inputSha256": "065cc4d4c75baa3d65c1b9896e6934bc296ccd8809e9c917e040aa8dcec181d4",
-      "status": "reviewed",
+      "inputSha256": "fe4dabd9082cb99d18d00339e44dc60738387328e2abe254fb50a5dd0ce4d542",
+      "status": "draft",
       "kind": "single_choice",
-      "correctOptions": [
-        "A"
-      ],
-      "explanation": "保持经源校订的若入前为寿，不把入误读为人。",
+      "correctOptions": [],
+      "explanation": "2004限定题面和标记校勘后待完整重审；旧材料、题目、模型与审核完整归档。",
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T03:03:23.208Z",
       "sources": [
@@ -3839,87 +3837,171 @@
         }
       ],
       "currentVersion": "gpt_6_astra",
-      "modelAnswers": {
-        "gpt_6_astra": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 完整附注复核",
-          "text": "答案：A。两处为都表达被动：前句有为……所……格式，后句说被天下人耻笑。B项前若是假设，后若是项羽命项庄进前祝寿时对他的称呼，即你。C项前因承接事情发展，后因引出借助宾客致歉的中介。D项前乎配合岂形成反问，后乎配合其表达推测或期望。两者都在句末，不能只凭位置认定相同。",
-          "inputSha256": "065cc4d4c75baa3d65c1b9896e6934bc296ccd8809e9c917e040aa8dcec181d4",
-          "generatedAt": "2026-10-03T03:03:23.208Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "stage": "source_review_reaffirmation",
-            "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
-            "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
-            "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
-            "priorAnswerSha256": "8bc7568157fc6fc191df36f99c2f073436d4c38af1e58aa19405789908b5e0b8",
-            "annotationEffect": "露门学、厅事注说明学习与办公场所；A两被动关系不变。本站题号10与序列疑不一致，需原卷回核。"
+      "modelAnswers": {},
+      "inputContextSha256": "5063ba8daf8634126369604649f3108411c98b618845d3975c7bcca71c33b35d",
+      "history": [
+        {
+          "source": {
+            "id": "2004-guwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "辛公义，陇西狄道人也。公义早孤，为母氏所养，亲授书传。周天和中，选良家子任太学生，以勤苦著称。武帝时，召入露门学，令受道义。每月集御前令与大儒讲论，数被嗟异，时辈慕之。\n从军平陈，以功除岷州刺史。土俗畏病，若一人有疾，即合家避之，父子夫妻不相看养，孝义道绝，由是病者多死。公义患之，欲变其俗。因分遣官人巡检部内，凡有疾病，皆以床舆来，安置厅事。暑月疫时，病人或至数百，厅廊悉满。公义亲设一榻，独坐其间，终日连夕，对之理事。所得秩俸，尽用市药，为迎医疗之，躬劝其饮食，于是悉差，方召其亲戚而谕之曰：“死生由命，不关相着。前汝弃之，所以死耳。今我聚病者，坐卧其间，若言相染，那得不死，病儿复差！汝等勿复信之。”诸病家子孙惭谢而去。后人有遇病者，争就使君，其家无亲属，因留养之。始相慈爱，此风遂革，合境之内呼为慈母。\n后迁牟州刺史，下车，先至狱中，因露坐牢侧，亲自验问。十余日间，决断咸尽，方还大厅。受领新讼，皆不立文案，遣当直佐僚一人，侧坐讯问。事若不尽，应须禁者，公义即宿厅事，终不还。人或谏之曰：“此事有程，使君何自苦也！”答曰：“刺史无德可以导人，尚令百姓系于囹圄，岂有禁人在狱而心自安乎？”罪人闻之，咸自款服。后有欲诤讼者，其乡闾父老遽相晓曰：“此盖小事，何忍勤劳使君。”讼者多两让而止。"
+              }
+            ],
+            "topic": "二、本大题共5小题，每小题3分，共15分。阅读下面文言文，完成6—10题。",
+            "annotation": "（取材于（《隋书·循吏传》）\n注释：\n（1）露门学：古代学校名称。（2）厅事：官府办公的地方。",
+            "annotations": [
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 16,
+                "end": 17,
+                "anchor": "为"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 103,
+                "end": 104,
+                "anchor": "若"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 146,
+                "end": 147,
+                "anchor": "因"
+              },
+              {
+                "qIndex": 2,
+                "material": "material1",
+                "type": "dot",
+                "start": 494,
+                "end": 495,
+                "anchor": "乎"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 2,
+                "id": "q2",
+                "text": "10．下列各组句中加点的词，意义和用法相同的一组是（    ）\n A．*为*母氏所养身死人手 *为*天下笑者，何也\nB．*若*一人有疾，即合家避之   *若*入前为寿，寿毕，请以剑舞\n C．*因*留养之  *因*宾客至蔺相如门谢罪\nD．岂有禁人在狱而心自安*乎* 王之好乐甚，则齐其庶几*乎*",
+                "score": null
+              }
+            ]
           },
-          "inputContextSha256": "563d7049899f8d8a49fcff907ea772c65a29eef86efb08674f25b69da7b7cc82"
-        },
-        "claude_opus_5_5": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 来源复核后修订",
-          "text": "答案：A。\n选A。A项：“为母氏所养”“为天下笑者”的“为”都是介词，表被动，“被”，相同。B项：“若一人有疾”的“若”是连词“如果”；“若入前为寿”的“若”是代词“你”，不同。C项：“因留养之”的“因”是副词“于是、就”；“因宾客至蔺相如门谢罪”的“因”是介词“通过、经由”，不同。D项：“岂有禁人在狱而心自安乎”的“乎”表反问语气；“则齐其庶几乎”的“乎”表推测语气，不同。",
-          "inputSha256": "065cc4d4c75baa3d65c1b9896e6934bc296ccd8809e9c917e040aa8dcec181d4",
-          "inputContextSha256": "563d7049899f8d8a49fcff907ea772c65a29eef86efb08674f25b69da7b7cc82",
-          "generatedAt": "2026-10-03T03:01:54.821132+00:00",
-          "uncertainties": [
-            "A项录入时把“为母氏所养”与“身死人手，为天下笑者，何也”连在了一起，据文意拆分理解。"
-          ],
-          "selectedOptions": [
-            "A"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
-            "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
-            "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
-            "stage": "source_review"
+          "review": {
+            "id": "2004-guwen:2",
+            "inputSha256": "065cc4d4c75baa3d65c1b9896e6934bc296ccd8809e9c917e040aa8dcec181d4",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "A"
+            ],
+            "explanation": "保持经源校订的若入前为寿，不把入误读为人。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:03:23.208Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内完整题目及相关材料"
+              },
+              {
+                "type": "dictionary_revision",
+                "title": "文言站2026-09-16-r3词典校订，保留争议"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "答案：A。两处为都表达被动：前句有为……所……格式，后句说被天下人耻笑。B项前若是假设，后若是项羽命项庄进前祝寿时对他的称呼，即你。C项前因承接事情发展，后因引出借助宾客致歉的中介。D项前乎配合岂形成反问，后乎配合其表达推测或期望。两者都在句末，不能只凭位置认定相同。",
+                "inputSha256": "065cc4d4c75baa3d65c1b9896e6934bc296ccd8809e9c917e040aa8dcec181d4",
+                "generatedAt": "2026-10-03T03:03:23.208Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-notes-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "8bc7568157fc6fc191df36f99c2f073436d4c38af1e58aa19405789908b5e0b8",
+                  "annotationEffect": "露门学、厅事注说明学习与办公场所；A两被动关系不变。本站题号10与序列疑不一致，需原卷回核。"
+                },
+                "inputContextSha256": "563d7049899f8d8a49fcff907ea772c65a29eef86efb08674f25b69da7b7cc82"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "答案：A。\n选A。A项：“为母氏所养”“为天下笑者”的“为”都是介词，表被动，“被”，相同。B项：“若一人有疾”的“若”是连词“如果”；“若入前为寿”的“若”是代词“你”，不同。C项：“因留养之”的“因”是副词“于是、就”；“因宾客至蔺相如门谢罪”的“因”是介词“通过、经由”，不同。D项：“岂有禁人在狱而心自安乎”的“乎”表反问语气；“则齐其庶几乎”的“乎”表推测语气，不同。",
+                "inputSha256": "065cc4d4c75baa3d65c1b9896e6934bc296ccd8809e9c917e040aa8dcec181d4",
+                "inputContextSha256": "563d7049899f8d8a49fcff907ea772c65a29eef86efb08674f25b69da7b7cc82",
+                "generatedAt": "2026-10-03T03:01:54.821132+00:00",
+                "uncertainties": [
+                  "A项录入时把“为母氏所养”与“身死人手，为天下笑者，何也”连在了一起，据文意拆分理解。"
+                ],
+                "selectedOptions": [
+                  "A"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-context-reconcile-notes-result.json",
+                  "inputPromptSha256": "5dbb49929ac6304af5d952c184f58fcaf25eb598e8256308a290816a3c419b0a",
+                  "responseStreamSha256": "019a46aea7dcb8ceb77f6ddc192d91ada0412e5ff2e8a1e7fca6a85a940c1757",
+                  "stage": "source_review"
+                }
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "答案：A。两处为都表达被动：前句有为……所……格式，后句说被天下人耻笑。B项前若是假设，后若是项羽命项庄进前祝寿时对他的称呼，即你。C项前因承接事情发展，后因引出借助宾客致歉的中介。D项前乎配合岂形成反问，后乎配合其表达推测或期望。两者都在句末，不能只凭位置认定相同。",
+                "inputSha256": "065cc4d4c75baa3d65c1b9896e6934bc296ccd8809e9c917e040aa8dcec181d4",
+                "generatedAt": "2026-10-03T00:07:56.018Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
+                }
+              },
+              "claude_opus_5_5_initial": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答（修订前存档）",
+                "text": "答案：A。\nA项相同。“为母氏所养”“身死人手，为天下笑者，何也”中的“为”都是介词，表被动，意为“被”。B项不同。“若一人有疾”中，“若”是连词“如果”；“若入前为寿”中，“若”是代词“你”。C项不同。“因留养之”中，“因”是副词“于是、就”；“因宾客至蔺相如门谢罪”中，“因”是介词“通过、经由”。D项不同。“岂有禁人在狱而心自安乎”中，“乎”是语气词，表反问，意为“吗”；“齐其庶几乎”中，“乎”是语气词，表推测，意为“吧”。故选A。",
+                "inputSha256": "065cc4d4c75baa3d65c1b9896e6934bc296ccd8809e9c917e040aa8dcec181d4",
+                "generatedAt": "2026-10-03T00:39:17.649838+00:00",
+                "uncertainties": [
+                  "A项题干将“为母氏所养”与课文句“身死人手，为天下笑者，何也”排在一行，排版粘连，但可以辨认。"
+                ],
+                "selectedOptions": [
+                  "A"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
+                  "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
+                  "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "c3ed2923a74fb41724b1e6eab6b71b109c3f5d8acfa8e849b792e1944bd84798"
+              }
+            },
+            "inputContextSha256": "563d7049899f8d8a49fcff907ea772c65a29eef86efb08674f25b69da7b7cc82"
           }
-        },
-        "gpt_6_astra_before_context_review": {
-          "modelId": "gpt-6-astra",
-          "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
-          "text": "答案：A。两处为都表达被动：前句有为……所……格式，后句说被天下人耻笑。B项前若是假设，后若是项羽命项庄进前祝寿时对他的称呼，即你。C项前因承接事情发展，后因引出借助宾客致歉的中介。D项前乎配合岂形成反问，后乎配合其表达推测或期望。两者都在句末，不能只凭位置认定相同。",
-          "inputSha256": "065cc4d4c75baa3d65c1b9896e6934bc296ccd8809e9c917e040aa8dcec181d4",
-          "generatedAt": "2026-10-03T00:07:56.018Z",
-          "provenance": {
-            "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-xuci-reviews"
-          }
-        },
-        "claude_opus_5_5_initial": {
-          "modelId": "claude-opus-5-5",
-          "label": "Claude Opus 5.5 独立作答（修订前存档）",
-          "text": "答案：A。\nA项相同。“为母氏所养”“身死人手，为天下笑者，何也”中的“为”都是介词，表被动，意为“被”。B项不同。“若一人有疾”中，“若”是连词“如果”；“若入前为寿”中，“若”是代词“你”。C项不同。“因留养之”中，“因”是副词“于是、就”；“因宾客至蔺相如门谢罪”中，“因”是介词“通过、经由”。D项不同。“岂有禁人在狱而心自安乎”中，“乎”是语气词，表反问，意为“吗”；“齐其庶几乎”中，“乎”是语气词，表推测，意为“吧”。故选A。",
-          "inputSha256": "065cc4d4c75baa3d65c1b9896e6934bc296ccd8809e9c917e040aa8dcec181d4",
-          "generatedAt": "2026-10-03T00:39:17.649838+00:00",
-          "uncertainties": [
-            "A项题干将“为母氏所养”与课文句“身死人手，为天下笑者，何也”排在一行，排版粘连，但可以辨认。"
-          ],
-          "selectedOptions": [
-            "A"
-          ],
-          "assessment": {
-            "matchesConclusion": true
-          },
-          "provenance": {
-            "kind": "cli_response",
-            "responseModel": "claude-opus-5-5",
-            "evidence": "answers-six-sites-20261002/claude-xuci-remaining-result.json",
-            "inputPromptSha256": "00f3c956957db5c6ea59df852205c4fb007cb1e9f1da59152ce01c7c36a496b7",
-            "responseStreamSha256": "80a06c1e9dfcc7cab8e814e95fa3c01a215483bbf3780be6b15248c214abae09",
-            "stage": "independent"
-          },
-          "inputContextSha256": "c3ed2923a74fb41724b1e6eab6b71b109c3f5d8acfa8e849b792e1944bd84798"
         }
-      },
-      "inputContextSha256": "563d7049899f8d8a49fcff907ea772c65a29eef86efb08674f25b69da7b7cc82"
+      ],
+      "inputPresentationSha256": "7dede7bfb521928f99343c34e2e55513f77e49a63dd16092c360736b3c16705d"
     },
     {
       "id": "2003-guwen:3",
@@ -40951,6 +41033,23 @@
         "2005-yuyan-professor"
       ],
       "detail": "2005北京卷仅获Gzy公开文字转录三页；未取得原卷扫描、答题卡或考试机构出版链。转录有共同损字，不能作为印刷字形、加点/划线及所有标点的认证。 扌豕/椓、私哄/私闀、戮/僇及其余异文只按已记录的有限校勘处理；没有原卷视觉证明。古文正文八推定点、诗词三推定标记和非连五推定线撤除，不能以空标记认证原卷无点无划线；原1加点、原8下划线与页面排印待真实图像。 原11断句、原24影星教授续写独立补录；旧2005原24身份疑似2003原25，旧2007三应用单元与2005错年重复。仅补来源/警示，不移动ID、year，不合并或重算历史成绩。 红楼入口是非连原15的分类重复，已补相同完整阅读材料；旧身份保留，不能重复计算原卷覆盖或未经设计合并成绩。 旧score/null、ID/qIndex/year、legacy键及全部旧AI和已存模型保全。原卷正式题分与历史计分兼容仍待。 2006—2008共78本人完整答案冻结保留；Claude最后、零新provider job或调用。2005全体参考暴露，Gzy答案/作文构思与古籍已读；尚未生成本人完整答案。"
+    },
+    {
+      "id": "2004-source-retypeset-only-and-missing-items",
+      "status": "open",
+      "recordIds": [
+        "2004-feilian",
+        "2004-guwen",
+        "2004-shici",
+        "2004-moxie",
+        "2004-sanwen",
+        "2004-yuyanjichu",
+        "2004-yuyanjichu-2",
+        "2004-dazuowen",
+        "2004-duanju",
+        "2004-shilun"
+      ],
+      "detail": "2004北京卷来源为Gzy三页公开文字转录及夜雨聆风所示重排DOC前4/8页，四预览均已目视；并非原卷扫描或考试机构出版链认证，重排与文字转录都有损字。第5—8页仅有文字摘要，不能冒充视觉核验。 古文原题号6—10、材料注号、四省略句直线和读音/成语点位按重排及HTML限定恢复；原卷视觉证明、病儿复差/其家无亲属等传写疑点和真实标点仍待。 新增原11五段断句与原13诗论独立补录，累计32补录未入库，不移动旧ID/qIndex/year，不合并或重算旧成绩。 正文科学/文化史概括只作试题内部陈述，原科普海参等疑点不据常识替换试题；原散文第5页及以后没有图像证据。 旧score/null、legacy键及全部旧AI与已存模型保全；真实题分及历史计分兼容仍待。 2005—2008共106本人全文及冻结保持不变；2004全部参考暴露，尚无本人新答或provider计划/调用。Claude必须最后，旧PLAN27终态不得重跑。"
     }
   ]
 }
