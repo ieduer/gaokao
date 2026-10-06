@@ -4,6 +4,7 @@
 import { readFileSync } from "node:fs";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { validateAnswerReview } from './check-answer-reviews.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = resolve(__dirname, "..", "data", "all.json");
@@ -27,6 +28,7 @@ let gptAnswerCount = 0;
 let codexAnswerCount = 0;
 
 for (const rec of data) {
+  try { validateAnswerReview(rec); } catch (error) { err(error.message); }
   if (!rec.id) err("record missing id");
   if (ids.has(rec.id)) err(`duplicate record id: ${rec.id}`);
   ids.add(rec.id);

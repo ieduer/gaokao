@@ -1,3 +1,7 @@
+## Local Analects answer-review candidate — 2026-10-05 PDT
+
+Source-reviewed overlays for 2015 question15 and 2023 question11(1) preserve every historical answer and learner key. Source hashes, behavior, validation, pending build/release gates and rollback are in [ANALECTS_ANSWER_REVIEW.md](ANALECTS_ANSWER_REVIEW.md). This candidate is not live.
+
 ## 2026-09-25 — Detailed learning capture publication transaction
 
 Owner01a0d9ec-8876-72f1-bc40-870add9fde19. Fresh baseline: Pagesgaokao/ba438f25-c986-44e3-aefe-f5bd063ec952, source897ca30111e9d96adcaf7bf1aba95c1f2e936a00, Functions present, main automatic publishing enabled and previews disabled. The registered guard and policy hashes remain unchanged; use its existing publication lane. Actual provider/public source and sanitized build settings: /Users/ylsuen/CF/reports/operations/learning-records-validity-20260925/gk-live-baseline.json. This supersedes older modern-release deployment numbers for this transaction.

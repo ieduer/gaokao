@@ -656,10 +656,22 @@ function stripAnswerVersionPrefix(text, label) {
 function getAnswerVersions(rec, qIndex) {
   const key = String(qIndex);
   const versions = [];
+  const question = rec.questions?.find(q => String(q.qIndex) === key);
+  const origin = rec.isExam && question
+    ? state.data.find(r => r.id === question.origRecId) : rec;
+  const originKey = rec.isExam ? String(question?.origQIndex) : key;
+  const review = origin?.source_review;
+  const reviewedAnswer = review?.schema === 'gk-answer-review-v1' && review.answers?.[originKey];
+  if (reviewedAnswer?.text) {
+    versions.push({ key: 'source_review', label: '来源核对与订正', text: reviewedAnswer.text,
+      sourceNote: review.sourceNote, sources: review.sources });
+  }
   for (const spec of ANSWER_VERSION_ORDER) {
     const raw = rec.ai_answer_versions?.[spec.key]?.answers?.[key];
     if (!raw) continue;
-    versions.push({ ...spec, text: stripAnswerVersionPrefix(raw, spec.label) });
+    versions.push({ ...spec, text: stripAnswerVersionPrefix(raw, spec.label),
+      warning: reviewedAnswer?.rejectedVersions?.includes(spec.key)
+        ? '此历史版本与来源核对结果冲突，保留供对照；请以上方订正为准。' : '' });
   }
   if (!versions.length) {
     const fallback = rec.ai_answers?.[key];
@@ -685,6 +697,22 @@ function renderAnswerVersions(aiBody, rec, qIndex) {
     text.className = "ai-version-text";
     text.textContent = version.text;
     section.append(title, text);
+    if (version.warning || version.sourceNote) {
+      const note = document.createElement('p');
+      note.className = 'ai-answer-note';
+      note.textContent = version.warning || version.sourceNote;
+      if (version.warning) section.insertBefore(note, text);
+      else section.appendChild(note);
+    }
+    for (const [index, source] of (version.sources || []).entries()) {
+      if (!/^https:\/\/(img\.eol\.cn|gaokao\.eol\.cn|cdn\.gaokzx\.com)\//.test(source.url)) continue;
+      const link = document.createElement('a');
+      link.href = source.url;
+      link.textContent = `核对来源 ${index + 1}（${source.page}）`;
+      link.rel = 'noopener noreferrer';
+      link.target = '_blank';
+      section.appendChild(link);
+    }
     aiBody.appendChild(section);
   }
   appendAIAnswerNote(aiBody);

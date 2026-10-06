@@ -10209,7 +10209,36 @@
       "gpt_5_5_pro": "GPT-5.5 pro 版本答案",
       "claude_opus_4_8": "Claude Opus 4.8版本答案"
     },
-    "legacy_progress_key": "2023-lunyu--二-根据要求-完成第11题-共10分-"
+    "legacy_progress_key": "2023-lunyu--二-根据要求-完成第11题-共10分-",
+    "source_review": {
+      "schema": "gk-answer-review-v1",
+      "reviewedAt": "2026-10-06T00:10:58.146Z",
+      "reviewer": "Codex source review; no new provider generation",
+      "status": "reference_correction_original_scan_pending",
+      "officialSource": false,
+      "scope": "学习参考订正；不覆盖历史模型答案，不重新计分。",
+      "sourceNote": "依据北京高考在线参考解析页核对；原卷影像及正式评分细则仍待核。",
+      "sources": [
+        {
+          "url": "https://cdn.gaokzx.com/zixunzhan/202403/d0e840b8-8603-4cee-81aa-5e1f1482a091.pdf",
+          "kind": "annotated_reference_pdf",
+          "page": "PDF page 12",
+          "sha256": "151b64ebe781415aa8e0f7676518d67fd7902cd43be981bd84c8f58620b6f19c",
+          "bytes": 2837601
+        }
+      ],
+      "answers": {
+        "1": {
+          "text": "杨伯峻将“称”读作 chēng，解释为称述、称道；王阳明将“称”读作 chèn，解释为相称、符合，即名声与实际德行相称。旧参考答案把后一义写成“名词，名声”，应予订正。题目要求辨析读音和词义，无须另加词性作为评分条件。",
+          "rejectedVersions": [],
+          "supersededFields": [
+            "reference_answer"
+          ],
+          "questionSha256": "adc83f8948db48c3069bc77ac64f5df26e9180f81cd236e9f95b320030e9359a"
+        }
+      },
+      "sourceContextSha256": "33dd9e858ad085f85a69e12310ea7b1d710a4b557e9e1befd438def5fdd353cc"
+    }
   },
   {
     "year": 2021,
@@ -10624,7 +10653,49 @@
       "gpt_5_5_pro": "GPT-5.5 pro 版本答案",
       "claude_opus_4_8": "Claude Opus 4.8版本答案"
     },
-    "legacy_progress_key": "2015-lunyu--二-根据要求-完成第15题-共6分-"
+    "legacy_progress_key": "2015-lunyu--二-根据要求-完成第15题-共6分-",
+    "source_review": {
+      "schema": "gk-answer-review-v1",
+      "reviewedAt": "2026-10-06T00:10:58.145Z",
+      "reviewer": "Codex source review; no new provider generation",
+      "status": "publisher_images_reviewed",
+      "officialSource": false,
+      "scope": "学习参考订正；不覆盖历史模型答案，不重新计分。",
+      "sourceNote": "依据中国教育在线当年转载题面和答案影像核对；不是考试院直接发布件。",
+      "sources": [
+        {
+          "url": "https://img.eol.cn/html/g/2015gkst/bj/yw7.jpg",
+          "kind": "contemporaneous_question_image",
+          "page": "question 15",
+          "sha256": "8cfb4f71fcff413cdb9ec13c06db9f4a09cb415cb26d4136e487dd4621ff28bc",
+          "bytes": 63656
+        },
+        {
+          "url": "https://img.eol.cn/html/g/2015gkst/bj/ywtda2.jpg",
+          "kind": "contemporaneous_answer_scan",
+          "page": "printed page 12",
+          "sha256": "837a6e6e3c1920f9319dd1b2418307c9898124fd0be40e9c3e1869cf883cd531",
+          "bytes": 201955
+        }
+      ],
+      "answers": {
+        "1": {
+          "text": "依次为：曾皙、孔子、曾皙、孔子。第二种标点把两个“唯……非邦也与”读作曾皙的追问，其后的反问则是孔子的答复。",
+          "rejectedVersions": [
+            "gpt_5_5_pro"
+          ],
+          "questionSha256": "6f83ccf0c47763557693abd887ae12ca10c44d94d59a8ddc4fd34cb852e9d0db"
+        },
+        "2": {
+          "text": "不同之处：第一种读法是曾皙一问、孔子集中作答；第二种是师生连续三次问答。第二种还显出两人的关注点不同：孔子重在是否谦让、是否合礼；曾皙追问的则是，冉有、公西华既然同样谈治国，为何没有受到与子路相同的评价。\n可以赞成任一种，但须说明理由。赞成第一种，可从孔子集中阐明“为国以礼”、以反问作比较的连贯性立论；赞成第二种，可从师生问答逐层展开、表现善问与善教立论。不能仅以选择哪一种判断正误。\n转载答案给出的分配是：解读差异3分，选择及理由2分。此处用于订正学习参考，不自动重评历史作答。",
+          "rejectedVersions": [
+            "gpt_5_5_pro"
+          ],
+          "questionSha256": "d84210b98544f361d2ae50ccc2f53a6c9809cdba3430ca27e3d4c4f5c872e172"
+        }
+      },
+      "sourceContextSha256": "99614baa0b06c48ba0f5b5f0db1d8954c26a43cc23d8c13d7feb3cbff0271a6b"
+    }
   },
   {
     "year": 2024,

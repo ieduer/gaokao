@@ -1,3 +1,7 @@
+## Local candidate — 2026-10-05 PDT
+
+Analects source-review overlay: 2015 Q15 and 2023 Q11(1), with historical fields and keys preserved. Seven focused tests and full data validation pass. Full build was blocked before execution by runtime hygiene; browser, downstream adoption, affected learners and release remain pending. No production or scoring change. Scope, evidence and rollback: [docs/ANALECTS_ANSWER_REVIEW.md](docs/ANALECTS_ANSWER_REVIEW.md).
+
 ## 2026-09-25 — Learning capture qualified for guarded publication
 
 Serial owner01a0d9ec-8876-72f1-bc40-870add9fde19. Candidate extends the accepted modern Chinese-only source897ca30111e9d96adcaf7bf1aba95c1f2e936a00; current live Pages remainsba438f25-c986-44e3-aefe-f5bd063ec952. Fresh provider/source/public-manifest readback confirms main, registered automatic guard and Functions. Corpus, Functions and pinned publishing policy are unchanged.
