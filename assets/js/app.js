@@ -12,6 +12,8 @@
 const SITE_KEY = "gk";
 const AI_URL = "https://apis.bdfz.net/";
 const DISCUSSION_API = "/api/question-discussions";
+// Exact data/all.json bytes, including the reversible source-review overlays.
+const SOURCE_CONTENT_VERSION = 'sha256:cf924f2691e95543d86405f26eb4efa7dc1ea59d67e462858053c93c3534a0aa';
 
 const TYPES = [
   { key: "feilian",     label: "非连文本" },
@@ -77,7 +79,9 @@ const lastDetailedDrafts=new Map();
 function detailedContext() {
   const identity = currentQuestionIdentity();
   detailedSession ||= window.BdfzLearningRecords?.id() || `gk-session-${Date.now()}`;
-  return { sessionKey:detailedSession, resourceKey:`question:${identity?.sourceRecordId || 'unselected'}:${identity?.sourceQIndex || 0}`, resourceVersion:'git-tree-sha1:3487023148584d9f649a91dbf0dd6a691065b124', captureScope:window.BdfzLearningRecords?.scope || null, sourceContext:{recordId:identity?.sourceRecordId || null,qIndex:identity?.sourceQIndex || null} };
+  const reviewed = identity?.sourceRecord && getReviewedQuestion(identity.sourceRecord, identity.sourceQIndex);
+  const resourceVersion = reviewed ? SOURCE_CONTENT_VERSION : 'git-tree-sha1:3487023148584d9f649a91dbf0dd6a691065b124';
+  return { sessionKey:detailedSession, resourceKey:`question:${identity?.sourceRecordId || 'unselected'}:${identity?.sourceQIndex || 0}`, resourceVersion, captureScope:window.BdfzLearningRecords?.scope || null, sourceContext:{recordId:identity?.sourceRecordId || null,qIndex:identity?.sourceQIndex || null} };
 }
 function detailedCapture(action,content,options={},context=detailedContext()) {
   const service=window.BdfzLearningRecords;
@@ -675,15 +679,34 @@ function stripAnswerVersionPrefix(text, label) {
     .trim();
 }
 
-function getAnswerVersions(rec, qIndex) {
+function getReviewedQuestion(rec, qIndex) {
   const key = String(qIndex);
-  const versions = [];
   const question = rec.questions?.find(q => String(q.qIndex) === key);
   const origin = rec.isExam && question
     ? state.data.find(r => r.id === question.origRecId) : rec;
   const originKey = rec.isExam ? String(question?.origQIndex) : key;
   const review = origin?.source_review;
-  const reviewedAnswer = review?.schema === 'gk-answer-review-v1' && review.answers?.[originKey];
+  const answer = review?.schema === 'gk-answer-review-v1' && review.answers?.[originKey];
+  return answer?.text ? { review, answer } : null;
+}
+
+function questionPointLabel(rec, qIndex) {
+  const reviewed = getReviewedQuestion(rec, qIndex);
+  if (reviewed) {
+    const score = reviewed.answer.printedScore;
+    return Number.isInteger(score) && score > 0 && score <= reviewed.review.printedGroupScore
+      ? `${score} 分` : '配分待核';
+  }
+  const question = rec.questions?.find(q => String(q.qIndex) === String(qIndex));
+  return question?.score ? `${question.score} 分` : '';
+}
+
+function getAnswerVersions(rec, qIndex) {
+  const key = String(qIndex);
+  const versions = [];
+  const reviewed = getReviewedQuestion(rec, qIndex);
+  const review = reviewed?.review;
+  const reviewedAnswer = reviewed?.answer;
   if (reviewedAnswer?.text) {
     versions.push({ key: 'source_review', label: '来源核对与订正', text: reviewedAnswer.text,
       sourceNote: [review.sourceNote, review.scoreNote].filter(Boolean).join(' '), sources: review.sources });
@@ -773,7 +796,7 @@ function renderWorkpad() {
   activeBox.innerHTML = `
     <header class="active-question-header">
       <span class="active-question-number">第 ${qIndex} 题</span>
-      <span class="active-question-section">${q.sectionLabel ? `${escapeHtml(q.sectionLabel)}${q.score ? ` · ${q.score} 分` : ""}` : (q.score ? `${q.score} 分` : "完整题干")}</span>
+      <span class="active-question-section">${[q.sectionLabel, questionPointLabel(rec, qIndex)].filter(Boolean).map(escapeHtml).join(' · ') || '完整题干'}</span>
     </header>
     <div class="active-question-body">${formatQuestionBody(q.text)}</div>
   `;
@@ -1284,6 +1307,8 @@ function setAIControlsBusy(busy, status = "") {
 
 function buildContextPrompt(rec, qIndex, userTurn, mode = "chat") {
   const lines = [];
+  const reviewed = getReviewedQuestion(rec, qIndex);
+  const pointLabel = questionPointLabel(rec, qIndex);
   lines.push("你是一位精通北京高考语文的资深教师，正在帮一位学生理解某一道真题。请用规范现代汉语（简体中文）作答，不要使用 **粗体** 或 *斜体* 这类格式标记，可以用普通的「标题：内容」分段。");
   lines.push("");
 
@@ -1313,7 +1338,7 @@ function buildContextPrompt(rec, qIndex, userTurn, mode = "chat") {
 
   const activeQ = (rec.questions || []).find((q) => Number(q.qIndex) === Number(qIndex));
   if (activeQ) {
-    lines.push(`【当前小题】第 ${qIndex} 题${activeQ.score ? `（${activeQ.score} 分）` : ""}：`);
+    lines.push(`【当前小题】第 ${qIndex} 题${pointLabel ? `（${pointLabel}）` : ""}：`);
     lines.push(activeQ.text);
   } else if (rec.topic) {
     lines.push(`【当前题目】${rec.topic}`);
@@ -1337,9 +1362,19 @@ function buildContextPrompt(rec, qIndex, userTurn, mode = "chat") {
     lines.push(userAnswer);
   }
 
-  // AI 已经给出的答案
+  // The reviewed reference governs new feedback; retained models stay in the UI/history.
   const aiAns = rec.ai_answers?.[String(qIndex)];
-  if (aiAns) {
+  if (reviewed) {
+    lines.push('【经来源核对的学习参考】');
+    lines.push(reviewed.answer.text);
+    lines.push([reviewed.review.sourceNote, reviewed.review.scoreNote].filter(Boolean).join('\n'));
+    lines.push('旧模型答案和此前对话可能含已订正的错误；发生冲突时依据本次来源核对，不沿用旧说。这里的学习参考不冒充正式评分细则。');
+    if (pointLabel === '配分待核') {
+      lines.push('本小问配分尚未核定。题干及历史记录中保留的分数不能作为本次评分上限；只给定性评语，不给数字得分、满分、百分比或等级，不推算分项配分。');
+    } else {
+      lines.push(`题面核对确认本小问配分为${pointLabel}；如需估分，须标明学习估分及依据，不称正式成绩。`);
+    }
+  } else if (aiAns) {
     lines.push(`【AI 之前给出的参考答案】`);
     lines.push(aiAns);
   }
@@ -1356,7 +1391,10 @@ function buildContextPrompt(rec, qIndex, userTurn, mode = "chat") {
   lines.push("");
   if (mode === "review") {
     lines.push("【任务】请对学生当前的答案做批改，给出：");
-    lines.push("1) 一行总评 + 推测得分（注明本题满分）；");
+    lines.push(reviewed && pointLabel === '配分待核'
+      ? '1) 一行定性总评，说明配分待核，本次不估分；'
+      : reviewed ? '1) 一行总评 + 推测得分（注明本题满分及学习估分性质）；'
+        : '1) 一行总评 + 推测得分（注明本题满分）；');
     lines.push("2) 答得好的地方（一两条）；");
     lines.push("3) 失分点（具体到要点）；");
     lines.push("4) 标准答案要点 / 答题区间，结合原文哪一句；");
@@ -1752,7 +1790,8 @@ function initPassageDelegate() {
         for (const m of sec.materials) parts.push(`【${m.label}】\n${m.text}`);
         if (sec.annotation) parts.push(sec.annotation);
         for (const q of rec.questions.filter((x) => x.qIndex >= sec.qStart && x.qIndex <= sec.qEnd)) {
-          parts.push(`\n第 ${q.qIndex} 题${q.score ? `（${q.score} 分）` : ""}：${q.text}`);
+          const pointLabel = questionPointLabel(rec, q.qIndex);
+          parts.push(`\n第 ${q.qIndex} 题${pointLabel ? `（${pointLabel}）` : ""}：${q.text}`);
         }
       }
       copyText(parts.join("\n"), "整套题目已复制");

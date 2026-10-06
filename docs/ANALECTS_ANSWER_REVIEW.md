@@ -69,6 +69,34 @@ affected-learner review and controlled publication remain pending. Historical `a
 `reference_answer` fields remain recovery evidence; downstream consumers must
 explicitly adopt the reviewed per-question overlay before claiming a fix.
 
+## New feedback path (2026-10-06 UTC)
+
+The previous candidate corrected visible reference and discussion context but
+`buildContextPrompt` still read historical `ai_answers` and requested a score
+from legacy point fields. The same reviewed-question resolver now maps category
+and whole-year IDs for display, copy and all three tutor modes. Reviewed
+reference text and source limitations replace the old model answer in new
+prompts. Existing models and conversations remain in history; the prompt
+explicitly gives the correction precedence over conflicting old discussion.
+
+An absent, invalid or out-of-range reviewed `printedScore` yields 配分待核.
+New requests ask for qualitative feedback only, with no numeric score, maximum,
+percentage, grade or inferred subpart allocation. Valid printed points may
+produce a clearly labelled learning estimate, not a formal result. The original
+question text, stored point field, identity, answer and completion history are
+unchanged; adjacent unreviewed choices retain their previous behavior. No model
+output or historical learner assessment is fabricated to validate the prompt.
+Five added tests cover exact provenance and all twelve subparts and three modes in both entry paths,
+known/unknown/corrupt point values, preservation and adjacent choices. The exact
+finding and scope are in serial8/gk-feedback-source-finding.json.
+
+New records for reviewed subparts use `sha256:` plus the exact `data/all.json`
+file digest, enforced by the build test. The former hard-coded source tree
+predated these reviewed overlays. Resource IDs, ownership, old records and
+version semantics for unreviewed/custom resources remain unchanged. This
+opaque existing field does not alter the recorder or central schema. Actual provider
+responses, authenticated acceptance and production remain unverified.
+
 Local rollback restores the parent commit in an isolated checkout. Preserve
 all forward learner records. Publication needs the current registered release
 transaction, real acceptance, and Status stored/public/RSS verification.

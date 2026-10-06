@@ -89,6 +89,97 @@ test('all seven groups and only the twelve intended subparts are reviewed', () =
   assert.match(run("getAnswerVersions(state.byId.get('2018-weixiezuo'),3)[0].text"), /任选一个/);
 });
 
+test('new chat, feedback and regeneration use the reviewed reference in both navigation modes', () => {
+  const run = fixture();
+  for (const original of records.filter(r => r.source_review)) {
+    for (const [key, answer] of Object.entries(original.source_review.answers)) {
+      const recExpr = `state.byId.get('${original.id}')`;
+      run(`${recExpr}.ai_answers['${key}']='UNTRUSTED_OLD_REFERENCE';`);
+      const exam = run(`buildYearExam(${original.year})`);
+      const mapped = exam.questions.find(q => q.origRecId === original.id && String(q.origQIndex) === key);
+      assert.ok(mapped);
+      for (const [rec, qIndex] of [[recExpr, Number(key)], [`buildYearExam(${original.year})`, mapped.qIndex]]) {
+        for (const mode of ['chat', 'review', 'regenerate']) {
+          const prompt = run(`buildContextPrompt(${rec},${qIndex},'依据是什么','${mode}')`);
+          assert.ok(prompt.includes(answer.text), `${original.id}/${key}/${mode}`);
+          assert.ok(prompt.includes(original.source_review.sourceNote));
+          assert.doesNotMatch(prompt, /UNTRUSTED_OLD_REFERENCE|【AI 之前给出的参考答案】/);
+          assert.match(prompt, /不沿用旧说/);
+        }
+      }
+    }
+  }
+});
+
+test('unknown subpart points cannot become a numeric grading request from legacy scores or group totals', () => {
+  const run = fixture();
+  for (const id of ['2019-lunyu', '2023-lunyu']) {
+    const original = getRecord(id);
+    for (const key of Object.keys(original.source_review.answers)) {
+      const expr = `state.byId.get('${id}')`;
+      const exam = run(`buildYearExam(${original.year})`);
+      const mapped = exam.questions.find(q => q.origRecId === id && String(q.origQIndex) === key);
+      for (const [rec, qIndex] of [[expr, Number(key)], [`buildYearExam(${original.year})`, mapped.qIndex]]) {
+        assert.equal(run(`questionPointLabel(${rec},${qIndex})`), '配分待核');
+        for (const mode of ['chat', 'review', 'regenerate']) {
+          const prompt = run(`buildContextPrompt(${rec},${qIndex},'请给出一个分数','${mode}')`);
+          assert.match(prompt, /只给定性评语，不给数字得分、满分、百分比或等级/);
+          assert.match(prompt, /历史记录中保留的分数不能作为本次评分上限/);
+          assert.doesNotMatch(prompt, /推测得分|【当前小题】[^\n]*（\d+ 分）/);
+        }
+      }
+      assert.equal(run(`${expr}.questions.find(q=>String(q.qIndex)==='${key}').score`),
+        original.questions.find(q => String(q.qIndex) === key).score);
+    }
+  }
+});
+
+test('verified point values govern future estimates while corrupt or absent values fail closed', () => {
+  const run = fixture();
+  run("state.byId.get('2015-lunyu').questions[0].score=99");
+  assert.equal(run("questionPointLabel(state.byId.get('2015-lunyu'),1)"), '1 分');
+  assert.match(run("buildContextPrompt(state.byId.get('2015-lunyu'),1,'','review')"),
+    /确认本小问配分为1 分/);
+  assert.equal(run("state.byId.get('2015-lunyu').questions[0].score"), 99);
+  for (const bad of ['null', 'undefined', '0', '-1', '1.5', '99', "'1'"]) {
+    run(`state.byId.get('2015-lunyu').source_review.answers['1'].printedScore=${bad}`);
+    assert.equal(run("questionPointLabel(state.byId.get('2015-lunyu'),1)"), '配分待核');
+    assert.doesNotMatch(run("buildContextPrompt(state.byId.get('2015-lunyu'),1,'','review')"), /推测得分/);
+  }
+});
+
+test('unreviewed adjacent choices keep their existing reference and grading behavior', () => {
+  const run = fixture();
+  for (const key of [1, 2]) {
+    const original = getRecord('2018-weixiezuo');
+    assert.equal(run(`getReviewedQuestion(state.byId.get('2018-weixiezuo'),${key})`), null);
+    const prompt = run(`buildContextPrompt(state.byId.get('2018-weixiezuo'),${key},'','review')`);
+    assert.ok(prompt.includes(original.ai_answers[String(key)]));
+    assert.match(prompt, /一行总评 \+ 推测得分（注明本题满分）/);
+    assert.doesNotMatch(prompt, /【经来源核对的学习参考】|配分待核/);
+  }
+});
+
+test('new capture identifies exact reviewed content without changing original resource or owner keys', () => {
+  const run = fixture();
+  const expected = `sha256:${createHash('sha256').update(readFileSync(new URL('../data/all.json', import.meta.url))).digest('hex')}`;
+  const exam = run('buildYearExam(2023)');
+  const mapped = exam.questions.find(q => q.origRecId === '2023-lunyu' && q.origQIndex === 1);
+  for (const [rec, qIndex] of [["state.byId.get('2023-lunyu')", 1], ['buildYearExam(2023)', mapped.qIndex]]) {
+    run(`state.currentRecord=${rec};state.currentQIndex=${qIndex};window.BdfzLearningRecords={scope:'fixture-owner',id:()=> 'fixture-session'};`);
+    const context = run('detailedContext()');
+    assert.equal(context.resourceVersion, expected);
+    assert.equal(context.resourceKey, 'question:2023-lunyu:1');
+    assert.equal(context.captureScope, 'fixture-owner');
+    assert.equal(context.sourceContext.recordId, '2023-lunyu');
+    assert.equal(context.sourceContext.qIndex, 1);
+  }
+  for (const rec of ["state.byId.get('2018-weixiezuo')", "({id:'custom-fixture',questions:[{qIndex:1,text:'自订题目'}]})"]) {
+    run(`state.currentRecord=${rec};state.currentQIndex=1;`);
+    assert.equal(run('detailedContext().resourceVersion'), 'git-tree-sha1:3487023148584d9f649a91dbf0dd6a691065b124');
+  }
+});
+
 test('loaded corrections reach year views and discussion while historical fields, IDs and scores stay intact', async () => {
   const run = fixture();
   await run('loadData()');
