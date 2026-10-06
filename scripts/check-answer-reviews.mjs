@@ -18,6 +18,21 @@ export function validateAnswerReview(record) {
     || !review.sourceNote || !review.scope || !Number.isFinite(Date.parse(review.reviewedAt))) reject('metadata');
   if (!review.sources?.length || !Object.keys(review.answers || {}).length) reject('empty evidence or answers');
   if (review.sourceContextSha256 !== answerReviewContextHash(record)) reject('material mismatch');
+  if (review.printedGroupScore != null && !(Number.isInteger(review.printedGroupScore) && review.printedGroupScore > 0)) reject('group score');
+  if (review.scoreNote != null && (typeof review.scoreNote !== 'string' || !review.scoreNote.trim())) reject('score note');
+  if (review.corrections != null && !Array.isArray(review.corrections)) reject('corrections');
+  const fields = new Set();
+  for (const correction of review.corrections || []) {
+    const { field, from, to } = correction || {};
+    if (!/^(topic|material[1-9]\d*)$/.test(field) || fields.has(field)
+      || typeof from !== 'string' || !from || typeof to !== 'string' || from.length !== to.length || from === to
+      || typeof record[field] !== 'string' || record[field].split(from).length !== 2) reject('correction target');
+    fields.add(field);
+    if (field !== 'topic') {
+      const materials = record.materials?.filter(material => material.key === field) || [];
+      if (materials.length !== 1 || materials[0].text !== record[field]) reject('correction material');
+    }
+  }
   for (const source of review.sources) {
     let url;
     try { url = new URL(source.url); } catch { reject('source URL'); }
@@ -29,6 +44,8 @@ export function validateAnswerReview(record) {
     const question = record.questions?.find(q => String(q.qIndex) === key);
     if (!question || createHash('sha256').update(question.text).digest('hex') !== answer.questionSha256) reject(`question mismatch ${key}`);
     if (!answer.text?.trim() || !Array.isArray(answer.rejectedVersions)) reject(`answer metadata ${key}`);
+    if (answer.printedScore != null && !(Number.isInteger(answer.printedScore) && answer.printedScore > 0
+      && answer.printedScore <= review.printedGroupScore)) reject(`printed score ${key}`);
     for (const version of answer.rejectedVersions) {
       if (!record.ai_answer_versions?.[version]?.answers?.[key]) reject(`unknown historical version ${key}`);
     }

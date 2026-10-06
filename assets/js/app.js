@@ -214,10 +214,32 @@ function loadStoredTheme() {
 /* =========================================================
  * 数据：加载 / 索引 / 进度
  * ======================================================= */
+function applyReviewedSource(record) {
+  const review = record.source_review;
+  if (!review?.corrections?.length) return record;
+  const reject = () => { throw new Error(`${record.id}: invalid source correction`); };
+  if (review.schema !== 'gk-answer-review-v1') reject();
+  const next = { ...record, materials: record.materials?.map(material => ({ ...material })) };
+  const fields = new Set();
+  for (const { field, from, to } of review.corrections) {
+    if (!/^(topic|material[1-9]\d*)$/.test(field) || fields.has(field)
+      || typeof from !== 'string' || !from || typeof to !== 'string' || from.length !== to.length || from === to
+      || typeof next[field] !== 'string' || next[field].split(from).length !== 2) reject();
+    fields.add(field);
+    if (field !== 'topic') {
+      const materials = next.materials?.filter(material => material.key === field) || [];
+      if (materials.length !== 1 || materials[0].text !== next[field]) reject();
+      materials[0].text = materials[0].text.replace(from, to);
+    }
+    next[field] = next[field].replace(from, to);
+  }
+  return next;
+}
+
 async function loadData() {
   const res = await fetch("data/all.json", { cache: "no-cache" });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  const data = await res.json();
+  const data = (await res.json()).map(applyReviewedSource);
   state.data = data;
   state.byId = new Map(data.map((rec) => [rec.id, rec]));
   restoreLegacyLocalProgress();
@@ -664,7 +686,7 @@ function getAnswerVersions(rec, qIndex) {
   const reviewedAnswer = review?.schema === 'gk-answer-review-v1' && review.answers?.[originKey];
   if (reviewedAnswer?.text) {
     versions.push({ key: 'source_review', label: '来源核对与订正', text: reviewedAnswer.text,
-      sourceNote: review.sourceNote, sources: review.sources });
+      sourceNote: [review.sourceNote, review.scoreNote].filter(Boolean).join(' '), sources: review.sources });
   }
   for (const spec of ANSWER_VERSION_ORDER) {
     const raw = rec.ai_answer_versions?.[spec.key]?.answers?.[key];
@@ -827,7 +849,7 @@ function buildDiscussionContext(sourceRec, sourceQIndex, questionText) {
     questionText: questionText || "",
     answerVersions: versions.map((v) => ({
       label: v.label,
-      text: v.text,
+      text: [v.warning, v.text, v.sourceNote].filter(Boolean).join('\n'),
     })),
   };
 }
