@@ -1,3 +1,9 @@
+# Current GK leaf acceptance — 2026-10-05 PDT
+
+Accepted source `7ce7271e8ed2437148b76824712b7e0a99638e6a`, Pages `ef0da772-4594-4572-a5fb-d0c4e1bc55a3`. Use the current registered native publisher and fresh exact-source/config/artifact/rollback transaction. The older deployment instructions below are dated historical evidence. Never replay their direct publisher or fixed source.
+
+This content-only leaf change reused the unchanged recorder, Functions and publisher. Its exact candidate signed-in view and three ordinary production reviewed-question exposures passed complete central payload/time/scope/version/digest readback across ordinary reload, with no model or grade calls. Source tests: 6 recorder + 12 progress + 15 reviewed-reference checks and all data/Beijing checks. Public assets match, allowing only one precisely identified provider hidden anchor in HTML. Source limitations and unverified subpart points remain explicit. Current evidence, Status and rollback: [OPERATIONS.md](OPERATIONS.md).
+
 # Accepted modern GK release — 2026-09-20
 
 Production: **23baf659-1f2a-45cc-9740-1d1c10a1329d**. Runtime source: **17f1f1dbda5c551333688ae36f4124bf134f4550**, on GitHub main and `codex/gk-modern-restore-20260920`. Preview: **e15ebc83-fb88-49f9-8be0-a6ae9bc1f739**. Rollback: **f6ff92b3-78e6-4bbf-8b94-bb347a80b23c**, preserving all forward user progress. Later documentation-only commits do not change the deployed runtime identity.

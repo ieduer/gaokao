@@ -1,3 +1,17 @@
+## Accepted Analects correction — 2026-10-05 PDT
+
+Production `ef0da772-4594-4572-a5fb-d0c4e1bc55a3`, source `7ce7271e8ed2437148b76824712b7e0a99638e6a`, registered native Pages publisher and PR12. Effective 2026-10-05 19:39:08 PDT (2026-10-06T02:39:08Z). This supersedes candidate-only wording below for the GK leaf; other consumers remain independently pending.
+
+All ten published artifact hashes match the accepted source. The homepage matches after removal of exactly one provider-inserted hidden nofollow `/cdn-cgi/content` anchor; no other normalization was allowed and the link was not followed. Functions, provider configuration and publishing pins are unchanged. Valid discussion read returned 200 and invalid parameters 400; no public discussion was posted.
+
+Exact candidate authenticated question exposure passed before publication. Ordinary unmodified production then saved three 2023 reviewed-question exposures through the existing signed-in UI, one central row per operation. Complete payload, ownership scope, original time, content version and digest matched before/after normal reload. Desktop 1280x900 and mobile 390x844 browser viewports preserve reviewed reference, source limitations and historical answer versions. This is not physical Android-device acceptance.
+
+The 33 prior source tests and full data/Beijing checks bind the exact source; the native publisher built it successfully again. New model requests, student answer submissions, grade changes and notifications were zero. Actual model-output quality and historical learner regrading are not claimed. The seven reviewed groups/twelve subparts use publisher reproductions, with 2019/2023 subpart points still unverified.
+
+Status stored record, visible page and both global/GK RSS feeds are verified: [Status revision 1](https://status.bdfz.net/?update=20261005-gk-analects-corrections&revision=1#updates).
+
+Immediate rollback: Pages `206bb0dc-42d4-4c5c-bed8-d421aa7b6572`, source `0b3258ffcc755f4dc2939b3e2e22bf43f56519d4`; preserve all forward learning records. Evidence and current public-note state: `/Users/ylsuen/CF/reports/operations/analects-consolidation-20261004/serial9/REPORT.md`. Source documents are updated on this documentation branch; do not advance main merely to republish documentation.
+
 ## Local Analects answer-review candidate — 2026-10-05 PDT
 
 Source-reviewed overlays for seven Analects groups/twelve subparts preserve every historical answer and learner key. Exact topic/material corrections apply only in the loaded view; historical score fields stay intact. Source hashes, score uncertainties, ten focused tests, full-build and anonymous browser acceptance, pending authenticated/release gates and rollback are in [ANALECTS_ANSWER_REVIEW.md](ANALECTS_ANSWER_REVIEW.md). This candidate is not live.

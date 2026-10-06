@@ -1,3 +1,7 @@
+## GK production acceptance — 2026-10-05 PDT
+
+The GK leaf correction is accepted at source `7ce7271e8ed2437148b76824712b7e0a99638e6a`, deployment `ef0da772-4594-4572-a5fb-d0c4e1bc55a3`. Prepublication authenticated exposure and three fresh ordinary production exposures passed exact central readback and reload; ten public artifacts, unchanged Functions/configuration and desktop/mobile browser viewports passed. The dated candidate/pending passages below remain the implementation history, not the current GK release status. Downstream app/site adoption, device acceptance, original student review and actual model-output quality are still separate. See `docs/OPERATIONS.md` and the serial9 release report for evidence and rollback.
+
 # Analects answer review candidate
 
 Local candidate based on pushed main `0b3258ffcc755f4dc2939b3e2e22bf43f56519d4`.
