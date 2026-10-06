@@ -1,7 +1,8 @@
 # Analects answer review candidate
 
 Local candidate based on pushed main `0b3258ffcc755f4dc2939b3e2e22bf43f56519d4`.
-No push, release, provider generation or learner-score change has occurred.
+The candidate is in existing draft PR12; no release, provider generation or
+learner-score change has occurred.
 
 Seven source records carry an additive `source_review`; every prior field, model
 answer, current-version selector, question ID and progress key remains exact.
@@ -51,8 +52,14 @@ discussion context and no review leaking to adjacent questions. All201 records,
 to the parent after removing only `source_review`;15 source file references match
 retained bytes and hashes. The expanded receipt is `gk-seven-group-validation.json`.
 
-The complete build was blocked before execution by the existing runtime-hygiene
-hook. It has not been replaced with an alternate build command. Real browser,
+The exact `e0dcee540ad340901ec48112292e8c6cd19d5e21` complete `npm run build`
+passed on 2026-10-06 UTC with Node 24.18.0: six recorder, twelve progress and ten
+answer-review tests; 201 records/612 questions/472 annotations with zero data
+errors; Beijing 2026 validation; nine explicit assets plus release.json. After
+a material workspace resource change, this supersedes the earlier pre-execution
+runtime-hygiene block. Logs and artifact hashes are under
+`/Users/ylsuen/CF/reports/operations/analects-consolidation-20261004/serial8/`
+(`gk-build-result.json`, `gk-build-artifact-manifest.json`). Real browser,
 authenticated acceptance, downstream Weibian/Fuzi adoption, affected-learner
 review and controlled publication remain pending. Historical `ai_answers` and
 `reference_answer` fields remain recovery evidence; downstream consumers must

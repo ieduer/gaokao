@@ -1,6 +1,6 @@
 ## Local candidate — 2026-10-05 PDT
 
-Analects source-review overlay: seven groups/twelve subparts across2015/2018/2019/2020/2021/2023, with historical fields and keys preserved. Exact source corrections reach display and discussion; score uncertainties remain explicit. Ten focused tests and full data validation pass. Full build was blocked before execution by runtime hygiene; browser, downstream adoption, affected learners and release remain pending. No production or scoring change. Scope, evidence and rollback: [docs/ANALECTS_ANSWER_REVIEW.md](docs/ANALECTS_ANSWER_REVIEW.md).
+Analects source-review overlay: seven groups/twelve subparts across2015/2018/2019/2020/2021/2023, with historical fields and keys preserved. Exact source corrections reach display and discussion; score uncertainties remain explicit. Ten focused tests and full data validation pass. The exact e0dcee5 full build completed on 2026-10-06 UTC under Node 24.18.0: all 28 recorder/progress/review tests, data/Beijing checks and explicit Pages artifact generation passed. This replaces the prior runtime-hygiene block; browser, downstream adoption, affected learners and release remain pending. No production or scoring change. Scope, evidence and rollback: [docs/ANALECTS_ANSWER_REVIEW.md](docs/ANALECTS_ANSWER_REVIEW.md).
 
 ## 2026-09-25 — Learning capture qualified for guarded publication
 
