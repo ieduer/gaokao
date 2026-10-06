@@ -1,6 +1,6 @@
 ## Local Analects answer-review candidate — 2026-10-05 PDT
 
-Source-reviewed overlays for seven Analects groups/twelve subparts preserve every historical answer and learner key. Exact topic/material corrections apply only in the loaded view; historical score fields stay intact. Source hashes, score uncertainties, ten focused tests, full-build acceptance, pending authenticated/release gates and rollback are in [ANALECTS_ANSWER_REVIEW.md](ANALECTS_ANSWER_REVIEW.md). This candidate is not live.
+Source-reviewed overlays for seven Analects groups/twelve subparts preserve every historical answer and learner key. Exact topic/material corrections apply only in the loaded view; historical score fields stay intact. Source hashes, score uncertainties, ten focused tests, full-build and anonymous browser acceptance, pending authenticated/release gates and rollback are in [ANALECTS_ANSWER_REVIEW.md](ANALECTS_ANSWER_REVIEW.md). This candidate is not live.
 
 ## 2026-09-25 — Detailed learning capture publication transaction
 

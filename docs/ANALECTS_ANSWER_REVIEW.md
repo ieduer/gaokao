@@ -13,7 +13,7 @@ views. Identified conflicting historical answers remain visible with a warning.
   confirm alternating speakers and an open choice between the two punctuations.
   The two retained GPT answers conflict with that evidence. Both are marked.
 - 2018 question13: the three replies and differentiated teaching are reviewed.
-  Micro-writing question23 option3 retains its open choice,150–200 characters
+  Micro-writing question23 option 3 retains its open choice,150–200 characters
   and one-of-three rule; the other two options receive no review overlay.
 - 2019 question12: the image prints7 total points, not the legacy title's5.
   Deleting the negative means accepting poverty resulting from following仁;
@@ -59,9 +59,13 @@ errors; Beijing 2026 validation; nine explicit assets plus release.json. After
 a material workspace resource change, this supersedes the earlier pre-execution
 runtime-hygiene block. Logs and artifact hashes are under
 `/Users/ylsuen/CF/reports/operations/analects-consolidation-20261004/serial8/`
-(`gk-build-result.json`, `gk-build-artifact-manifest.json`). Real browser,
-authenticated acceptance, downstream Weibian/Fuzi adoption, affected-learner
-review and controlled publication remain pending. Historical `ai_answers` and
+(`gk-build-result.json`, `gk-build-artifact-manifest.json`). Anonymous loopback
+browser acceptance confirms all seven groups/twelve subparts, preserved old
+answers and source links, both 2019 whole-year subparts and printed 7-point
+correction, micro-writing option 3 only, and ordinary reload with identical
+review text. See `gk-browser-acceptance.json`. No answer/model/grade submission
+was made. Authenticated acceptance, downstream Weibian/Fuzi adoption,
+affected-learner review and controlled publication remain pending. Historical `ai_answers` and
 `reference_answer` fields remain recovery evidence; downstream consumers must
 explicitly adopt the reviewed per-question overlay before claiming a fix.
 
