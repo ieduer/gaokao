@@ -1,3 +1,207 @@
+> 2026-10-07T00:15:40.775470+00:00：第一次压缩检查点：北京640题当前答案核查完成，来源资格保留27项未认证。正常构建被工具程序数量保护在执行前拦截，尚未构建或上线；已完成限定只读诊断，未清理无归属程序。后续先完成可独立进行的消费者与接受源核对。详[检查点](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/CHECKPOINT-FIRST-COMPACTION-01a1139d.md)。
+
+> 2026-10-07T00:10:25.895340+00:00：北京640单元采用逐题明示来源资格的学习参考契约；27原blocker保持open，另有精确绑定限定发布disposition，原卷/官方细则未认证。新问题、删警示、源/答案/分值变化或缺实际模型仍拒绝；49tests及七组《论语》接受回归通过。原源/1843模型/历史保全。尚未正常build或发布。[契约、全部未证实项与回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/SOURCE-QUALIFICATION-01a1139d.md)。
+
+> 2026-10-07T00:03:13.637511+00:00：2008语言5、2011语言2共8处题干下划线按已存题页补齐，两题实际新Astra/Claude全文核查B/A。PLAN75原始成功响应因本地选项对象绑定TypeError经只读恢复核验，无模型重试。北京640 reviewed；1843模型/525标记；47tests、数据0错误与GK双视图/YYJC渲染通过。来源分级、正式build和发布仍待。[证据与回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-PLAN75-01a1139d.md)。
+
+> 2026-10-06T23:56:57.250559+00:00：15道多选题未获部分给分规则，新增只定性指南，旧分/原选项/模型/源保全。GK分类及年度30提示、三个消费者15判分入口和41tests通过。来源分级与正式发布仍待。[证据与回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-MULTIPLE-SCORES-01a1139d.md)。
+
+> 2026-10-06T23:53:15.574286+00:00：北京640单元全部完成当前输入答案核查；2008原图实际Claude一次21.679秒、0重试，原始像素/真实模型/全文已核。静态图不能证明钟停，采用可见景物与愿望配文；旧源/分/模型保全，1837含历史模型。28tests通过；27项来源评分问题、消费者与发布仍待。[证据与回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-IMAGE-01a1139d.md)。Owner codex-01a1139d-gpt-6-astra。
+
+> 2026-10-06T23:44:29.711041+00:00：PLAN72最后9道文字题真实Claude全文及Astra逐题裁定已保存，北京639 reviewed／0 disputed／0 draft／1 missing，余2008图像题。全局1834模型含历史，旧分/旧答/源/blockers保全；28tests通过，27项active/mixed来源评分问题仍待。未正常build或发布；第二次compaction，完成原子步骤后仅作串行交接。[证据与精确回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-PLAN72-01a1136d.md)。
+
+> 2026-10-06T23:37:32.868217+00:00：PLAN71新增20份真实Claude全文和20份逐项裁定，实际模型/stream已读回，0重试；北京630 reviewed／0 disputed／9 draft／1 missing，第二答余10。原源/旧答/分值/blockers保全，28tests通过。未正常build或发布。[证据与回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-PLAN71-01a1136d.md)。
+
+> 2026-10-06T23:33:04.840580+00:00：PLAN70真实订阅单次20份Claude完整回应用已核模型/原始stream读回，0重试；已逐题裁定20份，2003虛詞按明确点位C纠正Claude误读B，其余限定详报告。北京610 reviewed／0 disputed／29 draft／1 missing，30份第二答仍待。源/旧分/旧模型/所有blockers保全，28tests通过；未正常build或发布。[证据与回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-PLAN70-01a1136d.md)。
+
+> 2026-10-06T23:28:01.235909+00:00：2005读音原题完整保留，另明示教学v1的16个考查字和编辑点位，原卷点位未认证。新Astra完整答案D，仍draft；北京590 reviewed／0 disputed／49 draft／1 missing，50份第二答待补。32项相关测试及99非目标YYJC题保全通过。PLAN70单次北京20题实际执行中，未声称恢复或学术接受；无正常build/发布。详[修订与回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-PRONUNCIATION2005-01a1136d.md)。
+
+> 2026-10-06T23:21:25.982218+00:00：2013已明示EOL长版句法答案核查通过；原卷长短归属未裁定、原5分及只给定性反馈限制完整保留。北京590 reviewed／1 disputed／48 draft／1 missing；49份第二答及27项active/mixed来源评分问题仍待。22项权威测试通过，未正常build或发布。本chat首次压缩，当前原子步骤已完成并固化checkpoint-compaction1-01a1136d.json。详[核查与回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-DUANJU2013-01a1136d.md)。
+
+> 2026-10-06T23:11:16.051918+00:00：正式build/投影/完成检查现按640个明确北京ID验收，两组6个擱置单元输出固定7ce现网原record，未接受候选仍留本地。只排除完全属于擱置9999的hash绑定blocker；27个active/mixed来源问题继续阻断。28项scope/authority测试通过，未正常build/发布。详[范围处理与回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/RELEASE-SCOPE-GK-01a1136d.md)。
+
+> 2026-10-06T23:08:05.093426+00:00：已将现场接受7ce7271的七组/十二问《论语》订正、来源、未知配分限制和反馈取用合入本任务候选，全部旧答/身份/分值及219非目标记录保全。64项相关测试通过、数据0错误；仍需完成包含7ce的Git来源整合及北京核查/正常build/发布，不能用旧HEAD上线。新记录版本按实际加载数据字节计算。详[保全、验证与回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/RECONCILE-GK-ACCEPTED-01a1136d.md)。Owner `codex-01a1136d-gpt-6-astra`。
+
+> 2026-10-06T23:01:08.091104+00:00：2009诗词原12①已按题注、时序及新取得的具名教学解析裁定D，原题/2分不变，旧Astra/Claude全文完整保留；北京589 reviewed、2 disputed、48 draft、1 missing，49份第二答仍待。22项权威测试通过，未build或发布。非北京仍暂存。Owner `codex-01a1136d-gpt-6-astra`。详[裁定、证据与回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-POETRY2009-01a1136d.md)。
+
+> 2026-10-06T22:52:23.697897+00:00：使用者將本輪收斂為北京題答案核查後發布。非北京／教材／獨立虛詞等暫存可重啟，不再阻擋北京發布；當前北京候選640單元，588 reviewed／3 disputed／48 draft／1 missing，實際第二答缺口49。排除5道自編9999題及1道原卷歸屬未證實的2014補充默寫。旧全量646與112缺口保留作歷史，不能作本輪門檻。來源、評分、同步、精確受控發布與真實接受仍待。[當前唯一範圍與重啟入口](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/SCOPE-BEIJING-ONLY-20261006-01a1133f.md)。Owner `codex-01a1133f-gpt-6-astra`。
+
+> 2026-10-06T22:44:36.593699+00:00：新取得並逐圖實讀2009新浪估分頁獨立題圖4—5、6—10與兩答案圖，補齊舊圖集缺页所涉文字。依圖修復七單元轉錄與四處正文橫線，完整舊文／所有舊答／原null分值／身份保全；新七份Astra全文仍待實際Claude同輸入。593reviewed／3disputed／49draft／1missing，501annotations，1733含歷史模型物件，112第二答缺口。71相關測試、兩站228非目標題保全、28本地Worker寫前409通過。來源仍為新浪／新干線學校，非考試機構出版鏈認證；28來源評分blockers仍open。public未變，未正常build或發布。Owner `codex-01a1133f-gpt-6-astra`。詳[來源、驗證與回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-SOURCE-2009-01a1133f.md)。
+
+> 2026-10-06T22:32:25.093124+00:00：2004散文原19明示教學修訂v1，僅重寫B；完整材料／其他選項／原4分／身份和舊雙答保全。現有1726完整模型物件含歷史，當前新Astra答AE，仍待實際第二答；598reviewed／5disputed／42draft／1missing，105第二答缺口。GK22＋GKSW21測試及資料檢查通過；104其他散文題投影相同。GKSW preview對待核題保留舊題，未顯示新教學題，不可發布；正式投影拒絕。public／manifest未改，未正常build或發布，finalAccepted=false。Owner `codex-01a1133f-gpt-6-astra`。詳[證據與回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-TEACHING-SANWEN1-01a1133f.md)。
+
+## 2026-10-06T22:25:52.928466+00:00 — 2007礼义教化教学修订（01a1133f）
+
+原9分组题明示改同材料语句理解，完整新Astra拟D，原①⑤尺度争议、六句四组及旧双答全留。原null及未接受practice3保留；1725完整模型，598已核/6争议/41draft/1missing，104第二答待补。46tests、134非目标投影及4次写前拒绝通过；完整GWYW395七档未变，未build或发布。Owner `codex-01a1133f-gpt-6-astra`。详[证据与精确回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-TEACHING-CLASSICAL1-01a1133f.md)。
+
+## 2026-10-06T22:23:37.271095+00:00 — 2014光伏五选二教学修订（01a1133f）
+
+仅A/C教学改写并明确非原卷，新完整Astra拟C/D；旧AD/CD全文、原4分与完整材料保留，1724模型对象。598已核/7争议/40draft/1missing，103第二答待补。38tests、105非目标FLX入口、31全部非空选项组合写前拒绝通过；仍draft无正式键。未build或发布。Owner `codex-01a1133f-gpt-6-astra`。详[证据与精确回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-TEACHING-PHOTOVOLTAIC1-01a1133f.md)。
+
+## 2026-10-06T22:21:20.278954+00:00 — 蓝蝶与照排题教学修订（01a1133f）
+
+2003原9仅D限定性能比较、2015原4限定第二段列举并补齐D扫描限制，均明示教学v1；原材料/null与3分、标记和1721旧模型保全。新完整Astra拟A/B仍draft，现1723模型；598已核/8争议/39draft/1missing，102第二答待补。38tests、104非目标FLX入口及8次写前拒绝通过。未build或发布。详[证据与精确回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-TEACHING-READING2-01a1133f.md)。Owner `codex-01a1133f-gpt-6-astra`。
+
+## 2026-10-06T22:18:48.657315+00:00 — 2003合并入口教学修订（01a1133f）
+
+原5仅D教学改写、原6全文字节保留；新完整Astra按序5C/6B（②③），kind=open且评分键空，不合成多选。旧flat损文和全部1720模型保全，现1721。598已核/10争议/37draft/1missing，100第二答待补；39tests、99非目标入口、5次写前拒绝通过。原ID/null分不变，未build或发布。详[证据与精确回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-TEACHING-COMPOUND1-01a1133f.md)。Owner `codex-01a1133f-gpt-6-astra`。
+
+## 2026-10-06T22:13:28.285912+00:00 — 三道病句教学修订（01a1133f）
+
+2007原4、2005原5、2004原5各改一争议项并明示教学v1；新完整Astra拟A/C/B，仍draft空键。1717原模型全留，现1720；598已核/11争议/36draft/1missing，99第二答待补。39tests、97非目标语用入口及12次写前拒绝通过。原分/身份/历史不变，未正常build或发布。Owner `codex-01a1133f-gpt-6-astra`。详[证据与精确回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-TEACHING-GRAMMAR3-01a1133f.md)。
+
+## 2026-10-06T22:10:21.934381+00:00 — 三道成语教学修订（01a1133f）
+
+明示教学v1修订2002原4、2005原4、2006原4，新增12精确编辑点；完整新Astra拟A/D/B，仍draft无键待真实Claude。1714原模型全文全留，现1717；598已核/14争议/33draft/1missing。39tests、97非目标语用入口及12次写前拒绝通过；原ID/null分/历史不变。96第二答、28来源评分阻断、normal build/发布/真实接受仍待。Owner `codex-01a1133f-gpt-6-astra`。详[证据与精确回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-TEACHING-IDIOMS3-01a1133f.md)。
+
+> 2026-10-06T21:56:49.915650+00:00：2002独立管仲翻译完成定性参考与省略边界裁定，原5分保持且暂停数值；追加完整Astra并对本轮之字说明失误另存完整校正版，旧1712模型全留，现1714。598已核／17争议／30draft／1missing，93第二答待补。46tests、134非目标投影、数值拒绝和合成追问通过。Owner `codex-01a1130e-gpt-6-astra`。详[证据、校正及回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-TRANSLATION-2002-01a1130e.md)。28来源评分阻断、正常build/发布/真实接受仍待。
+
+> 2026-10-06T21:49:31.627245+00:00：历史2014默写补充入口已明示教学v1，去除首项泄题；核实接管HEAD及当前实际保存11，旧题面8分说法与之冲突，旧分不改、仅定性核字。新完整Astra待第二答，1712模型对象保全；597已核／18争议／30draft／1missing，93第二答待补。22tests、225非目标记录及精确回退通过。Owner `codex-01a1130e-gpt-6-astra`。详[证据与回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-2014-MEMORIZATION-01a1130e.md)。非2014原卷，28来源评分阻断、正常build/发布/真实接受仍待。
+
+> 2026-10-06T21:44:15.915303+00:00：2025语用原(1)／2013原5明示教学v1，前者明确选项依据，后者明确四个后半动词编辑加点；新完整Astra拟C/A。原题及1709旧模型保全，现1711；597已核／19争议／29draft／1missing，92第二答待补。39tests、98非目标投影及8次写前拒绝通过。Owner `codex-01a1130e-gpt-6-astra`。详[证据与回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-TEACHING-LANGUAGE2-01a1130e.md)。28来源评分阻断、正常build/发布/真实接受仍待。
+
+> 2026-10-06T21:37:20.728071+00:00：2007原10／2003原15／2002原11三道文言概括题完成明示教学v1，去除未经原文支持的推断，完整新Astra各拟D。原题和1706旧模型保全，现1709；597已核／21争议／27draft／1missing，90第二答待补。46tests、132非目标投影及12次写前拒绝通过。Owner `codex-01a1130e-gpt-6-astra`。详[证据与回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-TEACHING-INFERENCE3-01a1130e.md)。28来源评分阻断和正常build/发布/真实接受仍待。
+
+> 2026-10-06T21:31:27.479031+00:00：2025文言原8已建立明示教学v1，C换用同篇狗取鼠句、D纠正译义、正文四下划线同步；新完整Astra拟A待第二答，原题旧答及1705模型保全，现1706。597已核／24争议／24draft／1missing，87第二答待补。46tests、数据/投影和4次写前拒绝通过。Owner `codex-01a1130e-gpt-6-astra`。详[证据与回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-2025-TRANSLATION-01a1130e.md)。28来源评分阻断与正常build/发布/真实接受仍待。
+
+> 2026-10-06T21:25:59.956663+00:00：2022文言原7／2005文言原7建立明示教学修订v1，替换例句均来自同篇；完整新Astra拟C/A，原题旧答及1703模型全部保全，现1705。597已核／25争议／23draft／1missing，缺第二答86；46tests、481标记检查、133非目标投影及8次写前拒绝通过。Owner `codex-01a1130e-gpt-6-astra`。详[证据与回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-TEACHING-PARTICLES2-01a1130e.md)。28来源评分阻断、正常build/发布/真实接受仍待。
+
+> 2026-10-06T21:19:46.689261+00:00：2010—2012断句完成句法参考复核、保留原5分并继续定性反馈；2013长短版冲突仍disputed。四份新完整Astra、1703模型全文保全；597已核／27争议／21draft／1missing。46tests及四次本地数值拒绝、四次合成追问通过，131非目标投影保全。Owner `codex-01a1130e-gpt-6-astra`。详[证据、来源与回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-PUNCTUATION4-01a1130e.md)。84第二答、28来源评分阻断、正常build/发布/真实接受仍待。
+
+> 2026-10-06T20:47:40.655775+00:00：2004／2006／2009断句完成句法参考裁定，追加三份完整Astra，保留两原答与停顿差异；原5分不变，qualitative_only继续停数值判分，不认证原卷评分容错。594已核／30争议／21draft／1missing；46tests、三次数值拒绝和三次合成定性追问通过，真实provider/完成写入0。Owner `codex-01a112d7-gpt-6-astra`。详[证据与评分限制](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-PUNCTUATION3-01a112d7.md)。84第二答、28来源评分阻断及正常build/发布/真实接受仍待。
+
+> 2026-10-06T20:41:42.449017+00:00：2003文言原13建立明示教学版v1，同篇替换A前例与B两例，并将八处星号转为精确编辑加点；原题/旧答和首轮候选完整保留，最终Astra完整答C仍draft空键。591已核／33争议／21draft／1missing，84第二答与28来源评分阻断待解。46tests、473标记数据检查、134非目标投影保全及四选项本地写前拒绝通过。Owner `codex-01a112d7-gpt-6-astra`。详[证据与回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-2003-PARTICLES-01a112d7.md)。未正常build、发布或真实接受。
+
+> 2026-10-06T20:29:10.093155+00:00：2005《戲劇與戲曲》四空依全文和公開參考的同義詞口徑完成語義裁定，追加完整Astra並保留原雙答；題面未改，原4分保留，逐空配分無證據，改用qualitative_only並繼續停數值判分。591已核／34爭議／20draft／1missing；38tests、3次本地數值攔截及1次合成定性追問通過。Owner `codex-01a112d7-gpt-6-astra`。詳[證據、限制及回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-2005-THEATRE-01a112d7.md)。83第二答、28來源評分阻斷及正常build/發布/真實接受仍待。
+
+> 2026-10-06T20:24:20.509699+00:00：2008文言原8與2016非連原3已建立明示教學版v1，完整原題/舊答/標記/分值保留，新Astra分別擬D/A，仍draft空鍵。現590已核／35爭議／20draft／1missing，83實際第二答及28來源評分阻斷待解；62相關tests與兩站8次本地寫前拒絕通過。Owner `codex-01a112d7-gpt-6-astra`。詳[本步證據及回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-TEACHING-PAIR2-01a112d7.md)。未正常build、發布或真實接受。
+
+> 2026-10-06T20:18:39.505209+00:00：2024文言原7與2025詩歌原11已建立明示非原卷文字的教學修訂版v1，原題及全部舊答保全；新增兩份完整Astra答D，仍draft空鍵。590已核／37爭議／18draft／1missing，缺實際第二答81。16標記重綁、原3分/null保留，61相關tests及兩站8次本地判分前拒絕通過；正常build/發布/真實接受未完成。Owner `codex-01a112d7-gpt-6-astra`。詳[來源、驗證及回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-TEACHING-PAIR-01a112d7.md)。
+
+> 2026-10-06T19:59:13.692635+00:00：2004原17已建立明示「非原卷文字」的教學修訂版v1；原題／舊三答及全history保存，只有1個輸入hash改變。新Astra完整答擬B，仍draft無鍵，須新Claude。590已核／39爭議／16draft／1missing，缺第二答79；38tests、226/646/465/0errors及四選項判分前拒絕通過，舊分／公開檔／GWYW395不變。Owner `codex-01a112a2-gpt-6-astra`。[版本、驗證與回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-2004-PRION-TEACHING-V1-01a112a2.md)。未正常build或發布。
+
+> 2026-10-06T19:49:09.262698+00:00：2004 CPEB原17依同期研究稿補記A的範圍反證，撤回舊確選C，仍爭議停分；同期北京晚報轉錄明示15—18每題3分，新增四份整題練習指南，保留GK null與FLX舊3/3/3/6。38tests及3成功／1拒絕本地路徑通過；GK590／40／15／1，1688模型保全。Owner `codex-01a112a2-gpt-6-astra`。[來源、驗證與回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-2004-PRION-SOURCE-01a112a2.md)。未正常build或發布。
+
+> 2026-10-06T19:41:47.170307+00:00：2022文言原8依積漸／審詞義及完整語境裁定C，補足B正面語義理由，保留舊雙答及原3分。GK590reviewed／40disputed／15draft／1missing；GWYW canonical111／18／6，完整395候選七檔未變。46相關tests及4選項本地評分通過，未正常build或發布；2024者題與全域門禁仍開。Owner `codex-01a112a2-gpt-6-astra`。詳[來源、驗證與回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-2022-JIAN-SHEN-01a112a2.md)。
+
+> 2026-10-06T19:31:32.763583+00:00：2002原9因字題依題圖、詞典原印731/732與完整句法裁定B，追加完整Astra修訂並保留兩原答。GK589reviewed／41disputed／15draft／1missing，GWYWcanonical135為110reviewed／19disputed／6pending；完整395候選七檔不變。46相關tests與4選項本地評分通過，原分／歷史不變，未正常build或真實發布；78第二答及28來源評分阻斷保留。 Owner `codex-01a112a2-gpt-6-astra`。詳[來源、驗證與回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-2002-YIN-01a112a2.md)。
+
+> 2026-10-06T19:23:23.160682+00:00：2006《天壇之美》開放題解除爭議，追加完整Astra修訂並保留原雙答；四題原卷式轉載均明示3分，僅新增練習指南，GK原null及FLX舊3/3/6/6不變。GK588reviewed／42disputed／15draft／1missing，FLX95reviewed／6disputed／5pending；38相關tests與4個實際題合成Worker路徑通過，未正常build或真實發布。成語題仍停分，78第二答及28來源評分阻斷保留。 Owner `codex-01a112a2-gpt-6-astra`。詳[證據、限制與回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-2006-ADJUDICATION-01a112a2.md)。
+
+> 2026-10-06T18:59:45.177354+00:00：2008圖片題的有限像素runner已接線，凍結原JPEG與完整題面逐bytes/digest核對；本機假OAuth/localhost限定下529及硬deadline各1請求、無native retry且程序停止。14來源/格式拒絕和2不可重跑檢查通過；只備妥job，未真實provider/用量查詢/新plan/模型作答/發布，78實際第二答及全量來源/驗收仍待。 Owner `codex-01a1125c-gpt-6-astra`。詳[像素證據、限制與接續](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-CLAUDE-IMAGE-V4-01a1125c.md)。
+
+> 2026-10-06T18:49:39.211411+00:00：新的v4文字批次執行器已接入原生零重試控制，固定既有CLI2.1.288；本機假OAuth/OS限制localhost下529、API逾時及硬deadline各僅1請求且停止。8前置拒絕及16既有真實回答重放通過；未知成本保留null及4美元上限。v3與歷史plan不改，圖片job拒絕而保留独立像素待辦；無真provider/用量查詢/新plan/部署，真帳戶及恢復證據仍待。 Owner `codex-01a1125c-gpt-6-astra`。詳[驗證、限制及接續](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-CLAUDE-V4-01a1125c.md)。
+
+> 2026-10-06T18:32:19.816771+00:00：57份文言文練習滿分指南已按逐檔來源加註，其中8爭議和1draft繼續停分；實際135題投影新增56份，未知滿分64降至8，122舊身份/分值及完整GWYW bundle28保全。46項相關tests、46單選本地評分、2合成問答及16入口停分檢查通過。未正常build、provider新答、發布或真實認證；九站完整目標與所有來源阻斷不變。 Owner `codex-01a1125c-gpt-6-astra`。詳[來源、驗證與回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-GWYW57-SCORING-01a1125c.md)。
+
+## 2026-10-06T18:12:22.762477+00:00 — 散文16題練習指南，本地候選（01a1125c）
+
+唯一串行owner `codex-01a1125c-gpt-6-astra`。已實看2021/2003/2002題頁和後兩年當年參考答案圖；2025分值仍分級為二手重排/轉錄。新增16當前hash綁定指南：10數值、6因分項或多選部分分未明僅定性。原score/null、101舊身份、模型全文、source與28open blockers保全。30相關tests、4本地選項/6mock主觀/6HTTP寫前拒絕/6mock追問通過。public未改，strict仍拒絕2023待第二答；78份第二答缺口不變。未正常build、發布或真實接受，finalAccepted=false。詳[證據、限制及回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-SANWEN16-SCORING-01a1125c.md)。
+
+## 2026-10-06T17:33:51.937454+00:00 — 2026標記缺口已按現行證據核銷（01a1121b）
+
+原卷兩頁已重看，八個虛詞加點與散文橫線、當前兩模型全文及三輸入hash相符；只關閉 `2026-emphasis-layout`，全32 blocker為4resolved/28open。題文、645個review、1684模型物件、舊分和投影完全不變；587reviewed/43disputed/15draft/1missing，正常build/發布仍待。另完成CLI離線529重試及圖片區塊驗證，真實2008圖題僅準備未送出；不能當provider恢復或第二答。详[標記核銷證據與回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-2026-MARK-CLOSURE-01a1121b.md)及[離線傳輸結果](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-CLAUDE-OFFLINE-01a1121b.md)。
+
+## 2026-10-06T17:16:17.083479+00:00 — 2023來源修正，本地待第二答（01a1121b）
+
+唯一串行owner `codex-01a1121b-gpt-6-astra`。2023三記錄14項來源修正、14份當前Astra完整新答已保全；645/646為587reviewed、43disputed、15draft、1missing，原2023文言2爭議仍待。1670舊模型全保留，現1684。22測試與465標記檢查通過；未正常build／發布。 finalAccepted=false，完整九站接受仍待。詳[本階段證據與回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-2023-SOURCE-01a1121b.md)。
+
+## 2026-10-06T16:40:55.519118+00:00 — Canonical content stage closed; serial continuation required (01a111d9)
+
+Current 645 authority rows/646 units:600 reviewed,44 disputed,1 draft,1 missing. All1,668 prior complete model objects preserved, plus2 qualified Astra revisions=1,670. Source, scores, identities, histories and unrelated dirty work preserved.21 authority checks and source226/646/462/errors0 pass; full gate correctly blocks645/646. No normal build, provider call or production write. Eight sites remain unaccepted; WYGAME inherited accepted. Second compaction=fresh_task_required; only exact closeout and one serial local continuation. Latest report and scoped rollback: `/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-CANONICAL-CLOSEOUT-01a111d9.md`; handoff: `/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/HANDOFF-01a111d9.md`.
+
+## 2026-10-06T16:20:04.185492+00:00 — Language59 local stage (01a111d9), unaccepted for release
+
+58 language units plus1 poetics unit adjudicated:51 reviewed,8 disputed; GK554 reviewed/44 disputed/47 draft/1 missing of646. YYJC preview99/100 evidence ready (87 reviewed,12 disputed,1 pending),96 practice identities;93 old IDs/qIndex/scores and7 supplements preserved. Strict projection blocks2008 image for missing model evidence; original image hash passes.17 focused source/runtime tests pass; public corpus untouched. No normal build/provider/student/notification/production writes. Evidence and scoped rollback: `/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-LANGUAGE59-01a111d9.md`.
+
+## 2026-10-06T16:08:47.425563+00:00 — Language18 and first compaction (01a111d9)
+
+16 newly reviewed,2 disputed; GK519 reviewed/38 disputed/88 draft/1 missing of646. Added one full Astra semantic revision for2006 language3; all1668 earlier full model objects and histories preserved. First-compaction atomic step complete. No build/provider/production/student/notification writes;8targets unaccepted,WYGAME inherited accepted. Evidence and rollback: `/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-LANGUAGE18-COMPACTION1-01a111d9.md`.
+
+<!-- answers-six-sites-20261002 sanwen38 01a111d9 -->
+> 2026-10-06T15:57:27.073794+00:00：本地完整雙答已綁定142題＋3現行標記題；散文37新裁定（36reviewed、1disputed），另2022散文末題重新核對現行畫線。GK503reviewed／36disputed／106draft、645rows，1源單元無row。GKSW嚴格105題投影通過（104reviewed、1disputed），101舊ID／分值保留；40相關測試與資料檢查通過。未正常build或發布，九站完整驗收仍待。詳[本階段證據與回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-SANWEN38-01a111d9.md)。
+
+<!-- answers-six-sites-20261002 flx31-local-complete 01a111d9 -->
+> 2026-10-06T15:40:39.579623+00:00：FLX31 現行題面裁定完成（27reviewed、4disputed）；全106題為99reviewed／7disputed、0pending，只讀嚴格投影通過。來源重排差異、未知分值與爭議仍保留，未正常build或發布；九站整體未完成。GK467reviewed／35disputed／29draft，115源單元無row。詳[本地裁定與回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-FLX31-COMPLETE-LOCAL-01a111d9.md)。
+
+<!-- answers-six-sites-20261002 flx31-partial 01a11199 -->
+> 2026-10-06T15:28:41.641135+00:00：FLX canonical31已保全綁定62份原始完整雙答並裁定30題（26reviewed、4disputed），2025-feilian:1待審。GK現466reviewed／35disputed／30draft、531rows、115源單元無row；FLX私有投影98reviewed／7disputed／1pending。原始model objects1316全保留，現1378；本階段來源、舊分、身份不變。嚴格投影仍被2025-chinese-s01-feilian-q1擋下，沒有正常build或發布。第二次壓縮後僅保存並串行交接，九站整體未完成。詳[本地裁定與回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-FLX31-PARTIAL-01a11199.md)。
+
+<!-- answers-six-sites-20261002 canonical60-final 01a11199 -->
+> 2026-10-06T15:09:46.167507+00:00：60個舊pending文言題已完整處置：59有當前雙答裁定（含爭議），1為2007古文1標記修正後缺新第二答。最新GK authority440 reviewed／31 disputed／33 draft，另142無row；獨立文言投影113 reviewed／21 disputed／1 pending，全部135題。64原分null及2015古文5的4/7分差保持，未接受評分或發布。更題已同步前任較新詞典更正為完整第一答，原双答全保留。詳[階段證據](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-CANONICAL60-FINAL-01a11199.md)。舊GWYW bundle28與62虛詞缺答／15爭議保持，不混用。
+
+<!-- answers-six-sites-20261002 canonical16 01a11199 -->
+> 2026-10-06T14:51:16.852960+00:00：已完成16個canonical文言題本地裁定（14新reviewed、2目前標記重綁），GK authority為413 reviewed／17 disputed／74 draft，另142無row；最新獨立部分投影42題pending。舊bundle28及虛詞62缺答／15爭議保持，未發布。詳[本階段記錄](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-CANONICAL16-01a11199.md)。
+
+<!-- answers-six-sites-20261002 canonical7 01a11199 -->
+> 2026-10-06T14:43:31.548662+00:00：本聊天當前共10個canonical文言題已逐項核查（8新reviewed、2新版標記重綁），GK authority為407 reviewed／17 disputed／80 draft，142單元仍無row。最新獨立部分投影48題pending；60題保留雙答匯入及所有原文/舊分/舊答保全。GWYW既有bundle28與虛詞62缺第二答/15爭議不變。詳[本階段證據](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/verification-gk-canonical7-01a11199.json)。尚未正常full build、真實認證或發布。
+
+<!-- answers-six-sites-20261002 canonical60 01a11199 -->
+> 2026-10-06T14:38:06.402903+00:00：唯一接管已核172／203／49固定檔及九repo。既有canonical文言60題的119份全文已保全綁回GK authority，另1份已存在；2026文言前三題逐項裁定D/C/A。現402 reviewed／17 disputed／85 draft，646源單元中142無row；40項檢查及資料/歷史保全通過。最新GK部分投影的GWYW證據gate仍55題pending；舊bundle28／虛詞input24和62缺第二答保持，不混版。正常build／來源終驗／真實認證與發布尚未完成。詳[本批變更、證據與回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-CANONICAL60-01a11199.md)。
+
+## 2026-10-05 UTC — Ten local revisions and first-compaction checkpoint (01a10ba5)
+
+Authority revision `answers-reviewer10-20261005-01a10ba5` includes six source-bound answer revisions and four explicit disputed/no-grading candidates: 2008-guwen:3, 2022-guwen:2, 2025-shici:1 and 2025-yuyanjichu:1. It has 399 reviewed, 17 disputed and 51 draft rows for 646 source units; 179 have no authority row. These are local statuses, not final acceptance. Source, identities, scores, original model texts and old history remain preserved. Node 24.18.0 authority/progress tests pass 40/40. GKSW's in-memory projection, display and both prompts select the corrected 2024 prose answer while preserving all 101 old IDs/scores; public files are unchanged.
+
+See `/Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/REVIEWER-REVISIONS-01a10ba5.md` and `checkpoint-reviewer10-01a10ba5.json`. First compaction is checkpointed after the GK atomic step. Continue the existing FLX local revisions next; no new provider authority. All nine finalAccepted=false. No commits, production/student writes, notifications or browser resources were created. Exact row preimages support guarded local rollback; never reset later work or whole repositories.
+
+## 2026-10-05 UTC — Six source-bound reviewer revisions (01a10ba5)
+
+Local authority revision `answers-reviewer06-20261005-01a10ba5` applies full reviewer corrections for 2024-sanwen:1, 2023-lunyu:1/3, 2024-shici:2, 2024-honglou:1 and 2025-honglou:2. Both exact original responses, source, IDs, scores, legacy keys and history are preserved. Current text is labeled reviewer revision after reference exposure. Forty authority/progress tests pass on Node 24.18.0; projection preservation is checked. See `/Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/REVIEWER-REVISIONS-01a10ba5.md` and linked exact before/after evidence.
+
+All nine finalAccepted=false; no new provider calls, source changes, student writes or release. Source/media, strict-uniqueness, consumer and final acceptance gates remain open. Report-budget repair is measured and recorded (262144KiB row / original3GiB aggregate); prior failure retained, 19 rows/9 removed/10 pending preserved. Sole current owner is codex-01a10ba5-gpt-6-astra.
+
+## 2026-10-05 UTC — All existing650 responses read; serial handoff01a10b78
+
+Latest evidence inventory `claude-read-intersection-canonical243-01a10b78.json`:650 fully read /0 pending. This chat added203 (canonical reading batches03–12 plus3 writing); the canonical243 total includes predecessor40. Response artifacts include overlapping projections and are not650 unique source questions. All nine finalAccepted=false. See `REVIEW-CANONICAL-ALLREAD-01a10b78.md` and `HANDOFF-01a10b78.md` in the answers-six-sites-20261002 report root.
+
+Next local revision:2024-sanwen:1 selects D but its original own explanation invents absent context; preserve the original and write a source-bound reviewer correction. Also investigate the faulty legacy gloss for2023-lunyu:1. Original source, authority, IDs, scores and answers remain unchanged. Provider/build/release/student/notification writes zero; no new provider authority. Second compaction requires one serial successor. Exact preservation evidence: `checkpoint-handoff-01a10b78.json` and `verification-handoff-01a10b78.json`. Physical capacity/rollout guards passed, but the durable report's manifest size estimate exceeded25% tolerance and remains explicitly blocked for successor reconciliation; no deletion or budget bypass. Reading complete is not final acceptance.
+
+## 2026-10-05 PDT — First-compaction checkpoint: canonical batches03–08 (01a10b78)
+
+Existing artifact inventory: 567 fully read /83 pending of650; this serial chat added120 complete response reviews. Counts concern response artifacts, including overlapping projections, not unique source questions. Latest per-item evidence: `claude-semantic20-canonical-batch08-01a10b78.json`; latest inventory: `claude-read-intersection-canonical160-01a10b78.json`, in the answers-six-sites-20261002 report root.
+
+Review identified same-choice rationale and strict-uniqueness holds, optional punctuation supported only where the retained reference explicitly permits it, unverified example facts and preserved source defects. See `REVIEW-CANONICAL-BATCH03-08-01a10b78.md`. No original source, authority, identities, scores, answers or history changed; all nine finalAccepted=false. Provider/build/release/student/notification writes remain zero. First compaction is checkpointed after completing batch08; continue batch09 and the remaining independent source/revision work under existing gates. This is not final acceptance or authorization to resume providers. Exact checkpoint: `checkpoint-canonical160-01a10b78.json` and `verification-canonical160-01a10b78.json`.
+
+## 2026-10-05 PDT — Canonical batches03–06: eighty complete response reviews (01a10b78)
+
+Existing artifact inventory:527 fully read /123 pending of650; this serial chat added80. All source/context/options/emphasis and both full responses were read with uncertainties, reference and original model evidence. Batch06 has13 choice comparisons,12 same choices; 2006 idiom4 is D/B and same-choice word-use3 has a subject/object rationale correction. Full per-item evidence: `claude-semantic20-canonical-batch06-01a10b78.json`; latest inventory: `claude-read-intersection-canonical120-01a10b78.json`, in the answers-six-sites-20261002 report root.
+
+No source, answer-authority, identity, score, original answer or history edits; all finalAccepted=false. No provider/build/release/student/notification write. Continue batch07 (max20), remaining existing answers and independent source/revision work; all nine final targets remain incomplete. Exact checkpoint and source-preservation verification are `checkpoint-canonical120-01a10b78.json` and `verification-canonical120-01a10b78.json`.
+
+## 2026-10-05 PDT — Canonical batches03–05: sixty further full responses (01a10b78)
+
+Sole serial owner `codex-01a10b78-gpt-6-astra`; existing-response inventory is now 507 read / 143 pending of 650. This chat added 60 complete inputs, full own/Claude responses, uncertainties, references and emphasis reviews. Counting includes duplicate projections; all finalAccepted remain false.
+
+Exact reports: `claude-semantic20-canonical-batch03-01a10b78.json`, `claude-semantic20-canonical-batch04-01a10b78.json`, `claude-semantic20-canonical-batch05-01a10b78.json`, and latest `claude-read-intersection-canonical100-01a10b78.json` under `/Users/ylsuen/CF/reports/operations/answers-six-sites-20261002`. Key unresolved findings include 2004 information17 C/B, 2005 classical7 A/D, 2004 optional segmentation, 2005 missing pronunciation marks and 鲜为人知 uniqueness, merged subanswer schemas, original score/reference variants and unsupported explanatory claims. Proposal/review evidence is not final scoring authority.
+
+Question source, answer-authority, model originals, IDs and history unchanged. No provider/build/commit/push/deployment/student/notification write. Continue canonical batch06 and all remaining independent authorized work. Final source/media, compatible revision, controlled publication and genuine acceptance gates remain pending.
+
+## 2026-10-05 PDT — Canonical third batch: 20 further full responses reviewed (01a10b78)
+
+Sole serial owner `codex-01a10b78-gpt-6-astra`; exact takeover verified 2186 fixed reports, nine repositories and original source/media. Existing responses now 467 read / 183 pending of 650, with overlapping projections retained. New 20 include 13 pure choice comparisons (12 agree), six open units and one mixed two-question unit. All finalAccepted=false.
+
+2004 information-reading17 has a substantive C/B disagreement: the original answer's definite equivalence conflicts with the article's possible-mechanism qualifier, while B remains a limited inference requiring final adjudication. 2003 language5 D and 2004 prose19 B retain uniqueness holds. The combined 2003 original5/6 answers C,B must remain ordered subanswers. Source bytes, authority, scores, IDs, all old responses and historical owners preserved. No provider, build or deployment.
+
+Exact item reasoning and original uncertainty bindings: `/Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/claude-semantic20-canonical-batch03-01a10b78.json`. Current inventory: `claude-read-intersection-canonical60-01a10b78.json`. Continue batch04, then remaining offline reviews and final task gates; reading completion is not final acceptance.
+
+## 2026-10-05T09:37:04.491177+00:00 — Canonical first 40 existing responses reviewed (01a10b35)
+
+- Serial owner `codex-01a10b35-gpt-6-astra`; compactions=1. Both first canonical batches fully read against exact source, options, emphasis and two original full responses, with notes/uncertainties and reference/authority states. First20:15 pure choice units+5 open; second20:13 pure choice+6 open+1 mixed five-question unit.
+- Latest inventory `claude-read-intersection-canonical40-01a10b35.json`:447 read /203 pending of650. Current user turn added75 (FLX35+canonical40); this chat including earlier SHI67 added142. No reading count implies acceptance or unique-source coverage.
+- Mixed `2002-yuyanjichu:5` contains original5/6/23/24/25. Claude outer single_choice/C covers only original5 and must not become the whole-unit key. Both full responses cover all5; news length50/59 characters and road continuation71/80,91/80 Han pass limits. Source/score compatibility remains separately gated.
+- Further holds:2003-guwen:3 first而 interpretation;2003-guwen:5 original option不读 exceeds藏信不用;2003-sanwen:2 Claude turns author speculation into fact. Legacy2003 references have undecoded corruption, never guessed into answer keys.2003默写 original4 vs stored6 preserved.
+- Report `/Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/REVIEW-CANONICAL40-01a10b35.md`. Source/all data, authority, all raw responses/references/history, identity and scores unchanged. No provider, build, deploy, student write or notification; all finalAccepted=false.
+- Next existing response batch p29-canonical-reading-03, max20 after source/manual checks. Provider quota reset is not authorization. Second compaction requires standing serial fresh-task handoff.
+
+## 2026-10-05T09:30:45.507294+00:00 — Canonical first 20 existing responses reviewed (01a10b35)
+
+- Serial owner `codex-01a10b35-gpt-6-astra`; compactions=1. Read exact full source/materials, all 20 questions/options/emphasis, both full answers, notes/uncertainties, legacy references and current authority state in `p29-canonical-reading-01` (2002 nonliterary/classical/poetry/memorization/prose and first four language questions).
+- 15 choice pairs agree, 5 open responses reviewed. Agreement does not resolve the substantive disagreement over why idiom option C should be rejected in `2002-yuyanjichu:4`; lexical and inferred-motive uncertainties remain per item. Claude prose-season arrow summary omits the final spring despite its full prose including it.
+- Overall inventory is 427 read / 223 pending of 650; latest `claude-read-intersection-canonical20-01a10b35.json`. Full report `/Users/ylsuen/CF/reports/operations/answers-six-sites-20261002/REVIEW-CANONICAL20-01a10b35.md`.
+- All data/all.json, answer-authority.json, raw model responses, legacy references, IDs, null scores and review history unchanged. Printed scores are recorded separately, never written over historical nulls. No new provider, build, publish, student write or notification. All finalAccepted=false.
+- Source publication chain and missing original pages remain unaccepted. No new image-pixel review in this step. Next bounded batch: p29-canonical-reading-02, 20 existing responses; confirm exact next key from inventory. Second compaction requires serial fresh-task handoff, with no parallel owner.
+
 ## 2026-10-04 PDT — 2025标记与11份全文，本地候选
 
 按北京高考在线重排PDF逐页复核：撤9条无源强调，重建文言24个正文/题干实点及4下划线，红楼只保留实际“曾经离丧”下划线，散文迟钝改到末段受考位置、补4题干实点、恢复乙句完整范围。两公开重排本C选项左/右半球不同，保留当前已接受右半球；诗歌C/D与语用A/D解释歧义继续明确保留。题干除去文言Markdown星号之外不改，源正文、注释、旧score=null不改。

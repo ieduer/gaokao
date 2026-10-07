@@ -14,6 +14,8 @@ import { answerVersionSpecs, versionsForQuestion, reviewForQuestion } from './an
 const SITE_KEY = "gk";
 const AI_URL = "https://apis.bdfz.net/";
 const DISCUSSION_API = "/api/question-discussions";
+// Exact data/all.json bytes, including the reversible source-review overlays.
+let SOURCE_CONTENT_VERSION = null;
 
 const TYPES = [
   { key: "feilian",     label: "非连文本" },
@@ -79,7 +81,10 @@ const lastDetailedDrafts=new Map();
 function detailedContext() {
   const identity = currentQuestionIdentity();
   detailedSession ||= window.BdfzLearningRecords?.id() || `gk-session-${Date.now()}`;
-  return { sessionKey:detailedSession, resourceKey:`question:${identity?.sourceRecordId || 'unselected'}:${identity?.sourceQIndex || 0}`, resourceVersion:'git-tree-sha1:3487023148584d9f649a91dbf0dd6a691065b124', captureScope:window.BdfzLearningRecords?.scope || null, sourceContext:{recordId:identity?.sourceRecordId || null,qIndex:identity?.sourceQIndex || null} };
+  const reviewed = identity?.sourceRecord && (getReviewedQuestion(identity.sourceRecord, identity.sourceQIndex) || reviewForQuestion(identity.sourceRecord, identity.sourceQIndex));
+  if (reviewed && !SOURCE_CONTENT_VERSION) throw new Error('Source content has not finished loading');
+  const resourceVersion = reviewed ? SOURCE_CONTENT_VERSION : 'git-tree-sha1:3487023148584d9f649a91dbf0dd6a691065b124';
+  return { sessionKey:detailedSession, resourceKey:`question:${identity?.sourceRecordId || 'unselected'}:${identity?.sourceQIndex || 0}`, resourceVersion, captureScope:window.BdfzLearningRecords?.scope || null, sourceContext:{recordId:identity?.sourceRecordId || null,qIndex:identity?.sourceQIndex || null} };
 }
 function detailedCapture(action,content,options={},context=detailedContext()) {
   const service=window.BdfzLearningRecords;
@@ -240,10 +245,35 @@ function loadStoredTheme() {
 /* =========================================================
  * 数据：加载 / 索引 / 进度
  * ======================================================= */
+function applyReviewedSource(record) {
+  const review = record.source_review;
+  if (!review?.corrections?.length) return record;
+  const reject = () => { throw new Error(`${record.id}: invalid source correction`); };
+  if (review.schema !== 'gk-answer-review-v1') reject();
+  const next = { ...record, materials: record.materials?.map(material => ({ ...material })) };
+  const fields = new Set();
+  for (const { field, from, to } of review.corrections) {
+    if (!/^(topic|material[1-9]\d*)$/.test(field) || fields.has(field)
+      || typeof from !== 'string' || !from || typeof to !== 'string' || from.length !== to.length || from === to
+      || typeof next[field] !== 'string' || next[field].split(from).length !== 2) reject();
+    fields.add(field);
+    if (field !== 'topic') {
+      const materials = next.materials?.filter(material => material.key === field) || [];
+      if (materials.length !== 1 || materials[0].text !== next[field]) reject();
+      materials[0].text = materials[0].text.replace(from, to);
+    }
+    next[field] = next[field].replace(from, to);
+  }
+  return next;
+}
+
 async function loadData() {
   const res = await fetch("data/all.json", { cache: "no-cache" });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  const data = await res.json();
+  const raw = await res.text();
+  const data = JSON.parse(raw).map(applyReviewedSource);
+  const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(raw));
+  SOURCE_CONTENT_VERSION = 'sha256:' + Array.from(new Uint8Array(digest), b => b.toString(16).padStart(2, '0')).join('');
   state.data = data;
   state.byId = new Map(data.map((rec) => [rec.id, rec]));
   restoreLegacyLocalProgress();
@@ -686,10 +716,39 @@ function stripAnswerVersionPrefix(text, label) {
     .trim();
 }
 
+function getReviewedQuestion(rec, qIndex) {
+  const key = String(qIndex);
+  const question = rec.questions?.find(q => String(q.qIndex) === key);
+  const origin = rec.isExam && question
+    ? state.data.find(r => r.id === question.origRecId) : rec;
+  const originKey = rec.isExam ? String(question?.origQIndex) : key;
+  const review = origin?.source_review;
+  const answer = review?.schema === 'gk-answer-review-v1' && review.answers?.[originKey];
+  return answer?.text ? { review, answer } : null;
+}
+
+function questionPointLabel(rec, qIndex) {
+  const reviewed = getReviewedQuestion(rec, qIndex);
+  if (reviewed) {
+    const score = reviewed.answer.printedScore;
+    return Number.isInteger(score) && score > 0 && score <= reviewed.review.printedGroupScore
+      ? `${score} 分` : '配分待核';
+  }
+  const question = rec.questions?.find(q => String(q.qIndex) === String(qIndex));
+  const score = questionDisplayScore(rec, qIndex);
+  return score ? `练习参考满分${score}分` : '';
+}
+
 function getAnswerVersions(rec, qIndex) {
-  return versionsForQuestion(rec, qIndex).map(version => ({
+  const reviewed = getReviewedQuestion(rec, qIndex);
+  const versions = versionsForQuestion(rec, qIndex).map(version => ({
     ...version, text: stripAnswerVersionPrefix(version.text, version.label),
+    warning: reviewed?.answer.rejectedVersions?.includes(version.key)
+      ? '此历史版本与来源核对结果冲突，保留供对照；请以上方订正为准。' : '',
   }));
+  if (reviewed) versions.unshift({key:'source_review',label:'来源核对与订正',current:true,
+    text:reviewed.answer.text,sourceNote:[reviewed.review.sourceNote,reviewed.review.scoreNote].filter(Boolean).join(' '),sources:reviewed.review.sources});
+  return versions;
 }
 
 function renderAnswerVersions(aiBody, rec, qIndex) {
@@ -745,6 +804,22 @@ function renderAnswerVersions(aiBody, rec, qIndex) {
         source.annotation, ...(source.questions || []).map(q => q.text)].filter(Boolean).join('\n\n');
       context.append(label, body); section.appendChild(context);
     }
+    if (version.warning || version.sourceNote) {
+      const note = document.createElement('p');
+      note.className = 'ai-answer-note';
+      note.textContent = version.warning || version.sourceNote;
+      if (version.warning) section.insertBefore(note, text);
+      else section.appendChild(note);
+    }
+    for (const [index, source] of (version.sources || []).entries()) {
+      if (!/^https:\/\/(img\.eol\.cn|gaokao\.eol\.cn|cdn\.gaokzx\.com)\//.test(source.url)) continue;
+      const link = document.createElement('a');
+      link.href = source.url;
+      link.textContent = `核对来源 ${index + 1}（${source.page}）`;
+      link.rel = 'noopener noreferrer';
+      link.target = '_blank';
+      section.appendChild(link);
+    }
     aiBody.appendChild(section);
   }
   if (review?.sources?.length) {
@@ -797,7 +872,7 @@ function renderWorkpad() {
   activeBox.innerHTML = `
     <header class="active-question-header">
       <span class="active-question-number">第 ${qIndex} 题</span>
-      <span class="active-question-section">${q.sectionLabel ? `${escapeHtml(q.sectionLabel)}${displayScore ? ` · ${displayScore} 分` : ""}` : (displayScore ? `${displayScore} 分` : "完整题干")}</span>
+      <span class="active-question-section">${[q.sectionLabel, questionPointLabel(rec, qIndex)].filter(Boolean).map(escapeHtml).join(' · ') || '完整题干'}</span>
     </header>
     <div class="active-question-body">${renderQuestionBody(rec,q)}</div>
     ${q.sourceIdentity ? `<p class="annotation-note">${escapeHtml(questionSourceNotice(q))}</p>` : ""}
@@ -885,7 +960,7 @@ function buildDiscussionContext(sourceRec, sourceQIndex, questionText) {
     questionText: questionText || "",
     answerVersions: versions.map((v) => ({
       label: v.label,
-      text: v.text,
+      text: [v.warning, v.text, v.sourceNote].filter(Boolean).join('\n'),
     })),
   };
 }
@@ -1340,6 +1415,8 @@ function setAIControlsBusy(busy, status = "") {
 
 function buildContextPrompt(rec, qIndex, userTurn, mode = "chat") {
   const lines = [];
+  const reviewed = getReviewedQuestion(rec, qIndex);
+  const pointLabel = questionPointLabel(rec, qIndex);
   lines.push("你是一位精通北京高考语文的资深教师，正在帮一位学生理解某一道真题。请用规范现代汉语（简体中文）作答，不要使用 **粗体** 或 *斜体* 这类格式标记，可以用普通的「标题：内容」分段。");
   lines.push("");
 
@@ -1369,9 +1446,9 @@ function buildContextPrompt(rec, qIndex, userTurn, mode = "chat") {
 
   const activeQ = (rec.questions || []).find((q) => Number(q.qIndex) === Number(qIndex));
   const displayScore=questionDisplayScore(rec,qIndex),review=reviewForQuestion(rec,qIndex),guide=review?.practiceScoring;
-  const canEstimate=review?.status!=='disputed'&&displayScore!==null&&guide?.mode!=='qualitative_only';
+  const canEstimate=review?.status!=='disputed'&&guide?.mode!=='qualitative_only'&&(reviewed ? pointLabel!=='配分待核' : displayScore!==null);
   if (activeQ) {
-    lines.push(`【当前小题】第 ${qIndex} 题${displayScore ? `（练习参考满分${displayScore}分）` : ""}：`);
+    lines.push(`【当前小题】第 ${qIndex} 题${pointLabel ? `（${pointLabel}）` : ""}：`);
     lines.push(activeQ.text);
     if(guide)lines.push(`【练习计分说明】${questionScoringNotice(rec,qIndex)}`);
   } else if (rec.topic) {
@@ -1396,9 +1473,19 @@ function buildContextPrompt(rec, qIndex, userTurn, mode = "chat") {
     lines.push(userAnswer);
   }
 
-  // AI 已经给出的答案
+  // The reviewed reference governs new feedback; retained models stay in the UI/history.
   const aiAns = rec.ai_answers?.[String(qIndex)];
-  if (aiAns) {
+  if (reviewed) {
+    lines.push('【经来源核对的学习参考】');
+    lines.push(reviewed.answer.text);
+    lines.push([reviewed.review.sourceNote, reviewed.review.scoreNote].filter(Boolean).join('\n'));
+    lines.push('旧模型答案和此前对话可能含已订正的错误；发生冲突时依据本次来源核对，不沿用旧说。这里的学习参考不冒充正式评分细则。');
+    if (pointLabel === '配分待核' || !canEstimate) {
+      lines.push('本小问配分或分项评分依据尚未核定。题干及历史记录中保留的分数不能作为本次评分上限；只给定性评语，不给数字得分、满分、百分比或等级，不推算分项配分。');
+    } else {
+      lines.push(`题面核对确认本小问配分为${pointLabel}；如需估分，须标明学习估分及依据，不称正式成绩。`);
+    }
+  } else if (aiAns) {
     lines.push(`【AI 之前给出的参考答案】`);
     lines.push(aiAns);
   }
@@ -1415,7 +1502,10 @@ function buildContextPrompt(rec, qIndex, userTurn, mode = "chat") {
   lines.push("");
   if (mode === "review") {
     lines.push("【任务】请对学生当前的答案做批改，给出：");
-    lines.push(canEstimate ? "1) 一行总评与练习估分；有分项时逐项反馈后相加，不把合并题当成一道选择题，不声称官方评分；" : "1) 只给定性总评，不猜测满分、分项分配或得分；本题分值或评分依据尚不充分；");
+    lines.push(reviewed && pointLabel === '配分待核'
+      ? '1) 一行定性总评，说明配分待核，本次不估分；'
+      : canEstimate ? '1) 一行总评与练习估分；有分项时逐项反馈后相加，不把合并题当成一道选择题，不声称官方评分；'
+        : '1) 只给定性总评，不猜测满分、分项分配或得分；本题分值或评分依据尚不充分；');
     lines.push("2) 答得好的地方（一两条）；");
     lines.push("3) 失分点（具体到要点）；");
     lines.push("4) 标准答案要点 / 答题区间，结合原文哪一句；");
@@ -1811,7 +1901,8 @@ function initPassageDelegate() {
         for (const m of sec.materials) parts.push(`【${m.label}】\n${m.text}`);
         if (sec.annotation) parts.push(sec.annotation);
         for (const q of rec.questions.filter((x) => x.qIndex >= sec.qStart && x.qIndex <= sec.qEnd)) {
-          parts.push(`\n第 ${q.qIndex} 题${q.score ? `（${q.score} 分）` : ""}：${q.text}`);
+          const pointLabel = questionPointLabel(rec, q.qIndex);
+          parts.push(`\n第 ${q.qIndex} 题${pointLabel ? `（${pointLabel}）` : ""}：${q.text}`);
         }
       }
       copyText(parts.join("\n"), "整套题目已复制");

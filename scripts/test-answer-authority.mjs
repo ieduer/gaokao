@@ -216,6 +216,25 @@ test('changed source retains exact old inputs and model results outside current 
   a.questions[0].history[0].source.materials[0].text='偷换旧输入';
   assert.throws(()=>projectAuthority(changed,a),/Question changed/);
 });
+test('source snapshots retain question text needed to validate historical emphasis',()=>{
+  const source=structuredClone(records),a=fixture(),review=a.questions[0],q=source[0].questions[0];
+  source[0].question1=q.text;
+  const start=q.text.indexOf('A甲');
+  source[0].annotations=[{qIndex:1,material:'question1',type:'dot',start,end:start+2,anchor:'A甲'}];
+  review.inputPresentationSha256=questionPresentationDigest(source[0],q);
+  review.modelAnswers.gpt_6_astra.inputPresentationSha256=review.inputPresentationSha256;
+  review.history=[snapshotReview(source[0],q,review)];
+  assert.equal(review.history[0].source.question1,q.text);
+  source[0].annotation='New qualified source note';
+  review.inputContextSha256=questionContextDigest(source[0],q);
+  review.inputPresentationSha256=questionPresentationDigest(source[0],q);
+  Object.assign(review.modelAnswers.gpt_6_astra,{inputContextSha256:review.inputContextSha256,inputPresentationSha256:review.inputPresentationSha256});
+  validateAuthority(source,a);
+  const projected=projectAuthority(source,a);
+  assert.equal(projected[0].answer_review_history[1][0].source.question1,q.text);
+  review.history[0].source.question1=q.text.replace('A甲','A乙');
+  assert.throws(()=>validateAuthority(source,a),/Invalid question emphasis/);
+});
 test('release build refuses incomplete reviews before writing output',()=>{
   const root=new URL('../',import.meta.url).pathname;
   const candidate=JSON.parse(readFileSync(new URL('../data/answer-authority.json',import.meta.url)));

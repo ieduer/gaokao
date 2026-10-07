@@ -70,9 +70,13 @@ export function snapshotReview(record, question, review) {
     throw Error(`Cannot archive mismatched review: ${review.id}`);
   const archived = structuredClone(review);
   delete archived.history;
-  return { source: structuredClone({ id: record.id, materials: record.materials,
+  const emphasis = questionEmphasis(record, question);
+  const materialKeys = new Set((record.materials || []).map(material => material.key));
+  const markedText = Object.fromEntries(emphasis.filter(mark => !materialKeys.has(mark.material))
+    .map(mark => [mark.material, record[mark.material]]));
+  return { source: structuredClone({ ...markedText, id: record.id, materials: record.materials,
     topic: record.topic, annotation: record.annotation ?? null,
-    annotations: questionEmphasis(record, question), questions: [question] }), review: archived };
+    annotations: emphasis, questions: [question] }), review: archived };
 }
 
 export function questionIndex(records) {
@@ -88,6 +92,61 @@ export function questionIndex(records) {
 export function validateAuthority(records, authority, { requireComplete = false } = {}) {
   validateSourceAliases(records);
   return validateReviews(records, authority, { requireComplete });
+}
+
+export const releaseQualificationDigest = value => createHash('sha256').update(JSON.stringify(value)).digest('hex');
+
+// A qualified learning edition does not certify an institutional original or
+// an official rubric. Keep the original issue open and bind its separately
+// reviewed publication disposition to the exact visible source and feedback.
+export function qualificationBindings(records, authority, recordIds) {
+  const selected = new Set(recordIds), reviews = new Map(authority.questions.map(q => [q.id, q]));
+  return [...questionIndex(records)].filter(([,s]) => selected.has(s.record.id)).map(([id,s]) => {
+    const q = reviews.get(id);
+    return [id, questionPresentationDigest(s.record,s.question), s.question.score,
+      q?.status, q?.kind, q?.correctOptions, q?.currentVersion,
+      q?.modelAnswers?.[q?.currentVersion]?.text, q?.publicationQualification,
+      q?.practiceScoring ?? null, q?.scoringPolicy ?? null];
+  }).sort((a,b) => a[0].localeCompare(b[0], 'en'));
+}
+
+export function qualifiedReleaseBlocker(records, authority, blocker) {
+  const policy = authority.releaseQualification;
+  const disposition = policy?.dispositions?.find(row => row.blockerId === blocker.id);
+  if (!disposition) return false;
+  const fail = () => { throw Error(`Invalid qualified source disposition: ${blocker.id}`); };
+  if (policy.schemaVersion !== 1 || policy.contract !== 'qualified-learning-reference-v1'
+    || policy.scope !== 'beijing-only-20261006' || !policy.authorization?.trim()
+    || policy.originalPublicationVerified !== false || policy.officialRubricVerified !== false
+    || !Number.isFinite(Date.parse(policy.reviewedAt)) || !policy.reviewedBy?.trim()
+    || disposition.status !== 'qualified_for_practice' || !disposition.remainingUnverified?.length
+    || disposition.remainingUnverified.some(x => typeof x !== 'string' || !x.trim())
+    || !disposition.resolvedForPractice?.length || !disposition.evidence?.length
+    || disposition.evidence.some(x => !x.path?.trim() || !/^[a-f0-9]{64}$/.test(x.sha256 || ''))
+    || disposition.originalBlockerSha256 !== releaseQualificationDigest(blocker)) fail();
+  if (new Set(policy.dispositions.map(row => row.blockerId)).size !== policy.dispositions.length) fail();
+  const recordIds = disposition.recordIds;
+  if (!Array.isArray(recordIds) || !recordIds.length || new Set(recordIds).size !== recordIds.length
+    || recordIds.some(id => !records.some(r => r.id === id))) fail();
+  const requiredRecords = blocker.recordIds?.length
+    ? blocker.recordIds.filter(id => records.some(r => r.id === id)) : records.map(r => r.id);
+  if (requiredRecords.some(id => !recordIds.includes(id))) fail();
+  const rows = qualificationBindings(records, authority, recordIds);
+  if (!rows.length || rows.length !== disposition.questionCount
+    || releaseQualificationDigest(rows) !== disposition.currentBindingsSha256) fail();
+  const selected = new Set(recordIds);
+  for (const [id,s] of questionIndex(records)) {
+    if (!selected.has(s.record.id)) continue;
+    const q = authority.questions.find(q => q.id === id), note = q?.publicationQualification;
+    if (q?.status !== 'reviewed' || note?.contract !== policy.contract
+      || note.originalPublicationVerified !== false || note.officialRubricVerified !== false
+      || !note.notice?.trim() || !q.explanation.includes(note.notice)
+      || !q.sources.some(source => source.type === 'publication_qualification' && source.label === note.notice)) fail();
+    if (q.kind === 'multiple_choice' && q.scoringPolicy?.kind !== 'exact_set'
+      && Number.isFinite(s.question.score) && s.question.score > 0
+      && q.practiceScoring?.mode !== 'qualitative_only') fail();
+  }
+  return true;
 }
 
 function validateReviews(records, authority, { requireComplete = false } = {}) {
@@ -155,7 +214,8 @@ function validateReviews(records, authority, { requireComplete = false } = {}) {
   }
   if (requireComplete) {
     if (seen.size !== index.size) throw Error(`Incomplete review: ${seen.size}/${index.size}`);
-    if(authority.releaseBlockers?.some(x=>x.status!=='resolved'))throw Error('Unresolved source or evidence blockers');
+    if(authority.releaseBlockers?.some(x=>x.status!=='resolved' && !qualifiedReleaseBlocker(records,authority,x)))
+      throw Error('Unresolved source or evidence blockers');
     for (const review of authority.questions) {
       const models = Object.values(review.modelAnswers || {});
       if (review.status === 'draft' || !models.some(x => x.modelId === 'gpt-6-astra')
@@ -210,6 +270,7 @@ export function projectAuthority(records, authority) {
       assessments: Object.fromEntries(Object.entries(review.modelAnswers || {}).filter(([,m])=>m.assessment).map(([v,m])=>[v,m.assessment])),
       ...(review.scoringPolicy ? {scoringPolicy:review.scoringPolicy} : {}) };
     if(review.practiceScoring)record.answer_reviews[key].practiceScoring=structuredClone(review.practiceScoring);
+    if(review.publicationQualification)record.answer_reviews[key].publicationQualification=structuredClone(review.publicationQualification);
     record.ai_answer_versions ||= {};
     if (review.history?.length) {
       record.answer_review_history ||= {};
