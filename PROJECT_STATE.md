@@ -1,3 +1,17 @@
+> 2026-10-07 UTC：候选已整合接受源 `7ce7271e8ed2437148b76824712b7e0a99638e6a` 的Git历史；该现网基线已由父任务逐字节读回。本任务北京640题学习参考、27未认证来源限制与全部旧模型/成绩保全。正常构建仍因本机运行环境保护尚未执行，未推送或发布本候选。
+
+<details>
+<summary>从已发布分支保留的历史候选说明（其发布后状态以登记接受证据为准）</summary>
+
+## Local candidate — 2026-10-05 PDT
+
+Analects source-review overlay: seven groups/twelve subparts across2015/2018/2019/2020/2021/2023, with historical fields and keys preserved. Exact source corrections reach display and discussion; score uncertainties remain explicit. Ten focused tests and full data validation pass. The exact e0dcee5 full build completed on 2026-10-06 UTC under Node 24.18.0: all 28 recorder/progress/review tests, data/Beijing checks and explicit Pages artifact generation passed. This replaces the prior runtime-hygiene block. Anonymous browser acceptance covers all seven groups/twelve subparts, 2019 whole-year corrections, adjacent micro-writing exclusions and ordinary reload. Authenticated acceptance, downstream adoption, affected learners and release remain pending. No production or scoring change. Scope, evidence and rollback: [docs/ANALECTS_ANSWER_REVIEW.md](docs/ANALECTS_ANSWER_REVIEW.md).
+
+Serial8 feedback correction (2026-10-06 UTC, local candidate): new chat, grading and regeneration now receive the per-question reviewed reference rather than the retained historical model answer. Unverified subpart points display as 配分待核 and request qualitative feedback only; verified printed points govern future learning estimates. Original question/score fields, record identities and stored answers remain unchanged. Five additional tests cover exact new-record content provenance, all twelve subparts in category/year modes, unverified-point refusal, corrupt/absent point values and untouched adjacent options. New records for the twelve reviewed subparts bind the exact reviewed data SHA256; unchanged/custom resources retain their previous version semantics. No provider call or historical regrading has occurred.
+
+
+</details>
+
 > 2026-10-07T00:15:40.775470+00:00：第一次压缩检查点：北京640题当前答案核查完成，来源资格保留27项未认证。正常构建被工具程序数量保护在执行前拦截，尚未构建或上线；已完成限定只读诊断，未清理无归属程序。后续先完成可独立进行的消费者与接受源核对。详[检查点](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/CHECKPOINT-FIRST-COMPACTION-01a1139d.md)。
 
 > 2026-10-07T00:10:25.895340+00:00：北京640单元采用逐题明示来源资格的学习参考契约；27原blocker保持open，另有精确绑定限定发布disposition，原卷/官方细则未认证。新问题、删警示、源/答案/分值变化或缺实际模型仍拒绝；49tests及七组《论语》接受回归通过。原源/1843模型/历史保全。尚未正常build或发布。[契约、全部未证实项与回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/SOURCE-QUALIFICATION-01a1139d.md)。

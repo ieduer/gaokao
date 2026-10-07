@@ -1,3 +1,17 @@
+> 2026-10-07 UTC：候选已整合接受源 `7ce7271e8ed2437148b76824712b7e0a99638e6a` 的Git历史；该现网基线已由父任务逐字节读回。本任务北京640题学习参考、27未认证来源限制与全部旧模型/成绩保全。正常构建仍因本机运行环境保护尚未执行，未推送或发布本候选。
+
+<details>
+<summary>从已发布分支保留的历史候选说明（其发布后状态以登记接受证据为准）</summary>
+
+## Local Analects answer-review candidate — 2026-10-05 PDT
+
+Source-reviewed overlays for seven Analects groups/twelve subparts preserve every historical answer and learner key. Exact topic/material corrections apply only in the loaded view; historical score fields stay intact. Source hashes, score uncertainties, ten focused tests, full-build and anonymous browser acceptance, pending authenticated/release gates and rollback are in [ANALECTS_ANSWER_REVIEW.md](ANALECTS_ANSWER_REVIEW.md). This candidate is not live.
+
+Serial8 feedback correction (2026-10-06 UTC, local candidate): new chat, grading and regeneration now receive the per-question reviewed reference rather than the retained historical model answer. Unverified subpart points display as 配分待核 and request qualitative feedback only; verified printed points govern future learning estimates. Original question/score fields, record identities and stored answers remain unchanged. Five additional tests cover exact new-record content provenance, all twelve subparts in category/year modes, unverified-point refusal, corrupt/absent point values and untouched adjacent options. New records for the twelve reviewed subparts bind the exact reviewed data SHA256; unchanged/custom resources retain their previous version semantics. No provider call or historical regrading has occurred.
+
+
+</details>
+
 > 2026-10-07T00:10:25.895340+00:00：北京640单元采用逐题明示来源资格的学习参考契约；27原blocker保持open，另有精确绑定限定发布disposition，原卷/官方细则未认证。新问题、删警示、源/答案/分值变化或缺实际模型仍拒绝；49tests及七组《论语》接受回归通过。原源/1843模型/历史保全。尚未正常build或发布。[契约、全部未证实项与回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/SOURCE-QUALIFICATION-01a1139d.md)。
 
 > 2026-10-07T00:03:13.637511+00:00：2008语言5、2011语言2共8处题干下划线按已存题页补齐，两题实际新Astra/Claude全文核查B/A。PLAN75原始成功响应因本地选项对象绑定TypeError经只读恢复核验，无模型重试。北京640 reviewed；1843模型/525标记；47tests、数据0错误与GK双视图/YYJC渲染通过。来源分级、正式build和发布仍待。[证据与回退](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/REVIEW-PLAN75-01a1139d.md)。
