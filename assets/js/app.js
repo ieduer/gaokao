@@ -1,3 +1,4 @@
+import { mountQuestionParts, questionParts } from './question-parts.js';
 /* AI 高考 — 新前端
  * 单页：目录 / 原文 / 题目 / AI 答案 / 用户答案 / 对话
  * - 简体中文界面
@@ -902,7 +903,9 @@ function renderWorkpad() {
 
   // 用户答案：从存储里恢复
   const storedAnswer = loadLocalAnswer(identity.sourceRecordId, identity.sourceQIndex);
+  $("#user-answer")._unmountQuestionParts?.();
   $("#user-answer").value = storedAnswer;
+  mountQuestionParts($("#user-answer"), q);
   $("#answer-status").textContent = storedAnswer ? "已自动保存" : "";
 
   // 对话：从存储里恢复
@@ -1204,6 +1207,7 @@ function buildYearExam(year) {
       flatQuestions.push({
         qIndex: qCounter,
         text: q.text,
+        ...(q.questionParts ? {questionParts: q.questionParts} : {}),
         score: questionDisplayScore(rec,q.qIndex),
         origRecId: rec.id,
         origQIndex: q.qIndex,
@@ -1501,6 +1505,8 @@ function buildContextPrompt(rec, qIndex, userTurn, mode = "chat") {
 
   lines.push("");
   if (mode === "review") {
+    const parts=questionParts((rec.questions||[]).find(q=>Number(q.qIndex)===Number(qIndex)));
+    if(parts.length)lines.push(`逐项批阅：${parts.map(p=>p.label).join('、')}。逐项说明答案与依据，未作答须明确说明；限选题按原题要求处理，不扣未选题的分。不得只评第一项或猜测小题分值。`);
     lines.push("【任务】请对学生当前的答案做批改，给出：");
     lines.push(reviewed && pointLabel === '配分待核'
       ? '1) 一行定性总评，说明配分待核，本次不估分；'

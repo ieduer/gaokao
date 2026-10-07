@@ -1,4 +1,5 @@
 import { createHash } from 'node:crypto';
+import { questionParts } from '../../assets/js/question-parts.js';
 
 export function questionDigest(record, question) {
   // The passage and complete stem bind the decision, including option order.
@@ -80,6 +81,11 @@ export function snapshotReview(record, question, review) {
 }
 
 export function questionIndex(records) {
+  for (const record of records) for (const q of record.questions || []) if(q.questionParts) {
+    questionParts(q);
+    if(createHash('sha256').update(q.text).digest('hex')!==q.questionParts.sourceTextSha256) throw Error('Question parts source drift');
+  }
+
   const index = new Map();
   for (const record of records) for (const question of record.questions || []) {
     const key = `${record.id}:${question.qIndex}`;

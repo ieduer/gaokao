@@ -1200,3 +1200,6 @@ body.catalog-open .catalog-backdrop {
 .ai-version summary { cursor:pointer; padding:.7rem 0; line-height:1.6; }
 .ai-version summary:focus-visible { outline:2px solid currentColor; outline-offset:3px; }
 .ai-version[open] summary { margin-bottom:.5rem; }
+
+/* Separate answer fields keep the existing parent submission and history. */
+.question-part{min-width:0;margin:16px 0;padding:12px;border:1px solid #bbb;border-radius:8px}.question-part legend{font-weight:700;padding:0 6px}.part-stem{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.75}.part-answer{display:block;width:100%;box-sizing:border-box;margin-top:12px;font:inherit;padding:10px;resize:vertical}.question-parts{min-width:0}.part-feedback{border-top:1px solid #ccc;margin-top:12px}

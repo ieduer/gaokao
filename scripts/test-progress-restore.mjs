@@ -1,3 +1,4 @@
+import {mountQuestionParts,questionParts} from '../assets/js/question-parts.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
@@ -6,13 +7,14 @@ import {answerVersionSpecs, versionsForQuestion, reviewForQuestion} from '../ass
 import {projectAuthority} from './lib/answer-authority.mjs';
 
 const source = readFileSync(new URL('../assets/js/app.js', import.meta.url), 'utf8')
+  .replace(/^import \{ mountQuestionParts, questionParts \} from '\.\/question-parts\.js';$/m, '')
   .replace(/^import \{ answerVersionSpecs, versionsForQuestion, reviewForQuestion \} from '\.\/answer-versions\.js';$/m, '');
 const corpus = JSON.parse(readFileSync(new URL('../data/all.json', import.meta.url)));
 function fixture({ items = [], authenticated = true, saved = {}, legacy = {}, failure = false, data = corpus } = {}) {
   const storage = new Map([['gk_progress', JSON.stringify(saved)], ['gaokao_read_progress', JSON.stringify(legacy)]]);
   const calls = [];
   const context = vm.createContext({
-    console, setTimeout, clearTimeout, answerVersionSpecs, versionsForQuestion, reviewForQuestion,
+    console, setTimeout, clearTimeout, answerVersionSpecs, versionsForQuestion, reviewForQuestion, mountQuestionParts:()=>null,questionParts,
     window: { BdfzIdentity: { api: async path => { calls.push(path); if (failure) throw Error('offline'); return { items }; } } },
     document: { readyState: 'loading', addEventListener() {}, querySelectorAll: () => [], querySelector: () => null },
     localStorage: { getItem: key => storage.get(key) ?? null, setItem: (key, value) => storage.set(key, value) },
@@ -208,3 +210,8 @@ test('whole-paper view preserves dynamic model identity and per-question current
   const untouched=exam.questions.find(q=>q.origRecId==='2026-feilian');
   assert.equal(versionsForQuestion(exam,untouched.qIndex)[0].key,'claude_opus_5');
 });
+
+ test('annual collection carries all six language response fields under the original parent',()=>{
+  const f=fixture();const q=f.run("buildYearExam(2014).questions.find(q=>q.origRecId==='2014-yuyanjichu'&&q.origQIndex===4)");
+  assert.equal(q.origRecId,'2014-yuyanjichu');assert.equal(q.origQIndex,4);assert.equal(questionParts(q).length,6);
+ });

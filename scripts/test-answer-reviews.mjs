@@ -1,3 +1,4 @@
+import {mountQuestionParts,questionParts} from '../assets/js/question-parts.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
@@ -8,13 +9,14 @@ import {answerVersionSpecs, versionsForQuestion, reviewForQuestion} from '../ass
 
 const records = JSON.parse(readFileSync(new URL('../data/all.json', import.meta.url)));
 const app = readFileSync(new URL('../assets/js/app.js', import.meta.url), 'utf8')
+  .replace(/^import \{ mountQuestionParts, questionParts \} from '\.\/question-parts\.js';$/m, '')
   .replace(/^import \{ answerVersionSpecs, versionsForQuestion, reviewForQuestion \} from '\.\/answer-versions\.js';$/m, '');
 const sourceBytes = readFileSync(new URL('../data/all.json', import.meta.url), 'utf8');
 const sourceVersion = 'sha256:' + createHash('sha256').update(sourceBytes).digest('hex');
 const getRecord = id => structuredClone(records.find(r => r.id === id));
 function fixture() {
   const context = vm.createContext({ console, setTimeout, clearTimeout,
-    answerVersionSpecs, versionsForQuestion, reviewForQuestion, crypto: webcrypto, TextEncoder,
+    answerVersionSpecs, versionsForQuestion, reviewForQuestion, mountQuestionParts,questionParts, crypto: webcrypto, TextEncoder,
     window: {}, document: { readyState: 'loading', addEventListener() {},
       querySelectorAll: () => [], querySelector: () => null },
     localStorage: { getItem: () => null, setItem() { throw Error('unexpected progress write'); } },
