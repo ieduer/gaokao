@@ -1378,6 +1378,8 @@ async function callAI(prompt, taskType = "chat", { requiresImage = false } = {})
         "X-Project-Name": "gk.bdfz.net",
         "X-Task-Type": taskType,
         "X-Thinking-Level": "low",
+        // The captured request operation id travels with the call so the gateway and ledger correlate it.
+        "X-Request-ID": String(request.operation.operationId),
       },
       body: JSON.stringify({ prompt }),
     });
@@ -1401,7 +1403,7 @@ async function callAI(prompt, taskType = "chat", { requiresImage = false } = {})
     return json.answer;
   } catch (err) {
     detailedCapture('ai.failure',{errorClass:err?.name || 'Error'},{actor:'system',status:'failed',parentOperationId:request.operation.operationId,contentOrigin:'transport_result'},captureContext);
-    if (err?.name === "AbortError") throw new Error("请求超过 45 秒，请重试");
+    if (err?.name === "AbortError") throw new Error("请求超过 45 秒，结果未确认（没有自动重试；再试会重新调用 AI）");
     throw err;
   } finally {
     window.clearTimeout(timeout);
