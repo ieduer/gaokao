@@ -79,13 +79,13 @@ async function refreshIdentityAuthentication() {
 // Full learning capture is independent of the legacy mutable display archive.
 let detailedSession = '';
 const lastDetailedDrafts=new Map();
-function detailedContext() {
+function detailedContext(captureScope=window.BdfzLearningRecords?.scope || null) {
   const identity = currentQuestionIdentity();
   detailedSession ||= window.BdfzLearningRecords?.id() || `gk-session-${Date.now()}`;
   const reviewed = identity?.sourceRecord && (getReviewedQuestion(identity.sourceRecord, identity.sourceQIndex) || reviewForQuestion(identity.sourceRecord, identity.sourceQIndex));
   if (reviewed && !SOURCE_CONTENT_VERSION) throw new Error('Source content has not finished loading');
   const resourceVersion = reviewed ? SOURCE_CONTENT_VERSION : 'git-tree-sha1:3487023148584d9f649a91dbf0dd6a691065b124';
-  return { sessionKey:detailedSession, resourceKey:`question:${identity?.sourceRecordId || 'unselected'}:${identity?.sourceQIndex || 0}`, resourceVersion, captureScope:window.BdfzLearningRecords?.scope || null, sourceContext:{recordId:identity?.sourceRecordId || null,qIndex:identity?.sourceQIndex || null} };
+  return { sessionKey:detailedSession, resourceKey:`question:${identity?.sourceRecordId || 'unselected'}:${identity?.sourceQIndex || 0}`, resourceVersion, captureScope, sourceContext:{recordId:identity?.sourceRecordId || null,qIndex:identity?.sourceQIndex || null} };
 }
 function detailedCapture(action,content,options={},context=detailedContext()) {
   const service=window.BdfzLearningRecords;
@@ -93,18 +93,46 @@ function detailedCapture(action,content,options={},context=detailedContext()) {
   const operation=service.build(action,content,context,options),saved=service.record(operation);
   saved.catch(()=>{});return {operation,saved};
 }
+let detailedDraftChain=Promise.resolve();
 function detailedDraft(text,kind,inputType='') {
- const context=detailedContext(),key=[context.captureScope,context.sessionKey,context.resourceKey,kind].join(':');
- const capture=detailedCapture('draft.edit',{text,inputType},{contentOrigin:kind,revisesOperationId:lastDetailedDrafts.get(key)||''},context);
- if(capture)lastDetailedDrafts.set(key,capture.operation.operationId);
+ const run=context=>{
+  const key=[context.captureScope,context.sessionKey,context.resourceKey,kind].join(':');
+  const capture=detailedCapture('draft.edit',{text,inputType},{contentOrigin:kind,revisesOperationId:lastDetailedDrafts.get(key)||''},context);
+  if(capture)lastDetailedDrafts.set(key,capture.operation.operationId);
+ };
+ const initial=detailedContext();
+ if(initial.captureScope){run(initial);return;}
+ // Serialized so revision links keep their order while an early draft waits for the recorder scope.
+ detailedDraftChain=detailedDraftChain.then(()=>readyCaptureScope(1500)).then(scope=>run(detailedContext(scope)),()=>run(detailedContext(null)));
 }
 function detailedMessage(role,content,captureScope=window.BdfzLearningRecords?.scope||null) {
   return {captureScope,id:window.BdfzLearningRecords?.id() || `gk-message-${Date.now()}-${Math.random()}`,createdAt:new Date().toISOString(),role,content};
 }
+// The recorder's scope exists only after prepare() has resolved. site-auth.js loads asynchronously, so the
+// prepare() started at page load can fail with LEARNING_RECORDER_NOT_READY and was never retried; the first
+// ask then captured a null scope and stayed unattributed for good (the recorder never adopts ownerless rows).
+// A focus event also re-identifies the recorder. Wait for it, bounded; a signed-out reader stays unattributed.
+async function readyCaptureScope(timeoutMs=4000) {
+ const service=window.BdfzLearningRecords;
+ if(!service)return null;
+ if(service.scope)return service.scope;
+ const deadline=Date.now()+timeoutMs;
+ while(Date.now()<deadline){
+  try{
+   const remaining=Math.max(0,deadline-Date.now());
+   const recorder=await Promise.race([service.prepare(),new Promise(resolve=>setTimeout(()=>resolve(null),remaining))]);
+   return recorder?.scope||service.scope||null;
+  }catch(error){
+   if(error?.code==='LEARNING_LOGIN_REQUIRED')return null;
+   await new Promise(resolve=>setTimeout(resolve,250));
+  }
+ }
+ return service.scope||null;
+}
 function initDetailedCapture() {
  const service=window.BdfzLearningRecords;if(!service)return;
  service.onState(s=>{const node=document.getElementById('learning-record-status');if(node)node.textContent=s.status==='unattributed'?'记录已保存在本机；身份未确认时的内容不会自动归属':s.status==='saved'?'学习记录已同步':['needs_attention','storage_error'].includes(s.status)?'学习记录待处理，请保留此页并重试':'学习记录已在本机保存';});
- void service.prepare().catch(()=>{});
+ void readyCaptureScope(15000).catch(()=>{});
  document.getElementById('learning-record-retry')?.addEventListener('click',()=>service.retry().catch(()=>{}));
 }
 function debounce(fn, ms = 600) {
@@ -1528,7 +1556,6 @@ function buildContextPrompt(rec, qIndex, userTurn, mode = "chat") {
 }
 
 async function dispatchChat(userTurn) {
-  const captureScope=window.BdfzLearningRecords?.scope||null;
   if (!state.currentRecord) {
     flashStatus("请先在左侧选一道题");
     return;
@@ -1538,11 +1565,12 @@ async function dispatchChat(userTurn) {
   setAIControlsBusy(true, "AI 正在回应…");
   const rec = state.currentRecord;
   const qIndex = state.currentQIndex;
+  const captureScope=await readyCaptureScope();
   const identity = questionIdentity(rec, qIndex);
   const conversationKey = `${identity.sourceRecordId}#${identity.sourceQIndex}`;
   const messages = state.conversations[conversationKey] || [];
-  const turn=detailedMessage('user',userTurn);messages.push(turn);
-  const submissionCapture=detailedCapture('question.submit',{text:userTurn},{operationId:turn.id,occurredAt:turn.createdAt,status:'succeeded'});
+  const turn=detailedMessage('user',userTurn,captureScope);messages.push(turn);
+  const submissionCapture=detailedCapture('question.submit',{text:userTurn},{operationId:turn.id,occurredAt:turn.createdAt,status:'succeeded'},detailedContext(captureScope));
   state.conversations[conversationKey] = messages;
   renderChatMessages(messages);
   saveLocalChat(identity.sourceRecordId, identity.sourceQIndex, messages);
@@ -1578,7 +1606,6 @@ async function dispatchChat(userTurn) {
 }
 
 async function gradeUserAnswer() {
-  const captureScope=window.BdfzLearningRecords?.scope||null;
   if (!state.currentRecord) return;
   if (state.isThinking) return;
   const originalAnswer = $("#user-answer").value;
@@ -1588,6 +1615,12 @@ async function gradeUserAnswer() {
     $("#user-answer").focus();
     return;
   }
+  // Hold the controls while the recorder scope resolves, then continue exactly as before.
+  state.isThinking = true;
+  setAIControlsBusy(true, "AI 正在批改…");
+  const captureScope=await readyCaptureScope();
+  state.isThinking = false;
+  setAIControlsBusy(false, "");
   const rec = state.currentRecord;
   const qIndex = state.currentQIndex;
   const identity = questionIdentity(rec, qIndex);
@@ -1596,7 +1629,7 @@ async function gradeUserAnswer() {
   const messages = state.conversations[conversationKey] || [];
   const submission=detailedMessage('user',`(请批改我的答案)\n${originalAnswer}`,captureScope);
   messages.push(submission);
-  const submissionCapture=detailedCapture('answer.submit',{text:originalAnswer},{operationId:submission.id,occurredAt:submission.createdAt,status:'succeeded'});
+  const submissionCapture=detailedCapture('answer.submit',{text:originalAnswer},{operationId:submission.id,occurredAt:submission.createdAt,status:'succeeded'},detailedContext(captureScope));
   state.conversations[conversationKey] = messages;
   renderChatMessages(messages);
   saveLocalChat(identity.sourceRecordId, identity.sourceQIndex, messages);
