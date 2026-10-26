@@ -1,4 +1,10 @@
-## Exposure capture ownership — 2026-10-26 (task `gk-exposure-scope-20261026`)
+## Exposure capture ownership — released 2026-10-26 (task `gk-exposure-scope-20261026`)
+
+- **Accepted production**: Pages `847937e4-70d6-44e5-8aad-65c512b9d019`, source `4ed6a22`, effective 2026-10-26T13:15:32Z.
+- **Rollback**: promote Pages `af60ed84-42a5-4f11-acdb-f81007e6d8b4` (source `082cc79`). Exposures already delivered stay.
+- **Public record**: https://status.bdfz.net/?update=20261026-gk-exposure-attribution&revision=1
+- **Signed-in acceptance** (owner account): a focus event fired, then a click in the same tick with the recorder scope `null`; the exposure was still owned and delivered at the click time. Each restore wrote one exposure; the old app wrote two for one restore. Delayed replay from a pre-release tab, offline → reload, concurrent double-submit and the injected bfcache restore passed. The UC gk journal went 63 → 72 rows with 0 duplicates; no new ownerless rows; progress unchanged.
+- **Evidence and receipt**: `/Users/ylsuen/CF/_meta/reports/operations/gk-exposure-scope-20261026/release/gk/`; receipt `/Users/ylsuen/CF/reports/operations/shared_hub_changes/20261026-uc-gk-exposure-ownership.json`.
 
 `question.exposure` used to take the recorder scope at the instant a question was shown. At page load, and right after a window `focus` (whose handler resets the recorder), that scope is `null`, so those views were stored locally without an owner and never reached User Center. The change:
 
