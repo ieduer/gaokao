@@ -1,14 +1,32 @@
-## Content catalog split — candidate, not released (2026-10-26, task `gk-content-catalog-20261026`)
+## Content catalog split — released 2026-10-26 (task `gk-content-catalog-release-20261026`)
 
-Branch `claude/gk-content-catalog-20261026` only; `main` and production are unchanged until the owner approves the merge. Design, consumer fan-out and receipt draft: `/Users/ylsuen/CF/_meta/reports/operations/gk-data-split-design-20261026/DESIGN.md`.
+- **Accepted production**: Pages `af60ed84-42a5-4f11-acdb-f81007e6d8b4`, source `082cc79`, effective 2026-10-26T12:52:02Z (guarded automatic build after `main` fast-forwarded from `afd4261`).
+- **Rollback**: promote Pages `4706d35d-d8e0-4186-a739-1a259be53817` (source `afd4261`). The old page reads `data/all.json`, which every deployment has, and computes the same version. No data migration; preserve forward records.
+- **Public record**: https://status.bdfz.net/?update=20261026-gk-content-catalog&revision=1
+- **Evidence**: `/Users/ylsuen/CF/_meta/reports/operations/gk-data-split-design-20261026/` (`DESIGN.md`, `release/gk/*.json`). Shared-hub receipt: `/Users/ylsuen/CF/reports/operations/shared_hub_changes/20261026-uc-gk-content-catalog.json` (UC/My `verified_no_change`).
 
-- **Build** (`scripts/lib/content-catalog.mjs`, called by `build-pages.mjs`): besides the unchanged `data/all.json`, it emits `data/catalog.json` (schema `gk-content-catalog-v1`: `contentVersion`, lite entry per record, part table) and one content-addressed part per year, `data/parts/<year>.<sha256[0:16]>.json`. It fails closed unless catalog + parts reassemble to the byte-identical `data/all.json`, both in memory and after writing.
+**How it works**
+
+- **Build** (`scripts/lib/content-catalog.mjs`, called by `build-pages.mjs`): besides the unchanged `data/all.json`, it emits `data/catalog.json` (schema `gk-content-catalog-v1`: `contentVersion`, a lite entry per record, a part table) and one content-addressed part per year, `data/parts/<year>.<sha256[0:16]>.json`. It fails closed unless catalog + parts reassemble to the byte-identical `data/all.json`, both in memory and after writing.
 - **Page**: boot fetches only the catalog (`no-cache`). Opening a record or year loads that year's part (`force-cache`, then `reload`) and checks its SHA-256 and byte length. A missing path on Pages answers 200 with the site HTML, so a status code is never trusted.
-- **Version binding**: each loaded record is bound to the version of the catalog it came from. A part that still fails makes the page re-fetch the catalog; a new `contentVersion` is adopted for later loads, and parts of two versions never mix within a year.
+- **Version binding**: each loaded record is bound to the version of the catalog it came from. A part that fails verification makes the page re-fetch the catalog; a new `contentVersion` is adopted for later loads, and parts of two versions never mix within a year.
 - **Fallback**: if the catalog is missing or invalid (for example after a rollback), the page loads `data/all.json` as before.
-- **`resourceVersion`**: unchanged, `sha256:` + SHA-256 of `data/all.json`, now carried as the catalog's `contentVersion`. The local build of `afd4261` content gives `sha256:7aeb9f57…84b3`, equal to production.
-- **Release checks after merge**: live `data/all.json` SHA-256 == catalog `contentVersion`; every part hash matches; a fresh home load requests the catalog and one part, not `all.json`; signed-in capture readback per DESIGN §6.
-- **Rollback**: promote the previously accepted Pages deployment. The old page reads `data/all.json`, which every deployment has, and computes the same version. No data migration.
+- **`resourceVersion`**: unchanged, `sha256:` + SHA-256 of `data/all.json`, now carried as the catalog's `contentVersion`. Live value `sha256:7aeb9f57…84b3`, the same as before the release.
+
+**Production readback**
+
+- 30 declared artifact changes served byte-exact; 10 unchanged files and the Functions input identical; config digest unchanged.
+- Home data on the wire: 8.8 KB catalog + 78.8 KB for the 2026 part, against 1.71 MB for `all.json`.
+
+**Signed-in acceptance (owner account, in-app browser)**
+
+- normal capture, delayed replay from a pre-release tab, offline → reload → reconnect, and concurrent double-submit all passed: UC journal 53 → 63 rows, 0 duplicates, every row on the same version, progress unchanged;
+- bfcache restore was injected because this browser does not keep the page in its back-forward cache.
+
+**Follow-ups found during acceptance** (pre-existing; same in `afd4261`):
+
+- `question.exposure` captures made before the recorder is ready at page load, or right after a window `focus` event, are stored without an owner and never sent;
+- restoring a last position records two exposures for question 1.
 
 ## Shared font slices — 2026-10-26 (task `portal-design-pass-20261026`, batch 2)
 
