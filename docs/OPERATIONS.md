@@ -1,3 +1,14 @@
+## Exposure capture ownership — 2026-10-26 (task `gk-exposure-scope-20261026`)
+
+`question.exposure` used to take the recorder scope at the instant a question was shown. At page load, and right after a window `focus` (whose handler resets the recorder), that scope is `null`, so those views were stored locally without an owner and never reached User Center. The change:
+
+- **Owner resolution**: `detailedExposure()` fixes the question, `resourceVersion`, `occurredAt` and `operationId` at display time. When the scope is not ready it waits with the same bounded `readyCaptureScope()` that asks and drafts use.
+  - A signed-out reader still stays unattributed, without a long wait.
+  - A scope different from the one this page last recorded exposures under (an account switch) is not adopted.
+- **Restore**: `selectRecord` / `selectYearExam` take `{qIndex}`, so restoring a last position opens that question directly. It records one exposure instead of question 1 followed by the restored one.
+- **Tests**: `scripts/test-exposure-capture.mjs` runs the real `learning-records.js` service with a late, signed-out or switched identity.
+- No change to `learning-records.js`, the UC recorder, scoring, progress or the data files.
+
 ## Content catalog split — released 2026-10-26 (task `gk-content-catalog-release-20261026`)
 
 - **Accepted production**: Pages `af60ed84-42a5-4f11-acdb-f81007e6d8b4`, source `082cc79`, effective 2026-10-26T12:52:02Z (guarded automatic build after `main` fast-forwarded from `afd4261`).

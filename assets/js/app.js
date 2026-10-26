@@ -111,6 +111,18 @@ function detailedDraft(text,kind,inputType='') {
  // Serialized so revision links keep their order while an early draft waits for the recorder scope.
  detailedDraftChain=detailedDraftChain.then(()=>readyCaptureScope(1500)).then(scope=>run(detailedContext(scope)),()=>run(detailedContext(null)));
 }
+// The question, version, time and operation are fixed when the question is shown; only the owner may resolve later.
+// At page load and right after a window focus the recorder is still being prepared, so wait for it (bounded) instead
+// of storing a row no one owns. A scope other than the one this page last recorded under (an account switch) is not
+// adopted: that exposure stays unattributed.
+let lastExposureScope=null;
+function detailedExposure(content) {
+ const context=detailedContext(),options={actor:'system',contentOrigin:'source_text',occurredAt:new Date().toISOString(),operationId:window.BdfzLearningRecords?.id()};
+ const capture=scope=>{if(scope)lastExposureScope=scope;detailedCapture('question.exposure',content,options,{...context,captureScope:scope});};
+ if(context.captureScope){capture(context.captureScope);return;}
+ const previous=lastExposureScope;
+ readyCaptureScope().then(scope=>capture(scope&&(!previous||scope===previous)?scope:null),()=>capture(null));
+}
 function detailedMessage(role,content,captureScope=window.BdfzLearningRecords?.scope||null) {
   return {captureScope,id:window.BdfzLearningRecords?.id() || `gk-message-${Date.now()}-${Math.random()}`,createdAt:new Date().toISOString(),role,content};
 }
@@ -837,7 +849,7 @@ function selectQuestion(qIndex, { skipScroll = false } = {}) {
     card.setAttribute("aria-current", match ? "true" : "false");
     if (match) activeCard = card;
   });
-  detailedCapture('question.exposure',{question:allQuestions.find(q=>Number(q.qIndex)===state.currentQIndex),materials:rec.materials || [],annotation:rec.annotation || ''},{actor:'system',contentOrigin:'source_text'});
+  detailedExposure({question:allQuestions.find(q=>Number(q.qIndex)===state.currentQIndex),materials:rec.materials || [],annotation:rec.annotation || ''});
   renderPassageForQuestion(rec, state.currentQIndex);
   renderWorkpad();
   const position = allQuestions.findIndex((q) => Number(q.qIndex) === state.currentQIndex);
@@ -1436,13 +1448,15 @@ async function loadForSelection(year) {
   return navigation === contentStore.navigation;
 }
 
-async function selectYearExam(year) {
+// qIndex opens that question directly (renderRecord falls back to the first if it does not exist), so a restore records
+// one exposure instead of the first question followed by the restored one.
+async function selectYearExam(year, { qIndex } = {}) {
   if (!await loadForSelection(year)) return false;
   const exam = buildYearExam(year);
   if (!exam) { flashStatus("找不到该年的试卷"); return false; }
   state.byId.set(exam.id, exam);
   state.currentRecord = exam;
-  state.currentQIndex = 1;
+  state.currentQIndex = Number(qIndex) || 1;
   markRecordViewed(exam);
   renderRecord(exam);
   refreshCatalogStatus();
@@ -1454,13 +1468,13 @@ async function selectYearExam(year) {
 /* =========================================================
  * 选中记录
  * ======================================================= */
-async function selectRecord(recordId) {
+async function selectRecord(recordId, { qIndex } = {}) {
   const entry = state.byId.get(recordId);
   if (!entry || !await loadForSelection(entry.year)) return false;
   const rec = state.byId.get(recordId);
   if (!rec || contentStore.lite.has(rec)) return false;
   state.currentRecord = rec;
-  state.currentQIndex = rec.questions?.[0]?.qIndex || 1;
+  state.currentQIndex = Number(qIndex) || rec.questions?.[0]?.qIndex || 1;
   markRecordViewed(rec);
   renderRecord(rec);
   refreshCatalogStatus();
@@ -2206,8 +2220,9 @@ async function restoreLastPosition() {
     if (!payload?.recordId) return false;
     const examMatch = String(payload.recordId).match(/^exam-(\d+)$/);
     if (!examMatch && !state.byId.has(payload.recordId)) return false;
-    const shown = examMatch ? await selectYearExam(Number(examMatch[1])) : await selectRecord(payload.recordId);
-    if (shown && payload.qIndex) selectQuestion(payload.qIndex, { skipScroll: true });
+    const open = { qIndex: payload.qIndex };
+    if (examMatch) await selectYearExam(Number(examMatch[1]), open);
+    else await selectRecord(payload.recordId, open);
     return true;
   };
   if (saved?.recordId) {

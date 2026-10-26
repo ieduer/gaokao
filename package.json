@@ -17,7 +17,7 @@
     "test:source-qualification": "node --test scripts/test-source-qualification.mjs",
     "test:answer-release-scope": "node --test scripts/test-answer-release-scope.mjs",
     "test:answer-reviews": "node --test scripts/test-answer-reviews.mjs",
-    "test:learning-records": "node --test scripts/test-learning-records.mjs scripts/test-capture-scope.mjs",
+    "test:learning-records": "node --test scripts/test-learning-records.mjs scripts/test-capture-scope.mjs scripts/test-exposure-capture.mjs",
     "test:question-parts": "node --test scripts/test-question-parts.mjs",
     "test:content-catalog": "node --test scripts/test-content-catalog.mjs"
   }
