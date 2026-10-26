@@ -1,3 +1,7 @@
+## Shared font slices — 2026-10-26 (task `portal-design-pass-20261026`, batch 2)
+
+The page no longer downloads the whole 8.2 MB `HuWenMingChaoTi` file (and no longer preloads it). `index.html` links the shared set hosted on mx.bdfz.net, `https://mx.bdfz.net/fonts/huwen/v1/HuWenMingChao.4eeeeaf657.css` (family `HuWenMingChao`, 90 immutable unicode-range slices, CORS-open), with a preconnect; the `@font-face` block left the site stylesheet, whose cache-buster is now `v=20261026-shared-font`. Browsers fetch only slices for characters on screen and share them with the other sites that use the set. Local before/after: phone home font 8,052 KB -> about 2.1 MB; screenshots pixel-identical at 1440 and 390. The local font files stay in `assets/fonts/` unreferenced. A new shared set will live in a new directory (`v2`); update the link then.
+
 > 當前狀態 2026-10-07T10:01:49.815338+00:00：北京分項作答修復已完成候選與本地驗證，尚未發布本次修復。59父題182分問保留原身份／原分／歷史，漏分項回覆拒絕完成證據，未知分值提供不計分講解；本站適用範圍、七站編譯、資料保全、真實身份驗收缺口與回退見[本輪唯一報告](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/GROUPED-PARTS-CANDIDATE-01a115a6.md)。Owner `codex-01a115a6`；精確候選commit見報告連結的JSON。GK/GKS前次已發布不等於本次修復上線。
 
 以下各舊時間段為歷史，當前狀態以上段及其報告為準。
