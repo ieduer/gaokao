@@ -1,3 +1,5 @@
+> 2026-10-26 candidate (not released): `claude/gk-content-catalog-20261026` makes the page load `data/catalog.json` plus one per-year part instead of the 11.45 MB `data/all.json`. `all.json` stays published byte-identical and `resourceVersion` is unchanged. Full build: 97 tests, 0 data errors. Local browser and stale-tab checks passed. Production stays at `afd4261` until the owner approves the merge to `main`. See docs/OPERATIONS.md "Content catalog split" and `/Users/ylsuen/CF/_meta/reports/operations/gk-data-split-design-20261026/DESIGN.md`.
+
 > 當前狀態 2026-10-07T10:01:49.815338+00:00：北京分項作答修復已完成候選與本地驗證，尚未發布本次修復。59父題182分問保留原身份／原分／歷史，漏分項回覆拒絕完成證據，未知分值提供不計分講解；本站適用範圍、七站編譯、資料保全、真實身份驗收缺口與回退見[本輪唯一報告](/Users/ylsuen/CF/_meta/reports/operations/answers-six-sites-20261002/GROUPED-PARTS-CANDIDATE-01a115a6.md)。Owner `codex-01a115a6`；精確候選commit見報告連結的JSON。GK/GKS前次已發布不等於本次修復上線。
 
 以下各舊時間段為歷史，當前狀態以上段及其報告為準。

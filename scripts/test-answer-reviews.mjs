@@ -25,7 +25,7 @@ function fixture() {
   context.records = structuredClone(records);
   context.sourceVersion = sourceVersion;
   vm.runInContext('SOURCE_CONTENT_VERSION=sourceVersion;',context);
-  vm.runInContext('state.data=records.map(applyReviewedSource);state.byId=new Map(state.data.map(r=>[r.id,r]));', context);
+  vm.runInContext('state.data=records.map(applyReviewedSource);state.byId=new Map(state.data.map(r=>[r.id,r]));for(const r of state.data)recordContentVersion.set(r,sourceVersion);', context);
   return code => vm.runInContext(code, context);
 }
 

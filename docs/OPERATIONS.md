@@ -1,3 +1,15 @@
+## Content catalog split — candidate, not released (2026-10-26, task `gk-content-catalog-20261026`)
+
+Branch `claude/gk-content-catalog-20261026` only; `main` and production are unchanged until the owner approves the merge. Design, consumer fan-out and receipt draft: `/Users/ylsuen/CF/_meta/reports/operations/gk-data-split-design-20261026/DESIGN.md`.
+
+- **Build** (`scripts/lib/content-catalog.mjs`, called by `build-pages.mjs`): besides the unchanged `data/all.json`, it emits `data/catalog.json` (schema `gk-content-catalog-v1`: `contentVersion`, lite entry per record, part table) and one content-addressed part per year, `data/parts/<year>.<sha256[0:16]>.json`. It fails closed unless catalog + parts reassemble to the byte-identical `data/all.json`, both in memory and after writing.
+- **Page**: boot fetches only the catalog (`no-cache`). Opening a record or year loads that year's part (`force-cache`, then `reload`) and checks its SHA-256 and byte length. A missing path on Pages answers 200 with the site HTML, so a status code is never trusted.
+- **Version binding**: each loaded record is bound to the version of the catalog it came from. A part that still fails makes the page re-fetch the catalog; a new `contentVersion` is adopted for later loads, and parts of two versions never mix within a year.
+- **Fallback**: if the catalog is missing or invalid (for example after a rollback), the page loads `data/all.json` as before.
+- **`resourceVersion`**: unchanged, `sha256:` + SHA-256 of `data/all.json`, now carried as the catalog's `contentVersion`. The local build of `afd4261` content gives `sha256:7aeb9f57…84b3`, equal to production.
+- **Release checks after merge**: live `data/all.json` SHA-256 == catalog `contentVersion`; every part hash matches; a fresh home load requests the catalog and one part, not `all.json`; signed-in capture readback per DESIGN §6.
+- **Rollback**: promote the previously accepted Pages deployment. The old page reads `data/all.json`, which every deployment has, and computes the same version. No data migration.
+
 ## Shared font slices — 2026-10-26 (task `portal-design-pass-20261026`, batch 2)
 
 The page no longer downloads the whole 8.2 MB `HuWenMingChaoTi` file (and no longer preloads it). `index.html` links the shared set hosted on mx.bdfz.net, `https://mx.bdfz.net/fonts/huwen/v1/HuWenMingChao.4eeeeaf657.css` (family `HuWenMingChao`, 90 immutable unicode-range slices, CORS-open), with a preconnect; the `@font-face` block left the site stylesheet, whose cache-buster is now `v=20261026-shared-font`. Browsers fetch only slices for characters on screen and share them with the other sites that use the set. Local before/after: phone home font 8,052 KB -> about 2.1 MB; screenshots pixel-identical at 1440 and 390. The local font files stay in `assets/fonts/` unreferenced. A new shared set will live in a new directory (`v2`); update the link then.

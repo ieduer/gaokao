@@ -17,6 +17,11 @@ const AI_URL = "https://apis.bdfz.net/";
 const DISCUSSION_API = "/api/question-discussions";
 // Exact data/all.json bytes, including the reversible source-review overlays.
 let SOURCE_CONTENT_VERSION = null;
+// Each loaded record keeps the version of the catalog (or full corpus) whose verified bytes it came from.
+const recordContentVersion = new WeakMap();
+const CONTENT_CATALOG_URL = "data/catalog.json";
+const CONTENT_CATALOG_SCHEMA = "gk-content-catalog-v1";
+const contentStore = { catalog: null, summaries: null, loaded: new Map(), pending: new Map(), lite: new WeakSet(), navigation: 0 };
 
 const TYPES = [
   { key: "feilian",     label: "非连文本" },
@@ -83,8 +88,9 @@ function detailedContext(captureScope=window.BdfzLearningRecords?.scope || null)
   const identity = currentQuestionIdentity();
   detailedSession ||= window.BdfzLearningRecords?.id() || `gk-session-${Date.now()}`;
   const reviewed = identity?.sourceRecord && (getReviewedQuestion(identity.sourceRecord, identity.sourceQIndex) || reviewForQuestion(identity.sourceRecord, identity.sourceQIndex));
-  if (reviewed && !SOURCE_CONTENT_VERSION) throw new Error('Source content has not finished loading');
-  const resourceVersion = reviewed ? SOURCE_CONTENT_VERSION : 'git-tree-sha1:3487023148584d9f649a91dbf0dd6a691065b124';
+  const contentVersion = identity?.sourceRecord ? recordContentVersion.get(identity.sourceRecord) : null;
+  if (reviewed && !contentVersion) throw new Error('Source content has not finished loading');
+  const resourceVersion = reviewed ? contentVersion : 'git-tree-sha1:3487023148584d9f649a91dbf0dd6a691065b124';
   return { sessionKey:detailedSession, resourceKey:`question:${identity?.sourceRecordId || 'unselected'}:${identity?.sourceQIndex || 0}`, resourceVersion, captureScope, sourceContext:{recordId:identity?.sourceRecordId || null,qIndex:identity?.sourceQIndex || null} };
 }
 function detailedCapture(action,content,options={},context=detailedContext()) {
@@ -302,11 +308,123 @@ async function loadData() {
   const raw = await res.text();
   const data = JSON.parse(raw).map(applyReviewedSource);
   const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(raw));
-  SOURCE_CONTENT_VERSION = 'sha256:' + Array.from(new Uint8Array(digest), b => b.toString(16).padStart(2, '0')).join('');
+  SOURCE_CONTENT_VERSION = 'sha256:' + hexDigest(digest);
+  for (const rec of data) recordContentVersion.set(rec, SOURCE_CONTENT_VERSION);
+  contentStore.catalog = null;
+  contentStore.summaries = null;
   state.data = data;
   state.byId = new Map(data.map((rec) => [rec.id, rec]));
   restoreLegacyLocalProgress();
   return data;
+}
+
+function hexDigest(buffer) {
+  return Array.from(new Uint8Array(buffer), b => b.toString(16).padStart(2, '0')).join('');
+}
+
+// The page reads the catalog and only the parts it opens. An older deployment (after a rollback) has no
+// catalog; the full corpus then gives the same version for the same content.
+async function loadContent() {
+  let catalog;
+  try { catalog = await fetchCatalog(); } catch (_) { return loadData(); }
+  adoptCatalog(catalog);
+  restoreLegacyLocalProgress();
+  return state.data;
+}
+
+async function fetchCatalog() {
+  const res = await fetch(CONTENT_CATALOG_URL, { cache: "no-cache" });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const catalog = JSON.parse(await res.text());
+  const parts = Array.isArray(catalog?.parts) ? catalog.parts : [];
+  const valid = catalog?.schemaVersion === CONTENT_CATALOG_SCHEMA && /^sha256:[a-f0-9]{64}$/.test(catalog.contentVersion)
+    && parts.length > 0 && Array.isArray(catalog.records)
+    && parts.every(p => Number.isInteger(p?.year) && Number.isInteger(p.bytes) && /^[a-f0-9]{64}$/.test(p.sha256)
+      && p.path === `data/parts/${p.year}.${p.sha256.slice(0, 16)}.json`)
+    && catalog.records.every(r => typeof r?.id === "string" && parts[r.part]?.year === r.year);
+  if (!valid) throw new Error("题库目录格式不符");
+  return catalog;
+}
+
+// Catalog entries carry only what the catalog, progress restore and default view read. Records already
+// loaded stay until their year is opened again under the newer catalog.
+function adoptCatalog(catalog) {
+  const loaded = new Map(state.data.filter((rec) => !contentStore.lite.has(rec)).map((rec) => [rec.id, rec]));
+  contentStore.catalog = catalog;
+  contentStore.summaries = new Map(catalog.records.map((entry) => [entry.id, entry]));
+  SOURCE_CONTENT_VERSION = catalog.contentVersion;
+  state.data = catalog.records.map((entry) => {
+    if (loaded.has(entry.id)) return loaded.get(entry.id);
+    const { paperComplete, questionCount, part, ...lite } = entry;
+    contentStore.lite.add(lite);
+    return lite;
+  });
+  state.byId = new Map(state.data.map((rec) => [rec.id, rec]));
+}
+
+// Part names are content addresses, so a cached copy is reused. The bytes are always checked: a path a
+// newer deployment no longer has is answered with the site HTML and status 200.
+async function fetchPart(part) {
+  for (const cache of ["force-cache", "reload"]) {
+    const res = await fetch(part.path, { cache }).catch(() => null);
+    if (!res?.ok) continue;
+    const bytes = await res.arrayBuffer();
+    if (bytes.byteLength === part.bytes && hexDigest(await crypto.subtle.digest("SHA-256", bytes)) === part.sha256) return bytes;
+  }
+  throw new Error(`${part.year} 年题目校验失败`);
+}
+
+function loadPart(part) {
+  if (!contentStore.pending.has(part.sha256)) {
+    contentStore.pending.set(part.sha256, (async () => {
+      const records = JSON.parse(new TextDecoder().decode(await fetchPart(part))).map(applyReviewedSource);
+      const catalog = contentStore.catalog;
+      const index = catalog ? catalog.parts.findIndex((p) => p.sha256 === part.sha256) : -1;
+      if (index < 0) return;
+      const ids = catalog.records.filter((entry) => entry.part === index).map((entry) => entry.id);
+      if (records.length !== ids.length || records.some((rec, i) => rec?.id !== ids[i])) throw new Error(`${part.year} 年题目与目录不符`);
+      for (const rec of records) recordContentVersion.set(rec, catalog.contentVersion);
+      const byId = new Map(records.map((rec) => [rec.id, rec]));
+      state.data = state.data.map((rec) => byId.get(rec.id) || rec);
+      for (const rec of records) state.byId.set(rec.id, rec);
+      contentStore.loaded.set(part.year, part.sha256);
+    })().finally(() => contentStore.pending.delete(part.sha256)));
+  }
+  return contentStore.pending.get(part.sha256);
+}
+
+// If a part no longer verifies because a deploy replaced it, the newer catalog is adopted for further
+// loads; parts from two versions are never mixed inside one year.
+async function ensureYear(year) {
+  let refreshed = false;
+  while (contentStore.catalog) {
+    const part = contentStore.catalog.parts.find((p) => p.year === Number(year));
+    if (!part || contentStore.loaded.get(part.year) === part.sha256) return;
+    try {
+      await loadPart(part);
+    } catch (error) {
+      if (refreshed) throw error;
+      refreshed = true;
+      const latest = await fetchCatalog();
+      if (latest.contentVersion === contentStore.catalog.contentVersion) throw error;
+      adoptCatalog(latest);
+      buildCatalog($("#catalog-search")?.value || "");
+    }
+  }
+}
+
+// Year buttons and the default paper read catalog summaries, so listing a year does not load it.
+function yearSummary(year) {
+  const records = state.data.filter((rec) => Number(rec.year) === Number(year));
+  if (!records.length) return null;
+  const summary = (rec) => contentStore.summaries?.get(rec.id) || {
+    paperComplete: rec.source_evidence?.paper_complete === true,
+    questionCount: (rec.questions?.length ? rec.questions : [{ qIndex: 1 }]).filter((q) => !q.sourceIdentity).length,
+  };
+  return {
+    collectionComplete: records.every((rec) => summary(rec).paperComplete),
+    questionCount: records.reduce((n, rec) => n + summary(rec).questionCount, 0),
+  };
 }
 
 function loadLocalProgress() {
@@ -493,7 +611,7 @@ function buildCatalogByYear(tree, ft) {
   const years = [...byYear.keys()].sort((a, b) => Number(b) - Number(a));
   for (const year of years) {
     const items = byYear.get(year);
-    const exam = buildYearExam(year);
+    const exam = yearSummary(year);
     if (!exam) continue;
     const yearText = year === 9999 ? "样卷" : `${year} 年`;
     const examBtn = document.createElement("button");
@@ -504,7 +622,7 @@ function buildCatalogByYear(tree, ft) {
     examBtn.innerHTML = `
       <span class="catalog-exam-year">${escapeHtml(yearText)}</span>
       <span class="catalog-exam-status">${exam.collectionComplete ? "整套练习" : "已收录题目"}</span>
-      <span class="catalog-exam-meta">${items.length} 题型 · ${exam.questions.length} 题</span>
+      <span class="catalog-exam-meta">${items.length} 题型 · ${exam.questionCount} 题</span>
     `;
     examBtn.addEventListener("click", () => {
       selectYearExam(Number(year));
@@ -1306,9 +1424,22 @@ function buildYearExam(year) {
   };
 }
 
-function selectYearExam(year) {
+// Resolves false when the year could not be loaded or a later selection superseded this one.
+async function loadForSelection(year) {
+  const navigation = ++contentStore.navigation;
+  try {
+    await ensureYear(year);
+  } catch (err) {
+    if (navigation === contentStore.navigation) flashStatus(`题目加载失败：${err.message}`);
+    return false;
+  }
+  return navigation === contentStore.navigation;
+}
+
+async function selectYearExam(year) {
+  if (!await loadForSelection(year)) return false;
   const exam = buildYearExam(year);
-  if (!exam) { flashStatus("找不到该年的试卷"); return; }
+  if (!exam) { flashStatus("找不到该年的试卷"); return false; }
   state.byId.set(exam.id, exam);
   state.currentRecord = exam;
   state.currentQIndex = 1;
@@ -1317,14 +1448,17 @@ function selectYearExam(year) {
   refreshCatalogStatus();
   $("#passage")?.scrollTo({ top: 0, behavior: "smooth" });
   rememberLastPosition();
+  return true;
 }
 
 /* =========================================================
  * 选中记录
  * ======================================================= */
-function selectRecord(recordId) {
+async function selectRecord(recordId) {
+  const entry = state.byId.get(recordId);
+  if (!entry || !await loadForSelection(entry.year)) return false;
   const rec = state.byId.get(recordId);
-  if (!rec) return;
+  if (!rec || contentStore.lite.has(rec)) return false;
   state.currentRecord = rec;
   state.currentQIndex = rec.questions?.[0]?.qIndex || 1;
   markRecordViewed(rec);
@@ -1332,6 +1466,7 @@ function selectRecord(recordId) {
   refreshCatalogStatus();
   $("#passage")?.scrollTo({ top: 0, behavior: "smooth" });
   rememberLastPosition();
+  return true;
 }
 
 function markRecordViewed(rec) {
@@ -1976,7 +2111,7 @@ async function init() {
   loadLocalProgress();
 
   try {
-    await loadData();
+    await loadContent();
   } catch (err) {
     $("#catalog-tree").innerHTML = `<p class="catalog-empty" style="color:var(--danger)">题目数据加载失败：${escapeHtml(err.message)}</p>`;
     return;
@@ -1997,9 +2132,9 @@ async function init() {
     const availableYears = [...new Set(state.data.map((rec) => Number(rec.year)))]
       .filter((year) => Number.isFinite(year) && year !== 9999)
       .sort((a, b) => b - a);
-    const defaultYear = availableYears.find((year) => buildYearExam(year)?.collectionComplete);
-    if (defaultYear) selectYearExam(defaultYear);
-    else if (state.data[0]) selectRecord(state.data[0].id);
+    const defaultYear = availableYears.find((year) => yearSummary(year)?.collectionComplete);
+    if (defaultYear) await selectYearExam(defaultYear);
+    else if (state.data[0]) await selectRecord(state.data[0].id);
   }
 }
 
@@ -2067,22 +2202,17 @@ async function restoreLastPosition() {
   if (state.currentRecord) return;
   let saved = null;
   try { saved = JSON.parse(localStorage.getItem("gk_last_position") || "null"); } catch (_) {}
-  const restorePayload = (payload) => {
+  const restorePayload = async (payload) => {
     if (!payload?.recordId) return false;
     const examMatch = String(payload.recordId).match(/^exam-(\d+)$/);
-    if (examMatch) {
-      selectYearExam(Number(examMatch[1]));
-      if (payload.qIndex) selectQuestion(payload.qIndex, { skipScroll: true });
-      return true;
-    }
-    if (!state.byId.has(payload.recordId)) return false;
-    selectRecord(payload.recordId);
-    if (payload.qIndex) selectQuestion(payload.qIndex, { skipScroll: true });
+    if (!examMatch && !state.byId.has(payload.recordId)) return false;
+    const shown = examMatch ? await selectYearExam(Number(examMatch[1])) : await selectRecord(payload.recordId);
+    if (shown && payload.qIndex) selectQuestion(payload.qIndex, { skipScroll: true });
     return true;
   };
   if (saved?.recordId) {
     if (state.currentRecord) return;  // 又被用户抢先选了
-    if (restorePayload(saved)) return;
+    if (await restorePayload(saved)) return;
   }
   const id = getAuthedIdentity();
   if (id?.api) {
@@ -2091,7 +2221,7 @@ async function restoreLastPosition() {
       if (state.currentRecord) return;
       const item = res?.items?.[0];
       const payload = item?.payload || {};
-      restorePayload(payload);
+      await restorePayload(payload);
     } catch (_) {}
   }
 }
