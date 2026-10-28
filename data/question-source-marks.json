@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "sourceQuestions": [
+    {
+      "recordId": "2014-yuyanjichu",
+      "qIndex": 4,
+      "sha256": "00ccd908039811cc82c67874a634ec607b1353ea121806ebae4c847e2106b4b2",
+      "ranges": [
+        {
+          "start": 191,
+          "end": 198,
+          "type": "dot",
+          "group": "A"
+        },
+        {
+          "start": 270,
+          "end": 278,
+          "type": "dot",
+          "group": "B"
+        },
+        {
+          "start": 313,
+          "end": 317,
+          "type": "dot",
+          "group": "C"
+        },
+        {
+          "start": 318,
+          "end": 322,
+          "type": "dot",
+          "group": "C"
+        },
+        {
+          "start": 406,
+          "end": 413,
+          "type": "dot",
+          "group": "D"
+        }
+      ],
+      "provenance": {
+        "basis": "Independently viewed EOL question-page image: original question 5 has four dotted idiom groups; the comma in group C is not dotted. Display recovery only; canonical question text and answers unchanged.",
+        "qualification": "publisher-reproduction",
+        "sourceUrl": "https://img.eol.cn/html/g/2014gkst/bj/yw2.jpg",
+        "sourceSha256": "7bba52b77674769eb2dd1a8dda2d5326103b84ac761927f4f8f574d3194340c0",
+        "sourcePage": 2
+      }
+    }
+  ]
+}

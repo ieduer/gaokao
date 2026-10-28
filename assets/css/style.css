@@ -1205,3 +1205,11 @@ body.catalog-open .catalog-backdrop {
   line-height: 1.25;
   white-space: nowrap;
 }
+
+/* Exact source-reviewed marks are separate from fill-in answer lines. */
+.question-source-dot {
+  -webkit-text-emphasis: filled dot;
+  text-emphasis: filled dot;
+  -webkit-text-emphasis-position: under left;
+  text-emphasis-position: under left;
+}

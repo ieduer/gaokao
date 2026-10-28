@@ -1,4 +1,4 @@
-// Generated from published canonical records and data/question-blanks.json. Do not edit.
+// Generated from published canonical records and data/question-{blanks,source-marks}.json. Do not edit.
 export const QUESTION_BLANKS = Object.freeze([
   {
     "recordId": "2007-feilian",
@@ -633,22 +633,76 @@ export const QUESTION_BLANKS = Object.freeze([
     ]
   }
 ].map(entry => Object.freeze({...entry, ranges: Object.freeze(entry.ranges.map(range => Object.freeze(range)))})));
+export const QUESTION_SOURCE_MARKS = Object.freeze([
+  {
+    "recordId": "2014-yuyanjichu",
+    "qIndex": 4,
+    "text": "4．下列关于“对联”的表述，正确的一项是（2分）\nA．字数限于四言和六言                                         B．上下联讲究对仗和押韵\nC．只适合在喜庆场合张贴                                     D．常常与书法艺术相结合\n5．下列句子中加点的俗语，使用不正确的一项是（3分）\nA．世界上热点问题不少，按下葫芦起了瓢。解决这些问题要得理又得法，一味示强施压不行，外部武力干预更要不得，政治解决是唯一出路。\nB．河北省的领导在签约会上表示，为京津冀整体协同发展，一家人不说两家话，河北将全力建好永清服装城，确保北京的服装商场如期迁入。\nC．俗话说：兵马未动，粮草先行。刚进入4G时代，抢占市场的“搏杀”已见端倪，几大运营商争相推出各种优惠套餐，在价格上做足了文章。\nD．“今天请各位老同学来，为咱们县的发展献计献策，我只备下清茶一杯，君子之交淡如水嘛！”县长话音一落，老同学们报以一片笑声和掌声。\n6．日常交际中，“得体”是语言表达的一项基本要求。完成①②题。\n①下文是一份请柬中的四句话，其中表述不得体的一句是（2分）\n（甲）我校文学社定于本月18日晚7点在学校礼堂举行“民俗文化报告会”。（乙）您是著名民俗专家，对民俗文化的研究造诣颇深。（丙）今诚挚邀请您莅临会议，为我社民俗文化活动的开展做出认真的指导。（丁）敬请届时光临。\nA．（甲）                        B．（乙）                       C．（丙）                   D．（丁）\n②午宴上，某中学生遇到父母的朋友劝酒，下列回应得体的一项是（2分）\nA．下午还有两门考试呢，别劝了，行不？\nB．谢谢足下，家父从来不准许我喝酒。\nC．不喝，不喝。中学生不是不能喝酒吗？\nD．谢谢，谢谢！我年龄还小，不能喝酒。\n7．“月”是中国古典文学中常见的意象，本题与“月”的意象相关。完成①—③题。\n①有些诗句无“明月”二字，却写出“明月”之景，下列不具有这一特点的一项是（3分）\nA．一轮霜影转庭梧，此夕羁人独向隅。\nB．有约不来过夜半，闲敲棋子落灯花。\nC．暮云收尽溢清寒，银汉无声转玉盘\nD．皓魄当空宝镜升，云间仙籁寂无声\n②“秦时明月汉时关”意思是“秦汉时的明月秦汉时的关”。下列与这一表现手法相同的一项是（2分）\nA．烟笼寒水月笼沙                                                      B．明月楼高休独倚\nC．一夜飞度镜湖月                                                      D．夜吟应觉月光寒",
+    "sha256": "00ccd908039811cc82c67874a634ec607b1353ea121806ebae4c847e2106b4b2",
+    "ranges": [
+      {
+        "start": 191,
+        "end": 198,
+        "type": "dot",
+        "group": "A"
+      },
+      {
+        "start": 270,
+        "end": 278,
+        "type": "dot",
+        "group": "B"
+      },
+      {
+        "start": 313,
+        "end": 317,
+        "type": "dot",
+        "group": "C"
+      },
+      {
+        "start": 318,
+        "end": 322,
+        "type": "dot",
+        "group": "C"
+      },
+      {
+        "start": 406,
+        "end": 413,
+        "type": "dot",
+        "group": "D"
+      }
+    ]
+  }
+].map(entry => Object.freeze({...entry, ranges: Object.freeze(entry.ranges.map(range => Object.freeze(range)))})));
 
 const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const byText = new Map(QUESTION_BLANKS.map(entry => [entry.text, entry]));
+const marksByText = new Map(QUESTION_SOURCE_MARKS.map(entry => [entry.text, entry]));
 export function findQuestionBlanks(text) {
   return byText.get(text) || null;
+}
+export function findQuestionSourceMarks(text) {
+  return marksByText.get(text) || null;
 }
 export function renderQuestionBlanks(text, renderFragment = escapeHtml, range) {
   const source = String(text ?? ''), start = range?.start ?? 0, end = range?.end ?? source.length;
   if (!Number.isInteger(start) || !Number.isInteger(end) || start < 0 || end < start || end > source.length) throw RangeError('Invalid question display range');
-  const entry = findQuestionBlanks(source);
-  if (!entry) return renderFragment(source.slice(start, end), start, end);
+  const entry = findQuestionBlanks(source), marks = findQuestionSourceMarks(source);
+  if (!entry && !marks) return renderFragment(source.slice(start, end), start, end);
+  const spans = [
+    ...(entry?.ranges || []).map(([start, end]) => ({ start, end, type: 'blank' })),
+    ...(marks?.ranges || []),
+  ].sort((a, b) => a.start - b.start);
   let cursor = start, html = '';
-  for (const [blankStart, blankEnd] of entry.ranges) {
-    if (blankEnd <= start || blankStart >= end) continue;
-    const from = Math.max(start, blankStart), to = Math.min(end, blankEnd);
+  for (const span of spans) {
+    if (span.end <= start || span.start >= end) continue;
+    const from = Math.max(start, span.start), to = Math.min(end, span.end);
     if (cursor < from) html += renderFragment(source.slice(cursor, from), cursor, from);
+    if (span.type === 'dot') {
+      html += '<span class="question-source-dot" data-source-mark-group="' + escapeHtml(span.group) + '">'
+        + renderFragment(source.slice(from, to), from, to) + '</span>';
+      cursor = to;
+      continue;
+    }
     const blankText = source.slice(from, to), label = blankText.replace(/[ \t\r\n\u3000]/g, '');
     html += '<span class="question-blank" aria-label="填空' + escapeHtml(label) + '">' + (escapeHtml(label) || '&nbsp;') + '</span>';
     // A few reviewed blanks span lines or occupy an otherwise empty line.

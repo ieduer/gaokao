@@ -174,6 +174,6 @@ export function installCanonicalQuestionStyles(document) {
   if (document.getElementById('canonical-question-blank-style')) return;
   const style = document.createElement('style');
   style.id = 'canonical-question-blank-style';
-  style.textContent = '.question-blank{display:inline-block;min-width:3em;max-width:100%;border-bottom:1px solid currentColor;text-align:center;line-height:1.25;white-space:nowrap}';
+  style.textContent = '.question-blank{display:inline-block;min-width:3em;max-width:100%;border-bottom:1px solid currentColor;text-align:center;line-height:1.25;white-space:nowrap}.question-source-dot{-webkit-text-emphasis:filled dot;text-emphasis:filled dot;-webkit-text-emphasis-position:under left;text-emphasis-position:under left}';
   document.head.append(style);
 }

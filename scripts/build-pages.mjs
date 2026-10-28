@@ -17,7 +17,8 @@ const projected=projectScopedAnswers(records,authority,scope,preserved);
 // data/all.json stays published byte-identical; the page reads the catalog and one year's part.
 const content=buildContentCatalog(projected);
 const blankDefinition=JSON.parse(await readFile('data/question-blanks.json','utf8'));
-const blankModule=buildQuestionBlanksModule(projected,blankDefinition);
+const sourceMarks=JSON.parse(await readFile('data/question-source-marks.json','utf8'));
+const blankModule=buildQuestionBlanksModule(projected,blankDefinition,sourceMarks);
 if (await readFile(QUESTION_BLANKS_PATH,'utf8') !== blankModule) throw Error('Regenerate the canonical question-blanks module before building');
 
 // Pages must never publish the repository root or source/data backups.
