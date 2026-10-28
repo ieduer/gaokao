@@ -82,6 +82,31 @@ test('catalog cannot replace part hashes while keeping its claimed contentVersio
 // Optional complete cross-consumer acceptance uses explicitly supplied checkouts;
 // the canonical repository's standalone tests do not depend on sibling projects.
 const consumers = process.env.CANONICAL_CONSUMER_ROOT;
+function draftDocument() {
+  class Element {
+    constructor(tag, ownerDocument) {
+      this.tagName = tag; this.ownerDocument = ownerDocument; this.children = [];
+      this.style = {}; this.dataset = {}; this.listeners = new Map(); this.events = 0;
+      this.innerHTML = ''; this.textContent = '';
+    }
+    append(...nodes) { this.children.push(...nodes); }
+    before(node) { this.beforeNode = node; }
+    remove() { this.removed = true; }
+    setAttribute() {}
+    addEventListener(name, fn) { this.listeners.set(name, fn); }
+    dispatchEvent(event) { this.events++; this.listeners.get(event.type)?.(event); return true; }
+    focus() { this.focused = true; }
+  }
+  class TextArea extends Element {
+    get value() { return this._value || ''; }
+    set value(value) { this._value = String(value); }
+  }
+  const document = { defaultView: { HTMLTextAreaElement: TextArea, Event },
+    createElement(tag) { return tag === 'textarea' ? new TextArea(tag, this) : new Element(tag, this); } };
+  return document;
+}
+const descendants = (node, className) => [node, ...node.children.flatMap(child => descendants(child, className))]
+  .filter(element => element.className === className);
 const sites = [['yyjc', 'corpus', 'years', 100], ['flx', 'corpus', 'years', 106],
   ['gksw', 'zhenti', 'years', 105], ['shi', 'zhenti', 'items', 70], ['gwyw', 'zhenti', 'years', 135]];
 for (const [site, file, array, count] of sites) {
@@ -98,6 +123,37 @@ for (const [site, file, array, count] of sites) {
       if (!question.canonicalQuestionId) continue;
       assert.doesNotThrow(() => presentation.renderSourceQuestion(record, question));
     }
+    const candidates = hydrated[array].flatMap(record => (record.questions || [])
+      .filter(question => question.questionParts && question.canonicalQuestionId).map(question => ({ record, question })));
+    const selected = candidates.find(({ question }) => question.canonicalQuestionId === '2006-sanwen:2') || candidates[0];
+    assert.ok(selected, `${site} has a real multipart question`);
+    const partsModule = await import(new URL(`file://${resolve(consumers, site, 'public/question-parts.js')}?v=20261028-blank-lines`));
+    const document = draftDocument(), input = document.createElement('textarea');
+    const initialParts = partsModule.questionParts(selected.question);
+    input.value = partsModule.serializePartAnswers(selected.question, { [initialParts[0].id]: '已保存的作答' });
+    const originalAnswer = input.value, originalFocus = input.focus;
+    const renderPart = (_text, start, end) => presentation.renderSourceText(selected.record,
+      { key: `question${selected.question.canonicalQIndex || selected.question.qIndex}`, text: selected.question.stem },
+      selected.question.canonicalQIndex || selected.question.qIndex, { start, end });
+    const box = partsModule.mountQuestionParts(input, selected.question, renderPart);
+    const stems = descendants(box, 'part-stem'), answers = descendants(box, 'part-answer');
+    assert.equal(stems.length, initialParts.length);
+    assert.deepEqual(stems.map(stem => stem.innerHTML), initialParts.map(part => renderPart(part.text, part.start, part.end)));
+    if (site === 'gksw') assert.equal((stems.map(stem => stem.innerHTML).join('').match(/class="question-blank"/g) || []).length, 2);
+    assert.equal(input.value, originalAnswer);
+    assert.equal(input.events, 0, 'mounting does not autosave or submit');
+    assert.equal(answers[0].value, '已保存的作答');
+    answers[0].value = '修改后的分项作答';
+    answers[0].dispatchEvent(new Event('input'));
+    assert.equal(input.events, 1, 'one edit has one existing draft event');
+    assert.equal(partsModule.parsePartAnswers(selected.question, input.value)[initialParts[0].id], '修改后的分项作答');
+    input.value = '旧整组作答完整保留';
+    assert.equal(input.value, '旧整组作答完整保留');
+    assert.equal(input.events, 1, 'restoration does not emit a new submission');
+    input._unmountQuestionParts();
+    assert.equal(input.focus, originalFocus);
+    assert.equal(input.value, '旧整组作答完整保留');
+    assert.equal(box.removed, true);
     if (site === 'yyjc') {
       const record = hydrated.years.find(record => record.id === '2012-yuyanjichu');
       const html = presentation.renderSourceQuestion(record, record.questions.find(question => question.qIndex === 4));
