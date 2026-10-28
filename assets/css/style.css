@@ -1194,3 +1194,14 @@ body.catalog-open .catalog-backdrop {
 
 /* Separate answer fields keep the existing parent submission and history. */
 .question-part{min-width:0;margin:16px 0;padding:12px;border:1px solid #bbb;border-radius:8px}.question-part legend{font-weight:700;padding:0 6px}.part-stem{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.75}.part-answer{display:block;width:100%;box-sizing:border-box;margin-top:12px;font:inherit;padding:10px;resize:vertical}.question-parts{min-width:0}.part-feedback{border-top:1px solid #ccc;margin-top:12px}
+
+/* Verified source blanks stay visible even when ordinary spaces collapse. */
+.question-blank {
+  display: inline-block;
+  min-width: 3em;
+  max-width: 100%;
+  border-bottom: 1px solid currentColor;
+  text-align: center;
+  line-height: 1.25;
+  white-space: nowrap;
+}

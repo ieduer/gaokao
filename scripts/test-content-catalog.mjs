@@ -1,3 +1,4 @@
+import { renderQuestionBlanks } from '../assets/js/question-blanks.js';
 import {mountQuestionParts,questionParts} from '../assets/js/question-parts.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -15,7 +16,7 @@ const projected=projectScopedAnswers(records,authority,scope,preserved);
 const filesA=buildContentCatalog(projected),catalogA=JSON.parse(filesA.get(CATALOG_PATH));
 const sha=text=>createHash('sha256').update(text).digest('hex');
 const appSource=readFileSync(new URL('../assets/js/app.js',import.meta.url),'utf8');
-const IMPORTS=["import { mountQuestionParts, questionParts } from './question-parts.js';","import { answerVersionSpecs, versionsForQuestion, reviewForQuestion } from './answer-versions.js';"];
+const IMPORTS=["import { mountQuestionParts, questionParts } from './question-parts.js?v=20261028-question-blanks';","import { renderQuestionBlanks } from './question-blanks.js';","import { answerVersionSpecs, versionsForQuestion, reviewForQuestion } from './answer-versions.js';"];
 const app=IMPORTS.reduce((source,line)=>source.replace(line,''),appSource);
 const HTML='<!doctype html><html lang="zh-CN"><title>AI 高考</title></html>';
 
@@ -25,7 +26,7 @@ function page({files=filesA,legacy={},items=[]}={}){
   const respond=text=>({ok:true,text:async()=>text,arrayBuffer:async()=>new TextEncoder().encode(text).buffer});
   const storage=new Map([['gaokao_read_progress',JSON.stringify(legacy)]]);
   const context=vm.createContext({console,setTimeout,clearTimeout,crypto:webcrypto,TextEncoder,TextDecoder,
-    answerVersionSpecs,versionsForQuestion,reviewForQuestion,mountQuestionParts,questionParts,
+    renderQuestionBlanks,answerVersionSpecs,versionsForQuestion,reviewForQuestion,mountQuestionParts,questionParts,
     window:{BdfzIdentity:{api:async()=>({items})}},
     document:{readyState:'loading',addEventListener(){},querySelectorAll:()=>[],querySelector:()=>null},
     localStorage:{getItem:key=>storage.get(key)??null,setItem:(key,value)=>storage.set(key,value),removeItem:key=>storage.delete(key)},
@@ -164,6 +165,6 @@ test('only the latest selection renders when an earlier year arrives later',asyn
   assert.equal(p.run('state.currentRecord.id'),reviewedId(2020));
 });
 
-test('the page adds no import that a cached older sibling module could lack',()=>{
+test('the page versions the changed multipart module and declares the new blank module',()=>{
   assert.deepEqual(appSource.split('\n').filter(line=>/^\s*import\b/.test(line)),IMPORTS);
 });

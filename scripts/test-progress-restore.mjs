@@ -1,3 +1,4 @@
+import { renderQuestionBlanks } from '../assets/js/question-blanks.js';
 import {mountQuestionParts,questionParts} from '../assets/js/question-parts.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -7,14 +8,15 @@ import {answerVersionSpecs, versionsForQuestion, reviewForQuestion} from '../ass
 import {projectAuthority} from './lib/answer-authority.mjs';
 
 const source = readFileSync(new URL('../assets/js/app.js', import.meta.url), 'utf8')
-  .replace(/^import \{ mountQuestionParts, questionParts \} from '\.\/question-parts\.js';$/m, '')
+  .replace(/^import \{ mountQuestionParts, questionParts \} from '\.\/question-parts\.js\?v=20261028-question-blanks';$/m, '')
+  .replace(/^import \{ renderQuestionBlanks \} from '\.\/question-blanks\.js';$/m, '')
   .replace(/^import \{ answerVersionSpecs, versionsForQuestion, reviewForQuestion \} from '\.\/answer-versions\.js';$/m, '');
 const corpus = JSON.parse(readFileSync(new URL('../data/all.json', import.meta.url)));
 function fixture({ items = [], authenticated = true, saved = {}, legacy = {}, failure = false, data = corpus } = {}) {
   const storage = new Map([['gk_progress', JSON.stringify(saved)], ['gaokao_read_progress', JSON.stringify(legacy)]]);
   const calls = [];
   const context = vm.createContext({
-    console, setTimeout, clearTimeout, answerVersionSpecs, versionsForQuestion, reviewForQuestion, mountQuestionParts:()=>null,questionParts,
+    console, setTimeout, clearTimeout, renderQuestionBlanks, answerVersionSpecs, versionsForQuestion, reviewForQuestion, mountQuestionParts:()=>null,questionParts,
     window: { BdfzIdentity: { api: async path => { calls.push(path); if (failure) throw Error('offline'); return { items }; } } },
     document: { readyState: 'loading', addEventListener() {}, querySelectorAll: () => [], querySelector: () => null },
     localStorage: { getItem: key => storage.get(key) ?? null, setItem: (key, value) => storage.set(key, value) },

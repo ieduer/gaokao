@@ -1,3 +1,14 @@
+## 2026-10-28 — Unified question source and verified fill blanks
+
+Task `exam-blank-lines-20261028`; owner `codex-01a1809b`. Release state, exact source, deployment, acceptance and rollback are recorded once in [the task report](/Users/ylsuen/CF/_meta/reports/operations/exam-blank-lines-20261028/REPORT.md); this section was prepared before publication and does not by itself claim acceptance.
+
+- The one editable authority for shared Beijing Chinese questions is `ieduer/gaokao`: its scoped published corpus, catalog and immutable year parts. Consumers select `recordId:qIndex`; local question IDs, mapped numbering, scores and saved histories are retained.
+- The shared client at `https://gk.bdfz.net/assets/js/canonical-question-source.js?v=20261028-blank-lines` pins corpus `sha256:7aeb9f57cbcb52178a2709d49e17c0afa9db6acb6ef94253f6f04a77c78284b3`, catalog SHA-256 `9cc4a27911b45b9385c8cdfa8ea35545425c42ac9d9e06f366660e015d4bae32`, each part hash, and each stable question mapping. A mismatch or unavailable source displays an error; it does not silently choose another version.
+- Backend corpora and GKS D1 projections remain immutable, verified compatibility caches from that same authority. They are not independently editable banks. Current source text, materials, reviewed/model answers and their provenance must exactly match before browser hydration. Historical answers remain labeled history; no grades or records are recomputed.
+- Fill-line locations are maintained only in GK `data/question-blanks.json`, bound to exact question text hashes. The generated shared renderer restores reviewed spaces/numbered blanks without converting indentation, option spacing or ordinary brackets. It is reused by the consumers rather than copied as separate authored definitions.
+- Publish the additive GK shared assets/CORS first, then each validated consumer. Roll back the affected consumer to its accepted immutable predecessor; retain the additive GK contract until all dependent consumers are rolled back. Never remove shared assets while a consumer references them. No identity, APIS, database schema, grading policy or student-data write is part of this change.
+- Validation: canonical projection equality, explicit mismatch/hash rejection, source-mark offsets, full and multipart rendering, desktop/mobile visibility and ordinary reload. Source publication qualification is preserved; recovered display marks do not authenticate an original examination edition.
+
 ## Exposure capture ownership — released 2026-10-26 (task `gk-exposure-scope-20261026`)
 
 - **Accepted production**: Pages `847937e4-70d6-44e5-8aad-65c512b9d019`, source `4ed6a22`, effective 2026-10-26T13:15:32Z.

@@ -13,3 +13,7 @@ This project inherits `/Users/ylsuen/CF/AGENTS.md`.
 ## Active restoration authority — 2026-09-20
 
 The recovered modern UI and Function are required production capabilities. The historical seven-file static-only release is obsolete. Follow the leading restoration section in docs/OPERATIONS.md and the allowlisted build. Never deploy the repository root or historical main. A clean pushed checkout alone does not prove the intended version.
+
+## Shared question data authority
+
+Shared Beijing Chinese question content and presentation definitions are authored only in the scoped GK canonical source. Consumer public corpora are generated, hash-bound compatibility caches; do not repair a shared question independently in a leaf. Follow docs/OPERATIONS.md for pinned catalog, immutable parts, source parity, hub-first publication and rollback. Preserve local practice IDs, historical results and original score policies.

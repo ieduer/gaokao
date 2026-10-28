@@ -5,6 +5,7 @@ import { createHash } from 'node:crypto';
 import { validateScopedAnswers, projectScopedAnswers } from './lib/answer-release-scope.mjs';
 import { sourceAssets } from './lib/source-assets.mjs';
 import { buildContentCatalog, verifyContentCatalog } from './lib/content-catalog.mjs';
+import { buildQuestionBlanksModule, QUESTION_BLANKS_PATH } from './lib/question-blanks.mjs';
 
 // Reject incomplete reviews before touching an existing release directory.
 const records=JSON.parse(await readFile('data/all.json','utf8'));
@@ -15,10 +16,13 @@ const coverage=validateScopedAnswers(records,authority,scope,preserved);
 const projected=projectScopedAnswers(records,authority,scope,preserved);
 // data/all.json stays published byte-identical; the page reads the catalog and one year's part.
 const content=buildContentCatalog(projected);
+const blankDefinition=JSON.parse(await readFile('data/question-blanks.json','utf8'));
+const blankModule=buildQuestionBlanksModule(projected,blankDefinition);
+if (await readFile(QUESTION_BLANKS_PATH,'utf8') !== blankModule) throw Error('Regenerate the canonical question-blanks module before building');
 
 // Pages must never publish the repository root or source/data backups.
 const output = resolve(process.argv[2] || '.pages-output');
-const files = ['index.html', 'assets/js/app.js', 'assets/js/answer-versions.js', 'assets/js/learning-records.js', 'assets/js/question-parts.js', 'assets/css/style.css',
+const files = ['_headers', 'index.html', 'assets/js/app.js', 'assets/js/answer-versions.js', 'assets/js/learning-records.js', 'assets/js/question-parts.js', 'assets/js/canonical-question-source.js', QUESTION_BLANKS_PATH, 'assets/css/style.css',
   'assets/fonts/HuWenMingChaoTi.woff', 'assets/fonts/HuWenMingChaoTi.woff2',
   'assets/img/bg.webp', 'assets/img/gaokao.jpeg', ...content.keys()];
 files.push(...sourceAssets(projected, process.cwd()));
@@ -32,7 +36,8 @@ try {
 for (const file of files) {
   const dest = resolve(output, file);
   await mkdir(resolve(dest, '..'), {recursive:true});
-  if(content.has(file))await writeFile(dest,content.get(file));
+  if (file === QUESTION_BLANKS_PATH) await writeFile(dest,blankModule);
+  else if(content.has(file))await writeFile(dest,content.get(file));
   else await copyFile(file, dest);
 }
 verifyContentCatalog(new Map(await Promise.all([...content.keys()].map(async path => [path, await readFile(resolve(output,path),'utf8')]))));

@@ -69,7 +69,7 @@ export function partFeedbackMarkup(result) {
 // The existing textarea remains the single draft/submission channel. Its own
 // value accessor also hydrates the fields when existing restoration code runs.
 // Nothing is saved or submitted until the user changes an answer or submits.
-export function mountQuestionParts(input, question) {
+export function mountQuestionParts(input, question, renderStem) {
   if (!input) return null;
   input._unmountQuestionParts?.();
   const parts = questionParts(question);
@@ -80,12 +80,15 @@ export function mountQuestionParts(input, question) {
   const note = doc.createElement('p'); note.className = 'source-note';
   note.textContent = '请按小题分别作答，限选题按原题要求选择。整组提交一次，历史成绩保持不变。完整解析见参考答案。'; box.append(note);
   const introduction = (question.stem ?? question.text).slice(0,question.questionParts.introductionEnd);
-  if (introduction.trim()) { const p=doc.createElement('p');p.textContent=introduction;box.append(p); }
+  if (introduction.trim()) { const p=doc.createElement('p');
+    if (renderStem) p.innerHTML=renderStem(introduction,0,question.questionParts.introductionEnd); else p.textContent=introduction;
+    box.append(p); }
   const fields = new Map();
   for (const part of parts) {
     const fieldset=doc.createElement('fieldset');fieldset.className='question-part';
     const legend=doc.createElement('legend');legend.textContent=part.label;
-    const stem=doc.createElement('div');stem.className='part-stem';stem.textContent=part.text;
+    const stem=doc.createElement('div');stem.className='part-stem';
+    if (renderStem) stem.innerHTML=renderStem(part.text,part.start,part.end); else stem.textContent=part.text;
     const area=doc.createElement('textarea');area.className='part-answer';area.rows=part.kind==='single_choice'?2:4;
     area.setAttribute('aria-label',`${part.label} 作答`);area.dataset.partId=part.id;
     area.placeholder=part.kind==='single_choice'?'填一个选项，并写出判断依据':'写下这一小题的答案';

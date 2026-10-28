@@ -1,4 +1,5 @@
-import { mountQuestionParts, questionParts } from './question-parts.js';
+import { mountQuestionParts, questionParts } from './question-parts.js?v=20261028-question-blanks';
+import { renderQuestionBlanks } from './question-blanks.js';
 /* AI 高考 — 新前端
  * 单页：目录 / 原文 / 题目 / AI 答案 / 用户答案 / 对话
  * - 简体中文界面
@@ -808,11 +809,17 @@ function formatQuestionBody(text) {
     .replace(/\n/g, "<br>");
 }
 
-function renderQuestionBody(rec, question) {
+function renderQuestionBody(rec, question, range) {
   const key = `question${question.origQIndex || question.qIndex}`;
   const marks = (rec.annotations || []).filter(mark => Number(mark.qIndex) === Number(question.qIndex) && mark.material === key);
-  return marks.length ? renderMaterialWithAnnotations(question.text, key, marks, question.qIndex).replace(/\n/g, '<br>')
-    : formatQuestionBody(question.text);
+  return renderQuestionBlanks(question.text, (text, start, end) => {
+    // Annotations are offsets in the original full question, including in year
+    // collections and multipart views. Shift only the fragment being rendered.
+    const fragmentMarks = marks.filter(mark => mark.end > start && mark.start < end)
+      .map(mark => ({ ...mark, start: Math.max(mark.start, start) - start, end: Math.min(mark.end, end) - start }));
+    return marks.length ? renderMaterialWithAnnotations(text, key, fragmentMarks, question.qIndex).replace(/\n/g, '<br>')
+      : formatQuestionBody(text);
+  }, range);
 }
 
 function scrollCurrentQuestionIntoView() {
@@ -1063,7 +1070,7 @@ function renderWorkpad() {
   const storedAnswer = loadLocalAnswer(identity.sourceRecordId, identity.sourceQIndex);
   $("#user-answer")._unmountQuestionParts?.();
   $("#user-answer").value = storedAnswer;
-  mountQuestionParts($("#user-answer"), q);
+  mountQuestionParts($("#user-answer"), q, (_text, start, end) => renderQuestionBody(rec, q, { start, end }));
   $("#answer-status").textContent = storedAnswer ? "已自动保存" : "";
 
   // 对话：从存储里恢复

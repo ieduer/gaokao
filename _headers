@@ -1,0 +1,8 @@
+/data/*
+  Access-Control-Allow-Origin: *
+
+/assets/js/question-blanks.js
+  Access-Control-Allow-Origin: *
+
+/assets/js/canonical-question-source.js
+  Access-Control-Allow-Origin: *

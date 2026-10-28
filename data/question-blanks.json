@@ -1,0 +1,688 @@
+{
+  "schemaVersion": 1,
+  "sourceQuestions": [
+    {
+      "recordId": "2007-feilian",
+      "qIndex": 3,
+      "sha256": "7dccb8efae4a569dceaf2cc46e4f1eff86e4cff157ba9a99ced3f235e89f2a4a",
+      "ranges": [
+        [
+          64,
+          82
+        ],
+        [
+          83,
+          102
+        ]
+      ],
+      "provenance": {
+        "basis": "Reviewed answer-slot semantics in accepted source; original glyphs and lengths unverified."
+      }
+    },
+    {
+      "recordId": "2006-feilian",
+      "qIndex": 3,
+      "sha256": "5d2feb0a2ffa3f54ef93e6d6d4a992a8d74656408867bc707f9e5c1dc9eaa562",
+      "ranges": [
+        [
+          77,
+          92
+        ],
+        [
+          93,
+          108
+        ],
+        [
+          109,
+          124
+        ]
+      ],
+      "provenance": {
+        "basis": "Reviewed answer-slot semantics in accepted source; original glyphs and lengths unverified."
+      }
+    },
+    {
+      "recordId": "2005-feilian",
+      "qIndex": 3,
+      "sha256": "ae4d76ee32fad5abc45f449fccfba7ade2a60edaec13640c9de3a9368425a284",
+      "ranges": [
+        [
+          21,
+          33
+        ],
+        [
+          34,
+          45
+        ],
+        [
+          49,
+          59
+        ],
+        [
+          60,
+          69
+        ]
+      ],
+      "provenance": {
+        "basis": "Reviewed answer-slot semantics in accepted source; original glyphs and lengths unverified."
+      }
+    },
+    {
+      "recordId": "2007-shici",
+      "qIndex": 1,
+      "sha256": "92fdff8069e1820c35d1f70f02e8433c63feb8794f05f5ad266b08263147267a",
+      "ranges": [
+        [
+          23,
+          38
+        ]
+      ],
+      "provenance": {
+        "basis": "Reviewed answer-slot semantics in accepted source; original glyphs and lengths unverified."
+      }
+    },
+    {
+      "recordId": "2019-moxie",
+      "qIndex": 1,
+      "sha256": "59a041d3e2c7e9558ca54e4acce1b8130656f680346dae54346359fd4ebffb7f",
+      "ranges": [
+        [
+          45,
+          55
+        ],
+        [
+          56,
+          66
+        ],
+        [
+          93,
+          103
+        ],
+        [
+          104,
+          114
+        ],
+        [
+          145,
+          155
+        ],
+        [
+          156,
+          166
+        ],
+        [
+          252,
+          262
+        ],
+        [
+          263,
+          273
+        ]
+      ],
+      "provenance": {
+        "basis": "Reviewed answer-slot semantics in accepted source; original glyphs and lengths unverified."
+      }
+    },
+    {
+      "recordId": "2012-moxie",
+      "qIndex": 1,
+      "sha256": "dbc1e6e67d94a26211a288bf7c18564d38953c339e04d92a474c7f227e4c61b2",
+      "ranges": [
+        [
+          251,
+          262
+        ],
+        [
+          267,
+          276
+        ]
+      ],
+      "provenance": {
+        "basis": "Reviewed answer-slot semantics in accepted source; original glyphs and lengths unverified."
+      }
+    },
+    {
+      "recordId": "2011-moxie",
+      "qIndex": 1,
+      "sha256": "0e0354586c359a592767d04095478519ee9ca2ad19ead37fd028e2be0b9964e2",
+      "ranges": [
+        [
+          33,
+          52
+        ],
+        [
+          65,
+          79
+        ],
+        [
+          138,
+          154
+        ],
+        [
+          155,
+          174
+        ],
+        [
+          206,
+          217
+        ],
+        [
+          218,
+          234
+        ],
+        [
+          265,
+          276
+        ],
+        [
+          282,
+          297
+        ],
+        [
+          326,
+          341
+        ],
+        [
+          342,
+          356
+        ],
+        [
+          378,
+          388
+        ],
+        [
+          395,
+          406
+        ]
+      ],
+      "provenance": {
+        "basis": "Reviewed answer-slot semantics in accepted source; original glyphs and lengths unverified."
+      }
+    },
+    {
+      "recordId": "2010-moxie",
+      "qIndex": 1,
+      "sha256": "c9390c58369a9125ad370eabc119dc69894d9e016a50fc0dd77073e92b03476c",
+      "ranges": [
+        [
+          37,
+          47
+        ],
+        [
+          48,
+          60
+        ],
+        [
+          93,
+          108
+        ],
+        [
+          109,
+          124
+        ],
+        [
+          148,
+          164
+        ],
+        [
+          165,
+          185
+        ],
+        [
+          210,
+          226
+        ],
+        [
+          227,
+          242
+        ],
+        [
+          263,
+          278
+        ],
+        [
+          287,
+          299
+        ],
+        [
+          319,
+          334
+        ],
+        [
+          335,
+          353
+        ]
+      ],
+      "provenance": {
+        "basis": "Reviewed answer-slot semantics in accepted source; original glyphs and lengths unverified."
+      }
+    },
+    {
+      "recordId": "2009-moxie",
+      "qIndex": 1,
+      "sha256": "c5b4a69dd1955b59a67399b8de2aba022cedce9ec31eb00b325fc42bce8db86d",
+      "ranges": [
+        [
+          34,
+          56
+        ],
+        [
+          57,
+          76
+        ],
+        [
+          98,
+          115
+        ],
+        [
+          116,
+          131
+        ],
+        [
+          164,
+          186
+        ],
+        [
+          187,
+          207
+        ],
+        [
+          229,
+          252
+        ]
+      ],
+      "provenance": {
+        "basis": "Reviewed answer-slot semantics in accepted source; original glyphs and lengths unverified."
+      }
+    },
+    {
+      "recordId": "2008-moxie",
+      "qIndex": 1,
+      "sha256": "98b89ec23c9f40fd9fdb7d624f8eb027650c2629714cde1fa303cbb34d95b863",
+      "ranges": [
+        [
+          28,
+          41
+        ],
+        [
+          49,
+          61
+        ],
+        [
+          87,
+          105
+        ],
+        [
+          106,
+          124
+        ],
+        [
+          150,
+          165
+        ],
+        [
+          166,
+          184
+        ]
+      ],
+      "provenance": {
+        "basis": "Reviewed answer-slot semantics in accepted source; original glyphs and lengths unverified."
+      }
+    },
+    {
+      "recordId": "2007-moxie",
+      "qIndex": 1,
+      "sha256": "8e0f095c3c78e4414c0b64293772fd61a90b96248cd1bdf05a0cf0fd1ed324e6",
+      "ranges": [
+        [
+          112,
+          133
+        ],
+        [
+          134,
+          148
+        ],
+        [
+          176,
+          191
+        ],
+        [
+          197,
+          211
+        ],
+        [
+          246,
+          265
+        ],
+        [
+          266,
+          283
+        ]
+      ],
+      "provenance": {
+        "basis": "Reviewed answer-slot semantics in accepted source; original glyphs and lengths unverified."
+      }
+    },
+    {
+      "recordId": "2006-moxie",
+      "qIndex": 1,
+      "sha256": "d43752d76017607246cfd2c119cf78536befde1bce60100c00069d50784df343",
+      "ranges": [
+        [
+          63,
+          91
+        ],
+        [
+          92,
+          117
+        ],
+        [
+          155,
+          173
+        ],
+        [
+          174,
+          192
+        ],
+        [
+          250,
+          274
+        ],
+        [
+          275,
+          303
+        ],
+        [
+          352,
+          386
+        ],
+        [
+          387,
+          415
+        ]
+      ],
+      "provenance": {
+        "basis": "Reviewed answer-slot semantics in accepted source; original glyphs and lengths unverified."
+      }
+    },
+    {
+      "recordId": "2005-moxie",
+      "qIndex": 1,
+      "sha256": "92ce097facaa7df9c8b2fcd2ef26b506737c037463f56b6d4e4ad980adfa9d10",
+      "ranges": [
+        [
+          57,
+          89
+        ],
+        [
+          90,
+          118
+        ],
+        [
+          129,
+          141
+        ],
+        [
+          154,
+          168
+        ],
+        [
+          181,
+          197
+        ],
+        [
+          206,
+          226
+        ],
+        [
+          254,
+          273
+        ],
+        [
+          274,
+          293
+        ]
+      ],
+      "provenance": {
+        "basis": "Reviewed answer-slot semantics in accepted source; original glyphs and lengths unverified."
+      }
+    },
+    {
+      "recordId": "2004-moxie",
+      "qIndex": 1,
+      "sha256": "6725c2e23bfeff3873e663f732a6e644808a20e5477f187bf373caaed1b57242",
+      "ranges": [
+        [
+          43,
+          65
+        ],
+        [
+          70,
+          95
+        ],
+        [
+          137,
+          164
+        ],
+        [
+          175,
+          205
+        ]
+      ],
+      "provenance": {
+        "basis": "Reviewed answer-slot semantics in accepted source; original glyphs and lengths unverified."
+      }
+    },
+    {
+      "recordId": "2012-yuyanjichu",
+      "qIndex": 4,
+      "sha256": "9c35ff969e5e21ea482722c1aa8788df64c2559a17f4a9326649797adc066ecc",
+      "ranges": [
+        [
+          40,
+          48
+        ],
+        [
+          69,
+          78
+        ],
+        [
+          127,
+          135
+        ],
+        [
+          143,
+          151
+        ]
+      ],
+      "provenance": {
+        "basis": "Reviewed answer-slot semantics in accepted source; original glyphs and lengths unverified.",
+        "witness": "https://img.eol.cn/html/g/2012gkst/bj/yw1.jpg",
+        "witnessSha256": "7ee5d8eefbdc40ffdb93e4302fcc81d1c9abccdaf55a27a3165d77966aa76597",
+        "qualification": "EOL public retypeset image; not authenticated as examination-authority original."
+      }
+    },
+    {
+      "recordId": "2011-yuyanjichu",
+      "qIndex": 5,
+      "sha256": "2e83ebeedf8b4a3bce5b7eebd74e87b2da6902c2c5a6e3ebeab2f66f4f290bc7",
+      "ranges": [
+        [
+          53,
+          83
+        ],
+        [
+          115,
+          133
+        ]
+      ],
+      "provenance": {
+        "basis": "Reviewed answer-slot semantics in accepted source; original glyphs and lengths unverified."
+      }
+    },
+    {
+      "recordId": "2010-yuyanjichu",
+      "qIndex": 5,
+      "sha256": "d5e57a13e12f6a9e37d40d853c213bb1cf54ea8cda73d1cef06c02c7725fb194",
+      "ranges": [
+        [
+          68,
+          78
+        ],
+        [
+          100,
+          109
+        ],
+        [
+          117,
+          127
+        ]
+      ],
+      "provenance": {
+        "basis": "Reviewed answer-slot semantics in accepted source; original glyphs and lengths unverified."
+      }
+    },
+    {
+      "recordId": "2006-yuyanjichu",
+      "qIndex": 3,
+      "sha256": "e4d0ba2978cd6cfcfbd908bd498da0d00094f52247f0ffc0a31109ee9f3db129",
+      "ranges": [
+        [
+          90,
+          100
+        ],
+        [
+          127,
+          137
+        ],
+        [
+          154,
+          164
+        ]
+      ],
+      "provenance": {
+        "basis": "Reviewed answer-slot semantics in accepted source; original glyphs and lengths unverified."
+      }
+    },
+    {
+      "recordId": "2004-yuyanjichu",
+      "qIndex": 3,
+      "sha256": "3b08c02e028303274b83050022c3cd30b85093514bf9daaec11e07ac0f1c2547",
+      "ranges": [
+        [
+          50,
+          56
+        ],
+        [
+          87,
+          93
+        ],
+        [
+          104,
+          109
+        ]
+      ],
+      "provenance": {
+        "basis": "Reviewed answer-slot semantics in accepted source; original glyphs and lengths unverified."
+      }
+    },
+    {
+      "recordId": "2004-yuyanjichu-2",
+      "qIndex": 1,
+      "sha256": "d5fbba65944b3be79039b89f0e7b95060e57e85a0711a7a9ac2c7828ac1c951f",
+      "ranges": [
+        [
+          65,
+          75
+        ]
+      ],
+      "provenance": {
+        "basis": "Reviewed answer-slot semantics in accepted source; original glyphs and lengths unverified."
+      }
+    },
+    {
+      "recordId": "2005-shici",
+      "qIndex": 3,
+      "sha256": "a05cdd215418c428a4517c516ba8bcb3b76a9f8bc0bd55d4167ce622d4c571bb",
+      "ranges": [
+        [
+          77,
+          214
+        ]
+      ],
+      "provenance": {
+        "basis": "Reviewed answer-slot semantics in accepted source; original glyphs and lengths unverified."
+      }
+    },
+    {
+      "recordId": "2006-sanwen",
+      "qIndex": 2,
+      "sha256": "28f7ba3c44ed9a97a71a91946b39c182f847647a098e6874400034bfab4eb033",
+      "ranges": [
+        [
+          73,
+          147
+        ],
+        [
+          193,
+          263
+        ]
+      ],
+      "provenance": {
+        "basis": "Reviewed answer-slot semantics in accepted source; original glyphs and lengths unverified."
+      }
+    },
+    {
+      "recordId": "2007-yuyanjichu-2",
+      "qIndex": 2,
+      "sha256": "9e16287f9667547e9e6c8bb0b8ce77cfc1245d5d2d3bc739956df2a5f912b19f",
+      "ranges": [
+        [
+          128,
+          129
+        ],
+        [
+          132,
+          202
+        ],
+        [
+          207,
+          274
+        ],
+        [
+          277,
+          347
+        ]
+      ],
+      "provenance": {
+        "basis": "Reviewed answer-slot semantics in accepted source; original glyphs and lengths unverified."
+      }
+    },
+    {
+      "recordId": "2005-yuyanjichu-2",
+      "qIndex": 2,
+      "sha256": "9e16287f9667547e9e6c8bb0b8ce77cfc1245d5d2d3bc739956df2a5f912b19f",
+      "ranges": [
+        [
+          128,
+          129
+        ],
+        [
+          132,
+          202
+        ],
+        [
+          207,
+          274
+        ],
+        [
+          277,
+          347
+        ]
+      ],
+      "provenance": {
+        "basis": "Reviewed answer-slot semantics in accepted source; original glyphs and lengths unverified."
+      }
+    }
+  ]
+}

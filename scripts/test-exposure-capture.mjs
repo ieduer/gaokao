@@ -1,3 +1,4 @@
+import { renderQuestionBlanks } from '../assets/js/question-blanks.js';
 import {mountQuestionParts,questionParts} from '../assets/js/question-parts.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -12,7 +13,7 @@ const load=name=>JSON.parse(readFileSync(new URL(`../data/${name}`,import.meta.u
 const [records,authority,scope,preserved]=['all.json','answer-authority.json','answer-release-scope.json','answer-release-preserved.json'].map(load);
 validateScopedAnswers(records,authority,scope,preserved);
 const files=buildContentCatalog(projectScopedAnswers(records,authority,scope,preserved)),catalog=JSON.parse(files.get(CATALOG_PATH));
-const IMPORTS=["import { mountQuestionParts, questionParts } from './question-parts.js';","import { answerVersionSpecs, versionsForQuestion, reviewForQuestion } from './answer-versions.js';"];
+const IMPORTS=["import { mountQuestionParts, questionParts } from './question-parts.js?v=20261028-question-blanks';","import { renderQuestionBlanks } from './question-blanks.js';","import { answerVersionSpecs, versionsForQuestion, reviewForQuestion } from './answer-versions.js';"];
 const app=IMPORTS.reduce((source,line)=>source.replace(line,''),readFileSync(new URL('../assets/js/app.js',import.meta.url),'utf8'));
 const recorderSource=readFileSync(new URL('../assets/js/learning-records.js',import.meta.url),'utf8');
 const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
@@ -34,7 +35,7 @@ function page({identityDelay=0,authenticated=true,lastPosition=null}={}){
   const document={readyState:'loading',addEventListener(){},querySelector:()=>element(),querySelectorAll:()=>[],createElement:()=>element(),getElementById:()=>null,
     body:{classList:{toggle(){}}},documentElement:{setAttribute(){}}};
   const context=vm.createContext({console,setTimeout,clearTimeout,crypto:webcrypto,TextEncoder,TextDecoder,window:root,document,getComputedStyle:()=>({paddingTop:'0'}),
-    answerVersionSpecs,versionsForQuestion,reviewForQuestion,mountQuestionParts:()=>null,questionParts,
+    renderQuestionBlanks,answerVersionSpecs,versionsForQuestion,reviewForQuestion,mountQuestionParts:()=>null,questionParts,
     localStorage:{getItem:key=>storage.get(key)??null,setItem:(key,value)=>storage.set(key,value),removeItem:key=>storage.delete(key)},
     fetch:async url=>{const text=files.get(url)??'<!doctype html>';return {ok:true,text:async()=>text,arrayBuffer:async()=>new TextEncoder().encode(text).buffer};}});
   vm.runInContext(app,context);
