@@ -8,13 +8,26 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { createCanonicalQuestionSource, hydrateCanonicalProjection, loadCanonicalQuestions, CANONICAL_CONTENT_VERSION,
   CANONICAL_CONTENT_VERSIONS, CANONICAL_CATALOG_SHA256, renderQuestionBlanks } from '../assets/js/canonical-question-source.js';
 import { projectScopedAnswers } from './lib/answer-release-scope.mjs';
-import { buildContentCatalog, versionedCatalogPath } from './lib/content-catalog.mjs';
+import { buildContentCatalog, versionedCatalogPath, readPublishedArchive, archivedVersionFiles } from './lib/content-catalog.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const read = path => JSON.parse(readFileSync(resolve(root, path), 'utf8'));
 const records = projectScopedAnswers(read('data/all.json'), read('data/answer-authority.json'),
   read('data/answer-release-scope.json'), read('data/answer-release-preserved.json'));
-const files = buildContentCatalog(records);
+// What Pages publishes: the current build plus the archived earlier versions (data/published-archive).
+const currentFiles = buildContentCatalog(records);
+const files = new Map([...currentFiles, ...archivedVersionFiles(currentFiles,
+  readPublishedArchive(resolve(root, 'data/published-archive')), CANONICAL_CONTENT_VERSIONS)]);
+const CURRENT_VERSION = JSON.parse(currentFiles.get('data/catalog.json')).contentVersion;
+// A version's catalog and its exact corpus, as a deployment that only served that version would publish them.
+function versionFiles(contentVersion) {
+  const catalogText = files.get(versionedCatalogPath(contentVersion)), catalog = JSON.parse(catalogText);
+  const loaded = catalog.parts.map(part => JSON.parse(files.get(part.path))), cursor = loaded.map(() => 0);
+  const corpus = JSON.stringify(catalog.records.map(entry => loaded[entry.part][cursor[entry.part]++]), null, 2) + '\n';
+  assert.equal(`sha256:${createHash('sha256').update(corpus).digest('hex')}`, contentVersion);
+  return new Map([...files, ['data/catalog.json', catalogText], ['data/all.json', corpus]]);
+}
+const defaultFiles = versionFiles(CANONICAL_CONTENT_VERSION);
 const isCatalog = path => path.startsWith('data/catalogs/');
 function transport(edit = (_path, body) => body) {
   const calls = [];
@@ -139,9 +152,12 @@ const IDS = ['2012-yuyanjichu:3', CHANGED, '2012-shici:1', '2024-sanwen:2'];
 test('default callers keep the pinned default version, its catalog SHA-256 and the frozen version map', () => {
   assert.equal(CANONICAL_CONTENT_VERSION, 'sha256:7aeb9f57cbcb52178a2709d49e17c0afa9db6acb6ef94253f6f04a77c78284b3');
   assert.equal(CANONICAL_CATALOG_SHA256, '9cc4a27911b45b9385c8cdfa8ea35545425c42ac9d9e06f366660e015d4bae32');
-  assert.deepEqual({ ...CANONICAL_CONTENT_VERSIONS }, { [CANONICAL_CONTENT_VERSION]: CANONICAL_CATALOG_SHA256 });
+  assert.deepEqual({ ...CANONICAL_CONTENT_VERSIONS }, { [CANONICAL_CONTENT_VERSION]: CANONICAL_CATALOG_SHA256,
+    'sha256:efa9b0b3bbe5d7ae2bbdc45d1281a9f7f8e27bbe132dd2c21749466bdd07a2f5': '18582637a04befbc81adcf497479f1bda58eb686cfebbcba13436df04686f018' });
   assert.ok(Object.isFrozen(CANONICAL_CONTENT_VERSIONS));
-  assert.equal(JSON.parse(files.get('data/catalog.json')).contentVersion, CANONICAL_CONTENT_VERSION);
+  // The current build is the newer pinned version; the default stays the earlier one until gks moves.
+  assert.equal(CURRENT_VERSION, 'sha256:efa9b0b3bbe5d7ae2bbdc45d1281a9f7f8e27bbe132dd2c21749466bdd07a2f5');
+  assert.equal(sha(files.get(versionedCatalogPath(CURRENT_VERSION))), CANONICAL_CONTENT_VERSIONS[CURRENT_VERSION]);
   assert.equal(sha(files.get(versionedCatalogPath(CANONICAL_CONTENT_VERSION))), CANONICAL_CATALOG_SHA256);
 });
 
@@ -151,7 +167,8 @@ test('the catalog is read from its versioned immutable path, never from data/cat
   const { fetchImpl, calls } = server(served);
   const loaded = await createCanonicalQuestionSource({ fetchImpl })([CHANGED]);
   assert.equal(loaded.get(CHANGED).contentVersion, CANONICAL_CONTENT_VERSION);
-  assert.deepEqual(calls, [`data/catalogs/${CANONICAL_CONTENT_VERSION.slice(7)}.json`, JSON.parse(files.get('data/catalog.json')).parts.find(part => part.year === 2012).path]);
+  assert.deepEqual(calls, [`data/catalogs/${CANONICAL_CONTENT_VERSION.slice(7)}.json`,
+    JSON.parse(files.get(versionedCatalogPath(CANONICAL_CONTENT_VERSION))).parts.find(part => part.year === 2012).path]);
   const unversioned = server(new Map([...files].filter(([path]) => !isCatalog(path))));
   await assert.rejects(createCanonicalQuestionSource({ fetchImpl: unversioned.fetchImpl })([CHANGED]), /读取失败：404/);
 });
@@ -206,7 +223,7 @@ test('an unpublished version is refused before any read, with no fallback to ano
 test('hydration reads the version the cache binds and refuses one that is not published', async () => {
   const { fetchImpl, calls } = server(servedBoth);
   const client = await clientWith({ [VERSION_B]: CATALOG_B_SHA256 }, fetchImpl);
-  const payloadA = cachePayload(files, IDS, client.reviewedFields), payloadB = cachePayload(filesB, IDS, client.reviewedFields);
+  const payloadA = cachePayload(defaultFiles, IDS, client.reviewedFields), payloadB = cachePayload(filesB, IDS, client.reviewedFields);
   assert.equal(payloadB.answerAuthority.sha256, VERSION_B.slice(7));
   const hydratedA = await client.hydrateCanonicalProjection(payloadA, { site: 'gwyw' });
   const hydratedB = await client.hydrateCanonicalProjection(payloadB, { site: 'gwyw' });
@@ -229,12 +246,92 @@ test('hydration reads the version the cache binds and refuses one that is not pu
     unbound.answerAuthority.sha256 = sha256;
     await assert.rejects(client.hydrateCanonicalProjection(unbound, { site: 'gwyw' }), /绑定统一来源/);
   }
-  // The published client (version A only) refuses a cache bound to B before any read.
+  // The published client (it does not pin B) refuses a cache bound to B before any read.
   const published = server(servedBoth);
   await assert.rejects(hydrateCanonicalProjection(payloadB, { site: 'gwyw', loadQuestions: createCanonicalQuestionSource({ fetchImpl: published.fetchImpl }) }), /绑定统一来源/);
   assert.equal(published.calls.length, 0);
   assert.deepEqual(JSON.parse(JSON.stringify(await hydrateCanonicalProjection(payloadA, { site: 'gwyw',
     loadQuestions: createCanonicalQuestionSource({ fetchImpl: published.fetchImpl }) }))), payloadA);
+});
+
+// 2026-11-14: the current version restores the original exam text of 27 teaching revisions and withdraws
+// 2014-moxie (not a question from the 2014 paper). The earlier default version stays served unchanged.
+const RESTORED = ['2016-feilian:3', '2015-feilian:4', '2004-feilian:3', '2003-feilian:3', '2014-guangfu:2', '2024-guwen:2',
+  '2022-guwen:2', '2008-guwen:3', '2007-guwen:4', '2007-guwen:5', '2005-guwen:2', '2003-guwen:3', '2003-guwen:5', '2002-guwen:5',
+  '2025-guwen:3', '2025-shici:1', '2025-yuyanjichu:1', '2013-yuyanjichu:5', '2007-yuyanjichu:4', '2006-yuyanjichu:4',
+  '2005-yuyanjichu:1', '2005-yuyanjichu:4', '2005-yuyanjichu:5', '2004-yuyanjichu:5', '2003-yuyanjichu:5', '2002-yuyanjichu:4', '2004-sanwen:1'];
+const WITHDRAWN = '2014-moxie:1', BANNER = '【教学修订版';
+const currentServed = versionFiles(CURRENT_VERSION);
+const corpusIds = served => JSON.parse(served.get('data/all.json')).flatMap(record => record.questions.map(question => `${record.id}:${question.qIndex}`));
+// Everything a consumer reads for one question.
+function questionView({ record, question }) {
+  const key = String(question.qIndex);
+  return { question, materials: record.materials, topic: record.topic, annotation: record.annotation ?? null,
+    annotations: (record.annotations || []).filter(mark => mark.qIndex === question.qIndex), review: record.answer_reviews?.[key] ?? null,
+    answer: record.ai_answers?.[key] ?? null, history: record.answer_review_history?.[key] ?? null,
+    versions: Object.fromEntries(Object.entries(record.ai_answer_versions || {}).filter(([, slot]) => slot.answers?.[key] !== undefined)
+      .map(([version, slot]) => [version, { label: slot.label, model: slot.model, text: slot.answers[key],
+        provenance: slot.provenance?.[key] ?? null, visual: slot.visualEvidence?.[key] ?? null }])) };
+}
+
+test('the restored version has no teaching-revision stem and differs from the default version only in the 27 restored questions', async () => {
+  const { fetchImpl } = server(files);
+  const oldIds = corpusIds(defaultFiles), newIds = corpusIds(currentServed);
+  assert.deepEqual(oldIds.filter(id => id !== WITHDRAWN), newIds);
+  assert.ok(oldIds.includes(WITHDRAWN) && !newIds.includes(WITHDRAWN));
+  const before = await createCanonicalQuestionSource({ fetchImpl })(oldIds);
+  const after = await createCanonicalQuestionSource({ fetchImpl, contentVersion: CURRENT_VERSION })(newIds);
+  assert.ok([...after.values()].every(item => item.contentVersion === CURRENT_VERSION));
+  assert.deepEqual(oldIds.filter(id => before.get(id).question.text.includes(BANNER)).sort(), [...RESTORED].sort());
+  // The earlier version publishes the preserved 7ce7271 copy of the historical supplement, which is not a 2014 paper question.
+  assert.match(before.get(WITHDRAWN).question.text, /^三、本大题共1小题，共11分。\n14．在横线处填写作品原句。（共8分）\n（1）《滕王阁序》/);
+  assert.deepEqual(newIds.filter(id => after.get(id).question.text.includes(BANNER)), []);
+  assert.deepEqual(newIds.filter(id => JSON.stringify(questionView(before.get(id))) !== JSON.stringify(questionView(after.get(id)))).sort(),
+    [...RESTORED].sort());
+  const touched = new Set([...RESTORED, WITHDRAWN].map(id => id.slice(0, id.lastIndexOf(':'))));
+  for (const id of newIds) if (!touched.has(after.get(id).record.id)) assert.deepEqual(after.get(id).record, before.get(id).record, id);
+  for (const id of RESTORED) {
+    const old = before.get(id), now = after.get(id), key = String(now.question.qIndex);
+    assert.equal(now.question.score, old.question.score, `${id} score`);
+    assert.equal(now.question.id, old.question.id);
+    assert.equal(now.record.answer_reviews[key].status, 'reviewed');
+    assert.ok(now.record.answer_review_history[key].some(entry => entry.source.questions[0].text === old.question.text), `${id} teaching stem kept in history`);
+    assert.ok(Object.values(now.record.ai_answer_versions).some(slot => slot.label.endsWith('（旧题面）')
+      && slot.answers[key] === old.record.ai_answers[key]), `${id} teaching answer kept as （旧题面）`);
+  }
+});
+
+test('caches bound to the earlier version still hydrate; caches bound to the restored version hydrate against it', async () => {
+  const { fetchImpl, calls } = server(files);
+  const { reviewedFields } = await clientWith({}, fetchImpl);
+  const loadQuestions = (ids, options) => loadCanonicalQuestions(ids, { ...options, fetchImpl });
+  const ids = ['2016-feilian:3', '2024-guwen:2', '2003-yuyanjichu:5', '2004-sanwen:1', '2014-guangfu:2', '2012-yuyanjichu:4', '2012-shici:1'];
+  const earlier = cachePayload(defaultFiles, ids, reviewedFields), restored = cachePayload(currentServed, ids, reviewedFields);
+  assert.equal(earlier.answerAuthority.sha256, CANONICAL_CONTENT_VERSION.slice(7));
+  assert.equal(restored.answerAuthority.sha256, CURRENT_VERSION.slice(7));
+  for (const payload of [earlier, restored])
+    assert.deepEqual(JSON.parse(JSON.stringify(await hydrateCanonicalProjection(payload, { site: 'gwyw', loadQuestions }))), payload);
+  assert.ok(calls.includes(versionedCatalogPath(CANONICAL_CONTENT_VERSION)) && calls.includes(versionedCatalogPath(CURRENT_VERSION)));
+  const stem = (payload, id) => payload.years.flatMap(record => record.questions).find(question => question.canonicalQuestionId === id).stem;
+  assert.ok(stem(earlier, '2016-feilian:3').includes(BANNER) && !stem(restored, '2016-feilian:3').includes(BANNER));
+  assert.equal(stem(earlier, '2012-yuyanjichu:4'), stem(restored, '2012-yuyanjichu:4'));
+  for (const [payload, version] of [[restored, CANONICAL_CONTENT_VERSION], [earlier, CURRENT_VERSION]]) {
+    const relabeled = structuredClone(payload);
+    relabeled.answerAuthority.sha256 = version.slice(7);
+    await assert.rejects(hydrateCanonicalProjection(relabeled, { site: 'gwyw', loadQuestions }), /题库版本不一致/);
+  }
+});
+
+test('callers that name no version (gks) still read the earlier version exactly', async () => {
+  const { fetchImpl } = server(files);
+  const ids = corpusIds(defaultFiles), unnamed = await createCanonicalQuestionSource({ fetchImpl })(ids);
+  const byId = new Map(JSON.parse(defaultFiles.get('data/all.json')).map(record => [record.id, record]));
+  for (const id of ids) {
+    const item = unnamed.get(id);
+    assert.equal(item.contentVersion, CANONICAL_CONTENT_VERSION);
+    assert.deepEqual(item.record, byId.get(item.record.id));
+  }
+  assert.ok(unnamed.get('2016-feilian:3').question.text.includes(BANNER) && unnamed.has(WITHDRAWN), 'the earlier version is served unchanged until gks moves');
 });
 
 // Optional complete cross-consumer acceptance uses explicitly supplied checkouts;

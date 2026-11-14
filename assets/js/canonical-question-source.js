@@ -5,6 +5,8 @@ export { renderQuestionBlanks };
 // data/catalogs/<hex>.json. A version stays here until no consumer cache binds it.
 export const CANONICAL_CONTENT_VERSIONS = Object.freeze({
   'sha256:7aeb9f57cbcb52178a2709d49e17c0afa9db6acb6ef94253f6f04a77c78284b3': '9cc4a27911b45b9385c8cdfa8ea35545425c42ac9d9e06f366660e015d4bae32',
+  // 2026-11-14: original exam text restored for 27 teaching revisions; 2014-moxie (not an exam item) withdrawn.
+  'sha256:efa9b0b3bbe5d7ae2bbdc45d1281a9f7f8e27bbe132dd2c21749466bdd07a2f5': '18582637a04befbc81adcf497479f1bda58eb686cfebbcba13436df04686f018',
 });
 // The default version for callers that do not name one (gks loadCanonicalQuestions(ids)).
 export const CANONICAL_CONTENT_VERSION = 'sha256:7aeb9f57cbcb52178a2709d49e17c0afa9db6acb6ef94253f6f04a77c78284b3';

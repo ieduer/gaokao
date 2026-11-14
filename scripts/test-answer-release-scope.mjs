@@ -6,7 +6,7 @@ const load=n=>JSON.parse(readFileSync(new URL('../data/'+n,import.meta.url)));
 const records=load('all.json'),authority=load('answer-authority.json'),scope=load('answer-release-scope.json'),preserved=load('answer-release-preserved.json');
 test('Beijing has an exact explicit denominator and remains incomplete on its own missing evidence',()=>{
   const coverage=validateScopedAnswers(records,authority,scope,preserved,{requireComplete:false});
-  assert.equal(coverage.questions,640);assert.equal(coverage.parkedQuestions,6);
+  assert.equal(coverage.questions,640);assert.equal(coverage.parkedQuestions,6);assert.equal(coverage.withdrawnQuestions,1);
   const missing=structuredClone(authority);
   missing.questions=missing.questions.filter(q=>q.id!==scope.activeQuestionIds[0]);
   assert.throws(()=>validateScopedAnswers(records,missing,scope,preserved),/Incomplete review/);
@@ -18,9 +18,14 @@ test('Beijing has an exact explicit denominator and remains incomplete on its ow
 test('parked output is the exact accepted baseline while the unreleased candidate remains unchanged',()=>{
   const before=scopeDigest(records),oldAuthority=scopeDigest(authority);
   const projected=projectScopedAnswers(records,authority,scope,preserved,{requireComplete:false});
-  for(const kept of preserved){assert.deepEqual(projected.find(r=>r.id===kept.id),kept);assert.notDeepEqual(records.find(r=>r.id===kept.id),kept);}
+  const withdrawn=new Set(scope.withdrawnRecords.map(x=>x.id));
+  for(const kept of preserved){
+    assert.notDeepEqual(records.find(r=>r.id===kept.id),kept);
+    if(withdrawn.has(kept.id))assert.equal(projected.find(r=>r.id===kept.id),undefined);
+    else assert.deepEqual(projected.find(r=>r.id===kept.id),kept);
+  }
   assert.equal(scopeDigest(records),before);assert.equal(scopeDigest(authority),oldAuthority);
-  assert.equal(projected.length,records.length);
+  assert.deepEqual(projected.map(r=>r.id),records.map(r=>r.id).filter(id=>!withdrawn.has(id)));
   assert.equal(projected.find(r=>r.id==='2009-shici').answer_reviews['1'].status,'reviewed');
 });
 test('unclassified additions, omitted active IDs and partial record parking fail closed',()=>{
@@ -50,4 +55,21 @@ test('baseline content, identities and excluded blocker evidence cannot drift si
   assert.throws(()=>validateScopedAnswers(records,changed,scope,preserved,{requireComplete:false}),/unsafe blocker exclusion/);
   const renamed=structuredClone(scope);renamed.activeQuestionIds[0]='unknown:1';
   assert.throws(()=>validateScopedAnswers(records,authority,renamed,preserved,{requireComplete:false}),/unknown active/);
+});
+test('a withdrawn record is published neither as candidate nor as preserved baseline, and must stay parked',()=>{
+  assert.deepEqual(scope.withdrawnRecords.map(x=>x.id),['2014-moxie']);
+  const projected=projectScopedAnswers(records,authority,scope,preserved,{requireComplete:false});
+  assert.equal(projected.some(r=>r.id==='2014-moxie'),false);
+  assert.ok(records.some(r=>r.id==='2014-moxie')&&preserved.some(r=>r.id==='2014-moxie'),'source record and accepted baseline are retained');
+  const restored=structuredClone(scope);delete restored.withdrawnRecords;
+  assert.ok(projectScopedAnswers(records,authority,restored,preserved,{requireComplete:false}).some(r=>r.id==='2014-moxie'));
+  for(const [mutate,error] of [
+    [s=>{s.withdrawnRecords[0].id='2014-guwen';},/withdrawn record 2014-guwen/],
+    [s=>{s.withdrawnRecords.push(structuredClone(s.withdrawnRecords[0]));},/duplicate withdrawal/],
+    [s=>{s.withdrawnRecords[0].reason=' ';},/withdrawn record 2014-moxie/],
+    [s=>{delete s.withdrawnRecords[0].evidence;},/withdrawn record 2014-moxie/],
+    [s=>{s.withdrawnRecords[0].decidedAt='soon';},/withdrawn record 2014-moxie/],
+    [s=>{s.withdrawnRecords={};},/withdrawn records/],
+  ]){const changed=structuredClone(scope);mutate(changed);
+    assert.throws(()=>validateScopedAnswers(records,authority,changed,preserved,{requireComplete:false}),error);}
 });

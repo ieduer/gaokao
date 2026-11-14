@@ -664,6 +664,14 @@
       "acceptedRecordSha256": "3a648d350c5271018d2b405841fbbe4177280751b9c95415e551f610952c6428"
     }
   ],
+  "withdrawnRecords": [
+    {
+      "id": "2014-moxie",
+      "decidedAt": "2026-11-14T06:00:00.000Z",
+      "reason": "Not a question from the 2014 Beijing paper. The local 2014 Beijing blank and analysed papers have no such item: section 三 (11 points) is the poem 《奉陪郑驸马韦曲》 (2014-shici), and the only recitation item is the 《岳阳楼记》 fill-in inside the classical-prose section (original Q12, already in 2014-guwen:5). The preserved 7ce7271 copy is the same historical supplement (《滕王阁序》/《春望》/《行路难》) under a borrowed \"三、本大题共1小题，共11分。14．\" heading. Owner order 2026-11-14: publish only real exam questions in their original wording. Neither the candidate nor the preserved copy is published; the record, its review history and old scores stay in the source data.",
+      "evidence": "gk-originals-20261114/original-keys.json"
+    }
+  ],
   "parkedBlockers": [
     {
       "id": "9999-authored-reading-source-review",

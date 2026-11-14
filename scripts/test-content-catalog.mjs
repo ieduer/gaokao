@@ -5,6 +5,7 @@ import assert from 'node:assert/strict';
 import {mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
+import {fileURLToPath} from 'node:url';
 import {createHash, webcrypto} from 'node:crypto';
 import vm from 'node:vm';
 import {answerVersionSpecs, versionsForQuestion, reviewForQuestion} from '../assets/js/answer-versions.js';
@@ -181,7 +182,36 @@ test('the current version is also published at its versioned catalog path, byte-
   assert.throws(()=>verifyContentCatalog(files),/versioned catalog differs/);
   files.delete(path);
   assert.throws(()=>verifyContentCatalog(files),/versioned catalog differs/);
-  assert.equal(archivedVersionFiles(filesA,readPublishedArchive(join(tmpdir(),'gk-no-such-archive-'+process.pid)),CANONICAL_CONTENT_VERSIONS).size,0);
+  // The earlier pinned version must come from the archive; without it the build refuses to publish.
+  assert.throws(()=>archivedVersionFiles(filesA,readPublishedArchive(join(tmpdir(),'gk-no-such-archive-'+process.pid)),CANONICAL_CONTENT_VERSIONS),/Pinned version has no published catalog/);
+});
+
+// The tracked archive: the 2026-10-28 version (sha256:7aeb9f57…) that every consumer cache and gks still bind.
+const PREVIOUS='sha256:7aeb9f57cbcb52178a2709d49e17c0afa9db6acb6ef94253f6f04a77c78284b3';
+const trackedArchive=readPublishedArchive(fileURLToPath(new URL('../data/published-archive',import.meta.url)));
+function reassemble(files,catalogText){
+  const catalog=JSON.parse(catalogText),loaded=catalog.parts.map(part=>JSON.parse(files.get(part.path))),cursor=loaded.map(()=>0);
+  return JSON.stringify(catalog.records.map(entry=>loaded[entry.part][cursor[entry.part]++]),null,2)+'\n';
+}
+
+test('the previous version is still served byte-identical from the tracked archive next to the current version',()=>{
+  assert.deepEqual(Object.keys(CANONICAL_CONTENT_VERSIONS).sort(),[PREVIOUS,catalogA.contentVersion].sort());
+  assert.notEqual(catalogA.contentVersion,PREVIOUS);
+  assert.deepEqual([...trackedArchive.catalogs.keys()],[PREVIOUS]);
+  const extra=archivedVersionFiles(filesA,trackedArchive,CANONICAL_CONTENT_VERSIONS),published=new Map([...filesA,...extra]);
+  verifyPublishedVersions(published,CANONICAL_CONTENT_VERSIONS);
+  const previousCatalog=published.get(versionedCatalogPath(PREVIOUS));
+  assert.equal(previousCatalog,trackedArchive.catalogs.get(PREVIOUS));
+  assert.equal(sha(previousCatalog),'9cc4a27911b45b9385c8cdfa8ea35545425c42ac9d9e06f366660e015d4bae32');
+  const previousCorpus=reassemble(published,previousCatalog);
+  assert.equal(`sha256:${sha(previousCorpus)}`,PREVIOUS,'the archived catalog and parts reassemble the exact earlier corpus bytes');
+  // Only parts whose bytes changed are archived; unchanged years are the same generated files.
+  for(const part of JSON.parse(previousCatalog).parts){
+    assert.equal(sha(published.get(part.path)),part.sha256);
+    assert.equal(trackedArchive.parts.has(part.path),!filesA.has(part.path),part.path);
+  }
+  assert.equal(published.get(CATALOG_PATH),filesA.get(CATALOG_PATH),'the page keeps reading the current version');
+  assert.equal(published.get('data/all.json'),filesA.get('data/all.json'));
 });
 
 // Archive fixtures live in a temporary directory: the build is current version B (one 2024 annotation

@@ -1,3 +1,36 @@
+## 2026-11-14 — Original exam text restored as content version `efa9b0b3…` (candidate, not released)
+
+Same branch, on top of the versioned source (`7a330d1`). Owner order: the bank holds only real exam questions in their original wording. This section does not claim release or acceptance.
+
+- **What changed**: 28 questions were teaching revisions (stem starting `【教学修订版v1…非原卷文字…】`). 27 now carry the original exam text again. 2014-moxie:1 is withdrawn from publication (see below).
+  - `data/all.json`: only `questions[].text`, the flat `questionN` (its value before the revision; absent for 2014-guangfu, as before) and that question's own marks. Editorial dots the revisions added are gone; the original underlines/dots come back with their recorded rationale. 2003-yuyanjichu:5 keeps two separately answered parts, 原5 `[0,232]` and 原6 `[232,479]`.
+  - The restored text and marks reproduce the archived original review's `inputSha256`, `inputContextSha256` and `inputPresentationSha256` exactly (checked for all 27; sibling questions unchanged). IDs, `score` fields and score history are unchanged; no old grade is recomputed.
+- **Answers** (`data/answer-authority.json`): each current review is the archived original dual-model review promoted to `reviewed`. Its Astra/Claude answers are reused as they are: no new model call.
+  - The decisions are in `gk-originals-20261114/original-keys.json` (sha256 `91db5f42…c864`; the evidence and `adjudicationHistory` entries bind this hash).
+  - Keyed, 15 questions: one key; the explanation is the recorded note plus the unchanged qualification notice.
+  - Keyed with a dispute, 9 questions: 2015-feilian:4, 2004-feilian:3, 2024-guwen:2, 2008-guwen:3, 2005-guwen:2, 2025-shici:1, 2025-yuyanjichu:1, 2006-yuyanjichu:4 and 2005-yuyanjichu:4. The note states the other reading.
+  - Qualitative, 3 questions: 2014-guangfu:2 (reprints C、D vs A、D; set C、D, qualitative_only), 2004-sanwen:1 (A、E, qualitative_only) and 2003-yuyanjichu:5 (open, two parts, no key, no practice total because no point value is verified).
+  - Every promoted review records an `adjudicationHistory` entry (`previousStatus: disputed`, previous explanation and current version, decision, `questionChanged: false`, `officialPublisherCertified: false`) and `editorialRevision.kind: original_exam_restoration` (`originalExamText: true`, `oldScoresRecalculated: false`).
+  - The current answer is the original model answer that gives the key. Exception: 2015-feilian:4, where both models chose B; its Astra answer names D as the other candidate.
+  - The original snapshot left `history`. The teaching version was archived with `snapshotReview`, so its stem and answers stay visible as （旧题面）.
+  - Teaching-revision sources were dropped; dictionary and other evidence stayed. The practice guide is re-pointed, with the same totals.
+  - The 17 release-qualification dispositions that cover a changed record were re-bound with `qualificationBindings` / `releaseQualificationDigest`. The blockers themselves are unchanged: 640 reviewed, 27 qualified limitations.
+- **2014-moxie withdrawn**: the 《滕王阁序》/《春望》/《行路难》 item is not a 2014 Beijing question.
+  - In the local 2014 Beijing blank and analysed papers, section 三 (11 points) is the poem 《奉陪郑驸马韦曲》 (2014-shici). The only recitation item is the 《岳阳楼记》 fill-in, original Q12, already in 2014-guwen:5.
+  - The 7ce7271 preserved copy that the previous version publishes is the same supplement under a borrowed `三、…14．` heading.
+  - New `answer-release-scope.json` `withdrawnRecords` (each must be parked, with reason, evidence and decision time): neither the candidate nor the preserved baseline is published. The source record, its history and old scores stay.
+- **Versions**: the current build is `sha256:efa9b0b3bbe5d7ae2bbdc45d1281a9f7f8e27bbe132dd2c21749466bdd07a2f5`, catalog `18582637a04befbc81adcf497479f1bda58eb686cfebbcba13436df04686f018`, with 225 records and 645 questions.
+  - `data/published-archive/` now holds the previous version `7aeb9f57…84b3`: its catalog `9cc4a279…ae32`, copied byte-for-byte from the accepted step-1 artifact, and the 14 year parts whose bytes changed. The other 12 parts are generated identically, and the build checks that both versions reassemble.
+  - `CANONICAL_CONTENT_VERSIONS` pins both versions. `CANONICAL_CONTENT_VERSION` stays `7aeb…`, so gks and other unversioned callers read exactly what they read before.
+- **Consumer move**: consumers move one by one.
+  - Each consumer regenerates its cache from `efa9…` (`answerAuthority.sha256`) and re-releases, in this order: yyjc (10 restored), gwyw (10), flx (5), gksw (1), shi (1). Until then each consumer's current cache keeps hydrating against `7aeb…`.
+  - gks moves last: name the version, or change the default in a later GK release.
+  - `7aeb…` is removed only when no cache binds it (see the retention rule above).
+- **Open points for the owner**:
+  - Some shared notices still mention teaching revisions in general: 2015, 2004, 2005, 2013 and 2025. They were kept unchanged because siblings share them.
+  - 2013-yuyanjichu:5 and 2005-yuyanjichu:1 have no verified original dot positions and stay unmarked.
+- **Rollback**: promote the predecessor deployment. Its client pins only `7aeb…`, and no cache binds `efa9…` until a consumer moves.
+
 ## 2026-11-14 — Versioned shared question source (candidate, not released)
 
 Branch `claude/gk-versioned-source-20261114`, based on accepted production `a209908`. No question content changes: `data/all.json`, `data/catalog.json`, every part and `resourceVersion` stay byte-identical. This section does not claim release or acceptance.

@@ -19,9 +19,10 @@ test('every segmented source reconstructs exactly including instructions and ann
  assert.equal(count,59);
 });
 test('all original source, score, review and history fields survive unchanged',()=>{
- // Source fields accepted at d11a8d9; no Git-history dependency in Pages builds.
+ // Source fields accepted at d11a8d9, then the 2026-11-14 original exam text restoration of 27 teaching
+ // revisions (gk-originals-20261114); no Git-history dependency in Pages builds.
  const after=structuredClone(records);for(const r of after)for(const q of r.questions||[])delete q.questionParts;
- assert.equal(createHash('sha256').update(JSON.stringify(after)).digest('hex'),'e36a400b4f23a20849a6493da45a5eb0643389f4c7742ed47877f146d0d859e7');
+ assert.equal(createHash('sha256').update(JSON.stringify(after)).digest('hex'),'ee08e37bb5bbce08f6de8f2c7afe953338d733b93b394880c1deda9367b1dd3b');
 });
 test('option combinations and writing instructions are not treated as separate responses',()=>{
  for(const id of ['2026-yuyanjichu:1','2019-guwen:1','2003-yuyanjichu:5','2007-yuyanjichu-2:1','2006-yuyanjichu-2:3']){

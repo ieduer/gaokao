@@ -6,7 +6,8 @@ test('qualified practice publication preserves open documentary issues and the p
  const result=check(authority);assert.equal(result.reviewed,640);assert.equal(result.openReleaseBlockers,0);assert.equal(result.qualifiedSourceLimitations,27);assert.equal(result.unverifiedSourceIssues,27);
  assert.equal(authority.releaseQualification.originalPublicationVerified,false);assert.equal(authority.releaseQualification.officialRubricVerified,false);
  assert(authority.releaseQualification.dispositions.every(d=>authority.releaseBlockers.find(b=>b.id===d.blockerId).status==='open'));
- const projected=projectScopedAnswers(records,authority,scope,preserved);for(const r of preserved)assert.deepEqual(projected.find(x=>x.id===r.id),r);
+ const projected=projectScopedAnswers(records,authority,scope,preserved),withdrawn=new Set((scope.withdrawnRecords||[]).map(x=>x.id));
+ for(const r of preserved)assert.deepEqual(projected.find(x=>x.id===r.id),withdrawn.has(r.id)?undefined:r);
  for(const r of projected.filter(r=>!preserved.some(p=>p.id===r.id)))for(const review of Object.values(r.answer_reviews)){assert(review.publicationQualification.notice);assert(review.explanation.includes(review.publicationQualification.notice));}
 });
 test('an absent disposition or a newly found issue still blocks complete model coverage',()=>{

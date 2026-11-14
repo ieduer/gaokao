@@ -246,3 +246,37 @@ test('release build refuses incomplete reviews before writing output',()=>{
   assert.notEqual(result.status,0);assert.match(result.stderr,/Incomplete review/);
   assert.equal(existsSync(target),false);
 });
+test('restored original exam questions bind the archived original input and keep the teaching version as history',()=>{
+  const data=JSON.parse(readFileSync(new URL('../data/all.json',import.meta.url))),a=JSON.parse(readFileSync(new URL('../data/answer-authority.json',import.meta.url)));
+  validateAuthority(data,a);
+  const restored=a.questions.filter(q=>q.editorialRevision?.kind==='original_exam_restoration');
+  assert.equal(restored.length,27);
+  // Only the withdrawn historical supplement still carries a teaching revision; it is not published.
+  assert.deepEqual(a.questions.filter(q=>q.editorialRevision?.kind==='explicit_teaching_revision').map(q=>q.id),['2014-moxie:1']);
+  for(const review of restored){
+    const at=review.id.lastIndexOf(':'),record=data.find(r=>r.id===review.id.slice(0,at)),question=record.questions.find(q=>q.qIndex===Number(review.id.slice(at+1)));
+    assert.doesNotMatch(question.text,/教学修订版/,review.id);
+    assert.equal(record[`question${question.qIndex}`]?.includes('教学修订版')??false,false,review.id);
+    const revision=review.editorialRevision;
+    assert.equal(revision.originalExamText,true);assert.equal(revision.oldScoresRecalculated,false);
+    assert.equal(questionPresentationDigest(record,question),revision.originalInputPresentationSha256,review.id);
+    assert.equal(review.status,'reviewed');
+    assert.ok(Object.values(review.modelAnswers).every(m=>m.inputPresentationSha256===review.inputPresentationSha256),'the reused answers were given for exactly this input');
+    const decision=review.adjudicationHistory.at(-1);
+    assert.equal(decision.previousStatus,'disputed');assert.equal(decision.questionChanged,false);assert.equal(decision.officialPublisherCertified,false);
+    assert.match(decision.evidenceSha256,/^[a-f0-9]{64}$/);
+    const teaching=review.history.filter(h=>h.review.inputPresentationSha256===revision.replacedTeachingInputPresentationSha256);
+    assert.equal(teaching.length,1,review.id);
+    assert.equal(teaching[0].review.editorialRevision.version,revision.replacedTeachingVersion);
+    assert.ok(teaching[0].source.questions[0].text.includes('【教学修订版'));
+    assert.ok(!review.sources.some(s=>/teaching|editorial_grammar/.test(s.type)),review.id);
+    assert.ok(review.sources.some(s=>s.type==='original_exam_restoration'));
+    assert.ok(review.explanation.endsWith(`\n\n【来源与评分边界】${review.publicationQualification.notice}`));
+    if(review.practiceScoring)assert.equal(review.practiceScoring.inputPresentationSha256,review.inputPresentationSha256);
+  }
+  // Putting the teaching stem back without its own review fails closed.
+  const review=restored[0],teaching=review.history.find(h=>h.source.questions[0].text.includes('【教学修订版'));
+  const record=data.find(r=>r.id===review.id.slice(0,review.id.lastIndexOf(':')));
+  record.questions.find(q=>q.qIndex===teaching.source.questions[0].qIndex).text=teaching.source.questions[0].text;
+  assert.throws(()=>validateAuthority(data,a),/Question changed/);
+});

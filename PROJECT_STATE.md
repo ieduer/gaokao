@@ -1,3 +1,13 @@
+> 2026-11-14 candidate, not released: the 27 teaching revisions carry the original exam text again. This is content version `sha256:efa9b0b3…a2f5` (catalog `18582637…f018`).
+>
+> - **Answers**: the archived original dual-model reviews are promoted to reviewed. There are 15 single keys, 9 keys with the dispute stated and 3 qualitative-only items. No new model call was made.
+> - **History kept**: each teaching version stays in history as （旧题面）. IDs, scores and old grades are unchanged.
+> - **2014-moxie**: not a 2014 paper question, so it is withdrawn from the new version.
+> - **Previous version**: `7aeb9f57…84b3` stays served byte-identical from `data/published-archive/` and remains the default for gks.
+> - **Consumers**: they move to the new version one by one: yyjc, gwyw, flx, gksw, shi, then gks.
+>
+> Details: docs/OPERATIONS.md "Original exam text restored".
+
 > 2026-10-28 current task: unified canonical question-source and fill-line candidate prepared; release/acceptance status is maintained in [/Users/ylsuen/CF/_meta/reports/operations/exam-blank-lines-20261028/REPORT.md](/Users/ylsuen/CF/_meta/reports/operations/exam-blank-lines-20261028/REPORT.md). Existing accepted version remains valid until its exact transaction succeeds; forward histories and scores preserved. Source continuation: EOL original 2014 language Q5 image independently verified; four dotted idiom groups use five exact ranges excluding the comma, with canonical content and grading inputs unchanged.
 
 > 2026-10-26 released fix: gk question views at page load or right after returning to the tab are now owned by the signed-in student and reach User Center; a restored position records one view (Pages `847937e4`, source `4ed6a22`, effective 13:15:32Z; rollback Pages `af60ed84` / `082cc79`). Signed-in acceptance passed. Status: https://status.bdfz.net/?update=20261026-gk-exposure-attribution&revision=1 . Details: docs/OPERATIONS.md "Exposure capture ownership — released".

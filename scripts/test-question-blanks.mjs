@@ -251,8 +251,9 @@ test('display metadata preserves canonical publication, catalog and all retained
   assert.equal(JSON.stringify(published), before);
   const digest = value => createHash('sha256').update(value).digest('hex');
   const content = buildContentCatalog(published);
-  assert.equal(digest(content.get('data/all.json')), '7aeb9f57cbcb52178a2709d49e17c0afa9db6acb6ef94253f6f04a77c78284b3');
-  assert.equal(digest(content.get('data/catalog.json')), '9cc4a27911b45b9385c8cdfa8ea35545425c42ac9d9e06f366660e015d4bae32');
+  // Current build: the 2026-11-14 original-text version. The previous version stays published from the archive.
+  assert.equal(digest(content.get('data/all.json')), 'efa9b0b3bbe5d7ae2bbdc45d1281a9f7f8e27bbe132dd2c21749466bdd07a2f5');
+  assert.equal(digest(content.get('data/catalog.json')), '18582637a04befbc81adcf497479f1bda58eb686cfebbcba13436df04686f018');
   const version = `sha256:${digest(content.get('data/all.json'))}`;
   assert.equal(content.get(versionedCatalogPath(version)), content.get('data/catalog.json'));
   assert.equal(CANONICAL_CONTENT_VERSIONS[version], digest(content.get('data/catalog.json')), 'the shared client pins the current build');

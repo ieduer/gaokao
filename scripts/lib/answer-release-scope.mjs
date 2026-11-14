@@ -28,6 +28,14 @@ export function scopedAnswerInputs(records,authority,scope,preserved){
     if(!record.questions?.length||record.questions.some(q=>!active.has(`${record.id}:${q.qIndex}`)))fail(`unaccounted question in ${record.id}`);
     selected.push(record);
   }
+  // A withdrawn record is parked and also left out of publication: neither its candidate nor its preserved
+  // baseline is published (for example a historical item that is not a question from the exam paper).
+  const withdrawnRows=scope.withdrawnRecords??[];
+  if(!Array.isArray(withdrawnRows))fail('withdrawn records');
+  const withdrawn=new Map(withdrawnRows.map(x=>[x?.id,x]));
+  if(withdrawn.size!==withdrawnRows.length)fail('duplicate withdrawal');
+  for(const [id,row]of withdrawn)if(!parked.has(id)||!row.reason?.trim()||!row.evidence?.trim()||!Number.isFinite(Date.parse(row.decidedAt)))
+    fail(`withdrawn record ${id}`);
   const omitted=new Set();
   for(const disposition of scope.parkedBlockers||[]){
     const blocker=authority.releaseBlockers?.find(x=>x.id===disposition.id);
@@ -37,7 +45,7 @@ export function scopedAnswerInputs(records,authority,scope,preserved){
   }
   const selectedAuthority={...authority,questions:authority.questions.filter(q=>active.has(q.id)),
     releaseBlockers:(authority.releaseBlockers||[]).filter(b=>!omitted.has(b.id))};
-  return {records:selected,authority:selectedAuthority,baseline,active,parked};
+  return {records:selected,authority:selectedAuthority,baseline,active,parked,withdrawn};
 }
 
 export function validateScopedAnswers(records,authority,scope,preserved,{requireComplete=true}={}){
@@ -46,6 +54,7 @@ export function validateScopedAnswers(records,authority,scope,preserved,{require
   const open=inputs.authority.releaseBlockers.filter(b=>b.status!=='resolved');
   const qualified=requireComplete?open.filter(b=>qualifiedReleaseBlocker(inputs.records,inputs.authority,b)).length:0;
   return {...coverage,scope:scope.id,parkedQuestions:records.reduce((n,r)=>n+(inputs.parked.has(r.id)?r.questions.length:0),0),
+    withdrawnQuestions:records.reduce((n,r)=>n+(inputs.withdrawn.has(r.id)?r.questions.length:0),0),
     openReleaseBlockers:open.length-qualified,qualifiedSourceLimitations:qualified,unverifiedSourceIssues:open.length,
     preservedBaseline:scope.acceptedBaseline.sourceCommit};
 }
@@ -54,5 +63,5 @@ export function projectScopedAnswers(records,authority,scope,preserved,{requireC
   validateScopedAnswers(records,authority,scope,preserved,{requireComplete});
   const inputs=scopedAnswerInputs(records,authority,scope,preserved);
   const projected=new Map(projectAuthority(inputs.records,inputs.authority).map(r=>[r.id,r]));
-  return records.map(r=>structuredClone(inputs.baseline.get(r.id)||projected.get(r.id)));
+  return records.filter(r=>!inputs.withdrawn.has(r.id)).map(r=>structuredClone(inputs.baseline.get(r.id)||projected.get(r.id)));
 }
