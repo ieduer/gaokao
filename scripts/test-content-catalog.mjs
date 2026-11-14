@@ -1,13 +1,16 @@
 import { renderQuestionBlanks } from '../assets/js/question-blanks.js';
 import {mountQuestionParts,questionParts} from '../assets/js/question-parts.js';
-import test from 'node:test';
+import test, {after} from 'node:test';
 import assert from 'node:assert/strict';
-import {readFileSync} from 'node:fs';
+import {mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync} from 'node:fs';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
 import {createHash, webcrypto} from 'node:crypto';
 import vm from 'node:vm';
 import {answerVersionSpecs, versionsForQuestion, reviewForQuestion} from '../assets/js/answer-versions.js';
 import {validateScopedAnswers, projectScopedAnswers} from './lib/answer-release-scope.mjs';
-import {buildContentCatalog, verifyContentCatalog, CATALOG_PATH} from './lib/content-catalog.mjs';
+import {buildContentCatalog, verifyContentCatalog, CATALOG_PATH, versionedCatalogPath, readPublishedArchive, archivedVersionFiles, verifyPublishedVersions} from './lib/content-catalog.mjs';
+import {CANONICAL_CONTENT_VERSIONS} from '../assets/js/canonical-question-source.js';
 
 const load=name=>JSON.parse(readFileSync(new URL(`../data/${name}`,import.meta.url)));
 const [records,authority,scope,preserved]=['all.json','answer-authority.json','answer-release-scope.json','answer-release-preserved.json'].map(load);
@@ -167,4 +170,74 @@ test('only the latest selection renders when an earlier year arrives later',asyn
 
 test('the page versions the changed multipart module and declares the new blank module',()=>{
   assert.deepEqual(appSource.split('\n').filter(line=>/^\s*import\b/.test(line)),IMPORTS);
+});
+
+test('the current version is also published at its versioned catalog path, byte-identical and pinned',()=>{
+  const path=versionedCatalogPath(catalogA.contentVersion);
+  assert.equal(path,`data/catalogs/${catalogA.contentVersion.slice(7)}.json`);
+  assert.equal(filesA.get(path),filesA.get(CATALOG_PATH));
+  assert.equal(CANONICAL_CONTENT_VERSIONS[catalogA.contentVersion],sha(filesA.get(path)));
+  const files=new Map(filesA);files.set(path,`${files.get(path)} `);
+  assert.throws(()=>verifyContentCatalog(files),/versioned catalog differs/);
+  files.delete(path);
+  assert.throws(()=>verifyContentCatalog(files),/versioned catalog differs/);
+  assert.equal(archivedVersionFiles(filesA,readPublishedArchive(join(tmpdir(),'gk-no-such-archive-'+process.pid)),CANONICAL_CONTENT_VERSIONS).size,0);
+});
+
+// Archive fixtures live in a temporary directory: the build is current version B (one 2024 annotation
+// changed); the archive keeps version A, which consumer caches still bind.
+const archiveRoot=mkdtempSync(join(tmpdir(),'gk-published-archive-'));
+after(()=>rmSync(archiveRoot,{recursive:true,force:true}));
+let archives=0;
+function archiveOf(files,edit=()=>{}){
+  const dir=join(archiveRoot,String(++archives)),catalog=JSON.parse(files.get(CATALOG_PATH));
+  mkdirSync(join(dir,catalog.contentVersion.slice(7)),{recursive:true});mkdirSync(join(dir,'parts'));
+  writeFileSync(join(dir,catalog.contentVersion.slice(7),'catalog.json'),files.get(CATALOG_PATH));
+  for(const part of catalog.parts)writeFileSync(join(dir,part.path.replace('data/','')),files.get(part.path));
+  edit(dir,catalog);
+  return dir;
+}
+const changedB=structuredClone(projected);
+changedB.find(r=>r.year===2024&&Object.keys(r.answer_reviews||{}).length).annotation+='。';
+const filesB=buildContentCatalog(changedB),catalogB=JSON.parse(filesB.get(CATALOG_PATH));
+const pinsAB={[catalogA.contentVersion]:sha(filesA.get(CATALOG_PATH)),[catalogB.contentVersion]:sha(filesB.get(CATALOG_PATH))};
+
+test('an archived version publishes its catalog and only the parts the current build does not generate',()=>{
+  const extra=archivedVersionFiles(filesB,readPublishedArchive(archiveOf(filesA)),pinsAB);
+  const changedPart=partOf(catalogA,2024).path;
+  assert.deepEqual([...extra.keys()].sort(),[versionedCatalogPath(catalogA.contentVersion),changedPart].sort());
+  assert.equal(extra.get(versionedCatalogPath(catalogA.contentVersion)),filesA.get(CATALOG_PATH));
+  assert.equal(extra.get(changedPart),filesA.get(changedPart));
+  const published=new Map([...filesB,...extra]);
+  verifyContentCatalog(published);
+  verifyPublishedVersions(published,pinsAB);
+  assert.equal(published.get(CATALOG_PATH),filesB.get(CATALOG_PATH),'data/catalog.json stays the current version');
+  for(const part of catalogA.parts)assert.equal(published.get(part.path),filesA.get(part.path));
+});
+
+test('archived versions fail closed on changed, conflicting, missing, stray or unpinned content',()=>{
+  const part2024=partOf(catalogA,2024).path.replace('data/',''),part2023=partOf(catalogA,2023).path.replace('data/','');
+  const cases=[
+    [dir=>writeFileSync(join(dir,part2023),'[]'),/differs from the generated file/],
+    [dir=>writeFileSync(join(dir,part2024),readFileSync(join(dir,part2024),'utf8').replace('"','\'')),/do not match its name/],
+    [dir=>rmSync(join(dir,part2024)),/Missing content file/],
+    [dir=>writeFileSync(join(dir,'parts','1999.0123456789abcdef.json'),'[]'),/not used by an archived catalog/],
+    [dir=>writeFileSync(join(dir,'parts','notes.txt'),''),/Unexpected archive file/],
+    [dir=>writeFileSync(join(dir,'README.md'),''),/Unexpected archive entry/],
+    [(dir,c)=>writeFileSync(join(dir,c.contentVersion.slice(7),'extra.json'),'{}'),/must hold only catalog.json/],
+    [(dir,c)=>writeFileSync(join(dir,c.contentVersion.slice(7),'catalog.json'),filesA.get(CATALOG_PATH)+' '),/the shared client pins/],
+  ];
+  for(const [edit,error] of cases)
+    assert.throws(()=>archivedVersionFiles(filesB,readPublishedArchive(archiveOf(filesA,edit)),pinsAB),error);
+  const archive=readPublishedArchive(archiveOf(filesA));
+  assert.throws(()=>archivedVersionFiles(filesB,archive,{[catalogB.contentVersion]:pinsAB[catalogB.contentVersion]}),/is not pinned by the shared client/);
+  assert.throws(()=>archivedVersionFiles(filesB,archive,{[catalogA.contentVersion]:pinsAB[catalogA.contentVersion]}),new RegExp(`${catalogB.contentVersion.slice(7)}.json \\(catalog SHA-256 ${sha(filesB.get(CATALOG_PATH))}\\) is not pinned`));
+  assert.throws(()=>archivedVersionFiles(filesB,readPublishedArchive(archiveOf(filesB)),pinsAB),/is the current build/);
+  assert.throws(()=>archivedVersionFiles(filesB,{catalogs:new Map(),parts:new Map()},pinsAB),/Pinned version has no published catalog/);
+  // A forged archived catalog that keeps the pinned version name but not its content cannot pass.
+  const forged=readPublishedArchive(archiveOf(filesA));
+  const forgedCatalog=JSON.parse(filesB.get(CATALOG_PATH));forgedCatalog.contentVersion=catalogA.contentVersion;
+  forged.catalogs.set(catalogA.contentVersion,JSON.stringify(forgedCatalog));
+  forged.parts.clear();
+  assert.throws(()=>archivedVersionFiles(filesB,forged,{...pinsAB,[catalogA.contentVersion]:sha(JSON.stringify(forgedCatalog))}),/does not reassemble version/);
 });

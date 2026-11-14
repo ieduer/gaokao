@@ -1,3 +1,29 @@
+## 2026-11-14 — Versioned shared question source (candidate, not released)
+
+Branch `claude/gk-versioned-source-20261114`, based on accepted production `a209908`. No question content changes: `data/all.json`, `data/catalog.json`, every part and `resourceVersion` stay byte-identical. This section does not claim release or acceptance.
+
+- **Why**: the shared client pinned one whole-corpus version, so any content change broke all six consumers until each re-released, and an older version's parts disappeared on the next build. GK now serves several content versions side by side.
+- **Versioned catalogs**: each published version has an immutable catalog at `data/catalogs/<64-hex of contentVersion>.json`. The current one is byte-identical to `data/catalog.json`, which the GK page keeps reading. Parts stay content-addressed at `data/parts/<year>.<hash16>.json`. `_headers` marks both directories `Cache-Control: public, max-age=31536000, immutable`. Before this change, parts were served with the Pages default caching.
+- **Shared client** (`assets/js/canonical-question-source.js`):
+  - `CANONICAL_CONTENT_VERSIONS` is a frozen map from `contentVersion` to catalog SHA-256, covering every version GK serves.
+  - `CANONICAL_CONTENT_VERSION` (`sha256:7aeb9f57…84b3`) and `CANONICAL_CATALOG_SHA256` (`9cc4a279…ae32`) are the default version and its catalog hash. The default applies to callers that do not name a version (gks `loadCanonicalQuestions(ids)`).
+  - `createCanonicalQuestionSource({contentVersion})` and `loadCanonicalQuestions(ids, {contentVersion})` read one named version. They keep one cached source per version.
+  - `hydrateCanonicalProjection` reads the version that the cache binds (`'sha256:' + answerAuthority.sha256`).
+  - A version that is not in the map is refused (`统一题库没有发布此版本` / `本站题库缓存没有绑定统一来源`), with no fallback to another version.
+- **Archive**: a tracked `data/published-archive/` keeps the earlier versions that are still published. For each version it holds `<hex>/catalog.json` (the exact published catalog bytes) and `parts/<year>.<hash16>.json` (its parts). The directory does not exist yet, because no version has been archived. `build-pages.mjs` copies each archived catalog to `data/catalogs/<hex>.json`, and copies each archived part to `data/parts/` unless the build already generates a byte-identical file. The build fails, both in memory and after writing, when:
+  - an archived part's name, sha or bytes do not match;
+  - an archived part has the same name as a generated file but different bytes;
+  - an archived part is not used by any archived catalog;
+  - the archive holds an unexpected file;
+  - a pinned version lacks a catalog whose SHA-256 equals the pin, or lacks parts that reassemble the corpus the version hashes;
+  - a published version (the current version included) is not pinned in `CANONICAL_CONTENT_VERSIONS`. The error prints the catalog SHA-256 to pin.
+- **Changing content**:
+  1. Copy the outgoing version's `data/catalogs/<hex>.json` and the parts it lists into the archive.
+  2. Add the new version and its catalog SHA-256 to `CANONICAL_CONTENT_VERSIONS`.
+  3. Leave the default unchanged until every unversioned caller has moved.
+- **Retention rule**: a version stays published (in the map and in the archive) until no consumer cache binds it. Consumers bind it through `answerAuthority.sha256`, GKS through the D1 projections and the default version. Removing a version means dropping it from both places in one GK release, after every consumer has re-released or been rolled forward. A rollback must never leave a consumer bound to a version that GK no longer serves.
+- **Rollback**: promote the predecessor deployment. The `a209908` client reads `data/catalog.json`, which every deployment publishes.
+
 ## 2026-10-28 — Unified question source and verified fill blanks
 
 Task `exam-blank-lines-20261028`; owner `codex-01a1809b`. Release state, exact source, deployment, acceptance and rollback are recorded once in [the task report](/Users/ylsuen/CF/_meta/reports/operations/exam-blank-lines-20261028/REPORT.md); this section was prepared before publication and does not by itself claim acceptance.

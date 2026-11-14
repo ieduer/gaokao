@@ -1,10 +1,21 @@
 import { renderQuestionBlanks } from './question-blanks.js';
 
 export { renderQuestionBlanks };
+// Every content version GK still publishes: contentVersion -> SHA-256 of its catalog at
+// data/catalogs/<hex>.json. A version stays here until no consumer cache binds it.
+export const CANONICAL_CONTENT_VERSIONS = Object.freeze({
+  'sha256:7aeb9f57cbcb52178a2709d49e17c0afa9db6acb6ef94253f6f04a77c78284b3': '9cc4a27911b45b9385c8cdfa8ea35545425c42ac9d9e06f366660e015d4bae32',
+});
+// The default version for callers that do not name one (gks loadCanonicalQuestions(ids)).
 export const CANONICAL_CONTENT_VERSION = 'sha256:7aeb9f57cbcb52178a2709d49e17c0afa9db6acb6ef94253f6f04a77c78284b3';
-export const CANONICAL_CATALOG_SHA256 = '9cc4a27911b45b9385c8cdfa8ea35545425c42ac9d9e06f366660e015d4bae32';
+export const CANONICAL_CATALOG_SHA256 = CANONICAL_CONTENT_VERSIONS[CANONICAL_CONTENT_VERSION];
 export const CANONICAL_ORIGIN = 'https://gk.bdfz.net';
 const PART_PATH = /^data\/parts\/\d+\.[a-f0-9]{16}\.json$/;
+const pinnedCatalogSha = version => {
+  if (typeof version !== 'string' || !/^sha256:[a-f0-9]{64}$/.test(version) || !Object.hasOwn(CANONICAL_CONTENT_VERSIONS, version))
+    throw new Error(`统一题库没有发布此版本：${String(version)}`);
+  return CANONICAL_CONTENT_VERSIONS[version];
+};
 const clone = value => value === undefined ? undefined : structuredClone(value);
 const stable = value => JSON.stringify(value, (_, item) => item && typeof item === 'object' && !Array.isArray(item)
   ? Object.fromEntries(Object.keys(item).sort().map(key => [key, item[key]])) : item);
@@ -16,8 +27,11 @@ async function sha256(text) {
   return [...new Uint8Array(digest)].map(byte => byte.toString(16).padStart(2, '0')).join('');
 }
 
-// A client owns one immutable catalog snapshot. No retry or local-content fallback.
-export function createCanonicalQuestionSource({ fetchImpl = globalThis.fetch, origin = CANONICAL_ORIGIN } = {}) {
+// A client owns one immutable catalog snapshot of one pinned version. No retry, and no
+// fallback to local content or to another version.
+export function createCanonicalQuestionSource({ fetchImpl = globalThis.fetch, origin = CANONICAL_ORIGIN,
+  contentVersion = CANONICAL_CONTENT_VERSION } = {}) {
+  const catalogSha256 = pinnedCatalogSha(contentVersion);
   let catalogPromise;
   const parts = new Map();
   async function read(path) {
@@ -29,10 +43,10 @@ export function createCanonicalQuestionSource({ fetchImpl = globalThis.fetch, or
   }
   function catalog() {
     return catalogPromise ||= (async () => {
-      const text = await read('data/catalog.json');
-      if (await sha256(text) !== CANONICAL_CATALOG_SHA256) throw new Error('统一题库目录完整性校验失败');
+      const text = await read(`data/catalogs/${contentVersion.slice(7)}.json`);
+      if (await sha256(text) !== catalogSha256) throw new Error('统一题库目录完整性校验失败');
       const value = JSON.parse(text);
-      if (value.schemaVersion !== 'gk-content-catalog-v1' || value.contentVersion !== CANONICAL_CONTENT_VERSION
+      if (value.schemaVersion !== 'gk-content-catalog-v1' || value.contentVersion !== contentVersion
           || !Array.isArray(value.records) || !Array.isArray(value.parts)
           || new Set(value.records.map(record => record.id)).size !== value.records.length
           || value.records.some(record => typeof record.id !== 'string' || !Number.isInteger(record.part)
@@ -86,9 +100,16 @@ export function createCanonicalQuestionSource({ fetchImpl = globalThis.fetch, or
   };
 }
 
-const defaultLoader = createCanonicalQuestionSource();
+// One cached source per version. Without a version the default version is read; other
+// options (fetchImpl, origin) still create an uncached source as before.
+const defaultLoaders = new Map([[CANONICAL_CONTENT_VERSION, createCanonicalQuestionSource()]]);
 export function loadCanonicalQuestions(ids, options) {
-  return options ? createCanonicalQuestionSource(options)(ids) : defaultLoader(ids);
+  try {
+    const { contentVersion = CANONICAL_CONTENT_VERSION, ...custom } = options || {};
+    if (Object.keys(custom).length) return createCanonicalQuestionSource({ ...custom, contentVersion })(ids);
+    if (!defaultLoaders.has(contentVersion)) defaultLoaders.set(contentVersion, createCanonicalQuestionSource({ contentVersion }));
+    return defaultLoaders.get(contentVersion)(ids);
+  } catch (error) { return Promise.reject(error); }
 }
 
 function reviewedFields(record, question) {
@@ -118,9 +139,12 @@ function reviewedFields(record, question) {
 
 // Local corpora are immutable generated compatibility caches. Validate every current
 // content field before hydration; local IDs, scores, categories and histories survive.
+// The cache names its version (answerAuthority.sha256); only that published version is read.
 export async function hydrateCanonicalProjection(payload, { site, loadQuestions = loadCanonicalQuestions } = {}) {
   const shape = { yyjc: 'years', flx: 'years', gksw: 'years', gwyw: 'years', shi: 'items' }[site];
-  if (!shape || !Array.isArray(payload?.[shape]) || payload.answerAuthority?.sha256 !== CANONICAL_CONTENT_VERSION.slice(7))
+  const bound = payload?.answerAuthority?.sha256, contentVersion = `sha256:${bound}`;
+  if (!shape || !Array.isArray(payload?.[shape]) || typeof bound !== 'string' || !/^[a-f0-9]{64}$/.test(bound)
+      || !Object.hasOwn(CANONICAL_CONTENT_VERSIONS, contentVersion))
     throw new Error('本站题库缓存没有绑定统一来源');
   const targets = [];
   for (const record of payload[shape]) {
@@ -133,13 +157,13 @@ export async function hydrateCanonicalProjection(payload, { site, loadQuestions 
   if (!targets.length || targets.length !== payload.answerAuthority.totalQuestions
       || new Set(targets.map(({ question }) => question.canonicalQuestionId)).size !== targets.length)
     throw new Error('本站统一题目覆盖不完整');
-  const canonical = await loadQuestions(targets.map(({ question }) => question.canonicalQuestionId));
+  const canonical = await loadQuestions(targets.map(({ question }) => question.canonicalQuestionId), { contentVersion });
   const out = clone(payload), copies = new Map();
   for (const record of out[shape]) for (const question of record.questions || [])
     if (question.canonicalQuestionId) copies.set(question.canonicalQuestionId, { record, question });
   for (const { record, question } of targets) {
     const id = question.canonicalQuestionId, source = canonical.get(id);
-    if (!source || source.contentVersion !== CANONICAL_CONTENT_VERSION) throw new Error(`统一题库题目版本缺失：${id}`);
+    if (!source || source.contentVersion !== contentVersion) throw new Error(`统一题库题目版本缺失：${id}`);
     same(`${source.record.id}:${source.question.qIndex}`, id, `${id} 来源身份`);
     same(record.sourceRecordId || record.id, source.record.id, `${id} 记录映射`);
     same(record.year, source.record.year, `${id} 年份`);

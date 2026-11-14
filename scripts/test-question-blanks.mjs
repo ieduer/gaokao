@@ -6,7 +6,8 @@ import vm from 'node:vm';
 import { QUESTION_BLANKS, QUESTION_SOURCE_MARKS, findQuestionBlanks, findQuestionSourceMarks, renderQuestionBlanks } from '../assets/js/question-blanks.js';
 import { mountQuestionParts, questionParts, serializePartAnswers } from '../assets/js/question-parts.js';
 import { buildQuestionBlanksModule, validateQuestionBlanks, validateQuestionSourceMarks } from './lib/question-blanks.mjs';
-import { buildContentCatalog } from './lib/content-catalog.mjs';
+import { buildContentCatalog, versionedCatalogPath } from './lib/content-catalog.mjs';
+import { CANONICAL_CONTENT_VERSIONS } from '../assets/js/canonical-question-source.js';
 import { projectScopedAnswers } from './lib/answer-release-scope.mjs';
 
 const records = JSON.parse(readFileSync(new URL('../data/all.json', import.meta.url), 'utf8'));
@@ -252,4 +253,7 @@ test('display metadata preserves canonical publication, catalog and all retained
   const content = buildContentCatalog(published);
   assert.equal(digest(content.get('data/all.json')), '7aeb9f57cbcb52178a2709d49e17c0afa9db6acb6ef94253f6f04a77c78284b3');
   assert.equal(digest(content.get('data/catalog.json')), '9cc4a27911b45b9385c8cdfa8ea35545425c42ac9d9e06f366660e015d4bae32');
+  const version = `sha256:${digest(content.get('data/all.json'))}`;
+  assert.equal(content.get(versionedCatalogPath(version)), content.get('data/catalog.json'));
+  assert.equal(CANONICAL_CONTENT_VERSIONS[version], digest(content.get('data/catalog.json')), 'the shared client pins the current build');
 });
