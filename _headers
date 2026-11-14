@@ -6,9 +6,3 @@
 
 /assets/js/canonical-question-source.js
   Access-Control-Allow-Origin: *
-
-/data/catalogs/*
-  Cache-Control: public, max-age=31536000, immutable
-
-/data/parts/*
-  Cache-Control: public, max-age=31536000, immutable
