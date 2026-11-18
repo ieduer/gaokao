@@ -14,7 +14,9 @@ import { renderQuestionBlanks } from './question-blanks.js';
 import { answerVersionSpecs, versionsForQuestion, reviewForQuestion } from './answer-versions.js';
 
 const SITE_KEY = "gk";
-const AI_URL = "https://apis.bdfz.net/";
+// Same-origin AI route (functions/api/ai.js, 2026-11-18): the site's own function calls the shared gateway as a verified
+// caller, so an explanation or a review is answered by Claude first, then OpenAI, then Gemini.
+const AI_URL = "/api/ai";
 const DISCUSSION_API = "/api/question-discussions";
 // Exact data/all.json bytes, including the reversible source-review overlays.
 let SOURCE_CONTENT_VERSION = null;
@@ -1551,7 +1553,8 @@ async function callAI(prompt, taskType = "chat", { requiresImage = false } = {})
   if(!request)throw new Error('学习记录服务尚未就绪，请保留页面后重试');
   await request.saved;
   const controller = new AbortController();
-  const timeout = window.setTimeout(() => controller.abort(), 45000);
+  // 70 s: above the site function's 65 s wait for the gateway's 60 s credit lane.
+  const timeout = window.setTimeout(() => controller.abort(), 70000);
   try {
     const res = await fetch(AI_URL, {
       method: "POST",

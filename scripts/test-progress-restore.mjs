@@ -193,7 +193,8 @@ test('2026 full paper retains all Codex answers and original per-question identi
 test('modern entrypoint retains catalog, APIS, discussions and source disclosure', () => {
   const html=readFileSync(new URL('../index.html',import.meta.url),'utf8');
   assert.match(html,/data-theme="mono"/); assert.match(html,/id="active-question"/);
-  assert.match(source,/https:\/\/apis\.bdfz\.net\//); assert.doesNotMatch(source,/https:\/\/ai\.bdfz\.net\//);
+  // 2026-11-18: the page asks the site's own AI route (functions/api/ai.js); the browser never calls the gateway itself.
+  assert.match(source,/const AI_URL = "\/api\/ai";/); assert.doesNotMatch(source,/https:\/\/(ai|apis)\.bdfz\.net\//);
   assert.match(source,/\/api\/question-discussions/);
 });
 test('whole-paper view preserves dynamic model identity and per-question current version',()=>{
