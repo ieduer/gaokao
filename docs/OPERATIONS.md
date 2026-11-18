@@ -1,3 +1,15 @@
+## 2026-11-18 AI answers through the gateway's credit lanes (sites-three-tier-20261118)
+
+This section supersedes earlier statements in this file about how the page reaches the AI gateway and how long it waits.
+
+- Accepted: source `9899efc` on `main`, Pages deployment `3af64324-38d6-4386-b149-ca6e0c05fe7c`, effective 2026-11-18T10:34:21Z. Rollback: Pages rollback to db4a80bd (source 96cddc6).
+- Before: the site called `https://apis.bdfz.net/` from the browser and waited 45 s; only the free Gemini pool could answer (no caller credential).
+- Now: `functions/api/ai.js` is the verified gateway caller `gk.bdfz.net`. It accepts a same-origin POST, builds the gateway request on the server (`chat` (explanations) and `feedback` (reviews); no model, tools or generation settings from the browser), runs the per-client rate guard `functions/_shared/ai-rate-guard.js` before every model request (ten requests per clock minute per hashed client address; refuses with 503 when its KV binding is missing or failing), calls the gateway through the service binding and waits 65 s. The page waits 70 s.
+- Bindings: the Pages project settings (this repository has no wrangler.toml): production service binding `APIS` -> `apis` and KV binding `AI_RATE_KV`, set through the Pages API on 2026-11-18. KV namespace: shared `ai-rate-guard` (`88ca57c8cb534d539b959e29617e6fa6`), keys `ai-rate:<site>:<hash>:<minute>`, two-minute expiry. Secret `APIS_CALLER_TOKEN` on the Pages project (production only; never in this repository; private store name `GK_APIS_CALLER_TOKEN`).
+- Gateway side (APIS `1182b59`, version `4c5995f6`, 2026-11-18): `gk.bdfz.net` is in the credit lanes for chat, so an answer comes from Claude first, then OpenAI, then the paid Gemini tier, then the free pool; 300 paid attempts per UTC day. The caller is registered by a credential digest in the gateway secret `APIS_CALLER_TOKEN_HASH_ADDITIONS`; rotating the credential needs a gateway release (new digest) before the Pages secret and a redeploy.
+- Operating notes: the guard counts per clock minute, so a burst across a minute boundary can reach twice the limit. A preview deployment has no caller secret and answers 503 `AI_GATEWAY_UNAVAILABLE`.
+- Tests: `scripts/test-ai-route.mjs` (`npm run test:ai-route`, first step of `npm run build`). Acceptance: one real answer by claude-sonnet-5-5 and the eleventh request of a minute refused with 429. Evidence: `/Users/ylsuen/CF/_meta/reports/operations/sites-three-tier-20261118/sites/gk/`. Public update: `20261118-kz-gk-hlm-claude-first`.
+
 ## 2026-11-14 — Original exam text restored as content version `efa9b0b3…` (candidate, not released)
 
 Same branch, on top of the versioned source (`7a330d1`). Owner order: the bank holds only real exam questions in their original wording. This section does not claim release or acceptance.

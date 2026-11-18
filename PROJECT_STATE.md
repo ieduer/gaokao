@@ -1,3 +1,9 @@
+## 2026-11-18 accepted: AI through the gateway's credit lanes
+
+- Source `9899efc` on `main`, Pages deployment `3af64324-38d6-4386-b149-ca6e0c05fe7c`, effective 2026-11-18T10:34:21Z; rollback db4a80bd (source 96cddc6).
+- gk.bdfz.net AI answers come from Claude first, then OpenAI, then Gemini, through `functions/api/ai.js` (verified caller `gk.bdfz.net`, server-built request, per-client rate guard, 65 s gateway wait, 70 s page wait). Details and operating notes: `docs/OPERATIONS.md`, section "2026-11-18 AI answers through the gateway's credit lanes".
+- Open: none for this change.
+
 > 2026-11-14 candidate, not released: the 27 teaching revisions carry the original exam text again. This is content version `sha256:efa9b0b3…a2f5` (catalog `18582637…f018`).
 >
 > - **Answers**: the archived original dual-model reviews are promoted to reviewed. There are 15 single keys, 9 keys with the dispute stated and 3 qualitative-only items. No new model call was made.
