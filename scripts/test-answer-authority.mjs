@@ -280,3 +280,39 @@ test('restored original exam questions bind the archived original input and keep
   record.questions.find(q=>q.qIndex===teaching.source.questions[0].qIndex).text=teaching.source.questions[0].text;
   assert.throws(()=>validateAuthority(data,a),/Question changed/);
 });
+test('a transcription correction only fixes punctuation and keeps the reviewed answer it re-binds',()=>{
+  const data=JSON.parse(readFileSync(new URL('../data/all.json',import.meta.url))),a=JSON.parse(readFileSync(new URL('../data/answer-authority.json',import.meta.url)));
+  validateAuthority(data,a);
+  const corrected=a.questions.filter(q=>q.editorialRevision?.kind==='transcription_correction');
+  assert.deepEqual(corrected.map(q=>q.id),['2022-feilian:3']);
+  const punctuation=/[\s.．。]/g;
+  for(const review of corrected){
+    const at=review.id.lastIndexOf(':'),record=data.find(r=>r.id===review.id.slice(0,at)),question=record.questions.find(q=>q.qIndex===Number(review.id.slice(at+1)));
+    const revision=review.editorialRevision,archived=review.history.filter(h=>h.review.inputPresentationSha256===revision.previousInputPresentationSha256);
+    assert.equal(archived.length,1,review.id);
+    const [{source,review:old}]=archived;
+    assert.equal(revision.originalExamText,true);assert.equal(revision.answerChanged,false);assert.equal(revision.oldScoresRecalculated,false);assert.equal(revision.modelCalls,0);
+    // Applying exactly the declared replacements to the archived text gives the current text; each one only moves punctuation.
+    assert.ok(revision.replacements.length);
+    const replayed=revision.replacements.reduce((text,{from,to})=>{
+      assert.notEqual(from,to);assert.equal(from.replace(punctuation,''),to.replace(punctuation,''),from);
+      assert.equal(text.split(from).length,2,from);return text.replace(from,to);
+    },source.questions[0].text);
+    assert.equal(replayed,question.text);
+    assert.equal(record[`question${question.qIndex}`],question.text);
+    // The decision, explanation and model texts are the archived ones; only the input binding moved.
+    assert.equal(review.status,old.status);assert.equal(review.kind,old.kind);assert.deepEqual(review.correctOptions,old.correctOptions);
+    assert.equal(review.explanation,old.explanation);assert.equal(review.currentVersion,old.currentVersion);
+    assert.deepEqual(Object.keys(review.modelAnswers).sort(),Object.keys(old.modelAnswers).sort());
+    for(const [version,model] of Object.entries(review.modelAnswers)){
+      const before=old.modelAnswers[version],eq=model.provenance.inputEquivalence;
+      assert.equal(model.text,before.text,version);
+      assert.equal(model.inputPresentationSha256,questionPresentationDigest(record,question));
+      assert.deepEqual([eq.answeredInputSha256,eq.answeredInputContextSha256,eq.answeredInputPresentationSha256],
+        [before.inputSha256,before.inputContextSha256,before.inputPresentationSha256],version);
+      assert.equal(eq.method,'option_label_punctuation_transcription_v1');
+    }
+    // Every option label the consumers parse is now present.
+    assert.deepEqual(question.text.split('\n').slice(1).map(line=>line.slice(0,2)),['A.','B.','C.','D.']);
+  }
+});

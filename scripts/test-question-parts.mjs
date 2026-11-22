@@ -20,9 +20,10 @@ test('every segmented source reconstructs exactly including instructions and ann
 });
 test('all original source, score, review and history fields survive unchanged',()=>{
  // Source fields accepted at d11a8d9, then the 2026-11-14 original exam text restoration of 27 teaching
- // revisions (gk-originals-20261114); no Git-history dependency in Pages builds.
+ // revisions (gk-originals-20261114), then the 2026-11-22 transcription correction of 2022-feilian:3 option labels
+ // (gk-feilian-option-a-20261122; previous value ee08e37b…1dd3b); no Git-history dependency in Pages builds.
  const after=structuredClone(records);for(const r of after)for(const q of r.questions||[])delete q.questionParts;
- assert.equal(createHash('sha256').update(JSON.stringify(after)).digest('hex'),'ee08e37bb5bbce08f6de8f2c7afe953338d733b93b394880c1deda9367b1dd3b');
+ assert.equal(createHash('sha256').update(JSON.stringify(after)).digest('hex'),'bbb48f01c103e4c19b39d7665d2214c3eb1a7bcd7df03063d0010b82fb682a53');
 });
 test('option combinations and writing instructions are not treated as separate responses',()=>{
  for(const id of ['2026-yuyanjichu:1','2019-guwen:1','2003-yuyanjichu:5','2007-yuyanjichu-2:1','2006-yuyanjichu-2:3']){

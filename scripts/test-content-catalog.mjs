@@ -186,29 +186,35 @@ test('the current version is also published at its versioned catalog path, byte-
   assert.throws(()=>archivedVersionFiles(filesA,readPublishedArchive(join(tmpdir(),'gk-no-such-archive-'+process.pid)),CANONICAL_CONTENT_VERSIONS),/Pinned version has no published catalog/);
 });
 
-// The tracked archive: the 2026-10-28 version (sha256:7aeb9f57…) that every consumer cache and gks still bind.
-const PREVIOUS='sha256:7aeb9f57cbcb52178a2709d49e17c0afa9db6acb6ef94253f6f04a77c78284b3';
+// The tracked archive: the 2026-10-28 version (sha256:7aeb9f57…, the default for unversioned callers) and the
+// 2026-11-14 original-text version (sha256:efa9b0b3…) that the gwyw, yyjc, gksw and shi caches still bind.
+const PREVIOUS={
+  'sha256:7aeb9f57cbcb52178a2709d49e17c0afa9db6acb6ef94253f6f04a77c78284b3':'9cc4a27911b45b9385c8cdfa8ea35545425c42ac9d9e06f366660e015d4bae32',
+  'sha256:efa9b0b3bbe5d7ae2bbdc45d1281a9f7f8e27bbe132dd2c21749466bdd07a2f5':'18582637a04befbc81adcf497479f1bda58eb686cfebbcba13436df04686f018',
+};
 const trackedArchive=readPublishedArchive(fileURLToPath(new URL('../data/published-archive',import.meta.url)));
 function reassemble(files,catalogText){
   const catalog=JSON.parse(catalogText),loaded=catalog.parts.map(part=>JSON.parse(files.get(part.path))),cursor=loaded.map(()=>0);
   return JSON.stringify(catalog.records.map(entry=>loaded[entry.part][cursor[entry.part]++]),null,2)+'\n';
 }
 
-test('the previous version is still served byte-identical from the tracked archive next to the current version',()=>{
-  assert.deepEqual(Object.keys(CANONICAL_CONTENT_VERSIONS).sort(),[PREVIOUS,catalogA.contentVersion].sort());
-  assert.notEqual(catalogA.contentVersion,PREVIOUS);
-  assert.deepEqual([...trackedArchive.catalogs.keys()],[PREVIOUS]);
+test('the previous versions are still served byte-identical from the tracked archive next to the current version',()=>{
+  assert.deepEqual(Object.keys(CANONICAL_CONTENT_VERSIONS).sort(),[...Object.keys(PREVIOUS),catalogA.contentVersion].sort());
+  assert.ok(!Object.hasOwn(PREVIOUS,catalogA.contentVersion));
+  assert.deepEqual([...trackedArchive.catalogs.keys()].sort(),Object.keys(PREVIOUS).sort());
   const extra=archivedVersionFiles(filesA,trackedArchive,CANONICAL_CONTENT_VERSIONS),published=new Map([...filesA,...extra]);
   verifyPublishedVersions(published,CANONICAL_CONTENT_VERSIONS);
-  const previousCatalog=published.get(versionedCatalogPath(PREVIOUS));
-  assert.equal(previousCatalog,trackedArchive.catalogs.get(PREVIOUS));
-  assert.equal(sha(previousCatalog),'9cc4a27911b45b9385c8cdfa8ea35545425c42ac9d9e06f366660e015d4bae32');
-  const previousCorpus=reassemble(published,previousCatalog);
-  assert.equal(`sha256:${sha(previousCorpus)}`,PREVIOUS,'the archived catalog and parts reassemble the exact earlier corpus bytes');
-  // Only parts whose bytes changed are archived; unchanged years are the same generated files.
-  for(const part of JSON.parse(previousCatalog).parts){
-    assert.equal(sha(published.get(part.path)),part.sha256);
-    assert.equal(trackedArchive.parts.has(part.path),!filesA.has(part.path),part.path);
+  for(const [version,catalogSha] of Object.entries(PREVIOUS)){
+    const previousCatalog=published.get(versionedCatalogPath(version));
+    assert.equal(previousCatalog,trackedArchive.catalogs.get(version));
+    assert.equal(sha(previousCatalog),catalogSha);
+    const previousCorpus=reassemble(published,previousCatalog);
+    assert.equal(`sha256:${sha(previousCorpus)}`,version,'the archived catalog and parts reassemble the exact earlier corpus bytes');
+    // Only parts whose bytes changed are archived; unchanged years are the same generated files.
+    for(const part of JSON.parse(previousCatalog).parts){
+      assert.equal(sha(published.get(part.path)),part.sha256);
+      assert.equal(trackedArchive.parts.has(part.path),!filesA.has(part.path),part.path);
+    }
   }
   assert.equal(published.get(CATALOG_PATH),filesA.get(CATALOG_PATH),'the page keeps reading the current version');
   assert.equal(published.get('data/all.json'),filesA.get('data/all.json'));

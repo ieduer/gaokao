@@ -1,3 +1,26 @@
+## 2026-11-22 — 2022-feilian:3 option labels, content version `6cbd3661…` (gk-feilian-option-a-20261122)
+
+Release status is in `PROJECT_STATE.md` and the task report `_meta/reports/operations/gk-feilian-option-a-20261122/REPORT.md`.
+
+- **Defect**: the bank text of 2022 北京卷 非连续性文本 第3题 read `A“苏子”应标为…` (no label dot after A) and `C.“正襟”应标为“OO” 。` (space before 。). GK itself shows the text verbatim. Consumers that parse options from the text showed only B, C and D: flx (`options: [B, C, D]`) and gks (D1 row and `data/papers/2022-chinese.json`).
+- **Source check**: the local 2022 Beijing blank paper, page 2, prints `A．“苏子”应标为“（B-PER）（E-PER）”。` and `C．“正襟”应标为“OO”。` (`gk-feilian-option-a-20261122/source-check.json`, PDF sha256 `0645acf1…69a2`).
+- **What changed**:
+  - `data/all.json`: only `questions[2].text` and `question3` of 2022-feilian, with exactly the two replacements `\nA“苏子”` → `\nA.“苏子”` and `“OO” 。` → `“OO”。`.
+  - `data/answer-authority.json`: the reviewed review of 2022-feilian:3 keeps its status, key D, explanation, current version and both model answers. The old input is archived in `history` with `snapshotReview`. The review and both model answers are re-bound to the corrected text. Each model answer records the input it actually answered in `provenance.inputEquivalence` (method `option_label_punctuation_transcription_v1`).
+  - `editorialRevision.kind: transcription_correction` lists the replacements, `answerChanged: false`, `oldScoresRecalculated: false` and `modelCalls: 0`. `scripts/test-answer-authority.mjs` replays the replacements on the archived text and checks they only move punctuation.
+  - The three release-qualification dispositions that cover 2022-feilian were re-bound: historical-moxie-transcription, 2023-transcription and rendered-emphasis-integrity. Still 640 reviewed, 0 disputed.
+  - IDs, scores and score history are unchanged. No model call.
+- **Versions**: the current build is `sha256:6cbd3661c9fc15cdd9963e4679ae0535a9f700a14369c6feac86a43520a975ff`, catalog `79a1e39c8c77e04f27654cde4feffc4bbc9c0312d2e9d260bff86a9b4e27bffe`. Only the 2022 part changes (`2022.b54ed8235d2fcee8.json`).
+  - `data/published-archive/` now also holds `efa9b0b3…a2f5`: its catalog `18582637…f018` and its 2022 part `2022.cf8841d0d1e0a8e4.json`, copied byte-for-byte from a build of `c770656` (equal to the served bytes).
+  - `CANONICAL_CONTENT_VERSIONS` pins all three versions. The default for unversioned callers stays `7aeb…`.
+- **Consumers**: only flx and gks carry 2022-feilian:3.
+  - flx regenerates its cache from `6cbd…`.
+  - gwyw, yyjc, gksw and shi stay on `efa9…`, which stays served byte-identical; they need no release.
+  - gks: see `PROJECT_STATE.md` for its status.
+  - The 11-14 consumer moves (yyjc, gwyw, flx, gksw, shi and gks to `efa9…`) all completed on 2026-11-14.
+- **Same defect class, not changed here**: 2010-shici:1 (`C。` instead of `C.`) and 2009-yuyanjichu:3 (B and C have no dot).
+- **Rollback**: first move flx back to its previous accepted version (bound to `efa9…`), then promote the GK predecessor deployment. That deployment pins only `7aeb…` and `efa9…`.
+
 ## 2026-11-18 AI answers through the gateway's credit lanes (sites-three-tier-20261118)
 
 This section supersedes earlier statements in this file about how the page reaches the AI gateway and how long it waits.

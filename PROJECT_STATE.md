@@ -1,3 +1,10 @@
+## 2026-11-22 candidate: 2022-feilian:3 option A label (gk-feilian-option-a-20261122)
+
+- Not yet released. Content version `sha256:6cbd3661…75ff` (catalog `79a1e39c…bffe`) adds the label dot after option A of 2022 北京卷 非连续性文本 第3题 and removes a stray space in option C, as printed on the paper. Consumers that parse options from the text (flx, gks) showed only B, C and D.
+- Answer D, its explanation and both model answers are kept and re-bound to the corrected text (`editorialRevision.kind: transcription_correction`). No model call. IDs, scores and history are unchanged.
+- `efa9b0b3…a2f5` is archived and still served (gwyw, yyjc, gksw and shi stay on it). flx moves to `6cbd…`. gks pending.
+- Details: `docs/OPERATIONS.md`, section "2026-11-22 — 2022-feilian:3 option labels".
+
 ## 2026-11-18 accepted: AI through the gateway's credit lanes
 
 - Source `9899efc` on `main`, Pages deployment `3af64324-38d6-4386-b149-ca6e0c05fe7c`, effective 2026-11-18T10:34:21Z; rollback db4a80bd (source 96cddc6).

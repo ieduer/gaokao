@@ -153,10 +153,11 @@ test('default callers keep the pinned default version, its catalog SHA-256 and t
   assert.equal(CANONICAL_CONTENT_VERSION, 'sha256:7aeb9f57cbcb52178a2709d49e17c0afa9db6acb6ef94253f6f04a77c78284b3');
   assert.equal(CANONICAL_CATALOG_SHA256, '9cc4a27911b45b9385c8cdfa8ea35545425c42ac9d9e06f366660e015d4bae32');
   assert.deepEqual({ ...CANONICAL_CONTENT_VERSIONS }, { [CANONICAL_CONTENT_VERSION]: CANONICAL_CATALOG_SHA256,
-    'sha256:efa9b0b3bbe5d7ae2bbdc45d1281a9f7f8e27bbe132dd2c21749466bdd07a2f5': '18582637a04befbc81adcf497479f1bda58eb686cfebbcba13436df04686f018' });
+    'sha256:efa9b0b3bbe5d7ae2bbdc45d1281a9f7f8e27bbe132dd2c21749466bdd07a2f5': '18582637a04befbc81adcf497479f1bda58eb686cfebbcba13436df04686f018',
+    'sha256:6cbd3661c9fc15cdd9963e4679ae0535a9f700a14369c6feac86a43520a975ff': '79a1e39c8c77e04f27654cde4feffc4bbc9c0312d2e9d260bff86a9b4e27bffe' });
   assert.ok(Object.isFrozen(CANONICAL_CONTENT_VERSIONS));
-  // The current build is the newer pinned version; the default stays the earlier one until gks moves.
-  assert.equal(CURRENT_VERSION, 'sha256:efa9b0b3bbe5d7ae2bbdc45d1281a9f7f8e27bbe132dd2c21749466bdd07a2f5');
+  // The current build is the newest pinned version; the default stays the earliest one for unversioned callers.
+  assert.equal(CURRENT_VERSION, 'sha256:6cbd3661c9fc15cdd9963e4679ae0535a9f700a14369c6feac86a43520a975ff');
   assert.equal(sha(files.get(versionedCatalogPath(CURRENT_VERSION))), CANONICAL_CONTENT_VERSIONS[CURRENT_VERSION]);
   assert.equal(sha(files.get(versionedCatalogPath(CANONICAL_CONTENT_VERSION))), CANONICAL_CATALOG_SHA256);
 });
@@ -262,6 +263,9 @@ const RESTORED = ['2016-feilian:3', '2015-feilian:4', '2004-feilian:3', '2003-fe
   '2005-yuyanjichu:1', '2005-yuyanjichu:4', '2005-yuyanjichu:5', '2004-yuyanjichu:5', '2003-yuyanjichu:5', '2002-yuyanjichu:4', '2004-sanwen:1'];
 const WITHDRAWN = '2014-moxie:1', BANNER = '【教学修订版';
 const currentServed = versionFiles(CURRENT_VERSION);
+// The 2026-11-14 original-text version, archived since 2026-11-22 and still bound by the gwyw, yyjc, gksw and shi caches.
+const ORIGINAL_VERSION = 'sha256:efa9b0b3bbe5d7ae2bbdc45d1281a9f7f8e27bbe132dd2c21749466bdd07a2f5';
+const originalServed = versionFiles(ORIGINAL_VERSION);
 const corpusIds = served => JSON.parse(served.get('data/all.json')).flatMap(record => record.questions.map(question => `${record.id}:${question.qIndex}`));
 // Everything a consumer reads for one question.
 function questionView({ record, question }) {
@@ -276,12 +280,12 @@ function questionView({ record, question }) {
 
 test('the restored version has no teaching-revision stem and differs from the default version only in the 27 restored questions', async () => {
   const { fetchImpl } = server(files);
-  const oldIds = corpusIds(defaultFiles), newIds = corpusIds(currentServed);
+  const oldIds = corpusIds(defaultFiles), newIds = corpusIds(originalServed);
   assert.deepEqual(oldIds.filter(id => id !== WITHDRAWN), newIds);
   assert.ok(oldIds.includes(WITHDRAWN) && !newIds.includes(WITHDRAWN));
   const before = await createCanonicalQuestionSource({ fetchImpl })(oldIds);
-  const after = await createCanonicalQuestionSource({ fetchImpl, contentVersion: CURRENT_VERSION })(newIds);
-  assert.ok([...after.values()].every(item => item.contentVersion === CURRENT_VERSION));
+  const after = await createCanonicalQuestionSource({ fetchImpl, contentVersion: ORIGINAL_VERSION })(newIds);
+  assert.ok([...after.values()].every(item => item.contentVersion === ORIGINAL_VERSION));
   assert.deepEqual(oldIds.filter(id => before.get(id).question.text.includes(BANNER)).sort(), [...RESTORED].sort());
   // The earlier version publishes the preserved 7ce7271 copy of the historical supplement, which is not a 2014 paper question.
   assert.match(before.get(WITHDRAWN).question.text, /^三、本大题共1小题，共11分。\n14．在横线处填写作品原句。（共8分）\n（1）《滕王阁序》/);
@@ -299,6 +303,29 @@ test('the restored version has no teaching-revision stem and differs from the de
     assert.ok(Object.values(now.record.ai_answer_versions).some(slot => slot.label.endsWith('（旧题面）')
       && slot.answers[key] === old.record.ai_answers[key]), `${id} teaching answer kept as （旧题面）`);
   }
+});
+
+// 2026-11-22: the current version differs from the original-text version only in 2022-feilian:3, whose option A
+// regains its label dot (option C loses a stray space). The reviewed answer D and both model answers are kept.
+const TRANSCRIBED = '2022-feilian:3';
+test('the current version differs from the original-text version only in the transcription of 2022-feilian:3', async () => {
+  const { fetchImpl } = server(files);
+  const ids = corpusIds(originalServed);
+  assert.deepEqual(corpusIds(currentServed), ids);
+  const before = await createCanonicalQuestionSource({ fetchImpl, contentVersion: ORIGINAL_VERSION })(ids);
+  const after = await createCanonicalQuestionSource({ fetchImpl, contentVersion: CURRENT_VERSION })(ids);
+  assert.ok([...after.values()].every(item => item.contentVersion === CURRENT_VERSION));
+  assert.deepEqual(ids.filter(id => JSON.stringify(questionView(before.get(id))) !== JSON.stringify(questionView(after.get(id)))), [TRANSCRIBED]);
+  for (const id of ids) if (after.get(id).record.id !== '2022-feilian') assert.deepEqual(after.get(id).record, before.get(id).record, id);
+  const old = before.get(TRANSCRIBED), now = after.get(TRANSCRIBED), options = text => text.split('\n').slice(1).map(line => line.slice(0, 2));
+  assert.deepEqual(options(old.question.text), ['A“', 'B.', 'C.', 'D.']);
+  assert.deepEqual(options(now.question.text), ['A.', 'B.', 'C.', 'D.']);
+  assert.equal(now.question.text, old.question.text.replace('\nA“苏子”', '\nA.“苏子”').replace('“OO” 。', '“OO”。'));
+  assert.equal(now.question.score, old.question.score);
+  assert.deepEqual(now.record.answer_reviews['3'].correctOptions ?? null, old.record.answer_reviews['3'].correctOptions ?? null);
+  assert.equal(now.record.answer_reviews['3'].status, 'reviewed');
+  assert.equal(now.record.ai_answers['3'], old.record.ai_answers['3']);
+  assert.ok(now.record.answer_review_history['3'].some(entry => entry.source.questions[0].text === old.question.text), 'old transcription kept in history');
 });
 
 test('caches bound to the earlier version still hydrate; caches bound to the restored version hydrate against it', async () => {

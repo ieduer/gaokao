@@ -31997,8 +31997,8 @@
           "modelId": "gpt-6-astra",
           "label": "GPT-6 Astra 独立作答",
           "text": "答案：D。句子应理解为‘苏子愀然，正襟危坐而问客曰……’。‘苏子’对应人名的开头和结尾；‘愀然’的‘然’后断句，所以是OS；‘正襟’中间和末尾均不断句，所以是OO。‘问客’是动宾结构，不能在‘问’后断开，应标OO，不能标SO。",
-          "inputSha256": "5b411e39a76a5064cb5587d567c2b1268e6d4683160e8d865471cfb1871dfd8f",
-          "inputContextSha256": "e09cf4bf3c7e79d1eeeb9a133e4068d28ac72a51af1a6a960743f4fd2c359a90",
+          "inputSha256": "879371192d7f274d57fa8067b1b1168766479cfc2239083d03c33ca6bde24cdf",
+          "inputContextSha256": "16bff6d278df490f53e00caea11e1c8fa876d5203f3f827cc19d0079b0ca387f",
           "generatedAt": "2026-10-03T03:37:05.702Z",
           "provenance": {
             "kind": "codex_turn",
@@ -32010,6 +32010,14 @@
               "method": "empty_rendered_emphasis_v2_equivalence",
               "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
               "originalContextSha256": "e09cf4bf3c7e79d1eeeb9a133e4068d28ac72a51af1a6a960743f4fd2c359a90"
+            },
+            "inputEquivalence": {
+              "method": "option_label_punctuation_transcription_v1",
+              "answeredInputSha256": "5b411e39a76a5064cb5587d567c2b1268e6d4683160e8d865471cfb1871dfd8f",
+              "answeredInputContextSha256": "e09cf4bf3c7e79d1eeeb9a133e4068d28ac72a51af1a6a960743f4fd2c359a90",
+              "answeredInputPresentationSha256": "18c393371afca95ff749f11f21f37f6bdd9b0274ac644ba85bf87d8b5ec10867",
+              "difference": "The model answered the same stem, passage and options; only the label dot after A and a space before 。 in option C differ (transcription corrections). The answer explicitly judges options A–D, so the decision does not depend on them.",
+              "evidence": "gk-feilian-option-a-20261122/REPORT.md"
             }
           },
           "assessment": {
@@ -32017,14 +32025,14 @@
             "note": "当前作答经来源与交叉复核；保留开放题合理表达差异。",
             "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
           },
-          "inputPresentationSha256": "18c393371afca95ff749f11f21f37f6bdd9b0274ac644ba85bf87d8b5ec10867"
+          "inputPresentationSha256": "b84fad93b2091273e8f54e1922ed86ba1610ad3bf6e57f15e777349c9a80ad83"
         },
         "claude_opus_5_5": {
           "modelId": "claude-opus-5-5",
           "label": "Claude Opus 5.5 独立作答",
           "text": "答案：D。\n选D。这句话应断为“苏子愀然，正襟危坐而问客曰：”。按材料二的规则，逐字标注为：苏（B-PER）子（E-PER）愀O然S正O襟O危O坐O而O问O客O曰S。A项正确，“苏子”是人名，首字标B-PER，尾字标E-PER。B项正确，“然”字之后要断句，所以“愀然”标为“OS”。C项正确，“正襟”不是专名，其后也不断句，标为“OO”。D项不正确，“问”字之后不应断句，“问客”应标为“OO”，断句的S应落在“曰”字上。",
-          "inputSha256": "5b411e39a76a5064cb5587d567c2b1268e6d4683160e8d865471cfb1871dfd8f",
-          "inputContextSha256": "e09cf4bf3c7e79d1eeeb9a133e4068d28ac72a51af1a6a960743f4fd2c359a90",
+          "inputSha256": "879371192d7f274d57fa8067b1b1168766479cfc2239083d03c33ca6bde24cdf",
+          "inputContextSha256": "16bff6d278df490f53e00caea11e1c8fa876d5203f3f827cc19d0079b0ca387f",
           "generatedAt": "2026-10-03T03:36:09.273126+00:00",
           "uncertainties": [],
           "selectedOptions": [
@@ -32047,13 +32055,21 @@
               "method": "empty_rendered_emphasis_v2_equivalence",
               "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
               "originalContextSha256": "e09cf4bf3c7e79d1eeeb9a133e4068d28ac72a51af1a6a960743f4fd2c359a90"
+            },
+            "inputEquivalence": {
+              "method": "option_label_punctuation_transcription_v1",
+              "answeredInputSha256": "5b411e39a76a5064cb5587d567c2b1268e6d4683160e8d865471cfb1871dfd8f",
+              "answeredInputContextSha256": "e09cf4bf3c7e79d1eeeb9a133e4068d28ac72a51af1a6a960743f4fd2c359a90",
+              "answeredInputPresentationSha256": "18c393371afca95ff749f11f21f37f6bdd9b0274ac644ba85bf87d8b5ec10867",
+              "difference": "The model answered the same stem, passage and options; only the label dot after A and a space before 。 in option C differ (transcription corrections). The answer explicitly judges options A–D, so the decision does not depend on them.",
+              "evidence": "gk-feilian-option-a-20261122/REPORT.md"
             }
           },
-          "inputPresentationSha256": "18c393371afca95ff749f11f21f37f6bdd9b0274ac644ba85bf87d8b5ec10867"
+          "inputPresentationSha256": "b84fad93b2091273e8f54e1922ed86ba1610ad3bf6e57f15e777349c9a80ad83"
         }
       },
-      "inputSha256": "5b411e39a76a5064cb5587d567c2b1268e6d4683160e8d865471cfb1871dfd8f",
-      "inputContextSha256": "e09cf4bf3c7e79d1eeeb9a133e4068d28ac72a51af1a6a960743f4fd2c359a90",
+      "inputSha256": "879371192d7f274d57fa8067b1b1168766479cfc2239083d03c33ca6bde24cdf",
+      "inputContextSha256": "16bff6d278df490f53e00caea11e1c8fa876d5203f3f827cc19d0079b0ca387f",
       "status": "reviewed",
       "kind": "single_choice",
       "correctOptions": [
@@ -32063,13 +32079,162 @@
       "reviewedBy": "OpenAI Codex / GPT-6 Astra",
       "reviewedAt": "2026-10-03T03:39:54.837Z",
       "currentVersion": "gpt_6_astra",
-      "inputPresentationSha256": "18c393371afca95ff749f11f21f37f6bdd9b0274ac644ba85bf87d8b5ec10867",
+      "inputPresentationSha256": "b84fad93b2091273e8f54e1922ed86ba1610ad3bf6e57f15e777349c9a80ad83",
       "publicationQualification": {
         "contract": "qualified-learning-reference-v1",
         "sourceClass": "qualified_public_witness",
         "originalPublicationVerified": false,
         "officialRubricVerified": false,
         "notice": "依保存的题卷来源逐题校勘文字和考查标记；答案已作完整当前输入复核。来源、原始模型与修订记录可追溯，不把模型一致视为官方答案或官方细分评分标准。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。"
+      },
+      "history": [
+        {
+          "source": {
+            "id": "2022-feilian",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "材料一\n\n屠呦呦从葛洪的《肘后备急方》中获得了新思路，提取出青蒿素，荣获了诺贝尔生理学或医学奖。这让世界看到了中国古籍的惊人价值。对于古籍的界定有多种说法，其中较为通行的是：1911年以前，以中国古代传统文化为主要内容，采用中国传统的著作方式、具有中国传统装帧形式的书籍。古籍的类型除了大量的汉文古籍，还有丰富的民族文字古籍。\n\n近年来，随着传统文化热的兴起，认识和了解古籍成为一种需求。古籍的价值是多重的。古籍的载体材料主要包括纸张，织物和墨。这三种材料由于产生或制作的年代不同，具有鲜明的时代特征，比如元代以前印书主要用麻纸、皮纸，明代以后大量用竹纸。通过载体材料体现出的文物价值显而易见。浩瀚的古代文献记载着中华民族五千年绵延不断的文明，为了解先人的政治、文化、制度、风俗等提供了重要的资料。这就是古籍的文献价值。古籍在加工制作过程中，使用的材料以及制版、印刷中所体现出来的工艺都具有珍贵的艺术价值。人们看到一部古籍，往往还未翻阅，就已为其精美的外观和典雅的色调所征服。对文献研究者来说，文献价值是古籍的“皮”，其他价值则是古籍的“毛”，皮之不存，毛将焉附。\n\n据《中国古籍总目》著录，存世古籍总量大约有20万种。其中一些珍贵的古籍具有很高的文物价值、文献价值和艺术价值。这些珍贵古籍不仅包括全本，还包括具有重要历史文献价值的残本、散页等。元代及元代以前版印、抄写的古籍已万不存一，流传至今者是我国现存古籍中最珍贵的文化遗产。这些古籍非常稀有，很多作为文物被珍藏在图书馆，读者很难一睹其庐山真面目。"
+              },
+              {
+                "key": "material2",
+                "label": "材料2",
+                "text": "材料二\n\n古籍的传承性保护是一种新兴的古籍保护理念。以往，古籍保护提倡原生性保护与再生性保护。原生性保护指保护古籍文物本身。可谓之“存形”；再生性保护指对古籍的影印、缩微复制和整理出版等，可谓之“移形”。不过，这两种方式主要解决古籍“藏”与“用”的问题，而古籍的“藏”与“用”长期局限在特定的机构与学者群体中，未能引起普通大众的广泛注意。传承性保护则是利用各种更易于接受的方式将古籍推向大众，让古籍“活”起来，实现古籍从“藏”到“用”最后至“活”的飞跃。\n\n人工智能技术的发展为这一飞跃提供了条件。人工智能处理古籍的过程大体包含四步：首先，将古籍扫描并处理成图像文件。其次，通过光学字符识别技术，将图像文件中的文字识别为计算机可处理的电子文本。再次，通过自然语言处理技术，对所获取的文本进行基础性加工，包括自动断句、标点以及词语切分等。最后，识别并抽取文本中的专名（如人名、地名、书名）等概念与知识，为后续深入的古籍知识挖掘提供基础性支撑。\n\n目前，研究者引入序列标注模型，在计算机自动断句、标点、专名识别等领域都取得了很好的效果。所谓序列标注，即输入字符串，预测每个字符在该位置的专名属性以及是否在该位置断句。例如，输入“论语云管氏而知礼孰不知礼”，模型应预测为“（B-BOOK）（E-BOOK）S（B-PER）（E-PER）OOSOOOO”，其中，“B-BOOK”表示书名开头的字，这里指“论”；“E-BOOK”表示书名结尾的字，这里指“语”；“S”表示其后应断句的字，这里对应“云”和第一个“礼”；“B-PER”表示人名开头的字，这里指“管”；“E-PER”表示人名结尾的字，这里指“氏”；“O”表示不做任何操作。每一个字都对应一个或一组符号。研究者通过多种机器学习模型，训练计算机自动标注文本序列的能力，进而使其完成自动断句、标点、专名识别等任务。模型预测的综合准确率均达到90%以上。由此，海量的典籍就可以转化为数字化、结构化的文本，从而降低普通人阅读古籍的难度，实现互联网环境下古籍的传承性保护。\n\n让古籍“活”起来的尝试还有很多。《典籍里的中国》等节目不断涌现，各地古籍存藏单位联合举办“中华传统晒书大会”，延续古人“曝书护书”的习俗，不仅晒古籍珍宝，也晒修复、装帧等相关技艺，有的还能让人现场体验。"
+              }
+            ],
+            "topic": "一、本大题共5小题，共18分。\n阅读下面材料，完成1-5题。",
+            "annotation": "（取材于李致忠、梁爱民等的相关文章）\n（取材于周余姣、胡韧奋等的相关文章）",
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 3,
+                "id": "q3",
+                "text": "3.根据材料二，模拟计算机对“苏子愀然正襟危坐而问客曰”的序列标注，不正确的一项是（3分）\nA“苏子”应标为“（B-PER）（E-PER）”。\nB.“愀然”应标为“OS”。\nC.“正襟”应标为“OO” 。\nD.“问客”应标为“SO”。",
+                "score": 3
+              }
+            ]
+          },
+          "review": {
+            "id": "2022-feilian:3",
+            "sources": [
+              {
+                "type": "public_reprint",
+                "title": "2022北京卷公开题面重印及版面核对（非官方评分认证）",
+                "url": "https://cdn.zgkao.com/zixunzhan/202401/7e28deb2-3b24-4275-8f7d-64a75a17ce26.pdf"
+              },
+              {
+                "type": "publication_qualification",
+                "label": "依保存的题卷来源逐题校勘文字和考查标记；答案已作完整当前输入复核。来源、原始模型与修订记录可追溯，不把模型一致视为官方答案或官方细分评分标准。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。",
+                "evidence": "SOURCE-QUALIFICATION-01a1139d.md"
+              }
+            ],
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答",
+                "text": "答案：D。句子应理解为‘苏子愀然，正襟危坐而问客曰……’。‘苏子’对应人名的开头和结尾；‘愀然’的‘然’后断句，所以是OS；‘正襟’中间和末尾均不断句，所以是OO。‘问客’是动宾结构，不能在‘问’后断开，应标OO，不能标SO。",
+                "inputSha256": "5b411e39a76a5064cb5587d567c2b1268e6d4683160e8d865471cfb1871dfd8f",
+                "inputContextSha256": "e09cf4bf3c7e79d1eeeb9a133e4068d28ac72a51af1a6a960743f4fd2c359a90",
+                "generatedAt": "2026-10-03T03:37:05.702Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "independent",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-2022-reading-reviews.json",
+                  "inputEvidence": "answers-six-sites-20261002/claude-2022-reading-job.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "e09cf4bf3c7e79d1eeeb9a133e4068d28ac72a51af1a6a960743f4fd2c359a90"
+                  }
+                },
+                "assessment": {
+                  "review": "reviewed",
+                  "note": "当前作答经来源与交叉复核；保留开放题合理表达差异。",
+                  "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
+                },
+                "inputPresentationSha256": "18c393371afca95ff749f11f21f37f6bdd9b0274ac644ba85bf87d8b5ec10867"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答",
+                "text": "答案：D。\n选D。这句话应断为“苏子愀然，正襟危坐而问客曰：”。按材料二的规则，逐字标注为：苏（B-PER）子（E-PER）愀O然S正O襟O危O坐O而O问O客O曰S。A项正确，“苏子”是人名，首字标B-PER，尾字标E-PER。B项正确，“然”字之后要断句，所以“愀然”标为“OS”。C项正确，“正襟”不是专名，其后也不断句，标为“OO”。D项不正确，“问”字之后不应断句，“问客”应标为“OO”，断句的S应落在“曰”字上。",
+                "inputSha256": "5b411e39a76a5064cb5587d567c2b1268e6d4683160e8d865471cfb1871dfd8f",
+                "inputContextSha256": "e09cf4bf3c7e79d1eeeb9a133e4068d28ac72a51af1a6a960743f4fd2c359a90",
+                "generatedAt": "2026-10-03T03:36:09.273126+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "D"
+                ],
+                "assessment": {
+                  "matchesConclusion": true,
+                  "review": "reviewed",
+                  "note": "未发现改变结论的错误；主观题按材料依据判断，不要求逐字相同。",
+                  "evidence": "answers-six-sites-20261002/REVIEW-2022.md"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2022-reading-result.json",
+                  "inputPromptSha256": "7ffcfe45ec2475cfd765a410699b932c541cba3a21e9aba7b8faba06c239bacc",
+                  "responseStreamSha256": "6b7ea1b37ac271eadba296d1125c1b354b34e27741404436e9d7ac8a6a7dc261",
+                  "stage": "independent",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "e09cf4bf3c7e79d1eeeb9a133e4068d28ac72a51af1a6a960743f4fd2c359a90"
+                  }
+                },
+                "inputPresentationSha256": "18c393371afca95ff749f11f21f37f6bdd9b0274ac644ba85bf87d8b5ec10867"
+              }
+            },
+            "inputSha256": "5b411e39a76a5064cb5587d567c2b1268e6d4683160e8d865471cfb1871dfd8f",
+            "inputContextSha256": "e09cf4bf3c7e79d1eeeb9a133e4068d28ac72a51af1a6a960743f4fd2c359a90",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "D"
+            ],
+            "explanation": "逐项依据完整当前材料核对，两模型作答结论相容，并与公开转载卷附载参考答案交叉比对；不声称模型回答为官方答案。\n\n【来源与评分边界】依保存的题卷来源逐题校勘文字和考查标记；答案已作完整当前输入复核。来源、原始模型与修订记录可追溯，不把模型一致视为官方答案或官方细分评分标准。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:39:54.837Z",
+            "currentVersion": "gpt_6_astra",
+            "inputPresentationSha256": "18c393371afca95ff749f11f21f37f6bdd9b0274ac644ba85bf87d8b5ec10867",
+            "publicationQualification": {
+              "contract": "qualified-learning-reference-v1",
+              "sourceClass": "qualified_public_witness",
+              "originalPublicationVerified": false,
+              "officialRubricVerified": false,
+              "notice": "依保存的题卷来源逐题校勘文字和考查标记；答案已作完整当前输入复核。来源、原始模型与修订记录可追溯，不把模型一致视为官方答案或官方细分评分标准。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。"
+            }
+          }
+        }
+      ],
+      "editorialRevision": {
+        "kind": "transcription_correction",
+        "version": "2022-feilian:3-transcription-20261122",
+        "at": "2026-11-22T23:45:00.000Z",
+        "owner": "claude-session-gk-feilian-option-a",
+        "replacements": [
+          {
+            "from": "\nA“苏子”应标为",
+            "to": "\nA.“苏子”应标为",
+            "note": "option A label dot (paper: A．)"
+          },
+          {
+            "from": "“正襟”应标为“OO” 。",
+            "to": "“正襟”应标为“OO”。",
+            "note": "option C stray space before 。 removed (paper: “OO”。)"
+          }
+        ],
+        "previousInputPresentationSha256": "18c393371afca95ff749f11f21f37f6bdd9b0274ac644ba85bf87d8b5ec10867",
+        "sourceEvidence": "gk-feilian-option-a-20261122/source-check.json",
+        "originalExamText": true,
+        "answerChanged": false,
+        "oldScoresRecalculated": false,
+        "modelCalls": 0,
+        "reason": "The bank text dropped the label dot after option A (and had a space before 。 in option C), so every consumer that parses options from the text showed only B, C and D. The 2022 Beijing paper prints A．…; the text now matches it. The reviewed answer D, its explanation and both model answers are kept and re-bound with the answered input hashes recorded."
       }
     },
     {
@@ -94445,7 +94610,7 @@
           "2025-yuyanjichu"
         ],
         "questionCount": 640,
-        "currentBindingsSha256": "0685b8f6241cb4424b423f13ecd71e2f5d9c75ec43acc2dcb6affb9ec4a87e4c",
+        "currentBindingsSha256": "aa61cb0f1cb70aafb7f179f4916f36c59012c5417d3e5b2abe650b9b96a10b48",
         "resolvedForPractice": [
           "当前完整题面、标记、当前答案及两实际模型输入证据逐项匹配。",
           "补录与错年旧入口保留明确身份、原分与历史；练习规则与原始记录分离。",
@@ -94713,7 +94878,7 @@
           "2025-yuyanjichu"
         ],
         "questionCount": 640,
-        "currentBindingsSha256": "0685b8f6241cb4424b423f13ecd71e2f5d9c75ec43acc2dcb6affb9ec4a87e4c",
+        "currentBindingsSha256": "aa61cb0f1cb70aafb7f179f4916f36c59012c5417d3e5b2abe650b9b96a10b48",
         "resolvedForPractice": [
           "当前完整题面、标记、当前答案及两实际模型输入证据逐项匹配。",
           "补录与错年旧入口保留明确身份、原分与历史；练习规则与原始记录分离。",
@@ -95040,7 +95205,7 @@
           "2025-yuyanjichu"
         ],
         "questionCount": 640,
-        "currentBindingsSha256": "0685b8f6241cb4424b423f13ecd71e2f5d9c75ec43acc2dcb6affb9ec4a87e4c",
+        "currentBindingsSha256": "aa61cb0f1cb70aafb7f179f4916f36c59012c5417d3e5b2abe650b9b96a10b48",
         "resolvedForPractice": [
           "当前完整题面、标记、当前答案及两实际模型输入证据逐项匹配。",
           "补录与错年旧入口保留明确身份、原分与历史；练习规则与原始记录分离。",
