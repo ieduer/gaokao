@@ -1,9 +1,11 @@
-## 2026-11-22 candidate: 2022-feilian:3 option A label (gk-feilian-option-a-20261122)
+## 2026-11-22 accepted: 2022-feilian:3 option A label (gk-feilian-option-a-20261122)
 
-- Not yet released. Content version `sha256:6cbd3661…75ff` (catalog `79a1e39c…bffe`) adds the label dot after option A of 2022 北京卷 非连续性文本 第3题 and removes a stray space in option C, as printed on the paper. Consumers that parse options from the text (flx, gks) showed only B, C and D.
+- Source `89027d1` on `main`, Pages deployment `d53435bd-4646-4b8c-a250-917de41f1e81`, effective 2026-11-22T23:45:21Z, accepted 23:46:55Z. Rollback: first flx back to its efa9-bound version (c1ba8f32 / 8d2c3592), then Pages rollback to 3af64324 (source 9899efc).
+- Content version `sha256:6cbd3661…75ff` (catalog `79a1e39c…bffe`) adds the label dot after option A of 2022 北京卷 非连续性文本 第3题 and removes a stray space in option C, as printed on the paper. Consumers that parse options from the text (flx, gks) showed only B, C and D.
 - Answer D, its explanation and both model answers are kept and re-bound to the corrected text (`editorialRevision.kind: transcription_correction`). No model call. IDs, scores and history are unchanged.
-- `efa9b0b3…a2f5` is archived and still served (gwyw, yyjc, gksw and shi stay on it). flx moves to `6cbd…`. gks pending.
-- Details: `docs/OPERATIONS.md`, section "2026-11-22 — 2022-feilian:3 option labels".
+- `efa9b0b3…a2f5` is archived and still served byte-identical (gwyw, yyjc, gksw, shi and gks units bind it; `7aeb` stays the default). flx moved to `6cbd…` (9d5eee5 / ece3b7db). gks still shows B, C and D for this question: moving it needs a User Center and D1 chain, decision pending.
+- Status: https://status.bdfz.net/?update=20261122-gk-flx-2022-feilian-option-a&revision=1 . Report: `_meta/reports/operations/gk-feilian-option-a-20261122/REPORT.md`.
+- Same defect class, not changed: 2010-shici:1 (`C。`) and 2009-yuyanjichu:3 (B and C without a dot).
 
 ## 2026-11-18 accepted: AI through the gateway's credit lanes
 

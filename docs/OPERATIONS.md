@@ -1,6 +1,6 @@
 ## 2026-11-22 — 2022-feilian:3 option labels, content version `6cbd3661…` (gk-feilian-option-a-20261122)
 
-Release status is in `PROJECT_STATE.md` and the task report `_meta/reports/operations/gk-feilian-option-a-20261122/REPORT.md`.
+Accepted 2026-11-22: source `89027d1`, Pages deployment `d53435bd-4646-4b8c-a250-917de41f1e81`, effective 23:45:21Z (rollback order below). Task report: `_meta/reports/operations/gk-feilian-option-a-20261122/REPORT.md`.
 
 - **Defect**: the bank text of 2022 北京卷 非连续性文本 第3题 read `A“苏子”应标为…` (no label dot after A) and `C.“正襟”应标为“OO” 。` (space before 。). GK itself shows the text verbatim. Consumers that parse options from the text showed only B, C and D: flx (`options: [B, C, D]`) and gks (D1 row and `data/papers/2022-chinese.json`).
 - **Source check**: the local 2022 Beijing blank paper, page 2, prints `A．“苏子”应标为“（B-PER）（E-PER）”。` and `C．“正襟”应标为“OO”。` (`gk-feilian-option-a-20261122/source-check.json`, PDF sha256 `0645acf1…69a2`).
@@ -16,7 +16,7 @@ Release status is in `PROJECT_STATE.md` and the task report `_meta/reports/opera
 - **Consumers**: only flx and gks carry 2022-feilian:3.
   - flx regenerates its cache from `6cbd…`.
   - gwyw, yyjc, gksw and shi stay on `efa9…`, which stays served byte-identical; they need no release.
-  - gks: see `PROJECT_STATE.md` for its status.
+  - gks still shows B, C and D for this question (D1 row and `data/papers/2022-chinese.json`). The row is in the growth manifest that User Center pins, so moving it needs the 11-14 chain (UC transitional, gks transitional, one guarded D1 write, gks final, UC final).
   - The 11-14 consumer moves (yyjc, gwyw, flx, gksw, shi and gks to `efa9…`) all completed on 2026-11-14.
 - **Same defect class, not changed here**: 2010-shici:1 (`C。` instead of `C.`) and 2009-yuyanjichu:3 (B and C have no dot).
 - **Rollback**: first move flx back to its previous accepted version (bound to `efa9…`), then promote the GK predecessor deployment. That deployment pins only `7aeb…` and `efa9…`.
