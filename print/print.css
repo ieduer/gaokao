@@ -1,0 +1,90 @@
+/* Print edition: A4, black on white, exam-paper conventions. */
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{margin:0;font:10.5pt/1.82 "PSong",serif;color:#000;text-align:justify;text-justify:inter-character;line-break:strict;overflow-wrap:anywhere;font-variant-numeric:lining-nums}
+p{margin:0;orphans:2;widows:2}
+sup{line-height:0}
+.nb{white-space:nowrap}
+
+/* cover */
+.cover{text-align:center;margin:0 0 5mm;padding-bottom:3mm;border-bottom:.8pt solid #000}
+.cover-title{font:500 14pt/1.5 "PHei";letter-spacing:.04em}
+.cover-subject{font:700 22pt/1.5 "PSong";margin:1mm 0 .5mm}
+.cover-edition{font:9pt/1.4 "PKai";color:#333}
+.cover-fields{display:flex;justify-content:space-between;margin:4mm 4mm 2mm;font:10pt/1.4 "PSong"}
+.cover-fields i{display:inline-block;width:22mm;border-bottom:.6pt solid #000;height:1em;margin-left:1.5mm;vertical-align:baseline}
+.cover-notes{margin:2.5mm 0 0;padding:0 0 0 1.6em;text-align:justify;font:9pt/1.6 "PKai";color:#222}
+.cover-notes li{margin:0}
+
+/* sections */
+.rec{margin:0}
+.sec{font:700 11pt/1.8 "PHei";margin:4.2mm 0 .6mm;break-after:avoid}
+.ins{text-indent:0;margin:.4mm 0 .8mm;break-after:avoid}
+.sec+.ins{margin-top:0}
+.note{font:9.5pt/1.7 "PSong";text-indent:0;margin:1mm 0 1.6mm;padding-left:0}
+
+/* reading materials */
+.mat{margin:1mm 0 1.6mm;font:11pt/1.82 "PKai","PSong"}
+.mat p{text-indent:2em}
+.mat .m-label{text-indent:0;font:700 10.5pt/1.8 "PHei";margin-top:1.2mm;break-after:avoid}
+.mat .m-title{text-indent:0;text-align:center;font:700 12pt/1.9 "PKai","PSong";margin:.6mm 0 .2mm;break-after:avoid}
+.mat .m-title{font-family:"PHei";font-weight:500;font-size:11.5pt}
+.mat .m-byline{text-indent:0;text-align:center;font-size:10.5pt;margin-bottom:.4mm;break-after:avoid}
+.mat .m-line{text-indent:0;text-align:center}
+.mat .m-source{text-indent:0;text-align:right;font-size:10pt;margin-top:.3mm;break-before:avoid}
+.mat-poem{margin:1.4mm 0 2mm}
+.mat-song{font:10.5pt/1.82 "PSong",serif}
+.mat-spaced p{letter-spacing:.42em;line-height:2.5;text-indent:2.84em}
+.mat-spaced .m-source,.mat-spaced .m-label,.mat-spaced .m-title,.mat-spaced .m-byline{letter-spacing:0;line-height:1.82;text-indent:0}
+.fig{margin:2mm 0;text-align:center}
+.fig img{max-width:100%;height:auto;filter:grayscale(1)}
+.ref{font-size:.62em;vertical-align:.55em;letter-spacing:0;margin:0 -.12em}
+.sup{font-size:.62em;vertical-align:.55em}
+
+/* marks */
+/* 着重号 and 波浪线: one glyph-drawn mark per character (font emphasis marks print too small,
+   browser wavy underlines print as coarse bitmaps). */
+.d,.w{font-style:normal;position:relative}
+.d::after{content:"";position:absolute;left:50%;top:100%;width:.2em;height:.2em;margin:-.17em 0 0 -.1em;border-radius:50%;background:#000}
+.mat .d::after{margin-top:-.05em}
+.w::before{content:"﹏";position:absolute;left:50%;top:100%;width:1em;margin:-.86em 0 0 -.5em;font:1em/1 "PSong";transform:scaleX(1.1);text-align:center;text-indent:0;letter-spacing:0;pointer-events:none}
+.mat .w::before{margin-top:-.72em}
+.ul{text-decoration:underline;text-decoration-thickness:.55pt;text-underline-offset:.3em;text-decoration-skip-ink:none}
+.blank{display:inline-block;height:1em;border-bottom:.6pt solid #000;vertical-align:-.12em;margin:0 .12em}
+.blank-label{margin-right:.05em}
+.q-fill .blank{vertical-align:-.2em}
+.cmp{display:inline-block;width:1em;white-space:nowrap;text-indent:0}
+.cmp i{display:inline-block;font-style:normal;width:.5em;transform:scaleX(.5);transform-origin:0 50%}
+
+/* questions */
+.q{margin:1.5mm 0 1.2mm;break-inside:avoid}
+.q-flow{break-inside:auto}
+.stem{text-indent:0}
+.stem-more{text-indent:0}
+.q-fill .stem{line-height:2.25;text-align:left}
+.q-fill .stem:first-child{line-height:1.82}
+.abox{float:right;width:13mm;height:6.6mm;border:.7pt solid #000;margin:.25mm 0 0 3mm;box-sizing:border-box}
+.opts{display:grid;gap:0 1em;padding-left:1.9em}
+.opts-1{grid-template-columns:1fr}
+.opts-2{grid-template-columns:1fr 1fr}
+.opts-4{grid-template-columns:repeat(4,1fr)}
+.opt p{text-indent:-1.68em;padding-left:1.68em}
+.opt .opt-cont{text-indent:0}
+.opts-table{border-collapse:collapse;margin-left:1.9em;font:inherit}
+.opts-table td{padding:0 2.2em 0 0;vertical-align:top;text-align:left}
+.opts-table td:last-child{padding-right:0}
+
+.tbl{border-collapse:collapse;margin:2mm auto 2.4mm;font:inherit;break-inside:avoid}
+.tbl td{border:.6pt solid #000;padding:1.6mm 5mm;text-align:center;min-width:22mm;height:9mm;vertical-align:middle}
+
+/* answer areas */
+.lines{margin:.8mm 0 1.6mm}
+.rule{height:8.6mm;border-bottom:.45pt solid #555;position:relative;break-inside:avoid}
+.rule-label{position:absolute;left:0;bottom:.8mm;font:10.5pt/1 "PSong"}
+.grid{width:160mm;margin:2.4mm auto 2mm}
+.grid-row{position:relative;height:8mm;margin-bottom:2.3mm;break-inside:avoid}
+.grid-row svg{display:block}
+.grid-count{position:absolute;right:0;top:8.25mm;font:6pt/1 "PSong";color:#444}
+.grid-title{display:flex;justify-content:space-between;align-items:flex-end;font:10.5pt/1.6 "PSong";margin:0 0 3mm;break-after:avoid}
+.grid-title-rule{display:inline-block;width:88mm;border-bottom:.6pt solid #000;height:1em;vertical-align:baseline}
+.grid-title-only{justify-content:center}
+.pagebreak{break-after:page}

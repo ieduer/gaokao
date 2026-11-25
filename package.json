@@ -13,7 +13,7 @@
     "check:beijing-2026": "node scripts/validate-beijing-2026.mjs",
     "test:progress": "node --test scripts/test-progress-restore.mjs",
     "check:data": "node scripts/validate-data.mjs",
-    "build": "npm run test:ai-route && npm run test:canonical-source && npm run test:question-parts && npm run test:question-blanks && npm run test:canonical-source && npm run test:learning-records && npm run test:progress && npm run test:answer-reviews && npm run test:answer-authority && npm run test:answer-release-scope && npm run test:source-qualification && npm run test:content-catalog && npm run check:data && npm run check:beijing-2026 && node scripts/build-pages.mjs",
+    "build": "npm run test:ai-route && npm run test:print && npm run test:canonical-source && npm run test:question-parts && npm run test:question-blanks && npm run test:canonical-source && npm run test:learning-records && npm run test:progress && npm run test:answer-reviews && npm run test:answer-authority && npm run test:answer-release-scope && npm run test:source-qualification && npm run test:content-catalog && npm run check:data && npm run check:beijing-2026 && node scripts/build-pages.mjs",
     "test:source-qualification": "node --test scripts/test-source-qualification.mjs",
     "test:answer-release-scope": "node --test scripts/test-answer-release-scope.mjs",
     "test:answer-reviews": "node --test scripts/test-answer-reviews.mjs",
@@ -23,6 +23,9 @@
     "build:question-blanks": "node scripts/generate-question-blanks.mjs",
     "test:content-catalog": "node --test scripts/test-content-catalog.mjs",
     "test:canonical-source": "node --test scripts/test-canonical-question-source.mjs",
-    "test:ai-route": "node --test scripts/test-ai-route.mjs scripts/test-ai-request-id.mjs"
+    "test:ai-route": "node --test scripts/test-ai-route.mjs scripts/test-ai-request-id.mjs",
+    "test:print": "node --test scripts/test-print-route.mjs print/test-print.mjs",
+    "print:lint": "node print/tools/lint.mjs",
+    "print:build": "node print/build.mjs"
   }
 }

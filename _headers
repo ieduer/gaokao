@@ -6,3 +6,7 @@
 
 /assets/js/canonical-question-source.js
   Access-Control-Allow-Origin: *
+
+/papers/*
+  Cache-Control: private, no-store
+  X-Robots-Tag: noindex, nofollow

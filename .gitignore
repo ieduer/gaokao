@@ -1,3 +1,5 @@
 .wrangler/
 
 .pages-output/
+.print-work/
+*.pdf

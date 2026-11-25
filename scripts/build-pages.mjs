@@ -7,6 +7,7 @@ import { sourceAssets } from './lib/source-assets.mjs';
 import { buildContentCatalog, verifyContentCatalog, readPublishedArchive, archivedVersionFiles, verifyPublishedVersions, ARCHIVE_DIR } from './lib/content-catalog.mjs';
 import { CANONICAL_CONTENT_VERSIONS } from '../assets/js/canonical-question-source.js';
 import { buildQuestionBlanksModule, QUESTION_BLANKS_PATH } from './lib/question-blanks.mjs';
+import { verifyPrintEdition } from '../print/lib/verify.mjs';
 
 // Reject incomplete reviews before touching an existing release directory.
 const records=JSON.parse(await readFile('data/all.json','utf8'));
@@ -30,6 +31,11 @@ const files = ['_headers', 'index.html', 'assets/js/app.js', 'assets/js/answer-v
   'assets/fonts/HuWenMingChaoTi.woff', 'assets/fonts/HuWenMingChaoTi.woff2',
   'assets/img/bg.webp', 'assets/img/gaokao.jpeg', ...content.keys(), ...archived.keys()];
 files.push(...sourceAssets(projected, process.cwd()));
+// Print edition: the proofread per-year PDFs (served only through functions/papers) and their list.
+// Refuses a PDF that was not printed from its current source, or a source whose bank section changed.
+const sourceMarkRanges=new Map(sourceMarks.sourceQuestions.map(q=>[`${q.recordId}:${q.qIndex}`,q.ranges]));
+const blankRanges=new Map(blankDefinition.sourceQuestions.map(q=>[`${q.recordId}:${q.qIndex}`,q.ranges]));
+files.push('assets/js/print-papers.js', ...verifyPrintEdition(process.cwd(), {records:projected, blanks:blankRanges, sourceMarks:sourceMarkRanges}));
 try {
   for (const file of await readdir(output, {recursive:true, withFileTypes:true})) {
     if (!file.isFile()) continue;

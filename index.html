@@ -16,7 +16,7 @@
   <link rel="apple-touch-icon" href="https://img.bdfz.net/20250503004.webp" />
   <link rel="preconnect" href="https://mx.bdfz.net" crossorigin>
   <link rel="stylesheet" href="https://mx.bdfz.net/fonts/huwen/v1/HuWenMingChao.4eeeeaf657.css" crossorigin>
-  <link rel="stylesheet" href="assets/css/style.css?v=20261028-question-blanks" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20261125-print" />
 
   <script type="text/javascript">
     (function (c, l, a, r, i, t, y) {
@@ -37,6 +37,7 @@
     </a>
     <nav class="header-tools" aria-label="全局操作">
       <a class="toolbar-link" href="https://my.bdfz.net/">我的学习</a>
+      <button id="open-print-btn" class="secondary-btn print-entry" type="button" aria-haspopup="dialog">打印版</button>
       <button id="open-catalog-btn" class="toolbar-btn" type="button" aria-label="打开题库" aria-controls="catalog"
         aria-expanded="false">选择试题</button>
     </nav>
@@ -209,6 +210,7 @@
   <div role="status" id="learning-record-status"></div><button type="button" id="learning-record-retry">重试保存学习记录</button>
   <script defer src="assets/js/learning-records.js?v=20260925-capture-recovery" data-site-key="gk"></script>
   <script type="module" src="assets/js/app.js?v=20261118-ai-route" defer></script>
+  <script type="module" src="assets/js/print-papers.js?v=20261125-print"></script>
 </body>
 
 </html>

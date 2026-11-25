@@ -989,6 +989,98 @@ body.catalog-open .catalog-backdrop {
   padding: .4rem 0 0;
 }
 
+/* 真题打印版 */
+.print-entry {
+  margin-right: .45rem;
+}
+
+.print-dialog {
+  width: min(600px, calc(100vw - 1.5rem));
+}
+
+.print-panel {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  max-height: calc(100vh - 1.5rem);
+  padding: 1.2rem;
+}
+
+.print-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.print-head h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.print-intro {
+  margin: 0;
+  color: var(--text-light);
+  font-size: .92rem;
+  line-height: 1.7;
+}
+
+.print-status {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .7rem;
+  margin: 0;
+  font-size: .92rem;
+  font-weight: 700;
+}
+
+.print-login,
+.print-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: .35rem .8rem;
+  font-size: .86rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.print-list {
+  flex: 1 1 auto;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+  border-top: 1px solid var(--text);
+}
+
+.print-row {
+  display: grid;
+  grid-template-columns: 5.2rem 1fr auto;
+  align-items: center;
+  gap: .8rem;
+  padding: .45rem .1rem;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.print-row.is-focus {
+  background: var(--primary-soft);
+}
+
+.print-year {
+  font-family: var(--content-serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.print-meta {
+  color: var(--text-muted);
+  font-size: .84rem;
+}
+
 .required {
   text-decoration: underline;
 }
@@ -1091,7 +1183,8 @@ body.catalog-open .catalog-backdrop {
     display: none;
   }
 
-  .toolbar-btn {
+  .toolbar-btn,
+  .print-entry {
     min-height: 40px;
     padding: .45rem .65rem;
     font-size: .85rem;
