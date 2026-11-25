@@ -74,6 +74,8 @@ D．路灯吸引并聚集了大量的大型昆虫，家蝠或因捕食它们而�
 @record 2019-guwen bind=e7c3d44e5f92d5ff
 %% 古文; first question 7
 %% 大题标题为题库所缺，据原卷题号（7—12题）与分值（19+7分；第二份录文同作“共26分”）补。
+%% Heading 二 is not in the bank; reconstructed from questions 7–12 and their scores (26). The retyped paper (urongda) reads
+%% 「二、本大题共2小题，共26分」: same total, counted under its own merged numbering.
 # 二、本大题共6小题，共26分。
 ! （一）阅读下面文言文，完成7—11题。（共19分）
 <<< kai
@@ -152,6 +154,8 @@ D．此文表达了柳宗元“天人相分”、反对迷信的观点，体现�
 @record 2019-shici bind=e6f1b2d7837c81e7
 %% 诗词; first question 13
 %% 大题标题为题库所缺，据原卷题号（13—16题）与分值（12+8分；第二份录文同作“共20分”）补。
+%% Heading 三 is not in the bank; reconstructed from questions 13–16 and their scores (20). The retyped paper (urongda) reads
+%% 「三、本大题共2小题，共20分」: same total, counted under its own merged numbering.
 # 三、本大题共4小题，共20分。
 ! 阅读下面两首诗，完成13—15题。（共12分）
 <<< poem
@@ -249,6 +253,8 @@ D．北京的“大”体现在学术气度的广大与文化精神的包容。
 @record 2019-weixiezuo bind=d2546d764a056e56
 %% 微写作; first question 22
 %% 大题标题为题库所缺，据原卷题号（22—23题）与分值（10+50分；第二份录文同作“共60分”）补。
+%% Heading 五 is not in the bank; reconstructed from questions 22–23 (10+50). The retyped paper (urongda) reads 「共3小题」; the
+%% bank's own 2018 heading for the same two-question section reads 「五、本大题共2小题，共60分」, which is followed here.
 # 五、本大题共2小题，共60分。
 ? write
 22．微写作（10分）

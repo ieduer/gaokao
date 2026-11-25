@@ -98,6 +98,8 @@ D．文章作者有感于世俗的唯利是图，鼓励人们向善，因此写�
 @record 2012-shici bind=bba0194a24ea0785
 %% 诗词; first question 10
 %% “三、本大题共4小题，共30分。”题库未收，依原卷题号（10—13题，7+10+5+8分）补大题标题。
+%% Heading 三 is not in the bank; reconstructed. Questions 10–13 score 7+10+5+8 = 30 and the paper totals 150.
+%% The retyped paper (urongda) reads 「三、本大题共有3个小题，共30分」: same total, with the poem's two questions counted as one.
 # 三、本大题共4小题，共30分。
 ! 阅读下面这首诗，完成10、11题。
 <<< poem

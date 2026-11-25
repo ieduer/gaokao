@@ -59,6 +59,7 @@ D．与玉兔号不同，玉兔二号不会受到来自地球的辐射干扰。
 @record 2020-guwen bind=468f411d7915783a
 %% 古文; first question 6
 %% 大题标题为题库所缺，据第二份录文（原卷题号）补。
+%% Heading 二 is not in the bank; taken verbatim from the retyped paper (urongda), consistent with questions 6–12 (24 points).
 # 二、本大题共7小题，共24分。
 ! （一）阅读下面文言文，完成6—11题。（共18分）
 <<< kai
@@ -141,6 +142,7 @@ D．韩、赵、魏分别得到了诸侯封号，瓜分了晋国的国土，历�
 %% 大题标题为题库所缺，据第二份录文（原卷题号）补。
 %% 换页：免得诗后的注释与诗分在两页。
 [pagebreak]
+%% Heading 三 is not in the bank; taken verbatim from the retyped paper (urongda), consistent with questions 13–17 (25 points).
 # 三、本大题共5小题，共25分。
 ! （一）阅读下面诗歌，完成13—15题。（共12分）
 <<< poem
@@ -243,6 +245,7 @@ D．作者充分调动感官来捕捉平凡生活之美，并借助生动的细�
 @record 2020-yuyanjichu bind=7c4565542093b762
 %% 语言基础运用; first question 22
 %% 大题标题为题库所缺，据第二份录文（原卷题号）补。
+%% Heading 五 is not in the bank; taken verbatim from the retyped paper (urongda), consistent with questions 22–24 (65 points).
 # 五、本大题共3小题，共65分。
 ! 22．语言基础运用（5分）
 <<< kai

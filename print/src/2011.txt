@@ -92,7 +92,11 @@ D．评价人物要着眼于大处和长远，而不能仅看一时的成败和�
 %% 古文; first question 10
 %% note not printed: 取材于朱熹《白鹿洞书院揭示》。公开重排题源，非原卷扫描。
 %% “第二部分”“三、本大题共4小题，共30分。”题库未收，依原卷题号（10—13题，5+8+7+10分）补，与题库所记“第一部分”相应。
+%% 第二部分 is not in the bank. The bank labels 第一部分 (printed before 一); 第二部分 is added where the non-choice questions begin,
+%% to pair with it. The retyped paper (urongda) prints no part labels.
 # 第二部分
+%% Heading 三 is not in the bank; reconstructed. Questions 10, 11, 12 (①②) and 13 score 5+8+7+10 = 30 and the paper totals 150.
+%% The retyped paper (urongda) reads 「三、本大题共3小题，共30分」: same total, counted under its own merged numbering.
 # 三、本大题共4小题，共30分。
 ? open
 10．用斜线（/）给下面短文断句。（5分）

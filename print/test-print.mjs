@@ -7,6 +7,7 @@ import { parsePaper, parseInline, inlineText } from './lib/markup.mjs';
 import { paperHtml, inlineHtml } from './lib/render.mjs';
 import { toChars, normalise, serialise } from './lib/chars.mjs';
 import { loadPublished, bindingOf, printYears } from './lib/corpus.mjs';
+import { sourceDigest } from './lib/edition.mjs';
 import { execFileSync } from 'node:child_process';
 import { verifyPrintSources, verifyPrintManifest, verifyPrintEdition, verifyPrintPlaintext } from './lib/verify.mjs';
 import { validPapers, sizeLabel, loginUrl as clientLoginUrl, paperUrl } from '../assets/js/print-papers.js';
@@ -194,6 +195,16 @@ test('no readable PDF is tracked in the public repository', () => {
     assert.match(path, /^papers\/20\d{2}\.pdf\.enc$/);
     assert.equal(readFileSync(path).subarray(0, 4).toString('latin1'), 'GKP1');
   }
+});
+
+test('a comment-only change keeps the print binding; a printed change breaks it', () => {
+  const css = readFileSync('print/print.css', 'utf8');
+  const source = readFileSync('print/src/2024.txt', 'utf8');
+  const withNote = source.replace('\n# ', '\n%% provenance note\n# ');
+  assert.notEqual(withNote, source);
+  assert.equal(sourceDigest(withNote, css), sourceDigest(source, css));
+  assert.notEqual(sourceDigest(source.replace('（3分）', '（4分）'), css), sourceDigest(source, css));
+  assert.notEqual(sourceDigest(source, css + ' '), sourceDigest(source, css));
 });
 
 test('printed sources carry no unresolved drafting marks or answer keys', () => {

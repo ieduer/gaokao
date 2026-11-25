@@ -95,6 +95,9 @@ D．宋清与人交往不仅异于普通商人，也高于某些以士大夫自�
 %% 古文; first question 10
 %% 题库在本记录中重录《宋清传》全文及注释，并加引导语“10．阅读《宋清传》，完成延伸作答。”；文言文已印于第二大题，此处只印第10题。
 %% “三、本大题共4小题，共30分。”题库未收，依原卷题号（10—13题，10+5+8+7分）补大题标题。
+%% Heading 三 is not in the bank; reconstructed. Questions 10–13 score 10+5+8+7 = 30 and the paper totals 150 with the bank's own
+%% heading 二 (4 questions, 12 points), so question 10 belongs to 三. The retyped paper (urongda) merges sub-questions under its
+%% own numbering and groups question 10 with 二 (二 22 / 三 20 points); its grouping is not used.
 # 三、本大题共4小题，共30分。
 ? open
 10．第二大题文言文《宋清传》中说“清之取利远，远故大”，意思是“宋清谋取利益放眼于长远，因为考虑长远所以获得的利益较大”。这概括了宋清经商的特点，请从文中举一例加以说明，并结合当下的社会生活谈谈自己对这一概括的领悟。（不少于200字）（10分）

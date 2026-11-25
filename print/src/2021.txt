@@ -227,6 +227,7 @@ D．作者用“雁群飞过冬天”形象而生动地喻指了音乐具有超�
 @record 2021-yuyanjichu bind=c6f80b24cfc6c662
 %% 语言基础运用; first question 21
 %% 大题标题为题库所缺，据第二份录文（原卷题号）补。
+%% Heading 五 is not in the bank; taken verbatim from the retyped paper (urongda). The bank holds no per-question scores this year.
 # 五、本大题共3小题，共65分。
 ! 21．语言基础运用
 <<< kai

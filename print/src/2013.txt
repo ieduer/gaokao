@@ -111,6 +111,9 @@ D．曹彬富有智慧，才能出众，宋太祖虽然器重他，但是又心�
 %% note not printed: 题库引导语的分值括号内另有“；转载版本存在差异，原卷未证”，属来源说明，不印；题干依题目区“（5分）”。
 %% “三、本大题共3小题，共20分。”题库未收，依原卷题号（11—13题，5+7+8分）补大题标题。
 [pagebreak]
+%% Heading 三 is not in the bank; reconstructed. Questions 11–13 score 5+7+8 = 20 and the paper totals 150 with the bank's 二 (16).
+%% The retyped paper (urongda) reads 「三、本大题共三小题，共16分」 and gives the 默写 question 4 points where the bank's question
+%% text says （8分）; the bank is kept.
 # 三、本大题共3小题，共20分。
 ? open
 11．用斜线（/）给下面的文言文断句。（5分）

@@ -11,6 +11,8 @@ One proofread, print-ready PDF per exam year, downloaded at `/papers/<year>.pdf`
   The key is the Pages production secret `PRINT_PAPERS_KEY`; the local build reads the same value from
   `GK_PRINT_PAPERS_KEY` (private store `~/.secrets.env`). A static path can be reached around the function
   (for example `/papers%2F2024.pdf.enc`), which is why only sealed bytes may sit under `papers/`.
+- Each sealed PDF is bound to the printed content of its source and the stylesheet (`sourceSha256`). `%%` comment lines are
+  not printed and not part of that digest, so adding or correcting a provenance note needs no re-print.
 - Every `@record` line binds its section to the exact bank content it was proofread against (`bind=`).
   `npm run test:print` (part of `npm run build`) fails when the bank changes under a section, when a published
   record is neither printed nor skipped, when a sealed file does not match the manifest or was not printed from

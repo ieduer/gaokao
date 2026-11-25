@@ -75,6 +75,8 @@ D．从事某一职业过久，习惯了用行业思维来思考问题。
 @record 2018-guwen bind=8007064e2342d518
 %% 古文; first question 8
 %% 大题标题为题库所缺，据原卷题号（8—13题）与分值（19+5分；第二份录文同作“共24分”）补。
+%% Heading 二 is not in the bank; reconstructed from questions 8–13 and their scores (24). The retyped paper (urongda) reads
+%% 「二、本大题共2小题，共24分」: same total, counted under its own merged numbering.
 # 二、本大题共6小题，共24分。
 ! （一）阅读下面两则文言文，完成8—12题。（共19分）
 <<< kai

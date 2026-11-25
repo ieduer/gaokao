@@ -13,5 +13,9 @@ export const FONT_FILES = {
   'LXGWWenKaiGB-Regular.ttf': '5561d48097d92e5ab99fe7b1459d381bbcdff533bfc479207b089c6860c3990e',
 };
 
-// Binds a committed PDF to the source and stylesheet it was printed from.
-export const sourceDigest = (source, css) => createHash('sha256').update(JSON.stringify([EDITION, source, css])).digest('hex');
+// The lines of a source that reach the page: %% comments (proofreading notes, provenance) are never printed.
+export const printedSource = source => source.split('\n').filter(line => !line.startsWith('%%')).join('\n');
+
+// Binds a sealed PDF to the printed content of the source and the stylesheet it was printed from,
+// so a change to a comment alone needs no re-print.
+export const sourceDigest = (source, css) => createHash('sha256').update(JSON.stringify([EDITION, printedSource(source), css])).digest('hex');
