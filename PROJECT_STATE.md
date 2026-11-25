@@ -4,7 +4,7 @@
 - Header 「打印版」 lists 25 proofread A4 PDFs (2002–2026, 304 pages); `/papers/<year>.pdf` is served only after User Center confirms the session. PDFs are committed sealed (`papers/<year>.pdf.enc`, AES-256-GCM); the key is the Pages production secret `PRINT_PAPERS_KEY` (private store `GK_PRINT_PAPERS_KEY`).
 - Sources `print/src/<year>.txt` are bound to the bank (`bind=`); a bank change under a printed section fails the build until that section is proofread again and the year re-printed (`print/README.md`, docs/OPERATIONS.md "Print edition").
 - Status: https://status.bdfz.net/?update=20261125-gk-print-edition&revision=1 . Report: `_meta/reports/operations/gk-print-pdf-20261125/REPORT.md`.
-- Open: the added section headings of 2010–2013 and 2018–2021 have no `%%` provenance comment in their sources (listed in the report); add them at the next revision of those years. Unprinted todos: 2007 散文 note ① position, 2026 文言 Q6/Q7 passage dots.
+- Resolved 2026-11-25 (gk-print-notes-20261125, source `3badc03`, Pages `12e8c6f2`, effective 13:00:47Z; rollback `2e9da63e`): every added section heading now carries a `%%` provenance note; the source digest covers printed lines only, so the 25 sealed PDFs stayed byte-identical. Unprinted todos remain: 2007 散文 note ① position, 2026 文言 Q6/Q7 passage dots.
 
 ## 2026-11-22 accepted: 2022-feilian:3 option A label (gk-feilian-option-a-20261122)
 
