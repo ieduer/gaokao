@@ -1,5 +1,7 @@
 ## 2026-11-25 — Print edition: proofread per-year PDFs, download for signed-in readers (gk-print-pdf-20261125)
 
+Accepted 2026-11-25: source `0c20b79`, Pages deployment `2e9da63e-8386-4d57-ada0-db6ee3438607`, effective 12:08:18Z, accepted 12:12:11Z. Rollback: Pages rollback to `d53435bd` (source `89027d1`); no data was written, so nothing else needs to move. Public record: https://status.bdfz.net/?update=20261125-gk-print-edition&revision=1 .
+
 Owner request (suen, 2026-11-25): every year's real paper as one proofread PDF, downloadable only after sign-in, one file per year; underlines, dots and other marks done properly; fit for printing; an answer area for every question and a writing grid for the writing tasks. Release state, deployment, acceptance and rollback are recorded in the task report (`_meta/reports/operations/gk-print-pdf-20261125/REPORT.md`); this section describes the mechanism.
 
 - **What readers get**: a 「打印版」 button in the header opens a list of the years (`assets/js/print-papers.js`, list `data/print-papers.json`). One A4 PDF per year, 2002–2026 (25 files; the 9999 sample paper is not a real paper and is not printed). Questions follow the original numbering. Choice questions carry an answer box, written answers ruled lines sized from the score, fill-ins blanks, 微写作 a 20-column grid sized from its limit and the essay a 1,200-square grid with the title line. Dots (着重号), underlines and wavy lines sit on the characters the bank records.

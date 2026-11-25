@@ -1,3 +1,11 @@
+## 2026-11-25 accepted: print edition, per-year PDFs for signed-in readers (gk-print-pdf-20261125)
+
+- Source `0c20b79` on `main`, Pages deployment `2e9da63e-8386-4d57-ada0-db6ee3438607`, effective 2026-11-25T12:08:18Z, accepted 12:12:11Z. Rollback: Pages rollback to `d53435bd` (source `89027d1`).
+- Header 「打印版」 lists 25 proofread A4 PDFs (2002–2026, 304 pages); `/papers/<year>.pdf` is served only after User Center confirms the session. PDFs are committed sealed (`papers/<year>.pdf.enc`, AES-256-GCM); the key is the Pages production secret `PRINT_PAPERS_KEY` (private store `GK_PRINT_PAPERS_KEY`).
+- Sources `print/src/<year>.txt` are bound to the bank (`bind=`); a bank change under a printed section fails the build until that section is proofread again and the year re-printed (`print/README.md`, docs/OPERATIONS.md "Print edition").
+- Status: https://status.bdfz.net/?update=20261125-gk-print-edition&revision=1 . Report: `_meta/reports/operations/gk-print-pdf-20261125/REPORT.md`.
+- Open: the added section headings of 2010–2013 and 2018–2021 have no `%%` provenance comment in their sources (listed in the report); add them at the next revision of those years. Unprinted todos: 2007 散文 note ① position, 2026 文言 Q6/Q7 passage dots.
+
 ## 2026-11-22 accepted: 2022-feilian:3 option A label (gk-feilian-option-a-20261122)
 
 - Source `89027d1` on `main`, Pages deployment `d53435bd-4646-4b8c-a250-917de41f1e81`, effective 2026-11-22T23:45:21Z, accepted 23:46:55Z. Rollback: first flx back to its efa9-bound version (c1ba8f32 / 8d2c3592), then Pages rollback to 3af64324 (source 9899efc).
