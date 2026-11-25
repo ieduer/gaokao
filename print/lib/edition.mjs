@@ -4,12 +4,13 @@ import { createHash } from 'node:crypto';
 export const EDITION = '2026.11 精校版';
 
 // Build inputs kept outside the repository (SIL OFL 1.1). sha256 of the exact files used: the four instances were made with
-// fonttools 4.x varLib.instancer from google/fonts NotoSerifSC[wght].ttf (050080d9…) and NotoSansSC[wght].ttf (a3041811…).
+// fonttools varLib.instancer --no-recalc-timestamp (reproducible bytes) from google/fonts NotoSerifSC[wght].ttf (050080d9…)
+// and NotoSansSC[wght].ttf (a3041811…). Years printed before 2026-11-25 23:40Z used instances that differed only in head.modified.
 export const FONT_FILES = {
-  'PSong-Regular.ttf': '4cf1eeb647ccdd3c487345aba1dcbf9aa04cb09e39cf92e545412639290d06ea',
-  'PSong-Bold.ttf': 'ba600affffabdb79e26f00bed827ec7a8cac2b4034eb5c6e1a87e35392ac144f',
-  'PHei-Medium.ttf': '87eecb36e0479b8e1fa6cc9eb21d705c6d2352e7109ff9f65cf803f64a8b2f3b',
-  'PHei-Bold.ttf': '4ac46ba42ccf41a461788b2dd61fd66e9c21d5790188626384393dad19511c7c',
+  'PSong-Regular.ttf': '15ec0fa3bd82b3c98e981b1ef12c30ac380caff6b5ab2998e2d77daba3ab2732',
+  'PSong-Bold.ttf': '45da267af99d7b1aa79398f4589fcf8f852d339b2592f68a91fd12a8f7bb3e8e',
+  'PHei-Medium.ttf': '55215c6c9d56715430a51b2e71b4b0e9617daed929358ed0831dfc359683e55e',
+  'PHei-Bold.ttf': '984cc8f1b8463689f39f653c783188a3914b2ea4bc084db240569d5e6473d035',
   'LXGWWenKaiGB-Regular.ttf': '5561d48097d92e5ab99fe7b1459d381bbcdff533bfc479207b089c6860c3990e',
 };
 

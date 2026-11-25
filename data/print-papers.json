@@ -6,10 +6,10 @@
       "year": 2026,
       "file": "2026.pdf",
       "pages": 13,
-      "bytes": 675488,
-      "sha256": "eed5dd4dd0b6efdcd14e3e2a5fca559d02799158dddba76ae16a412ee1a676c9",
-      "sourceSha256": "4fe0e8534b8c1fe2a979b9cd9ae2716837b25b4af54b7694746329400159f9f2",
-      "encSha256": "de4ace3e50a14586208213512c73ed46a7cf8f911059f25d090473cf8dd82105"
+      "bytes": 701992,
+      "sha256": "a2e7332583ca82f5f2de6927ebe00a252de43400439a7c1cba5edf64158a79c2",
+      "sourceSha256": "d4f3344d3c77d12460ce656e77369f79a96ddf1082335ad26823211a7ffc9ac5",
+      "encSha256": "a57251265660a93d70b17d98ae60595d40cce496a8ede5563fe2563825f155e8"
     },
     {
       "year": 2025,
@@ -177,10 +177,10 @@
       "year": 2007,
       "file": "2007.pdf",
       "pages": 11,
-      "bytes": 571392,
-      "sha256": "7a9874e122aae0d3cc3641c3a8f3458bcc6fd5bdda07142f89d6ac2a68778527",
-      "sourceSha256": "9647b70a80d839f0d6e8873a5c64292f1ce9ecd7dad393a17ed6f81f643729fa",
-      "encSha256": "c93594e7e498b793bd6b63e53ab3743529bac881c5ffb24fc2d97edede29c1cb"
+      "bytes": 573836,
+      "sha256": "600a459418bd2c5f191cf1ccb4805c69753f5269d5a3a96d15cfe68ff5ab250d",
+      "sourceSha256": "762451df8f1a530dd921c68086ea65ac38fb90204ba5b170ce999ad9e0a8aee9",
+      "encSha256": "4c831bb949cf70f715eae464cc87c53607dbb3b89e0a24c84846dfb76a8a48b2"
     },
     {
       "year": 2006,

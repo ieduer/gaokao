@@ -30,7 +30,7 @@ year always changes its sealed file. Readable PDFs go to `.print-work/pdf/` (ign
 
 `<dir>` holds the five font files named in `print/lib/edition.mjs` (SIL OFL 1.1; not in the repository):
 `NotoSerifSC[wght].ttf` and `NotoSansSC[wght].ttf` from google/fonts, instanced with
-`fonttools varLib.instancer <file> wght=<n>` to `PSong-Regular.ttf` (400), `PSong-Bold.ttf` (700),
+`fonttools varLib.instancer <file> wght=<n> --no-recalc-timestamp` to `PSong-Regular.ttf` (400), `PSong-Bold.ttf` (700),
 `PHei-Medium.ttf` (500), `PHei-Bold.ttf` (700), and `LXGWWenKaiGB-Regular.ttf` from lxgw/LxgwWenkaiGB v1.530.
 Needs Google Chrome, `pdfinfo` and Node 24.18.0.
 
