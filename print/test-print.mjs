@@ -205,6 +205,8 @@ test('a comment-only change keeps the print binding; a printed change breaks it'
   assert.equal(sourceDigest(withNote, css), sourceDigest(source, css));
   assert.notEqual(sourceDigest(source.replace('（3分）', '（4分）'), css), sourceDigest(source, css));
   assert.notEqual(sourceDigest(source, css + ' '), sourceDigest(source, css));
+  // The bank binding of a section is not printed either.
+  assert.equal(sourceDigest(source.replace(/^(@record \S+ bind=)[a-f0-9]{16}/m, '$10000000000000000'), css), sourceDigest(source, css));
 });
 
 test('printed sources carry no unresolved drafting marks or answer keys', () => {

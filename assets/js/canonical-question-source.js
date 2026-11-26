@@ -9,6 +9,8 @@ export const CANONICAL_CONTENT_VERSIONS = Object.freeze({
   'sha256:efa9b0b3bbe5d7ae2bbdc45d1281a9f7f8e27bbe132dd2c21749466bdd07a2f5': '18582637a04befbc81adcf497479f1bda58eb686cfebbcba13436df04686f018',
   // 2026-11-22: 2022-feilian:3 option A gets its label dot back (and option C loses a stray space), as printed on the paper.
   'sha256:6cbd3661c9fc15cdd9963e4679ae0535a9f700a14369c6feac86a43520a975ff': '79a1e39c8c77e04f27654cde4feffc4bbc9c0312d2e9d260bff86a9b4e27bffe',
+  // 2026-11-26 gk-bank-fix-20261126: 2026-guwen and 2007-sanwen checked against the original papers.
+  'sha256:2e3c5cb490ab4dd1a716ce898f05b1f2e65dc5eca4a35226ce925e16aeaf107a': 'ec919d3e1db9e4a6738267d0ca63a67dc1ef7a2abb9755c64ddaaa80a42a73ad',
 });
 // The default version for callers that do not name one (gks loadCanonicalQuestions(ids)).
 export const CANONICAL_CONTENT_VERSION = 'sha256:7aeb9f57cbcb52178a2709d49e17c0afa9db6acb6ef94253f6f04a77c78284b3';

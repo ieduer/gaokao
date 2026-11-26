@@ -30,14 +30,15 @@ for (const [key, count] of expected) {
   if (record.source_evidence?.visual_review_percent !== 100) failures.push(`${key}: visual review mismatch`);
 }
 // 三源核对后的题面校验位：任何一处回退都说明 2026 语文题面被旧的错误转录覆盖
+// 2026-11-26（gk-bank-fix-20261126）：原卷扫描逐字核对，浔水城与“侃不从。”为原卷读法；09-19 依两份网络转录改作浮水城有误。
 const CANARIES = [
   ["feilian", "稍纵即逝"], ["feilian", "手工匠人"], ["feilian", "应分别、独立进行"],
-  ["guwen", "为郡督邮"], ["guwen", "扈怀言于弘曰"], ["guwen", "弢别将袭沔阳"], ["guwen", "周顗屯浮水城"],
+  ["guwen", "为郡督邮"], ["guwen", "扈怀言于弘曰"], ["guwen", "弢别将袭沔阳"], ["guwen", "周顗屯浔水城"], ["guwen", "侃不从。既至"],
   ["shici", "乍望极平田"], ["moxie", "以自然之理喻治国之道"], ["moxie", "开篇亮出观点"],
   ["honglou", "素习所经过各省内的古迹"], ["honglou", "以讹传讹"], ["sanwen", "采自哪座山"],
 ];
 const REGRESSIONS = [
-  ["feilian", "聊以即趣"], ["guwen", "为寻阳吏"], ["guwen", "浔水城"], ["sanwen", "来自哪座山"],
+  ["feilian", "聊以即趣"], ["guwen", "为寻阳吏"], ["guwen", "浮水城"], ["sanwen", "来自哪座山"],
 ];
 for (const [key, needle] of CANARIES) {
   const record = selected.find((item) => item.key === key);

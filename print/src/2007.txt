@@ -182,14 +182,15 @@ D．对于任何公司或国家来说，优越的资源都可能带来负面的�
 [lines 4]
 ?.
 
-@record 2007-sanwen bind=01142be867bc5723
+@record 2007-sanwen bind=e40463c7e0de8a0f
 %% 散文; first question 18
 # 五、本大题共4小题，共18分。
 ! 阅读下面的作品，完成18—21题。
 %% note not printed: 新浪2007年北京卷公开题目拼接图，已目视；不是完整14页原卷或考试机构出版链认证。凤头砖瓦楼保留图中文字；“黏合”处水印重叠，按Gzy转录保留并标为待原卷辨清，未默改。
 %% Checked against the original paper as published by Sina on 2007-06-09 (edu.sina.com.cn/shiti/paper/16/84/8416/images/18-21.jpg,
 %% sha256 de0aa5024c04671a…): note mark ① on the first 爷爷, the underline under 值得回忆的哀乐人事常是湿的, the dots on 不正确 in
-%% question 18, the instruction wording and 13 readings where the bank follows a later reprint (走出山外, 想像, 即涓涓细流 …).
+%% question 18, the instruction wording and 13 readings (走出大山, 想象, 即使涓涓细流 …). The shared bank follows the original
+%% too since content version 2e3c5cb4 (2026-11-26); the stem dots on 不正确 are recorded only here.
 <<< kai
 = 湿湿的想念
 七十年前，爷爷{^①}沿着一条沅水，走出大山，走进那所无法毕业的人生学校，读那本未必都能看懂的大书。后来，因为肚子的困窘和头脑的困惑，他也写了许多本小书和大书，里面有许多很美的文字和用文字作的很美的画卷，这些文字与画托举的永远是一个沅水边形成的理想。

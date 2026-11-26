@@ -59,7 +59,7 @@ D．在不同的区域和不同的时段，噪声大小和分布情况可能会�
 [lines 6]
 ?.
 
-@record 2026-guwen bind=5134188d0a7802fe
+@record 2026-guwen bind=e8e89bb97d244aed
 %% 古文; first question 6
 # 二、本大题共5小题，共18分。
 ! 阅读下面文言文，完成6—10题。
@@ -74,9 +74,8 @@ D．在不同的区域和不同的时段，噪声大小和分布情况可能会�
 -> （取材于《晋书》《资治通鉴》）
 >>>
 ~ 注释：【1】陶侃：晋朝将领。【2】刘弘：晋朝将领，曾是羊祜麾下参军。【3】羊公：羊祜，晋朝将领。【4】周顗：晋朝大臣。【5】杜弢：流民首领。【6】王敦：晋朝大臣，后叛乱。
-%% Passage dots for questions 6 and 7 (得 逆 疾 解; 为 为 以 以 而 而 与 与) and the readings 浔水城 and 侃不从。既至, are taken from the
-%% original paper scan kept by GKS (output/evidence/beijing/2026/chinese-20260815/source-mixed-order.pdf, sha256 486b6c54…,
-%% exam pages 3–4). The bank reads 浮水城 and 侃不从，既至 (transcription slips; 《晋书·陶侃传》 also has 浔水城).
+%% Passage dots for questions 6 and 7 and the readings 浔水城 and 侃不从。既至 follow the original paper scan kept by GKS
+%% (source-mixed-order.pdf, sha256 486b6c54…, exam pages 3–4); the shared bank carries them since content version 2e3c5cb4 (2026-11-26).
 ? choice
 6．下列对语句中加点词的解释，{.不正确}的一项是（3分）
 A．吾{.得}之已久　　得：知晓

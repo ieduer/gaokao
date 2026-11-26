@@ -154,10 +154,11 @@ test('default callers keep the pinned default version, its catalog SHA-256 and t
   assert.equal(CANONICAL_CATALOG_SHA256, '9cc4a27911b45b9385c8cdfa8ea35545425c42ac9d9e06f366660e015d4bae32');
   assert.deepEqual({ ...CANONICAL_CONTENT_VERSIONS }, { [CANONICAL_CONTENT_VERSION]: CANONICAL_CATALOG_SHA256,
     'sha256:efa9b0b3bbe5d7ae2bbdc45d1281a9f7f8e27bbe132dd2c21749466bdd07a2f5': '18582637a04befbc81adcf497479f1bda58eb686cfebbcba13436df04686f018',
-    'sha256:6cbd3661c9fc15cdd9963e4679ae0535a9f700a14369c6feac86a43520a975ff': '79a1e39c8c77e04f27654cde4feffc4bbc9c0312d2e9d260bff86a9b4e27bffe' });
+    'sha256:6cbd3661c9fc15cdd9963e4679ae0535a9f700a14369c6feac86a43520a975ff': '79a1e39c8c77e04f27654cde4feffc4bbc9c0312d2e9d260bff86a9b4e27bffe',
+    'sha256:2e3c5cb490ab4dd1a716ce898f05b1f2e65dc5eca4a35226ce925e16aeaf107a': 'ec919d3e1db9e4a6738267d0ca63a67dc1ef7a2abb9755c64ddaaa80a42a73ad' });
   assert.ok(Object.isFrozen(CANONICAL_CONTENT_VERSIONS));
   // The current build is the newest pinned version; the default stays the earliest one for unversioned callers.
-  assert.equal(CURRENT_VERSION, 'sha256:6cbd3661c9fc15cdd9963e4679ae0535a9f700a14369c6feac86a43520a975ff');
+  assert.equal(CURRENT_VERSION, 'sha256:2e3c5cb490ab4dd1a716ce898f05b1f2e65dc5eca4a35226ce925e16aeaf107a');
   assert.equal(sha(files.get(versionedCatalogPath(CURRENT_VERSION))), CANONICAL_CONTENT_VERSIONS[CURRENT_VERSION]);
   assert.equal(sha(files.get(versionedCatalogPath(CANONICAL_CONTENT_VERSION))), CANONICAL_CATALOG_SHA256);
 });
@@ -307,14 +308,15 @@ test('the restored version has no teaching-revision stem and differs from the de
 
 // 2026-11-22: the current version differs from the original-text version only in 2022-feilian:3, whose option A
 // regains its label dot (option C loses a stray space). The reviewed answer D and both model answers are kept.
-const TRANSCRIBED = '2022-feilian:3';
-test('the current version differs from the original-text version only in the transcription of 2022-feilian:3', async () => {
+const TRANSCRIBED = '2022-feilian:3', LABELLED_VERSION = 'sha256:6cbd3661c9fc15cdd9963e4679ae0535a9f700a14369c6feac86a43520a975ff';
+const labelledServed = versionFiles(LABELLED_VERSION);
+test('the 2026-11-22 version differs from the original-text version only in the transcription of 2022-feilian:3', async () => {
   const { fetchImpl } = server(files);
   const ids = corpusIds(originalServed);
-  assert.deepEqual(corpusIds(currentServed), ids);
+  assert.deepEqual(corpusIds(labelledServed), ids);
   const before = await createCanonicalQuestionSource({ fetchImpl, contentVersion: ORIGINAL_VERSION })(ids);
-  const after = await createCanonicalQuestionSource({ fetchImpl, contentVersion: CURRENT_VERSION })(ids);
-  assert.ok([...after.values()].every(item => item.contentVersion === CURRENT_VERSION));
+  const after = await createCanonicalQuestionSource({ fetchImpl, contentVersion: LABELLED_VERSION })(ids);
+  assert.ok([...after.values()].every(item => item.contentVersion === LABELLED_VERSION));
   assert.deepEqual(ids.filter(id => JSON.stringify(questionView(before.get(id))) !== JSON.stringify(questionView(after.get(id)))), [TRANSCRIBED]);
   for (const id of ids) if (after.get(id).record.id !== '2022-feilian') assert.deepEqual(after.get(id).record, before.get(id).record, id);
   const old = before.get(TRANSCRIBED), now = after.get(TRANSCRIBED), options = text => text.split('\n').slice(1).map(line => line.slice(0, 2));
@@ -326,6 +328,31 @@ test('the current version differs from the original-text version only in the tra
   assert.equal(now.record.answer_reviews['3'].status, 'reviewed');
   assert.equal(now.record.ai_answers['3'], old.record.ai_answers['3']);
   assert.ok(now.record.answer_review_history['3'].some(entry => entry.source.questions[0].text === old.question.text), 'old transcription kept in history');
+});
+
+// 2026-11-26: the current version differs from the 2026-11-22 version only in 2026-guwen and 2007-sanwen, checked word by
+// word against the original papers. Question texts, scores, keys and answers are unchanged; the old passages stay in history.
+const ORIGINAL_PAPER = ['2007-sanwen:1', '2007-sanwen:2', '2007-sanwen:3', '2007-sanwen:4', '2026-guwen:1', '2026-guwen:2', '2026-guwen:3', '2026-guwen:4', '2026-guwen:5'];
+test('the current version differs from the 2026-11-22 version only in the passages checked against the original papers', async () => {
+  const { fetchImpl } = server(files);
+  const ids = corpusIds(labelledServed);
+  assert.deepEqual(corpusIds(currentServed), ids);
+  const before = await createCanonicalQuestionSource({ fetchImpl, contentVersion: LABELLED_VERSION })(ids);
+  const after = await createCanonicalQuestionSource({ fetchImpl, contentVersion: CURRENT_VERSION })(ids);
+  assert.ok([...after.values()].every(item => item.contentVersion === CURRENT_VERSION));
+  assert.deepEqual(ids.filter(id => JSON.stringify(questionView(before.get(id))) !== JSON.stringify(questionView(after.get(id)))).sort(), ORIGINAL_PAPER);
+  for (const id of ids) if (!['2026-guwen', '2007-sanwen'].includes(after.get(id).record.id)) assert.deepEqual(after.get(id).record, before.get(id).record, id);
+  for (const id of ORIGINAL_PAPER) {
+    const old = before.get(id), now = after.get(id), q = String(now.question.qIndex);
+    assert.equal(now.question.text, old.question.text, id);
+    assert.equal(now.question.score, old.question.score, id);
+    assert.deepEqual(now.record.answer_reviews[q].correctOptions ?? null, old.record.answer_reviews[q].correctOptions ?? null, id);
+    assert.equal(now.record.ai_answers[q], old.record.ai_answers[q], id);
+    assert.ok(now.record.answer_review_history[q].some(entry => entry.source.materials[0].text === old.record.materials[0].text), `${id}: old passage kept in history`);
+  }
+  const passage = id => after.get(id).record.materials[0].text;
+  assert.ok(passage('2026-guwen:1').includes('周顗屯浔水城') && passage('2026-guwen:1').includes('侃不从。既至'));
+  assert.ok(passage('2007-sanwen:1').includes('爷爷①沿着一条沅水，走出大山'));
 });
 
 test('caches bound to the earlier version still hydrate; caches bound to the restored version hydrate against it', async () => {

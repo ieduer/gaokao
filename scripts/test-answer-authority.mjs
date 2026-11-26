@@ -283,7 +283,7 @@ test('restored original exam questions bind the archived original input and keep
 test('a transcription correction only fixes punctuation and keeps the reviewed answer it re-binds',()=>{
   const data=JSON.parse(readFileSync(new URL('../data/all.json',import.meta.url))),a=JSON.parse(readFileSync(new URL('../data/answer-authority.json',import.meta.url)));
   validateAuthority(data,a);
-  const corrected=a.questions.filter(q=>q.editorialRevision?.kind==='transcription_correction');
+  const corrected=a.questions.filter(q=>q.editorialRevision?.kind==='transcription_correction'&&!q.editorialRevision.version.endsWith('-original-paper-20261126'));
   assert.deepEqual(corrected.map(q=>q.id),['2022-feilian:3']);
   const punctuation=/[\s.．。]/g;
   for(const review of corrected){
@@ -315,4 +315,41 @@ test('a transcription correction only fixes punctuation and keeps the reviewed a
     // Every option label the consumers parse is now present.
     assert.deepEqual(question.text.split('\n').slice(1).map(line=>line.slice(0,2)),['A.','B.','C.','D.']);
   }
+});
+
+test('original-paper corrections replay exactly on the archived passage and keep every reviewed answer',()=>{
+  const data=JSON.parse(readFileSync(new URL('../data/all.json',import.meta.url))),a=JSON.parse(readFileSync(new URL('../data/answer-authority.json',import.meta.url)));
+  validateAuthority(data,a);
+  const corrected=a.questions.filter(q=>q.editorialRevision?.version?.endsWith('-original-paper-20261126'));
+  assert.deepEqual(corrected.map(q=>q.id).sort(),['2007-sanwen:1','2007-sanwen:2','2007-sanwen:3','2007-sanwen:4','2026-guwen:1','2026-guwen:2','2026-guwen:3','2026-guwen:4','2026-guwen:5']);
+  for(const review of corrected){
+    const at=review.id.lastIndexOf(':'),record=data.find(r=>r.id===review.id.slice(0,at)),question=record.questions.find(q=>q.qIndex===Number(review.id.slice(at+1)));
+    const revision=review.editorialRevision,archived=review.history.filter(h=>h.review.inputPresentationSha256===revision.previousInputPresentationSha256);
+    assert.equal(archived.length,1,review.id);
+    const [{source,review:old}]=archived;
+    assert.equal(revision.kind,'transcription_correction');assert.equal(revision.originalExamText,true);
+    assert.equal(revision.answerChanged,false);assert.equal(revision.oldScoresRecalculated,false);assert.equal(revision.modelCalls,0);
+    // The declared replacements turn the archived passage into the current one; the question itself is unchanged.
+    const replayed=revision.replacements.reduce((text,{from,to})=>{assert.notEqual(from,to);assert.equal(text.split(from).length,2,from);return text.replace(from,to);},source.materials[0].text);
+    assert.equal(replayed,record.materials[0].text,review.id);
+    assert.equal(source.questions[0].text,question.text);
+    assert.equal(revision.topic?source.topic.replace(revision.topic.from,revision.topic.to):source.topic,record.topic);
+    for(const mark of revision.marksAdded) assert.ok(record.annotations.some(x=>x.qIndex===question.qIndex&&x.type===mark.type&&x.anchor===mark.anchor),`${review.id} ${mark.anchor}`);
+    // The decision, explanation and model texts are the archived ones; only the input binding moved.
+    assert.equal(review.status,old.status);assert.deepEqual(review.correctOptions,old.correctOptions);
+    assert.equal(review.explanation,old.explanation);assert.equal(review.currentVersion,old.currentVersion);
+    assert.deepEqual(Object.keys(review.modelAnswers).sort(),Object.keys(old.modelAnswers).sort());
+    for(const [version,model] of Object.entries(review.modelAnswers)){
+      const before=old.modelAnswers[version],eq=model.provenance.inputEquivalence;
+      assert.equal(model.text,before.text,version);assert.equal(model.inputSha256,review.inputSha256);
+      assert.equal(eq.method,'original_paper_transcription_v1');
+      assert.deepEqual([eq.answeredInputSha256,eq.answeredInputContextSha256,eq.answeredInputPresentationSha256],
+        [before.inputSha256,before.inputContextSha256||null,before.inputPresentationSha256||null],version);
+    }
+    assert.equal(review.modelAnswers[review.currentVersion].inputPresentationSha256,questionPresentationDigest(record,question));
+  }
+  // The readings the original papers print.
+  const guwen=data.find(r=>r.id==='2026-guwen').materials[0].text,sanwen=data.find(r=>r.id==='2007-sanwen').materials[0].text;
+  assert.ok(guwen.includes('周顗屯浔水城')&&guwen.includes('侃不从。既至')&&!guwen.includes('浮水城'));
+  assert.ok(sanwen.includes('\n七十年前，爷爷①沿着一条沅水，走出大山')&&!sanwen.includes('想像'));
 });

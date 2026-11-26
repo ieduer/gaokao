@@ -2924,7 +2924,7 @@
     },
     {
       "id": "2026-guwen:2",
-      "inputSha256": "7ad4bb12561bfaea85f1162a841229f44db6393749c80fc26e5fd11398f4af27",
+      "inputSha256": "297b2d0b51c96c1b142e3811a1988f24e90fcaa27cd3532095a474946c01ca28",
       "status": "reviewed",
       "kind": "single_choice",
       "correctOptions": [
@@ -2963,16 +2963,24 @@
             "C"
           ],
           "generatedAt": "2026-10-04T07:17:50.351Z",
-          "inputSha256": "7ad4bb12561bfaea85f1162a841229f44db6393749c80fc26e5fd11398f4af27",
-          "inputContextSha256": "f3fc4e7cee6ee5ab33ef8fb822e083e179d745ffc22d6bd2ef4416b1cf00c0bf",
-          "inputPresentationSha256": "9b8dceae781a3f37435737561fb9c71b885565e1f9ab933e0da7dcd812c08e4b",
+          "inputSha256": "297b2d0b51c96c1b142e3811a1988f24e90fcaa27cd3532095a474946c01ca28",
+          "inputContextSha256": "81f786bc277ec91c4c871ae82522469d0f4d429ad53cb8bd28b0f762cd316fb9",
+          "inputPresentationSha256": "d34b5a0d146affb3c23247698395cb8d0ca296393be2c169973a43e9fb581a93",
           "provenance": {
             "kind": "codex_turn",
             "evidence": "root-2026-source-marks-v1-drafts.json",
             "inputEvidence": "root-2026-source-marks-v1-inputs.json",
             "originalAuthorEvidence": "reference-exposure-2026-source-marks-v1-before-claude.json",
             "referenceExposed": true,
-            "stage": "retained_original_response"
+            "stage": "retained_original_response",
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "7ad4bb12561bfaea85f1162a841229f44db6393749c80fc26e5fd11398f4af27",
+              "answeredInputContextSha256": "f3fc4e7cee6ee5ab33ef8fb822e083e179d745ffc22d6bd2ef4416b1cf00c0bf",
+              "answeredInputPresentationSha256": "9b8dceae781a3f37435737561fb9c71b885565e1f9ab933e0da7dcd812c08e4b",
+              "difference": "The model answered the same questions on a passage with transcription differences from the original paper (wording and punctuation listed in editorialRevision.replacements) and without some of the original marks. The decision does not depend on them.",
+              "evidence": "gk-bank-fix-20261126/REPORT.md"
+            }
           },
           "notes": "本轮已见旧答案选项；逐题重读完整材料、完整题干及扫描标记后写出完整解释，未调用新的Claude。"
         },
@@ -2985,9 +2993,9 @@
           ],
           "uncertainties": [],
           "generatedAt": "2026-10-05T04:47:57.355306+00:00",
-          "inputSha256": "7ad4bb12561bfaea85f1162a841229f44db6393749c80fc26e5fd11398f4af27",
-          "inputContextSha256": "f3fc4e7cee6ee5ab33ef8fb822e083e179d745ffc22d6bd2ef4416b1cf00c0bf",
-          "inputPresentationSha256": "9b8dceae781a3f37435737561fb9c71b885565e1f9ab933e0da7dcd812c08e4b",
+          "inputSha256": "297b2d0b51c96c1b142e3811a1988f24e90fcaa27cd3532095a474946c01ca28",
+          "inputContextSha256": "81f786bc277ec91c4c871ae82522469d0f4d429ad53cb8bd28b0f762cd316fb9",
+          "inputPresentationSha256": "d34b5a0d146affb3c23247698395cb8d0ca296393be2c169973a43e9fb581a93",
           "provenance": {
             "kind": "cli_response",
             "responseModel": "claude-opus-5-5",
@@ -2997,11 +3005,19 @@
             "inputPromptSha256": "d6399eb26dda10a64e259a6b2479677906ae67c2930ead95fa042e1075d52936",
             "responseStreamSha256": "f4231134bab3bff3c5fc69e746cb1ac96c3244e8f7fe38b7115eaade83ae85a4",
             "referenceProvided": false,
-            "stage": "retained_original_response"
+            "stage": "retained_original_response",
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "7ad4bb12561bfaea85f1162a841229f44db6393749c80fc26e5fd11398f4af27",
+              "answeredInputContextSha256": "f3fc4e7cee6ee5ab33ef8fb822e083e179d745ffc22d6bd2ef4416b1cf00c0bf",
+              "answeredInputPresentationSha256": "9b8dceae781a3f37435737561fb9c71b885565e1f9ab933e0da7dcd812c08e4b",
+              "difference": "The model answered the same questions on a passage with transcription differences from the original paper (wording and punctuation listed in editorialRevision.replacements) and without some of the original marks. The decision does not depend on them.",
+              "evidence": "gk-bank-fix-20261126/REPORT.md"
+            }
           }
         }
       },
-      "inputContextSha256": "f3fc4e7cee6ee5ab33ef8fb822e083e179d745ffc22d6bd2ef4416b1cf00c0bf",
+      "inputContextSha256": "81f786bc277ec91c4c871ae82522469d0f4d429ad53cb8bd28b0f762cd316fb9",
       "history": [
         {
           "source": {
@@ -3131,9 +3147,239 @@
             },
             "inputContextSha256": "f3fc4e7cee6ee5ab33ef8fb822e083e179d745ffc22d6bd2ef4416b1cf00c0bf"
           }
+        },
+        {
+          "source": {
+            "question2": "7. 下列各组语句中，加点词的意义和用法都相同的一组是\nA. 为杜弢所困 / 朝野以为美谈\nB. 乃自径道还郡以待之 / 以其从弟廙为荆州刺史\nC. 攀等以侃始灭大贼，而更被黜 / 安有断人左手而右手不应者乎\nD. 周访与侃亲姻 / 梅陶与亲人书曰",
+            "id": "2026-guwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "文言文阅读",
+                "text": "陶侃【1】少孤贫，为郡督邮。长沙太守过庐江，见而异之，命其子结友而去。后察孝廉，至洛阳，人荐之，侃由是知名。既克贼，刘弘【2】谓侃曰：“吾昔为羊公【3】参军，谓吾后当居身处。今观卿，必继老夫矣。”\n\n顺阳太守张光诣荆州讨陈敏，刘弘遣侃等屯夏口。侃与敏同郡，又同岁举吏。扈怀言于弘曰：“侃居大郡，统强兵，脱有异志，则荆州无东门矣！”弘曰：“侃之忠能，吾得之已久，必无是也。”侃闻之，遣子及兄子诣弘以自固。弘引为参军，资而遣之，曰：“贤叔征行，君祖母年高，便可归也。匹夫之交，尚不负心，况大丈夫乎！”\n\n周顗【4】始至州，流民叛迎杜弢【5】，弢别将袭沔阳，顗狼狈失据。征讨都督王敦【6】遣侃等共击弢。周顗屯浮水城，为杜弢所困。侃曰：“弢必步向武昌。”乃自径道还郡以待之，弢果来攻。侃使朱伺逆击，大破之，弢遁归长沙。侃告捷于敦，敦曰：“若无陶侯，便失荆州矣！”乃表侃为荆州刺史。\n\n王敦嬖人钱凤，疾侃之功，屡毁之。侃将还江陵，欲诣敦自陈。朱伺等谏曰：“公入，必不出。”侃不从，既至，敦留侃不遣，左转广州刺史，以其从弟廙为荆州刺史。荆州将吏郑攀等诣敦，上书留侃，敦怒，不许。攀等以侃始灭大贼，而更被黜，众情愤惋。后攀等袭廙，敦意攀承侃风旨，被甲持矛将杀侃，出而复还者数四。侃正色曰：“使君雄断，当裁天下，何此不决乎！”因起如厕。梅陶等言于敦曰：“周访与侃亲姻，如左右手，安有断人左手而右手不应者乎！”敦意解，乃设盛馔以饯之，侃便夜发。\n\n太宁三年五月，以侃为征西大将军、都督荆湘雍梁四州诸军事、荆州刺史，荆州士女相庆。\n\n咸和七年十一月，进侃为大将军，剑履上殿，入朝不趋，侃固辞不受。侃晚年深以满盈自惧，不预朝权，屡欲告老归国，佐吏等苦留之。九年六月，侃疾笃，上表逊位。将归长沙，军资、器仗、牛马、舟船皆有定簿，封印仓库，自加管钥，以付右司马，然后登舟，朝野以为美谈。乙卯，薨于樊溪。侃在军四十一年，自南陵迄于白帝，数千里中，路不拾遗。及薨，梅陶与亲人书曰：“陆抗诸人不能及也。”\n\n（取材于《晋书》《资治通鉴》）\n\n注释：【1】陶侃：晋朝将领。【2】刘弘：晋朝将领，曾是羊祜麾下参军。【3】羊公：羊祜，晋朝将领。【4】周顗：晋朝大臣。【5】杜弢：流民首领。【6】王敦：晋朝大臣，后叛乱。"
+              }
+            ],
+            "topic": "二、本大题共5小题，共18分。阅读下面文言文，完成6—10题。",
+            "annotation": "2026年普通高等学校招生全国统一考试（北京卷）语文；题面经三处独立来源交叉核对（原卷扫描件 + 两个独立转录本）",
+            "annotations": [
+              {
+                "qIndex": 2,
+                "material": "question2",
+                "type": "dot",
+                "start": 31,
+                "end": 32,
+                "anchor": "为"
+              },
+              {
+                "qIndex": 2,
+                "material": "question2",
+                "type": "dot",
+                "start": 42,
+                "end": 43,
+                "anchor": "为"
+              },
+              {
+                "qIndex": 2,
+                "material": "question2",
+                "type": "dot",
+                "start": 55,
+                "end": 56,
+                "anchor": "以"
+              },
+              {
+                "qIndex": 2,
+                "material": "question2",
+                "type": "dot",
+                "start": 61,
+                "end": 62,
+                "anchor": "以"
+              },
+              {
+                "qIndex": 2,
+                "material": "question2",
+                "type": "dot",
+                "start": 84,
+                "end": 85,
+                "anchor": "而"
+              },
+              {
+                "qIndex": 2,
+                "material": "question2",
+                "type": "dot",
+                "start": 97,
+                "end": 98,
+                "anchor": "而"
+              },
+              {
+                "qIndex": 2,
+                "material": "question2",
+                "type": "dot",
+                "start": 110,
+                "end": 111,
+                "anchor": "与"
+              },
+              {
+                "qIndex": 2,
+                "material": "question2",
+                "type": "dot",
+                "start": 119,
+                "end": 120,
+                "anchor": "与"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 2,
+                "id": "q2",
+                "text": "7. 下列各组语句中，加点词的意义和用法都相同的一组是\nA. 为杜弢所困 / 朝野以为美谈\nB. 乃自径道还郡以待之 / 以其从弟廙为荆州刺史\nC. 攀等以侃始灭大贼，而更被黜 / 安有断人左手而右手不应者乎\nD. 周访与侃亲姻 / 梅陶与亲人书曰",
+                "score": 3,
+                "sourceQuestionNumber": "7",
+                "sourceType": "single_choice"
+              }
+            ]
+          },
+          "review": {
+            "id": "2026-guwen:2",
+            "inputSha256": "7ad4bb12561bfaea85f1162a841229f44db6393749c80fc26e5fd11398f4af27",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "C"
+            ],
+            "explanation": "全文及八字位逐一核查：為所被動與以為的當作不同；以待之為目的，任用王廙之以為手段或處置不同；兩個而均轉折；與親姻之和及與親人書之給不同。C唯一成立。以與的細詞類分歧保留，不作額外必背標籤。\n\n【来源与评分边界】保留用户扫描及既有三来源逐句校订的接受依据，现行考查标记已按扫描核查。三源校订不等于考试机构公开发布答案；保全已接受的新题与所有旧版本。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。",
+            "reviewedBy": "codex-01a11199-gpt-6-astra",
+            "reviewedAt": "2026-10-06T14:36:18.453Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内完整题目及相关材料"
+              },
+              {
+                "type": "dictionary_revision",
+                "title": "文言站2026-09-16-r3词典校订，保留争议"
+              },
+              {
+                "type": "inherited_user_scan_visual_evidence",
+                "evidence": "source-2026-mark-visual-readback.json",
+                "sha256": "bbe3f7ba5129119f64af4499262984cf39616084f7047a7b08aa9146341c20df",
+                "sourceClass": "Existing user-supplied scan; existing accepted three-source text retained. No new claim of official source qualification or waiver."
+              },
+              {
+                "type": "publication_qualification",
+                "label": "保留用户扫描及既有三来源逐句校订的接受依据，现行考查标记已按扫描核查。三源校订不等于考试机构公开发布答案；保全已接受的新题与所有旧版本。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。",
+                "evidence": "SOURCE-QUALIFICATION-01a1139d.md"
+              }
+            ],
+            "modelAnswers": {
+              "gpt_6_astra_retained_9b8dceae781a": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 原始完整作答（參考已暴露）",
+                "text": "答案：C。\nA项：前一个“为”与“所”组成被动格式，“为杜弢所困”即被杜弢围困；后一个“为”是当作，“朝野以为美谈”是朝廷与民间把这件事当作美谈。二者意义、用法不同。\nB项：前一个“以”连接行动与目的，陶侃从小路返回郡中来等候杜弢，可译“来”；后一个“以”是把、用，指王敦让自己的堂弟王廙担任荆州刺史。二者不同。\nC项：两个“而”都表示转折，可译为“却”。前句说陶侃刚消灭大敌却又被贬黜；后句反问哪里会有砍掉一个人的左手、右手却不作反应的道理。两处的意义与用法相同。\nD项：前一个“与”是和、同，说周访与陶侃有姻亲关系；后一个“与”是给，梅陶给亲人写信。二者意义不同。",
+                "selectedOptions": [
+                  "C"
+                ],
+                "generatedAt": "2026-10-04T07:17:50.351Z",
+                "inputSha256": "7ad4bb12561bfaea85f1162a841229f44db6393749c80fc26e5fd11398f4af27",
+                "inputContextSha256": "f3fc4e7cee6ee5ab33ef8fb822e083e179d745ffc22d6bd2ef4416b1cf00c0bf",
+                "inputPresentationSha256": "9b8dceae781a3f37435737561fb9c71b885565e1f9ab933e0da7dcd812c08e4b",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "root-2026-source-marks-v1-drafts.json",
+                  "inputEvidence": "root-2026-source-marks-v1-inputs.json",
+                  "originalAuthorEvidence": "reference-exposure-2026-source-marks-v1-before-claude.json",
+                  "referenceExposed": true,
+                  "stage": "retained_original_response"
+                },
+                "notes": "本轮已见旧答案选项；逐题重读完整材料、完整题干及扫描标记后写出完整解释，未调用新的Claude。"
+              },
+              "claude_opus_5_5_retained_9b8dceae781a": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 原始完整作答",
+                "text": "答案：C。\n选C。\nA．“为杜弢所困”的“为”是介词，与“所”构成被动，译为“被”；“朝野以为美谈”的“为”是动词，“当作、作为”。不同。\nB．“乃自径道还郡以待之”的“以”是连词，表目的，“来”；“以其从弟廙为荆州刺史”的“以”是动词（一说介词），“任用、让”。不同。\nC．“攀等以侃始灭大贼，而更被黜”的“而”是连词，表转折，“却”；“安有断人左手而右手不应者乎”的“而”也是连词，表转折，“却”。意义和用法都相同。\nD．“周访与侃亲姻”的“与”是介词（或连词），“和、同”；“梅陶与亲人书曰”的“与”是动词（或介词），“给”，给亲人写信。不同。",
+                "selectedOptions": [
+                  "C"
+                ],
+                "uncertainties": [],
+                "generatedAt": "2026-10-05T04:47:57.355306+00:00",
+                "inputSha256": "7ad4bb12561bfaea85f1162a841229f44db6393749c80fc26e5fd11398f4af27",
+                "inputContextSha256": "f3fc4e7cee6ee5ab33ef8fb822e083e179d745ffc22d6bd2ef4416b1cf00c0bf",
+                "inputPresentationSha256": "9b8dceae781a3f37435737561fb9c71b885565e1f9ab933e0da7dcd812c08e4b",
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "p29-canonical-reading-10-transport-recovery-v2.json",
+                  "rawResultEvidence": "p29-canonical-reading-10-result.json",
+                  "inputEvidence": "p29-canonical-reading-10-job.json",
+                  "inputPromptSha256": "d6399eb26dda10a64e259a6b2479677906ae67c2930ead95fa042e1075d52936",
+                  "responseStreamSha256": "f4231134bab3bff3c5fc69e746cb1ac96c3244e8f7fe38b7115eaade83ae85a4",
+                  "referenceProvided": false,
+                  "stage": "retained_original_response"
+                }
+              }
+            },
+            "inputContextSha256": "f3fc4e7cee6ee5ab33ef8fb822e083e179d745ffc22d6bd2ef4416b1cf00c0bf",
+            "inputPresentationSha256": "9b8dceae781a3f37435737561fb9c71b885565e1f9ab933e0da7dcd812c08e4b",
+            "retainedFullInputReview": {
+              "at": "2026-10-06T14:33:46.484389+00:00",
+              "owner": "codex-01a11199-gpt-6-astra",
+              "binding": {
+                "id": "2026-guwen:2",
+                "inputSha256": "7ad4bb12561bfaea85f1162a841229f44db6393749c80fc26e5fd11398f4af27",
+                "inputContextSha256": "f3fc4e7cee6ee5ab33ef8fb822e083e179d745ffc22d6bd2ef4416b1cf00c0bf",
+                "inputPresentationSha256": "9b8dceae781a3f37435737561fb9c71b885565e1f9ab933e0da7dcd812c08e4b",
+                "exactFrozenInputObjectSha256": "536e6e5e49420a742c7f14189a485a8c8d63447f911276ec1f7fb7dfd99f78fe",
+                "ownAnswerFile": "root-2026-source-marks-v1-drafts.json",
+                "ownAnswerFileSha256": "d443a8da8afa8b0cae82fbd1be31fa48809ee0dda72be88ece2d123b6ddb12d7",
+                "fullAnswerSha256": "a822fd679cf2070ab798d81416ef12933a92ed7a658b08b4b5099be642572b0e",
+                "originalAuthorEvidence": "reference-exposure-2026-source-marks-v1-before-claude.json",
+                "inputFile": "root-2026-source-marks-v1-inputs.json",
+                "inputFileSha256": "c39f66d03c0eedd6290ddda8e31a774952e0f6215701220f73c8386f3e23f525",
+                "referenceProvidedToClaude": false,
+                "referenceExposure": "prior references exposed to own responder; source annotations may carry editorial context; no blind claim",
+                "imagePixelsProvided": false
+              },
+              "evidenceIndex": {
+                "file": "claude-read-intersection-canonical243-01a10b78.json",
+                "sha256": "f2c207a14ec2a069f9efe04695f4718a6fff5ccc54fa7da9e0b64125166af767"
+              },
+              "readEvidence": [
+                {
+                  "file": "claude-semantic20-canonical-batch10-01a10b78.json",
+                  "sha256": "957af9a24db9c4886a0d54ed79cbe423bb30d34b85c0b98a922381c972e978dd",
+                  "semanticDisposition": "choice-content-reviewed",
+                  "semanticReviewNote": "两答C两而转折；为被动/当作，以目的/任用，与和/给语义分别不同。Claude以与词类多说保留，不把语法细分类当额外独占评分；八处题内点字已核。"
+                }
+              ],
+              "addedVersions": [
+                "gpt_6_astra_retained_9b8dceae781a",
+                "claude_opus_5_5_retained_9b8dceae781a"
+              ],
+              "existingEquivalentVersions": [],
+              "sourcePublicationChainAccepted": false,
+              "scoringAccepted": false,
+              "finalAccepted": false,
+              "localSemanticAdjudication": {
+                "at": "2026-10-06T14:36:18.453Z",
+                "owner": "codex-01a11199-gpt-6-astra",
+                "fullCurrentInputAndBothRepliesRead": true,
+                "allOptionsAndMarksRead": true,
+                "note": "全文及八字位逐一核查：為所被動與以為的當作不同；以待之為目的，任用王廙之以為手段或處置不同；兩個而均轉折；與親姻之和及與親人書之給不同。C唯一成立。以與的細詞類分歧保留，不作額外必背標籤。",
+                "sourceQualification": "Inherited user-supplied scan; no new official publication qualification",
+                "finalAccepted": false
+              }
+            },
+            "currentVersion": "gpt_6_astra_retained_9b8dceae781a",
+            "publicationQualification": {
+              "contract": "qualified-learning-reference-v1",
+              "sourceClass": "qualified_public_witness",
+              "originalPublicationVerified": false,
+              "officialRubricVerified": false,
+              "notice": "保留用户扫描及既有三来源逐句校订的接受依据，现行考查标记已按扫描核查。三源校订不等于考试机构公开发布答案；保全已接受的新题与所有旧版本。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。"
+            }
+          }
         }
       ],
-      "inputPresentationSha256": "9b8dceae781a3f37435737561fb9c71b885565e1f9ab933e0da7dcd812c08e4b",
+      "inputPresentationSha256": "d34b5a0d146affb3c23247698395cb8d0ca296393be2c169973a43e9fb581a93",
       "retainedFullInputReview": {
         "at": "2026-10-06T14:33:46.484389+00:00",
         "owner": "codex-01a11199-gpt-6-astra",
@@ -3190,6 +3436,73 @@
         "originalPublicationVerified": false,
         "officialRubricVerified": false,
         "notice": "保留用户扫描及既有三来源逐句校订的接受依据，现行考查标记已按扫描核查。三源校订不等于考试机构公开发布答案；保全已接受的新题与所有旧版本。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。"
+      },
+      "editorialRevision": {
+        "kind": "transcription_correction",
+        "version": "2026-guwen:2-original-paper-20261126",
+        "at": "2026-11-26T03:00:00.000Z",
+        "owner": "claude-gk-bank-fix-20261126",
+        "replacements": [
+          {
+            "from": "周顗屯浮水城",
+            "to": "周顗屯浔水城",
+            "note": "原卷作浔水城（《晋书·陶侃传》同）；09-19 依两份网络转录改作浮水城有误"
+          },
+          {
+            "from": "侃不从，既至",
+            "to": "侃不从。既至",
+            "note": "原卷句末为句号"
+          }
+        ],
+        "marksAdded": [
+          {
+            "type": "dot",
+            "anchor": "为",
+            "in": "为杜弢所困"
+          },
+          {
+            "type": "dot",
+            "anchor": "为",
+            "in": "朝野以为美谈"
+          },
+          {
+            "type": "dot",
+            "anchor": "以",
+            "in": "还郡以待之"
+          },
+          {
+            "type": "dot",
+            "anchor": "以",
+            "in": "以其从弟廙"
+          },
+          {
+            "type": "dot",
+            "anchor": "而",
+            "in": "而更被黜"
+          },
+          {
+            "type": "dot",
+            "anchor": "而",
+            "in": "左手而右手"
+          },
+          {
+            "type": "dot",
+            "anchor": "与",
+            "in": "周访与侃亲姻"
+          },
+          {
+            "type": "dot",
+            "anchor": "与",
+            "in": "梅陶与亲人书曰"
+          }
+        ],
+        "previousInputPresentationSha256": "9b8dceae781a3f37435737561fb9c71b885565e1f9ab933e0da7dcd812c08e4b",
+        "sourceEvidence": "GKS original scan sites/exam/gks/output/evidence/beijing/2026/chinese-20260815/source-mixed-order.pdf (sha256 486b6c54ca01653daf9bd2a87d8e69129cd688002a932923005a7109331669ec), exam pages 3–4; side-by-side glyph check against 引白浮泉水 on exam page 9 in gk-bank-fix-20261126/evidence",
+        "originalExamText": true,
+        "answerChanged": false,
+        "oldScoresRecalculated": false,
+        "modelCalls": 0,
+        "reason": "Checked word by word against the original paper. The bank had transcription differences and lacked marks the paper prints; text and marks now follow the paper. The reviewed key, explanation and model answers are kept and re-bound, with the answered input hashes recorded."
       }
     },
     {
@@ -8432,7 +8745,7 @@
     },
     {
       "id": "2026-guwen:1",
-      "inputSha256": "236b151da8b8d97a1fb58e76ab66134a2577d3180ea977b71c7008cdc34100b6",
+      "inputSha256": "db06adce817a4fd542415df03a44b333480cfecd2dbb696cbd115b43d01b24a8",
       "status": "reviewed",
       "kind": "single_choice",
       "correctOptions": [
@@ -8467,16 +8780,24 @@
             "D"
           ],
           "generatedAt": "2026-10-04T07:17:50.351Z",
-          "inputSha256": "236b151da8b8d97a1fb58e76ab66134a2577d3180ea977b71c7008cdc34100b6",
-          "inputContextSha256": "2ca41b4dc0b673040a98fefcfe64eec0ec01767d7419a9c0bb64f20ce1beed72",
-          "inputPresentationSha256": "ae47ae8e537abba0db136a170d83db41b075e76cde3e37e839273bcd937a7705",
+          "inputSha256": "db06adce817a4fd542415df03a44b333480cfecd2dbb696cbd115b43d01b24a8",
+          "inputContextSha256": "564f3ad7e3174ddae39ef096764887697b892244134728e60e470b5e65fa8ce6",
+          "inputPresentationSha256": "f7eadf625dec9771a33771d14d0284d79716e91c2457c64294d9d63a6783861b",
           "provenance": {
             "kind": "codex_turn",
             "evidence": "root-2026-source-marks-v1-drafts.json",
             "inputEvidence": "root-2026-source-marks-v1-inputs.json",
             "originalAuthorEvidence": "reference-exposure-2026-source-marks-v1-before-claude.json",
             "referenceExposed": true,
-            "stage": "retained_original_response"
+            "stage": "retained_original_response",
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "236b151da8b8d97a1fb58e76ab66134a2577d3180ea977b71c7008cdc34100b6",
+              "answeredInputContextSha256": "2ca41b4dc0b673040a98fefcfe64eec0ec01767d7419a9c0bb64f20ce1beed72",
+              "answeredInputPresentationSha256": "ae47ae8e537abba0db136a170d83db41b075e76cde3e37e839273bcd937a7705",
+              "difference": "The model answered the same questions on a passage with transcription differences from the original paper (wording and punctuation listed in editorialRevision.replacements) and without some of the original marks. The decision does not depend on them.",
+              "evidence": "gk-bank-fix-20261126/REPORT.md"
+            }
           },
           "notes": "本轮已见旧答案选项；逐题重读完整材料、完整题干及扫描标记后写出完整解释，未调用新的Claude。"
         },
@@ -8489,9 +8810,9 @@
           ],
           "uncertainties": [],
           "generatedAt": "2026-10-05T04:47:57.355306+00:00",
-          "inputSha256": "236b151da8b8d97a1fb58e76ab66134a2577d3180ea977b71c7008cdc34100b6",
-          "inputContextSha256": "2ca41b4dc0b673040a98fefcfe64eec0ec01767d7419a9c0bb64f20ce1beed72",
-          "inputPresentationSha256": "ae47ae8e537abba0db136a170d83db41b075e76cde3e37e839273bcd937a7705",
+          "inputSha256": "db06adce817a4fd542415df03a44b333480cfecd2dbb696cbd115b43d01b24a8",
+          "inputContextSha256": "564f3ad7e3174ddae39ef096764887697b892244134728e60e470b5e65fa8ce6",
+          "inputPresentationSha256": "f7eadf625dec9771a33771d14d0284d79716e91c2457c64294d9d63a6783861b",
           "provenance": {
             "kind": "cli_response",
             "responseModel": "claude-opus-5-5",
@@ -8501,11 +8822,19 @@
             "inputPromptSha256": "d6399eb26dda10a64e259a6b2479677906ae67c2930ead95fa042e1075d52936",
             "responseStreamSha256": "f4231134bab3bff3c5fc69e746cb1ac96c3244e8f7fe38b7115eaade83ae85a4",
             "referenceProvided": false,
-            "stage": "retained_original_response"
+            "stage": "retained_original_response",
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "236b151da8b8d97a1fb58e76ab66134a2577d3180ea977b71c7008cdc34100b6",
+              "answeredInputContextSha256": "2ca41b4dc0b673040a98fefcfe64eec0ec01767d7419a9c0bb64f20ce1beed72",
+              "answeredInputPresentationSha256": "ae47ae8e537abba0db136a170d83db41b075e76cde3e37e839273bcd937a7705",
+              "difference": "The model answered the same questions on a passage with transcription differences from the original paper (wording and punctuation listed in editorialRevision.replacements) and without some of the original marks. The decision does not depend on them.",
+              "evidence": "gk-bank-fix-20261126/REPORT.md"
+            }
           }
         }
       },
-      "inputContextSha256": "2ca41b4dc0b673040a98fefcfe64eec0ec01767d7419a9c0bb64f20ce1beed72",
+      "inputContextSha256": "564f3ad7e3174ddae39ef096764887697b892244134728e60e470b5e65fa8ce6",
       "history": [
         {
           "source": {
@@ -8627,9 +8956,203 @@
             },
             "inputContextSha256": "2ca41b4dc0b673040a98fefcfe64eec0ec01767d7419a9c0bb64f20ce1beed72"
           }
+        },
+        {
+          "source": {
+            "question1": "6. 下列对语句中加点词的解释，不正确的一项是\nA. 吾得之已久　得：知晓\nB. 侃使朱伺逆击　逆：迎战\nC. 疾侃之功　疾：嫉妒\nD. 敦意解　解：懂得",
+            "id": "2026-guwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "文言文阅读",
+                "text": "陶侃【1】少孤贫，为郡督邮。长沙太守过庐江，见而异之，命其子结友而去。后察孝廉，至洛阳，人荐之，侃由是知名。既克贼，刘弘【2】谓侃曰：“吾昔为羊公【3】参军，谓吾后当居身处。今观卿，必继老夫矣。”\n\n顺阳太守张光诣荆州讨陈敏，刘弘遣侃等屯夏口。侃与敏同郡，又同岁举吏。扈怀言于弘曰：“侃居大郡，统强兵，脱有异志，则荆州无东门矣！”弘曰：“侃之忠能，吾得之已久，必无是也。”侃闻之，遣子及兄子诣弘以自固。弘引为参军，资而遣之，曰：“贤叔征行，君祖母年高，便可归也。匹夫之交，尚不负心，况大丈夫乎！”\n\n周顗【4】始至州，流民叛迎杜弢【5】，弢别将袭沔阳，顗狼狈失据。征讨都督王敦【6】遣侃等共击弢。周顗屯浮水城，为杜弢所困。侃曰：“弢必步向武昌。”乃自径道还郡以待之，弢果来攻。侃使朱伺逆击，大破之，弢遁归长沙。侃告捷于敦，敦曰：“若无陶侯，便失荆州矣！”乃表侃为荆州刺史。\n\n王敦嬖人钱凤，疾侃之功，屡毁之。侃将还江陵，欲诣敦自陈。朱伺等谏曰：“公入，必不出。”侃不从，既至，敦留侃不遣，左转广州刺史，以其从弟廙为荆州刺史。荆州将吏郑攀等诣敦，上书留侃，敦怒，不许。攀等以侃始灭大贼，而更被黜，众情愤惋。后攀等袭廙，敦意攀承侃风旨，被甲持矛将杀侃，出而复还者数四。侃正色曰：“使君雄断，当裁天下，何此不决乎！”因起如厕。梅陶等言于敦曰：“周访与侃亲姻，如左右手，安有断人左手而右手不应者乎！”敦意解，乃设盛馔以饯之，侃便夜发。\n\n太宁三年五月，以侃为征西大将军、都督荆湘雍梁四州诸军事、荆州刺史，荆州士女相庆。\n\n咸和七年十一月，进侃为大将军，剑履上殿，入朝不趋，侃固辞不受。侃晚年深以满盈自惧，不预朝权，屡欲告老归国，佐吏等苦留之。九年六月，侃疾笃，上表逊位。将归长沙，军资、器仗、牛马、舟船皆有定簿，封印仓库，自加管钥，以付右司马，然后登舟，朝野以为美谈。乙卯，薨于樊溪。侃在军四十一年，自南陵迄于白帝，数千里中，路不拾遗。及薨，梅陶与亲人书曰：“陆抗诸人不能及也。”\n\n（取材于《晋书》《资治通鉴》）\n\n注释：【1】陶侃：晋朝将领。【2】刘弘：晋朝将领，曾是羊祜麾下参军。【3】羊公：羊祜，晋朝将领。【4】周顗：晋朝大臣。【5】杜弢：流民首领。【6】王敦：晋朝大臣，后叛乱。"
+              }
+            ],
+            "topic": "二、本大题共5小题，共18分。阅读下面文言文，完成6—10题。",
+            "annotation": "2026年普通高等学校招生全国统一考试（北京卷）语文；题面经三处独立来源交叉核对（原卷扫描件 + 两个独立转录本）",
+            "annotations": [
+              {
+                "qIndex": 1,
+                "material": "question1",
+                "type": "dot",
+                "start": 28,
+                "end": 29,
+                "anchor": "得"
+              },
+              {
+                "qIndex": 1,
+                "material": "question1",
+                "type": "dot",
+                "start": 45,
+                "end": 46,
+                "anchor": "逆"
+              },
+              {
+                "qIndex": 1,
+                "material": "question1",
+                "type": "dot",
+                "start": 56,
+                "end": 57,
+                "anchor": "疾"
+              },
+              {
+                "qIndex": 1,
+                "material": "question1",
+                "type": "dot",
+                "start": 71,
+                "end": 72,
+                "anchor": "解"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "6. 下列对语句中加点词的解释，不正确的一项是\nA. 吾得之已久　得：知晓\nB. 侃使朱伺逆击　逆：迎战\nC. 疾侃之功　疾：嫉妒\nD. 敦意解　解：懂得",
+                "score": 3,
+                "sourceQuestionNumber": "6",
+                "sourceType": "single_choice"
+              }
+            ]
+          },
+          "review": {
+            "id": "2026-guwen:1",
+            "inputSha256": "236b151da8b8d97a1fb58e76ab66134a2577d3180ea977b71c7008cdc34100b6",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "D"
+            ],
+            "explanation": "全文與四項逐一核查：得知曉、逆迎戰、疾嫉妒均有前後事件支持；王敦聞梅陶勸告後設宴送行，解為殺意消解，非懂得。D為唯一不正確項。保留原回應，疾同嫉只作其語義說明，不新增字形校勘結論。\n\n【来源与评分边界】保留用户扫描及既有三来源逐句校订的接受依据，现行考查标记已按扫描核查。三源校订不等于考试机构公开发布答案；保全已接受的新题与所有旧版本。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。",
+            "reviewedBy": "codex-01a11199-gpt-6-astra",
+            "reviewedAt": "2026-10-06T14:36:18.453Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2026北京卷原题及完整材料"
+              },
+              {
+                "type": "inherited_user_scan_visual_evidence",
+                "evidence": "source-2026-mark-visual-readback.json",
+                "sha256": "bbe3f7ba5129119f64af4499262984cf39616084f7047a7b08aa9146341c20df",
+                "sourceClass": "Existing user-supplied scan; existing accepted three-source text retained. No new claim of official source qualification or waiver."
+              },
+              {
+                "type": "publication_qualification",
+                "label": "保留用户扫描及既有三来源逐句校订的接受依据，现行考查标记已按扫描核查。三源校订不等于考试机构公开发布答案；保全已接受的新题与所有旧版本。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。",
+                "evidence": "SOURCE-QUALIFICATION-01a1139d.md"
+              }
+            ],
+            "modelAnswers": {
+              "gpt_6_astra_retained_ae47ae8e537a": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 原始完整作答（參考已暴露）",
+                "text": "答案：D。\nA项“得”是知晓、了解。刘弘说自己早已了解陶侃的忠诚和才能，所以不相信他会有异心，解释正确。\nB项“逆”是迎着敌军进击、迎战。杜弢来攻，陶侃派朱伺迎击并大败敌军，解释正确。\nC项“疾”是嫉妒。钱凤嫉妒陶侃的功劳，因而屡次毁谤他，解释正确。\nD项“解”是缓解、消除，不是懂得。王敦听说周访和陶侃关系紧密，杀陶侃会引起周访反应，因而杀意消解，继而设宴饯行。应改释为“消解（杀意）”。",
+                "selectedOptions": [
+                  "D"
+                ],
+                "generatedAt": "2026-10-04T07:17:50.351Z",
+                "inputSha256": "236b151da8b8d97a1fb58e76ab66134a2577d3180ea977b71c7008cdc34100b6",
+                "inputContextSha256": "2ca41b4dc0b673040a98fefcfe64eec0ec01767d7419a9c0bb64f20ce1beed72",
+                "inputPresentationSha256": "ae47ae8e537abba0db136a170d83db41b075e76cde3e37e839273bcd937a7705",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "root-2026-source-marks-v1-drafts.json",
+                  "inputEvidence": "root-2026-source-marks-v1-inputs.json",
+                  "originalAuthorEvidence": "reference-exposure-2026-source-marks-v1-before-claude.json",
+                  "referenceExposed": true,
+                  "stage": "retained_original_response"
+                },
+                "notes": "本轮已见旧答案选项；逐题重读完整材料、完整题干及扫描标记后写出完整解释，未调用新的Claude。"
+              },
+              "claude_opus_5_5_retained_ae47ae8e537a": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 原始完整作答",
+                "text": "答案：D。\n选D。\nA．“侃之忠能，吾得之已久”，意为陶侃的忠诚与才能我早已了解，“得”解作“知晓”可通，正确。\nB．“侃使朱伺逆击”，“逆”即迎，迎上去攻击，解作“迎战”正确。\nC．“疾侃之功”，“疾”同“嫉”，嫉妒陶侃的功劳，正确。\nD．“敦意解”，指王敦经梅陶等人劝说后，杀陶侃的念头（怒意）消除了，“解”应为“消解、消除”，而非“懂得”，错误。",
+                "selectedOptions": [
+                  "D"
+                ],
+                "uncertainties": [],
+                "generatedAt": "2026-10-05T04:47:57.355306+00:00",
+                "inputSha256": "236b151da8b8d97a1fb58e76ab66134a2577d3180ea977b71c7008cdc34100b6",
+                "inputContextSha256": "2ca41b4dc0b673040a98fefcfe64eec0ec01767d7419a9c0bb64f20ce1beed72",
+                "inputPresentationSha256": "ae47ae8e537abba0db136a170d83db41b075e76cde3e37e839273bcd937a7705",
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "p29-canonical-reading-10-transport-recovery-v2.json",
+                  "rawResultEvidence": "p29-canonical-reading-10-result.json",
+                  "inputEvidence": "p29-canonical-reading-10-job.json",
+                  "inputPromptSha256": "d6399eb26dda10a64e259a6b2479677906ae67c2930ead95fa042e1075d52936",
+                  "responseStreamSha256": "f4231134bab3bff3c5fc69e746cb1ac96c3244e8f7fe38b7115eaade83ae85a4",
+                  "referenceProvided": false,
+                  "stage": "retained_original_response"
+                }
+              }
+            },
+            "inputContextSha256": "2ca41b4dc0b673040a98fefcfe64eec0ec01767d7419a9c0bb64f20ce1beed72",
+            "inputPresentationSha256": "ae47ae8e537abba0db136a170d83db41b075e76cde3e37e839273bcd937a7705",
+            "retainedFullInputReview": {
+              "at": "2026-10-06T14:33:46.484389+00:00",
+              "owner": "codex-01a11199-gpt-6-astra",
+              "binding": {
+                "id": "2026-guwen:1",
+                "inputSha256": "236b151da8b8d97a1fb58e76ab66134a2577d3180ea977b71c7008cdc34100b6",
+                "inputContextSha256": "2ca41b4dc0b673040a98fefcfe64eec0ec01767d7419a9c0bb64f20ce1beed72",
+                "inputPresentationSha256": "ae47ae8e537abba0db136a170d83db41b075e76cde3e37e839273bcd937a7705",
+                "exactFrozenInputObjectSha256": "b8869d3a198816f80abc0910a4fd7c54ebe54b5ed13b560692ff0a4141031165",
+                "ownAnswerFile": "root-2026-source-marks-v1-drafts.json",
+                "ownAnswerFileSha256": "d443a8da8afa8b0cae82fbd1be31fa48809ee0dda72be88ece2d123b6ddb12d7",
+                "fullAnswerSha256": "6ed0319029cf56f60bf38b7ab0fe887a2f0d1290e205e02a222aa81c10367232",
+                "originalAuthorEvidence": "reference-exposure-2026-source-marks-v1-before-claude.json",
+                "inputFile": "root-2026-source-marks-v1-inputs.json",
+                "inputFileSha256": "c39f66d03c0eedd6290ddda8e31a774952e0f6215701220f73c8386f3e23f525",
+                "referenceProvidedToClaude": false,
+                "referenceExposure": "prior references exposed to own responder; source annotations may carry editorial context; no blind claim",
+                "imagePixelsProvided": false
+              },
+              "evidenceIndex": {
+                "file": "claude-read-intersection-canonical243-01a10b78.json",
+                "sha256": "f2c207a14ec2a069f9efe04695f4718a6fff5ccc54fa7da9e0b64125166af767"
+              },
+              "readEvidence": [
+                {
+                  "file": "claude-semantic20-canonical-batch10-01a10b78.json",
+                  "sha256": "957af9a24db9c4886a0d54ed79cbe423bb30d34b85c0b98a922381c972e978dd",
+                  "semanticDisposition": "choice-content-reviewed",
+                  "semanticReviewNote": "两答D，解指杀意消解，由亲姻左右手劝阻与饯行相连；得了解、逆迎击、疾嫉妒依事理可判。原文/问句四点字范围均读，不把旧参考Claude Opus5字样当本批实际模型，实际流为claude-opus-5-5。"
+                }
+              ],
+              "addedVersions": [
+                "gpt_6_astra_retained_ae47ae8e537a",
+                "claude_opus_5_5_retained_ae47ae8e537a"
+              ],
+              "existingEquivalentVersions": [],
+              "sourcePublicationChainAccepted": false,
+              "scoringAccepted": false,
+              "finalAccepted": false,
+              "localSemanticAdjudication": {
+                "at": "2026-10-06T14:36:18.453Z",
+                "owner": "codex-01a11199-gpt-6-astra",
+                "fullCurrentInputAndBothRepliesRead": true,
+                "allOptionsAndMarksRead": true,
+                "note": "全文與四項逐一核查：得知曉、逆迎戰、疾嫉妒均有前後事件支持；王敦聞梅陶勸告後設宴送行，解為殺意消解，非懂得。D為唯一不正確項。保留原回應，疾同嫉只作其語義說明，不新增字形校勘結論。",
+                "sourceQualification": "Inherited user-supplied scan; no new official publication qualification",
+                "finalAccepted": false
+              }
+            },
+            "currentVersion": "gpt_6_astra_retained_ae47ae8e537a",
+            "publicationQualification": {
+              "contract": "qualified-learning-reference-v1",
+              "sourceClass": "qualified_public_witness",
+              "originalPublicationVerified": false,
+              "officialRubricVerified": false,
+              "notice": "保留用户扫描及既有三来源逐句校订的接受依据，现行考查标记已按扫描核查。三源校订不等于考试机构公开发布答案；保全已接受的新题与所有旧版本。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。"
+            }
+          }
         }
       ],
-      "inputPresentationSha256": "ae47ae8e537abba0db136a170d83db41b075e76cde3e37e839273bcd937a7705",
+      "inputPresentationSha256": "f7eadf625dec9771a33771d14d0284d79716e91c2457c64294d9d63a6783861b",
       "retainedFullInputReview": {
         "at": "2026-10-06T14:33:46.484389+00:00",
         "owner": "codex-01a11199-gpt-6-astra",
@@ -8686,11 +9209,58 @@
         "originalPublicationVerified": false,
         "officialRubricVerified": false,
         "notice": "保留用户扫描及既有三来源逐句校订的接受依据，现行考查标记已按扫描核查。三源校订不等于考试机构公开发布答案；保全已接受的新题与所有旧版本。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。"
+      },
+      "editorialRevision": {
+        "kind": "transcription_correction",
+        "version": "2026-guwen:1-original-paper-20261126",
+        "at": "2026-11-26T03:00:00.000Z",
+        "owner": "claude-gk-bank-fix-20261126",
+        "replacements": [
+          {
+            "from": "周顗屯浮水城",
+            "to": "周顗屯浔水城",
+            "note": "原卷作浔水城（《晋书·陶侃传》同）；09-19 依两份网络转录改作浮水城有误"
+          },
+          {
+            "from": "侃不从，既至",
+            "to": "侃不从。既至",
+            "note": "原卷句末为句号"
+          }
+        ],
+        "marksAdded": [
+          {
+            "type": "dot",
+            "anchor": "得",
+            "in": "吾得之已久"
+          },
+          {
+            "type": "dot",
+            "anchor": "逆",
+            "in": "侃使朱伺逆击"
+          },
+          {
+            "type": "dot",
+            "anchor": "疾",
+            "in": "疾侃之功"
+          },
+          {
+            "type": "dot",
+            "anchor": "解",
+            "in": "敦意解"
+          }
+        ],
+        "previousInputPresentationSha256": "ae47ae8e537abba0db136a170d83db41b075e76cde3e37e839273bcd937a7705",
+        "sourceEvidence": "GKS original scan sites/exam/gks/output/evidence/beijing/2026/chinese-20260815/source-mixed-order.pdf (sha256 486b6c54ca01653daf9bd2a87d8e69129cd688002a932923005a7109331669ec), exam pages 3–4; side-by-side glyph check against 引白浮泉水 on exam page 9 in gk-bank-fix-20261126/evidence",
+        "originalExamText": true,
+        "answerChanged": false,
+        "oldScoresRecalculated": false,
+        "modelCalls": 0,
+        "reason": "Checked word by word against the original paper. The bank had transcription differences and lacked marks the paper prints; text and marks now follow the paper. The reviewed key, explanation and model answers are kept and re-bound, with the answered input hashes recorded."
       }
     },
     {
       "id": "2026-guwen:3",
-      "inputSha256": "978edc6e9ceb4ec491966dd36e80916115216cafbdda808a49988b24a381d9be",
+      "inputSha256": "782475a813d0ee4ffbf65622a749bd6ffe43a357a6979b5419eca0ea928a34eb",
       "status": "reviewed",
       "kind": "single_choice",
       "correctOptions": [
@@ -8725,16 +9295,24 @@
             "A"
           ],
           "generatedAt": "2026-10-04T07:17:50.351Z",
-          "inputSha256": "978edc6e9ceb4ec491966dd36e80916115216cafbdda808a49988b24a381d9be",
-          "inputContextSha256": "bfc6b567b6d80cd40b3f24c94dcf4b941b48010b876d75056b1841f49445be65",
-          "inputPresentationSha256": "ab8e41d4adffc1e6941c6f6f9f2275653748553e78f3998ffbc943b71a487011",
+          "inputSha256": "782475a813d0ee4ffbf65622a749bd6ffe43a357a6979b5419eca0ea928a34eb",
+          "inputContextSha256": "274619869334cf1da0708aceb7215820f4e69ff8d3275993abd50ec37d718325",
+          "inputPresentationSha256": "d60579dd3c1697714b1a4fbc9b15807a0c036bf36ca8ea9ee4d7d38b87b98f5e",
           "provenance": {
             "kind": "codex_turn",
             "evidence": "root-2026-source-marks-v1-drafts.json",
             "inputEvidence": "root-2026-source-marks-v1-inputs.json",
             "originalAuthorEvidence": "reference-exposure-2026-source-marks-v1-before-claude.json",
             "referenceExposed": true,
-            "stage": "retained_original_response"
+            "stage": "retained_original_response",
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "978edc6e9ceb4ec491966dd36e80916115216cafbdda808a49988b24a381d9be",
+              "answeredInputContextSha256": "bfc6b567b6d80cd40b3f24c94dcf4b941b48010b876d75056b1841f49445be65",
+              "answeredInputPresentationSha256": "ab8e41d4adffc1e6941c6f6f9f2275653748553e78f3998ffbc943b71a487011",
+              "difference": "The model answered the same questions on a passage with transcription differences from the original paper (wording and punctuation listed in editorialRevision.replacements) and without some of the original marks. The decision does not depend on them.",
+              "evidence": "gk-bank-fix-20261126/REPORT.md"
+            }
           },
           "notes": "本轮已见旧答案选项；逐题重读完整材料、完整题干及扫描标记后写出完整解释，未调用新的Claude。"
         },
@@ -8747,9 +9325,9 @@
           ],
           "uncertainties": [],
           "generatedAt": "2026-10-05T04:47:57.355306+00:00",
-          "inputSha256": "978edc6e9ceb4ec491966dd36e80916115216cafbdda808a49988b24a381d9be",
-          "inputContextSha256": "bfc6b567b6d80cd40b3f24c94dcf4b941b48010b876d75056b1841f49445be65",
-          "inputPresentationSha256": "ab8e41d4adffc1e6941c6f6f9f2275653748553e78f3998ffbc943b71a487011",
+          "inputSha256": "782475a813d0ee4ffbf65622a749bd6ffe43a357a6979b5419eca0ea928a34eb",
+          "inputContextSha256": "274619869334cf1da0708aceb7215820f4e69ff8d3275993abd50ec37d718325",
+          "inputPresentationSha256": "d60579dd3c1697714b1a4fbc9b15807a0c036bf36ca8ea9ee4d7d38b87b98f5e",
           "provenance": {
             "kind": "cli_response",
             "responseModel": "claude-opus-5-5",
@@ -8759,12 +9337,20 @@
             "inputPromptSha256": "d6399eb26dda10a64e259a6b2479677906ae67c2930ead95fa042e1075d52936",
             "responseStreamSha256": "f4231134bab3bff3c5fc69e746cb1ac96c3244e8f7fe38b7115eaade83ae85a4",
             "referenceProvided": false,
-            "stage": "retained_original_response"
+            "stage": "retained_original_response",
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "978edc6e9ceb4ec491966dd36e80916115216cafbdda808a49988b24a381d9be",
+              "answeredInputContextSha256": "bfc6b567b6d80cd40b3f24c94dcf4b941b48010b876d75056b1841f49445be65",
+              "answeredInputPresentationSha256": "ab8e41d4adffc1e6941c6f6f9f2275653748553e78f3998ffbc943b71a487011",
+              "difference": "The model answered the same questions on a passage with transcription differences from the original paper (wording and punctuation listed in editorialRevision.replacements) and without some of the original marks. The decision does not depend on them.",
+              "evidence": "gk-bank-fix-20261126/REPORT.md"
+            }
           }
         }
       },
-      "inputContextSha256": "bfc6b567b6d80cd40b3f24c94dcf4b941b48010b876d75056b1841f49445be65",
-      "inputPresentationSha256": "ab8e41d4adffc1e6941c6f6f9f2275653748553e78f3998ffbc943b71a487011",
+      "inputContextSha256": "274619869334cf1da0708aceb7215820f4e69ff8d3275993abd50ec37d718325",
+      "inputPresentationSha256": "d60579dd3c1697714b1a4fbc9b15807a0c036bf36ca8ea9ee4d7d38b87b98f5e",
       "history": [
         {
           "source": {
@@ -8899,6 +9485,199 @@
             "inputContextSha256": "bfc6b567b6d80cd40b3f24c94dcf4b941b48010b876d75056b1841f49445be65",
             "inputPresentationSha256": "008560866b41dc8b374b64a011db63f6a77ee80a70fc39374e5a847528256fb0"
           }
+        },
+        {
+          "source": {
+            "id": "2026-guwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "文言文阅读",
+                "text": "陶侃【1】少孤贫，为郡督邮。长沙太守过庐江，见而异之，命其子结友而去。后察孝廉，至洛阳，人荐之，侃由是知名。既克贼，刘弘【2】谓侃曰：“吾昔为羊公【3】参军，谓吾后当居身处。今观卿，必继老夫矣。”\n\n顺阳太守张光诣荆州讨陈敏，刘弘遣侃等屯夏口。侃与敏同郡，又同岁举吏。扈怀言于弘曰：“侃居大郡，统强兵，脱有异志，则荆州无东门矣！”弘曰：“侃之忠能，吾得之已久，必无是也。”侃闻之，遣子及兄子诣弘以自固。弘引为参军，资而遣之，曰：“贤叔征行，君祖母年高，便可归也。匹夫之交，尚不负心，况大丈夫乎！”\n\n周顗【4】始至州，流民叛迎杜弢【5】，弢别将袭沔阳，顗狼狈失据。征讨都督王敦【6】遣侃等共击弢。周顗屯浮水城，为杜弢所困。侃曰：“弢必步向武昌。”乃自径道还郡以待之，弢果来攻。侃使朱伺逆击，大破之，弢遁归长沙。侃告捷于敦，敦曰：“若无陶侯，便失荆州矣！”乃表侃为荆州刺史。\n\n王敦嬖人钱凤，疾侃之功，屡毁之。侃将还江陵，欲诣敦自陈。朱伺等谏曰：“公入，必不出。”侃不从，既至，敦留侃不遣，左转广州刺史，以其从弟廙为荆州刺史。荆州将吏郑攀等诣敦，上书留侃，敦怒，不许。攀等以侃始灭大贼，而更被黜，众情愤惋。后攀等袭廙，敦意攀承侃风旨，被甲持矛将杀侃，出而复还者数四。侃正色曰：“使君雄断，当裁天下，何此不决乎！”因起如厕。梅陶等言于敦曰：“周访与侃亲姻，如左右手，安有断人左手而右手不应者乎！”敦意解，乃设盛馔以饯之，侃便夜发。\n\n太宁三年五月，以侃为征西大将军、都督荆湘雍梁四州诸军事、荆州刺史，荆州士女相庆。\n\n咸和七年十一月，进侃为大将军，剑履上殿，入朝不趋，侃固辞不受。侃晚年深以满盈自惧，不预朝权，屡欲告老归国，佐吏等苦留之。九年六月，侃疾笃，上表逊位。将归长沙，军资、器仗、牛马、舟船皆有定簿，封印仓库，自加管钥，以付右司马，然后登舟，朝野以为美谈。乙卯，薨于樊溪。侃在军四十一年，自南陵迄于白帝，数千里中，路不拾遗。及薨，梅陶与亲人书曰：“陆抗诸人不能及也。”\n\n（取材于《晋书》《资治通鉴》）\n\n注释：【1】陶侃：晋朝将领。【2】刘弘：晋朝将领，曾是羊祜麾下参军。【3】羊公：羊祜，晋朝将领。【4】周顗：晋朝大臣。【5】杜弢：流民首领。【6】王敦：晋朝大臣，后叛乱。"
+              }
+            ],
+            "topic": "二、本大题共5小题，共18分。阅读下面文言文，完成6—10题。",
+            "annotation": "2026年普通高等学校招生全国统一考试（北京卷）语文；题面经三处独立来源交叉核对（原卷扫描件 + 两个独立转录本）",
+            "annotations": [
+              {
+                "qIndex": 3,
+                "material": "material1",
+                "type": "underline",
+                "start": 79,
+                "end": 86,
+                "anchor": "谓吾后当居身处"
+              },
+              {
+                "qIndex": 3,
+                "material": "material1",
+                "type": "underline",
+                "start": 151,
+                "end": 163,
+                "anchor": "脱有异志，则荆州无东门矣"
+              },
+              {
+                "qIndex": 3,
+                "material": "material1",
+                "type": "underline",
+                "start": 508,
+                "end": 515,
+                "anchor": "敦意攀承侃风旨"
+              },
+              {
+                "qIndex": 3,
+                "material": "material1",
+                "type": "underline",
+                "start": 688,
+                "end": 697,
+                "anchor": "侃晚年深以满盈自惧"
+              }
+            ],
+            "questions": [
+              {
+                "qIndex": 3,
+                "id": "q3",
+                "text": "8. 下列对文中语句的理解，不正确的一项是\nA. 谓吾后当居身处——认为我的后人一定能够到达羊公的地位\nB. 脱有异志，则荆州无东门矣——倘若陶侃有异心，荆州就失去东大门了\nC. 敦意攀承侃风旨——王敦猜测郑攀接受了陶侃所暗示的意旨\nD. 侃晚年深以满盈自惧——陶侃晚年深恐自己因为位高权重而遭祸",
+                "score": 3,
+                "sourceQuestionNumber": "8",
+                "sourceType": "single_choice"
+              }
+            ]
+          },
+          "review": {
+            "id": "2026-guwen:3",
+            "inputSha256": "978edc6e9ceb4ec491966dd36e80916115216cafbdda808a49988b24a381d9be",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "A"
+            ],
+            "explanation": "四處完整劃線及選項逐一核查：吾後承刘弘自述並與必繼老夫對照，指我日後，非我的後人；脫為倘若、意承風旨為猜測受其暗示、滿盈自懼為權位盛滿而戒懼，B至D相符。A唯一錯項。原第一答中的夏口地理補充不列作本題裁定或必需评分依據。\n\n【来源与评分边界】保留用户扫描及既有三来源逐句校订的接受依据，现行考查标记已按扫描核查。三源校订不等于考试机构公开发布答案；保全已接受的新题与所有旧版本。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。",
+            "reviewedBy": "codex-01a11199-gpt-6-astra",
+            "reviewedAt": "2026-10-06T14:36:18.453Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2026北京卷原题及完整材料"
+              },
+              {
+                "type": "inherited_user_scan_visual_evidence",
+                "evidence": "source-2026-mark-visual-readback.json",
+                "sha256": "bbe3f7ba5129119f64af4499262984cf39616084f7047a7b08aa9146341c20df",
+                "sourceClass": "Existing user-supplied scan; existing accepted three-source text retained. No new claim of official source qualification or waiver."
+              },
+              {
+                "type": "publication_qualification",
+                "label": "保留用户扫描及既有三来源逐句校订的接受依据，现行考查标记已按扫描核查。三源校订不等于考试机构公开发布答案；保全已接受的新题与所有旧版本。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。",
+                "evidence": "SOURCE-QUALIFICATION-01a1139d.md"
+              }
+            ],
+            "modelAnswers": {
+              "gpt_6_astra_retained_ab8e41d4adff": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 原始完整作答（參考已暴露）",
+                "text": "答案：A。\nA项中的“后”是日后，并非后人；“吾”指说话的刘弘，“身”指羊公本人。刘弘回忆：自己从前做羊公的参军时，羊公说他日后会处在羊公所在的位置。随后刘弘对陶侃说“必继老夫矣”，正是以自己受羊公期许的经历勉励陶侃。该项把“吾后”合读为“我的后人”，误解了句意。\nB项“脱”是倘若，“异志”指背叛之心；夏口是荆州东面的要地，所译符合扈怀对陶侃的猜疑。\nC项“意”是猜测，“承”是接受、秉承，“风旨”是暗示的意旨；王敦怀疑郑攀受了陶侃的暗示，理解正确。\nD项“满盈”联系前文的高官厚遇，指权位已高、盛满将危；陶侃深以为惧，不参与朝政并屡求退休，所译正确。",
+                "selectedOptions": [
+                  "A"
+                ],
+                "generatedAt": "2026-10-04T07:17:50.351Z",
+                "inputSha256": "978edc6e9ceb4ec491966dd36e80916115216cafbdda808a49988b24a381d9be",
+                "inputContextSha256": "bfc6b567b6d80cd40b3f24c94dcf4b941b48010b876d75056b1841f49445be65",
+                "inputPresentationSha256": "ab8e41d4adffc1e6941c6f6f9f2275653748553e78f3998ffbc943b71a487011",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "root-2026-source-marks-v1-drafts.json",
+                  "inputEvidence": "root-2026-source-marks-v1-inputs.json",
+                  "originalAuthorEvidence": "reference-exposure-2026-source-marks-v1-before-claude.json",
+                  "referenceExposed": true,
+                  "stage": "retained_original_response"
+                },
+                "notes": "本轮已见旧答案选项；逐题重读完整材料、完整题干及扫描标记后写出完整解释，未调用新的Claude。"
+              },
+              "claude_opus_5_5_retained_ab8e41d4adff": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 原始完整作答",
+                "text": "答案：A。\n选A。\nA．“谓吾后当居身处”是刘弘转述羊祜的话：羊公说我日后会居于他的位置。“谓”是“（羊公）说”，“吾后”是“我以后”，不是“我的后人”；下文“今观卿，必继老夫矣”正是由自己继羊公之位推及陶侃将继自己之位。选项理解错误。\nB．“脱”是“倘若”，“荆州无东门”喻荆州失去东面屏障，理解正确。\nC．“意”是“猜测、怀疑”，“承……风旨”是秉承其暗示的意图，理解正确。\nD．“满盈”指功名权位达到极盛，“自惧”是自我戒惧，担心盛极招祸，理解正确。",
+                "selectedOptions": [
+                  "A"
+                ],
+                "uncertainties": [],
+                "generatedAt": "2026-10-05T04:47:57.355306+00:00",
+                "inputSha256": "978edc6e9ceb4ec491966dd36e80916115216cafbdda808a49988b24a381d9be",
+                "inputContextSha256": "bfc6b567b6d80cd40b3f24c94dcf4b941b48010b876d75056b1841f49445be65",
+                "inputPresentationSha256": "ab8e41d4adffc1e6941c6f6f9f2275653748553e78f3998ffbc943b71a487011",
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "p29-canonical-reading-10-transport-recovery-v2.json",
+                  "rawResultEvidence": "p29-canonical-reading-10-result.json",
+                  "inputEvidence": "p29-canonical-reading-10-job.json",
+                  "inputPromptSha256": "d6399eb26dda10a64e259a6b2479677906ae67c2930ead95fa042e1075d52936",
+                  "responseStreamSha256": "f4231134bab3bff3c5fc69e746cb1ac96c3244e8f7fe38b7115eaade83ae85a4",
+                  "referenceProvided": false,
+                  "stage": "retained_original_response"
+                }
+              }
+            },
+            "inputContextSha256": "bfc6b567b6d80cd40b3f24c94dcf4b941b48010b876d75056b1841f49445be65",
+            "inputPresentationSha256": "ab8e41d4adffc1e6941c6f6f9f2275653748553e78f3998ffbc943b71a487011",
+            "retainedFullInputReview": {
+              "at": "2026-10-06T14:33:46.484389+00:00",
+              "owner": "codex-01a11199-gpt-6-astra",
+              "binding": {
+                "id": "2026-guwen:3",
+                "inputSha256": "978edc6e9ceb4ec491966dd36e80916115216cafbdda808a49988b24a381d9be",
+                "inputContextSha256": "bfc6b567b6d80cd40b3f24c94dcf4b941b48010b876d75056b1841f49445be65",
+                "inputPresentationSha256": "ab8e41d4adffc1e6941c6f6f9f2275653748553e78f3998ffbc943b71a487011",
+                "exactFrozenInputObjectSha256": "b1396c26d38b2aabbf96612de9c01be3bab2934cc49e4148ffcc4581446f7e07",
+                "ownAnswerFile": "root-2026-source-marks-v1-drafts.json",
+                "ownAnswerFileSha256": "d443a8da8afa8b0cae82fbd1be31fa48809ee0dda72be88ece2d123b6ddb12d7",
+                "fullAnswerSha256": "fb35e1fde81812a0c97e5fee5744202a4b47b2ca794e19bb526db316a8295ad5",
+                "originalAuthorEvidence": "reference-exposure-2026-source-marks-v1-before-claude.json",
+                "inputFile": "root-2026-source-marks-v1-inputs.json",
+                "inputFileSha256": "c39f66d03c0eedd6290ddda8e31a774952e0f6215701220f73c8386f3e23f525",
+                "referenceProvidedToClaude": false,
+                "referenceExposure": "prior references exposed to own responder; source annotations may carry editorial context; no blind claim",
+                "imagePixelsProvided": false
+              },
+              "evidenceIndex": {
+                "file": "claude-read-intersection-canonical243-01a10b78.json",
+                "sha256": "f2c207a14ec2a069f9efe04695f4718a6fff5ccc54fa7da9e0b64125166af767"
+              },
+              "readEvidence": [
+                {
+                  "file": "claude-semantic20-canonical-batch10-01a10b78.json",
+                  "sha256": "957af9a24db9c4886a0d54ed79cbe423bb30d34b85c0b98a922381c972e978dd",
+                  "semanticDisposition": "choice-content-reviewed",
+                  "semanticReviewNote": "两答A，吾后为我日后而非后人，刘弘复述羊公期许与继老夫对照足证；脱倘若、承风旨受暗示、满盈权位盛而自惧相合。四条划线完整读，其他地理背景不另认证。"
+                }
+              ],
+              "addedVersions": [
+                "gpt_6_astra_retained_ab8e41d4adff",
+                "claude_opus_5_5_retained_ab8e41d4adff"
+              ],
+              "existingEquivalentVersions": [],
+              "sourcePublicationChainAccepted": false,
+              "scoringAccepted": false,
+              "finalAccepted": false,
+              "localSemanticAdjudication": {
+                "at": "2026-10-06T14:36:18.453Z",
+                "owner": "codex-01a11199-gpt-6-astra",
+                "fullCurrentInputAndBothRepliesRead": true,
+                "allOptionsAndMarksRead": true,
+                "note": "四處完整劃線及選項逐一核查：吾後承刘弘自述並與必繼老夫對照，指我日後，非我的後人；脫為倘若、意承風旨為猜測受其暗示、滿盈自懼為權位盛滿而戒懼，B至D相符。A唯一錯項。原第一答中的夏口地理補充不列作本題裁定或必需评分依據。",
+                "sourceQualification": "Inherited user-supplied scan; no new official publication qualification",
+                "finalAccepted": false
+              }
+            },
+            "currentVersion": "gpt_6_astra_retained_ab8e41d4adff",
+            "publicationQualification": {
+              "contract": "qualified-learning-reference-v1",
+              "sourceClass": "qualified_public_witness",
+              "originalPublicationVerified": false,
+              "officialRubricVerified": false,
+              "notice": "保留用户扫描及既有三来源逐句校订的接受依据，现行考查标记已按扫描核查。三源校订不等于考试机构公开发布答案；保全已接受的新题与所有旧版本。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。"
+            }
+          }
         }
       ],
       "retainedFullInputReview": {
@@ -8957,11 +9736,37 @@
         "originalPublicationVerified": false,
         "officialRubricVerified": false,
         "notice": "保留用户扫描及既有三来源逐句校订的接受依据，现行考查标记已按扫描核查。三源校订不等于考试机构公开发布答案；保全已接受的新题与所有旧版本。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。"
+      },
+      "editorialRevision": {
+        "kind": "transcription_correction",
+        "version": "2026-guwen:3-original-paper-20261126",
+        "at": "2026-11-26T03:00:00.000Z",
+        "owner": "claude-gk-bank-fix-20261126",
+        "replacements": [
+          {
+            "from": "周顗屯浮水城",
+            "to": "周顗屯浔水城",
+            "note": "原卷作浔水城（《晋书·陶侃传》同）；09-19 依两份网络转录改作浮水城有误"
+          },
+          {
+            "from": "侃不从，既至",
+            "to": "侃不从。既至",
+            "note": "原卷句末为句号"
+          }
+        ],
+        "marksAdded": [],
+        "previousInputPresentationSha256": "ab8e41d4adffc1e6941c6f6f9f2275653748553e78f3998ffbc943b71a487011",
+        "sourceEvidence": "GKS original scan sites/exam/gks/output/evidence/beijing/2026/chinese-20260815/source-mixed-order.pdf (sha256 486b6c54ca01653daf9bd2a87d8e69129cd688002a932923005a7109331669ec), exam pages 3–4; side-by-side glyph check against 引白浮泉水 on exam page 9 in gk-bank-fix-20261126/evidence",
+        "originalExamText": true,
+        "answerChanged": false,
+        "oldScoresRecalculated": false,
+        "modelCalls": 0,
+        "reason": "Checked word by word against the original paper. The bank had transcription differences and lacked marks the paper prints; text and marks now follow the paper. The reviewed key, explanation and model answers are kept and re-bound, with the answered input hashes recorded."
       }
     },
     {
       "id": "2026-guwen:4",
-      "inputSha256": "adaab7acd1dd9e598109cd1c1c8073b18c1046316890ff067576fe0c04af82f0",
+      "inputSha256": "c8a60ebc6b87eeba4efcec5e6363e646a76b5936cc0e7d7702abc264b198a374",
       "status": "reviewed",
       "kind": "single_choice",
       "correctOptions": [
@@ -8987,7 +9792,7 @@
           "modelId": "gpt-6-astra",
           "label": "GPT-6 Astra 完整附注复核",
           "text": "答案：A。刘弘面对扈怀的挑拨明确表示信任陶侃。陶侃遣子侄前往是‘以自固’，表明忠诚、巩固双方关系，并非派去打探。B与王敦数次欲杀而终设宴送行相合；C的物资交接体现奉公自律；D据民众庆贺与境内秩序作出合理概括。",
-          "inputSha256": "adaab7acd1dd9e598109cd1c1c8073b18c1046316890ff067576fe0c04af82f0",
+          "inputSha256": "c8a60ebc6b87eeba4efcec5e6363e646a76b5936cc0e7d7702abc264b198a374",
           "generatedAt": "2026-10-03T03:05:38.552Z",
           "provenance": {
             "kind": "codex_turn",
@@ -9001,17 +9806,25 @@
               "method": "empty_rendered_emphasis_v2_equivalence",
               "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
               "originalContextSha256": "c2041f3947e36cfc6d7a6705fc644c02f3c064b039e5899fc06baa3b98d3b060"
+            },
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "adaab7acd1dd9e598109cd1c1c8073b18c1046316890ff067576fe0c04af82f0",
+              "answeredInputContextSha256": "c2041f3947e36cfc6d7a6705fc644c02f3c064b039e5899fc06baa3b98d3b060",
+              "answeredInputPresentationSha256": "f102a8028ca8bad358167fa80703c7ea7f5425b10fabde7068dca255226e20c9",
+              "difference": "The model answered the same questions on a passage with transcription differences from the original paper (wording and punctuation listed in editorialRevision.replacements) and without some of the original marks. The decision does not depend on them.",
+              "evidence": "gk-bank-fix-20261126/REPORT.md"
             }
           },
-          "inputContextSha256": "c2041f3947e36cfc6d7a6705fc644c02f3c064b039e5899fc06baa3b98d3b060",
-          "inputPresentationSha256": "f102a8028ca8bad358167fa80703c7ea7f5425b10fabde7068dca255226e20c9"
+          "inputContextSha256": "4147e99a8c595a225b0f4c0127b8f13d7ec8d00aae8de3d3c76f575324729203",
+          "inputPresentationSha256": "4ee6cb9dddc8fc78cc572bf9de62071fdca83d3b5fb6f3e04e5b59f03c998974"
         },
         "claude_opus_5_5": {
           "modelId": "claude-opus-5-5",
           "label": "Claude Opus 5.5 来源复核后修订",
           "text": "答案：A。\n选A。A项有两处错误：其一，怀疑陶侃的是扈怀，刘弘明说“侃之忠能，吾得之已久，必无是也”，并不怀疑；其二，陶侃“遣子及兄子诣弘以自固”，是送子侄作人质表明忠心、巩固信任，不是去打探。B项：王敦“被甲持矛将杀侃，出而复还者数四”，后“敦意解”并设宴饯行，陶侃连夜出发，化险为夷，正确。C项：军资等“皆有定簿，封印仓库，自加管钥，以付右司马”，可见其清廉奉公、交接清楚，正确。D项：复任荆州刺史时“荆州士女相庆”，治下数千里“路不拾遗”，说明治理有方、深得民心，正确。",
-          "inputSha256": "adaab7acd1dd9e598109cd1c1c8073b18c1046316890ff067576fe0c04af82f0",
-          "inputContextSha256": "c2041f3947e36cfc6d7a6705fc644c02f3c064b039e5899fc06baa3b98d3b060",
+          "inputSha256": "c8a60ebc6b87eeba4efcec5e6363e646a76b5936cc0e7d7702abc264b198a374",
+          "inputContextSha256": "4147e99a8c595a225b0f4c0127b8f13d7ec8d00aae8de3d3c76f575324729203",
           "generatedAt": "2026-10-03T03:05:14.386459+00:00",
           "uncertainties": [],
           "selectedOptions": [
@@ -9034,26 +9847,42 @@
               "method": "empty_rendered_emphasis_v2_equivalence",
               "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
               "originalContextSha256": "c2041f3947e36cfc6d7a6705fc644c02f3c064b039e5899fc06baa3b98d3b060"
+            },
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "adaab7acd1dd9e598109cd1c1c8073b18c1046316890ff067576fe0c04af82f0",
+              "answeredInputContextSha256": "c2041f3947e36cfc6d7a6705fc644c02f3c064b039e5899fc06baa3b98d3b060",
+              "answeredInputPresentationSha256": "f102a8028ca8bad358167fa80703c7ea7f5425b10fabde7068dca255226e20c9",
+              "difference": "The model answered the same questions on a passage with transcription differences from the original paper (wording and punctuation listed in editorialRevision.replacements) and without some of the original marks. The decision does not depend on them.",
+              "evidence": "gk-bank-fix-20261126/REPORT.md"
             }
           },
-          "inputPresentationSha256": "f102a8028ca8bad358167fa80703c7ea7f5425b10fabde7068dca255226e20c9"
+          "inputPresentationSha256": "4ee6cb9dddc8fc78cc572bf9de62071fdca83d3b5fb6f3e04e5b59f03c998974"
         },
         "gpt_6_astra_before_context_review": {
           "modelId": "gpt-6-astra",
           "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
           "text": "答案：A。刘弘面对扈怀的挑拨明确表示信任陶侃。陶侃遣子侄前往是‘以自固’，表明忠诚、巩固双方关系，并非派去打探。B与王敦数次欲杀而终设宴送行相合；C的物资交接体现奉公自律；D据民众庆贺与境内秩序作出合理概括。",
-          "inputSha256": "adaab7acd1dd9e598109cd1c1c8073b18c1046316890ff067576fe0c04af82f0",
+          "inputSha256": "c8a60ebc6b87eeba4efcec5e6363e646a76b5936cc0e7d7702abc264b198a374",
           "generatedAt": "2026-10-03T00:23:44.075Z",
           "provenance": {
             "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json",
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "adaab7acd1dd9e598109cd1c1c8073b18c1046316890ff067576fe0c04af82f0",
+              "answeredInputContextSha256": null,
+              "answeredInputPresentationSha256": null,
+              "difference": "The model answered the same questions on a passage with transcription differences from the original paper (wording and punctuation listed in editorialRevision.replacements) and without some of the original marks. The decision does not depend on them.",
+              "evidence": "gk-bank-fix-20261126/REPORT.md"
+            }
           }
         },
         "claude_opus_5_5_initial": {
           "modelId": "claude-opus-5-5",
           "label": "Claude Opus 5.5 独立作答（修订前存档）",
           "text": "答案：A。\nA项错误。怀疑陶侃的是扈怀，刘弘明确表示“侃之忠能，吾得之已久，必无是也”，并不怀疑陶侃。陶侃派儿子和侄子到刘弘处是“以自固”，即以子侄为质，表明忠心、坚定上司的信任，不是去“打探”。刘弘随后把他们引为参军，又资助遣返，也说明这是示诚之举。B项正确，王敦“被甲持矛将杀侃，出而复还者数四”，可见犹豫不决；后经梅陶等劝说，“敦意解”，设宴饯行，陶侃连夜出发，化险为夷。C项正确，陶侃归长沙前将军资、器仗、牛马、舟船登记造册，封印仓库，亲加锁钥，交付右司马，可见他公私分明、克己奉公。D项正确，“荆州士女相庆”和“数千里中，路不拾遗”分别从民心和治绩两方面说明陶侃治理有方、深得民心。故选A。",
-          "inputSha256": "adaab7acd1dd9e598109cd1c1c8073b18c1046316890ff067576fe0c04af82f0",
+          "inputSha256": "c8a60ebc6b87eeba4efcec5e6363e646a76b5936cc0e7d7702abc264b198a374",
           "generatedAt": "2026-10-03T00:30:26.676473+00:00",
           "uncertainties": [],
           "selectedOptions": [
@@ -9068,24 +9897,209 @@
             "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
             "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
             "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
-            "stage": "independent"
+            "stage": "independent",
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "adaab7acd1dd9e598109cd1c1c8073b18c1046316890ff067576fe0c04af82f0",
+              "answeredInputContextSha256": "acb12586359e584bd16e68a9361cb1628ae4e689fce33d230ba8fdfe7a4ae88c",
+              "answeredInputPresentationSha256": null,
+              "difference": "The model answered the same questions on a passage with transcription differences from the original paper (wording and punctuation listed in editorialRevision.replacements) and without some of the original marks. The decision does not depend on them.",
+              "evidence": "gk-bank-fix-20261126/REPORT.md"
+            }
           },
           "inputContextSha256": "acb12586359e584bd16e68a9361cb1628ae4e689fce33d230ba8fdfe7a4ae88c"
         }
       },
-      "inputContextSha256": "c2041f3947e36cfc6d7a6705fc644c02f3c064b039e5899fc06baa3b98d3b060",
-      "inputPresentationSha256": "f102a8028ca8bad358167fa80703c7ea7f5425b10fabde7068dca255226e20c9",
+      "inputContextSha256": "4147e99a8c595a225b0f4c0127b8f13d7ec8d00aae8de3d3c76f575324729203",
+      "inputPresentationSha256": "4ee6cb9dddc8fc78cc572bf9de62071fdca83d3b5fb6f3e04e5b59f03c998974",
       "publicationQualification": {
         "contract": "qualified-learning-reference-v1",
         "sourceClass": "qualified_public_witness",
         "originalPublicationVerified": false,
         "officialRubricVerified": false,
         "notice": "保留用户扫描及既有三来源逐句校订的接受依据，现行考查标记已按扫描核查。三源校订不等于考试机构公开发布答案；保全已接受的新题与所有旧版本。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。"
+      },
+      "history": [
+        {
+          "source": {
+            "id": "2026-guwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "文言文阅读",
+                "text": "陶侃【1】少孤贫，为郡督邮。长沙太守过庐江，见而异之，命其子结友而去。后察孝廉，至洛阳，人荐之，侃由是知名。既克贼，刘弘【2】谓侃曰：“吾昔为羊公【3】参军，谓吾后当居身处。今观卿，必继老夫矣。”\n\n顺阳太守张光诣荆州讨陈敏，刘弘遣侃等屯夏口。侃与敏同郡，又同岁举吏。扈怀言于弘曰：“侃居大郡，统强兵，脱有异志，则荆州无东门矣！”弘曰：“侃之忠能，吾得之已久，必无是也。”侃闻之，遣子及兄子诣弘以自固。弘引为参军，资而遣之，曰：“贤叔征行，君祖母年高，便可归也。匹夫之交，尚不负心，况大丈夫乎！”\n\n周顗【4】始至州，流民叛迎杜弢【5】，弢别将袭沔阳，顗狼狈失据。征讨都督王敦【6】遣侃等共击弢。周顗屯浮水城，为杜弢所困。侃曰：“弢必步向武昌。”乃自径道还郡以待之，弢果来攻。侃使朱伺逆击，大破之，弢遁归长沙。侃告捷于敦，敦曰：“若无陶侯，便失荆州矣！”乃表侃为荆州刺史。\n\n王敦嬖人钱凤，疾侃之功，屡毁之。侃将还江陵，欲诣敦自陈。朱伺等谏曰：“公入，必不出。”侃不从，既至，敦留侃不遣，左转广州刺史，以其从弟廙为荆州刺史。荆州将吏郑攀等诣敦，上书留侃，敦怒，不许。攀等以侃始灭大贼，而更被黜，众情愤惋。后攀等袭廙，敦意攀承侃风旨，被甲持矛将杀侃，出而复还者数四。侃正色曰：“使君雄断，当裁天下，何此不决乎！”因起如厕。梅陶等言于敦曰：“周访与侃亲姻，如左右手，安有断人左手而右手不应者乎！”敦意解，乃设盛馔以饯之，侃便夜发。\n\n太宁三年五月，以侃为征西大将军、都督荆湘雍梁四州诸军事、荆州刺史，荆州士女相庆。\n\n咸和七年十一月，进侃为大将军，剑履上殿，入朝不趋，侃固辞不受。侃晚年深以满盈自惧，不预朝权，屡欲告老归国，佐吏等苦留之。九年六月，侃疾笃，上表逊位。将归长沙，军资、器仗、牛马、舟船皆有定簿，封印仓库，自加管钥，以付右司马，然后登舟，朝野以为美谈。乙卯，薨于樊溪。侃在军四十一年，自南陵迄于白帝，数千里中，路不拾遗。及薨，梅陶与亲人书曰：“陆抗诸人不能及也。”\n\n（取材于《晋书》《资治通鉴》）\n\n注释：【1】陶侃：晋朝将领。【2】刘弘：晋朝将领，曾是羊祜麾下参军。【3】羊公：羊祜，晋朝将领。【4】周顗：晋朝大臣。【5】杜弢：流民首领。【6】王敦：晋朝大臣，后叛乱。"
+              }
+            ],
+            "topic": "二、本大题共5小题，共18分。阅读下面文言文，完成6—10题。",
+            "annotation": "2026年普通高等学校招生全国统一考试（北京卷）语文；题面经三处独立来源交叉核对（原卷扫描件 + 两个独立转录本）",
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 4,
+                "id": "q4",
+                "text": "9. 根据文意，下列理解与推断，不正确的一项是\nA. 陶侃因刘弘怀疑自己，把自己的儿子和侄子派到刘弘那里去打探。\nB. 王敦欲杀陶侃，犹豫不决；陶侃受到王敦猜忌，但最终化险为夷。\nC. 陶侃回长沙前统计物资，封存仓库，托付官员，说明他克己奉公。\nD. “士女相庆”与“路不拾遗”，说明陶侃为官治理有方，深得民心。",
+                "score": 3,
+                "sourceQuestionNumber": "9",
+                "sourceType": "single_choice"
+              }
+            ]
+          },
+          "review": {
+            "id": "2026-guwen:4",
+            "inputSha256": "adaab7acd1dd9e598109cd1c1c8073b18c1046316890ff067576fe0c04af82f0",
+            "status": "reviewed",
+            "kind": "single_choice",
+            "correctOptions": [
+              "A"
+            ],
+            "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。\n\n【来源与评分边界】保留用户扫描及既有三来源逐句校订的接受依据，现行考查标记已按扫描核查。三源校订不等于考试机构公开发布答案；保全已接受的新题与所有旧版本。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:05:38.552Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2026北京卷原题及完整材料"
+              },
+              {
+                "type": "publication_qualification",
+                "label": "保留用户扫描及既有三来源逐句校订的接受依据，现行考查标记已按扫描核查。三源校订不等于考试机构公开发布答案；保全已接受的新题与所有旧版本。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。",
+                "evidence": "SOURCE-QUALIFICATION-01a1139d.md"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "答案：A。刘弘面对扈怀的挑拨明确表示信任陶侃。陶侃遣子侄前往是‘以自固’，表明忠诚、巩固双方关系，并非派去打探。B与王敦数次欲杀而终设宴送行相合；C的物资交接体现奉公自律；D据民众庆贺与境内秩序作出合理概括。",
+                "inputSha256": "adaab7acd1dd9e598109cd1c1c8073b18c1046316890ff067576fe0c04af82f0",
+                "generatedAt": "2026-10-03T03:05:38.552Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-reading-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "5adf7ede20f4dadcefe2b8765a5293a722383ab7e8587490fead5a9b2e4ff672",
+                  "annotationEffect": "已完整重读材料、题纲、题问、材料内原注及2026三源核对说明。以自固表忠而非打探；record.annotation仅为来源说明，本次实际纳入复核，未追认成旧作答时已见。",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "c2041f3947e36cfc6d7a6705fc644c02f3c064b039e5899fc06baa3b98d3b060"
+                  }
+                },
+                "inputContextSha256": "c2041f3947e36cfc6d7a6705fc644c02f3c064b039e5899fc06baa3b98d3b060",
+                "inputPresentationSha256": "f102a8028ca8bad358167fa80703c7ea7f5425b10fabde7068dca255226e20c9"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "答案：A。\n选A。A项有两处错误：其一，怀疑陶侃的是扈怀，刘弘明说“侃之忠能，吾得之已久，必无是也”，并不怀疑；其二，陶侃“遣子及兄子诣弘以自固”，是送子侄作人质表明忠心、巩固信任，不是去打探。B项：王敦“被甲持矛将杀侃，出而复还者数四”，后“敦意解”并设宴饯行，陶侃连夜出发，化险为夷，正确。C项：军资等“皆有定簿，封印仓库，自加管钥，以付右司马”，可见其清廉奉公、交接清楚，正确。D项：复任荆州刺史时“荆州士女相庆”，治下数千里“路不拾遗”，说明治理有方、深得民心，正确。",
+                "inputSha256": "adaab7acd1dd9e598109cd1c1c8073b18c1046316890ff067576fe0c04af82f0",
+                "inputContextSha256": "c2041f3947e36cfc6d7a6705fc644c02f3c064b039e5899fc06baa3b98d3b060",
+                "generatedAt": "2026-10-03T03:05:14.386459+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "A"
+                ],
+                "assessment": {
+                  "matchesConclusion": true,
+                  "reviewNote": "送子侄作人质是额外解释；原文只说以自固，不宜当原文明述。",
+                  "evidence": "answers-six-sites-20261002/CONTEXT-RECONCILIATION.md",
+                  "reviewedAt": "2026-10-03T03:18:36.452154+00:00"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-context-reconcile-reading-result.json",
+                  "inputPromptSha256": "c7324b4f5b82b1b4b9c38fb139c47abe9c8b8a58a24471791b2fdb2804fcf246",
+                  "responseStreamSha256": "a8b82470e7b57edcc275b4761a4601213fe04bb2903bddf6100a54a5d9dddc78",
+                  "stage": "source_review",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "c2041f3947e36cfc6d7a6705fc644c02f3c064b039e5899fc06baa3b98d3b060"
+                  }
+                },
+                "inputPresentationSha256": "f102a8028ca8bad358167fa80703c7ea7f5425b10fabde7068dca255226e20c9"
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "答案：A。刘弘面对扈怀的挑拨明确表示信任陶侃。陶侃遣子侄前往是‘以自固’，表明忠诚、巩固双方关系，并非派去打探。B与王敦数次欲杀而终设宴送行相合；C的物资交接体现奉公自律；D据民众庆贺与境内秩序作出合理概括。",
+                "inputSha256": "adaab7acd1dd9e598109cd1c1c8073b18c1046316890ff067576fe0c04af82f0",
+                "generatedAt": "2026-10-03T00:23:44.075Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+                }
+              },
+              "claude_opus_5_5_initial": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答（修订前存档）",
+                "text": "答案：A。\nA项错误。怀疑陶侃的是扈怀，刘弘明确表示“侃之忠能，吾得之已久，必无是也”，并不怀疑陶侃。陶侃派儿子和侄子到刘弘处是“以自固”，即以子侄为质，表明忠心、坚定上司的信任，不是去“打探”。刘弘随后把他们引为参军，又资助遣返，也说明这是示诚之举。B项正确，王敦“被甲持矛将杀侃，出而复还者数四”，可见犹豫不决；后经梅陶等劝说，“敦意解”，设宴饯行，陶侃连夜出发，化险为夷。C项正确，陶侃归长沙前将军资、器仗、牛马、舟船登记造册，封印仓库，亲加锁钥，交付右司马，可见他公私分明、克己奉公。D项正确，“荆州士女相庆”和“数千里中，路不拾遗”分别从民心和治绩两方面说明陶侃治理有方、深得民心。故选A。",
+                "inputSha256": "adaab7acd1dd9e598109cd1c1c8073b18c1046316890ff067576fe0c04af82f0",
+                "generatedAt": "2026-10-03T00:30:26.676473+00:00",
+                "uncertainties": [],
+                "selectedOptions": [
+                  "A"
+                ],
+                "assessment": {
+                  "matchesConclusion": true
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
+                  "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
+                  "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "acb12586359e584bd16e68a9361cb1628ae4e689fce33d230ba8fdfe7a4ae88c"
+              }
+            },
+            "inputContextSha256": "c2041f3947e36cfc6d7a6705fc644c02f3c064b039e5899fc06baa3b98d3b060",
+            "inputPresentationSha256": "f102a8028ca8bad358167fa80703c7ea7f5425b10fabde7068dca255226e20c9",
+            "publicationQualification": {
+              "contract": "qualified-learning-reference-v1",
+              "sourceClass": "qualified_public_witness",
+              "originalPublicationVerified": false,
+              "officialRubricVerified": false,
+              "notice": "保留用户扫描及既有三来源逐句校订的接受依据，现行考查标记已按扫描核查。三源校订不等于考试机构公开发布答案；保全已接受的新题与所有旧版本。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。"
+            }
+          }
+        }
+      ],
+      "editorialRevision": {
+        "kind": "transcription_correction",
+        "version": "2026-guwen:4-original-paper-20261126",
+        "at": "2026-11-26T03:00:00.000Z",
+        "owner": "claude-gk-bank-fix-20261126",
+        "replacements": [
+          {
+            "from": "周顗屯浮水城",
+            "to": "周顗屯浔水城",
+            "note": "原卷作浔水城（《晋书·陶侃传》同）；09-19 依两份网络转录改作浮水城有误"
+          },
+          {
+            "from": "侃不从，既至",
+            "to": "侃不从。既至",
+            "note": "原卷句末为句号"
+          }
+        ],
+        "marksAdded": [],
+        "previousInputPresentationSha256": "f102a8028ca8bad358167fa80703c7ea7f5425b10fabde7068dca255226e20c9",
+        "sourceEvidence": "GKS original scan sites/exam/gks/output/evidence/beijing/2026/chinese-20260815/source-mixed-order.pdf (sha256 486b6c54ca01653daf9bd2a87d8e69129cd688002a932923005a7109331669ec), exam pages 3–4; side-by-side glyph check against 引白浮泉水 on exam page 9 in gk-bank-fix-20261126/evidence",
+        "originalExamText": true,
+        "answerChanged": false,
+        "oldScoresRecalculated": false,
+        "modelCalls": 0,
+        "reason": "Checked word by word against the original paper. The bank had transcription differences and lacked marks the paper prints; text and marks now follow the paper. The reviewed key, explanation and model answers are kept and re-bound, with the answered input hashes recorded."
       }
     },
     {
       "id": "2026-guwen:5",
-      "inputSha256": "9ebcb4cef4adf5f8e0ef3688f9bf12f2c2c632da2c5362e36c5be5c1f8d06ee5",
+      "inputSha256": "c74058b21c2720ce43e093bd71c53716e0e082f2ce457fd7ccc693ec23fdccff",
       "status": "reviewed",
       "kind": "open",
       "correctOptions": [],
@@ -9109,7 +10123,7 @@
           "modelId": "gpt-6-astra",
           "label": "GPT-6 Astra 完整附注复核",
           "text": "①忠诚坦荡，重信守义。遭人疑忌时派子侄赴刘弘处表明忠心，面对王敦的诋毁与猜忌也亲自前往陈述，并不以暗中反抗应对。②善于判断形势，处事有谋略。预见杜弢将步攻武昌，走近路返郡等待，命朱伺迎击，最终破敌。③临危沉着而刚正，同时懂得趋避。在王敦欲杀而犹疑时正色直言，随后起身如厕；获得饯行机会便连夜离开。分析应兼顾刚直与机变，不能把冒险赴见简单赞为毫无风险的最佳选择。",
-          "inputSha256": "9ebcb4cef4adf5f8e0ef3688f9bf12f2c2c632da2c5362e36c5be5c1f8d06ee5",
+          "inputSha256": "c74058b21c2720ce43e093bd71c53716e0e082f2ce457fd7ccc693ec23fdccff",
           "generatedAt": "2026-10-03T03:05:38.552Z",
           "provenance": {
             "kind": "codex_turn",
@@ -9123,17 +10137,25 @@
               "method": "empty_rendered_emphasis_v2_equivalence",
               "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
               "originalContextSha256": "fc4e981bf817932186f21e91816b747b5e363c9c41663890981fe0fda9cba6ba"
+            },
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "9ebcb4cef4adf5f8e0ef3688f9bf12f2c2c632da2c5362e36c5be5c1f8d06ee5",
+              "answeredInputContextSha256": "fc4e981bf817932186f21e91816b747b5e363c9c41663890981fe0fda9cba6ba",
+              "answeredInputPresentationSha256": "767a355040bb44ae4ce22757099ca0b747454e023d160b0d6b9aa64eb8104de7",
+              "difference": "The model answered the same questions on a passage with transcription differences from the original paper (wording and punctuation listed in editorialRevision.replacements) and without some of the original marks. The decision does not depend on them.",
+              "evidence": "gk-bank-fix-20261126/REPORT.md"
             }
           },
-          "inputContextSha256": "fc4e981bf817932186f21e91816b747b5e363c9c41663890981fe0fda9cba6ba",
-          "inputPresentationSha256": "767a355040bb44ae4ce22757099ca0b747454e023d160b0d6b9aa64eb8104de7"
+          "inputContextSha256": "aec92d3bb9390b2faacde1db7e093f00de35c06e2cab73682a2cdfa3670857ab",
+          "inputPresentationSha256": "86ebc4e19f8a85bfe8a475f1d5b681b59aa600c758a11046f8fe0a13f408882a"
         },
         "claude_opus_5_5": {
           "modelId": "claude-opus-5-5",
           "label": "Claude Opus 5.5 来源复核后修订",
           "text": "陶侃处事的特点：\n①谨慎周全，主动释疑。第二段中，他因与陈敏同郡同年而遭扈怀进言猜忌，得知后主动派儿子和侄子到刘弘处作人质“以自固”，以实际行动表明忠心，消除嫌疑。\n②富有谋略，善于预判，行动果断。第三段中，他准确判断“弢必步向武昌”，抄近路回郡设防，杜弢果然来攻；又派朱伺迎击，大破敌军。\n③坦荡磊落，敢于担当。第四段中，遭钱凤诋毁后，他不听朱伺等人劝阻，坚持亲自去见王敦当面陈述。\n④临危不惧，沉着机警。第四段中，王敦披甲持矛要杀他，他神色严正地直言“何此不决乎”，从容起身如厕；获释后不作停留，连夜出发，脱离险境。",
-          "inputSha256": "9ebcb4cef4adf5f8e0ef3688f9bf12f2c2c632da2c5362e36c5be5c1f8d06ee5",
-          "inputContextSha256": "fc4e981bf817932186f21e91816b747b5e363c9c41663890981fe0fda9cba6ba",
+          "inputSha256": "c74058b21c2720ce43e093bd71c53716e0e082f2ce457fd7ccc693ec23fdccff",
+          "inputContextSha256": "aec92d3bb9390b2faacde1db7e093f00de35c06e2cab73682a2cdfa3670857ab",
           "generatedAt": "2026-10-03T03:05:14.386459+00:00",
           "uncertainties": [],
           "selectedOptions": [],
@@ -9154,26 +10176,42 @@
               "method": "empty_rendered_emphasis_v2_equivalence",
               "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
               "originalContextSha256": "fc4e981bf817932186f21e91816b747b5e363c9c41663890981fe0fda9cba6ba"
+            },
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "9ebcb4cef4adf5f8e0ef3688f9bf12f2c2c632da2c5362e36c5be5c1f8d06ee5",
+              "answeredInputContextSha256": "fc4e981bf817932186f21e91816b747b5e363c9c41663890981fe0fda9cba6ba",
+              "answeredInputPresentationSha256": "767a355040bb44ae4ce22757099ca0b747454e023d160b0d6b9aa64eb8104de7",
+              "difference": "The model answered the same questions on a passage with transcription differences from the original paper (wording and punctuation listed in editorialRevision.replacements) and without some of the original marks. The decision does not depend on them.",
+              "evidence": "gk-bank-fix-20261126/REPORT.md"
             }
           },
-          "inputPresentationSha256": "767a355040bb44ae4ce22757099ca0b747454e023d160b0d6b9aa64eb8104de7"
+          "inputPresentationSha256": "86ebc4e19f8a85bfe8a475f1d5b681b59aa600c758a11046f8fe0a13f408882a"
         },
         "gpt_6_astra_before_context_review": {
           "modelId": "gpt-6-astra",
           "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
           "text": "①忠诚坦荡，重信守义。遭人疑忌时派子侄赴刘弘处表明忠心，面对王敦的诋毁与猜忌也亲自前往陈述，并不以暗中反抗应对。②善于判断形势，处事有谋略。预见杜弢将步攻武昌，走近路返郡等待，命朱伺迎击，最终破敌。③临危沉着而刚正，同时懂得趋避。在王敦欲杀而犹疑时正色直言，随后起身如厕；获得饯行机会便连夜离开。分析应兼顾刚直与机变，不能把冒险赴见简单赞为毫无风险的最佳选择。",
-          "inputSha256": "9ebcb4cef4adf5f8e0ef3688f9bf12f2c2c632da2c5362e36c5be5c1f8d06ee5",
+          "inputSha256": "c74058b21c2720ce43e093bd71c53716e0e082f2ce457fd7ccc693ec23fdccff",
           "generatedAt": "2026-10-03T00:23:44.075Z",
           "provenance": {
             "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json",
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "9ebcb4cef4adf5f8e0ef3688f9bf12f2c2c632da2c5362e36c5be5c1f8d06ee5",
+              "answeredInputContextSha256": null,
+              "answeredInputPresentationSha256": null,
+              "difference": "The model answered the same questions on a passage with transcription differences from the original paper (wording and punctuation listed in editorialRevision.replacements) and without some of the original marks. The decision does not depend on them.",
+              "evidence": "gk-bank-fix-20261126/REPORT.md"
+            }
           }
         },
         "claude_opus_5_5_initial": {
           "modelId": "claude-opus-5-5",
           "label": "Claude Opus 5.5 独立作答（修订前存档）",
           "text": "①谨慎周全，主动避嫌、示忠。第二段中，陶侃与陈敏同郡、同岁举吏，奉命屯兵夏口时遭扈怀猜疑。他听说后主动派儿子和侄子到刘弘处“以自固”，以实际行动表明忠心，消除上司可能的顾虑，处事稳妥周到。②料敌在先，判断精准，用兵果断。第三段中，周顗被困，陶侃断定“弢必步向武昌”，立即抄近路回郡等候，杜弢果然来攻；他又派朱伺迎击，大破敌军。可见他目光敏锐、善于决断，也善于用人。③坦荡磊落，临危不惧，沉着机智。第四段中，陶侃遭钱凤谗毁，仍不顾朱伺劝阻，亲自去见王敦当面陈述，光明磊落。王敦披甲持矛几番欲杀他，他“正色”说“使君雄断，当裁天下，何此不决乎”，以言语激之，从容如厕，镇定自若。王敦疑虑一消，他便“夜发”，当机立断，迅速脱离险境。总之，陶侃处事忠诚谨慎而又果敢机敏，刚正坦荡而又沉稳练达。",
-          "inputSha256": "9ebcb4cef4adf5f8e0ef3688f9bf12f2c2c632da2c5362e36c5be5c1f8d06ee5",
+          "inputSha256": "c74058b21c2720ce43e093bd71c53716e0e082f2ce457fd7ccc693ec23fdccff",
           "generatedAt": "2026-10-03T00:30:26.676473+00:00",
           "uncertainties": [],
           "selectedOptions": [],
@@ -9186,19 +10224,198 @@
             "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
             "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
             "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
-            "stage": "independent"
+            "stage": "independent",
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "9ebcb4cef4adf5f8e0ef3688f9bf12f2c2c632da2c5362e36c5be5c1f8d06ee5",
+              "answeredInputContextSha256": "2f746c4f537efd27de5b6a45350c3ce7e724a8fe1ea1ffae5cbfacd226cd313e",
+              "answeredInputPresentationSha256": null,
+              "difference": "The model answered the same questions on a passage with transcription differences from the original paper (wording and punctuation listed in editorialRevision.replacements) and without some of the original marks. The decision does not depend on them.",
+              "evidence": "gk-bank-fix-20261126/REPORT.md"
+            }
           },
           "inputContextSha256": "2f746c4f537efd27de5b6a45350c3ce7e724a8fe1ea1ffae5cbfacd226cd313e"
         }
       },
-      "inputContextSha256": "fc4e981bf817932186f21e91816b747b5e363c9c41663890981fe0fda9cba6ba",
-      "inputPresentationSha256": "767a355040bb44ae4ce22757099ca0b747454e023d160b0d6b9aa64eb8104de7",
+      "inputContextSha256": "aec92d3bb9390b2faacde1db7e093f00de35c06e2cab73682a2cdfa3670857ab",
+      "inputPresentationSha256": "86ebc4e19f8a85bfe8a475f1d5b681b59aa600c758a11046f8fe0a13f408882a",
       "publicationQualification": {
         "contract": "qualified-learning-reference-v1",
         "sourceClass": "qualified_public_witness",
         "originalPublicationVerified": false,
         "officialRubricVerified": false,
         "notice": "保留用户扫描及既有三来源逐句校订的接受依据，现行考查标记已按扫描核查。三源校订不等于考试机构公开发布答案；保全已接受的新题与所有旧版本。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。"
+      },
+      "history": [
+        {
+          "source": {
+            "id": "2026-guwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "文言文阅读",
+                "text": "陶侃【1】少孤贫，为郡督邮。长沙太守过庐江，见而异之，命其子结友而去。后察孝廉，至洛阳，人荐之，侃由是知名。既克贼，刘弘【2】谓侃曰：“吾昔为羊公【3】参军，谓吾后当居身处。今观卿，必继老夫矣。”\n\n顺阳太守张光诣荆州讨陈敏，刘弘遣侃等屯夏口。侃与敏同郡，又同岁举吏。扈怀言于弘曰：“侃居大郡，统强兵，脱有异志，则荆州无东门矣！”弘曰：“侃之忠能，吾得之已久，必无是也。”侃闻之，遣子及兄子诣弘以自固。弘引为参军，资而遣之，曰：“贤叔征行，君祖母年高，便可归也。匹夫之交，尚不负心，况大丈夫乎！”\n\n周顗【4】始至州，流民叛迎杜弢【5】，弢别将袭沔阳，顗狼狈失据。征讨都督王敦【6】遣侃等共击弢。周顗屯浮水城，为杜弢所困。侃曰：“弢必步向武昌。”乃自径道还郡以待之，弢果来攻。侃使朱伺逆击，大破之，弢遁归长沙。侃告捷于敦，敦曰：“若无陶侯，便失荆州矣！”乃表侃为荆州刺史。\n\n王敦嬖人钱凤，疾侃之功，屡毁之。侃将还江陵，欲诣敦自陈。朱伺等谏曰：“公入，必不出。”侃不从，既至，敦留侃不遣，左转广州刺史，以其从弟廙为荆州刺史。荆州将吏郑攀等诣敦，上书留侃，敦怒，不许。攀等以侃始灭大贼，而更被黜，众情愤惋。后攀等袭廙，敦意攀承侃风旨，被甲持矛将杀侃，出而复还者数四。侃正色曰：“使君雄断，当裁天下，何此不决乎！”因起如厕。梅陶等言于敦曰：“周访与侃亲姻，如左右手，安有断人左手而右手不应者乎！”敦意解，乃设盛馔以饯之，侃便夜发。\n\n太宁三年五月，以侃为征西大将军、都督荆湘雍梁四州诸军事、荆州刺史，荆州士女相庆。\n\n咸和七年十一月，进侃为大将军，剑履上殿，入朝不趋，侃固辞不受。侃晚年深以满盈自惧，不预朝权，屡欲告老归国，佐吏等苦留之。九年六月，侃疾笃，上表逊位。将归长沙，军资、器仗、牛马、舟船皆有定簿，封印仓库，自加管钥，以付右司马，然后登舟，朝野以为美谈。乙卯，薨于樊溪。侃在军四十一年，自南陵迄于白帝，数千里中，路不拾遗。及薨，梅陶与亲人书曰：“陆抗诸人不能及也。”\n\n（取材于《晋书》《资治通鉴》）\n\n注释：【1】陶侃：晋朝将领。【2】刘弘：晋朝将领，曾是羊祜麾下参军。【3】羊公：羊祜，晋朝将领。【4】周顗：晋朝大臣。【5】杜弢：流民首领。【6】王敦：晋朝大臣，后叛乱。"
+              }
+            ],
+            "topic": "二、本大题共5小题，共18分。阅读下面文言文，完成6—10题。",
+            "annotation": "2026年普通高等学校招生全国统一考试（北京卷）语文；题面经三处独立来源交叉核对（原卷扫描件 + 两个独立转录本）",
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 5,
+                "id": "q5",
+                "text": "10. 结合材料第二、三、四段，简要分析陶侃处事的特点。",
+                "score": 6,
+                "sourceQuestionNumber": "10",
+                "sourceType": "subjective"
+              }
+            ]
+          },
+          "review": {
+            "id": "2026-guwen:5",
+            "inputSha256": "9ebcb4cef4adf5f8e0ef3688f9bf12f2c2c632da2c5362e36c5be5c1f8d06ee5",
+            "status": "reviewed",
+            "kind": "open",
+            "correctOptions": [],
+            "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。\n\n【来源与评分边界】保留用户扫描及既有三来源逐句校订的接受依据，现行考查标记已按扫描核查。三源校订不等于考试机构公开发布答案；保全已接受的新题与所有旧版本。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:05:38.552Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2026北京卷原题及完整材料"
+              },
+              {
+                "type": "publication_qualification",
+                "label": "保留用户扫描及既有三来源逐句校订的接受依据，现行考查标记已按扫描核查。三源校订不等于考试机构公开发布答案；保全已接受的新题与所有旧版本。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。",
+                "evidence": "SOURCE-QUALIFICATION-01a1139d.md"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "①忠诚坦荡，重信守义。遭人疑忌时派子侄赴刘弘处表明忠心，面对王敦的诋毁与猜忌也亲自前往陈述，并不以暗中反抗应对。②善于判断形势，处事有谋略。预见杜弢将步攻武昌，走近路返郡等待，命朱伺迎击，最终破敌。③临危沉着而刚正，同时懂得趋避。在王敦欲杀而犹疑时正色直言，随后起身如厕；获得饯行机会便连夜离开。分析应兼顾刚直与机变，不能把冒险赴见简单赞为毫无风险的最佳选择。",
+                "inputSha256": "9ebcb4cef4adf5f8e0ef3688f9bf12f2c2c632da2c5362e36c5be5c1f8d06ee5",
+                "generatedAt": "2026-10-03T03:05:38.552Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-reading-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "83b3fc43981e46174e3d49bf4dcae63c18e5d5e47249169c0dcda24616d397a6",
+                  "annotationEffect": "已完整重读材料、题纲、题问、材料内原注及2026三源核对说明。对三段的忠诚、谋略、临危刚正与机变分析有据；record.annotation仅为来源说明，本次实际纳入复核，未追认成旧作答时已见。",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "fc4e981bf817932186f21e91816b747b5e363c9c41663890981fe0fda9cba6ba"
+                  }
+                },
+                "inputContextSha256": "fc4e981bf817932186f21e91816b747b5e363c9c41663890981fe0fda9cba6ba",
+                "inputPresentationSha256": "767a355040bb44ae4ce22757099ca0b747454e023d160b0d6b9aa64eb8104de7"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "陶侃处事的特点：\n①谨慎周全，主动释疑。第二段中，他因与陈敏同郡同年而遭扈怀进言猜忌，得知后主动派儿子和侄子到刘弘处作人质“以自固”，以实际行动表明忠心，消除嫌疑。\n②富有谋略，善于预判，行动果断。第三段中，他准确判断“弢必步向武昌”，抄近路回郡设防，杜弢果然来攻；又派朱伺迎击，大破敌军。\n③坦荡磊落，敢于担当。第四段中，遭钱凤诋毁后，他不听朱伺等人劝阻，坚持亲自去见王敦当面陈述。\n④临危不惧，沉着机警。第四段中，王敦披甲持矛要杀他，他神色严正地直言“何此不决乎”，从容起身如厕；获释后不作停留，连夜出发，脱离险境。",
+                "inputSha256": "9ebcb4cef4adf5f8e0ef3688f9bf12f2c2c632da2c5362e36c5be5c1f8d06ee5",
+                "inputContextSha256": "fc4e981bf817932186f21e91816b747b5e363c9c41663890981fe0fda9cba6ba",
+                "generatedAt": "2026-10-03T03:05:14.386459+00:00",
+                "uncertainties": [],
+                "selectedOptions": [],
+                "assessment": {
+                  "matchesConclusion": null,
+                  "reviewNote": "子侄作为人质并非材料明述，宜限于表忠、巩固信任。",
+                  "evidence": "answers-six-sites-20261002/CONTEXT-RECONCILIATION.md",
+                  "reviewedAt": "2026-10-03T03:18:36.452154+00:00"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-context-reconcile-reading-result.json",
+                  "inputPromptSha256": "c7324b4f5b82b1b4b9c38fb139c47abe9c8b8a58a24471791b2fdb2804fcf246",
+                  "responseStreamSha256": "a8b82470e7b57edcc275b4761a4601213fe04bb2903bddf6100a54a5d9dddc78",
+                  "stage": "source_review",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "fc4e981bf817932186f21e91816b747b5e363c9c41663890981fe0fda9cba6ba"
+                  }
+                },
+                "inputPresentationSha256": "767a355040bb44ae4ce22757099ca0b747454e023d160b0d6b9aa64eb8104de7"
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "①忠诚坦荡，重信守义。遭人疑忌时派子侄赴刘弘处表明忠心，面对王敦的诋毁与猜忌也亲自前往陈述，并不以暗中反抗应对。②善于判断形势，处事有谋略。预见杜弢将步攻武昌，走近路返郡等待，命朱伺迎击，最终破敌。③临危沉着而刚正，同时懂得趋避。在王敦欲杀而犹疑时正色直言，随后起身如厕；获得饯行机会便连夜离开。分析应兼顾刚直与机变，不能把冒险赴见简单赞为毫无风险的最佳选择。",
+                "inputSha256": "9ebcb4cef4adf5f8e0ef3688f9bf12f2c2c632da2c5362e36c5be5c1f8d06ee5",
+                "generatedAt": "2026-10-03T00:23:44.075Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+                }
+              },
+              "claude_opus_5_5_initial": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答（修订前存档）",
+                "text": "①谨慎周全，主动避嫌、示忠。第二段中，陶侃与陈敏同郡、同岁举吏，奉命屯兵夏口时遭扈怀猜疑。他听说后主动派儿子和侄子到刘弘处“以自固”，以实际行动表明忠心，消除上司可能的顾虑，处事稳妥周到。②料敌在先，判断精准，用兵果断。第三段中，周顗被困，陶侃断定“弢必步向武昌”，立即抄近路回郡等候，杜弢果然来攻；他又派朱伺迎击，大破敌军。可见他目光敏锐、善于决断，也善于用人。③坦荡磊落，临危不惧，沉着机智。第四段中，陶侃遭钱凤谗毁，仍不顾朱伺劝阻，亲自去见王敦当面陈述，光明磊落。王敦披甲持矛几番欲杀他，他“正色”说“使君雄断，当裁天下，何此不决乎”，以言语激之，从容如厕，镇定自若。王敦疑虑一消，他便“夜发”，当机立断，迅速脱离险境。总之，陶侃处事忠诚谨慎而又果敢机敏，刚正坦荡而又沉稳练达。",
+                "inputSha256": "9ebcb4cef4adf5f8e0ef3688f9bf12f2c2c632da2c5362e36c5be5c1f8d06ee5",
+                "generatedAt": "2026-10-03T00:30:26.676473+00:00",
+                "uncertainties": [],
+                "selectedOptions": [],
+                "assessment": {
+                  "matchesConclusion": null
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
+                  "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
+                  "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "2f746c4f537efd27de5b6a45350c3ce7e724a8fe1ea1ffae5cbfacd226cd313e"
+              }
+            },
+            "inputContextSha256": "fc4e981bf817932186f21e91816b747b5e363c9c41663890981fe0fda9cba6ba",
+            "inputPresentationSha256": "767a355040bb44ae4ce22757099ca0b747454e023d160b0d6b9aa64eb8104de7",
+            "publicationQualification": {
+              "contract": "qualified-learning-reference-v1",
+              "sourceClass": "qualified_public_witness",
+              "originalPublicationVerified": false,
+              "officialRubricVerified": false,
+              "notice": "保留用户扫描及既有三来源逐句校订的接受依据，现行考查标记已按扫描核查。三源校订不等于考试机构公开发布答案；保全已接受的新题与所有旧版本。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。"
+            }
+          }
+        }
+      ],
+      "editorialRevision": {
+        "kind": "transcription_correction",
+        "version": "2026-guwen:5-original-paper-20261126",
+        "at": "2026-11-26T03:00:00.000Z",
+        "owner": "claude-gk-bank-fix-20261126",
+        "replacements": [
+          {
+            "from": "周顗屯浮水城",
+            "to": "周顗屯浔水城",
+            "note": "原卷作浔水城（《晋书·陶侃传》同）；09-19 依两份网络转录改作浮水城有误"
+          },
+          {
+            "from": "侃不从，既至",
+            "to": "侃不从。既至",
+            "note": "原卷句末为句号"
+          }
+        ],
+        "marksAdded": [],
+        "previousInputPresentationSha256": "767a355040bb44ae4ce22757099ca0b747454e023d160b0d6b9aa64eb8104de7",
+        "sourceEvidence": "GKS original scan sites/exam/gks/output/evidence/beijing/2026/chinese-20260815/source-mixed-order.pdf (sha256 486b6c54ca01653daf9bd2a87d8e69129cd688002a932923005a7109331669ec), exam pages 3–4; side-by-side glyph check against 引白浮泉水 on exam page 9 in gk-bank-fix-20261126/evidence",
+        "originalExamText": true,
+        "answerChanged": false,
+        "oldScoresRecalculated": false,
+        "modelCalls": 0,
+        "reason": "Checked word by word against the original paper. The bank had transcription differences and lacked marks the paper prints; text and marks now follow the paper. The reviewed key, explanation and model answers are kept and re-bound, with the answered input hashes recorded."
       }
     },
     {
@@ -91933,9 +93150,9 @@
     },
     {
       "id": "2007-sanwen:1",
-      "inputSha256": "36e0d036367c5845319e503e5a17d2c70210e2861a4f79cc34aa6eddb2a7a73b",
-      "inputContextSha256": "28d7c5cbc14e312a0996497e9ad46b720648e296ce5489c1c878d86a5b9eb2fb",
-      "inputPresentationSha256": "641c9c406c70c789ddd03672a702dba6c46b6def3d0f42e1efe9ae5d221a425e",
+      "inputSha256": "16d06f07c20f57e0f9b8225082b6f68e51c4f39757bd1571b244f50125ea5df3",
+      "inputContextSha256": "eb22f189dc6526db30b88e5d9a64e3a2e895361e31cda3c59e5fa88160a7187e",
+      "inputPresentationSha256": "9cd7683fbbd6973131332d6a856f5bfc0fbc328d548da19fbaad01007404caa9",
       "status": "reviewed",
       "kind": "multiple_choice",
       "correctOptions": [
@@ -91968,16 +93185,24 @@
             "E"
           ],
           "generatedAt": "2026-10-03T14:16:04.257452+00:00",
-          "inputSha256": "36e0d036367c5845319e503e5a17d2c70210e2861a4f79cc34aa6eddb2a7a73b",
-          "inputContextSha256": "28d7c5cbc14e312a0996497e9ad46b720648e296ce5489c1c878d86a5b9eb2fb",
-          "inputPresentationSha256": "641c9c406c70c789ddd03672a702dba6c46b6def3d0f42e1efe9ae5d221a425e",
+          "inputSha256": "16d06f07c20f57e0f9b8225082b6f68e51c4f39757bd1571b244f50125ea5df3",
+          "inputContextSha256": "eb22f189dc6526db30b88e5d9a64e3a2e895361e31cda3c59e5fa88160a7187e",
+          "inputPresentationSha256": "9cd7683fbbd6973131332d6a856f5bfc0fbc328d548da19fbaad01007404caa9",
           "provenance": {
             "kind": "codex_turn",
             "evidence": "root-2007-reading-drafts.json",
             "inputEvidence": "root-2007-frozen-inputs.json",
             "originalAuthorEvidence": "reference-exposure-2007-before-claude.json",
             "referenceExposed": true,
-            "stage": "retained_original_response"
+            "stage": "retained_original_response",
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "36e0d036367c5845319e503e5a17d2c70210e2861a4f79cc34aa6eddb2a7a73b",
+              "answeredInputContextSha256": "28d7c5cbc14e312a0996497e9ad46b720648e296ce5489c1c878d86a5b9eb2fb",
+              "answeredInputPresentationSha256": "641c9c406c70c789ddd03672a702dba6c46b6def3d0f42e1efe9ae5d221a425e",
+              "difference": "The model answered the same questions on a passage with transcription differences from the original paper (wording and punctuation listed in editorialRevision.replacements) and without some of the original marks. The decision does not depend on them.",
+              "evidence": "gk-bank-fix-20261126/REPORT.md"
+            }
           },
           "notes": ""
         },
@@ -91991,9 +93216,9 @@
           ],
           "uncertainties": [],
           "generatedAt": "2026-10-05T04:44:39.822461+00:00",
-          "inputSha256": "36e0d036367c5845319e503e5a17d2c70210e2861a4f79cc34aa6eddb2a7a73b",
-          "inputContextSha256": "28d7c5cbc14e312a0996497e9ad46b720648e296ce5489c1c878d86a5b9eb2fb",
-          "inputPresentationSha256": "641c9c406c70c789ddd03672a702dba6c46b6def3d0f42e1efe9ae5d221a425e",
+          "inputSha256": "16d06f07c20f57e0f9b8225082b6f68e51c4f39757bd1571b244f50125ea5df3",
+          "inputContextSha256": "eb22f189dc6526db30b88e5d9a64e3a2e895361e31cda3c59e5fa88160a7187e",
+          "inputPresentationSha256": "9cd7683fbbd6973131332d6a856f5bfc0fbc328d548da19fbaad01007404caa9",
           "provenance": {
             "kind": "cli_response",
             "responseModel": "claude-opus-5-5",
@@ -92003,7 +93228,15 @@
             "inputPromptSha256": "a326ff8a7fc54f6b07cb881725c34970d370ac67d49b9df5c3ee90fc430edd9a",
             "responseStreamSha256": "ecd6a0fc7fa8ebb1f4bf992a32db54230ea92dc56f23fbce2978d2bd735f547d",
             "referenceProvided": false,
-            "stage": "retained_original_response"
+            "stage": "retained_original_response",
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "36e0d036367c5845319e503e5a17d2c70210e2861a4f79cc34aa6eddb2a7a73b",
+              "answeredInputContextSha256": "28d7c5cbc14e312a0996497e9ad46b720648e296ce5489c1c878d86a5b9eb2fb",
+              "answeredInputPresentationSha256": "641c9c406c70c789ddd03672a702dba6c46b6def3d0f42e1efe9ae5d221a425e",
+              "difference": "The model answered the same questions on a passage with transcription differences from the original paper (wording and punctuation listed in editorialRevision.replacements) and without some of the original marks. The decision does not depend on them.",
+              "evidence": "gk-bank-fix-20261126/REPORT.md"
+            }
           }
         }
       },
@@ -92070,7 +93303,7 @@
           }
         ],
         "legacyScore": 4,
-        "inputPresentationSha256": "641c9c406c70c789ddd03672a702dba6c46b6def3d0f42e1efe9ae5d221a425e",
+        "inputPresentationSha256": "9cd7683fbbd6973131332d6a856f5bfc0fbc328d548da19fbaad01007404caa9",
         "note": "完整选项集合已经核查，但未取得错选、漏选及部分给分规则。仅保留旧题分值作范围说明，不推定每项分值或全对全错规则；新反馈只逐项说明对错与依据，不给数字得分、百分比或等级，不重算历史成绩。"
       },
       "publicationQualification": {
@@ -92079,13 +93312,263 @@
         "originalPublicationVerified": false,
         "officialRubricVerified": false,
         "notice": "依据当年新浪七张拼接题图校勘，不等同完整14物理页原卷。旧库混入的2005应用题保留旧入口及成绩，并明示真实来源；低清和水印遮蔽处仍有限制。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。"
+      },
+      "history": [
+        {
+          "source": {
+            "id": "2007-sanwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "湿湿的想念\n\n七十年前，爷爷沿着一条沅水，走出山外，走进那所无法毕业的人生学校，读那本未必都能看懂的大书。后来，因为肚子的困窘和头脑的困惑，他也写了许多本小书和大书，里面有许多很美的文字和用文字作的很美的画卷，这些文字与画托举的永远是一个沅水边形成的理想。\n\n七十年后，我第一次跑到湘西山地，寻到沅水的上游，寻找爷爷一生都离不开的故水故土。\n\n正值冬季，湘西竟还处处葱茏青翠，与北方都市的昏灰底色成鲜明对比。山还是那座山，湾依旧是那道湾，但桥已不是那座桥，房也不是那幢房，人是新人物，事是新故事了。凤凰城里风味独特的吊脚楼，也被速生的凤头砖瓦楼渐渐替代，这片土地已悄悄变了模样。\n\n看不到了，爷爷，你的印象或者只是你的梦想。你笔下的那种种传说、风情和神奇故事，我怎么想像它们曾经在这山地水域中发生过，流动过，辉煌过，闪耀过？而眼前这支清流，亦负载，亦推托，一点也不动声色。\n\n而我回到这里，并不是要寻找你七十年前的起点，有多少风景将永远不能回来，我只想读一读你的天地，这里有着无须刻意维护而能留存下去的东西。\n\n在水边长大、水边懂事，爷爷的第一所学校就是这条沅水。他在自传中说：“我感情流动而不凝固，一派清波给予我的影响实在不小。”“我幼小时较美丽的生活，大部分都同水不能分离。我的学校可以说是在水边的。我认识美，学会思索，水对我有极大的关系。”\n\n水给爷爷三样东西：\n\n水给了他想像力和自己的思索方式。爷爷认识字，是从私塾小学校开始，而他认识课本上无从写出的丰富人生，却是在校园外，在老街店铺，桥头渡口，水上人家……没有谁来教他，他用眼睛、耳朵和机敏的鼻子接受水边的光色、声音和气味给予一颗小小心灵的感觉，把各种事物的内容和意义在游戏中融会，丰富自己的想像，最终凝聚为他对生活对世界的独特思索。\n\n水给了他坚忍柔韧的性格。爷爷曾说过：“水的德性为兼容并包，从不排斥以不同方式浸入生命的任何离奇不经事物，却也从不受它的玷污影响。”水的性格似乎特别脆弱，且极容易就范。其实则柔弱中有强韧，如集中一点，即涓涓细流，滴水穿石，无坚不摧。水的性情品格，恰好是爷爷一生处世方式的写照。他是那么温和，又是那么倔，倔得从从容容。\n\n水激发他对人世怀抱虔诚的爱与希望。正如爷爷说过的那样：“水教给我黏合卑微人生的平凡哀乐，并做横海扬帆的美梦”，“美梦”中蕴含着他的人生热望。他执著地用自然的美，人性的美，古代文明的美编织朴实单纯的理想。虽然他不奢望以此取代社会理想，但是他热切地希望能为百病缠身的民族唤回一些健康的记忆、美好的梦想。\n\n爷爷曾说：“值得回忆的哀乐人事常是湿的。”此时我的眼睛也是湿的了，谁能体会他那种热情洋溢之中的忧虑，幽默后面的隐痛，微笑之间的悲凉，悲凉之外的深重的爱！很多年，我们和他一起生活，可是我们不懂。水边学校水边书，我是否来得太晚？\n\n尽管爷爷从二十岁起就离开了家乡，但这一片水土上的光辉，在爷爷生命中终生不灭。我记得爷爷最后的目光，默默地，停留在窗外的四季中，停留在过去的风景里。\n\n爷爷，有一天我要送你回来，轻轻地，回到你的土地，回到你的风景里。那风里雨里，透明的阳光里，透明的流水里，有我湿湿的想念，永远永远。\n\n（取材于沈红《湿湿的想念》）"
+              }
+            ],
+            "topic": "五、本大题共4小题，共18分。阅读《湿湿的想念》，完成18—21题。",
+            "annotation": "①本文中的“爷爷”指作家沈从文（1902—1988）。新浪2007年北京卷公开题目拼接图，已目视；不是完整14页原卷或考试机构出版链认证。 凤头砖瓦楼保留图中文字；“黏合”处水印重叠，按Gzy转录保留并标为待原卷辨清，未默改。",
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "18．下列对文章内容的理解，不正确的两项是（4分）\nA．本文侧重描述故乡的风景和水边的生活对沈从文一生不可磨灭的影响。\nB．文中的“书”有的地方指爷爷的创作，有的地方比喻大千世界、丰富人生。\nC．“水”的兼容并包、柔弱中有强韧的品德赋予了爷爷温和而倔强的性格。\nD．结尾一段表达了作者在爷爷的有生之年陪伴他回到故乡的热切憧憬。\nE．文章通过回到爷爷故乡的所见所想，集中表达了物是人非的历史沧桑感。",
+                "score": 4
+              }
+            ]
+          },
+          "review": {
+            "id": "2007-sanwen:1",
+            "inputSha256": "36e0d036367c5845319e503e5a17d2c70210e2861a4f79cc34aa6eddb2a7a73b",
+            "inputContextSha256": "28d7c5cbc14e312a0996497e9ad46b720648e296ce5489c1c878d86a5b9eb2fb",
+            "inputPresentationSha256": "641c9c406c70c789ddd03672a702dba6c46b6def3d0f42e1efe9ae5d221a425e",
+            "status": "reviewed",
+            "kind": "multiple_choice",
+            "correctOptions": [
+              "D",
+              "E"
+            ],
+            "explanation": "答案D、E。A对应故乡沅水对想像思索、性格、爱与希望的终身滋养；B分清实际著作与人生大书的比喻；C对应兼容并包、柔中强韧与温和而倔，均成立。D把追忆最后目光、思念逝者的送回故土，误作有生之年陪伴；E把开头变化之感放大为全文中心，遗漏主要的理解怀念和精神滋养。送回不需补造实际安葬事件。保留署名、生卒注、凤头及黏合的来源待辨说明，原4分不变。\n\n【来源与评分边界】依据当年新浪七张拼接题图校勘，不等同完整14物理页原卷。旧库混入的2005应用题保留旧入口及成绩，并明示真实来源；低清和水印遮蔽处仍有限制。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。",
+            "reviewedBy": "codex-01a111d9-gpt-6-astra",
+            "reviewedAt": "2026-10-06T15:46:48.718Z",
+            "sources": [
+              {
+                "type": "retained_frozen_input",
+                "evidence": "root-2007-frozen-inputs.json",
+                "sha256": "8be6675c9ac98802f4483f93a4a377800321f6fb0fa01406cfdc265c7f4cf6be",
+                "sourcePublicationChainAccepted": false
+              },
+              {
+                "type": "publication_qualification",
+                "label": "依据当年新浪七张拼接题图校勘，不等同完整14物理页原卷。旧库混入的2005应用题保留旧入口及成绩，并明示真实来源；低清和水印遮蔽处仍有限制。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。",
+                "evidence": "SOURCE-QUALIFICATION-01a1139d.md"
+              }
+            ],
+            "modelAnswers": {
+              "gpt_6_astra_retained_641c9c406c70": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 原始完整作答（參考已暴露）",
+                "text": "选D、E。D把作者的怀念和送爷爷归乡的愿望理解成在爷爷有生之年陪伴他返乡，忽略了文中追忆最后目光以及注释给出的生卒年份。E把中心缩成物是人非的沧桑感；文章虽写故乡面貌变化，却主要追索沅水对爷爷心灵、性格和文学理想的滋养，表达理解、怀念与深厚的爱。A概括故乡水土对爷爷一生的影响，符合全文。B能区分书的实指创作与比喻人生世界两类用法。C对应水的兼容并包、柔中有韧，以及爷爷温和又倔强的性格。",
+                "selectedOptions": [
+                  "D",
+                  "E"
+                ],
+                "generatedAt": "2026-10-03T14:16:04.257452+00:00",
+                "inputSha256": "36e0d036367c5845319e503e5a17d2c70210e2861a4f79cc34aa6eddb2a7a73b",
+                "inputContextSha256": "28d7c5cbc14e312a0996497e9ad46b720648e296ce5489c1c878d86a5b9eb2fb",
+                "inputPresentationSha256": "641c9c406c70c789ddd03672a702dba6c46b6def3d0f42e1efe9ae5d221a425e",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "root-2007-reading-drafts.json",
+                  "inputEvidence": "root-2007-frozen-inputs.json",
+                  "originalAuthorEvidence": "reference-exposure-2007-before-claude.json",
+                  "referenceExposed": true,
+                  "stage": "retained_original_response"
+                },
+                "notes": ""
+              },
+              "claude_opus_5_5_retained_641c9c406c70": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 原始完整作答",
+                "text": "答案：D、E。\n不正确的两项是D、E。A项正确：文章主体写沅水（故乡水土）给予爷爷想像力与思索方式、性格、对人世的爱与希望，侧重的正是故乡对他一生的影响。B项正确：“写了许多本小书和大书”指创作，“那本未必都能看懂的大书”“水边书”比喻社会人生、大千世界。C项正确：第九段明说水兼容并包、柔弱中有强韧，“恰好是爷爷一生处世方式的写照”，“那么温和，又是那么倔”。D项错误：文中有“我记得爷爷最后的目光”，爷爷已经去世，“送你回来”是指让逝去的爷爷魂归故土，不是在他有生之年陪他回乡。E项错误：物是人非的感慨只在第三、四段出现，作者随即说“并不是要寻找你七十年前的起点”，“这里有着无须刻意维护而能留存下去的东西”；文章集中表达的是对爷爷的理解与思念以及水对爷爷的滋养，不是历史沧桑感。",
+                "selectedOptions": [
+                  "D",
+                  "E"
+                ],
+                "uncertainties": [],
+                "generatedAt": "2026-10-05T04:44:39.822461+00:00",
+                "inputSha256": "36e0d036367c5845319e503e5a17d2c70210e2861a4f79cc34aa6eddb2a7a73b",
+                "inputContextSha256": "28d7c5cbc14e312a0996497e9ad46b720648e296ce5489c1c878d86a5b9eb2fb",
+                "inputPresentationSha256": "641c9c406c70c789ddd03672a702dba6c46b6def3d0f42e1efe9ae5d221a425e",
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "p29-canonical-reading-08-result.json",
+                  "rawResultEvidence": "p29-canonical-reading-08-result.json",
+                  "inputEvidence": "p29-canonical-reading-08-job.json",
+                  "inputPromptSha256": "a326ff8a7fc54f6b07cb881725c34970d370ac67d49b9df5c3ee90fc430edd9a",
+                  "responseStreamSha256": "ecd6a0fc7fa8ebb1f4bf992a32db54230ea92dc56f23fbce2978d2bd735f547d",
+                  "referenceProvided": false,
+                  "stage": "retained_original_response"
+                }
+              }
+            },
+            "retainedFullInputReview": {
+              "at": "2026-10-06T15:42:10.732746+00:00",
+              "owner": "codex-01a111d9-gpt-6-astra",
+              "binding": {
+                "id": "2007-sanwen:1",
+                "inputSha256": "36e0d036367c5845319e503e5a17d2c70210e2861a4f79cc34aa6eddb2a7a73b",
+                "inputContextSha256": "28d7c5cbc14e312a0996497e9ad46b720648e296ce5489c1c878d86a5b9eb2fb",
+                "inputPresentationSha256": "641c9c406c70c789ddd03672a702dba6c46b6def3d0f42e1efe9ae5d221a425e",
+                "exactFrozenInputObjectSha256": "5d5e3401f152d2e80c001fc4af9494051164653da409d97f544c389cd73a96e1",
+                "ownAnswerFile": "root-2007-reading-drafts.json",
+                "ownAnswerFileSha256": "3a6b5f71fa634edadac4804a22361cd2e880c1983aa7d436b71df1b7f65a1453",
+                "fullAnswerSha256": "eef092860950635d5c01e570bd8b1441cd0a47fb8d84ff10e0b3f0fb2187e6d3",
+                "originalAuthorEvidence": "reference-exposure-2007-before-claude.json",
+                "inputFile": "root-2007-frozen-inputs.json",
+                "inputFileSha256": "8be6675c9ac98802f4483f93a4a377800321f6fb0fa01406cfdc265c7f4cf6be",
+                "referenceProvidedToClaude": false,
+                "referenceExposure": "prior references exposed to own responder; source annotations may carry editorial context; no blind claim",
+                "imagePixelsProvided": false
+              },
+              "evidenceIndex": {
+                "file": "claude-read-intersection-canonical243-01a10b78.json",
+                "sha256": "f2c207a14ec2a069f9efe04695f4718a6fff5ccc54fa7da9e0b64125166af767"
+              },
+              "readEvidence": [
+                {
+                  "file": "claude-semantic20-canonical-batch08-01a10b78.json",
+                  "sha256": "4eb722d61343e8eabb2870a1fe7f5ff93b548154a6780036c34fbdbd466c54c0",
+                  "semanticDisposition": "choice-content-reviewed",
+                  "semanticReviewNote": "两答DE。D称有生之年回故乡与最后一眼等叙述不符，E以沧桑变迁为中心偏离追念爷爷及故乡水的主旨；A水土影响、B书的创作和人生双关、C水的柔韧人格可对应文本。魂归故土属于意象理解，不推成实际安葬方式。素材拼图来源/原卷未闭合保持。"
+                }
+              ],
+              "addedVersions": [
+                "gpt_6_astra_retained_641c9c406c70",
+                "claude_opus_5_5_retained_641c9c406c70"
+              ],
+              "existingEquivalentVersions": [],
+              "sourcePublicationChainAccepted": false,
+              "scoringAccepted": false,
+              "finalAccepted": false,
+              "localSemanticAdjudication": {
+                "at": "2026-10-06T15:46:48.718Z",
+                "owner": "codex-01a111d9-gpt-6-astra",
+                "fullCurrentInputAndBothRepliesRead": true,
+                "allOptionsAndMarksRead": true,
+                "note": "答案D、E。A对应故乡沅水对想像思索、性格、爱与希望的终身滋养；B分清实际著作与人生大书的比喻；C对应兼容并包、柔中强韧与温和而倔，均成立。D把追忆最后目光、思念逝者的送回故土，误作有生之年陪伴；E把开头变化之感放大为全文中心，遗漏主要的理解怀念和精神滋养。送回不需补造实际安葬事件。保留署名、生卒注、凤头及黏合的来源待辨说明，原4分不变。",
+                "sourcePublicationChainAccepted": false,
+                "scoringAccepted": false,
+                "originalScoreRewritten": false,
+                "finalAccepted": false
+              }
+            },
+            "currentVersion": "gpt_6_astra_retained_641c9c406c70",
+            "practiceScoring": {
+              "basis": "practice",
+              "mode": "qualitative_only",
+              "total": 4,
+              "components": [
+                {
+                  "label": "旧题整题范围（不作为本次数字得分依据）",
+                  "points": 4
+                }
+              ],
+              "legacyScore": 4,
+              "inputPresentationSha256": "641c9c406c70c789ddd03672a702dba6c46b6def3d0f42e1efe9ae5d221a425e",
+              "note": "完整选项集合已经核查，但未取得错选、漏选及部分给分规则。仅保留旧题分值作范围说明，不推定每项分值或全对全错规则；新反馈只逐项说明对错与依据，不给数字得分、百分比或等级，不重算历史成绩。"
+            },
+            "publicationQualification": {
+              "contract": "qualified-learning-reference-v1",
+              "sourceClass": "qualified_public_witness",
+              "originalPublicationVerified": false,
+              "officialRubricVerified": false,
+              "notice": "依据当年新浪七张拼接题图校勘，不等同完整14物理页原卷。旧库混入的2005应用题保留旧入口及成绩，并明示真实来源；低清和水印遮蔽处仍有限制。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。"
+            }
+          }
+        }
+      ],
+      "editorialRevision": {
+        "kind": "transcription_correction",
+        "version": "2007-sanwen:1-original-paper-20261126",
+        "at": "2026-11-26T03:00:00.000Z",
+        "owner": "claude-gk-bank-fix-20261126",
+        "replacements": [
+          {
+            "from": "七十年前，爷爷沿着一条沅水，走出山外，",
+            "to": "七十年前，爷爷①沿着一条沅水，走出大山，",
+            "note": "注①标在第一个“爷爷”上；原卷作走出大山"
+          },
+          {
+            "from": "我怎么想像它们",
+            "to": "我怎么想象它们",
+            "note": "原卷作想象"
+          },
+          {
+            "from": "而眼前这支清流",
+            "to": "而眼前的这支清流",
+            "note": "原卷有“的”"
+          },
+          {
+            "from": "实在不小。”“我幼小时",
+            "to": "实在不小。我幼小时",
+            "note": "原卷为一段连续引语"
+          },
+          {
+            "from": "水给了他想像力",
+            "to": "水给了他想象力",
+            "note": "原卷作想象"
+          },
+          {
+            "from": "在老街店铺，桥头渡口，水上人家",
+            "to": "在老街店铺、桥头渡口、水上人家",
+            "note": "原卷为顿号"
+          },
+          {
+            "from": "丰富自己的想像，",
+            "to": "丰富了自己的想象，",
+            "note": "原卷作丰富了自己的想象"
+          },
+          {
+            "from": "且极容易就范。其实则柔弱中有强韧，如集中一点，即涓涓细流，滴水穿石，",
+            "to": "且极容易就范；其实柔弱中有强韧，如集中一点，即使涓涓细流，也能滴水穿石，",
+            "note": "原卷文字"
+          },
+          {
+            "from": "并做横海扬帆的美梦”，“美梦”中",
+            "to": "并作横海扬帆的美梦。”“美梦”中",
+            "note": "原卷文字与标点"
+          },
+          {
+            "from": "自然的美，人性的美，古代文明的美",
+            "to": "自然的美、人性的美、古代文明的美",
+            "note": "原卷为顿号"
+          },
+          {
+            "from": "此时我的眼睛也是湿的了，谁能体会他那种热情",
+            "to": "此时我的眼睛也是湿的了。谁能体会他那热情",
+            "note": "原卷文字与标点"
+          }
+        ],
+        "topic": {
+          "from": "阅读《湿湿的想念》，完成18—21题。",
+          "to": "阅读下面的作品，完成18—21题。"
+        },
+        "marksAdded": [],
+        "previousInputPresentationSha256": "641c9c406c70c789ddd03672a702dba6c46b6def3d0f42e1efe9ae5d221a425e",
+        "sourceEvidence": "Sina 2007-06-09 image https://edu.sina.com.cn/shiti/paper/16/84/8416/images/18-21.jpg (sha256 de0aa5024c04671a…, 469844 bytes), the image recorded by answers-six-sites-20261002",
+        "originalExamText": true,
+        "answerChanged": false,
+        "oldScoresRecalculated": false,
+        "modelCalls": 0,
+        "reason": "Checked word by word against the original paper. The bank had transcription differences and lacked marks the paper prints; text and marks now follow the paper. The reviewed key, explanation and model answers are kept and re-bound, with the answered input hashes recorded."
       }
     },
     {
       "id": "2007-sanwen:2",
-      "inputSha256": "7f35a2784982d14b70d3a1336e1666ac059b5c76210591e55bb23422cd24cec8",
-      "inputContextSha256": "a0684565c97ddc858c85c1df9b1a73b66957408269825720d2a2caea4e36bd9b",
-      "inputPresentationSha256": "dc7d0984d138db79d2b44968f3694019b54c28d9bc526ffe3fff51d4060c6ea1",
+      "inputSha256": "fc9f0307e84016e1c3b595e6757e8d83036e8e7ecf2ebda602096334201f54db",
+      "inputContextSha256": "e3ad30efe6085980706b53e70dd3cb0467f6802f53c9734788d4507128701090",
+      "inputPresentationSha256": "b454b7f39b0f8c14d946e8e409cde6a7b7025e95893c418103c8c884f5d0098d",
       "status": "reviewed",
       "kind": "open",
       "correctOptions": [],
@@ -92112,16 +93595,24 @@
           "text": "这理想是用自然的美、人性的美和古代文明的美构筑朴实单纯的精神世界，对普通人的哀乐保持真诚的爱与关怀，并希望借这样的文字和画面，为百病缠身的民族唤回健康的记忆、美好的梦想。它既根植于沅水边的生活经验，也包含超越个人处境、关心民族精神生活的愿望；并不是要让一套文学理想直接取代社会理想。",
           "selectedOptions": [],
           "generatedAt": "2026-10-03T14:16:04.257452+00:00",
-          "inputSha256": "7f35a2784982d14b70d3a1336e1666ac059b5c76210591e55bb23422cd24cec8",
-          "inputContextSha256": "a0684565c97ddc858c85c1df9b1a73b66957408269825720d2a2caea4e36bd9b",
-          "inputPresentationSha256": "dc7d0984d138db79d2b44968f3694019b54c28d9bc526ffe3fff51d4060c6ea1",
+          "inputSha256": "fc9f0307e84016e1c3b595e6757e8d83036e8e7ecf2ebda602096334201f54db",
+          "inputContextSha256": "e3ad30efe6085980706b53e70dd3cb0467f6802f53c9734788d4507128701090",
+          "inputPresentationSha256": "b454b7f39b0f8c14d946e8e409cde6a7b7025e95893c418103c8c884f5d0098d",
           "provenance": {
             "kind": "codex_turn",
             "evidence": "root-2007-reading-drafts.json",
             "inputEvidence": "root-2007-frozen-inputs.json",
             "originalAuthorEvidence": "reference-exposure-2007-before-claude.json",
             "referenceExposed": true,
-            "stage": "retained_original_response"
+            "stage": "retained_original_response",
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "7f35a2784982d14b70d3a1336e1666ac059b5c76210591e55bb23422cd24cec8",
+              "answeredInputContextSha256": "a0684565c97ddc858c85c1df9b1a73b66957408269825720d2a2caea4e36bd9b",
+              "answeredInputPresentationSha256": "dc7d0984d138db79d2b44968f3694019b54c28d9bc526ffe3fff51d4060c6ea1",
+              "difference": "The model answered the same questions on a passage with transcription differences from the original paper (wording and punctuation listed in editorialRevision.replacements) and without some of the original marks. The decision does not depend on them.",
+              "evidence": "gk-bank-fix-20261126/REPORT.md"
+            }
           },
           "notes": ""
         },
@@ -92132,9 +93623,9 @@
           "selectedOptions": [],
           "uncertainties": [],
           "generatedAt": "2026-10-05T04:44:39.822461+00:00",
-          "inputSha256": "7f35a2784982d14b70d3a1336e1666ac059b5c76210591e55bb23422cd24cec8",
-          "inputContextSha256": "a0684565c97ddc858c85c1df9b1a73b66957408269825720d2a2caea4e36bd9b",
-          "inputPresentationSha256": "dc7d0984d138db79d2b44968f3694019b54c28d9bc526ffe3fff51d4060c6ea1",
+          "inputSha256": "fc9f0307e84016e1c3b595e6757e8d83036e8e7ecf2ebda602096334201f54db",
+          "inputContextSha256": "e3ad30efe6085980706b53e70dd3cb0467f6802f53c9734788d4507128701090",
+          "inputPresentationSha256": "b454b7f39b0f8c14d946e8e409cde6a7b7025e95893c418103c8c884f5d0098d",
           "provenance": {
             "kind": "cli_response",
             "responseModel": "claude-opus-5-5",
@@ -92144,7 +93635,15 @@
             "inputPromptSha256": "a326ff8a7fc54f6b07cb881725c34970d370ac67d49b9df5c3ee90fc430edd9a",
             "responseStreamSha256": "ecd6a0fc7fa8ebb1f4bf992a32db54230ea92dc56f23fbce2978d2bd735f547d",
             "referenceProvided": false,
-            "stage": "retained_original_response"
+            "stage": "retained_original_response",
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "7f35a2784982d14b70d3a1336e1666ac059b5c76210591e55bb23422cd24cec8",
+              "answeredInputContextSha256": "a0684565c97ddc858c85c1df9b1a73b66957408269825720d2a2caea4e36bd9b",
+              "answeredInputPresentationSha256": "dc7d0984d138db79d2b44968f3694019b54c28d9bc526ffe3fff51d4060c6ea1",
+              "difference": "The model answered the same questions on a passage with transcription differences from the original paper (wording and punctuation listed in editorialRevision.replacements) and without some of the original marks. The decision does not depend on them.",
+              "evidence": "gk-bank-fix-20261126/REPORT.md"
+            }
           }
         }
       },
@@ -92206,13 +93705,240 @@
         "originalPublicationVerified": false,
         "officialRubricVerified": false,
         "notice": "依据当年新浪七张拼接题图校勘，不等同完整14物理页原卷。旧库混入的2005应用题保留旧入口及成绩，并明示真实来源；低清和水印遮蔽处仍有限制。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。"
+      },
+      "history": [
+        {
+          "source": {
+            "id": "2007-sanwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "湿湿的想念\n\n七十年前，爷爷沿着一条沅水，走出山外，走进那所无法毕业的人生学校，读那本未必都能看懂的大书。后来，因为肚子的困窘和头脑的困惑，他也写了许多本小书和大书，里面有许多很美的文字和用文字作的很美的画卷，这些文字与画托举的永远是一个沅水边形成的理想。\n\n七十年后，我第一次跑到湘西山地，寻到沅水的上游，寻找爷爷一生都离不开的故水故土。\n\n正值冬季，湘西竟还处处葱茏青翠，与北方都市的昏灰底色成鲜明对比。山还是那座山，湾依旧是那道湾，但桥已不是那座桥，房也不是那幢房，人是新人物，事是新故事了。凤凰城里风味独特的吊脚楼，也被速生的凤头砖瓦楼渐渐替代，这片土地已悄悄变了模样。\n\n看不到了，爷爷，你的印象或者只是你的梦想。你笔下的那种种传说、风情和神奇故事，我怎么想像它们曾经在这山地水域中发生过，流动过，辉煌过，闪耀过？而眼前这支清流，亦负载，亦推托，一点也不动声色。\n\n而我回到这里，并不是要寻找你七十年前的起点，有多少风景将永远不能回来，我只想读一读你的天地，这里有着无须刻意维护而能留存下去的东西。\n\n在水边长大、水边懂事，爷爷的第一所学校就是这条沅水。他在自传中说：“我感情流动而不凝固，一派清波给予我的影响实在不小。”“我幼小时较美丽的生活，大部分都同水不能分离。我的学校可以说是在水边的。我认识美，学会思索，水对我有极大的关系。”\n\n水给爷爷三样东西：\n\n水给了他想像力和自己的思索方式。爷爷认识字，是从私塾小学校开始，而他认识课本上无从写出的丰富人生，却是在校园外，在老街店铺，桥头渡口，水上人家……没有谁来教他，他用眼睛、耳朵和机敏的鼻子接受水边的光色、声音和气味给予一颗小小心灵的感觉，把各种事物的内容和意义在游戏中融会，丰富自己的想像，最终凝聚为他对生活对世界的独特思索。\n\n水给了他坚忍柔韧的性格。爷爷曾说过：“水的德性为兼容并包，从不排斥以不同方式浸入生命的任何离奇不经事物，却也从不受它的玷污影响。”水的性格似乎特别脆弱，且极容易就范。其实则柔弱中有强韧，如集中一点，即涓涓细流，滴水穿石，无坚不摧。水的性情品格，恰好是爷爷一生处世方式的写照。他是那么温和，又是那么倔，倔得从从容容。\n\n水激发他对人世怀抱虔诚的爱与希望。正如爷爷说过的那样：“水教给我黏合卑微人生的平凡哀乐，并做横海扬帆的美梦”，“美梦”中蕴含着他的人生热望。他执著地用自然的美，人性的美，古代文明的美编织朴实单纯的理想。虽然他不奢望以此取代社会理想，但是他热切地希望能为百病缠身的民族唤回一些健康的记忆、美好的梦想。\n\n爷爷曾说：“值得回忆的哀乐人事常是湿的。”此时我的眼睛也是湿的了，谁能体会他那种热情洋溢之中的忧虑，幽默后面的隐痛，微笑之间的悲凉，悲凉之外的深重的爱！很多年，我们和他一起生活，可是我们不懂。水边学校水边书，我是否来得太晚？\n\n尽管爷爷从二十岁起就离开了家乡，但这一片水土上的光辉，在爷爷生命中终生不灭。我记得爷爷最后的目光，默默地，停留在窗外的四季中，停留在过去的风景里。\n\n爷爷，有一天我要送你回来，轻轻地，回到你的土地，回到你的风景里。那风里雨里，透明的阳光里，透明的流水里，有我湿湿的想念，永远永远。\n\n（取材于沈红《湿湿的想念》）"
+              }
+            ],
+            "topic": "五、本大题共4小题，共18分。阅读《湿湿的想念》，完成18—21题。",
+            "annotation": "①本文中的“爷爷”指作家沈从文（1902—1988）。新浪2007年北京卷公开题目拼接图，已目视；不是完整14页原卷或考试机构出版链认证。 凤头砖瓦楼保留图中文字；“黏合”处水印重叠，按Gzy转录保留并标为待原卷辨清，未默改。",
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 2,
+                "id": "q2",
+                "text": "19．文章第一段指出“这些文字与画托举的永远是一个沅水边形成的理想”，说说这“理想”是什么？（4分）",
+                "score": 4
+              }
+            ]
+          },
+          "review": {
+            "id": "2007-sanwen:2",
+            "inputSha256": "7f35a2784982d14b70d3a1336e1666ac059b5c76210591e55bb23422cd24cec8",
+            "inputContextSha256": "a0684565c97ddc858c85c1df9b1a73b66957408269825720d2a2caea4e36bd9b",
+            "inputPresentationSha256": "dc7d0984d138db79d2b44968f3694019b54c28d9bc526ffe3fff51d4060c6ea1",
+            "status": "reviewed",
+            "kind": "open",
+            "correctOptions": [],
+            "explanation": "理想以对人世虔诚的爱与希望为底色，用自然美、人性美、古代文明美构筑朴实单纯的精神世界，关怀卑微人生的哀乐，并希望为百病缠身的民族唤回健康记忆和美好梦想。末句不奢望取代社会理想应作为界限，不能将文学美化成解决全部社会问题的方案。两原答核心完整可接受，保持文本归纳与评价层次；原4分、完整原文及来源不确定字不改。\n\n【来源与评分边界】依据当年新浪七张拼接题图校勘，不等同完整14物理页原卷。旧库混入的2005应用题保留旧入口及成绩，并明示真实来源；低清和水印遮蔽处仍有限制。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。",
+            "reviewedBy": "codex-01a111d9-gpt-6-astra",
+            "reviewedAt": "2026-10-06T15:46:48.718Z",
+            "sources": [
+              {
+                "type": "retained_frozen_input",
+                "evidence": "root-2007-frozen-inputs.json",
+                "sha256": "8be6675c9ac98802f4483f93a4a377800321f6fb0fa01406cfdc265c7f4cf6be",
+                "sourcePublicationChainAccepted": false
+              },
+              {
+                "type": "publication_qualification",
+                "label": "依据当年新浪七张拼接题图校勘，不等同完整14物理页原卷。旧库混入的2005应用题保留旧入口及成绩，并明示真实来源；低清和水印遮蔽处仍有限制。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。",
+                "evidence": "SOURCE-QUALIFICATION-01a1139d.md"
+              }
+            ],
+            "modelAnswers": {
+              "gpt_6_astra_retained_dc7d0984d138": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 原始完整作答（參考已暴露）",
+                "text": "这理想是用自然的美、人性的美和古代文明的美构筑朴实单纯的精神世界，对普通人的哀乐保持真诚的爱与关怀，并希望借这样的文字和画面，为百病缠身的民族唤回健康的记忆、美好的梦想。它既根植于沅水边的生活经验，也包含超越个人处境、关心民族精神生活的愿望；并不是要让一套文学理想直接取代社会理想。",
+                "selectedOptions": [],
+                "generatedAt": "2026-10-03T14:16:04.257452+00:00",
+                "inputSha256": "7f35a2784982d14b70d3a1336e1666ac059b5c76210591e55bb23422cd24cec8",
+                "inputContextSha256": "a0684565c97ddc858c85c1df9b1a73b66957408269825720d2a2caea4e36bd9b",
+                "inputPresentationSha256": "dc7d0984d138db79d2b44968f3694019b54c28d9bc526ffe3fff51d4060c6ea1",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "root-2007-reading-drafts.json",
+                  "inputEvidence": "root-2007-frozen-inputs.json",
+                  "originalAuthorEvidence": "reference-exposure-2007-before-claude.json",
+                  "referenceExposed": true,
+                  "stage": "retained_original_response"
+                },
+                "notes": ""
+              },
+              "claude_opus_5_5_retained_dc7d0984d138": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 原始完整作答",
+                "text": "这个“理想”是沈从文在沅水边形成、并贯穿其全部创作的人生追求：①以对人世虔诚的爱与希望为底色，在卑微人生的平凡哀乐中仍做“横海扬帆的美梦”；②执著地用自然的美、人性的美、古代文明的美，编织一个朴实单纯的理想世界；③并不奢望以此取代社会理想，而是热切希望借这些美，为百病缠身的民族唤回一些健康的记忆和美好的梦想。",
+                "selectedOptions": [],
+                "uncertainties": [],
+                "generatedAt": "2026-10-05T04:44:39.822461+00:00",
+                "inputSha256": "7f35a2784982d14b70d3a1336e1666ac059b5c76210591e55bb23422cd24cec8",
+                "inputContextSha256": "a0684565c97ddc858c85c1df9b1a73b66957408269825720d2a2caea4e36bd9b",
+                "inputPresentationSha256": "dc7d0984d138db79d2b44968f3694019b54c28d9bc526ffe3fff51d4060c6ea1",
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "p29-canonical-reading-08-result.json",
+                  "rawResultEvidence": "p29-canonical-reading-08-result.json",
+                  "inputEvidence": "p29-canonical-reading-08-job.json",
+                  "inputPromptSha256": "a326ff8a7fc54f6b07cb881725c34970d370ac67d49b9df5c3ee90fc430edd9a",
+                  "responseStreamSha256": "ecd6a0fc7fa8ebb1f4bf992a32db54230ea92dc56f23fbce2978d2bd735f547d",
+                  "referenceProvided": false,
+                  "stage": "retained_original_response"
+                }
+              }
+            },
+            "retainedFullInputReview": {
+              "at": "2026-10-06T15:42:10.732746+00:00",
+              "owner": "codex-01a111d9-gpt-6-astra",
+              "binding": {
+                "id": "2007-sanwen:2",
+                "inputSha256": "7f35a2784982d14b70d3a1336e1666ac059b5c76210591e55bb23422cd24cec8",
+                "inputContextSha256": "a0684565c97ddc858c85c1df9b1a73b66957408269825720d2a2caea4e36bd9b",
+                "inputPresentationSha256": "dc7d0984d138db79d2b44968f3694019b54c28d9bc526ffe3fff51d4060c6ea1",
+                "exactFrozenInputObjectSha256": "87e5bebe62b83e5a0c0cfeedd58f8420eb6916a3278597070ab42960662d607b",
+                "ownAnswerFile": "root-2007-reading-drafts.json",
+                "ownAnswerFileSha256": "3a6b5f71fa634edadac4804a22361cd2e880c1983aa7d436b71df1b7f65a1453",
+                "fullAnswerSha256": "b5ee993c09608f3d5aa985cbbec71bb617a96dc658326ee6414d4f4060debd19",
+                "originalAuthorEvidence": "reference-exposure-2007-before-claude.json",
+                "inputFile": "root-2007-frozen-inputs.json",
+                "inputFileSha256": "8be6675c9ac98802f4483f93a4a377800321f6fb0fa01406cfdc265c7f4cf6be",
+                "referenceProvidedToClaude": false,
+                "referenceExposure": "prior references exposed to own responder; source annotations may carry editorial context; no blind claim",
+                "imagePixelsProvided": false
+              },
+              "evidenceIndex": {
+                "file": "claude-read-intersection-canonical243-01a10b78.json",
+                "sha256": "f2c207a14ec2a069f9efe04695f4718a6fff5ccc54fa7da9e0b64125166af767"
+              },
+              "readEvidence": [
+                {
+                  "file": "claude-semantic20-canonical-batch08-01a10b78.json",
+                  "sha256": "4eb722d61343e8eabb2870a1fe7f5ff93b548154a6780036c34fbdbd466c54c0",
+                  "semanticDisposition": "open-answer-content-reviewed",
+                  "semanticReviewNote": "两答把丰富人的精神、唤回古老文明与自然人性之美、赋予民族健康记忆梦想连到爷爷理想，不缩减为个人乡愁或另造社会纲领。要点分层可供修订，旧参考null不补官方配分或唯一术语。"
+                }
+              ],
+              "addedVersions": [
+                "gpt_6_astra_retained_dc7d0984d138",
+                "claude_opus_5_5_retained_dc7d0984d138"
+              ],
+              "existingEquivalentVersions": [],
+              "sourcePublicationChainAccepted": false,
+              "scoringAccepted": false,
+              "finalAccepted": false,
+              "localSemanticAdjudication": {
+                "at": "2026-10-06T15:46:48.718Z",
+                "owner": "codex-01a111d9-gpt-6-astra",
+                "fullCurrentInputAndBothRepliesRead": true,
+                "allOptionsAndMarksRead": true,
+                "note": "理想以对人世虔诚的爱与希望为底色，用自然美、人性美、古代文明美构筑朴实单纯的精神世界，关怀卑微人生的哀乐，并希望为百病缠身的民族唤回健康记忆和美好梦想。末句不奢望取代社会理想应作为界限，不能将文学美化成解决全部社会问题的方案。两原答核心完整可接受，保持文本归纳与评价层次；原4分、完整原文及来源不确定字不改。",
+                "sourcePublicationChainAccepted": false,
+                "scoringAccepted": false,
+                "originalScoreRewritten": false,
+                "finalAccepted": false
+              }
+            },
+            "currentVersion": "gpt_6_astra_retained_dc7d0984d138",
+            "publicationQualification": {
+              "contract": "qualified-learning-reference-v1",
+              "sourceClass": "qualified_public_witness",
+              "originalPublicationVerified": false,
+              "officialRubricVerified": false,
+              "notice": "依据当年新浪七张拼接题图校勘，不等同完整14物理页原卷。旧库混入的2005应用题保留旧入口及成绩，并明示真实来源；低清和水印遮蔽处仍有限制。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。"
+            }
+          }
+        }
+      ],
+      "editorialRevision": {
+        "kind": "transcription_correction",
+        "version": "2007-sanwen:2-original-paper-20261126",
+        "at": "2026-11-26T03:00:00.000Z",
+        "owner": "claude-gk-bank-fix-20261126",
+        "replacements": [
+          {
+            "from": "七十年前，爷爷沿着一条沅水，走出山外，",
+            "to": "七十年前，爷爷①沿着一条沅水，走出大山，",
+            "note": "注①标在第一个“爷爷”上；原卷作走出大山"
+          },
+          {
+            "from": "我怎么想像它们",
+            "to": "我怎么想象它们",
+            "note": "原卷作想象"
+          },
+          {
+            "from": "而眼前这支清流",
+            "to": "而眼前的这支清流",
+            "note": "原卷有“的”"
+          },
+          {
+            "from": "实在不小。”“我幼小时",
+            "to": "实在不小。我幼小时",
+            "note": "原卷为一段连续引语"
+          },
+          {
+            "from": "水给了他想像力",
+            "to": "水给了他想象力",
+            "note": "原卷作想象"
+          },
+          {
+            "from": "在老街店铺，桥头渡口，水上人家",
+            "to": "在老街店铺、桥头渡口、水上人家",
+            "note": "原卷为顿号"
+          },
+          {
+            "from": "丰富自己的想像，",
+            "to": "丰富了自己的想象，",
+            "note": "原卷作丰富了自己的想象"
+          },
+          {
+            "from": "且极容易就范。其实则柔弱中有强韧，如集中一点，即涓涓细流，滴水穿石，",
+            "to": "且极容易就范；其实柔弱中有强韧，如集中一点，即使涓涓细流，也能滴水穿石，",
+            "note": "原卷文字"
+          },
+          {
+            "from": "并做横海扬帆的美梦”，“美梦”中",
+            "to": "并作横海扬帆的美梦。”“美梦”中",
+            "note": "原卷文字与标点"
+          },
+          {
+            "from": "自然的美，人性的美，古代文明的美",
+            "to": "自然的美、人性的美、古代文明的美",
+            "note": "原卷为顿号"
+          },
+          {
+            "from": "此时我的眼睛也是湿的了，谁能体会他那种热情",
+            "to": "此时我的眼睛也是湿的了。谁能体会他那热情",
+            "note": "原卷文字与标点"
+          }
+        ],
+        "topic": {
+          "from": "阅读《湿湿的想念》，完成18—21题。",
+          "to": "阅读下面的作品，完成18—21题。"
+        },
+        "marksAdded": [],
+        "previousInputPresentationSha256": "dc7d0984d138db79d2b44968f3694019b54c28d9bc526ffe3fff51d4060c6ea1",
+        "sourceEvidence": "Sina 2007-06-09 image https://edu.sina.com.cn/shiti/paper/16/84/8416/images/18-21.jpg (sha256 de0aa5024c04671a…, 469844 bytes), the image recorded by answers-six-sites-20261002",
+        "originalExamText": true,
+        "answerChanged": false,
+        "oldScoresRecalculated": false,
+        "modelCalls": 0,
+        "reason": "Checked word by word against the original paper. The bank had transcription differences and lacked marks the paper prints; text and marks now follow the paper. The reviewed key, explanation and model answers are kept and re-bound, with the answered input hashes recorded."
       }
     },
     {
       "id": "2007-sanwen:3",
-      "inputSha256": "5d035c0017c5d45efd78a6f6a968514255580647b7d5b60dda156f93120e37e2",
-      "inputContextSha256": "8c24878501f9c9ae05a5c2a638b1513e48238ea87298ffef4d6bbc0bd6520297",
-      "inputPresentationSha256": "d12c24e2c09cba99c5af2bbfbe52333e30127f065a76a071feb0ac23824184ed",
+      "inputSha256": "6e38df1f22b7cc93cea32bdf88389b19199c2bccca1e9949a7ec471a6809e575",
+      "inputContextSha256": "5df566fcf1b9b55312ed7dd97a61cd0ef270dfb028b7f5c063a660c2f098ff7e",
+      "inputPresentationSha256": "ca41b8067227d7030d95d4d3a4fb8b9b6a6c37cdcb80bbe414aab18e7a39b754",
       "status": "reviewed",
       "kind": "open",
       "correctOptions": [],
@@ -92239,16 +93965,24 @@
           "text": "湿首先联系着水：沈从文的美丽生活、对人生的认识和文学想像大都与沅水相连，值得追忆的人事常带着水乡的气息和生命印记。湿又联系着眼泪与浓厚情感：那些平凡人生的哀乐中，蕴含热情背后的忧虑、幽默后面的隐痛、微笑之间的悲凉，以及悲凉之外深重的爱；回忆它们时，人的心灵受到触动，眼睛也会湿润。因此湿把故乡之水、人生哀乐与真挚感情连在一起，写出了记忆的温度和深度，而不只是物理意义上的潮湿。",
           "selectedOptions": [],
           "generatedAt": "2026-10-03T14:16:04.257452+00:00",
-          "inputSha256": "5d035c0017c5d45efd78a6f6a968514255580647b7d5b60dda156f93120e37e2",
-          "inputContextSha256": "8c24878501f9c9ae05a5c2a638b1513e48238ea87298ffef4d6bbc0bd6520297",
-          "inputPresentationSha256": "d12c24e2c09cba99c5af2bbfbe52333e30127f065a76a071feb0ac23824184ed",
+          "inputSha256": "6e38df1f22b7cc93cea32bdf88389b19199c2bccca1e9949a7ec471a6809e575",
+          "inputContextSha256": "5df566fcf1b9b55312ed7dd97a61cd0ef270dfb028b7f5c063a660c2f098ff7e",
+          "inputPresentationSha256": "ca41b8067227d7030d95d4d3a4fb8b9b6a6c37cdcb80bbe414aab18e7a39b754",
           "provenance": {
             "kind": "codex_turn",
             "evidence": "root-2007-reading-drafts.json",
             "inputEvidence": "root-2007-frozen-inputs.json",
             "originalAuthorEvidence": "reference-exposure-2007-before-claude.json",
             "referenceExposed": true,
-            "stage": "retained_original_response"
+            "stage": "retained_original_response",
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "5d035c0017c5d45efd78a6f6a968514255580647b7d5b60dda156f93120e37e2",
+              "answeredInputContextSha256": "8c24878501f9c9ae05a5c2a638b1513e48238ea87298ffef4d6bbc0bd6520297",
+              "answeredInputPresentationSha256": "d12c24e2c09cba99c5af2bbfbe52333e30127f065a76a071feb0ac23824184ed",
+              "difference": "The model answered the same questions on a passage with transcription differences from the original paper (wording and punctuation listed in editorialRevision.replacements) and without some of the original marks. The decision does not depend on them.",
+              "evidence": "gk-bank-fix-20261126/REPORT.md"
+            }
           },
           "notes": ""
         },
@@ -92259,9 +93993,9 @@
           "selectedOptions": [],
           "uncertainties": [],
           "generatedAt": "2026-10-05T04:44:39.822461+00:00",
-          "inputSha256": "5d035c0017c5d45efd78a6f6a968514255580647b7d5b60dda156f93120e37e2",
-          "inputContextSha256": "8c24878501f9c9ae05a5c2a638b1513e48238ea87298ffef4d6bbc0bd6520297",
-          "inputPresentationSha256": "d12c24e2c09cba99c5af2bbfbe52333e30127f065a76a071feb0ac23824184ed",
+          "inputSha256": "6e38df1f22b7cc93cea32bdf88389b19199c2bccca1e9949a7ec471a6809e575",
+          "inputContextSha256": "5df566fcf1b9b55312ed7dd97a61cd0ef270dfb028b7f5c063a660c2f098ff7e",
+          "inputPresentationSha256": "ca41b8067227d7030d95d4d3a4fb8b9b6a6c37cdcb80bbe414aab18e7a39b754",
           "provenance": {
             "kind": "cli_response",
             "responseModel": "claude-opus-5-5",
@@ -92271,7 +94005,15 @@
             "inputPromptSha256": "a326ff8a7fc54f6b07cb881725c34970d370ac67d49b9df5c3ee90fc430edd9a",
             "responseStreamSha256": "ecd6a0fc7fa8ebb1f4bf992a32db54230ea92dc56f23fbce2978d2bd735f547d",
             "referenceProvided": false,
-            "stage": "retained_original_response"
+            "stage": "retained_original_response",
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "5d035c0017c5d45efd78a6f6a968514255580647b7d5b60dda156f93120e37e2",
+              "answeredInputContextSha256": "8c24878501f9c9ae05a5c2a638b1513e48238ea87298ffef4d6bbc0bd6520297",
+              "answeredInputPresentationSha256": "d12c24e2c09cba99c5af2bbfbe52333e30127f065a76a071feb0ac23824184ed",
+              "difference": "The model answered the same questions on a passage with transcription differences from the original paper (wording and punctuation listed in editorialRevision.replacements) and without some of the original marks. The decision does not depend on them.",
+              "evidence": "gk-bank-fix-20261126/REPORT.md"
+            }
           }
         }
       },
@@ -92333,13 +94075,246 @@
         "originalPublicationVerified": false,
         "officialRubricVerified": false,
         "notice": "依据当年新浪七张拼接题图校勘，不等同完整14物理页原卷。旧库混入的2005应用题保留旧入口及成绩，并明示真实来源；低清和水印遮蔽处仍有限制。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。"
+      },
+      "history": [
+        {
+          "source": {
+            "id": "2007-sanwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "湿湿的想念\n\n七十年前，爷爷沿着一条沅水，走出山外，走进那所无法毕业的人生学校，读那本未必都能看懂的大书。后来，因为肚子的困窘和头脑的困惑，他也写了许多本小书和大书，里面有许多很美的文字和用文字作的很美的画卷，这些文字与画托举的永远是一个沅水边形成的理想。\n\n七十年后，我第一次跑到湘西山地，寻到沅水的上游，寻找爷爷一生都离不开的故水故土。\n\n正值冬季，湘西竟还处处葱茏青翠，与北方都市的昏灰底色成鲜明对比。山还是那座山，湾依旧是那道湾，但桥已不是那座桥，房也不是那幢房，人是新人物，事是新故事了。凤凰城里风味独特的吊脚楼，也被速生的凤头砖瓦楼渐渐替代，这片土地已悄悄变了模样。\n\n看不到了，爷爷，你的印象或者只是你的梦想。你笔下的那种种传说、风情和神奇故事，我怎么想像它们曾经在这山地水域中发生过，流动过，辉煌过，闪耀过？而眼前这支清流，亦负载，亦推托，一点也不动声色。\n\n而我回到这里，并不是要寻找你七十年前的起点，有多少风景将永远不能回来，我只想读一读你的天地，这里有着无须刻意维护而能留存下去的东西。\n\n在水边长大、水边懂事，爷爷的第一所学校就是这条沅水。他在自传中说：“我感情流动而不凝固，一派清波给予我的影响实在不小。”“我幼小时较美丽的生活，大部分都同水不能分离。我的学校可以说是在水边的。我认识美，学会思索，水对我有极大的关系。”\n\n水给爷爷三样东西：\n\n水给了他想像力和自己的思索方式。爷爷认识字，是从私塾小学校开始，而他认识课本上无从写出的丰富人生，却是在校园外，在老街店铺，桥头渡口，水上人家……没有谁来教他，他用眼睛、耳朵和机敏的鼻子接受水边的光色、声音和气味给予一颗小小心灵的感觉，把各种事物的内容和意义在游戏中融会，丰富自己的想像，最终凝聚为他对生活对世界的独特思索。\n\n水给了他坚忍柔韧的性格。爷爷曾说过：“水的德性为兼容并包，从不排斥以不同方式浸入生命的任何离奇不经事物，却也从不受它的玷污影响。”水的性格似乎特别脆弱，且极容易就范。其实则柔弱中有强韧，如集中一点，即涓涓细流，滴水穿石，无坚不摧。水的性情品格，恰好是爷爷一生处世方式的写照。他是那么温和，又是那么倔，倔得从从容容。\n\n水激发他对人世怀抱虔诚的爱与希望。正如爷爷说过的那样：“水教给我黏合卑微人生的平凡哀乐，并做横海扬帆的美梦”，“美梦”中蕴含着他的人生热望。他执著地用自然的美，人性的美，古代文明的美编织朴实单纯的理想。虽然他不奢望以此取代社会理想，但是他热切地希望能为百病缠身的民族唤回一些健康的记忆、美好的梦想。\n\n爷爷曾说：“值得回忆的哀乐人事常是湿的。”此时我的眼睛也是湿的了，谁能体会他那种热情洋溢之中的忧虑，幽默后面的隐痛，微笑之间的悲凉，悲凉之外的深重的爱！很多年，我们和他一起生活，可是我们不懂。水边学校水边书，我是否来得太晚？\n\n尽管爷爷从二十岁起就离开了家乡，但这一片水土上的光辉，在爷爷生命中终生不灭。我记得爷爷最后的目光，默默地，停留在窗外的四季中，停留在过去的风景里。\n\n爷爷，有一天我要送你回来，轻轻地，回到你的土地，回到你的风景里。那风里雨里，透明的阳光里，透明的流水里，有我湿湿的想念，永远永远。\n\n（取材于沈红《湿湿的想念》）"
+              }
+            ],
+            "topic": "五、本大题共4小题，共18分。阅读《湿湿的想念》，完成18—21题。",
+            "annotation": "①本文中的“爷爷”指作家沈从文（1902—1988）。新浪2007年北京卷公开题目拼接图，已目视；不是完整14页原卷或考试机构出版链认证。 凤头砖瓦楼保留图中文字；“黏合”处水印重叠，按Gzy转录保留并标为待原卷辨清，未默改。",
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 3,
+                "id": "q3",
+                "text": "20．结合“湿”字在文章中的特定含义，说说为什么沈从文认为“值得回忆的哀乐人事常是湿的”？（6分）",
+                "score": 6
+              }
+            ]
+          },
+          "review": {
+            "id": "2007-sanwen:3",
+            "inputSha256": "5d035c0017c5d45efd78a6f6a968514255580647b7d5b60dda156f93120e37e2",
+            "inputContextSha256": "8c24878501f9c9ae05a5c2a638b1513e48238ea87298ffef4d6bbc0bd6520297",
+            "inputPresentationSha256": "d12c24e2c09cba99c5af2bbfbe52333e30127f065a76a071feb0ac23824184ed",
+            "status": "reviewed",
+            "kind": "open",
+            "correctOptions": [],
+            "explanation": "湿兼指水的气息与情感的浸润：童年水边生活、认识美与思索、文学想像和人生记忆紧连沅水；那些平凡哀乐又蕴含爱、忧虑、隐痛、悲凉，回想时引发深切感动和泪意。二义相通使值得回忆的人事有故乡与生命印记，也饱含感情，不只物理潮湿。两答可接受；常是并非所有回忆必然流泪，原第一答的记忆温度是解释而非原文引语。保留黏合待原卷辨清，不凭模型一致消除异文，原6分不变。\n\n【来源与评分边界】依据当年新浪七张拼接题图校勘，不等同完整14物理页原卷。旧库混入的2005应用题保留旧入口及成绩，并明示真实来源；低清和水印遮蔽处仍有限制。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。",
+            "reviewedBy": "codex-01a111d9-gpt-6-astra",
+            "reviewedAt": "2026-10-06T15:46:48.718Z",
+            "sources": [
+              {
+                "type": "retained_frozen_input",
+                "evidence": "root-2007-frozen-inputs.json",
+                "sha256": "8be6675c9ac98802f4483f93a4a377800321f6fb0fa01406cfdc265c7f4cf6be",
+                "sourcePublicationChainAccepted": false
+              },
+              {
+                "type": "publication_qualification",
+                "label": "依据当年新浪七张拼接题图校勘，不等同完整14物理页原卷。旧库混入的2005应用题保留旧入口及成绩，并明示真实来源；低清和水印遮蔽处仍有限制。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。",
+                "evidence": "SOURCE-QUALIFICATION-01a1139d.md"
+              }
+            ],
+            "modelAnswers": {
+              "gpt_6_astra_retained_d12c24e2c09c": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 原始完整作答（參考已暴露）",
+                "text": "湿首先联系着水：沈从文的美丽生活、对人生的认识和文学想像大都与沅水相连，值得追忆的人事常带着水乡的气息和生命印记。湿又联系着眼泪与浓厚情感：那些平凡人生的哀乐中，蕴含热情背后的忧虑、幽默后面的隐痛、微笑之间的悲凉，以及悲凉之外深重的爱；回忆它们时，人的心灵受到触动，眼睛也会湿润。因此湿把故乡之水、人生哀乐与真挚感情连在一起，写出了记忆的温度和深度，而不只是物理意义上的潮湿。",
+                "selectedOptions": [],
+                "generatedAt": "2026-10-03T14:16:04.257452+00:00",
+                "inputSha256": "5d035c0017c5d45efd78a6f6a968514255580647b7d5b60dda156f93120e37e2",
+                "inputContextSha256": "8c24878501f9c9ae05a5c2a638b1513e48238ea87298ffef4d6bbc0bd6520297",
+                "inputPresentationSha256": "d12c24e2c09cba99c5af2bbfbe52333e30127f065a76a071feb0ac23824184ed",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "root-2007-reading-drafts.json",
+                  "inputEvidence": "root-2007-frozen-inputs.json",
+                  "originalAuthorEvidence": "reference-exposure-2007-before-claude.json",
+                  "referenceExposed": true,
+                  "stage": "retained_original_response"
+                },
+                "notes": ""
+              },
+              "claude_opus_5_5_retained_d12c24e2c09c": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 原始完整作答",
+                "text": "“湿”在文中有两层特定含义：一是与“水”相关，指沅水以及水边的生活，是沈从文生命的源头；二是与“情”相关，指浸润着泪水的深厚情感，包括爱、忧虑、隐痛和悲凉。\n沈从文这样说的原因：①他最值得回忆的生活都与水分不开。他在水边长大、懂事，水是他的第一所学校，他认识美、学会思索都得益于水，所以记忆中的人和事带着水的气息。②水教他“黏合卑微人生的平凡哀乐”。水边普通人的悲欢让他对人世怀抱虔诚的爱与希望，这些人事最能打动人心，回忆起来饱含深情，令人动容落泪。③这些哀乐人事中寄托着他的理想，也有热情之中的忧虑、微笑之间的悲凉和深重的爱，情感复杂浓烈，因而是“湿”的。\n概括说，值得回忆的人事既浸润着故乡的水，又浸透着真挚深沉的感情，所以“常是湿的”。",
+                "selectedOptions": [],
+                "uncertainties": [],
+                "generatedAt": "2026-10-05T04:44:39.822461+00:00",
+                "inputSha256": "5d035c0017c5d45efd78a6f6a968514255580647b7d5b60dda156f93120e37e2",
+                "inputContextSha256": "8c24878501f9c9ae05a5c2a638b1513e48238ea87298ffef4d6bbc0bd6520297",
+                "inputPresentationSha256": "d12c24e2c09cba99c5af2bbfbe52333e30127f065a76a071feb0ac23824184ed",
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "p29-canonical-reading-08-result.json",
+                  "rawResultEvidence": "p29-canonical-reading-08-result.json",
+                  "inputEvidence": "p29-canonical-reading-08-job.json",
+                  "inputPromptSha256": "a326ff8a7fc54f6b07cb881725c34970d370ac67d49b9df5c3ee90fc430edd9a",
+                  "responseStreamSha256": "ecd6a0fc7fa8ebb1f4bf992a32db54230ea92dc56f23fbce2978d2bd735f547d",
+                  "referenceProvided": false,
+                  "stage": "retained_original_response"
+                }
+              }
+            },
+            "retainedFullInputReview": {
+              "at": "2026-10-06T15:42:10.732746+00:00",
+              "owner": "codex-01a111d9-gpt-6-astra",
+              "binding": {
+                "id": "2007-sanwen:3",
+                "inputSha256": "5d035c0017c5d45efd78a6f6a968514255580647b7d5b60dda156f93120e37e2",
+                "inputContextSha256": "8c24878501f9c9ae05a5c2a638b1513e48238ea87298ffef4d6bbc0bd6520297",
+                "inputPresentationSha256": "d12c24e2c09cba99c5af2bbfbe52333e30127f065a76a071feb0ac23824184ed",
+                "exactFrozenInputObjectSha256": "935809d82d80a20b7c1cd7834708994294708295e88f2363474c0248ba9272bd",
+                "ownAnswerFile": "root-2007-reading-drafts.json",
+                "ownAnswerFileSha256": "3a6b5f71fa634edadac4804a22361cd2e880c1983aa7d436b71df1b7f65a1453",
+                "fullAnswerSha256": "78e7e31597f5dec376468437e74c1805a5be688cc42287b12e94476614a2d1e9",
+                "originalAuthorEvidence": "reference-exposure-2007-before-claude.json",
+                "inputFile": "root-2007-frozen-inputs.json",
+                "inputFileSha256": "8be6675c9ac98802f4483f93a4a377800321f6fb0fa01406cfdc265c7f4cf6be",
+                "referenceProvidedToClaude": false,
+                "referenceExposure": "prior references exposed to own responder; source annotations may carry editorial context; no blind claim",
+                "imagePixelsProvided": false
+              },
+              "evidenceIndex": {
+                "file": "claude-read-intersection-canonical243-01a10b78.json",
+                "sha256": "f2c207a14ec2a069f9efe04695f4718a6fff5ccc54fa7da9e0b64125166af767"
+              },
+              "readEvidence": [
+                {
+                  "file": "claude-semantic20-canonical-batch08-01a10b78.json",
+                  "sha256": "4eb722d61343e8eabb2870a1fe7f5ff93b548154a6780036c34fbdbd466c54c0",
+                  "semanticDisposition": "open-answer-rationale-refinement",
+                  "semanticReviewNote": "两答湿扣故乡水滋养创作人格与思念泪水，联系复杂深情有据。Claude最值得回忆生活都与水分不开过于绝对，原文大部分/常须保留范围；不把黏合等疑似转录字据答案擅自规范。题源链未闭合仍待原页。"
+                }
+              ],
+              "addedVersions": [
+                "gpt_6_astra_retained_d12c24e2c09c",
+                "claude_opus_5_5_retained_d12c24e2c09c"
+              ],
+              "existingEquivalentVersions": [],
+              "sourcePublicationChainAccepted": false,
+              "scoringAccepted": false,
+              "finalAccepted": false,
+              "localSemanticAdjudication": {
+                "at": "2026-10-06T15:46:48.718Z",
+                "owner": "codex-01a111d9-gpt-6-astra",
+                "fullCurrentInputAndBothRepliesRead": true,
+                "allOptionsAndMarksRead": true,
+                "note": "湿兼指水的气息与情感的浸润：童年水边生活、认识美与思索、文学想像和人生记忆紧连沅水；那些平凡哀乐又蕴含爱、忧虑、隐痛、悲凉，回想时引发深切感动和泪意。二义相通使值得回忆的人事有故乡与生命印记，也饱含感情，不只物理潮湿。两答可接受；常是并非所有回忆必然流泪，原第一答的记忆温度是解释而非原文引语。保留黏合待原卷辨清，不凭模型一致消除异文，原6分不变。",
+                "sourcePublicationChainAccepted": false,
+                "scoringAccepted": false,
+                "originalScoreRewritten": false,
+                "finalAccepted": false
+              }
+            },
+            "currentVersion": "gpt_6_astra_retained_d12c24e2c09c",
+            "publicationQualification": {
+              "contract": "qualified-learning-reference-v1",
+              "sourceClass": "qualified_public_witness",
+              "originalPublicationVerified": false,
+              "officialRubricVerified": false,
+              "notice": "依据当年新浪七张拼接题图校勘，不等同完整14物理页原卷。旧库混入的2005应用题保留旧入口及成绩，并明示真实来源；低清和水印遮蔽处仍有限制。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。"
+            }
+          }
+        }
+      ],
+      "editorialRevision": {
+        "kind": "transcription_correction",
+        "version": "2007-sanwen:3-original-paper-20261126",
+        "at": "2026-11-26T03:00:00.000Z",
+        "owner": "claude-gk-bank-fix-20261126",
+        "replacements": [
+          {
+            "from": "七十年前，爷爷沿着一条沅水，走出山外，",
+            "to": "七十年前，爷爷①沿着一条沅水，走出大山，",
+            "note": "注①标在第一个“爷爷”上；原卷作走出大山"
+          },
+          {
+            "from": "我怎么想像它们",
+            "to": "我怎么想象它们",
+            "note": "原卷作想象"
+          },
+          {
+            "from": "而眼前这支清流",
+            "to": "而眼前的这支清流",
+            "note": "原卷有“的”"
+          },
+          {
+            "from": "实在不小。”“我幼小时",
+            "to": "实在不小。我幼小时",
+            "note": "原卷为一段连续引语"
+          },
+          {
+            "from": "水给了他想像力",
+            "to": "水给了他想象力",
+            "note": "原卷作想象"
+          },
+          {
+            "from": "在老街店铺，桥头渡口，水上人家",
+            "to": "在老街店铺、桥头渡口、水上人家",
+            "note": "原卷为顿号"
+          },
+          {
+            "from": "丰富自己的想像，",
+            "to": "丰富了自己的想象，",
+            "note": "原卷作丰富了自己的想象"
+          },
+          {
+            "from": "且极容易就范。其实则柔弱中有强韧，如集中一点，即涓涓细流，滴水穿石，",
+            "to": "且极容易就范；其实柔弱中有强韧，如集中一点，即使涓涓细流，也能滴水穿石，",
+            "note": "原卷文字"
+          },
+          {
+            "from": "并做横海扬帆的美梦”，“美梦”中",
+            "to": "并作横海扬帆的美梦。”“美梦”中",
+            "note": "原卷文字与标点"
+          },
+          {
+            "from": "自然的美，人性的美，古代文明的美",
+            "to": "自然的美、人性的美、古代文明的美",
+            "note": "原卷为顿号"
+          },
+          {
+            "from": "此时我的眼睛也是湿的了，谁能体会他那种热情",
+            "to": "此时我的眼睛也是湿的了。谁能体会他那热情",
+            "note": "原卷文字与标点"
+          }
+        ],
+        "topic": {
+          "from": "阅读《湿湿的想念》，完成18—21题。",
+          "to": "阅读下面的作品，完成18—21题。"
+        },
+        "marksAdded": [
+          {
+            "type": "underline",
+            "anchor": "值得回忆的哀乐人事常是湿的",
+            "in": "值得回忆的哀乐人事常是湿的"
+          }
+        ],
+        "previousInputPresentationSha256": "d12c24e2c09cba99c5af2bbfbe52333e30127f065a76a071feb0ac23824184ed",
+        "sourceEvidence": "Sina 2007-06-09 image https://edu.sina.com.cn/shiti/paper/16/84/8416/images/18-21.jpg (sha256 de0aa5024c04671a…, 469844 bytes), the image recorded by answers-six-sites-20261002",
+        "originalExamText": true,
+        "answerChanged": false,
+        "oldScoresRecalculated": false,
+        "modelCalls": 0,
+        "reason": "Checked word by word against the original paper. The bank had transcription differences and lacked marks the paper prints; text and marks now follow the paper. The reviewed key, explanation and model answers are kept and re-bound, with the answered input hashes recorded."
       }
     },
     {
       "id": "2007-sanwen:4",
-      "inputSha256": "b0e1d12717b30e52a8a7284ac3fb02e7fa09e97cd0891329459ed4f950b1dc27",
-      "inputContextSha256": "3f4065e1fef1663c3df9ba0f95acba3d0d646491e836ea73eb59b95148e129d4",
-      "inputPresentationSha256": "29a78fa838ada203b78e2c11139133ea68cf7c42db7e4a0ffe85a8cdf6988308",
+      "inputSha256": "c98d17c3df30540a70b715203a05fbad2debd3f71df309b47baf68718f301c69",
+      "inputContextSha256": "3f5a639d041d07cd1e3fc3f94f6edd2b413bc1f9b11eec42fb6e5a326049a760",
+      "inputPresentationSha256": "cb6e550885e4a530ffeefd261c134baafa8e982f8d0908ffe591660dc7f616e9",
       "status": "reviewed",
       "kind": "open",
       "correctOptions": [],
@@ -92366,16 +94341,24 @@
           "text": "生活了一辈子说的不是沈从文始终居住在沅水沿岸，而是这条河成为他终身精神生活的重要根源。童年水边的经历教他认识美、接触丰富人生，培养了想像力和独特的思索方式；水兼容并包、柔中有韧的品格又影响了他的处世性格。他后来写下的文字与画面始终托举着在沅水边形成的理想，对平凡人生怀有爱与希望。即使二十岁后离开家乡，这片水土的光辉仍照耀着他的生命，最后的目光也停留在过去的风景里。因此，空间上的离开并没有切断他与故乡水土的情感和精神联系。",
           "selectedOptions": [],
           "generatedAt": "2026-10-03T14:16:04.257452+00:00",
-          "inputSha256": "b0e1d12717b30e52a8a7284ac3fb02e7fa09e97cd0891329459ed4f950b1dc27",
-          "inputContextSha256": "3f4065e1fef1663c3df9ba0f95acba3d0d646491e836ea73eb59b95148e129d4",
-          "inputPresentationSha256": "29a78fa838ada203b78e2c11139133ea68cf7c42db7e4a0ffe85a8cdf6988308",
+          "inputSha256": "c98d17c3df30540a70b715203a05fbad2debd3f71df309b47baf68718f301c69",
+          "inputContextSha256": "3f5a639d041d07cd1e3fc3f94f6edd2b413bc1f9b11eec42fb6e5a326049a760",
+          "inputPresentationSha256": "cb6e550885e4a530ffeefd261c134baafa8e982f8d0908ffe591660dc7f616e9",
           "provenance": {
             "kind": "codex_turn",
             "evidence": "root-2007-reading-drafts.json",
             "inputEvidence": "root-2007-frozen-inputs.json",
             "originalAuthorEvidence": "reference-exposure-2007-before-claude.json",
             "referenceExposed": true,
-            "stage": "retained_original_response"
+            "stage": "retained_original_response",
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "b0e1d12717b30e52a8a7284ac3fb02e7fa09e97cd0891329459ed4f950b1dc27",
+              "answeredInputContextSha256": "3f4065e1fef1663c3df9ba0f95acba3d0d646491e836ea73eb59b95148e129d4",
+              "answeredInputPresentationSha256": "29a78fa838ada203b78e2c11139133ea68cf7c42db7e4a0ffe85a8cdf6988308",
+              "difference": "The model answered the same questions on a passage with transcription differences from the original paper (wording and punctuation listed in editorialRevision.replacements) and without some of the original marks. The decision does not depend on them.",
+              "evidence": "gk-bank-fix-20261126/REPORT.md"
+            }
           },
           "notes": ""
         },
@@ -92386,9 +94369,9 @@
           "selectedOptions": [],
           "uncertainties": [],
           "generatedAt": "2026-10-05T04:44:39.822461+00:00",
-          "inputSha256": "b0e1d12717b30e52a8a7284ac3fb02e7fa09e97cd0891329459ed4f950b1dc27",
-          "inputContextSha256": "3f4065e1fef1663c3df9ba0f95acba3d0d646491e836ea73eb59b95148e129d4",
-          "inputPresentationSha256": "29a78fa838ada203b78e2c11139133ea68cf7c42db7e4a0ffe85a8cdf6988308",
+          "inputSha256": "c98d17c3df30540a70b715203a05fbad2debd3f71df309b47baf68718f301c69",
+          "inputContextSha256": "3f5a639d041d07cd1e3fc3f94f6edd2b413bc1f9b11eec42fb6e5a326049a760",
+          "inputPresentationSha256": "cb6e550885e4a530ffeefd261c134baafa8e982f8d0908ffe591660dc7f616e9",
           "provenance": {
             "kind": "cli_response",
             "responseModel": "claude-opus-5-5",
@@ -92398,7 +94381,15 @@
             "inputPromptSha256": "a326ff8a7fc54f6b07cb881725c34970d370ac67d49b9df5c3ee90fc430edd9a",
             "responseStreamSha256": "ecd6a0fc7fa8ebb1f4bf992a32db54230ea92dc56f23fbce2978d2bd735f547d",
             "referenceProvided": false,
-            "stage": "retained_original_response"
+            "stage": "retained_original_response",
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "b0e1d12717b30e52a8a7284ac3fb02e7fa09e97cd0891329459ed4f950b1dc27",
+              "answeredInputContextSha256": "3f4065e1fef1663c3df9ba0f95acba3d0d646491e836ea73eb59b95148e129d4",
+              "answeredInputPresentationSha256": "29a78fa838ada203b78e2c11139133ea68cf7c42db7e4a0ffe85a8cdf6988308",
+              "difference": "The model answered the same questions on a passage with transcription differences from the original paper (wording and punctuation listed in editorialRevision.replacements) and without some of the original marks. The decision does not depend on them.",
+              "evidence": "gk-bank-fix-20261126/REPORT.md"
+            }
           }
         }
       },
@@ -92460,6 +94451,233 @@
         "originalPublicationVerified": false,
         "officialRubricVerified": false,
         "notice": "依据当年新浪七张拼接题图校勘，不等同完整14物理页原卷。旧库混入的2005应用题保留旧入口及成绩，并明示真实来源；低清和水印遮蔽处仍有限制。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。"
+      },
+      "history": [
+        {
+          "source": {
+            "id": "2007-sanwen",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "材料1",
+                "text": "湿湿的想念\n\n七十年前，爷爷沿着一条沅水，走出山外，走进那所无法毕业的人生学校，读那本未必都能看懂的大书。后来，因为肚子的困窘和头脑的困惑，他也写了许多本小书和大书，里面有许多很美的文字和用文字作的很美的画卷，这些文字与画托举的永远是一个沅水边形成的理想。\n\n七十年后，我第一次跑到湘西山地，寻到沅水的上游，寻找爷爷一生都离不开的故水故土。\n\n正值冬季，湘西竟还处处葱茏青翠，与北方都市的昏灰底色成鲜明对比。山还是那座山，湾依旧是那道湾，但桥已不是那座桥，房也不是那幢房，人是新人物，事是新故事了。凤凰城里风味独特的吊脚楼，也被速生的凤头砖瓦楼渐渐替代，这片土地已悄悄变了模样。\n\n看不到了，爷爷，你的印象或者只是你的梦想。你笔下的那种种传说、风情和神奇故事，我怎么想像它们曾经在这山地水域中发生过，流动过，辉煌过，闪耀过？而眼前这支清流，亦负载，亦推托，一点也不动声色。\n\n而我回到这里，并不是要寻找你七十年前的起点，有多少风景将永远不能回来，我只想读一读你的天地，这里有着无须刻意维护而能留存下去的东西。\n\n在水边长大、水边懂事，爷爷的第一所学校就是这条沅水。他在自传中说：“我感情流动而不凝固，一派清波给予我的影响实在不小。”“我幼小时较美丽的生活，大部分都同水不能分离。我的学校可以说是在水边的。我认识美，学会思索，水对我有极大的关系。”\n\n水给爷爷三样东西：\n\n水给了他想像力和自己的思索方式。爷爷认识字，是从私塾小学校开始，而他认识课本上无从写出的丰富人生，却是在校园外，在老街店铺，桥头渡口，水上人家……没有谁来教他，他用眼睛、耳朵和机敏的鼻子接受水边的光色、声音和气味给予一颗小小心灵的感觉，把各种事物的内容和意义在游戏中融会，丰富自己的想像，最终凝聚为他对生活对世界的独特思索。\n\n水给了他坚忍柔韧的性格。爷爷曾说过：“水的德性为兼容并包，从不排斥以不同方式浸入生命的任何离奇不经事物，却也从不受它的玷污影响。”水的性格似乎特别脆弱，且极容易就范。其实则柔弱中有强韧，如集中一点，即涓涓细流，滴水穿石，无坚不摧。水的性情品格，恰好是爷爷一生处世方式的写照。他是那么温和，又是那么倔，倔得从从容容。\n\n水激发他对人世怀抱虔诚的爱与希望。正如爷爷说过的那样：“水教给我黏合卑微人生的平凡哀乐，并做横海扬帆的美梦”，“美梦”中蕴含着他的人生热望。他执著地用自然的美，人性的美，古代文明的美编织朴实单纯的理想。虽然他不奢望以此取代社会理想，但是他热切地希望能为百病缠身的民族唤回一些健康的记忆、美好的梦想。\n\n爷爷曾说：“值得回忆的哀乐人事常是湿的。”此时我的眼睛也是湿的了，谁能体会他那种热情洋溢之中的忧虑，幽默后面的隐痛，微笑之间的悲凉，悲凉之外的深重的爱！很多年，我们和他一起生活，可是我们不懂。水边学校水边书，我是否来得太晚？\n\n尽管爷爷从二十岁起就离开了家乡，但这一片水土上的光辉，在爷爷生命中终生不灭。我记得爷爷最后的目光，默默地，停留在窗外的四季中，停留在过去的风景里。\n\n爷爷，有一天我要送你回来，轻轻地，回到你的土地，回到你的风景里。那风里雨里，透明的阳光里，透明的流水里，有我湿湿的想念，永远永远。\n\n（取材于沈红《湿湿的想念》）"
+              }
+            ],
+            "topic": "五、本大题共4小题，共18分。阅读《湿湿的想念》，完成18—21题。",
+            "annotation": "①本文中的“爷爷”指作家沈从文（1902—1988）。新浪2007年北京卷公开题目拼接图，已目视；不是完整14页原卷或考试机构出版链认证。 凤头砖瓦楼保留图中文字；“黏合”处水印重叠，按Gzy转录保留并标为待原卷辨清，未默改。",
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 4,
+                "id": "q4",
+                "text": "21．沈从文从二十岁起就离开了家乡，有位评论家却说“沈从文在一条长达千里的沅水上生活了一辈子”。结合本文，谈谈你对这种说法的理解。（4分）",
+                "score": 4
+              }
+            ]
+          },
+          "review": {
+            "id": "2007-sanwen:4",
+            "inputSha256": "b0e1d12717b30e52a8a7284ac3fb02e7fa09e97cd0891329459ed4f950b1dc27",
+            "inputContextSha256": "3f4065e1fef1663c3df9ba0f95acba3d0d646491e836ea73eb59b95148e129d4",
+            "inputPresentationSha256": "29a78fa838ada203b78e2c11139133ea68cf7c42db7e4a0ffe85a8cdf6988308",
+            "status": "reviewed",
+            "kind": "open",
+            "correctOptions": [],
+            "explanation": "在沅水上生活一辈子是精神、情感和创作的比喻，不是连续居住。沅水作第一所学校，形成想像和思索方式、柔韧兼容的性格、爱与希望；离乡后的作品仍托举沅水边理想，直到最后目光仍留恋过去风景，故空间离开未切断精神根源。两完整原答分别从成长、创作、情感论证，均有文本支撑；不补造题中未具名评论家的身份或原出处。原4分不改，合理组织方式均可。\n\n【来源与评分边界】依据当年新浪七张拼接题图校勘，不等同完整14物理页原卷。旧库混入的2005应用题保留旧入口及成绩，并明示真实来源；低清和水印遮蔽处仍有限制。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。",
+            "reviewedBy": "codex-01a111d9-gpt-6-astra",
+            "reviewedAt": "2026-10-06T15:46:48.718Z",
+            "sources": [
+              {
+                "type": "retained_frozen_input",
+                "evidence": "root-2007-frozen-inputs.json",
+                "sha256": "8be6675c9ac98802f4483f93a4a377800321f6fb0fa01406cfdc265c7f4cf6be",
+                "sourcePublicationChainAccepted": false
+              },
+              {
+                "type": "publication_qualification",
+                "label": "依据当年新浪七张拼接题图校勘，不等同完整14物理页原卷。旧库混入的2005应用题保留旧入口及成绩，并明示真实来源；低清和水印遮蔽处仍有限制。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。",
+                "evidence": "SOURCE-QUALIFICATION-01a1139d.md"
+              }
+            ],
+            "modelAnswers": {
+              "gpt_6_astra_retained_29a78fa838ad": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 原始完整作答（參考已暴露）",
+                "text": "生活了一辈子说的不是沈从文始终居住在沅水沿岸，而是这条河成为他终身精神生活的重要根源。童年水边的经历教他认识美、接触丰富人生，培养了想像力和独特的思索方式；水兼容并包、柔中有韧的品格又影响了他的处世性格。他后来写下的文字与画面始终托举着在沅水边形成的理想，对平凡人生怀有爱与希望。即使二十岁后离开家乡，这片水土的光辉仍照耀着他的生命，最后的目光也停留在过去的风景里。因此，空间上的离开并没有切断他与故乡水土的情感和精神联系。",
+                "selectedOptions": [],
+                "generatedAt": "2026-10-03T14:16:04.257452+00:00",
+                "inputSha256": "b0e1d12717b30e52a8a7284ac3fb02e7fa09e97cd0891329459ed4f950b1dc27",
+                "inputContextSha256": "3f4065e1fef1663c3df9ba0f95acba3d0d646491e836ea73eb59b95148e129d4",
+                "inputPresentationSha256": "29a78fa838ada203b78e2c11139133ea68cf7c42db7e4a0ffe85a8cdf6988308",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "root-2007-reading-drafts.json",
+                  "inputEvidence": "root-2007-frozen-inputs.json",
+                  "originalAuthorEvidence": "reference-exposure-2007-before-claude.json",
+                  "referenceExposed": true,
+                  "stage": "retained_original_response"
+                },
+                "notes": ""
+              },
+              "claude_opus_5_5_retained_29a78fa838ad": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 原始完整作答",
+                "text": "这种说法是从精神和创作的意义上说的，并非指实际居住。①从成长看，沅水是他的“第一所学校”，给了他想像力和独特的思索方式、坚忍柔韧的性格、对人世虔诚的爱与希望，这些影响伴随他一生，“这一片水土上的光辉，在爷爷生命中终生不灭”。②从创作看，他的文字和用文字作的画卷，托举的始终是在沅水边形成的理想，笔下写的是这片水土上的传说、风情和人事，他的文学世界一直安放在沅水上。③从情感看，他虽二十岁离乡，却一生离不开“故水故土”，直到生命最后，目光仍“停留在过去的风景里”。所以他身在异乡，心灵、情感和创作却从未离开沅水，可以说在沅水上生活了一辈子。",
+                "selectedOptions": [],
+                "uncertainties": [],
+                "generatedAt": "2026-10-05T04:44:39.822461+00:00",
+                "inputSha256": "b0e1d12717b30e52a8a7284ac3fb02e7fa09e97cd0891329459ed4f950b1dc27",
+                "inputContextSha256": "3f4065e1fef1663c3df9ba0f95acba3d0d646491e836ea73eb59b95148e129d4",
+                "inputPresentationSha256": "29a78fa838ada203b78e2c11139133ea68cf7c42db7e4a0ffe85a8cdf6988308",
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "p29-canonical-reading-08-result.json",
+                  "rawResultEvidence": "p29-canonical-reading-08-result.json",
+                  "inputEvidence": "p29-canonical-reading-08-job.json",
+                  "inputPromptSha256": "a326ff8a7fc54f6b07cb881725c34970d370ac67d49b9df5c3ee90fc430edd9a",
+                  "responseStreamSha256": "ecd6a0fc7fa8ebb1f4bf992a32db54230ea92dc56f23fbce2978d2bd735f547d",
+                  "referenceProvided": false,
+                  "stage": "retained_original_response"
+                }
+              }
+            },
+            "retainedFullInputReview": {
+              "at": "2026-10-06T15:42:10.732746+00:00",
+              "owner": "codex-01a111d9-gpt-6-astra",
+              "binding": {
+                "id": "2007-sanwen:4",
+                "inputSha256": "b0e1d12717b30e52a8a7284ac3fb02e7fa09e97cd0891329459ed4f950b1dc27",
+                "inputContextSha256": "3f4065e1fef1663c3df9ba0f95acba3d0d646491e836ea73eb59b95148e129d4",
+                "inputPresentationSha256": "29a78fa838ada203b78e2c11139133ea68cf7c42db7e4a0ffe85a8cdf6988308",
+                "exactFrozenInputObjectSha256": "bcb2ae35240ed89504da1fbfa5a671fb726005eaa68435addd6988587fee80d5",
+                "ownAnswerFile": "root-2007-reading-drafts.json",
+                "ownAnswerFileSha256": "3a6b5f71fa634edadac4804a22361cd2e880c1983aa7d436b71df1b7f65a1453",
+                "fullAnswerSha256": "fa2fd927008eda3c20345475e6d0e2ac334840f84ed5d2cd41e0326aaffe2875",
+                "originalAuthorEvidence": "reference-exposure-2007-before-claude.json",
+                "inputFile": "root-2007-frozen-inputs.json",
+                "inputFileSha256": "8be6675c9ac98802f4483f93a4a377800321f6fb0fa01406cfdc265c7f4cf6be",
+                "referenceProvidedToClaude": false,
+                "referenceExposure": "prior references exposed to own responder; source annotations may carry editorial context; no blind claim",
+                "imagePixelsProvided": false
+              },
+              "evidenceIndex": {
+                "file": "claude-read-intersection-canonical243-01a10b78.json",
+                "sha256": "f2c207a14ec2a069f9efe04695f4718a6fff5ccc54fa7da9e0b64125166af767"
+              },
+              "readEvidence": [
+                {
+                  "file": "claude-semantic20-canonical-batch08-01a10b78.json",
+                  "sha256": "4eb722d61343e8eabb2870a1fe7f5ff93b548154a6780036c34fbdbd466c54c0",
+                  "semanticDisposition": "open-answer-content-reviewed",
+                  "semanticReviewNote": "两答一辈子沅水是故乡水长久浸润情感精神创作，不指始终实际居住；水给予想像思索、坚忍柔韧、爱与希望可分别回扣文句。文学概括不推出每篇作品都取材此水或额外地理史实。"
+                }
+              ],
+              "addedVersions": [
+                "gpt_6_astra_retained_29a78fa838ad",
+                "claude_opus_5_5_retained_29a78fa838ad"
+              ],
+              "existingEquivalentVersions": [],
+              "sourcePublicationChainAccepted": false,
+              "scoringAccepted": false,
+              "finalAccepted": false,
+              "localSemanticAdjudication": {
+                "at": "2026-10-06T15:46:48.718Z",
+                "owner": "codex-01a111d9-gpt-6-astra",
+                "fullCurrentInputAndBothRepliesRead": true,
+                "allOptionsAndMarksRead": true,
+                "note": "在沅水上生活一辈子是精神、情感和创作的比喻，不是连续居住。沅水作第一所学校，形成想像和思索方式、柔韧兼容的性格、爱与希望；离乡后的作品仍托举沅水边理想，直到最后目光仍留恋过去风景，故空间离开未切断精神根源。两完整原答分别从成长、创作、情感论证，均有文本支撑；不补造题中未具名评论家的身份或原出处。原4分不改，合理组织方式均可。",
+                "sourcePublicationChainAccepted": false,
+                "scoringAccepted": false,
+                "originalScoreRewritten": false,
+                "finalAccepted": false
+              }
+            },
+            "currentVersion": "gpt_6_astra_retained_29a78fa838ad",
+            "publicationQualification": {
+              "contract": "qualified-learning-reference-v1",
+              "sourceClass": "qualified_public_witness",
+              "originalPublicationVerified": false,
+              "officialRubricVerified": false,
+              "notice": "依据当年新浪七张拼接题图校勘，不等同完整14物理页原卷。旧库混入的2005应用题保留旧入口及成绩，并明示真实来源；低清和水印遮蔽处仍有限制。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。"
+            }
+          }
+        }
+      ],
+      "editorialRevision": {
+        "kind": "transcription_correction",
+        "version": "2007-sanwen:4-original-paper-20261126",
+        "at": "2026-11-26T03:00:00.000Z",
+        "owner": "claude-gk-bank-fix-20261126",
+        "replacements": [
+          {
+            "from": "七十年前，爷爷沿着一条沅水，走出山外，",
+            "to": "七十年前，爷爷①沿着一条沅水，走出大山，",
+            "note": "注①标在第一个“爷爷”上；原卷作走出大山"
+          },
+          {
+            "from": "我怎么想像它们",
+            "to": "我怎么想象它们",
+            "note": "原卷作想象"
+          },
+          {
+            "from": "而眼前这支清流",
+            "to": "而眼前的这支清流",
+            "note": "原卷有“的”"
+          },
+          {
+            "from": "实在不小。”“我幼小时",
+            "to": "实在不小。我幼小时",
+            "note": "原卷为一段连续引语"
+          },
+          {
+            "from": "水给了他想像力",
+            "to": "水给了他想象力",
+            "note": "原卷作想象"
+          },
+          {
+            "from": "在老街店铺，桥头渡口，水上人家",
+            "to": "在老街店铺、桥头渡口、水上人家",
+            "note": "原卷为顿号"
+          },
+          {
+            "from": "丰富自己的想像，",
+            "to": "丰富了自己的想象，",
+            "note": "原卷作丰富了自己的想象"
+          },
+          {
+            "from": "且极容易就范。其实则柔弱中有强韧，如集中一点，即涓涓细流，滴水穿石，",
+            "to": "且极容易就范；其实柔弱中有强韧，如集中一点，即使涓涓细流，也能滴水穿石，",
+            "note": "原卷文字"
+          },
+          {
+            "from": "并做横海扬帆的美梦”，“美梦”中",
+            "to": "并作横海扬帆的美梦。”“美梦”中",
+            "note": "原卷文字与标点"
+          },
+          {
+            "from": "自然的美，人性的美，古代文明的美",
+            "to": "自然的美、人性的美、古代文明的美",
+            "note": "原卷为顿号"
+          },
+          {
+            "from": "此时我的眼睛也是湿的了，谁能体会他那种热情",
+            "to": "此时我的眼睛也是湿的了。谁能体会他那热情",
+            "note": "原卷文字与标点"
+          }
+        ],
+        "topic": {
+          "from": "阅读《湿湿的想念》，完成18—21题。",
+          "to": "阅读下面的作品，完成18—21题。"
+        },
+        "marksAdded": [],
+        "previousInputPresentationSha256": "29a78fa838ada203b78e2c11139133ea68cf7c42db7e4a0ffe85a8cdf6988308",
+        "sourceEvidence": "Sina 2007-06-09 image https://edu.sina.com.cn/shiti/paper/16/84/8416/images/18-21.jpg (sha256 de0aa5024c04671a…, 469844 bytes), the image recorded by answers-six-sites-20261002",
+        "originalExamText": true,
+        "answerChanged": false,
+        "oldScoresRecalculated": false,
+        "modelCalls": 0,
+        "reason": "Checked word by word against the original paper. The bank had transcription differences and lacked marks the paper prints; text and marks now follow the paper. The reviewed key, explanation and model answers are kept and re-bound, with the answered input hashes recorded."
       }
     },
     {
@@ -94610,7 +96828,7 @@
           "2025-yuyanjichu"
         ],
         "questionCount": 640,
-        "currentBindingsSha256": "aa61cb0f1cb70aafb7f179f4916f36c59012c5417d3e5b2abe650b9b96a10b48",
+        "currentBindingsSha256": "6e6cf52f3aee83a842e5af1f2068cd3b46bf573a23385df41918a6fe6d695a5c",
         "resolvedForPractice": [
           "当前完整题面、标记、当前答案及两实际模型输入证据逐项匹配。",
           "补录与错年旧入口保留明确身份、原分与历史；练习规则与原始记录分离。",
@@ -94878,7 +97096,7 @@
           "2025-yuyanjichu"
         ],
         "questionCount": 640,
-        "currentBindingsSha256": "aa61cb0f1cb70aafb7f179f4916f36c59012c5417d3e5b2abe650b9b96a10b48",
+        "currentBindingsSha256": "6e6cf52f3aee83a842e5af1f2068cd3b46bf573a23385df41918a6fe6d695a5c",
         "resolvedForPractice": [
           "当前完整题面、标记、当前答案及两实际模型输入证据逐项匹配。",
           "补录与错年旧入口保留明确身份、原分与历史；练习规则与原始记录分离。",
@@ -95205,7 +97423,7 @@
           "2025-yuyanjichu"
         ],
         "questionCount": 640,
-        "currentBindingsSha256": "aa61cb0f1cb70aafb7f179f4916f36c59012c5417d3e5b2abe650b9b96a10b48",
+        "currentBindingsSha256": "6e6cf52f3aee83a842e5af1f2068cd3b46bf573a23385df41918a6fe6d695a5c",
         "resolvedForPractice": [
           "当前完整题面、标记、当前答案及两实际模型输入证据逐项匹配。",
           "补录与错年旧入口保留明确身份、原分与历史；练习规则与原始记录分离。",
@@ -96231,7 +98449,7 @@
           "2007-yuyan-tourism"
         ],
         "questionCount": 30,
-        "currentBindingsSha256": "3955ce3114531c2a64fa2a745a1acd8b0cab8b8d9838ff583df16045a0d26407",
+        "currentBindingsSha256": "0cb0743e32c62aa58972813dc45426b100fb2d6ff539aa35de17e9682cf04997",
         "resolvedForPractice": [
           "当前完整题面、标记、当前答案及两实际模型输入证据逐项匹配。",
           "补录与错年旧入口保留明确身份、原分与历史；练习规则与原始记录分离。",
