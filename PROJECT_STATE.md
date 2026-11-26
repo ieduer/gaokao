@@ -1,3 +1,11 @@
+## 2026-11-26 accepted: 2026-guwen and 2007-sanwen per the original papers, content version `2e3c5cb4…` (gk-bank-fix-20261126)
+
+- Source `2fbe763` on `main`, Pages deployment `b8e08f0c-d8e6-4b1e-bc91-64c8aaa23fd0`, effective 2026-11-26T03:06:11Z, accepted 03:08:07Z.
+- 2026-guwen: 浔水城 and 侃不从。既至 (the 09-19 浔→浮 change was wrong), plus twelve passage dots. 2007-sanwen: eleven readings, note mark ①, instruction, underline for question 20. Keys, scores, question texts and model answers unchanged; old inputs in history. 7aeb, efa9 and 6cbd still served.
+- Consumers: gwyw `f19f804` / `0f48e6c7` and gksw `de81642` / `4aa5d1c5` moved to `2e3c5cb4` (accepted). gks: own transaction with the User Center chain (separate session).
+- Rollback order: consumers first (gwyw `f6acf50a`, gksw `1ce39315`, gks per its report), then GK Pages `0d556bb2` (source `d70a09b`).
+- Status: https://status.bdfz.net/?update=20261126-gk-original-paper-2026-guwen-2007-sanwen&revision=1 . Report: `_meta/reports/operations/gk-bank-fix-20261126/REPORT.md`.
+
 ## 2026-11-25 accepted: print edition, per-year PDFs for signed-in readers (gk-print-pdf-20261125)
 
 - Source `0c20b79` on `main`, Pages deployment `2e9da63e-8386-4d57-ada0-db6ee3438607`, effective 2026-11-25T12:08:18Z, accepted 12:12:11Z. Rollback: Pages rollback to `d53435bd` (source `89027d1`).
@@ -5,7 +13,7 @@
 - Sources `print/src/<year>.txt` are bound to the bank (`bind=`); a bank change under a printed section fails the build until that section is proofread again and the year re-printed (`print/README.md`, docs/OPERATIONS.md "Print edition").
 - Status: https://status.bdfz.net/?update=20261125-gk-print-edition&revision=1 . Report: `_meta/reports/operations/gk-print-pdf-20261125/REPORT.md`.
 - Resolved 2026-11-25 (gk-print-notes-20261125, source `3badc03`, Pages `12e8c6f2`, effective 13:00:47Z; rollback `2e9da63e`): every added section heading now carries a `%%` provenance note; the source digest covers printed lines only, so the 25 sealed PDFs stayed byte-identical. The two unprinted todos were settled on 2026-11-25 against the original papers (gk-print-marks-20261125, source `d70a09b`, Pages `0d556bb2`, effective 23:51:06Z, rollback `12e8c6f2`; Status 20261125-gk-print-2007-2026-correction).
-- Open (shared bank, not changed): 2026-guwen reads 浮水城 and 侃不从，既至 where the original has 浔水城 and 侃不从。既至; 2007-sanwen follows a later reprint in 13 places and lacks the underline and the note mark (details in `_meta/reports/operations/gk-print-marks-20261125/REPORT.md`). The print edition already follows the originals.
+- Resolved 2026-11-26 (gk-bank-fix-20261126): the shared bank now follows the original papers for 2026-guwen and 2007-sanwen.
 
 ## 2026-11-22 accepted: 2022-feilian:3 option A label (gk-feilian-option-a-20261122)
 

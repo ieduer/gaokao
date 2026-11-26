@@ -1,5 +1,7 @@
 ## 2026-11-26 — 2026-guwen and 2007-sanwen checked against the original papers, content version `2e3c5cb4…` (gk-bank-fix-20261126)
 
+Accepted 2026-11-26: source `2fbe763`, Pages deployment `b8e08f0c-d8e6-4b1e-bc91-64c8aaa23fd0`, effective 03:06:11Z, accepted 03:08:07Z. Consumers moved: gwyw `f19f804` (Worker `cacb3520` / deployment `0f48e6c7`, effective 03:22Z) and gksw `de81642` (Worker `435888fe` / deployment `4aa5d1c5`, effective 03:21Z); gks moves in its own transaction (User Center chain). Rollback order: gwyw → `f6acf50a`, gksw → `1ce39315`, gks back to its predecessor, then GK Pages `0d556bb2`. Status: https://status.bdfz.net/?update=20261126-gk-original-paper-2026-guwen-2007-sanwen&revision=1 .
+
 Owner request (suen, 2026-11-26): 「修正共用題庫」 after the print edition found these differences. Release state, consumer moves and rollback are recorded in `_meta/reports/operations/gk-bank-fix-20261126/REPORT.md`.
 
 - **Evidence**: 2026 — the GKS original scan (`sites/exam/gks/output/evidence/beijing/2026/chinese-20260815/source-mixed-order.pdf`, sha256 `486b6c54…`, exam pages 3–4), with a side-by-side glyph check against 「引白浮泉水」 on exam page 9. 2007 — Sina's 2007-06-09 image of questions 18–21 (`edu.sina.com.cn/shiti/paper/16/84/8416/images/18-21.jpg`, sha256 `de0aa502…`).
