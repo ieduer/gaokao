@@ -4,7 +4,8 @@
 - Header 「打印版」 lists 25 proofread A4 PDFs (2002–2026, 304 pages); `/papers/<year>.pdf` is served only after User Center confirms the session. PDFs are committed sealed (`papers/<year>.pdf.enc`, AES-256-GCM); the key is the Pages production secret `PRINT_PAPERS_KEY` (private store `GK_PRINT_PAPERS_KEY`).
 - Sources `print/src/<year>.txt` are bound to the bank (`bind=`); a bank change under a printed section fails the build until that section is proofread again and the year re-printed (`print/README.md`, docs/OPERATIONS.md "Print edition").
 - Status: https://status.bdfz.net/?update=20261125-gk-print-edition&revision=1 . Report: `_meta/reports/operations/gk-print-pdf-20261125/REPORT.md`.
-- Resolved 2026-11-25 (gk-print-notes-20261125, source `3badc03`, Pages `12e8c6f2`, effective 13:00:47Z; rollback `2e9da63e`): every added section heading now carries a `%%` provenance note; the source digest covers printed lines only, so the 25 sealed PDFs stayed byte-identical. Unprinted todos remain: 2007 散文 note ① position, 2026 文言 Q6/Q7 passage dots.
+- Resolved 2026-11-25 (gk-print-notes-20261125, source `3badc03`, Pages `12e8c6f2`, effective 13:00:47Z; rollback `2e9da63e`): every added section heading now carries a `%%` provenance note; the source digest covers printed lines only, so the 25 sealed PDFs stayed byte-identical. The two unprinted todos were settled on 2026-11-25 against the original papers (gk-print-marks-20261125, source `d70a09b`, Pages `0d556bb2`, effective 23:51:06Z, rollback `12e8c6f2`; Status 20261125-gk-print-2007-2026-correction).
+- Open (shared bank, not changed): 2026-guwen reads 浮水城 and 侃不从，既至 where the original has 浔水城 and 侃不从。既至; 2007-sanwen follows a later reprint in 13 places and lacks the underline and the note mark (details in `_meta/reports/operations/gk-print-marks-20261125/REPORT.md`). The print edition already follows the originals.
 
 ## 2026-11-22 accepted: 2022-feilian:3 option A label (gk-feilian-option-a-20261122)
 
