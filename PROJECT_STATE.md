@@ -1,3 +1,12 @@
+## 2026-11-27 accepted: 2026 questions 14 and 15 headings and sub-question scores per the original paper, content version `2f1b25eb…` (gks-gk-2026-score-headings-20261127)
+
+- Source `f2b9205` on `main`, Pages deployment `a778ef44-d7df-42d3-88f2-213fb8b81455`, effective 2026-11-27T15:08:14Z, accepted 15:10:30Z.
+- 2026-moxie （共8分）; 2026-honglou （共10分） with （6分）（4分） and the practice guide 6+4 of the unchanged 10. Keys, explanations and model answers unchanged; old inputs in history. 7aeb, efa9, 6cbd and 2e3c still served; default 7aeb. 2026 print edition reprinted.
+- Consumers: gks `54ac4bc` / `e18c79d7` (accepted, with User Center `a3e88b6`); flx, gwyw, yyjc, gksw, shi unchanged (they do not read these records).
+- Rollback order: gks chain first (its report), then GK Pages `b8e08f0c` (source `2fbe763`).
+- Status: https://status.bdfz.net/?update=20261127-gk-2026-score-headings&revision=1 . Report: `/Users/ylsuen/CF/_meta/reports/operations/gks-gk-2026-score-headings-20261127/REPORT.md`.
+- Open (outside this bank): hlm.bdfz.net's hand-written copy of question 15 lacks （6分）（4分）.
+
 ## 2026-11-26 accepted: 2026-guwen and 2007-sanwen per the original papers, content version `2e3c5cb4…` (gk-bank-fix-20261126)
 
 - Source `2fbe763` on `main`, Pages deployment `b8e08f0c-d8e6-4b1e-bc91-64c8aaa23fd0`, effective 2026-11-26T03:06:11Z, accepted 03:08:07Z.

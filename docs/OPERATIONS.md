@@ -1,3 +1,17 @@
+## 2026-11-27 — 2026 questions 14 and 15: headings and sub-question scores per the original paper, content version `2f1b25eb…` (gks-gk-2026-score-headings-20261127)
+
+Accepted 2026-11-27: source `f2b9205`, Pages deployment `a778ef44-d7df-42d3-88f2-213fb8b81455`, effective 15:08:14Z, accepted 15:10:30Z. The only consumer of `2026-moxie` and `2026-honglou` is gks, which moved in its own transaction (second one-time transcription correction, migration 0012, D1 batch 15:17:45Z) with the User Center chain; flx, gwyw, yyjc, gksw and shi were checked unchanged by the production hydration. Rollback order: gks chain first (User Center transitional, gks transitional, reverse batch, gks `963d092f`, User Center `e350cb01`), then GK Pages `b8e08f0c` (source `2fbe763`). Status: https://status.bdfz.net/?update=20261127-gk-2026-score-headings&revision=1 .
+
+Owner approval (suen, 2026-11-27, "Approve as planned" on the plan in the report below): questions 14 and 15 together; question 15 also gets the practice guide （1）6 + （2）4 of the unchanged 10.
+
+- **Evidence**: the GKS original scan (`sites/exam/gks/output/evidence/beijing/2026/chinese-20260815/source-mixed-order.pdf`, sha256 `486b6c54…`), page 2 (headings) and the question-15 crop (exam page 6, （6分）（4分）).
+- **Change**: `2026-moxie` topic （8分） → （共8分）; `2026-honglou` topic （10分） → （共10分）, question text gains （6分） and （4分）, `questionParts` re-measured; both reviews re-bound as `transcription_correction` (keys, explanations and model answers unchanged, old inputs in history); `2026-honglou:1` gains `practiceScoring` (`component_feedback`, total 10, legacyScore 10).
+- **Versions**: `2e3c5cb4` archived and still served; the shared client pins 7aeb, efa9, 6cbd, 2e3c and 2f1b; the default stays `7aeb`.
+- **Print**: `print/src/2026.txt` follows (answer lines 6 and 4 by score), the 2026 PDF is reprinted and sealed with the same key; the recorded font instances reproduce with fonttools 4.63.0 (`print/README.md`). Signed-in download readback: 702,248 bytes, sha256 `9b61120b…`.
+- **Not changed**: 2019 `2019-lunyu` already reads （共7分） in every served version.
+
+Report: `/Users/ylsuen/CF/_meta/reports/operations/gks-gk-2026-score-headings-20261127/REPORT.md`.
+
 ## 2026-11-26 — 2026-guwen and 2007-sanwen checked against the original papers, content version `2e3c5cb4…` (gk-bank-fix-20261126)
 
 Accepted 2026-11-26: source `2fbe763`, Pages deployment `b8e08f0c-d8e6-4b1e-bc91-64c8aaa23fd0`, effective 03:06:11Z, accepted 03:08:07Z. Consumers moved: gwyw `f19f804` (Worker `cacb3520` / deployment `0f48e6c7`, effective 03:22Z) and gksw `de81642` (Worker `435888fe` / deployment `4aa5d1c5`, effective 03:21Z); gks moves in its own transaction (User Center chain). Rollback order: gwyw → `f6acf50a`, gksw → `1ce39315`, gks back to its predecessor, then GK Pages `0d556bb2`. Status: https://status.bdfz.net/?update=20261126-gk-original-paper-2026-guwen-2007-sanwen&revision=1 .
