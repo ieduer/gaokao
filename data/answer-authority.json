@@ -10805,7 +10805,7 @@
     },
     {
       "id": "2026-moxie:1",
-      "inputSha256": "eafc88489b154ed430514c15e52183a56db957f5b96dd080c580adfcb810d05c",
+      "inputSha256": "d1bee77c64ed41452ad7d4259fea0e48ba0e8efb513be1de9c205837f8f6f84c",
       "status": "reviewed",
       "kind": "open",
       "correctOptions": [],
@@ -10829,7 +10829,7 @@
           "modelId": "gpt-6-astra",
           "label": "GPT-6 Astra 完整附注复核",
           "text": "（1）思国之安者，必积其德义。（2）战不善，弊在赂秦。（3）户庭无尘杂，虚室有余闲。（4）小楼一夜听春雨，深巷明朝卖杏花。注意‘浚’与题中已给内容对应，填空不要重复；‘弊’‘赂’‘巷’等字须准确。",
-          "inputSha256": "eafc88489b154ed430514c15e52183a56db957f5b96dd080c580adfcb810d05c",
+          "inputSha256": "d1bee77c64ed41452ad7d4259fea0e48ba0e8efb513be1de9c205837f8f6f84c",
           "generatedAt": "2026-10-03T03:05:38.552Z",
           "provenance": {
             "kind": "codex_turn",
@@ -10843,17 +10843,25 @@
               "method": "empty_rendered_emphasis_v2_equivalence",
               "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
               "originalContextSha256": "fa36ed1d64df086d4aaa8e4722e056d7d81beb6b3a51328b98ed8062241375b4"
+            },
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "eafc88489b154ed430514c15e52183a56db957f5b96dd080c580adfcb810d05c",
+              "answeredInputContextSha256": "fa36ed1d64df086d4aaa8e4722e056d7d81beb6b3a51328b98ed8062241375b4",
+              "answeredInputPresentationSha256": "f72451fb0179b3815166509e26630784a975a5de5c7602ef9c7f690d0decb738",
+              "difference": "The model answered the same four items under the heading （8分）, which the original paper prints as （共8分）. The decision does not depend on it.",
+              "evidence": "gks-gk-2026-score-headings-20261127/PLAN.md"
             }
           },
-          "inputContextSha256": "fa36ed1d64df086d4aaa8e4722e056d7d81beb6b3a51328b98ed8062241375b4",
-          "inputPresentationSha256": "f72451fb0179b3815166509e26630784a975a5de5c7602ef9c7f690d0decb738"
+          "inputContextSha256": "773058d609564f0f7be8818f5c13c76eba0e089b189cc6bd5acbfca61602705c",
+          "inputPresentationSha256": "ddbd99f1e5b33cee9176cb0f5eabffa1ee09a2efd605da5bd3862d98550cad4d"
         },
         "claude_opus_5_5": {
           "modelId": "claude-opus-5-5",
           "label": "Claude Opus 5.5 来源复核后修订",
           "text": "（1）思国之安者　必积其德义\n（2）战不善　弊在赂秦\n（3）户庭无尘杂　虚室有余闲\n（4）小楼一夜听春雨　深巷明朝卖杏花",
-          "inputSha256": "eafc88489b154ed430514c15e52183a56db957f5b96dd080c580adfcb810d05c",
-          "inputContextSha256": "fa36ed1d64df086d4aaa8e4722e056d7d81beb6b3a51328b98ed8062241375b4",
+          "inputSha256": "d1bee77c64ed41452ad7d4259fea0e48ba0e8efb513be1de9c205837f8f6f84c",
+          "inputContextSha256": "773058d609564f0f7be8818f5c13c76eba0e089b189cc6bd5acbfca61602705c",
           "generatedAt": "2026-10-03T03:05:14.386459+00:00",
           "uncertainties": [
             "第（3）空按引文连贯原则，填“久在樊笼里”的上一联“户庭无尘杂，虚室有余闲”；若原卷引号内两联并不连续，也可能考查“少无适俗韵，性本爱丘山”。"
@@ -10876,26 +10884,42 @@
               "method": "empty_rendered_emphasis_v2_equivalence",
               "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
               "originalContextSha256": "fa36ed1d64df086d4aaa8e4722e056d7d81beb6b3a51328b98ed8062241375b4"
+            },
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "eafc88489b154ed430514c15e52183a56db957f5b96dd080c580adfcb810d05c",
+              "answeredInputContextSha256": "fa36ed1d64df086d4aaa8e4722e056d7d81beb6b3a51328b98ed8062241375b4",
+              "answeredInputPresentationSha256": "f72451fb0179b3815166509e26630784a975a5de5c7602ef9c7f690d0decb738",
+              "difference": "The model answered the same four items under the heading （8分）, which the original paper prints as （共8分）. The decision does not depend on it.",
+              "evidence": "gks-gk-2026-score-headings-20261127/PLAN.md"
             }
           },
-          "inputPresentationSha256": "f72451fb0179b3815166509e26630784a975a5de5c7602ef9c7f690d0decb738"
+          "inputPresentationSha256": "ddbd99f1e5b33cee9176cb0f5eabffa1ee09a2efd605da5bd3862d98550cad4d"
         },
         "gpt_6_astra_before_context_review": {
           "modelId": "gpt-6-astra",
           "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
           "text": "（1）思国之安者，必积其德义。（2）战不善，弊在赂秦。（3）户庭无尘杂，虚室有余闲。（4）小楼一夜听春雨，深巷明朝卖杏花。注意‘浚’与题中已给内容对应，填空不要重复；‘弊’‘赂’‘巷’等字须准确。",
-          "inputSha256": "eafc88489b154ed430514c15e52183a56db957f5b96dd080c580adfcb810d05c",
+          "inputSha256": "d1bee77c64ed41452ad7d4259fea0e48ba0e8efb513be1de9c205837f8f6f84c",
           "generatedAt": "2026-10-03T00:23:44.075Z",
           "provenance": {
             "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json",
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "eafc88489b154ed430514c15e52183a56db957f5b96dd080c580adfcb810d05c",
+              "answeredInputContextSha256": null,
+              "answeredInputPresentationSha256": null,
+              "difference": "The model answered the same four items under the heading （8分）, which the original paper prints as （共8分）. The decision does not depend on it.",
+              "evidence": "gks-gk-2026-score-headings-20261127/PLAN.md"
+            }
           }
         },
         "claude_opus_5_5_initial": {
           "modelId": "claude-opus-5-5",
           "label": "Claude Opus 5.5 独立作答（修订前存档）",
           "text": "（1）思国之安者，必积其德义\n（2）战不善，弊在赂秦\n（3）户庭无尘杂，虚室有余闲\n（4）小楼一夜听春雨，深巷明朝卖杏花",
-          "inputSha256": "eafc88489b154ed430514c15e52183a56db957f5b96dd080c580adfcb810d05c",
+          "inputSha256": "d1bee77c64ed41452ad7d4259fea0e48ba0e8efb513be1de9c205837f8f6f84c",
           "generatedAt": "2026-10-03T00:30:26.676473+00:00",
           "uncertainties": [
             "（1）题干说“以自然之理喻治国之道”，按原文顺序，“欲流之远者，必浚其泉源”之后接的是“思国之安者，必积其德义”，据此作答。"
@@ -10910,24 +10934,235 @@
             "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
             "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
             "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
-            "stage": "independent"
+            "stage": "independent",
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "eafc88489b154ed430514c15e52183a56db957f5b96dd080c580adfcb810d05c",
+              "answeredInputContextSha256": "144178529779d75f86349f26834be9750a15a8f48ea039b4738177703cfe12c9",
+              "answeredInputPresentationSha256": null,
+              "difference": "The model answered the same four items under the heading （8分）, which the original paper prints as （共8分）. The decision does not depend on it.",
+              "evidence": "gks-gk-2026-score-headings-20261127/PLAN.md"
+            }
           },
           "inputContextSha256": "144178529779d75f86349f26834be9750a15a8f48ea039b4738177703cfe12c9"
         }
       },
-      "inputContextSha256": "fa36ed1d64df086d4aaa8e4722e056d7d81beb6b3a51328b98ed8062241375b4",
-      "inputPresentationSha256": "f72451fb0179b3815166509e26630784a975a5de5c7602ef9c7f690d0decb738",
+      "inputContextSha256": "773058d609564f0f7be8818f5c13c76eba0e089b189cc6bd5acbfca61602705c",
+      "inputPresentationSha256": "ddbd99f1e5b33cee9176cb0f5eabffa1ee09a2efd605da5bd3862d98550cad4d",
       "publicationQualification": {
         "contract": "qualified-learning-reference-v1",
         "sourceClass": "qualified_public_witness",
         "originalPublicationVerified": false,
         "officialRubricVerified": false,
         "notice": "保留用户扫描及既有三来源逐句校订的接受依据，现行考查标记已按扫描核查。三源校订不等于考试机构公开发布答案；保全已接受的新题与所有旧版本。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。"
+      },
+      "history": [
+        {
+          "source": {
+            "id": "2026-moxie",
+            "materials": [],
+            "topic": "14. 在横线处填写作品原句。要求：字迹清晰。（8分）",
+            "annotation": "2026年普通高等学校招生全国统一考试（北京卷）语文；题面经三处独立来源交叉核对（原卷扫描件 + 两个独立转录本）",
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "14. （1） 魏征《谏太宗十思疏》以自然之理喻治国之道：“欲流之远者，必浚其泉源；__________，__________。”\n（2） 苏洵《六国论》开篇亮出观点：“六国破灭，非兵不利，__________，__________。”\n（3） 陶渊明回到田园，就是回归本心，所谓“__________，__________。久在樊笼里，复得返自然”。\n（4） 陆游《临安春雨初霁》颔联从声音角度描写杭州之美：“__________，__________。”",
+                "score": 8,
+                "sourceQuestionNumber": "14",
+                "sourceType": "recite",
+                "questionParts": {
+                  "version": 1,
+                  "sourceTextSha256": "4e99414f9bea37314acd08392ff329df174025c05fd7b643d9afac3d0151110e",
+                  "introductionEnd": 4,
+                  "parts": [
+                    {
+                      "id": "p1",
+                      "label": "（1）",
+                      "start": 4,
+                      "end": 66,
+                      "kind": "open"
+                    },
+                    {
+                      "id": "p2",
+                      "label": "（2）",
+                      "start": 66,
+                      "end": 119,
+                      "kind": "open"
+                    },
+                    {
+                      "id": "p3",
+                      "label": "（3）",
+                      "start": 119,
+                      "end": 177,
+                      "kind": "open"
+                    },
+                    {
+                      "id": "p4",
+                      "label": "（4）",
+                      "start": 177,
+                      "end": 229,
+                      "kind": "open"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "review": {
+            "id": "2026-moxie:1",
+            "inputSha256": "eafc88489b154ed430514c15e52183a56db957f5b96dd080c580adfcb810d05c",
+            "status": "reviewed",
+            "kind": "open",
+            "correctOptions": [],
+            "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。\n\n【来源与评分边界】保留用户扫描及既有三来源逐句校订的接受依据，现行考查标记已按扫描核查。三源校订不等于考试机构公开发布答案；保全已接受的新题与所有旧版本。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:05:38.552Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2026北京卷原题及完整材料"
+              },
+              {
+                "type": "publication_qualification",
+                "label": "保留用户扫描及既有三来源逐句校订的接受依据，现行考查标记已按扫描核查。三源校订不等于考试机构公开发布答案；保全已接受的新题与所有旧版本。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。",
+                "evidence": "SOURCE-QUALIFICATION-01a1139d.md"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "（1）思国之安者，必积其德义。（2）战不善，弊在赂秦。（3）户庭无尘杂，虚室有余闲。（4）小楼一夜听春雨，深巷明朝卖杏花。注意‘浚’与题中已给内容对应，填空不要重复；‘弊’‘赂’‘巷’等字须准确。",
+                "inputSha256": "eafc88489b154ed430514c15e52183a56db957f5b96dd080c580adfcb810d05c",
+                "generatedAt": "2026-10-03T03:05:38.552Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-reading-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "37d953951b0f252f02914072d6eee16cec9fe7e24e3e2eb9f956db79b1d38a3b",
+                  "annotationEffect": "已完整重读材料、题纲、题问、材料内原注及2026三源核对说明。四组八处原句核读，无新增题注条件；record.annotation仅为来源说明，本次实际纳入复核，未追认成旧作答时已见。",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "fa36ed1d64df086d4aaa8e4722e056d7d81beb6b3a51328b98ed8062241375b4"
+                  }
+                },
+                "inputContextSha256": "fa36ed1d64df086d4aaa8e4722e056d7d81beb6b3a51328b98ed8062241375b4",
+                "inputPresentationSha256": "f72451fb0179b3815166509e26630784a975a5de5c7602ef9c7f690d0decb738"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "（1）思国之安者　必积其德义\n（2）战不善　弊在赂秦\n（3）户庭无尘杂　虚室有余闲\n（4）小楼一夜听春雨　深巷明朝卖杏花",
+                "inputSha256": "eafc88489b154ed430514c15e52183a56db957f5b96dd080c580adfcb810d05c",
+                "inputContextSha256": "fa36ed1d64df086d4aaa8e4722e056d7d81beb6b3a51328b98ed8062241375b4",
+                "generatedAt": "2026-10-03T03:05:14.386459+00:00",
+                "uncertainties": [
+                  "第（3）空按引文连贯原则，填“久在樊笼里”的上一联“户庭无尘杂，虚室有余闲”；若原卷引号内两联并不连续，也可能考查“少无适俗韵，性本爱丘山”。"
+                ],
+                "selectedOptions": [],
+                "assessment": {
+                  "matchesConclusion": null,
+                  "reviewNote": "所附另一联的不确定性不采纳；引文前后对应已给邻接关系，判分只采户庭无尘杂、虚室有余闲。",
+                  "evidence": "answers-six-sites-20261002/CONTEXT-RECONCILIATION.md",
+                  "reviewedAt": "2026-10-03T03:18:36.452154+00:00"
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-context-reconcile-reading-result.json",
+                  "inputPromptSha256": "c7324b4f5b82b1b4b9c38fb139c47abe9c8b8a58a24471791b2fdb2804fcf246",
+                  "responseStreamSha256": "a8b82470e7b57edcc275b4761a4601213fe04bb2903bddf6100a54a5d9dddc78",
+                  "stage": "source_review",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "fa36ed1d64df086d4aaa8e4722e056d7d81beb6b3a51328b98ed8062241375b4"
+                  }
+                },
+                "inputPresentationSha256": "f72451fb0179b3815166509e26630784a975a5de5c7602ef9c7f690d0decb738"
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "（1）思国之安者，必积其德义。（2）战不善，弊在赂秦。（3）户庭无尘杂，虚室有余闲。（4）小楼一夜听春雨，深巷明朝卖杏花。注意‘浚’与题中已给内容对应，填空不要重复；‘弊’‘赂’‘巷’等字须准确。",
+                "inputSha256": "eafc88489b154ed430514c15e52183a56db957f5b96dd080c580adfcb810d05c",
+                "generatedAt": "2026-10-03T00:23:44.075Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+                }
+              },
+              "claude_opus_5_5_initial": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答（修订前存档）",
+                "text": "（1）思国之安者，必积其德义\n（2）战不善，弊在赂秦\n（3）户庭无尘杂，虚室有余闲\n（4）小楼一夜听春雨，深巷明朝卖杏花",
+                "inputSha256": "eafc88489b154ed430514c15e52183a56db957f5b96dd080c580adfcb810d05c",
+                "generatedAt": "2026-10-03T00:30:26.676473+00:00",
+                "uncertainties": [
+                  "（1）题干说“以自然之理喻治国之道”，按原文顺序，“欲流之远者，必浚其泉源”之后接的是“思国之安者，必积其德义”，据此作答。"
+                ],
+                "selectedOptions": [],
+                "assessment": {
+                  "matchesConclusion": null
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
+                  "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
+                  "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "144178529779d75f86349f26834be9750a15a8f48ea039b4738177703cfe12c9"
+              }
+            },
+            "inputContextSha256": "fa36ed1d64df086d4aaa8e4722e056d7d81beb6b3a51328b98ed8062241375b4",
+            "inputPresentationSha256": "f72451fb0179b3815166509e26630784a975a5de5c7602ef9c7f690d0decb738",
+            "publicationQualification": {
+              "contract": "qualified-learning-reference-v1",
+              "sourceClass": "qualified_public_witness",
+              "originalPublicationVerified": false,
+              "officialRubricVerified": false,
+              "notice": "保留用户扫描及既有三来源逐句校订的接受依据，现行考查标记已按扫描核查。三源校订不等于考试机构公开发布答案；保全已接受的新题与所有旧版本。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。"
+            }
+          }
+        }
+      ],
+      "editorialRevision": {
+        "kind": "transcription_correction",
+        "version": "2026-moxie:1-original-paper-20261127",
+        "at": "2026-11-27T11:00:00.000Z",
+        "owner": "claude-gks-gk-2026-score-headings-20261127",
+        "replacements": [
+          {
+            "field": "topic",
+            "from": "14. 在横线处填写作品原句。要求：字迹清晰。（8分）",
+            "to": "14. 在横线处填写作品原句。要求：字迹清晰。（共8分）",
+            "note": "原卷标题作“（共8分）”"
+          }
+        ],
+        "topic": {
+          "from": "14. 在横线处填写作品原句。要求：字迹清晰。（8分）",
+          "to": "14. 在横线处填写作品原句。要求：字迹清晰。（共8分）"
+        },
+        "previousInputPresentationSha256": "f72451fb0179b3815166509e26630784a975a5de5c7602ef9c7f690d0decb738",
+        "sourceEvidence": "GKS original scan sites/exam/gks/output/evidence/beijing/2026/chinese-20260815/source-mixed-order.pdf (sha256 486b6c54ca01653daf9bd2a87d8e69129cd688002a932923005a7109331669ec): rendered-pages/page-02.png shows 14．…（共8分） and 15．…（共10分）; question-crops/question-15.png (exam page 6) shows （1）…（6分） and （2）…（4分）; OCR raw-ocr/page-02.txt and page-12.txt agree on both headings. gks-gk-2026-score-headings-20261127/PLAN.md",
+        "originalExamText": true,
+        "answerChanged": false,
+        "oldScoresRecalculated": false,
+        "modelCalls": 0,
+        "reason": "Checked against the original paper: the heading reads （共8分）. The heading now follows the paper. The reviewed answer, explanation and model answers are kept and re-bound, with the answered input hashes recorded."
       }
     },
     {
       "id": "2026-honglou:1",
-      "inputSha256": "8cb8626738eef32a10b0c57db7234337a0996e653394562f02c8b05a322b4b87",
+      "inputSha256": "dba54813e648d9f39431e04a6e60cf76a4636422da8b19853cda2f95817c3051",
       "status": "reviewed",
       "kind": "open",
       "correctOptions": [],
@@ -10951,7 +11186,7 @@
           "modelId": "gpt-6-astra",
           "label": "GPT-6 Astra 完整附注复核",
           "text": "（1）知书守礼：李纨援引《广舆记》与关羽多处坟墓的见闻，能辨有据史实与后人附会，显出读书识见；又特意申明怀古作诗并不等于阅读被礼教视为‘邪书’的《西厢》《牡丹》词曲，仍以闺阁礼法划定边界。通情达理：她承认宝琴亲历其地，理解传说古迹往往源于敬爱，且相关故事老少皆知，因而不苛求两首诗都有史鉴根据，劝宝钗让它们保留。（2）宝黛关系：二人共读《西厢记》，宝玉借曲文表达情意；黛玉听《牡丹亭》曲文而触动青春、爱情与身世之感，二者共同的情感体验促进相知。钗黛关系：黛玉在宴席行令时无意用了《西厢》《牡丹》的曲词，宝钗事后私下劝诫，既指出礼法禁忌又不当众使她难堪；黛玉逐渐感受到宝钗的关心，再加后来燕窝等关怀，猜疑减轻、关系亲近。不要把二人共读《西厢》误写成共读两部作品。",
-          "inputSha256": "8cb8626738eef32a10b0c57db7234337a0996e653394562f02c8b05a322b4b87",
+          "inputSha256": "dba54813e648d9f39431e04a6e60cf76a4636422da8b19853cda2f95817c3051",
           "generatedAt": "2026-10-03T03:05:38.552Z",
           "provenance": {
             "kind": "codex_turn",
@@ -10965,17 +11200,25 @@
               "method": "empty_rendered_emphasis_v2_equivalence",
               "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
               "originalContextSha256": "e834ea04d9b0c435818d90874d4aa3b761052e411de8f12838151d5f6b314811"
+            },
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "8cb8626738eef32a10b0c57db7234337a0996e653394562f02c8b05a322b4b87",
+              "answeredInputContextSha256": "e834ea04d9b0c435818d90874d4aa3b761052e411de8f12838151d5f6b314811",
+              "answeredInputPresentationSha256": "99385fb1fe6e3b1788dd59a7941481ee5484434e52e8ca38335dd02f7e154161",
+              "difference": "The model answered the same two sub-questions without the score marks the original paper prints: the heading read （10分） instead of （共10分）, and （6分） and （4分） after the sub-questions were missing. The decision does not depend on them.",
+              "evidence": "gks-gk-2026-score-headings-20261127/PLAN.md"
             }
           },
-          "inputContextSha256": "e834ea04d9b0c435818d90874d4aa3b761052e411de8f12838151d5f6b314811",
-          "inputPresentationSha256": "99385fb1fe6e3b1788dd59a7941481ee5484434e52e8ca38335dd02f7e154161"
+          "inputContextSha256": "31369fc1611acc3b54a0ba3f1b35d0b9dea842506e935a9e144c6fe44390baeb",
+          "inputPresentationSha256": "c0a511c30132e58f8614a1f40304c3699849724f3e1fde4935db91163e053bff"
         },
         "claude_opus_5_5": {
           "modelId": "claude-opus-5-5",
           "label": "Claude Opus 5.5 来源复核后修订",
           "text": "（1）李纨的话体现的特点：\n①知书：她以上京时见到三四处关夫子坟为例，又引《广舆记》所载名人坟多、无考古迹更多为证，说明古迹常出于后人“以讹传讹”或因敬爱而“穿凿”，见闻广博，言之有据。\n②守礼：她特意说明“又并不是看了‘西厢’‘牡丹’的词曲，怕看了邪书”，认同闺阁女子不应读这类书的规矩，把“知道故事”和“读了禁书”分清，守住了礼教的界限。\n③通情达理：她体谅宝琴“原是到过这个地方的”，写亲历的古迹合情合理；又指出这些故事在说书唱戏、求签注批中“人人皆知皆说”，知道并不失礼；最后说“这竟无妨，只管留着”，既回应了宝钗的顾虑，又保全了宝琴的诗作和大家的兴致，平和地化解了分歧。\n\n（2）对两种关系的影响：\n①宝黛关系：第二十三回，宝玉在沁芳闸桥边偷读《会真记》（《西厢记》），黛玉葬花时遇见，二人共读，黛玉“越看越爱”。宝玉借“我就是个多愁多病身，你就是那倾国倾城貌”表露心意，黛玉又羞又恼，却以“银样镴枪头”回敬。随后黛玉独自听到梨香院演习《牡丹亭》的“如花美眷，似水流年”，心动神摇，伤感落泪。此后宝玉又用“若共你多情小姐同鸳帐”打趣，黛玉也无意中吟出“每日家情思睡昏昏”。这两部书成为二人共同的精神语言，唤醒了他们对爱情的自觉，使感情从两小无猜的亲密发展为心灵相通的知己之爱。\n②钗黛关系：第四十回行酒令时，黛玉情急之下说出“良辰美景奈何天”“纱窗也没有红娘报”。第四十二回，宝钗私下“审”黛玉，没有当众揭穿，还坦言自己幼时也偷看过这些书，恳切劝她不要被杂书“移了性情”，黛玉心中暗服。第四十五回，黛玉向宝钗坦承往日多心，自悔错怪，二人“互剖金兰语”，嫌隙尽消。两人关系由此从猜忌提防转为亲如姐妹，所以材料中黛玉敢当面笑宝钗“胶柱鼓瑟”，宝钗也不以为忤。",
-          "inputSha256": "8cb8626738eef32a10b0c57db7234337a0996e653394562f02c8b05a322b4b87",
-          "inputContextSha256": "e834ea04d9b0c435818d90874d4aa3b761052e411de8f12838151d5f6b314811",
+          "inputSha256": "dba54813e648d9f39431e04a6e60cf76a4636422da8b19853cda2f95817c3051",
+          "inputContextSha256": "31369fc1611acc3b54a0ba3f1b35d0b9dea842506e935a9e144c6fe44390baeb",
           "generatedAt": "2026-10-03T03:05:14.386459+00:00",
           "uncertainties": [
             "回目和引语凭记忆引述，个别字词可能与通行本略有出入。"
@@ -10995,26 +11238,42 @@
               "method": "empty_rendered_emphasis_v2_equivalence",
               "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
               "originalContextSha256": "e834ea04d9b0c435818d90874d4aa3b761052e411de8f12838151d5f6b314811"
+            },
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "8cb8626738eef32a10b0c57db7234337a0996e653394562f02c8b05a322b4b87",
+              "answeredInputContextSha256": "e834ea04d9b0c435818d90874d4aa3b761052e411de8f12838151d5f6b314811",
+              "answeredInputPresentationSha256": "99385fb1fe6e3b1788dd59a7941481ee5484434e52e8ca38335dd02f7e154161",
+              "difference": "The model answered the same two sub-questions without the score marks the original paper prints: the heading read （10分） instead of （共10分）, and （6分） and （4分） after the sub-questions were missing. The decision does not depend on them.",
+              "evidence": "gks-gk-2026-score-headings-20261127/PLAN.md"
             }
           },
-          "inputPresentationSha256": "99385fb1fe6e3b1788dd59a7941481ee5484434e52e8ca38335dd02f7e154161"
+          "inputPresentationSha256": "c0a511c30132e58f8614a1f40304c3699849724f3e1fde4935db91163e053bff"
         },
         "gpt_6_astra_before_context_review": {
           "modelId": "gpt-6-astra",
           "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
           "text": "（1）知书守礼：李纨援引《广舆记》与关羽多处坟墓的见闻，能辨有据史实与后人附会，显出读书识见；又特意申明怀古作诗并不等于阅读被礼教视为‘邪书’的《西厢》《牡丹》词曲，仍以闺阁礼法划定边界。通情达理：她承认宝琴亲历其地，理解传说古迹往往源于敬爱，且相关故事老少皆知，因而不苛求两首诗都有史鉴根据，劝宝钗让它们保留。（2）宝黛关系：二人共读《西厢记》，宝玉借曲文表达情意；黛玉听《牡丹亭》曲文而触动青春、爱情与身世之感，二者共同的情感体验促进相知。钗黛关系：黛玉在宴席行令时无意用了《西厢》《牡丹》的曲词，宝钗事后私下劝诫，既指出礼法禁忌又不当众使她难堪；黛玉逐渐感受到宝钗的关心，再加后来燕窝等关怀，猜疑减轻、关系亲近。不要把二人共读《西厢》误写成共读两部作品。",
-          "inputSha256": "8cb8626738eef32a10b0c57db7234337a0996e653394562f02c8b05a322b4b87",
+          "inputSha256": "dba54813e648d9f39431e04a6e60cf76a4636422da8b19853cda2f95817c3051",
           "generatedAt": "2026-10-03T00:23:44.075Z",
           "provenance": {
             "kind": "codex_turn",
-            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+            "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json",
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "8cb8626738eef32a10b0c57db7234337a0996e653394562f02c8b05a322b4b87",
+              "answeredInputContextSha256": null,
+              "answeredInputPresentationSha256": null,
+              "difference": "The model answered the same two sub-questions without the score marks the original paper prints: the heading read （10分） instead of （共10分）, and （6分） and （4分） after the sub-questions were missing. The decision does not depend on them.",
+              "evidence": "gks-gk-2026-score-headings-20261127/PLAN.md"
+            }
           }
         },
         "claude_opus_5_5_initial": {
           "modelId": "claude-opus-5-5",
           "label": "Claude Opus 5.5 独立作答（修订前存档）",
           "text": "（1）知书：李纨熟知历史，指出“关夫子一生事业，皆是有据的”，还引《广舆记》说明自古名人坟多、无考古迹更多，见识广博，说理有据。守礼：她特意说明这两首诗“并不是看了‘西厢’‘牡丹’的词曲，怕看了邪书”，诗中的故事是说书唱戏、签上注批、老少男女人人皆知的，并不涉及闺阁女子不宜看的“邪书”。可见她仍守着礼教为闺阁设下的界限，同时也照顾到宝钗的顾虑。通情达理：她先说宝琴“原是到过这个地方的”，为宝琴开脱；再说古迹多是后人出于敬爱附会出来的，“以讹传讹”是人之常情，不必拘泥于史鉴有无记载。既肯定了黛玉、探春的意见，又给了宝钗台阶，一句“这竟无妨，只管留着”平息分歧，宝钗也“方罢了”。她以长嫂和诗社社长的身份持论公允、平和周全，正体现了通情达理。\n（2）对宝黛关系：第二十三回，宝玉在沁芳闸桥边桃花树下偷读《西厢记》，黛玉葬花时遇见，二人同读，“越看越爱”。宝玉借“我就是个多愁多病身，你就是那倾国倾城貌”向黛玉表白，黛玉含嗔带怒，又回敬“原来是个苗而不秀，是个银样镴枪头”，二人借曲词含蓄传情。随后黛玉路过梨香院，听到《牡丹亭》“原来姹紫嫣红开遍”“如花美眷，似水流年”等曲词，“心动神摇”“如醉如痴”，青春意识和爱情意识由此觉醒。第二十六回，宝玉又借《西厢记》“若共你多情小姐同鸳帐，怎舍得叠被铺床”打趣黛玉，惹她哭恼。两部作品成为宝黛借以表达爱情、心意相通的媒介，推动二人由青梅竹马走向知己相爱。\n对钗黛关系：第四十回宴席上行酒令，黛玉情急之下脱口说出“良辰美景奈何天”（《牡丹亭》）、“纱窗也没有红娘报”（《西厢记》）。宝钗察觉后，第四十二回“蘅芜君兰言解疑癖”中私下“审问”黛玉，又坦言自己小时候也偷看过这类书，劝她这些杂书“移了性情”，女孩儿应以针黹为本。黛玉羞愧，心中暗服，此前对宝钗的猜忌和芥蒂渐渐消除。到第四十五回“金兰契互剖金兰语”，黛玉感激宝钗，承认“往日竟是我错了”，二人结为知己。第四十九回宝玉见钗黛亲密，还借《西厢记》问“是几时孟光接了梁鸿案”，黛玉笑述其中原委。可见《西厢记》《牡丹亭》成了钗黛由猜忌、对立转向和解、亲近的契机。",
-          "inputSha256": "8cb8626738eef32a10b0c57db7234337a0996e653394562f02c8b05a322b4b87",
+          "inputSha256": "dba54813e648d9f39431e04a6e60cf76a4636422da8b19853cda2f95817c3051",
           "generatedAt": "2026-10-03T00:30:26.676473+00:00",
           "uncertainties": [],
           "selectedOptions": [],
@@ -11027,19 +11286,261 @@
             "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
             "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
             "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
-            "stage": "independent"
+            "stage": "independent",
+            "inputEquivalence": {
+              "method": "original_paper_transcription_v1",
+              "answeredInputSha256": "8cb8626738eef32a10b0c57db7234337a0996e653394562f02c8b05a322b4b87",
+              "answeredInputContextSha256": "14773bc8d44a9bf73ac9154f791dc201622bd698e4b123c5d65bab8ab35049b4",
+              "answeredInputPresentationSha256": null,
+              "difference": "The model answered the same two sub-questions without the score marks the original paper prints: the heading read （10分） instead of （共10分）, and （6分） and （4分） after the sub-questions were missing. The decision does not depend on them.",
+              "evidence": "gks-gk-2026-score-headings-20261127/PLAN.md"
+            }
           },
           "inputContextSha256": "14773bc8d44a9bf73ac9154f791dc201622bd698e4b123c5d65bab8ab35049b4"
         }
       },
-      "inputContextSha256": "e834ea04d9b0c435818d90874d4aa3b761052e411de8f12838151d5f6b314811",
-      "inputPresentationSha256": "99385fb1fe6e3b1788dd59a7941481ee5484434e52e8ca38335dd02f7e154161",
+      "inputContextSha256": "31369fc1611acc3b54a0ba3f1b35d0b9dea842506e935a9e144c6fe44390baeb",
+      "inputPresentationSha256": "c0a511c30132e58f8614a1f40304c3699849724f3e1fde4935db91163e053bff",
       "publicationQualification": {
         "contract": "qualified-learning-reference-v1",
         "sourceClass": "qualified_public_witness",
         "originalPublicationVerified": false,
         "officialRubricVerified": false,
         "notice": "保留用户扫描及既有三来源逐句校订的接受依据，现行考查标记已按扫描核查。三源校订不等于考试机构公开发布答案；保全已接受的新题与所有旧版本。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。"
+      },
+      "history": [
+        {
+          "source": {
+            "id": "2026-honglou",
+            "materials": [
+              {
+                "key": "material1",
+                "label": "《红楼梦》第五十一回",
+                "text": "众人闻得宝琴将素习所经过各省内的古迹为题，作了十首怀古绝句，内隐十物，皆说这自然新巧。……众人看了，都称奇道妙。宝钗先说道：“前八首都是史鉴上有据的；后二首【1】却无考，我们也不大懂得，不如另作两首为是。”黛玉忙拦道：“这宝姐姐也忒‘胶柱鼓瑟’，矫揉造作了。这两首虽于史鉴上无考，咱们虽不曾看这些外传，不知底里，难道咱们连两本戏也没有见过不成？那三岁孩子也知道，何况咱们？”探春便道：“这话正是了。”李纨又道：“况且他原是到过这个地方的。这两件事虽无考，古往今来，以讹传讹，好事者竟故意的弄出这古迹来以愚人。比如那年上京的时节，单是关夫子的坟，倒见了三四处。关夫子一生事业，皆是有据的，如何又有许多的坟？自然是后来人敬爱他生前为人，只怕从这敬爱上穿凿出来，也是有的。及至看《广舆记》上，不止关夫子的坟多，自古来有些名望的人，坟就不少，无考的古迹更多。如今这两首虽无考，凡说书唱戏，甚至于求的签上皆有注批，老少男女，俗语口头，人人皆知皆说的。况且又并不是看了‘西厢’‘牡丹’的词曲，怕看了邪书。这竟无妨，只管留着。”宝钗听说，方罢了。\n\n注释：【1】后二首题为《蒲东寺怀古》和《梅花观怀古》，分别与《西厢记》和《牡丹亭》的故事相关。"
+              }
+            ],
+            "topic": "15. 根据要求，回答问题。（10分）",
+            "annotation": "2026年普通高等学校招生全国统一考试（北京卷）语文；题面经三处独立来源交叉核对（原卷扫描件 + 两个独立转录本）",
+            "annotations": [],
+            "questions": [
+              {
+                "qIndex": 1,
+                "id": "q1",
+                "text": "15. （1） 请简析材料中李纨的话如何体现她知书守礼又通情达理的特点。\n（2） 请结合原著情节，简述《西厢记》《牡丹亭》如何影响宝黛关系和钗黛关系的发展。",
+                "score": 10,
+                "sourceQuestionNumber": "15",
+                "sourceType": "subjective_group",
+                "questionParts": {
+                  "version": 1,
+                  "sourceTextSha256": "6fc01d435760bed78cc3840f68a662387352c24590b82c3dea6b1c64e4dc72f5",
+                  "introductionEnd": 4,
+                  "parts": [
+                    {
+                      "id": "p1",
+                      "label": "（1）",
+                      "start": 4,
+                      "end": 37,
+                      "kind": "open"
+                    },
+                    {
+                      "id": "p2",
+                      "label": "（2）",
+                      "start": 37,
+                      "end": 78,
+                      "kind": "open"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "review": {
+            "id": "2026-honglou:1",
+            "inputSha256": "8cb8626738eef32a10b0c57db7234337a0996e653394562f02c8b05a322b4b87",
+            "status": "reviewed",
+            "kind": "open",
+            "correctOptions": [],
+            "explanation": "本轮逐题重答并与Claude实际独立作答对照，依据完整材料核查；主观题允许有据的不同表达。\n\n【来源与评分边界】保留用户扫描及既有三来源逐句校订的接受依据，现行考查标记已按扫描核查。三源校订不等于考试机构公开发布答案；保全已接受的新题与所有旧版本。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。",
+            "reviewedBy": "OpenAI Codex / GPT-6 Astra",
+            "reviewedAt": "2026-10-03T03:05:38.552Z",
+            "sources": [
+              {
+                "type": "source_material",
+                "title": "站内2026北京卷原题及完整材料"
+              },
+              {
+                "type": "publication_qualification",
+                "label": "保留用户扫描及既有三来源逐句校订的接受依据，现行考查标记已按扫描核查。三源校订不等于考试机构公开发布答案；保全已接受的新题与所有旧版本。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。",
+                "evidence": "SOURCE-QUALIFICATION-01a1139d.md"
+              }
+            ],
+            "currentVersion": "gpt_6_astra",
+            "modelAnswers": {
+              "gpt_6_astra": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 完整附注复核",
+                "text": "（1）知书守礼：李纨援引《广舆记》与关羽多处坟墓的见闻，能辨有据史实与后人附会，显出读书识见；又特意申明怀古作诗并不等于阅读被礼教视为‘邪书’的《西厢》《牡丹》词曲，仍以闺阁礼法划定边界。通情达理：她承认宝琴亲历其地，理解传说古迹往往源于敬爱，且相关故事老少皆知，因而不苛求两首诗都有史鉴根据，劝宝钗让它们保留。（2）宝黛关系：二人共读《西厢记》，宝玉借曲文表达情意；黛玉听《牡丹亭》曲文而触动青春、爱情与身世之感，二者共同的情感体验促进相知。钗黛关系：黛玉在宴席行令时无意用了《西厢》《牡丹》的曲词，宝钗事后私下劝诫，既指出礼法禁忌又不当众使她难堪；黛玉逐渐感受到宝钗的关心，再加后来燕窝等关怀，猜疑减轻、关系亲近。不要把二人共读《西厢》误写成共读两部作品。",
+                "inputSha256": "8cb8626738eef32a10b0c57db7234337a0996e653394562f02c8b05a322b4b87",
+                "generatedAt": "2026-10-03T03:05:38.552Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "stage": "source_review_reaffirmation",
+                  "evidence": "answers-six-sites-20261002/root-context-reading-decisions.json",
+                  "inputEvidence": "answers-six-sites-20261002/root-context-reconcile-input.json",
+                  "reviewerThread": "01a0ffaf-390b-7940-982a-de0b4d8cb00f",
+                  "priorAnswerSha256": "f010da671714dec31996bf415543530586693cb8b725ccea6c590516aede8435",
+                  "annotationEffect": "已完整重读材料、题纲、题问、材料内原注及2026三源核对说明。第五十一回原文及后二首来源注已读；共读西厢、黛玉听牡丹及宝钗规劝等情节区分正确；record.annotation仅为来源说明，本次实际纳入复核，未追认成旧作答时已见。",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "e834ea04d9b0c435818d90874d4aa3b761052e411de8f12838151d5f6b314811"
+                  }
+                },
+                "inputContextSha256": "e834ea04d9b0c435818d90874d4aa3b761052e411de8f12838151d5f6b314811",
+                "inputPresentationSha256": "99385fb1fe6e3b1788dd59a7941481ee5484434e52e8ca38335dd02f7e154161"
+              },
+              "claude_opus_5_5": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 来源复核后修订",
+                "text": "（1）李纨的话体现的特点：\n①知书：她以上京时见到三四处关夫子坟为例，又引《广舆记》所载名人坟多、无考古迹更多为证，说明古迹常出于后人“以讹传讹”或因敬爱而“穿凿”，见闻广博，言之有据。\n②守礼：她特意说明“又并不是看了‘西厢’‘牡丹’的词曲，怕看了邪书”，认同闺阁女子不应读这类书的规矩，把“知道故事”和“读了禁书”分清，守住了礼教的界限。\n③通情达理：她体谅宝琴“原是到过这个地方的”，写亲历的古迹合情合理；又指出这些故事在说书唱戏、求签注批中“人人皆知皆说”，知道并不失礼；最后说“这竟无妨，只管留着”，既回应了宝钗的顾虑，又保全了宝琴的诗作和大家的兴致，平和地化解了分歧。\n\n（2）对两种关系的影响：\n①宝黛关系：第二十三回，宝玉在沁芳闸桥边偷读《会真记》（《西厢记》），黛玉葬花时遇见，二人共读，黛玉“越看越爱”。宝玉借“我就是个多愁多病身，你就是那倾国倾城貌”表露心意，黛玉又羞又恼，却以“银样镴枪头”回敬。随后黛玉独自听到梨香院演习《牡丹亭》的“如花美眷，似水流年”，心动神摇，伤感落泪。此后宝玉又用“若共你多情小姐同鸳帐”打趣，黛玉也无意中吟出“每日家情思睡昏昏”。这两部书成为二人共同的精神语言，唤醒了他们对爱情的自觉，使感情从两小无猜的亲密发展为心灵相通的知己之爱。\n②钗黛关系：第四十回行酒令时，黛玉情急之下说出“良辰美景奈何天”“纱窗也没有红娘报”。第四十二回，宝钗私下“审”黛玉，没有当众揭穿，还坦言自己幼时也偷看过这些书，恳切劝她不要被杂书“移了性情”，黛玉心中暗服。第四十五回，黛玉向宝钗坦承往日多心，自悔错怪，二人“互剖金兰语”，嫌隙尽消。两人关系由此从猜忌提防转为亲如姐妹，所以材料中黛玉敢当面笑宝钗“胶柱鼓瑟”，宝钗也不以为忤。",
+                "inputSha256": "8cb8626738eef32a10b0c57db7234337a0996e653394562f02c8b05a322b4b87",
+                "inputContextSha256": "e834ea04d9b0c435818d90874d4aa3b761052e411de8f12838151d5f6b314811",
+                "generatedAt": "2026-10-03T03:05:14.386459+00:00",
+                "uncertainties": [
+                  "回目和引语凭记忆引述，个别字词可能与通行本略有出入。"
+                ],
+                "selectedOptions": [],
+                "assessment": {
+                  "matchesConclusion": null
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-context-reconcile-reading-result.json",
+                  "inputPromptSha256": "c7324b4f5b82b1b4b9c38fb139c47abe9c8b8a58a24471791b2fdb2804fcf246",
+                  "responseStreamSha256": "a8b82470e7b57edcc275b4761a4601213fe04bb2903bddf6100a54a5d9dddc78",
+                  "stage": "source_review",
+                  "presentationEvidence": {
+                    "method": "empty_rendered_emphasis_v2_equivalence",
+                    "evidence": "answers-six-sites-20261002/empty-emphasis-proof.json",
+                    "originalContextSha256": "e834ea04d9b0c435818d90874d4aa3b761052e411de8f12838151d5f6b314811"
+                  }
+                },
+                "inputPresentationSha256": "99385fb1fe6e3b1788dd59a7941481ee5484434e52e8ca38335dd02f7e154161"
+              },
+              "gpt_6_astra_before_context_review": {
+                "modelId": "gpt-6-astra",
+                "label": "GPT-6 Astra 独立作答（完整附注复核前存档）",
+                "text": "（1）知书守礼：李纨援引《广舆记》与关羽多处坟墓的见闻，能辨有据史实与后人附会，显出读书识见；又特意申明怀古作诗并不等于阅读被礼教视为‘邪书’的《西厢》《牡丹》词曲，仍以闺阁礼法划定边界。通情达理：她承认宝琴亲历其地，理解传说古迹往往源于敬爱，且相关故事老少皆知，因而不苛求两首诗都有史鉴根据，劝宝钗让它们保留。（2）宝黛关系：二人共读《西厢记》，宝玉借曲文表达情意；黛玉听《牡丹亭》曲文而触动青春、爱情与身世之感，二者共同的情感体验促进相知。钗黛关系：黛玉在宴席行令时无意用了《西厢》《牡丹》的曲词，宝钗事后私下劝诫，既指出礼法禁忌又不当众使她难堪；黛玉逐渐感受到宝钗的关心，再加后来燕窝等关怀，猜疑减轻、关系亲近。不要把二人共读《西厢》误写成共读两部作品。",
+                "inputSha256": "8cb8626738eef32a10b0c57db7234337a0996e653394562f02c8b05a322b4b87",
+                "generatedAt": "2026-10-03T00:23:44.075Z",
+                "provenance": {
+                  "kind": "codex_turn",
+                  "evidence": "answers-six-sites-20261002/gpt-astra-2026-reviews.json"
+                }
+              },
+              "claude_opus_5_5_initial": {
+                "modelId": "claude-opus-5-5",
+                "label": "Claude Opus 5.5 独立作答（修订前存档）",
+                "text": "（1）知书：李纨熟知历史，指出“关夫子一生事业，皆是有据的”，还引《广舆记》说明自古名人坟多、无考古迹更多，见识广博，说理有据。守礼：她特意说明这两首诗“并不是看了‘西厢’‘牡丹’的词曲，怕看了邪书”，诗中的故事是说书唱戏、签上注批、老少男女人人皆知的，并不涉及闺阁女子不宜看的“邪书”。可见她仍守着礼教为闺阁设下的界限，同时也照顾到宝钗的顾虑。通情达理：她先说宝琴“原是到过这个地方的”，为宝琴开脱；再说古迹多是后人出于敬爱附会出来的，“以讹传讹”是人之常情，不必拘泥于史鉴有无记载。既肯定了黛玉、探春的意见，又给了宝钗台阶，一句“这竟无妨，只管留着”平息分歧，宝钗也“方罢了”。她以长嫂和诗社社长的身份持论公允、平和周全，正体现了通情达理。\n（2）对宝黛关系：第二十三回，宝玉在沁芳闸桥边桃花树下偷读《西厢记》，黛玉葬花时遇见，二人同读，“越看越爱”。宝玉借“我就是个多愁多病身，你就是那倾国倾城貌”向黛玉表白，黛玉含嗔带怒，又回敬“原来是个苗而不秀，是个银样镴枪头”，二人借曲词含蓄传情。随后黛玉路过梨香院，听到《牡丹亭》“原来姹紫嫣红开遍”“如花美眷，似水流年”等曲词，“心动神摇”“如醉如痴”，青春意识和爱情意识由此觉醒。第二十六回，宝玉又借《西厢记》“若共你多情小姐同鸳帐，怎舍得叠被铺床”打趣黛玉，惹她哭恼。两部作品成为宝黛借以表达爱情、心意相通的媒介，推动二人由青梅竹马走向知己相爱。\n对钗黛关系：第四十回宴席上行酒令，黛玉情急之下脱口说出“良辰美景奈何天”（《牡丹亭》）、“纱窗也没有红娘报”（《西厢记》）。宝钗察觉后，第四十二回“蘅芜君兰言解疑癖”中私下“审问”黛玉，又坦言自己小时候也偷看过这类书，劝她这些杂书“移了性情”，女孩儿应以针黹为本。黛玉羞愧，心中暗服，此前对宝钗的猜忌和芥蒂渐渐消除。到第四十五回“金兰契互剖金兰语”，黛玉感激宝钗，承认“往日竟是我错了”，二人结为知己。第四十九回宝玉见钗黛亲密，还借《西厢记》问“是几时孟光接了梁鸿案”，黛玉笑述其中原委。可见《西厢记》《牡丹亭》成了钗黛由猜忌、对立转向和解、亲近的契机。",
+                "inputSha256": "8cb8626738eef32a10b0c57db7234337a0996e653394562f02c8b05a322b4b87",
+                "generatedAt": "2026-10-03T00:30:26.676473+00:00",
+                "uncertainties": [],
+                "selectedOptions": [],
+                "assessment": {
+                  "matchesConclusion": null
+                },
+                "provenance": {
+                  "kind": "cli_response",
+                  "responseModel": "claude-opus-5-5",
+                  "evidence": "answers-six-sites-20261002/claude-2026-01-result.json",
+                  "inputPromptSha256": "22ee8d1100fa9a9b1f425be94ac76a749ddba1e95d042b076d928e00666bdd15",
+                  "responseStreamSha256": "58c249a46d18b291d97ed5468383d63f6868bf2de8d6c51a74aa32ef389ebd25",
+                  "stage": "independent"
+                },
+                "inputContextSha256": "14773bc8d44a9bf73ac9154f791dc201622bd698e4b123c5d65bab8ab35049b4"
+              }
+            },
+            "inputContextSha256": "e834ea04d9b0c435818d90874d4aa3b761052e411de8f12838151d5f6b314811",
+            "inputPresentationSha256": "99385fb1fe6e3b1788dd59a7941481ee5484434e52e8ca38335dd02f7e154161",
+            "publicationQualification": {
+              "contract": "qualified-learning-reference-v1",
+              "sourceClass": "qualified_public_witness",
+              "originalPublicationVerified": false,
+              "officialRubricVerified": false,
+              "notice": "保留用户扫描及既有三来源逐句校订的接受依据，现行考查标记已按扫描核查。三源校订不等于考试机构公开发布答案；保全已接受的新题与所有旧版本。 本站按这一明示版本提供学习参考；没有证据的原卷身份、字形或评分规则继续标为未核实。已知分值只作练习范围，未知分配不按答案条数均分；历史成绩不重算。"
+            }
+          }
+        }
+      ],
+      "editorialRevision": {
+        "kind": "transcription_correction",
+        "version": "2026-honglou:1-original-paper-20261127",
+        "at": "2026-11-27T11:00:00.000Z",
+        "owner": "claude-gks-gk-2026-score-headings-20261127",
+        "replacements": [
+          {
+            "field": "topic",
+            "from": "15. 根据要求，回答问题。（10分）",
+            "to": "15. 根据要求，回答问题。（共10分）",
+            "note": "原卷标题作“（共10分）”"
+          },
+          {
+            "field": "question",
+            "from": "的特点。\n",
+            "to": "的特点。（6分）\n",
+            "note": "原卷第（1）问标“（6分）”"
+          },
+          {
+            "field": "question",
+            "from": "的发展。",
+            "to": "的发展。（4分）",
+            "note": "原卷第（2）问标“（4分）”"
+          }
+        ],
+        "topic": {
+          "from": "15. 根据要求，回答问题。（10分）",
+          "to": "15. 根据要求，回答问题。（共10分）"
+        },
+        "previousInputPresentationSha256": "99385fb1fe6e3b1788dd59a7941481ee5484434e52e8ca38335dd02f7e154161",
+        "sourceEvidence": "GKS original scan sites/exam/gks/output/evidence/beijing/2026/chinese-20260815/source-mixed-order.pdf (sha256 486b6c54ca01653daf9bd2a87d8e69129cd688002a932923005a7109331669ec): rendered-pages/page-02.png shows 14．…（共8分） and 15．…（共10分）; question-crops/question-15.png (exam page 6) shows （1）…（6分） and （2）…（4分）; OCR raw-ocr/page-02.txt and page-12.txt agree on both headings. gks-gk-2026-score-headings-20261127/PLAN.md",
+        "originalExamText": true,
+        "answerChanged": false,
+        "oldScoresRecalculated": false,
+        "modelCalls": 0,
+        "practiceScoringAdded": {
+          "components": [
+            {
+              "label": "（1）",
+              "points": 6
+            },
+            {
+              "label": "（2）",
+              "points": 4
+            }
+          ],
+          "total": 10,
+          "authorization": "suen 2026-11-27 \"Approve as planned\" (option B)"
+        },
+        "reason": "Checked against the original paper: the heading reads （共10分） and the sub-questions carry （6分） and （4分）. Heading and scores now follow the paper and the practice guide gives （1）6 and （2）4 of the unchanged total 10. The reviewed answer, explanation and model answers are kept and re-bound, with the answered input hashes recorded."
+      },
+      "practiceScoring": {
+        "basis": "practice",
+        "mode": "component_feedback",
+        "total": 10,
+        "components": [
+          {
+            "label": "（1）",
+            "points": 6
+          },
+          {
+            "label": "（2）",
+            "points": 4
+          }
+        ],
+        "legacyScore": 10,
+        "inputPresentationSha256": "c0a511c30132e58f8614a1f40304c3699849724f3e1fde4935db91163e053bff",
+        "note": "原卷扫描（486b6c54…）试卷第6页明列（1）6分、（2）4分，合计10分。 仅用于新练习参考，非官方细分评分标准；历史成绩不重算。"
       }
     },
     {
@@ -96828,7 +97329,7 @@
           "2025-yuyanjichu"
         ],
         "questionCount": 640,
-        "currentBindingsSha256": "6e6cf52f3aee83a842e5af1f2068cd3b46bf573a23385df41918a6fe6d695a5c",
+        "currentBindingsSha256": "b4edd1c3630fdfba6a832fc1b3e090417f5c7e3beb5d07203fd7308851c0d910",
         "resolvedForPractice": [
           "当前完整题面、标记、当前答案及两实际模型输入证据逐项匹配。",
           "补录与错年旧入口保留明确身份、原分与历史；练习规则与原始记录分离。",
@@ -97096,7 +97597,7 @@
           "2025-yuyanjichu"
         ],
         "questionCount": 640,
-        "currentBindingsSha256": "6e6cf52f3aee83a842e5af1f2068cd3b46bf573a23385df41918a6fe6d695a5c",
+        "currentBindingsSha256": "b4edd1c3630fdfba6a832fc1b3e090417f5c7e3beb5d07203fd7308851c0d910",
         "resolvedForPractice": [
           "当前完整题面、标记、当前答案及两实际模型输入证据逐项匹配。",
           "补录与错年旧入口保留明确身份、原分与历史；练习规则与原始记录分离。",
@@ -97423,7 +97924,7 @@
           "2025-yuyanjichu"
         ],
         "questionCount": 640,
-        "currentBindingsSha256": "6e6cf52f3aee83a842e5af1f2068cd3b46bf573a23385df41918a6fe6d695a5c",
+        "currentBindingsSha256": "b4edd1c3630fdfba6a832fc1b3e090417f5c7e3beb5d07203fd7308851c0d910",
         "resolvedForPractice": [
           "当前完整题面、标记、当前答案及两实际模型输入证据逐项匹配。",
           "补录与错年旧入口保留明确身份、原分与历史；练习规则与原始记录分离。",

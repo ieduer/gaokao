@@ -251,9 +251,9 @@ test('display metadata preserves canonical publication, catalog and all retained
   assert.equal(JSON.stringify(published), before);
   const digest = value => createHash('sha256').update(value).digest('hex');
   const content = buildContentCatalog(published);
-  // Current build: the 2026-11-26 version (2026-guwen and 2007-sanwen checked against the original papers). Earlier versions stay published from the archive.
-  assert.equal(digest(content.get('data/all.json')), '2e3c5cb490ab4dd1a716ce898f05b1f2e65dc5eca4a35226ce925e16aeaf107a');
-  assert.equal(digest(content.get('data/catalog.json')), 'ec919d3e1db9e4a6738267d0ca63a67dc1ef7a2abb9755c64ddaaa80a42a73ad');
+  // Current build: the 2026-11-27 version (2026 questions 14 and 15: headings and sub-question scores as on the original paper). Earlier versions stay published from the archive.
+  assert.equal(digest(content.get('data/all.json')), '2f1b25eb5ad49eb0994813ab6922254e4246dcb34129264ae496019527c32123');
+  assert.equal(digest(content.get('data/catalog.json')), '737798de35df4df0f49deb125edb4d83de9e50b78f26ce499254317b83a68538');
   const version = `sha256:${digest(content.get('data/all.json'))}`;
   assert.equal(content.get(versionedCatalogPath(version)), content.get('data/catalog.json'));
   assert.equal(CANONICAL_CONTENT_VERSIONS[version], digest(content.get('data/catalog.json')), 'the shared client pins the current build');

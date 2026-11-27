@@ -32,6 +32,7 @@ year always changes its sealed file. Readable PDFs go to `.print-work/pdf/` (ign
 `NotoSerifSC[wght].ttf` and `NotoSansSC[wght].ttf` from google/fonts, instanced with
 `fonttools varLib.instancer <file> wght=<n> --no-recalc-timestamp` to `PSong-Regular.ttf` (400), `PSong-Bold.ttf` (700),
 `PHei-Medium.ttf` (500), `PHei-Bold.ttf` (700), and `LXGWWenKaiGB-Regular.ttf` from lxgw/LxgwWenkaiGB v1.530.
+The recorded instance hashes reproduce with fonttools 4.63.0 (4.64.0 and later write different bytes; checked 2026-11-27).
 Needs Google Chrome, `pdfinfo` and Node 24.18.0.
 
 Changing the key: seal every year again with the new key, set the Pages secret to the same value, and release

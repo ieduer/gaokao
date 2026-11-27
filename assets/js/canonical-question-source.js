@@ -11,6 +11,8 @@ export const CANONICAL_CONTENT_VERSIONS = Object.freeze({
   'sha256:6cbd3661c9fc15cdd9963e4679ae0535a9f700a14369c6feac86a43520a975ff': '79a1e39c8c77e04f27654cde4feffc4bbc9c0312d2e9d260bff86a9b4e27bffe',
   // 2026-11-26 gk-bank-fix-20261126: 2026-guwen and 2007-sanwen checked against the original papers.
   'sha256:2e3c5cb490ab4dd1a716ce898f05b1f2e65dc5eca4a35226ce925e16aeaf107a': 'ec919d3e1db9e4a6738267d0ca63a67dc1ef7a2abb9755c64ddaaa80a42a73ad',
+  // 2026-11-27 gks-gk-2026-score-headings-20261127: 2026 questions 14 and 15 carry the original paper's headings (共8分／共10分) and the scores （6分）（4分）.
+  'sha256:2f1b25eb5ad49eb0994813ab6922254e4246dcb34129264ae496019527c32123': '737798de35df4df0f49deb125edb4d83de9e50b78f26ce499254317b83a68538',
 });
 // The default version for callers that do not name one (gks loadCanonicalQuestions(ids)).
 export const CANONICAL_CONTENT_VERSION = 'sha256:7aeb9f57cbcb52178a2709d49e17c0afa9db6acb6ef94253f6f04a77c78284b3';

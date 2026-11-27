@@ -192,6 +192,7 @@ const PREVIOUS={
   'sha256:7aeb9f57cbcb52178a2709d49e17c0afa9db6acb6ef94253f6f04a77c78284b3':'9cc4a27911b45b9385c8cdfa8ea35545425c42ac9d9e06f366660e015d4bae32',
   'sha256:efa9b0b3bbe5d7ae2bbdc45d1281a9f7f8e27bbe132dd2c21749466bdd07a2f5':'18582637a04befbc81adcf497479f1bda58eb686cfebbcba13436df04686f018',
   'sha256:6cbd3661c9fc15cdd9963e4679ae0535a9f700a14369c6feac86a43520a975ff':'79a1e39c8c77e04f27654cde4feffc4bbc9c0312d2e9d260bff86a9b4e27bffe',
+  'sha256:2e3c5cb490ab4dd1a716ce898f05b1f2e65dc5eca4a35226ce925e16aeaf107a':'ec919d3e1db9e4a6738267d0ca63a67dc1ef7a2abb9755c64ddaaa80a42a73ad',
 };
 const trackedArchive=readPublishedArchive(fileURLToPath(new URL('../data/published-archive',import.meta.url)));
 function reassemble(files,catalogText){

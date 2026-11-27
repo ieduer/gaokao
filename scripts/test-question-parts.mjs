@@ -22,9 +22,10 @@ test('all original source, score, review and history fields survive unchanged',(
  // Source fields accepted at d11a8d9, then the 2026-11-14 original exam text restoration of 27 teaching
  // revisions (gk-originals-20261114), then the 2026-11-22 transcription correction of 2022-feilian:3 option labels
  // (gk-feilian-option-a-20261122; previous value ee08e37b…1dd3b), then the 2026-11-26 original-paper check of 2026-guwen and
- // 2007-sanwen (gk-bank-fix-20261126; previous value bbb48f01…2a53); no Git-history dependency in Pages builds.
+ // 2007-sanwen (gk-bank-fix-20261126; previous value bbb48f01…2a53), then the 2026-11-27 original-paper headings and sub-question scores
+ // of 2026 questions 14 and 15 (gks-gk-2026-score-headings-20261127; previous value 117d133e…c9fc); no Git-history dependency in Pages builds.
  const after=structuredClone(records);for(const r of after)for(const q of r.questions||[])delete q.questionParts;
- assert.equal(createHash('sha256').update(JSON.stringify(after)).digest('hex'),'117d133e4739687d84d227e48c1e91881a0f4c676f4293e54d419a577c95c9fc');
+ assert.equal(createHash('sha256').update(JSON.stringify(after)).digest('hex'),'d078b8e98f19053f1f8baf1ae8b6e5f1b3ccae7c48e690f9899a49eb8c29bb9c');
 });
 test('option combinations and writing instructions are not treated as separate responses',()=>{
  for(const id of ['2026-yuyanjichu:1','2019-guwen:1','2003-yuyanjichu:5','2007-yuyanjichu-2:1','2006-yuyanjichu-2:3']){

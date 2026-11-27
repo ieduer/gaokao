@@ -283,7 +283,7 @@ test('restored original exam questions bind the archived original input and keep
 test('a transcription correction only fixes punctuation and keeps the reviewed answer it re-binds',()=>{
   const data=JSON.parse(readFileSync(new URL('../data/all.json',import.meta.url))),a=JSON.parse(readFileSync(new URL('../data/answer-authority.json',import.meta.url)));
   validateAuthority(data,a);
-  const corrected=a.questions.filter(q=>q.editorialRevision?.kind==='transcription_correction'&&!q.editorialRevision.version.endsWith('-original-paper-20261126'));
+  const corrected=a.questions.filter(q=>q.editorialRevision?.kind==='transcription_correction'&&!/-original-paper-2026112[67]$/.test(q.editorialRevision.version));
   assert.deepEqual(corrected.map(q=>q.id),['2022-feilian:3']);
   const punctuation=/[\s.．。]/g;
   for(const review of corrected){
@@ -352,4 +352,50 @@ test('original-paper corrections replay exactly on the archived passage and keep
   const guwen=data.find(r=>r.id==='2026-guwen').materials[0].text,sanwen=data.find(r=>r.id==='2007-sanwen').materials[0].text;
   assert.ok(guwen.includes('周顗屯浔水城')&&guwen.includes('侃不从。既至')&&!guwen.includes('浮水城'));
   assert.ok(sanwen.includes('\n七十年前，爷爷①沿着一条沅水，走出大山')&&!sanwen.includes('想像'));
+});
+
+test('the 2026 question 14 and 15 headings and sub-question scores replay on the archived presentation; question 15 gains the 6+4 practice guide',()=>{
+  const data=JSON.parse(readFileSync(new URL('../data/all.json',import.meta.url))),a=JSON.parse(readFileSync(new URL('../data/answer-authority.json',import.meta.url)));
+  validateAuthority(data,a);
+  const corrected=a.questions.filter(q=>q.editorialRevision?.version?.endsWith('-original-paper-20261127'));
+  assert.deepEqual(corrected.map(q=>q.id).sort(),['2026-honglou:1','2026-moxie:1']);
+  for(const review of corrected){
+    const at=review.id.lastIndexOf(':'),record=data.find(r=>r.id===review.id.slice(0,at)),question=record.questions.find(q=>q.qIndex===Number(review.id.slice(at+1)));
+    const revision=review.editorialRevision,archived=review.history.filter(h=>h.review.inputPresentationSha256===revision.previousInputPresentationSha256);
+    assert.equal(archived.length,1,review.id);
+    const [{source,review:old}]=archived;
+    assert.equal(revision.kind,'transcription_correction');assert.equal(revision.originalExamText,true);
+    assert.equal(revision.answerChanged,false);assert.equal(revision.oldScoresRecalculated,false);assert.equal(revision.modelCalls,0);
+    // The declared replacements turn the archived heading and question into the current ones; nothing else moved.
+    const apply=(text,field)=>revision.replacements.filter(r=>r.field===field).reduce((t,{from,to})=>{assert.notEqual(from,to);assert.equal(t.split(from).length,2,from);return t.replace(from,to);},text);
+    assert.equal(apply(source.topic,'topic'),record.topic,review.id);
+    assert.equal(apply(source.questions[0].text,'question'),question.text,review.id);
+    assert.equal(record[`question${question.qIndex}`],question.text);
+    assert.deepEqual(source.materials,record.materials);assert.equal(source.questions[0].score,question.score);
+    // Only score marks were added: removing every （N分） and 共 gives the archived text back.
+    const bare=t=>t.replace(/（共?\d+分）/g,'');
+    assert.equal(bare(record.topic),bare(source.topic));assert.equal(bare(question.text),bare(source.questions[0].text));
+    // The decision, explanation and model texts are the archived ones; only the input binding moved.
+    assert.equal(review.status,old.status);assert.deepEqual(review.correctOptions,old.correctOptions);
+    assert.equal(review.explanation,old.explanation);assert.equal(review.currentVersion,old.currentVersion);
+    assert.deepEqual(Object.keys(review.modelAnswers).sort(),Object.keys(old.modelAnswers).sort());
+    for(const [version,model] of Object.entries(review.modelAnswers)){
+      const before=old.modelAnswers[version],eq=model.provenance.inputEquivalence;
+      assert.equal(model.text,before.text,version);assert.equal(model.inputSha256,review.inputSha256);
+      assert.equal(eq.method,'original_paper_transcription_v1');
+      assert.deepEqual([eq.answeredInputSha256,eq.answeredInputContextSha256,eq.answeredInputPresentationSha256],
+        [before.inputSha256,before.inputContextSha256||null,before.inputPresentationSha256||null],version);
+    }
+    assert.equal(review.modelAnswers[review.currentVersion].inputPresentationSha256,questionPresentationDigest(record,question));
+  }
+  const moxie=data.find(r=>r.id==='2026-moxie'),honglou=data.find(r=>r.id==='2026-honglou');
+  assert.equal(moxie.topic,'14. 在横线处填写作品原句。要求：字迹清晰。（共8分）');
+  assert.equal(honglou.topic,'15. 根据要求，回答问题。（共10分）');
+  assert.deepEqual(honglou.questions[0].text.split('\n').map(line=>line.slice(-4)),['（6分）','（4分）']);
+  const guide=a.questions.find(q=>q.id==='2026-honglou:1').practiceScoring;
+  assert.deepEqual(guide.components,[{label:'（1）',points:6},{label:'（2）',points:4}]);
+  assert.equal(guide.total,10);assert.equal(guide.legacyScore,honglou.questions[0].score);assert.equal(guide.mode,'component_feedback');
+  // The guide labels are the question's own part labels.
+  assert.deepEqual(honglou.questions[0].questionParts.parts.map(p=>p.label),guide.components.map(c=>c.label));
+  assert.equal(a.questions.find(q=>q.id==='2026-moxie:1').practiceScoring,undefined);
 });
